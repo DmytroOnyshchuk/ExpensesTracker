@@ -8,14 +8,6 @@
 import UIKit
 import PureLayout
 
-// MARK: - Country Model
-struct Country {
-    let name: String
-    let capital: String
-    let population: String
-    let flag: String
-}
-
 final class MainViewController: BaseViewController, InitiableViewControllerProtocol {
     
     static var initiableResource: InitiableResource { .manual }
@@ -35,8 +27,6 @@ final class MainViewController: BaseViewController, InitiableViewControllerProto
     
     // MARK: - Variables
     private lazy var presenter = MainPresenter(controller: self)
-    @Inject private var userManager: UserManager
-    
     private var countries: [Country] = []
     
     // MARK: - Override
@@ -46,9 +36,18 @@ final class MainViewController: BaseViewController, InitiableViewControllerProto
     
     override func configureUI() {
         setupUI()
-        setupTestData()
+        NotificationCenter.default.addObserver(forName: .mainScrollToTop, object: nil, queue: nil){ [weak self] _ in
+            guard let self = self else { return }
+            if self.isVisible {
+                self.tableView.scrollToTop()
+            }
+        }
     }
-
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
 }
 
 // MARK: - UI Setup
@@ -74,41 +73,16 @@ private extension MainViewController {
     }
 }
 
-// MARK: - Data Setup
 private extension MainViewController {
     
-    func setupTestData() {
-        countries = [
-            Country(name: "Украина", capital: "Киев", population: "41.3 млн", flag: "🇺🇦"),
-            Country(name: "США", capital: "Вашингтон", population: "331 млн", flag: "🇺🇸"),
-            Country(name: "Германия", capital: "Берлин", population: "83.2 млн", flag: "🇩🇪"),
-            Country(name: "Франция", capital: "Париж", population: "67.4 млн", flag: "🇫🇷"),
-            Country(name: "Италия", capital: "Рим", population: "59.6 млн", flag: "🇮🇹"),
-            Country(name: "Испания", capital: "Мадрид", population: "47.4 млн", flag: "🇪🇸"),
-            Country(name: "Великобритания", capital: "Лондон", population: "67.8 млн", flag: "🇬🇧"),
-            Country(name: "Канада", capital: "Оттава", population: "38.2 млн", flag: "🇨🇦"),
-            Country(name: "Австралия", capital: "Канберра", population: "25.7 млн", flag: "🇦🇺"),
-            Country(name: "Япония", capital: "Токио", population: "125.8 млн", flag: "🇯🇵"),
-            Country(name: "Китай", capital: "Пекин", population: "1.4 млрд", flag: "🇨🇳"),
-            Country(name: "Индия", capital: "Нью-Дели", population: "1.38 млрд", flag: "🇮🇳"),
-            Country(name: "Бразилия", capital: "Бразилиа", population: "215 млн", flag: "🇧🇷"),
-            Country(name: "Аргентина", capital: "Буэнос-Айрес", population: "45.4 млн", flag: "🇦🇷"),
-            Country(name: "Мексика", capital: "Мехико", population: "128 млн", flag: "🇲🇽"),
-            Country(name: "Россия", capital: "Москва", population: "144 млн", flag: "🇷🇺"),
-            Country(name: "Турция", capital: "Анкара", population: "84.8 млн", flag: "🇹🇷"),
-            Country(name: "Египет", capital: "Каир", population: "104 млн", flag: "🇪🇬"),
-            Country(name: "ЮАР", capital: "Кейптаун", population: "60.4 млн", flag: "🇿🇦"),
-            Country(name: "Нигерия", capital: "Абуджа", population: "218 млн", flag: "🇳🇬")
-        ]
-        tableView.reloadData()
-    }
 }
 
 // MARK: - Public Methods
 extension MainViewController {
     
-    func setupLocalData() {
-       
+    func setupData(countries: [Country]) {
+        self.countries = countries
+        tableView.reloadData()
     }
     
 }
@@ -133,6 +107,14 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let selectedCountry = countries[indexPath.row]
+        
+        if let сountryDetailsViewController = CountryDetailsViewController.newInstance?.config({
+            $0.country = selectedCountry
+        }) {
+            coordinator.pushViewControllerSafe(сountryDetailsViewController, animated: true)
+        }
     }
     
 }

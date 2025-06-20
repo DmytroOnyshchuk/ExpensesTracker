@@ -23,6 +23,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     @Inject private var userManager: UserManager
     @Inject private var notificationManager: NotificationManager
     private lazy var apiManager = API.Manager(userManager: userManager)
+    @Inject private var coordinator: AppCoordinator
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         currentScene = scene
@@ -40,7 +41,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         checkAppEnvironment()
         configureServices()
         
-        UIApplication.showAppTabBarController()
+        coordinator.start()
     }
     
     func sceneDidBecomeActive(_ scene: UIScene) {

@@ -219,11 +219,4 @@ internal extension UIViewController {
         present(alert, animated: true)
     }
     
-    func loadMain() {
-        let appNavigationController = AppTabBarController().embeddedInAppNavigationController
-        AppearanceManager.appNavigationController = appNavigationController
-        NotificationCenter.default.post(name: .appLogin, object: nil)
-        UIApplication.load(vc: appNavigationController)
-    }
-    
 }

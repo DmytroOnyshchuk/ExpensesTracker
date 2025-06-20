@@ -19,7 +19,7 @@ final class AppTabBarController: UITabBarController {
     
 }
 
-private extension AppTabBarController{
+private extension AppTabBarController {
     
     private func setupTabBarItems() {
         var viewControllers: [UIViewController] = []
@@ -59,5 +59,14 @@ private extension AppTabBarController{
 
 // MARK: - UITabBarControllerDelegate
 extension AppTabBarController: UITabBarControllerDelegate {
+   
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        switch viewController.topMostViewController {
+            case is MainViewController:
+                NotificationCenter.default.post(name: .mainScrollToTop, object: nil)
+            default:
+                break
+        }
+    }
     
 }

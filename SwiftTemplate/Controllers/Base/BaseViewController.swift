@@ -11,6 +11,8 @@ enum NavBarConfig {
 
 class BaseViewController: UIViewController {
     
+    @Inject var coordinator: AppCoordinator
+    
     var basePresenter: BasePresenterProtocol? { nil }
     var isKeyboardObserving: Bool { false }
     var isNavigationBarVisible: Bool { true }
@@ -18,21 +20,22 @@ class BaseViewController: UIViewController {
     var navigationBarConfig: NavBarConfig? { .transparentBackground }
     var navigationBarColor: UIColor? { nil }
     var navigationBarTitle: String? { nil }
-    var navigationBarTitleColor: UIColor? { .appDarkGreen }
-    var navigationBarBackButtonColor: UIColor? { .appDarkGreen }
+    var navigationBarTitleColor: UIColor? { .appBlack }
+    var navigationBarBackButtonColor: UIColor? { .appBlack }
     var navigationBarHideBackButton: Bool { false }
     
     var hideBottomBar: Bool { false }
     override var preferredStatusBarStyle: UIStatusBarStyle { navigationBarColor != nil ? .lightContent : .default}
     
     var parameters: Any?
+    var isVisible: Bool = false
     
     lazy var textFieldToolbar: UIToolbar = {
         let toolbar = UIToolbar()
         toolbar.barStyle = .default
         toolbar.items = [
-            UIBarButtonItem(image: UIImage(named: "arrow_up"), style: .plain, target: self, action: #selector(toolbarPrevButtonPressed)),
-            UIBarButtonItem(image: UIImage(named: "arrow_down"), style: .plain, target: self, action: #selector(toolbarNextButtonPressed)),
+            UIBarButtonItem(image: UIImage(named: "ic_arrow_up"), style: .plain, target: self, action: #selector(toolbarPrevButtonPressed)),
+            UIBarButtonItem(image: UIImage(named: "ic_arrow_down"), style: .plain, target: self, action: #selector(toolbarNextButtonPressed)),
             UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),
             UIBarButtonItem(title: "DONE".localized, style: .plain, target: self, action: #selector(toolbarDoneButtonPressed))
         ]
@@ -86,6 +89,7 @@ class BaseViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        isVisible = true
         basePresenter?.viewDidAppear(animated)
     }
     
@@ -99,6 +103,7 @@ class BaseViewController: UIViewController {
         if hideBottomBar {
             tabBarController?.tabBar.isHidden = false
         }
+        isVisible = false
     }
     
     func configureUI() {

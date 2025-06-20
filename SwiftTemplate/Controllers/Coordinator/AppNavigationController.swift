@@ -8,6 +8,18 @@
 
 import UIKit
 
+class BaseNavigationController: UINavigationController {
+    
+    override open var prefersStatusBarHidden: Bool {
+        return topViewController?.prefersStatusBarHidden ?? false
+    }
+    
+    override open var preferredStatusBarStyle: UIStatusBarStyle {
+        return topViewController?.preferredStatusBarStyle ?? .default
+    }
+    
+}
+
 final class AppNavigationController: UINavigationController {
     
     override func viewDidLoad() {
