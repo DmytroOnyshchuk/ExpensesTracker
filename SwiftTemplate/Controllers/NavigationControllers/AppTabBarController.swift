@@ -28,6 +28,10 @@ private extension AppTabBarController{
             mainVC.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
             viewControllers.append(mainVC)
         }
+        if let mainVC2 = MainViewController.newInstance?.embeddedInBaseNavigationController {
+            mainVC2.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
+            viewControllers.append(mainVC2)
+        }
         
         self.viewControllers = viewControllers
         if let index = self.viewControllers?.firstIndex(where: { ($0 as? UINavigationController)?.viewControllers.first is MainViewController }) {
@@ -46,7 +50,7 @@ private extension AppTabBarController{
         tabBar.barStyle = .black
         tabBar.barTintColor = .white
         tabBar.backgroundColor = .appLightGrey
-        tabBar.tintColor = .appLightGrey
+        tabBar.tintColor = .systemBlue
         tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         tabBar.itemPositioning = .automatic
     }

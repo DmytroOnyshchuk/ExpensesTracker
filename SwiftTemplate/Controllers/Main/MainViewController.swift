@@ -54,13 +54,14 @@ final class MainViewController: BaseViewController, InitiableViewControllerProto
 // MARK: - UI Setup
 private extension MainViewController {
     
-    func setupUI() {
-        view.backgroundColor = .systemBackground        
+    private func setupUI() {
+        view.backgroundColor = .systemBackground
         view.addSubview(tableView)
         setupConstraints()
+        setupTableView()
     }
     
-    func setupConstraints() {
+    private func setupConstraints() {
         tableView.autoPinEdgesToSuperviewSafeArea()
     }
     
@@ -99,6 +100,7 @@ private extension MainViewController {
             Country(name: "ЮАР", capital: "Кейптаун", population: "60.4 млн", flag: "🇿🇦"),
             Country(name: "Нигерия", capital: "Абуджа", population: "218 млн", flag: "🇳🇬")
         ]
+        tableView.reloadData()
     }
 }
 
@@ -106,7 +108,7 @@ private extension MainViewController {
 extension MainViewController {
     
     func setupLocalData() {
-        tableView.reloadData()
+       
     }
     
 }
@@ -115,7 +117,7 @@ extension MainViewController {
 extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -11,6 +11,7 @@
 		6627D7C32E0036E600EC8FE8 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6627D7C22E0036E600EC8FE8 /* AppTabBarController.swift */; };
 		6627D7C42E0036E600EC8FE8 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6627D7C12E0036E600EC8FE8 /* AppNavigationController.swift */; };
 		6627D7C62E0037CF00EC8FE8 /* AppearanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6627D7C52E0037CF00EC8FE8 /* AppearanceManager.swift */; };
+		662857A32E0544FC0048CD91 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 662857A22E0544FC0048CD91 /* RealmSwift */; };
 		66700F522DFC32400073A9EF /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66700F512DFC32400073A9EF /* ServerError.swift */; };
 		66700F562DFC328D0073A9EF /* InitiableViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66700F552DFC328D0073A9EF /* InitiableViewControllerProtocol.swift */; };
 		66700F572DFC328D0073A9EF /* ConfigurableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66700F542DFC328D0073A9EF /* ConfigurableProtocol.swift */; };
@@ -65,7 +66,6 @@
 		66700FD32DFC36670073A9EF /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66700F9D2DFC36670073A9EF /* UIViewController.swift */; };
 		66700FD42DFC36670073A9EF /* UIApplication-Orovera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66700F892DFC36670073A9EF /* UIApplication-Orovera.swift */; };
 		66700FD62DFC36670073A9EF /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66700F9A2DFC36670073A9EF /* UITextField.swift */; };
-		66700FDA2DFC36F20073A9EF /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 66700FD92DFC36F20073A9EF /* RealmSwift */; };
 		66700FDD2DFC37000073A9EF /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 66700FDC2DFC37000073A9EF /* Toast */; };
 		66700FE02DFC37100073A9EF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 66700FDF2DFC37100073A9EF /* Kingfisher */; };
 		66700FE32DFC37240073A9EF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 66700FE22DFC37240073A9EF /* Alamofire */; };
@@ -127,10 +127,7 @@
 		668E999A2DFAFBD400EB9CD8 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668E99992DFAFBD400EB9CD8 /* DependencyManager.swift */; };
 		668E999C2DFAFBE000EB9CD8 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668E999B2DFAFBE000EB9CD8 /* UserManager.swift */; };
 		668E99A22DFAFC5300EB9CD8 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668E99A12DFAFC5300EB9CD8 /* AppEnvironment.swift */; };
-		66A8DCD82E04581400AC58CA /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 66700FD92DFC36F20073A9EF /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		66A8DCE02E045C6000AC58CA /* GoogleService-Info-Prod.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66A8DCDF2E045C6000AC58CA /* GoogleService-Info-Prod.plist */; };
 		66F497C82E02B333005D01CE /* AlamofireLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F497C72E02B333005D01CE /* AlamofireLogger.swift */; };
-		66F497CC2E02BCE4005D01CE /* GoogleService-Info-Dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66F497CB2E02BCE4005D01CE /* GoogleService-Info-Dev.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -140,7 +137,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				66A8DCD82E04581400AC58CA /* RealmSwift in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,10 +255,8 @@
 		668E999B2DFAFBE000EB9CD8 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		668E99A12DFAFC5300EB9CD8 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		66A8DCDE2E045C2200AC58CA /* SwiftTemplateProd.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftTemplateProd.entitlements; sourceTree = "<group>"; };
-		66A8DCDF2E045C6000AC58CA /* GoogleService-Info-Prod.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Prod.plist"; sourceTree = "<group>"; };
 		66F497C72E02B333005D01CE /* AlamofireLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireLogger.swift; sourceTree = "<group>"; };
 		66F497C92E02B8ED005D01CE /* SwiftTemplateDev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftTemplateDev.entitlements; sourceTree = "<group>"; };
-		66F497CB2E02BCE4005D01CE /* GoogleService-Info-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Dev.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +264,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				662857A32E0544FC0048CD91 /* RealmSwift in Frameworks */,
 				6627D7BE2E00337100EC8FE8 /* PureLayout in Frameworks */,
 				6688BAF52DFDC64100C7550E /* FirebaseMessaging in Frameworks */,
 				6688BAF12DFDC4EB00C7550E /* VersionTracker in Frameworks */,
@@ -281,7 +276,6 @@
 				66700FEC2DFC38240073A9EF /* PromiseKit in Frameworks */,
 				6688BAF72DFDC65D00C7550E /* FirebaseAnalytics in Frameworks */,
 				6688BAFA2DFDC69D00C7550E /* IQKeyboardManagerSwift in Frameworks */,
-				66700FDA2DFC36F20073A9EF /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,8 +467,6 @@
 				668E98B22DFAF78100EB9CD8 /* Info.plist */,
 				668E98C32DFAF91A00EB9CD8 /* Fonts */,
 				668E98B12DFAF78100EB9CD8 /* Assets.xcassets */,
-				66F497CB2E02BCE4005D01CE /* GoogleService-Info-Dev.plist */,
-				66A8DCDF2E045C6000AC58CA /* GoogleService-Info-Prod.plist */,
 				667010382DFC40B90073A9EF /* Colors.xcassets */,
 				66F497C92E02B8ED005D01CE /* SwiftTemplateDev.entitlements */,
 				66A8DCDE2E045C2200AC58CA /* SwiftTemplateProd.entitlements */,
@@ -629,7 +621,6 @@
 			);
 			name = SwiftTemplate;
 			packageProductDependencies = (
-				66700FD92DFC36F20073A9EF /* RealmSwift */,
 				66700FDC2DFC37000073A9EF /* Toast */,
 				66700FDF2DFC37100073A9EF /* Kingfisher */,
 				66700FE22DFC37240073A9EF /* Alamofire */,
@@ -641,6 +632,7 @@
 				6688BAF62DFDC65D00C7550E /* FirebaseAnalytics */,
 				6688BAF92DFDC69D00C7550E /* IQKeyboardManagerSwift */,
 				6627D7BD2E00337100EC8FE8 /* PureLayout */,
+				662857A22E0544FC0048CD91 /* RealmSwift */,
 			);
 			productName = SwiftTemplate;
 			productReference = 668E98982DFAF77500EB9CD8 /* SwiftTemplate.app */;
@@ -672,7 +664,6 @@
 			mainGroup = 668E988F2DFAF77500EB9CD8;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				66700FD82DFC36F20073A9EF /* XCRemoteSwiftPackageReference "realm-swift" */,
 				66700FDB2DFC36FF0073A9EF /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 				66700FDE2DFC37100073A9EF /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				66700FE12DFC37240073A9EF /* XCRemoteSwiftPackageReference "Alamofire" */,
@@ -682,6 +673,7 @@
 				6688BAEF2DFDC4EB00C7550E /* XCRemoteSwiftPackageReference "VersionTrackerSwift" */,
 				6688BAF82DFDC69D00C7550E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				6627D7BC2E00337100EC8FE8 /* XCRemoteSwiftPackageReference "PureLayout" */,
+				662857A12E0544FC0048CD91 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 668E98992DFAF77500EB9CD8 /* Products */;
@@ -700,8 +692,6 @@
 			files = (
 				667010392DFC40B90073A9EF /* Colors.xcassets in Resources */,
 				668E98C62DFAF92500EB9CD8 /* e-Ukraine-Regular.otf in Resources */,
-				66F497CC2E02BCE4005D01CE /* GoogleService-Info-Dev.plist in Resources */,
-				66A8DCE02E045C6000AC58CA /* GoogleService-Info-Prod.plist in Resources */,
 				668E98B92DFAF78100EB9CD8 /* Assets.xcassets in Resources */,
 				668E98BC2DFAF78100EB9CD8 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -726,7 +716,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "PATH_TO_GOOGLE_PLISTS=\"${PROJECT_DIR}/SwiftTemplate/Resources\"\n\ncase \"${CONFIGURATION}\" in\n\n   \"DebugDev\" | \"ReleaseDev\" )\n        cp -r \"$PATH_TO_GOOGLE_PLISTS/GoogleService-Info-Dev.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\" ;;\n\n   \"DebugProd\" | \"ReleaseProd\" )\n        cp -r \"$PATH_TO_GOOGLE_PLISTS/GoogleService-Info-Prod.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\" ;;\n\n    *)\n        ;;\n        \nesac\n";
+			shellScript = "#PATH_TO_GOOGLE_PLISTS=\"${PROJECT_DIR}/SwiftTemplate/Resources\"\n\n#case \"${CONFIGURATION}\" in\n\n#   \"DebugDev\" | \"ReleaseDev\" )\n#        cp -r \"$PATH_TO_GOOGLE_PLISTS/GoogleService-Info-Dev.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\" ;;\n\n#   \"DebugProd\" | \"ReleaseProd\" )\n#        cp -r \"$PATH_TO_GOOGLE_PLISTS/GoogleService-Info-Prod.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\" ;;\n\n#  *)\n#       ;;\n        \n#esac\n";
 		};
 		66F497CA2E02BA29005D01CE /* Crashlytics */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -739,7 +729,7 @@
 				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
 				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
 				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
-				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info-Dev.plist",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
 				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info-Prod.plist",
 				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
 			);
@@ -750,7 +740,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "case \"${CONFIGURATION}\" in\n\n   \"DebugProd\" | \"ReleaseProd\" )\n       \"${BUILD_DIR%Build/*}SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n\n  *)\n    echo \"Crashlytics upload skipped for configuration: ${CONFIGURATION}\"\n    ;;\n        \nesac\n";
+			shellScript = "#\"${BUILD_DIR%Build/*}SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1143,7 +1133,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dmytroo.template.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmytroon.template.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1237,7 +1227,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dmytroo.template.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmytroon.template.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1281,12 +1271,12 @@
 				minimumVersion = 3.1.9;
 			};
 		};
-		66700FD82DFC36F20073A9EF /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		662857A12E0544FC0048CD91 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift";
 			requirement = {
-				kind = exactVersion;
-				version = 10.54.4;
+				branch = master;
+				kind = branch;
 			};
 		};
 		66700FDB2DFC36FF0073A9EF /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
@@ -1361,9 +1351,9 @@
 			package = 6627D7BC2E00337100EC8FE8 /* XCRemoteSwiftPackageReference "PureLayout" */;
 			productName = PureLayout;
 		};
-		66700FD92DFC36F20073A9EF /* RealmSwift */ = {
+		662857A22E0544FC0048CD91 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 66700FD82DFC36F20073A9EF /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = 662857A12E0544FC0048CD91 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
 		};
 		66700FDC2DFC37000073A9EF /* Toast */ = {

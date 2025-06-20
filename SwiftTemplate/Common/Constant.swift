@@ -12,9 +12,9 @@ struct Constants {
     
     static var groupIdentifier: String {
 #if PROD
-        return "group.com.dmytroon.template.dev"
-#else
         return "group.com.dmytroon.template.ios"
+#else
+        return "group.com.dmytroon.template.dev"
 #endif
     }
     

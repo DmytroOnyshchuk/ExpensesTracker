@@ -22,9 +22,9 @@ extension UserManager {
         }
         lastApplicationEnvironment = savedEnvironment
         
-        databaseManager.deleteAll { (error) in
-            Logger.default.errorLog("Error delete all objects on logout", category: self.className, error: error)
-        }
+//        databaseManager.deleteAll { (error) in
+//            Logger.default.errorLog("Error delete all objects on logout", category: self.className, error: error)
+//        }
         
     }
     

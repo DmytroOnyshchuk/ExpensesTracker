@@ -48,7 +48,7 @@ private extension API.Manager {
 			"os": "IOS",
 			"os_version": UIDevice.current.systemVersion,
 			"version": Bundle.main.appVersionNumber,
-			"Authorization" : "plNkrnzDV2gqf4JxLZOACeRGufn6CicgQnQO7qTAGbqRHNn80SM2s85L1PMnutqnFSZvCdnMk4ZUvR0RyF5j2Qp2UJL1XAt1h062ttVPauPjcq5YEj0HfOMcE1CRuKNv"
+			"Authorization" : "bhjbhjuBUYygvytuvuyVYTVrEDRcJijJUHguyU"
 		]
 	}
 	

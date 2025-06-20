@@ -2,13 +2,26 @@ import UIKit
 
 extension UIScrollView {
     
-    func register<T: UITableViewCell>(_ classType: T.Type) {
-        let nibName = String(describing: T.name)
-        let nib = UINib(nibName: nibName, bundle: nil)
+    enum CellRegistrationType {
+        case nib
+        case manual
+    }
+    
+    func register<T: UITableViewCell>(_ classType: T.Type, type: CellRegistrationType = .manual) {
         guard let tableView = self as? UITableView else {
-            fatalError()
+            fatalError("This method must be called on UITableView")
         }
-        tableView.register(nib, forCellReuseIdentifier: nibName)
+        
+        let reuseID = T.name
+        
+        switch type {
+            case .nib:
+                let nib = UINib(nibName: reuseID, bundle: nil)
+                tableView.register(nib, forCellReuseIdentifier: reuseID)
+                
+            case .manual:
+                tableView.register(T.self, forCellReuseIdentifier: reuseID)
+        }
     }
     
     func get<T: UITableViewCell>(_ classType: T.Type, identifier: String? = nil) -> T {

@@ -15,18 +15,18 @@ import FirebaseCrashlytics
 final class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-#if PROD
-        let googleServiceFileName = "GoogleService-Info-Prod"
-#else
-        let googleServiceFileName = "GoogleService-Info-Dev"
-#endif
-        
-        if let path = Bundle.main.path(forResource: googleServiceFileName, ofType: "plist"), let options = FirebaseOptions(contentsOfFile: path) {
-            FirebaseApp.configure(options: options)
-#if DEBUG
-            Crashlytics.crashlytics().setCrashlyticsCollectionEnabled(false)
-#endif
-        }
+//#if PROD
+//        let googleServiceFileName = "GoogleService-Info-Prod"
+//#else
+//        let googleServiceFileName = "GoogleService-Info"
+//#endif
+//        
+//        if let path = Bundle.main.path(forResource: googleServiceFileName, ofType: "plist"), let options = FirebaseOptions(contentsOfFile: path) {
+//            FirebaseApp.configure(options: options)
+//#if DEBUG
+//            Crashlytics.crashlytics().setCrashlyticsCollectionEnabled(false)
+//#endif
+//        }
 
         registerDependencies()
         @Inject var notificationManager: NotificationManager
