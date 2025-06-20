@@ -22,7 +22,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     @Inject private var userManager: UserManager
     @Inject private var notificationManager: NotificationManager
-    private lazy var apiManager = API.Manager(userManager: userManager)
+    @Inject private var apiManager: API.Manager
     @Inject private var coordinator: AppCoordinator
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {

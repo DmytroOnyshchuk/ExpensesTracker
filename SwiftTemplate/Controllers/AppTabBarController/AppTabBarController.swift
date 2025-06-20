@@ -24,13 +24,13 @@ private extension AppTabBarController {
     private func setupTabBarItems() {
         var viewControllers: [UIViewController] = []
         
-        if let mainVC = MainViewController.newInstance?.embeddedInBaseNavigationController {
-            mainVC.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
-            viewControllers.append(mainVC)
+        if let mainViewController = MainViewController.newInstance?.embeddedInBaseNavigationController {
+            mainViewController.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
+            viewControllers.append(mainViewController)
         }
-        if let mainVC2 = MainViewController.newInstance?.embeddedInBaseNavigationController {
-            mainVC2.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
-            viewControllers.append(mainVC2)
+        if let usersViewController = UsersViewController.newInstance?.embeddedInBaseNavigationController {
+            usersViewController.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "person"), selectedImage: UIImage(systemName: "person.fill"))
+            viewControllers.append(usersViewController)
         }
         
         self.viewControllers = viewControllers
@@ -64,6 +64,8 @@ extension AppTabBarController: UITabBarControllerDelegate {
         switch viewController.topMostViewController {
             case is MainViewController:
                 NotificationCenter.default.post(name: .mainScrollToTop, object: nil)
+            case is UsersViewController:
+                NotificationCenter.default.post(name: .usersScrollToTop, object: nil)
             default:
                 break
         }

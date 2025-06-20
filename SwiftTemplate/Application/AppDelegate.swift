@@ -60,8 +60,9 @@ private extension AppDelegate {
         let coordinator = AppCoordinator(appNavigationController: appTabBarController)
         
         DependencyManager {
-            Module { databaseManager as DatabaseManagerProtocol }
             Module { userManager }
+            Module { apiManager }
+            Module { databaseManager as DatabaseManagerProtocol }
             Module { notificationManager }
             Module { coordinator }
         }.build()

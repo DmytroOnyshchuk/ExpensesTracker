@@ -85,7 +85,7 @@ extension API.Manager {
 	func request<T: Decodable>(type: P_ApiEndpoint, handler: @escaping (T?, _ error: API.ApiError?) -> ()) -> UUID {
 		let uuid = UUID()
 		activeRequests[uuid] = session.request(
-			API.Url.getURL(url: type.url, with: type.path, versionTwo: type.versionTwo),
+			API.Url.current.appendingPathComponent(type.path),
 			method: type.httpMethod,
 			parameters: type.params,
 			encoding: type.encoding,
@@ -125,7 +125,7 @@ extension API.Manager {
 	func request(type: P_ApiEndpoint, handler: @escaping (Bool, _ error: API.ApiError?) -> ()) -> UUID {
 		let uuid = UUID()
 		activeRequests[uuid] = session.request(
-			API.Url.getURL(url: type.url, with: type.path, versionTwo: type.versionTwo),
+            API.Url.current.appendingPathComponent(type.path),
 			method: type.httpMethod,
 			parameters: type.params,
 			encoding: type.encoding,
@@ -166,7 +166,7 @@ extension API.Manager {
 		multipartData.append(type.uploadData, withName: "file", fileName: type.fileName ?? "file")
 		activeRequests[uuid] = session.upload(
 			multipartFormData: multipartData,
-			to: API.Url.getUploadURL(with: type.path),
+            to: API.Url.server.appendingPathComponent(type.path),
 			method: type.httpMethod,
 			headers: type.headers,
 			interceptor: nil

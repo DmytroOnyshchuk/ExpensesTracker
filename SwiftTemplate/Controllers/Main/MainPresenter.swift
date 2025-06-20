@@ -13,7 +13,6 @@ final class MainPresenter: BasePresenter<MainViewController, Void> {
     @Inject private var userManager: UserManager
     @Inject private var databaseManager: DatabaseManagerProtocol
     
-    
     override func configureController() {
         loadData()
     }

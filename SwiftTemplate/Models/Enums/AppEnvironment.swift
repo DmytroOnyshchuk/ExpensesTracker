@@ -11,14 +11,11 @@ import Foundation
 enum AppEnvironment: String, Codable {
     
     case develop
-    case stage
     case production
     
     static var current: AppEnvironment {
 #if PROD
         return .production
-#elseif STAGE
-        return .stage
 #else
         return .develop
 #endif
