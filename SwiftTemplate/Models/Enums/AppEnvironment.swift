@@ -1,9 +1,9 @@
 //
-//  AppEnviroment.swift
-//  Orovera
+//  AppEnvironment.swift
+//  SwiftTemplate
 //
-//  Created by Dmytro Onyshchuk on 14.10.2022.
-//  Copyright © 2022 PeaksCircle. All rights reserved.
+//  Created by Dmytro Onyshchuk on 20.06.2025.
+//  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
 //
 
 import Foundation

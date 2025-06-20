@@ -1,3 +1,11 @@
+//
+//  NavBarConfig.swift
+//  SwiftTemplate
+//
+//  Created by Dmytro Onyshchuk on 20.06.2025.
+//  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+//
+
 import UIKit
 import MBProgressHUD
 import Toast
@@ -15,12 +23,17 @@ class BaseViewController: UIViewController {
     
     var basePresenter: BasePresenterProtocol? { nil }
     var isKeyboardObserving: Bool { false }
-    var isNavigationBarVisible: Bool { true }
     var textFieldSequence: [UIView] { [] }
+    
+    var isNavigationBarVisible: Bool { true }
+    var isAppNavigationBarVisible: Bool { true }
+    
     var navigationBarConfig: NavBarConfig? { .transparentBackground }
     var navigationBarColor: UIColor? { nil }
+    
     var navigationBarTitle: String? { nil }
     var navigationBarTitleColor: UIColor? { .appBlack }
+    
     var navigationBarBackButtonColor: UIColor? { .appBlack }
     var navigationBarHideBackButton: Bool { false }
     
@@ -85,6 +98,7 @@ class BaseViewController: UIViewController {
             navigationController.navigationBar.isHidden = !isNavigationBarVisible
             navigationController.setNavigationBarHidden(!isNavigationBarVisible, animated: false)
         }
+        coordinator.appNavigationController.setNavigationBarHidden(!isAppNavigationBarVisible, animated: false)
     }
     
     override func viewDidAppear(_ animated: Bool) {

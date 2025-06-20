@@ -95,18 +95,18 @@ extension API.Manager {
 			switch response.result {
 				case .success(let data):
 					do {
-						let response = try type.decoder.decode(ServerResponse<T>.self, from: data)
-						if let error = response.error {
-							Logger.default.logMessage(error.codeError(), category: self.logCategory, type: .error)
-							Crashlytics.crashlytics().record(error: NSError(domain: "API", code: 0, userInfo: ["error" : error, "path" : type.path]))
-							handler(nil, .errorType(error))
-						} else if let message = response.message {
-							handler(nil, .message(message))
-						} else if response.success {
-							handler(response.data, nil)
-						} else {
-							handler(nil, .unknown)
-						}
+						let response = try type.decoder.decode(T.self, from: data)
+//						if let error = response.error {
+//							Logger.default.logMessage(error.codeError(), category: self.logCategory, type: .error)
+//							Crashlytics.crashlytics().record(error: NSError(domain: "API", code: 0, userInfo: ["error" : error, "path" : type.path]))
+//							handler(nil, .errorType(error))
+//						} else if let message = response.message {
+//							handler(nil, .message(message))
+//						} else if response.success {
+							handler(response, nil)
+					//	} else {
+						//	handler(nil, .unknown)
+					//	}
 					} catch {
 						Logger.default.logMessage(String(describing: error), category: self.logCategory, type: .error, logToCrashlytics: true)
 						Crashlytics.crashlytics().record(error: error)
@@ -175,18 +175,18 @@ extension API.Manager {
 			switch response.result {
 				case .success(let data):
 					do {
-						let response = try type.decoder.decode(ServerResponse<T>.self, from: data)
-						if let error = response.error {
-							Logger.default.logMessage(error.codeError(), category: self.logCategory, type: .error)
-							Crashlytics.crashlytics().record(error: NSError(domain: "API", code: 0, userInfo: ["error" : error, "path" : type.path]))
-							handler(nil, .errorType(error))
-						} else if let message = response.message {
-							handler(nil, .message(message))
-						} else if response.success {
-							handler(response.data, nil)
-						} else {
-							handler(nil, .unknown)
-						}
+						let response = try type.decoder.decode(T.self, from: data)
+//						if let error = response.error {
+//							Logger.default.logMessage(error.codeError(), category: self.logCategory, type: .error)
+//							Crashlytics.crashlytics().record(error: NSError(domain: "API", code: 0, userInfo: ["error" : error, "path" : type.path]))
+//							handler(nil, .errorType(error))
+//						} else if let message = response.message {
+//							handler(nil, .message(message))
+//						} else if response.success {
+							handler(response, nil)
+						//} else {
+						//	handler(nil, .unknown)
+					//	}
 					} catch {
 						Logger.default.logMessage(String(describing: error), category: self.logCategory, type: .error, logToCrashlytics: false)
 						Crashlytics.crashlytics().record(error: error)

@@ -1,9 +1,9 @@
 //
-//  UILabel+Localized.swift
-//  Orovera
+//  Untitled.swift
+//  SwiftTemplate
 //
-//  Created by Dmytro Onyshchuk on 08.08.2022.
-//  Copyright © 2022 PeaksCircle. All rights reserved.
+//  Created by Dmytro Onyshchuk on 20.06.2025.
+//  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
 //
 
 import Foundation
@@ -21,4 +21,3 @@ extension UILabel {
     }
     
 }
-

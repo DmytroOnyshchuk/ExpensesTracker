@@ -6,7 +6,6 @@
 //  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
 //
 
-
 import Foundation
 
 final class UsersPresenter: BasePresenter<UsersViewController, Void> {

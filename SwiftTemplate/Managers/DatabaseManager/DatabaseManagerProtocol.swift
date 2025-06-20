@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-typealias DatabaseManagerProtocol = BaseDatabaseProtocol
+typealias DatabaseManagerProtocol = BaseDatabaseProtocol & CountriesDatabaseProtocol
 
 protocol BaseDatabaseProtocol {
     func saveAsync(_ object: Object, update: Realm.UpdatePolicy?)
@@ -34,4 +34,10 @@ protocol BaseDatabaseProtocol {
     func write(actionHandler: DatabaseManager.ActionHandler, completion: DatabaseManager.CompletionHandler)
 	func write(actionHandler: DatabaseManager.ActionHandler)
     func create<T: Object>(_ classType: T.Type, value: Any, update: Realm.UpdatePolicy, completion: @escaping DatabaseManager.CompletionHandler)
+}
+
+protocol CountriesDatabaseProtocol {
+    
+    func getCountries() -> [Country]
+    
 }

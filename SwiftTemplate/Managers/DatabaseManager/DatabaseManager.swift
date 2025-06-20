@@ -6,7 +6,7 @@
 //  Copyright © 2022 PeaksCircle. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import RealmSwift
 
 final class DatabaseManager: NSObject {

@@ -1,0 +1,71 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Шаблон Swift";
+"DONE" = "Готово";
+"ERROR" = "Помилка";
+"OK" = "OK";
+"YES" = "Так";
+"NO" = "Ні";
+"UPDATE" = "Оновити";
+"ATTENTION" = "Увага";
+"SUPPORT" = "Підтримка";
+"NEXT" = "Далі";
+"BACK" = "Назад";
+"REMOVE" = "Видалити";
+"DELETE" = "Видалити";
+"CANCEL" = "Скасувати";
+"CLOSE" = "Закрити";
+"RETRY" = "Повторити";
+"REPEAT" = "Повторити";
+"SOMETHING_WENT_WRONG" = "Щось пішло не так...";
+"CONTINUE" = "Продовжити";
+"SHARE" = "Поділитися";
+"SAVE" = "Зберегти";
+"na" = "н\\д";
+
+// MARK: - BaseVC
+"BASEVC_TRY_AGAIN_LATTER" = "Невідома помилка. Спробуйте пізніше";
+"BASEVC_PERMISSION" = "Дозвіл";
+"BASEVC_PERMISSION_GALLERY" = "Щоб продовжити, дозвольте застосунку використовувати Галерею";
+"BASEVC_PERMISSION_CAMERA" = "Щоб продовжити, дозвольте застосунку використовувати Камеру";
+"BASEVC_PERMISSION_BIOMETRIC" = "Щоб продовжити, дозвольте застосунку використовувати Біометрію";
+"BASEVC_PERMISSION_SETTINGS" = "Налаштування";
+"BASEVC_BLOCKED_ALERT" = "Виявлено підозрілу активність у вашому акаунті. Зверніться до служби підтримки для вирішення проблеми якнайшвидше.";
+"BASEVC_PLEASE_UPDATE" = "Встановлена версія додатку застаріла. Будь ласка, оновіть додаток";
+"BASEVC_EXPORT_LOG" = "Експортувати журнал налагодження?";
+"BASEVC_EXPORT_LOG_TITLE" = "Експорт";
+"BASEVC_EXPORT_LOG_VERSION" = "Версія";
+"BASEVC_WRONG_CODE_TITLE" = "Неправильний код";
+"BASEVC_WRONG_CODE_SECRIPTION" = "Введено неправильний SMS-код";
+
+// MARK: - API
+"API_NEW_CODE" = "Термін дії SMS-коду безпеки вичерпано. Запросіть новий код";
+"API_WRONG_CODE" = "Неправильний код";
+"API_VERSION_ERROR" = "Встановлена версія додатку застаріла. Будь ласка, оновіть додаток";
+"API_UNKNOWN_ERROR" = "Невідома помилка. Спробуйте пізніше";
+
+// MARK: - MainViewController
+"MAINVC_TITLE" = "Країни";
+
+// MARK: - CountryDetailsViewController
+"COUNTRYDETAILSVC_COUNTRY" = "Країна: %@";
+"COUNTRYDETAILSVC_CAPITAL" = "Столиця: %@";
+"COUNTRYDETAILSVC_POPULATION" = "Населення: %@";
+
+// MARK: - UsersViewController
+"USERSVC_TITLE" = "Користувачі";
+
+// MARK: - UserDetailsViewController
+"USERDETAILSVC_USERNAME" = "Ім'я користувача: %@";
+"USERDETAILSVC_EMAIL" = "Email: %@";
+"USERDETAILSVC_PHONE" = "Телефон: %@";
+"USERDETAILSVC_WEBSITE" = "Вебсайт: %@";
+"USERDETAILSVC_COMPANY" = "Компанія: %@";
+"USERDETAILSVC_ADDRESS" = "Адреса: %@, %@";

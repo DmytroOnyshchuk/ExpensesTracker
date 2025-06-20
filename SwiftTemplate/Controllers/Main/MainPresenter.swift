@@ -2,8 +2,10 @@
 //  MainPresenter.swift
 //  SwiftTemplate
 //
-//  Created by Dmytro Onyshchuk on 13.06.2025.
+//  Created by Dmytro Onyshchuk on 20.06.2025.
+//  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
 //
+
 
 import Foundation
 
@@ -23,7 +25,7 @@ final class MainPresenter: BasePresenter<MainViewController, Void> {
 extension MainPresenter {
     
     func loadData() {
-        let countries = databaseManager.getObjects(Country.self)
+        let countries = databaseManager.getCountries().sorted{ $0.name < $1.name }
         
         guard countries.isEmpty else {
             vc?.setupData(countries: countries)
@@ -37,7 +39,7 @@ extension MainPresenter {
                 vc?.showErrorToast(error.localizedDescription)
                 Logger.default.logMessage("Error saving сountries: \(error)", category: self.className, type: .error)
             } else {
-                let savedCountries = self.databaseManager.getObjects(Country.self)
+                let savedCountries = self.databaseManager.getCountries().sorted{ $0.name < $1.name }
                 vc?.setupData(countries: savedCountries)
             }
         }

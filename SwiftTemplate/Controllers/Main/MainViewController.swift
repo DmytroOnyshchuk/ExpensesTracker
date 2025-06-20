@@ -1,8 +1,9 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  SwiftTemplate
 //
-//  Created by Dmytro Onyshchuk on 12.06.2025.
+//  Created by Dmytro Onyshchuk on 20.06.2025.
+//  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
 //
 
 import UIKit
@@ -32,7 +33,8 @@ final class MainViewController: BaseViewController, InitiableViewControllerProto
     // MARK: - Override
     override var basePresenter: BasePresenterProtocol? { presenter }
     override var isNavigationBarVisible: Bool { true }
-    override var navigationBarTitle: String { "Countries" }
+    override var isAppNavigationBarVisible: Bool { false }
+    override var navigationBarTitle: String { "MAINVC_TITLE".localized }
     
     override func configureUI() {
         setupUI()
@@ -108,10 +110,10 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let selectedCountry = countries[indexPath.row]
+        let selectedItem = countries[indexPath.row]
         
         if let сountryDetailsViewController = CountryDetailsViewController.newInstance?.config({
-            $0.country = selectedCountry
+            $0.country = selectedItem
         }) {
             coordinator.pushViewControllerSafe(сountryDetailsViewController, animated: true)
         }

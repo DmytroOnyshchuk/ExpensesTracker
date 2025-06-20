@@ -1,9 +1,9 @@
 //
 //  AppTabBarController.swift
-//  HealthTracker
+//  SwiftTemplate
 //
-//  Created by Denis Kuznetsov on 27.11.2020.
-//  Copyright © 2020 PeaksCircle. All rights reserved.
+//  Created by Dmytro Onyshchuk on 20.06.2025.
+//  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
 //
 
 import UIKit

@@ -6,7 +6,6 @@
 //  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
 //
 
-
 import UIKit
 import PureLayout
 
@@ -27,6 +26,12 @@ final class UsersViewController: BaseViewController, InitiableViewControllerProt
         return table
     }()
     
+    private lazy var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refreshTriggered), for: .valueChanged)
+        return refreshControl
+    }()
+    
     // MARK: - Variables
     private lazy var presenter = UsersPresenter(controller: self)
     private var users: [User] = []
@@ -34,7 +39,8 @@ final class UsersViewController: BaseViewController, InitiableViewControllerProt
     // MARK: - Override
     override var basePresenter: BasePresenterProtocol? { presenter }
     override var isNavigationBarVisible: Bool { true }
-    override var navigationBarTitle: String { "Users" }
+    override var isAppNavigationBarVisible: Bool { false }
+    override var navigationBarTitle: String { "USERSVC_TITLE".localized }
     
     override func configureUI() {
         setupUI()
@@ -70,6 +76,7 @@ private extension UsersViewController {
         tableView.config{
             $0.delegate = self
             $0.dataSource = self
+            $0.addSubview(refreshControl)
             $0.register(UserTableViewCell.self)
         }
     }
@@ -83,8 +90,18 @@ private extension UsersViewController {
 extension UsersViewController {
     
     func setupData(users: [User]) {
+        refreshControl.endRefreshing()
         self.users = users
         tableView.reloadData()
+    }
+    
+}
+
+// MARK: - Actions
+private extension UsersViewController {
+    
+    @objc private func refreshTriggered() {
+        presenter.loadData()
     }
     
 }
@@ -110,8 +127,13 @@ extension UsersViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let selectedCountry = users[indexPath.row]
+        let selectedItem = users[indexPath.row]
         
+        if let userDetailsViewController = UserDetailsViewController.newInstance?.config({
+            $0.user = selectedItem
+        }) {
+            coordinator.pushViewControllerSafe(userDetailsViewController, animated: true)
+        }
 
     }
     

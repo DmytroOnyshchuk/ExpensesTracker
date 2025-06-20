@@ -1,10 +1,11 @@
 //
 //  Instances.swift
-//  HealthTracker
+//  SwiftTemplate
 //
-//  Created by Denis Kuznetsov on 26.10.2021.
-//  Copyright © 2021 PeaksCircle. All rights reserved.
+//  Created by Dmytro Onyshchuk on 20.06.2025.
+//  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
 //
+
 
 import Foundation
 import RealmSwift

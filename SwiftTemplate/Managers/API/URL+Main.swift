@@ -10,6 +10,6 @@ import Foundation
 
 struct APIConfiguration {
     static var baseServer: String = "https://jsonplaceholder.typicode.com"
-    static var apiPort: String = "8080"
+    static var apiPort: String = "443"
     static var contentPort: String = "4000"
 }

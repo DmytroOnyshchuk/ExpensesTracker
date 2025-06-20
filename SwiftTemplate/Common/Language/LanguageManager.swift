@@ -1,10 +1,11 @@
 //
-//  Locale.swift
-//  Orovera
+//  LanguageManager.swift
+//  SwiftTemplate
 //
-//  Created by Dmytro Onyshchuk on 19.12.2023.
-//  Copyright © 2023 PeaksCircle. All rights reserved.
+//  Created by Dmytro Onyshchuk on 20.06.2025.
+//  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
 //
+
 
 import Foundation
 

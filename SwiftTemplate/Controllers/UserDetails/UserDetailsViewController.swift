@@ -17,6 +17,15 @@ final class UserDetailsViewController: BaseViewController, InitiableViewControll
     var user: User!
     
     // MARK: - UI Components
+    private var mainStackView: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .horizontal
+        stack.spacing = 12
+        stack.alignment = .top
+        stack.distribution = .fill
+        return stack
+    }()
+    
     private var stackView: UIStackView = {
         let stack = UIStackView()
         stack.axis = .vertical
@@ -34,8 +43,9 @@ final class UserDetailsViewController: BaseViewController, InitiableViewControll
     
     override func configureUI() {
         view.backgroundColor = .systemBackground
-        view.addSubview(stackView)
-        stackView.autoPinEdgesToSuperviewSafeArea(with: .init(top: 16, left: 16, bottom: 16, right: 16))
+        view.addSubview(mainStackView)
+        mainStackView.autoPinEdgesToSuperviewSafeArea(with: .init(top: 16, left: 16, bottom: 16, right: 16))
+        mainStackView.addArrangedSubview(stackView)
         configureDetails()
     }
     
@@ -45,12 +55,12 @@ private extension UserDetailsViewController {
     
     private func configureDetails() {
         let details: [String] = [
-            "Username: \(user.username)",
-            "Email: \(user.email)",
-            "Phone: \(user.phone)",
-            "Website: \(user.website)",
-            "Company: \(user.company.name)",
-            "Address: \(user.address.street), \(user.address.city)"
+            String(format: "USERDETAILSVC_USERNAME".localized, user.username),
+            String(format: "USERDETAILSVC_EMAIL".localized, user.email),
+            String(format: "USERDETAILSVC_PHONE".localized, user.phone),
+            String(format: "USERDETAILSVC_WEBSITE".localized, user.website),
+            String(format: "USERDETAILSVC_COMPANY".localized, user.company.name),
+            String(format: "USERDETAILSVC_ADDRESS".localized, user.address.street, user.address.city),
         ]
         
         details.forEach { text in

@@ -68,8 +68,8 @@ final class CountryDetailsViewController: BaseViewController, InitiableViewContr
     
     private func setupLabels() {
         flagLabel.text = country.flag
-        nameLabel.text = "Country: \(country.name)"
-        capitalLabel.text = "Capital: \(country.capital)"
-        populationLabel.text = "Population: \(country.population)"
+        nameLabel.text = String(format: "COUNTRYDETAILSVC_COUNTRY".localized, country.name)
+        capitalLabel.text = String(format: "COUNTRYDETAILSVC_CAPITAL".localized, country.capital)
+        populationLabel.text = String(format: "COUNTRYDETAILSVC_POPULATION".localized, country.population)
     }
 }

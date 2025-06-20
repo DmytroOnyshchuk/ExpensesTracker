@@ -1,10 +1,11 @@
 //
 //  Debouncer.swift
-//  Orovera
+//  SwiftTemplate
 //
-//  Created by Dmytro Onyshchuk on 08.11.2023.
-//  Copyright © 2023 PeaksCircle. All rights reserved.
+//  Created by Dmytro Onyshchuk on 20.06.2025.
+//  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
 //
+
 
 import Foundation
 
