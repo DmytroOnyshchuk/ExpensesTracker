@@ -43,9 +43,9 @@ private extension UserTableViewCell {
         backgroundColor = .systemBackground
         
         nameLabel.font = .boldSystemFont(ofSize: 16)
-        emailLabel.font = .systemFont(ofSize: 14)
+        emailLabel.font = .appRegularFont(ofSize: 14)
         emailLabel.textColor = .secondaryLabel
-        companyLabel.font = .systemFont(ofSize: 13)
+        companyLabel.font = .appRegularFont(ofSize: 13)
         companyLabel.textColor = .tertiaryLabel
         
         stackView.axis = .vertical

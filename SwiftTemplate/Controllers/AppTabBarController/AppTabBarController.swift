@@ -24,7 +24,7 @@ private extension AppTabBarController {
     private func setupTabBarItems() {
         var viewControllers: [UIViewController] = []
         
-        if let mainViewController = MainViewController.newInstance?.embeddedInBaseNavigationController {
+        if let mainViewController = CountriesViewController.newInstance?.embeddedInBaseNavigationController {
             mainViewController.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
             viewControllers.append(mainViewController)
         }
@@ -34,7 +34,7 @@ private extension AppTabBarController {
         }
         
         self.viewControllers = viewControllers
-        if let index = self.viewControllers?.firstIndex(where: { ($0 as? UINavigationController)?.viewControllers.first is MainViewController }) {
+        if let index = self.viewControllers?.firstIndex(where: { ($0 as? UINavigationController)?.viewControllers.first is CountriesViewController }) {
             self.selectedIndex = index
         }
     }
@@ -62,7 +62,7 @@ extension AppTabBarController: UITabBarControllerDelegate {
    
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         switch viewController.topMostViewController {
-            case is MainViewController:
+            case is CountriesViewController:
                 NotificationCenter.default.post(name: .mainScrollToTop, object: nil)
             case is UsersViewController:
                 NotificationCenter.default.post(name: .usersScrollToTop, object: nil)

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		661FD7362E05C958006637CC /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661FD7342E05C958006637CC /* StartViewController.swift */; };
+		661FD7372E05C958006637CC /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 661FD7352E05C958006637CC /* StartViewController.xib */; };
+		661FD7392E05CBE7006637CC /* StartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661FD7382E05CBE1006637CC /* StartPresenter.swift */; };
 		6627D7BE2E00337100EC8FE8 /* PureLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 6627D7BD2E00337100EC8FE8 /* PureLayout */; };
 		6627D7C42E0036E600EC8FE8 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6627D7C12E0036E600EC8FE8 /* AppNavigationController.swift */; };
 		662857A32E0544FC0048CD91 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 662857A22E0544FC0048CD91 /* RealmSwift */; };
@@ -110,6 +113,13 @@
 		668E99942DFAFB5800EB9CD8 /* API+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668E99422DFAFB5800EB9CD8 /* API+URL.swift */; };
 		668E999A2DFAFBD400EB9CD8 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668E99992DFAFBD400EB9CD8 /* DependencyManager.swift */; };
 		668E999C2DFAFBE000EB9CD8 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668E999B2DFAFBE000EB9CD8 /* UserManager.swift */; };
+		66EA22662E0689CF0062C03F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA22652E0689CF0062C03F /* LoginViewController.swift */; };
+		66EA22682E068B010062C03F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA22672E068B010062C03F /* LoginViewModel.swift */; };
+		66EA226C2E06980B0062C03F /* TransitionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA226A2E06980B0062C03F /* TransitionButton.swift */; };
+		66EA226D2E06980B0062C03F /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA22692E06980B0062C03F /* FadeTransition.swift */; };
+		66EA226F2E0699CE0062C03F /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA226E2E0699C90062C03F /* Credentials.swift */; };
+		66EA22722E06A2BB0062C03F /* e-Ukraine-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 66EA22712E06A2BB0062C03F /* e-Ukraine-Medium.otf */; };
+		66EA22732E06A2BB0062C03F /* e-Ukraine-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 66EA22702E06A2BB0062C03F /* e-Ukraine-Light.otf */; };
 		66F1A6792E05B07F001E0E89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F1A6782E05B07F001E0E89 /* AppDelegate.swift */; };
 		66F1A67B2E05B097001E0E89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F1A67A2E05B097001E0E89 /* SceneDelegate.swift */; };
 		66F1A67D2E05B0C3001E0E89 /* GrowingTextView+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F1A67C2E05B0C3001E0E89 /* GrowingTextView+Localized.swift */; };
@@ -134,8 +144,8 @@
 		66F1A6A52E05B1FB001E0E89 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F1A6A42E05B1FB001E0E89 /* BasePresenter.swift */; };
 		66F1A6A72E05B20A001E0E89 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F1A6A62E05B20A001E0E89 /* AppTabBarController.swift */; };
 		66F1A6A92E05B21D001E0E89 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F1A6A82E05B21D001E0E89 /* CountryTableViewCell.swift */; };
-		66F1A6AB2E05B228001E0E89 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F1A6AA2E05B228001E0E89 /* MainViewController.swift */; };
-		66F1A6AD2E05B239001E0E89 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F1A6AC2E05B239001E0E89 /* MainPresenter.swift */; };
+		66F1A6AB2E05B228001E0E89 /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F1A6AA2E05B228001E0E89 /* CountriesViewController.swift */; };
+		66F1A6AD2E05B239001E0E89 /* CountriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F1A6AC2E05B239001E0E89 /* CountriesPresenter.swift */; };
 		66F1A6AF2E05B24B001E0E89 /* CountryDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F1A6AE2E05B24B001E0E89 /* CountryDetailsPresenter.swift */; };
 		66F1A6B42E05B632001E0E89 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66F1A6B22E05B632001E0E89 /* Localizable.strings */; };
 /* End PBXBuildFile section */
@@ -154,6 +164,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		661FD7342E05C958006637CC /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		661FD7352E05C958006637CC /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
+		661FD7382E05CBE1006637CC /* StartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPresenter.swift; sourceTree = "<group>"; };
 		6627D7C12E0036E600EC8FE8 /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
 		663AA4532E054F5100C37348 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		663AA45B2E0556DA00C37348 /* CountryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewController.swift; sourceTree = "<group>"; };
@@ -248,6 +261,13 @@
 		668E99992DFAFBD400EB9CD8 /* DependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
 		668E999B2DFAFBE000EB9CD8 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		66A8DCDE2E045C2200AC58CA /* SwiftTemplateProd.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftTemplateProd.entitlements; sourceTree = "<group>"; };
+		66EA22652E0689CF0062C03F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		66EA22672E068B010062C03F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		66EA22692E06980B0062C03F /* FadeTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		66EA226A2E06980B0062C03F /* TransitionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionButton.swift; sourceTree = "<group>"; };
+		66EA226E2E0699C90062C03F /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		66EA22702E06A2BB0062C03F /* e-Ukraine-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "e-Ukraine-Light.otf"; sourceTree = "<group>"; };
+		66EA22712E06A2BB0062C03F /* e-Ukraine-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "e-Ukraine-Medium.otf"; sourceTree = "<group>"; };
 		66F1A6782E05B07F001E0E89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66F1A67A2E05B097001E0E89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		66F1A67C2E05B0C3001E0E89 /* GrowingTextView+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GrowingTextView+Localized.swift"; sourceTree = "<group>"; };
@@ -272,8 +292,8 @@
 		66F1A6A42E05B1FB001E0E89 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		66F1A6A62E05B20A001E0E89 /* AppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
 		66F1A6A82E05B21D001E0E89 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
-		66F1A6AA2E05B228001E0E89 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		66F1A6AC2E05B239001E0E89 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		66F1A6AA2E05B228001E0E89 /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
+		66F1A6AC2E05B239001E0E89 /* CountriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesPresenter.swift; sourceTree = "<group>"; };
 		66F1A6AE2E05B24B001E0E89 /* CountryDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsPresenter.swift; sourceTree = "<group>"; };
 		66F1A6B02E05B607001E0E89 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		66F1A6B32E05B632001E0E89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -304,6 +324,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		661FD7332E05C93C006637CC /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				661FD7352E05C958006637CC /* StartViewController.xib */,
+				661FD7342E05C958006637CC /* StartViewController.swift */,
+				661FD7382E05CBE1006637CC /* StartPresenter.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
 		6627D7BF2E0036CA00EC8FE8 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,32 +360,32 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		663AA45A2E0556C800C37348 /* CountryDetails */ = {
+		663AA45A2E0556C800C37348 /* CountryDetailsMVP */ = {
 			isa = PBXGroup;
 			children = (
 				663AA45B2E0556DA00C37348 /* CountryDetailsViewController.swift */,
 				66F1A6AE2E05B24B001E0E89 /* CountryDetailsPresenter.swift */,
 			);
-			path = CountryDetails;
+			path = CountryDetailsMVP;
 			sourceTree = "<group>";
 		};
-		6649A8412E0570610035BEDD /* Users */ = {
+		6649A8412E0570610035BEDD /* UsersMVP */ = {
 			isa = PBXGroup;
 			children = (
 				6649A84F2E0576670035BEDD /* Cell */,
 				6649A8422E0570760035BEDD /* UsersViewController.swift */,
 				6649A8442E0570AA0035BEDD /* UsersPresenter.swift */,
 			);
-			path = Users;
+			path = UsersMVP;
 			sourceTree = "<group>";
 		};
-		6649A84A2E05752A0035BEDD /* UserDetails */ = {
+		6649A84A2E05752A0035BEDD /* UserDetailsMVP */ = {
 			isa = PBXGroup;
 			children = (
 				6649A84B2E0575320035BEDD /* UserDetailsViewController.swift */,
 				6649A84D2E0575700035BEDD /* UserDetailsPresenter.swift */,
 			);
-			path = UserDetails;
+			path = UserDetailsMVP;
 			sourceTree = "<group>";
 		};
 		6649A84F2E0576670035BEDD /* Cell */ = {
@@ -378,6 +408,7 @@
 		66700F582DFC356E0073A9EF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				66EA226B2E06980B0062C03F /* TransitionButton */,
 				66700F5D2DFC35A10073A9EF /* LoadableViewProtocol.swift */,
 				66700F5F2DFC35A50073A9EF /* NibView.swift */,
 				66700F5B2DFC359A0073A9EF /* GrowingTextView.swift */,
@@ -393,22 +424,24 @@
 				663AA4592E05553D00C37348 /* Coordinator */,
 				6627D7BF2E0036CA00EC8FE8 /* Base */,
 				6627D7C02E0036DB00EC8FE8 /* AppTabBarController */,
-				66700F682DFC35E20073A9EF /* Main */,
-				663AA45A2E0556C800C37348 /* CountryDetails */,
-				6649A8412E0570610035BEDD /* Users */,
-				6649A84A2E05752A0035BEDD /* UserDetails */,
+				661FD7332E05C93C006637CC /* Start */,
+				66700F682DFC35E20073A9EF /* CountriesMVP */,
+				663AA45A2E0556C800C37348 /* CountryDetailsMVP */,
+				6649A8412E0570610035BEDD /* UsersMVP */,
+				6649A84A2E05752A0035BEDD /* UserDetailsMVP */,
+				66EA22642E0689A10062C03F /* LoginMVVM */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		66700F682DFC35E20073A9EF /* Main */ = {
+		66700F682DFC35E20073A9EF /* CountriesMVP */ = {
 			isa = PBXGroup;
 			children = (
 				667010332DFC40490073A9EF /* Cell */,
-				66F1A6AA2E05B228001E0E89 /* MainViewController.swift */,
-				66F1A6AC2E05B239001E0E89 /* MainPresenter.swift */,
+				66F1A6AA2E05B228001E0E89 /* CountriesViewController.swift */,
+				66F1A6AC2E05B239001E0E89 /* CountriesPresenter.swift */,
 			);
-			path = Main;
+			path = CountriesMVP;
 			sourceTree = "<group>";
 		};
 		66700F692DFC36550073A9EF /* Extensions */ = {
@@ -555,6 +588,8 @@
 		668E98C42DFAF91F00EB9CD8 /* e-Ukraine */ = {
 			isa = PBXGroup;
 			children = (
+				66EA22702E06A2BB0062C03F /* e-Ukraine-Light.otf */,
+				66EA22712E06A2BB0062C03F /* e-Ukraine-Medium.otf */,
 				668E98C52DFAF92500EB9CD8 /* e-Ukraine-Regular.otf */,
 			);
 			path = "e-Ukraine";
@@ -658,6 +693,7 @@
 				668E99A02DFAFC4F00EB9CD8 /* Enums */,
 				66700F532DFC32850073A9EF /* Protocols */,
 				663AA45F2E0559F700C37348 /* Country.swift */,
+				66EA226E2E0699C90062C03F /* Credentials.swift */,
 				66F1A69E2E05B1C2001E0E89 /* Instances.swift */,
 				66F1A6A02E05B1CA001E0E89 /* ServerError.swift */,
 				6649A8482E05744F0035BEDD /* User.swift */,
@@ -671,6 +707,24 @@
 				66F1A6962E05B191001E0E89 /* AppEnvironment.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		66EA22642E0689A10062C03F /* LoginMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				66EA22652E0689CF0062C03F /* LoginViewController.swift */,
+				66EA22672E068B010062C03F /* LoginViewModel.swift */,
+			);
+			path = LoginMVVM;
+			sourceTree = "<group>";
+		};
+		66EA226B2E06980B0062C03F /* TransitionButton */ = {
+			isa = PBXGroup;
+			children = (
+				66EA22692E06980B0062C03F /* FadeTransition.swift */,
+				66EA226A2E06980B0062C03F /* TransitionButton.swift */,
+			);
+			path = TransitionButton;
 			sourceTree = "<group>";
 		};
 		66F1A6B12E05B61A001E0E89 /* Localization */ = {
@@ -771,11 +825,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66EA22722E06A2BB0062C03F /* e-Ukraine-Medium.otf in Resources */,
+				66EA22732E06A2BB0062C03F /* e-Ukraine-Light.otf in Resources */,
 				66F1A6B42E05B632001E0E89 /* Localizable.strings in Resources */,
 				667010392DFC40B90073A9EF /* Colors.xcassets in Resources */,
 				668E98C62DFAF92500EB9CD8 /* e-Ukraine-Regular.otf in Resources */,
 				668E98B92DFAF78100EB9CD8 /* Assets.xcassets in Resources */,
 				668E98BC2DFAF78100EB9CD8 /* LaunchScreen.storyboard in Resources */,
+				661FD7372E05C958006637CC /* StartViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -840,6 +897,7 @@
 				66700FA82DFC36670073A9EF /* CGColor.swift in Sources */,
 				66700FA92DFC36670073A9EF /* UITabBar.swift in Sources */,
 				66F1A6992E05B19B001E0E89 /* ConfigurableProtocol.swift in Sources */,
+				661FD7392E05CBE7006637CC /* StartPresenter.swift in Sources */,
 				66F1A68B2E05B14B001E0E89 /* LanguageManager.swift in Sources */,
 				66F1A68D2E05B15F001E0E89 /* AlamofireLogger.swift in Sources */,
 				66F1A69B2E05B1A2001E0E89 /* InitiableViewControllerProtocol.swift in Sources */,
@@ -856,6 +914,7 @@
 				66700FB32DFC36670073A9EF /* UIPanGestureRecognizer.swift in Sources */,
 				66F1A6932E05B17A001E0E89 /* Logger.swift in Sources */,
 				66700FB42DFC36670073A9EF /* UITableView.swift in Sources */,
+				661FD7362E05C958006637CC /* StartViewController.swift in Sources */,
 				66F1A6892E05B140001E0E89 /* Language.swift in Sources */,
 				66700FB52DFC36670073A9EF /* Bundle.swift in Sources */,
 				66700FB62DFC36670073A9EF /* CGFloat.swift in Sources */,
@@ -904,6 +963,9 @@
 				66700FCB2DFC36670073A9EF /* UIApplication.swift in Sources */,
 				66700FCC2DFC36670073A9EF /* CaseIterable.swift in Sources */,
 				66700FCD2DFC36670073A9EF /* UILabel.swift in Sources */,
+				66EA22662E0689CF0062C03F /* LoginViewController.swift in Sources */,
+				66EA226C2E06980B0062C03F /* TransitionButton.swift in Sources */,
+				66EA226D2E06980B0062C03F /* FadeTransition.swift in Sources */,
 				66700FD02DFC36670073A9EF /* UIImage.swift in Sources */,
 				6688BAF32DFDC52C00C7550E /* NotificationManager.swift in Sources */,
 				66700FD12DFC36670073A9EF /* UIScrollView.swift in Sources */,
@@ -911,7 +973,7 @@
 				66700FD62DFC36670073A9EF /* UITextField.swift in Sources */,
 				66F1A6792E05B07F001E0E89 /* AppDelegate.swift in Sources */,
 				6649A84C2E0575320035BEDD /* UserDetailsViewController.swift in Sources */,
-				66F1A6AB2E05B228001E0E89 /* MainViewController.swift in Sources */,
+				66F1A6AB2E05B228001E0E89 /* CountriesViewController.swift in Sources */,
 				668E98E02DFAFA3B00EB9CD8 /* UserDefaults.swift in Sources */,
 				66F1A6852E05B112001E0E89 /* UITextField+Localized.swift in Sources */,
 				66700F602DFC35A50073A9EF /* NibView.swift in Sources */,
@@ -928,13 +990,15 @@
 				66F1A6AF2E05B24B001E0E89 /* CountryDetailsPresenter.swift in Sources */,
 				66700F5E2DFC35A10073A9EF /* LoadableViewProtocol.swift in Sources */,
 				663AA4602E0559FA00C37348 /* Country.swift in Sources */,
+				66EA226F2E0699CE0062C03F /* Credentials.swift in Sources */,
 				66700F5A2DFC35960073A9EF /* DesignableView.swift in Sources */,
 				668E99482DFAFB5800EB9CD8 /* ServerResponse.swift in Sources */,
 				668E99512DFAFB5800EB9CD8 /* ApiError.swift in Sources */,
 				668E99572DFAFB5800EB9CD8 /* ResponseStatus.swift in Sources */,
+				66EA22682E068B010062C03F /* LoginViewModel.swift in Sources */,
 				668E99622DFAFB5800EB9CD8 /* API.swift in Sources */,
 				668E99692DFAFB5800EB9CD8 /* EmptyResponse.swift in Sources */,
-				66F1A6AD2E05B239001E0E89 /* MainPresenter.swift in Sources */,
+				66F1A6AD2E05B239001E0E89 /* CountriesPresenter.swift in Sources */,
 				668E999A2DFAFBD400EB9CD8 /* DependencyManager.swift in Sources */,
 				6649A8492E0574530035BEDD /* User.swift in Sources */,
 				668E996C2DFAFB5800EB9CD8 /* P_EndPoint.swift in Sources */,

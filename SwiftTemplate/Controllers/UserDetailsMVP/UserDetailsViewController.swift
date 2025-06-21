@@ -1,5 +1,5 @@
 //
-//  UserDetailViewController.swift
+//  UserDetailsViewController.swift
 //  SwiftTemplate
 //
 //  Created by Dmytro Onyshchuk on 20.06.2025.
@@ -51,6 +51,11 @@ final class UserDetailsViewController: BaseViewController, InitiableViewControll
     
 }
 
+// MARK: - Public Methods
+extension UserDetailsViewController {
+    
+}
+
 private extension UserDetailsViewController {
     
     private func configureDetails() {
@@ -67,9 +72,14 @@ private extension UserDetailsViewController {
             let label = UILabel()
             label.text = text
             label.numberOfLines = 0
-            label.font = .systemFont(ofSize: 16)
+            label.font = .appRegularFont(ofSize: 16)
             stackView.addArrangedSubview(label)
         }
     }
+    
+}
+
+// MARK: - Actions
+private extension UserDetailsViewController {
     
 }

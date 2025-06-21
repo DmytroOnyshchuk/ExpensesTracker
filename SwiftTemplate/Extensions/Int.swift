@@ -36,4 +36,8 @@ extension Int {
         return -Int.random(in: 1...9999999)
     }
     
+    static var random: Int {
+        return Int.random(in: 1...9999999)
+    }
+    
 }

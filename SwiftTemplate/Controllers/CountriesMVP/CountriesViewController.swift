@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  CountriesViewController.swift
 //  SwiftTemplate
 //
 //  Created by Dmytro Onyshchuk on 20.06.2025.
@@ -9,7 +9,7 @@
 import UIKit
 import PureLayout
 
-final class MainViewController: BaseViewController, InitiableViewControllerProtocol {
+final class CountriesViewController: BaseViewController, InitiableViewControllerProtocol {
     
     static var initiableResource: InitiableResource { .manual }
     
@@ -27,14 +27,14 @@ final class MainViewController: BaseViewController, InitiableViewControllerProto
     }()
     
     // MARK: - Variables
-    private lazy var presenter = MainPresenter(controller: self)
+    private lazy var presenter = CountriesPresenter(controller: self)
     private var countries: [Country] = []
     
     // MARK: - Override
     override var basePresenter: BasePresenterProtocol? { presenter }
     override var isNavigationBarVisible: Bool { true }
     override var isAppNavigationBarVisible: Bool { false }
-    override var navigationBarTitle: String { "MAINVC_TITLE".localized }
+    override var navigationBarTitle: String { "COUNTRIESVC_TITLE".localized }
     
     override func configureUI() {
         setupUI()
@@ -52,14 +52,25 @@ final class MainViewController: BaseViewController, InitiableViewControllerProto
     
 }
 
+// MARK: - Public Methods
+extension CountriesViewController {
+    
+    func setupData(countries: [Country]) {
+        self.countries = countries
+        tableView.reloadData()
+    }
+    
+}
+
 // MARK: - UI Setup
-private extension MainViewController {
+private extension CountriesViewController {
     
     private func setupUI() {
         view.backgroundColor = .systemBackground
         view.addSubview(tableView)
         setupConstraints()
         setupTableView()
+        setupNavigationBar()
     }
     
     private func setupConstraints() {
@@ -73,24 +84,35 @@ private extension MainViewController {
             $0.register(CountryTableViewCell.self)
         }
     }
-}
-
-private extension MainViewController {
+    
+    private func setupNavigationBar() {
+        let logoutImage = UIImage(systemName: "rectangle.portrait.and.arrow.right") // SF Symbols icon
+        let logoutButton = UIBarButtonItem( image: logoutImage, style: .plain, target: self, action: #selector(logoutButtonTapped))
+        navigationItem.rightBarButtonItem = logoutButton
+    }
     
 }
 
-// MARK: - Public Methods
-extension MainViewController {
+private extension CountriesViewController {
     
-    func setupData(countries: [Country]) {
-        self.countries = countries
-        tableView.reloadData()
+}
+
+// MARK: - Actions
+private extension CountriesViewController {
+    
+    @objc private func logoutButtonTapped() {
+        show(title: "COUNTRIESVC_LOGOUT".localized, message: "COUNTRIESVC_LOGOUT_DESCRIPTION".localized) {
+            $0.yesAction { [weak self] in
+                self?.presenter.logout()
+            }
+            $0.noAction()
+        }
     }
     
 }
 
 // MARK: - UITableView DataSource & Delegate
-extension MainViewController: UITableViewDataSource, UITableViewDelegate {
+extension CountriesViewController: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1

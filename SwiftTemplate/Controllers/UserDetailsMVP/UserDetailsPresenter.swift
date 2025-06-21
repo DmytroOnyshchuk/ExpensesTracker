@@ -1,5 +1,5 @@
 //
-//  CountryDetailsPresenter.swift
+//  UserDetailsPresenter.swift
 //  SwiftTemplate
 //
 //  Created by Dmytro Onyshchuk on 20.06.2025.

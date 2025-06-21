@@ -18,6 +18,7 @@ protocol BasePresenterProtocol {
 
 class BasePresenter<T: BaseViewController, P>: NSObject {
 	
+    @Inject var coordinator: AppCoordinator
 	private(set) weak var vc: T?
 	var p: P?
 	var navigationController: UINavigationController? { return vc?.navigationController }

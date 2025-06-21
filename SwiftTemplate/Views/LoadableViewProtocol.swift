@@ -17,7 +17,7 @@ protocol LoadableViewProtocol where Self: UIView {
 
 extension LoadableViewProtocol {
 	
-	func startLoadingIndicator(_ align: Align = .center, indicatorColor: UIColor = .appDarkGreen, style: UIActivityIndicatorView.Style = .medium) {
+	func startLoadingIndicator(_ align: Align = .center, indicatorColor: UIColor = .appBlack, style: UIActivityIndicatorView.Style = .medium) {
 		
 		var newIndicator: UIActivityIndicatorView {
 			let indicator = UIActivityIndicatorView()

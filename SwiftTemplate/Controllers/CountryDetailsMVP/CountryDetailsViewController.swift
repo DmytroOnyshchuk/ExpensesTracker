@@ -19,7 +19,7 @@ final class CountryDetailsViewController: BaseViewController, InitiableViewContr
     // MARK: - UI Components
     private var flagLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 60)
+        label.font = .appRegularFont(ofSize: 60)
         return label
     }()
     
@@ -31,13 +31,13 @@ final class CountryDetailsViewController: BaseViewController, InitiableViewContr
     
     private var capitalLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 18)
+        label.font = .appRegularFont(ofSize: 18)
         return label
     }()
     
     private var populationLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 18)
+        label.font = .appRegularFont(ofSize: 18)
         return label
     }()
     
@@ -66,10 +66,28 @@ final class CountryDetailsViewController: BaseViewController, InitiableViewContr
         setupLabels()
     }
     
+}
+
+// MARK: - Public Methods
+extension CountryDetailsViewController {
+    
+    func setupData(countries: [Country]) {
+    }
+    
+}
+
+private extension CountryDetailsViewController {
+    
     private func setupLabels() {
         flagLabel.text = country.flag
         nameLabel.text = String(format: "COUNTRYDETAILSVC_COUNTRY".localized, country.name)
         capitalLabel.text = String(format: "COUNTRYDETAILSVC_CAPITAL".localized, country.capital)
         populationLabel.text = String(format: "COUNTRYDETAILSVC_POPULATION".localized, country.population)
     }
+    
+}
+
+// MARK: - Actions
+private extension CountryDetailsViewController {
+    
 }

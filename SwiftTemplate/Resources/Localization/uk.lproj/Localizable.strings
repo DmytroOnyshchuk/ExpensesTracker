@@ -51,9 +51,16 @@
 "API_VERSION_ERROR" = "Встановлена версія додатку застаріла. Будь ласка, оновіть додаток";
 "API_UNKNOWN_ERROR" = "Невідома помилка. Спробуйте пізніше";
 
-// MARK: - MainViewController
-"MAINVC_TITLE" = "Країни";
+// MARK: - StartViewController
+"STARTVC_TITLE" = "Початок";
+"STARTVC_GUEST" = "Гість";
+"STARTVC_LOGIN" = "Вхід";
 
+// MARK: - CountriesViewController
+"COUNTRIESVC_TITLE" = "Країни";
+"COUNTRIESVC_LOGOUT" = "Вийти?";
+"COUNTRIESVC_LOGOUT_DESCRIPTION" = "Ви впевнені, що хочете вийти з облікового запису?";
+    
 // MARK: - CountryDetailsViewController
 "COUNTRYDETAILSVC_COUNTRY" = "Країна: %@";
 "COUNTRYDETAILSVC_CAPITAL" = "Столиця: %@";
@@ -69,3 +76,10 @@
 "USERDETAILSVC_WEBSITE" = "Вебсайт: %@";
 "USERDETAILSVC_COMPANY" = "Компанія: %@";
 "USERDETAILSVC_ADDRESS" = "Адреса: %@, %@";
+
+// MARK: - LoginViewController
+"LOGINVC_TITLE" = "Вхід";
+"LOGINVC_EMAIL" = "Електронна пошта";
+"LOGINVC_PASSWORD" = "Пароль";
+"LOGINVC_ENTER" = "Увійти";
+"LOGINVC_WRONG_CREDENTIAL" = "Невірна електронна пошта або пароль";

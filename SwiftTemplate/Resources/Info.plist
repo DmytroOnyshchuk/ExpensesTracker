@@ -7,6 +7,8 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>e-Ukraine-Regular.otf</string>
+		<string>e-Ukraine-Medium.otf</string>
+		<string>e-Ukraine-Light.otf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

@@ -24,8 +24,7 @@ final class Country: Object, Codable {
     override init() {
     }
     
-    internal init(uuid: UUID = UUID(), name: String = String(), capital: String = String(), population: String = String(), flag: String = String()) {
-        self.uuid = uuid
+    internal init(name: String, capital: String, population: String, flag: String) {
         self.name = name
         self.capital = capital
         self.population = population

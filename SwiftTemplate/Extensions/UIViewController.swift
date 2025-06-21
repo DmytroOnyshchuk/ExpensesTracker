@@ -199,7 +199,7 @@ internal extension UIViewController {
             textView.text = withoutAttributedText
         }
         textView.isEditable = false
-        textView.font = UIFont.systemFont(ofSize: 14)
+        textView.font = UIFont.appRegularFont(ofSize: 14)
         textView.backgroundColor = .clear
         textView.isScrollEnabled = true
         

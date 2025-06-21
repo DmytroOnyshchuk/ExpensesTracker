@@ -24,8 +24,8 @@ final class AppNavigationController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationBar.isHidden = true
-        view.backgroundColor = .appBlack
+        //navigationBar.isHidden = true
+        //view.backgroundColor = .appBlack
     }
     
 }

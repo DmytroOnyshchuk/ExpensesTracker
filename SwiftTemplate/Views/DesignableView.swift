@@ -160,7 +160,11 @@ protocol DesignableTextFieldDelegate: AnyObject {
 	@IBInspectable var cornerRadius: CGFloat = 0 {
 		didSet { setNeedsLayout() }
 	}
-	
+    
+    @IBInspectable var roundCornerRadius: Bool = false {
+        didSet { setNeedsLayout() }
+    }
+    
 	@IBInspectable var shadowRadius: CGFloat = 0 {
 		didSet { setNeedsLayout() }
 	}
@@ -189,8 +193,8 @@ protocol DesignableTextFieldDelegate: AnyObject {
 		
 		layer.borderColor = borderColor.cgColor
 		layer.borderWidth = borderWidth
-		
-		layer.cornerRadius = cornerRadius
+        layer.cornerRadius = roundCornerRadius ? bounds.height / 2.0 : cornerRadius
+        
 		//		layer.masksToBounds = cornerRadius > 0
 	}
 	
@@ -234,7 +238,6 @@ protocol DesignableTextFieldDelegate: AnyObject {
 		
 		layer.borderColor = borderColor.cgColor
 		layer.borderWidth = borderWidth
-		
 		layer.cornerRadius = cornerRadius
 	}
 	
@@ -252,7 +255,6 @@ protocol DesignableTextFieldDelegate: AnyObject {
 	
 	override func layoutSubviews() {
 		super.layoutSubviews()
-		
 		layer.cornerRadius = roundCornerRadius ? bounds.height / 2.0 : cornerRadius
 	}
 	

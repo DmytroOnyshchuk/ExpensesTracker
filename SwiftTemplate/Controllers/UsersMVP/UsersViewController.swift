@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  UsersViewController.swift
 //  SwiftTemplate
 //
 //  Created by Dmytro Onyshchuk on 20.06.2025.
@@ -58,6 +58,17 @@ final class UsersViewController: BaseViewController, InitiableViewControllerProt
     
 }
 
+// MARK: - Public Methods
+extension UsersViewController {
+    
+    func setupData(users: [User]) {
+        refreshControl.endRefreshing()
+        self.users = users
+        tableView.reloadData()
+    }
+    
+}
+
 // MARK: - UI Setup
 private extension UsersViewController {
     
@@ -83,17 +94,6 @@ private extension UsersViewController {
 }
 
 private extension UsersViewController {
-    
-}
-
-// MARK: - Public Methods
-extension UsersViewController {
-    
-    func setupData(users: [User]) {
-        refreshControl.endRefreshing()
-        self.users = users
-        tableView.reloadData()
-    }
     
 }
 

@@ -23,11 +23,14 @@ protocol Coordinator {
     func pushViewControllerSafe(_ viewController: UIViewController, animated: Bool, completion: @escaping () -> Void)
     func popToViewController(_ viewController: UIViewController, animated: Bool, completion: @escaping () -> Void)
     
-    func start()
-    
+    @MainActor func start()
+    @MainActor func showCountries()
+    @MainActor func showLogin()
 }
 
 final class AppCoordinator: Coordinator {
+    
+    @Inject private var userManager: UserManager
     
     var appNavigationController: AppNavigationController
     
@@ -39,14 +42,39 @@ final class AppCoordinator: Coordinator {
         self.appNavigationController = appNavigationController
     }
     
+    @MainActor
     func start() {
+        if userManager.isLoggedIn(){
+            let appTabBarController = AppTabBarController()
+            appNavigationController = appTabBarController.embeddedInAppNavigationController
+            UIApplication.load(vc: appNavigationController)
+        }else{
+            if let startViewController = StartViewController.newInstance {
+                appNavigationController = startViewController.embeddedInAppNavigationController
+                UIApplication.load(vc: appNavigationController)
+            }
+        }
+    }
+    
+    @MainActor
+    func showCountries() {
+        userManager.userId = Int.random.asString
         NotificationCenter.default.post(name: .appLogin, object: nil)
-        UIApplication.load(vc: appNavigationController)
+        start()
+    }
+    
+    @MainActor
+    func showLogin() {
+        if let loginViewController = LoginViewController.newInstance {
+            appNavigationController = loginViewController.embeddedInAppNavigationController
+            UIApplication.load(vc: appNavigationController)
+        }
     }
     
 }
 
 extension Coordinator {
+    
     func popToViewController(_ viewController: UIViewController, animated: Bool, completion: @escaping () -> Void) {
         DispatchQueue.main.async { [self] in
             appNavigationController.popToViewController(viewController, animated: animated)
@@ -76,9 +104,11 @@ extension Coordinator {
             }
         }
     }
+    
 }
 
 extension Coordinator {
+    
     @discardableResult
     func showAppTabBarController<T: UIViewController>(vc: T.Type) -> T? {
         guard let tabBarController = appTabBarController else { return nil }
@@ -125,4 +155,5 @@ extension Coordinator {
     func showAppTabBarController(tab: Int) {
         appTabBarController?.selectedIndex = tab
     }
+    
 }

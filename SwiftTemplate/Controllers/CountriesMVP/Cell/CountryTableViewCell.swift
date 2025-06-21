@@ -13,7 +13,7 @@ final class CountryTableViewCell: UITableViewCell {
     // MARK: - UI Components
     private let flagLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 32)
+        label.font = UIFont.appRegularFont(ofSize: 32)
         label.textAlignment = .center
         return label
     }()
@@ -28,7 +28,7 @@ final class CountryTableViewCell: UITableViewCell {
     
     private let capitalLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 14)
+        label.font = UIFont.appRegularFont(ofSize: 14)
         label.textColor = .secondaryLabel
         label.numberOfLines = 1
         return label
@@ -36,7 +36,7 @@ final class CountryTableViewCell: UITableViewCell {
     
     private let populationLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 12)
+        label.font = UIFont.appRegularFont(ofSize: 12)
         label.textColor = .tertiaryLabel
         label.numberOfLines = 1
         return label

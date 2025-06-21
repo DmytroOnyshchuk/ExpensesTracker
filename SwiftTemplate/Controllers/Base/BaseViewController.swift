@@ -152,46 +152,6 @@ extension BaseViewController {
 
 extension BaseViewController {
     
-    private static func loadFromNib() -> Self {
-        func instantiateFromNib<T: UIViewController>() -> T {
-            return T.init(nibName: T.name, bundle: nil)
-        }
-        
-        return instantiateFromNib()
-    }
-    
-    static func instantiate<T: BaseViewController>(parameters: Any? = nil) -> T? {
-        let viewController = loadFromNib() as? T
-        viewController?.basePresenter?.setParameters(parameters)
-        return viewController
-    }
-    
-    @discardableResult
-    static func push<T: BaseViewController>(in navVC: UINavigationController?, animated: Bool = true, parameters: Any? = nil, setup: ((T) -> Void)? = nil) -> T? {
-        guard let viewController: T = instantiate(parameters: parameters) as? T else { return nil }
-        setup?(viewController)
-        navVC?.pushViewController(viewController, animated: animated)
-        return viewController
-    }
-    
-    @discardableResult
-    static func present<T: BaseViewController>(in VC: UIViewController?, animated: Bool, style: UIModalPresentationStyle? = nil, parameters: Any? = nil, setup: ((T) -> Void)? = nil) -> T? {
-        guard let viewController: T = instantiate(parameters: parameters) as? T else { return nil }
-        setup?(viewController)
-        
-        if let style = style {
-            viewController.modalPresentationStyle = style
-        }
-        
-        VC?.present(viewController, animated: animated)
-        
-        return viewController
-    }
-    
-}
-
-extension BaseViewController {
-    
     func show(title: String?, message: String?) {
         show(title: title, message: message) {
             $0.doneAction()

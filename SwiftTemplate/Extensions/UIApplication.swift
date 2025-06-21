@@ -28,6 +28,7 @@ extension UIApplication {
 	
     static var sceneDelegate: SceneDelegate { windowScene.delegate as! SceneDelegate }
     
+    @MainActor
     static func load(vc: UIViewController, in window: UIWindow? = nil) {
         let window: UIWindow = UIWindow(windowScene: UIApplication.windowScene)
         sceneDelegate.window = window
