@@ -40,4 +40,12 @@ extension Int {
         return Int.random(in: 1...9999999)
     }
     
+    func getAmount() -> String {
+        
+        var paymentAmount: Double { (self.asDouble) / 100.0 }
+        let sumInString = paymentAmount.asCurrencyString()
+        return sumInString
+        
+    }
+    
 }

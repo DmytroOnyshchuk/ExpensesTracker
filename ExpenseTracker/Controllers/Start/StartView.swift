@@ -1,6 +1,6 @@
 //
 //  ExpenseList.swift
-//  ExpensesTracker
+//  ExpenseTracker
 //
 //  Created by Dmytro Onyshchuk on 01.07.2025.
 //  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
@@ -12,46 +12,36 @@ import SwiftData
 struct StartView: View {
     @Environment(\.modelContext) private var modelContext
     
-    @State private var input: String = String()
+    @State private var inputAmount: Int = 0
     @Query private var transactions: [Transaction]
     
     var body: some View {
         NavigationSplitView {
             ScrollView(.vertical) {
                 VStack(spacing: 16) {
-                    Text(formattedTotal())
-                        .font(.headline)
-                    
-                    DigitPadView(input: $input)
-                    
-                    CategoryGrid(input: $input) { category in
+                    DigitPadView(inputAmount: $inputAmount)
+                    CategoryGrid() { category in
                         addTransaction(with: category)
                     }
                     
-                    if !transactions.isEmpty {
-                        TransactionsList(transactions: transactions)
-                    }
+                    TransactionsList(transactions: transactions)
                 }
-                .padding()
+                .padding(.vertical, 16)
                 .frame(maxWidth: .infinity, alignment: .top)
             }
-            .background(Color.gray)
+            .background(.appMain)
         } detail: {
             Text("Введите расход")
         }
     }
     
-    private func formattedTotal() -> String {
-        return input.isEmpty ? "Введите расход" : input
-    }
-    
     private func addTransaction(with category: TransactionCategory) {
-        guard !input.isEmpty, let amount = Double(input), amount != 0.0 else { return }
+        guard inputAmount != 0 else { return }
         
-        let transaction = Transaction(amount: amount, category: category, date: Date())
+        let transaction = Transaction(amount: inputAmount, category: category, date: Date())
         
         modelContext.insert(transaction)
-        input = String()
+        inputAmount = 0
     }
 }
 

@@ -1,6 +1,6 @@
 //
 //  Application.swift
-//  ExpensesTracker
+//  ExpenseTracker
 //
 //  Created by Dmytro Onyshchuk on 01.07.2025.
 //  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
@@ -9,7 +9,7 @@
 import SwiftUI
 
 @main
-struct ExpensesTracker: App {
+struct ExpenseTracker: App {
     var body: some Scene {
         WindowGroup {
             StartView()
