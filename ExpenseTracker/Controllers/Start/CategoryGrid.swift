@@ -10,7 +10,8 @@ import SwiftUI
 import SwiftData
 
 struct CategoryGrid: View {
-    @Query var categories: [TransactionCategory]
+    @Query(filter: #Predicate<TransactionCategory> { $0.parent == nil })
+    var categories: [TransactionCategory]
     var onSelect: (TransactionCategory) -> Void
     
     @State private var currentPage: Int = 0
@@ -23,7 +24,7 @@ struct CategoryGrid: View {
     
     private var chunkedCategories: [[TransactionCategory]] {
         
-        let chunks = categories.chunked(into: 7)
+        let chunks = categories.chunked(into: 8)
         
         return chunks.enumerated().map { index, chunk in
             if index == chunks.count - 1 {
@@ -114,32 +115,5 @@ extension Array {
         return stride(from: 0, to: count, by: size).map {
             Array(self[$0..<Swift.min($0 + size, count)])
         }
-    }
-}
-
-struct CategoryCell: View {
-    let category: TransactionCategory
-    var action: () -> Void
-    
-    var body: some View {
-        Button(action: action) {
-            VStack {
-                category.categoryIcon.image
-                    .resizable()
-                    .scaledToFit()
-                    .foregroundColor(category.categoryIcon.color)
-                    .frame(width: 48, height: 56)
-                
-                Spacer(minLength: 8)
-                
-                Text(category.name)
-                    .font(.appRegular(12))
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(.white)
-                    .lineLimit(1)
-            }
-            .frame(height: 80)
-        }
-        .buttonStyle(.plain)
     }
 }

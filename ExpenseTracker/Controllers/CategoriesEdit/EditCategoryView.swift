@@ -12,8 +12,10 @@ import SwiftData
 
 struct EditCategoryView: View {
     
-    @Bindable var category: TransactionCategory = TransactionCategory(name: "Test", categoryIcon: CategoryIcon(name: "cart", iconColor: .yellow))
-    @State private var name: String = "Новая категория"
+    @Bindable var category: TransactionCategory
+    var isEdit: Bool = false
+    @State private var name: String = ""
+    @State private var showDeleteConfirmation = false
     
     // MARK: - Environment
     @Environment(\.dismiss) private var dismiss
@@ -29,6 +31,17 @@ struct EditCategoryView: View {
         "creditcard", "banknote", "briefcase", "graduationcap", "stethoscope"
     ]
     
+    // MARK: - Initializers
+    init(isEdit: Bool = false) {
+        self.isEdit = isEdit
+        self._category = Bindable(wrappedValue: TransactionCategory(name: "Новая категория", categoryIcon: CategoryIcon(name: "cart", iconColor: .yellow)))
+    }
+    
+    init(category: TransactionCategory, isEdit: Bool = true) {
+        self.isEdit = isEdit
+        self._category = Bindable(wrappedValue: category)
+    }
+    
     // MARK: - Body
     var body: some View {
         NavigationView {
@@ -38,7 +51,7 @@ struct EditCategoryView: View {
                     .padding(.vertical, 16)
             }
             .background(.appMain)
-            .navigationTitle("Новая категория")
+            .navigationTitle(isEdit ? "Редактирование" : "Новая категория")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarLeading) {
@@ -49,8 +62,12 @@ struct EditCategoryView: View {
                 }
                 
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    Button("Создать") {
-                        createCategory()
+                    Button(isEdit ? "Сохранить" : "Создать") {
+                        if isEdit {
+                            saveChanges()
+                        } else {
+                            createCategory()
+                        }
                         dismiss()
                     }
                     .foregroundColor(.white)
@@ -58,7 +75,9 @@ struct EditCategoryView: View {
                 }
             }
         }
-        .preferredColorScheme(.dark)
+        .onAppear {
+            name = category.name
+        }
     }
     
     // MARK: - Main Content
@@ -68,6 +87,11 @@ struct EditCategoryView: View {
             nameInputSection
             iconSelectionSection
             colorSelectionSection
+            
+            if isEdit {
+                Spacer(minLength: 40)
+                deleteSection
+            }
         }
     }
     
@@ -80,7 +104,7 @@ struct EditCategoryView: View {
                 .foregroundColor(category.categoryIcon.color)
                 .frame(width: 64, height: 64)
             
-            Text(name)
+            Text(name.isEmpty ? (isEdit ? "Название категории" : "Новая категория") : name)
                 .font(.appMedium(18))
                 .foregroundColor(.white)
         }
@@ -127,6 +151,28 @@ struct EditCategoryView: View {
         }
     }
     
+    private var deleteSection: some View {
+        Button {
+            showDeleteConfirmation = true
+        } label: {
+            Text("Удалить категорию")
+                .font(.appMedium(16))
+                .foregroundColor(.white)
+                .frame(maxWidth: .infinity)
+                .frame(height: 50)
+                .background(Color.red.opacity(0.8))
+                .cornerRadius(12)
+        }
+        .alert("Удалить категорию?", isPresented: $showDeleteConfirmation) {
+            Button("Отмена", role: .cancel) { }
+            Button("Удалить", role: .destructive) {
+                deleteCategory()
+            }
+        } message: {
+            Text("Это действие нельзя отменить. Все транзакции с этой категорией будут удалены.")
+        }
+    }
+    
     // MARK: - Buttons
     private func iconButton(_ icon: String) -> some View {
         Button {
@@ -168,5 +214,16 @@ struct EditCategoryView: View {
         category.name = name
         modelContext.insert(category)
         try? modelContext.save()
+    }
+    
+    private func saveChanges() {
+        category.name = name
+        try? modelContext.save()
+    }
+    
+    private func deleteCategory() {
+        modelContext.delete(category)
+        try? modelContext.save()
+        dismiss()
     }
 }

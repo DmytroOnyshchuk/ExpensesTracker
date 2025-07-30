@@ -15,14 +15,14 @@ final class TransactionCategory {
     var id: UUID
     var name: String
     var categoryIcon: CategoryIcon
-    
+    var isDirectory: Bool = false
     var parent: TransactionCategory?
-    var children: [TransactionCategory] = []
     
-    init(name: String, categoryIcon: CategoryIcon, parent: TransactionCategory? = nil) {
+    init(name: String, categoryIcon: CategoryIcon, isDirectory: Bool = false, parent: TransactionCategory? = nil) {
         self.id = UUID()
         self.name = name
         self.categoryIcon = categoryIcon
+        self.isDirectory = isDirectory
         self.parent = parent
     }
     
@@ -30,14 +30,18 @@ final class TransactionCategory {
         return parent == nil
     }
     
-    var allSubcategories: [TransactionCategory] {
+    func allSubcategories(from allCategories: [TransactionCategory]) -> [TransactionCategory] {
         var result: [TransactionCategory] = []
-        for subcategory in children {
+        let directSubcategories = allCategories.filter { $0.parent?.id == self.id }
+        
+        for subcategory in directSubcategories {
             result.append(subcategory)
-            result.append(contentsOf: subcategory.allSubcategories)
+            result.append(contentsOf: subcategory.allSubcategories(from: allCategories))
         }
+        
         return result
     }
+    
 }
 
 enum IconColor: String, Codable, CaseIterable {

@@ -18,19 +18,33 @@ final class DataSeeder: NSObject {
         let existingCategories = try? context.fetch(descriptor)
         
         if existingCategories?.isEmpty ?? true {
+            let car = TransactionCategory(name: "Авто", categoryIcon: CategoryIcon(name: "car.fill", iconColor: .pink), isDirectory: true)
+            let food = TransactionCategory(name: "Еда", categoryIcon: CategoryIcon(name: "fork.knife", iconColor: .yellow), isDirectory: true)
+            let house = TransactionCategory(name: "Дом",  categoryIcon: CategoryIcon(name: "house.fill", iconColor: .yellow), isDirectory: true)
+            context.insert(car)
+            context.insert(food)
+            context.insert(house)
+            
             let defaultCategories = [
-                TransactionCategory(name: "Обслуживание", categoryIcon: CategoryIcon(name: "car.fill", iconColor: .red)),
-                TransactionCategory(name: "Топливо", categoryIcon: CategoryIcon(name: "fuelpump.fill", iconColor: .pink)),
-                TransactionCategory(name: "Рестораны", categoryIcon: CategoryIcon(name: "wineglass.fill", iconColor: .blue)),
-                TransactionCategory(name: "Еда домой", categoryIcon: CategoryIcon(name: "fork.knife", iconColor: .yellow)),
-                TransactionCategory(name: "Быт", categoryIcon: CategoryIcon(name: "house.fill", iconColor: .orange)),
-                TransactionCategory(name: "Коммуналь", categoryIcon: CategoryIcon(name: "house.fill", iconColor: .pink)),
+                TransactionCategory(name: "Обслуживание", categoryIcon: CategoryIcon(name: "car.fill", iconColor: .red), parent: car),
+                TransactionCategory(name: "Топливо", categoryIcon: CategoryIcon(name: "fuelpump.fill", iconColor: .pink), parent: car),
+                
+                TransactionCategory(name: "Рестораны", categoryIcon: CategoryIcon(name: "wineglass.fill", iconColor: .blue), parent: food),
+                TransactionCategory(name: "Еда домой", categoryIcon: CategoryIcon(name: "fork.knife", iconColor: .yellow), parent: food),
+                
+                TransactionCategory(name: "Быт", categoryIcon: CategoryIcon(name: "house.fill", iconColor: .orange), parent: house),
+                TransactionCategory(name: "Коммунальные услуги", categoryIcon: CategoryIcon(name: "house.fill", iconColor: .pink), parent: house),
+                
                 TransactionCategory(name: "Одежда", categoryIcon: CategoryIcon(name: "tshirt.fill", iconColor: .purple)),
-                TransactionCategory(name: "Красота и здоровье", categoryIcon: CategoryIcon(name: "bag.fill", iconColor: .red)),
+                
+                TransactionCategory(name: "Красота и здоровье", categoryIcon: CategoryIcon(name: "stethoscope", iconColor: .red)),
+                
+                TransactionCategory(name: "Другое", categoryIcon: CategoryIcon(name: "star", iconColor: .blue)),
+                
+                TransactionCategory(name: "Благо", categoryIcon: CategoryIcon(name: "heart", iconColor: .red)),
+                TransactionCategory(name: "Интернет", categoryIcon: CategoryIcon(name: "gamecontroller.fill", iconColor: .green)),
+                
                 TransactionCategory(name: "Транспорт", categoryIcon: CategoryIcon(name: "bus.fill", iconColor: .green)),
-                TransactionCategory(name: "Развлечения", categoryIcon: CategoryIcon(name: "gamecontroller.fill", iconColor: .purple)),
-                TransactionCategory(name: "Здоровье", categoryIcon: CategoryIcon(name: "cross.fill", iconColor: .red)),
-                TransactionCategory(name: "Образование", categoryIcon: CategoryIcon(name: "book.fill", iconColor: .blue))
             ]
             
             for category in defaultCategories {

@@ -18,7 +18,6 @@
 		6632DE562E17EA1B00B1C68B /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6632DE552E17EA1900B1C68B /* Font.swift */; };
 		6632DE582E17EBFC00B1C68B /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6632DE572E17EBFC00B1C68B /* Transaction.swift */; };
 		6649A8472E0571C70035BEDD /* URL+Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6649A8462E0571C70035BEDD /* URL+Main.swift */; };
-		6650072B2E390A2D00F0ECC5 /* CategoryEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6650072A2E390A2D00F0ECC5 /* CategoryEditView.swift */; };
 		665493DC2E37B512005B3C42 /* CategoriesEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665493DB2E37B512005B3C42 /* CategoriesEdit.swift */; };
 		665493DF2E37B544005B3C42 /* EditCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665493DE2E37B544005B3C42 /* EditCategoryView.swift */; };
 		66687EBD2E05AEA600721C15 /* DatabaseManager+UsersDatabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66687EBC2E05AEA500721C15 /* DatabaseManager+UsersDatabaseProtocol.swift */; };
@@ -88,6 +87,8 @@
 		667071AD2E17AF31000978B0 /* CategoryGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667071A92E17AF31000978B0 /* CategoryGrid.swift */; };
 		667071AF2E17AF31000978B0 /* DigitPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667071AA2E17AF31000978B0 /* DigitPadView.swift */; };
 		667071B02E17AF31000978B0 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667071AC2E17AF31000978B0 /* StartView.swift */; };
+		6681850B2E3A1D0C0032481F /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6681850A2E3A1D0C0032481F /* CategoryCell.swift */; };
+		6681850D2E3A1D1A0032481F /* SubcategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6681850C2E3A1D1A0032481F /* SubcategoryCell.swift */; };
 		6688BAF12DFDC4EB00C7550E /* VersionTracker in Frameworks */ = {isa = PBXBuildFile; productRef = 6688BAF02DFDC4EB00C7550E /* VersionTracker */; };
 		6688BAF32DFDC52C00C7550E /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6688BAF22DFDC52C00C7550E /* NotificationManager.swift */; };
 		6688BAFA2DFDC69D00C7550E /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6688BAF92DFDC69D00C7550E /* IQKeyboardManagerSwift */; };
@@ -195,7 +196,6 @@
 		6632DE552E17EA1900B1C68B /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		6632DE572E17EBFC00B1C68B /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		6649A8462E0571C70035BEDD /* URL+Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Main.swift"; sourceTree = "<group>"; };
-		6650072A2E390A2D00F0ECC5 /* CategoryEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEditView.swift; sourceTree = "<group>"; };
 		665493DB2E37B512005B3C42 /* CategoriesEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesEdit.swift; sourceTree = "<group>"; };
 		665493DE2E37B544005B3C42 /* EditCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCategoryView.swift; sourceTree = "<group>"; };
 		66687EBC2E05AEA500721C15 /* DatabaseManager+UsersDatabaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseManager+UsersDatabaseProtocol.swift"; sourceTree = "<group>"; };
@@ -261,6 +261,8 @@
 		667071AA2E17AF31000978B0 /* DigitPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitPadView.swift; sourceTree = "<group>"; };
 		667071AC2E17AF31000978B0 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		6677F8722E09C2ED002BAB4E /* ExpenseTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6681850A2E3A1D0C0032481F /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		6681850C2E3A1D1A0032481F /* SubcategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubcategoryCell.swift; sourceTree = "<group>"; };
 		6688BAF22DFDC52C00C7550E /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		6688BAFC2DFDC6D600C7550E /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		6688BAFD2DFDC6D600C7550E /* DatabaseManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManagerProtocol.swift; sourceTree = "<group>"; };
@@ -373,7 +375,6 @@
 			isa = PBXGroup;
 			children = (
 				665493DB2E37B512005B3C42 /* CategoriesEdit.swift */,
-				6650072A2E390A2D00F0ECC5 /* CategoryEditView.swift */,
 				665493DE2E37B544005B3C42 /* EditCategoryView.swift */,
 			);
 			path = CategoriesEdit;
@@ -473,12 +474,22 @@
 		667071A82E17AF26000978B0 /* Start */ = {
 			isa = PBXGroup;
 			children = (
+				668185092E3A1CFA0032481F /* Cell */,
 				667071AC2E17AF31000978B0 /* StartView.swift */,
 				667071AA2E17AF31000978B0 /* DigitPadView.swift */,
 				667071A92E17AF31000978B0 /* CategoryGrid.swift */,
 				6632DE532E17DEB000B1C68B /* TransactionsList.swift */,
 			);
 			path = Start;
+			sourceTree = "<group>";
+		};
+		668185092E3A1CFA0032481F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6681850A2E3A1D0C0032481F /* CategoryCell.swift */,
+				6681850C2E3A1D1A0032481F /* SubcategoryCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		6688BAFB2DFDC6C500C7550E /* DatabaseManager */ = {
@@ -877,6 +888,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66700FA12DFC36670073A9EF /* LAContext.swift in Sources */,
+				6681850B2E3A1D0C0032481F /* CategoryCell.swift in Sources */,
 				66700FA22DFC36670073A9EF /* NSError.swift in Sources */,
 				66700FA42DFC36670073A9EF /* Sequence.swift in Sources */,
 				66700FA62DFC36670073A9EF /* Funcs.swift in Sources */,
@@ -969,13 +981,13 @@
 				66F1A67B2E05B097001E0E89 /* SceneDelegate.swift in Sources */,
 				668E999C2DFAFBE000EB9CD8 /* UserManager.swift in Sources */,
 				66700F5C2DFC359A0073A9EF /* GrowingTextView.swift in Sources */,
-				6650072B2E390A2D00F0ECC5 /* CategoryEditView.swift in Sources */,
 				66700F5E2DFC35A10073A9EF /* LoadableViewProtocol.swift in Sources */,
 				66700F5A2DFC35960073A9EF /* DesignableView.swift in Sources */,
 				667071AD2E17AF31000978B0 /* CategoryGrid.swift in Sources */,
 				667071AF2E17AF31000978B0 /* DigitPadView.swift in Sources */,
 				667071B02E17AF31000978B0 /* StartView.swift in Sources */,
 				665493DF2E37B544005B3C42 /* EditCategoryView.swift in Sources */,
+				6681850D2E3A1D1A0032481F /* SubcategoryCell.swift in Sources */,
 				668E99482DFAFB5800EB9CD8 /* ServerResponse.swift in Sources */,
 				668E99512DFAFB5800EB9CD8 /* ApiError.swift in Sources */,
 				668E99572DFAFB5800EB9CD8 /* ResponseStatus.swift in Sources */,

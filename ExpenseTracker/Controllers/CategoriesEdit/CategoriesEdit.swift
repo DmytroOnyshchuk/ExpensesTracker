@@ -10,11 +10,13 @@ import SwiftUI
 import SwiftData
 
 struct CategoriesEdit: View {
-    @Query var categories: [TransactionCategory]
+    @Query private var categories: [TransactionCategory]
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var modelContext
     
     @State private var showAddCategory = false
+    @State private var showEditCategory = false
+    @State private var selectedCategory: TransactionCategory?
     
     private var gridLayout: [GridItem] {
         Array(repeating: GridItem(.flexible(), spacing: 20), count: 4)
@@ -28,7 +30,7 @@ struct CategoriesEdit: View {
         }
         .background(.appMain)
         .navigationTitle("Редактирование категорий")
-        .toolbar {            
+        .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
                     showAddCategory = true
@@ -38,6 +40,11 @@ struct CategoriesEdit: View {
                 }
             }
         }
+        .sheet(isPresented: $showEditCategory) {
+            if let selected = selectedCategory {
+                EditCategoryView(category: selected, isEdit: true)
+            }
+        }
         .sheet(isPresented: $showAddCategory) {
             EditCategoryView()
         }
@@ -45,11 +52,15 @@ struct CategoriesEdit: View {
     
     private var categoryGrid: some View {
         LazyVGrid(columns: gridLayout, spacing: 16) {
-            ForEach(categories, id: \.id) { category in
-                NavigationLink(destination: EditCategoryView(category: category)) {
-                    CategoryCell(category: category) {}
+            ForEach(categories.filter { $0.isDirectory }, id: \.id) { category in
+                SubcategoryCell(category: category) {}
+            }
+            
+            ForEach(categories.filter { !$0.isDirectory }, id: \.id) { category in
+                CategoryCell(category: category) {
+                    selectedCategory = category
+                    showEditCategory = true
                 }
-                .buttonStyle(.plain)
             }
         }
     }
