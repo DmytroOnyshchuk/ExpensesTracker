@@ -31,10 +31,6 @@ extension UserManager {
         apiToken = nil
         userId = nil
 
-        @Inject var databaseManager: DatabaseManagerProtocol
-        databaseManager.deleteAll { error in
-            Logger.default.logError("Error delete all objects on logout", error: error, category: self.className)
-        }
         Logger.default.logMessage("Logout end", category: className)
     }
 
