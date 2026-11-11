@@ -47,5 +47,15 @@ struct StartView: View {
 
 #Preview {
     StartView()
-        .modelContainer(for: [Transaction.self, TransactionCategory.self], inMemory: true)
+        .modelContainer(makePreviewModelContainer())
+}
+
+@MainActor
+func makePreviewModelContainer() -> ModelContainer {
+    let container = try! ModelContainer(
+        for: Transaction.self, TransactionCategory.self,
+        configurations: ModelConfiguration(isStoredInMemoryOnly: true)
+    )
+    DataSeeder.seedDefaultCategories(container: container)
+    return container
 }

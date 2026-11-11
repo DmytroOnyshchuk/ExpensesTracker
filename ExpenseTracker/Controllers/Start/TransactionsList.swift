@@ -79,3 +79,30 @@ struct TransactionRow: View {
         }
     }
 }
+
+#Preview("Пустой список") {
+    TransactionsList(transactions: [])
+        .frame(height: 220)
+        .background(.appMain)
+        .modelContainer(makePreviewModelContainer())
+}
+
+#Preview("Список операций") {
+    let category = TransactionCategory(name: "Кафе", categoryIcon: CategoryIcon(name: "cup.and.saucer", iconColor: .orange))
+    let transaction = Transaction(amount: 1250, category: category)
+
+    TransactionsList(transactions: [transaction])
+        .frame(height: 100)
+        .background(.appMain)
+        .modelContainer(makePreviewModelContainer())
+}
+
+#Preview("Операция") {
+    let category = TransactionCategory(name: "Кафе", categoryIcon: CategoryIcon(name: "cup.and.saucer", iconColor: .orange))
+    let transaction = Transaction(amount: 1250, category: category)
+
+    TransactionRow(transaction: transaction)
+        .padding(.horizontal)
+        .background(.appMain)
+        .modelContainer(makePreviewModelContainer())
+}

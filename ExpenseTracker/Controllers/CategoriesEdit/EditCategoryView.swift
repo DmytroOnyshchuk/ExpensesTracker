@@ -406,3 +406,15 @@ struct EditCategoryView: View {
         dismiss()
     }
 }
+
+#Preview("Новая категория") {
+    EditCategoryView()
+        .modelContainer(makePreviewModelContainer())
+}
+
+#Preview("Редактирование категории") {
+    let category = TransactionCategory(name: "Продукты", categoryIcon: CategoryIcon(name: "cart", iconColor: .green))
+
+    EditCategoryView(category: category)
+        .modelContainer(makePreviewModelContainer())
+}

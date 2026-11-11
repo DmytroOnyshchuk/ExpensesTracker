@@ -218,3 +218,9 @@ struct CustomIconPickerView: View {
         }
     }
 }
+
+#Preview {
+    @Previewable @State var selectedIcon = "cart"
+
+    CustomIconPickerView(selectedIcon: $selectedIcon)
+}

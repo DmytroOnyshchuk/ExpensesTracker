@@ -62,3 +62,23 @@ struct CategoryCell: View {
         }
     }
 }
+
+#Preview("Категория") {
+    CategoryCell(
+        category: TransactionCategory(name: "Продукты", categoryIcon: CategoryIcon(name: "cart", iconColor: .green)),
+        action: {}
+    )
+    .frame(width: 80, height: 90)
+    .padding()
+    .background(.appMain)
+}
+
+#Preview("Папка категории") {
+    CategoryCell(
+        category: TransactionCategory(name: "Дом", categoryIcon: CategoryIcon(name: "house", iconColor: .yellow), isDirectory: true),
+        action: {}
+    )
+    .frame(width: 80, height: 90)
+    .padding()
+    .background(.appMain)
+}

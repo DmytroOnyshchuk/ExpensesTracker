@@ -92,3 +92,10 @@ struct CategoriesEdit: View {
         try? modelContext.save()
     }
 }
+
+#Preview {
+    NavigationStack {
+        CategoriesEdit()
+    }
+    .modelContainer(makePreviewModelContainer())
+}

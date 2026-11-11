@@ -55,3 +55,11 @@ struct DigitPadView: View {
         }
     }
 }
+
+#Preview {
+    @Previewable @State var input = AmountInput()
+
+    DigitPadView(input: $input)
+        .padding()
+        .background(.appMain)
+}
