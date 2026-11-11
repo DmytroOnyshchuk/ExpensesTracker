@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		660060CD2E1535BB00DA6D7F /* TestExpensesTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660060CC2E1535BB00DA6D7F /* TestExpensesTracker.swift */; };
+		66E51EFFBBDCCF6E7A581E1E /* CategoryRulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6623826D53CBBA15A948C5FA /* CategoryRulesTests.swift */; };
+		663AA103E8E34398C6E9D3FA /* AmountInputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668B375A5D4F19B9EF3853F3 /* AmountInputTests.swift */; };
 		660060D02E1535BB00DA6D7F /* ExpensesTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660060CF2E1535BB00DA6D7F /* ExpensesTrackerUITestsLaunchTests.swift */; };
 		660060D12E1535BB00DA6D7F /* ExpensesTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660060CE2E1535BB00DA6D7F /* ExpensesTrackerUITests.swift */; };
 		6627D7BE2E00337100EC8FE8 /* PureLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 6627D7BD2E00337100EC8FE8 /* PureLayout */; };
@@ -18,6 +20,8 @@
 		6632DE542E17DEB500B1C68B /* TransactionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6632DE532E17DEB000B1C68B /* TransactionsList.swift */; };
 		6632DE562E17EA1B00B1C68B /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6632DE552E17EA1900B1C68B /* Font.swift */; };
 		6632DE582E17EBFC00B1C68B /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6632DE572E17EBFC00B1C68B /* Transaction.swift */; };
+		66648C78DBCAC141A4772F71 /* CategoryDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6637A953B0C2777643BF8080 /* CategoryDraft.swift */; };
+		664A820633A9EE7315E0309E /* AmountInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661F1B4A0F24E964ABA6F7DF /* AmountInput.swift */; };
 		6649A8472E0571C70035BEDD /* URL+Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6649A8462E0571C70035BEDD /* URL+Main.swift */; };
 		664C1F162E462A9700AB1AF2 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 664C1F152E462A9500AB1AF2 /* swiftgen.yml */; };
 		664C1F1A2E46347300AB1AF2 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664C1F192E46347200AB1AF2 /* Strings+Generated.swift */; };
@@ -186,6 +190,8 @@
 
 /* Begin PBXFileReference section */
 		660060CC2E1535BB00DA6D7F /* TestExpensesTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExpensesTracker.swift; sourceTree = "<group>"; };
+		6623826D53CBBA15A948C5FA /* CategoryRulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRulesTests.swift; sourceTree = "<group>"; };
+		668B375A5D4F19B9EF3853F3 /* AmountInputTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountInputTests.swift; sourceTree = "<group>"; };
 		660060CE2E1535BB00DA6D7F /* ExpensesTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesTrackerUITests.swift; sourceTree = "<group>"; };
 		660060CF2E1535BB00DA6D7F /* ExpensesTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		662D9CAB2E4F6F2B0053C11B /* Assets+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assets+Generated.swift"; sourceTree = "<group>"; };
@@ -194,6 +200,8 @@
 		6632DE532E17DEB000B1C68B /* TransactionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsList.swift; sourceTree = "<group>"; };
 		6632DE552E17EA1900B1C68B /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		6632DE572E17EBFC00B1C68B /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		6637A953B0C2777643BF8080 /* CategoryDraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDraft.swift; sourceTree = "<group>"; };
+		661F1B4A0F24E964ABA6F7DF /* AmountInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountInput.swift; sourceTree = "<group>"; };
 		6649A8462E0571C70035BEDD /* URL+Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Main.swift"; sourceTree = "<group>"; };
 		664C1F142E462A5300AB1AF2 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		664C1F152E462A9500AB1AF2 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
@@ -353,6 +361,8 @@
 			isa = PBXGroup;
 			children = (
 				660060CC2E1535BB00DA6D7F /* TestExpensesTracker.swift */,
+				6623826D53CBBA15A948C5FA /* CategoryRulesTests.swift */,
+				668B375A5D4F19B9EF3853F3 /* AmountInputTests.swift */,
 			);
 			path = ExpenseTrackerTests;
 			sourceTree = "<group>";
@@ -688,6 +698,8 @@
 				6632DE4F2E17C54300B1C68B /* TransactionCategory.swift */,
 				66A66A6E2E38FF8800C4C33A /* CategoryIcon.swift */,
 				6632DE572E17EBFC00B1C68B /* Transaction.swift */,
+				6637A953B0C2777643BF8080 /* CategoryDraft.swift */,
+				661F1B4A0F24E964ABA6F7DF /* AmountInput.swift */,
 				66F1A6A02E05B1CA001E0E89 /* ServerError.swift */,
 			);
 			path = Models;
@@ -904,6 +916,8 @@
 			isa = PBXSourcesBuildPhase;
 			files = (
 				660060CD2E1535BB00DA6D7F /* TestExpensesTracker.swift in Sources */,
+				66E51EFFBBDCCF6E7A581E1E /* CategoryRulesTests.swift in Sources */,
+				663AA103E8E34398C6E9D3FA /* AmountInputTests.swift in Sources */,
 			);
 		};
 		668E98942DFAF77500EB9CD8 /* Sources */ = {
@@ -991,6 +1005,8 @@
 				6688BAF32DFDC52C00C7550E /* NotificationManager.swift in Sources */,
 				66700FD12DFC36670073A9EF /* UIScrollView.swift in Sources */,
 				6632DE582E17EBFC00B1C68B /* Transaction.swift in Sources */,
+				66648C78DBCAC141A4772F71 /* CategoryDraft.swift in Sources */,
+				664A820633A9EE7315E0309E /* AmountInput.swift in Sources */,
 				66700FD32DFC36670073A9EF /* UIViewController.swift in Sources */,
 				66700FD62DFC36670073A9EF /* UITextField.swift in Sources */,
 				668E98E02DFAFA3B00EB9CD8 /* UserDefaults.swift in Sources */,

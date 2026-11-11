@@ -23,9 +23,7 @@ struct CategoryGrid: View {
     }
 
     private var chunkedCategories: [[TransactionCategory]] {
-        let sorted = categories.sorted { $0.name < $1.name }
-        let chunks = sorted.chunked(into: 8)
-        return chunks
+        categories.inDisplayOrder.chunked(into: 8)
     }
 
     var body: some View {

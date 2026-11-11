@@ -39,6 +39,23 @@ final class TransactionCategory {
     }
 }
 
+extension [TransactionCategory] {
+    /// Порядок, в котором категории показываются в сетках: сначала папки, внутри групп — по названию.
+    var inDisplayOrder: [TransactionCategory] {
+        sorted {
+            if $0.isDirectory != $1.isDirectory {
+                return $0.isDirectory
+            }
+            return $0.name < $1.name
+        }
+    }
+
+    /// Категории верхнего уровня, то есть те, что не лежат в папке.
+    var topLevel: [TransactionCategory] {
+        filter { !($0.parent(from: self)?.isDirectory ?? false) }
+    }
+}
+
 enum IconColor: String, Codable, CaseIterable {
     case red, pink, blue, yellow, orange, purple, green, brown, white, cyan, indigo, gray, black
 

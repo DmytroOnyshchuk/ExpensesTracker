@@ -14,19 +14,19 @@ struct EditCategoryView: View {
     @Query(filter: #Predicate<TransactionCategory> { $0.isDirectory })
     private var allDirectories: [TransactionCategory]
     @Query private var allCategories: [TransactionCategory]
-    @State private var selectedParent: TransactionCategory?
 
-    @Bindable var category: TransactionCategory
-    var isEdit: Bool = false
-    @State private var name: String = ""
+    /// Редактируемая категория; `nil`, когда создаётся новая.
+    private let category: TransactionCategory?
+    @State private var draft: CategoryDraft
     @State private var showDeleteConfirmation = false
     @State private var showCustomIconPicker = false
-    private var subcategories: [TransactionCategory] {
-        category.allSubcategories(from: allCategories)
-    }
-
     @State private var selectedSubcategory: TransactionCategory?
-    @State private var showSubcategoryEditor = false
+
+    private var isEdit: Bool { category != nil }
+    private var isDirectory: Bool { category?.isDirectory ?? false }
+    private var subcategories: [TransactionCategory] {
+        category?.allSubcategories(from: allCategories) ?? []
+    }
 
     // MARK: - Environment
 
@@ -103,20 +103,20 @@ struct EditCategoryView: View {
 
     // MARK: - Initializers
 
-    init(isEdit: Bool = false) {
-        self.isEdit = isEdit
-        _category = Bindable(wrappedValue: TransactionCategory(name: L10n.editCategoryDefaultName, categoryIcon: CategoryIcon(name: "cart", iconColor: .yellow)))
+    init() {
+        self.category = nil
+        _draft = State(initialValue: CategoryDraft())
     }
 
-    init(category: TransactionCategory, isEdit: Bool = true) {
-        self.isEdit = isEdit
-        _category = Bindable(wrappedValue: category)
+    init(category: TransactionCategory) {
+        self.category = category
+        _draft = State(initialValue: CategoryDraft(category))
     }
 
     // MARK: - Body
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView {
                 content
                     .padding(.horizontal, 24)
@@ -135,27 +135,22 @@ struct EditCategoryView: View {
 
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Button(isEdit ? L10n.save : L10n.editCategoryDefaultName) {
-                        if isEdit {
-                            saveChanges()
-                        } else {
-                            createCategory()
-                        }
+                        save()
                         dismiss()
                     }
                     .foregroundColor(.white)
-                    .disabled(name.isEmpty)
+                    .disabled(!draft.canSave)
                 }
             }
         }
         .onAppear {
-            name = category.name
-            selectedParent = category.parent(from: allCategories)
+            draft.dropMissingParent(in: allCategories)
         }
         .sheet(item: $selectedSubcategory) { subcategory in
-            EditCategoryView(category: subcategory, isEdit: true)
+            EditCategoryView(category: subcategory)
         }
         .sheet(isPresented: $showCustomIconPicker) {
-            CustomIconPickerView(selectedIcon: $category.categoryIcon.name)
+            CustomIconPickerView(selectedIcon: $draft.icon.name)
         }
     }
 
@@ -166,7 +161,7 @@ struct EditCategoryView: View {
             previewSection
             nameInputSection
 
-            if !category.isDirectory {
+            if !isDirectory {
                 parentSelectionSection
             }
             if !subcategories.isEmpty {
@@ -187,7 +182,7 @@ struct EditCategoryView: View {
     private var previewSection: some View {
         VStack(spacing: 16) {
             // Иконка с оборачиванием в папку для каталогов
-            if category.isDirectory {
+            if isDirectory {
                 ZStack {
                     Image(systemName: "folder.fill")
                         .resizable()
@@ -195,7 +190,7 @@ struct EditCategoryView: View {
                         .foregroundColor(.yellow)
                         .frame(width: 64, height: 64)
 
-                    category.categoryIcon.image
+                    draft.icon.image
                         .resizable()
                         .scaledToFit()
                         .foregroundColor(.appMain)
@@ -203,14 +198,14 @@ struct EditCategoryView: View {
                         .offset(y: 4)
                 }
             } else {
-                category.categoryIcon.image
+                draft.icon.image
                     .resizable()
                     .scaledToFit()
-                    .foregroundColor(category.categoryIcon.color)
+                    .foregroundColor(draft.icon.color)
                     .frame(width: 64, height: 64)
             }
 
-            Text(name.isEmpty ? (isEdit ? L10n.editCategoryDefaultName : L10n.editCategoryDefaultName) : name)
+            Text(draft.name.isEmpty ? (isEdit ? L10n.editCategoryDefaultName : L10n.editCategoryDefaultName) : draft.name)
                 .font(.appMedium(18))
                 .foregroundColor(.white)
         }
@@ -224,11 +219,11 @@ struct EditCategoryView: View {
                 .foregroundColor(.white)
 
             HStack {
-                Picker("Выберите папку", selection: $selectedParent) {
-                    Text(L10n.editCategoryNoParent).tag(nil as TransactionCategory?)
+                Picker("Выберите папку", selection: $draft.parentUuid) {
+                    Text(L10n.editCategoryNoParent).tag(nil as UUID?)
 
                     ForEach(allDirectories, id: \.id) { directory in
-                        Text(directory.name).tag(directory as TransactionCategory?)
+                        Text(directory.name).tag(directory.uuid as UUID?)
                     }
                 }
                 .pickerStyle(MenuPickerStyle())
@@ -244,7 +239,7 @@ struct EditCategoryView: View {
                 .font(.appMedium(16))
                 .foregroundColor(.white)
 
-            TextField(L10n.editCategoryNamePlaceholder, text: $name)
+            TextField(L10n.editCategoryNamePlaceholder, text: $draft.name)
                 .padding(10)
                 .background(.appMain)
                 .cornerRadius(8)
@@ -266,7 +261,6 @@ struct EditCategoryView: View {
                 ForEach(subcategories, id: \.id) { sub in
                     Button {
                         selectedSubcategory = sub
-                        showSubcategoryEditor = true
                     } label: {
                         VStack(spacing: 4) {
                             sub.categoryIcon.image
@@ -338,7 +332,7 @@ struct EditCategoryView: View {
         Button {
             showDeleteConfirmation = true
         } label: {
-            Text(category.isDirectory ? L10n.editCategoryDeleteFolder : L10n.editCategoryDeleteCategory)
+            Text(isDirectory ? L10n.editCategoryDeleteFolder : L10n.editCategoryDeleteCategory)
                 .font(.appMedium(16))
                 .foregroundColor(.white)
                 .frame(maxWidth: .infinity)
@@ -346,7 +340,7 @@ struct EditCategoryView: View {
                 .background(Color.red.opacity(0.8))
                 .cornerRadius(12)
         }
-        .alert(category.isDirectory ? L10n.editCategoryDeleteFolder : L10n.editCategoryDeleteCategory, isPresented: $showDeleteConfirmation) {
+        .alert(isDirectory ? L10n.editCategoryDeleteFolder : L10n.editCategoryDeleteCategory, isPresented: $showDeleteConfirmation) {
             Button(L10n.cancel, role: .cancel) {}
             Button(L10n.remove, role: .destructive) {
                 deleteCategory()
@@ -360,22 +354,22 @@ struct EditCategoryView: View {
 
     private func iconButton(_ icon: String) -> some View {
         Button {
-            category.categoryIcon.name = icon
+            draft.icon.name = icon
         } label: {
             Image(systemName: icon)
                 .font(.system(size: 24))
-                .foregroundColor(category.categoryIcon.name == icon ? category.categoryIcon.color : .white.opacity(0.6))
+                .foregroundColor(draft.icon.name == icon ? draft.icon.color : .white.opacity(0.6))
                 .frame(width: 40, height: 40)
                 .background(
                     RoundedRectangle(cornerRadius: 8)
-                        .fill(category.categoryIcon.name == icon ? Color.white.opacity(0.2) : Color.clear)
+                        .fill(draft.icon.name == icon ? Color.white.opacity(0.2) : Color.clear)
                 )
         }
     }
 
     private func colorButton(_ color: IconColor) -> some View {
         Button {
-            category.categoryIcon.iconColor = color
+            draft.icon.iconColor = color
         } label: {
             VStack(spacing: 4) {
                 Circle()
@@ -383,7 +377,7 @@ struct EditCategoryView: View {
                     .frame(width: 32, height: 32)
                     .overlay(
                         Circle()
-                            .stroke(Color.white, lineWidth: category.categoryIcon.iconColor == color ? 3 : 0)
+                            .stroke(Color.white, lineWidth: draft.icon.iconColor == color ? 3 : 0)
                     )
 
                 Text(color.rawValue.capitalized)
@@ -395,20 +389,18 @@ struct EditCategoryView: View {
 
     // MARK: - Actions
 
-    private func createCategory() {
-        category.name = name
-        category.parentUuid = selectedParent?.uuid
-        modelContext.insert(category)
-        try? modelContext.save()
-    }
-
-    private func saveChanges() {
-        category.name = name
-        category.parentUuid = selectedParent?.uuid
+    private func save() {
+        if let category {
+            draft.apply(to: category)
+        } else {
+            modelContext.insert(draft.makeCategory())
+        }
         try? modelContext.save()
     }
 
     private func deleteCategory() {
+        guard let category else { return }
+
         modelContext.delete(category)
         try? modelContext.save()
         dismiss()

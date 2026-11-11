@@ -6,7 +6,7 @@
 //  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
 //
 
-@testable import SwiftTemplate
+@testable import ExpenseTracker
 import XCTest
 
 final class TestSwfitTemplate: XCTestCase {

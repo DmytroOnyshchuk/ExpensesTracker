@@ -12,14 +12,14 @@ import SwiftUI
 struct StartView: View {
     @Environment(\.modelContext) private var modelContext
 
-    @State private var inputAmount: Int = 0
-    @Query private var transactions: [Transaction]
+    @State private var input = AmountInput()
+    @Query(sort: \Transaction.date, order: .reverse) private var transactions: [Transaction]
 
     var body: some View {
         NavigationSplitView {
             ScrollView(.vertical) {
                 VStack(spacing: 16) {
-                    DigitPadView(inputAmount: $inputAmount)
+                    DigitPadView(input: $input)
                     CategoryGrid { category in
                         addTransaction(with: category)
                     }
@@ -36,12 +36,12 @@ struct StartView: View {
     }
 
     private func addTransaction(with category: TransactionCategory) {
-        guard inputAmount != 0 else { return }
+        guard input.amount != 0 else { return }
 
-        let transaction = Transaction(amount: inputAmount, category: category, date: Date())
+        let transaction = Transaction(amount: input.amount, category: category, date: Date())
 
         modelContext.insert(transaction)
-        inputAmount = 0
+        input.reset()
     }
 }
 

@@ -15,7 +15,6 @@ struct CategoriesEdit: View {
     @Environment(\.modelContext) private var modelContext
 
     @State private var showAddCategory = false
-    @State private var showEditCategory = false
     @State private var selectedCategory: TransactionCategory?
 
     @State private var showAddFolderAlert = false
@@ -51,10 +50,8 @@ struct CategoriesEdit: View {
                 }
             }
         }
-        .sheet(isPresented: $showEditCategory) {
-            if let selected = selectedCategory {
-                EditCategoryView(category: selected, isEdit: true)
-            }
+        .sheet(item: $selectedCategory) { category in
+            EditCategoryView(category: category)
         }
         .sheet(isPresented: $showAddCategory) {
             EditCategoryView()
@@ -73,22 +70,9 @@ struct CategoriesEdit: View {
 
     private var categoryGrid: some View {
         LazyVGrid(columns: gridLayout, spacing: 16) {
-            ForEach(
-                categories
-                    .filter { category in
-                        category.parent(from: categories) == nil || !(category.parent(from: categories)?.isDirectory ?? false)
-                    }
-                    .sorted {
-                        if $0.isDirectory != $1.isDirectory {
-                            return $0.isDirectory
-                        }
-                        return $0.name < $1.name
-                    },
-                id: \.id
-            ) { category in
+            ForEach(categories.topLevel.inDisplayOrder, id: \.id) { category in
                 CategoryCell(category: category) {
                     selectedCategory = category
-                    showEditCategory = true
                 }
             }
         }

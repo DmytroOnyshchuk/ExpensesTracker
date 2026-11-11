@@ -10,6 +10,7 @@ import SwiftData
 import SwiftUI
 
 struct TransactionsList: View {
+    /// Операции в том порядке, в котором их нужно показать.
     var transactions: [Transaction]
 
     var body: some View {
@@ -28,7 +29,7 @@ struct TransactionsList: View {
                 .frame(minHeight: 200)
             } else {
                 List {
-                    ForEach(transactions.sorted(by: { $0.date > $1.date }), id: \.id) { transaction in
+                    ForEach(transactions, id: \.id) { transaction in
                         TransactionRow(transaction: transaction)
                             .listRowBackground(Color.appMain)
                             .listRowSeparatorTint(Color.appSecond)
