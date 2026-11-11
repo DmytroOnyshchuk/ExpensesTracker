@@ -9,40 +9,38 @@
 import Foundation
 
 extension JSONDecoder {
-    
     static var appDefault: JSONDecoder {
-        return JSONDecoder.withConvertFromSnakeCase
+        JSONDecoder.withConvertFromSnakeCase
     }
-    
-    static func build(_ config: (JSONDecoder) -> ()) -> JSONDecoder {
+
+    static func build(_ config: (JSONDecoder) -> Void) -> JSONDecoder {
         let jsonDecoder = JSONDecoder()
         config(jsonDecoder)
         return jsonDecoder
     }
-    
-    func build(_ config: (JSONDecoder) -> ()) -> JSONDecoder {
+
+    func build(_ config: (JSONDecoder) -> Void) -> JSONDecoder {
         config(self)
         return self
     }
-    
+
     static var withConvertFromSnakeCase: JSONDecoder {
-        return JSONDecoder.build { $0.keyDecodingStrategy = .convertFromSnakeCase }
+        JSONDecoder.build { $0.keyDecodingStrategy = .convertFromSnakeCase }
     }
-    
+
     static func withDateFormat(_ dateFormat: String) -> JSONDecoder {
-        return JSONDecoder.build {
+        JSONDecoder.build {
             $0.dateDecodingStrategy = .formatted(DateFormatter().config { $0.dateFormat = dateFormat })
         }
     }
-    
+
     var convertFromSnakeCase: JSONDecoder {
-        return self.build { $0.keyDecodingStrategy = .convertFromSnakeCase }
+        build { $0.keyDecodingStrategy = .convertFromSnakeCase }
     }
-    
+
     func withDateFormat(_ dateFormat: String) -> JSONDecoder {
-        return self.build {
+        build {
             $0.dateDecodingStrategy = .formatted(DateFormatter().config { $0.dateFormat = dateFormat })
         }
     }
-    
 }

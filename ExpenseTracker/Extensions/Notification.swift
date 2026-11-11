@@ -9,7 +9,6 @@
 import Foundation
 
 extension Notification.Name {
-    
     static let appLogin = NSNotification.Name("login")
     static let appLogout = NSNotification.Name("appLogout")
     static let mainScrollToTop = NSNotification.Name("mainScrollToTop")

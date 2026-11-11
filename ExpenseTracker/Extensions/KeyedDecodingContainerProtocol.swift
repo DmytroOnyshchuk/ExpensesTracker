@@ -8,26 +8,25 @@
 
 import Foundation
 
-extension KeyedDecodingContainerProtocol{
-
-    func getValueFromAvailableKey(codingKeys:[CodingKey])-> Any?{
-        for key in codingKeys{
-            for keyPath in self.allKeys{
-                if key.stringValue == keyPath.stringValue{
-                    do{
-                        if let value = try? self.decodeIfPresent([String].self, forKey:keyPath){
+extension KeyedDecodingContainerProtocol {
+    func getValueFromAvailableKey(codingKeys: [CodingKey]) -> Any? {
+        for key in codingKeys {
+            for keyPath in allKeys {
+                if key.stringValue == keyPath.stringValue {
+                    do {
+                        if let value = try? decodeIfPresent([String].self, forKey: keyPath) {
                             return value
                         }
 
-                        if let value = try? self.decodeIfPresent([String:String].self, forKey:keyPath){
+                        if let value = try? decodeIfPresent([String: String].self, forKey: keyPath) {
                             return value
                         }
 
-                        if let value = try? self.decodeIfPresent([[String:String]].self, forKey:keyPath){
+                        if let value = try? decodeIfPresent([[String: String]].self, forKey: keyPath) {
                             return value
                         }
 
-                        if let value = try? self.decodeIfPresent(String.self, forKey:keyPath){
+                        if let value = try? decodeIfPresent(String.self, forKey: keyPath) {
                             return value
                         }
 
@@ -41,33 +40,33 @@ extension KeyedDecodingContainerProtocol{
 }
 
 // MARK: - Property
+
 struct Property: Codable {
-    var customKey:[String:Any] = [:]
-    
-    init(customKey: [String : Any]) {
+    var customKey: [String: Any] = [:]
+
+    init(customKey: [String: Any]) {
         self.customKey = customKey
     }
 
-    init(from decoder: Decoder)  {
-        do{
+    init(from decoder: Decoder) {
+        do {
             let container = try decoder.container(keyedBy: CustomCodingKeys.self)
-            for key in container.allKeys{
-                customKey[key.stringValue] = container.getValueFromAvailableKey(codingKeys: [CustomCodingKeys.init(stringValue: key.stringValue)!])
+            for key in container.allKeys {
+                customKey[key.stringValue] = container.getValueFromAvailableKey(codingKeys: [CustomCodingKeys(stringValue: key.stringValue)!])
             }
 
-        }catch{
+        } catch {
             print(error.localizedDescription)
         }
     }
 
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CustomCodingKeys.self)
-        for key in customKey{
-                 try? container.encodeIfPresent(customKey[key.key] as? String, forKey: CustomCodingKeys.init(stringValue: key.key)!)
-                 try? container.encodeIfPresent(customKey[key.key] as? [[String:String]], forKey: CustomCodingKeys.init(stringValue: key.key)!)
-                 try? container.encodeIfPresent(customKey[key.key] as? [String:String], forKey: CustomCodingKeys.init(stringValue: key.key)!)
-            }
-
+        for key in customKey {
+            try? container.encodeIfPresent(customKey[key.key] as? String, forKey: CustomCodingKeys(stringValue: key.key)!)
+            try? container.encodeIfPresent(customKey[key.key] as? [[String: String]], forKey: CustomCodingKeys(stringValue: key.key)!)
+            try? container.encodeIfPresent(customKey[key.key] as? [String: String], forKey: CustomCodingKeys(stringValue: key.key)!)
+        }
     }
 }
 
@@ -76,8 +75,9 @@ struct CustomCodingKeys: CodingKey {
     init?(stringValue: String) {
         self.stringValue = stringValue
     }
+
     var intValue: Int?
-    init?(intValue: Int) {
-        return nil
+    init?(intValue _: Int) {
+        nil
     }
 }

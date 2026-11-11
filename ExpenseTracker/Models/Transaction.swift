@@ -1,5 +1,5 @@
 //
-//  ExpenseCategory.swift
+//  Transaction.swift
 //  ExpenseTracker
 //
 //  Created by Dmytro Onyshchuk on 04.07.2025.
@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 @Model
 final class Transaction {
@@ -17,7 +17,7 @@ final class Transaction {
     var date: Date
     var note: String?
     var category: TransactionCategory
-    
+
     init(amount: Int, category: TransactionCategory, date: Date = Date(), note: String? = nil) {
         self.id = UUID()
         self.amount = amount

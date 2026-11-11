@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 @Model
 final class Transaction {
@@ -17,7 +17,7 @@ final class Transaction {
     var date: Date
     var note: String?
     var category: TransactionCategory?
-    
+
     init(amount: Double, category: TransactionCategory, date: Date = Date(), note: String? = nil) {
         self.id = UUID()
         self.amount = amount
@@ -33,32 +33,32 @@ final class TransactionCategory {
     var name: String
     var icon: String
     private var colorName: String
-    
+
     init(name: String, icon: String, colorName: String) {
         self.id = UUID()
         self.name = name
         self.icon = icon
         self.colorName = colorName
     }
-    
+
     var color: Color {
         switch colorName {
-            case "red":
-                return .red
-            case "pink":
-                return .pink
-            case "blue":
-                return .blue
-            case "yellow":
-                return .yellow
-            case "orange":
-                return .orange
-            case "purple":
-                return .purple
-            case "green":
-                return .green
-            default:
-                return .blue
+        case "red":
+            .red
+        case "pink":
+            .pink
+        case "blue":
+            .blue
+        case "yellow":
+            .yellow
+        case "orange":
+            .orange
+        case "purple":
+            .purple
+        case "green":
+            .green
+        default:
+            .blue
         }
     }
 }

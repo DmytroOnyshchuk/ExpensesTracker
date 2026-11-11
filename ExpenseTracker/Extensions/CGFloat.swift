@@ -9,7 +9,5 @@
 import Foundation
 
 extension CGFloat {
-	
-	var asString: String { self.description }
-	
+    var asString: String { description }
 }

@@ -6,12 +6,12 @@
 //  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
 //
 
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 struct TransactionsList: View {
     var transactions: [Transaction]
-    
+
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             if transactions.isEmpty {
@@ -19,11 +19,10 @@ struct TransactionsList: View {
                     Image(systemName: "list.clipboard")
                         .font(.system(size: 48))
                         .foregroundColor(.gray.opacity(0.6))
-                    
-                    Text("Нет операций")
+
+                    Text(L10n.transactionsListNoTransactions)
                         .font(.appLight(18))
                         .foregroundColor(.gray.opacity(0.6))
-        
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .frame(minHeight: 200)
@@ -49,7 +48,7 @@ struct TransactionsList: View {
 struct TransactionRow: View {
     let transaction: Transaction
     @Environment(\.modelContext) private var modelContext
-    
+
     var body: some View {
         HStack(spacing: 16) {
             transaction.category.categoryIcon.image
@@ -57,14 +56,14 @@ struct TransactionRow: View {
                 .scaledToFit()
                 .foregroundColor(transaction.category.categoryIcon.color)
                 .frame(width: 32, height: 32)
-            
+
             VStack(alignment: .leading) {
                 Text(transaction.category.name)
                     .font(.appLight(18))
             }
-            
+
             Spacer()
-            
+
             Text(transaction.amount.getAmount())
                 .font(.appLight(22))
         }
@@ -74,7 +73,7 @@ struct TransactionRow: View {
                 modelContext.delete(transaction)
                 try? modelContext.save()
             } label: {
-                Label("Удалить", systemImage: "trash")
+                Label(L10n.delete, systemImage: "trash")
             }
         }
     }

@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 extension Double {
-    
     private func getInputNumberFormatter() -> NumberFormatter {
         let formatter = NumberFormatter()
         formatter.locale = .current
@@ -21,7 +20,7 @@ extension Double {
         formatter.groupingSeparator = " "
         return formatter
     }
-    
+
     var asString: String {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal
@@ -30,20 +29,19 @@ extension Double {
         numberFormatter.maximumFractionDigits = 2
         return numberFormatter.string(from: NSNumber(value: self)) ?? String(self)
     }
-    
+
     var asInt: Int { Int(self) }
-    
+
     var asFloat: Float { Float(self) }
-    
+
     var asCgFloat: CGFloat { CGFloat(self) }
-    
+
     func rounded(toPlaces places: Int) -> Double {
         let divisor = pow(10.0, Double(places))
         return (self * divisor).rounded(.down) / divisor
     }
-    
+
     func asCurrencyString() -> String {
-        return getInputNumberFormatter().string(from: NSNumber(value: self)) ?? String(self).trimmingCharacters(in: .whitespaces)
+        getInputNumberFormatter().string(from: NSNumber(value: self)) ?? String(self).trimmingCharacters(in: .whitespaces)
     }
-    
 }

@@ -1,5 +1,5 @@
 //
-//  DigitPad.swift
+//  DigitPadView.swift
 //  ExpenseTracker
 //
 //  Created by Dmytro Onyshchuk on 01.07.2025.
@@ -17,67 +17,66 @@ struct DigitPadView: View {
                 inputAmount = 0
                 return
             }
-            
+
             if dotSequenceNumber != -1 {
-                
                 if inputNumbers.count > dotSequenceNumber + 2 {
                     if inputNumbers.last == 0 {
                         inputNumbers = oldValue
                         reloadInputNumbers()
                         return
-                    }else{
+                    } else {
                         if oldValue.allSatisfy({ $0 == 0 }) {
                             inputNumbers.remove(at: inputNumbers.count - 2)
-                        }else{
+                        } else {
                             inputNumbers = oldValue
                             reloadInputNumbers()
                             return
                         }
                     }
                 }
-                
+
                 var mainAmount: [Int] = []
                 var secondAmount: [Int] = []
                 for (index, number) in inputNumbers.enumerated() {
                     if index < dotSequenceNumber {
                         mainAmount.append(number)
-                    }else{
+                    } else {
                         secondAmount.append(number)
                     }
                 }
-                
-                let inputTextMain = mainAmount.reduce(0, { $0 * 10 + $1 }) * 100
-                let inputTextCents = secondAmount.reduce(0, { $0 * 10 + $1 })
-                
+
+                let inputTextMain = mainAmount.reduce(0) { $0 * 10 + $1 } * 100
+                let inputTextCents = secondAmount.reduce(0) { $0 * 10 + $1 }
+
                 if secondAmount.first == 0 {
                     inputAmount = inputTextMain + inputTextCents
-                }else{
+                } else {
                     inputAmount = inputTextMain + (inputTextCents >= 10 ? inputTextCents : inputTextCents * 10)
                 }
-            }else{
-                inputAmount = inputNumbers.reduce(0, { $0 * 10 + $1 }) * 100
+            } else {
+                inputAmount = inputNumbers.reduce(0) { $0 * 10 + $1 } * 100
             }
         }
     }
-    
+
     private let buttons = [
         ["1", "2", "3"],
         ["4", "5", "6"],
         ["7", "8", "9"],
-        [".", "0", "⌫"]
+        [".", "0", "⌫"],
     ]
-    
-    private func reloadInputNumbers(){
+
+    private func reloadInputNumbers() {
         let temp = inputNumbers
         inputNumbers = temp
     }
-    
+
     private var displayText: String {
-        guard !inputNumbers.isEmpty else { return "Введите расход" }
-        
+        guard !inputNumbers.isEmpty else { return L10n.startviewEnterExpense }
+
         var main = ""
         var decimal = ""
-        
+
         for (index, digit) in inputNumbers.enumerated() {
             if dotSequenceNumber != -1, index >= dotSequenceNumber {
                 decimal.append(String(digit))
@@ -85,7 +84,7 @@ struct DigitPadView: View {
                 main.append(String(digit))
             }
         }
-        
+
         if dotSequenceNumber != -1 {
             // Если точка уже нажата
             if decimal.isEmpty {
@@ -99,14 +98,14 @@ struct DigitPadView: View {
             return "\(main)"
         }
     }
-    
+
     var body: some View {
         VStack(spacing: 12) {
             Text(displayText)
                 .font(inputNumbers.isEmpty ? .appLight(24) : .appLight(32))
                 .foregroundColor(inputNumbers.isEmpty ? .appLabel : .white)
                 .frame(height: 64)
-            
+
             ForEach(buttons, id: \.self) { row in
                 HStack(spacing: 12) {
                     ForEach(row, id: \.self) { symbol in
@@ -131,28 +130,28 @@ struct DigitPadView: View {
             }
         }
     }
-    
+
     private func handleTap(_ symbol: String) {
         switch symbol {
-            case "⌫":
-                if inputNumbers.count == dotSequenceNumber {
-                    dotSequenceNumber = -1
-                    return
-                }
-                guard !inputNumbers.isEmpty else { return }
-                inputNumbers.removeLast()
-            case ".":
-                if inputNumbers.isEmpty && dotSequenceNumber == -1 {
-                    inputNumbers = [0]
-                    dotSequenceNumber = inputNumbers.count
-                }else if dotSequenceNumber == -1 {
-                    dotSequenceNumber = inputNumbers.count
-                }
-            default:
-               // if symbol.asInt == 0, inputNumbers == [0], dotSequenceNumber == -1 {
-                //    return
-                //}
-                inputNumbers.append(symbol.asInt)
+        case "⌫":
+            if inputNumbers.count == dotSequenceNumber {
+                dotSequenceNumber = -1
+                return
+            }
+            guard !inputNumbers.isEmpty else { return }
+            inputNumbers.removeLast()
+        case ".":
+            if inputNumbers.isEmpty, dotSequenceNumber == -1 {
+                inputNumbers = [0]
+                dotSequenceNumber = inputNumbers.count
+            } else if dotSequenceNumber == -1 {
+                dotSequenceNumber = inputNumbers.count
+            }
+        default:
+            // if symbol.asInt == 0, inputNumbers == [0], dotSequenceNumber == -1 {
+            //    return
+            // }
+            inputNumbers.append(symbol.asInt)
         }
     }
 }

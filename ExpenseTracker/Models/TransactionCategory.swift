@@ -1,5 +1,5 @@
 //
-//  ExpenseCategory.swift
+//  TransactionCategory.swift
 //  ExpenseTracker
 //
 //  Created by Dmytro Onyshchuk on 04.07.2025.
@@ -7,62 +7,69 @@
 //
 
 import Foundation
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 @Model
 final class TransactionCategory {
-    var id: UUID
+    var uuid: UUID
     var name: String
     var categoryIcon: CategoryIcon
     var isDirectory: Bool = false
-    var parent: TransactionCategory?
-    
-    init(name: String, categoryIcon: CategoryIcon, isDirectory: Bool = false, parent: TransactionCategory? = nil) {
-        self.id = UUID()
+    var parentUuid: UUID?
+
+    init(name: String, categoryIcon: CategoryIcon, isDirectory: Bool = false, parentUuid: UUID? = nil) {
+        self.uuid = UUID()
         self.name = name
         self.categoryIcon = categoryIcon
         self.isDirectory = isDirectory
-        self.parent = parent
+        self.parentUuid = parentUuid
     }
-    
+
     var isMainCategory: Bool {
-        return parent == nil
+        parentUuid == nil
     }
-    
+
+    func parent(from allCategories: [TransactionCategory]) -> TransactionCategory? {
+        allCategories.first { $0.uuid == parentUuid }
+    }
+
     func allSubcategories(from allCategories: [TransactionCategory]) -> [TransactionCategory] {
-        var result: [TransactionCategory] = []
-        let directSubcategories = allCategories.filter { $0.parent?.id == self.id }
-        
-        for subcategory in directSubcategories {
-            result.append(subcategory)
-            result.append(contentsOf: subcategory.allSubcategories(from: allCategories))
-        }
-        
-        return result
+        allCategories.filter { !$0.isDirectory }.filter { $0.parentUuid == uuid }
     }
-    
 }
 
 enum IconColor: String, Codable, CaseIterable {
-    case red, pink, blue, yellow, orange, purple, green
-    
+    case red, pink, blue, yellow, orange, purple, green, brown, white, cyan, indigo, gray, black
+
     var color: Color {
         switch self {
-            case .red:
-                return .red
-            case .pink:
-                return .pink
-            case .blue:
-                return .blue
-            case .yellow:
-                return .yellow
-            case .orange:
-                return .orange
-            case .purple:
-                return .purple
-            case .green:
-                return .green
+        case .red:
+            .red
+        case .pink:
+            .pink
+        case .blue:
+            .blue
+        case .yellow:
+            .yellow
+        case .orange:
+            .orange
+        case .purple:
+            .purple
+        case .green:
+            .green
+        case .brown:
+            .brown
+        case .white:
+            .white
+        case .cyan:
+            .cyan
+        case .indigo:
+            .indigo
+        case .gray:
+            .gray
+        case .black:
+            .black
         }
     }
 }

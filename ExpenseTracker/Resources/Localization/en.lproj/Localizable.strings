@@ -7,7 +7,7 @@
 */
 
 // MARK: - Common
-"APP_NAME" = "SwiftTemplate";
+"APP_NAME" = "Expense Tracker";
 "DONE" = "Done";
 "ERROR" = "Error";
 "OK" = "OK";
@@ -28,58 +28,38 @@
 "CONTINUE" = "Continue";
 "SHARE" = "Share";
 "SAVE" = "Save";
-"na" = "n\\a";
 
-// MARK: - BaseVC
-"BASEVC_TRY_AGAIN_LATTER" = "Unknown error. Please try again later";
-"BASEVC_PERMISSION" = "Permission";
-"BASEVC_PERMISSION_GALLERY" = "To continue, you should allow the application to use the Gallery";
-"BASEVC_PERMISSION_CAMERA" = "To continue, you should allow the application to use the Camera";
-"BASEVC_PERMISSION_BIOMETRIC" = "To continue, you should allow the application to use Biometric";
-"BASEVC_PERMISSION_SETTINGS" = "Settings";
-"BASEVC_BLOCKED_ALERT" = "We have detected suspicious activity on your account. Please contact support to resolve the issue as soon as possible.";
-"BASEVC_PLEASE_UPDATE" = "The installed version of the app is outdated. Please update the app";
-"BASEVC_EXPORT_LOG" = "Export debug log?";
-"BASEVC_EXPORT_LOG_TITLE" = "Export";
-"BASEVC_EXPORT_LOG_VERSION" = "Version";
-"BASEVC_WRONG_CODE_TITLE" = "Wrong code";
-"BASEVC_WRONG_CODE_SECRIPTION" = "Incorrect SMS Code Entered";
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Enter expense";
 
-// MARK: - API
-"API_NEW_CODE" = "Security SMS code has expired. Request new code";
-"API_WRONG_CODE" = "Wrong code";
-"API_VERSION_ERROR" = "The installed version of application is outdated. Please, update application";
-"API_UNKNOWN_ERROR" = "Unknown error. Please try again later";
+// MARK: -  CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "All categories";
 
-// MARK: - StartViewController
-"STARTVC_TITLE" = "Start";
-"STARTVC_GUEST" = "Guest";
-"STARTVC_LOGIN" = "Login";
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "No transactions";
+"TRANSACTIONS_LIST_DELETE" = "Delete";
 
-// MARK: - CountriesViewController
-"COUNTRIESVC_TITLE" = "Countries";
-"COUNTRIESVC_LOGOUT" = "Logout?";
-"COUNTRIESVC_LOGOUT_DESCRIPTION" = "Are you sure you want to logout?";
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Edit categories";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "New folder category";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Enter name for new category folder";
+"CATEGORIES_EDIT_CANCEL" = "Cancel";
+"CATEGORIES_EDIT_CREATE" = "Create";
 
-// MARK: - CountryDetailsViewController
-"COUNTRYDETAILSVC_COUNTRY" = "Country: %@";
-"COUNTRYDETAILSVC_CAPITAL" = "Capital: %@";
-"COUNTRYDETAILSVC_POPULATION" = "Population: %@";
-
-// MARK: - UsersViewController
-"USERSVC_TITLE" = "Users";
-
-// MARK: - UserDetailsViewController
-"USERDETAILSVC_USERNAME" = "Username: %@";
-"USERDETAILSVC_EMAIL" = "Email: %@";
-"USERDETAILSVC_PHONE" = "Phone: %@";
-"USERDETAILSVC_WEBSITE" = "Website: %@";
-"USERDETAILSVC_COMPANY" = "Company: %@";
-"USERDETAILSVC_ADDRESS" = "Address: %@, %@";
-
-// MARK: - LoginViewController
-"LOGINVC_TITLE" = "Login";
-"LOGINVC_EMAIL" = "Email";
-"LOGINVC_PASSWORD" = "Password";
-"LOGINVC_ENTER" = "Enter";
-"LOGINVC_WRONG_CREDENTIAL" = "Invalid email or password";
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Edit";
+"EDIT_CATEGORY_NEW_TITLE" = "New category";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Enter category name";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Parent category";
+"EDIT_CATEGORY_NO_PARENT" = "No parent";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Subcategories";
+"EDIT_CATEGORY_ICON" = "Icon";
+"EDIT_CATEGORY_MORE_ICONS" = "More";
+"EDIT_CATEGORY_COLOR" = "Color";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Delete category";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Delete folder";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "This action cannot be undone. All transactions with this category will be deleted.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Category name";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "New category";
+"EDIT_CATEGORY_CREATE" = "Create";
+"EDIT_CATEGORY_NAME" = "Название";

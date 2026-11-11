@@ -8,18 +8,16 @@
 
 import Foundation
 
-public extension NSError {
-    
-    convenience init(code: Int, userInfo: [String: Any]? = nil) {
+extension NSError {
+    public convenience init(code _: Int, userInfo: [String: Any]? = nil) {
         self.init(domain: "", code: 0, userInfo: userInfo)
     }
-    
-    convenience init(userInfo: [String: Any]? = nil) {
+
+    public convenience init(userInfo: [String: Any]? = nil) {
         self.init(code: 0, userInfo: userInfo)
     }
-    
-    convenience init(message: String) {
+
+    public convenience init(message: String) {
         self.init(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: message])
     }
-    
 }

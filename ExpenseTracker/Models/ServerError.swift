@@ -6,7 +6,6 @@
 //  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
 //
 
-
 import Foundation
 
 enum ServerError: String {

@@ -1,21 +1,19 @@
 import Foundation
 
 extension NSObject {
-    
     @discardableResult
-    func config(_ action: (NSObject) -> ()) -> Self {
+    func config(_ action: (NSObject) -> Void) -> Self {
         action(self)
         return self
     }
-    
+
     static var name: String { String(describing: Self.self) }
-    
-     var className: String {
-         return String(describing: type(of: self)).components(separatedBy: ".").last!
-     }
-     
-     class var className: String {
-         return String(describing: self).components(separatedBy: ".").last!
-     }  
-    
+
+    var className: String {
+        String(describing: type(of: self)).components(separatedBy: ".").last!
+    }
+
+    class var className: String {
+        String(describing: self).components(separatedBy: ".").last!
+    }
 }

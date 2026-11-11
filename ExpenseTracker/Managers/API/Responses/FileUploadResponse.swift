@@ -8,10 +8,8 @@
 import Foundation
 
 extension API.Response {
-	
-	struct FileUpload: Decodable {
-		let file: String
-		let url: String
-	}
-	
+    struct FileUpload: Decodable {
+        let file: String
+        let url: String
+    }
 }

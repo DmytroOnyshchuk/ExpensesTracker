@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  String+Localized.swift
 //  SwiftTemplate
 //
 //  Created by Dmytro Onyshchuk on 20.06.2025.
@@ -9,9 +9,7 @@
 import Foundation
 
 extension String {
-    
     var localized: String {
-        return NSLocalizedString(self, comment: "")
+        NSLocalizedString(self, comment: "")
     }
 }
-

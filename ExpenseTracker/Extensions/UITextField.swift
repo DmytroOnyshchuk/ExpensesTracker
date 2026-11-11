@@ -1,18 +1,17 @@
-import UIKit
 import Combine
+import UIKit
 
 extension UITextField {
-	
-	@IBInspectable var placeholderColor: UIColor {
-		get {
-			return attributedPlaceholder?.attribute(.foregroundColor, at: 0, effectiveRange: nil) as? UIColor ?? .clear
-		}
-		set {
-			guard let attributedPlaceholder = attributedPlaceholder else { return }
-			let attributes: [NSAttributedString.Key: UIColor] = [.foregroundColor: newValue]
-			self.attributedPlaceholder = NSAttributedString(string: attributedPlaceholder.string, attributes: attributes)
-		}
-	}
+    @IBInspectable var placeholderColor: UIColor {
+        get {
+            attributedPlaceholder?.attribute(.foregroundColor, at: 0, effectiveRange: nil) as? UIColor ?? .clear
+        }
+        set {
+            guard let attributedPlaceholder else { return }
+            let attributes: [NSAttributedString.Key: UIColor] = [.foregroundColor: newValue]
+            self.attributedPlaceholder = NSAttributedString(string: attributedPlaceholder.string, attributes: attributes)
+        }
+    }
 
     enum PaddingSpace {
         case left(CGFloat)
@@ -21,35 +20,34 @@ extension UITextField {
     }
 
     func addPadding(padding: PaddingSpace) {
-
-        self.leftViewMode = .always
-        self.layer.masksToBounds = true
+        leftViewMode = .always
+        layer.masksToBounds = true
 
         switch padding {
+        case let .left(spacing):
+            let leftPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: spacing, height: frame.height))
+            leftView = leftPaddingView
+            leftViewMode = .always
 
-        case .left(let spacing):
-            let leftPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: spacing, height: self.frame.height))
-            self.leftView = leftPaddingView
-            self.leftViewMode = .always
+        case let .right(spacing):
+            let rightPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: spacing, height: frame.height))
+            rightView = rightPaddingView
+            rightViewMode = .always
 
-        case .right(let spacing):
-            let rightPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: spacing, height: self.frame.height))
-            self.rightView = rightPaddingView
-            self.rightViewMode = .always
-
-        case .equalSpacing(let spacing):
-            let equalPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: spacing, height: self.frame.height))
+        case let .equalSpacing(spacing):
+            let equalPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: spacing, height: frame.height))
             // left
-            self.leftView = equalPaddingView
-            self.leftViewMode = .always
+            leftView = equalPaddingView
+            leftViewMode = .always
             // right
-            self.rightView = equalPaddingView
-            self.rightViewMode = .always
+            rightView = equalPaddingView
+            rightViewMode = .always
         }
     }
 }
 
 // MARK: - UITextField Extension for Combine
+
 extension UITextField {
     var textPublisher: AnyPublisher<String, Never> {
         NotificationCenter.default

@@ -6,24 +6,16 @@
 //  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
 //
 
-
 import Foundation
 
-protocol ConfigurableProtocol: AnyObject {
-	
-}
+protocol ConfigurableProtocol: AnyObject {}
 
 extension ConfigurableProtocol {
-	
-	@discardableResult
-	func config(_ action: (Self) -> ()) -> Self {
-		action(self)
-		return self
-	}
-	
+    @discardableResult
+    func config(_ action: (Self) -> Void) -> Self {
+        action(self)
+        return self
+    }
 }
 
-extension NSObject: ConfigurableProtocol {
-	
-}
-
+extension NSObject: ConfigurableProtocol {}

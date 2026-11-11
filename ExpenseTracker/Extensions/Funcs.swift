@@ -8,16 +8,16 @@
 
 import Foundation
 
-public func debounce(queue: DispatchQueue = .main, delay: Double, closure: @escaping() -> Void) {
-	queue.asyncAfter(deadline: .now() + delay) {
-		closure()
-	}
+public func debounce(queue: DispatchQueue = .main, delay: Double, closure: @escaping () -> Void) {
+    queue.asyncAfter(deadline: .now() + delay) {
+        closure()
+    }
 }
 
-public func debounceTask(queue: DispatchQueue = .main, delay: Double, closure: @escaping() -> Void) -> DispatchWorkItem {
-	let work = DispatchWorkItem(block: { [closure] in
-		closure()
-	})
-	queue.asyncAfter(deadline: .now() + delay, execute: work)
-	return work
+public func debounceTask(queue: DispatchQueue = .main, delay: Double, closure: @escaping () -> Void) -> DispatchWorkItem {
+    let work = DispatchWorkItem(block: { [closure] in
+        closure()
+    })
+    queue.asyncAfter(deadline: .now() + delay, execute: work)
+    return work
 }

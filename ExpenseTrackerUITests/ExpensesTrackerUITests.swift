@@ -1,5 +1,5 @@
 //
-//  SwiftTemplateUITests.swift
+//  ExpensesTrackerUITests.swift
 //  SwiftTemplateUITests
 //
 //  Created by Dmytro Onyshchuk on 23.06.2025.
@@ -8,6 +8,4 @@
 
 import XCTest
 
-final class testUITests: XCTestCase {
-    
-}
+final class testUITests: XCTestCase {}

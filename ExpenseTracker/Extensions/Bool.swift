@@ -8,7 +8,5 @@
 import Foundation
 
 extension Bool {
-	
-	var asString: String { String(self) }
-	
+    var asString: String { String(self) }
 }

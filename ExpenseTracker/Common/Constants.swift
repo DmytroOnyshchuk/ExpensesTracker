@@ -6,19 +6,16 @@
 //  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
 //
 
-
 import Foundation
 
-struct Constants {
-    
+enum Constants {
     static var groupIdentifier: String {
-#if PROD
+        #if PROD
         return "group.com.dmytroon.template.ios"
-#else
+        #else
         return "group.com.dmytroon.template.dev"
-#endif
+        #endif
     }
-    
+
     static let testId: String = "testId"
-    
 }

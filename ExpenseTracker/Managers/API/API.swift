@@ -1,15 +1,9 @@
 import Foundation
 
-struct API {
-    
-}
+struct API {}
 
 extension API {
-	
-	struct Request {
-	}
-		
-	struct Response {
-	}
-	
+    struct Request {}
+
+    struct Response {}
 }

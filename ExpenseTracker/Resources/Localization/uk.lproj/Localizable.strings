@@ -7,7 +7,7 @@
 */
 
 // MARK: - Common
-"APP_NAME" = "Шаблон Swift";
+"APP_NAME" = "Облік витрат";
 "DONE" = "Готово";
 "ERROR" = "Помилка";
 "OK" = "OK";
@@ -28,58 +28,38 @@
 "CONTINUE" = "Продовжити";
 "SHARE" = "Поділитися";
 "SAVE" = "Зберегти";
-"na" = "н\\д";
 
-// MARK: - BaseVC
-"BASEVC_TRY_AGAIN_LATTER" = "Невідома помилка. Спробуйте пізніше";
-"BASEVC_PERMISSION" = "Дозвіл";
-"BASEVC_PERMISSION_GALLERY" = "Щоб продовжити, дозвольте застосунку використовувати Галерею";
-"BASEVC_PERMISSION_CAMERA" = "Щоб продовжити, дозвольте застосунку використовувати Камеру";
-"BASEVC_PERMISSION_BIOMETRIC" = "Щоб продовжити, дозвольте застосунку використовувати Біометрію";
-"BASEVC_PERMISSION_SETTINGS" = "Налаштування";
-"BASEVC_BLOCKED_ALERT" = "Виявлено підозрілу активність у вашому акаунті. Зверніться до служби підтримки для вирішення проблеми якнайшвидше.";
-"BASEVC_PLEASE_UPDATE" = "Встановлена версія додатку застаріла. Будь ласка, оновіть додаток";
-"BASEVC_EXPORT_LOG" = "Експортувати журнал налагодження?";
-"BASEVC_EXPORT_LOG_TITLE" = "Експорт";
-"BASEVC_EXPORT_LOG_VERSION" = "Версія";
-"BASEVC_WRONG_CODE_TITLE" = "Неправильний код";
-"BASEVC_WRONG_CODE_SECRIPTION" = "Введено неправильний SMS-код";
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Введіть витрату";
 
-// MARK: - API
-"API_NEW_CODE" = "Термін дії SMS-коду безпеки вичерпано. Запросіть новий код";
-"API_WRONG_CODE" = "Неправильний код";
-"API_VERSION_ERROR" = "Встановлена версія додатку застаріла. Будь ласка, оновіть додаток";
-"API_UNKNOWN_ERROR" = "Невідома помилка. Спробуйте пізніше";
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Усі категорії";
 
-// MARK: - StartViewController
-"STARTVC_TITLE" = "Початок";
-"STARTVC_GUEST" = "Гість";
-"STARTVC_LOGIN" = "Вхід";
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Немає операцій";
+"TRANSACTIONS_LIST_DELETE" = "Видалити";
 
-// MARK: - CountriesViewController
-"COUNTRIESVC_TITLE" = "Країни";
-"COUNTRIESVC_LOGOUT" = "Вийти?";
-"COUNTRIESVC_LOGOUT_DESCRIPTION" = "Ви впевнені, що хочете вийти з облікового запису?";
-    
-// MARK: - CountryDetailsViewController
-"COUNTRYDETAILSVC_COUNTRY" = "Країна: %@";
-"COUNTRYDETAILSVC_CAPITAL" = "Столиця: %@";
-"COUNTRYDETAILSVC_POPULATION" = "Населення: %@";
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Редагування категорій";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Нова папка категорій";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Введіть назву нової папки для категорій.";
+"CATEGORIES_EDIT_CANCEL" = "Скасувати";
+"CATEGORIES_EDIT_CREATE" = "Створити";
 
-// MARK: - UsersViewController
-"USERSVC_TITLE" = "Користувачі";
-
-// MARK: - UserDetailsViewController
-"USERDETAILSVC_USERNAME" = "Ім'я користувача: %@";
-"USERDETAILSVC_EMAIL" = "Email: %@";
-"USERDETAILSVC_PHONE" = "Телефон: %@";
-"USERDETAILSVC_WEBSITE" = "Вебсайт: %@";
-"USERDETAILSVC_COMPANY" = "Компанія: %@";
-"USERDETAILSVC_ADDRESS" = "Адреса: %@, %@";
-
-// MARK: - LoginViewController
-"LOGINVC_TITLE" = "Вхід";
-"LOGINVC_EMAIL" = "Електронна пошта";
-"LOGINVC_PASSWORD" = "Пароль";
-"LOGINVC_ENTER" = "Увійти";
-"LOGINVC_WRONG_CREDENTIAL" = "Невірна електронна пошта або пароль";
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Редагування";
+"EDIT_CATEGORY_NEW_TITLE" = "Нова категорія";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Введіть назву категорії";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Головна категорія";
+"EDIT_CATEGORY_NO_PARENT" = "Без папки";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Підкатегорії";
+"EDIT_CATEGORY_ICON" = "Іконка";
+"EDIT_CATEGORY_MORE_ICONS" = "Ще";
+"EDIT_CATEGORY_COLOR" = "Колір";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Видалити категорію";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Видалити папку";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Цю дію не можна скасувати. Усі транзакції з цією категорією будуть видалені.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Назва категорії";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Нова категорія";
+"EDIT_CATEGORY_CREATE" = "Створити";
+"EDIT_CATEGORY_NAME" = "Назва";

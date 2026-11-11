@@ -1,0 +1,64 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Учет расходов";
+"DONE" = "Готово";
+"ERROR" = "Ошибка";
+"OK" = "OK";
+"YES" = "Да";
+"NO" = "Нет";
+"UPDATE" = "Обновить";
+"ATTENTION" = "Внимание";
+"SUPPORT" = "Поддержка";
+"NEXT" = "Далее";
+"BACK" = "Назад";
+"REMOVE" = "Удалить";
+"DELETE" = "Удалить";
+"CANCEL" = "Отмена";
+"CLOSE" = "Закрыть";
+"RETRY" = "Повторить";
+"REPEAT" = "Повторить";
+"SOMETHING_WENT_WRONG" = "Что-то пошло не так...";
+"CONTINUE" = "Продолжить";
+"SHARE" = "Поделиться";
+"SAVE" = "Сохранить";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Введите расход";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Все категории";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Нет операций";
+"TRANSACTIONS_LIST_DELETE" = "Удалить";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Редактирование категорий";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Новая категория-папка";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Введите название новой папки для категорий.";
+"CATEGORIES_EDIT_CANCEL" = "Отмена";
+"CATEGORIES_EDIT_CREATE" = "Создать";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Редактирование";
+"EDIT_CATEGORY_NEW_TITLE" = "Новая категория";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Введите название категории";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Главная категория";
+"EDIT_CATEGORY_NO_PARENT" = "Без папки";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Подкатегории";
+"EDIT_CATEGORY_ICON" = "Иконка";
+"EDIT_CATEGORY_MORE_ICONS" = "Ещё";
+"EDIT_CATEGORY_COLOR" = "Цвет";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Удалить категорию";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Удалить папку";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Это действие нельзя отменить. Все транзакции с этой категорией будут удалены.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Название категории";
+"EDIT_CATEGORY_CREATE" = "Создать";
+"EDIT_CATEGORY_NAME" = "Название";

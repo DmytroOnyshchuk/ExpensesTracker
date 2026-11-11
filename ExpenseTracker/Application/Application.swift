@@ -17,11 +17,10 @@ struct ExpenseTracker: App {
         }
         .modelContainer(for: [Transaction.self, TransactionCategory.self]) { result in
             switch result {
-                case .success(let container):
-                    // Предзаполнение данных при первом запуске
-                    DataSeeder.seedDefaultCategories(container: container)
-                case .failure(let error):
-                    Logger.default.errorLog("Failed to initialize model container:", error: error, category: "Application")
+            case let .success(container):
+                DataSeeder.seedDefaultCategories(container: container)
+            case let .failure(error):
+                Logger.default.logError("Failed to initialize model container:", error: error, category: "Application")
             }
         }
     }

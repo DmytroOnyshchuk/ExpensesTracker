@@ -8,14 +8,12 @@
 import Foundation
 
 extension Dictionary where Key: Hashable {
-	
-	func asJSONString() -> String? {
-		do {
-			let data = try JSONSerialization.data(withJSONObject: self, options: [.withoutEscapingSlashes])
-			return String(data: data, encoding: .utf8)
-		} catch {
-			return nil
-		}
-	}
-	
+    func asJSONString() -> String? {
+        do {
+            let data = try JSONSerialization.data(withJSONObject: self, options: [.withoutEscapingSlashes])
+            return String(data: data, encoding: .utf8)
+        } catch {
+            return nil
+        }
+    }
 }

@@ -10,15 +10,15 @@ import Foundation
 
 enum DBError: Error {
     case isInvalidate, other(Error), timeout
-    
+
     var localizedDescription: String {
         switch self {
-            case .isInvalidate:
-                return "Object is invalidate"
-            case .other(let error):
-                return error.localizedDescription
-            case .timeout:
-                return "Write transaction timed out"
+        case .isInvalidate:
+            "Object is invalidate"
+        case let .other(error):
+            error.localizedDescription
+        case .timeout:
+            "Write transaction timed out"
         }
     }
 }

@@ -1,9 +1,8 @@
-import Foundation
 import Alamofire
+import Foundation
 
 protocol P_ApiEndpoint {
-	
-	var url: String? { get }
+    var url: String? { get }
     var path: String { get }
     var versionTwo: Bool { get }
     var httpMethod: HTTPMethod { get }
@@ -12,12 +11,9 @@ protocol P_ApiEndpoint {
     var decoder: JSONDecoder { get }
     var params: Parameters? { get }
     var destination: DownloadRequest.Destination? { get }
-
 }
 
 protocol P_ApiUploadEndpoint: P_ApiEndpoint {
-	
-	var uploadData: Data { get }
+    var uploadData: Data { get }
     var fileName: String? { get }
-	
 }

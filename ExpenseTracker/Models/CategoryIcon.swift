@@ -12,18 +12,17 @@ import SwiftUI
 struct CategoryIcon: Codable {
     var name: String
     var iconColor: IconColor
-    
+
     init(name: String, iconColor: IconColor = .yellow) {
         self.name = name
         self.iconColor = iconColor
     }
-    
+
     var image: Image {
         Image(systemName: name)
     }
-    
+
     var color: Color {
         iconColor.color
     }
-
 }

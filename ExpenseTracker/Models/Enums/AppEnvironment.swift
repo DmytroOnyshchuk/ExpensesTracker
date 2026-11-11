@@ -9,16 +9,14 @@
 import Foundation
 
 enum AppEnvironment: String, Codable {
-    
     case develop
     case production
-    
+
     static var current: AppEnvironment {
-#if PROD
+        #if PROD
         return .production
-#else
+        #else
         return .develop
-#endif
+        #endif
     }
-    
 }

@@ -10,7 +10,7 @@ import SwiftUI
 
 extension View {
     func debugOverlay() -> some View {
-        self.overlay(
+        overlay(
             RoundedRectangle(cornerRadius: 2)
                 .stroke(Color.white, lineWidth: 1)
         )

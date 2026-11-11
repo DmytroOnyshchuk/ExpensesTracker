@@ -10,12 +10,10 @@ import Foundation
 import RealmSwift
 
 final class DatabaseManager: NSObject {
-    typealias CompletionHandler = ((_ error: DBError?) -> Void)
-    typealias ActionHandler = (() -> Void)
-    
-    internal var realm = Instances.shared.realmInstance
+    typealias CompletionHandler = (_ error: DBError?) -> Void
+    typealias ActionHandler = () -> Void
+
+    var realm = Instances.shared.realmInstance
 }
 
-extension DatabaseManager {
-    
-}
+extension DatabaseManager {}

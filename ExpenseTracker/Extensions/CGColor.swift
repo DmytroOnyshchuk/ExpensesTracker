@@ -1,7 +1,5 @@
 import UIKit
 
 extension CGColor {
-    
-    var uiColor: UIColor { return UIColor(cgColor: self) }
-    
+    var uiColor: UIColor { UIColor(cgColor: self) }
 }

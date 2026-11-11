@@ -12,7 +12,7 @@ import RealmSwift
 extension DatabaseManager {
     private func performDatabaseOperation<T>(_ block: @escaping () -> T?) -> T? {
         var result: T?
-        
+
         DispatchQueue.global(qos: .userInitiated).sync {
             result = block()
         }
@@ -20,6 +20,4 @@ extension DatabaseManager {
     }
 }
 
-extension DatabaseManager: CountriesDatabaseProtocol {
-    
-}
+extension DatabaseManager: CountriesDatabaseProtocol {}

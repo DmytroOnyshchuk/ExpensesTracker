@@ -6,38 +6,32 @@
 //  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
 //
 
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 struct CategoryGrid: View {
-    @Query(filter: #Predicate<TransactionCategory> { $0.parent == nil })
+    @Query(filter: #Predicate<TransactionCategory> { !$0.isDirectory })
     var categories: [TransactionCategory]
     var onSelect: (TransactionCategory) -> Void
-    
+
     @State private var currentPage: Int = 0
     @State private var showAllCategories = false
     @State private var navigateToEditCategories = false
-    
+
     private var gridLayout: [GridItem] {
         Array(repeating: GridItem(.flexible(), spacing: 20), count: 4)
     }
-    
+
     private var chunkedCategories: [[TransactionCategory]] {
-        
-        let chunks = categories.chunked(into: 8)
-        
-        return chunks.enumerated().map { index, chunk in
-            if index == chunks.count - 1 {
-                return chunk
-            }
-            return chunk
-        }
+        let sorted = categories.sorted { $0.name < $1.name }
+        let chunks = sorted.chunked(into: 8)
+        return chunks
     }
-    
+
     var body: some View {
         VStack(spacing: 16) {
             TabView(selection: $currentPage) {
-                ForEach(0..<chunkedCategories.count, id: \.self) { pageIndex in
+                ForEach(0 ..< chunkedCategories.count, id: \.self) { pageIndex in
                     VStack(alignment: .center, spacing: 0) {
                         LazyVGrid(columns: gridLayout, spacing: 16) {
                             ForEach(chunkedCategories[pageIndex], id: \.id) { category in
@@ -45,7 +39,7 @@ struct CategoryGrid: View {
                                     onSelect(category)
                                 }
                             }
-                            
+
                             if pageIndex == chunkedCategories.count - 1 {
                                 EditCategoriesCell {
                                     showAllCategories = true
@@ -61,10 +55,10 @@ struct CategoryGrid: View {
             }
             .tabViewStyle(.page(indexDisplayMode: .never))
             .frame(height: 176)
-            
+
             if chunkedCategories.count > 1 {
                 HStack(spacing: 8) {
-                    ForEach(0..<chunkedCategories.count, id: \.self) { index in
+                    ForEach(0 ..< chunkedCategories.count, id: \.self) { index in
                         Circle()
                             .fill(currentPage == index ? Color.white : Color.white.opacity(0.3))
                             .frame(width: 8, height: 8)
@@ -86,7 +80,7 @@ struct CategoryGrid: View {
 
 struct EditCategoriesCell: View {
     var action: () -> Void
-    
+
     var body: some View {
         Button(action: action) {
             VStack {
@@ -95,10 +89,10 @@ struct EditCategoriesCell: View {
                     .scaledToFit()
                     .foregroundColor(IconColor.yellow.color)
                     .frame(width: 48, height: 56)
-                
+
                 Spacer(minLength: 8)
-                
-                Text("Все категории")
+
+                Text(L10n.categoryGridAllCategories)
                     .font(.appRegular(12))
                     .multilineTextAlignment(.center)
                     .foregroundColor(.white)
@@ -112,8 +106,8 @@ struct EditCategoriesCell: View {
 
 extension Array {
     func chunked(into size: Int) -> [[Element]] {
-        return stride(from: 0, to: count, by: size).map {
-            Array(self[$0..<Swift.min($0 + size, count)])
+        stride(from: 0, to: count, by: size).map {
+            Array(self[$0 ..< Swift.min($0 + size, count)])
         }
     }
 }

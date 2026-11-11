@@ -6,87 +6,162 @@
 //  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
 //
 
-
 import UIKit
 #if APP
 import FirebaseCrashlytics
 #endif
 
 final class Logger: NSObject {
-    
     enum LogType {
-        case error, warning, info, onWatch, notification
+        case error, warning, info, notification
         
         func indicator() -> String {
             switch self {
-                case .error: return "❌"
-                case .warning: return "⚠️"
-                case .info: return "ℹ️"
-                case .onWatch: return "⌚️"
-                case .notification: return "✅"
+            case .error: "❌"
+            case .warning: "⚠️"
+            case .info: "ℹ️"
+            case .notification: "✅"
             }
         }
     }
     
-    enum LogDesination {
+    enum LogDestination {
         case output, file, both
     }
     
     static let `default` = Logger()
-    var outputLogingEnabled = true
-#if APPSTORE
+    
+    var outputLoggingEnabled = true
+    #if APPSTORE
     var fileLoggingEnabled = false
-#else
+    #else
     var fileLoggingEnabled = true
-#endif
+    #endif
     
-    let fileUrl: URL? = FileManager
-        .default
-#if os(watchOS)
-        .urls(for: .applicationSupportDirectory, in: .userDomainMask)
-#else
-        .urls(for: .documentDirectory, in: .userDomainMask)
-#endif
-        .first?
-        .appendingPathComponent("debug.log")
+    private let messageLengthLimit = 8 * 1024
+    private let fileQueue = DispatchQueue(label: "logger.file.queue", qos: .utility)
+    private let maxLogFileSize = 10 * 1024 * 1024 // 10 MB
     
-    private let messageLengthLimit = 5 * 1024
+    private(set) var fileUrl: URL?
     
-    func logMessage(_ message: String, category: String = "", type: LogType = .info, indicator: String? = nil, destination: LogDesination = .both, logToCrashlytics: Bool = true) {
-        let logText = "[\(Date().formatted("yyyy-MM-dd HH:mm:ss"))] \(indicator ?? type.indicator()) [\(category)] \(message)"
+    private override init() {
+        super.init()
+        setupLogFile()
+    }
+    
+    private func setupLogFile() {
+        guard let documentsUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
+            return
+        }
         
-        if outputLogingEnabled, destination != .file {
+        fileUrl = documentsUrl.appendingPathComponent("debug.log")
+        
+        guard let fileUrl else { return }
+        
+        if !FileManager.default.fileExists(atPath: fileUrl.path) {
+            if !FileManager.default.createFile(atPath: fileUrl.path, contents: nil, attributes: nil) {
+                print("### Logger: Failed to create log file at \(fileUrl.path)")
+            }
+        }
+    }
+    
+    func logMessage(_ message: String, category: String = String(), type: LogType = .info, indicator: String? = nil, destination: LogDestination = .both, logToCrashlytics: Bool = false) {
+        let logText = "[\(Date().string(with: .server))] \(indicator ?? type.indicator()) [\(category)] \(message)"
+        
+        if outputLoggingEnabled && destination != .file {
             print(logText.prefix(messageLengthLimit))
         }
         
-        if fileLoggingEnabled, destination != .output, let fileUrl = fileUrl, let logData = (logText + "\n").data(using: .utf8) {
-            if let file = try? FileHandle(forWritingTo: fileUrl) {
-                file.seekToEndOfFile()
-                file.write(logData)
-                file.closeFile()
-            } else {
-                try? logData.write(to: fileUrl, options: .atomic)
+        if fileLoggingEnabled, destination != .output, let fileUrl {
+            fileQueue.async {
+                self.writeToLogFile(logText, fileUrl: fileUrl)
             }
         }
         
-#if APP
+        #if APP
         if logToCrashlytics {
             Crashlytics.crashlytics().log(logText)
         }
-#endif
+        #endif
     }
     
-    func errorLog(_ message: String, error: Error?, category: String = "") {
-        guard let error = error else { return }
+    private func writeToLogFile(_ message: String, fileUrl: URL) {
+        let text = message + "\n"
+        guard let data = text.data(using: .utf8) else { return }
         
-        logMessage("\(message): \(error)", category: category, type: .error)
+        rotateLogFileIfNeeded(fileUrl: fileUrl)
+        
+        if let outputStream = OutputStream(url: fileUrl, append: true) {
+            outputStream.open()
+            defer { outputStream.close() }
+            
+            let bytesWritten = data.withUnsafeBytes { buffer in
+                guard let baseAddress = buffer.baseAddress?.assumingMemoryBound(to: UInt8.self) else {
+                    return -1
+                }
+                return outputStream.write(baseAddress, maxLength: data.count)
+            }
+            
+            if bytesWritten < 0, let error = outputStream.streamError {
+                print("### Logger: Failed to write to log file: \(error)")
+            }
+        } else {
+            // Use FileHandle if OutputStream fails
+            if let fileHandle = try? FileHandle(forWritingTo: fileUrl) {
+                defer { try? fileHandle.close() }
+                fileHandle.seekToEndOfFile()
+                fileHandle.write(data)
+            } else {
+                print("### Logger: Unable to open file for logging at \(fileUrl)")
+            }
+        }
     }
     
-    func appendData(_ data: Data) {
-        guard fileLoggingEnabled, let fileURL = fileUrl, let file = try? FileHandle(forWritingTo: fileURL) else { return }
-        file.seekToEndOfFile()
-        file.write(data)
-        file.closeFile()
+    private func rotateLogFileIfNeeded(fileUrl: URL) {
+        guard let attributes = try? FileManager.default.attributesOfItem(atPath: fileUrl.path),
+              let fileSize = attributes[.size] as? Int,
+              fileSize > maxLogFileSize else {
+            return
+        }
+        
+        // Create backup and clear current log
+        let backupUrl = fileUrl.deletingPathExtension().appendingPathExtension("old.log")
+        
+        do {
+            // Remove old backup if exists
+            if FileManager.default.fileExists(atPath: backupUrl.path) {
+                try FileManager.default.removeItem(at: backupUrl)
+            }
+            
+            // Move current log to backup
+            try FileManager.default.moveItem(at: fileUrl, to: backupUrl)
+            
+            // Create new empty log file
+            FileManager.default.createFile(atPath: fileUrl.path, contents: nil, attributes: nil)
+            
+        } catch {
+            print("### Logger: Failed to rotate log file: \(error)")
+        }
     }
     
+    func logError(_ message: String, error: Error?, category: String = "", logToCrashlytics: Bool = false) {
+        guard let error else { return }
+        logMessage("\(message): \(error)", category: category, type: .error, logToCrashlytics: false)
+        #if APP
+        if logToCrashlytics {
+            Crashlytics.crashlytics().log(logText)
+        }
+        #endif
+    }
+    
+    func clearLogs() {
+        guard let fileUrl else { return }
+        fileQueue.async {
+            do {
+                try "".write(to: fileUrl, atomically: true, encoding: .utf8)
+            } catch {
+                print("### Logger: Failed to clear log file: \(error)")
+            }
+        }
+    }
 }

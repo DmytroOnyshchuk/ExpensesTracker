@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  GrowingTextView+Localized.swift
 //  SwiftTemplate
 //
 //  Created by Dmytro Onyshchuk on 20.06.2025.
@@ -10,14 +10,12 @@ import Foundation
 import UIKit
 
 extension GrowingTextView {
-    
     @IBInspectable var placeholderLocalizableText: String {
         set(value) {
-            self.placeholder = value.localized
+            placeholder = value.localized
         }
         get {
-            return self.placeholder ?? ""
+            placeholder ?? ""
         }
     }
-    
 }
