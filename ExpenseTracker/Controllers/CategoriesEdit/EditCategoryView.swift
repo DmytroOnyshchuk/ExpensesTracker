@@ -320,7 +320,7 @@ struct EditCategoryView: View {
                 .font(.appMedium(16))
                 .foregroundColor(.white)
 
-            LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 4), spacing: 12) {
+            LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 4), spacing: 16) {
                 ForEach(IconColor.allCases, id: \.self) { color in
                     colorButton(color)
                 }
@@ -361,8 +361,7 @@ struct EditCategoryView: View {
                 .foregroundColor(draft.icon.name == icon ? draft.icon.color : .white.opacity(0.6))
                 .frame(width: 40, height: 40)
                 .background(
-                    RoundedRectangle(cornerRadius: 8)
-                        .fill(draft.icon.name == icon ? Color.white.opacity(0.2) : Color.clear)
+                    RoundedRectangle(cornerRadius: 8).fill(draft.icon.name == icon ? Color.white.opacity(0.2) : Color.clear)
                 )
         }
     }
@@ -372,17 +371,14 @@ struct EditCategoryView: View {
             draft.icon.iconColor = color
         } label: {
             VStack(spacing: 4) {
-                Circle()
+                RoundedRectangle(cornerRadius: 6)
                     .fill(color.color)
-                    .frame(width: 32, height: 32)
+                    .frame(height: 32)
                     .overlay(
-                        Circle()
-                            .stroke(Color.white, lineWidth: draft.icon.iconColor == color ? 3 : 0)
+                        RoundedRectangle(cornerRadius: 6).stroke(Color.white, lineWidth: draft.icon.iconColor == color ? 3 : 0)
                     )
 
-                Text(color.rawValue.capitalized)
-                    .font(.appRegular(12))
-                    .foregroundColor(.white.opacity(0.8))
+                Text(color.rawValue.capitalized).font(.appRegular(12)).foregroundColor(.white.opacity(0.8))
             }
         }
     }
