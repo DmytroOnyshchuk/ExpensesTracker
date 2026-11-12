@@ -181,14 +181,6 @@ struct StatisticsDayPicker: View {
 
     @State private var date: Date
 
-    private static let relativeFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .none
-        formatter.doesRelativeDateFormatting = true
-        return formatter
-    }()
-
     init(selected: Date, onFinish: @escaping (Date?) -> Void) {
         self.onFinish = onFinish
         _date = State(initialValue: selected)
@@ -228,12 +220,10 @@ struct StatisticsDayPicker: View {
     }
 
     private func shortcutButton(for day: Date) -> some View {
-        let text = Self.relativeFormatter.string(from: day)
-
-        return Button {
+        Button {
             onFinish(day)
         } label: {
-            Text(text.prefix(1).capitalized + text.dropFirst())
+            Text(day.relativeDayName ?? "")
                 .font(.appLight(20))
                 .foregroundColor(.appWhite.opacity(0.8))
                 .frame(maxWidth: .infinity)

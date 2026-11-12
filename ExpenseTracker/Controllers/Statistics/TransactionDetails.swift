@@ -119,7 +119,7 @@ struct TransactionDetailsRow: View {
                     .foregroundColor(.appWhite)
                     .lineLimit(1)
 
-                Text(transaction.date.formatted(.dateTime.day().month(.wide)))
+                Text(transaction.date.dayString(.dateTime.day().month(.wide)))
                     .font(.appLight(13))
                     .foregroundColor(.appLabel)
                     .lineLimit(1)

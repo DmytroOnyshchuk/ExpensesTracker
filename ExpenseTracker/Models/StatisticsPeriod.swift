@@ -41,7 +41,7 @@ enum StatisticsPeriod: CaseIterable, Identifiable {
 
     func title(for date: Date) -> String {
         let text = switch self {
-        case .day: date.formatted(.dateTime.day().month(.wide).year())
+        case .day: date.dayString(.dateTime.day().month(.wide).year())
         case .month: date.formatted(.dateTime.month(.wide).year())
         case .year: date.formatted(.dateTime.year())
         }

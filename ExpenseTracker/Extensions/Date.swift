@@ -417,3 +417,25 @@ final class DateTime: Comparable, Equatable {
         lhs.secondsSinceBeginningOfDay > rhs.secondsSinceBeginningOfDay
     }
 }
+
+extension Date {
+    private static let relativeDayFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
+        formatter.doesRelativeDateFormatting = true
+        return formatter
+    }()
+
+    var relativeDayName: String? {
+        let calendar = Calendar.current
+        guard calendar.isDateInToday(self) || calendar.isDateInYesterday(self) else { return nil }
+
+        let text = Self.relativeDayFormatter.string(from: self)
+        return text.prefix(1).capitalized + text.dropFirst()
+    }
+
+    func dayString(_ style: Date.FormatStyle) -> String {
+        relativeDayName ?? formatted(style)
+    }
+}
