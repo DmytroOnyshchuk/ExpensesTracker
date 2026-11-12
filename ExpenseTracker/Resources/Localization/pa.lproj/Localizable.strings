@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "ਖਰਚਾ ਟਰੈਕਰ";
+"DONE" = "ਹੋ ਗਿਆ";
+"ERROR" = "ਗਲਤੀ";
+"OK" = "OK";
+"YES" = "ਹਾਂ";
+"NO" = "ਨਹੀਂ";
+"UPDATE" = "ਅੱਪਡੇਟ ਕਰੋ";
+"ATTENTION" = "ਧਿਆਨ ਦਿਓ";
+"SUPPORT" = "ਸਹਾਇਤਾ";
+"NEXT" = "ਅੱਗੇ";
+"BACK" = "ਪਿੱਛੇ";
+"REMOVE" = "ਮਿਟਾਓ";
+"DELETE" = "ਮਿਟਾਓ";
+"CANCEL" = "ਰੱਦ ਕਰੋ";
+"CLOSE" = "ਬੰਦ ਕਰੋ";
+"RETRY" = "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ";
+"REPEAT" = "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ";
+"SOMETHING_WENT_WRONG" = "ਕੁਝ ਗਲਤ ਹੋ ਗਿਆ...";
+"CONTINUE" = "ਜਾਰੀ ਰੱਖੋ";
+"SHARE" = "ਸਾਂਝਾ ਕਰੋ";
+"SAVE" = "ਸੰਭਾਲੋ";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "ਖਰਚਾ ਦਰਜ ਕਰੋ";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "ਸਾਰੀਆਂ ਸ਼੍ਰੇਣੀਆਂ";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ਕੋਈ ਲੈਣ-ਦੇਣ ਨਹੀਂ";
+"TRANSACTIONS_LIST_DELETE" = "ਮਿਟਾਓ";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "ਸ਼੍ਰੇਣੀਆਂ ਸੋਧੋ";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "ਨਵਾਂ ਸ਼੍ਰੇਣੀ ਫੋਲਡਰ";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "ਨਵੇਂ ਸ਼੍ਰੇਣੀ ਫੋਲਡਰ ਲਈ ਨਾਮ ਦਰਜ ਕਰੋ";
+"CATEGORIES_EDIT_CANCEL" = "ਰੱਦ ਕਰੋ";
+"CATEGORIES_EDIT_CREATE" = "ਬਣਾਓ";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "ਸੋਧੋ";
+"EDIT_CATEGORY_NEW_TITLE" = "ਨਵੀਂ ਸ਼੍ਰੇਣੀ";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "ਸ਼੍ਰੇਣੀ ਦਾ ਨਾਮ ਦਰਜ ਕਰੋ";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "ਮੁੱਖ ਸ਼੍ਰੇਣੀ";
+"EDIT_CATEGORY_NO_PARENT" = "ਕੋਈ ਮੁੱਖ ਸ਼੍ਰੇਣੀ ਨਹੀਂ";
+"EDIT_CATEGORY_SUBCATEGORIES" = "ਉਪ-ਸ਼੍ਰੇਣੀਆਂ";
+"EDIT_CATEGORY_ICON" = "ਆਈਕਨ";
+"EDIT_CATEGORY_MORE_ICONS" = "ਹੋਰ";
+"EDIT_CATEGORY_COLOR" = "ਰੰਗ";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "ਸ਼੍ਰੇਣੀ ਮਿਟਾਓ";
+"EDIT_CATEGORY_DELETE_FOLDER" = "ਫੋਲਡਰ ਮਿਟਾਓ";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "ਇਹ ਕਾਰਵਾਈ ਵਾਪਸ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ। ਇਸ ਸ਼੍ਰੇਣੀ ਦੇ ਸਾਰੇ ਲੈਣ-ਦੇਣ ਮਿਟਾ ਦਿੱਤੇ ਜਾਣਗੇ।";
+"EDIT_CATEGORY_DEFAULT_NAME" = "ਸ਼੍ਰੇਣੀ ਦਾ ਨਾਮ";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "ਨਵੀਂ ਸ਼੍ਰੇਣੀ";
+"EDIT_CATEGORY_CREATE" = "ਬਣਾਓ";
+"EDIT_CATEGORY_NAME" = "ਨਾਮ";

@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Ausgaben-Tracker";
+"DONE" = "Fäerdeg";
+"ERROR" = "Feeler";
+"OK" = "OK";
+"YES" = "Jo";
+"NO" = "Nee";
+"UPDATE" = "Aktualiséieren";
+"ATTENTION" = "Opgepasst";
+"SUPPORT" = "Ënnerstëtzung";
+"NEXT" = "Weider";
+"BACK" = "Zréck";
+"REMOVE" = "Läschen";
+"DELETE" = "Läschen";
+"CANCEL" = "Ofbriechen";
+"CLOSE" = "Zoumaachen";
+"RETRY" = "Nach eng Kéier probéieren";
+"REPEAT" = "Nach eng Kéier probéieren";
+"SOMETHING_WENT_WRONG" = "Et ass eppes schifgaangen...";
+"CONTINUE" = "Weidermaachen";
+"SHARE" = "Deelen";
+"SAVE" = "Späicheren";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Ausgab aginn";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "All Kategorien";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Keng Transaktiounen";
+"TRANSACTIONS_LIST_DELETE" = "Läschen";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Kategorien änneren";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Neie Kategorie-Dossier";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Gitt en Numm fir den neie Kategorie-Dossier an";
+"CATEGORIES_EDIT_CANCEL" = "Ofbriechen";
+"CATEGORIES_EDIT_CREATE" = "Erstellen";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Änneren";
+"EDIT_CATEGORY_NEW_TITLE" = "Nei Kategorie";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Kategorienumm aginn";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Iwwergeuerdnet Kategorie";
+"EDIT_CATEGORY_NO_PARENT" = "Keng iwwergeuerdnet Kategorie";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Ënnerkategorien";
+"EDIT_CATEGORY_ICON" = "Symbol";
+"EDIT_CATEGORY_MORE_ICONS" = "Méi";
+"EDIT_CATEGORY_COLOR" = "Faarf";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Kategorie läschen";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Dossier läschen";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Dës Aktioun kann net réckgängeg gemaach ginn. All Transaktioune vun dëser Kategorie gi geläscht.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Kategorienumm";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nei Kategorie";
+"EDIT_CATEGORY_CREATE" = "Erstellen";
+"EDIT_CATEGORY_NAME" = "Numm";

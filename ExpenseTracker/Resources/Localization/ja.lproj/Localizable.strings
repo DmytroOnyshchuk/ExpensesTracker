@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "支出トラッカー";
+"DONE" = "完了";
+"ERROR" = "エラー";
+"OK" = "OK";
+"YES" = "はい";
+"NO" = "いいえ";
+"UPDATE" = "アップデート";
+"ATTENTION" = "注意";
+"SUPPORT" = "サポート";
+"NEXT" = "次へ";
+"BACK" = "戻る";
+"REMOVE" = "削除";
+"DELETE" = "削除";
+"CANCEL" = "キャンセル";
+"CLOSE" = "閉じる";
+"RETRY" = "再試行";
+"REPEAT" = "再試行";
+"SOMETHING_WENT_WRONG" = "問題が発生しました...";
+"CONTINUE" = "続ける";
+"SHARE" = "共有";
+"SAVE" = "保存";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "支出を入力";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "すべてのカテゴリ";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "取引がありません";
+"TRANSACTIONS_LIST_DELETE" = "削除";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "カテゴリを編集";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "新規カテゴリフォルダ";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "新しいカテゴリフォルダの名前を入力してください";
+"CATEGORIES_EDIT_CANCEL" = "キャンセル";
+"CATEGORIES_EDIT_CREATE" = "作成";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "編集";
+"EDIT_CATEGORY_NEW_TITLE" = "新規カテゴリ";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "カテゴリ名を入力";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "親カテゴリ";
+"EDIT_CATEGORY_NO_PARENT" = "親カテゴリなし";
+"EDIT_CATEGORY_SUBCATEGORIES" = "サブカテゴリ";
+"EDIT_CATEGORY_ICON" = "アイコン";
+"EDIT_CATEGORY_MORE_ICONS" = "その他";
+"EDIT_CATEGORY_COLOR" = "カラー";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "カテゴリを削除";
+"EDIT_CATEGORY_DELETE_FOLDER" = "フォルダを削除";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "この操作は取り消せません。このカテゴリの取引はすべて削除されます。";
+"EDIT_CATEGORY_DEFAULT_NAME" = "カテゴリ名";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "新規カテゴリ";
+"EDIT_CATEGORY_CREATE" = "作成";
+"EDIT_CATEGORY_NAME" = "名前";

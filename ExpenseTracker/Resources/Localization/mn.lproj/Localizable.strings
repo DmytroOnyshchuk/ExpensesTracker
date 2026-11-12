@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Зардлын бүртгэл";
+"DONE" = "Болсон";
+"ERROR" = "Алдаа";
+"OK" = "OK";
+"YES" = "Тийм";
+"NO" = "Үгүй";
+"UPDATE" = "Шинэчлэх";
+"ATTENTION" = "Анхаар";
+"SUPPORT" = "Тусламж";
+"NEXT" = "Дараах";
+"BACK" = "Буцах";
+"REMOVE" = "Устгах";
+"DELETE" = "Устгах";
+"CANCEL" = "Цуцлах";
+"CLOSE" = "Хаах";
+"RETRY" = "Дахин оролдох";
+"REPEAT" = "Дахин оролдох";
+"SOMETHING_WENT_WRONG" = "Алдаа гарлаа...";
+"CONTINUE" = "Үргэлжлүүлэх";
+"SHARE" = "Хуваалцах";
+"SAVE" = "Хадгалах";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Зардлаа оруулна уу";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Бүх ангилал";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Гүйлгээ алга";
+"TRANSACTIONS_LIST_DELETE" = "Устгах";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Ангилал засах";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Ангиллын шинэ хавтас";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Ангиллын шинэ хавтасны нэрийг оруулна уу";
+"CATEGORIES_EDIT_CANCEL" = "Цуцлах";
+"CATEGORIES_EDIT_CREATE" = "Үүсгэх";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Засах";
+"EDIT_CATEGORY_NEW_TITLE" = "Шинэ ангилал";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Ангиллын нэрийг оруулна уу";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Эх ангилал";
+"EDIT_CATEGORY_NO_PARENT" = "Эх ангилалгүй";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Дэд ангиллууд";
+"EDIT_CATEGORY_ICON" = "Дүрс";
+"EDIT_CATEGORY_MORE_ICONS" = "Бусад";
+"EDIT_CATEGORY_COLOR" = "Өнгө";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Ангилал устгах";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Хавтас устгах";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Энэ үйлдлийг буцаах боломжгүй. Энэ ангиллын бүх гүйлгээ устгагдана.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Ангиллын нэр";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Шинэ ангилал";
+"EDIT_CATEGORY_CREATE" = "Үүсгэх";
+"EDIT_CATEGORY_NAME" = "Нэр";

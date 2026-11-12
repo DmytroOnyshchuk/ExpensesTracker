@@ -58,8 +58,8 @@ internal enum L10n {
   internal static let editCategoryIcon = L10n.tr("Localizable", "EDIT_CATEGORY_ICON", fallback: "Icon")
   /// More
   internal static let editCategoryMoreIcons = L10n.tr("Localizable", "EDIT_CATEGORY_MORE_ICONS", fallback: "More")
-  /// Название
-  internal static let editCategoryName = L10n.tr("Localizable", "EDIT_CATEGORY_NAME", fallback: "Название")
+  /// Name
+  internal static let editCategoryName = L10n.tr("Localizable", "EDIT_CATEGORY_NAME", fallback: "Name")
   /// Enter category name
   internal static let editCategoryNamePlaceholder = L10n.tr("Localizable", "EDIT_CATEGORY_NAME_PLACEHOLDER", fallback: "Enter category name")
   /// New category

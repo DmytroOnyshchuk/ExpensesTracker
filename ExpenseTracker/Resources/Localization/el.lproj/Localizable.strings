@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Παρακολούθηση εξόδων";
+"DONE" = "Τέλος";
+"ERROR" = "Σφάλμα";
+"OK" = "OK";
+"YES" = "Ναι";
+"NO" = "Όχι";
+"UPDATE" = "Ενημέρωση";
+"ATTENTION" = "Προσοχή";
+"SUPPORT" = "Υποστήριξη";
+"NEXT" = "Επόμενο";
+"BACK" = "Πίσω";
+"REMOVE" = "Διαγραφή";
+"DELETE" = "Διαγραφή";
+"CANCEL" = "Άκυρο";
+"CLOSE" = "Κλείσιμο";
+"RETRY" = "Επανάληψη";
+"REPEAT" = "Επανάληψη";
+"SOMETHING_WENT_WRONG" = "Κάτι πήγε στραβά...";
+"CONTINUE" = "Συνέχεια";
+"SHARE" = "Κοινοποίηση";
+"SAVE" = "Αποθήκευση";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Εισαγάγετε έξοδο";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Όλες οι κατηγορίες";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Δεν υπάρχουν συναλλαγές";
+"TRANSACTIONS_LIST_DELETE" = "Διαγραφή";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Επεξεργασία κατηγοριών";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Νέος φάκελος κατηγοριών";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Εισαγάγετε όνομα για τον νέο φάκελο κατηγοριών";
+"CATEGORIES_EDIT_CANCEL" = "Άκυρο";
+"CATEGORIES_EDIT_CREATE" = "Δημιουργία";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Επεξεργασία";
+"EDIT_CATEGORY_NEW_TITLE" = "Νέα κατηγορία";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Εισαγάγετε όνομα κατηγορίας";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Γονική κατηγορία";
+"EDIT_CATEGORY_NO_PARENT" = "Χωρίς γονική κατηγορία";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Υποκατηγορίες";
+"EDIT_CATEGORY_ICON" = "Εικονίδιο";
+"EDIT_CATEGORY_MORE_ICONS" = "Περισσότερα";
+"EDIT_CATEGORY_COLOR" = "Χρώμα";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Διαγραφή κατηγορίας";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Διαγραφή φακέλου";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Αυτή η ενέργεια δεν μπορεί να αναιρεθεί. Όλες οι συναλλαγές αυτής της κατηγορίας θα διαγραφούν.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Όνομα κατηγορίας";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Νέα κατηγορία";
+"EDIT_CATEGORY_CREATE" = "Δημιουργία";
+"EDIT_CATEGORY_NAME" = "Όνομα";

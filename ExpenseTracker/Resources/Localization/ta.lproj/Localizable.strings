@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "செலவு கண்காணிப்பு";
+"DONE" = "முடிந்தது";
+"ERROR" = "பிழை";
+"OK" = "OK";
+"YES" = "ஆம்";
+"NO" = "இல்லை";
+"UPDATE" = "புதுப்பி";
+"ATTENTION" = "கவனம்";
+"SUPPORT" = "ஆதரவு";
+"NEXT" = "அடுத்து";
+"BACK" = "பின்செல்";
+"REMOVE" = "நீக்கு";
+"DELETE" = "நீக்கு";
+"CANCEL" = "ரத்துசெய்";
+"CLOSE" = "மூடு";
+"RETRY" = "மீண்டும் முயலவும்";
+"REPEAT" = "மீண்டும் முயலவும்";
+"SOMETHING_WENT_WRONG" = "ஏதோ தவறு நடந்துவிட்டது...";
+"CONTINUE" = "தொடர்க";
+"SHARE" = "பகிர்";
+"SAVE" = "சேமி";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "செலவை உள்ளிடவும்";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "அனைத்து வகைகளும்";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "பரிவர்த்தனைகள் இல்லை";
+"TRANSACTIONS_LIST_DELETE" = "நீக்கு";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "வகைகளைத் திருத்து";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "புதிய வகைக் கோப்புறை";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "புதிய வகைக் கோப்புறைக்கு ஒரு பெயரை உள்ளிடவும்";
+"CATEGORIES_EDIT_CANCEL" = "ரத்துசெய்";
+"CATEGORIES_EDIT_CREATE" = "உருவாக்கு";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "திருத்து";
+"EDIT_CATEGORY_NEW_TITLE" = "புதிய வகை";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "வகையின் பெயரை உள்ளிடவும்";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "முதன்மை வகை";
+"EDIT_CATEGORY_NO_PARENT" = "முதன்மை வகை இல்லை";
+"EDIT_CATEGORY_SUBCATEGORIES" = "துணை வகைகள்";
+"EDIT_CATEGORY_ICON" = "ஐகான்";
+"EDIT_CATEGORY_MORE_ICONS" = "மேலும்";
+"EDIT_CATEGORY_COLOR" = "நிறம்";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "வகையை நீக்கு";
+"EDIT_CATEGORY_DELETE_FOLDER" = "கோப்புறையை நீக்கு";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "இந்தச் செயலைச் செயல்தவிர்க்க முடியாது. இந்த வகையிலுள்ள அனைத்துப் பரிவர்த்தனைகளும் நீக்கப்படும்.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "வகையின் பெயர்";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "புதிய வகை";
+"EDIT_CATEGORY_CREATE" = "உருவாக்கு";
+"EDIT_CATEGORY_NAME" = "பெயர்";

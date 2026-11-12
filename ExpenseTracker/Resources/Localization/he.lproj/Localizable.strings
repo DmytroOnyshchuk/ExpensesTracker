@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "מעקב הוצאות";
+"DONE" = "סיום";
+"ERROR" = "שגיאה";
+"OK" = "OK";
+"YES" = "כן";
+"NO" = "לא";
+"UPDATE" = "עדכון";
+"ATTENTION" = "שימו לב";
+"SUPPORT" = "תמיכה";
+"NEXT" = "הבא";
+"BACK" = "חזרה";
+"REMOVE" = "מחיקה";
+"DELETE" = "מחיקה";
+"CANCEL" = "ביטול";
+"CLOSE" = "סגירה";
+"RETRY" = "ניסיון חוזר";
+"REPEAT" = "ניסיון חוזר";
+"SOMETHING_WENT_WRONG" = "משהו השתבש...";
+"CONTINUE" = "המשך";
+"SHARE" = "שיתוף";
+"SAVE" = "שמירה";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "הזינו הוצאה";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "כל הקטגוריות";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "אין עסקאות";
+"TRANSACTIONS_LIST_DELETE" = "מחיקה";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "עריכת קטגוריות";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "תיקיית קטגוריות חדשה";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "הזינו שם לתיקיית הקטגוריות החדשה";
+"CATEGORIES_EDIT_CANCEL" = "ביטול";
+"CATEGORIES_EDIT_CREATE" = "יצירה";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "עריכה";
+"EDIT_CATEGORY_NEW_TITLE" = "קטגוריה חדשה";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "הזינו שם קטגוריה";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "קטגוריית אב";
+"EDIT_CATEGORY_NO_PARENT" = "ללא קטגוריית אב";
+"EDIT_CATEGORY_SUBCATEGORIES" = "תת-קטגוריות";
+"EDIT_CATEGORY_ICON" = "סמל";
+"EDIT_CATEGORY_MORE_ICONS" = "עוד";
+"EDIT_CATEGORY_COLOR" = "צבע";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "מחיקת קטגוריה";
+"EDIT_CATEGORY_DELETE_FOLDER" = "מחיקת תיקייה";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "לא ניתן לבטל פעולה זו. כל העסקאות בקטגוריה זו יימחקו.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "שם הקטגוריה";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "קטגוריה חדשה";
+"EDIT_CATEGORY_CREATE" = "יצירה";
+"EDIT_CATEGORY_NAME" = "שם";

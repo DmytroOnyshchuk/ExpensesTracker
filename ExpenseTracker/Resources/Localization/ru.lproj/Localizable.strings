@@ -60,5 +60,6 @@
 "EDIT_CATEGORY_DELETE_FOLDER" = "Удалить папку";
 "EDIT_CATEGORY_DELETE_CONFIRMATION" = "Это действие нельзя отменить. Все транзакции с этой категорией будут удалены.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Название категории";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Новая категория";
 "EDIT_CATEGORY_CREATE" = "Создать";
 "EDIT_CATEGORY_NAME" = "Название";

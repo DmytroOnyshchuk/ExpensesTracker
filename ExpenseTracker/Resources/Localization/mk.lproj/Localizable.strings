@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Следење трошоци";
+"DONE" = "Готово";
+"ERROR" = "Грешка";
+"OK" = "OK";
+"YES" = "Да";
+"NO" = "Не";
+"UPDATE" = "Ажурирај";
+"ATTENTION" = "Внимание";
+"SUPPORT" = "Поддршка";
+"NEXT" = "Следно";
+"BACK" = "Назад";
+"REMOVE" = "Избриши";
+"DELETE" = "Избриши";
+"CANCEL" = "Откажи";
+"CLOSE" = "Затвори";
+"RETRY" = "Обиди се повторно";
+"REPEAT" = "Обиди се повторно";
+"SOMETHING_WENT_WRONG" = "Нешто тргна наопаку...";
+"CONTINUE" = "Продолжи";
+"SHARE" = "Сподели";
+"SAVE" = "Зачувај";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Внесете трошок";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Сите категории";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Нема трансакции";
+"TRANSACTIONS_LIST_DELETE" = "Избриши";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Уреди категории";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Нова папка со категории";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Внесете име за новата папка со категории";
+"CATEGORIES_EDIT_CANCEL" = "Откажи";
+"CATEGORIES_EDIT_CREATE" = "Создај";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Уреди";
+"EDIT_CATEGORY_NEW_TITLE" = "Нова категорија";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Внесете име на категоријата";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Главна категорија";
+"EDIT_CATEGORY_NO_PARENT" = "Без главна категорија";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Поткатегории";
+"EDIT_CATEGORY_ICON" = "Икона";
+"EDIT_CATEGORY_MORE_ICONS" = "Повеќе";
+"EDIT_CATEGORY_COLOR" = "Боја";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Избриши категорија";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Избриши папка";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ова дејство не може да се врати. Сите трансакции со оваа категорија ќе бидат избришани.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Име на категоријата";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Нова категорија";
+"EDIT_CATEGORY_CREATE" = "Создај";
+"EDIT_CATEGORY_NAME" = "Име";

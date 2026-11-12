@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Tagasubaybay ng Gastos";
+"DONE" = "Tapos na";
+"ERROR" = "Error";
+"OK" = "OK";
+"YES" = "Oo";
+"NO" = "Hindi";
+"UPDATE" = "I-update";
+"ATTENTION" = "Paunawa";
+"SUPPORT" = "Suporta";
+"NEXT" = "Susunod";
+"BACK" = "Bumalik";
+"REMOVE" = "I-delete";
+"DELETE" = "I-delete";
+"CANCEL" = "Kanselahin";
+"CLOSE" = "Isara";
+"RETRY" = "Subukan ulit";
+"REPEAT" = "Subukan ulit";
+"SOMETHING_WENT_WRONG" = "May nangyaring mali...";
+"CONTINUE" = "Magpatuloy";
+"SHARE" = "Ibahagi";
+"SAVE" = "I-save";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Ilagay ang gastos";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Lahat ng kategorya";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Walang transaksyon";
+"TRANSACTIONS_LIST_DELETE" = "I-delete";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "I-edit ang mga kategorya";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Bagong folder ng kategorya";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Maglagay ng pangalan para sa bagong folder ng kategorya";
+"CATEGORIES_EDIT_CANCEL" = "Kanselahin";
+"CATEGORIES_EDIT_CREATE" = "Gumawa";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "I-edit";
+"EDIT_CATEGORY_NEW_TITLE" = "Bagong kategorya";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Ilagay ang pangalan ng kategorya";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Pangunahing kategorya";
+"EDIT_CATEGORY_NO_PARENT" = "Walang pangunahing kategorya";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Mga subkategorya";
+"EDIT_CATEGORY_ICON" = "Icon";
+"EDIT_CATEGORY_MORE_ICONS" = "Higit pa";
+"EDIT_CATEGORY_COLOR" = "Kulay";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "I-delete ang kategorya";
+"EDIT_CATEGORY_DELETE_FOLDER" = "I-delete ang folder";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Hindi na maa-undo ang pagkilos na ito. Made-delete ang lahat ng transaksyon sa kategoryang ito.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Pangalan ng kategorya";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Bagong kategorya";
+"EDIT_CATEGORY_CREATE" = "Gumawa";
+"EDIT_CATEGORY_NAME" = "Pangalan";

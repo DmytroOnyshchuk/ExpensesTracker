@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Улік выдаткаў";
+"DONE" = "Гатова";
+"ERROR" = "Памылка";
+"OK" = "OK";
+"YES" = "Так";
+"NO" = "Не";
+"UPDATE" = "Абнавіць";
+"ATTENTION" = "Увага";
+"SUPPORT" = "Падтрымка";
+"NEXT" = "Далей";
+"BACK" = "Назад";
+"REMOVE" = "Выдаліць";
+"DELETE" = "Выдаліць";
+"CANCEL" = "Скасаваць";
+"CLOSE" = "Закрыць";
+"RETRY" = "Паўтарыць";
+"REPEAT" = "Паўтарыць";
+"SOMETHING_WENT_WRONG" = "Нешта пайшло не так...";
+"CONTINUE" = "Працягнуць";
+"SHARE" = "Падзяліцца";
+"SAVE" = "Захаваць";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Увядзіце выдатак";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Усе катэгорыі";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Няма аперацый";
+"TRANSACTIONS_LIST_DELETE" = "Выдаліць";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Рэдагаванне катэгорый";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Новая папка катэгорый";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Увядзіце назву новай папкі для катэгорый";
+"CATEGORIES_EDIT_CANCEL" = "Скасаваць";
+"CATEGORIES_EDIT_CREATE" = "Стварыць";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Рэдагаванне";
+"EDIT_CATEGORY_NEW_TITLE" = "Новая катэгорыя";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Увядзіце назву катэгорыі";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Галоўная катэгорыя";
+"EDIT_CATEGORY_NO_PARENT" = "Без папкі";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Падкатэгорыі";
+"EDIT_CATEGORY_ICON" = "Значок";
+"EDIT_CATEGORY_MORE_ICONS" = "Яшчэ";
+"EDIT_CATEGORY_COLOR" = "Колер";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Выдаліць катэгорыю";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Выдаліць папку";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Гэта дзеянне нельга скасаваць. Усе аперацыі з гэтай катэгорыяй будуць выдалены.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Назва катэгорыі";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Новая катэгорыя";
+"EDIT_CATEGORY_CREATE" = "Стварыць";
+"EDIT_CATEGORY_NAME" = "Назва";

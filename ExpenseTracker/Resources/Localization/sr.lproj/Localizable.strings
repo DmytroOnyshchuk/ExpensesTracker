@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Праћење трошкова";
+"DONE" = "Готово";
+"ERROR" = "Грешка";
+"OK" = "OK";
+"YES" = "Да";
+"NO" = "Не";
+"UPDATE" = "Ажурирај";
+"ATTENTION" = "Пажња";
+"SUPPORT" = "Подршка";
+"NEXT" = "Даље";
+"BACK" = "Назад";
+"REMOVE" = "Избриши";
+"DELETE" = "Избриши";
+"CANCEL" = "Откажи";
+"CLOSE" = "Затвори";
+"RETRY" = "Покушај поново";
+"REPEAT" = "Покушај поново";
+"SOMETHING_WENT_WRONG" = "Нешто је пошло наопако...";
+"CONTINUE" = "Настави";
+"SHARE" = "Подели";
+"SAVE" = "Сачувај";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Унесите трошак";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Све категорије";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Нема трансакција";
+"TRANSACTIONS_LIST_DELETE" = "Избриши";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Уреди категорије";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Нова фасцикла категорија";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Унесите назив нове фасцикле категорија";
+"CATEGORIES_EDIT_CANCEL" = "Откажи";
+"CATEGORIES_EDIT_CREATE" = "Направи";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Уреди";
+"EDIT_CATEGORY_NEW_TITLE" = "Нова категорија";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Унесите назив категорије";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Надређена категорија";
+"EDIT_CATEGORY_NO_PARENT" = "Без надређене категорије";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Поткатегорије";
+"EDIT_CATEGORY_ICON" = "Икона";
+"EDIT_CATEGORY_MORE_ICONS" = "Још";
+"EDIT_CATEGORY_COLOR" = "Боја";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Избриши категорију";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Избриши фасциклу";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ова радња се не може опозвати. Све трансакције са овом категоријом биће избрисане.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Назив категорије";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Нова категорија";
+"EDIT_CATEGORY_CREATE" = "Направи";
+"EDIT_CATEGORY_NAME" = "Назив";

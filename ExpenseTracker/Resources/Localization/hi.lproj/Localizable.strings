@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "खर्च ट्रैकर";
+"DONE" = "हो गया";
+"ERROR" = "त्रुटि";
+"OK" = "OK";
+"YES" = "हाँ";
+"NO" = "नहीं";
+"UPDATE" = "अपडेट करें";
+"ATTENTION" = "ध्यान दें";
+"SUPPORT" = "सहायता";
+"NEXT" = "आगे";
+"BACK" = "वापस";
+"REMOVE" = "हटाएँ";
+"DELETE" = "हटाएँ";
+"CANCEL" = "रद्द करें";
+"CLOSE" = "बंद करें";
+"RETRY" = "फिर से कोशिश करें";
+"REPEAT" = "फिर से कोशिश करें";
+"SOMETHING_WENT_WRONG" = "कुछ गलत हो गया...";
+"CONTINUE" = "जारी रखें";
+"SHARE" = "शेयर करें";
+"SAVE" = "सहेजें";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "खर्च दर्ज करें";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "सभी श्रेणियाँ";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "कोई लेन-देन नहीं";
+"TRANSACTIONS_LIST_DELETE" = "हटाएँ";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "श्रेणियाँ संपादित करें";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "नया श्रेणी फ़ोल्डर";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "नए श्रेणी फ़ोल्डर का नाम दर्ज करें";
+"CATEGORIES_EDIT_CANCEL" = "रद्द करें";
+"CATEGORIES_EDIT_CREATE" = "बनाएँ";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "संपादित करें";
+"EDIT_CATEGORY_NEW_TITLE" = "नई श्रेणी";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "श्रेणी का नाम दर्ज करें";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "मुख्य श्रेणी";
+"EDIT_CATEGORY_NO_PARENT" = "कोई मुख्य श्रेणी नहीं";
+"EDIT_CATEGORY_SUBCATEGORIES" = "उपश्रेणियाँ";
+"EDIT_CATEGORY_ICON" = "आइकन";
+"EDIT_CATEGORY_MORE_ICONS" = "और";
+"EDIT_CATEGORY_COLOR" = "रंग";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "श्रेणी हटाएँ";
+"EDIT_CATEGORY_DELETE_FOLDER" = "फ़ोल्डर हटाएँ";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "यह कार्रवाई पूर्ववत नहीं की जा सकती। इस श्रेणी के सभी लेन-देन हटा दिए जाएँगे।";
+"EDIT_CATEGORY_DEFAULT_NAME" = "श्रेणी का नाम";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "नई श्रेणी";
+"EDIT_CATEGORY_CREATE" = "बनाएँ";
+"EDIT_CATEGORY_NAME" = "नाम";

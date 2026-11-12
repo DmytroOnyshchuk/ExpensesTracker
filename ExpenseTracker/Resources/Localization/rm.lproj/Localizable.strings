@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Survista da las expensas";
+"DONE" = "Finì";
+"ERROR" = "Errur";
+"OK" = "OK";
+"YES" = "Gea";
+"NO" = "Na";
+"UPDATE" = "Actualisar";
+"ATTENTION" = "Attenziun";
+"SUPPORT" = "Agid";
+"NEXT" = "Vinavant";
+"BACK" = "Enavos";
+"REMOVE" = "Stizzar";
+"DELETE" = "Stizzar";
+"CANCEL" = "Interrumper";
+"CLOSE" = "Serrar";
+"RETRY" = "Empruvar anc ina giada";
+"REPEAT" = "Empruvar anc ina giada";
+"SOMETHING_WENT_WRONG" = "Insatge è ì mal...";
+"CONTINUE" = "Cuntinuar";
+"SHARE" = "Cundivider";
+"SAVE" = "Memorisar";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Endatar l'expensa";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Tut las categorias";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Naginas transacziuns";
+"TRANSACTIONS_LIST_DELETE" = "Stizzar";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Modifitgar las categorias";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nov ordinatur da categorias";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Endatescha in num per il nov ordinatur da categorias";
+"CATEGORIES_EDIT_CANCEL" = "Interrumper";
+"CATEGORIES_EDIT_CREATE" = "Crear";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Modifitgar";
+"EDIT_CATEGORY_NEW_TITLE" = "Nova categoria";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Endatar il num da la categoria";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Categoria surordinada";
+"EDIT_CATEGORY_NO_PARENT" = "Nagina categoria surordinada";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Sutcategorias";
+"EDIT_CATEGORY_ICON" = "Icona";
+"EDIT_CATEGORY_MORE_ICONS" = "Dapli";
+"EDIT_CATEGORY_COLOR" = "Colur";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Stizzar la categoria";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Stizzar l'ordinatur";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Questa acziun na po betg vegnir revocada. Tut las transacziuns da questa categoria vegnan stizzadas.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Num da la categoria";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nova categoria";
+"EDIT_CATEGORY_CREATE" = "Crear";
+"EDIT_CATEGORY_NAME" = "Num";

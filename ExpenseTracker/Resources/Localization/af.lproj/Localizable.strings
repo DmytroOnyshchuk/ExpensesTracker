@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Uitgawespoorder";
+"DONE" = "Klaar";
+"ERROR" = "Fout";
+"OK" = "OK";
+"YES" = "Ja";
+"NO" = "Nee";
+"UPDATE" = "Dateer op";
+"ATTENTION" = "Aandag";
+"SUPPORT" = "Ondersteuning";
+"NEXT" = "Volgende";
+"BACK" = "Terug";
+"REMOVE" = "Vee uit";
+"DELETE" = "Vee uit";
+"CANCEL" = "Kanselleer";
+"CLOSE" = "Maak toe";
+"RETRY" = "Probeer weer";
+"REPEAT" = "Probeer weer";
+"SOMETHING_WENT_WRONG" = "Iets het verkeerd geloop...";
+"CONTINUE" = "Gaan voort";
+"SHARE" = "Deel";
+"SAVE" = "Stoor";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Voer uitgawe in";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Alle kategorieë";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Geen transaksies nie";
+"TRANSACTIONS_LIST_DELETE" = "Vee uit";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Wysig kategorieë";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nuwe kategorie-lêergids";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Voer 'n naam vir die nuwe kategorie-lêergids in";
+"CATEGORIES_EDIT_CANCEL" = "Kanselleer";
+"CATEGORIES_EDIT_CREATE" = "Skep";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Wysig";
+"EDIT_CATEGORY_NEW_TITLE" = "Nuwe kategorie";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Voer kategorienaam in";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Ouerkategorie";
+"EDIT_CATEGORY_NO_PARENT" = "Geen ouer nie";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Subkategorieë";
+"EDIT_CATEGORY_ICON" = "Ikoon";
+"EDIT_CATEGORY_MORE_ICONS" = "Meer";
+"EDIT_CATEGORY_COLOR" = "Kleur";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Vee kategorie uit";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Vee lêergids uit";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Hierdie aksie kan nie ontdoen word nie. Alle transaksies met hierdie kategorie sal uitgevee word.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Kategorienaam";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nuwe kategorie";
+"EDIT_CATEGORY_CREATE" = "Skep";
+"EDIT_CATEGORY_NAME" = "Naam";

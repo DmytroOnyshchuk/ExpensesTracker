@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Uitgaventracker";
+"DONE" = "Gereed";
+"ERROR" = "Fout";
+"OK" = "OK";
+"YES" = "Ja";
+"NO" = "Nee";
+"UPDATE" = "Bijwerken";
+"ATTENTION" = "Let op";
+"SUPPORT" = "Ondersteuning";
+"NEXT" = "Volgende";
+"BACK" = "Terug";
+"REMOVE" = "Verwijderen";
+"DELETE" = "Verwijderen";
+"CANCEL" = "Annuleren";
+"CLOSE" = "Sluiten";
+"RETRY" = "Opnieuw proberen";
+"REPEAT" = "Opnieuw proberen";
+"SOMETHING_WENT_WRONG" = "Er is iets misgegaan...";
+"CONTINUE" = "Doorgaan";
+"SHARE" = "Delen";
+"SAVE" = "Opslaan";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Voer uitgave in";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Alle categorieën";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Geen transacties";
+"TRANSACTIONS_LIST_DELETE" = "Verwijderen";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Categorieën bewerken";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nieuwe categoriemap";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Voer een naam in voor de nieuwe categoriemap";
+"CATEGORIES_EDIT_CANCEL" = "Annuleren";
+"CATEGORIES_EDIT_CREATE" = "Aanmaken";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Bewerken";
+"EDIT_CATEGORY_NEW_TITLE" = "Nieuwe categorie";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Voer categorienaam in";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Bovenliggende categorie";
+"EDIT_CATEGORY_NO_PARENT" = "Geen bovenliggende categorie";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Subcategorieën";
+"EDIT_CATEGORY_ICON" = "Pictogram";
+"EDIT_CATEGORY_MORE_ICONS" = "Meer";
+"EDIT_CATEGORY_COLOR" = "Kleur";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Categorie verwijderen";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Map verwijderen";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Deze actie kan niet ongedaan worden gemaakt. Alle transacties met deze categorie worden verwijderd.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Categorienaam";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nieuwe categorie";
+"EDIT_CATEGORY_CREATE" = "Aanmaken";
+"EDIT_CATEGORY_NAME" = "Naam";

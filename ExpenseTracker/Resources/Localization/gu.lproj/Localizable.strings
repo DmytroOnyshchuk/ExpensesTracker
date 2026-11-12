@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "ખર્ચ ટ્રેકર";
+"DONE" = "થઈ ગયું";
+"ERROR" = "ભૂલ";
+"OK" = "OK";
+"YES" = "હા";
+"NO" = "ના";
+"UPDATE" = "અપડેટ કરો";
+"ATTENTION" = "ધ્યાન આપો";
+"SUPPORT" = "સપોર્ટ";
+"NEXT" = "આગળ";
+"BACK" = "પાછળ";
+"REMOVE" = "કાઢી નાખો";
+"DELETE" = "કાઢી નાખો";
+"CANCEL" = "રદ કરો";
+"CLOSE" = "બંધ કરો";
+"RETRY" = "ફરી પ્રયાસ કરો";
+"REPEAT" = "ફરી પ્રયાસ કરો";
+"SOMETHING_WENT_WRONG" = "કંઈક ખોટું થયું...";
+"CONTINUE" = "ચાલુ રાખો";
+"SHARE" = "શેર કરો";
+"SAVE" = "સાચવો";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "ખર્ચ દાખલ કરો";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "બધી શ્રેણીઓ";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "કોઈ વ્યવહાર નથી";
+"TRANSACTIONS_LIST_DELETE" = "કાઢી નાખો";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "શ્રેણીઓ સંપાદિત કરો";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "નવું શ્રેણી ફોલ્ડર";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "નવા શ્રેણી ફોલ્ડર માટે નામ દાખલ કરો";
+"CATEGORIES_EDIT_CANCEL" = "રદ કરો";
+"CATEGORIES_EDIT_CREATE" = "બનાવો";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "સંપાદિત કરો";
+"EDIT_CATEGORY_NEW_TITLE" = "નવી શ્રેણી";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "શ્રેણીનું નામ દાખલ કરો";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "મુખ્ય શ્રેણી";
+"EDIT_CATEGORY_NO_PARENT" = "કોઈ મુખ્ય શ્રેણી નથી";
+"EDIT_CATEGORY_SUBCATEGORIES" = "ઉપશ્રેણીઓ";
+"EDIT_CATEGORY_ICON" = "આઇકન";
+"EDIT_CATEGORY_MORE_ICONS" = "વધુ";
+"EDIT_CATEGORY_COLOR" = "રંગ";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "શ્રેણી કાઢી નાખો";
+"EDIT_CATEGORY_DELETE_FOLDER" = "ફોલ્ડર કાઢી નાખો";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "આ ક્રિયા પાછી ફેરવી શકાતી નથી. આ શ્રેણીના બધા વ્યવહારો કાઢી નાખવામાં આવશે.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "શ્રેણીનું નામ";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "નવી શ્રેણી";
+"EDIT_CATEGORY_CREATE" = "બનાવો";
+"EDIT_CATEGORY_NAME" = "નામ";

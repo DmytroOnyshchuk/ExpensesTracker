@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Theo dõi chi tiêu";
+"DONE" = "Xong";
+"ERROR" = "Lỗi";
+"OK" = "OK";
+"YES" = "Có";
+"NO" = "Không";
+"UPDATE" = "Cập nhật";
+"ATTENTION" = "Chú ý";
+"SUPPORT" = "Hỗ trợ";
+"NEXT" = "Tiếp";
+"BACK" = "Quay lại";
+"REMOVE" = "Xóa";
+"DELETE" = "Xóa";
+"CANCEL" = "Hủy";
+"CLOSE" = "Đóng";
+"RETRY" = "Thử lại";
+"REPEAT" = "Thử lại";
+"SOMETHING_WENT_WRONG" = "Đã xảy ra lỗi...";
+"CONTINUE" = "Tiếp tục";
+"SHARE" = "Chia sẻ";
+"SAVE" = "Lưu";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Nhập khoản chi";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Tất cả danh mục";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Không có giao dịch";
+"TRANSACTIONS_LIST_DELETE" = "Xóa";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Sửa danh mục";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Thư mục danh mục mới";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Nhập tên cho thư mục danh mục mới";
+"CATEGORIES_EDIT_CANCEL" = "Hủy";
+"CATEGORIES_EDIT_CREATE" = "Tạo";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Sửa";
+"EDIT_CATEGORY_NEW_TITLE" = "Danh mục mới";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Nhập tên danh mục";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Danh mục cha";
+"EDIT_CATEGORY_NO_PARENT" = "Không có danh mục cha";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Danh mục con";
+"EDIT_CATEGORY_ICON" = "Biểu tượng";
+"EDIT_CATEGORY_MORE_ICONS" = "Thêm";
+"EDIT_CATEGORY_COLOR" = "Màu";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Xóa danh mục";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Xóa thư mục";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Không thể hoàn tác thao tác này. Tất cả giao dịch thuộc danh mục này sẽ bị xóa.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Tên danh mục";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Danh mục mới";
+"EDIT_CATEGORY_CREATE" = "Tạo";
+"EDIT_CATEGORY_NAME" = "Tên";

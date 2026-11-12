@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "ವೆಚ್ಚ ಟ್ರ್ಯಾಕರ್";
+"DONE" = "ಮುಗಿದಿದೆ";
+"ERROR" = "ದೋಷ";
+"OK" = "OK";
+"YES" = "ಹೌದು";
+"NO" = "ಇಲ್ಲ";
+"UPDATE" = "ಅಪ್‌ಡೇಟ್ ಮಾಡಿ";
+"ATTENTION" = "ಗಮನಿಸಿ";
+"SUPPORT" = "ಬೆಂಬಲ";
+"NEXT" = "ಮುಂದೆ";
+"BACK" = "ಹಿಂದೆ";
+"REMOVE" = "ಅಳಿಸಿ";
+"DELETE" = "ಅಳಿಸಿ";
+"CANCEL" = "ರದ್ದುಮಾಡಿ";
+"CLOSE" = "ಮುಚ್ಚಿ";
+"RETRY" = "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ";
+"REPEAT" = "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ";
+"SOMETHING_WENT_WRONG" = "ಏನೋ ತಪ್ಪಾಗಿದೆ...";
+"CONTINUE" = "ಮುಂದುವರಿಸಿ";
+"SHARE" = "ಹಂಚಿಕೊಳ್ಳಿ";
+"SAVE" = "ಉಳಿಸಿ";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "ವೆಚ್ಚ ನಮೂದಿಸಿ";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "ಎಲ್ಲಾ ವರ್ಗಗಳು";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ಯಾವುದೇ ವಹಿವಾಟುಗಳಿಲ್ಲ";
+"TRANSACTIONS_LIST_DELETE" = "ಅಳಿಸಿ";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "ವರ್ಗಗಳನ್ನು ಎಡಿಟ್ ಮಾಡಿ";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "ಹೊಸ ವರ್ಗ ಫೋಲ್ಡರ್";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "ಹೊಸ ವರ್ಗ ಫೋಲ್ಡರ್‌ಗೆ ಹೆಸರು ನಮೂದಿಸಿ";
+"CATEGORIES_EDIT_CANCEL" = "ರದ್ದುಮಾಡಿ";
+"CATEGORIES_EDIT_CREATE" = "ರಚಿಸಿ";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "ಎಡಿಟ್ ಮಾಡಿ";
+"EDIT_CATEGORY_NEW_TITLE" = "ಹೊಸ ವರ್ಗ";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "ವರ್ಗದ ಹೆಸರು ನಮೂದಿಸಿ";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "ಮುಖ್ಯ ವರ್ಗ";
+"EDIT_CATEGORY_NO_PARENT" = "ಮುಖ್ಯ ವರ್ಗವಿಲ್ಲ";
+"EDIT_CATEGORY_SUBCATEGORIES" = "ಉಪವರ್ಗಗಳು";
+"EDIT_CATEGORY_ICON" = "ಐಕಾನ್";
+"EDIT_CATEGORY_MORE_ICONS" = "ಇನ್ನಷ್ಟು";
+"EDIT_CATEGORY_COLOR" = "ಬಣ್ಣ";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "ವರ್ಗ ಅಳಿಸಿ";
+"EDIT_CATEGORY_DELETE_FOLDER" = "ಫೋಲ್ಡರ್ ಅಳಿಸಿ";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "ಈ ಕ್ರಿಯೆಯನ್ನು ರದ್ದುಗೊಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ಈ ವರ್ಗದ ಎಲ್ಲಾ ವಹಿವಾಟುಗಳನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "ವರ್ಗದ ಹೆಸರು";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "ಹೊಸ ವರ್ಗ";
+"EDIT_CATEGORY_CREATE" = "ರಚಿಸಿ";
+"EDIT_CATEGORY_NAME" = "ಹೆಸರು";

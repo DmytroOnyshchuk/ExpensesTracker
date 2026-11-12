@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "የወጪ መከታተያ";
+"DONE" = "ተከናውኗል";
+"ERROR" = "ስህተት";
+"OK" = "OK";
+"YES" = "አዎ";
+"NO" = "አይ";
+"UPDATE" = "አዘምን";
+"ATTENTION" = "ማሳሰቢያ";
+"SUPPORT" = "ድጋፍ";
+"NEXT" = "ቀጣይ";
+"BACK" = "ተመለስ";
+"REMOVE" = "ሰርዝ";
+"DELETE" = "ሰርዝ";
+"CANCEL" = "ይቅር";
+"CLOSE" = "ዝጋ";
+"RETRY" = "እንደገና ሞክር";
+"REPEAT" = "እንደገና ሞክር";
+"SOMETHING_WENT_WRONG" = "የሆነ ችግር ተፈጥሯል...";
+"CONTINUE" = "ቀጥል";
+"SHARE" = "አጋራ";
+"SAVE" = "አስቀምጥ";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "ወጪ ያስገቡ";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "ሁሉም ምድቦች";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ምንም ግብይቶች የሉም";
+"TRANSACTIONS_LIST_DELETE" = "ሰርዝ";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "ምድቦችን አርትዕ";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "አዲስ የምድብ አቃፊ";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "ለአዲሱ የምድብ አቃፊ ስም ያስገቡ";
+"CATEGORIES_EDIT_CANCEL" = "ይቅር";
+"CATEGORIES_EDIT_CREATE" = "ፍጠር";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "አርትዕ";
+"EDIT_CATEGORY_NEW_TITLE" = "አዲስ ምድብ";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "የምድብ ስም ያስገቡ";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "ዋና ምድብ";
+"EDIT_CATEGORY_NO_PARENT" = "ዋና ምድብ የለም";
+"EDIT_CATEGORY_SUBCATEGORIES" = "ንዑስ ምድቦች";
+"EDIT_CATEGORY_ICON" = "አዶ";
+"EDIT_CATEGORY_MORE_ICONS" = "ተጨማሪ";
+"EDIT_CATEGORY_COLOR" = "ቀለም";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "ምድብ ሰርዝ";
+"EDIT_CATEGORY_DELETE_FOLDER" = "አቃፊ ሰርዝ";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "ይህ ድርጊት ሊቀለበስ አይችልም። በዚህ ምድብ ያሉ ሁሉም ግብይቶች ይሰረዛሉ።";
+"EDIT_CATEGORY_DEFAULT_NAME" = "የምድብ ስም";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "አዲስ ምድብ";
+"EDIT_CATEGORY_CREATE" = "ፍጠር";
+"EDIT_CATEGORY_NAME" = "ስም";

@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Controle de despesas";
+"DONE" = "Concluído";
+"ERROR" = "Erro";
+"OK" = "OK";
+"YES" = "Sim";
+"NO" = "Não";
+"UPDATE" = "Atualizar";
+"ATTENTION" = "Atenção";
+"SUPPORT" = "Suporte";
+"NEXT" = "Avançar";
+"BACK" = "Voltar";
+"REMOVE" = "Excluir";
+"DELETE" = "Excluir";
+"CANCEL" = "Cancelar";
+"CLOSE" = "Fechar";
+"RETRY" = "Tentar novamente";
+"REPEAT" = "Tentar novamente";
+"SOMETHING_WENT_WRONG" = "Algo deu errado...";
+"CONTINUE" = "Continuar";
+"SHARE" = "Compartilhar";
+"SAVE" = "Salvar";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Insira a despesa";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Todas as categorias";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nenhuma transação";
+"TRANSACTIONS_LIST_DELETE" = "Excluir";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Editar categorias";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nova pasta de categorias";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Insira um nome para a nova pasta de categorias";
+"CATEGORIES_EDIT_CANCEL" = "Cancelar";
+"CATEGORIES_EDIT_CREATE" = "Criar";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Editar";
+"EDIT_CATEGORY_NEW_TITLE" = "Nova categoria";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Insira o nome da categoria";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Categoria principal";
+"EDIT_CATEGORY_NO_PARENT" = "Sem categoria principal";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Subcategorias";
+"EDIT_CATEGORY_ICON" = "Ícone";
+"EDIT_CATEGORY_MORE_ICONS" = "Mais";
+"EDIT_CATEGORY_COLOR" = "Cor";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Excluir categoria";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Excluir pasta";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Esta ação não pode ser desfeita. Todas as transações desta categoria serão excluídas.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Nome da categoria";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nova categoria";
+"EDIT_CATEGORY_CREATE" = "Criar";
+"EDIT_CATEGORY_NAME" = "Nome";

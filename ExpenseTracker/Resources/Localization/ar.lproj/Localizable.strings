@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "متتبع المصروفات";
+"DONE" = "تم";
+"ERROR" = "خطأ";
+"OK" = "OK";
+"YES" = "نعم";
+"NO" = "لا";
+"UPDATE" = "تحديث";
+"ATTENTION" = "تنبيه";
+"SUPPORT" = "الدعم";
+"NEXT" = "التالي";
+"BACK" = "رجوع";
+"REMOVE" = "حذف";
+"DELETE" = "حذف";
+"CANCEL" = "إلغاء";
+"CLOSE" = "إغلاق";
+"RETRY" = "إعادة المحاولة";
+"REPEAT" = "إعادة المحاولة";
+"SOMETHING_WENT_WRONG" = "حدث خطأ ما...";
+"CONTINUE" = "متابعة";
+"SHARE" = "مشاركة";
+"SAVE" = "حفظ";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "أدخل المصروف";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "كل الفئات";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "لا توجد معاملات";
+"TRANSACTIONS_LIST_DELETE" = "حذف";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "تعديل الفئات";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "مجلد فئات جديد";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "أدخل اسمًا لمجلد الفئات الجديد";
+"CATEGORIES_EDIT_CANCEL" = "إلغاء";
+"CATEGORIES_EDIT_CREATE" = "إنشاء";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "تعديل";
+"EDIT_CATEGORY_NEW_TITLE" = "فئة جديدة";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "أدخل اسم الفئة";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "الفئة الرئيسية";
+"EDIT_CATEGORY_NO_PARENT" = "بدون فئة رئيسية";
+"EDIT_CATEGORY_SUBCATEGORIES" = "الفئات الفرعية";
+"EDIT_CATEGORY_ICON" = "الأيقونة";
+"EDIT_CATEGORY_MORE_ICONS" = "المزيد";
+"EDIT_CATEGORY_COLOR" = "اللون";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "حذف الفئة";
+"EDIT_CATEGORY_DELETE_FOLDER" = "حذف المجلد";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "لا يمكن التراجع عن هذا الإجراء. سيتم حذف جميع المعاملات في هذه الفئة.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "اسم الفئة";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "فئة جديدة";
+"EDIT_CATEGORY_CREATE" = "إنشاء";
+"EDIT_CATEGORY_NAME" = "الاسم";

@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Útgjaldayfirlit";
+"DONE" = "Lokið";
+"ERROR" = "Villa";
+"OK" = "OK";
+"YES" = "Já";
+"NO" = "Nei";
+"UPDATE" = "Uppfæra";
+"ATTENTION" = "Athugið";
+"SUPPORT" = "Aðstoð";
+"NEXT" = "Áfram";
+"BACK" = "Til baka";
+"REMOVE" = "Eyða";
+"DELETE" = "Eyða";
+"CANCEL" = "Hætta við";
+"CLOSE" = "Loka";
+"RETRY" = "Reyna aftur";
+"REPEAT" = "Reyna aftur";
+"SOMETHING_WENT_WRONG" = "Eitthvað fór úrskeiðis...";
+"CONTINUE" = "Halda áfram";
+"SHARE" = "Deila";
+"SAVE" = "Vista";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Sláðu inn útgjöld";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Allir flokkar";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Engar færslur";
+"TRANSACTIONS_LIST_DELETE" = "Eyða";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Breyta flokkum";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Ný flokkamappa";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Sláðu inn heiti nýju flokkamöppunnar";
+"CATEGORIES_EDIT_CANCEL" = "Hætta við";
+"CATEGORIES_EDIT_CREATE" = "Búa til";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Breyta";
+"EDIT_CATEGORY_NEW_TITLE" = "Nýr flokkur";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Sláðu inn heiti flokks";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Yfirflokkur";
+"EDIT_CATEGORY_NO_PARENT" = "Enginn yfirflokkur";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Undirflokkar";
+"EDIT_CATEGORY_ICON" = "Tákn";
+"EDIT_CATEGORY_MORE_ICONS" = "Meira";
+"EDIT_CATEGORY_COLOR" = "Litur";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Eyða flokki";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Eyða möppu";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ekki er hægt að afturkalla þessa aðgerð. Öllum færslum í þessum flokki verður eytt.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Heiti flokks";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nýr flokkur";
+"EDIT_CATEGORY_CREATE" = "Búa til";
+"EDIT_CATEGORY_NAME" = "Heiti";

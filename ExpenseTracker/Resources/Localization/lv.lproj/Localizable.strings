@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Izdevumu uzskaite";
+"DONE" = "Gatavs";
+"ERROR" = "Kļūda";
+"OK" = "OK";
+"YES" = "Jā";
+"NO" = "Nē";
+"UPDATE" = "Atjaunināt";
+"ATTENTION" = "Uzmanību";
+"SUPPORT" = "Atbalsts";
+"NEXT" = "Tālāk";
+"BACK" = "Atpakaļ";
+"REMOVE" = "Dzēst";
+"DELETE" = "Dzēst";
+"CANCEL" = "Atcelt";
+"CLOSE" = "Aizvērt";
+"RETRY" = "Mēģināt vēlreiz";
+"REPEAT" = "Mēģināt vēlreiz";
+"SOMETHING_WENT_WRONG" = "Radās kļūda...";
+"CONTINUE" = "Turpināt";
+"SHARE" = "Kopīgot";
+"SAVE" = "Saglabāt";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Ievadiet izdevumu";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Visas kategorijas";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nav darījumu";
+"TRANSACTIONS_LIST_DELETE" = "Dzēst";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Rediģēt kategorijas";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Jauna kategoriju mape";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Ievadiet jaunās kategoriju mapes nosaukumu";
+"CATEGORIES_EDIT_CANCEL" = "Atcelt";
+"CATEGORIES_EDIT_CREATE" = "Izveidot";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Rediģēt";
+"EDIT_CATEGORY_NEW_TITLE" = "Jauna kategorija";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Ievadiet kategorijas nosaukumu";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Virskategorija";
+"EDIT_CATEGORY_NO_PARENT" = "Bez virskategorijas";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Apakškategorijas";
+"EDIT_CATEGORY_ICON" = "Ikona";
+"EDIT_CATEGORY_MORE_ICONS" = "Vairāk";
+"EDIT_CATEGORY_COLOR" = "Krāsa";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Dzēst kategoriju";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Dzēst mapi";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Šo darbību nevar atsaukt. Visi šīs kategorijas darījumi tiks dzēsti.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Kategorijas nosaukums";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Jauna kategorija";
+"EDIT_CATEGORY_CREATE" = "Izveidot";
+"EDIT_CATEGORY_NAME" = "Nosaukums";

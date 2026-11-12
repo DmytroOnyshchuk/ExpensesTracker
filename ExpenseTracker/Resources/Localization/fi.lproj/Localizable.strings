@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Kuluseuranta";
+"DONE" = "Valmis";
+"ERROR" = "Virhe";
+"OK" = "OK";
+"YES" = "Kyllä";
+"NO" = "Ei";
+"UPDATE" = "Päivitä";
+"ATTENTION" = "Huomio";
+"SUPPORT" = "Tuki";
+"NEXT" = "Seuraava";
+"BACK" = "Takaisin";
+"REMOVE" = "Poista";
+"DELETE" = "Poista";
+"CANCEL" = "Kumoa";
+"CLOSE" = "Sulje";
+"RETRY" = "Yritä uudelleen";
+"REPEAT" = "Yritä uudelleen";
+"SOMETHING_WENT_WRONG" = "Jokin meni vikaan...";
+"CONTINUE" = "Jatka";
+"SHARE" = "Jaa";
+"SAVE" = "Tallenna";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Syötä kulu";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Kaikki luokat";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ei tapahtumia";
+"TRANSACTIONS_LIST_DELETE" = "Poista";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Muokkaa luokkia";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Uusi luokkakansio";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Anna uuden luokkakansion nimi";
+"CATEGORIES_EDIT_CANCEL" = "Kumoa";
+"CATEGORIES_EDIT_CREATE" = "Luo";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Muokkaa";
+"EDIT_CATEGORY_NEW_TITLE" = "Uusi luokka";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Anna luokan nimi";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Yläluokka";
+"EDIT_CATEGORY_NO_PARENT" = "Ei yläluokkaa";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Alaluokat";
+"EDIT_CATEGORY_ICON" = "Kuvake";
+"EDIT_CATEGORY_MORE_ICONS" = "Lisää";
+"EDIT_CATEGORY_COLOR" = "Väri";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Poista luokka";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Poista kansio";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Tätä toimintoa ei voi kumota. Kaikki tämän luokan tapahtumat poistetaan.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Luokan nimi";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Uusi luokka";
+"EDIT_CATEGORY_CREATE" = "Luo";
+"EDIT_CATEGORY_NAME" = "Nimi";

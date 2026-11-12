@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Проследяване на разходи";
+"DONE" = "Готово";
+"ERROR" = "Грешка";
+"OK" = "OK";
+"YES" = "Да";
+"NO" = "Не";
+"UPDATE" = "Обновяване";
+"ATTENTION" = "Внимание";
+"SUPPORT" = "Поддръжка";
+"NEXT" = "Напред";
+"BACK" = "Назад";
+"REMOVE" = "Изтриване";
+"DELETE" = "Изтриване";
+"CANCEL" = "Отказ";
+"CLOSE" = "Затваряне";
+"RETRY" = "Повторен опит";
+"REPEAT" = "Повторен опит";
+"SOMETHING_WENT_WRONG" = "Нещо се обърка...";
+"CONTINUE" = "Продължаване";
+"SHARE" = "Споделяне";
+"SAVE" = "Запазване";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Въведете разход";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Всички категории";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Няма транзакции";
+"TRANSACTIONS_LIST_DELETE" = "Изтриване";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Редактиране на категории";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Нова папка с категории";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Въведете име за новата папка с категории";
+"CATEGORIES_EDIT_CANCEL" = "Отказ";
+"CATEGORIES_EDIT_CREATE" = "Създаване";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Редактиране";
+"EDIT_CATEGORY_NEW_TITLE" = "Нова категория";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Въведете име на категорията";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Родителска категория";
+"EDIT_CATEGORY_NO_PARENT" = "Без родителска категория";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Подкатегории";
+"EDIT_CATEGORY_ICON" = "Икона";
+"EDIT_CATEGORY_MORE_ICONS" = "Още";
+"EDIT_CATEGORY_COLOR" = "Цвят";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Изтриване на категорията";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Изтриване на папката";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Това действие не може да бъде отменено. Всички транзакции с тази категория ще бъдат изтрити.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Име на категорията";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Нова категория";
+"EDIT_CATEGORY_CREATE" = "Създаване";
+"EDIT_CATEGORY_NAME" = "Име";

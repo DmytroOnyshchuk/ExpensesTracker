@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Sledilnik stroškov";
+"DONE" = "Končano";
+"ERROR" = "Napaka";
+"OK" = "OK";
+"YES" = "Da";
+"NO" = "Ne";
+"UPDATE" = "Posodobi";
+"ATTENTION" = "Pozor";
+"SUPPORT" = "Podpora";
+"NEXT" = "Naprej";
+"BACK" = "Nazaj";
+"REMOVE" = "Izbriši";
+"DELETE" = "Izbriši";
+"CANCEL" = "Prekliči";
+"CLOSE" = "Zapri";
+"RETRY" = "Poskusi znova";
+"REPEAT" = "Poskusi znova";
+"SOMETHING_WENT_WRONG" = "Nekaj je šlo narobe...";
+"CONTINUE" = "Nadaljuj";
+"SHARE" = "Deli";
+"SAVE" = "Shrani";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Vnesite strošek";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Vse kategorije";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ni transakcij";
+"TRANSACTIONS_LIST_DELETE" = "Izbriši";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Uredi kategorije";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nova mapa kategorij";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Vnesite ime nove mape kategorij";
+"CATEGORIES_EDIT_CANCEL" = "Prekliči";
+"CATEGORIES_EDIT_CREATE" = "Ustvari";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Uredi";
+"EDIT_CATEGORY_NEW_TITLE" = "Nova kategorija";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Vnesite ime kategorije";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Nadrejena kategorija";
+"EDIT_CATEGORY_NO_PARENT" = "Brez nadrejene kategorije";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Podkategorije";
+"EDIT_CATEGORY_ICON" = "Ikona";
+"EDIT_CATEGORY_MORE_ICONS" = "Več";
+"EDIT_CATEGORY_COLOR" = "Barva";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Izbriši kategorijo";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Izbriši mapo";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Tega dejanja ni mogoče razveljaviti. Vse transakcije s to kategorijo bodo izbrisane.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Ime kategorije";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nova kategorija";
+"EDIT_CATEGORY_CREATE" = "Ustvari";
+"EDIT_CATEGORY_NAME" = "Ime";

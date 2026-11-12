@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Praćenje troškova";
+"DONE" = "Gotovo";
+"ERROR" = "Pogreška";
+"OK" = "OK";
+"YES" = "Da";
+"NO" = "Ne";
+"UPDATE" = "Ažuriraj";
+"ATTENTION" = "Pažnja";
+"SUPPORT" = "Podrška";
+"NEXT" = "Dalje";
+"BACK" = "Natrag";
+"REMOVE" = "Izbriši";
+"DELETE" = "Izbriši";
+"CANCEL" = "Odustani";
+"CLOSE" = "Zatvori";
+"RETRY" = "Pokušaj ponovno";
+"REPEAT" = "Pokušaj ponovno";
+"SOMETHING_WENT_WRONG" = "Nešto je pošlo po zlu...";
+"CONTINUE" = "Nastavi";
+"SHARE" = "Podijeli";
+"SAVE" = "Spremi";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Unesite trošak";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Sve kategorije";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nema transakcija";
+"TRANSACTIONS_LIST_DELETE" = "Izbriši";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Uredi kategorije";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nova mapa kategorija";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Unesite naziv nove mape kategorija";
+"CATEGORIES_EDIT_CANCEL" = "Odustani";
+"CATEGORIES_EDIT_CREATE" = "Stvori";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Uredi";
+"EDIT_CATEGORY_NEW_TITLE" = "Nova kategorija";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Unesite naziv kategorije";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Nadređena kategorija";
+"EDIT_CATEGORY_NO_PARENT" = "Bez nadređene kategorije";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Potkategorije";
+"EDIT_CATEGORY_ICON" = "Ikona";
+"EDIT_CATEGORY_MORE_ICONS" = "Više";
+"EDIT_CATEGORY_COLOR" = "Boja";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Izbriši kategoriju";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Izbriši mapu";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ova se radnja ne može poništiti. Sve transakcije s ovom kategorijom bit će izbrisane.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Naziv kategorije";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nova kategorija";
+"EDIT_CATEGORY_CREATE" = "Stvori";
+"EDIT_CATEGORY_NAME" = "Naziv";

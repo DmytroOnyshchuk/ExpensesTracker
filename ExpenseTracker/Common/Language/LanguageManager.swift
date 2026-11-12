@@ -10,16 +10,14 @@ import Foundation
 
 enum LanguageManager {
     static func getSystemLanguage() -> Language {
-        var languageCode = Language.English.rawValue
+        if let preferred = Bundle.main.preferredLocalizations.first,
+           let language = Language(rawValue: preferred) {
+            return language
+        }
 
-        if #available(iOS 16.0, *) {
-            if let language = Locale.current.language.languageCode {
-                languageCode = language.identifier
-            }
-        } else {
-            if let language = Locale.current.languageCode {
-                languageCode = language
-            }
+        var languageCode = Language.English.rawValue
+        if let language = Locale.current.language.languageCode {
+            languageCode = language.identifier
         }
 
         return Language(rawValue: languageCode) ?? .English

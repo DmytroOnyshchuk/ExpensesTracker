@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Чыгымдарды эсептөө";
+"DONE" = "Даяр";
+"ERROR" = "Ката";
+"OK" = "OK";
+"YES" = "Ооба";
+"NO" = "Жок";
+"UPDATE" = "Жаңыртуу";
+"ATTENTION" = "Көңүл буруңуз";
+"SUPPORT" = "Колдоо";
+"NEXT" = "Кийинки";
+"BACK" = "Артка";
+"REMOVE" = "Өчүрүү";
+"DELETE" = "Өчүрүү";
+"CANCEL" = "Жокко чыгаруу";
+"CLOSE" = "Жабуу";
+"RETRY" = "Кайталоо";
+"REPEAT" = "Кайталоо";
+"SOMETHING_WENT_WRONG" = "Бир нерсе туура эмес болду...";
+"CONTINUE" = "Улантуу";
+"SHARE" = "Бөлүшүү";
+"SAVE" = "Сактоо";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Чыгымды киргизиңиз";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Бардык категориялар";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Транзакциялар жок";
+"TRANSACTIONS_LIST_DELETE" = "Өчүрүү";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Категорияларды түзөтүү";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Жаңы категория папкасы";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Жаңы категория папкасынын атын киргизиңиз";
+"CATEGORIES_EDIT_CANCEL" = "Жокко чыгаруу";
+"CATEGORIES_EDIT_CREATE" = "Түзүү";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Түзөтүү";
+"EDIT_CATEGORY_NEW_TITLE" = "Жаңы категория";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Категориянын атын киргизиңиз";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Негизги категория";
+"EDIT_CATEGORY_NO_PARENT" = "Негизги категориясыз";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Ички категориялар";
+"EDIT_CATEGORY_ICON" = "Сүрөтчө";
+"EDIT_CATEGORY_MORE_ICONS" = "Дагы";
+"EDIT_CATEGORY_COLOR" = "Түс";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Категорияны өчүрүү";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Папканы өчүрүү";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Бул аракетти артка кайтаруу мүмкүн эмес. Бул категориядагы бардык транзакциялар өчүрүлөт.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Категориянын аты";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Жаңы категория";
+"EDIT_CATEGORY_CREATE" = "Түзүү";
+"EDIT_CATEGORY_NAME" = "Аты";

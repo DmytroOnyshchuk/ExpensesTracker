@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Śledzenie wydatków";
+"DONE" = "Gotowe";
+"ERROR" = "Błąd";
+"OK" = "OK";
+"YES" = "Tak";
+"NO" = "Nie";
+"UPDATE" = "Aktualizuj";
+"ATTENTION" = "Uwaga";
+"SUPPORT" = "Wsparcie";
+"NEXT" = "Dalej";
+"BACK" = "Wstecz";
+"REMOVE" = "Usuń";
+"DELETE" = "Usuń";
+"CANCEL" = "Anuluj";
+"CLOSE" = "Zamknij";
+"RETRY" = "Spróbuj ponownie";
+"REPEAT" = "Spróbuj ponownie";
+"SOMETHING_WENT_WRONG" = "Coś poszło nie tak...";
+"CONTINUE" = "Kontynuuj";
+"SHARE" = "Udostępnij";
+"SAVE" = "Zapisz";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Wprowadź wydatek";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Wszystkie kategorie";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Brak transakcji";
+"TRANSACTIONS_LIST_DELETE" = "Usuń";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Edytuj kategorie";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nowy folder kategorii";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Wprowadź nazwę nowego folderu kategorii";
+"CATEGORIES_EDIT_CANCEL" = "Anuluj";
+"CATEGORIES_EDIT_CREATE" = "Utwórz";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Edytuj";
+"EDIT_CATEGORY_NEW_TITLE" = "Nowa kategoria";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Wprowadź nazwę kategorii";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Kategoria nadrzędna";
+"EDIT_CATEGORY_NO_PARENT" = "Brak kategorii nadrzędnej";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Podkategorie";
+"EDIT_CATEGORY_ICON" = "Ikona";
+"EDIT_CATEGORY_MORE_ICONS" = "Więcej";
+"EDIT_CATEGORY_COLOR" = "Kolor";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Usuń kategorię";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Usuń folder";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Tej czynności nie można cofnąć. Wszystkie transakcje z tą kategorią zostaną usunięte.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Nazwa kategorii";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nowa kategoria";
+"EDIT_CATEGORY_CREATE" = "Utwórz";
+"EDIT_CATEGORY_NAME" = "Nazwa";

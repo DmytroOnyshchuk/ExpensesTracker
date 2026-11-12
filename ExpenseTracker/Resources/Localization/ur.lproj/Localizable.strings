@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "اخراجات ٹریکر";
+"DONE" = "ہو گیا";
+"ERROR" = "خرابی";
+"OK" = "OK";
+"YES" = "ہاں";
+"NO" = "نہیں";
+"UPDATE" = "اپ ڈیٹ کریں";
+"ATTENTION" = "توجہ فرمائیں";
+"SUPPORT" = "معاونت";
+"NEXT" = "اگلا";
+"BACK" = "واپس";
+"REMOVE" = "حذف کریں";
+"DELETE" = "حذف کریں";
+"CANCEL" = "منسوخ کریں";
+"CLOSE" = "بند کریں";
+"RETRY" = "دوبارہ کوشش کریں";
+"REPEAT" = "دوبارہ کوشش کریں";
+"SOMETHING_WENT_WRONG" = "کچھ غلط ہو گیا...";
+"CONTINUE" = "جاری رکھیں";
+"SHARE" = "شیئر کریں";
+"SAVE" = "محفوظ کریں";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "خرچ درج کریں";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "تمام زمرے";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "کوئی لین دین نہیں";
+"TRANSACTIONS_LIST_DELETE" = "حذف کریں";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "زمروں میں ترمیم کریں";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "نیا زمرہ فولڈر";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "نئے زمرہ فولڈر کا نام درج کریں";
+"CATEGORIES_EDIT_CANCEL" = "منسوخ کریں";
+"CATEGORIES_EDIT_CREATE" = "بنائیں";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "ترمیم کریں";
+"EDIT_CATEGORY_NEW_TITLE" = "نیا زمرہ";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "زمرے کا نام درج کریں";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "بنیادی زمرہ";
+"EDIT_CATEGORY_NO_PARENT" = "کوئی بنیادی زمرہ نہیں";
+"EDIT_CATEGORY_SUBCATEGORIES" = "ذیلی زمرے";
+"EDIT_CATEGORY_ICON" = "آئیکن";
+"EDIT_CATEGORY_MORE_ICONS" = "مزید";
+"EDIT_CATEGORY_COLOR" = "رنگ";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "زمرہ حذف کریں";
+"EDIT_CATEGORY_DELETE_FOLDER" = "فولڈر حذف کریں";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "یہ عمل واپس نہیں کیا جا سکتا۔ اس زمرے کے تمام لین دین حذف کر دیے جائیں گے۔";
+"EDIT_CATEGORY_DEFAULT_NAME" = "زمرے کا نام";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "نیا زمرہ";
+"EDIT_CATEGORY_CREATE" = "بنائیں";
+"EDIT_CATEGORY_NAME" = "نام";

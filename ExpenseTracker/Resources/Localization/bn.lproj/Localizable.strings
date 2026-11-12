@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "খরচ ট্র্যাকার";
+"DONE" = "সম্পন্ন";
+"ERROR" = "ত্রুটি";
+"OK" = "OK";
+"YES" = "হ্যাঁ";
+"NO" = "না";
+"UPDATE" = "আপডেট";
+"ATTENTION" = "মনোযোগ দিন";
+"SUPPORT" = "সহায়তা";
+"NEXT" = "পরবর্তী";
+"BACK" = "পিছনে";
+"REMOVE" = "মুছুন";
+"DELETE" = "মুছুন";
+"CANCEL" = "বাতিল";
+"CLOSE" = "বন্ধ করুন";
+"RETRY" = "আবার চেষ্টা করুন";
+"REPEAT" = "আবার চেষ্টা করুন";
+"SOMETHING_WENT_WRONG" = "কিছু একটা ভুল হয়েছে...";
+"CONTINUE" = "চালিয়ে যান";
+"SHARE" = "শেয়ার করুন";
+"SAVE" = "সংরক্ষণ করুন";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "খরচ লিখুন";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "সব বিভাগ";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "কোনো লেনদেন নেই";
+"TRANSACTIONS_LIST_DELETE" = "মুছুন";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "বিভাগ সম্পাদনা";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "নতুন বিভাগ ফোল্ডার";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "নতুন বিভাগ ফোল্ডারের নাম লিখুন";
+"CATEGORIES_EDIT_CANCEL" = "বাতিল";
+"CATEGORIES_EDIT_CREATE" = "তৈরি করুন";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "সম্পাদনা";
+"EDIT_CATEGORY_NEW_TITLE" = "নতুন বিভাগ";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "বিভাগের নাম লিখুন";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "মূল বিভাগ";
+"EDIT_CATEGORY_NO_PARENT" = "মূল বিভাগ নেই";
+"EDIT_CATEGORY_SUBCATEGORIES" = "উপবিভাগ";
+"EDIT_CATEGORY_ICON" = "আইকন";
+"EDIT_CATEGORY_MORE_ICONS" = "আরও";
+"EDIT_CATEGORY_COLOR" = "রং";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "বিভাগ মুছুন";
+"EDIT_CATEGORY_DELETE_FOLDER" = "ফোল্ডার মুছুন";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "এই কাজটি পূর্বাবস্থায় ফেরানো যাবে না। এই বিভাগের সব লেনদেন মুছে ফেলা হবে।";
+"EDIT_CATEGORY_DEFAULT_NAME" = "বিভাগের নাম";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "নতুন বিভাগ";
+"EDIT_CATEGORY_CREATE" = "তৈরি করুন";
+"EDIT_CATEGORY_NAME" = "নাম";

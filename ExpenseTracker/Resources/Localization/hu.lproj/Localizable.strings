@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Kiadáskövető";
+"DONE" = "Kész";
+"ERROR" = "Hiba";
+"OK" = "OK";
+"YES" = "Igen";
+"NO" = "Nem";
+"UPDATE" = "Frissítés";
+"ATTENTION" = "Figyelem";
+"SUPPORT" = "Támogatás";
+"NEXT" = "Tovább";
+"BACK" = "Vissza";
+"REMOVE" = "Törlés";
+"DELETE" = "Törlés";
+"CANCEL" = "Mégse";
+"CLOSE" = "Bezárás";
+"RETRY" = "Újra";
+"REPEAT" = "Újra";
+"SOMETHING_WENT_WRONG" = "Hiba történt...";
+"CONTINUE" = "Folytatás";
+"SHARE" = "Megosztás";
+"SAVE" = "Mentés";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Add meg a kiadást";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Összes kategória";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nincsenek tranzakciók";
+"TRANSACTIONS_LIST_DELETE" = "Törlés";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Kategóriák szerkesztése";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Új kategóriamappa";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Add meg az új kategóriamappa nevét";
+"CATEGORIES_EDIT_CANCEL" = "Mégse";
+"CATEGORIES_EDIT_CREATE" = "Létrehozás";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Szerkesztés";
+"EDIT_CATEGORY_NEW_TITLE" = "Új kategória";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Add meg a kategória nevét";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Szülőkategória";
+"EDIT_CATEGORY_NO_PARENT" = "Nincs szülőkategória";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Alkategóriák";
+"EDIT_CATEGORY_ICON" = "Ikon";
+"EDIT_CATEGORY_MORE_ICONS" = "Több";
+"EDIT_CATEGORY_COLOR" = "Szín";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Kategória törlése";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Mappa törlése";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ez a művelet nem vonható vissza. A kategória összes tranzakciója törlődik.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Kategória neve";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Új kategória";
+"EDIT_CATEGORY_CREATE" = "Létrehozás";
+"EDIT_CATEGORY_NAME" = "Név";

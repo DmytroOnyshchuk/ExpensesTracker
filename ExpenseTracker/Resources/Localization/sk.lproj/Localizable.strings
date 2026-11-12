@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Sledovanie výdavkov";
+"DONE" = "Hotovo";
+"ERROR" = "Chyba";
+"OK" = "OK";
+"YES" = "Áno";
+"NO" = "Nie";
+"UPDATE" = "Aktualizovať";
+"ATTENTION" = "Upozornenie";
+"SUPPORT" = "Podpora";
+"NEXT" = "Ďalej";
+"BACK" = "Späť";
+"REMOVE" = "Vymazať";
+"DELETE" = "Vymazať";
+"CANCEL" = "Zrušiť";
+"CLOSE" = "Zavrieť";
+"RETRY" = "Skúsiť znova";
+"REPEAT" = "Skúsiť znova";
+"SOMETHING_WENT_WRONG" = "Niečo sa pokazilo...";
+"CONTINUE" = "Pokračovať";
+"SHARE" = "Zdieľať";
+"SAVE" = "Uložiť";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Zadajte výdavok";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Všetky kategórie";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Žiadne transakcie";
+"TRANSACTIONS_LIST_DELETE" = "Vymazať";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Upraviť kategórie";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nový priečinok kategórií";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Zadajte názov nového priečinka kategórií";
+"CATEGORIES_EDIT_CANCEL" = "Zrušiť";
+"CATEGORIES_EDIT_CREATE" = "Vytvoriť";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Upraviť";
+"EDIT_CATEGORY_NEW_TITLE" = "Nová kategória";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Zadajte názov kategórie";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Nadradená kategória";
+"EDIT_CATEGORY_NO_PARENT" = "Bez nadradenej kategórie";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Podkategórie";
+"EDIT_CATEGORY_ICON" = "Ikona";
+"EDIT_CATEGORY_MORE_ICONS" = "Viac";
+"EDIT_CATEGORY_COLOR" = "Farba";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Vymazať kategóriu";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Vymazať priečinok";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Túto akciu nie je možné vrátiť späť. Všetky transakcie s touto kategóriou budú vymazané.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Názov kategórie";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nová kategória";
+"EDIT_CATEGORY_CREATE" = "Vytvoriť";
+"EDIT_CATEGORY_NAME" = "Názov";

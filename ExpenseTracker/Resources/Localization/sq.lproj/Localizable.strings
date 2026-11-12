@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Gjurmuesi i shpenzimeve";
+"DONE" = "U krye";
+"ERROR" = "Gabim";
+"OK" = "OK";
+"YES" = "Po";
+"NO" = "Jo";
+"UPDATE" = "Përditëso";
+"ATTENTION" = "Kujdes";
+"SUPPORT" = "Mbështetje";
+"NEXT" = "Tjetra";
+"BACK" = "Prapa";
+"REMOVE" = "Fshi";
+"DELETE" = "Fshi";
+"CANCEL" = "Anulo";
+"CLOSE" = "Mbyll";
+"RETRY" = "Provo sërish";
+"REPEAT" = "Provo sërish";
+"SOMETHING_WENT_WRONG" = "Diçka shkoi keq...";
+"CONTINUE" = "Vazhdo";
+"SHARE" = "Ndaj";
+"SAVE" = "Ruaj";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Fut shpenzimin";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Të gjitha kategoritë";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nuk ka transaksione";
+"TRANSACTIONS_LIST_DELETE" = "Fshi";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Ndrysho kategoritë";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Dosje e re kategorish";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Fut një emër për dosjen e re të kategorive";
+"CATEGORIES_EDIT_CANCEL" = "Anulo";
+"CATEGORIES_EDIT_CREATE" = "Krijo";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Ndrysho";
+"EDIT_CATEGORY_NEW_TITLE" = "Kategori e re";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Fut emrin e kategorisë";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Kategoria kryesore";
+"EDIT_CATEGORY_NO_PARENT" = "Pa kategori kryesore";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Nënkategoritë";
+"EDIT_CATEGORY_ICON" = "Ikona";
+"EDIT_CATEGORY_MORE_ICONS" = "Më shumë";
+"EDIT_CATEGORY_COLOR" = "Ngjyra";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Fshi kategorinë";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Fshi dosjen";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ky veprim nuk mund të zhbëhet. Të gjitha transaksionet me këtë kategori do të fshihen.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Emri i kategorisë";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Kategori e re";
+"EDIT_CATEGORY_CREATE" = "Krijo";
+"EDIT_CATEGORY_NAME" = "Emri";

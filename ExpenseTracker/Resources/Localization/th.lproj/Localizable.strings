@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "บันทึกรายจ่าย";
+"DONE" = "เสร็จสิ้น";
+"ERROR" = "ข้อผิดพลาด";
+"OK" = "OK";
+"YES" = "ใช่";
+"NO" = "ไม่";
+"UPDATE" = "อัปเดต";
+"ATTENTION" = "โปรดทราบ";
+"SUPPORT" = "ความช่วยเหลือ";
+"NEXT" = "ถัดไป";
+"BACK" = "ย้อนกลับ";
+"REMOVE" = "ลบ";
+"DELETE" = "ลบ";
+"CANCEL" = "ยกเลิก";
+"CLOSE" = "ปิด";
+"RETRY" = "ลองอีกครั้ง";
+"REPEAT" = "ลองอีกครั้ง";
+"SOMETHING_WENT_WRONG" = "เกิดข้อผิดพลาดบางอย่าง...";
+"CONTINUE" = "ดำเนินการต่อ";
+"SHARE" = "แชร์";
+"SAVE" = "บันทึก";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "ป้อนรายจ่าย";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "หมวดหมู่ทั้งหมด";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ไม่มีรายการ";
+"TRANSACTIONS_LIST_DELETE" = "ลบ";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "แก้ไขหมวดหมู่";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "โฟลเดอร์หมวดหมู่ใหม่";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "ป้อนชื่อสำหรับโฟลเดอร์หมวดหมู่ใหม่";
+"CATEGORIES_EDIT_CANCEL" = "ยกเลิก";
+"CATEGORIES_EDIT_CREATE" = "สร้าง";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "แก้ไข";
+"EDIT_CATEGORY_NEW_TITLE" = "หมวดหมู่ใหม่";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "ป้อนชื่อหมวดหมู่";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "หมวดหมู่หลัก";
+"EDIT_CATEGORY_NO_PARENT" = "ไม่มีหมวดหมู่หลัก";
+"EDIT_CATEGORY_SUBCATEGORIES" = "หมวดหมู่ย่อย";
+"EDIT_CATEGORY_ICON" = "ไอคอน";
+"EDIT_CATEGORY_MORE_ICONS" = "เพิ่มเติม";
+"EDIT_CATEGORY_COLOR" = "สี";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "ลบหมวดหมู่";
+"EDIT_CATEGORY_DELETE_FOLDER" = "ลบโฟลเดอร์";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "การดำเนินการนี้ไม่สามารถยกเลิกได้ รายการทั้งหมดในหมวดหมู่นี้จะถูกลบ";
+"EDIT_CATEGORY_DEFAULT_NAME" = "ชื่อหมวดหมู่";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "หมวดหมู่ใหม่";
+"EDIT_CATEGORY_CREATE" = "สร้าง";
+"EDIT_CATEGORY_NAME" = "ชื่อ";

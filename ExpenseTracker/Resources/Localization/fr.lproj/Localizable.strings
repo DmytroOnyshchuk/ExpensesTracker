@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Suivi des dépenses";
+"DONE" = "Terminé";
+"ERROR" = "Erreur";
+"OK" = "OK";
+"YES" = "Oui";
+"NO" = "Non";
+"UPDATE" = "Mettre à jour";
+"ATTENTION" = "Attention";
+"SUPPORT" = "Assistance";
+"NEXT" = "Suivant";
+"BACK" = "Retour";
+"REMOVE" = "Supprimer";
+"DELETE" = "Supprimer";
+"CANCEL" = "Annuler";
+"CLOSE" = "Fermer";
+"RETRY" = "Réessayer";
+"REPEAT" = "Réessayer";
+"SOMETHING_WENT_WRONG" = "Une erreur s'est produite...";
+"CONTINUE" = "Continuer";
+"SHARE" = "Partager";
+"SAVE" = "Enregistrer";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Saisissez la dépense";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Toutes les catégories";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Aucune transaction";
+"TRANSACTIONS_LIST_DELETE" = "Supprimer";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Modifier les catégories";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nouveau dossier de catégories";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Saisissez un nom pour le nouveau dossier de catégories";
+"CATEGORIES_EDIT_CANCEL" = "Annuler";
+"CATEGORIES_EDIT_CREATE" = "Créer";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Modifier";
+"EDIT_CATEGORY_NEW_TITLE" = "Nouvelle catégorie";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Saisissez le nom de la catégorie";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Catégorie parente";
+"EDIT_CATEGORY_NO_PARENT" = "Aucune catégorie parente";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Sous-catégories";
+"EDIT_CATEGORY_ICON" = "Icône";
+"EDIT_CATEGORY_MORE_ICONS" = "Plus";
+"EDIT_CATEGORY_COLOR" = "Couleur";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Supprimer la catégorie";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Supprimer le dossier";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Cette action est irréversible. Toutes les transactions de cette catégorie seront supprimées.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Nom de la catégorie";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nouvelle catégorie";
+"EDIT_CATEGORY_CREATE" = "Créer";
+"EDIT_CATEGORY_NAME" = "Nom";

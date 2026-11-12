@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "ردیاب هزینه‌ها";
+"DONE" = "تمام";
+"ERROR" = "خطا";
+"OK" = "OK";
+"YES" = "بله";
+"NO" = "خیر";
+"UPDATE" = "به‌روزرسانی";
+"ATTENTION" = "توجه";
+"SUPPORT" = "پشتیبانی";
+"NEXT" = "بعدی";
+"BACK" = "بازگشت";
+"REMOVE" = "حذف";
+"DELETE" = "حذف";
+"CANCEL" = "لغو";
+"CLOSE" = "بستن";
+"RETRY" = "تلاش دوباره";
+"REPEAT" = "تلاش دوباره";
+"SOMETHING_WENT_WRONG" = "مشکلی پیش آمد...";
+"CONTINUE" = "ادامه";
+"SHARE" = "هم‌رسانی";
+"SAVE" = "ذخیره";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "هزینه را وارد کنید";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "همه دسته‌ها";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "تراکنشی وجود ندارد";
+"TRANSACTIONS_LIST_DELETE" = "حذف";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "ویرایش دسته‌ها";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "پوشه دسته جدید";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "نامی برای پوشه دسته جدید وارد کنید";
+"CATEGORIES_EDIT_CANCEL" = "لغو";
+"CATEGORIES_EDIT_CREATE" = "ایجاد";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "ویرایش";
+"EDIT_CATEGORY_NEW_TITLE" = "دسته جدید";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "نام دسته را وارد کنید";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "دسته اصلی";
+"EDIT_CATEGORY_NO_PARENT" = "بدون دسته اصلی";
+"EDIT_CATEGORY_SUBCATEGORIES" = "زیردسته‌ها";
+"EDIT_CATEGORY_ICON" = "نماد";
+"EDIT_CATEGORY_MORE_ICONS" = "بیشتر";
+"EDIT_CATEGORY_COLOR" = "رنگ";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "حذف دسته";
+"EDIT_CATEGORY_DELETE_FOLDER" = "حذف پوشه";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "این عمل قابل بازگشت نیست. همه تراکنش‌های این دسته حذف خواهند شد.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "نام دسته";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "دسته جدید";
+"EDIT_CATEGORY_CREATE" = "ایجاد";
+"EDIT_CATEGORY_NAME" = "نام";

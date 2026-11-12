@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Utgiftskoll";
+"DONE" = "Klar";
+"ERROR" = "Fel";
+"OK" = "OK";
+"YES" = "Ja";
+"NO" = "Nej";
+"UPDATE" = "Uppdatera";
+"ATTENTION" = "Observera";
+"SUPPORT" = "Support";
+"NEXT" = "Nästa";
+"BACK" = "Tillbaka";
+"REMOVE" = "Radera";
+"DELETE" = "Radera";
+"CANCEL" = "Avbryt";
+"CLOSE" = "Stäng";
+"RETRY" = "Försök igen";
+"REPEAT" = "Försök igen";
+"SOMETHING_WENT_WRONG" = "Något gick fel...";
+"CONTINUE" = "Fortsätt";
+"SHARE" = "Dela";
+"SAVE" = "Spara";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Ange utgift";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Alla kategorier";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Inga transaktioner";
+"TRANSACTIONS_LIST_DELETE" = "Radera";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Redigera kategorier";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Ny kategorimapp";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Ange ett namn på den nya kategorimappen";
+"CATEGORIES_EDIT_CANCEL" = "Avbryt";
+"CATEGORIES_EDIT_CREATE" = "Skapa";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Redigera";
+"EDIT_CATEGORY_NEW_TITLE" = "Ny kategori";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Ange kategorinamn";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Överordnad kategori";
+"EDIT_CATEGORY_NO_PARENT" = "Ingen överordnad";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Underkategorier";
+"EDIT_CATEGORY_ICON" = "Ikon";
+"EDIT_CATEGORY_MORE_ICONS" = "Mer";
+"EDIT_CATEGORY_COLOR" = "Färg";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Radera kategori";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Radera mapp";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Den här åtgärden kan inte ångras. Alla transaktioner med den här kategorin raderas.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Kategorinamn";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Ny kategori";
+"EDIT_CATEGORY_CREATE" = "Skapa";
+"EDIT_CATEGORY_NAME" = "Namn";

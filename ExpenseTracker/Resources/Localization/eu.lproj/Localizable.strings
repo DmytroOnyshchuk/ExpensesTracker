@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Gastuen jarraipena";
+"DONE" = "Eginda";
+"ERROR" = "Errorea";
+"OK" = "OK";
+"YES" = "Bai";
+"NO" = "Ez";
+"UPDATE" = "Eguneratu";
+"ATTENTION" = "Kontuz";
+"SUPPORT" = "Laguntza";
+"NEXT" = "Hurrengoa";
+"BACK" = "Atzera";
+"REMOVE" = "Ezabatu";
+"DELETE" = "Ezabatu";
+"CANCEL" = "Utzi";
+"CLOSE" = "Itxi";
+"RETRY" = "Saiatu berriro";
+"REPEAT" = "Saiatu berriro";
+"SOMETHING_WENT_WRONG" = "Zerbait gaizki joan da...";
+"CONTINUE" = "Jarraitu";
+"SHARE" = "Partekatu";
+"SAVE" = "Gorde";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Idatzi gastua";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Kategoria guztiak";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ez dago transakziorik";
+"TRANSACTIONS_LIST_DELETE" = "Ezabatu";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Editatu kategoriak";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Kategoria-karpeta berria";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Idatzi kategoria-karpeta berriaren izena";
+"CATEGORIES_EDIT_CANCEL" = "Utzi";
+"CATEGORIES_EDIT_CREATE" = "Sortu";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Editatu";
+"EDIT_CATEGORY_NEW_TITLE" = "Kategoria berria";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Idatzi kategoriaren izena";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Kategoria nagusia";
+"EDIT_CATEGORY_NO_PARENT" = "Kategoria nagusirik ez";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Azpikategoriak";
+"EDIT_CATEGORY_ICON" = "Ikonoa";
+"EDIT_CATEGORY_MORE_ICONS" = "Gehiago";
+"EDIT_CATEGORY_COLOR" = "Kolorea";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Ezabatu kategoria";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Ezabatu karpeta";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ekintza hau ezin da desegin. Kategoria honetako transakzio guztiak ezabatuko dira.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Kategoriaren izena";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Kategoria berria";
+"EDIT_CATEGORY_CREATE" = "Sortu";
+"EDIT_CATEGORY_NAME" = "Izena";

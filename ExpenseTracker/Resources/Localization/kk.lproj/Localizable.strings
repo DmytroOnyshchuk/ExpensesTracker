@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Шығындар есебі";
+"DONE" = "Дайын";
+"ERROR" = "Қате";
+"OK" = "OK";
+"YES" = "Иә";
+"NO" = "Жоқ";
+"UPDATE" = "Жаңарту";
+"ATTENTION" = "Назар аударыңыз";
+"SUPPORT" = "Қолдау";
+"NEXT" = "Келесі";
+"BACK" = "Артқа";
+"REMOVE" = "Жою";
+"DELETE" = "Жою";
+"CANCEL" = "Бас тарту";
+"CLOSE" = "Жабу";
+"RETRY" = "Қайталау";
+"REPEAT" = "Қайталау";
+"SOMETHING_WENT_WRONG" = "Бірдеңе дұрыс болмады...";
+"CONTINUE" = "Жалғастыру";
+"SHARE" = "Бөлісу";
+"SAVE" = "Сақтау";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Шығынды енгізіңіз";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Барлық санаттар";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Транзакциялар жоқ";
+"TRANSACTIONS_LIST_DELETE" = "Жою";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Санаттарды өңдеу";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Жаңа санаттар қалтасы";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Жаңа санаттар қалтасының атауын енгізіңіз";
+"CATEGORIES_EDIT_CANCEL" = "Бас тарту";
+"CATEGORIES_EDIT_CREATE" = "Жасау";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Өңдеу";
+"EDIT_CATEGORY_NEW_TITLE" = "Жаңа санат";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Санат атауын енгізіңіз";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Негізгі санат";
+"EDIT_CATEGORY_NO_PARENT" = "Негізгі санатсыз";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Ішкі санаттар";
+"EDIT_CATEGORY_ICON" = "Белгіше";
+"EDIT_CATEGORY_MORE_ICONS" = "Тағы";
+"EDIT_CATEGORY_COLOR" = "Түс";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Санатты жою";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Қалтаны жою";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Бұл әрекетті қайтару мүмкін емес. Осы санаттағы барлық транзакциялар жойылады.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Санат атауы";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Жаңа санат";
+"EDIT_CATEGORY_CREATE" = "Жасау";
+"EDIT_CATEGORY_NAME" = "Атауы";

@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "支出記帳";
+"DONE" = "完成";
+"ERROR" = "錯誤";
+"OK" = "OK";
+"YES" = "是";
+"NO" = "否";
+"UPDATE" = "更新";
+"ATTENTION" = "注意";
+"SUPPORT" = "支援";
+"NEXT" = "下一步";
+"BACK" = "返回";
+"REMOVE" = "刪除";
+"DELETE" = "刪除";
+"CANCEL" = "取消";
+"CLOSE" = "關閉";
+"RETRY" = "重試";
+"REPEAT" = "重試";
+"SOMETHING_WENT_WRONG" = "發生錯誤...";
+"CONTINUE" = "繼續";
+"SHARE" = "分享";
+"SAVE" = "儲存";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "輸入支出";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "所有類別";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "尚無交易";
+"TRANSACTIONS_LIST_DELETE" = "刪除";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "編輯類別";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "新增類別檔案夾";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "請輸入新類別檔案夾的名稱";
+"CATEGORIES_EDIT_CANCEL" = "取消";
+"CATEGORIES_EDIT_CREATE" = "建立";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "編輯";
+"EDIT_CATEGORY_NEW_TITLE" = "新增類別";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "輸入類別名稱";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "上層類別";
+"EDIT_CATEGORY_NO_PARENT" = "無上層類別";
+"EDIT_CATEGORY_SUBCATEGORIES" = "子類別";
+"EDIT_CATEGORY_ICON" = "圖像";
+"EDIT_CATEGORY_MORE_ICONS" = "更多";
+"EDIT_CATEGORY_COLOR" = "顏色";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "刪除類別";
+"EDIT_CATEGORY_DELETE_FOLDER" = "刪除檔案夾";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "此動作無法還原。此類別下的所有交易都將被刪除。";
+"EDIT_CATEGORY_DEFAULT_NAME" = "類別名稱";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "新增類別";
+"EDIT_CATEGORY_CREATE" = "建立";
+"EDIT_CATEGORY_NAME" = "名稱";

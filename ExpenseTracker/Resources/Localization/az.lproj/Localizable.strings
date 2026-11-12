@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Xərc izləyicisi";
+"DONE" = "Hazırdır";
+"ERROR" = "Xəta";
+"OK" = "OK";
+"YES" = "Bəli";
+"NO" = "Xeyr";
+"UPDATE" = "Yenilə";
+"ATTENTION" = "Diqqət";
+"SUPPORT" = "Dəstək";
+"NEXT" = "Növbəti";
+"BACK" = "Geri";
+"REMOVE" = "Sil";
+"DELETE" = "Sil";
+"CANCEL" = "Ləğv et";
+"CLOSE" = "Bağla";
+"RETRY" = "Yenidən cəhd et";
+"REPEAT" = "Yenidən cəhd et";
+"SOMETHING_WENT_WRONG" = "Nəsə səhv getdi...";
+"CONTINUE" = "Davam et";
+"SHARE" = "Paylaş";
+"SAVE" = "Yadda saxla";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Xərci daxil edin";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Bütün kateqoriyalar";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Əməliyyat yoxdur";
+"TRANSACTIONS_LIST_DELETE" = "Sil";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Kateqoriyaları redaktə et";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Yeni kateqoriya qovluğu";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Yeni kateqoriya qovluğu üçün ad daxil edin";
+"CATEGORIES_EDIT_CANCEL" = "Ləğv et";
+"CATEGORIES_EDIT_CREATE" = "Yarat";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Redaktə";
+"EDIT_CATEGORY_NEW_TITLE" = "Yeni kateqoriya";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Kateqoriya adını daxil edin";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Əsas kateqoriya";
+"EDIT_CATEGORY_NO_PARENT" = "Əsas kateqoriya yoxdur";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Alt kateqoriyalar";
+"EDIT_CATEGORY_ICON" = "İkon";
+"EDIT_CATEGORY_MORE_ICONS" = "Daha çox";
+"EDIT_CATEGORY_COLOR" = "Rəng";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Kateqoriyanı sil";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Qovluğu sil";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Bu əməliyyatı geri qaytarmaq mümkün deyil. Bu kateqoriyadakı bütün əməliyyatlar silinəcək.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Kateqoriya adı";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Yeni kateqoriya";
+"EDIT_CATEGORY_CREATE" = "Yarat";
+"EDIT_CATEGORY_NAME" = "Ad";

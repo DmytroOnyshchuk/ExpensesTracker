@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Ծախսերի հաշվառում";
+"DONE" = "Պատրաստ է";
+"ERROR" = "Սխալ";
+"OK" = "OK";
+"YES" = "Այո";
+"NO" = "Ոչ";
+"UPDATE" = "Թարմացնել";
+"ATTENTION" = "Ուշադրություն";
+"SUPPORT" = "Աջակցություն";
+"NEXT" = "Հաջորդը";
+"BACK" = "Հետ";
+"REMOVE" = "Ջնջել";
+"DELETE" = "Ջնջել";
+"CANCEL" = "Չեղարկել";
+"CLOSE" = "Փակել";
+"RETRY" = "Կրկնել";
+"REPEAT" = "Կրկնել";
+"SOMETHING_WENT_WRONG" = "Ինչ-որ բան սխալ ստացվեց...";
+"CONTINUE" = "Շարունակել";
+"SHARE" = "Կիսվել";
+"SAVE" = "Պահել";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Մուտքագրեք ծախսը";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Բոլոր կատեգորիաները";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Գործարքներ չկան";
+"TRANSACTIONS_LIST_DELETE" = "Ջնջել";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Խմբագրել կատեգորիաները";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Կատեգորիաների նոր պանակ";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Մուտքագրեք կատեգորիաների նոր պանակի անունը";
+"CATEGORIES_EDIT_CANCEL" = "Չեղարկել";
+"CATEGORIES_EDIT_CREATE" = "Ստեղծել";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Խմբագրել";
+"EDIT_CATEGORY_NEW_TITLE" = "Նոր կատեգորիա";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Մուտքագրեք կատեգորիայի անունը";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Գլխավոր կատեգորիա";
+"EDIT_CATEGORY_NO_PARENT" = "Առանց գլխավոր կատեգորիայի";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Ենթակատեգորիաներ";
+"EDIT_CATEGORY_ICON" = "Պատկերակ";
+"EDIT_CATEGORY_MORE_ICONS" = "Ավելին";
+"EDIT_CATEGORY_COLOR" = "Գույն";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Ջնջել կատեգորիան";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Ջնջել պանակը";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Այս գործողությունը հնարավոր չէ հետարկել։ Այս կատեգորիայի բոլոր գործարքները կջնջվեն։";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Կատեգորիայի անունը";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Նոր կատեգորիա";
+"EDIT_CATEGORY_CREATE" = "Ստեղծել";
+"EDIT_CATEGORY_NAME" = "Անուն";

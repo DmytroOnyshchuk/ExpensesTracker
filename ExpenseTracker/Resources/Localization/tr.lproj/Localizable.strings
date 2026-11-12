@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Harcama Takibi";
+"DONE" = "Bitti";
+"ERROR" = "Hata";
+"OK" = "OK";
+"YES" = "Evet";
+"NO" = "Hayır";
+"UPDATE" = "Güncelle";
+"ATTENTION" = "Dikkat";
+"SUPPORT" = "Destek";
+"NEXT" = "İleri";
+"BACK" = "Geri";
+"REMOVE" = "Sil";
+"DELETE" = "Sil";
+"CANCEL" = "Vazgeç";
+"CLOSE" = "Kapat";
+"RETRY" = "Yeniden dene";
+"REPEAT" = "Yeniden dene";
+"SOMETHING_WENT_WRONG" = "Bir şeyler ters gitti...";
+"CONTINUE" = "Devam et";
+"SHARE" = "Paylaş";
+"SAVE" = "Kaydet";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Harcama girin";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Tüm kategoriler";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "İşlem yok";
+"TRANSACTIONS_LIST_DELETE" = "Sil";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Kategorileri düzenle";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Yeni kategori klasörü";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Yeni kategori klasörü için bir ad girin";
+"CATEGORIES_EDIT_CANCEL" = "Vazgeç";
+"CATEGORIES_EDIT_CREATE" = "Oluştur";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Düzenle";
+"EDIT_CATEGORY_NEW_TITLE" = "Yeni kategori";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Kategori adını girin";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Üst kategori";
+"EDIT_CATEGORY_NO_PARENT" = "Üst kategori yok";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Alt kategoriler";
+"EDIT_CATEGORY_ICON" = "Simge";
+"EDIT_CATEGORY_MORE_ICONS" = "Daha fazla";
+"EDIT_CATEGORY_COLOR" = "Renk";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Kategoriyi sil";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Klasörü sil";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Bu işlem geri alınamaz. Bu kategorideki tüm işlemler silinecek.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Kategori adı";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Yeni kategori";
+"EDIT_CATEGORY_CREATE" = "Oluştur";
+"EDIT_CATEGORY_NAME" = "Ad";

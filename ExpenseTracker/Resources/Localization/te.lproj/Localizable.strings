@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "ఖర్చుల ట్రాకర్";
+"DONE" = "పూర్తయింది";
+"ERROR" = "లోపం";
+"OK" = "OK";
+"YES" = "అవును";
+"NO" = "కాదు";
+"UPDATE" = "అప్‌డేట్ చేయండి";
+"ATTENTION" = "గమనిక";
+"SUPPORT" = "సహాయం";
+"NEXT" = "తదుపరి";
+"BACK" = "వెనుకకు";
+"REMOVE" = "తొలగించండి";
+"DELETE" = "తొలగించండి";
+"CANCEL" = "రద్దు చేయండి";
+"CLOSE" = "మూసివేయండి";
+"RETRY" = "మళ్లీ ప్రయత్నించండి";
+"REPEAT" = "మళ్లీ ప్రయత్నించండి";
+"SOMETHING_WENT_WRONG" = "ఏదో తప్పు జరిగింది...";
+"CONTINUE" = "కొనసాగించండి";
+"SHARE" = "షేర్ చేయండి";
+"SAVE" = "సేవ్ చేయండి";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "ఖర్చును నమోదు చేయండి";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "అన్ని వర్గాలు";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "లావాదేవీలు లేవు";
+"TRANSACTIONS_LIST_DELETE" = "తొలగించండి";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "వర్గాలను సవరించండి";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "కొత్త వర్గం ఫోల్డర్";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "కొత్త వర్గం ఫోల్డర్‌కు పేరు నమోదు చేయండి";
+"CATEGORIES_EDIT_CANCEL" = "రద్దు చేయండి";
+"CATEGORIES_EDIT_CREATE" = "సృష్టించండి";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "సవరించండి";
+"EDIT_CATEGORY_NEW_TITLE" = "కొత్త వర్గం";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "వర్గం పేరు నమోదు చేయండి";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "ప్రధాన వర్గం";
+"EDIT_CATEGORY_NO_PARENT" = "ప్రధాన వర్గం లేదు";
+"EDIT_CATEGORY_SUBCATEGORIES" = "ఉపవర్గాలు";
+"EDIT_CATEGORY_ICON" = "చిహ్నం";
+"EDIT_CATEGORY_MORE_ICONS" = "మరిన్ని";
+"EDIT_CATEGORY_COLOR" = "రంగు";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "వర్గాన్ని తొలగించండి";
+"EDIT_CATEGORY_DELETE_FOLDER" = "ఫోల్డర్‌ను తొలగించండి";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "ఈ చర్యను రద్దు చేయడం సాధ్యం కాదు. ఈ వర్గంలోని అన్ని లావాదేవీలు తొలగించబడతాయి.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "వర్గం పేరు";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "కొత్త వర్గం";
+"EDIT_CATEGORY_CREATE" = "సృష్టించండి";
+"EDIT_CATEGORY_NAME" = "పేరు";

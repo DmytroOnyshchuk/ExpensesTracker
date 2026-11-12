@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Ausgaben-Tracker";
+"DONE" = "Fertig";
+"ERROR" = "Fehler";
+"OK" = "OK";
+"YES" = "Ja";
+"NO" = "Nein";
+"UPDATE" = "Aktualisieren";
+"ATTENTION" = "Achtung";
+"SUPPORT" = "Support";
+"NEXT" = "Weiter";
+"BACK" = "Zurück";
+"REMOVE" = "Löschen";
+"DELETE" = "Löschen";
+"CANCEL" = "Abbrechen";
+"CLOSE" = "Schließen";
+"RETRY" = "Erneut versuchen";
+"REPEAT" = "Erneut versuchen";
+"SOMETHING_WENT_WRONG" = "Etwas ist schiefgelaufen...";
+"CONTINUE" = "Fortfahren";
+"SHARE" = "Teilen";
+"SAVE" = "Speichern";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Ausgabe eingeben";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Alle Kategorien";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Keine Transaktionen";
+"TRANSACTIONS_LIST_DELETE" = "Löschen";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Kategorien bearbeiten";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Neuer Kategorieordner";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Gib einen Namen für den neuen Kategorieordner ein";
+"CATEGORIES_EDIT_CANCEL" = "Abbrechen";
+"CATEGORIES_EDIT_CREATE" = "Erstellen";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Bearbeiten";
+"EDIT_CATEGORY_NEW_TITLE" = "Neue Kategorie";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Kategorienamen eingeben";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Übergeordnete Kategorie";
+"EDIT_CATEGORY_NO_PARENT" = "Keine übergeordnete Kategorie";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Unterkategorien";
+"EDIT_CATEGORY_ICON" = "Symbol";
+"EDIT_CATEGORY_MORE_ICONS" = "Mehr";
+"EDIT_CATEGORY_COLOR" = "Farbe";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Kategorie löschen";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Ordner löschen";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Diese Aktion kann nicht rückgängig gemacht werden. Alle Transaktionen dieser Kategorie werden gelöscht.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Kategoriename";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Neue Kategorie";
+"EDIT_CATEGORY_CREATE" = "Erstellen";
+"EDIT_CATEGORY_NAME" = "Name";

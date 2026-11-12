@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Išlaidų sekimas";
+"DONE" = "Atlikta";
+"ERROR" = "Klaida";
+"OK" = "OK";
+"YES" = "Taip";
+"NO" = "Ne";
+"UPDATE" = "Atnaujinti";
+"ATTENTION" = "Dėmesio";
+"SUPPORT" = "Pagalba";
+"NEXT" = "Toliau";
+"BACK" = "Atgal";
+"REMOVE" = "Ištrinti";
+"DELETE" = "Ištrinti";
+"CANCEL" = "Atšaukti";
+"CLOSE" = "Uždaryti";
+"RETRY" = "Bandyti dar kartą";
+"REPEAT" = "Bandyti dar kartą";
+"SOMETHING_WENT_WRONG" = "Kažkas nutiko...";
+"CONTINUE" = "Tęsti";
+"SHARE" = "Bendrinti";
+"SAVE" = "Išsaugoti";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Įveskite išlaidas";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Visos kategorijos";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Operacijų nėra";
+"TRANSACTIONS_LIST_DELETE" = "Ištrinti";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Redaguoti kategorijas";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Naujas kategorijų aplankas";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Įveskite naujo kategorijų aplanko pavadinimą";
+"CATEGORIES_EDIT_CANCEL" = "Atšaukti";
+"CATEGORIES_EDIT_CREATE" = "Sukurti";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Redaguoti";
+"EDIT_CATEGORY_NEW_TITLE" = "Nauja kategorija";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Įveskite kategorijos pavadinimą";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Pagrindinė kategorija";
+"EDIT_CATEGORY_NO_PARENT" = "Be pagrindinės kategorijos";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Subkategorijos";
+"EDIT_CATEGORY_ICON" = "Piktograma";
+"EDIT_CATEGORY_MORE_ICONS" = "Daugiau";
+"EDIT_CATEGORY_COLOR" = "Spalva";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Ištrinti kategoriją";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Ištrinti aplanką";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Šio veiksmo anuliuoti negalima. Visos šios kategorijos operacijos bus ištrintos.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Kategorijos pavadinimas";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nauja kategorija";
+"EDIT_CATEGORY_CREATE" = "Sukurti";
+"EDIT_CATEGORY_NAME" = "Pavadinimas";

@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "အသုံးစရိတ် မှတ်တမ်း";
+"DONE" = "ပြီးပါပြီ";
+"ERROR" = "အမှား";
+"OK" = "OK";
+"YES" = "ဟုတ်ကဲ့";
+"NO" = "မဟုတ်ပါ";
+"UPDATE" = "အပ်ဒိတ်လုပ်ရန်";
+"ATTENTION" = "သတိပြုရန်";
+"SUPPORT" = "အကူအညီ";
+"NEXT" = "ရှေ့သို့";
+"BACK" = "နောက်သို့";
+"REMOVE" = "ဖျက်ရန်";
+"DELETE" = "ဖျက်ရန်";
+"CANCEL" = "မလုပ်တော့ပါ";
+"CLOSE" = "ပိတ်ရန်";
+"RETRY" = "ထပ်စမ်းရန်";
+"REPEAT" = "ထပ်စမ်းရန်";
+"SOMETHING_WENT_WRONG" = "တစ်ခုခု မှားယွင်းသွားပါသည်...";
+"CONTINUE" = "ဆက်လုပ်ရန်";
+"SHARE" = "မျှဝေရန်";
+"SAVE" = "သိမ်းရန်";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "အသုံးစရိတ် ထည့်ပါ";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "အမျိုးအစားအားလုံး";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ငွေလွှဲမှတ်တမ်း မရှိပါ";
+"TRANSACTIONS_LIST_DELETE" = "ဖျက်ရန်";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "အမျိုးအစားများ ပြင်ရန်";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "အမျိုးအစား ဖိုင်တွဲအသစ်";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "အမျိုးအစား ဖိုင်တွဲအသစ်အတွက် အမည်ထည့်ပါ";
+"CATEGORIES_EDIT_CANCEL" = "မလုပ်တော့ပါ";
+"CATEGORIES_EDIT_CREATE" = "ဖန်တီးရန်";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "ပြင်ရန်";
+"EDIT_CATEGORY_NEW_TITLE" = "အမျိုးအစားအသစ်";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "အမျိုးအစားအမည် ထည့်ပါ";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "ပင်မအမျိုးအစား";
+"EDIT_CATEGORY_NO_PARENT" = "ပင်မအမျိုးအစား မရှိပါ";
+"EDIT_CATEGORY_SUBCATEGORIES" = "အမျိုးအစားခွဲများ";
+"EDIT_CATEGORY_ICON" = "သင်္ကေတ";
+"EDIT_CATEGORY_MORE_ICONS" = "နောက်ထပ်";
+"EDIT_CATEGORY_COLOR" = "အရောင်";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "အမျိုးအစား ဖျက်ရန်";
+"EDIT_CATEGORY_DELETE_FOLDER" = "ဖိုင်တွဲ ဖျက်ရန်";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "ဤလုပ်ဆောင်ချက်ကို ပြန်ပြင်၍ မရပါ။ ဤအမျိုးအစားရှိ မှတ်တမ်းအားလုံး ဖျက်ပါမည်။";
+"EDIT_CATEGORY_DEFAULT_NAME" = "အမျိုးအစားအမည်";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "အမျိုးအစားအသစ်";
+"EDIT_CATEGORY_CREATE" = "ဖန်တီးရန်";
+"EDIT_CATEGORY_NAME" = "အမည်";

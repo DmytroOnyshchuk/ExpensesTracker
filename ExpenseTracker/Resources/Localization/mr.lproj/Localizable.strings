@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "खर्च ट्रॅकर";
+"DONE" = "पूर्ण";
+"ERROR" = "त्रुटी";
+"OK" = "OK";
+"YES" = "होय";
+"NO" = "नाही";
+"UPDATE" = "अपडेट करा";
+"ATTENTION" = "लक्ष द्या";
+"SUPPORT" = "सहाय्य";
+"NEXT" = "पुढे";
+"BACK" = "मागे";
+"REMOVE" = "हटवा";
+"DELETE" = "हटवा";
+"CANCEL" = "रद्द करा";
+"CLOSE" = "बंद करा";
+"RETRY" = "पुन्हा प्रयत्न करा";
+"REPEAT" = "पुन्हा प्रयत्न करा";
+"SOMETHING_WENT_WRONG" = "काहीतरी चूक झाली...";
+"CONTINUE" = "सुरू ठेवा";
+"SHARE" = "शेअर करा";
+"SAVE" = "जतन करा";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "खर्च प्रविष्ट करा";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "सर्व श्रेण्या";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "कोणतेही व्यवहार नाहीत";
+"TRANSACTIONS_LIST_DELETE" = "हटवा";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "श्रेण्या संपादित करा";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "नवीन श्रेणी फोल्डर";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "नवीन श्रेणी फोल्डरसाठी नाव प्रविष्ट करा";
+"CATEGORIES_EDIT_CANCEL" = "रद्द करा";
+"CATEGORIES_EDIT_CREATE" = "तयार करा";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "संपादित करा";
+"EDIT_CATEGORY_NEW_TITLE" = "नवीन श्रेणी";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "श्रेणीचे नाव प्रविष्ट करा";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "मुख्य श्रेणी";
+"EDIT_CATEGORY_NO_PARENT" = "मुख्य श्रेणी नाही";
+"EDIT_CATEGORY_SUBCATEGORIES" = "उपश्रेण्या";
+"EDIT_CATEGORY_ICON" = "आयकन";
+"EDIT_CATEGORY_MORE_ICONS" = "अधिक";
+"EDIT_CATEGORY_COLOR" = "रंग";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "श्रेणी हटवा";
+"EDIT_CATEGORY_DELETE_FOLDER" = "फोल्डर हटवा";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "ही क्रिया पूर्ववत करता येणार नाही. या श्रेणीतील सर्व व्यवहार हटवले जातील.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "श्रेणीचे नाव";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "नवीन श्रेणी";
+"EDIT_CATEGORY_CREATE" = "तयार करा";
+"EDIT_CATEGORY_NAME" = "नाव";

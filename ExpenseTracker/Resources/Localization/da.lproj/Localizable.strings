@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Udgiftssporing";
+"DONE" = "Færdig";
+"ERROR" = "Fejl";
+"OK" = "OK";
+"YES" = "Ja";
+"NO" = "Nej";
+"UPDATE" = "Opdater";
+"ATTENTION" = "Bemærk";
+"SUPPORT" = "Support";
+"NEXT" = "Næste";
+"BACK" = "Tilbage";
+"REMOVE" = "Slet";
+"DELETE" = "Slet";
+"CANCEL" = "Annuller";
+"CLOSE" = "Luk";
+"RETRY" = "Prøv igen";
+"REPEAT" = "Prøv igen";
+"SOMETHING_WENT_WRONG" = "Noget gik galt...";
+"CONTINUE" = "Fortsæt";
+"SHARE" = "Del";
+"SAVE" = "Gem";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Indtast udgift";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Alle kategorier";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ingen transaktioner";
+"TRANSACTIONS_LIST_DELETE" = "Slet";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Rediger kategorier";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Ny kategorimappe";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Indtast et navn til den nye kategorimappe";
+"CATEGORIES_EDIT_CANCEL" = "Annuller";
+"CATEGORIES_EDIT_CREATE" = "Opret";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Rediger";
+"EDIT_CATEGORY_NEW_TITLE" = "Ny kategori";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Indtast kategorinavn";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Overordnet kategori";
+"EDIT_CATEGORY_NO_PARENT" = "Ingen overordnet";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Underkategorier";
+"EDIT_CATEGORY_ICON" = "Ikon";
+"EDIT_CATEGORY_MORE_ICONS" = "Mere";
+"EDIT_CATEGORY_COLOR" = "Farve";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Slet kategori";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Slet mappe";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Denne handling kan ikke fortrydes. Alle transaktioner med denne kategori bliver slettet.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Kategorinavn";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Ny kategori";
+"EDIT_CATEGORY_CREATE" = "Opret";
+"EDIT_CATEGORY_NAME" = "Navn";

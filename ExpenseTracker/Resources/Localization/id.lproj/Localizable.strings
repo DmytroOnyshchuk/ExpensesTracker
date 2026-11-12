@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Pelacak Pengeluaran";
+"DONE" = "Selesai";
+"ERROR" = "Kesalahan";
+"OK" = "OK";
+"YES" = "Ya";
+"NO" = "Tidak";
+"UPDATE" = "Perbarui";
+"ATTENTION" = "Perhatian";
+"SUPPORT" = "Dukungan";
+"NEXT" = "Berikutnya";
+"BACK" = "Kembali";
+"REMOVE" = "Hapus";
+"DELETE" = "Hapus";
+"CANCEL" = "Batal";
+"CLOSE" = "Tutup";
+"RETRY" = "Coba lagi";
+"REPEAT" = "Coba lagi";
+"SOMETHING_WENT_WRONG" = "Terjadi kesalahan...";
+"CONTINUE" = "Lanjutkan";
+"SHARE" = "Bagikan";
+"SAVE" = "Simpan";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Masukkan pengeluaran";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Semua kategori";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Tidak ada transaksi";
+"TRANSACTIONS_LIST_DELETE" = "Hapus";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Edit kategori";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Folder kategori baru";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Masukkan nama untuk folder kategori baru";
+"CATEGORIES_EDIT_CANCEL" = "Batal";
+"CATEGORIES_EDIT_CREATE" = "Buat";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Edit";
+"EDIT_CATEGORY_NEW_TITLE" = "Kategori baru";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Masukkan nama kategori";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Kategori induk";
+"EDIT_CATEGORY_NO_PARENT" = "Tanpa induk";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Subkategori";
+"EDIT_CATEGORY_ICON" = "Ikon";
+"EDIT_CATEGORY_MORE_ICONS" = "Lainnya";
+"EDIT_CATEGORY_COLOR" = "Warna";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Hapus kategori";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Hapus folder";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Tindakan ini tidak dapat dibatalkan. Semua transaksi dengan kategori ini akan dihapus.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Nama kategori";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Kategori baru";
+"EDIT_CATEGORY_CREATE" = "Buat";
+"EDIT_CATEGORY_NAME" = "Nama";

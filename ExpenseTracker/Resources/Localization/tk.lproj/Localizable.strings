@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Çykdajylary hasaplaýjy";
+"DONE" = "Taýýar";
+"ERROR" = "Ýalňyşlyk";
+"OK" = "OK";
+"YES" = "Hawa";
+"NO" = "Ýok";
+"UPDATE" = "Täzele";
+"ATTENTION" = "Üns beriň";
+"SUPPORT" = "Goldaw";
+"NEXT" = "Indiki";
+"BACK" = "Yza";
+"REMOVE" = "Poz";
+"DELETE" = "Poz";
+"CANCEL" = "Ýatyr";
+"CLOSE" = "Ýap";
+"RETRY" = "Gaýtala";
+"REPEAT" = "Gaýtala";
+"SOMETHING_WENT_WRONG" = "Bir zat nädogry boldy...";
+"CONTINUE" = "Dowam et";
+"SHARE" = "Paýlaş";
+"SAVE" = "Ýatda sakla";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Çykdajyny giriziň";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Ähli kategoriýalar";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Amal ýok";
+"TRANSACTIONS_LIST_DELETE" = "Poz";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Kategoriýalary üýtget";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Täze kategoriýa bukjasy";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Täze kategoriýa bukjasy üçin at giriziň";
+"CATEGORIES_EDIT_CANCEL" = "Ýatyr";
+"CATEGORIES_EDIT_CREATE" = "Döret";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Üýtget";
+"EDIT_CATEGORY_NEW_TITLE" = "Täze kategoriýa";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Kategoriýanyň adyny giriziň";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Esasy kategoriýa";
+"EDIT_CATEGORY_NO_PARENT" = "Esasy kategoriýa ýok";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Kiçi kategoriýalar";
+"EDIT_CATEGORY_ICON" = "Nyşan";
+"EDIT_CATEGORY_MORE_ICONS" = "Ýene";
+"EDIT_CATEGORY_COLOR" = "Reňk";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Kategoriýany poz";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Bukjany poz";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Bu hereketi yzyna gaýtaryp bolmaýar. Bu kategoriýadaky ähli amallar pozular.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Kategoriýanyň ady";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Täze kategoriýa";
+"EDIT_CATEGORY_CREATE" = "Döret";
+"EDIT_CATEGORY_NAME" = "Ady";

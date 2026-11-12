@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "ചെലവ് ട്രാക്കർ";
+"DONE" = "പൂർത്തിയായി";
+"ERROR" = "പിശക്";
+"OK" = "OK";
+"YES" = "അതെ";
+"NO" = "ഇല്ല";
+"UPDATE" = "അപ്ഡേറ്റ് ചെയ്യുക";
+"ATTENTION" = "ശ്രദ്ധിക്കുക";
+"SUPPORT" = "പിന്തുണ";
+"NEXT" = "അടുത്തത്";
+"BACK" = "പിന്നോട്ട്";
+"REMOVE" = "ഇല്ലാതാക്കുക";
+"DELETE" = "ഇല്ലാതാക്കുക";
+"CANCEL" = "റദ്ദാക്കുക";
+"CLOSE" = "അടയ്ക്കുക";
+"RETRY" = "വീണ്ടും ശ്രമിക്കുക";
+"REPEAT" = "വീണ്ടും ശ്രമിക്കുക";
+"SOMETHING_WENT_WRONG" = "എന്തോ കുഴപ്പം സംഭവിച്ചു...";
+"CONTINUE" = "തുടരുക";
+"SHARE" = "പങ്കിടുക";
+"SAVE" = "സംരക്ഷിക്കുക";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "ചെലവ് നൽകുക";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "എല്ലാ വിഭാഗങ്ങളും";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ഇടപാടുകളൊന്നുമില്ല";
+"TRANSACTIONS_LIST_DELETE" = "ഇല്ലാതാക്കുക";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "വിഭാഗങ്ങൾ എഡിറ്റ് ചെയ്യുക";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "പുതിയ വിഭാഗ ഫോൾഡർ";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "പുതിയ വിഭാഗ ഫോൾഡറിന് ഒരു പേര് നൽകുക";
+"CATEGORIES_EDIT_CANCEL" = "റദ്ദാക്കുക";
+"CATEGORIES_EDIT_CREATE" = "സൃഷ്ടിക്കുക";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "എഡിറ്റ് ചെയ്യുക";
+"EDIT_CATEGORY_NEW_TITLE" = "പുതിയ വിഭാഗം";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "വിഭാഗത്തിന്റെ പേര് നൽകുക";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "പ്രധാന വിഭാഗം";
+"EDIT_CATEGORY_NO_PARENT" = "പ്രധാന വിഭാഗമില്ല";
+"EDIT_CATEGORY_SUBCATEGORIES" = "ഉപവിഭാഗങ്ങൾ";
+"EDIT_CATEGORY_ICON" = "ഐക്കൺ";
+"EDIT_CATEGORY_MORE_ICONS" = "കൂടുതൽ";
+"EDIT_CATEGORY_COLOR" = "നിറം";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "വിഭാഗം ഇല്ലാതാക്കുക";
+"EDIT_CATEGORY_DELETE_FOLDER" = "ഫോൾഡർ ഇല്ലാതാക്കുക";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "ഈ പ്രവർത്തനം പഴയപടിയാക്കാനാവില്ല. ഈ വിഭാഗത്തിലെ എല്ലാ ഇടപാടുകളും ഇല്ലാതാക്കപ്പെടും.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "വിഭാഗത്തിന്റെ പേര്";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "പുതിയ വിഭാഗം";
+"EDIT_CATEGORY_CREATE" = "സൃഷ്ടിക്കുക";
+"EDIT_CATEGORY_NAME" = "പേര്";

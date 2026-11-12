@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Kifuatiliaji cha Matumizi";
+"DONE" = "Imekamilika";
+"ERROR" = "Hitilafu";
+"OK" = "OK";
+"YES" = "Ndiyo";
+"NO" = "Hapana";
+"UPDATE" = "Sasisha";
+"ATTENTION" = "Tahadhari";
+"SUPPORT" = "Usaidizi";
+"NEXT" = "Inayofuata";
+"BACK" = "Rudi";
+"REMOVE" = "Futa";
+"DELETE" = "Futa";
+"CANCEL" = "Ghairi";
+"CLOSE" = "Funga";
+"RETRY" = "Jaribu tena";
+"REPEAT" = "Jaribu tena";
+"SOMETHING_WENT_WRONG" = "Hitilafu fulani imetokea...";
+"CONTINUE" = "Endelea";
+"SHARE" = "Shiriki";
+"SAVE" = "Hifadhi";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Weka matumizi";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Aina zote";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Hakuna miamala";
+"TRANSACTIONS_LIST_DELETE" = "Futa";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Hariri aina";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Folda mpya ya aina";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Weka jina la folda mpya ya aina";
+"CATEGORIES_EDIT_CANCEL" = "Ghairi";
+"CATEGORIES_EDIT_CREATE" = "Unda";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Hariri";
+"EDIT_CATEGORY_NEW_TITLE" = "Aina mpya";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Weka jina la aina";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Aina kuu";
+"EDIT_CATEGORY_NO_PARENT" = "Hakuna aina kuu";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Aina ndogo";
+"EDIT_CATEGORY_ICON" = "Aikoni";
+"EDIT_CATEGORY_MORE_ICONS" = "Zaidi";
+"EDIT_CATEGORY_COLOR" = "Rangi";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Futa aina";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Futa folda";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kitendo hiki hakiwezi kutenduliwa. Miamala yote ya aina hii itafutwa.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Jina la aina";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Aina mpya";
+"EDIT_CATEGORY_CREATE" = "Unda";
+"EDIT_CATEGORY_NAME" = "Jina";

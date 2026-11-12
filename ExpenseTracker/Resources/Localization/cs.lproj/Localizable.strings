@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Sledování výdajů";
+"DONE" = "Hotovo";
+"ERROR" = "Chyba";
+"OK" = "OK";
+"YES" = "Ano";
+"NO" = "Ne";
+"UPDATE" = "Aktualizovat";
+"ATTENTION" = "Upozornění";
+"SUPPORT" = "Podpora";
+"NEXT" = "Další";
+"BACK" = "Zpět";
+"REMOVE" = "Smazat";
+"DELETE" = "Smazat";
+"CANCEL" = "Zrušit";
+"CLOSE" = "Zavřít";
+"RETRY" = "Zkusit znovu";
+"REPEAT" = "Zkusit znovu";
+"SOMETHING_WENT_WRONG" = "Něco se pokazilo...";
+"CONTINUE" = "Pokračovat";
+"SHARE" = "Sdílet";
+"SAVE" = "Uložit";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Zadejte výdaj";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Všechny kategorie";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Žádné transakce";
+"TRANSACTIONS_LIST_DELETE" = "Smazat";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Upravit kategorie";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nová složka kategorií";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Zadejte název nové složky kategorií";
+"CATEGORIES_EDIT_CANCEL" = "Zrušit";
+"CATEGORIES_EDIT_CREATE" = "Vytvořit";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Upravit";
+"EDIT_CATEGORY_NEW_TITLE" = "Nová kategorie";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Zadejte název kategorie";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Nadřazená kategorie";
+"EDIT_CATEGORY_NO_PARENT" = "Bez nadřazené kategorie";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Podkategorie";
+"EDIT_CATEGORY_ICON" = "Ikona";
+"EDIT_CATEGORY_MORE_ICONS" = "Více";
+"EDIT_CATEGORY_COLOR" = "Barva";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Smazat kategorii";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Smazat složku";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Tuto akci nelze vrátit zpět. Všechny transakce s touto kategorií budou smazány.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Název kategorie";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nová kategorie";
+"EDIT_CATEGORY_CREATE" = "Vytvořit";
+"EDIT_CATEGORY_NAME" = "Název";

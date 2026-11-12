@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "खर्च ट्र्याकर";
+"DONE" = "सम्पन्न";
+"ERROR" = "त्रुटि";
+"OK" = "OK";
+"YES" = "हो";
+"NO" = "होइन";
+"UPDATE" = "अपडेट गर्नुहोस्";
+"ATTENTION" = "ध्यान दिनुहोस्";
+"SUPPORT" = "सहायता";
+"NEXT" = "अर्को";
+"BACK" = "पछाडि";
+"REMOVE" = "मेटाउनुहोस्";
+"DELETE" = "मेटाउनुहोस्";
+"CANCEL" = "रद्द गर्नुहोस्";
+"CLOSE" = "बन्द गर्नुहोस्";
+"RETRY" = "फेरि प्रयास गर्नुहोस्";
+"REPEAT" = "फेरि प्रयास गर्नुहोस्";
+"SOMETHING_WENT_WRONG" = "केही गडबड भयो...";
+"CONTINUE" = "जारी राख्नुहोस्";
+"SHARE" = "सेयर गर्नुहोस्";
+"SAVE" = "सुरक्षित गर्नुहोस्";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "खर्च प्रविष्ट गर्नुहोस्";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "सबै श्रेणीहरू";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "कुनै कारोबार छैन";
+"TRANSACTIONS_LIST_DELETE" = "मेटाउनुहोस्";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "श्रेणीहरू सम्पादन गर्नुहोस्";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "नयाँ श्रेणी फोल्डर";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "नयाँ श्रेणी फोल्डरको नाम प्रविष्ट गर्नुहोस्";
+"CATEGORIES_EDIT_CANCEL" = "रद्द गर्नुहोस्";
+"CATEGORIES_EDIT_CREATE" = "सिर्जना गर्नुहोस्";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "सम्पादन गर्नुहोस्";
+"EDIT_CATEGORY_NEW_TITLE" = "नयाँ श्रेणी";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "श्रेणीको नाम प्रविष्ट गर्नुहोस्";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "मुख्य श्रेणी";
+"EDIT_CATEGORY_NO_PARENT" = "मुख्य श्रेणी छैन";
+"EDIT_CATEGORY_SUBCATEGORIES" = "उपश्रेणीहरू";
+"EDIT_CATEGORY_ICON" = "आइकन";
+"EDIT_CATEGORY_MORE_ICONS" = "थप";
+"EDIT_CATEGORY_COLOR" = "रङ";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "श्रेणी मेटाउनुहोस्";
+"EDIT_CATEGORY_DELETE_FOLDER" = "फोल्डर मेटाउनुहोस्";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "यो कार्य पूर्ववत गर्न सकिँदैन। यस श्रेणीका सबै कारोबारहरू मेटाइनेछन्।";
+"EDIT_CATEGORY_DEFAULT_NAME" = "श्रेणीको नाम";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "नयाँ श्रेणी";
+"EDIT_CATEGORY_CREATE" = "सिर्जना गर्नुहोस्";
+"EDIT_CATEGORY_NAME" = "नाम";

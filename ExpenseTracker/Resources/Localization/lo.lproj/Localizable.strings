@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "ຕົວຕິດຕາມລາຍຈ່າຍ";
+"DONE" = "ສຳເລັດ";
+"ERROR" = "ຂໍ້ຜິດພາດ";
+"OK" = "OK";
+"YES" = "ແມ່ນ";
+"NO" = "ບໍ່";
+"UPDATE" = "ອັບເດດ";
+"ATTENTION" = "ໂປດຊາບ";
+"SUPPORT" = "ຊ່ວຍເຫຼືອ";
+"NEXT" = "ຕໍ່ໄປ";
+"BACK" = "ກັບຄືນ";
+"REMOVE" = "ລຶບ";
+"DELETE" = "ລຶບ";
+"CANCEL" = "ຍົກເລີກ";
+"CLOSE" = "ປິດ";
+"RETRY" = "ລອງໃໝ່";
+"REPEAT" = "ລອງໃໝ່";
+"SOMETHING_WENT_WRONG" = "ມີບາງຢ່າງຜິດພາດ...";
+"CONTINUE" = "ສືບຕໍ່";
+"SHARE" = "ແບ່ງປັນ";
+"SAVE" = "ບັນທຶກ";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "ປ້ອນລາຍຈ່າຍ";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "ໝວດໝູ່ທັງໝົດ";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ບໍ່ມີທຸລະກຳ";
+"TRANSACTIONS_LIST_DELETE" = "ລຶບ";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "ແກ້ໄຂໝວດໝູ່";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "ໂຟນເດີໝວດໝູ່ໃໝ່";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "ປ້ອນຊື່ສຳລັບໂຟນເດີໝວດໝູ່ໃໝ່";
+"CATEGORIES_EDIT_CANCEL" = "ຍົກເລີກ";
+"CATEGORIES_EDIT_CREATE" = "ສ້າງ";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "ແກ້ໄຂ";
+"EDIT_CATEGORY_NEW_TITLE" = "ໝວດໝູ່ໃໝ່";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "ປ້ອນຊື່ໝວດໝູ່";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "ໝວດໝູ່ຫຼັກ";
+"EDIT_CATEGORY_NO_PARENT" = "ບໍ່ມີໝວດໝູ່ຫຼັກ";
+"EDIT_CATEGORY_SUBCATEGORIES" = "ໝວດໝູ່ຍ່ອຍ";
+"EDIT_CATEGORY_ICON" = "ໄອຄອນ";
+"EDIT_CATEGORY_MORE_ICONS" = "ເພີ່ມເຕີມ";
+"EDIT_CATEGORY_COLOR" = "ສີ";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "ລຶບໝວດໝູ່";
+"EDIT_CATEGORY_DELETE_FOLDER" = "ລຶບໂຟນເດີ";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "ການກະທຳນີ້ບໍ່ສາມາດຍົກເລີກໄດ້. ທຸລະກຳທັງໝົດໃນໝວດໝູ່ນີ້ຈະຖືກລຶບ.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "ຊື່ໝວດໝູ່";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "ໝວດໝູ່ໃໝ່";
+"EDIT_CATEGORY_CREATE" = "ສ້າງ";
+"EDIT_CATEGORY_NAME" = "ຊື່";

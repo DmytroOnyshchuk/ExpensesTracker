@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Xarajatlar hisobi";
+"DONE" = "Tayyor";
+"ERROR" = "Xato";
+"OK" = "OK";
+"YES" = "Ha";
+"NO" = "Yoʻq";
+"UPDATE" = "Yangilash";
+"ATTENTION" = "Diqqat";
+"SUPPORT" = "Yordam";
+"NEXT" = "Keyingi";
+"BACK" = "Orqaga";
+"REMOVE" = "Oʻchirish";
+"DELETE" = "Oʻchirish";
+"CANCEL" = "Bekor qilish";
+"CLOSE" = "Yopish";
+"RETRY" = "Qayta urinish";
+"REPEAT" = "Qayta urinish";
+"SOMETHING_WENT_WRONG" = "Nimadir xato ketdi...";
+"CONTINUE" = "Davom etish";
+"SHARE" = "Ulashish";
+"SAVE" = "Saqlash";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Xarajatni kiriting";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Barcha turkumlar";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Tranzaksiyalar yoʻq";
+"TRANSACTIONS_LIST_DELETE" = "Oʻchirish";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Turkumlarni tahrirlash";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Yangi turkumlar jildi";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Yangi turkumlar jildi uchun nom kiriting";
+"CATEGORIES_EDIT_CANCEL" = "Bekor qilish";
+"CATEGORIES_EDIT_CREATE" = "Yaratish";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Tahrirlash";
+"EDIT_CATEGORY_NEW_TITLE" = "Yangi turkum";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Turkum nomini kiriting";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Asosiy turkum";
+"EDIT_CATEGORY_NO_PARENT" = "Asosiy turkumsiz";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Quyi turkumlar";
+"EDIT_CATEGORY_ICON" = "Belgi";
+"EDIT_CATEGORY_MORE_ICONS" = "Yana";
+"EDIT_CATEGORY_COLOR" = "Rang";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Turkumni oʻchirish";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Jildni oʻchirish";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Bu amalni ortga qaytarib boʻlmaydi. Bu turkumdagi barcha tranzaksiyalar oʻchiriladi.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Turkum nomi";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Yangi turkum";
+"EDIT_CATEGORY_CREATE" = "Yaratish";
+"EDIT_CATEGORY_NAME" = "Nomi";

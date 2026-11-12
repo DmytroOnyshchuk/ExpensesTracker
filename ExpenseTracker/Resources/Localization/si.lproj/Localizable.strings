@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "වියදම් ලුහුබැඳුම";
+"DONE" = "නිමයි";
+"ERROR" = "දෝෂය";
+"OK" = "OK";
+"YES" = "ඔව්";
+"NO" = "නැත";
+"UPDATE" = "යාවත්කාල කරන්න";
+"ATTENTION" = "අවධානයට";
+"SUPPORT" = "සහාය";
+"NEXT" = "ඊළඟ";
+"BACK" = "ආපසු";
+"REMOVE" = "මකන්න";
+"DELETE" = "මකන්න";
+"CANCEL" = "අවලංගු කරන්න";
+"CLOSE" = "වසන්න";
+"RETRY" = "නැවත උත්සාහ කරන්න";
+"REPEAT" = "නැවත උත්සාහ කරන්න";
+"SOMETHING_WENT_WRONG" = "යමක් වැරදී ඇත...";
+"CONTINUE" = "ඉදිරියට";
+"SHARE" = "බෙදාගන්න";
+"SAVE" = "සුරකින්න";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "වියදම ඇතුළත් කරන්න";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "සියලු ප්‍රවර්ග";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ගනුදෙනු නැත";
+"TRANSACTIONS_LIST_DELETE" = "මකන්න";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "ප්‍රවර්ග සංස්කරණය";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "නව ප්‍රවර්ග ෆෝල්ඩරය";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "නව ප්‍රවර්ග ෆෝල්ඩරය සඳහා නමක් ඇතුළත් කරන්න";
+"CATEGORIES_EDIT_CANCEL" = "අවලංගු කරන්න";
+"CATEGORIES_EDIT_CREATE" = "සාදන්න";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "සංස්කරණය";
+"EDIT_CATEGORY_NEW_TITLE" = "නව ප්‍රවර්ගය";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "ප්‍රවර්ගයේ නම ඇතුළත් කරන්න";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "ප්‍රධාන ප්‍රවර්ගය";
+"EDIT_CATEGORY_NO_PARENT" = "ප්‍රධාන ප්‍රවර්ගයක් නැත";
+"EDIT_CATEGORY_SUBCATEGORIES" = "උප ප්‍රවර්ග";
+"EDIT_CATEGORY_ICON" = "නිරූපකය";
+"EDIT_CATEGORY_MORE_ICONS" = "තවත්";
+"EDIT_CATEGORY_COLOR" = "වර්ණය";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "ප්‍රවර්ගය මකන්න";
+"EDIT_CATEGORY_DELETE_FOLDER" = "ෆෝල්ඩරය මකන්න";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "මෙම ක්‍රියාව පසුගමනය කළ නොහැක. මෙම ප්‍රවර්ගයේ සියලු ගනුදෙනු මැකෙනු ඇත.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "ප්‍රවර්ගයේ නම";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "නව ප්‍රවර්ගය";
+"EDIT_CATEGORY_CREATE" = "සාදන්න";
+"EDIT_CATEGORY_NAME" = "නම";

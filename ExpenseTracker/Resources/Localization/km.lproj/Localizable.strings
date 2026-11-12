@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "កម្មវិធីតាមដានចំណាយ";
+"DONE" = "រួចរាល់";
+"ERROR" = "បញ្ហា";
+"OK" = "OK";
+"YES" = "បាទ/ចាស";
+"NO" = "ទេ";
+"UPDATE" = "អាប់ដេត";
+"ATTENTION" = "យកចិត្តទុកដាក់";
+"SUPPORT" = "ជំនួយ";
+"NEXT" = "បន្ទាប់";
+"BACK" = "ថយក្រោយ";
+"REMOVE" = "លុប";
+"DELETE" = "លុប";
+"CANCEL" = "បោះបង់";
+"CLOSE" = "បិទ";
+"RETRY" = "ព្យាយាមម្ដងទៀត";
+"REPEAT" = "ព្យាយាមម្ដងទៀត";
+"SOMETHING_WENT_WRONG" = "មានអ្វីមួយខុសប្រក្រតី...";
+"CONTINUE" = "បន្ត";
+"SHARE" = "ចែករំលែក";
+"SAVE" = "រក្សាទុក";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "បញ្ចូលចំណាយ";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "ប្រភេទទាំងអស់";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "គ្មានប្រតិបត្តិការ";
+"TRANSACTIONS_LIST_DELETE" = "លុប";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "កែប្រភេទ";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "ថតប្រភេទថ្មី";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "បញ្ចូលឈ្មោះសម្រាប់ថតប្រភេទថ្មី";
+"CATEGORIES_EDIT_CANCEL" = "បោះបង់";
+"CATEGORIES_EDIT_CREATE" = "បង្កើត";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "កែ";
+"EDIT_CATEGORY_NEW_TITLE" = "ប្រភេទថ្មី";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "បញ្ចូលឈ្មោះប្រភេទ";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "ប្រភេទមេ";
+"EDIT_CATEGORY_NO_PARENT" = "គ្មានប្រភេទមេ";
+"EDIT_CATEGORY_SUBCATEGORIES" = "ប្រភេទរង";
+"EDIT_CATEGORY_ICON" = "រូបតំណាង";
+"EDIT_CATEGORY_MORE_ICONS" = "ច្រើនទៀត";
+"EDIT_CATEGORY_COLOR" = "ពណ៌";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "លុបប្រភេទ";
+"EDIT_CATEGORY_DELETE_FOLDER" = "លុបថត";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "សកម្មភាពនេះមិនអាចត្រឡប់វិញបានទេ។ ប្រតិបត្តិការទាំងអស់ក្នុងប្រភេទនេះនឹងត្រូវលុប។";
+"EDIT_CATEGORY_DEFAULT_NAME" = "ឈ្មោះប្រភេទ";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "ប្រភេទថ្មី";
+"EDIT_CATEGORY_CREATE" = "បង្កើត";
+"EDIT_CATEGORY_NAME" = "ឈ្មោះ";

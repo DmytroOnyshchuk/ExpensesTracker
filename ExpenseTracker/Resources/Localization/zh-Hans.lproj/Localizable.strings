@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "支出记账";
+"DONE" = "完成";
+"ERROR" = "错误";
+"OK" = "OK";
+"YES" = "是";
+"NO" = "否";
+"UPDATE" = "更新";
+"ATTENTION" = "注意";
+"SUPPORT" = "支持";
+"NEXT" = "下一步";
+"BACK" = "返回";
+"REMOVE" = "删除";
+"DELETE" = "删除";
+"CANCEL" = "取消";
+"CLOSE" = "关闭";
+"RETRY" = "重试";
+"REPEAT" = "重试";
+"SOMETHING_WENT_WRONG" = "出了点问题...";
+"CONTINUE" = "继续";
+"SHARE" = "分享";
+"SAVE" = "保存";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "输入支出";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "所有类别";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "暂无交易";
+"TRANSACTIONS_LIST_DELETE" = "删除";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "编辑类别";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "新建类别文件夹";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "请输入新类别文件夹的名称";
+"CATEGORIES_EDIT_CANCEL" = "取消";
+"CATEGORIES_EDIT_CREATE" = "创建";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "编辑";
+"EDIT_CATEGORY_NEW_TITLE" = "新建类别";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "输入类别名称";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "上级类别";
+"EDIT_CATEGORY_NO_PARENT" = "无上级类别";
+"EDIT_CATEGORY_SUBCATEGORIES" = "子类别";
+"EDIT_CATEGORY_ICON" = "图标";
+"EDIT_CATEGORY_MORE_ICONS" = "更多";
+"EDIT_CATEGORY_COLOR" = "颜色";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "删除类别";
+"EDIT_CATEGORY_DELETE_FOLDER" = "删除文件夹";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "此操作无法撤销。该类别下的所有交易都将被删除。";
+"EDIT_CATEGORY_DEFAULT_NAME" = "类别名称";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "新建类别";
+"EDIT_CATEGORY_CREATE" = "创建";
+"EDIT_CATEGORY_NAME" = "名称";

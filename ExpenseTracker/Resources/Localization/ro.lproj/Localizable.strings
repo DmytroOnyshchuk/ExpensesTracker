@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Evidența cheltuielilor";
+"DONE" = "Gata";
+"ERROR" = "Eroare";
+"OK" = "OK";
+"YES" = "Da";
+"NO" = "Nu";
+"UPDATE" = "Actualizează";
+"ATTENTION" = "Atenție";
+"SUPPORT" = "Asistență";
+"NEXT" = "Înainte";
+"BACK" = "Înapoi";
+"REMOVE" = "Șterge";
+"DELETE" = "Șterge";
+"CANCEL" = "Anulează";
+"CLOSE" = "Închide";
+"RETRY" = "Reîncearcă";
+"REPEAT" = "Reîncearcă";
+"SOMETHING_WENT_WRONG" = "Ceva nu a mers bine...";
+"CONTINUE" = "Continuă";
+"SHARE" = "Partajează";
+"SAVE" = "Salvează";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Introdu cheltuiala";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Toate categoriile";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nicio tranzacție";
+"TRANSACTIONS_LIST_DELETE" = "Șterge";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Editează categoriile";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Dosar nou de categorii";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Introdu un nume pentru noul dosar de categorii";
+"CATEGORIES_EDIT_CANCEL" = "Anulează";
+"CATEGORIES_EDIT_CREATE" = "Creează";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Editează";
+"EDIT_CATEGORY_NEW_TITLE" = "Categorie nouă";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Introdu numele categoriei";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Categorie părinte";
+"EDIT_CATEGORY_NO_PARENT" = "Fără categorie părinte";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Subcategorii";
+"EDIT_CATEGORY_ICON" = "Pictogramă";
+"EDIT_CATEGORY_MORE_ICONS" = "Mai multe";
+"EDIT_CATEGORY_COLOR" = "Culoare";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Șterge categoria";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Șterge dosarul";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Această acțiune nu poate fi anulată. Toate tranzacțiile din această categorie vor fi șterse.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Numele categoriei";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Categorie nouă";
+"EDIT_CATEGORY_CREATE" = "Creează";
+"EDIT_CATEGORY_NAME" = "Nume";

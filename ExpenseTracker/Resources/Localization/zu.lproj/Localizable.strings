@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Isilandeli Sezindleko";
+"DONE" = "Kwenziwe";
+"ERROR" = "Iphutha";
+"OK" = "OK";
+"YES" = "Yebo";
+"NO" = "Cha";
+"UPDATE" = "Buyekeza";
+"ATTENTION" = "Qaphela";
+"SUPPORT" = "Usekelo";
+"NEXT" = "Okulandelayo";
+"BACK" = "Emuva";
+"REMOVE" = "Susa";
+"DELETE" = "Susa";
+"CANCEL" = "Khansela";
+"CLOSE" = "Vala";
+"RETRY" = "Zama futhi";
+"REPEAT" = "Zama futhi";
+"SOMETHING_WENT_WRONG" = "Kukhona okungahambanga kahle...";
+"CONTINUE" = "Qhubeka";
+"SHARE" = "Yabelana";
+"SAVE" = "Londoloza";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Faka izindleko";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Zonke izigaba";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Akukho okwenziwe";
+"TRANSACTIONS_LIST_DELETE" = "Susa";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Hlela izigaba";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Ifolda entsha yezigaba";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Faka igama lefolda entsha yezigaba";
+"CATEGORIES_EDIT_CANCEL" = "Khansela";
+"CATEGORIES_EDIT_CREATE" = "Dala";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Hlela";
+"EDIT_CATEGORY_NEW_TITLE" = "Isigaba esisha";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Faka igama lesigaba";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Isigaba esiyinhloko";
+"EDIT_CATEGORY_NO_PARENT" = "Asikho isigaba esiyinhloko";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Izigatshana";
+"EDIT_CATEGORY_ICON" = "Isithonjana";
+"EDIT_CATEGORY_MORE_ICONS" = "Okuningi";
+"EDIT_CATEGORY_COLOR" = "Umbala";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Susa isigaba";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Susa ifolda";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Lesi senzo asikwazi ukuhlehliswa. Konke okwenziwe kulesi sigaba kuzosuswa.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Igama lesigaba";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Isigaba esisha";
+"EDIT_CATEGORY_CREATE" = "Dala";
+"EDIT_CATEGORY_NAME" = "Igama";

@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Penjejak Perbelanjaan";
+"DONE" = "Selesai";
+"ERROR" = "Ralat";
+"OK" = "OK";
+"YES" = "Ya";
+"NO" = "Tidak";
+"UPDATE" = "Kemas kini";
+"ATTENTION" = "Perhatian";
+"SUPPORT" = "Sokongan";
+"NEXT" = "Seterusnya";
+"BACK" = "Kembali";
+"REMOVE" = "Padam";
+"DELETE" = "Padam";
+"CANCEL" = "Batal";
+"CLOSE" = "Tutup";
+"RETRY" = "Cuba lagi";
+"REPEAT" = "Cuba lagi";
+"SOMETHING_WENT_WRONG" = "Sesuatu tidak kena...";
+"CONTINUE" = "Teruskan";
+"SHARE" = "Kongsi";
+"SAVE" = "Simpan";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Masukkan perbelanjaan";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Semua kategori";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Tiada transaksi";
+"TRANSACTIONS_LIST_DELETE" = "Padam";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Edit kategori";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Folder kategori baharu";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Masukkan nama untuk folder kategori baharu";
+"CATEGORIES_EDIT_CANCEL" = "Batal";
+"CATEGORIES_EDIT_CREATE" = "Cipta";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Edit";
+"EDIT_CATEGORY_NEW_TITLE" = "Kategori baharu";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Masukkan nama kategori";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Kategori induk";
+"EDIT_CATEGORY_NO_PARENT" = "Tiada induk";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Subkategori";
+"EDIT_CATEGORY_ICON" = "Ikon";
+"EDIT_CATEGORY_MORE_ICONS" = "Lagi";
+"EDIT_CATEGORY_COLOR" = "Warna";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Padam kategori";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Padam folder";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Tindakan ini tidak boleh dibuat asal. Semua transaksi dengan kategori ini akan dipadamkan.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Nama kategori";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Kategori baharu";
+"EDIT_CATEGORY_CREATE" = "Cipta";
+"EDIT_CATEGORY_NAME" = "Nama";

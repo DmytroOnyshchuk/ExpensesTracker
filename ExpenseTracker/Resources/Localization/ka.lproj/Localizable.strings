@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "ხარჯების აღრიცხვა";
+"DONE" = "მზადაა";
+"ERROR" = "შეცდომა";
+"OK" = "OK";
+"YES" = "დიახ";
+"NO" = "არა";
+"UPDATE" = "განახლება";
+"ATTENTION" = "ყურადღება";
+"SUPPORT" = "მხარდაჭერა";
+"NEXT" = "შემდეგი";
+"BACK" = "უკან";
+"REMOVE" = "წაშლა";
+"DELETE" = "წაშლა";
+"CANCEL" = "გაუქმება";
+"CLOSE" = "დახურვა";
+"RETRY" = "ხელახლა ცდა";
+"REPEAT" = "ხელახლა ცდა";
+"SOMETHING_WENT_WRONG" = "რაღაც შეცდომა მოხდა...";
+"CONTINUE" = "გაგრძელება";
+"SHARE" = "გაზიარება";
+"SAVE" = "შენახვა";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "შეიყვანეთ ხარჯი";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "ყველა კატეგორია";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ტრანზაქციები არ არის";
+"TRANSACTIONS_LIST_DELETE" = "წაშლა";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "კატეგორიების რედაქტირება";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "კატეგორიების ახალი საქაღალდე";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "შეიყვანეთ კატეგორიების ახალი საქაღალდის სახელი";
+"CATEGORIES_EDIT_CANCEL" = "გაუქმება";
+"CATEGORIES_EDIT_CREATE" = "შექმნა";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "რედაქტირება";
+"EDIT_CATEGORY_NEW_TITLE" = "ახალი კატეგორია";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "შეიყვანეთ კატეგორიის სახელი";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "მთავარი კატეგორია";
+"EDIT_CATEGORY_NO_PARENT" = "მთავარი კატეგორიის გარეშე";
+"EDIT_CATEGORY_SUBCATEGORIES" = "ქვეკატეგორიები";
+"EDIT_CATEGORY_ICON" = "ხატულა";
+"EDIT_CATEGORY_MORE_ICONS" = "მეტი";
+"EDIT_CATEGORY_COLOR" = "ფერი";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "კატეგორიის წაშლა";
+"EDIT_CATEGORY_DELETE_FOLDER" = "საქაღალდის წაშლა";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "ამ მოქმედების გაუქმება შეუძლებელია. ამ კატეგორიის ყველა ტრანზაქცია წაიშლება.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "კატეგორიის სახელი";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "ახალი კატეგორია";
+"EDIT_CATEGORY_CREATE" = "შექმნა";
+"EDIT_CATEGORY_NAME" = "სახელი";

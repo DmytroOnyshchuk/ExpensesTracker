@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Kulude jälgija";
+"DONE" = "Valmis";
+"ERROR" = "Viga";
+"OK" = "OK";
+"YES" = "Jah";
+"NO" = "Ei";
+"UPDATE" = "Uuenda";
+"ATTENTION" = "Tähelepanu";
+"SUPPORT" = "Tugi";
+"NEXT" = "Edasi";
+"BACK" = "Tagasi";
+"REMOVE" = "Kustuta";
+"DELETE" = "Kustuta";
+"CANCEL" = "Tühista";
+"CLOSE" = "Sulge";
+"RETRY" = "Proovi uuesti";
+"REPEAT" = "Proovi uuesti";
+"SOMETHING_WENT_WRONG" = "Midagi läks valesti...";
+"CONTINUE" = "Jätka";
+"SHARE" = "Jaga";
+"SAVE" = "Salvesta";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Sisesta kulu";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Kõik kategooriad";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Tehinguid pole";
+"TRANSACTIONS_LIST_DELETE" = "Kustuta";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Muuda kategooriaid";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Uus kategooriakaust";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Sisesta uue kategooriakausta nimi";
+"CATEGORIES_EDIT_CANCEL" = "Tühista";
+"CATEGORIES_EDIT_CREATE" = "Loo";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Muuda";
+"EDIT_CATEGORY_NEW_TITLE" = "Uus kategooria";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Sisesta kategooria nimi";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Ülemkategooria";
+"EDIT_CATEGORY_NO_PARENT" = "Ülemkategooria puudub";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Alamkategooriad";
+"EDIT_CATEGORY_ICON" = "Ikoon";
+"EDIT_CATEGORY_MORE_ICONS" = "Veel";
+"EDIT_CATEGORY_COLOR" = "Värv";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Kustuta kategooria";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Kustuta kaust";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Seda toimingut ei saa tagasi võtta. Kõik selle kategooria tehingud kustutatakse.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Kategooria nimi";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Uus kategooria";
+"EDIT_CATEGORY_CREATE" = "Loo";
+"EDIT_CATEGORY_NAME" = "Nimi";

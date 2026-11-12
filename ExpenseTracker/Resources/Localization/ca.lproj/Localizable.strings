@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Control de despeses";
+"DONE" = "Fet";
+"ERROR" = "Error";
+"OK" = "OK";
+"YES" = "Sí";
+"NO" = "No";
+"UPDATE" = "Actualitza";
+"ATTENTION" = "Atenció";
+"SUPPORT" = "Assistència";
+"NEXT" = "Següent";
+"BACK" = "Enrere";
+"REMOVE" = "Elimina";
+"DELETE" = "Elimina";
+"CANCEL" = "Cancel·la";
+"CLOSE" = "Tanca";
+"RETRY" = "Torna-ho a provar";
+"REPEAT" = "Torna-ho a provar";
+"SOMETHING_WENT_WRONG" = "Alguna cosa ha anat malament...";
+"CONTINUE" = "Continua";
+"SHARE" = "Comparteix";
+"SAVE" = "Desa";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Introdueix la despesa";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Totes les categories";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "No hi ha transaccions";
+"TRANSACTIONS_LIST_DELETE" = "Elimina";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Edita les categories";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nova carpeta de categories";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Introdueix un nom per a la nova carpeta de categories";
+"CATEGORIES_EDIT_CANCEL" = "Cancel·la";
+"CATEGORIES_EDIT_CREATE" = "Crea";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Edita";
+"EDIT_CATEGORY_NEW_TITLE" = "Nova categoria";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Introdueix el nom de la categoria";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Categoria principal";
+"EDIT_CATEGORY_NO_PARENT" = "Sense categoria principal";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Subcategories";
+"EDIT_CATEGORY_ICON" = "Icona";
+"EDIT_CATEGORY_MORE_ICONS" = "Més";
+"EDIT_CATEGORY_COLOR" = "Color";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Elimina la categoria";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Elimina la carpeta";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Aquesta acció no es pot desfer. S'eliminaran totes les transaccions d'aquesta categoria.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Nom de la categoria";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nova categoria";
+"EDIT_CATEGORY_CREATE" = "Crea";
+"EDIT_CATEGORY_NAME" = "Nom";

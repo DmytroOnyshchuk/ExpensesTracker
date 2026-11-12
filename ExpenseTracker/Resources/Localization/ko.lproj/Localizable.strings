@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "지출 관리";
+"DONE" = "완료";
+"ERROR" = "오류";
+"OK" = "OK";
+"YES" = "예";
+"NO" = "아니요";
+"UPDATE" = "업데이트";
+"ATTENTION" = "주의";
+"SUPPORT" = "지원";
+"NEXT" = "다음";
+"BACK" = "뒤로";
+"REMOVE" = "삭제";
+"DELETE" = "삭제";
+"CANCEL" = "취소";
+"CLOSE" = "닫기";
+"RETRY" = "다시 시도";
+"REPEAT" = "다시 시도";
+"SOMETHING_WENT_WRONG" = "문제가 발생했습니다...";
+"CONTINUE" = "계속";
+"SHARE" = "공유";
+"SAVE" = "저장";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "지출 입력";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "모든 카테고리";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "거래 내역 없음";
+"TRANSACTIONS_LIST_DELETE" = "삭제";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "카테고리 편집";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "새 카테고리 폴더";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "새 카테고리 폴더의 이름을 입력하세요";
+"CATEGORIES_EDIT_CANCEL" = "취소";
+"CATEGORIES_EDIT_CREATE" = "생성";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "편집";
+"EDIT_CATEGORY_NEW_TITLE" = "새 카테고리";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "카테고리 이름 입력";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "상위 카테고리";
+"EDIT_CATEGORY_NO_PARENT" = "상위 카테고리 없음";
+"EDIT_CATEGORY_SUBCATEGORIES" = "하위 카테고리";
+"EDIT_CATEGORY_ICON" = "아이콘";
+"EDIT_CATEGORY_MORE_ICONS" = "더 보기";
+"EDIT_CATEGORY_COLOR" = "색상";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "카테고리 삭제";
+"EDIT_CATEGORY_DELETE_FOLDER" = "폴더 삭제";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "이 작업은 되돌릴 수 없습니다. 이 카테고리의 모든 거래가 삭제됩니다.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "카테고리 이름";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "새 카테고리";
+"EDIT_CATEGORY_CREATE" = "생성";
+"EDIT_CATEGORY_NAME" = "이름";
