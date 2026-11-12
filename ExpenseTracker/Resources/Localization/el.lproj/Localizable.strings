@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Δεν υπάρχουν συναλλαγές";
 "TRANSACTIONS_LIST_DELETE" = "Διαγραφή";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Έξοδα σήμερα";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Έξοδα χθες";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Επεξεργασία κατηγοριών";

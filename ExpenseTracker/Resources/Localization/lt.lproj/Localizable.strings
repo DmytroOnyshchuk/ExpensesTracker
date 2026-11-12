@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Operacijų nėra";
 "TRANSACTIONS_LIST_DELETE" = "Ištrinti";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Išleista šiandien";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Išleista vakar";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Redaguoti kategorijas";

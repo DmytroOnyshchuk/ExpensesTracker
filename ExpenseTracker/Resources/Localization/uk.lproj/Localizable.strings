@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Немає операцій";
 "TRANSACTIONS_LIST_DELETE" = "Видалити";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Витрачено сьогодні";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Витрачено вчора";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Редагування категорій";

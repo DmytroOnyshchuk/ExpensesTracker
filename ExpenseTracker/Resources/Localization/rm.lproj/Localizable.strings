@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Naginas transacziuns";
 "TRANSACTIONS_LIST_DELETE" = "Stizzar";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Spendì oz";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Spendì ier";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Modifitgar las categorias";

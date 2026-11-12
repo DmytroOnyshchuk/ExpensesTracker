@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "कोणतेही व्यवहार नाहीत";
 "TRANSACTIONS_LIST_DELETE" = "हटवा";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "आजचा खर्च";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "कालचा खर्च";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "श्रेण्या संपादित करा";

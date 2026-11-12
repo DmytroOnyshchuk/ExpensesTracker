@@ -8,9 +8,9 @@
 
 import Foundation
 
-/// Черновик категории для формы создания и редактирования.
+/// Category draft for the create and edit form.
 ///
-/// Форма меняет только черновик: в базу значения попадают по «Сохранить», а «Отмена» их отбрасывает.
+/// The form changes only the draft: values reach the store on Save, and Cancel discards them.
 struct CategoryDraft {
     var name: String
     var icon: CategoryIcon
@@ -18,20 +18,20 @@ struct CategoryDraft {
 
     var canSave: Bool { !name.isEmpty }
 
-    /// Черновик новой категории.
+    /// Draft of a new category.
     init() {
         self.name = L10n.editCategoryDefaultName
         self.icon = CategoryIcon(name: "cart", iconColor: .yellow)
     }
 
-    /// Черновик с текущими значениями существующей категории.
+    /// Draft with the current values of an existing category.
     init(_ category: TransactionCategory) {
         self.name = category.name.localized
         self.icon = category.categoryIcon
         self.parentUuid = category.parentUuid
     }
 
-    /// Убирает ссылку на папку, которой больше нет: такая категория показывается и сохраняется как «Без папки».
+    /// Drops the reference to a folder that no longer exists: such a category is shown and saved as having no parent.
     mutating func dropMissingParent(in categories: [TransactionCategory]) {
         guard !categories.contains(where: { $0.uuid == parentUuid }) else { return }
         parentUuid = nil

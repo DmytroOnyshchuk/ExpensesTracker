@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Транзакциялар жоқ";
 "TRANSACTIONS_LIST_DELETE" = "Жою";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Бүгін жұмсалды";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Кеше жұмсалды";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Санаттарды өңдеу";

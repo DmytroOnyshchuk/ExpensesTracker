@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ගනුදෙනු නැත";
 "TRANSACTIONS_LIST_DELETE" = "මකන්න";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "අද වියදම";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ඊයේ වියදම";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "ප්‍රවර්ග සංස්කරණය";

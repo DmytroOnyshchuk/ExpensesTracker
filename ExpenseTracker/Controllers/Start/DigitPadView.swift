@@ -22,7 +22,7 @@ struct DigitPadView: View {
         VStack(spacing: 12) {
             Text(input.text ?? L10n.startviewEnterExpense)
                 .font(input.isEmpty ? .appLight(24) : .appLight(32))
-                .foregroundColor(input.isEmpty ? .appLabel : .white)
+                .foregroundColor(input.isEmpty ? .appLabel : .appWhite)
                 .frame(height: 64)
 
             ForEach(buttons, id: \.self) { row in
@@ -34,8 +34,8 @@ struct DigitPadView: View {
                             Text(symbol(for: key))
                                 .font(.appMedium(36))
                                 .frame(width: 75, height: 75)
-                                .background(Color.appLabel.opacity(0.1))
-                                .foregroundColor(.white)
+                                .background(.appLabel.opacity(0.1))
+                                .foregroundColor(.appWhite)
                                 .clipShape(Circle())
                         }
                     }

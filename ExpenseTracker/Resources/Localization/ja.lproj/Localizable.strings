@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "取引がありません";
 "TRANSACTIONS_LIST_DELETE" = "削除";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "今日の支出";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "昨日の支出";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "カテゴリを編集";

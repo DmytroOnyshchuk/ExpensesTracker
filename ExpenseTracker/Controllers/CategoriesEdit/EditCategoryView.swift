@@ -15,7 +15,7 @@ struct EditCategoryView: View {
     private var allDirectories: [TransactionCategory]
     @Query private var allCategories: [TransactionCategory]
 
-    /// Редактируемая категория; `nil`, когда создаётся новая.
+    /// The category being edited; `nil` when a new one is created.
     private let category: TransactionCategory?
     @State private var draft: CategoryDraft
     @State private var showDeleteConfirmation = false
@@ -130,7 +130,7 @@ struct EditCategoryView: View {
                     Button(L10n.cancel) {
                         dismiss()
                     }
-                    .foregroundColor(.white)
+                    .foregroundColor(.appWhite)
                 }
 
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
@@ -138,7 +138,7 @@ struct EditCategoryView: View {
                         save()
                         dismiss()
                     }
-                    .foregroundColor(.white)
+                    .foregroundColor(.appWhite)
                     .disabled(!draft.canSave)
                 }
             }
@@ -181,7 +181,7 @@ struct EditCategoryView: View {
 
     private var previewSection: some View {
         VStack(spacing: 16) {
-            // Иконка с оборачиванием в папку для каталогов
+            // Icon wrapped in a folder for directories
             if isDirectory {
                 ZStack {
                     Image(systemName: "folder.fill")
@@ -207,7 +207,7 @@ struct EditCategoryView: View {
 
             Text(draft.name.isEmpty ? (isEdit ? L10n.editCategoryDefaultName : L10n.editCategoryDefaultName) : draft.name)
                 .font(.appMedium(18))
-                .foregroundColor(.white)
+                .foregroundColor(.appWhite)
         }
         .padding(.vertical, 24)
     }
@@ -216,10 +216,10 @@ struct EditCategoryView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text(L10n.editCategoryParentCategory)
                 .font(.appMedium(16))
-                .foregroundColor(.white)
+                .foregroundColor(.appWhite)
 
             HStack {
-                Picker("Выберите папку", selection: $draft.parentUuid) {
+                Picker("Choose folder", selection: $draft.parentUuid) {
                     Text(L10n.editCategoryNoParent).tag(nil as UUID?)
 
                     ForEach(allDirectories, id: \.id) { directory in
@@ -227,7 +227,7 @@ struct EditCategoryView: View {
                     }
                 }
                 .pickerStyle(MenuPickerStyle())
-                .foregroundColor(.white)
+                .foregroundColor(.appWhite)
                 Spacer()
             }
         }
@@ -237,7 +237,7 @@ struct EditCategoryView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text(L10n.editCategoryName)
                 .font(.appMedium(16))
-                .foregroundColor(.white)
+                .foregroundColor(.appWhite)
 
             TextField(L10n.editCategoryNamePlaceholder, text: $draft.name)
                 .padding(10)
@@ -245,7 +245,7 @@ struct EditCategoryView: View {
                 .cornerRadius(8)
                 .overlay(
                     RoundedRectangle(cornerRadius: 8)
-                        .stroke(.appSecond, lineWidth: 1) // цвет и толщина бордера
+                        .stroke(.appSecond, lineWidth: 1) // border color and width
                 )
                 .font(.appRegular(16))
         }
@@ -255,7 +255,7 @@ struct EditCategoryView: View {
         VStack(alignment: .leading, spacing: 12) {
             Text(L10n.editCategorySubcategories)
                 .font(.appMedium(16))
-                .foregroundColor(.white)
+                .foregroundColor(.appWhite)
 
             LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 3), spacing: 12) {
                 ForEach(subcategories, id: \.id) { sub in
@@ -271,12 +271,12 @@ struct EditCategoryView: View {
 
                             Text(sub.name.localized)
                                 .font(.appRegular(12))
-                                .foregroundColor(.white)
+                                .foregroundColor(.appWhite)
                                 .lineLimit(1)
                                 .truncationMode(.tail)
                         }
                         .padding(8)
-                        .background(Color.white.opacity(0.1))
+                        .background(.appWhite.opacity(0.1))
                         .cornerRadius(8)
                     }
                     .buttonStyle(PlainButtonStyle())
@@ -290,7 +290,7 @@ struct EditCategoryView: View {
             HStack {
                 Text(L10n.editCategoryIcon)
                     .font(.appMedium(16))
-                    .foregroundColor(.white)
+                    .foregroundColor(.appWhite)
 
                 Spacer()
 
@@ -318,7 +318,7 @@ struct EditCategoryView: View {
         VStack(alignment: .leading, spacing: 12) {
             Text(L10n.editCategoryColor)
                 .font(.appMedium(16))
-                .foregroundColor(.white)
+                .foregroundColor(.appWhite)
 
             LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 4), spacing: 16) {
                 ForEach(IconColor.allCases, id: \.self) { color in
@@ -334,10 +334,10 @@ struct EditCategoryView: View {
         } label: {
             Text(isDirectory ? L10n.editCategoryDeleteFolder : L10n.editCategoryDeleteCategory)
                 .font(.appMedium(16))
-                .foregroundColor(.white)
+                .foregroundColor(.appWhite)
                 .frame(maxWidth: .infinity)
                 .frame(height: 50)
-                .background(Color.red.opacity(0.8))
+                .background(.red.opacity(0.8))
                 .cornerRadius(12)
         }
         .alert(isDirectory ? L10n.editCategoryDeleteFolder : L10n.editCategoryDeleteCategory, isPresented: $showDeleteConfirmation) {
@@ -358,11 +358,11 @@ struct EditCategoryView: View {
         } label: {
             Image(systemName: icon)
                 .font(.system(size: 24))
-                .foregroundColor(draft.icon.name == icon ? draft.icon.color : .white.opacity(0.6))
+                .foregroundColor(draft.icon.name == icon ? draft.icon.color : .appWhite.opacity(0.6))
                 .frame(width: 40, height: 40)
                 .background(
                     RoundedRectangle(cornerRadius: 8)
-                        .fill(draft.icon.name == icon ? Color.white.opacity(0.2) : Color.clear)
+                        .fill(draft.icon.name == icon ? Color.appWhite.opacity(0.2) : Color.clear)
                 )
         }
     }
@@ -377,12 +377,12 @@ struct EditCategoryView: View {
                     .frame(height: 32)
                     .overlay(
                         RoundedRectangle(cornerRadius: 6)
-                            .stroke(Color.white, lineWidth: draft.icon.iconColor == color ? 3 : 0)
+                            .stroke(Color.appWhite, lineWidth: draft.icon.iconColor == color ? 3 : 0)
                     )
 
                 Text(color.rawValue.capitalized)
                     .font(.appRegular(12))
-                    .foregroundColor(.white.opacity(0.8))
+                    .foregroundColor(.appWhite.opacity(0.8))
             }
         }
     }
@@ -407,13 +407,13 @@ struct EditCategoryView: View {
     }
 }
 
-#Preview("Новая категория") {
+#Preview("New category") {
     EditCategoryView()
         .modelContainer(makePreviewModelContainer())
 }
 
-#Preview("Редактирование категории") {
-    let category = TransactionCategory(name: "Продукты", categoryIcon: CategoryIcon(name: "cart", iconColor: .green))
+#Preview("Edit category") {
+    let category = TransactionCategory(name: "Groceries", categoryIcon: CategoryIcon(name: "cart", iconColor: .green))
 
     EditCategoryView(category: category)
         .modelContainer(makePreviewModelContainer())

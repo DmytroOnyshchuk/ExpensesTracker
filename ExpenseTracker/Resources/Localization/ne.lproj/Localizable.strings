@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "कुनै कारोबार छैन";
 "TRANSACTIONS_LIST_DELETE" = "मेटाउनुहोस्";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "आजको खर्च";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "हिजोको खर्च";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "श्रेणीहरू सम्पादन गर्नुहोस्";

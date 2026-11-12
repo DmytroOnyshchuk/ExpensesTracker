@@ -8,10 +8,10 @@
 
 import Foundation
 
-/// Название категории.
+/// Category name.
 ///
-/// Стандартные категории хранят не текст, а свой кейс, поэтому показываются на текущем языке приложения.
-/// Название, которое ввёл пользователь, хранится как есть в `.custom`.
+/// Default categories store their case instead of text, so they are shown in the current app language.
+/// A name entered by the user is stored as is in `.custom`.
 enum TransactionCategoryName: Hashable {
     case car
     case carFuel
@@ -31,13 +31,13 @@ enum TransactionCategoryName: Hashable {
 
     case custom(String)
 
-    /// Все стандартные названия.
+    /// All default names.
     static let predefined: [TransactionCategoryName] = [
         .car, .carFuel, .carMaintenance, .charity, .clothing, .food, .foodGroceries, .foodRestaurants,
         .healthBeauty, .home, .homeHousehold, .homeUtilities, .internet, .other, .transport,
     ]
 
-    /// Текст для показа на текущем языке приложения.
+    /// Display text in the current app language.
     var localized: String {
         switch self {
         case .car: L10n.defaultCategoryCar
@@ -59,17 +59,17 @@ enum TransactionCategoryName: Hashable {
         }
     }
 
-    /// Название после редактирования в форме.
+    /// The name after editing in the form.
     ///
-    /// Если текст не изменился, стандартное название остаётся стандартным и продолжает переводиться.
+    /// If the text has not changed, a default name stays default and keeps being translated.
     func renamed(to text: String) -> TransactionCategoryName {
         text == localized ? self : .custom(text)
     }
 }
 
-// MARK: - Хранение
+// MARK: - Storage
 
-/// В базе название лежит одной строкой: ключ локализации для стандартных, сам текст для пользовательских.
+/// The name is stored as a single string: the localization key for default names, the text itself for custom ones.
 extension TransactionCategoryName: RawRepresentable, Codable {
     init(rawValue: String) {
         self = Self.predefined.first { $0.rawValue == rawValue } ?? .custom(rawValue)
@@ -97,9 +97,9 @@ extension TransactionCategoryName: RawRepresentable, Codable {
     }
 }
 
-// MARK: - Литералы
+// MARK: - Literals
 
-/// Позволяет писать `TransactionCategory(name: "Кафе", …)` в превью и тестах.
+/// Allows writing `TransactionCategory(name: "Cafe", …)` in previews and tests.
 extension TransactionCategoryName: ExpressibleByStringLiteral {
     init(stringLiteral value: String) {
         self = .custom(value)

@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nincsenek tranzakciók";
 "TRANSACTIONS_LIST_DELETE" = "Törlés";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Ma elköltve";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Tegnap elköltve";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Kategóriák szerkesztése";

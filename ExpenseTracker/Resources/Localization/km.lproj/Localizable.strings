@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "គ្មានប្រតិបត្តិការ";
 "TRANSACTIONS_LIST_DELETE" = "លុប";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "ចំណាយថ្ងៃនេះ";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ចំណាយម្សិលមិញ";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "កែប្រភេទ";

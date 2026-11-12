@@ -10,39 +10,93 @@ import SwiftData
 import SwiftUI
 
 struct TransactionsList: View {
-    /// Операции в том порядке, в котором их нужно показать.
     var transactions: [Transaction]
 
-    var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            if transactions.isEmpty {
-                VStack(spacing: 16) {
-                    Image(systemName: "list.clipboard")
-                        .font(.system(size: 48))
-                        .foregroundColor(.gray.opacity(0.6))
+    private static let rowHeight = 64 + 8
+    private static let headerHeight = 40
 
-                    Text(L10n.transactionsListNoTransactions)
-                        .font(.appLight(18))
-                        .foregroundColor(.gray.opacity(0.6))
-                }
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .frame(minHeight: 200)
-            } else {
-                List {
-                    ForEach(transactions, id: \.id) { transaction in
-                        TransactionRow(transaction: transaction)
+    private var days: [TransactionsDay] {
+        let calendar = Calendar.current
+
+        return [
+            (L10n.transactionsListSpentToday, Date()),
+            (L10n.transactionsListSpentYesterday, Date.yesterday),
+        ].map { title, day in
+            TransactionsDay(
+                title: title,
+                transactions: transactions.filter { calendar.isDate($0.date, inSameDayAs: day) }
+            )
+        }
+    }
+
+    var body: some View {
+        let days = days
+
+        List {
+            ForEach(days) { day in
+                Section {
+                    if day.transactions.isEmpty {
+                        Text(L10n.transactionsListNoTransactions)
+                            .font(.appLight(18))
+                            .foregroundColor(.gray.opacity(0.6))
+                            .frame(maxWidth: .infinity)
+                            .frame(height: 48)
                             .listRowBackground(Color.appMain)
-                            .listRowSeparatorTint(Color.appSecond)
+                            .listRowSeparator(.hidden)
+                    } else {
+                        ForEach(day.transactions, id: \.id) { transaction in
+                            TransactionRow(transaction: transaction)
+                                .listRowBackground(Color.appMain)
+                                .listRowSeparatorTint(.appSecond)
+                        }
                     }
+                } header: {
+                    TransactionsDayHeader(day: day)
+                        .frame(height: Self.headerHeight.asCgFloat)
+                        .listRowInsets(EdgeInsets())
                 }
-                .scrollDisabled(true)
-                .listStyle(.plain)
-                .background(Color.appMain)
-                .scrollContentBackground(.hidden)
-                .background(.appMain)
-                .frame(height: (transactions.count * (64 + 8)).asCgFloat, alignment: .top)
             }
         }
+        .scrollDisabled(true)
+        .listStyle(.plain)
+        .environment(\.defaultMinListHeaderHeight, 0)
+        .background(.appMain)
+        .scrollContentBackground(.hidden)
+        .background(.appMain)
+        .frame(height: listHeight(for: days), alignment: .top)
+    }
+
+    private func listHeight(for days: [TransactionsDay]) -> CGFloat {
+        let rows = days.reduce(0) { $0 + max($1.transactions.count, 1) }
+        return (rows * Self.rowHeight + days.count * Self.headerHeight).asCgFloat
+    }
+}
+
+struct TransactionsDay: Identifiable {
+    let title: String
+    var transactions: [Transaction]
+
+    var id: String { title }
+
+    var total: Int { transactions.reduce(0) { $0 + $1.amount } }
+}
+
+struct TransactionsDayHeader: View {
+    let day: TransactionsDay
+
+    var body: some View {
+        HStack(spacing: 6) {
+            Text(day.title + ":")
+                .font(.appLight(16))
+                .foregroundColor(.gray)
+
+            Text(day.total.getAmount())
+                .font(.appRegular(16))
+                .foregroundColor(.appWhite)
+        }
+        .textCase(nil)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(.appSecond)
     }
 }
 
@@ -80,25 +134,28 @@ struct TransactionRow: View {
     }
 }
 
-#Preview("Пустой список") {
+#Preview("Empty list") {
     TransactionsList(transactions: [])
         .frame(height: 220)
         .background(.appMain)
         .modelContainer(makePreviewModelContainer())
 }
 
-#Preview("Список операций") {
-    let category = TransactionCategory(name: "Кафе", categoryIcon: CategoryIcon(name: "cup.and.saucer", iconColor: .orange))
-    let transaction = Transaction(amount: 1250, category: category)
+#Preview("Transactions list") {
+    let category = TransactionCategory(name: "Cafe", categoryIcon: CategoryIcon(name: "cup.and.saucer", iconColor: .orange))
+    let transactions = [
+        Transaction(amount: 36000, category: category, date: .yesterday),
+        Transaction(amount: 48100, category: category, date: .yesterday),
+        Transaction(amount: 125000, category: category),
+    ]
 
-    TransactionsList(transactions: [transaction])
-        .frame(height: 100)
+    TransactionsList(transactions: transactions)
         .background(.appMain)
         .modelContainer(makePreviewModelContainer())
 }
 
-#Preview("Операция") {
-    let category = TransactionCategory(name: "Кафе", categoryIcon: CategoryIcon(name: "cup.and.saucer", iconColor: .orange))
+#Preview("Transaction") {
+    let category = TransactionCategory(name: "Cafe", categoryIcon: CategoryIcon(name: "cup.and.saucer", iconColor: .orange))
     let transaction = Transaction(amount: 1250, category: category)
 
     TransactionRow(transaction: transaction)

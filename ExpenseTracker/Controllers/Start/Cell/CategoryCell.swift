@@ -33,7 +33,7 @@ struct CategoryCell: View {
 
                     Text(category.name.localized)
                         .font(.caption)
-                        .foregroundColor(.white)
+                        .foregroundColor(.appWhite)
                         .multilineTextAlignment(.center)
                         .lineLimit(2)
                 }
@@ -53,7 +53,7 @@ struct CategoryCell: View {
                     Text(category.name.localized)
                         .font(.appRegular(12))
                         .multilineTextAlignment(.center)
-                        .foregroundColor(.white)
+                        .foregroundColor(.appWhite)
                         .lineLimit(1)
                 }
                 .frame(height: 80)
@@ -63,9 +63,9 @@ struct CategoryCell: View {
     }
 }
 
-#Preview("Категория") {
+#Preview("Category") {
     CategoryCell(
-        category: TransactionCategory(name: "Продукты", categoryIcon: CategoryIcon(name: "cart", iconColor: .green)),
+        category: TransactionCategory(name: "Groceries", categoryIcon: CategoryIcon(name: "cart", iconColor: .green)),
         action: {}
     )
     .frame(width: 80, height: 90)
@@ -73,9 +73,9 @@ struct CategoryCell: View {
     .background(.appMain)
 }
 
-#Preview("Папка категории") {
+#Preview("Category folder") {
     CategoryCell(
-        category: TransactionCategory(name: "Дом", categoryIcon: CategoryIcon(name: "house", iconColor: .yellow), isDirectory: true),
+        category: TransactionCategory(name: "Home", categoryIcon: CategoryIcon(name: "house", iconColor: .yellow), isDirectory: true),
         action: {}
     )
     .frame(width: 80, height: 90)

@@ -8,10 +8,10 @@
 
 import Foundation
 
-/// Сумма, которую набирают на цифровой клавиатуре.
+/// An amount typed on the digit pad.
 ///
-/// Хранит нажатые клавиши, а не число: так можно показать ровно то, что набрано («12,» или «0.5»),
-/// и при этом отдать значение в копейках.
+/// Stores the pressed keys rather than a number, so it can show exactly what was typed ("12," or "0.5")
+/// and still return the value in minor units.
 struct AmountInput {
     enum Key: Hashable {
         case digit(Int)
@@ -19,17 +19,17 @@ struct AmountInput {
         case backspace
     }
 
-    /// Сколько цифр принимается после разделителя.
+    /// How many digits are accepted after the separator.
     private static let fractionLength = 2
 
-    /// Набранные цифры без разделителя, старшие первыми.
+    /// Typed digits without the separator, most significant first.
     private(set) var digits: [Int] = []
-    /// Сколько цифр из `digits` относится к целой части; `nil`, пока разделитель не нажат.
+    /// How many digits of `digits` belong to the whole part; `nil` until the separator is pressed.
     private(set) var wholeLength: Int?
 
     var isEmpty: Bool { digits.isEmpty }
 
-    /// Набранное значение в копейках: «12.5» — это 1250.
+    /// The typed value in minor units: "12.5" is 1250.
     var amount: Int {
         let wholeLength = wholeLength ?? digits.count
         let missingFractionDigits = wholeLength + Self.fractionLength - digits.count
@@ -37,7 +37,7 @@ struct AmountInput {
         return padded.reduce(0) { $0 * 10 + $1 }
     }
 
-    /// Текст для экрана или `nil`, если ещё ничего не набрано.
+    /// Text for the display, or `nil` if nothing has been typed yet.
     var text: String? {
         guard !isEmpty else { return nil }
         guard let wholeLength else { return digits.map(String.init).joined() }
@@ -67,7 +67,7 @@ struct AmountInput {
             }
         }
 
-        // Когда сумма стирается до нуля, ввод сбрасывается целиком и клавиатура снова показывает подсказку.
+        // When the amount is erased down to zero, the input resets completely and the keypad shows the hint again.
         if amount == 0, previousAmount != 0 {
             reset()
         }
@@ -83,8 +83,8 @@ struct AmountInput {
             return
         }
 
-        // Дробная часть заполнена, лишние цифры игнорируются.
-        // Исключение: после «0.00» ненулевая цифра заменяет последний ноль («0.00» + 5 → «0.05»).
+        // The fraction part is full, extra digits are ignored.
+        // Exception: after "0.00" a non-zero digit replaces the last zero ("0.00" + 5 → "0.05").
         guard digit != 0, digits.allSatisfy({ $0 == 0 }) else { return }
         digits[digits.count - 1] = digit
     }

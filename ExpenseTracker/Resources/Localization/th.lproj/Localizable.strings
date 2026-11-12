@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ไม่มีรายการ";
 "TRANSACTIONS_LIST_DELETE" = "ลบ";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "ใช้จ่ายวันนี้";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ใช้จ่ายเมื่อวาน";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "แก้ไขหมวดหมู่";

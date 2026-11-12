@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "لا توجد معاملات";
 "TRANSACTIONS_LIST_DELETE" = "حذف";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "المصروف اليوم";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "المصروف أمس";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "تعديل الفئات";

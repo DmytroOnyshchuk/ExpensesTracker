@@ -10,7 +10,7 @@
 import XCTest
 
 final class AmountInputTests: XCTestCase {
-    /// Набирает строку на клавиатуре: цифры, «.» — разделитель, «<» — стирание.
+    /// Types a string on the keypad: digits, "." is the separator, "<" is backspace.
     private func typing(_ keys: String) -> AmountInput {
         var input = AmountInput()
         for key in keys {

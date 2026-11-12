@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Əməliyyat yoxdur";
 "TRANSACTIONS_LIST_DELETE" = "Sil";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Bu gün xərclənib";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Dünən xərclənib";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Kateqoriyaları redaktə et";

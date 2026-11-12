@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Няма транзакции";
 "TRANSACTIONS_LIST_DELETE" = "Изтриване";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Похарчено днес";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Похарчено вчера";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Редактиране на категории";

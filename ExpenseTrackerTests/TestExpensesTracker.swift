@@ -10,12 +10,12 @@
 import XCTest
 
 final class TestSwfitTemplate: XCTestCase {
-    // Выполняеться перед каждым тестом
+    // Runs before each test
     override func setUpWithError() throws {
         print(#function)
     }
 
-    // Выполняеться после каждого теста
+    // Runs after each test
     override func tearDownWithError() throws {
         print(#function)
     }
@@ -34,8 +34,8 @@ final class DateExtensionTests: XCTestCase {
     func testTimeToSeconds_invalidValues() {
         XCTAssertEqual(Date.timeToSeconds(""), 0)
         XCTAssertEqual(Date.timeToSeconds("abc"), 0)
-        XCTAssertEqual(Date.timeToSeconds("24:00"), 0) // Невалидное время в DateFormatter
-        XCTAssertEqual(Date.timeToSeconds("12:60"), 0) // Минуты > 59
+        XCTAssertEqual(Date.timeToSeconds("24:00"), 0) // Invalid time for DateFormatter
+        XCTAssertEqual(Date.timeToSeconds("12:60"), 0) // Minutes > 59
     }
 
     func testTimeToSeconds_partialInputs() {

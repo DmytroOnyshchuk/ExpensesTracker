@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ငွေလွှဲမှတ်တမ်း မရှိပါ";
 "TRANSACTIONS_LIST_DELETE" = "ဖျက်ရန်";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "ယနေ့ အသုံးစရိတ်";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "မနေ့က အသုံးစရိတ်";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "အမျိုးအစားများ ပြင်ရန်";

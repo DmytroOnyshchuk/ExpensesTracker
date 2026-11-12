@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Không có giao dịch";
 "TRANSACTIONS_LIST_DELETE" = "Xóa";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Đã chi hôm nay";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Đã chi hôm qua";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Sửa danh mục";

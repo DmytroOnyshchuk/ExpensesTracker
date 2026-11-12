@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Inga transaktioner";
 "TRANSACTIONS_LIST_DELETE" = "Radera";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Spenderat i dag";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Spenderat i går";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Redigera kategorier";

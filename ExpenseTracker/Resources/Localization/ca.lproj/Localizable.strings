@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "No hi ha transaccions";
 "TRANSACTIONS_LIST_DELETE" = "Elimina";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Gastat avui";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Gastat ahir";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Edita les categories";

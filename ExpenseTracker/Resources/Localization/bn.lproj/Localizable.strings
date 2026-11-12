@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "কোনো লেনদেন নেই";
 "TRANSACTIONS_LIST_DELETE" = "মুছুন";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "আজ খরচ হয়েছে";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "গতকাল খরচ হয়েছে";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "বিভাগ সম্পাদনা";

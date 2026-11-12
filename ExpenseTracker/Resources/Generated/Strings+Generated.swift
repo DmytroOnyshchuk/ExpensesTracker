@@ -132,6 +132,10 @@ internal enum L10n {
   internal static let transactionsListDelete = L10n.tr("Localizable", "TRANSACTIONS_LIST_DELETE", fallback: "Delete")
   /// No transactions
   internal static let transactionsListNoTransactions = L10n.tr("Localizable", "TRANSACTIONS_LIST_NO_TRANSACTIONS", fallback: "No transactions")
+  /// Spent today
+  internal static let transactionsListSpentToday = L10n.tr("Localizable", "TRANSACTIONS_LIST_SPENT_TODAY", fallback: "Spent today")
+  /// Spent yesterday
+  internal static let transactionsListSpentYesterday = L10n.tr("Localizable", "TRANSACTIONS_LIST_SPENT_YESTERDAY", fallback: "Spent yesterday")
   /// Update
   internal static let update = L10n.tr("Localizable", "UPDATE", fallback: "Update")
   /// Yes

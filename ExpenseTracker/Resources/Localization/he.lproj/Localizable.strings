@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "אין עסקאות";
 "TRANSACTIONS_LIST_DELETE" = "מחיקה";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "הוצאות היום";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "הוצאות אתמול";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "עריכת קטגוריות";

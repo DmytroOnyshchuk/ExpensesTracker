@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nema transakcija";
 "TRANSACTIONS_LIST_DELETE" = "Izbriši";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Potrošeno danas";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Potrošeno jučer";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Uredi kategorije";

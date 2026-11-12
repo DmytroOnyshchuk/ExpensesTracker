@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "లావాదేవీలు లేవు";
 "TRANSACTIONS_LIST_DELETE" = "తొలగించండి";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "ఈరోజు ఖర్చు";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "నిన్నటి ఖర్చు";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "వర్గాలను సవరించండి";

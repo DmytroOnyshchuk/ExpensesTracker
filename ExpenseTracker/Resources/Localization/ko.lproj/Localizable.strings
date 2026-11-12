@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "거래 내역 없음";
 "TRANSACTIONS_LIST_DELETE" = "삭제";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "오늘 지출";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "어제 지출";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "카테고리 편집";

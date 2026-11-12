@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nicio tranzacție";
 "TRANSACTIONS_LIST_DELETE" = "Șterge";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Cheltuit azi";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Cheltuit ieri";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Editează categoriile";

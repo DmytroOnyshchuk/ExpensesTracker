@@ -109,21 +109,21 @@ struct CustomIconPickerView: View {
                 iconGrid
             }
             .background(.appMain)
-            .navigationTitle("Выбор иконки")
+            .navigationTitle("Choose icon")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button("Отмена") {
+                    Button(L10n.cancel) {
                         dismiss()
                     }
-                    .foregroundColor(.white)
+                    .foregroundColor(.appWhite)
                 }
 
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Готово") {
+                    Button(L10n.done) {
                         dismiss()
                     }
-                    .foregroundColor(.white)
+                    .foregroundColor(.appWhite)
                 }
             }
         }
@@ -137,11 +137,11 @@ struct CustomIconPickerView: View {
     private var searchBar: some View {
         HStack {
             Image(systemName: "magnifyingglass")
-                .foregroundColor(.white.opacity(0.6))
+                .foregroundColor(.appWhite.opacity(0.6))
 
-            TextField("Поиск иконок...", text: $searchText)
+            TextField("Search icons...", text: $searchText)
                 .textFieldStyle(PlainTextFieldStyle())
-                .foregroundColor(.white)
+                .foregroundColor(.appWhite)
                 .onChange(of: searchText) { _, newValue in
                     filterIcons(searchText: newValue)
                 }
@@ -152,13 +152,13 @@ struct CustomIconPickerView: View {
                     filteredIcons = allSFSymbols
                 } label: {
                     Image(systemName: "xmark.circle.fill")
-                        .foregroundColor(.white.opacity(0.6))
+                        .foregroundColor(.appWhite.opacity(0.6))
                 }
             }
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 12)
-        .background(Color.white.opacity(0.1))
+        .background(.appWhite.opacity(0.1))
         .cornerRadius(10)
         .padding(.horizontal, 16)
         .padding(.top, 16)
@@ -188,7 +188,7 @@ struct CustomIconPickerView: View {
             VStack(spacing: 8) {
                 Image(systemName: icon)
                     .font(.system(size: 24))
-                    .foregroundColor(selectedIcon == icon ? .yellow : .white)
+                    .foregroundColor(selectedIcon == icon ? .yellow : .appWhite)
                     .frame(width: 50, height: 50)
                     .background(
                         RoundedRectangle(cornerRadius: 12)
@@ -197,7 +197,7 @@ struct CustomIconPickerView: View {
 
                 Text(icon)
                     .font(.caption2)
-                    .foregroundColor(.white.opacity(0.7))
+                    .foregroundColor(.appWhite.opacity(0.7))
                     .lineLimit(2)
                     .multilineTextAlignment(.center)
                     .frame(height: 24)

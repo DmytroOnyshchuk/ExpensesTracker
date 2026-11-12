@@ -58,7 +58,7 @@ struct CategoryGrid: View {
                 HStack(spacing: 8) {
                     ForEach(0 ..< chunkedCategories.count, id: \.self) { index in
                         Circle()
-                            .fill(currentPage == index ? Color.white : Color.white.opacity(0.3))
+                            .fill(currentPage == index ? Color.appWhite : Color.appWhite.opacity(0.3))
                             .frame(width: 8, height: 8)
                             .onTapGesture {
                                 withAnimation(.easeInOut(duration: 0.3)) {
@@ -93,7 +93,7 @@ struct EditCategoriesCell: View {
                 Text(L10n.categoryGridAllCategories)
                     .font(.appRegular(12))
                     .multilineTextAlignment(.center)
-                    .foregroundColor(.white)
+                    .foregroundColor(.appWhite)
                     .lineLimit(1)
             }
             .frame(height: 80)
@@ -109,7 +109,7 @@ struct EditCategoriesCell: View {
         .modelContainer(makePreviewModelContainer())
 }
 
-#Preview("Кнопка всех категорий") {
+#Preview("All categories button") {
     EditCategoriesCell(action: {})
         .padding()
         .background(.appMain)

@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nav darījumu";
 "TRANSACTIONS_LIST_DELETE" = "Dzēst";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Iztērēts šodien";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Iztērēts vakar";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Rediģēt kategorijas";

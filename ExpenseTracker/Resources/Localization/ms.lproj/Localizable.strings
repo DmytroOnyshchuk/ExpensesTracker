@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Tiada transaksi";
 "TRANSACTIONS_LIST_DELETE" = "Padam";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Dibelanjakan hari ini";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Dibelanjakan semalam";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Edit kategori";

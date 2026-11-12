@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ingen transaksjoner";
 "TRANSACTIONS_LIST_DELETE" = "Slett";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Brukt i dag";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Brukt i går";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Rediger kategorier";

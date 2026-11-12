@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ಯಾವುದೇ ವಹಿವಾಟುಗಳಿಲ್ಲ";
 "TRANSACTIONS_LIST_DELETE" = "ಅಳಿಸಿ";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "ಇಂದಿನ ಖರ್ಚು";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ನಿನ್ನೆಯ ಖರ್ಚು";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "ವರ್ಗಗಳನ್ನು ಎಡಿಟ್ ಮಾಡಿ";

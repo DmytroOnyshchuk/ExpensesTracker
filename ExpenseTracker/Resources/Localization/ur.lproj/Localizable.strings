@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "کوئی لین دین نہیں";
 "TRANSACTIONS_LIST_DELETE" = "حذف کریں";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "آج کا خرچ";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "کل کا خرچ";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "زمروں میں ترمیم کریں";

@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Amal ýok";
 "TRANSACTIONS_LIST_DELETE" = "Poz";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Şu gün harçlandy";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Düýn harçlandy";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Kategoriýalary üýtget";

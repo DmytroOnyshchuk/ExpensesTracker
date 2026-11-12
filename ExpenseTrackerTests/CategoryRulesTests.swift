@@ -36,38 +36,38 @@ final class CategoryRulesTests: XCTestCase {
         return category
     }
 
-    // MARK: - Порядок и иерархия
+    // MARK: - Order and hierarchy
 
     func testDisplayOrderPutsFoldersFirstThenSortsByName() {
         let categories = [
-            makeCategory("Транспорт"),
-            makeCategory("Еда", isDirectory: true),
-            makeCategory("Одежда"),
-            makeCategory("Авто", isDirectory: true),
+            makeCategory("Transport"),
+            makeCategory("Food", isDirectory: true),
+            makeCategory("Clothing"),
+            makeCategory("Car", isDirectory: true),
         ]
 
-        XCTAssertEqual(categories.inDisplayOrder.map(\.name), ["Авто", "Еда", "Одежда", "Транспорт"])
+        XCTAssertEqual(categories.inDisplayOrder.map(\.name), ["Car", "Food", "Clothing", "Transport"])
     }
 
     func testTopLevelHidesCategoriesInsideFolders() {
-        let food = makeCategory("Еда", isDirectory: true)
+        let food = makeCategory("Food", isDirectory: true)
         let categories = [
             food,
-            makeCategory("Рестораны", in: food),
-            makeCategory("Одежда"),
+            makeCategory("Restaurants", in: food),
+            makeCategory("Clothing"),
         ]
 
-        XCTAssertEqual(Set(categories.topLevel.map(\.name)), ["Еда", "Одежда"])
+        XCTAssertEqual(Set(categories.topLevel.map(\.name)), ["Food", "Clothing"])
     }
 
     func testTopLevelKeepsCategoryWhoseFolderIsGone() {
-        let deletedFolder = makeCategory("Еда", isDirectory: true)
-        let categories = [makeCategory("Рестораны", in: deletedFolder)]
+        let deletedFolder = makeCategory("Food", isDirectory: true)
+        let categories = [makeCategory("Restaurants", in: deletedFolder)]
 
-        XCTAssertEqual(categories.topLevel.map(\.name), ["Рестораны"])
+        XCTAssertEqual(categories.topLevel.map(\.name), ["Restaurants"])
     }
 
-    // MARK: - Черновик
+    // MARK: - Draft
 
     func testNewDraftHasDefaults() {
         let draft = CategoryDraft()
@@ -79,35 +79,35 @@ final class CategoryRulesTests: XCTestCase {
     }
 
     func testDraftCopiesCategory() {
-        let food = makeCategory("Еда", isDirectory: true)
-        let category = makeCategory("Рестораны", icon: CategoryIcon(name: "wineglass", iconColor: .blue), in: food)
+        let food = makeCategory("Food", isDirectory: true)
+        let category = makeCategory("Restaurants", icon: CategoryIcon(name: "wineglass", iconColor: .blue), in: food)
 
         let draft = CategoryDraft(category)
 
-        XCTAssertEqual(draft.name, "Рестораны")
+        XCTAssertEqual(draft.name, "Restaurants")
         XCTAssertEqual(draft.icon.name, "wineglass")
         XCTAssertEqual(draft.icon.iconColor, .blue)
         XCTAssertEqual(draft.parentUuid, food.uuid)
     }
 
     func testEditingDraftLeavesCategoryUntouchedUntilApplied() {
-        let food = makeCategory("Еда", isDirectory: true)
-        let category = makeCategory("Рестораны", icon: CategoryIcon(name: "wineglass", iconColor: .blue))
+        let food = makeCategory("Food", isDirectory: true)
+        let category = makeCategory("Restaurants", icon: CategoryIcon(name: "wineglass", iconColor: .blue))
 
         var draft = CategoryDraft(category)
-        draft.name = "Кафе"
+        draft.name = "Cafe"
         draft.icon.name = "cup.and.saucer"
         draft.icon.iconColor = .red
         draft.parentUuid = food.uuid
 
-        XCTAssertEqual(category.name, "Рестораны")
+        XCTAssertEqual(category.name, "Restaurants")
         XCTAssertEqual(category.categoryIcon.name, "wineglass")
         XCTAssertEqual(category.categoryIcon.iconColor, .blue)
         XCTAssertNil(category.parentUuid)
 
         draft.apply(to: category)
 
-        XCTAssertEqual(category.name, "Кафе")
+        XCTAssertEqual(category.name, "Cafe")
         XCTAssertEqual(category.categoryIcon.name, "cup.and.saucer")
         XCTAssertEqual(category.categoryIcon.iconColor, .red)
         XCTAssertEqual(category.parentUuid, food.uuid)
@@ -124,29 +124,29 @@ final class CategoryRulesTests: XCTestCase {
         draft.apply(to: category)
         XCTAssertEqual(category.name, .food)
 
-        draft.name = "Кафе"
+        draft.name = "Cafe"
         draft.apply(to: category)
-        XCTAssertEqual(category.name, .custom("Кафе"))
+        XCTAssertEqual(category.name, .custom("Cafe"))
     }
 
     func testNameRawValueRoundTrips() {
-        for name in TransactionCategoryName.predefined + [.custom("Кафе")] {
+        for name in TransactionCategoryName.predefined + [.custom("Cafe")] {
             XCTAssertEqual(TransactionCategoryName(rawValue: name.rawValue), name)
         }
         XCTAssertEqual(Set(TransactionCategoryName.predefined.map(\.rawValue)).count, TransactionCategoryName.predefined.count)
     }
 
     func testMakeCategoryCreatesPlainCategoryFromDraft() {
-        let food = makeCategory("Еда", isDirectory: true)
+        let food = makeCategory("Food", isDirectory: true)
 
         var draft = CategoryDraft()
-        draft.name = "Кафе"
+        draft.name = "Cafe"
         draft.icon = CategoryIcon(name: "cup.and.saucer", iconColor: .red)
         draft.parentUuid = food.uuid
 
         let category = draft.makeCategory()
 
-        XCTAssertEqual(category.name, "Кафе")
+        XCTAssertEqual(category.name, "Cafe")
         XCTAssertEqual(category.categoryIcon.name, "cup.and.saucer")
         XCTAssertEqual(category.categoryIcon.iconColor, .red)
         XCTAssertEqual(category.parentUuid, food.uuid)
@@ -162,8 +162,8 @@ final class CategoryRulesTests: XCTestCase {
     }
 
     func testDropMissingParentKeepsExistingFolder() {
-        let food = makeCategory("Еда", isDirectory: true)
-        let category = makeCategory("Рестораны", in: food)
+        let food = makeCategory("Food", isDirectory: true)
+        let category = makeCategory("Restaurants", in: food)
 
         var draft = CategoryDraft(category)
         draft.dropMissingParent(in: [food, category])
@@ -172,8 +172,8 @@ final class CategoryRulesTests: XCTestCase {
     }
 
     func testDropMissingParentClearsDeletedFolder() {
-        let deletedFolder = makeCategory("Еда", isDirectory: true)
-        let category = makeCategory("Рестораны", in: deletedFolder)
+        let deletedFolder = makeCategory("Food", isDirectory: true)
+        let category = makeCategory("Restaurants", in: deletedFolder)
 
         var draft = CategoryDraft(category)
         draft.dropMissingParent(in: [category])

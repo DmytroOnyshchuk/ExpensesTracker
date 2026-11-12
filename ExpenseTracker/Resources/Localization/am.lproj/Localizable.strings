@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ምንም ግብይቶች የሉም";
 "TRANSACTIONS_LIST_DELETE" = "ሰርዝ";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "ዛሬ የወጣ";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ትናንት የወጣ";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "ምድቦችን አርትዕ";

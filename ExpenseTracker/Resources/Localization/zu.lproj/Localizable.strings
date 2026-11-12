@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Akukho okwenziwe";
 "TRANSACTIONS_LIST_DELETE" = "Susa";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Okuchithwe namuhla";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Okuchithwe izolo";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Hlela izigaba";

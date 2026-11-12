@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ტრანზაქციები არ არის";
 "TRANSACTIONS_LIST_DELETE" = "წაშლა";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "დღეს დახარჯული";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "გუშინ დახარჯული";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "კატეგორიების რედაქტირება";

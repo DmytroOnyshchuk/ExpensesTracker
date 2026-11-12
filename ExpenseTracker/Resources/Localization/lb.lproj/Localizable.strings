@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Keng Transaktiounen";
 "TRANSACTIONS_LIST_DELETE" = "Läschen";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Haut ausginn";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Gëschter ausginn";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Kategorien änneren";

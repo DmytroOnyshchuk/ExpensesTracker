@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ਕੋਈ ਲੈਣ-ਦੇਣ ਨਹੀਂ";
 "TRANSACTIONS_LIST_DELETE" = "ਮਿਟਾਓ";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "ਅੱਜ ਦਾ ਖਰਚ";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ਕੱਲ੍ਹ ਦਾ ਖਰਚ";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "ਸ਼੍ਰੇਣੀਆਂ ਸੋਧੋ";

@@ -39,14 +39,14 @@ struct CategoriesEdit: View {
                     showAddFolderAlert = true
                 } label: {
                     Image(systemName: "folder.badge.plus")
-                        .foregroundColor(.white)
+                        .foregroundColor(.appWhite)
                 }
 
                 Button {
                     showAddCategory = true
                 } label: {
                     Image(systemName: "plus")
-                        .foregroundColor(.white)
+                        .foregroundColor(.appWhite)
                 }
             }
         }
@@ -78,7 +78,7 @@ struct CategoriesEdit: View {
         }
     }
 
-    // MARK: - Создание новой папки
+    // MARK: - Creating a new folder
 
     private func createFolderCategory() {
         guard !newFolderName.trimmingCharacters(in: .whitespaces).isEmpty else { return }

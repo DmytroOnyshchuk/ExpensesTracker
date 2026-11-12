@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Geen transaksies nie";
 "TRANSACTIONS_LIST_DELETE" = "Vee uit";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Vandag spandeer";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Gister spandeer";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Wysig kategorieë";

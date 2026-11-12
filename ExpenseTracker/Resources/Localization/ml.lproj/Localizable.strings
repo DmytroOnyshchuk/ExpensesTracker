@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ഇടപാടുകളൊന്നുമില്ല";
 "TRANSACTIONS_LIST_DELETE" = "ഇല്ലാതാക്കുക";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "ഇന്നത്തെ ചെലവ്";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ഇന്നലത്തെ ചെലവ്";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "വിഭാഗങ്ങൾ എഡിറ്റ് ചെയ്യുക";

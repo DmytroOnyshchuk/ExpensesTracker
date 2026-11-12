@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Няма аперацый";
 "TRANSACTIONS_LIST_DELETE" = "Выдаліць";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Выдаткавана сёння";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Выдаткавана ўчора";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Рэдагаванне катэгорый";

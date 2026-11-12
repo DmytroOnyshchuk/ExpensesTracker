@@ -40,7 +40,7 @@ final class TransactionCategory {
 }
 
 extension [TransactionCategory] {
-    /// Порядок, в котором категории показываются в сетках: сначала папки, внутри групп — по названию.
+    /// The order in which categories are shown in grids: folders first, then by name within each group.
     var inDisplayOrder: [TransactionCategory] {
         sorted {
             if $0.isDirectory != $1.isDirectory {
@@ -50,7 +50,7 @@ extension [TransactionCategory] {
         }
     }
 
-    /// Категории верхнего уровня, то есть те, что не лежат в папке.
+    /// Top-level categories, i.e. those that are not inside a folder.
     var topLevel: [TransactionCategory] {
         filter { !($0.parent(from: self)?.isDirectory ?? false) }
     }

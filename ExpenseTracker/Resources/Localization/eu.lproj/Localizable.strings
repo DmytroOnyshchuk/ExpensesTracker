@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ez dago transakziorik";
 "TRANSACTIONS_LIST_DELETE" = "Ezabatu";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Gaur gastatua";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Atzo gastatua";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Editatu kategoriak";

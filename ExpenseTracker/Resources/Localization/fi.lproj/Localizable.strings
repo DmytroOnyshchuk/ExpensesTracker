@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ei tapahtumia";
 "TRANSACTIONS_LIST_DELETE" = "Poista";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Käytetty tänään";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Käytetty eilen";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Muokkaa luokkia";

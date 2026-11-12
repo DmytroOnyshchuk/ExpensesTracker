@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "تراکنشی وجود ندارد";
 "TRANSACTIONS_LIST_DELETE" = "حذف";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "هزینهٔ امروز";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "هزینهٔ دیروز";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "ویرایش دسته‌ها";

@@ -208,7 +208,7 @@ extension UIView {
         shadowLayer.frame.size.height = 6.0
         shadowLayer.colors = [
             topColor.cgColor,
-            backgroundColor?.cgColor ?? UIColor.white.withAlphaComponent(0).cgColor,
+            backgroundColor?.cgColor ?? UIColor.appWhite.withAlphaComponent(0).cgColor,
         ]
         shadowLayer.name = "innershadow"
 

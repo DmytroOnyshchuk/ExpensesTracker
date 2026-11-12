@@ -12,7 +12,7 @@ extension View {
     func debugOverlay() -> some View {
         overlay(
             RoundedRectangle(cornerRadius: 2)
-                .stroke(Color.white, lineWidth: 1)
+                .stroke(Color.appWhite, lineWidth: 1)
         )
     }
 }

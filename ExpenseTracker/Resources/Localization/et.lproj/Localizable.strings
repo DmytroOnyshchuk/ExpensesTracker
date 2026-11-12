@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Tehinguid pole";
 "TRANSACTIONS_LIST_DELETE" = "Kustuta";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Täna kulutatud";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Eile kulutatud";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Muuda kategooriaid";

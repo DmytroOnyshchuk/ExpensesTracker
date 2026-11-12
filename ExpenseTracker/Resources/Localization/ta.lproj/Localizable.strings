@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "பரிவர்த்தனைகள் இல்லை";
 "TRANSACTIONS_LIST_DELETE" = "நீக்கு";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "இன்றைய செலவு";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "நேற்றைய செலவு";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "வகைகளைத் திருத்து";

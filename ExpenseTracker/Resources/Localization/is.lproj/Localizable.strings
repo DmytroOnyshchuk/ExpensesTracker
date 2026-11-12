@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Engar færslur";
 "TRANSACTIONS_LIST_DELETE" = "Eyða";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Eytt í dag";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Eytt í gær";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Breyta flokkum";

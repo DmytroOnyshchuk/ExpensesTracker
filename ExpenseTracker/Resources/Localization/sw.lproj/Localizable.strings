@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Hakuna miamala";
 "TRANSACTIONS_LIST_DELETE" = "Futa";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Matumizi ya leo";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Matumizi ya jana";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Hariri aina";

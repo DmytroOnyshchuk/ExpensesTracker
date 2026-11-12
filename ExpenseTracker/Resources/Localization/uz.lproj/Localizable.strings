@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Tranzaksiyalar yoʻq";
 "TRANSACTIONS_LIST_DELETE" = "Oʻchirish";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Bugun sarflandi";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Kecha sarflandi";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Turkumlarni tahrirlash";

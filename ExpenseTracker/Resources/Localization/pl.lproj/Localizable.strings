@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Brak transakcji";
 "TRANSACTIONS_LIST_DELETE" = "Usuń";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Wydano dzisiaj";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Wydano wczoraj";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Edytuj kategorie";

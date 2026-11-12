@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Гүйлгээ алга";
 "TRANSACTIONS_LIST_DELETE" = "Устгах";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Өнөөдөр зарцуулсан";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Өчигдөр зарцуулсан";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Ангилал засах";

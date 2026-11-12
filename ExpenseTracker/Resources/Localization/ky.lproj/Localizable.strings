@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Транзакциялар жок";
 "TRANSACTIONS_LIST_DELETE" = "Өчүрүү";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Бүгүн сарпталды";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Кечээ сарпталды";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Категорияларды түзөтүү";

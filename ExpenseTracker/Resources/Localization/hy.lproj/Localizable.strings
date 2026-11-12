@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Գործարքներ չկան";
 "TRANSACTIONS_LIST_DELETE" = "Ջնջել";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Այսօր ծախսվել է";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Երեկ ծախսվել է";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Խմբագրել կատեգորիաները";

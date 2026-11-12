@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nuk ka transaksione";
 "TRANSACTIONS_LIST_DELETE" = "Fshi";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Shpenzuar sot";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Shpenzuar dje";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Ndrysho kategoritë";

@@ -38,6 +38,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Žiadne transakcie";
 "TRANSACTIONS_LIST_DELETE" = "Vymazať";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Minuté dnes";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Minuté včera";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Upraviť kategórie";
