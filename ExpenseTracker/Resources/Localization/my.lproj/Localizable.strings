@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "အသုံးစရိတ် ထည့်ပါ";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "အသုံးစရိတ်များ";
+"STATISTICS_DAY" = "ရက်";
+"STATISTICS_MONTH" = "လ";
+"STATISTICS_YEAR" = "နှစ်";
+"STATISTICS_TOTAL_SPENT" = "စုစုပေါင်း အသုံးစရိတ်";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "အမျိုးအစားအားလုံး";
 

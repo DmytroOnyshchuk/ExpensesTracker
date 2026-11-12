@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Add meg a kiadást";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Kiadások";
+"STATISTICS_DAY" = "Nap";
+"STATISTICS_MONTH" = "Hónap";
+"STATISTICS_YEAR" = "Év";
+"STATISTICS_TOTAL_SPENT" = "Összes költés";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Összes kategória";
 

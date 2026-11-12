@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "වියදම ඇතුළත් කරන්න";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "වියදම්";
+"STATISTICS_DAY" = "දිනය";
+"STATISTICS_MONTH" = "මාසය";
+"STATISTICS_YEAR" = "වසර";
+"STATISTICS_TOTAL_SPENT" = "මුළු වියදම";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "සියලු ප්‍රවර්ග";
 

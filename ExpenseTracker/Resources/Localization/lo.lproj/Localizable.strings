@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "ປ້ອນລາຍຈ່າຍ";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "ລາຍຈ່າຍ";
+"STATISTICS_DAY" = "ມື້";
+"STATISTICS_MONTH" = "ເດືອນ";
+"STATISTICS_YEAR" = "ປີ";
+"STATISTICS_TOTAL_SPENT" = "ໃຊ້ຈ່າຍທັງໝົດ";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "ໝວດໝູ່ທັງໝົດ";
 

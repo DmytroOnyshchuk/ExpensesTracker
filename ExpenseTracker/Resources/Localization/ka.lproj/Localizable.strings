@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "შეიყვანეთ ხარჯი";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "ხარჯები";
+"STATISTICS_DAY" = "დღე";
+"STATISTICS_MONTH" = "თვე";
+"STATISTICS_YEAR" = "წელი";
+"STATISTICS_TOTAL_SPENT" = "სულ დახარჯული";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "ყველა კატეგორია";
 

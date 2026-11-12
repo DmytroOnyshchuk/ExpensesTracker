@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Çykdajyny giriziň";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Çykdajylar";
+"STATISTICS_DAY" = "Gün";
+"STATISTICS_MONTH" = "Aý";
+"STATISTICS_YEAR" = "Ýyl";
+"STATISTICS_TOTAL_SPENT" = "Jemi harçlandy";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Ähli kategoriýalar";
 

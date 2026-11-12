@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Masukkan perbelanjaan";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Perbelanjaan";
+"STATISTICS_DAY" = "Hari";
+"STATISTICS_MONTH" = "Bulan";
+"STATISTICS_YEAR" = "Tahun";
+"STATISTICS_TOTAL_SPENT" = "Jumlah perbelanjaan";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Semua kategori";
 

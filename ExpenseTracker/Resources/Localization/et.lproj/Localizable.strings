@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Sisesta kulu";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Kulud";
+"STATISTICS_DAY" = "Päev";
+"STATISTICS_MONTH" = "Kuu";
+"STATISTICS_YEAR" = "Aasta";
+"STATISTICS_TOTAL_SPENT" = "Kokku kulutatud";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Kõik kategooriad";
 

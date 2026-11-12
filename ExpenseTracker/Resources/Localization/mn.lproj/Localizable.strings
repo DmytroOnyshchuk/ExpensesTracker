@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Зардлаа оруулна уу";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Зарлага";
+"STATISTICS_DAY" = "Өдөр";
+"STATISTICS_MONTH" = "Сар";
+"STATISTICS_YEAR" = "Жил";
+"STATISTICS_TOTAL_SPENT" = "Нийт зарцуулсан";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Бүх ангилал";
 

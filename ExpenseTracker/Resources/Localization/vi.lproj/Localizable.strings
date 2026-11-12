@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Nhập khoản chi";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Chi tiêu";
+"STATISTICS_DAY" = "Ngày";
+"STATISTICS_MONTH" = "Tháng";
+"STATISTICS_YEAR" = "Năm";
+"STATISTICS_TOTAL_SPENT" = "Tổng chi tiêu";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Tất cả danh mục";
 

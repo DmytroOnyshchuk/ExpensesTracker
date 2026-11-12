@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "ചെലവ് നൽകുക";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "ചെലവുകൾ";
+"STATISTICS_DAY" = "ദിവസം";
+"STATISTICS_MONTH" = "മാസം";
+"STATISTICS_YEAR" = "വർഷം";
+"STATISTICS_TOTAL_SPENT" = "ആകെ ചെലവ്";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "എല്ലാ വിഭാഗങ്ങളും";
 

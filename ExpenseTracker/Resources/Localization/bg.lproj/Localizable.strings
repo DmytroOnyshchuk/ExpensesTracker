@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Въведете разход";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Разходи";
+"STATISTICS_DAY" = "Ден";
+"STATISTICS_MONTH" = "Месец";
+"STATISTICS_YEAR" = "Година";
+"STATISTICS_TOTAL_SPENT" = "Общо похарчено";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Всички категории";
 

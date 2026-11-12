@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Syötä kulu";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Kulut";
+"STATISTICS_DAY" = "Päivä";
+"STATISTICS_MONTH" = "Kuukausi";
+"STATISTICS_YEAR" = "Vuosi";
+"STATISTICS_TOTAL_SPENT" = "Käytetty yhteensä";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Kaikki luokat";
 

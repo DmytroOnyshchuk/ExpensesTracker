@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "הזינו הוצאה";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "הוצאות";
+"STATISTICS_DAY" = "יום";
+"STATISTICS_MONTH" = "חודש";
+"STATISTICS_YEAR" = "שנה";
+"STATISTICS_TOTAL_SPENT" = "סך ההוצאות";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "כל הקטגוריות";
 

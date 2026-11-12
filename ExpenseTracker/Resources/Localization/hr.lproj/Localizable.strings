@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Unesite trošak";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Troškovi";
+"STATISTICS_DAY" = "Dan";
+"STATISTICS_MONTH" = "Mjesec";
+"STATISTICS_YEAR" = "Godina";
+"STATISTICS_TOTAL_SPENT" = "Ukupno potrošeno";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Sve kategorije";
 

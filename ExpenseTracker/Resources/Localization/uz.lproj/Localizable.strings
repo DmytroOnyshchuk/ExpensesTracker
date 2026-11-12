@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Xarajatni kiriting";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Xarajatlar";
+"STATISTICS_DAY" = "Kun";
+"STATISTICS_MONTH" = "Oy";
+"STATISTICS_YEAR" = "Yil";
+"STATISTICS_TOTAL_SPENT" = "Jami sarflandi";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Barcha turkumlar";
 

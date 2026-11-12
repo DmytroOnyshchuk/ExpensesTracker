@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Ausgab aginn";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Ausgaben";
+"STATISTICS_DAY" = "Dag";
+"STATISTICS_MONTH" = "Mount";
+"STATISTICS_YEAR" = "Joer";
+"STATISTICS_TOTAL_SPENT" = "Total ausginn";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "All Kategorien";
 

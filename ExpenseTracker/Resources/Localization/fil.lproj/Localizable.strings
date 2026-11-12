@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Ilagay ang gastos";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Mga gastos";
+"STATISTICS_DAY" = "Araw";
+"STATISTICS_MONTH" = "Buwan";
+"STATISTICS_YEAR" = "Taon";
+"STATISTICS_TOTAL_SPENT" = "Kabuuang nagastos";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Lahat ng kategorya";
 

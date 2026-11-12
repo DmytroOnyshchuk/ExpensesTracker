@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Шығынды енгізіңіз";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Шығындар";
+"STATISTICS_DAY" = "Күн";
+"STATISTICS_MONTH" = "Ай";
+"STATISTICS_YEAR" = "Жыл";
+"STATISTICS_TOTAL_SPENT" = "Барлығы жұмсалды";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Барлық санаттар";
 

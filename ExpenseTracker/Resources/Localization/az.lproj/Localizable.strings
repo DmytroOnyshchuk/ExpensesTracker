@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Xərci daxil edin";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Xərclər";
+"STATISTICS_DAY" = "Gün";
+"STATISTICS_MONTH" = "Ay";
+"STATISTICS_YEAR" = "İl";
+"STATISTICS_TOTAL_SPENT" = "Cəmi xərclənib";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Bütün kateqoriyalar";
 

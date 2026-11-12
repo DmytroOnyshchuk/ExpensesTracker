@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "செலவை உள்ளிடவும்";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "செலவுகள்";
+"STATISTICS_DAY" = "நாள்";
+"STATISTICS_MONTH" = "மாதம்";
+"STATISTICS_YEAR" = "ஆண்டு";
+"STATISTICS_TOTAL_SPENT" = "மொத்த செலவு";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "அனைத்து வகைகளும்";
 

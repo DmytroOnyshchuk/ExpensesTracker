@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Introdu cheltuiala";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Cheltuieli";
+"STATISTICS_DAY" = "Zi";
+"STATISTICS_MONTH" = "Lună";
+"STATISTICS_YEAR" = "An";
+"STATISTICS_TOTAL_SPENT" = "Total cheltuit";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Toate categoriile";
 

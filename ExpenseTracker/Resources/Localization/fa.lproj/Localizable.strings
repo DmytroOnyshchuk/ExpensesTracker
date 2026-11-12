@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "هزینه را وارد کنید";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "هزینه‌ها";
+"STATISTICS_DAY" = "روز";
+"STATISTICS_MONTH" = "ماه";
+"STATISTICS_YEAR" = "سال";
+"STATISTICS_TOTAL_SPENT" = "مجموع هزینه";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "همه دسته‌ها";
 

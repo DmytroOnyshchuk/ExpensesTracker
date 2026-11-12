@@ -13,6 +13,7 @@ struct StartView: View {
     @Environment(\.modelContext) private var modelContext
 
     @State private var input = AmountInput()
+    @State private var showStatistics = false
     @Query(sort: \Transaction.date, order: .reverse) private var transactions: [Transaction]
 
     var body: some View {
@@ -34,6 +35,9 @@ struct StartView: View {
                 .frame(maxWidth: .infinity, alignment: .top)
             }
             .background(.appMain)
+            .navigationDestination(isPresented: $showStatistics) {
+                StatisticsView()
+            }
         } detail: {
             Text(L10n.startviewEnterExpense)
         }
@@ -61,7 +65,9 @@ struct StartView: View {
 
     private func openMenu() {}
 
-    private func openStatistics() {}
+    private func openStatistics() {
+        showStatistics = true
+    }
 
     private func addTransaction(with category: TransactionCategory) {
         guard input.amount != 0 else { return }

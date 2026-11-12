@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "أدخل المصروف";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "المصروفات";
+"STATISTICS_DAY" = "يوم";
+"STATISTICS_MONTH" = "شهر";
+"STATISTICS_YEAR" = "سنة";
+"STATISTICS_TOTAL_SPENT" = "إجمالي المصروف";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "كل الفئات";
 

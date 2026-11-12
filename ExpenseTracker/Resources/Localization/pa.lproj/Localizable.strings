@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "ਖਰਚਾ ਦਰਜ ਕਰੋ";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "ਖਰਚੇ";
+"STATISTICS_DAY" = "ਦਿਨ";
+"STATISTICS_MONTH" = "ਮਹੀਨਾ";
+"STATISTICS_YEAR" = "ਸਾਲ";
+"STATISTICS_TOTAL_SPENT" = "ਕੁੱਲ ਖਰਚ";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "ਸਾਰੀਆਂ ਸ਼੍ਰੇਣੀਆਂ";
 

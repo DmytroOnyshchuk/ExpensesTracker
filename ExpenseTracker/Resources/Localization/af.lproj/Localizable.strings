@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Voer uitgawe in";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Uitgawes";
+"STATISTICS_DAY" = "Dag";
+"STATISTICS_MONTH" = "Maand";
+"STATISTICS_YEAR" = "Jaar";
+"STATISTICS_TOTAL_SPENT" = "Totaal bestee";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Alle kategorieë";
 

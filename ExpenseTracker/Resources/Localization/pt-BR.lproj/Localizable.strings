@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Insira a despesa";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Despesas";
+"STATISTICS_DAY" = "Dia";
+"STATISTICS_MONTH" = "Mês";
+"STATISTICS_YEAR" = "Ano";
+"STATISTICS_TOTAL_SPENT" = "Total gasto";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Todas as categorias";
 

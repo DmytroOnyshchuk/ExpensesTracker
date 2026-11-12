@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Εισαγάγετε έξοδο";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Έξοδα";
+"STATISTICS_DAY" = "Ημέρα";
+"STATISTICS_MONTH" = "Μήνας";
+"STATISTICS_YEAR" = "Έτος";
+"STATISTICS_TOTAL_SPENT" = "Σύνολο εξόδων";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Όλες οι κατηγορίες";
 

@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Harcama girin";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Harcamalar";
+"STATISTICS_DAY" = "Gün";
+"STATISTICS_MONTH" = "Ay";
+"STATISTICS_YEAR" = "Yıl";
+"STATISTICS_TOTAL_SPENT" = "Toplam harcama";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Tüm kategoriler";
 

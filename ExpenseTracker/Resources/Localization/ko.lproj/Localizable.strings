@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "지출 입력";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "지출";
+"STATISTICS_DAY" = "일";
+"STATISTICS_MONTH" = "월";
+"STATISTICS_YEAR" = "연";
+"STATISTICS_TOTAL_SPENT" = "총 지출";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "모든 카테고리";
 

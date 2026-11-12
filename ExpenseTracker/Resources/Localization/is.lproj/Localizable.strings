@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Sláðu inn útgjöld";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Útgjöld";
+"STATISTICS_DAY" = "Dagur";
+"STATISTICS_MONTH" = "Mánuður";
+"STATISTICS_YEAR" = "Ár";
+"STATISTICS_TOTAL_SPENT" = "Samtals eytt";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Allir flokkar";
 

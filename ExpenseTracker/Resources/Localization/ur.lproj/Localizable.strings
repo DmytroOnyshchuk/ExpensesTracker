@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "خرچ درج کریں";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "اخراجات";
+"STATISTICS_DAY" = "دن";
+"STATISTICS_MONTH" = "مہینہ";
+"STATISTICS_YEAR" = "سال";
+"STATISTICS_TOTAL_SPENT" = "کل خرچ";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "تمام زمرے";
 

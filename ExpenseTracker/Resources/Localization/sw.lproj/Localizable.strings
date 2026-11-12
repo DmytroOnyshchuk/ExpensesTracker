@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Weka matumizi";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Matumizi";
+"STATISTICS_DAY" = "Siku";
+"STATISTICS_MONTH" = "Mwezi";
+"STATISTICS_YEAR" = "Mwaka";
+"STATISTICS_TOTAL_SPENT" = "Jumla ya matumizi";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Aina zote";
 

@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "ป้อนรายจ่าย";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "ค่าใช้จ่าย";
+"STATISTICS_DAY" = "วัน";
+"STATISTICS_MONTH" = "เดือน";
+"STATISTICS_YEAR" = "ปี";
+"STATISTICS_TOTAL_SPENT" = "ใช้จ่ายทั้งหมด";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "หมวดหมู่ทั้งหมด";
 

@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "ఖర్చును నమోదు చేయండి";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "ఖర్చులు";
+"STATISTICS_DAY" = "రోజు";
+"STATISTICS_MONTH" = "నెల";
+"STATISTICS_YEAR" = "సంవత్సరం";
+"STATISTICS_TOTAL_SPENT" = "మొత్తం ఖర్చు";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "అన్ని వర్గాలు";
 

@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Введите расход";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Расходы";
+"STATISTICS_DAY" = "День";
+"STATISTICS_MONTH" = "Месяц";
+"STATISTICS_YEAR" = "Год";
+"STATISTICS_TOTAL_SPENT" = "Всего потрачено";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Все категории";
 

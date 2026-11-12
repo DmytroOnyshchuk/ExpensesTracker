@@ -126,6 +126,16 @@ internal enum L10n {
   internal static let somethingWentWrong = L10n.tr("Localizable", "SOMETHING_WENT_WRONG", fallback: "Something went wrong...")
   /// Enter expense
   internal static let startviewEnterExpense = L10n.tr("Localizable", "STARTVIEW_ENTER_EXPENSE", fallback: "Enter expense")
+  /// Day
+  internal static let statisticsDay = L10n.tr("Localizable", "STATISTICS_DAY", fallback: "Day")
+  /// Month
+  internal static let statisticsMonth = L10n.tr("Localizable", "STATISTICS_MONTH", fallback: "Month")
+  /// Expenses
+  internal static let statisticsTitle = L10n.tr("Localizable", "STATISTICS_TITLE", fallback: "Expenses")
+  /// Total spent
+  internal static let statisticsTotalSpent = L10n.tr("Localizable", "STATISTICS_TOTAL_SPENT", fallback: "Total spent")
+  /// Year
+  internal static let statisticsYear = L10n.tr("Localizable", "STATISTICS_YEAR", fallback: "Year")
   /// Support
   internal static let support = L10n.tr("Localizable", "SUPPORT", fallback: "Support")
   /// Delete

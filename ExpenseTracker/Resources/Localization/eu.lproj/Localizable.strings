@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Idatzi gastua";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Gastuak";
+"STATISTICS_DAY" = "Eguna";
+"STATISTICS_MONTH" = "Hilabetea";
+"STATISTICS_YEAR" = "Urtea";
+"STATISTICS_TOTAL_SPENT" = "Guztira gastatua";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Kategoria guztiak";
 

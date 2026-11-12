@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Endatar l'expensa";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Expensas";
+"STATISTICS_DAY" = "Di";
+"STATISTICS_MONTH" = "Mais";
+"STATISTICS_YEAR" = "Onn";
+"STATISTICS_TOTAL_SPENT" = "Total expendì";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Tut las categorias";
 

@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Faka izindleko";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Izindleko";
+"STATISTICS_DAY" = "Usuku";
+"STATISTICS_MONTH" = "Inyanga";
+"STATISTICS_YEAR" = "Unyaka";
+"STATISTICS_TOTAL_SPENT" = "Isamba esichithiwe";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Zonke izigaba";
 

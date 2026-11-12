@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Ange utgift";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Utgifter";
+"STATISTICS_DAY" = "Dag";
+"STATISTICS_MONTH" = "Månad";
+"STATISTICS_YEAR" = "År";
+"STATISTICS_TOTAL_SPENT" = "Totalt spenderat";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Alla kategorier";
 

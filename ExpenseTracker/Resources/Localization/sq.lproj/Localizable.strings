@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Fut shpenzimin";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Shpenzimet";
+"STATISTICS_DAY" = "Ditë";
+"STATISTICS_MONTH" = "Muaj";
+"STATISTICS_YEAR" = "Vit";
+"STATISTICS_TOTAL_SPENT" = "Gjithsej shpenzuar";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Të gjitha kategoritë";
 

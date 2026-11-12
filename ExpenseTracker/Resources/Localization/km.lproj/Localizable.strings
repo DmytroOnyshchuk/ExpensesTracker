@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "បញ្ចូលចំណាយ";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "ចំណាយ";
+"STATISTICS_DAY" = "ថ្ងៃ";
+"STATISTICS_MONTH" = "ខែ";
+"STATISTICS_YEAR" = "ឆ្នាំ";
+"STATISTICS_TOTAL_SPENT" = "ចំណាយសរុប";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "ប្រភេទទាំងអស់";
 

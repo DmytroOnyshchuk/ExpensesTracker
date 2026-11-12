@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "ወጪ ያስገቡ";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "ወጪዎች";
+"STATISTICS_DAY" = "ቀን";
+"STATISTICS_MONTH" = "ወር";
+"STATISTICS_YEAR" = "ዓመት";
+"STATISTICS_TOTAL_SPENT" = "ጠቅላላ ወጪ";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "ሁሉም ምድቦች";
 

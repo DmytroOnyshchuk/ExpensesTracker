@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "খরচ লিখুন";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "খরচ";
+"STATISTICS_DAY" = "দিন";
+"STATISTICS_MONTH" = "মাস";
+"STATISTICS_YEAR" = "বছর";
+"STATISTICS_TOTAL_SPENT" = "মোট খরচ";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "সব বিভাগ";
 

@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "ખર્ચ દાખલ કરો";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "ખર્ચ";
+"STATISTICS_DAY" = "દિવસ";
+"STATISTICS_MONTH" = "મહિનો";
+"STATISTICS_YEAR" = "વર્ષ";
+"STATISTICS_TOTAL_SPENT" = "કુલ ખર્ચ";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "બધી શ્રેણીઓ";
 

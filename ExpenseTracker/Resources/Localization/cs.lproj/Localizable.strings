@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Zadejte výdaj";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Výdaje";
+"STATISTICS_DAY" = "Den";
+"STATISTICS_MONTH" = "Měsíc";
+"STATISTICS_YEAR" = "Rok";
+"STATISTICS_TOTAL_SPENT" = "Celkem utraceno";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Všechny kategorie";
 

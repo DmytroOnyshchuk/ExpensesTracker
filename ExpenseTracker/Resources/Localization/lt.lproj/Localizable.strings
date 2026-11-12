@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Įveskite išlaidas";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Išlaidos";
+"STATISTICS_DAY" = "Diena";
+"STATISTICS_MONTH" = "Mėnuo";
+"STATISTICS_YEAR" = "Metai";
+"STATISTICS_TOTAL_SPENT" = "Iš viso išleista";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Visos kategorijos";
 

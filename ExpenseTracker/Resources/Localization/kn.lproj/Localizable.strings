@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "ವೆಚ್ಚ ನಮೂದಿಸಿ";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "ವೆಚ್ಚಗಳು";
+"STATISTICS_DAY" = "ದಿನ";
+"STATISTICS_MONTH" = "ತಿಂಗಳು";
+"STATISTICS_YEAR" = "ವರ್ಷ";
+"STATISTICS_TOTAL_SPENT" = "ಒಟ್ಟು ವೆಚ್ಚ";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "ಎಲ್ಲಾ ವರ್ಗಗಳು";
 

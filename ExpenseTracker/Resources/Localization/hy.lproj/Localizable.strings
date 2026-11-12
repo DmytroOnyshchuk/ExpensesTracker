@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Մուտքագրեք ծախսը";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Ծախսեր";
+"STATISTICS_DAY" = "Օր";
+"STATISTICS_MONTH" = "Ամիս";
+"STATISTICS_YEAR" = "Տարի";
+"STATISTICS_TOTAL_SPENT" = "Ընդամենը ծախսվել է";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Բոլոր կատեգորիաները";
 

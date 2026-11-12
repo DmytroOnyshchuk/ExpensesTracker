@@ -32,6 +32,13 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Wprowadź wydatek";
 
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Wydatki";
+"STATISTICS_DAY" = "Dzień";
+"STATISTICS_MONTH" = "Miesiąc";
+"STATISTICS_YEAR" = "Rok";
+"STATISTICS_TOTAL_SPENT" = "Łącznie wydano";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Wszystkie kategorie";
 
