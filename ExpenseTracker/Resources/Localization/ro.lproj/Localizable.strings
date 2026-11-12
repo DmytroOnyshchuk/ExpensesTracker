@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "După dată";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "După sumă";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Editează";
+"TRANSACTION_EDIT_CATEGORY" = "Categorie";
+"TRANSACTION_EDIT_AMOUNT" = "Sumă";
+"TRANSACTION_EDIT_DATE" = "Dată";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Adaugă comentariu";
+"TRANSACTION_EDIT_DELETE" = "Șterge tranzacția";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Ștergi tranzacția?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Categorii";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Toate categoriile";
 

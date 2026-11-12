@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Tarixə görə";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Məbləğə görə";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Redaktə";
+"TRANSACTION_EDIT_CATEGORY" = "Kateqoriya";
+"TRANSACTION_EDIT_AMOUNT" = "Məbləğ";
+"TRANSACTION_EDIT_DATE" = "Tarix";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Şərh əlavə et";
+"TRANSACTION_EDIT_DELETE" = "Əməliyyatı sil";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Əməliyyat silinsin?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kateqoriyalar";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Bütün kateqoriyalar";
 

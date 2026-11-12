@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Pēc datuma";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Pēc summas";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Rediģēt";
+"TRANSACTION_EDIT_CATEGORY" = "Kategorija";
+"TRANSACTION_EDIT_AMOUNT" = "Summa";
+"TRANSACTION_EDIT_DATE" = "Datums";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Pievienot komentāru";
+"TRANSACTION_EDIT_DELETE" = "Dzēst darījumu";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Dzēst darījumu?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategorijas";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Visas kategorijas";
 

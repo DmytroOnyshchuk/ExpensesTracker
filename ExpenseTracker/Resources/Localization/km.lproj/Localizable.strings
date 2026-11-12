@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "តាមកាលបរិច្ឆេទ";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "តាមចំនួនទឹកប្រាក់";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "កែ";
+"TRANSACTION_EDIT_CATEGORY" = "ប្រភេទ";
+"TRANSACTION_EDIT_AMOUNT" = "ចំនួនទឹកប្រាក់";
+"TRANSACTION_EDIT_DATE" = "កាលបរិច្ឆេទ";
+"TRANSACTION_EDIT_ADD_COMMENT" = "បន្ថែមមតិយោបល់";
+"TRANSACTION_EDIT_DELETE" = "លុបប្រតិបត្តិការ";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "លុបប្រតិបត្តិការឬ?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "ប្រភេទ";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "ប្រភេទទាំងអស់";
 

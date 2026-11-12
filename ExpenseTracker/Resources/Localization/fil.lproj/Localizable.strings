@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Ayon sa petsa";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Ayon sa halaga";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "I-edit";
+"TRANSACTION_EDIT_CATEGORY" = "Kategorya";
+"TRANSACTION_EDIT_AMOUNT" = "Halaga";
+"TRANSACTION_EDIT_DATE" = "Petsa";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Magdagdag ng komento";
+"TRANSACTION_EDIT_DELETE" = "I-delete ang transaksyon";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "I-delete ang transaksyon?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Mga kategorya";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Lahat ng kategorya";
 

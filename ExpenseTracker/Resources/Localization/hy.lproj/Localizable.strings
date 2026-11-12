@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Ըստ ամսաթվի";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Ըստ գումարի";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Խմբագրել";
+"TRANSACTION_EDIT_CATEGORY" = "Կատեգորիա";
+"TRANSACTION_EDIT_AMOUNT" = "Գումար";
+"TRANSACTION_EDIT_DATE" = "Ամսաթիվ";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Ավելացնել մեկնաբանություն";
+"TRANSACTION_EDIT_DELETE" = "Ջնջել գործարքը";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Ջնջե՞լ գործարքը";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Կատեգորիաներ";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Բոլոր կատեգորիաները";
 

@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "За датою";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "За сумою";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Редагування";
+"TRANSACTION_EDIT_CATEGORY" = "Стаття";
+"TRANSACTION_EDIT_AMOUNT" = "Сума";
+"TRANSACTION_EDIT_DATE" = "Дата";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Додати коментар";
+"TRANSACTION_EDIT_DELETE" = "Видалити платіж";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Видалити операцію?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Статті";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Усі категорії";
 

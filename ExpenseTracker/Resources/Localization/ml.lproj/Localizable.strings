@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "തീയതി പ്രകാരം";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "തുക പ്രകാരം";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "എഡിറ്റ് ചെയ്യുക";
+"TRANSACTION_EDIT_CATEGORY" = "വിഭാഗം";
+"TRANSACTION_EDIT_AMOUNT" = "തുക";
+"TRANSACTION_EDIT_DATE" = "തീയതി";
+"TRANSACTION_EDIT_ADD_COMMENT" = "അഭിപ്രായം ചേർക്കുക";
+"TRANSACTION_EDIT_DELETE" = "ഇടപാട് ഇല്ലാതാക്കുക";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "ഇടപാട് ഇല്ലാതാക്കണോ?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "വിഭാഗങ്ങൾ";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "എല്ലാ വിഭാഗങ്ങളും";
 

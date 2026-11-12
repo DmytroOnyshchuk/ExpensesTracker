@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Mengikut tarikh";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Mengikut jumlah";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Edit";
+"TRANSACTION_EDIT_CATEGORY" = "Kategori";
+"TRANSACTION_EDIT_AMOUNT" = "Jumlah";
+"TRANSACTION_EDIT_DATE" = "Tarikh";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Tambah komen";
+"TRANSACTION_EDIT_DELETE" = "Padam transaksi";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Padam transaksi?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategori";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Semua kategori";
 

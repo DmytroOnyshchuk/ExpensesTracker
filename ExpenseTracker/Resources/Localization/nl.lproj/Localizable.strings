@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Op datum";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Op bedrag";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Bewerken";
+"TRANSACTION_EDIT_CATEGORY" = "Categorie";
+"TRANSACTION_EDIT_AMOUNT" = "Bedrag";
+"TRANSACTION_EDIT_DATE" = "Datum";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Opmerking toevoegen";
+"TRANSACTION_EDIT_DELETE" = "Transactie verwijderen";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Transactie verwijderen?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Categorieën";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Alle categorieën";
 

@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "ਤਾਰੀਖ ਅਨੁਸਾਰ";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "ਰਕਮ ਅਨੁਸਾਰ";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "ਸੋਧੋ";
+"TRANSACTION_EDIT_CATEGORY" = "ਸ਼੍ਰੇਣੀ";
+"TRANSACTION_EDIT_AMOUNT" = "ਰਕਮ";
+"TRANSACTION_EDIT_DATE" = "ਤਾਰੀਖ਼";
+"TRANSACTION_EDIT_ADD_COMMENT" = "ਟਿੱਪਣੀ ਜੋੜੋ";
+"TRANSACTION_EDIT_DELETE" = "ਲੈਣ-ਦੇਣ ਮਿਟਾਓ";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "ਲੈਣ-ਦੇਣ ਮਿਟਾਉਣਾ ਹੈ?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "ਸ਼੍ਰੇਣੀਆਂ";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "ਸਾਰੀਆਂ ਸ਼੍ਰੇਣੀਆਂ";
 

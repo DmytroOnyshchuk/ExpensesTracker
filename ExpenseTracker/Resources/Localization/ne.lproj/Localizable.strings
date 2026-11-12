@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "मिति अनुसार";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "रकम अनुसार";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "सम्पादन गर्नुहोस्";
+"TRANSACTION_EDIT_CATEGORY" = "श्रेणी";
+"TRANSACTION_EDIT_AMOUNT" = "रकम";
+"TRANSACTION_EDIT_DATE" = "मिति";
+"TRANSACTION_EDIT_ADD_COMMENT" = "टिप्पणी थप्नुहोस्";
+"TRANSACTION_EDIT_DELETE" = "कारोबार मेटाउनुहोस्";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "कारोबार मेटाउने हो?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "श्रेणीहरू";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "सबै श्रेणीहरू";
 

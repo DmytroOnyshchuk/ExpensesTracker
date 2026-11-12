@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "თარიღით";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "თანხით";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "რედაქტირება";
+"TRANSACTION_EDIT_CATEGORY" = "კატეგორია";
+"TRANSACTION_EDIT_AMOUNT" = "თანხა";
+"TRANSACTION_EDIT_DATE" = "თარიღი";
+"TRANSACTION_EDIT_ADD_COMMENT" = "კომენტარის დამატება";
+"TRANSACTION_EDIT_DELETE" = "ტრანზაქციის წაშლა";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "წაიშალოს ტრანზაქცია?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "კატეგორიები";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "ყველა კატეგორია";
 

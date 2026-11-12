@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Por data";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Por valor";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Editar";
+"TRANSACTION_EDIT_CATEGORY" = "Categoria";
+"TRANSACTION_EDIT_AMOUNT" = "Valor";
+"TRANSACTION_EDIT_DATE" = "Data";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Adicionar comentário";
+"TRANSACTION_EDIT_DELETE" = "Excluir transação";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Excluir transação?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Categorias";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Todas as categorias";
 

@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "По дате";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "По сумме";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Редактирование";
+"TRANSACTION_EDIT_CATEGORY" = "Статья";
+"TRANSACTION_EDIT_AMOUNT" = "Сумма";
+"TRANSACTION_EDIT_DATE" = "Дата";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Добавить комментарий";
+"TRANSACTION_EDIT_DELETE" = "Удалить платеж";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Удалить операцию?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Статьи";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Все категории";
 

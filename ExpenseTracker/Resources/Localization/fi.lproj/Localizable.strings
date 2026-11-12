@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Päivän mukaan";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Summan mukaan";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Muokkaa";
+"TRANSACTION_EDIT_CATEGORY" = "Luokka";
+"TRANSACTION_EDIT_AMOUNT" = "Summa";
+"TRANSACTION_EDIT_DATE" = "Päivämäärä";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Lisää kommentti";
+"TRANSACTION_EDIT_DELETE" = "Poista tapahtuma";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Poistetaanko tapahtuma?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Luokat";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Kaikki luokat";
 

@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "По датуму";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "По износу";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Уреди";
+"TRANSACTION_EDIT_CATEGORY" = "Категорија";
+"TRANSACTION_EDIT_AMOUNT" = "Износ";
+"TRANSACTION_EDIT_DATE" = "Датум";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Додај коментар";
+"TRANSACTION_EDIT_DELETE" = "Избриши трансакцију";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Избрисати трансакцију?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Категорије";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Све категорије";
 

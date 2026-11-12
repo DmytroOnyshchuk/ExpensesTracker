@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Κατά ημερομηνία";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Κατά ποσό";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Επεξεργασία";
+"TRANSACTION_EDIT_CATEGORY" = "Κατηγορία";
+"TRANSACTION_EDIT_AMOUNT" = "Ποσό";
+"TRANSACTION_EDIT_DATE" = "Ημερομηνία";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Προσθήκη σχολίου";
+"TRANSACTION_EDIT_DELETE" = "Διαγραφή συναλλαγής";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Διαγραφή συναλλαγής;";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Κατηγορίες";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Όλες οι κατηγορίες";
 

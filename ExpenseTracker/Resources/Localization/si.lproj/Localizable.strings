@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "දිනය අනුව";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "මුදල අනුව";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "සංස්කරණය";
+"TRANSACTION_EDIT_CATEGORY" = "ප්‍රවර්ගය";
+"TRANSACTION_EDIT_AMOUNT" = "මුදල";
+"TRANSACTION_EDIT_DATE" = "දිනය";
+"TRANSACTION_EDIT_ADD_COMMENT" = "අදහසක් එක් කරන්න";
+"TRANSACTION_EDIT_DELETE" = "ගනුදෙනුව මකන්න";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "ගනුදෙනුව මකන්නද?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "ප්‍රවර්ග";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "සියලු ප්‍රවර්ග";
 

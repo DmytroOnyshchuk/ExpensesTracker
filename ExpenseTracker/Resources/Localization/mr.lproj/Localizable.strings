@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "तारखेनुसार";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "रकमेनुसार";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "संपादित करा";
+"TRANSACTION_EDIT_CATEGORY" = "श्रेणी";
+"TRANSACTION_EDIT_AMOUNT" = "रक्कम";
+"TRANSACTION_EDIT_DATE" = "तारीख";
+"TRANSACTION_EDIT_ADD_COMMENT" = "टिप्पणी जोडा";
+"TRANSACTION_EDIT_DELETE" = "व्यवहार हटवा";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "व्यवहार हटवायचा?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "श्रेण्या";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "सर्व श्रेण्या";
 

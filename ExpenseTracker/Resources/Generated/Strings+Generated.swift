@@ -144,6 +144,22 @@ internal enum L10n {
   internal static let transactionDetailsSortByAmount = L10n.tr("Localizable", "TRANSACTION_DETAILS_SORT_BY_AMOUNT", fallback: "By amount")
   /// By date
   internal static let transactionDetailsSortByDate = L10n.tr("Localizable", "TRANSACTION_DETAILS_SORT_BY_DATE", fallback: "By date")
+  /// Add comment
+  internal static let transactionEditAddComment = L10n.tr("Localizable", "TRANSACTION_EDIT_ADD_COMMENT", fallback: "Add comment")
+  /// Amount
+  internal static let transactionEditAmount = L10n.tr("Localizable", "TRANSACTION_EDIT_AMOUNT", fallback: "Amount")
+  /// Categories
+  internal static let transactionEditCategoriesTitle = L10n.tr("Localizable", "TRANSACTION_EDIT_CATEGORIES_TITLE", fallback: "Categories")
+  /// Category
+  internal static let transactionEditCategory = L10n.tr("Localizable", "TRANSACTION_EDIT_CATEGORY", fallback: "Category")
+  /// Date
+  internal static let transactionEditDate = L10n.tr("Localizable", "TRANSACTION_EDIT_DATE", fallback: "Date")
+  /// Delete transaction
+  internal static let transactionEditDelete = L10n.tr("Localizable", "TRANSACTION_EDIT_DELETE", fallback: "Delete transaction")
+  /// Delete transaction?
+  internal static let transactionEditDeleteConfirmation = L10n.tr("Localizable", "TRANSACTION_EDIT_DELETE_CONFIRMATION", fallback: "Delete transaction?")
+  /// Edit
+  internal static let transactionEditTitle = L10n.tr("Localizable", "TRANSACTION_EDIT_TITLE", fallback: "Edit")
   /// Delete
   internal static let transactionsListDelete = L10n.tr("Localizable", "TRANSACTIONS_LIST_DELETE", fallback: "Delete")
   /// No transactions

@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Podle data";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Podle částky";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Upravit";
+"TRANSACTION_EDIT_CATEGORY" = "Kategorie";
+"TRANSACTION_EDIT_AMOUNT" = "Částka";
+"TRANSACTION_EDIT_DATE" = "Datum";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Přidat komentář";
+"TRANSACTION_EDIT_DELETE" = "Smazat transakci";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Smazat transakci?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategorie";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Všechny kategorie";
 

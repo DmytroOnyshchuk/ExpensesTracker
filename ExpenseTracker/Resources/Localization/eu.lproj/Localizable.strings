@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Dataren arabera";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Zenbatekoaren arabera";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Editatu";
+"TRANSACTION_EDIT_CATEGORY" = "Kategoria";
+"TRANSACTION_EDIT_AMOUNT" = "Zenbatekoa";
+"TRANSACTION_EDIT_DATE" = "Data";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Gehitu iruzkina";
+"TRANSACTION_EDIT_DELETE" = "Ezabatu transakzioa";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Ezabatu transakzioa?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategoriak";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Kategoria guztiak";
 

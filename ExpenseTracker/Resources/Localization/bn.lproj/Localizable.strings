@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "তারিখ অনুযায়ী";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "পরিমাণ অনুযায়ী";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "সম্পাদনা";
+"TRANSACTION_EDIT_CATEGORY" = "বিভাগ";
+"TRANSACTION_EDIT_AMOUNT" = "পরিমাণ";
+"TRANSACTION_EDIT_DATE" = "তারিখ";
+"TRANSACTION_EDIT_ADD_COMMENT" = "মন্তব্য যোগ করুন";
+"TRANSACTION_EDIT_DELETE" = "লেনদেন মুছুন";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "লেনদেন মুছুন?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "বিভাগসমূহ";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "সব বিভাগ";
 

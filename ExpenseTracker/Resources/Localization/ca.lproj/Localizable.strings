@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Per data";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Per import";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Edita";
+"TRANSACTION_EDIT_CATEGORY" = "Categoria";
+"TRANSACTION_EDIT_AMOUNT" = "Import";
+"TRANSACTION_EDIT_DATE" = "Data";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Afegeix un comentari";
+"TRANSACTION_EDIT_DELETE" = "Elimina la transacció";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Vols eliminar la transacció?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Categories";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Totes les categories";
 

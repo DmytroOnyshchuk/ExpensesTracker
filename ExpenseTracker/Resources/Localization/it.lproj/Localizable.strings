@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Per data";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Per importo";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Modifica";
+"TRANSACTION_EDIT_CATEGORY" = "Categoria";
+"TRANSACTION_EDIT_AMOUNT" = "Importo";
+"TRANSACTION_EDIT_DATE" = "Data";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Aggiungi commento";
+"TRANSACTION_EDIT_DELETE" = "Elimina transazione";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Eliminare la transazione?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Categorie";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Tutte le categorie";
 

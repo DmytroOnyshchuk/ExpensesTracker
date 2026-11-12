@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "தேதி வாரியாக";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "தொகை வாரியாக";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "திருத்து";
+"TRANSACTION_EDIT_CATEGORY" = "வகை";
+"TRANSACTION_EDIT_AMOUNT" = "தொகை";
+"TRANSACTION_EDIT_DATE" = "தேதி";
+"TRANSACTION_EDIT_ADD_COMMENT" = "கருத்தைச் சேர்";
+"TRANSACTION_EDIT_DELETE" = "பரிவர்த்தனையை நீக்கு";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "பரிவர்த்தனையை நீக்கவா?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "வகைகள்";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "அனைத்து வகைகளும்";
 

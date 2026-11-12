@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Volgens datum";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Volgens bedrag";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Wysig";
+"TRANSACTION_EDIT_CATEGORY" = "Kategorie";
+"TRANSACTION_EDIT_AMOUNT" = "Bedrag";
+"TRANSACTION_EDIT_DATE" = "Datum";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Voeg opmerking by";
+"TRANSACTION_EDIT_DELETE" = "Vee transaksie uit";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Vee transaksie uit?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategorieë";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Alle kategorieë";
 

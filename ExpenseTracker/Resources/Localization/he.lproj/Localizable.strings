@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "לפי תאריך";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "לפי סכום";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "עריכה";
+"TRANSACTION_EDIT_CATEGORY" = "קטגוריה";
+"TRANSACTION_EDIT_AMOUNT" = "סכום";
+"TRANSACTION_EDIT_DATE" = "תאריך";
+"TRANSACTION_EDIT_ADD_COMMENT" = "הוספת הערה";
+"TRANSACTION_EDIT_DELETE" = "מחיקת פעולה";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "למחוק את הפעולה?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "קטגוריות";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "כל הקטגוריות";
 

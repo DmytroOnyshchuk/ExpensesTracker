@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "तारीख के अनुसार";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "राशि के अनुसार";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "संपादित करें";
+"TRANSACTION_EDIT_CATEGORY" = "श्रेणी";
+"TRANSACTION_EDIT_AMOUNT" = "राशि";
+"TRANSACTION_EDIT_DATE" = "तारीख़";
+"TRANSACTION_EDIT_ADD_COMMENT" = "टिप्पणी जोड़ें";
+"TRANSACTION_EDIT_DELETE" = "लेनदेन हटाएँ";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "लेनदेन हटाएँ?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "श्रेणियाँ";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "सभी श्रेणियाँ";
 

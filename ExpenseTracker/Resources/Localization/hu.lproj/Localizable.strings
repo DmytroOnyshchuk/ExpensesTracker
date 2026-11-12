@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Dátum szerint";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Összeg szerint";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Szerkesztés";
+"TRANSACTION_EDIT_CATEGORY" = "Kategória";
+"TRANSACTION_EDIT_AMOUNT" = "Összeg";
+"TRANSACTION_EDIT_DATE" = "Dátum";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Megjegyzés hozzáadása";
+"TRANSACTION_EDIT_DELETE" = "Tranzakció törlése";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Törli a tranzakciót?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategóriák";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Összes kategória";
 

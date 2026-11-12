@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Күні бойынша";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Сомасы бойынша";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Өңдеу";
+"TRANSACTION_EDIT_CATEGORY" = "Санат";
+"TRANSACTION_EDIT_AMOUNT" = "Сома";
+"TRANSACTION_EDIT_DATE" = "Күні";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Түсініктеме қосу";
+"TRANSACTION_EDIT_DELETE" = "Операцияны жою";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Операцияны жою керек пе?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Санаттар";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Барлық санаттар";
 

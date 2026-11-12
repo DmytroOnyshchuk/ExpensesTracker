@@ -17,6 +17,7 @@ struct TransactionsList: View {
     private static let sectionSpacing = 28
 
     @State private var contentHeight: CGFloat = 0
+    @State private var editedTransaction: Transaction?
 
     private var days: [TransactionsDay] {
         let calendar = Calendar.current
@@ -49,6 +50,10 @@ struct TransactionsList: View {
                     } else {
                         ForEach(day.transactions, id: \.id) { transaction in
                             TransactionRow(transaction: transaction)
+                                .contentShape(Rectangle())
+                                .onTapGesture {
+                                    editedTransaction = transaction
+                                }
                                 .listRowBackground(Color.appMain)
                                 .listRowSeparatorTint(.appSecond)
                                 .listRowSeparator(
@@ -76,6 +81,9 @@ struct TransactionsList: View {
             contentHeight = height
         }
         .frame(height: max(contentHeight, estimatedHeight(for: days)), alignment: .top)
+        .fullScreenCover(item: $editedTransaction) { transaction in
+            TransactionEdit(transaction: transaction)
+        }
     }
 
     private func estimatedHeight(for days: [TransactionsDay]) -> CGFloat {

@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "ຕາມວັນທີ";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "ຕາມຈຳນວນເງິນ";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "ແກ້ໄຂ";
+"TRANSACTION_EDIT_CATEGORY" = "ໝວດໝູ່";
+"TRANSACTION_EDIT_AMOUNT" = "ຈຳນວນເງິນ";
+"TRANSACTION_EDIT_DATE" = "ວັນທີ";
+"TRANSACTION_EDIT_ADD_COMMENT" = "ເພີ່ມຄຳເຫັນ";
+"TRANSACTION_EDIT_DELETE" = "ລຶບທຸລະກຳ";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "ລຶບທຸລະກຳບໍ?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "ໝວດໝູ່";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "ໝວດໝູ່ທັງໝົດ";
 

@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Kuupäeva järgi";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Summa järgi";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Muuda";
+"TRANSACTION_EDIT_CATEGORY" = "Kategooria";
+"TRANSACTION_EDIT_AMOUNT" = "Summa";
+"TRANSACTION_EDIT_DATE" = "Kuupäev";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Lisa kommentaar";
+"TRANSACTION_EDIT_DELETE" = "Kustuta tehing";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Kustuta tehing?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategooriad";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Kõik kategooriad";
 

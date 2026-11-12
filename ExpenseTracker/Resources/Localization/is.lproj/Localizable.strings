@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Eftir dagsetningu";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Eftir upphæð";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Breyta";
+"TRANSACTION_EDIT_CATEGORY" = "Flokkur";
+"TRANSACTION_EDIT_AMOUNT" = "Upphæð";
+"TRANSACTION_EDIT_DATE" = "Dagsetning";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Bæta við athugasemd";
+"TRANSACTION_EDIT_DELETE" = "Eyða færslu";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Eyða færslu?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Flokkar";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Allir flokkar";
 

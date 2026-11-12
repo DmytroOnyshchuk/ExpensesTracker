@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Pagal datą";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Pagal sumą";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Redaguoti";
+"TRANSACTION_EDIT_CATEGORY" = "Kategorija";
+"TRANSACTION_EDIT_AMOUNT" = "Suma";
+"TRANSACTION_EDIT_DATE" = "Data";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Pridėti komentarą";
+"TRANSACTION_EDIT_DELETE" = "Ištrinti operaciją";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Ištrinti operaciją?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategorijos";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Visos kategorijos";
 

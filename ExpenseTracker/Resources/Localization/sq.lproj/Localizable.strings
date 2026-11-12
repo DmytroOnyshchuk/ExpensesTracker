@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Sipas datës";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Sipas shumës";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Ndrysho";
+"TRANSACTION_EDIT_CATEGORY" = "Kategoria";
+"TRANSACTION_EDIT_AMOUNT" = "Shuma";
+"TRANSACTION_EDIT_DATE" = "Data";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Shto koment";
+"TRANSACTION_EDIT_DELETE" = "Fshi transaksionin";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Të fshihet transaksioni?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategoritë";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Të gjitha kategoritë";
 

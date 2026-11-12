@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Tenor data";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Tenor import";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Modifitgar";
+"TRANSACTION_EDIT_CATEGORY" = "Categoria";
+"TRANSACTION_EDIT_AMOUNT" = "Import";
+"TRANSACTION_EDIT_DATE" = "Data";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Agiuntar in commentari";
+"TRANSACTION_EDIT_DELETE" = "Stizzar la transacziun";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Stizzar la transacziun?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Categorias";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Tut las categorias";
 

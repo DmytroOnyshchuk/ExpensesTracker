@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "تاریخ کے لحاظ سے";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "رقم کے لحاظ سے";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "ترمیم کریں";
+"TRANSACTION_EDIT_CATEGORY" = "زمرہ";
+"TRANSACTION_EDIT_AMOUNT" = "رقم";
+"TRANSACTION_EDIT_DATE" = "تاریخ";
+"TRANSACTION_EDIT_ADD_COMMENT" = "تبصرہ شامل کریں";
+"TRANSACTION_EDIT_DELETE" = "لین دین حذف کریں";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "لین دین حذف کریں؟";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "زمرے";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "تمام زمرے";
 

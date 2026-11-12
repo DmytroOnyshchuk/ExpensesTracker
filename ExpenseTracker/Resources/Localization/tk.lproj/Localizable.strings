@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Sene boýunça";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Mukdar boýunça";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Üýtget";
+"TRANSACTION_EDIT_CATEGORY" = "Kategoriýa";
+"TRANSACTION_EDIT_AMOUNT" = "Mukdar";
+"TRANSACTION_EDIT_DATE" = "Sene";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Teswir goş";
+"TRANSACTION_EDIT_DELETE" = "Amaly poz";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Amaly pozmalymy?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategoriýalar";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Ähli kategoriýalar";
 

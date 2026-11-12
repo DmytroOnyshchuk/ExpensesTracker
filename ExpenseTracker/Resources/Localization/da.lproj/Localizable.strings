@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Efter dato";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Efter beløb";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Rediger";
+"TRANSACTION_EDIT_CATEGORY" = "Kategori";
+"TRANSACTION_EDIT_AMOUNT" = "Beløb";
+"TRANSACTION_EDIT_DATE" = "Dato";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Tilføj kommentar";
+"TRANSACTION_EDIT_DELETE" = "Slet transaktion";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Slet transaktion?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategorier";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Alle kategorier";
 

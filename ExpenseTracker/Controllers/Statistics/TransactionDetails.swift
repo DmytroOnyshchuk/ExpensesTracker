@@ -38,6 +38,7 @@ struct TransactionDetails: View {
 
     @Query private var transactions: [Transaction]
     @State private var sorting: TransactionsSorting = .date
+    @State private var editedTransaction: Transaction?
 
     private var visibleTransactions: [Transaction] {
         let categoryUuid = category.uuid
@@ -66,6 +67,10 @@ struct TransactionDetails: View {
                     LazyVStack(spacing: 0) {
                         ForEach(visibleTransactions, id: \.id) { transaction in
                             TransactionDetailsRow(transaction: transaction)
+                                .contentShape(Rectangle())
+                                .onTapGesture {
+                                    editedTransaction = transaction
+                                }
 
                             if transaction.id != visibleTransactions.last?.id {
                                 Rectangle()
@@ -83,6 +88,9 @@ struct TransactionDetails: View {
         .background(.appMain)
         .navigationTitle(category.name.localized)
         .navigationBarTitleDisplayMode(.inline)
+        .fullScreenCover(item: $editedTransaction) { transaction in
+            TransactionEdit(transaction: transaction)
+        }
     }
 }
 

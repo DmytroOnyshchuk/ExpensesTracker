@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Etter dato";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Etter beløp";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Rediger";
+"TRANSACTION_EDIT_CATEGORY" = "Kategori";
+"TRANSACTION_EDIT_AMOUNT" = "Beløp";
+"TRANSACTION_EDIT_DATE" = "Dato";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Legg til kommentar";
+"TRANSACTION_EDIT_DELETE" = "Slett transaksjon";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Slett transaksjon?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategorier";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Alle kategorier";
 

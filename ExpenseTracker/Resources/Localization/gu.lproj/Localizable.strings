@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "તારીખ પ્રમાણે";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "રકમ પ્રમાણે";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "સંપાદિત કરો";
+"TRANSACTION_EDIT_CATEGORY" = "શ્રેણી";
+"TRANSACTION_EDIT_AMOUNT" = "રકમ";
+"TRANSACTION_EDIT_DATE" = "તારીખ";
+"TRANSACTION_EDIT_ADD_COMMENT" = "ટિપ્પણી ઉમેરો";
+"TRANSACTION_EDIT_DELETE" = "વ્યવહાર કાઢી નાખો";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "વ્યવહાર કાઢી નાખવો છે?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "શ્રેણીઓ";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "બધી શ્રેણીઓ";
 

@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Sana bo‘yicha";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Summa bo‘yicha";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Tahrirlash";
+"TRANSACTION_EDIT_CATEGORY" = "Toifa";
+"TRANSACTION_EDIT_AMOUNT" = "Summa";
+"TRANSACTION_EDIT_DATE" = "Sana";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Izoh qoʻshish";
+"TRANSACTION_EDIT_DELETE" = "Operatsiyani oʻchirish";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Operatsiya oʻchirilsinmi?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Toifalar";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Barcha turkumlar";
 

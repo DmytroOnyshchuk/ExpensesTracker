@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Po datumu";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Po znesku";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Uredi";
+"TRANSACTION_EDIT_CATEGORY" = "Kategorija";
+"TRANSACTION_EDIT_AMOUNT" = "Znesek";
+"TRANSACTION_EDIT_DATE" = "Datum";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Dodaj komentar";
+"TRANSACTION_EDIT_DELETE" = "Izbriši transakcijo";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Želite izbrisati transakcijo?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategorije";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Vse kategorije";
 

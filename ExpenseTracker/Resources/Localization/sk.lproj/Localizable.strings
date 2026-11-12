@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Podľa dátumu";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Podľa sumy";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Upraviť";
+"TRANSACTION_EDIT_CATEGORY" = "Kategória";
+"TRANSACTION_EDIT_AMOUNT" = "Suma";
+"TRANSACTION_EDIT_DATE" = "Dátum";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Pridať komentár";
+"TRANSACTION_EDIT_DELETE" = "Vymazať transakciu";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Vymazať transakciu?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategórie";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Všetky kategórie";
 

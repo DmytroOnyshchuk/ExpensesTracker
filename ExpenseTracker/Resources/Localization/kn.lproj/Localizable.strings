@@ -44,6 +44,16 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "ದಿನಾಂಕದ ಪ್ರಕಾರ";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "ಮೊತ್ತದ ಪ್ರಕಾರ";
 
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "ಎಡಿಟ್ ಮಾಡಿ";
+"TRANSACTION_EDIT_CATEGORY" = "ವರ್ಗ";
+"TRANSACTION_EDIT_AMOUNT" = "ಮೊತ್ತ";
+"TRANSACTION_EDIT_DATE" = "ದಿನಾಂಕ";
+"TRANSACTION_EDIT_ADD_COMMENT" = "ಕಾಮೆಂಟ್ ಸೇರಿಸಿ";
+"TRANSACTION_EDIT_DELETE" = "ವಹಿವಾಟು ಅಳಿಸಿ";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "ವಹಿವಾಟು ಅಳಿಸಬೇಕೇ?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "ವರ್ಗಗಳು";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "ಎಲ್ಲಾ ವರ್ಗಗಳು";
 
