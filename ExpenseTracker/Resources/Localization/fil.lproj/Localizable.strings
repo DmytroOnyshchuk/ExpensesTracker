@@ -21,6 +21,7 @@
 "REMOVE" = "I-delete";
 "DELETE" = "I-delete";
 "CANCEL" = "Kanselahin";
+"CLEAR" = "I-clear";
 "CLOSE" = "Isara";
 "RETRY" = "Subukan ulit";
 "REPEAT" = "Subukan ulit";

@@ -14,6 +14,8 @@ struct StartView: View {
 
     @State private var input = AmountInput()
     @State private var showStatistics = false
+    @State private var comment = ""
+    @State private var showCommentInput = false
     @Query(sort: \Transaction.date, order: .reverse) private var transactions: [Transaction]
 
     var body: some View {
@@ -24,6 +26,9 @@ struct StartView: View {
                         .frame(maxWidth: .infinity)
                         .overlay(alignment: .top) {
                             topBar
+                        }
+                        .overlay(alignment: .bottomTrailing) {
+                            commentButton
                         }
                     CategoryGrid { category in
                         addTransaction(with: category)
@@ -41,6 +46,25 @@ struct StartView: View {
         } detail: {
             Text(L10n.startviewEnterExpense)
         }
+        .overlay {
+            if showCommentInput {
+                CommentInputView(comment: $comment, isPresented: $showCommentInput)
+                    .transition(.opacity)
+            }
+        }
+        .animation(.easeInOut(duration: 0.2), value: showCommentInput)
+    }
+
+    private var commentButton: some View {
+        Button(action: openCommentInput) {
+            Image(systemName: "text.bubble.fill")
+                .font(.system(size: 20))
+                .foregroundColor(comment.isBlank ? .appLabel : .appWhite)
+                .frame(width: 48, height: 50)
+                .background(.appLabel.opacity(comment.isBlank ? 0.1 : 0.3))
+                .clipShape(UnevenRoundedRectangle(topLeadingRadius: 25, bottomLeadingRadius: 25))
+        }
+        .padding(.bottom, 12)
     }
 
     private var topBar: some View {
@@ -69,13 +93,23 @@ struct StartView: View {
         showStatistics = true
     }
 
+    private func openCommentInput() {
+        showCommentInput = true
+    }
+
     private func addTransaction(with category: TransactionCategory) {
         guard input.amount != 0 else { return }
 
-        let transaction = Transaction(amount: input.amount, category: category, date: Date())
+        let transaction = Transaction(
+            amount: input.amount,
+            category: category,
+            date: Date(),
+            note: comment.isBlank ? nil : comment
+        )
 
         modelContext.insert(transaction)
         input.reset()
+        comment = ""
     }
 }
 

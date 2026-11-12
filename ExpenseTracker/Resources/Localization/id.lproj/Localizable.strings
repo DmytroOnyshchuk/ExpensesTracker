@@ -21,6 +21,7 @@
 "REMOVE" = "Hapus";
 "DELETE" = "Hapus";
 "CANCEL" = "Batal";
+"CLEAR" = "Hapus";
 "CLOSE" = "Tutup";
 "RETRY" = "Coba lagi";
 "REPEAT" = "Coba lagi";

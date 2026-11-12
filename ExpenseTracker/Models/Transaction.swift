@@ -15,7 +15,7 @@ final class Transaction {
     var id: UUID
     var amount: Int
     var date: Date
-    var note: String?
+    var comment: String?
     var category: TransactionCategory
 
     init(amount: Int, category: TransactionCategory, date: Date = Date(), note: String? = nil) {
@@ -23,6 +23,6 @@ final class Transaction {
         self.amount = amount
         self.category = category
         self.date = date
-        self.note = note
+        self.comment = note
     }
 }

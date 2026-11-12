@@ -21,6 +21,7 @@
 "REMOVE" = "Eyða";
 "DELETE" = "Eyða";
 "CANCEL" = "Hætta við";
+"CLEAR" = "Hreinsa";
 "CLOSE" = "Loka";
 "RETRY" = "Reyna aftur";
 "REPEAT" = "Reyna aftur";

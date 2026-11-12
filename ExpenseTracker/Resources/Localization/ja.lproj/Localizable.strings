@@ -21,6 +21,7 @@
 "REMOVE" = "削除";
 "DELETE" = "削除";
 "CANCEL" = "キャンセル";
+"CLEAR" = "クリア";
 "CLOSE" = "閉じる";
 "RETRY" = "再試行";
 "REPEAT" = "再試行";

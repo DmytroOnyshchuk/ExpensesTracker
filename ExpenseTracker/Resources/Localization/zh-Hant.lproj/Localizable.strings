@@ -21,6 +21,7 @@
 "REMOVE" = "刪除";
 "DELETE" = "刪除";
 "CANCEL" = "取消";
+"CLEAR" = "清除";
 "CLOSE" = "關閉";
 "RETRY" = "重試";
 "REPEAT" = "重試";

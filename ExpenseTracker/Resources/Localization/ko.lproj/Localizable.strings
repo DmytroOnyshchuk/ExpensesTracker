@@ -21,6 +21,7 @@
 "REMOVE" = "삭제";
 "DELETE" = "삭제";
 "CANCEL" = "취소";
+"CLEAR" = "지우기";
 "CLOSE" = "닫기";
 "RETRY" = "다시 시도";
 "REPEAT" = "다시 시도";

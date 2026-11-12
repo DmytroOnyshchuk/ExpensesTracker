@@ -21,6 +21,7 @@
 "REMOVE" = "Kustuta";
 "DELETE" = "Kustuta";
 "CANCEL" = "Tühista";
+"CLEAR" = "Tühjenda";
 "CLOSE" = "Sulge";
 "RETRY" = "Proovi uuesti";
 "REPEAT" = "Proovi uuesti";

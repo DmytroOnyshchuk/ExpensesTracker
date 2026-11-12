@@ -21,6 +21,7 @@
 "REMOVE" = "Sil";
 "DELETE" = "Sil";
 "CANCEL" = "Vazgeç";
+"CLEAR" = "Temizle";
 "CLOSE" = "Kapat";
 "RETRY" = "Yeniden dene";
 "REPEAT" = "Yeniden dene";

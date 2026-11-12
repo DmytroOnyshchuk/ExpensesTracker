@@ -21,6 +21,7 @@
 "REMOVE" = "Supprimer";
 "DELETE" = "Supprimer";
 "CANCEL" = "Annuler";
+"CLEAR" = "Effacer";
 "CLOSE" = "Fermer";
 "RETRY" = "Réessayer";
 "REPEAT" = "Réessayer";

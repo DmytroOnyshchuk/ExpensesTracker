@@ -127,6 +127,13 @@ struct TransactionRow: View {
             VStack(alignment: .leading) {
                 Text(transaction.category.name.localized)
                     .font(.appLight(18))
+
+                if let note = transaction.comment, !note.isEmpty {
+                    Text(note)
+                        .font(.appLight(13))
+                        .foregroundColor(.gray)
+                        .lineLimit(1)
+                }
             }
 
             Spacer()
@@ -157,7 +164,7 @@ struct TransactionRow: View {
     let category = TransactionCategory(name: "Cafe", categoryIcon: CategoryIcon(name: "cup.and.saucer", iconColor: .orange))
     let transactions = [
         Transaction(amount: 36000, category: category, date: .yesterday),
-        Transaction(amount: 48100, category: category, date: .yesterday),
+        Transaction(amount: 48100, category: category, date: .yesterday, note: "Lunch with colleagues"),
         Transaction(amount: 125000, category: category),
     ]
 

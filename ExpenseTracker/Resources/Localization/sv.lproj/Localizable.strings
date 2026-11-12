@@ -21,6 +21,7 @@
 "REMOVE" = "Radera";
 "DELETE" = "Radera";
 "CANCEL" = "Avbryt";
+"CLEAR" = "Rensa";
 "CLOSE" = "Stäng";
 "RETRY" = "Försök igen";
 "REPEAT" = "Försök igen";

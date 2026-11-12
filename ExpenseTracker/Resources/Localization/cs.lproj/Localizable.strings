@@ -21,6 +21,7 @@
 "REMOVE" = "Smazat";
 "DELETE" = "Smazat";
 "CANCEL" = "Zrušit";
+"CLEAR" = "Vymazat";
 "CLOSE" = "Zavřít";
 "RETRY" = "Zkusit znovu";
 "REPEAT" = "Zkusit znovu";

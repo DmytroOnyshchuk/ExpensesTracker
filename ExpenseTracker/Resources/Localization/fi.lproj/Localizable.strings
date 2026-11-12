@@ -21,6 +21,7 @@
 "REMOVE" = "Poista";
 "DELETE" = "Poista";
 "CANCEL" = "Kumoa";
+"CLEAR" = "Tyhjennä";
 "CLOSE" = "Sulje";
 "RETRY" = "Yritä uudelleen";
 "REPEAT" = "Yritä uudelleen";

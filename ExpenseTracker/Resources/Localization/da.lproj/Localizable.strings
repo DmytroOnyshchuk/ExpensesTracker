@@ -21,6 +21,7 @@
 "REMOVE" = "Slet";
 "DELETE" = "Slet";
 "CANCEL" = "Annuller";
+"CLEAR" = "Ryd";
 "CLOSE" = "Luk";
 "RETRY" = "Prøv igen";
 "REPEAT" = "Prøv igen";

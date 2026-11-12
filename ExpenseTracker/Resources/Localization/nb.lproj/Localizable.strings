@@ -21,6 +21,7 @@
 "REMOVE" = "Slett";
 "DELETE" = "Slett";
 "CANCEL" = "Avbryt";
+"CLEAR" = "Tøm";
 "CLOSE" = "Lukk";
 "RETRY" = "Prøv igjen";
 "REPEAT" = "Prøv igjen";
