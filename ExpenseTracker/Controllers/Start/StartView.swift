@@ -19,7 +19,7 @@ struct StartView: View {
     @Query(sort: \Transaction.date, order: .reverse) private var transactions: [Transaction]
 
     var body: some View {
-        NavigationSplitView {
+        NavigationStack {
             ScrollView(.vertical) {
                 VStack(spacing: 16) {
                     DigitPadView(input: $input)
@@ -43,8 +43,6 @@ struct StartView: View {
             .navigationDestination(isPresented: $showStatistics) {
                 StatisticsView()
             }
-        } detail: {
-            Text(L10n.startviewEnterExpense)
         }
         .overlay {
             if showCommentInput {
