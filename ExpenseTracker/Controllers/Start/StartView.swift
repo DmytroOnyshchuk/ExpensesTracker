@@ -20,6 +20,10 @@ struct StartView: View {
             ScrollView(.vertical) {
                 VStack(spacing: 16) {
                     DigitPadView(input: $input)
+                        .frame(maxWidth: .infinity)
+                        .overlay(alignment: .top) {
+                            topBar
+                        }
                     CategoryGrid { category in
                         addTransaction(with: category)
                     }
@@ -34,6 +38,30 @@ struct StartView: View {
             Text(L10n.startviewEnterExpense)
         }
     }
+
+    private var topBar: some View {
+        HStack {
+            topBarButton(systemImage: "list.bullet", action: openMenu)
+            Spacer()
+            topBarButton(systemImage: "chart.pie", action: openStatistics)
+        }
+        .padding(.horizontal, 8)
+        .frame(height: 64)
+    }
+
+    private func topBarButton(systemImage: String, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            Image(systemName: systemImage)
+                .font(.system(size: 24))
+                .foregroundColor(.appLabel)
+                .frame(width: 44, height: 44)
+                .contentShape(Rectangle())
+        }
+    }
+
+    private func openMenu() {}
+
+    private func openStatistics() {}
 
     private func addTransaction(with category: TransactionCategory) {
         guard input.amount != 0 else { return }
