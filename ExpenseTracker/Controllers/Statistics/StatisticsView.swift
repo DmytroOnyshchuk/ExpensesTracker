@@ -18,6 +18,8 @@ struct StatisticsView: View {
     @State private var anchorDate = Date()
     @State private var slideEdge: Edge = .trailing
     @State private var showPeriodList = false
+    @State private var showDayPicker = false
+    @State private var exactStart: Date?
 
     var body: some View {
         let starts = period.starts(of: transactions)
@@ -51,13 +53,26 @@ struct StatisticsView: View {
                             )
                         }
                     }
-                    .padding(.top, 8)
+                    .padding(.top, 16)
                 }
             }
             .padding(.vertical, 16)
             .frame(maxWidth: .infinity, alignment: .top)
         }
         .background(.appMain)
+        .overlay {
+            if showDayPicker {
+                StatisticsDayPicker(selected: start) { date in
+                    withAnimation(.easeInOut(duration: 0.2)) {
+                        showDayPicker = false
+                    }
+                    if let date {
+                        selectDay(date, from: start)
+                    }
+                }
+                .transition(.opacity)
+            }
+        }
         .navigationTitle(L10n.statisticsTitle)
         .navigationBarTitleDisplayMode(.inline)
     }
@@ -110,7 +125,13 @@ struct StatisticsView: View {
         .clipped()
         .contentShape(Rectangle())
         .onTapGesture {
-            showPeriodList = !starts.isEmpty
+            if period == .day {
+                withAnimation(.easeInOut(duration: 0.2)) {
+                    showDayPicker = true
+                }
+            } else {
+                showPeriodList = !starts.isEmpty
+            }
         }
         .gesture(
             DragGesture(minimumDistance: 20)
@@ -142,15 +163,22 @@ struct StatisticsView: View {
 
     private func displayedStart(in starts: [Date]) -> Date {
         let start = period.interval(containing: anchorDate).start
-        if starts.isEmpty || starts.contains(start) {
+        if starts.isEmpty || starts.contains(start) || start == exactStart {
             return start
         }
         return starts.first { $0 < start } ?? starts.last ?? start
     }
 
     private func shiftPeriod(by value: Int, from start: Date, in starts: [Date]) {
-        guard let index = starts.firstIndex(of: start), starts.indices.contains(index - value) else { return }
-        select(starts[index - value], from: start)
+        let target = value > 0 ? starts.last { $0 > start } : starts.first { $0 < start }
+        guard let target else { return }
+        select(target, from: start)
+    }
+
+    private func selectDay(_ date: Date, from start: Date) {
+        let day = StatisticsPeriod.day.interval(containing: date).start
+        exactStart = day
+        select(day, from: start)
     }
 
     private func select(_ date: Date, from start: Date) {
@@ -165,6 +193,86 @@ struct StatisticsView: View {
     private func parentName(of category: TransactionCategory) -> String? {
         guard let parent = category.parent(from: categories), parent.isDirectory else { return nil }
         return parent.name.localized
+    }
+}
+
+struct StatisticsDayPicker: View {
+    var onFinish: (Date?) -> Void
+
+    @State private var date: Date
+
+    private static let relativeFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
+        formatter.doesRelativeDateFormatting = true
+        return formatter
+    }()
+
+    init(selected: Date, onFinish: @escaping (Date?) -> Void) {
+        self.onFinish = onFinish
+        _date = State(initialValue: selected)
+    }
+
+    var body: some View {
+        ZStack {
+            Color.black.opacity(0.4)
+                .ignoresSafeArea(edges: .bottom)
+                .onTapGesture {
+                    onFinish(nil)
+                }
+
+            VStack(spacing: 0) {
+                shortcutButton(for: Date())
+                shortcutButton(for: .yesterday)
+
+                DatePicker("", selection: $date, in: ...Date(), displayedComponents: .date)
+                    .datePickerStyle(.wheel)
+                    .labelsHidden()
+                    .colorScheme(.dark)
+
+                HStack(spacing: 0) {
+                    actionButton(L10n.cancel) {
+                        onFinish(nil)
+                    }
+                    actionButton(L10n.ok) {
+                        onFinish(date)
+                    }
+                }
+            }
+            .padding(.vertical, 12)
+            .background(.appSecond)
+            .clipShape(RoundedRectangle(cornerRadius: 16))
+            .padding(.horizontal, 32)
+        }
+    }
+
+    private func shortcutButton(for day: Date) -> some View {
+        let text = Self.relativeFormatter.string(from: day)
+
+        return Button {
+            onFinish(day)
+        } label: {
+            Text(text.prefix(1).capitalized + text.dropFirst())
+                .font(.appLight(20))
+                .foregroundColor(.appWhite.opacity(0.8))
+                .frame(maxWidth: .infinity)
+                .frame(height: 44)
+                .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+    }
+
+    private func actionButton(_ title: String, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            Text(title)
+                .font(.appRegular(20))
+                .foregroundColor(.appBlue)
+                .frame(maxWidth: .infinity)
+                .frame(height: 48)
+                .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
     }
 }
 
@@ -305,6 +413,11 @@ struct StatisticsRow: View {
         StatisticsView()
     }
     .modelContainer(makePreviewModelContainer())
+}
+
+#Preview("Day picker") {
+    StatisticsDayPicker(selected: Date()) { _ in }
+        .background(.appMain)
 }
 
 #Preview("Statistics row") {
