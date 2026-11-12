@@ -31,7 +31,7 @@ final class CategoryRulesTests: XCTestCase {
         isDirectory: Bool = false,
         in parent: TransactionCategory? = nil
     ) -> TransactionCategory {
-        let category = TransactionCategory(name: name, categoryIcon: icon, isDirectory: isDirectory, parentUuid: parent?.uuid)
+        let category = TransactionCategory(name: .custom(name), categoryIcon: icon, isDirectory: isDirectory, parentUuid: parent?.uuid)
         context.insert(category)
         return category
     }
@@ -111,6 +111,29 @@ final class CategoryRulesTests: XCTestCase {
         XCTAssertEqual(category.categoryIcon.name, "cup.and.saucer")
         XCTAssertEqual(category.categoryIcon.iconColor, .red)
         XCTAssertEqual(category.parentUuid, food.uuid)
+    }
+
+    func testPredefinedNameStaysPredefinedUntilRenamed() {
+        let category = TransactionCategory(name: .food, categoryIcon: CategoryIcon(name: "fork.knife", iconColor: .yellow))
+        context.insert(category)
+
+        var draft = CategoryDraft(category)
+        XCTAssertEqual(draft.name, L10n.defaultCategoryFood)
+
+        draft.icon.iconColor = .red
+        draft.apply(to: category)
+        XCTAssertEqual(category.name, .food)
+
+        draft.name = "Кафе"
+        draft.apply(to: category)
+        XCTAssertEqual(category.name, .custom("Кафе"))
+    }
+
+    func testNameRawValueRoundTrips() {
+        for name in TransactionCategoryName.predefined + [.custom("Кафе")] {
+            XCTAssertEqual(TransactionCategoryName(rawValue: name.rawValue), name)
+        }
+        XCTAssertEqual(Set(TransactionCategoryName.predefined.map(\.rawValue)).count, TransactionCategoryName.predefined.count)
     }
 
     func testMakeCategoryCreatesPlainCategoryFromDraft() {

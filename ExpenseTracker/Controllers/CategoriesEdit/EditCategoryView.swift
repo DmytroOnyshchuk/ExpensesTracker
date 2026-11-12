@@ -223,7 +223,7 @@ struct EditCategoryView: View {
                     Text(L10n.editCategoryNoParent).tag(nil as UUID?)
 
                     ForEach(allDirectories, id: \.id) { directory in
-                        Text(directory.name).tag(directory.uuid as UUID?)
+                        Text(directory.name.localized).tag(directory.uuid as UUID?)
                     }
                 }
                 .pickerStyle(MenuPickerStyle())
@@ -269,7 +269,7 @@ struct EditCategoryView: View {
                                 .foregroundColor(sub.categoryIcon.color)
                                 .frame(width: 32, height: 32)
 
-                            Text(sub.name)
+                            Text(sub.name.localized)
                                 .font(.appRegular(12))
                                 .foregroundColor(.white)
                                 .lineLimit(1)

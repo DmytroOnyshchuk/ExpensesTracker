@@ -63,3 +63,20 @@
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "အမျိုးအစားအသစ်";
 "EDIT_CATEGORY_CREATE" = "ဖန်တီးရန်";
 "EDIT_CATEGORY_NAME" = "အမည်";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "ကား";
+"DEFAULT_CATEGORY_FOOD" = "အစားအသောက်";
+"DEFAULT_CATEGORY_HOME" = "အိမ်";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "ပြုပြင်ထိန်းသိမ်းမှု";
+"DEFAULT_CATEGORY_CAR_FUEL" = "လောင်စာဆီ";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "စားသောက်ဆိုင်များ";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "ဈေးဝယ်စရိတ်";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "အိမ်သုံးပစ္စည်း";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "မီးဖိုး ရေဖိုး";
+"DEFAULT_CATEGORY_CLOTHING" = "အဝတ်အထည်";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "ကျန်းမာရေးနှင့် အလှအပ";
+"DEFAULT_CATEGORY_OTHER" = "အခြား";
+"DEFAULT_CATEGORY_CHARITY" = "အလှူ";
+"DEFAULT_CATEGORY_INTERNET" = "အင်တာနက်";
+"DEFAULT_CATEGORY_TRANSPORT" = "သယ်ယူပို့ဆောင်ရေး";

@@ -13,12 +13,12 @@ import SwiftUI
 @Model
 final class TransactionCategory {
     var uuid: UUID
-    var name: String
+    var name: TransactionCategoryName
     var categoryIcon: CategoryIcon
     var isDirectory: Bool = false
     var parentUuid: UUID?
 
-    init(name: String, categoryIcon: CategoryIcon, isDirectory: Bool = false, parentUuid: UUID? = nil) {
+    init(name: TransactionCategoryName, categoryIcon: CategoryIcon, isDirectory: Bool = false, parentUuid: UUID? = nil) {
         self.uuid = UUID()
         self.name = name
         self.categoryIcon = categoryIcon
@@ -46,7 +46,7 @@ extension [TransactionCategory] {
             if $0.isDirectory != $1.isDirectory {
                 return $0.isDirectory
             }
-            return $0.name < $1.name
+            return $0.name.localized < $1.name.localized
         }
     }
 

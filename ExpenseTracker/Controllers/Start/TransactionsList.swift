@@ -59,7 +59,7 @@ struct TransactionRow: View {
                 .frame(width: 32, height: 32)
 
             VStack(alignment: .leading) {
-                Text(transaction.category.name)
+                Text(transaction.category.name.localized)
                     .font(.appLight(18))
             }
 

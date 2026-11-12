@@ -84,7 +84,7 @@ struct CategoriesEdit: View {
         guard !newFolderName.trimmingCharacters(in: .whitespaces).isEmpty else { return }
 
         let newFolder = TransactionCategory(
-            name: newFolderName,
+            name: .custom(newFolderName),
             categoryIcon: CategoryIcon(name: "folder", iconColor: .yellow),
             isDirectory: true
         )

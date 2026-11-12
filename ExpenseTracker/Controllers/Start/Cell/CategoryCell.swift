@@ -31,7 +31,7 @@ struct CategoryCell: View {
                             .offset(y: 8)
                     }
 
-                    Text(category.name)
+                    Text(category.name.localized)
                         .font(.caption)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
@@ -50,7 +50,7 @@ struct CategoryCell: View {
 
                     Spacer(minLength: 8)
 
-                    Text(category.name)
+                    Text(category.name.localized)
                         .font(.appRegular(12))
                         .multilineTextAlignment(.center)
                         .foregroundColor(.white)

@@ -63,3 +63,20 @@
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "ახალი კატეგორია";
 "EDIT_CATEGORY_CREATE" = "შექმნა";
 "EDIT_CATEGORY_NAME" = "სახელი";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "ავტომობილი";
+"DEFAULT_CATEGORY_FOOD" = "საკვები";
+"DEFAULT_CATEGORY_HOME" = "სახლი";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "მომსახურება";
+"DEFAULT_CATEGORY_CAR_FUEL" = "საწვავი";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "რესტორნები";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "პროდუქტები";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "საყოფაცხოვრებო";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "კომუნალური";
+"DEFAULT_CATEGORY_CLOTHING" = "ტანსაცმელი";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "სილამაზე და ჯანმრთელობა";
+"DEFAULT_CATEGORY_OTHER" = "სხვა";
+"DEFAULT_CATEGORY_CHARITY" = "ქველმოქმედება";
+"DEFAULT_CATEGORY_INTERNET" = "ინტერნეტი";
+"DEFAULT_CATEGORY_TRANSPORT" = "ტრანსპორტი";

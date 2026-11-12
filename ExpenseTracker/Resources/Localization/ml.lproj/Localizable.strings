@@ -63,3 +63,20 @@
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "പുതിയ വിഭാഗം";
 "EDIT_CATEGORY_CREATE" = "സൃഷ്ടിക്കുക";
 "EDIT_CATEGORY_NAME" = "പേര്";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "കാർ";
+"DEFAULT_CATEGORY_FOOD" = "ഭക്ഷണം";
+"DEFAULT_CATEGORY_HOME" = "വീട്";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "അറ്റകുറ്റപ്പണി";
+"DEFAULT_CATEGORY_CAR_FUEL" = "ഇന്ധനം";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "റെസ്റ്റോറന്റുകൾ";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "പലചരക്ക്";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "വീട്ടുസാധനങ്ങൾ";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "യൂട്ടിലിറ്റി ബില്ലുകൾ";
+"DEFAULT_CATEGORY_CLOTHING" = "വസ്ത്രം";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "ആരോഗ്യവും സൗന്ദര്യവും";
+"DEFAULT_CATEGORY_OTHER" = "മറ്റുള്ളവ";
+"DEFAULT_CATEGORY_CHARITY" = "ദാനം";
+"DEFAULT_CATEGORY_INTERNET" = "ഇന്റർനെറ്റ്";
+"DEFAULT_CATEGORY_TRANSPORT" = "ഗതാഗതം";

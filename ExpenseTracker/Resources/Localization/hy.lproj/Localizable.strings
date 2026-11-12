@@ -63,3 +63,20 @@
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Նոր կատեգորիա";
 "EDIT_CATEGORY_CREATE" = "Ստեղծել";
 "EDIT_CATEGORY_NAME" = "Անուն";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "Ավտոմեքենա";
+"DEFAULT_CATEGORY_FOOD" = "Սնունդ";
+"DEFAULT_CATEGORY_HOME" = "Տուն";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "Սպասարկում";
+"DEFAULT_CATEGORY_CAR_FUEL" = "Վառելիք";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "Ռեստորաններ";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "Մթերք";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "Կենցաղ";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "Կոմունալ վճարներ";
+"DEFAULT_CATEGORY_CLOTHING" = "Հագուստ";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "Առողջություն և գեղեցկություն";
+"DEFAULT_CATEGORY_OTHER" = "Այլ";
+"DEFAULT_CATEGORY_CHARITY" = "Բարեգործություն";
+"DEFAULT_CATEGORY_INTERNET" = "Ինտերնետ";
+"DEFAULT_CATEGORY_TRANSPORT" = "Տրանսպորտ";

@@ -26,7 +26,7 @@ struct CategoryDraft {
 
     /// Черновик с текущими значениями существующей категории.
     init(_ category: TransactionCategory) {
-        self.name = category.name
+        self.name = category.name.localized
         self.icon = category.categoryIcon
         self.parentUuid = category.parentUuid
     }
@@ -38,12 +38,12 @@ struct CategoryDraft {
     }
 
     func apply(to category: TransactionCategory) {
-        category.name = name
+        category.name = category.name.renamed(to: name)
         category.categoryIcon = icon
         category.parentUuid = parentUuid
     }
 
     func makeCategory() -> TransactionCategory {
-        TransactionCategory(name: name, categoryIcon: icon, parentUuid: parentUuid)
+        TransactionCategory(name: .custom(name), categoryIcon: icon, parentUuid: parentUuid)
     }
 }
