@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Ýyl";
 "STATISTICS_TOTAL_SPENT" = "Jemi harçlandy";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Sene boýunça";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Mukdar boýunça";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Ähli kategoriýalar";
 

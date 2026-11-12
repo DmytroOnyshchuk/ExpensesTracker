@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "ປີ";
 "STATISTICS_TOTAL_SPENT" = "ໃຊ້ຈ່າຍທັງໝົດ";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "ຕາມວັນທີ";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "ຕາມຈຳນວນເງິນ";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "ໝວດໝູ່ທັງໝົດ";
 

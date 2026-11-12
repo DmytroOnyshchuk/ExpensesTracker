@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Metai";
 "STATISTICS_TOTAL_SPENT" = "Iš viso išleista";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Pagal datą";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Pagal sumą";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Visos kategorijos";
 

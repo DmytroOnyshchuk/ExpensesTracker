@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "سال";
 "STATISTICS_TOTAL_SPENT" = "مجموع هزینه";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "بر اساس تاریخ";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "بر اساس مبلغ";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "همه دسته‌ها";
 

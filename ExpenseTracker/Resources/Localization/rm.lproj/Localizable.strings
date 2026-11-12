@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Onn";
 "STATISTICS_TOTAL_SPENT" = "Total expendì";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Tenor data";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Tenor import";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Tut las categorias";
 

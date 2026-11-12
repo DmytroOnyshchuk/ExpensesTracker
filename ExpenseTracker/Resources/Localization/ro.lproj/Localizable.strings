@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "An";
 "STATISTICS_TOTAL_SPENT" = "Total cheltuit";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "După dată";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "După sumă";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Toate categoriile";
 

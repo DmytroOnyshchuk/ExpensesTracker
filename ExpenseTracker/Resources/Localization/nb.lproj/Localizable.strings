@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "År";
 "STATISTICS_TOTAL_SPENT" = "Brukt totalt";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Etter dato";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Etter beløp";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Alle kategorier";
 

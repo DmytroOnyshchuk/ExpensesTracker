@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "سال";
 "STATISTICS_TOTAL_SPENT" = "کل خرچ";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "تاریخ کے لحاظ سے";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "رقم کے لحاظ سے";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "تمام زمرے";
 

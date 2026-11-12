@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "နှစ်";
 "STATISTICS_TOTAL_SPENT" = "စုစုပေါင်း အသုံးစရိတ်";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "ရက်စွဲအလိုက်";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "ပမာဏအလိုက်";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "အမျိုးအစားအားလုံး";
 

@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Ano";
 "STATISTICS_TOTAL_SPENT" = "Total gasto";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Por data";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Por valor";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Todas as categorias";
 

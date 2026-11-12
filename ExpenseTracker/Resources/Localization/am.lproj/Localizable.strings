@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "ዓመት";
 "STATISTICS_TOTAL_SPENT" = "ጠቅላላ ወጪ";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "በቀን";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "በመጠን";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "ሁሉም ምድቦች";
 

@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Unyaka";
 "STATISTICS_TOTAL_SPENT" = "Isamba esichithiwe";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Ngosuku";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Ngenani";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Zonke izigaba";
 

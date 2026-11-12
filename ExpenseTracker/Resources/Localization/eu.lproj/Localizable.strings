@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Urtea";
 "STATISTICS_TOTAL_SPENT" = "Guztira gastatua";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Dataren arabera";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Zenbatekoaren arabera";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Kategoria guztiak";
 

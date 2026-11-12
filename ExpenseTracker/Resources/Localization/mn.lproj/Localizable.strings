@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Жил";
 "STATISTICS_TOTAL_SPENT" = "Нийт зарцуулсан";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Огноогоор";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Дүнгээр";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Бүх ангилал";
 

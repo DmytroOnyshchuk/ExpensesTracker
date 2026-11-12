@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Tahun";
 "STATISTICS_TOTAL_SPENT" = "Jumlah perbelanjaan";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Mengikut tarikh";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Mengikut jumlah";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Semua kategori";
 

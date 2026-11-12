@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Տարի";
 "STATISTICS_TOTAL_SPENT" = "Ընդամենը ծախսվել է";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Ըստ ամսաթվի";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Ըստ գումարի";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Բոլոր կատեգորիաները";
 

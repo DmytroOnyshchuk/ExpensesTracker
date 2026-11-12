@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Vuosi";
 "STATISTICS_TOTAL_SPENT" = "Käytetty yhteensä";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Päivän mukaan";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Summan mukaan";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Kaikki luokat";
 

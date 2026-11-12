@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Yıl";
 "STATISTICS_TOTAL_SPENT" = "Toplam harcama";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Tarihe göre";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Tutara göre";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Tüm kategoriler";
 

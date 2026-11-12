@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "İl";
 "STATISTICS_TOTAL_SPENT" = "Cəmi xərclənib";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Tarixə görə";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Məbləğə görə";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Bütün kateqoriyalar";
 

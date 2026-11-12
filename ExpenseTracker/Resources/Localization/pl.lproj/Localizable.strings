@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Rok";
 "STATISTICS_TOTAL_SPENT" = "Łącznie wydano";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Według daty";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Według kwoty";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Wszystkie kategorie";
 

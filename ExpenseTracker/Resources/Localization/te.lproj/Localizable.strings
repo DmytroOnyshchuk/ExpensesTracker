@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "సంవత్సరం";
 "STATISTICS_TOTAL_SPENT" = "మొత్తం ఖర్చు";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "తేదీ ప్రకారం";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "మొత్తం ప్రకారం";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "అన్ని వర్గాలు";
 

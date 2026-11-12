@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Rok";
 "STATISTICS_TOTAL_SPENT" = "Celkem utraceno";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Podle data";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Podle částky";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Všechny kategorie";
 

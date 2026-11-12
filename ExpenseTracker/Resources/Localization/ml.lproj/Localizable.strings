@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "വർഷം";
 "STATISTICS_TOTAL_SPENT" = "ആകെ ചെലവ്";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "തീയതി പ്രകാരം";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "തുക പ്രകാരം";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "എല്ലാ വിഭാഗങ്ങളും";
 

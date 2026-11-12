@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Jaar";
 "STATISTICS_TOTAL_SPENT" = "Totaal bestee";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Volgens datum";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Volgens bedrag";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Alle kategorieë";
 

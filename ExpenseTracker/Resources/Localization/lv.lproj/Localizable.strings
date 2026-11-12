@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Gads";
 "STATISTICS_TOTAL_SPENT" = "Kopā iztērēts";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Pēc datuma";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Pēc summas";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Visas kategorijas";
 

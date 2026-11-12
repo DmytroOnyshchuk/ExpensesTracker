@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "ஆண்டு";
 "STATISTICS_TOTAL_SPENT" = "மொத்த செலவு";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "தேதி வாரியாக";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "தொகை வாரியாக";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "அனைத்து வகைகளும்";
 

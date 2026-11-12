@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Жыл";
 "STATISTICS_TOTAL_SPENT" = "Барлығы жұмсалды";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Күні бойынша";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Сомасы бойынша";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Барлық санаттар";
 

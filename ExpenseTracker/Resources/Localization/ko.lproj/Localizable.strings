@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "연";
 "STATISTICS_TOTAL_SPENT" = "총 지출";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "날짜순";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "금액순";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "모든 카테고리";
 

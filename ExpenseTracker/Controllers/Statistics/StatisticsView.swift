@@ -24,7 +24,8 @@ struct StatisticsView: View {
     var body: some View {
         let starts = period.starts(of: transactions)
         let start = displayedStart(in: starts)
-        let slices = StatisticsSlice.slices(from: transactions, in: period.interval(containing: start))
+        let interval = period.interval(containing: start)
+        let slices = StatisticsSlice.slices(from: transactions, in: interval)
         let total = slices.reduce(0) { $0 + $1.amount }
         let maxAmount = slices.first?.amount ?? 0
 
@@ -46,11 +47,18 @@ struct StatisticsView: View {
 
                     VStack(spacing: 0) {
                         ForEach(slices) { slice in
-                            StatisticsRow(
-                                slice: slice,
-                                parentName: parentName(of: slice.category),
-                                barRatio: maxAmount > 0 ? slice.amount.asDouble / maxAmount.asDouble : 0
-                            )
+                            NavigationLink {
+                                TransactionDetails(category: slice.category, interval: interval)
+                            } label: {
+                                StatisticsRow(
+                                    slice: slice,
+                                    parentName: parentName(of: slice.category),
+                                    barRatio: maxAmount > 0 ? slice.amount.asDouble / maxAmount.asDouble : 0
+                                )
+                                .contentShape(Rectangle())
+                            }
+                            .buttonStyle(.plain)
+                            .disabled(slice.category.isDirectory)
                         }
                     }
                     .padding(.top, 16)
@@ -78,36 +86,8 @@ struct StatisticsView: View {
     }
 
     private var periodPicker: some View {
-        HStack(spacing: 0) {
-            ForEach(StatisticsPeriod.allCases) { item in
-                Button {
-                    period = item
-                } label: {
-                    Text(item.title)
-                        .font(.appLight(18))
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.7)
-                        .foregroundColor(item == period ? .appWhite : .appBlue)
-                        .padding(.horizontal, 4)
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 36)
-                        .background {
-                            if item == period {
-                                RoundedRectangle(cornerRadius: 8)
-                                    .fill(.appLabel.opacity(0.25))
-                            }
-                        }
-                        .contentShape(Rectangle())
-                }
-                .buttonStyle(.plain)
-            }
-        }
-        .padding(2)
-        .overlay {
-            RoundedRectangle(cornerRadius: 10)
-                .stroke(.appLabel.opacity(0.4), lineWidth: 1.5)
-        }
-        .padding(.horizontal, 64)
+        SegmentedControl(items: StatisticsPeriod.allCases, selection: $period, title: \.title)
+            .padding(.horizontal, 64)
     }
 
     private func periodTitle(start: Date, starts: [Date]) -> some View {

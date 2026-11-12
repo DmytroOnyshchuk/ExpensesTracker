@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "سنة";
 "STATISTICS_TOTAL_SPENT" = "إجمالي المصروف";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "حسب التاريخ";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "حسب المبلغ";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "كل الفئات";
 

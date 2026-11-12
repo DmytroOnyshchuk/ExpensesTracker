@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "වසර";
 "STATISTICS_TOTAL_SPENT" = "මුළු වියදම";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "දිනය අනුව";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "මුදල අනුව";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "සියලු ප්‍රවර්ග";
 

@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Godina";
 "STATISTICS_TOTAL_SPENT" = "Ukupno potrošeno";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Po datumu";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Po iznosu";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Sve kategorije";
 

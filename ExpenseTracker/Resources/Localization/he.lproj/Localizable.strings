@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "שנה";
 "STATISTICS_TOTAL_SPENT" = "סך ההוצאות";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "לפי תאריך";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "לפי סכום";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "כל הקטגוריות";
 

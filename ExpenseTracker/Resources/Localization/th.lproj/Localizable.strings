@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "ปี";
 "STATISTICS_TOTAL_SPENT" = "ใช้จ่ายทั้งหมด";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "ตามวันที่";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "ตามจำนวนเงิน";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "หมวดหมู่ทั้งหมด";
 

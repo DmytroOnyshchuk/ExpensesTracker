@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "ឆ្នាំ";
 "STATISTICS_TOTAL_SPENT" = "ចំណាយសរុប";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "តាមកាលបរិច្ឆេទ";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "តាមចំនួនទឹកប្រាក់";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "ប្រភេទទាំងអស់";
 

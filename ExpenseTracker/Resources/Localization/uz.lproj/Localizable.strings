@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Yil";
 "STATISTICS_TOTAL_SPENT" = "Jami sarflandi";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Sana bo‘yicha";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Summa bo‘yicha";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Barcha turkumlar";
 

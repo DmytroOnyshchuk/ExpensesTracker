@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "ਸਾਲ";
 "STATISTICS_TOTAL_SPENT" = "ਕੁੱਲ ਖਰਚ";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "ਤਾਰੀਖ ਅਨੁਸਾਰ";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "ਰਕਮ ਅਨੁਸਾਰ";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "ਸਾਰੀਆਂ ਸ਼੍ਰੇਣੀਆਂ";
 

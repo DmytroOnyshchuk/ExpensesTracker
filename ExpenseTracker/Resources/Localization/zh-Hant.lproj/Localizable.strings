@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "年";
 "STATISTICS_TOTAL_SPENT" = "總支出";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "依日期";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "依金額";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "所有類別";
 

@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "წელი";
 "STATISTICS_TOTAL_SPENT" = "სულ დახარჯული";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "თარიღით";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "თანხით";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "ყველა კატეგორია";
 

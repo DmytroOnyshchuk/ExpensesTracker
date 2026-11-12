@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Năm";
 "STATISTICS_TOTAL_SPENT" = "Tổng chi tiêu";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Theo ngày";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Theo số tiền";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Tất cả danh mục";
 

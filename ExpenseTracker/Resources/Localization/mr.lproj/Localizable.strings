@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "वर्ष";
 "STATISTICS_TOTAL_SPENT" = "एकूण खर्च";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "तारखेनुसार";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "रकमेनुसार";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "सर्व श्रेण्या";
 

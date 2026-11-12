@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "वर्ष";
 "STATISTICS_TOTAL_SPENT" = "कुल खर्च";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "मिति अनुसार";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "रकम अनुसार";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "सबै श्रेणीहरू";
 

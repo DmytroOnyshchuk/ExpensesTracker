@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Taon";
 "STATISTICS_TOTAL_SPENT" = "Kabuuang nagastos";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Ayon sa petsa";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Ayon sa halaga";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Lahat ng kategorya";
 

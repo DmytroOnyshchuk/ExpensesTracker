@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Жыл";
 "STATISTICS_TOTAL_SPENT" = "Баары сарпталды";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Күнү боюнча";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Суммасы боюнча";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Бардык категориялар";
 

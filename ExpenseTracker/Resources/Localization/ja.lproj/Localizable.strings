@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "年";
 "STATISTICS_TOTAL_SPENT" = "支出合計";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "日付順";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "金額順";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "すべてのカテゴリ";
 

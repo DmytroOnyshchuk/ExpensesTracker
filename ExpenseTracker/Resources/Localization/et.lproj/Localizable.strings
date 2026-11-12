@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Aasta";
 "STATISTICS_TOTAL_SPENT" = "Kokku kulutatud";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Kuupäeva järgi";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Summa järgi";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Kõik kategooriad";
 

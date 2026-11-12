@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Год";
 "STATISTICS_TOTAL_SPENT" = "Усяго выдаткавана";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Па даце";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Па суме";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Усе катэгорыі";
 

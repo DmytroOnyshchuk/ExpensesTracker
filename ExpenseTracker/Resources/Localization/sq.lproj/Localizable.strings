@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Vit";
 "STATISTICS_TOTAL_SPENT" = "Gjithsej shpenzuar";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Sipas datës";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Sipas shumës";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Të gjitha kategoritë";
 

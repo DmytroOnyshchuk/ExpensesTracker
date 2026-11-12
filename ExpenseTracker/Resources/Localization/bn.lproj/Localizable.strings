@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "বছর";
 "STATISTICS_TOTAL_SPENT" = "মোট খরচ";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "তারিখ অনুযায়ী";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "পরিমাণ অনুযায়ী";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "সব বিভাগ";
 

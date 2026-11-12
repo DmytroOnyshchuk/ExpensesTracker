@@ -140,6 +140,10 @@ internal enum L10n {
   internal static let statisticsYear = L10n.tr("Localizable", "STATISTICS_YEAR", fallback: "Year")
   /// Support
   internal static let support = L10n.tr("Localizable", "SUPPORT", fallback: "Support")
+  /// By amount
+  internal static let transactionDetailsSortByAmount = L10n.tr("Localizable", "TRANSACTION_DETAILS_SORT_BY_AMOUNT", fallback: "By amount")
+  /// By date
+  internal static let transactionDetailsSortByDate = L10n.tr("Localizable", "TRANSACTION_DETAILS_SORT_BY_DATE", fallback: "By date")
   /// Delete
   internal static let transactionsListDelete = L10n.tr("Localizable", "TRANSACTIONS_LIST_DELETE", fallback: "Delete")
   /// No transactions

@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Ár";
 "STATISTICS_TOTAL_SPENT" = "Samtals eytt";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Eftir dagsetningu";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Eftir upphæð";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Allir flokkar";
 

@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Mwaka";
 "STATISTICS_TOTAL_SPENT" = "Jumla ya matumizi";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Kwa tarehe";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Kwa kiasi";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Aina zote";
 

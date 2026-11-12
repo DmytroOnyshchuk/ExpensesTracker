@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "વર્ષ";
 "STATISTICS_TOTAL_SPENT" = "કુલ ખર્ચ";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "તારીખ પ્રમાણે";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "રકમ પ્રમાણે";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "બધી શ્રેણીઓ";
 

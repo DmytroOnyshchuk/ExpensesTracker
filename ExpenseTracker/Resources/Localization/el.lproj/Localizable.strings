@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Έτος";
 "STATISTICS_TOTAL_SPENT" = "Σύνολο εξόδων";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Κατά ημερομηνία";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Κατά ποσό";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Όλες οι κατηγορίες";
 

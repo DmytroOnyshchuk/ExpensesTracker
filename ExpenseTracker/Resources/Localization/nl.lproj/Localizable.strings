@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Jaar";
 "STATISTICS_TOTAL_SPENT" = "Totaal uitgegeven";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Op datum";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Op bedrag";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Alle categorieën";
 

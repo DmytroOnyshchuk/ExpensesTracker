@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Година";
 "STATISTICS_TOTAL_SPENT" = "Общо похарчено";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "По дата";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "По сума";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Всички категории";
 

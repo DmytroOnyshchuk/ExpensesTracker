@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "ವರ್ಷ";
 "STATISTICS_TOTAL_SPENT" = "ಒಟ್ಟು ವೆಚ್ಚ";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "ದಿನಾಂಕದ ಪ್ರಕಾರ";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "ಮೊತ್ತದ ಪ್ರಕಾರ";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "ಎಲ್ಲಾ ವರ್ಗಗಳು";
 

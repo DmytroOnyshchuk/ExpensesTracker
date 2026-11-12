@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Rok";
 "STATISTICS_TOTAL_SPENT" = "Celkovo minuté";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Podľa dátumu";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Podľa sumy";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Všetky kategórie";
 

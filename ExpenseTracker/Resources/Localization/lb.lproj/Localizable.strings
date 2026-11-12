@@ -40,6 +40,10 @@
 "STATISTICS_YEAR" = "Joer";
 "STATISTICS_TOTAL_SPENT" = "Total ausginn";
 
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "No Datum";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "No Betrag";
+
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "All Kategorien";
 
