@@ -8,12 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		66700FDD2DFC37000073A9EF /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 66700FDC2DFC37000073A9EF /* Toast */; };
-		66700FE02DFC37100073A9EF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 66700FDF2DFC37100073A9EF /* Kingfisher */; };
 		66700FE32DFC37240073A9EF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 66700FE22DFC37240073A9EF /* Alamofire */; };
-		66700FE62DFC37890073A9EF /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 66700FE52DFC37890073A9EF /* MBProgressHUD */; };
 		66700FEC2DFC38240073A9EF /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 66700FEB2DFC38240073A9EF /* PromiseKit */; };
-		6688BAF12DFDC4EB00C7550E /* VersionTracker in Frameworks */ = {isa = PBXBuildFile; productRef = 6688BAF02DFDC4EB00C7550E /* VersionTracker */; };
-		6688BAFA2DFDC69D00C7550E /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6688BAF92DFDC69D00C7550E /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,13 +94,9 @@
 		668E98952DFAF77500EB9CD8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
-				6688BAF12DFDC4EB00C7550E /* VersionTracker in Frameworks */,
-				66700FE02DFC37100073A9EF /* Kingfisher in Frameworks */,
 				66700FE32DFC37240073A9EF /* Alamofire in Frameworks */,
-				66700FE62DFC37890073A9EF /* MBProgressHUD in Frameworks */,
 				66700FDD2DFC37000073A9EF /* Toast in Frameworks */,
 				66700FEC2DFC38240073A9EF /* PromiseKit in Frameworks */,
-				6688BAFA2DFDC69D00C7550E /* IQKeyboardManagerSwift in Frameworks */,
 			);
 		};
 		6699901F2E09CC3C00F09BD6 /* Frameworks */ = {
@@ -179,12 +171,8 @@
 			name = ExpenseTracker;
 			packageProductDependencies = (
 				66700FDC2DFC37000073A9EF /* Toast */,
-				66700FDF2DFC37100073A9EF /* Kingfisher */,
 				66700FE22DFC37240073A9EF /* Alamofire */,
-				66700FE52DFC37890073A9EF /* MBProgressHUD */,
 				66700FEB2DFC38240073A9EF /* PromiseKit */,
-				6688BAF02DFDC4EB00C7550E /* VersionTracker */,
-				6688BAF92DFDC69D00C7550E /* IQKeyboardManagerSwift */,
 			);
 			productName = SwiftTemplate;
 			productReference = 668E98982DFAF77500EB9CD8 /* ExpenseTracker.app */;
@@ -248,12 +236,8 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				66700FDB2DFC36FF0073A9EF /* XCRemoteSwiftPackageReference "Toast-Swift" */,
-				66700FDE2DFC37100073A9EF /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				66700FE12DFC37240073A9EF /* XCRemoteSwiftPackageReference "Alamofire" */,
-				66700FE42DFC37890073A9EF /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
 				66700FEA2DFC38240073A9EF /* XCRemoteSwiftPackageReference "PromiseKit" */,
-				6688BAEF2DFDC4EB00C7550E /* XCRemoteSwiftPackageReference "VersionTrackerSwift" */,
-				6688BAF82DFDC69D00C7550E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				66A3E8AD2E46765800FF6CA6 /* XCRemoteSwiftPackageReference "SwiftGen" */,
 				66A3E8AE2E46765F00FF6CA6 /* XCRemoteSwiftPackageReference "SwiftGenPlugin" */,
 			);
@@ -1336,14 +1320,6 @@
 				minimumVersion = 5.1.1;
 			};
 		};
-		66700FDE2DFC37100073A9EF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 8.15.0;
-			};
-		};
 		66700FE12DFC37240073A9EF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -1352,36 +1328,12 @@
 				minimumVersion = 5.12.2;
 			};
 		};
-		66700FE42DFC37890073A9EF /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/jdg/MBProgressHUD";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.2.0;
-			};
-		};
 		66700FEA2DFC38240073A9EF /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mxcl/PromiseKit";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 8.2.0;
-			};
-		};
-		6688BAEF2DFDC4EB00C7550E /* XCRemoteSwiftPackageReference "VersionTrackerSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/tbaranes/VersionTrackerSwift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.1.0;
-			};
-		};
-		6688BAF82DFDC69D00C7550E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 8.0.3;
 			};
 		};
 		66A3E8AD2E46765800FF6CA6 /* XCRemoteSwiftPackageReference "SwiftGen" */ = {
@@ -1408,35 +1360,15 @@
 			package = 66700FDB2DFC36FF0073A9EF /* XCRemoteSwiftPackageReference "Toast-Swift" */;
 			productName = Toast;
 		};
-		66700FDF2DFC37100073A9EF /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 66700FDE2DFC37100073A9EF /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
 		66700FE22DFC37240073A9EF /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 66700FE12DFC37240073A9EF /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		66700FE52DFC37890073A9EF /* MBProgressHUD */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 66700FE42DFC37890073A9EF /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
-			productName = MBProgressHUD;
-		};
 		66700FEB2DFC38240073A9EF /* PromiseKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 66700FEA2DFC38240073A9EF /* XCRemoteSwiftPackageReference "PromiseKit" */;
 			productName = PromiseKit;
-		};
-		6688BAF02DFDC4EB00C7550E /* VersionTracker */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6688BAEF2DFDC4EB00C7550E /* XCRemoteSwiftPackageReference "VersionTrackerSwift" */;
-			productName = VersionTracker;
-		};
-		6688BAF92DFDC69D00C7550E /* IQKeyboardManagerSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6688BAF82DFDC69D00C7550E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
-			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

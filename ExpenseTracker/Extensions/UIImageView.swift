@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Kingfisher
 import UIKit
 
 extension UIImageView {
@@ -49,38 +48,5 @@ extension UIImageView {
                 handler?(true)
             }
         }.resume()
-    }
-
-    func setImageKingfisher(_ url: String?, placeholder: UIImage? = nil, completion: ((UIImage?) -> Void)? = nil) {
-        let noImage = Asset.icTransparentBackgroundPattern.image
-
-        if let stringURL = url,
-           !stringURL.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty,
-           let finalURL = stringURL.toURL() {
-            kf.indicatorType = .activity
-
-            let options: KingfisherOptionsInfo = [
-                .cacheOriginalImage, // Кэшируем оригинальное изображение
-                .loadDiskFileSynchronously, // Загружаем файл синхронно с диска
-                .retryStrategy(DelayRetryStrategy(maxRetryCount: 5,
-                                                  retryInterval: .seconds(1))),
-                .transition(.fade(0.25)),
-            ]
-
-            kf.setImage(with: finalURL, placeholder: placeholder ?? noImage, options: options) { [weak self] result in
-                switch result {
-                case let .success(value):
-                    self?.image = value.image
-                    completion?(value.image)
-                case let .failure(error):
-                    self?.image = placeholder
-                    Logger.default.logMessage("Kingfisher error: \(error.localizedDescription)", category: "Kingfisher")
-                    completion?(nil)
-                }
-            }
-        } else {
-            image = placeholder ?? noImage
-            completion?(nil)
-        }
     }
 }
