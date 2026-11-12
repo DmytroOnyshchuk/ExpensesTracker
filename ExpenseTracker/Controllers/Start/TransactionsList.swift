@@ -14,6 +14,9 @@ struct TransactionsList: View {
 
     private static let rowHeight = 64 + 8
     private static let headerHeight = 40
+    private static let sectionSpacing = 28
+
+    @State private var contentHeight: CGFloat = 0
 
     private var days: [TransactionsDay] {
         let calendar = Calendar.current
@@ -48,6 +51,10 @@ struct TransactionsList: View {
                             TransactionRow(transaction: transaction)
                                 .listRowBackground(Color.appMain)
                                 .listRowSeparatorTint(.appSecond)
+                                .listRowSeparator(
+                                    transaction.id == day.transactions.last?.id ? .hidden : .visible,
+                                    edges: .bottom
+                                )
                         }
                     }
                 } header: {
@@ -63,12 +70,17 @@ struct TransactionsList: View {
         .background(.appMain)
         .scrollContentBackground(.hidden)
         .background(.appMain)
-        .frame(height: listHeight(for: days), alignment: .top)
+        .onScrollGeometryChange(for: CGFloat.self) { geometry in
+            geometry.contentSize.height
+        } action: { _, height in
+            contentHeight = height
+        }
+        .frame(height: max(contentHeight, estimatedHeight(for: days)), alignment: .top)
     }
 
-    private func listHeight(for days: [TransactionsDay]) -> CGFloat {
+    private func estimatedHeight(for days: [TransactionsDay]) -> CGFloat {
         let rows = days.reduce(0) { $0 + max($1.transactions.count, 1) }
-        return (rows * Self.rowHeight + days.count * Self.headerHeight).asCgFloat
+        return (rows * Self.rowHeight + days.count * (Self.headerHeight + Self.sectionSpacing)).asCgFloat
     }
 }
 
