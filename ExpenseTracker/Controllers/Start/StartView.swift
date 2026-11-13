@@ -19,8 +19,7 @@ struct StartView: View {
     @State private var showCommentInput = false
     @State private var amountAttentionTrigger = 0
     @State private var showBalanceInput = false
-    @AppStorage(UDKey.balanceAmount.rawValue) private var balanceAmount = 0
-    @AppStorage(UDKey.balanceDate.rawValue) private var balanceTimestamp = 0.0
+    @AppStorage(UDKey.balance.rawValue) private var balanceData: Data?
     @Query(sort: \Transaction.date, order: .reverse, animation: .default) private var transactions: [Transaction]
 
     var body: some View {
@@ -77,13 +76,7 @@ struct StartView: View {
     }
 
     private var balance: Int? {
-        guard balanceTimestamp > 0 else { return nil }
-
-        let balanceDate = Date(timeIntervalSinceReferenceDate: balanceTimestamp)
-        let spent = transactions
-            .filter { $0.date > balanceDate }
-            .reduce(0) { $0 + $1.amount }
-        return balanceAmount - spent
+        Balance(jsonData: balanceData)?.remaining(after: transactions)
     }
 
     private var commentButton: some View {
@@ -155,8 +148,7 @@ struct StartView: View {
     }
 
     private func setBalance(_ amount: Int) {
-        balanceAmount = amount
-        balanceTimestamp = Date().timeIntervalSinceReferenceDate
+        balanceData = Balance(amount: amount).jsonData()
     }
 
     private func addTransaction(with category: TransactionCategory) -> Bool {

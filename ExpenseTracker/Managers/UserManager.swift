@@ -6,8 +6,7 @@ enum UDKey: String {
     case fcmToken = "UDKey.fcmToken"
     case apiToken = "UDKey.apiToken"
     case userId = "UDKey.userId"
-    case balanceAmount = "UDKey.balanceAmount"
-    case balanceDate = "UDKey.balanceDate"
+    case balance = "UDKey.balance"
 }
 
 final class UserManager: NSObject {

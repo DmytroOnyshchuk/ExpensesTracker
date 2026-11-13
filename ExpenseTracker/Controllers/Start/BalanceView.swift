@@ -36,7 +36,7 @@ struct BalanceCard: View {
             .padding(.horizontal, 16)
             .frame(maxWidth: .infinity)
             .frame(height: 60)
-            .background(.appSecond)
+            .background(.appLabel.opacity(0.1))
             .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
             .contentShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
         }
@@ -47,7 +47,7 @@ struct BalanceCard: View {
 
     private var amountColor: Color {
         guard let balance else { return .appLabel }
-        return balance < 0 ? .red : .appWhite
+        return balance < 0 ? .red : .appWhite.opacity(0.75)
     }
 }
 

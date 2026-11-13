@@ -33,11 +33,11 @@ extension DataResponse {
 
         let prettyRequestBody = request?.httpBody?.prettyPrintedJSONString
         let rawRequestBody = String(data: (request?.httpBody ?? "NONE".data(using: .utf8)!), encoding: .utf8)!
-        let requestBody = prettyRequestBody ?? rawRequestBody as NSString
+        let requestBody = prettyRequestBody ?? rawRequestBody as String
 
         let prettyResponseBody = data?.prettyPrintedJSONString
         let rawResponseBody = String(data: data ?? "NONE".data(using: .utf8)!, encoding: .utf8)!
-        let responseBody = prettyResponseBody ?? rawResponseBody as NSString
+        let responseBody = prettyResponseBody ?? rawResponseBody as String
 
         let type: Logger.LogType = switch result {
         case .success:
