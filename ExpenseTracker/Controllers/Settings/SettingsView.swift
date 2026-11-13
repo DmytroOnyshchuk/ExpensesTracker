@@ -64,7 +64,7 @@ struct ThemePresetCell: View {
                 .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
                 .overlay {
                     RoundedRectangle(cornerRadius: 14, style: .continuous)
-                        .stroke(isSelected ? Color.appBlue : Color.appLabel.opacity(0.4), lineWidth: isSelected ? 3 : 1)
+                        .stroke(isSelected ? theme.appBlue : theme.appLabel.opacity(0.4), lineWidth: isSelected ? 3 : 1)
                 }
 
                 Text(preset.title)

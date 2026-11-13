@@ -31,6 +31,7 @@ enum ThemePreset: String, CaseIterable, Identifiable, Codable {
     case midnight
     case forest
     case gray
+    case liquidBlack
 
     var id: String { rawValue }
 
@@ -40,6 +41,7 @@ enum ThemePreset: String, CaseIterable, Identifiable, Codable {
         case .midnight: L10n.settingsThemeMidnight
         case .forest: L10n.settingsThemeForest
         case .gray: L10n.settingsThemeGray
+        case .liquidBlack: L10n.settingsThemeLiquidBlack
         }
     }
 
@@ -49,6 +51,7 @@ enum ThemePreset: String, CaseIterable, Identifiable, Codable {
         case .midnight: .midnight
         case .forest: .forest
         case .gray: .gray
+        case .liquidBlack: .liquidBlack
         }
     }
 }
@@ -131,6 +134,22 @@ extension Theme {
         appGray: Color(hex: "#7C7C80"),
         appYellow: Color(hex: "#D9B95B"),
         appRed: Color(hex: "#E0666A"),
+        appOverlay: .black
+    )
+
+    static let liquidBlack = Theme(
+        colorScheme: .dark,
+        appMain: Color(hex: "#0F0F10"),
+        appSecond: Color(hex: "#1F1F21"),
+        appLabel: Color(hex: "#A0B3BC"),
+        appWhite: Color(hex: "#F7F7F8"),
+        appBlack: Color(hex: "#000000"),
+        appLightGrey: Color(hex: "#E6EAEC"),
+        appBlue: Color(hex: "#2FE0B5"),
+        appDarkGreen: Color(hex: "#35B98D"),
+        appGray: Color(hex: "#85878B"),
+        appYellow: Color(hex: "#FFD000"),
+        appRed: Color(hex: "#FF625C"),
         appOverlay: .black
     )
 }
