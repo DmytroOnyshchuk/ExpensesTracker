@@ -28,6 +28,7 @@ struct Theme {
 
 enum ThemePreset: String, CaseIterable, Identifiable, Codable {
     case classic
+    case ember
     case midnight
     case forest
     case gray
@@ -39,10 +40,11 @@ enum ThemePreset: String, CaseIterable, Identifiable, Codable {
     var title: String {
         switch self {
         case .classic: L10n.settingsThemeClassic
+        case .ember: L10n.settingsThemeEmber
         case .midnight: L10n.settingsThemeMidnight
         case .forest: L10n.settingsThemeForest
         case .gray: L10n.settingsThemeGray
-        case .liquidBlack: L10n.settingsThemeLiquidBlack
+        case .liquidBlack: L10n.settingsThemeIndigo
         case .slate: L10n.settingsThemeSlate
         }
     }
@@ -50,6 +52,7 @@ enum ThemePreset: String, CaseIterable, Identifiable, Codable {
     var theme: Theme {
         switch self {
         case .classic: .classic
+        case .ember: .ember
         case .midnight: .midnight
         case .forest: .forest
         case .gray: .gray
@@ -78,17 +81,33 @@ extension Theme {
 
     static let classic = Theme(
         colorScheme: .dark,
-        appMain: Color(.appMain),
-        appSecond: Color(.appSecond),
-        appLabel: Color(.appLabel),
-        appWhite: Color(.appWhite),
-        appBlack: Color(.appBlack),
-        appLightGrey: Color(.appLightGrey),
-        appPrimary: Color(.appPrimary),
-        appDarkGreen: Color(.appDarkGreen),
-        appGray: .gray,
-        appYellow: .yellow,
-        appRed: .red,
+        appMain: Color(hex: "#0F0F10"),
+        appSecond: Color(hex: "#1F1F21"),
+        appLabel: Color(hex: "#A0B3BC"),
+        appWhite: Color(hex: "#F7F7F8"),
+        appBlack: Color(hex: "#000000"),
+        appLightGrey: Color(hex: "#E6EAEC"),
+        appPrimary: Color(hex: "#E6E6E8"),
+        appDarkGreen: Color(hex: "#35B98D"),
+        appGray: Color(hex: "#85878B"),
+        appYellow: Color(hex: "#FFD000"),
+        appRed: Color(hex: "#FF625C"),
+        appOverlay: .black
+    )
+
+    static let ember = Theme(
+        colorScheme: .dark,
+        appMain: Color(hex: "#1B1715"),
+        appSecond: Color(hex: "#2B2421"),
+        appLabel: Color(hex: "#B7A69B"),
+        appWhite: Color(hex: "#F5F0ED"),
+        appBlack: Color(hex: "#100D0B"),
+        appLightGrey: Color(hex: "#E9DFD9"),
+        appPrimary: Color(hex: "#D58B63"),
+        appDarkGreen: Color(hex: "#75966B"),
+        appGray: Color(hex: "#88776D"),
+        appYellow: Color(hex: "#E9B96E"),
+        appRed: Color(hex: "#D96F63"),
         appOverlay: .black
     )
 
@@ -142,17 +161,17 @@ extension Theme {
 
     static let liquidBlack = Theme(
         colorScheme: .dark,
-        appMain: Color(hex: "#0F0F10"),
-        appSecond: Color(hex: "#1F1F21"),
-        appLabel: Color(hex: "#A0B3BC"),
-        appWhite: Color(hex: "#F7F7F8"),
-        appBlack: Color(hex: "#000000"),
-        appLightGrey: Color(hex: "#E6EAEC"),
-        appPrimary: Color(hex: "#E6E6E8"),
-        appDarkGreen: Color(hex: "#35B98D"),
-        appGray: Color(hex: "#85878B"),
-        appYellow: Color(hex: "#FFD000"),
-        appRed: Color(hex: "#FF625C"),
+        appMain: Color(.appMain),
+        appSecond: Color(.appSecond),
+        appLabel: Color(.appLabel),
+        appWhite: Color(.appWhite),
+        appBlack: Color(.appBlack),
+        appLightGrey: Color(.appLightGrey),
+        appPrimary: Color(.appPrimary),
+        appDarkGreen: Color(.appDarkGreen),
+        appGray: .gray,
+        appYellow: .yellow,
+        appRed: .red,
         appOverlay: .black
     )
 
