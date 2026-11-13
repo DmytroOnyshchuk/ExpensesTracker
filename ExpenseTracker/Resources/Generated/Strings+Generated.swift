@@ -146,6 +146,8 @@ internal enum L10n {
   internal static let settingsThemeLiquidBlack = L10n.tr("Localizable", "SETTINGS_THEME_LIQUID_BLACK", fallback: "Liquid black")
   /// Midnight
   internal static let settingsThemeMidnight = L10n.tr("Localizable", "SETTINGS_THEME_MIDNIGHT", fallback: "Midnight")
+  /// Slate
+  internal static let settingsThemeSlate = L10n.tr("Localizable", "SETTINGS_THEME_SLATE", fallback: "Slate")
   /// Share
   internal static let share = L10n.tr("Localizable", "SHARE", fallback: "Share")
   /// Something went wrong...

@@ -32,6 +32,7 @@ enum ThemePreset: String, CaseIterable, Identifiable, Codable {
     case forest
     case gray
     case liquidBlack
+    case slate
 
     var id: String { rawValue }
 
@@ -42,6 +43,7 @@ enum ThemePreset: String, CaseIterable, Identifiable, Codable {
         case .forest: L10n.settingsThemeForest
         case .gray: L10n.settingsThemeGray
         case .liquidBlack: L10n.settingsThemeLiquidBlack
+        case .slate: L10n.settingsThemeSlate
         }
     }
 
@@ -52,6 +54,7 @@ enum ThemePreset: String, CaseIterable, Identifiable, Codable {
         case .forest: .forest
         case .gray: .gray
         case .liquidBlack: .liquidBlack
+        case .slate: .slate
         }
     }
 }
@@ -149,6 +152,22 @@ extension Theme {
         appDarkGreen: Color(hex: "#35B98D"),
         appGray: Color(hex: "#85878B"),
         appYellow: Color(hex: "#FFD000"),
+        appRed: Color(hex: "#FF625C"),
+        appOverlay: .black
+    )
+
+    static let slate = Theme(
+        colorScheme: .dark,
+        appMain: Color(hex: "#202020"),
+        appSecond: Color(hex: "#303030"),
+        appLabel: Color(hex: "#8B8D91"),
+        appWhite: Color(hex: "#E8E8E8"),
+        appBlack: Color(hex: "#121212"),
+        appLightGrey: Color(hex: "#D8D8D8"),
+        appBlue: Color(hex: "#51B5FF"),
+        appDarkGreen: Color(hex: "#45B98A"),
+        appGray: Color(hex: "#85878B"),
+        appYellow: Color(hex: "#FFD44A"),
         appRed: Color(hex: "#FF625C"),
         appOverlay: .black
     )
