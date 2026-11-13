@@ -53,6 +53,7 @@
 "TRANSACTION_EDIT_CATEGORY" = "Катэгорыя";
 "TRANSACTION_EDIT_AMOUNT" = "Сума";
 "TRANSACTION_EDIT_DATE" = "Дата";
+"TRANSACTION_EDIT_TIME" = "Час";
 "TRANSACTION_EDIT_ADD_COMMENT" = "Дадаць каментарый";
 "TRANSACTION_EDIT_DELETE" = "Выдаліць аперацыю";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Выдаліць аперацыю?";

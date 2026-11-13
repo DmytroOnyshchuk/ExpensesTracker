@@ -53,6 +53,7 @@
 "TRANSACTION_EDIT_CATEGORY" = "Categoria";
 "TRANSACTION_EDIT_AMOUNT" = "Import";
 "TRANSACTION_EDIT_DATE" = "Data";
+"TRANSACTION_EDIT_TIME" = "Ura";
 "TRANSACTION_EDIT_ADD_COMMENT" = "Agiuntar in commentari";
 "TRANSACTION_EDIT_DELETE" = "Stizzar la transacziun";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Stizzar la transacziun?";

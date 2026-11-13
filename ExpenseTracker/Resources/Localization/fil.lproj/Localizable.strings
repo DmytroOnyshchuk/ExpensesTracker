@@ -53,6 +53,7 @@
 "TRANSACTION_EDIT_CATEGORY" = "Kategorya";
 "TRANSACTION_EDIT_AMOUNT" = "Halaga";
 "TRANSACTION_EDIT_DATE" = "Petsa";
+"TRANSACTION_EDIT_TIME" = "Oras";
 "TRANSACTION_EDIT_ADD_COMMENT" = "Magdagdag ng komento";
 "TRANSACTION_EDIT_DELETE" = "I-delete ang transaksyon";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "I-delete ang transaksyon?";

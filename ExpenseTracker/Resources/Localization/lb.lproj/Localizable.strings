@@ -53,6 +53,7 @@
 "TRANSACTION_EDIT_CATEGORY" = "Kategorie";
 "TRANSACTION_EDIT_AMOUNT" = "Betrag";
 "TRANSACTION_EDIT_DATE" = "Datum";
+"TRANSACTION_EDIT_TIME" = "Zäit";
 "TRANSACTION_EDIT_ADD_COMMENT" = "Kommentar derbäisetzen";
 "TRANSACTION_EDIT_DELETE" = "Transaktioun läschen";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Transaktioun läschen?";

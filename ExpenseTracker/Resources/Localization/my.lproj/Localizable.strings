@@ -53,6 +53,7 @@
 "TRANSACTION_EDIT_CATEGORY" = "အမျိုးအစား";
 "TRANSACTION_EDIT_AMOUNT" = "ပမာဏ";
 "TRANSACTION_EDIT_DATE" = "ရက်စွဲ";
+"TRANSACTION_EDIT_TIME" = "အချိန်";
 "TRANSACTION_EDIT_ADD_COMMENT" = "မှတ်ချက်ထည့်ရန်";
 "TRANSACTION_EDIT_DELETE" = "ငွေလွှဲမှုကို ဖျက်ရန်";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "ငွေလွှဲမှုကို ဖျက်မလား?";

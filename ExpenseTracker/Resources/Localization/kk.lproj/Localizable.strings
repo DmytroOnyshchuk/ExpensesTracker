@@ -53,6 +53,7 @@
 "TRANSACTION_EDIT_CATEGORY" = "Санат";
 "TRANSACTION_EDIT_AMOUNT" = "Сома";
 "TRANSACTION_EDIT_DATE" = "Күні";
+"TRANSACTION_EDIT_TIME" = "Уақыт";
 "TRANSACTION_EDIT_ADD_COMMENT" = "Түсініктеме қосу";
 "TRANSACTION_EDIT_DELETE" = "Операцияны жою";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Операцияны жою керек пе?";

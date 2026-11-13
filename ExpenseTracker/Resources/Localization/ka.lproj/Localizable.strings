@@ -53,6 +53,7 @@
 "TRANSACTION_EDIT_CATEGORY" = "კატეგორია";
 "TRANSACTION_EDIT_AMOUNT" = "თანხა";
 "TRANSACTION_EDIT_DATE" = "თარიღი";
+"TRANSACTION_EDIT_TIME" = "დრო";
 "TRANSACTION_EDIT_ADD_COMMENT" = "კომენტარის დამატება";
 "TRANSACTION_EDIT_DELETE" = "ტრანზაქციის წაშლა";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "წაიშალოს ტრანზაქცია?";

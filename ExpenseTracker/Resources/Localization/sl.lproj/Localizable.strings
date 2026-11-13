@@ -53,6 +53,7 @@
 "TRANSACTION_EDIT_CATEGORY" = "Kategorija";
 "TRANSACTION_EDIT_AMOUNT" = "Znesek";
 "TRANSACTION_EDIT_DATE" = "Datum";
+"TRANSACTION_EDIT_TIME" = "Čas";
 "TRANSACTION_EDIT_ADD_COMMENT" = "Dodaj komentar";
 "TRANSACTION_EDIT_DELETE" = "Izbriši transakcijo";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Želite izbrisati transakcijo?";

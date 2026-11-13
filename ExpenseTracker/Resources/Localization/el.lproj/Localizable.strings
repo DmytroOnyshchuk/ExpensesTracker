@@ -53,6 +53,7 @@
 "TRANSACTION_EDIT_CATEGORY" = "Κατηγορία";
 "TRANSACTION_EDIT_AMOUNT" = "Ποσό";
 "TRANSACTION_EDIT_DATE" = "Ημερομηνία";
+"TRANSACTION_EDIT_TIME" = "Ώρα";
 "TRANSACTION_EDIT_ADD_COMMENT" = "Προσθήκη σχολίου";
 "TRANSACTION_EDIT_DELETE" = "Διαγραφή συναλλαγής";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Διαγραφή συναλλαγής;";

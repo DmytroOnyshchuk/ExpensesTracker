@@ -53,6 +53,7 @@
 "TRANSACTION_EDIT_CATEGORY" = "Catégorie";
 "TRANSACTION_EDIT_AMOUNT" = "Montant";
 "TRANSACTION_EDIT_DATE" = "Date";
+"TRANSACTION_EDIT_TIME" = "Heure";
 "TRANSACTION_EDIT_ADD_COMMENT" = "Ajouter un commentaire";
 "TRANSACTION_EDIT_DELETE" = "Supprimer la transaction";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Supprimer la transaction ?";

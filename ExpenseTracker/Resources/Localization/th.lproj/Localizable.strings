@@ -53,6 +53,7 @@
 "TRANSACTION_EDIT_CATEGORY" = "หมวดหมู่";
 "TRANSACTION_EDIT_AMOUNT" = "จำนวนเงิน";
 "TRANSACTION_EDIT_DATE" = "วันที่";
+"TRANSACTION_EDIT_TIME" = "เวลา";
 "TRANSACTION_EDIT_ADD_COMMENT" = "เพิ่มความคิดเห็น";
 "TRANSACTION_EDIT_DELETE" = "ลบรายการ";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "ลบรายการนี้หรือไม่";

@@ -53,6 +53,7 @@
 "TRANSACTION_EDIT_CATEGORY" = "Kategória";
 "TRANSACTION_EDIT_AMOUNT" = "Összeg";
 "TRANSACTION_EDIT_DATE" = "Dátum";
+"TRANSACTION_EDIT_TIME" = "Idő";
 "TRANSACTION_EDIT_ADD_COMMENT" = "Megjegyzés hozzáadása";
 "TRANSACTION_EDIT_DELETE" = "Tranzakció törlése";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Törli a tranzakciót?";

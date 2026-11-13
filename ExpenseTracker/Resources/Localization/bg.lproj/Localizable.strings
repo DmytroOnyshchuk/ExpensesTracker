@@ -53,6 +53,7 @@
 "TRANSACTION_EDIT_CATEGORY" = "Категория";
 "TRANSACTION_EDIT_AMOUNT" = "Сума";
 "TRANSACTION_EDIT_DATE" = "Дата";
+"TRANSACTION_EDIT_TIME" = "Час";
 "TRANSACTION_EDIT_ADD_COMMENT" = "Добавяне на коментар";
 "TRANSACTION_EDIT_DELETE" = "Изтриване на операцията";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Изтриване на операцията?";

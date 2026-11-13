@@ -53,6 +53,7 @@
 "TRANSACTION_EDIT_CATEGORY" = "വിഭാഗം";
 "TRANSACTION_EDIT_AMOUNT" = "തുക";
 "TRANSACTION_EDIT_DATE" = "തീയതി";
+"TRANSACTION_EDIT_TIME" = "സമയം";
 "TRANSACTION_EDIT_ADD_COMMENT" = "അഭിപ്രായം ചേർക്കുക";
 "TRANSACTION_EDIT_DELETE" = "ഇടപാട് ഇല്ലാതാക്കുക";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "ഇടപാട് ഇല്ലാതാക്കണോ?";

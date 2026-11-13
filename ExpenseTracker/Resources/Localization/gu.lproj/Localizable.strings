@@ -53,6 +53,7 @@
 "TRANSACTION_EDIT_CATEGORY" = "શ્રેણી";
 "TRANSACTION_EDIT_AMOUNT" = "રકમ";
 "TRANSACTION_EDIT_DATE" = "તારીખ";
+"TRANSACTION_EDIT_TIME" = "સમય";
 "TRANSACTION_EDIT_ADD_COMMENT" = "ટિપ્પણી ઉમેરો";
 "TRANSACTION_EDIT_DELETE" = "વ્યવહાર કાઢી નાખો";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "વ્યવહાર કાઢી નાખવો છે?";

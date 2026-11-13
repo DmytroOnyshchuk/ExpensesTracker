@@ -12,6 +12,7 @@ import SwiftUI
 struct TransactionEdit: View {
     private enum Popup {
         case date
+        case time
         case comment
     }
 
@@ -57,6 +58,15 @@ struct TransactionEdit: View {
                     popup = .date
                 } value: {
                     valueText(draft.date.dayString(.dateTime.day().month(.wide).year()))
+                }
+                separator
+                    .padding(.leading, 16)
+
+                row(L10n.transactionEditTime) {
+                    isAmountFocused = false
+                    popup = .time
+                } value: {
+                    valueText(draft.date.formatted(date: .omitted, time: .shortened))
                 }
                 separator
                     .padding(.leading, 16)
@@ -172,7 +182,13 @@ struct TransactionEdit: View {
         switch popup {
         case .date:
             TransactionDatePopup(date: draft.date, onCancel: closePopup) { date in
-                draft.date = date
+                draft.date = combined(day: date, time: draft.date)
+                closePopup()
+            }
+            .transition(.opacity)
+        case .time:
+            TransactionTimePopup(time: draft.date, onCancel: closePopup) { time in
+                draft.date = combined(day: draft.date, time: time)
                 closePopup()
             }
             .transition(.opacity)
@@ -261,6 +277,17 @@ struct TransactionEdit: View {
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
+    }
+
+    private func combined(day: Date, time: Date) -> Date {
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.hour, .minute, .second], from: time)
+        return calendar.date(
+            bySettingHour: components.hour ?? 0,
+            minute: components.minute ?? 0,
+            second: components.second ?? 0,
+            of: day
+        ) ?? day
     }
 
     private func closePopup() {

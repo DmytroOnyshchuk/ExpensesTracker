@@ -53,6 +53,7 @@
 "TRANSACTION_EDIT_CATEGORY" = "வகை";
 "TRANSACTION_EDIT_AMOUNT" = "தொகை";
 "TRANSACTION_EDIT_DATE" = "தேதி";
+"TRANSACTION_EDIT_TIME" = "நேரம்";
 "TRANSACTION_EDIT_ADD_COMMENT" = "கருத்தைச் சேர்";
 "TRANSACTION_EDIT_DELETE" = "பரிவர்த்தனையை நீக்கு";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "பரிவர்த்தனையை நீக்கவா?";

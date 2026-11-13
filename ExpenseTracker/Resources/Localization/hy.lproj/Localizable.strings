@@ -53,6 +53,7 @@
 "TRANSACTION_EDIT_CATEGORY" = "Կատեգորիա";
 "TRANSACTION_EDIT_AMOUNT" = "Գումար";
 "TRANSACTION_EDIT_DATE" = "Ամսաթիվ";
+"TRANSACTION_EDIT_TIME" = "Ժամ";
 "TRANSACTION_EDIT_ADD_COMMENT" = "Ավելացնել մեկնաբանություն";
 "TRANSACTION_EDIT_DELETE" = "Ջնջել գործարքը";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Ջնջե՞լ գործարքը";

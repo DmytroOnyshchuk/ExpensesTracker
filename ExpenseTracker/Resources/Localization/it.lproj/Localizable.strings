@@ -53,6 +53,7 @@
 "TRANSACTION_EDIT_CATEGORY" = "Categoria";
 "TRANSACTION_EDIT_AMOUNT" = "Importo";
 "TRANSACTION_EDIT_DATE" = "Data";
+"TRANSACTION_EDIT_TIME" = "Ora";
 "TRANSACTION_EDIT_ADD_COMMENT" = "Aggiungi commento";
 "TRANSACTION_EDIT_DELETE" = "Elimina transazione";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Eliminare la transazione?";

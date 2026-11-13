@@ -53,6 +53,7 @@
 "TRANSACTION_EDIT_CATEGORY" = "Статья";
 "TRANSACTION_EDIT_AMOUNT" = "Сумма";
 "TRANSACTION_EDIT_DATE" = "Дата";
+"TRANSACTION_EDIT_TIME" = "Время";
 "TRANSACTION_EDIT_ADD_COMMENT" = "Добавить комментарий";
 "TRANSACTION_EDIT_DELETE" = "Удалить платеж";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Удалить операцию?";

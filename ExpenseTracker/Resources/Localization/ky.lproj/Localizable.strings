@@ -53,6 +53,7 @@
 "TRANSACTION_EDIT_CATEGORY" = "Категория";
 "TRANSACTION_EDIT_AMOUNT" = "Сумма";
 "TRANSACTION_EDIT_DATE" = "Күнү";
+"TRANSACTION_EDIT_TIME" = "Убакыт";
 "TRANSACTION_EDIT_ADD_COMMENT" = "Комментарий кошуу";
 "TRANSACTION_EDIT_DELETE" = "Операцияны өчүрүү";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Операция өчүрүлсүнбү?";

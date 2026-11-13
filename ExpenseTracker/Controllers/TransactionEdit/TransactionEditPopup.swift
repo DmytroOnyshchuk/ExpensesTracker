@@ -95,6 +95,33 @@ struct TransactionDatePopup: View {
     }
 }
 
+struct TransactionTimePopup: View {
+    let onCancel: () -> Void
+    let onConfirm: (Date) -> Void
+
+    @State private var time: Date
+
+    init(time: Date, onCancel: @escaping () -> Void, onConfirm: @escaping (Date) -> Void) {
+        self.onCancel = onCancel
+        self.onConfirm = onConfirm
+        _time = State(initialValue: time)
+    }
+
+    var body: some View {
+        TransactionEditPopup(onCancel: onCancel, onConfirm: { onConfirm(time) }) {
+            DatePicker("", selection: $time, displayedComponents: .hourAndMinute)
+                .datePickerStyle(.wheel)
+                .labelsHidden()
+                .colorScheme(.dark)
+        }
+    }
+}
+
+#Preview("Time popup") {
+    TransactionTimePopup(time: Date(), onCancel: {}, onConfirm: { _ in })
+        .background(.appMain)
+}
+
 #Preview("Date popup") {
     TransactionDatePopup(date: .yesterday, onCancel: {}, onConfirm: { _ in })
         .background(.appMain)

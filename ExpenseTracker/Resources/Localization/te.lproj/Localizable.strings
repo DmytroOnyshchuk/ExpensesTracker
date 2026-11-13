@@ -53,6 +53,7 @@
 "TRANSACTION_EDIT_CATEGORY" = "వర్గం";
 "TRANSACTION_EDIT_AMOUNT" = "మొత్తం";
 "TRANSACTION_EDIT_DATE" = "తేదీ";
+"TRANSACTION_EDIT_TIME" = "సమయం";
 "TRANSACTION_EDIT_ADD_COMMENT" = "వ్యాఖ్యను జోడించండి";
 "TRANSACTION_EDIT_DELETE" = "లావాదేవీని తొలగించండి";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "లావాదేవీని తొలగించాలా?";

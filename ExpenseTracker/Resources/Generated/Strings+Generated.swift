@@ -162,6 +162,8 @@ internal enum L10n {
   internal static let transactionEditDelete = L10n.tr("Localizable", "TRANSACTION_EDIT_DELETE", fallback: "Delete transaction")
   /// Delete transaction?
   internal static let transactionEditDeleteConfirmation = L10n.tr("Localizable", "TRANSACTION_EDIT_DELETE_CONFIRMATION", fallback: "Delete transaction?")
+  /// Time
+  internal static let transactionEditTime = L10n.tr("Localizable", "TRANSACTION_EDIT_TIME", fallback: "Time")
   /// Edit
   internal static let transactionEditTitle = L10n.tr("Localizable", "TRANSACTION_EDIT_TITLE", fallback: "Edit")
   /// Delete

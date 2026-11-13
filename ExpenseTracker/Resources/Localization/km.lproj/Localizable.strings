@@ -53,6 +53,7 @@
 "TRANSACTION_EDIT_CATEGORY" = "ប្រភេទ";
 "TRANSACTION_EDIT_AMOUNT" = "ចំនួនទឹកប្រាក់";
 "TRANSACTION_EDIT_DATE" = "កាលបរិច្ឆេទ";
+"TRANSACTION_EDIT_TIME" = "ម៉ោង";
 "TRANSACTION_EDIT_ADD_COMMENT" = "បន្ថែមមតិយោបល់";
 "TRANSACTION_EDIT_DELETE" = "លុបប្រតិបត្តិការ";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "លុបប្រតិបត្តិការឬ?";
