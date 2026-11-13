@@ -119,11 +119,11 @@ struct StartView: View {
         showCommentInput = true
     }
 
-    private func addTransaction(with category: TransactionCategory) {
+    private func addTransaction(with category: TransactionCategory) -> Bool {
         guard input.amount != 0 else {
             amountAttentionTrigger += 1
             FeedbackManager.amountMissing()
-            return
+            return false
         }
 
         let transaction = Transaction(
@@ -137,6 +137,7 @@ struct StartView: View {
         FeedbackManager.transactionAdded()
         input.reset()
         comment = ""
+        return true
     }
 }
 

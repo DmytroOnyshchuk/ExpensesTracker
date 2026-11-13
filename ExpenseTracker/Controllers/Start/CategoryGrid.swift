@@ -12,9 +12,9 @@ import SwiftUI
 struct CategoryGrid: View {
     @Query(filter: #Predicate<TransactionCategory> { !$0.isDirectory })
     var categories: [TransactionCategory]
-    var onSelect: (TransactionCategory) -> Void
+    var onSelect: (TransactionCategory) -> Bool
 
-    @State private var currentPage: Int = 0
+    @State private var currentPage: Int? = 0
     @State private var showAllCategories = false
     @State private var navigateToEditCategories = false
 
@@ -28,30 +28,36 @@ struct CategoryGrid: View {
 
     var body: some View {
         VStack(spacing: 16) {
-            TabView(selection: $currentPage) {
-                ForEach(0 ..< chunkedCategories.count, id: \.self) { pageIndex in
-                    VStack(alignment: .center, spacing: 0) {
-                        LazyVGrid(columns: gridLayout, spacing: 16) {
-                            ForEach(chunkedCategories[pageIndex], id: \.id) { category in
-                                CategoryCell(category: category) {
-                                    onSelect(category)
+            ScrollView(.horizontal) {
+                HStack(spacing: 0) {
+                    ForEach(0 ..< chunkedCategories.count, id: \.self) { pageIndex in
+                        VStack(alignment: .center, spacing: 0) {
+                            LazyVGrid(columns: gridLayout, spacing: 16) {
+                                ForEach(chunkedCategories[pageIndex], id: \.id) { category in
+                                    CategoryCell(category: category) {
+                                        onSelect(category)
+                                    }
                                 }
-                            }
 
-                            if pageIndex == chunkedCategories.count - 1 {
-                                EditCategoriesCell {
-                                    showAllCategories = true
+                                if pageIndex == chunkedCategories.count - 1 {
+                                    EditCategoriesCell {
+                                        showAllCategories = true
+                                    }
                                 }
                             }
+                            .padding(.horizontal, 32)
+                            .frame(maxHeight: .infinity, alignment: .top)
                         }
-                        .padding(.horizontal, 32)
-                        .frame(maxHeight: .infinity, alignment: .top)
+                        .containerRelativeFrame(.horizontal)
+                        .id(pageIndex)
                     }
-                    .frame(width: UIScreen.main.bounds.width)
-                    .tag(pageIndex)
                 }
+                .scrollTargetLayout()
             }
-            .tabViewStyle(.page(indexDisplayMode: .never))
+            .scrollTargetBehavior(.paging)
+            .scrollPosition(id: $currentPage)
+            .scrollIndicators(.hidden)
+            .scrollClipDisabled()
             .frame(height: 176)
 
             if chunkedCategories.count > 1 {
@@ -103,7 +109,7 @@ struct EditCategoriesCell: View {
 }
 
 #Preview {
-    CategoryGrid(onSelect: { _ in })
+    CategoryGrid(onSelect: { _ in true })
         .padding(.vertical, 16)
         .background(.appMain)
         .modelContainer(makePreviewModelContainer())
