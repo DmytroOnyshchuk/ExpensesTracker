@@ -51,7 +51,7 @@ struct CommentInputView: View {
             Spacer()
 
             if !draft.isEmpty {
-                Button(action: clear) {
+                Button(action: { tap(clear) }) {
                     Text(L10n.clear)
                         .font(.appRegular(15))
                         .foregroundColor(.appBlue)
@@ -94,7 +94,7 @@ struct CommentInputView: View {
     }
 
     private var saveButton: some View {
-        Button(action: save) {
+        Button(action: { tap(save) }) {
             Image(systemName: "checkmark")
                 .font(.system(size: 17, weight: .semibold))
                 .foregroundColor(.appWhite)
@@ -102,6 +102,11 @@ struct CommentInputView: View {
                 .background(.appBlue)
                 .clipShape(Circle())
         }
+    }
+
+    private func tap(_ action: () -> Void) {
+        FeedbackManager.buttonTapped()
+        action()
     }
 
     private func clear() {

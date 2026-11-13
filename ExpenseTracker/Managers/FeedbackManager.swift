@@ -27,6 +27,10 @@ enum FeedbackManager {
         AudioServicesPlaySystemSound(key == .backspace ? keyDeleteSoundID : keyTapSoundID)
     }
 
+    static func buttonTapped() {
+        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+    }
+
     static func transactionAdded() {
         UINotificationFeedbackGenerator().notificationOccurred(.success)
         AudioServicesPlaySystemSound(transactionAddedSoundID)

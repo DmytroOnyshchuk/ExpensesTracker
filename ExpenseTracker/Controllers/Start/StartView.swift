@@ -114,6 +114,7 @@ struct StartView: View {
     }
 
     private func openCommentInput() {
+        FeedbackManager.buttonTapped()
         showCommentInput = true
     }
 
