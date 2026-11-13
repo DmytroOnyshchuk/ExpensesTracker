@@ -16,7 +16,6 @@ struct TransactionCategoryPicker: View {
     @Query private var categories: [TransactionCategory]
     @Environment(\.modelContext) private var modelContext
     @State private var openedFolder: TransactionCategory?
-    @State private var showAddCategory = false
 
     private var visibleCategories: [TransactionCategory] {
         guard let folder else { return categories.topLevel.inDisplayOrder }
@@ -42,21 +41,8 @@ struct TransactionCategoryPicker: View {
         .background(.appMain)
         .navigationTitle(folder?.name.localized ?? L10n.transactionEditCategoriesTitle)
         .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button {
-                    showAddCategory = true
-                } label: {
-                    Image(systemName: "plus")
-                        .foregroundColor(.appWhite)
-                }
-            }
-        }
         .navigationDestination(item: $openedFolder) { folder in
             TransactionCategoryPicker(folder: folder, onSelect: onSelect)
-        }
-        .sheet(isPresented: $showAddCategory) {
-            EditCategoryView()
         }
     }
 
