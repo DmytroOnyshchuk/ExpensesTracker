@@ -31,6 +31,10 @@ enum FeedbackManager {
         UIImpactFeedbackGenerator(style: .light).impactOccurred()
     }
 
+    static func selectionChanged() {
+        UISelectionFeedbackGenerator().selectionChanged()
+    }
+
     static func transactionAdded() {
         UINotificationFeedbackGenerator().notificationOccurred(.success)
         AudioServicesPlaySystemSound(transactionAddedSoundID)

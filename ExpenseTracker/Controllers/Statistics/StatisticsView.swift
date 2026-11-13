@@ -177,6 +177,7 @@ struct StatisticsView: View {
 
     private func shiftPeriod(by value: Int, from start: Date, in starts: [Date]) {
         guard let target = neighbour(of: start, by: value, in: starts) else { return }
+        FeedbackManager.selectionChanged()
         select(target, from: start)
     }
 
