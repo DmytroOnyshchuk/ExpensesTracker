@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Ιστορικό";
 
+// MARK: - Menu
+"MENU_TITLE" = "Μενού";
+"MENU_BUDGET" = "Προϋπολογισμός";
+"MENU_SETTINGS" = "Ρυθμίσεις";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Επεξεργασία";
 "TRANSACTION_EDIT_CATEGORY" = "Κατηγορία";

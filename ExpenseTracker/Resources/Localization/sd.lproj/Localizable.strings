@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "تاريخچو";
 
+// MARK: - Menu
+"MENU_TITLE" = "مينيو";
+"MENU_BUDGET" = "بجيٽ";
+"MENU_SETTINGS" = "سيٽنگون";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ترميم";
 "TRANSACTION_EDIT_CATEGORY" = "درجو";

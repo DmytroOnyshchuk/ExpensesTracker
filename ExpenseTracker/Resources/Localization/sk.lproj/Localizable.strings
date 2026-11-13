@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "História";
 
+// MARK: - Menu
+"MENU_TITLE" = "Ponuka";
+"MENU_BUDGET" = "Rozpočet";
+"MENU_SETTINGS" = "Nastavenia";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Upraviť";
 "TRANSACTION_EDIT_CATEGORY" = "Kategória";

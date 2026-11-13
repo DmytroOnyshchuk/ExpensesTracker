@@ -110,6 +110,12 @@ internal enum L10n {
   internal static let error = L10n.tr("Localizable", "ERROR", fallback: "Error")
   /// History
   internal static let historyTitle = L10n.tr("Localizable", "HISTORY_TITLE", fallback: "History")
+  /// Budget
+  internal static let menuBudget = L10n.tr("Localizable", "MENU_BUDGET", fallback: "Budget")
+  /// Settings
+  internal static let menuSettings = L10n.tr("Localizable", "MENU_SETTINGS", fallback: "Settings")
+  /// Menu
+  internal static let menuTitle = L10n.tr("Localizable", "MENU_TITLE", fallback: "Menu")
   /// Next
   internal static let next = L10n.tr("Localizable", "NEXT", fallback: "Next")
   /// No

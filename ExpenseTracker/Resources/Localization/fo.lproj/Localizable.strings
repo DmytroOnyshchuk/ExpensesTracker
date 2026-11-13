@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Søga";
 
+// MARK: - Menu
+"MENU_TITLE" = "Valmynd";
+"MENU_BUDGET" = "Fíggjarætlan";
+"MENU_SETTINGS" = "Stillingar";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Broyt";
 "TRANSACTION_EDIT_CATEGORY" = "Bólkur";

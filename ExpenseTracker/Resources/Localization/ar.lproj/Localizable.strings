@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "السجل";
 
+// MARK: - Menu
+"MENU_TITLE" = "القائمة";
+"MENU_BUDGET" = "الميزانية";
+"MENU_SETTINGS" = "الإعدادات";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "تعديل";
 "TRANSACTION_EDIT_CATEGORY" = "الفئة";

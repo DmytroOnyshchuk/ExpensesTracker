@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Imbali";
 
+// MARK: - Menu
+"MENU_TITLE" = "Imenyu";
+"MENU_BUDGET" = "Uhlahlo-lwabiwo mali";
+"MENU_SETTINGS" = "Iisetingi";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Hlela";
 "TRANSACTION_EDIT_CATEGORY" = "Udidi";

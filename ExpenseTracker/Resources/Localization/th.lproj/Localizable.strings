@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "ประวัติ";
 
+// MARK: - Menu
+"MENU_TITLE" = "เมนู";
+"MENU_BUDGET" = "งบประมาณ";
+"MENU_SETTINGS" = "การตั้งค่า";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "แก้ไข";
 "TRANSACTION_EDIT_CATEGORY" = "หมวดหมู่";

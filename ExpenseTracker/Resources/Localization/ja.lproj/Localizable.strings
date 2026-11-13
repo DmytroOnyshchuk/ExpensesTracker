@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "履歴";
 
+// MARK: - Menu
+"MENU_TITLE" = "メニュー";
+"MENU_BUDGET" = "予算";
+"MENU_SETTINGS" = "設定";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "編集";
 "TRANSACTION_EDIT_CATEGORY" = "カテゴリ";

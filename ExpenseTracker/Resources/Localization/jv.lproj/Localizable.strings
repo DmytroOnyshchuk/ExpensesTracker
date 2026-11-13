@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Riwayat";
 
+// MARK: - Menu
+"MENU_TITLE" = "Menu";
+"MENU_BUDGET" = "Anggaran";
+"MENU_SETTINGS" = "Setelan";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Owahi";
 "TRANSACTION_EDIT_CATEGORY" = "Kategori";

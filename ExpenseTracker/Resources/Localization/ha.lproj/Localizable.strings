@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Tarihi";
 
+// MARK: - Menu
+"MENU_TITLE" = "Menu";
+"MENU_BUDGET" = "Kasafin kuɗi";
+"MENU_SETTINGS" = "Saituna";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Gyara";
 "TRANSACTION_EDIT_CATEGORY" = "Rukuni";

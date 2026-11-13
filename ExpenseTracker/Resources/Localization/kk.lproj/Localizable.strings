@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Тарих";
 
+// MARK: - Menu
+"MENU_TITLE" = "Мәзір";
+"MENU_BUDGET" = "Бюджет";
+"MENU_SETTINGS" = "Баптаулар";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Өңдеу";
 "TRANSACTION_EDIT_CATEGORY" = "Санат";

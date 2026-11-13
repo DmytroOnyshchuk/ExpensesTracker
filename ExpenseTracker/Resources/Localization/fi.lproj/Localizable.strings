@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Historia";
 
+// MARK: - Menu
+"MENU_TITLE" = "Valikko";
+"MENU_BUDGET" = "Budjetti";
+"MENU_SETTINGS" = "Asetukset";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Muokkaa";
 "TRANSACTION_EDIT_CATEGORY" = "Luokka";

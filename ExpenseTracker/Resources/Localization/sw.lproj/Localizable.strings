@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Historia";
 
+// MARK: - Menu
+"MENU_TITLE" = "Menyu";
+"MENU_BUDGET" = "Bajeti";
+"MENU_SETTINGS" = "Mipangilio";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Hariri";
 "TRANSACTION_EDIT_CATEGORY" = "Kategoria";

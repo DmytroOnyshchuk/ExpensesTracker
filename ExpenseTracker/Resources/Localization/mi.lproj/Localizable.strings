@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Hītori";
 
+// MARK: - Menu
+"MENU_TITLE" = "Tahua";
+"MENU_BUDGET" = "Tahua pūtea";
+"MENU_SETTINGS" = "Tautuhinga";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Whakatika";
 "TRANSACTION_EDIT_CATEGORY" = "Kāwai";

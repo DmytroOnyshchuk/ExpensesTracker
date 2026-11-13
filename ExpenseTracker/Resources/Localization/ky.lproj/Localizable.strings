@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Тарых";
 
+// MARK: - Menu
+"MENU_TITLE" = "Меню";
+"MENU_BUDGET" = "Бюджет";
+"MENU_SETTINGS" = "Жөндөөлөр";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Түзөтүү";
 "TRANSACTION_EDIT_CATEGORY" = "Категория";

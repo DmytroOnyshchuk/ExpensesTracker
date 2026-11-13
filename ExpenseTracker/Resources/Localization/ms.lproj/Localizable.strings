@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Sejarah";
 
+// MARK: - Menu
+"MENU_TITLE" = "Menu";
+"MENU_BUDGET" = "Belanjawan";
+"MENU_SETTINGS" = "Tetapan";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Edit";
 "TRANSACTION_EDIT_CATEGORY" = "Kategori";

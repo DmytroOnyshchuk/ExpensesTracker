@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Historiku";
 
+// MARK: - Menu
+"MENU_TITLE" = "Menyja";
+"MENU_BUDGET" = "Buxheti";
+"MENU_SETTINGS" = "Cilësimet";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Ndrysho";
 "TRANSACTION_EDIT_CATEGORY" = "Kategoria";

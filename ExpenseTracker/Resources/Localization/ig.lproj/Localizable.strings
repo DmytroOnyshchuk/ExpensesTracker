@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Akụkọ ihe mere eme";
 
+// MARK: - Menu
+"MENU_TITLE" = "Menu";
+"MENU_BUDGET" = "Mmefu ego";
+"MENU_SETTINGS" = "Ntọala";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Dezie";
 "TRANSACTION_EDIT_CATEGORY" = "Ụdị";

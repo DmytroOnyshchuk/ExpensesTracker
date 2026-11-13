@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Stair";
 
+// MARK: - Menu
+"MENU_TITLE" = "Roghchlár";
+"MENU_BUDGET" = "Buiséad";
+"MENU_SETTINGS" = "Socruithe";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Cuir in eagar";
 "TRANSACTION_EDIT_CATEGORY" = "Catagóir";

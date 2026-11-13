@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Eachdraidh";
 
+// MARK: - Menu
+"MENU_TITLE" = "Clàr-taice";
+"MENU_BUDGET" = "Buidseat";
+"MENU_SETTINGS" = "Roghainnean";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Deasaich";
 "TRANSACTION_EDIT_CATEGORY" = "Roinn-seòrsa";

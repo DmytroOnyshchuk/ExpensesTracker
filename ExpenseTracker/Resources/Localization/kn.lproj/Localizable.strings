@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "ಇತಿಹಾಸ";
 
+// MARK: - Menu
+"MENU_TITLE" = "ಮೆನು";
+"MENU_BUDGET" = "ಬಜೆಟ್";
+"MENU_SETTINGS" = "ಸೆಟ್ಟಿಂಗ್‌ಗಳು";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ಎಡಿಟ್ ಮಾಡಿ";
 "TRANSACTION_EDIT_CATEGORY" = "ವರ್ಗ";

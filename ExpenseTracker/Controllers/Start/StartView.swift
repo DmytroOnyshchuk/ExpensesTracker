@@ -15,6 +15,7 @@ struct StartView: View {
     @State private var input = AmountInput()
     @State private var showStatistics = false
     @State private var showHistory = false
+    @State private var showMenu = false
     @State private var comment = ""
     @State private var showCommentInput = false
     @State private var amountAttentionTrigger = 0
@@ -53,6 +54,9 @@ struct StartView: View {
             }
             .navigationDestination(isPresented: $showHistory) {
                 HistoryView()
+            }
+            .navigationDestination(isPresented: $showMenu) {
+                MenuView()
             }
         }
         .overlay {
@@ -123,7 +127,9 @@ struct StartView: View {
         }
     }
 
-    private func openMenu() {}
+    private func openMenu() {
+        showMenu = true
+    }
 
     private func openStatistics() {
         showStatistics = true

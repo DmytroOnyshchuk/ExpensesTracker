@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "ਇਤਿਹਾਸ";
 
+// MARK: - Menu
+"MENU_TITLE" = "ਮੀਨੂ";
+"MENU_BUDGET" = "ਬਜਟ";
+"MENU_SETTINGS" = "ਸੈਟਿੰਗਾਂ";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ਸੋਧੋ";
 "TRANSACTION_EDIT_CATEGORY" = "ਸ਼੍ਰੇਣੀ";

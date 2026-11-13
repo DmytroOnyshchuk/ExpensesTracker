@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "歷史記錄";
 
+// MARK: - Menu
+"MENU_TITLE" = "選單";
+"MENU_BUDGET" = "預算";
+"MENU_SETTINGS" = "設定";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "編輯";
 "TRANSACTION_EDIT_CATEGORY" = "類別";

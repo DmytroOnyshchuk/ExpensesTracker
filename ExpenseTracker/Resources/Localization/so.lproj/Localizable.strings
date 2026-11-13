@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Diiwaanka";
 
+// MARK: - Menu
+"MENU_TITLE" = "Liiska";
+"MENU_BUDGET" = "Miisaaniyad";
+"MENU_SETTINGS" = "Dejinta";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Wax ka beddel";
 "TRANSACTION_EDIT_CATEGORY" = "Qayb";

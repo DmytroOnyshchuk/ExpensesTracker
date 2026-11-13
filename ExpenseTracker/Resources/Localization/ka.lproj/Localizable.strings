@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "ისტორია";
 
+// MARK: - Menu
+"MENU_TITLE" = "მენიუ";
+"MENU_BUDGET" = "ბიუჯეტი";
+"MENU_SETTINGS" = "პარამეტრები";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "რედაქტირება";
 "TRANSACTION_EDIT_CATEGORY" = "კატეგორია";

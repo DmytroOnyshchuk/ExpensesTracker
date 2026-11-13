@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "تاریخ";
 
+// MARK: - Menu
+"MENU_TITLE" = "مینو";
+"MENU_BUDGET" = "بجٹ";
+"MENU_SETTINGS" = "ترتیبات";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ترمیم کریں";
 "TRANSACTION_EDIT_CATEGORY" = "زمرہ";

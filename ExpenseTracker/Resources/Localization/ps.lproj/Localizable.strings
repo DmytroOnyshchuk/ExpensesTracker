@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "تاریخچه";
 
+// MARK: - Menu
+"MENU_TITLE" = "مینو";
+"MENU_BUDGET" = "بودیجه";
+"MENU_SETTINGS" = "تنظیمات";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "سمول";
 "TRANSACTION_EDIT_CATEGORY" = "کټګوري";

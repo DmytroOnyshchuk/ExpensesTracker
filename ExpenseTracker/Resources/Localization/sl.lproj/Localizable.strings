@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Zgodovina";
 
+// MARK: - Menu
+"MENU_TITLE" = "Meni";
+"MENU_BUDGET" = "Proračun";
+"MENU_SETTINGS" = "Nastavitve";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Uredi";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorija";

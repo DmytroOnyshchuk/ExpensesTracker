@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "ប្រវត្តិ";
 
+// MARK: - Menu
+"MENU_TITLE" = "ម៉ឺនុយ";
+"MENU_BUDGET" = "ថវិកា";
+"MENU_SETTINGS" = "ការកំណត់";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "កែ";
 "TRANSACTION_EDIT_CATEGORY" = "ប្រភេទ";

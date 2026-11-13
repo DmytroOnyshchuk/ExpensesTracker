@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "내역";
 
+// MARK: - Menu
+"MENU_TITLE" = "메뉴";
+"MENU_BUDGET" = "예산";
+"MENU_SETTINGS" = "설정";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "편집";
 "TRANSACTION_EDIT_CATEGORY" = "카테고리";

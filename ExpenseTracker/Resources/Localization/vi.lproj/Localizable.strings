@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Lịch sử";
 
+// MARK: - Menu
+"MENU_TITLE" = "Menu";
+"MENU_BUDGET" = "Ngân sách";
+"MENU_SETTINGS" = "Cài đặt";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Sửa";
 "TRANSACTION_EDIT_CATEGORY" = "Danh mục";

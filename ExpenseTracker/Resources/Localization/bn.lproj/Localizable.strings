@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "ইতিহাস";
 
+// MARK: - Menu
+"MENU_TITLE" = "মেনু";
+"MENU_BUDGET" = "বাজেট";
+"MENU_SETTINGS" = "সেটিংস";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "সম্পাদনা";
 "TRANSACTION_EDIT_CATEGORY" = "বিভাগ";

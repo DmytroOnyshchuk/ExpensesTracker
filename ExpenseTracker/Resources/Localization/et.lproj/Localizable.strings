@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Ajalugu";
 
+// MARK: - Menu
+"MENU_TITLE" = "Menüü";
+"MENU_BUDGET" = "Eelarve";
+"MENU_SETTINGS" = "Seaded";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Muuda";
 "TRANSACTION_EDIT_CATEGORY" = "Kategooria";

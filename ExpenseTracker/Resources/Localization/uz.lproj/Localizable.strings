@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Tarix";
 
+// MARK: - Menu
+"MENU_TITLE" = "Menyu";
+"MENU_BUDGET" = "Budjet";
+"MENU_SETTINGS" = "Sozlamalar";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Tahrirlash";
 "TRANSACTION_EDIT_CATEGORY" = "Toifa";

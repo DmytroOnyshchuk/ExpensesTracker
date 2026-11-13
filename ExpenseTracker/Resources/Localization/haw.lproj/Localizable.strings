@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Mōʻaukala";
 
+// MARK: - Menu
+"MENU_TITLE" = "Papa kuhikuhi";
+"MENU_BUDGET" = "Moʻohelu kālā";
+"MENU_SETTINGS" = "Hoʻonohonoho";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Hoʻoponopono";
 "TRANSACTION_EDIT_CATEGORY" = "Māhele";

@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Geskiedenis";
 
+// MARK: - Menu
+"MENU_TITLE" = "Kieslys";
+"MENU_BUDGET" = "Begroting";
+"MENU_SETTINGS" = "Instellings";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Wysig";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorie";

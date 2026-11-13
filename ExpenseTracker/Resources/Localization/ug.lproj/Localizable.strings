@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "تارىخ";
 
+// MARK: - Menu
+"MENU_TITLE" = "تىزىملىك";
+"MENU_BUDGET" = "خامچوت";
+"MENU_SETTINGS" = "تەڭشەكلەر";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "تەھرىرلە";
 "TRANSACTION_EDIT_CATEGORY" = "تۈر";

@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Гісторыя";
 
+// MARK: - Menu
+"MENU_TITLE" = "Меню";
+"MENU_BUDGET" = "Бюджэт";
+"MENU_SETTINGS" = "Налады";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Рэдагаванне";
 "TRANSACTION_EDIT_CATEGORY" = "Катэгорыя";

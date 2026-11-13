@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "చరిత్ర";
 
+// MARK: - Menu
+"MENU_TITLE" = "మెనూ";
+"MENU_BUDGET" = "బడ్జెట్";
+"MENU_SETTINGS" = "సెట్టింగ్‌లు";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "సవరించండి";
 "TRANSACTION_EDIT_CATEGORY" = "వర్గం";

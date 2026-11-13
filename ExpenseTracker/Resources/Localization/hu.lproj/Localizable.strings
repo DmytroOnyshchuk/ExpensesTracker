@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Előzmények";
 
+// MARK: - Menu
+"MENU_TITLE" = "Menü";
+"MENU_BUDGET" = "Költségvetés";
+"MENU_SETTINGS" = "Beállítások";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Szerkesztés";
 "TRANSACTION_EDIT_CATEGORY" = "Kategória";

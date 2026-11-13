@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Dîrok";
 
+// MARK: - Menu
+"MENU_TITLE" = "Menû";
+"MENU_BUDGET" = "Budçe";
+"MENU_SETTINGS" = "Mîheng";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Sererast bike";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorî";

@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Hanes";
 
+// MARK: - Menu
+"MENU_TITLE" = "Dewislen";
+"MENU_BUDGET" = "Cyllideb";
+"MENU_SETTINGS" = "Gosodiadau";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Golygu";
 "TRANSACTION_EDIT_CATEGORY" = "Categori";

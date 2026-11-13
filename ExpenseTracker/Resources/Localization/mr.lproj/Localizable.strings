@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "इतिहास";
 
+// MARK: - Menu
+"MENU_TITLE" = "मेनू";
+"MENU_BUDGET" = "बजेट";
+"MENU_SETTINGS" = "सेटिंग्ज";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "संपादित करा";
 "TRANSACTION_EDIT_CATEGORY" = "श्रेणी";

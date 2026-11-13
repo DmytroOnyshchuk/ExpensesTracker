@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Cronologia";
 
+// MARK: - Menu
+"MENU_TITLE" = "Menu";
+"MENU_BUDGET" = "Budget";
+"MENU_SETTINGS" = "Impostazioni";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Modifica";
 "TRANSACTION_EDIT_CATEGORY" = "Categoria";

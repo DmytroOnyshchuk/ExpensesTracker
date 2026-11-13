@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Таърих";
 
+// MARK: - Menu
+"MENU_TITLE" = "Меню";
+"MENU_BUDGET" = "Буҷет";
+"MENU_SETTINGS" = "Танзимот";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Таҳрир";
 "TRANSACTION_EDIT_CATEGORY" = "Категория";

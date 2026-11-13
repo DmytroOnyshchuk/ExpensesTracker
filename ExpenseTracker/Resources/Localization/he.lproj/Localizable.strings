@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "היסטוריה";
 
+// MARK: - Menu
+"MENU_TITLE" = "תפריט";
+"MENU_BUDGET" = "תקציב";
+"MENU_SETTINGS" = "הגדרות";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "עריכה";
 "TRANSACTION_EDIT_CATEGORY" = "קטגוריה";

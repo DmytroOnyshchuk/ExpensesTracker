@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "ታሪክ";
 
+// MARK: - Menu
+"MENU_TITLE" = "ምናሌ";
+"MENU_BUDGET" = "በጀት";
+"MENU_SETTINGS" = "ቅንብሮች";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "አርትዕ";
 "TRANSACTION_EDIT_CATEGORY" = "ምድብ";

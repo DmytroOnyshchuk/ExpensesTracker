@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Riwayat";
 
+// MARK: - Menu
+"MENU_TITLE" = "Menu";
+"MENU_BUDGET" = "Anggaran";
+"MENU_SETTINGS" = "Pengaturan";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Edit";
 "TRANSACTION_EDIT_CATEGORY" = "Kategori";

@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Taryh";
 
+// MARK: - Menu
+"MENU_TITLE" = "Menýu";
+"MENU_BUDGET" = "Býujet";
+"MENU_SETTINGS" = "Sazlamalar";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Üýtget";
 "TRANSACTION_EDIT_CATEGORY" = "Kategoriýa";

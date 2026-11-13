@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Historia";
 
+// MARK: - Menu
+"MENU_TITLE" = "Menua";
+"MENU_BUDGET" = "Aurrekontua";
+"MENU_SETTINGS" = "Ezarpenak";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Editatu";
 "TRANSACTION_EDIT_CATEGORY" = "Kategoria";

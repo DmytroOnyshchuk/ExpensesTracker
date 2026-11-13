@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "مێژوو";
 
+// MARK: - Menu
+"MENU_TITLE" = "لیست";
+"MENU_BUDGET" = "بودجە";
+"MENU_SETTINGS" = "ڕێکخستنەکان";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "دەستکاری";
 "TRANSACTION_EDIT_CATEGORY" = "پۆل";

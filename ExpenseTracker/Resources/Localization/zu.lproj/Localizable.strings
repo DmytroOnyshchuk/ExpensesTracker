@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Umlando";
 
+// MARK: - Menu
+"MENU_TITLE" = "Imenyu";
+"MENU_BUDGET" = "Isabelomali";
+"MENU_SETTINGS" = "Izilungiselelo";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Hlela";
 "TRANSACTION_EDIT_CATEGORY" = "Isigaba";

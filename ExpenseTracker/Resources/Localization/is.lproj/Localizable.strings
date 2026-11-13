@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Saga";
 
+// MARK: - Menu
+"MENU_TITLE" = "Valmynd";
+"MENU_BUDGET" = "Fjárhagsáætlun";
+"MENU_SETTINGS" = "Stillingar";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Breyta";
 "TRANSACTION_EDIT_CATEGORY" = "Flokkur";

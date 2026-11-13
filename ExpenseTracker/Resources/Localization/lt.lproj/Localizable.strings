@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Istorija";
 
+// MARK: - Menu
+"MENU_TITLE" = "Meniu";
+"MENU_BUDGET" = "Biudžetas";
+"MENU_SETTINGS" = "Nustatymai";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Redaguoti";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorija";

@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Geçmiş";
 
+// MARK: - Menu
+"MENU_TITLE" = "Menü";
+"MENU_BUDGET" = "Bütçe";
+"MENU_SETTINGS" = "Ayarlar";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Düzenle";
 "TRANSACTION_EDIT_CATEGORY" = "Kategori";

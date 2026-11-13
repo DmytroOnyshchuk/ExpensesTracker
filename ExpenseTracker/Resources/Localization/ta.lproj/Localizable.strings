@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "வரலாறு";
 
+// MARK: - Menu
+"MENU_TITLE" = "மெனு";
+"MENU_BUDGET" = "பட்ஜெட்";
+"MENU_SETTINGS" = "அமைப்புகள்";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "திருத்து";
 "TRANSACTION_EDIT_CATEGORY" = "வகை";

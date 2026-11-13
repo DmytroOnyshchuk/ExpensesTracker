@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Istoric";
 
+// MARK: - Menu
+"MENU_TITLE" = "Meniu";
+"MENU_BUDGET" = "Buget";
+"MENU_SETTINGS" = "Setări";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Editează";
 "TRANSACTION_EDIT_CATEGORY" = "Categorie";

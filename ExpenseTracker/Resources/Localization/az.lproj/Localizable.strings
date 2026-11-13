@@ -53,6 +53,11 @@
 // MARK: - History
 "HISTORY_TITLE" = "Tarixçə";
 
+// MARK: - Menu
+"MENU_TITLE" = "Menyu";
+"MENU_BUDGET" = "Büdcə";
+"MENU_SETTINGS" = "Ayarlar";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Redaktə";
 "TRANSACTION_EDIT_CATEGORY" = "Kateqoriya";
