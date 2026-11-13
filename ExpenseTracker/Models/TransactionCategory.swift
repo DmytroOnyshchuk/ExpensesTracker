@@ -17,13 +17,15 @@ final class TransactionCategory {
     var categoryIcon: CategoryIcon
     var isDirectory: Bool = false
     var parentUuid: UUID?
+    var sortIndex: Int = 0
 
-    init(name: TransactionCategoryName, categoryIcon: CategoryIcon, isDirectory: Bool = false, parentUuid: UUID? = nil) {
+    init(name: TransactionCategoryName, categoryIcon: CategoryIcon, isDirectory: Bool = false, parentUuid: UUID? = nil, sortIndex: Int = 0) {
         self.uuid = UUID()
         self.name = name
         self.categoryIcon = categoryIcon
         self.isDirectory = isDirectory
         self.parentUuid = parentUuid
+        self.sortIndex = sortIndex
     }
 
     var isMainCategory: Bool {
@@ -40,11 +42,14 @@ final class TransactionCategory {
 }
 
 extension [TransactionCategory] {
-    /// The order in which categories are shown in grids: folders first, then by name within each group.
+    /// The order in which categories are shown: folders first, then by user-defined sort index, then by name.
     var inDisplayOrder: [TransactionCategory] {
         sorted {
             if $0.isDirectory != $1.isDirectory {
                 return $0.isDirectory
+            }
+            if $0.sortIndex != $1.sortIndex {
+                return $0.sortIndex < $1.sortIndex
             }
             return $0.name.localized < $1.name.localized
         }
@@ -53,6 +58,26 @@ extension [TransactionCategory] {
     /// Top-level categories, i.e. those that are not inside a folder.
     var topLevel: [TransactionCategory] {
         filter { !($0.parent(from: self)?.isDirectory ?? false) }
+    }
+
+    var nextSortIndex: Int {
+        (map(\.sortIndex).max() ?? -1) + 1
+    }
+
+    func reorder(fromOffsets source: IndexSet, toOffset destination: Int, among allCategories: [TransactionCategory]) {
+        let ordered = allCategories.inDisplayOrder
+        if Set(ordered.map(\.sortIndex)).count != ordered.count {
+            for (index, category) in ordered.enumerated() {
+                category.sortIndex = index
+            }
+        }
+
+        let slots = map(\.sortIndex).sorted()
+        var reordered = self
+        reordered.move(fromOffsets: source, toOffset: destination)
+        for (category, slot) in zip(reordered, slots) {
+            category.sortIndex = slot
+        }
     }
 }
 

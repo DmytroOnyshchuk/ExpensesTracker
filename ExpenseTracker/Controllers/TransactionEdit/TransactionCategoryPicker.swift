@@ -14,12 +14,9 @@ struct TransactionCategoryPicker: View {
     let onSelect: (TransactionCategory) -> Void
 
     @Query private var categories: [TransactionCategory]
+    @Environment(\.modelContext) private var modelContext
     @State private var openedFolder: TransactionCategory?
     @State private var showAddCategory = false
-
-    private var gridLayout: [GridItem] {
-        Array(repeating: GridItem(.flexible(), spacing: 20), count: 4)
-    }
 
     private var visibleCategories: [TransactionCategory] {
         guard let folder else { return categories.topLevel.inDisplayOrder }
@@ -27,21 +24,21 @@ struct TransactionCategoryPicker: View {
     }
 
     var body: some View {
-        ScrollView(.vertical) {
-            LazyVGrid(columns: gridLayout, spacing: 16) {
-                ForEach(visibleCategories, id: \.id) { category in
-                    CategoryCell(category: category) {
-                        if category.isDirectory {
-                            openedFolder = category
-                        } else {
-                            onSelect(category)
-                        }
+        List {
+            ForEach(visibleCategories, id: \.id) { category in
+                CategoryRow(category: category, showsChevron: category.isDirectory) {
+                    if category.isDirectory {
+                        openedFolder = category
+                    } else {
+                        onSelect(category)
                     }
                 }
+                .categoryListRow(isLast: category.id == visibleCategories.last?.id)
             }
-            .padding(.horizontal, 32)
-            .padding(.vertical, 16)
+            .onMove(perform: moveCategories)
         }
+        .listStyle(.plain)
+        .scrollContentBackground(.hidden)
         .background(.appMain)
         .navigationTitle(folder?.name.localized ?? L10n.transactionEditCategoriesTitle)
         .navigationBarTitleDisplayMode(.inline)
@@ -61,6 +58,11 @@ struct TransactionCategoryPicker: View {
         .sheet(isPresented: $showAddCategory) {
             EditCategoryView()
         }
+    }
+
+    private func moveCategories(from source: IndexSet, to destination: Int) {
+        visibleCategories.reorder(fromOffsets: source, toOffset: destination, among: categories)
+        try? modelContext.save()
     }
 }
 

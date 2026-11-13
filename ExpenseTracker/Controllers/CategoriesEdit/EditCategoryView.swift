@@ -393,7 +393,9 @@ struct EditCategoryView: View {
         if let category {
             draft.apply(to: category)
         } else {
-            modelContext.insert(draft.makeCategory())
+            let newCategory = draft.makeCategory()
+            newCategory.sortIndex = allCategories.nextSortIndex
+            modelContext.insert(newCategory)
         }
         try? modelContext.save()
     }

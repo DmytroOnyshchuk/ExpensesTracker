@@ -20,16 +20,25 @@ struct CategoriesEdit: View {
     @State private var showAddFolderAlert = false
     @State private var newFolderName: String = ""
 
-    private var gridLayout: [GridItem] {
-        Array(repeating: GridItem(.flexible(), spacing: 20), count: 4)
+    private var orderedCategories: [TransactionCategory] {
+        categories.inDisplayOrder
     }
 
     var body: some View {
-        ScrollView(.vertical) {
-            categoryGrid
-                .padding(.horizontal, 32)
-                .padding(.vertical, 16)
+        List {
+            ForEach(orderedCategories, id: \.id) { category in
+                CategoryRow(
+                    category: category,
+                    subtitle: category.parent(from: categories)?.name.localized
+                ) {
+                    selectedCategory = category
+                }
+                .categoryListRow(isLast: category.id == orderedCategories.last?.id)
+            }
+            .onMove(perform: moveCategories)
         }
+        .listStyle(.plain)
+        .scrollContentBackground(.hidden)
         .background(.appMain)
         .navigationTitle(L10n.categoriesEditTitle)
         .toolbar {
@@ -68,14 +77,9 @@ struct CategoriesEdit: View {
         }
     }
 
-    private var categoryGrid: some View {
-        LazyVGrid(columns: gridLayout, spacing: 16) {
-            ForEach(categories.topLevel.inDisplayOrder, id: \.id) { category in
-                CategoryCell(category: category) {
-                    selectedCategory = category
-                }
-            }
-        }
+    private func moveCategories(from source: IndexSet, to destination: Int) {
+        orderedCategories.reorder(fromOffsets: source, toOffset: destination, among: categories)
+        try? modelContext.save()
     }
 
     // MARK: - Creating a new folder
@@ -86,7 +90,8 @@ struct CategoriesEdit: View {
         let newFolder = TransactionCategory(
             name: .custom(newFolderName),
             categoryIcon: CategoryIcon(name: "folder", iconColor: .yellow),
-            isDirectory: true
+            isDirectory: true,
+            sortIndex: categories.nextSortIndex
         )
         modelContext.insert(newFolder)
         try? modelContext.save()
