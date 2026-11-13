@@ -87,6 +87,7 @@ struct StatisticsView: View {
 
     private var periodPicker: some View {
         SegmentedControl(items: StatisticsPeriod.allCases, selection: $period, title: \.title)
+            .sensoryFeedback(.selection, trigger: period)
             .padding(.horizontal, 64)
     }
 

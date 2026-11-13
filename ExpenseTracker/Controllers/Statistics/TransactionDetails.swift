@@ -57,6 +57,7 @@ struct TransactionDetails: View {
 
         List {
             SegmentedControl(items: TransactionsSorting.allCases, selection: $sorting, title: \.title)
+                .sensoryFeedback(.selection, trigger: sorting)
                 .padding(.horizontal, 80)
                 .padding(.vertical, 16)
                 .listRowInsets(EdgeInsets())
