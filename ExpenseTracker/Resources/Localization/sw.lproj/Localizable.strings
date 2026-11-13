@@ -21,6 +21,7 @@
 "REMOVE" = "Futa";
 "DELETE" = "Futa";
 "CANCEL" = "Ghairi";
+"UNDO" = "Tendua";
 "CLEAR" = "Futa";
 "CLOSE" = "Funga";
 "RETRY" = "Jaribu tena";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Hakuna miamala";
 "TRANSACTIONS_LIST_DELETE" = "Futa";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Muamala umeongezwa";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Muamala umefutwa";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Matumizi ya leo";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Matumizi ya jana";
 

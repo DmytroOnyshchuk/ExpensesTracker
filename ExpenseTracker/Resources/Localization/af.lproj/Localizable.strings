@@ -21,6 +21,7 @@
 "REMOVE" = "Vee uit";
 "DELETE" = "Vee uit";
 "CANCEL" = "Kanselleer";
+"UNDO" = "Ontdoen";
 "CLEAR" = "Maak skoon";
 "CLOSE" = "Maak toe";
 "RETRY" = "Probeer weer";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Geen transaksies nie";
 "TRANSACTIONS_LIST_DELETE" = "Vee uit";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transaksie bygevoeg";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transaksie uitgevee";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Vandag spandeer";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Gister spandeer";
 

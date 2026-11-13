@@ -21,6 +21,7 @@
 "REMOVE" = "Läschen";
 "DELETE" = "Läschen";
 "CANCEL" = "Ofbriechen";
+"UNDO" = "Réckgängeg maachen";
 "CLEAR" = "Läschen";
 "CLOSE" = "Zoumaachen";
 "RETRY" = "Nach eng Kéier probéieren";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Keng Transaktiounen";
 "TRANSACTIONS_LIST_DELETE" = "Läschen";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transaktioun bäigefüügt";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transaktioun geläscht";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Haut ausginn";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Gëschter ausginn";
 

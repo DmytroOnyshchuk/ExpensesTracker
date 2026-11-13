@@ -21,6 +21,7 @@
 "REMOVE" = "Жою";
 "DELETE" = "Жою";
 "CANCEL" = "Бас тарту";
+"UNDO" = "Болдырмау";
 "CLEAR" = "Тазалау";
 "CLOSE" = "Жабу";
 "RETRY" = "Қайталау";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Транзакциялар жоқ";
 "TRANSACTIONS_LIST_DELETE" = "Жою";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Транзакция қосылды";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Транзакция жойылды";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Бүгін жұмсалды";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Кеше жұмсалды";
 

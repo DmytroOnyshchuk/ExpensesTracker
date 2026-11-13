@@ -21,6 +21,7 @@
 "REMOVE" = "Vymazať";
 "DELETE" = "Vymazať";
 "CANCEL" = "Zrušiť";
+"UNDO" = "Vrátiť späť";
 "CLEAR" = "Vymazať";
 "CLOSE" = "Zavrieť";
 "RETRY" = "Skúsiť znova";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Žiadne transakcie";
 "TRANSACTIONS_LIST_DELETE" = "Vymazať";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transakcia pridaná";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transakcia vymazaná";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Minuté dnes";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Minuté včera";
 

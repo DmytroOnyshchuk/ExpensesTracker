@@ -21,6 +21,7 @@
 "REMOVE" = "Kustuta";
 "DELETE" = "Kustuta";
 "CANCEL" = "Tühista";
+"UNDO" = "Võta tagasi";
 "CLEAR" = "Tühjenda";
 "CLOSE" = "Sulge";
 "RETRY" = "Proovi uuesti";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Tehinguid pole";
 "TRANSACTIONS_LIST_DELETE" = "Kustuta";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Tehing lisatud";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Tehing kustutatud";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Täna kulutatud";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Eile kulutatud";
 

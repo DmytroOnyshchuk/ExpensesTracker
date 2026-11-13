@@ -21,6 +21,7 @@
 "REMOVE" = "తొలగించండి";
 "DELETE" = "తొలగించండి";
 "CANCEL" = "రద్దు చేయండి";
+"UNDO" = "రద్దు చేయండి";
 "CLEAR" = "క్లియర్ చేయి";
 "CLOSE" = "మూసివేయండి";
 "RETRY" = "మళ్లీ ప్రయత్నించండి";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "లావాదేవీలు లేవు";
 "TRANSACTIONS_LIST_DELETE" = "తొలగించండి";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "లావాదేవీ జోడించబడింది";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "లావాదేవీ తొలగించబడింది";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ఈరోజు ఖర్చు";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "నిన్నటి ఖర్చు";
 

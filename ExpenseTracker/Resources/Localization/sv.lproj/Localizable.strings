@@ -21,6 +21,7 @@
 "REMOVE" = "Radera";
 "DELETE" = "Radera";
 "CANCEL" = "Avbryt";
+"UNDO" = "Ångra";
 "CLEAR" = "Rensa";
 "CLOSE" = "Stäng";
 "RETRY" = "Försök igen";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Inga transaktioner";
 "TRANSACTIONS_LIST_DELETE" = "Radera";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transaktion tillagd";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transaktion raderad";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Spenderat i dag";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Spenderat i går";
 

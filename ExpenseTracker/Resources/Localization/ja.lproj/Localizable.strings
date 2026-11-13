@@ -21,6 +21,7 @@
 "REMOVE" = "削除";
 "DELETE" = "削除";
 "CANCEL" = "キャンセル";
+"UNDO" = "元に戻す";
 "CLEAR" = "クリア";
 "CLOSE" = "閉じる";
 "RETRY" = "再試行";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "取引がありません";
 "TRANSACTIONS_LIST_DELETE" = "削除";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "取引を追加しました";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "取引を削除しました";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "今日の支出";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "昨日の支出";
 

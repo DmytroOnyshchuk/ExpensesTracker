@@ -21,6 +21,7 @@
 "REMOVE" = "Удалить";
 "DELETE" = "Удалить";
 "CANCEL" = "Отмена";
+"UNDO" = "Отменить";
 "CLEAR" = "Очистить";
 "CLOSE" = "Закрыть";
 "RETRY" = "Повторить";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Нет транзакций";
 "TRANSACTIONS_LIST_DELETE" = "Удалить";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Транзакция добавлена";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Транзакция удалена";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Потрачено сегодня";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Потрачено вчера";
 

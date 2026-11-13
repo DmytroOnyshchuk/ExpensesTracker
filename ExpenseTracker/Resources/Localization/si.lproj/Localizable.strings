@@ -21,6 +21,7 @@
 "REMOVE" = "මකන්න";
 "DELETE" = "මකන්න";
 "CANCEL" = "අවලංගු කරන්න";
+"UNDO" = "පසුගමනය";
 "CLEAR" = "හිස් කරන්න";
 "CLOSE" = "වසන්න";
 "RETRY" = "නැවත උත්සාහ කරන්න";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ගනුදෙනු නැත";
 "TRANSACTIONS_LIST_DELETE" = "මකන්න";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "ගනුදෙනුව එක් කළා";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "ගනුදෙනුව මකා දැමුවා";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "අද වියදම";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ඊයේ වියදම";
 

@@ -21,6 +21,7 @@
 "REMOVE" = "நீக்கு";
 "DELETE" = "நீக்கு";
 "CANCEL" = "ரத்துசெய்";
+"UNDO" = "செயல்தவிர்";
 "CLEAR" = "அழி";
 "CLOSE" = "மூடு";
 "RETRY" = "மீண்டும் முயலவும்";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "பரிவர்த்தனைகள் இல்லை";
 "TRANSACTIONS_LIST_DELETE" = "நீக்கு";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "பரிவர்த்தனை சேர்க்கப்பட்டது";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "பரிவர்த்தனை நீக்கப்பட்டது";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "இன்றைய செலவு";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "நேற்றைய செலவு";
 

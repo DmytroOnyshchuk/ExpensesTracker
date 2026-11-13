@@ -21,6 +21,7 @@
 "REMOVE" = "Stizzar";
 "DELETE" = "Stizzar";
 "CANCEL" = "Interrumper";
+"UNDO" = "Revocar";
 "CLEAR" = "Stizzar";
 "CLOSE" = "Serrar";
 "RETRY" = "Empruvar anc ina giada";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Naginas transacziuns";
 "TRANSACTIONS_LIST_DELETE" = "Stizzar";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transacziun agiuntada";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transacziun stizzada";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Spendì oz";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Spendì ier";
 

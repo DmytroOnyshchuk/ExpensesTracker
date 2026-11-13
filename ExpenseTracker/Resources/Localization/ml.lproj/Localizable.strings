@@ -21,6 +21,7 @@
 "REMOVE" = "ഇല്ലാതാക്കുക";
 "DELETE" = "ഇല്ലാതാക്കുക";
 "CANCEL" = "റദ്ദാക്കുക";
+"UNDO" = "പഴയപടിയാക്കുക";
 "CLEAR" = "മായ്ക്കുക";
 "CLOSE" = "അടയ്ക്കുക";
 "RETRY" = "വീണ്ടും ശ്രമിക്കുക";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ഇടപാടുകളൊന്നുമില്ല";
 "TRANSACTIONS_LIST_DELETE" = "ഇല്ലാതാക്കുക";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "ഇടപാട് ചേർത്തു";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "ഇടപാട് ഇല്ലാതാക്കി";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ഇന്നത്തെ ചെലവ്";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ഇന്നലത്തെ ചെലവ്";
 

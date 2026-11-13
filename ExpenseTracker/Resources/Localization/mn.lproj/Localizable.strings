@@ -21,6 +21,7 @@
 "REMOVE" = "Устгах";
 "DELETE" = "Устгах";
 "CANCEL" = "Цуцлах";
+"UNDO" = "Буцаах";
 "CLEAR" = "Арилгах";
 "CLOSE" = "Хаах";
 "RETRY" = "Дахин оролдох";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Гүйлгээ алга";
 "TRANSACTIONS_LIST_DELETE" = "Устгах";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Гүйлгээ нэмэгдлээ";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Гүйлгээ устгагдлаа";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Өнөөдөр зарцуулсан";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Өчигдөр зарцуулсан";
 

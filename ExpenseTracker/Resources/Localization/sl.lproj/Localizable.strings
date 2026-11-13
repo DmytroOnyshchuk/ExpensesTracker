@@ -21,6 +21,7 @@
 "REMOVE" = "Izbriši";
 "DELETE" = "Izbriši";
 "CANCEL" = "Prekliči";
+"UNDO" = "Razveljavi";
 "CLEAR" = "Počisti";
 "CLOSE" = "Zapri";
 "RETRY" = "Poskusi znova";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ni transakcij";
 "TRANSACTIONS_LIST_DELETE" = "Izbriši";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transakcija dodana";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transakcija izbrisana";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Porabljeno danes";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Porabljeno včeraj";
 

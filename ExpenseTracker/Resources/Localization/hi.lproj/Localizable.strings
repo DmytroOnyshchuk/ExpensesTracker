@@ -21,6 +21,7 @@
 "REMOVE" = "हटाएँ";
 "DELETE" = "हटाएँ";
 "CANCEL" = "रद्द करें";
+"UNDO" = "पूर्ववत करें";
 "CLEAR" = "साफ़ करें";
 "CLOSE" = "बंद करें";
 "RETRY" = "फिर से कोशिश करें";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "कोई लेन-देन नहीं";
 "TRANSACTIONS_LIST_DELETE" = "हटाएँ";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "लेनदेन जोड़ा गया";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "लेनदेन हटाया गया";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "आज खर्च";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "कल खर्च";
 

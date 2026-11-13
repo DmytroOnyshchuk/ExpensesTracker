@@ -138,8 +138,7 @@ struct HistoryView: View {
     }
 
     private func delete(_ transaction: Transaction) {
-        modelContext.delete(transaction)
-        try? modelContext.save()
+        modelContext.deleteWithUndo(transaction)
     }
 
     private func displayedStart(in starts: [Date]) -> Date {

@@ -174,6 +174,12 @@ internal enum L10n {
   internal static let transactionsListSpentToday = L10n.tr("Localizable", "TRANSACTIONS_LIST_SPENT_TODAY", fallback: "Spent today")
   /// Spent yesterday
   internal static let transactionsListSpentYesterday = L10n.tr("Localizable", "TRANSACTIONS_LIST_SPENT_YESTERDAY", fallback: "Spent yesterday")
+  /// Transaction added
+  internal static let transactionsListTransactionAdded = L10n.tr("Localizable", "TRANSACTIONS_LIST_TRANSACTION_ADDED", fallback: "Transaction added")
+  /// Transaction deleted
+  internal static let transactionsListTransactionDeleted = L10n.tr("Localizable", "TRANSACTIONS_LIST_TRANSACTION_DELETED", fallback: "Transaction deleted")
+  /// Undo
+  internal static let undo = L10n.tr("Localizable", "UNDO", fallback: "Undo")
   /// Update
   internal static let update = L10n.tr("Localizable", "UPDATE", fallback: "Update")
   /// Yes

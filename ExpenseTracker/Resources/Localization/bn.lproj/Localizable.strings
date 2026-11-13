@@ -21,6 +21,7 @@
 "REMOVE" = "মুছুন";
 "DELETE" = "মুছুন";
 "CANCEL" = "বাতিল";
+"UNDO" = "পূর্বাবস্থায় ফেরান";
 "CLEAR" = "মুছুন";
 "CLOSE" = "বন্ধ করুন";
 "RETRY" = "আবার চেষ্টা করুন";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "কোনো লেনদেন নেই";
 "TRANSACTIONS_LIST_DELETE" = "মুছুন";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "লেনদেন যোগ করা হয়েছে";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "লেনদেন মুছে ফেলা হয়েছে";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "আজ খরচ হয়েছে";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "গতকাল খরচ হয়েছে";
 

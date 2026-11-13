@@ -21,6 +21,7 @@
 "REMOVE" = "წაშლა";
 "DELETE" = "წაშლა";
 "CANCEL" = "გაუქმება";
+"UNDO" = "გაუქმება";
 "CLEAR" = "გასუფთავება";
 "CLOSE" = "დახურვა";
 "RETRY" = "ხელახლა ცდა";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ტრანზაქციები არ არის";
 "TRANSACTIONS_LIST_DELETE" = "წაშლა";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "ტრანზაქცია დაემატა";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "ტრანზაქცია წაიშალა";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "დღეს დახარჯული";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "გუშინ დახარჯული";
 

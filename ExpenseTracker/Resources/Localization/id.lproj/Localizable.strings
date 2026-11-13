@@ -21,6 +21,7 @@
 "REMOVE" = "Hapus";
 "DELETE" = "Hapus";
 "CANCEL" = "Batal";
+"UNDO" = "Urungkan";
 "CLEAR" = "Hapus";
 "CLOSE" = "Tutup";
 "RETRY" = "Coba lagi";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Tidak ada transaksi";
 "TRANSACTIONS_LIST_DELETE" = "Hapus";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transaksi ditambahkan";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transaksi dihapus";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Pengeluaran hari ini";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Pengeluaran kemarin";
 

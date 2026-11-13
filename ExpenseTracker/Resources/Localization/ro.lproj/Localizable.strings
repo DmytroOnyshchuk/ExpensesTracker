@@ -21,6 +21,7 @@
 "REMOVE" = "Șterge";
 "DELETE" = "Șterge";
 "CANCEL" = "Anulează";
+"UNDO" = "Anulează";
 "CLEAR" = "Șterge";
 "CLOSE" = "Închide";
 "RETRY" = "Reîncearcă";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nicio tranzacție";
 "TRANSACTIONS_LIST_DELETE" = "Șterge";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Tranzacție adăugată";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Tranzacție ștearsă";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Cheltuit azi";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Cheltuit ieri";
 

@@ -21,6 +21,7 @@
 "REMOVE" = "ဖျက်ရန်";
 "DELETE" = "ဖျက်ရန်";
 "CANCEL" = "မလုပ်တော့ပါ";
+"UNDO" = "ပြန်ဖျက်ရန်";
 "CLEAR" = "ရှင်းလင်းရန်";
 "CLOSE" = "ပိတ်ရန်";
 "RETRY" = "ထပ်စမ်းရန်";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ငွေလွှဲမှတ်တမ်း မရှိပါ";
 "TRANSACTIONS_LIST_DELETE" = "ဖျက်ရန်";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "ငွေလွှဲမှု ထည့်ပြီးပါပြီ";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "ငွေလွှဲမှု ဖျက်ပြီးပါပြီ";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ယနေ့ အသုံးစရိတ်";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "မနေ့က အသုံးစရိတ်";
 

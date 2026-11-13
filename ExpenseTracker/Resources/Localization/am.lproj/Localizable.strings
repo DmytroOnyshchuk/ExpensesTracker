@@ -21,6 +21,7 @@
 "REMOVE" = "ሰርዝ";
 "DELETE" = "ሰርዝ";
 "CANCEL" = "ይቅር";
+"UNDO" = "ቀልብስ";
 "CLEAR" = "አጽዳ";
 "CLOSE" = "ዝጋ";
 "RETRY" = "እንደገና ሞክር";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ምንም ግብይቶች የሉም";
 "TRANSACTIONS_LIST_DELETE" = "ሰርዝ";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "ግብይት ታክሏል";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "ግብይት ተሰርዟል";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ዛሬ የወጣ";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ትናንት የወጣ";
 

@@ -21,6 +21,7 @@
 "REMOVE" = "કાઢી નાખો";
 "DELETE" = "કાઢી નાખો";
 "CANCEL" = "રદ કરો";
+"UNDO" = "પૂર્વવત્ કરો";
 "CLEAR" = "સાફ કરો";
 "CLOSE" = "બંધ કરો";
 "RETRY" = "ફરી પ્રયાસ કરો";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "કોઈ વ્યવહાર નથી";
 "TRANSACTIONS_LIST_DELETE" = "કાઢી નાખો";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "વ્યવહાર ઉમેરાયો";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "વ્યવહાર કાઢી નખાયો";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "આજે ખર્ચ";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ગઈકાલે ખર્ચ";
 

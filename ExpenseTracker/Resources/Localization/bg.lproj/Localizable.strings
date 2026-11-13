@@ -21,6 +21,7 @@
 "REMOVE" = "Изтриване";
 "DELETE" = "Изтриване";
 "CANCEL" = "Отказ";
+"UNDO" = "Отмяна";
 "CLEAR" = "Изчисти";
 "CLOSE" = "Затваряне";
 "RETRY" = "Повторен опит";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Няма транзакции";
 "TRANSACTIONS_LIST_DELETE" = "Изтриване";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Транзакцията е добавена";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Транзакцията е изтрита";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Похарчено днес";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Похарчено вчера";
 

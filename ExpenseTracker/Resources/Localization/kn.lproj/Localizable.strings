@@ -21,6 +21,7 @@
 "REMOVE" = "ಅಳಿಸಿ";
 "DELETE" = "ಅಳಿಸಿ";
 "CANCEL" = "ರದ್ದುಮಾಡಿ";
+"UNDO" = "ರದ್ದುಮಾಡಿ";
 "CLEAR" = "ತೆರವುಗೊಳಿಸಿ";
 "CLOSE" = "ಮುಚ್ಚಿ";
 "RETRY" = "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ಯಾವುದೇ ವಹಿವಾಟುಗಳಿಲ್ಲ";
 "TRANSACTIONS_LIST_DELETE" = "ಅಳಿಸಿ";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "ವಹಿವಾಟು ಸೇರಿಸಲಾಗಿದೆ";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "ವಹಿವಾಟು ಅಳಿಸಲಾಗಿದೆ";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ಇಂದಿನ ಖರ್ಚು";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ನಿನ್ನೆಯ ಖರ್ಚು";
 

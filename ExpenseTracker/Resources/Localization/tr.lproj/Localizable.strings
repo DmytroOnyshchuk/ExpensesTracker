@@ -21,6 +21,7 @@
 "REMOVE" = "Sil";
 "DELETE" = "Sil";
 "CANCEL" = "Vazgeç";
+"UNDO" = "Geri al";
 "CLEAR" = "Temizle";
 "CLOSE" = "Kapat";
 "RETRY" = "Yeniden dene";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "İşlem yok";
 "TRANSACTIONS_LIST_DELETE" = "Sil";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "İşlem eklendi";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "İşlem silindi";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Bugün harcanan";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Dün harcanan";
 

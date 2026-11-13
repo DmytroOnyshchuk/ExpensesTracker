@@ -58,6 +58,7 @@ struct StartView: View {
             }
         }
         .animation(.easeInOut(duration: 0.2), value: showCommentInput)
+        .undoToast()
     }
 
     private var commentButton: some View {
@@ -133,10 +134,22 @@ struct StartView: View {
             note: comment.isBlank ? nil : comment
         )
 
+        let previousInput = input
+        let previousComment = comment
+
         modelContext.insert(transaction)
         FeedbackManager.transactionAdded()
         input.reset()
         comment = ""
+
+        UndoToastCenter.shared.show(L10n.transactionsListTransactionAdded) {
+            modelContext.delete(transaction)
+            try? modelContext.save()
+            if input.isEmpty, comment.isBlank {
+                input = previousInput
+                comment = previousComment
+            }
+        }
         return true
     }
 }

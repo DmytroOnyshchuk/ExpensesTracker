@@ -21,6 +21,7 @@
 "REMOVE" = "हटवा";
 "DELETE" = "हटवा";
 "CANCEL" = "रद्द करा";
+"UNDO" = "पूर्ववत करा";
 "CLEAR" = "साफ करा";
 "CLOSE" = "बंद करा";
 "RETRY" = "पुन्हा प्रयत्न करा";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "कोणतेही व्यवहार नाहीत";
 "TRANSACTIONS_LIST_DELETE" = "हटवा";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "व्यवहार जोडला";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "व्यवहार हटवला";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "आजचा खर्च";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "कालचा खर्च";
 

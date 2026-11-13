@@ -21,6 +21,7 @@
 "REMOVE" = "Ezabatu";
 "DELETE" = "Ezabatu";
 "CANCEL" = "Utzi";
+"UNDO" = "Desegin";
 "CLEAR" = "Garbitu";
 "CLOSE" = "Itxi";
 "RETRY" = "Saiatu berriro";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ez dago transakziorik";
 "TRANSACTIONS_LIST_DELETE" = "Ezabatu";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transakzioa gehitu da";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transakzioa ezabatu da";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Gaur gastatua";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Atzo gastatua";
 

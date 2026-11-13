@@ -21,6 +21,7 @@
 "REMOVE" = "Slet";
 "DELETE" = "Slet";
 "CANCEL" = "Annuller";
+"UNDO" = "Fortryd";
 "CLEAR" = "Ryd";
 "CLOSE" = "Luk";
 "RETRY" = "Prøv igen";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ingen transaktioner";
 "TRANSACTIONS_LIST_DELETE" = "Slet";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transaktion tilføjet";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transaktion slettet";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Brugt i dag";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Brugt i går";
 

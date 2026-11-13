@@ -21,6 +21,7 @@
 "REMOVE" = "Избриши";
 "DELETE" = "Избриши";
 "CANCEL" = "Откажи";
+"UNDO" = "Врати";
 "CLEAR" = "Исчисти";
 "CLOSE" = "Затвори";
 "RETRY" = "Обиди се повторно";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Нема трансакции";
 "TRANSACTIONS_LIST_DELETE" = "Избриши";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Трансакцијата е додадена";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Трансакцијата е избришана";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Потрошено денес";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Потрошено вчера";
 

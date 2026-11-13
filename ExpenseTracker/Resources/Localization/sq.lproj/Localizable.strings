@@ -21,6 +21,7 @@
 "REMOVE" = "Fshi";
 "DELETE" = "Fshi";
 "CANCEL" = "Anulo";
+"UNDO" = "Zhbëj";
 "CLEAR" = "Pastro";
 "CLOSE" = "Mbyll";
 "RETRY" = "Provo sërish";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nuk ka transaksione";
 "TRANSACTIONS_LIST_DELETE" = "Fshi";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transaksioni u shtua";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transaksioni u fshi";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Shpenzuar sot";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Shpenzuar dje";
 

@@ -21,6 +21,7 @@
 "REMOVE" = "מחיקה";
 "DELETE" = "מחיקה";
 "CANCEL" = "ביטול";
+"UNDO" = "ביטול";
 "CLEAR" = "ניקוי";
 "CLOSE" = "סגירה";
 "RETRY" = "ניסיון חוזר";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "אין עסקאות";
 "TRANSACTIONS_LIST_DELETE" = "מחיקה";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "העסקה נוספה";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "העסקה נמחקה";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "הוצאות היום";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "הוצאות אתמול";
 

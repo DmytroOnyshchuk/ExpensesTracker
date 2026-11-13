@@ -21,6 +21,7 @@
 "REMOVE" = "ລຶບ";
 "DELETE" = "ລຶບ";
 "CANCEL" = "ຍົກເລີກ";
+"UNDO" = "ຍົກເລີກ";
 "CLEAR" = "ລຶບລ້າງ";
 "CLOSE" = "ປິດ";
 "RETRY" = "ລອງໃໝ່";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ບໍ່ມີທຸລະກຳ";
 "TRANSACTIONS_LIST_DELETE" = "ລຶບ";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "ເພີ່ມທຸລະກຳແລ້ວ";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "ລຶບທຸລະກຳແລ້ວ";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ໃຊ້ຈ່າຍມື້ນີ້";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ໃຊ້ຈ່າຍມື້ວານນີ້";
 

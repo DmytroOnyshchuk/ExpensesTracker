@@ -21,6 +21,7 @@
 "REMOVE" = "Poz";
 "DELETE" = "Poz";
 "CANCEL" = "Ýatyr";
+"UNDO" = "Yzyna gaýtar";
 "CLEAR" = "Arassala";
 "CLOSE" = "Ýap";
 "RETRY" = "Gaýtala";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Amal ýok";
 "TRANSACTIONS_LIST_DELETE" = "Poz";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Amal goşuldy";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Amal pozuldy";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Şu gün harçlandy";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Düýn harçlandy";
 

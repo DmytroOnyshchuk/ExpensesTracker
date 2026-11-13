@@ -21,6 +21,7 @@
 "REMOVE" = "Διαγραφή";
 "DELETE" = "Διαγραφή";
 "CANCEL" = "Άκυρο";
+"UNDO" = "Αναίρεση";
 "CLEAR" = "Εκκαθάριση";
 "CLOSE" = "Κλείσιμο";
 "RETRY" = "Επανάληψη";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Δεν υπάρχουν συναλλαγές";
 "TRANSACTIONS_LIST_DELETE" = "Διαγραφή";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Η συναλλαγή προστέθηκε";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Η συναλλαγή διαγράφηκε";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Έξοδα σήμερα";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Έξοδα χθες";
 

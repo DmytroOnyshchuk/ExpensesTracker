@@ -21,6 +21,7 @@
 "REMOVE" = "Poista";
 "DELETE" = "Poista";
 "CANCEL" = "Kumoa";
+"UNDO" = "Kumoa";
 "CLEAR" = "Tyhjennä";
 "CLOSE" = "Sulje";
 "RETRY" = "Yritä uudelleen";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ei tapahtumia";
 "TRANSACTIONS_LIST_DELETE" = "Poista";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Tapahtuma lisätty";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Tapahtuma poistettu";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Käytetty tänään";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Käytetty eilen";
 

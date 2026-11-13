@@ -21,6 +21,7 @@
 "REMOVE" = "Dzēst";
 "DELETE" = "Dzēst";
 "CANCEL" = "Atcelt";
+"UNDO" = "Atsaukt";
 "CLEAR" = "Notīrīt";
 "CLOSE" = "Aizvērt";
 "RETRY" = "Mēģināt vēlreiz";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nav darījumu";
 "TRANSACTIONS_LIST_DELETE" = "Dzēst";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Darījums pievienots";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Darījums dzēsts";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Iztērēts šodien";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Iztērēts vakar";
 

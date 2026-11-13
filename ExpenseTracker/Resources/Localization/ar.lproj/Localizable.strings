@@ -21,6 +21,7 @@
 "REMOVE" = "حذف";
 "DELETE" = "حذف";
 "CANCEL" = "إلغاء";
+"UNDO" = "تراجع";
 "CLEAR" = "مسح";
 "CLOSE" = "إغلاق";
 "RETRY" = "إعادة المحاولة";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "لا توجد معاملات";
 "TRANSACTIONS_LIST_DELETE" = "حذف";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "تمت إضافة المعاملة";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "تم حذف المعاملة";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "المصروف اليوم";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "المصروف أمس";
 

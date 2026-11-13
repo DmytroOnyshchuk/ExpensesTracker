@@ -21,6 +21,7 @@
 "REMOVE" = "Oʻchirish";
 "DELETE" = "Oʻchirish";
 "CANCEL" = "Bekor qilish";
+"UNDO" = "Bekor qilish";
 "CLEAR" = "Tozalash";
 "CLOSE" = "Yopish";
 "RETRY" = "Qayta urinish";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Tranzaksiyalar yoʻq";
 "TRANSACTIONS_LIST_DELETE" = "Oʻchirish";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Tranzaksiya qoʻshildi";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Tranzaksiya oʻchirildi";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Bugun sarflandi";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Kecha sarflandi";
 

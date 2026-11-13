@@ -21,6 +21,7 @@
 "REMOVE" = "Padam";
 "DELETE" = "Padam";
 "CANCEL" = "Batal";
+"UNDO" = "Buat asal";
 "CLEAR" = "Kosongkan";
 "CLOSE" = "Tutup";
 "RETRY" = "Cuba lagi";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Tiada transaksi";
 "TRANSACTIONS_LIST_DELETE" = "Padam";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transaksi ditambah";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transaksi dipadam";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Dibelanjakan hari ini";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Dibelanjakan semalam";
 

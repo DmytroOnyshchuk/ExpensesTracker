@@ -21,6 +21,7 @@
 "REMOVE" = "Susa";
 "DELETE" = "Susa";
 "CANCEL" = "Khansela";
+"UNDO" = "Hlehlisa";
 "CLEAR" = "Sula";
 "CLOSE" = "Vala";
 "RETRY" = "Zama futhi";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Akukho okwenziwe";
 "TRANSACTIONS_LIST_DELETE" = "Susa";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Okwenziwe kwengeziwe";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Okwenziwe kususiwe";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Okuchithwe namuhla";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Okuchithwe izolo";
 

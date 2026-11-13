@@ -21,6 +21,7 @@
 "REMOVE" = "ลบ";
 "DELETE" = "ลบ";
 "CANCEL" = "ยกเลิก";
+"UNDO" = "เลิกทำ";
 "CLEAR" = "ล้าง";
 "CLOSE" = "ปิด";
 "RETRY" = "ลองอีกครั้ง";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ไม่มีรายการ";
 "TRANSACTIONS_LIST_DELETE" = "ลบ";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "เพิ่มรายการแล้ว";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "ลบรายการแล้ว";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ใช้จ่ายวันนี้";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ใช้จ่ายเมื่อวาน";
 

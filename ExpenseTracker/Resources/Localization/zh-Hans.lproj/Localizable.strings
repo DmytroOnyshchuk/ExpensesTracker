@@ -21,6 +21,7 @@
 "REMOVE" = "删除";
 "DELETE" = "删除";
 "CANCEL" = "取消";
+"UNDO" = "撤销";
 "CLEAR" = "清除";
 "CLOSE" = "关闭";
 "RETRY" = "重试";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "暂无交易";
 "TRANSACTIONS_LIST_DELETE" = "删除";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "已添加交易";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "已删除交易";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "今日支出";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "昨日支出";
 

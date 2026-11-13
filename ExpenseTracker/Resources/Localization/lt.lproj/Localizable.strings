@@ -21,6 +21,7 @@
 "REMOVE" = "Ištrinti";
 "DELETE" = "Ištrinti";
 "CANCEL" = "Atšaukti";
+"UNDO" = "Anuliuoti";
 "CLEAR" = "Išvalyti";
 "CLOSE" = "Uždaryti";
 "RETRY" = "Bandyti dar kartą";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Transakcijų nėra";
 "TRANSACTIONS_LIST_DELETE" = "Ištrinti";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transakcija pridėta";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transakcija ištrinta";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Išleista šiandien";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Išleista vakar";
 

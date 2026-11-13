@@ -21,6 +21,7 @@
 "REMOVE" = "I-delete";
 "DELETE" = "I-delete";
 "CANCEL" = "Kanselahin";
+"UNDO" = "I-undo";
 "CLEAR" = "I-clear";
 "CLOSE" = "Isara";
 "RETRY" = "Subukan ulit";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Walang transaksyon";
 "TRANSACTIONS_LIST_DELETE" = "I-delete";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Naidagdag ang transaksyon";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Na-delete ang transaksyon";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Nagastos ngayong araw";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Nagastos kahapon";
 

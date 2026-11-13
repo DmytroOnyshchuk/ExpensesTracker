@@ -21,6 +21,7 @@
 "REMOVE" = "Elimina";
 "DELETE" = "Elimina";
 "CANCEL" = "Annulla";
+"UNDO" = "Annulla";
 "CLEAR" = "Cancella";
 "CLOSE" = "Chiudi";
 "RETRY" = "Riprova";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nessuna transazione";
 "TRANSACTIONS_LIST_DELETE" = "Elimina";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transazione aggiunta";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transazione eliminata";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Speso oggi";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Speso ieri";
 

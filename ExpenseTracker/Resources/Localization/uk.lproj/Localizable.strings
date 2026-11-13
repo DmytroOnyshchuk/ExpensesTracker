@@ -21,6 +21,7 @@
 "REMOVE" = "Видалити";
 "DELETE" = "Видалити";
 "CANCEL" = "Скасувати";
+"UNDO" = "Скасувати";
 "CLEAR" = "Очистити";
 "CLOSE" = "Закрити";
 "RETRY" = "Повторити";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Немає транзакцій";
 "TRANSACTIONS_LIST_DELETE" = "Видалити";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Транзакцію додано";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Транзакцію видалено";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Витрачено сьогодні";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Витрачено вчора";
 

@@ -174,8 +174,7 @@ struct TransactionRow: View {
         .frame(height: 48)
         .swipeActions(edge: .trailing, allowsFullSwipe: true) {
             Button(role: .destructive) {
-                modelContext.delete(transaction)
-                try? modelContext.save()
+                modelContext.deleteWithUndo(transaction)
             } label: {
                 Label(L10n.delete, systemImage: "trash")
             }

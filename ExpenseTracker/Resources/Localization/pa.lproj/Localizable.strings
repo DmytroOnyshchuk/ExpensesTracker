@@ -21,6 +21,7 @@
 "REMOVE" = "ਮਿਟਾਓ";
 "DELETE" = "ਮਿਟਾਓ";
 "CANCEL" = "ਰੱਦ ਕਰੋ";
+"UNDO" = "ਅਣਕੀਤਾ ਕਰੋ";
 "CLEAR" = "ਸਾਫ਼ ਕਰੋ";
 "CLOSE" = "ਬੰਦ ਕਰੋ";
 "RETRY" = "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ਕੋਈ ਲੈਣ-ਦੇਣ ਨਹੀਂ";
 "TRANSACTIONS_LIST_DELETE" = "ਮਿਟਾਓ";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "ਲੈਣ-ਦੇਣ ਜੋੜਿਆ ਗਿਆ";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "ਲੈਣ-ਦੇਣ ਮਿਟਾਇਆ ਗਿਆ";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ਅੱਜ ਦਾ ਖਰਚ";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ਕੱਲ੍ਹ ਦਾ ਖਰਚ";
 

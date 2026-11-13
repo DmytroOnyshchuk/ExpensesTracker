@@ -21,6 +21,7 @@
 "REMOVE" = "حذف";
 "DELETE" = "حذف";
 "CANCEL" = "لغو";
+"UNDO" = "واگرد";
 "CLEAR" = "پاک کردن";
 "CLOSE" = "بستن";
 "RETRY" = "تلاش دوباره";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "تراکنشی وجود ندارد";
 "TRANSACTIONS_LIST_DELETE" = "حذف";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "تراکنش اضافه شد";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "تراکنش حذف شد";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "هزینهٔ امروز";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "هزینهٔ دیروز";
 

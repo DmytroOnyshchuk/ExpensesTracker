@@ -21,7 +21,6 @@ struct TransactionEdit: View {
     @State private var draft: TransactionDraft
     @State private var popup: Popup?
     @State private var showCategoryPicker = false
-    @State private var showDeleteConfirmation = false
     @State private var amountText = ""
     @FocusState private var isAmountFocused: Bool
 
@@ -126,10 +125,6 @@ struct TransactionEdit: View {
             popupView
         }
         .animation(.easeInOut(duration: 0.2), value: popup)
-        .alert(L10n.transactionEditDeleteConfirmation, isPresented: $showDeleteConfirmation) {
-            Button(L10n.ok, role: .destructive, action: delete)
-            Button(L10n.cancel, role: .cancel) {}
-        }
     }
 
     private var separator: some View {
@@ -166,7 +161,7 @@ struct TransactionEdit: View {
     private var deleteButton: some View {
         Button {
             isAmountFocused = false
-            showDeleteConfirmation = true
+            delete()
         } label: {
             Image(systemName: "trash")
                 .font(.system(size: 22, weight: .medium))
@@ -303,8 +298,7 @@ struct TransactionEdit: View {
     }
 
     private func delete() {
-        modelContext.delete(transaction)
-        try? modelContext.save()
+        modelContext.deleteWithUndo(transaction)
         dismiss()
     }
 }

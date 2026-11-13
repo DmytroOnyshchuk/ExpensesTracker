@@ -21,6 +21,7 @@
 "REMOVE" = "Sil";
 "DELETE" = "Sil";
 "CANCEL" = "Ləğv et";
+"UNDO" = "Geri qaytar";
 "CLEAR" = "Təmizlə";
 "CLOSE" = "Bağla";
 "RETRY" = "Yenidən cəhd et";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Tranzaksiya yoxdur";
 "TRANSACTIONS_LIST_DELETE" = "Sil";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Tranzaksiya əlavə edildi";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Tranzaksiya silindi";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Bu gün xərclənib";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Dünən xərclənib";
 

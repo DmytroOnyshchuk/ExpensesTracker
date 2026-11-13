@@ -21,6 +21,7 @@
 "REMOVE" = "Xóa";
 "DELETE" = "Xóa";
 "CANCEL" = "Hủy";
+"UNDO" = "Hoàn tác";
 "CLEAR" = "Xóa";
 "CLOSE" = "Đóng";
 "RETRY" = "Thử lại";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Không có giao dịch";
 "TRANSACTIONS_LIST_DELETE" = "Xóa";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Đã thêm giao dịch";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Đã xóa giao dịch";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Đã chi hôm nay";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Đã chi hôm qua";
 

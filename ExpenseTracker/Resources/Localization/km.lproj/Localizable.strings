@@ -21,6 +21,7 @@
 "REMOVE" = "លុប";
 "DELETE" = "លុប";
 "CANCEL" = "បោះបង់";
+"UNDO" = "ត្រឡប់វិញ";
 "CLEAR" = "សម្អាត";
 "CLOSE" = "បិទ";
 "RETRY" = "ព្យាយាមម្ដងទៀត";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "គ្មានប្រតិបត្តិការ";
 "TRANSACTIONS_LIST_DELETE" = "លុប";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "បានបន្ថែមប្រតិបត្តិការ";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "បានលុបប្រតិបត្តិការ";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ចំណាយថ្ងៃនេះ";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ចំណាយម្សិលមិញ";
 

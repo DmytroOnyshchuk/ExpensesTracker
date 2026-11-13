@@ -21,6 +21,7 @@
 "REMOVE" = "Eyða";
 "DELETE" = "Eyða";
 "CANCEL" = "Hætta við";
+"UNDO" = "Afturkalla";
 "CLEAR" = "Hreinsa";
 "CLOSE" = "Loka";
 "RETRY" = "Reyna aftur";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Engar færslur";
 "TRANSACTIONS_LIST_DELETE" = "Eyða";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Færslu bætt við";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Færslu eytt";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Eytt í dag";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Eytt í gær";
 

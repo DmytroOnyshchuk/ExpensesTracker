@@ -21,6 +21,7 @@
 "REMOVE" = "मेटाउनुहोस्";
 "DELETE" = "मेटाउनुहोस्";
 "CANCEL" = "रद्द गर्नुहोस्";
+"UNDO" = "पूर्ववत गर्नुहोस्";
 "CLEAR" = "खाली गर्नुहोस्";
 "CLOSE" = "बन्द गर्नुहोस्";
 "RETRY" = "फेरि प्रयास गर्नुहोस्";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "कुनै कारोबार छैन";
 "TRANSACTIONS_LIST_DELETE" = "मेटाउनुहोस्";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "कारोबार थपियो";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "कारोबार मेटाइयो";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "आजको खर्च";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "हिजोको खर्च";
 

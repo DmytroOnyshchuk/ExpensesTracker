@@ -21,6 +21,7 @@
 "REMOVE" = "Elimina";
 "DELETE" = "Elimina";
 "CANCEL" = "Cancel·la";
+"UNDO" = "Desfés";
 "CLEAR" = "Esborra";
 "CLOSE" = "Tanca";
 "RETRY" = "Torna-ho a provar";
@@ -65,6 +66,8 @@
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "No hi ha transaccions";
 "TRANSACTIONS_LIST_DELETE" = "Elimina";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transacció afegida";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transacció eliminada";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Gastat avui";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Gastat ahir";
 
