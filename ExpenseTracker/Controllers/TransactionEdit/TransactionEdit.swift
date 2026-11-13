@@ -72,6 +72,7 @@ struct TransactionEdit: View {
                 .padding(16)
                 .frame(maxWidth: .infinity, alignment: .top)
             }
+            .scrollDismissesKeyboard(.interactively)
             .background(.appMain)
             .toolbar(.hidden, for: .navigationBar)
             .toolbar {
