@@ -13,7 +13,7 @@ struct ExpenseTracker: App {
     var body: some Scene {
         WindowGroup {
             StartView()
-                .preferredColorScheme(.dark)
+                .preferredColorScheme(ThemeManager.shared.colorScheme)
         }
         .modelContainer(for: [Transaction.self, TransactionCategory.self]) { result in
             switch result {

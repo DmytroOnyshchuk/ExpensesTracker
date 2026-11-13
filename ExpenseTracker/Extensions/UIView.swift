@@ -1,4 +1,5 @@
 import Foundation
+import SwiftUI
 import UIKit
 
 protocol Make {}
@@ -208,7 +209,7 @@ extension UIView {
         shadowLayer.frame.size.height = 6.0
         shadowLayer.colors = [
             topColor.cgColor,
-            backgroundColor?.cgColor ?? UIColor.appWhite.withAlphaComponent(0).cgColor,
+            backgroundColor?.cgColor ?? UIColor(Color.appWhite).withAlphaComponent(0).cgColor,
         ]
         shadowLayer.name = "innershadow"
 

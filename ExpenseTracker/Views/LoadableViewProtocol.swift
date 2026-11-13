@@ -6,6 +6,7 @@
 //  Copyright © 2023 PeaksCircle. All rights reserved.
 //
 
+import SwiftUI
 import UIKit
 
 protocol LoadableViewProtocol where Self: UIView {
@@ -14,7 +15,7 @@ protocol LoadableViewProtocol where Self: UIView {
 }
 
 extension LoadableViewProtocol {
-    func startLoadingIndicator(_ align: Align = .center, indicatorColor: UIColor = .appBlack, style: UIActivityIndicatorView.Style = .medium) {
+    func startLoadingIndicator(_ align: Align = .center, indicatorColor: UIColor = UIColor(Color.appBlack), style: UIActivityIndicatorView.Style = .medium) {
         var newIndicator: UIActivityIndicatorView {
             let indicator = UIActivityIndicatorView()
             indicator.style = style

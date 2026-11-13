@@ -7,11 +7,12 @@
 //
 
 import Foundation
+import SwiftUI
 import UIKit
 
 @IBDesignable final class TransitionButton: DesignableButton, UIViewControllerTransitioningDelegate, CAAnimationDelegate {
     /// the color of the spinner while animating the button
-    @IBInspectable var indicatorColor: UIColor = .appWhite {
+    @IBInspectable var indicatorColor: UIColor = UIColor(Color.appWhite) {
         didSet {
             transitionIndicator.color = indicatorColor
         }
@@ -78,7 +79,7 @@ import UIKit
     /**
      start animating the button, before starting a task, exemple: before a network call.
      */
-    func startAnimation(indicatorColor: UIColor = .appWhite) {
+    func startAnimation(indicatorColor: UIColor = UIColor(Color.appWhite)) {
         self.indicatorColor = indicatorColor
 
         isUserInteractionEnabled = false // Disable the user interaction during the animation
