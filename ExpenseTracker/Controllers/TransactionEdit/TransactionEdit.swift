@@ -59,6 +59,10 @@ struct TransactionEdit: View {
                     valueText(draft.date.dayString(.dateTime.day().month(.wide).year()))
                 }
                 separator
+                    .padding(.leading, 16)
+
+                commentRow
+                separator
 
                 Spacer(minLength: 16)
 
@@ -123,32 +127,41 @@ struct TransactionEdit: View {
             .frame(height: 1)
     }
 
-    private var bottomButtons: some View {
-        VStack(spacing: 8) {
-            Button {
-                isAmountFocused = false
-                popup = .comment
-            } label: {
+    private var commentRow: some View {
+        Button {
+            isAmountFocused = false
+            popup = .comment
+        } label: {
+            HStack(spacing: 12) {
                 Text(draft.comment.isBlank ? L10n.transactionEditAddComment : draft.comment)
-                    .font(.appLight(20))
-                    .foregroundColor(.appBlue)
-                    .multilineTextAlignment(.center)
-                    .lineLimit(2)
-                    .padding(.horizontal, 24)
-                    .frame(maxWidth: .infinity, minHeight: 48)
-                    .contentShape(Rectangle())
-            }
+                    .font(.appLight(draft.comment.isBlank ? 18 : 20))
+                    .foregroundColor(draft.comment.isBlank ? .appLabel : .appWhite)
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(4)
+                    .frame(maxWidth: .infinity, alignment: .leading)
 
-            Button {
-                isAmountFocused = false
-                showDeleteConfirmation = true
-            } label: {
-                Text(L10n.transactionEditDelete)
-                    .font(.appLight(20))
-                    .foregroundColor(.red)
-                    .frame(maxWidth: .infinity, minHeight: 48)
-                    .contentShape(Rectangle())
+                Image(systemName: "chevron.right")
+                    .font(.system(size: 15, weight: .semibold))
+                    .foregroundColor(.appLabel)
             }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
+            .frame(minHeight: 60)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+    }
+
+    private var bottomButtons: some View {
+        Button {
+            isAmountFocused = false
+            showDeleteConfirmation = true
+        } label: {
+            Text(L10n.transactionEditDelete)
+                .font(.appLight(20))
+                .foregroundColor(.red)
+                .frame(maxWidth: .infinity, minHeight: 48)
+                .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
         .padding(.bottom, 16)
