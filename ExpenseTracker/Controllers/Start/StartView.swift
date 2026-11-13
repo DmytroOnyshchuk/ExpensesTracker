@@ -74,13 +74,14 @@ struct StartView: View {
 
     private var historyButton: some View {
         Button(action: openHistory) {
-            Text(L10n.historyTitle)
-                .font(.appLight(22))
+            Image(systemName: "chevron.down")
+                .font(.system(size: 22, weight: .semibold))
                 .foregroundColor(.appBlue)
-                .frame(maxWidth: .infinity)
-                .frame(height: 44)
-                .contentShape(Rectangle())
+                .frame(width: 60, height: 60)
+                .background(.appBlue.opacity(0.15))
+                .clipShape(Circle())
         }
+        .accessibilityLabel(L10n.historyTitle)
     }
 
     private var topBar: some View {
