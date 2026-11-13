@@ -55,8 +55,8 @@
 "TRANSACTION_EDIT_DATE" = "Дата";
 "TRANSACTION_EDIT_TIME" = "Час";
 "TRANSACTION_EDIT_ADD_COMMENT" = "Добавяне на коментар";
-"TRANSACTION_EDIT_DELETE" = "Изтриване на операцията";
-"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Изтриване на операцията?";
+"TRANSACTION_EDIT_DELETE" = "Изтриване на транзакцията";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Изтриване на транзакцията?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Категории";
 
 // MARK: - CategoryGrid

@@ -55,15 +55,15 @@
 "TRANSACTION_EDIT_DATE" = "Дата";
 "TRANSACTION_EDIT_TIME" = "Время";
 "TRANSACTION_EDIT_ADD_COMMENT" = "Добавить комментарий";
-"TRANSACTION_EDIT_DELETE" = "Удалить платеж";
-"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Удалить операцию?";
+"TRANSACTION_EDIT_DELETE" = "Удалить транзакцию";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Удалить транзакцию?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Статьи";
 
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Все категории";
 
 // MARK: - TransactionsList
-"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Нет операций";
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Нет транзакций";
 "TRANSACTIONS_LIST_DELETE" = "Удалить";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Потрачено сегодня";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Потрачено вчера";

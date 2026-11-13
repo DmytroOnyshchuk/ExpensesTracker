@@ -74,9 +74,10 @@ struct TransactionEdit: View {
                 commentRow
                 separator
 
-                Spacer(minLength: 16)
+                deleteButton
+                    .padding(.top, 24)
 
-                bottomButtons
+                Spacer(minLength: 16)
             }
             .background(.appMain)
             .navigationTitle(L10n.transactionEditTitle)
@@ -162,19 +163,20 @@ struct TransactionEdit: View {
         .buttonStyle(.plain)
     }
 
-    private var bottomButtons: some View {
+    private var deleteButton: some View {
         Button {
             isAmountFocused = false
             showDeleteConfirmation = true
         } label: {
-            Text(L10n.transactionEditDelete)
-                .font(.appLight(20))
+            Image(systemName: "trash")
+                .font(.system(size: 22, weight: .medium))
                 .foregroundColor(.red)
-                .frame(maxWidth: .infinity, minHeight: 48)
-                .contentShape(Rectangle())
+                .frame(width: 60, height: 60)
+                .background(.red.opacity(0.15))
+                .clipShape(Circle())
         }
         .buttonStyle(.plain)
-        .padding(.bottom, 16)
+        .accessibilityLabel(L10n.transactionEditDelete)
     }
 
     @ViewBuilder

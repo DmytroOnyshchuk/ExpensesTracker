@@ -55,15 +55,15 @@
 "TRANSACTION_EDIT_DATE" = "Tarix";
 "TRANSACTION_EDIT_TIME" = "Vaxt";
 "TRANSACTION_EDIT_ADD_COMMENT" = "Şərh əlavə et";
-"TRANSACTION_EDIT_DELETE" = "Əməliyyatı sil";
-"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Əməliyyat silinsin?";
+"TRANSACTION_EDIT_DELETE" = "Tranzaksiyanı sil";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Tranzaksiya silinsin?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kateqoriyalar";
 
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Bütün kateqoriyalar";
 
 // MARK: - TransactionsList
-"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Əməliyyat yoxdur";
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Tranzaksiya yoxdur";
 "TRANSACTIONS_LIST_DELETE" = "Sil";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Bu gün xərclənib";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Dünən xərclənib";
@@ -87,7 +87,7 @@
 "EDIT_CATEGORY_COLOR" = "Rəng";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Kateqoriyanı sil";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Qovluğu sil";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Bu əməliyyatı geri qaytarmaq mümkün deyil. Bu kateqoriyadakı bütün əməliyyatlar silinəcək.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Bu əməliyyatı geri qaytarmaq mümkün deyil. Bu kateqoriyadakı bütün tranzaksiyalar silinəcək.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Kateqoriya adı";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Yeni kateqoriya";
 "EDIT_CATEGORY_CREATE" = "Yarat";

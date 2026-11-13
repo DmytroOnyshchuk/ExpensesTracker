@@ -55,15 +55,15 @@
 "TRANSACTION_EDIT_DATE" = "Дата";
 "TRANSACTION_EDIT_TIME" = "Час";
 "TRANSACTION_EDIT_ADD_COMMENT" = "Дадаць каментарый";
-"TRANSACTION_EDIT_DELETE" = "Выдаліць аперацыю";
-"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Выдаліць аперацыю?";
+"TRANSACTION_EDIT_DELETE" = "Выдаліць транзакцыю";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Выдаліць транзакцыю?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Катэгорыі";
 
 // MARK: - CategoryGrid
 "CATEGORY_GRID_ALL_CATEGORIES" = "Усе катэгорыі";
 
 // MARK: - TransactionsList
-"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Няма аперацый";
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Няма транзакцый";
 "TRANSACTIONS_LIST_DELETE" = "Выдаліць";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Выдаткавана сёння";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Выдаткавана ўчора";
@@ -87,7 +87,7 @@
 "EDIT_CATEGORY_COLOR" = "Колер";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Выдаліць катэгорыю";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Выдаліць папку";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Гэта дзеянне нельга скасаваць. Усе аперацыі з гэтай катэгорыяй будуць выдалены.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Гэта дзеянне нельга скасаваць. Усе транзакцыі з гэтай катэгорыяй будуць выдалены.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Назва катэгорыі";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Новая катэгорыя";
 "EDIT_CATEGORY_CREATE" = "Стварыць";

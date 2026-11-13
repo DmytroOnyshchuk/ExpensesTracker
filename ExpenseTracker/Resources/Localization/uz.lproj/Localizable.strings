@@ -55,8 +55,8 @@
 "TRANSACTION_EDIT_DATE" = "Sana";
 "TRANSACTION_EDIT_TIME" = "Vaqt";
 "TRANSACTION_EDIT_ADD_COMMENT" = "Izoh qoʻshish";
-"TRANSACTION_EDIT_DELETE" = "Operatsiyani oʻchirish";
-"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Operatsiya oʻchirilsinmi?";
+"TRANSACTION_EDIT_DELETE" = "Tranzaksiyani oʻchirish";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Tranzaksiya oʻchirilsinmi?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Toifalar";
 
 // MARK: - CategoryGrid

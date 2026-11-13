@@ -55,8 +55,8 @@
 "TRANSACTION_EDIT_DATE" = "Күні";
 "TRANSACTION_EDIT_TIME" = "Уақыт";
 "TRANSACTION_EDIT_ADD_COMMENT" = "Түсініктеме қосу";
-"TRANSACTION_EDIT_DELETE" = "Операцияны жою";
-"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Операцияны жою керек пе?";
+"TRANSACTION_EDIT_DELETE" = "Транзакцияны жою";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Транзакцияны жою керек пе?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Санаттар";
 
 // MARK: - CategoryGrid

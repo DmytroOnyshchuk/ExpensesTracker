@@ -55,8 +55,8 @@
 "TRANSACTION_EDIT_DATE" = "Күнү";
 "TRANSACTION_EDIT_TIME" = "Убакыт";
 "TRANSACTION_EDIT_ADD_COMMENT" = "Комментарий кошуу";
-"TRANSACTION_EDIT_DELETE" = "Операцияны өчүрүү";
-"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Операция өчүрүлсүнбү?";
+"TRANSACTION_EDIT_DELETE" = "Транзакцияны өчүрүү";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Транзакция өчүрүлсүнбү?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Категориялар";
 
 // MARK: - CategoryGrid
