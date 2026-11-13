@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Ponuka";
 "MENU_BUDGET" = "Rozpočet";
 "MENU_SETTINGS" = "Nastavenia";
+"MENU_SPENT_IN_MONTH" = "Minuté za %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Upraviť";

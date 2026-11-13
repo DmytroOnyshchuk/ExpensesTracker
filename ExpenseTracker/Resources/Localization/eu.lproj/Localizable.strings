@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Menua";
 "MENU_BUDGET" = "Aurrekontua";
 "MENU_SETTINGS" = "Ezarpenak";
+"MENU_SPENT_IN_MONTH" = "Guztira gastatua · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Editatu";

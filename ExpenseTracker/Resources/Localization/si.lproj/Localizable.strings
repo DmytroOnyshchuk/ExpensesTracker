@@ -57,6 +57,7 @@
 "MENU_TITLE" = "මෙනුව";
 "MENU_BUDGET" = "අයවැය";
 "MENU_SETTINGS" = "සැකසුම්";
+"MENU_SPENT_IN_MONTH" = "මුළු වියදම · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "සංස්කරණය";

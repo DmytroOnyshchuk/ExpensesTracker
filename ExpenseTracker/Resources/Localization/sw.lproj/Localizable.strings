@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Menyu";
 "MENU_BUDGET" = "Bajeti";
 "MENU_SETTINGS" = "Mipangilio";
+"MENU_SPENT_IN_MONTH" = "Matumizi ya %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Hariri";

@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Menü";
 "MENU_BUDGET" = "Budget";
 "MENU_SETTINGS" = "Einstellungen";
+"MENU_SPENT_IN_MONTH" = "Ausgaben im %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Bearbeiten";

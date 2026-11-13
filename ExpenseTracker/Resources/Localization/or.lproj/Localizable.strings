@@ -57,6 +57,7 @@
 "MENU_TITLE" = "ମେନୁ";
 "MENU_BUDGET" = "ବଜେଟ୍";
 "MENU_SETTINGS" = "ସେଟିଂସ୍";
+"MENU_SPENT_IN_MONTH" = "ମୋଟ ଖର୍ଚ୍ଚ · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ସମ୍ପାଦନା କରନ୍ତୁ";

@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Valmynd";
 "MENU_BUDGET" = "Fjárhagsáætlun";
 "MENU_SETTINGS" = "Stillingar";
+"MENU_SPENT_IN_MONTH" = "Samtals eytt · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Breyta";

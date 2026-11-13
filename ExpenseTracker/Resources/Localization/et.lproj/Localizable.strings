@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Menüü";
 "MENU_BUDGET" = "Eelarve";
 "MENU_SETTINGS" = "Seaded";
+"MENU_SPENT_IN_MONTH" = "Kokku kulutatud · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Muuda";

@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Menu";
 "MENU_BUDGET" = "Ngân sách";
 "MENU_SETTINGS" = "Cài đặt";
+"MENU_SPENT_IN_MONTH" = "Đã chi trong %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Sửa";

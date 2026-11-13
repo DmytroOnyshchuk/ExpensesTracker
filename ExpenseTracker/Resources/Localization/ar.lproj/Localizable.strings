@@ -57,6 +57,7 @@
 "MENU_TITLE" = "القائمة";
 "MENU_BUDGET" = "الميزانية";
 "MENU_SETTINGS" = "الإعدادات";
+"MENU_SPENT_IN_MONTH" = "المصروفات في %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "تعديل";

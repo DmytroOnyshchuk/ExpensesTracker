@@ -57,6 +57,7 @@
 "MENU_TITLE" = "மெனு";
 "MENU_BUDGET" = "பட்ஜெட்";
 "MENU_SETTINGS" = "அமைப்புகள்";
+"MENU_SPENT_IN_MONTH" = "மொத்த செலவு · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "திருத்து";

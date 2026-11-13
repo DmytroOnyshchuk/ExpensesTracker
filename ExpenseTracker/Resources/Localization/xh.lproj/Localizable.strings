@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Imenyu";
 "MENU_BUDGET" = "Uhlahlo-lwabiwo mali";
 "MENU_SETTINGS" = "Iisetingi";
+"MENU_SPENT_IN_MONTH" = "Iyonke echithiweyo · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Hlela";

@@ -57,6 +57,7 @@
 "MENU_TITLE" = "मेनु";
 "MENU_BUDGET" = "बजेट";
 "MENU_SETTINGS" = "सेटिङहरू";
+"MENU_SPENT_IN_MONTH" = "कुल खर्च · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "सम्पादन गर्नुहोस्";

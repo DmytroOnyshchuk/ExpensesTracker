@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Meni";
 "MENU_BUDGET" = "Budžet";
 "MENU_SETTINGS" = "Podešavanja";
+"MENU_SPENT_IN_MONTH" = "Potrošeno za %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Uredi";

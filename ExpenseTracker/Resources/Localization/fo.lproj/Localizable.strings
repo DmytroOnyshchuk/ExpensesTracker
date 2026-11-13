@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Valmynd";
 "MENU_BUDGET" = "Fíggjarætlan";
 "MENU_SETTINGS" = "Stillingar";
+"MENU_SPENT_IN_MONTH" = "Brúkt í alt · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Broyt";

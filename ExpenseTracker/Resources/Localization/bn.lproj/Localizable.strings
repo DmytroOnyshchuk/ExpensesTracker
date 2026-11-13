@@ -57,6 +57,7 @@
 "MENU_TITLE" = "মেনু";
 "MENU_BUDGET" = "বাজেট";
 "MENU_SETTINGS" = "সেটিংস";
+"MENU_SPENT_IN_MONTH" = "মোট খরচ · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "সম্পাদনা";

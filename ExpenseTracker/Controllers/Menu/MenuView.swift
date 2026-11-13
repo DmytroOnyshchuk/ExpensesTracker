@@ -65,7 +65,7 @@ struct MenuView: View {
     }
 
     private var spentTitle: String {
-        "\(L10n.statisticsTotalSpent) · \(period.title(for: Date()))"
+        L10n.menuSpentInMonth(Date().formatted(.dateTime.month(.wide)))
     }
 
     private var spentAmount: Int {

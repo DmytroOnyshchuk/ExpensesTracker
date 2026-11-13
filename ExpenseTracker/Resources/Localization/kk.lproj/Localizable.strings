@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Мәзір";
 "MENU_BUDGET" = "Бюджет";
 "MENU_SETTINGS" = "Баптаулар";
+"MENU_SPENT_IN_MONTH" = "Барлығы жұмсалды · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Өңдеу";

@@ -57,6 +57,7 @@
 "MENU_TITLE" = "ਮੀਨੂ";
 "MENU_BUDGET" = "ਬਜਟ";
 "MENU_SETTINGS" = "ਸੈਟਿੰਗਾਂ";
+"MENU_SPENT_IN_MONTH" = "ਕੁੱਲ ਖਰਚ · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ਸੋਧੋ";

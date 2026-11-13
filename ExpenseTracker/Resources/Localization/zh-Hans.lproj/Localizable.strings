@@ -57,6 +57,7 @@
 "MENU_TITLE" = "菜单";
 "MENU_BUDGET" = "预算";
 "MENU_SETTINGS" = "设置";
+"MENU_SPENT_IN_MONTH" = "%@支出";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "编辑";

@@ -57,6 +57,7 @@
 "MENU_TITLE" = "მენიუ";
 "MENU_BUDGET" = "ბიუჯეტი";
 "MENU_SETTINGS" = "პარამეტრები";
+"MENU_SPENT_IN_MONTH" = "სულ დახარჯული · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "რედაქტირება";

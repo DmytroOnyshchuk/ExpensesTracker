@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Menyu";
 "MENU_BUDGET" = "Budjet";
 "MENU_SETTINGS" = "Sozlamalar";
+"MENU_SPENT_IN_MONTH" = "Jami sarflandi · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Tahrirlash";

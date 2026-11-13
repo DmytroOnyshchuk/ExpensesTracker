@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Menu";
 "MENU_BUDGET" = "Belanjawan";
 "MENU_SETTINGS" = "Tetapan";
+"MENU_SPENT_IN_MONTH" = "Perbelanjaan %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Edit";

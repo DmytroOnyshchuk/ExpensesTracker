@@ -57,6 +57,7 @@
 "MENU_TITLE" = "メニュー";
 "MENU_BUDGET" = "予算";
 "MENU_SETTINGS" = "設定";
+"MENU_SPENT_IN_MONTH" = "%@の支出";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "編集";

@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Меню";
 "MENU_BUDGET" = "Бюджет";
 "MENU_SETTINGS" = "Настройки";
+"MENU_SPENT_IN_MONTH" = "Похарчено през %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Редактиране";

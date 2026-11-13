@@ -57,6 +57,7 @@
 "MENU_TITLE" = "మెనూ";
 "MENU_BUDGET" = "బడ్జెట్";
 "MENU_SETTINGS" = "సెట్టింగ్‌లు";
+"MENU_SPENT_IN_MONTH" = "మొత్తం ఖర్చు · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "సవరించండి";

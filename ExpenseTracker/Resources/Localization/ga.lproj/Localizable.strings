@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Roghchlár";
 "MENU_BUDGET" = "Buiséad";
 "MENU_SETTINGS" = "Socruithe";
+"MENU_SPENT_IN_MONTH" = "Iomlán caite · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Cuir in eagar";

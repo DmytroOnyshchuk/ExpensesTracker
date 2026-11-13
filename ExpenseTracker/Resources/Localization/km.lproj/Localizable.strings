@@ -57,6 +57,7 @@
 "MENU_TITLE" = "ម៉ឺនុយ";
 "MENU_BUDGET" = "ថវិកា";
 "MENU_SETTINGS" = "ការកំណត់";
+"MENU_SPENT_IN_MONTH" = "ចំណាយសរុប · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "កែ";

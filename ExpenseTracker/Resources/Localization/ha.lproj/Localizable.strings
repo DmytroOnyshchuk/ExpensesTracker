@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Menu";
 "MENU_BUDGET" = "Kasafin kuɗi";
 "MENU_SETTINGS" = "Saituna";
+"MENU_SPENT_IN_MONTH" = "Jimillar da aka kashe · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Gyara";

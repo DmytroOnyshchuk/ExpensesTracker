@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Menu";
 "MENU_BUDGET" = "Mmefu ego";
 "MENU_SETTINGS" = "Ntọala";
+"MENU_SPENT_IN_MONTH" = "Mkpokọta e mefuru · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Dezie";

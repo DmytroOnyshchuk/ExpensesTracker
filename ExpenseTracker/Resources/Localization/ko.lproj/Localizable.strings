@@ -57,6 +57,7 @@
 "MENU_TITLE" = "메뉴";
 "MENU_BUDGET" = "예산";
 "MENU_SETTINGS" = "설정";
+"MENU_SPENT_IN_MONTH" = "%@ 지출";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "편집";

@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Imenyu";
 "MENU_BUDGET" = "Isabelomali";
 "MENU_SETTINGS" = "Izilungiselelo";
+"MENU_SPENT_IN_MONTH" = "Isamba esichithiwe · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Hlela";

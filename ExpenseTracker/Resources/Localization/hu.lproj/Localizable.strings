@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Menü";
 "MENU_BUDGET" = "Költségvetés";
 "MENU_SETTINGS" = "Beállítások";
+"MENU_SPENT_IN_MONTH" = "Összes költés · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Szerkesztés";

@@ -57,6 +57,7 @@
 "MENU_TITLE" = "選單";
 "MENU_BUDGET" = "預算";
 "MENU_SETTINGS" = "設定";
+"MENU_SPENT_IN_MONTH" = "%@支出";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "編輯";

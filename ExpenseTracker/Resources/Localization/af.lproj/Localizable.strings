@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Kieslys";
 "MENU_BUDGET" = "Begroting";
 "MENU_SETTINGS" = "Instellings";
+"MENU_SPENT_IN_MONTH" = "Spandeer in %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Wysig";

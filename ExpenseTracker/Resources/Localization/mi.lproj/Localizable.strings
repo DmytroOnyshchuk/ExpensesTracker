@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Tahua";
 "MENU_BUDGET" = "Tahua pūtea";
 "MENU_SETTINGS" = "Tautuhinga";
+"MENU_SPENT_IN_MONTH" = "Tapeke i whakapaua · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Whakatika";

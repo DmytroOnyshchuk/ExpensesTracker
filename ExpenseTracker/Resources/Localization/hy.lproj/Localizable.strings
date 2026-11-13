@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Մենյու";
 "MENU_BUDGET" = "Բյուջե";
 "MENU_SETTINGS" = "Կարգավորումներ";
+"MENU_SPENT_IN_MONTH" = "Ընդամենը ծախսվել է · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Խմբագրել";

@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Menýu";
 "MENU_BUDGET" = "Býujet";
 "MENU_SETTINGS" = "Sazlamalar";
+"MENU_SPENT_IN_MONTH" = "Jemi harçlandy · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Üýtget";

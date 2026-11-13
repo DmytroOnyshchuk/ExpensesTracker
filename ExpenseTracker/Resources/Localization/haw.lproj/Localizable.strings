@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Papa kuhikuhi";
 "MENU_BUDGET" = "Moʻohelu kālā";
 "MENU_SETTINGS" = "Hoʻonohonoho";
+"MENU_SPENT_IN_MONTH" = "Huina i hoʻolilo ʻia · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Hoʻoponopono";

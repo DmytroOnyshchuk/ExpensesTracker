@@ -114,6 +114,10 @@ internal enum L10n {
   internal static let menuBudget = L10n.tr("Localizable", "MENU_BUDGET", fallback: "Budget")
   /// Settings
   internal static let menuSettings = L10n.tr("Localizable", "MENU_SETTINGS", fallback: "Settings")
+  /// Spent in %@
+  internal static func menuSpentInMonth(_ p1: Any) -> String {
+    return L10n.tr("Localizable", "MENU_SPENT_IN_MONTH", String(describing: p1), fallback: "Spent in %@")
+  }
   /// Menu
   internal static let menuTitle = L10n.tr("Localizable", "MENU_TITLE", fallback: "Menu")
   /// Next

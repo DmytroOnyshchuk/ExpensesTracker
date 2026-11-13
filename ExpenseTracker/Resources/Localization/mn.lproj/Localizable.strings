@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Цэс";
 "MENU_BUDGET" = "Төсөв";
 "MENU_SETTINGS" = "Тохиргоо";
+"MENU_SPENT_IN_MONTH" = "Нийт зарцуулсан · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Засах";

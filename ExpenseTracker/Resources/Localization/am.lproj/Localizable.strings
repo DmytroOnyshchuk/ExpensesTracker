@@ -57,6 +57,7 @@
 "MENU_TITLE" = "ምናሌ";
 "MENU_BUDGET" = "በጀት";
 "MENU_SETTINGS" = "ቅንብሮች";
+"MENU_SPENT_IN_MONTH" = "ጠቅላላ ወጪ · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "አርትዕ";

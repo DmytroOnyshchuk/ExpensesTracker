@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Menyja";
 "MENU_BUDGET" = "Buxheti";
 "MENU_SETTINGS" = "Cilësimet";
+"MENU_SPENT_IN_MONTH" = "Gjithsej shpenzuar · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Ndrysho";

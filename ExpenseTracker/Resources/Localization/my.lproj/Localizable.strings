@@ -57,6 +57,7 @@
 "MENU_TITLE" = "မီနူး";
 "MENU_BUDGET" = "ဘတ်ဂျက်";
 "MENU_SETTINGS" = "ဆက်တင်များ";
+"MENU_SPENT_IN_MONTH" = "စုစုပေါင်း အသုံးစရိတ် · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ပြင်ရန်";

@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Meniu";
 "MENU_BUDGET" = "Biudžetas";
 "MENU_SETTINGS" = "Nustatymai";
+"MENU_SPENT_IN_MONTH" = "Iš viso išleista · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Redaguoti";

@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Izvēlne";
 "MENU_BUDGET" = "Budžets";
 "MENU_SETTINGS" = "Iestatījumi";
+"MENU_SPENT_IN_MONTH" = "Kopā iztērēts · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Rediģēt";

@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Меню";
 "MENU_BUDGET" = "Бюджет";
 "MENU_SETTINGS" = "Көйләүләр";
+"MENU_SPENT_IN_MONTH" = "Барлыгы тотылган · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Үзгәртү";

@@ -57,6 +57,7 @@
 "MENU_TITLE" = "مينيو";
 "MENU_BUDGET" = "بجيٽ";
 "MENU_SETTINGS" = "سيٽنگون";
+"MENU_SPENT_IN_MONTH" = "ڪل خرچ · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ترميم";

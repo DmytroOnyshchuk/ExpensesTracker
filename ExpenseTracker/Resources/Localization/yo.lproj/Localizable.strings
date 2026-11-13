@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Àtòjọ";
 "MENU_BUDGET" = "Ìṣúná";
 "MENU_SETTINGS" = "Ètò";
+"MENU_SPENT_IN_MONTH" = "Àpapọ̀ tí a ná · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Ṣàtúnṣe";

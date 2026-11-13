@@ -57,6 +57,7 @@
 "MENU_TITLE" = "لیست";
 "MENU_BUDGET" = "بودجە";
 "MENU_SETTINGS" = "ڕێکخستنەکان";
+"MENU_SPENT_IN_MONTH" = "کۆی خەرجکراو · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "دەستکاری";

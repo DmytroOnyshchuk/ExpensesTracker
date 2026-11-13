@@ -57,6 +57,7 @@
 "MENU_TITLE" = "مینو";
 "MENU_BUDGET" = "بودیجه";
 "MENU_SETTINGS" = "تنظیمات";
+"MENU_SPENT_IN_MONTH" = "ټول لګښت · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "سمول";

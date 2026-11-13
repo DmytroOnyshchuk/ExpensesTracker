@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Valikko";
 "MENU_BUDGET" = "Budjetti";
 "MENU_SETTINGS" = "Asetukset";
+"MENU_SPENT_IN_MONTH" = "Käytetty yhteensä · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Muokkaa";

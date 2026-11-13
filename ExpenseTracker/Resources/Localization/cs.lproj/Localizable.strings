@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Nabídka";
 "MENU_BUDGET" = "Rozpočet";
 "MENU_SETTINGS" = "Nastavení";
+"MENU_SPENT_IN_MONTH" = "Utraceno za %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Upravit";

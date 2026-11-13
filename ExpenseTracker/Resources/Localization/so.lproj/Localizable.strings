@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Liiska";
 "MENU_BUDGET" = "Miisaaniyad";
 "MENU_SETTINGS" = "Dejinta";
+"MENU_SPENT_IN_MONTH" = "Wadarta la kharash gareeyay · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Wax ka beddel";

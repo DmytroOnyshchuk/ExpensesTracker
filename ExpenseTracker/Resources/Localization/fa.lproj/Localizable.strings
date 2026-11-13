@@ -57,6 +57,7 @@
 "MENU_TITLE" = "منو";
 "MENU_BUDGET" = "بودجه";
 "MENU_SETTINGS" = "تنظیمات";
+"MENU_SPENT_IN_MONTH" = "هزینه‌های %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ویرایش";

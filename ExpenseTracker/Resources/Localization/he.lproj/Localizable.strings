@@ -57,6 +57,7 @@
 "MENU_TITLE" = "תפריט";
 "MENU_BUDGET" = "תקציב";
 "MENU_SETTINGS" = "הגדרות";
+"MENU_SPENT_IN_MONTH" = "הוצאות ב%@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "עריכה";

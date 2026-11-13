@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Meniu";
 "MENU_BUDGET" = "Buget";
 "MENU_SETTINGS" = "Setări";
+"MENU_SPENT_IN_MONTH" = "Cheltuit în %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Editează";

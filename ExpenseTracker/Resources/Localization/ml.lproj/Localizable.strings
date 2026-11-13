@@ -57,6 +57,7 @@
 "MENU_TITLE" = "മെനു";
 "MENU_BUDGET" = "ബജറ്റ്";
 "MENU_SETTINGS" = "ക്രമീകരണങ്ങൾ";
+"MENU_SPENT_IN_MONTH" = "ആകെ ചെലവ് · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "എഡിറ്റ് ചെയ്യുക";

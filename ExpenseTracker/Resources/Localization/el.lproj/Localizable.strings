@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Μενού";
 "MENU_BUDGET" = "Προϋπολογισμός";
 "MENU_SETTINGS" = "Ρυθμίσεις";
+"MENU_SPENT_IN_MONTH" = "Σύνολο εξόδων · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Επεξεργασία";

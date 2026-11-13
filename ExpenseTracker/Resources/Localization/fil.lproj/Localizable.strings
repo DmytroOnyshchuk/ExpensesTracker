@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Menu";
 "MENU_BUDGET" = "Badyet";
 "MENU_SETTINGS" = "Mga Setting";
+"MENU_SPENT_IN_MONTH" = "Gastos sa %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "I-edit";

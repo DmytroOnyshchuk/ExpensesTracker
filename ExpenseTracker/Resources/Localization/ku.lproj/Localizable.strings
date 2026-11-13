@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Menû";
 "MENU_BUDGET" = "Budçe";
 "MENU_SETTINGS" = "Mîheng";
+"MENU_SPENT_IN_MONTH" = "Tevahiya xerckirî · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Sererast bike";

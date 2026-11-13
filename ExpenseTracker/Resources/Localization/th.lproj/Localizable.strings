@@ -57,6 +57,7 @@
 "MENU_TITLE" = "เมนู";
 "MENU_BUDGET" = "งบประมาณ";
 "MENU_SETTINGS" = "การตั้งค่า";
+"MENU_SPENT_IN_MONTH" = "ใช้จ่ายในเดือน%@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "แก้ไข";

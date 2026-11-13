@@ -57,6 +57,7 @@
 "MENU_TITLE" = "مینو";
 "MENU_BUDGET" = "بجٹ";
 "MENU_SETTINGS" = "ترتیبات";
+"MENU_SPENT_IN_MONTH" = "%@ کے اخراجات";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ترمیم کریں";

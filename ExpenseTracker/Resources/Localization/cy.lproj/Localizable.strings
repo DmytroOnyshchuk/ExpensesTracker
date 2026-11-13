@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Dewislen";
 "MENU_BUDGET" = "Cyllideb";
 "MENU_SETTINGS" = "Gosodiadau";
+"MENU_SPENT_IN_MONTH" = "Cyfanswm a wariwyd · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Golygu";

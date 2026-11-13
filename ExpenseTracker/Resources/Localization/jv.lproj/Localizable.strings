@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Menu";
 "MENU_BUDGET" = "Anggaran";
 "MENU_SETTINGS" = "Setelan";
+"MENU_SPENT_IN_MONTH" = "Total sing dientekake · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Owahi";

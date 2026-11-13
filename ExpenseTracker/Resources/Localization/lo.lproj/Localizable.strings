@@ -57,6 +57,7 @@
 "MENU_TITLE" = "ເມນູ";
 "MENU_BUDGET" = "ງົບປະມານ";
 "MENU_SETTINGS" = "ການຕັ້ງຄ່າ";
+"MENU_SPENT_IN_MONTH" = "ໃຊ້ຈ່າຍທັງໝົດ · %@";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ແກ້ໄຂ";

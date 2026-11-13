@@ -57,6 +57,7 @@
 "MENU_TITLE" = "Menyu";
 "MENU_BUDGET" = "Büdcə";
 "MENU_SETTINGS" = "Ayarlar";
+"MENU_SPENT_IN_MONTH" = "%@ xərcləri";
 
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Redaktə";
