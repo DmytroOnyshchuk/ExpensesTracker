@@ -99,21 +99,43 @@ struct TransactionsDay: Identifiable {
     var id: String { title }
 
     var total: Int { transactions.reduce(0) { $0 + $1.amount } }
+
+    var topCategoryColor: Color? {
+        Dictionary(grouping: transactions) { $0.category.uuid }
+            .values
+            .max { lhs, rhs in
+                lhs.reduce(0) { $0 + $1.amount } < rhs.reduce(0) { $0 + $1.amount }
+            }?
+            .first?
+            .category.categoryIcon.color
+    }
 }
 
 struct TransactionsDayHeader: View {
     let day: TransactionsDay
 
     var body: some View {
-        HStack(spacing: 6) {
-            Text(day.title + ":")
+        let totalColor = day.topCategoryColor
+
+        HStack(spacing: 12) {
+            Text(day.title)
                 .font(.appLight(16))
                 .foregroundColor(.gray)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+
+            Spacer(minLength: 8)
 
             Text(day.total.getAmount())
                 .font(.appRegular(16))
                 .foregroundColor(.appWhite)
+                .lineLimit(1)
+                .padding(.horizontal, 12)
+                .frame(height: 28)
+                .background(totalColor ?? .appLabel.opacity(0.2))
+                .clipShape(Capsule())
         }
+        .padding(.horizontal, 16)
         .textCase(nil)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(.appSecond)
