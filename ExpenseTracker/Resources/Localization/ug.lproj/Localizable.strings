@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "چىقىم خاتىرىسى";
+"DONE" = "تامام";
+"ERROR" = "خاتالىق";
+"OK" = "جەزملە";
+"YES" = "ھەئە";
+"NO" = "ياق";
+"UPDATE" = "يېڭىلا";
+"ATTENTION" = "دىققەت";
+"SUPPORT" = "قوللاش";
+"NEXT" = "كېيىنكى";
+"BACK" = "قايت";
+"REMOVE" = "چىقىرىۋەت";
+"DELETE" = "ئۆچۈر";
+"CANCEL" = "بىكار قىل";
+"UNDO" = "يېنىۋال";
+"CLEAR" = "تازىلا";
+"CLOSE" = "ياپ";
+"RETRY" = "قايتا سىنا";
+"REPEAT" = "تەكرارلا";
+"SOMETHING_WENT_WRONG" = "خاتالىق كۆرۈلدى...";
+"CONTINUE" = "داۋاملاشتۇر";
+"SHARE" = "ھەمبەھىرلە";
+"SAVE" = "ساقلا";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "چىقىمنى كىرگۈزۈڭ";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "ئالدى بىلەن سوممىنى كىرگۈزۈڭ";
+"STARTVIEW_BALANCE" = "قالدۇق";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "چىقىملار";
+"STATISTICS_DAY" = "كۈن";
+"STATISTICS_MONTH" = "ئاي";
+"STATISTICS_YEAR" = "يىل";
+"STATISTICS_TOTAL_SPENT" = "جەمئىي چىقىم";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "چېسلا بويىچە";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "سومما بويىچە";
+
+// MARK: - History
+"HISTORY_TITLE" = "تارىخ";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "تەھرىرلە";
+"TRANSACTION_EDIT_CATEGORY" = "تۈر";
+"TRANSACTION_EDIT_AMOUNT" = "سومما";
+"TRANSACTION_EDIT_DATE" = "چېسلا";
+"TRANSACTION_EDIT_TIME" = "ۋاقىت";
+"TRANSACTION_EDIT_ADD_COMMENT" = "ئىزاھات قوش";
+"TRANSACTION_EDIT_DELETE" = "سودىنى ئۆچۈر";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "سودىنى ئۆچۈرەمسىز؟";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "تۈرلەر";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "بارلىق تۈرلەر";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "سودا يوق";
+"TRANSACTIONS_LIST_DELETE" = "ئۆچۈر";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "سودا قوشۇلدى";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "سودا ئۆچۈرۈلدى";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "بۈگۈنكى چىقىم";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "تۈنۈگۈنكى چىقىم";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "تۈرلەرنى تەھرىرلە";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "يېڭى تۈر قىسقۇچى";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "يېڭى تۈر قىسقۇچىنىڭ نامىنى كىرگۈزۈڭ";
+"CATEGORIES_EDIT_CANCEL" = "بىكار قىل";
+"CATEGORIES_EDIT_CREATE" = "قۇر";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "تەھرىرلە";
+"EDIT_CATEGORY_NEW_TITLE" = "يېڭى تۈر";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "تۈر نامىنى كىرگۈزۈڭ";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "ئاتا تۈر";
+"EDIT_CATEGORY_NO_PARENT" = "ئاتا تۈر يوق";
+"EDIT_CATEGORY_SUBCATEGORIES" = "تارماق تۈرلەر";
+"EDIT_CATEGORY_ICON" = "سىنبەلگە";
+"EDIT_CATEGORY_MORE_ICONS" = "تېخىمۇ كۆپ";
+"EDIT_CATEGORY_COLOR" = "رەڭ";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "تۈرنى ئۆچۈر";
+"EDIT_CATEGORY_DELETE_FOLDER" = "قىسقۇچنى ئۆچۈر";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "بۇ مەشغۇلاتنى يېنىۋالغىلى بولمايدۇ. بۇ تۈردىكى بارلىق سودىلار ئۆچۈرۈلىدۇ.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "تۈر نامى";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "يېڭى تۈر";
+"EDIT_CATEGORY_CREATE" = "قۇر";
+"EDIT_CATEGORY_NAME" = "نام";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "ماشىنا";
+"DEFAULT_CATEGORY_FOOD" = "يېمەكلىك";
+"DEFAULT_CATEGORY_HOME" = "ئۆي";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "ئاسراش";
+"DEFAULT_CATEGORY_CAR_FUEL" = "يېقىلغۇ";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "رېستورانلار";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "يېمەك-ئىچمەك";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "ئۆي بۇيۇملىرى";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "ئۆي ھەقلىرى";
+"DEFAULT_CATEGORY_CLOTHING" = "كىيىم-كېچەك";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "ساغلاملىق ۋە گۈزەللىك";
+"DEFAULT_CATEGORY_OTHER" = "باشقا";
+"DEFAULT_CATEGORY_CHARITY" = "خەير-ساخاۋەت";
+"DEFAULT_CATEGORY_INTERNET" = "ئىنتېرنېت";
+"DEFAULT_CATEGORY_TRANSPORT" = "قاتناش";

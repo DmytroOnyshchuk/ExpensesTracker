@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Praćenje troškova";
+"DONE" = "Gotovo";
+"ERROR" = "Greška";
+"OK" = "OK";
+"YES" = "Da";
+"NO" = "Ne";
+"UPDATE" = "Ažuriraj";
+"ATTENTION" = "Pažnja";
+"SUPPORT" = "Podrška";
+"NEXT" = "Dalje";
+"BACK" = "Nazad";
+"REMOVE" = "Izbriši";
+"DELETE" = "Izbriši";
+"CANCEL" = "Otkaži";
+"UNDO" = "Opozovi";
+"CLEAR" = "Obriši";
+"CLOSE" = "Zatvori";
+"RETRY" = "Pokušaj ponovo";
+"REPEAT" = "Pokušaj ponovo";
+"SOMETHING_WENT_WRONG" = "Nešto je pošlo naopako...";
+"CONTINUE" = "Nastavi";
+"SHARE" = "Podeli";
+"SAVE" = "Sačuvaj";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Unesite trošak";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Prvo unesite iznos";
+"STARTVIEW_BALANCE" = "Stanje";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Troškovi";
+"STATISTICS_DAY" = "Dan";
+"STATISTICS_MONTH" = "Mesec";
+"STATISTICS_YEAR" = "Godina";
+"STATISTICS_TOTAL_SPENT" = "Ukupno potrošeno";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Po datumu";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Po iznosu";
+
+// MARK: - History
+"HISTORY_TITLE" = "Istorija";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Uredi";
+"TRANSACTION_EDIT_CATEGORY" = "Kategorija";
+"TRANSACTION_EDIT_AMOUNT" = "Iznos";
+"TRANSACTION_EDIT_DATE" = "Datum";
+"TRANSACTION_EDIT_TIME" = "Vreme";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Dodaj komentar";
+"TRANSACTION_EDIT_DELETE" = "Izbriši transakciju";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Izbrisati transakciju?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategorije";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Sve kategorije";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nema transakcija";
+"TRANSACTIONS_LIST_DELETE" = "Izbriši";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transakcija je dodata";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transakcija je izbrisana";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Potrošeno danas";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Potrošeno juče";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Uredi kategorije";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nova fascikla kategorija";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Unesite naziv nove fascikle kategorija";
+"CATEGORIES_EDIT_CANCEL" = "Otkaži";
+"CATEGORIES_EDIT_CREATE" = "Napravi";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Uredi";
+"EDIT_CATEGORY_NEW_TITLE" = "Nova kategorija";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Unesite naziv kategorije";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Nadređena kategorija";
+"EDIT_CATEGORY_NO_PARENT" = "Bez nadređene kategorije";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Potkategorije";
+"EDIT_CATEGORY_ICON" = "Ikona";
+"EDIT_CATEGORY_MORE_ICONS" = "Još";
+"EDIT_CATEGORY_COLOR" = "Boja";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Izbriši kategoriju";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Izbriši fasciklu";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ova radnja se ne može opozvati. Sve transakcije sa ovom kategorijom biće izbrisane.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Naziv kategorije";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nova kategorija";
+"EDIT_CATEGORY_CREATE" = "Napravi";
+"EDIT_CATEGORY_NAME" = "Naziv";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "Auto";
+"DEFAULT_CATEGORY_FOOD" = "Hrana";
+"DEFAULT_CATEGORY_HOME" = "Dom";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "Održavanje";
+"DEFAULT_CATEGORY_CAR_FUEL" = "Gorivo";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "Restorani";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "Namirnice";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "Domaćinstvo";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "Računi";
+"DEFAULT_CATEGORY_CLOTHING" = "Odeća";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "Lepota i zdravlje";
+"DEFAULT_CATEGORY_OTHER" = "Ostalo";
+"DEFAULT_CATEGORY_CHARITY" = "Dobrotvorni prilozi";
+"DEFAULT_CATEGORY_INTERNET" = "Internet";
+"DEFAULT_CATEGORY_TRANSPORT" = "Prevoz";

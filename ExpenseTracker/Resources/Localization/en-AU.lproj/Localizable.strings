@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Expense Tracker";
+"DONE" = "Done";
+"ERROR" = "Error";
+"OK" = "OK";
+"YES" = "Yes";
+"NO" = "No";
+"UPDATE" = "Update";
+"ATTENTION" = "Attention";
+"SUPPORT" = "Support";
+"NEXT" = "Next";
+"BACK" = "Back";
+"REMOVE" = "Remove";
+"DELETE" = "Delete";
+"CANCEL" = "Cancel";
+"UNDO" = "Undo";
+"CLEAR" = "Clear";
+"CLOSE" = "Close";
+"RETRY" = "Retry";
+"REPEAT" = "Repeat";
+"SOMETHING_WENT_WRONG" = "Something went wrong...";
+"CONTINUE" = "Continue";
+"SHARE" = "Share";
+"SAVE" = "Save";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Enter expense";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Enter the amount first";
+"STARTVIEW_BALANCE" = "Balance";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Expenses";
+"STATISTICS_DAY" = "Day";
+"STATISTICS_MONTH" = "Month";
+"STATISTICS_YEAR" = "Year";
+"STATISTICS_TOTAL_SPENT" = "Total spent";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "By date";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "By amount";
+
+// MARK: - History
+"HISTORY_TITLE" = "History";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Edit";
+"TRANSACTION_EDIT_CATEGORY" = "Category";
+"TRANSACTION_EDIT_AMOUNT" = "Amount";
+"TRANSACTION_EDIT_DATE" = "Date";
+"TRANSACTION_EDIT_TIME" = "Time";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Add comment";
+"TRANSACTION_EDIT_DELETE" = "Delete transaction";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Delete transaction?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Categories";
+
+// MARK: -  CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "All categories";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "No transactions";
+"TRANSACTIONS_LIST_DELETE" = "Delete";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transaction added";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transaction deleted";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Spent today";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Spent yesterday";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Edit categories";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "New folder category";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Enter name for new category folder";
+"CATEGORIES_EDIT_CANCEL" = "Cancel";
+"CATEGORIES_EDIT_CREATE" = "Create";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Edit";
+"EDIT_CATEGORY_NEW_TITLE" = "New category";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Enter category name";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Parent category";
+"EDIT_CATEGORY_NO_PARENT" = "No parent";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Subcategories";
+"EDIT_CATEGORY_ICON" = "Icon";
+"EDIT_CATEGORY_MORE_ICONS" = "More";
+"EDIT_CATEGORY_COLOR" = "Colour";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Delete category";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Delete folder";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "This action cannot be undone. All transactions with this category will be deleted.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Category name";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "New category";
+"EDIT_CATEGORY_CREATE" = "Create";
+"EDIT_CATEGORY_NAME" = "Name";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "Car";
+"DEFAULT_CATEGORY_FOOD" = "Food";
+"DEFAULT_CATEGORY_HOME" = "Home";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "Maintenance";
+"DEFAULT_CATEGORY_CAR_FUEL" = "Fuel";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "Restaurants";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "Groceries";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "Household";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "Utilities";
+"DEFAULT_CATEGORY_CLOTHING" = "Clothing";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "Health & beauty";
+"DEFAULT_CATEGORY_OTHER" = "Other";
+"DEFAULT_CATEGORY_CHARITY" = "Charity";
+"DEFAULT_CATEGORY_INTERNET" = "Internet";
+"DEFAULT_CATEGORY_TRANSPORT" = "Transport";

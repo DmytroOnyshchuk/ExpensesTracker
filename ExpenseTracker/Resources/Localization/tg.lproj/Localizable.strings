@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Назорати хароҷот";
+"DONE" = "Тайёр";
+"ERROR" = "Хато";
+"OK" = "OK";
+"YES" = "Ҳа";
+"NO" = "Не";
+"UPDATE" = "Навсозӣ";
+"ATTENTION" = "Диққат";
+"SUPPORT" = "Дастгирӣ";
+"NEXT" = "Баъдӣ";
+"BACK" = "Бозгашт";
+"REMOVE" = "Хориҷ кардан";
+"DELETE" = "Нест кардан";
+"CANCEL" = "Бекор кардан";
+"UNDO" = "Баргардондан";
+"CLEAR" = "Тоза кардан";
+"CLOSE" = "Пӯшидан";
+"RETRY" = "Аз нав кӯшиш кунед";
+"REPEAT" = "Такрор";
+"SOMETHING_WENT_WRONG" = "Хатое рух дод...";
+"CONTINUE" = "Идома додан";
+"SHARE" = "Мубодила";
+"SAVE" = "Захира кардан";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Хароҷотро ворид кунед";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Аввал маблағро ворид кунед";
+"STARTVIEW_BALANCE" = "Тавозун";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Хароҷот";
+"STATISTICS_DAY" = "Рӯз";
+"STATISTICS_MONTH" = "Моҳ";
+"STATISTICS_YEAR" = "Сол";
+"STATISTICS_TOTAL_SPENT" = "Ҳамагӣ сарф шуд";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Аз рӯи сана";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Аз рӯи маблағ";
+
+// MARK: - History
+"HISTORY_TITLE" = "Таърих";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Таҳрир";
+"TRANSACTION_EDIT_CATEGORY" = "Категория";
+"TRANSACTION_EDIT_AMOUNT" = "Маблағ";
+"TRANSACTION_EDIT_DATE" = "Сана";
+"TRANSACTION_EDIT_TIME" = "Вақт";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Иловаи шарҳ";
+"TRANSACTION_EDIT_DELETE" = "Нест кардани амалиёт";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Амалиёт нест карда шавад?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Категорияҳо";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Ҳамаи категорияҳо";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Амалиёт нест";
+"TRANSACTIONS_LIST_DELETE" = "Нест кардан";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Амалиёт илова шуд";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Амалиёт нест карда шуд";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Имрӯз сарф шуд";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Дирӯз сарф шуд";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Таҳрири категорияҳо";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Ҷузвдони нави категорияҳо";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Номи ҷузвдони нави категорияҳоро ворид кунед";
+"CATEGORIES_EDIT_CANCEL" = "Бекор кардан";
+"CATEGORIES_EDIT_CREATE" = "Эҷод кардан";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Таҳрир";
+"EDIT_CATEGORY_NEW_TITLE" = "Категорияи нав";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Номи категорияро ворид кунед";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Категорияи асосӣ";
+"EDIT_CATEGORY_NO_PARENT" = "Бе категорияи асосӣ";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Зеркатегорияҳо";
+"EDIT_CATEGORY_ICON" = "Нишона";
+"EDIT_CATEGORY_MORE_ICONS" = "Бештар";
+"EDIT_CATEGORY_COLOR" = "Ранг";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Нест кардани категория";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Нест кардани ҷузвдон";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ин амалро баргардондан мумкин нест. Ҳамаи амалиётҳои ин категория нест карда мешаванд.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Номи категория";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Категорияи нав";
+"EDIT_CATEGORY_CREATE" = "Эҷод кардан";
+"EDIT_CATEGORY_NAME" = "Ном";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "Мошин";
+"DEFAULT_CATEGORY_FOOD" = "Хӯрок";
+"DEFAULT_CATEGORY_HOME" = "Хона";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "Нигоҳдорӣ";
+"DEFAULT_CATEGORY_CAR_FUEL" = "Сӯзишворӣ";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "Тарабхонаҳо";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "Маҳсулоти хӯрока";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "Молҳои рӯзгор";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "Хизматрасонии коммуналӣ";
+"DEFAULT_CATEGORY_CLOTHING" = "Либос";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "Саломатӣ ва зебоӣ";
+"DEFAULT_CATEGORY_OTHER" = "Дигар";
+"DEFAULT_CATEGORY_CHARITY" = "Хайрия";
+"DEFAULT_CATEGORY_INTERNET" = "Интернет";
+"DEFAULT_CATEGORY_TRANSPORT" = "Нақлиёт";

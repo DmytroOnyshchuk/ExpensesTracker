@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Cathetan Pengeluaran";
+"DONE" = "Rampung";
+"ERROR" = "Kesalahan";
+"OK" = "OK";
+"YES" = "Iya";
+"NO" = "Ora";
+"UPDATE" = "Anyari";
+"ATTENTION" = "Kawigatosan";
+"SUPPORT" = "Dhukungan";
+"NEXT" = "Sabanjure";
+"BACK" = "Bali";
+"REMOVE" = "Copot";
+"DELETE" = "Busak";
+"CANCEL" = "Batal";
+"UNDO" = "Wurungake";
+"CLEAR" = "Resiki";
+"CLOSE" = "Tutup";
+"RETRY" = "Coba maneh";
+"REPEAT" = "Baleni";
+"SOMETHING_WENT_WRONG" = "Ana sing salah...";
+"CONTINUE" = "Terusake";
+"SHARE" = "Bagekake";
+"SAVE" = "Simpen";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Lebokake pengeluaran";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Lebokake jumlahe dhisik";
+"STARTVIEW_BALANCE" = "Saldo";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Pengeluaran";
+"STATISTICS_DAY" = "Dina";
+"STATISTICS_MONTH" = "Sasi";
+"STATISTICS_YEAR" = "Taun";
+"STATISTICS_TOTAL_SPENT" = "Total sing dientekake";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Miturut tanggal";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Miturut jumlah";
+
+// MARK: - History
+"HISTORY_TITLE" = "Riwayat";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Owahi";
+"TRANSACTION_EDIT_CATEGORY" = "Kategori";
+"TRANSACTION_EDIT_AMOUNT" = "Jumlah";
+"TRANSACTION_EDIT_DATE" = "Tanggal";
+"TRANSACTION_EDIT_TIME" = "Wektu";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Tambah komentar";
+"TRANSACTION_EDIT_DELETE" = "Busak transaksi";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Busak transaksi?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategori";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Kabeh kategori";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ora ana transaksi";
+"TRANSACTIONS_LIST_DELETE" = "Busak";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transaksi ditambahake";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transaksi dibusak";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Dientekake dina iki";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Dientekake wingi";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Owahi kategori";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Folder kategori anyar";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Lebokake jeneng kanggo folder kategori anyar";
+"CATEGORIES_EDIT_CANCEL" = "Batal";
+"CATEGORIES_EDIT_CREATE" = "Gawe";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Owahi";
+"EDIT_CATEGORY_NEW_TITLE" = "Kategori anyar";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Lebokake jeneng kategori";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Kategori induk";
+"EDIT_CATEGORY_NO_PARENT" = "Tanpa induk";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Subkategori";
+"EDIT_CATEGORY_ICON" = "Ikon";
+"EDIT_CATEGORY_MORE_ICONS" = "Luwih akeh";
+"EDIT_CATEGORY_COLOR" = "Werna";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Busak kategori";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Busak folder";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Tindakan iki ora bisa diwurungake. Kabeh transaksi ing kategori iki bakal dibusak.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Jeneng kategori";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Kategori anyar";
+"EDIT_CATEGORY_CREATE" = "Gawe";
+"EDIT_CATEGORY_NAME" = "Jeneng";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "Mobil";
+"DEFAULT_CATEGORY_FOOD" = "Panganan";
+"DEFAULT_CATEGORY_HOME" = "Omah";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "Perawatan";
+"DEFAULT_CATEGORY_CAR_FUEL" = "Bahan bakar";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "Restoran";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "Blanja pawon";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "Kaperluan omah";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "Tagihan omah";
+"DEFAULT_CATEGORY_CLOTHING" = "Sandhangan";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "Kesehatan lan kaendahan";
+"DEFAULT_CATEGORY_OTHER" = "Liyane";
+"DEFAULT_CATEGORY_CHARITY" = "Amal";
+"DEFAULT_CATEGORY_INTERNET" = "Internet";
+"DEFAULT_CATEGORY_TRANSPORT" = "Transportasi";

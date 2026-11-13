@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "খৰচ ট্ৰেকাৰ";
+"DONE" = "সম্পন্ন";
+"ERROR" = "ত্ৰুটি";
+"OK" = "ঠিক আছে";
+"YES" = "হয়";
+"NO" = "নহয়";
+"UPDATE" = "আপডেট কৰক";
+"ATTENTION" = "মনোযোগ";
+"SUPPORT" = "সহায়তা";
+"NEXT" = "পৰৱৰ্তী";
+"BACK" = "উভতি যাওক";
+"REMOVE" = "আঁতৰাওক";
+"DELETE" = "মচি পেলাওক";
+"CANCEL" = "বাতিল কৰক";
+"UNDO" = "পূৰ্বৱৎ কৰক";
+"CLEAR" = "পৰিষ্কাৰ কৰক";
+"CLOSE" = "বন্ধ কৰক";
+"RETRY" = "পুনৰ চেষ্টা কৰক";
+"REPEAT" = "পুনৰাবৃত্তি কৰক";
+"SOMETHING_WENT_WRONG" = "কিবা ভুল হ'ল...";
+"CONTINUE" = "অব্যাহত ৰাখক";
+"SHARE" = "শ্বেয়াৰ কৰক";
+"SAVE" = "সংৰক্ষণ কৰক";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "খৰচ লিখক";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "প্ৰথমে পৰিমাণ লিখক";
+"STARTVIEW_BALANCE" = "বেলেঞ্চ";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "খৰচ";
+"STATISTICS_DAY" = "দিন";
+"STATISTICS_MONTH" = "মাহ";
+"STATISTICS_YEAR" = "বছৰ";
+"STATISTICS_TOTAL_SPENT" = "মুঠ খৰচ";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "তাৰিখ অনুসৰি";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "পৰিমাণ অনুসৰি";
+
+// MARK: - History
+"HISTORY_TITLE" = "ইতিহাস";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "সম্পাদনা কৰক";
+"TRANSACTION_EDIT_CATEGORY" = "শ্ৰেণী";
+"TRANSACTION_EDIT_AMOUNT" = "পৰিমাণ";
+"TRANSACTION_EDIT_DATE" = "তাৰিখ";
+"TRANSACTION_EDIT_TIME" = "সময়";
+"TRANSACTION_EDIT_ADD_COMMENT" = "মন্তব্য যোগ কৰক";
+"TRANSACTION_EDIT_DELETE" = "লেনদেন মচি পেলাওক";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "লেনদেন মচি পেলাবনে?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "শ্ৰেণীসমূহ";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "সকলো শ্ৰেণী";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "কোনো লেনদেন নাই";
+"TRANSACTIONS_LIST_DELETE" = "মচি পেলাওক";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "লেনদেন যোগ কৰা হ'ল";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "লেনদেন মচি পেলোৱা হ'ল";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "আজিৰ খৰচ";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "কালিৰ খৰচ";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "শ্ৰেণী সম্পাদনা কৰক";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "নতুন শ্ৰেণী ফ'ল্ডাৰ";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "নতুন শ্ৰেণী ফ'ল্ডাৰৰ নাম লিখক";
+"CATEGORIES_EDIT_CANCEL" = "বাতিল কৰক";
+"CATEGORIES_EDIT_CREATE" = "সৃষ্টি কৰক";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "সম্পাদনা কৰক";
+"EDIT_CATEGORY_NEW_TITLE" = "নতুন শ্ৰেণী";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "শ্ৰেণীৰ নাম লিখক";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "মূল শ্ৰেণী";
+"EDIT_CATEGORY_NO_PARENT" = "কোনো মূল শ্ৰেণী নাই";
+"EDIT_CATEGORY_SUBCATEGORIES" = "উপশ্ৰেণী";
+"EDIT_CATEGORY_ICON" = "আইকন";
+"EDIT_CATEGORY_MORE_ICONS" = "অধিক";
+"EDIT_CATEGORY_COLOR" = "ৰং";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "শ্ৰেণী মচি পেলাওক";
+"EDIT_CATEGORY_DELETE_FOLDER" = "ফ'ল্ডাৰ মচি পেলাওক";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "এই কাৰ্য পূৰ্বৱৎ কৰিব নোৱাৰি। এই শ্ৰেণীৰ সকলো লেনদেন মচি পেলোৱা হ'ব।";
+"EDIT_CATEGORY_DEFAULT_NAME" = "শ্ৰেণীৰ নাম";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "নতুন শ্ৰেণী";
+"EDIT_CATEGORY_CREATE" = "সৃষ্টি কৰক";
+"EDIT_CATEGORY_NAME" = "নাম";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "গাড়ী";
+"DEFAULT_CATEGORY_FOOD" = "খাদ্য";
+"DEFAULT_CATEGORY_HOME" = "ঘৰ";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "মেৰামতি";
+"DEFAULT_CATEGORY_CAR_FUEL" = "ইন্ধন";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "ৰেষ্টুৰেণ্ট";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "গেলামাল";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "ঘৰুৱা সামগ্ৰী";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "ঘৰৰ বিল";
+"DEFAULT_CATEGORY_CLOTHING" = "কাপোৰ";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "স্বাস্থ্য আৰু সৌন্দৰ্য";
+"DEFAULT_CATEGORY_OTHER" = "অন্যান্য";
+"DEFAULT_CATEGORY_CHARITY" = "দান";
+"DEFAULT_CATEGORY_INTERNET" = "ইণ্টাৰনেট";
+"DEFAULT_CATEGORY_TRANSPORT" = "পৰিবহণ";

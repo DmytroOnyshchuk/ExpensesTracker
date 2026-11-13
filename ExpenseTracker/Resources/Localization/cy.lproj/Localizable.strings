@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Traciwr Treuliau";
+"DONE" = "Gorffen";
+"ERROR" = "Gwall";
+"OK" = "Iawn";
+"YES" = "Ie";
+"NO" = "Na";
+"UPDATE" = "Diweddaru";
+"ATTENTION" = "Sylw";
+"SUPPORT" = "Cymorth";
+"NEXT" = "Nesaf";
+"BACK" = "Yn ôl";
+"REMOVE" = "Tynnu";
+"DELETE" = "Dileu";
+"CANCEL" = "Canslo";
+"UNDO" = "Dadwneud";
+"CLEAR" = "Clirio";
+"CLOSE" = "Cau";
+"RETRY" = "Ceisio eto";
+"REPEAT" = "Ailadrodd";
+"SOMETHING_WENT_WRONG" = "Aeth rhywbeth o'i le...";
+"CONTINUE" = "Parhau";
+"SHARE" = "Rhannu";
+"SAVE" = "Cadw";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Rhowch y gwariant";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Rhowch y swm yn gyntaf";
+"STARTVIEW_BALANCE" = "Balans";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Treuliau";
+"STATISTICS_DAY" = "Diwrnod";
+"STATISTICS_MONTH" = "Mis";
+"STATISTICS_YEAR" = "Blwyddyn";
+"STATISTICS_TOTAL_SPENT" = "Cyfanswm a wariwyd";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Yn ôl dyddiad";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Yn ôl swm";
+
+// MARK: - History
+"HISTORY_TITLE" = "Hanes";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Golygu";
+"TRANSACTION_EDIT_CATEGORY" = "Categori";
+"TRANSACTION_EDIT_AMOUNT" = "Swm";
+"TRANSACTION_EDIT_DATE" = "Dyddiad";
+"TRANSACTION_EDIT_TIME" = "Amser";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Ychwanegu sylw";
+"TRANSACTION_EDIT_DELETE" = "Dileu'r trafodyn";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Dileu'r trafodyn?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Categorïau";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Pob categori";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Dim trafodion";
+"TRANSACTIONS_LIST_DELETE" = "Dileu";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Trafodyn wedi'i ychwanegu";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Trafodyn wedi'i ddileu";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Gwariwyd heddiw";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Gwariwyd ddoe";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Golygu categorïau";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Ffolder categorïau newydd";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Rhowch enw ar gyfer y ffolder categorïau newydd";
+"CATEGORIES_EDIT_CANCEL" = "Canslo";
+"CATEGORIES_EDIT_CREATE" = "Creu";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Golygu";
+"EDIT_CATEGORY_NEW_TITLE" = "Categori newydd";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Rhowch enw'r categori";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Categori rhiant";
+"EDIT_CATEGORY_NO_PARENT" = "Dim rhiant";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Is-gategorïau";
+"EDIT_CATEGORY_ICON" = "Eicon";
+"EDIT_CATEGORY_MORE_ICONS" = "Rhagor";
+"EDIT_CATEGORY_COLOR" = "Lliw";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Dileu'r categori";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Dileu'r ffolder";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ni ellir dadwneud y weithred hon. Bydd pob trafodyn yn y categori hwn yn cael ei ddileu.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Enw'r categori";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Categori newydd";
+"EDIT_CATEGORY_CREATE" = "Creu";
+"EDIT_CATEGORY_NAME" = "Enw";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "Car";
+"DEFAULT_CATEGORY_FOOD" = "Bwyd";
+"DEFAULT_CATEGORY_HOME" = "Cartref";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "Cynnal a chadw";
+"DEFAULT_CATEGORY_CAR_FUEL" = "Tanwydd";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "Bwytai";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "Bwydydd";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "Nwyddau'r cartref";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "Biliau'r cartref";
+"DEFAULT_CATEGORY_CLOTHING" = "Dillad";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "Iechyd a harddwch";
+"DEFAULT_CATEGORY_OTHER" = "Arall";
+"DEFAULT_CATEGORY_CHARITY" = "Elusen";
+"DEFAULT_CATEGORY_INTERNET" = "Rhyngrwyd";
+"DEFAULT_CATEGORY_TRANSPORT" = "Trafnidiaeth";

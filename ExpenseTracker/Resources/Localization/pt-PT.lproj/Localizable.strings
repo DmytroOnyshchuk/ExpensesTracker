@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Controlo de despesas";
+"DONE" = "Concluído";
+"ERROR" = "Erro";
+"OK" = "OK";
+"YES" = "Sim";
+"NO" = "Não";
+"UPDATE" = "Atualizar";
+"ATTENTION" = "Atenção";
+"SUPPORT" = "Suporte";
+"NEXT" = "Seguinte";
+"BACK" = "Voltar";
+"REMOVE" = "Eliminar";
+"DELETE" = "Eliminar";
+"CANCEL" = "Cancelar";
+"UNDO" = "Anular";
+"CLEAR" = "Limpar";
+"CLOSE" = "Fechar";
+"RETRY" = "Tentar novamente";
+"REPEAT" = "Tentar novamente";
+"SOMETHING_WENT_WRONG" = "Algo correu mal...";
+"CONTINUE" = "Continuar";
+"SHARE" = "Partilhar";
+"SAVE" = "Guardar";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Introduza a despesa";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Introduza primeiro o montante";
+"STARTVIEW_BALANCE" = "Saldo";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Despesas";
+"STATISTICS_DAY" = "Dia";
+"STATISTICS_MONTH" = "Mês";
+"STATISTICS_YEAR" = "Ano";
+"STATISTICS_TOTAL_SPENT" = "Total gasto";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Por data";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Por montante";
+
+// MARK: - History
+"HISTORY_TITLE" = "Histórico";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Editar";
+"TRANSACTION_EDIT_CATEGORY" = "Categoria";
+"TRANSACTION_EDIT_AMOUNT" = "Montante";
+"TRANSACTION_EDIT_DATE" = "Data";
+"TRANSACTION_EDIT_TIME" = "Hora";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Adicionar comentário";
+"TRANSACTION_EDIT_DELETE" = "Eliminar transação";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Eliminar transação?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Categorias";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Todas as categorias";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nenhuma transação";
+"TRANSACTIONS_LIST_DELETE" = "Eliminar";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transação adicionada";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transação eliminada";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Gasto hoje";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Gasto ontem";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Editar categorias";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nova pasta de categorias";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Introduza um nome para a nova pasta de categorias";
+"CATEGORIES_EDIT_CANCEL" = "Cancelar";
+"CATEGORIES_EDIT_CREATE" = "Criar";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Editar";
+"EDIT_CATEGORY_NEW_TITLE" = "Nova categoria";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Introduza o nome da categoria";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Categoria principal";
+"EDIT_CATEGORY_NO_PARENT" = "Sem categoria principal";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Subcategorias";
+"EDIT_CATEGORY_ICON" = "Ícone";
+"EDIT_CATEGORY_MORE_ICONS" = "Mais";
+"EDIT_CATEGORY_COLOR" = "Cor";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Eliminar categoria";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Eliminar pasta";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Esta ação não pode ser anulada. Todas as transações desta categoria serão eliminadas.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Nome da categoria";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nova categoria";
+"EDIT_CATEGORY_CREATE" = "Criar";
+"EDIT_CATEGORY_NAME" = "Nome";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "Carro";
+"DEFAULT_CATEGORY_FOOD" = "Alimentação";
+"DEFAULT_CATEGORY_HOME" = "Casa";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "Manutenção";
+"DEFAULT_CATEGORY_CAR_FUEL" = "Combustível";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "Restaurantes";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "Supermercado";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "Artigos para o lar";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "Contas da casa";
+"DEFAULT_CATEGORY_CLOTHING" = "Roupa";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "Saúde e beleza";
+"DEFAULT_CATEGORY_OTHER" = "Outros";
+"DEFAULT_CATEGORY_CHARITY" = "Donativos";
+"DEFAULT_CATEGORY_INTERNET" = "Internet";
+"DEFAULT_CATEGORY_TRANSPORT" = "Transporte";

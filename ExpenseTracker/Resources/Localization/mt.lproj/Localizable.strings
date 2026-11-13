@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Traċċar tal-Ispejjeż";
+"DONE" = "Lest";
+"ERROR" = "Żball";
+"OK" = "OK";
+"YES" = "Iva";
+"NO" = "Le";
+"UPDATE" = "Aġġorna";
+"ATTENTION" = "Attenzjoni";
+"SUPPORT" = "Appoġġ";
+"NEXT" = "Li jmiss";
+"BACK" = "Lura";
+"REMOVE" = "Neħħi";
+"DELETE" = "Ħassar";
+"CANCEL" = "Ikkanċella";
+"UNDO" = "Annulla";
+"CLEAR" = "Ikklerja";
+"CLOSE" = "Agħlaq";
+"RETRY" = "Erġa' pprova";
+"REPEAT" = "Irrepeti";
+"SOMETHING_WENT_WRONG" = "Xi ħaġa marret ħażin...";
+"CONTINUE" = "Kompli";
+"SHARE" = "Aqsam";
+"SAVE" = "Issejvja";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Daħħal l-ispiża";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "L-ewwel daħħal l-ammont";
+"STARTVIEW_BALANCE" = "Bilanċ";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Spejjeż";
+"STATISTICS_DAY" = "Jum";
+"STATISTICS_MONTH" = "Xahar";
+"STATISTICS_YEAR" = "Sena";
+"STATISTICS_TOTAL_SPENT" = "Total minfuq";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Skont id-data";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Skont l-ammont";
+
+// MARK: - History
+"HISTORY_TITLE" = "Storja";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Editja";
+"TRANSACTION_EDIT_CATEGORY" = "Kategorija";
+"TRANSACTION_EDIT_AMOUNT" = "Ammont";
+"TRANSACTION_EDIT_DATE" = "Data";
+"TRANSACTION_EDIT_TIME" = "Ħin";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Żid kumment";
+"TRANSACTION_EDIT_DELETE" = "Ħassar it-tranżazzjoni";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Tħassar it-tranżazzjoni?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategoriji";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Il-kategoriji kollha";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "L-ebda tranżazzjoni";
+"TRANSACTIONS_LIST_DELETE" = "Ħassar";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Tranżazzjoni miżjuda";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Tranżazzjoni mħassra";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Minfuq illum";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Minfuq ilbieraħ";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Editja l-kategoriji";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Folder ġdid tal-kategoriji";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Daħħal isem għall-folder ġdid tal-kategoriji";
+"CATEGORIES_EDIT_CANCEL" = "Ikkanċella";
+"CATEGORIES_EDIT_CREATE" = "Oħloq";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Editja";
+"EDIT_CATEGORY_NEW_TITLE" = "Kategorija ġdida";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Daħħal l-isem tal-kategorija";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Kategorija prinċipali";
+"EDIT_CATEGORY_NO_PARENT" = "L-ebda kategorija prinċipali";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Sottokategoriji";
+"EDIT_CATEGORY_ICON" = "Ikona";
+"EDIT_CATEGORY_MORE_ICONS" = "Aktar";
+"EDIT_CATEGORY_COLOR" = "Kulur";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Ħassar il-kategorija";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Ħassar il-folder";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Din l-azzjoni ma tistax titreġġa' lura. It-tranżazzjonijiet kollha b'din il-kategorija se jitħassru.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Isem tal-kategorija";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Kategorija ġdida";
+"EDIT_CATEGORY_CREATE" = "Oħloq";
+"EDIT_CATEGORY_NAME" = "Isem";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "Karozza";
+"DEFAULT_CATEGORY_FOOD" = "Ikel";
+"DEFAULT_CATEGORY_HOME" = "Dar";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "Manutenzjoni";
+"DEFAULT_CATEGORY_CAR_FUEL" = "Fjuwil";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "Ristoranti";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "Merċa";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "Oġġetti tad-dar";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "Kontijiet tad-dar";
+"DEFAULT_CATEGORY_CLOTHING" = "Ħwejjeġ";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "Saħħa u sbuħija";
+"DEFAULT_CATEGORY_OTHER" = "Oħrajn";
+"DEFAULT_CATEGORY_CHARITY" = "Karità";
+"DEFAULT_CATEGORY_INTERNET" = "Internet";
+"DEFAULT_CATEGORY_TRANSPORT" = "Trasport";

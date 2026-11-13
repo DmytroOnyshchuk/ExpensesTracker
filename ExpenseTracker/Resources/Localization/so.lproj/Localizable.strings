@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Raadraaca Kharashka";
+"DONE" = "La dhammeeyay";
+"ERROR" = "Khalad";
+"OK" = "Haye";
+"YES" = "Haa";
+"NO" = "Maya";
+"UPDATE" = "Cusboonaysii";
+"ATTENTION" = "Fiiro gaar ah";
+"SUPPORT" = "Taageero";
+"NEXT" = "Xiga";
+"BACK" = "Dib u noqo";
+"REMOVE" = "Ka saar";
+"DELETE" = "Tirtir";
+"CANCEL" = "Jooji";
+"UNDO" = "Ka noqo";
+"CLEAR" = "Nadiifi";
+"CLOSE" = "Xir";
+"RETRY" = "Isku day mar kale";
+"REPEAT" = "Ku celi";
+"SOMETHING_WENT_WRONG" = "Wax baa khaldamay...";
+"CONTINUE" = "Sii wad";
+"SHARE" = "La wadaag";
+"SAVE" = "Kaydi";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Geli kharashka";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Marka hore geli qaddarka";
+"STARTVIEW_BALANCE" = "Haraaga";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Kharashyada";
+"STATISTICS_DAY" = "Maalin";
+"STATISTICS_MONTH" = "Bil";
+"STATISTICS_YEAR" = "Sannad";
+"STATISTICS_TOTAL_SPENT" = "Wadarta la kharash gareeyay";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Taariikh ahaan";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Qaddar ahaan";
+
+// MARK: - History
+"HISTORY_TITLE" = "Diiwaanka";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Wax ka beddel";
+"TRANSACTION_EDIT_CATEGORY" = "Qayb";
+"TRANSACTION_EDIT_AMOUNT" = "Qaddar";
+"TRANSACTION_EDIT_DATE" = "Taariikh";
+"TRANSACTION_EDIT_TIME" = "Waqti";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Ku dar faallo";
+"TRANSACTION_EDIT_DELETE" = "Tirtir macaamilka";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Ma tirtirtaa macaamilka?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Qaybaha";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Dhammaan qaybaha";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Macaamil ma jiro";
+"TRANSACTIONS_LIST_DELETE" = "Tirtir";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Macaamil waa la daray";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Macaamil waa la tirtiray";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Maanta la kharash gareeyay";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Shalay la kharash gareeyay";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Wax ka beddel qaybaha";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Gal cusub oo qaybaha ah";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Geli magaca galka cusub ee qaybaha";
+"CATEGORIES_EDIT_CANCEL" = "Jooji";
+"CATEGORIES_EDIT_CREATE" = "Samee";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Wax ka beddel";
+"EDIT_CATEGORY_NEW_TITLE" = "Qayb cusub";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Geli magaca qaybta";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Qaybta sare";
+"EDIT_CATEGORY_NO_PARENT" = "Qayb sare ma leh";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Qayb-hoosaadyo";
+"EDIT_CATEGORY_ICON" = "Astaan";
+"EDIT_CATEGORY_MORE_ICONS" = "Wax dheeraad ah";
+"EDIT_CATEGORY_COLOR" = "Midab";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Tirtir qaybta";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Tirtir galka";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Tallaabadan dib looma celin karo. Dhammaan macaamillada qaybtan waa la tirtiri doonaa.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Magaca qaybta";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Qayb cusub";
+"EDIT_CATEGORY_CREATE" = "Samee";
+"EDIT_CATEGORY_NAME" = "Magac";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "Gaari";
+"DEFAULT_CATEGORY_FOOD" = "Cunto";
+"DEFAULT_CATEGORY_HOME" = "Guri";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "Dayactir";
+"DEFAULT_CATEGORY_CAR_FUEL" = "Shidaal";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "Makhaayado";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "Raashin";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "Alaabta guriga";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "Biilasha guriga";
+"DEFAULT_CATEGORY_CLOTHING" = "Dhar";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "Caafimaad iyo qurux";
+"DEFAULT_CATEGORY_OTHER" = "Kale";
+"DEFAULT_CATEGORY_CHARITY" = "Sadaqo";
+"DEFAULT_CATEGORY_INTERNET" = "Internet";
+"DEFAULT_CATEGORY_TRANSPORT" = "Gaadiid";

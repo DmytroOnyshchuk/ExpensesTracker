@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "ଖର୍ଚ୍ଚ ଟ୍ରାକର";
+"DONE" = "ହୋଇଗଲା";
+"ERROR" = "ତ୍ରୁଟି";
+"OK" = "ଠିକ ଅଛି";
+"YES" = "ହଁ";
+"NO" = "ନା";
+"UPDATE" = "ଅପଡେଟ କରନ୍ତୁ";
+"ATTENTION" = "ଧ୍ୟାନ ଦିଅନ୍ତୁ";
+"SUPPORT" = "ସହାୟତା";
+"NEXT" = "ପରବର୍ତ୍ତୀ";
+"BACK" = "ପଛକୁ";
+"REMOVE" = "କାଢ଼ନ୍ତୁ";
+"DELETE" = "ଡିଲିଟ କରନ୍ତୁ";
+"CANCEL" = "ବାତିଲ କରନ୍ତୁ";
+"UNDO" = "ପୂର୍ବବତ୍ କରନ୍ତୁ";
+"CLEAR" = "ଖାଲି କରନ୍ତୁ";
+"CLOSE" = "ବନ୍ଦ କରନ୍ତୁ";
+"RETRY" = "ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ";
+"REPEAT" = "ପୁନରାବୃତ୍ତି କରନ୍ତୁ";
+"SOMETHING_WENT_WRONG" = "କିଛି ଭୁଲ ହୋଇଗଲା...";
+"CONTINUE" = "ଜାରି ରଖନ୍ତୁ";
+"SHARE" = "ସେୟାର କରନ୍ତୁ";
+"SAVE" = "ସେଭ କରନ୍ତୁ";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "ଖର୍ଚ୍ଚ ଲେଖନ୍ତୁ";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "ପ୍ରଥମେ ପରିମାଣ ଲେଖନ୍ତୁ";
+"STARTVIEW_BALANCE" = "ବାଲାନ୍ସ";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "ଖର୍ଚ୍ଚ";
+"STATISTICS_DAY" = "ଦିନ";
+"STATISTICS_MONTH" = "ମାସ";
+"STATISTICS_YEAR" = "ବର୍ଷ";
+"STATISTICS_TOTAL_SPENT" = "ମୋଟ ଖର୍ଚ୍ଚ";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "ତାରିଖ ଅନୁସାରେ";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "ପରିମାଣ ଅନୁସାରେ";
+
+// MARK: - History
+"HISTORY_TITLE" = "ଇତିହାସ";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "ସମ୍ପାଦନା କରନ୍ତୁ";
+"TRANSACTION_EDIT_CATEGORY" = "ବର୍ଗ";
+"TRANSACTION_EDIT_AMOUNT" = "ପରିମାଣ";
+"TRANSACTION_EDIT_DATE" = "ତାରିଖ";
+"TRANSACTION_EDIT_TIME" = "ସମୟ";
+"TRANSACTION_EDIT_ADD_COMMENT" = "ମନ୍ତବ୍ୟ ଯୋଡ଼ନ୍ତୁ";
+"TRANSACTION_EDIT_DELETE" = "କାରବାର ଡିଲିଟ କରନ୍ତୁ";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "କାରବାର ଡିଲିଟ କରିବେ?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "ବର୍ଗଗୁଡ଼ିକ";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "ସମସ୍ତ ବର୍ଗ";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "କୌଣସି କାରବାର ନାହିଁ";
+"TRANSACTIONS_LIST_DELETE" = "ଡିଲିଟ କରନ୍ତୁ";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "କାରବାର ଯୋଡ଼ାଗଲା";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "କାରବାର ଡିଲିଟ ହେଲା";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "ଆଜିର ଖର୍ଚ୍ଚ";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ଗତକାଲିର ଖର୍ଚ୍ଚ";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "ବର୍ଗ ସମ୍ପାଦନା କରନ୍ତୁ";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "ନୂଆ ବର୍ଗ ଫୋଲ୍ଡର";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "ନୂଆ ବର୍ଗ ଫୋଲ୍ଡରର ନାମ ଲେଖନ୍ତୁ";
+"CATEGORIES_EDIT_CANCEL" = "ବାତିଲ କରନ୍ତୁ";
+"CATEGORIES_EDIT_CREATE" = "ତିଆରି କରନ୍ତୁ";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "ସମ୍ପାଦନା କରନ୍ତୁ";
+"EDIT_CATEGORY_NEW_TITLE" = "ନୂଆ ବର୍ଗ";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "ବର୍ଗର ନାମ ଲେଖନ୍ତୁ";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "ମୂଳ ବର୍ଗ";
+"EDIT_CATEGORY_NO_PARENT" = "କୌଣସି ମୂଳ ବର୍ଗ ନାହିଁ";
+"EDIT_CATEGORY_SUBCATEGORIES" = "ଉପବର୍ଗ";
+"EDIT_CATEGORY_ICON" = "ଆଇକନ";
+"EDIT_CATEGORY_MORE_ICONS" = "ଅଧିକ";
+"EDIT_CATEGORY_COLOR" = "ରଙ୍ଗ";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "ବର୍ଗ ଡିଲିଟ କରନ୍ତୁ";
+"EDIT_CATEGORY_DELETE_FOLDER" = "ଫୋଲ୍ଡର ଡିଲିଟ କରନ୍ତୁ";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "ଏହି କାର୍ଯ୍ୟକୁ ପୂର୍ବବତ୍ କରିହେବ ନାହିଁ। ଏହି ବର୍ଗର ସମସ୍ତ କାରବାର ଡିଲିଟ ହୋଇଯିବ।";
+"EDIT_CATEGORY_DEFAULT_NAME" = "ବର୍ଗର ନାମ";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "ନୂଆ ବର୍ଗ";
+"EDIT_CATEGORY_CREATE" = "ତିଆରି କରନ୍ତୁ";
+"EDIT_CATEGORY_NAME" = "ନାମ";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "କାର";
+"DEFAULT_CATEGORY_FOOD" = "ଖାଦ୍ୟ";
+"DEFAULT_CATEGORY_HOME" = "ଘର";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "ରକ୍ଷଣାବେକ୍ଷଣ";
+"DEFAULT_CATEGORY_CAR_FUEL" = "ଇନ୍ଧନ";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "ରେଷ୍ଟୁରାଣ୍ଟ";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "କିରାଣା";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "ଘର ସାମଗ୍ରୀ";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "ଘର ବିଲ";
+"DEFAULT_CATEGORY_CLOTHING" = "ପୋଷାକ";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "ସ୍ୱାସ୍ଥ୍ୟ ଓ ସୌନ୍ଦର୍ଯ୍ୟ";
+"DEFAULT_CATEGORY_OTHER" = "ଅନ୍ୟାନ୍ୟ";
+"DEFAULT_CATEGORY_CHARITY" = "ଦାନ";
+"DEFAULT_CATEGORY_INTERNET" = "ଇଣ୍ଟରନେଟ";
+"DEFAULT_CATEGORY_TRANSPORT" = "ପରିବହନ";

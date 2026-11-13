@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Bin Diddigin Kashe Kuɗi";
+"DONE" = "An gama";
+"ERROR" = "Kuskure";
+"OK" = "To";
+"YES" = "Eh";
+"NO" = "A'a";
+"UPDATE" = "Sabunta";
+"ATTENTION" = "Hankali";
+"SUPPORT" = "Tallafi";
+"NEXT" = "Na gaba";
+"BACK" = "Baya";
+"REMOVE" = "Cire";
+"DELETE" = "Share";
+"CANCEL" = "Soke";
+"UNDO" = "Mayar";
+"CLEAR" = "Goge";
+"CLOSE" = "Rufe";
+"RETRY" = "Sake gwadawa";
+"REPEAT" = "Maimaita";
+"SOMETHING_WENT_WRONG" = "An sami matsala...";
+"CONTINUE" = "Ci gaba";
+"SHARE" = "Raba";
+"SAVE" = "Ajiye";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Shigar da kashe kuɗi";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Fara shigar da adadin";
+"STARTVIEW_BALANCE" = "Ragowa";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Kashe kuɗi";
+"STATISTICS_DAY" = "Rana";
+"STATISTICS_MONTH" = "Wata";
+"STATISTICS_YEAR" = "Shekara";
+"STATISTICS_TOTAL_SPENT" = "Jimillar da aka kashe";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Bisa kwanan wata";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Bisa adadi";
+
+// MARK: - History
+"HISTORY_TITLE" = "Tarihi";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Gyara";
+"TRANSACTION_EDIT_CATEGORY" = "Rukuni";
+"TRANSACTION_EDIT_AMOUNT" = "Adadi";
+"TRANSACTION_EDIT_DATE" = "Kwanan wata";
+"TRANSACTION_EDIT_TIME" = "Lokaci";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Ƙara bayani";
+"TRANSACTION_EDIT_DELETE" = "Share ma'amala";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "A share ma'amalar?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Rukunoni";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Duk rukunoni";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Babu ma'amaloli";
+"TRANSACTIONS_LIST_DELETE" = "Share";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "An ƙara ma'amala";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "An share ma'amala";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "An kashe yau";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "An kashe jiya";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Gyara rukunoni";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Sabon babban fayil na rukunoni";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Shigar da sunan sabon babban fayil na rukunoni";
+"CATEGORIES_EDIT_CANCEL" = "Soke";
+"CATEGORIES_EDIT_CREATE" = "Ƙirƙira";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Gyara";
+"EDIT_CATEGORY_NEW_TITLE" = "Sabon rukuni";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Shigar da sunan rukuni";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Babban rukuni";
+"EDIT_CATEGORY_NO_PARENT" = "Babu babban rukuni";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Ƙananan rukunoni";
+"EDIT_CATEGORY_ICON" = "Alama";
+"EDIT_CATEGORY_MORE_ICONS" = "Ƙari";
+"EDIT_CATEGORY_COLOR" = "Launi";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Share rukuni";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Share babban fayil";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ba za a iya mayar da wannan aikin ba. Za a share duk ma'amalolin wannan rukuni.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Sunan rukuni";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Sabon rukuni";
+"EDIT_CATEGORY_CREATE" = "Ƙirƙira";
+"EDIT_CATEGORY_NAME" = "Suna";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "Mota";
+"DEFAULT_CATEGORY_FOOD" = "Abinci";
+"DEFAULT_CATEGORY_HOME" = "Gida";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "Gyare-gyare";
+"DEFAULT_CATEGORY_CAR_FUEL" = "Mai";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "Gidajen abinci";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "Kayan abinci";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "Kayan gida";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "Kuɗin wuta da ruwa";
+"DEFAULT_CATEGORY_CLOTHING" = "Tufafi";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "Lafiya da kyau";
+"DEFAULT_CATEGORY_OTHER" = "Sauran";
+"DEFAULT_CATEGORY_CHARITY" = "Sadaka";
+"DEFAULT_CATEGORY_INTERNET" = "Intanet";
+"DEFAULT_CATEGORY_TRANSPORT" = "Sufuri";

@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Rianaire Caiteachais";
+"DONE" = "Déanta";
+"ERROR" = "Earráid";
+"OK" = "OK";
+"YES" = "Tá";
+"NO" = "Níl";
+"UPDATE" = "Nuashonraigh";
+"ATTENTION" = "Aire";
+"SUPPORT" = "Tacaíocht";
+"NEXT" = "Ar aghaidh";
+"BACK" = "Siar";
+"REMOVE" = "Bain";
+"DELETE" = "Scrios";
+"CANCEL" = "Cuir ar ceal";
+"UNDO" = "Cealaigh";
+"CLEAR" = "Glan";
+"CLOSE" = "Dún";
+"RETRY" = "Bain triail eile as";
+"REPEAT" = "Athdhéan";
+"SOMETHING_WENT_WRONG" = "Chuaigh rud éigin amú...";
+"CONTINUE" = "Lean ar aghaidh";
+"SHARE" = "Comhroinn";
+"SAVE" = "Sábháil";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Cuir isteach an caiteachas";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Cuir isteach an tsuim ar dtús";
+"STARTVIEW_BALANCE" = "Iarmhéid";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Caiteachas";
+"STATISTICS_DAY" = "Lá";
+"STATISTICS_MONTH" = "Mí";
+"STATISTICS_YEAR" = "Bliain";
+"STATISTICS_TOTAL_SPENT" = "Iomlán caite";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "De réir dáta";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "De réir suime";
+
+// MARK: - History
+"HISTORY_TITLE" = "Stair";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Cuir in eagar";
+"TRANSACTION_EDIT_CATEGORY" = "Catagóir";
+"TRANSACTION_EDIT_AMOUNT" = "Suim";
+"TRANSACTION_EDIT_DATE" = "Dáta";
+"TRANSACTION_EDIT_TIME" = "Am";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Cuir nóta leis";
+"TRANSACTION_EDIT_DELETE" = "Scrios an t-idirbheart";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Scrios an t-idirbheart?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Catagóirí";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Gach catagóir";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Níl aon idirbhearta ann";
+"TRANSACTIONS_LIST_DELETE" = "Scrios";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Idirbheart curtha leis";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Idirbheart scriosta";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Caite inniu";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Caite inné";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Cuir catagóirí in eagar";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Fillteán catagóirí nua";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Cuir isteach ainm don fhillteán catagóirí nua";
+"CATEGORIES_EDIT_CANCEL" = "Cuir ar ceal";
+"CATEGORIES_EDIT_CREATE" = "Cruthaigh";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Cuir in eagar";
+"EDIT_CATEGORY_NEW_TITLE" = "Catagóir nua";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Cuir isteach ainm na catagóire";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Máthair-chatagóir";
+"EDIT_CATEGORY_NO_PARENT" = "Gan mháthair-chatagóir";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Fochatagóirí";
+"EDIT_CATEGORY_ICON" = "Deilbhín";
+"EDIT_CATEGORY_MORE_ICONS" = "Tuilleadh";
+"EDIT_CATEGORY_COLOR" = "Dath";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Scrios an chatagóir";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Scrios an fillteán";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ní féidir an gníomh seo a chealú. Scriosfar gach idirbheart sa chatagóir seo.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Ainm na catagóire";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Catagóir nua";
+"EDIT_CATEGORY_CREATE" = "Cruthaigh";
+"EDIT_CATEGORY_NAME" = "Ainm";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "Carr";
+"DEFAULT_CATEGORY_FOOD" = "Bia";
+"DEFAULT_CATEGORY_HOME" = "Baile";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "Cothabháil";
+"DEFAULT_CATEGORY_CAR_FUEL" = "Breosla";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "Bialanna";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "Earraí grósaera";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "Earraí tí";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "Billí tí";
+"DEFAULT_CATEGORY_CLOTHING" = "Éadaí";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "Sláinte agus áilleacht";
+"DEFAULT_CATEGORY_OTHER" = "Eile";
+"DEFAULT_CATEGORY_CHARITY" = "Carthanacht";
+"DEFAULT_CATEGORY_INTERNET" = "Idirlíon";
+"DEFAULT_CATEGORY_TRANSPORT" = "Iompar";

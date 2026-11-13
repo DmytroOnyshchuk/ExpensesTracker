@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Aroturuki Whakapaunga";
+"DONE" = "Kua oti";
+"ERROR" = "Hapa";
+"OK" = "Ka pai";
+"YES" = "Āe";
+"NO" = "Kāo";
+"UPDATE" = "Whakahou";
+"ATTENTION" = "Kia tūpato";
+"SUPPORT" = "Tautoko";
+"NEXT" = "Panuku";
+"BACK" = "Hoki";
+"REMOVE" = "Tangohia";
+"DELETE" = "Mukua";
+"CANCEL" = "Whakakore";
+"UNDO" = "Wetekina";
+"CLEAR" = "Whakawātea";
+"CLOSE" = "Katia";
+"RETRY" = "Ngana anō";
+"REPEAT" = "Tāruatia";
+"SOMETHING_WENT_WRONG" = "I hē tētahi mea...";
+"CONTINUE" = "Haere tonu";
+"SHARE" = "Tiri";
+"SAVE" = "Tiaki";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Tāurua te whakapaunga";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Tāurua te moni i te tuatahi";
+"STARTVIEW_BALANCE" = "Toenga";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Ngā whakapaunga";
+"STATISTICS_DAY" = "Rā";
+"STATISTICS_MONTH" = "Marama";
+"STATISTICS_YEAR" = "Tau";
+"STATISTICS_TOTAL_SPENT" = "Tapeke i whakapaua";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Mā te rā";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Mā te moni";
+
+// MARK: - History
+"HISTORY_TITLE" = "Hītori";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Whakatika";
+"TRANSACTION_EDIT_CATEGORY" = "Kāwai";
+"TRANSACTION_EDIT_AMOUNT" = "Moni";
+"TRANSACTION_EDIT_DATE" = "Te rā";
+"TRANSACTION_EDIT_TIME" = "Wā";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Tāpiri kōrero";
+"TRANSACTION_EDIT_DELETE" = "Mukua te tauwhitinga";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Me muku te tauwhitinga?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Ngā kāwai";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Ngā kāwai katoa";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Kāore he tauwhitinga";
+"TRANSACTIONS_LIST_DELETE" = "Mukua";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Kua tāpirihia te tauwhitinga";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Kua mukua te tauwhitinga";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "I whakapaua i tēnei rā";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "I whakapaua inanahi";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Whakatika kāwai";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Kōpaki kāwai hou";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Tāurua he ingoa mō te kōpaki kāwai hou";
+"CATEGORIES_EDIT_CANCEL" = "Whakakore";
+"CATEGORIES_EDIT_CREATE" = "Waihanga";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Whakatika";
+"EDIT_CATEGORY_NEW_TITLE" = "Kāwai hou";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Tāurua te ingoa kāwai";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Kāwai matua";
+"EDIT_CATEGORY_NO_PARENT" = "Kāore he matua";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Ngā kāwai iti";
+"EDIT_CATEGORY_ICON" = "Ata";
+"EDIT_CATEGORY_MORE_ICONS" = "Ētahi atu";
+"EDIT_CATEGORY_COLOR" = "Tae";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Mukua te kāwai";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Mukua te kōpaki";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kāore e taea tēnei mahi te wetekina. Ka mukua ngā tauwhitinga katoa o tēnei kāwai.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Ingoa kāwai";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Kāwai hou";
+"EDIT_CATEGORY_CREATE" = "Waihanga";
+"EDIT_CATEGORY_NAME" = "Ingoa";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "Motokā";
+"DEFAULT_CATEGORY_FOOD" = "Kai";
+"DEFAULT_CATEGORY_HOME" = "Kāinga";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "Whakatikatika";
+"DEFAULT_CATEGORY_CAR_FUEL" = "Kora";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "Ngā wharekai";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "Ngā kai o te toa";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "Ngā taputapu whare";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "Ngā pire whare";
+"DEFAULT_CATEGORY_CLOTHING" = "Kākahu";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "Hauora me te ātaahua";
+"DEFAULT_CATEGORY_OTHER" = "Tētahi atu";
+"DEFAULT_CATEGORY_CHARITY" = "Kaupapa atawhai";
+"DEFAULT_CATEGORY_INTERNET" = "Ipurangi";
+"DEFAULT_CATEGORY_TRANSPORT" = "Waka";

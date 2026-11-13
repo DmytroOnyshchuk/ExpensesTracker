@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Útreiðsluyvirlit";
+"DONE" = "Liðugt";
+"ERROR" = "Villa";
+"OK" = "OK";
+"YES" = "Ja";
+"NO" = "Nei";
+"UPDATE" = "Dagfør";
+"ATTENTION" = "Gev gætur";
+"SUPPORT" = "Hjálp";
+"NEXT" = "Næsta";
+"BACK" = "Aftur";
+"REMOVE" = "Tak burtur";
+"DELETE" = "Strika";
+"CANCEL" = "Ógilda";
+"UNDO" = "Angra";
+"CLEAR" = "Rudda";
+"CLOSE" = "Lat aftur";
+"RETRY" = "Royn aftur";
+"REPEAT" = "Endurtak";
+"SOMETHING_WENT_WRONG" = "Okkurt gekk galið...";
+"CONTINUE" = "Halt fram";
+"SHARE" = "Deil";
+"SAVE" = "Goym";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Skriva útreiðslu";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Skriva upphæddina fyrst";
+"STARTVIEW_BALANCE" = "Saldo";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Útreiðslur";
+"STATISTICS_DAY" = "Dagur";
+"STATISTICS_MONTH" = "Mánaður";
+"STATISTICS_YEAR" = "Ár";
+"STATISTICS_TOTAL_SPENT" = "Brúkt í alt";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Eftir dato";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Eftir upphædd";
+
+// MARK: - History
+"HISTORY_TITLE" = "Søga";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Broyt";
+"TRANSACTION_EDIT_CATEGORY" = "Bólkur";
+"TRANSACTION_EDIT_AMOUNT" = "Upphædd";
+"TRANSACTION_EDIT_DATE" = "Dato";
+"TRANSACTION_EDIT_TIME" = "Tíð";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Legg viðmerking afturat";
+"TRANSACTION_EDIT_DELETE" = "Strika flyting";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Strika flyting?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Bólkar";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Allir bólkar";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ongar flytingar";
+"TRANSACTIONS_LIST_DELETE" = "Strika";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Flyting løgd afturat";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Flyting strikað";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Brúkt í dag";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Brúkt í gjár";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Broyt bólkar";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nýggj bólkamappa";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Skriva navn á nýggju bólkamappuni";
+"CATEGORIES_EDIT_CANCEL" = "Ógilda";
+"CATEGORIES_EDIT_CREATE" = "Stovna";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Broyt";
+"EDIT_CATEGORY_NEW_TITLE" = "Nýggjur bólkur";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Skriva navn á bólki";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Yvirbólkur";
+"EDIT_CATEGORY_NO_PARENT" = "Eingin yvirbólkur";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Undirbólkar";
+"EDIT_CATEGORY_ICON" = "Ímynd";
+"EDIT_CATEGORY_MORE_ICONS" = "Meira";
+"EDIT_CATEGORY_COLOR" = "Litur";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Strika bólk";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Strika mappu";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Hetta kann ikki angrast. Allar flytingar í hesum bólki verða strikaðar.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Navn á bólki";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nýggjur bólkur";
+"EDIT_CATEGORY_CREATE" = "Stovna";
+"EDIT_CATEGORY_NAME" = "Navn";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "Bilur";
+"DEFAULT_CATEGORY_FOOD" = "Matur";
+"DEFAULT_CATEGORY_HOME" = "Heim";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "Viðlíkahald";
+"DEFAULT_CATEGORY_CAR_FUEL" = "Brennievni";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "Matstovur";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "Matvørur";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "Húsarhald";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "El og hiti";
+"DEFAULT_CATEGORY_CLOTHING" = "Klæði";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "Heilsa og vakurleiki";
+"DEFAULT_CATEGORY_OTHER" = "Annað";
+"DEFAULT_CATEGORY_CHARITY" = "Vælgerð";
+"DEFAULT_CATEGORY_INTERNET" = "Internet";
+"DEFAULT_CATEGORY_TRANSPORT" = "Flutningur";

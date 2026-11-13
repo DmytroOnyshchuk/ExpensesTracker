@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Utgiftssporing";
+"DONE" = "Ferdig";
+"ERROR" = "Feil";
+"OK" = "OK";
+"YES" = "Ja";
+"NO" = "Nei";
+"UPDATE" = "Oppdater";
+"ATTENTION" = "Obs";
+"SUPPORT" = "Støtte";
+"NEXT" = "Neste";
+"BACK" = "Tilbake";
+"REMOVE" = "Slett";
+"DELETE" = "Slett";
+"CANCEL" = "Avbryt";
+"UNDO" = "Angre";
+"CLEAR" = "Tøm";
+"CLOSE" = "Lukk";
+"RETRY" = "Prøv igjen";
+"REPEAT" = "Prøv igjen";
+"SOMETHING_WENT_WRONG" = "Noko gjekk gale...";
+"CONTINUE" = "Hald fram";
+"SHARE" = "Del";
+"SAVE" = "Lagre";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Skriv inn utgift";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Skriv inn beløpet først";
+"STARTVIEW_BALANCE" = "Saldo";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Utgifter";
+"STATISTICS_DAY" = "Dag";
+"STATISTICS_MONTH" = "Månad";
+"STATISTICS_YEAR" = "År";
+"STATISTICS_TOTAL_SPENT" = "Brukt totalt";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Etter dato";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Etter beløp";
+
+// MARK: - History
+"HISTORY_TITLE" = "Historikk";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Rediger";
+"TRANSACTION_EDIT_CATEGORY" = "Kategori";
+"TRANSACTION_EDIT_AMOUNT" = "Beløp";
+"TRANSACTION_EDIT_DATE" = "Dato";
+"TRANSACTION_EDIT_TIME" = "Tid";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Legg til kommentar";
+"TRANSACTION_EDIT_DELETE" = "Slett transaksjon";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Slett transaksjon?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategoriar";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Alle kategoriar";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ingen transaksjonar";
+"TRANSACTIONS_LIST_DELETE" = "Slett";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transaksjon lagd til";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transaksjon sletta";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Brukt i dag";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Brukt i går";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Rediger kategoriar";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Ny kategorimappe";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Skriv inn eit namn på den nye kategorimappa";
+"CATEGORIES_EDIT_CANCEL" = "Avbryt";
+"CATEGORIES_EDIT_CREATE" = "Opprett";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Rediger";
+"EDIT_CATEGORY_NEW_TITLE" = "Ny kategori";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Skriv inn kategorinamn";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Overordna kategori";
+"EDIT_CATEGORY_NO_PARENT" = "Ingen overordna";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Underkategoriar";
+"EDIT_CATEGORY_ICON" = "Ikon";
+"EDIT_CATEGORY_MORE_ICONS" = "Meir";
+"EDIT_CATEGORY_COLOR" = "Farge";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Slett kategori";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Slett mappe";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Denne handlinga kan ikkje angrast. Alle transaksjonar med denne kategorien blir sletta.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Kategorinamn";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Ny kategori";
+"EDIT_CATEGORY_CREATE" = "Opprett";
+"EDIT_CATEGORY_NAME" = "Namn";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "Bil";
+"DEFAULT_CATEGORY_FOOD" = "Mat";
+"DEFAULT_CATEGORY_HOME" = "Heim";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "Vedlikehald";
+"DEFAULT_CATEGORY_CAR_FUEL" = "Drivstoff";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "Restaurantar";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "Daglegvarer";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "Hushald";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "Straum og kommunale avgifter";
+"DEFAULT_CATEGORY_CLOTHING" = "Klede";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "Helse og venleik";
+"DEFAULT_CATEGORY_OTHER" = "Anna";
+"DEFAULT_CATEGORY_CHARITY" = "Velgjerd";
+"DEFAULT_CATEGORY_INTERNET" = "Internett";
+"DEFAULT_CATEGORY_TRANSPORT" = "Transport";

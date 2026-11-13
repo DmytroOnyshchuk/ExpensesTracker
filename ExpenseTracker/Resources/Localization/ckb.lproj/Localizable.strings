@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "بەدواداچوونی خەرجی";
+"DONE" = "تەواو";
+"ERROR" = "هەڵە";
+"OK" = "باشە";
+"YES" = "بەڵێ";
+"NO" = "نەخێر";
+"UPDATE" = "نوێکردنەوە";
+"ATTENTION" = "ئاگاداری";
+"SUPPORT" = "پشتگیری";
+"NEXT" = "دواتر";
+"BACK" = "گەڕانەوە";
+"REMOVE" = "لابردن";
+"DELETE" = "سڕینەوە";
+"CANCEL" = "پاشگەزبوونەوە";
+"UNDO" = "گەڕاندنەوە";
+"CLEAR" = "پاککردنەوە";
+"CLOSE" = "داخستن";
+"RETRY" = "دووبارە هەوڵ بدەوە";
+"REPEAT" = "دووبارەکردنەوە";
+"SOMETHING_WENT_WRONG" = "هەڵەیەک ڕوویدا...";
+"CONTINUE" = "بەردەوامبوون";
+"SHARE" = "هاوبەشکردن";
+"SAVE" = "پاشەکەوتکردن";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "خەرجی بنووسە";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "سەرەتا بڕەکە بنووسە";
+"STARTVIEW_BALANCE" = "باڵانس";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "خەرجییەکان";
+"STATISTICS_DAY" = "ڕۆژ";
+"STATISTICS_MONTH" = "مانگ";
+"STATISTICS_YEAR" = "ساڵ";
+"STATISTICS_TOTAL_SPENT" = "کۆی خەرجکراو";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "بەپێی بەروار";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "بەپێی بڕ";
+
+// MARK: - History
+"HISTORY_TITLE" = "مێژوو";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "دەستکاری";
+"TRANSACTION_EDIT_CATEGORY" = "پۆل";
+"TRANSACTION_EDIT_AMOUNT" = "بڕ";
+"TRANSACTION_EDIT_DATE" = "بەروار";
+"TRANSACTION_EDIT_TIME" = "کات";
+"TRANSACTION_EDIT_ADD_COMMENT" = "زیادکردنی تێبینی";
+"TRANSACTION_EDIT_DELETE" = "سڕینەوەی مامەڵە";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "مامەڵەکە بسڕدرێتەوە؟";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "پۆلەکان";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "هەموو پۆلەکان";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "هیچ مامەڵەیەک نییە";
+"TRANSACTIONS_LIST_DELETE" = "سڕینەوە";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "مامەڵە زیادکرا";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "مامەڵە سڕایەوە";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "ئەمڕۆ خەرجکراوە";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "دوێنێ خەرجکراوە";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "دەستکاریی پۆلەکان";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "بوخچەی نوێی پۆلەکان";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "ناوێک بۆ بوخچە نوێیەکەی پۆلەکان بنووسە";
+"CATEGORIES_EDIT_CANCEL" = "پاشگەزبوونەوە";
+"CATEGORIES_EDIT_CREATE" = "دروستکردن";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "دەستکاری";
+"EDIT_CATEGORY_NEW_TITLE" = "پۆلی نوێ";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "ناوی پۆل بنووسە";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "پۆلی سەرەکی";
+"EDIT_CATEGORY_NO_PARENT" = "بێ پۆلی سەرەکی";
+"EDIT_CATEGORY_SUBCATEGORIES" = "ژێرپۆلەکان";
+"EDIT_CATEGORY_ICON" = "ئایکۆن";
+"EDIT_CATEGORY_MORE_ICONS" = "زیاتر";
+"EDIT_CATEGORY_COLOR" = "ڕەنگ";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "سڕینەوەی پۆل";
+"EDIT_CATEGORY_DELETE_FOLDER" = "سڕینەوەی بوخچە";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "ئەم کردارە ناگەڕێندرێتەوە. هەموو مامەڵەکانی ئەم پۆلە دەسڕدرێنەوە.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "ناوی پۆل";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "پۆلی نوێ";
+"EDIT_CATEGORY_CREATE" = "دروستکردن";
+"EDIT_CATEGORY_NAME" = "ناو";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "ئۆتۆمبێل";
+"DEFAULT_CATEGORY_FOOD" = "خواردن";
+"DEFAULT_CATEGORY_HOME" = "ماڵ";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "چاککردنەوە";
+"DEFAULT_CATEGORY_CAR_FUEL" = "سووتەمەنی";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "چێشتخانەکان";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "خواردەمەنی";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "پێداویستیی ماڵ";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "پسوولەکانی ماڵ";
+"DEFAULT_CATEGORY_CLOTHING" = "جلوبەرگ";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "تەندروستی و جوانی";
+"DEFAULT_CATEGORY_OTHER" = "هیتر";
+"DEFAULT_CATEGORY_CHARITY" = "خێرخوازی";
+"DEFAULT_CATEGORY_INTERNET" = "ئینتەرنێت";
+"DEFAULT_CATEGORY_TRANSPORT" = "گواستنەوە";

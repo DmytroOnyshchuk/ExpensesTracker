@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Şopînera Lêçûnan";
+"DONE" = "Temam";
+"ERROR" = "Çewtî";
+"OK" = "Baş e";
+"YES" = "Erê";
+"NO" = "Na";
+"UPDATE" = "Nû bike";
+"ATTENTION" = "Baldarî";
+"SUPPORT" = "Piştgirî";
+"NEXT" = "Pêş";
+"BACK" = "Paş";
+"REMOVE" = "Rake";
+"DELETE" = "Jê bibe";
+"CANCEL" = "Betal bike";
+"UNDO" = "Vegerîne";
+"CLEAR" = "Paqij bike";
+"CLOSE" = "Bigire";
+"RETRY" = "Dîsa biceribîne";
+"REPEAT" = "Dubare bike";
+"SOMETHING_WENT_WRONG" = "Tiştek çewt çû...";
+"CONTINUE" = "Bidomîne";
+"SHARE" = "Parve bike";
+"SAVE" = "Tomar bike";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Lêçûnê binivîse";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Pêşî mîqdarê binivîse";
+"STARTVIEW_BALANCE" = "Bîlanço";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Lêçûn";
+"STATISTICS_DAY" = "Roj";
+"STATISTICS_MONTH" = "Meh";
+"STATISTICS_YEAR" = "Sal";
+"STATISTICS_TOTAL_SPENT" = "Tevahiya xerckirî";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Li gorî tarîxê";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Li gorî mîqdarê";
+
+// MARK: - History
+"HISTORY_TITLE" = "Dîrok";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Sererast bike";
+"TRANSACTION_EDIT_CATEGORY" = "Kategorî";
+"TRANSACTION_EDIT_AMOUNT" = "Mîqdar";
+"TRANSACTION_EDIT_DATE" = "Tarîx";
+"TRANSACTION_EDIT_TIME" = "Dem";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Şîroveyê lê zêde bike";
+"TRANSACTION_EDIT_DELETE" = "Danûstandinê jê bibe";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Danûstandinê jê bibe?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategorî";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Hemû kategorî";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Danûstandin tune";
+"TRANSACTIONS_LIST_DELETE" = "Jê bibe";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Danûstandin hat zêdekirin";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Danûstandin hat jêbirin";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Îro hat xerckirin";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Duh hat xerckirin";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Kategoriyan sererast bike";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Peldanka kategoriyan a nû";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Ji bo peldanka kategoriyan a nû navekî binivîse";
+"CATEGORIES_EDIT_CANCEL" = "Betal bike";
+"CATEGORIES_EDIT_CREATE" = "Biafirîne";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Sererast bike";
+"EDIT_CATEGORY_NEW_TITLE" = "Kategoriya nû";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Navê kategoriyê binivîse";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Kategoriya jorîn";
+"EDIT_CATEGORY_NO_PARENT" = "Kategoriya jorîn tune";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Binkategorî";
+"EDIT_CATEGORY_ICON" = "Îkon";
+"EDIT_CATEGORY_MORE_ICONS" = "Zêdetir";
+"EDIT_CATEGORY_COLOR" = "Reng";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Kategoriyê jê bibe";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Peldankê jê bibe";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ev kiryar nayê vegerandin. Hemû danûstandinên vê kategoriyê dê bên jêbirin.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Navê kategoriyê";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Kategoriya nû";
+"EDIT_CATEGORY_CREATE" = "Biafirîne";
+"EDIT_CATEGORY_NAME" = "Nav";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "Erebe";
+"DEFAULT_CATEGORY_FOOD" = "Xwarin";
+"DEFAULT_CATEGORY_HOME" = "Mal";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "Lênêrîn";
+"DEFAULT_CATEGORY_CAR_FUEL" = "Sotemenî";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "Xwaringeh";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "Kirîna xwarinê";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "Pêdiviyên malê";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "Fatûreyên malê";
+"DEFAULT_CATEGORY_CLOTHING" = "Cil";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "Tenduristî û bedewî";
+"DEFAULT_CATEGORY_OTHER" = "Yên din";
+"DEFAULT_CATEGORY_CHARITY" = "Xêrxwazî";
+"DEFAULT_CATEGORY_INTERNET" = "Înternet";
+"DEFAULT_CATEGORY_TRANSPORT" = "Veguhestin";

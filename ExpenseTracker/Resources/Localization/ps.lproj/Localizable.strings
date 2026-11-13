@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "د لګښتونو څارنه";
+"DONE" = "بشپړ";
+"ERROR" = "تېروتنه";
+"OK" = "سمه ده";
+"YES" = "هو";
+"NO" = "نه";
+"UPDATE" = "تازه کول";
+"ATTENTION" = "پاملرنه";
+"SUPPORT" = "ملاتړ";
+"NEXT" = "بل";
+"BACK" = "شاته";
+"REMOVE" = "لرې کول";
+"DELETE" = "ړنګول";
+"CANCEL" = "لغوه کول";
+"UNDO" = "بېرته کول";
+"CLEAR" = "پاکول";
+"CLOSE" = "بندول";
+"RETRY" = "بیا هڅه وکړئ";
+"REPEAT" = "تکرار";
+"SOMETHING_WENT_WRONG" = "یو څه ناسم شول...";
+"CONTINUE" = "دوام ورکول";
+"SHARE" = "شریکول";
+"SAVE" = "خوندي کول";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "لګښت ولیکئ";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "لومړی اندازه ولیکئ";
+"STARTVIEW_BALANCE" = "بیلانس";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "لګښتونه";
+"STATISTICS_DAY" = "ورځ";
+"STATISTICS_MONTH" = "میاشت";
+"STATISTICS_YEAR" = "کال";
+"STATISTICS_TOTAL_SPENT" = "ټول لګښت";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "د نېټې له مخې";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "د اندازې له مخې";
+
+// MARK: - History
+"HISTORY_TITLE" = "تاریخچه";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "سمول";
+"TRANSACTION_EDIT_CATEGORY" = "کټګوري";
+"TRANSACTION_EDIT_AMOUNT" = "اندازه";
+"TRANSACTION_EDIT_DATE" = "نېټه";
+"TRANSACTION_EDIT_TIME" = "وخت";
+"TRANSACTION_EDIT_ADD_COMMENT" = "تبصره زیاتول";
+"TRANSACTION_EDIT_DELETE" = "راکړه ورکړه ړنګول";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "راکړه ورکړه ړنګه شي؟";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "کټګورۍ";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "ټولې کټګورۍ";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "هیڅ راکړه ورکړه نشته";
+"TRANSACTIONS_LIST_DELETE" = "ړنګول";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "راکړه ورکړه زیاته شوه";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "راکړه ورکړه ړنګه شوه";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "نن ولګول شول";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "پرون ولګول شول";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "کټګورۍ سمول";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "د کټګوریو نوې پوښۍ";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "د کټګوریو د نوې پوښۍ نوم ولیکئ";
+"CATEGORIES_EDIT_CANCEL" = "لغوه کول";
+"CATEGORIES_EDIT_CREATE" = "جوړول";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "سمول";
+"EDIT_CATEGORY_NEW_TITLE" = "نوې کټګوري";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "د کټګورۍ نوم ولیکئ";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "اصلي کټګوري";
+"EDIT_CATEGORY_NO_PARENT" = "اصلي کټګوري نشته";
+"EDIT_CATEGORY_SUBCATEGORIES" = "فرعي کټګورۍ";
+"EDIT_CATEGORY_ICON" = "انځورن";
+"EDIT_CATEGORY_MORE_ICONS" = "نور";
+"EDIT_CATEGORY_COLOR" = "رنګ";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "کټګوري ړنګول";
+"EDIT_CATEGORY_DELETE_FOLDER" = "پوښۍ ړنګول";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "دا کړنه بېرته نه شي کېدای. د دې کټګورۍ ټولې راکړې ورکړې به ړنګې شي.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "د کټګورۍ نوم";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "نوې کټګوري";
+"EDIT_CATEGORY_CREATE" = "جوړول";
+"EDIT_CATEGORY_NAME" = "نوم";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "موټر";
+"DEFAULT_CATEGORY_FOOD" = "خواړه";
+"DEFAULT_CATEGORY_HOME" = "کور";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "ساتنه";
+"DEFAULT_CATEGORY_CAR_FUEL" = "تېل";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "رستورانتونه";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "خوراکي توکي";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "د کور توکي";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "د کور بیلونه";
+"DEFAULT_CATEGORY_CLOTHING" = "جامې";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "روغتیا او ښکلا";
+"DEFAULT_CATEGORY_OTHER" = "نور";
+"DEFAULT_CATEGORY_CHARITY" = "خیرات";
+"DEFAULT_CATEGORY_INTERNET" = "انټرنېټ";
+"DEFAULT_CATEGORY_TRANSPORT" = "ټرانسپورټ";

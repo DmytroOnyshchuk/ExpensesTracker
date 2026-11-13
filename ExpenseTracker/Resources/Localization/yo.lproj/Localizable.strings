@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Olùtọpa Ìnáwó";
+"DONE" = "Ó ti parí";
+"ERROR" = "Àṣìṣe";
+"OK" = "Ó dáa";
+"YES" = "Bẹ́ẹ̀ ni";
+"NO" = "Rárá";
+"UPDATE" = "Ṣe ìmúdójúìwọ̀n";
+"ATTENTION" = "Àkíyèsí";
+"SUPPORT" = "Ìrànlọ́wọ́";
+"NEXT" = "Tó kàn";
+"BACK" = "Padà";
+"REMOVE" = "Yọ kúrò";
+"DELETE" = "Pa rẹ́";
+"CANCEL" = "Fagilé";
+"UNDO" = "Dá padà";
+"CLEAR" = "Nu";
+"CLOSE" = "Pa dé";
+"RETRY" = "Gbìyànjú lẹ́ẹ̀kan sí i";
+"REPEAT" = "Tún ṣe";
+"SOMETHING_WENT_WRONG" = "Nǹkan kan ṣẹlẹ̀ tí kò tọ́...";
+"CONTINUE" = "Tẹ̀síwájú";
+"SHARE" = "Pín";
+"SAVE" = "Fi pamọ́";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Tẹ ìnáwó sí i";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Kọ́kọ́ tẹ iye owó";
+"STARTVIEW_BALANCE" = "Owó tó kù";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Àwọn ìnáwó";
+"STATISTICS_DAY" = "Ọjọ́";
+"STATISTICS_MONTH" = "Oṣù";
+"STATISTICS_YEAR" = "Ọdún";
+"STATISTICS_TOTAL_SPENT" = "Àpapọ̀ tí a ná";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Nípa déètì";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Nípa iye owó";
+
+// MARK: - History
+"HISTORY_TITLE" = "Ìtàn";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Ṣàtúnṣe";
+"TRANSACTION_EDIT_CATEGORY" = "Ẹ̀ka";
+"TRANSACTION_EDIT_AMOUNT" = "Iye owó";
+"TRANSACTION_EDIT_DATE" = "Déètì";
+"TRANSACTION_EDIT_TIME" = "Àkókò";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Fi àlàyé kún un";
+"TRANSACTION_EDIT_DELETE" = "Pa ìdúnàádúrà rẹ́";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Ṣé kí a pa ìdúnàádúrà rẹ́?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Àwọn ẹ̀ka";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Gbogbo ẹ̀ka";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Kò sí ìdúnàádúrà";
+"TRANSACTIONS_LIST_DELETE" = "Pa rẹ́";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "A ti fi ìdúnàádúrà kún un";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "A ti pa ìdúnàádúrà rẹ́";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Ohun tí a ná lónìí";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Ohun tí a ná lánàá";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Ṣàtúnṣe àwọn ẹ̀ka";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Fódà ẹ̀ka tuntun";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Tẹ orúkọ fún fódà ẹ̀ka tuntun";
+"CATEGORIES_EDIT_CANCEL" = "Fagilé";
+"CATEGORIES_EDIT_CREATE" = "Ṣẹ̀dá";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Ṣàtúnṣe";
+"EDIT_CATEGORY_NEW_TITLE" = "Ẹ̀ka tuntun";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Tẹ orúkọ ẹ̀ka";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Ẹ̀ka òbí";
+"EDIT_CATEGORY_NO_PARENT" = "Kò sí ẹ̀ka òbí";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Àwọn ẹ̀ka kékeré";
+"EDIT_CATEGORY_ICON" = "Àmì";
+"EDIT_CATEGORY_MORE_ICONS" = "Síwájú sí i";
+"EDIT_CATEGORY_COLOR" = "Àwọ̀";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Pa ẹ̀ka rẹ́";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Pa fódà rẹ́";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "A kò lè dá ìgbésẹ̀ yìí padà. Gbogbo ìdúnàádúrà tó ní ẹ̀ka yìí ni a ó pa rẹ́.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Orúkọ ẹ̀ka";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Ẹ̀ka tuntun";
+"EDIT_CATEGORY_CREATE" = "Ṣẹ̀dá";
+"EDIT_CATEGORY_NAME" = "Orúkọ";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "Ọkọ̀ ayọ́kẹ́lẹ́";
+"DEFAULT_CATEGORY_FOOD" = "Oúnjẹ";
+"DEFAULT_CATEGORY_HOME" = "Ilé";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "Ìtọ́jú";
+"DEFAULT_CATEGORY_CAR_FUEL" = "Epo";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "Àwọn ilé oúnjẹ";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "Ohun èlò oúnjẹ";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "Ohun èlò ilé";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "Owó iná àti omi";
+"DEFAULT_CATEGORY_CLOTHING" = "Aṣọ";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "Ìlera àti ẹwà";
+"DEFAULT_CATEGORY_OTHER" = "Òmíràn";
+"DEFAULT_CATEGORY_CHARITY" = "Ìtọrẹ àánú";
+"DEFAULT_CATEGORY_INTERNET" = "Íńtánẹ́ẹ̀tì";
+"DEFAULT_CATEGORY_TRANSPORT" = "Ìrìnnà";

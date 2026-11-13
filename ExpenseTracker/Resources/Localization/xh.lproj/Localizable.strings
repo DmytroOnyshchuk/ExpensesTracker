@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Umlandeli Weendleko";
+"DONE" = "Kugqityiwe";
+"ERROR" = "Impazamo";
+"OK" = "Kulungile";
+"YES" = "Ewe";
+"NO" = "Hayi";
+"UPDATE" = "Hlaziya";
+"ATTENTION" = "Qaphela";
+"SUPPORT" = "Inkxaso";
+"NEXT" = "Okulandelayo";
+"BACK" = "Emva";
+"REMOVE" = "Susa";
+"DELETE" = "Cima";
+"CANCEL" = "Rhoxisa";
+"UNDO" = "Buyisela";
+"CLEAR" = "Sula";
+"CLOSE" = "Vala";
+"RETRY" = "Zama kwakhona";
+"REPEAT" = "Phinda";
+"SOMETHING_WENT_WRONG" = "Kukho into engahambanga kakuhle...";
+"CONTINUE" = "Qhubeka";
+"SHARE" = "Yabelana";
+"SAVE" = "Gcina";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Faka inkcitho";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Qala ngokufaka isixa";
+"STARTVIEW_BALANCE" = "Ibhalansi";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Iinkcitho";
+"STATISTICS_DAY" = "Usuku";
+"STATISTICS_MONTH" = "Inyanga";
+"STATISTICS_YEAR" = "Unyaka";
+"STATISTICS_TOTAL_SPENT" = "Iyonke echithiweyo";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Ngomhla";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Ngesixa";
+
+// MARK: - History
+"HISTORY_TITLE" = "Imbali";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Hlela";
+"TRANSACTION_EDIT_CATEGORY" = "Udidi";
+"TRANSACTION_EDIT_AMOUNT" = "Isixa";
+"TRANSACTION_EDIT_DATE" = "Umhla";
+"TRANSACTION_EDIT_TIME" = "Ixesha";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Yongeza inkcazo";
+"TRANSACTION_EDIT_DELETE" = "Cima intengiselwano";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Cima intengiselwano?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Iindidi";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Zonke iindidi";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Akukho ntengiselwano";
+"TRANSACTIONS_LIST_DELETE" = "Cima";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Intengiselwano yongeziwe";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Intengiselwano icinyiwe";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Echithwe namhlanje";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Echithwe izolo";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Hlela iindidi";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Ifolda entsha yeendidi";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Faka igama lefolda entsha yeendidi";
+"CATEGORIES_EDIT_CANCEL" = "Rhoxisa";
+"CATEGORIES_EDIT_CREATE" = "Yenza";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Hlela";
+"EDIT_CATEGORY_NEW_TITLE" = "Udidi olutsha";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Faka igama lodidi";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Udidi olungumzali";
+"EDIT_CATEGORY_NO_PARENT" = "Akukho mzali";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Iindidi ezingaphantsi";
+"EDIT_CATEGORY_ICON" = "I-icon";
+"EDIT_CATEGORY_MORE_ICONS" = "Okungakumbi";
+"EDIT_CATEGORY_COLOR" = "Umbala";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Cima udidi";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Cima ifolda";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Eli nyathelo alinakubuyiselwa. Zonke iintengiselwano zolu didi ziya kucinywa.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Igama lodidi";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Udidi olutsha";
+"EDIT_CATEGORY_CREATE" = "Yenza";
+"EDIT_CATEGORY_NAME" = "Igama";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "Imoto";
+"DEFAULT_CATEGORY_FOOD" = "Ukutya";
+"DEFAULT_CATEGORY_HOME" = "Ikhaya";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "Ulondolozo";
+"DEFAULT_CATEGORY_CAR_FUEL" = "Amafutha";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "Iivenkile zokutyela";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "Igrosari";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "Izinto zendlu";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "Iinkonzo zekhaya";
+"DEFAULT_CATEGORY_CLOTHING" = "Impahla";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "Impilo nobuhle";
+"DEFAULT_CATEGORY_OTHER" = "Okunye";
+"DEFAULT_CATEGORY_CHARITY" = "Uncedo lwesisa";
+"DEFAULT_CATEGORY_INTERNET" = "I-intanethi";
+"DEFAULT_CATEGORY_TRANSPORT" = "Ezothutho";

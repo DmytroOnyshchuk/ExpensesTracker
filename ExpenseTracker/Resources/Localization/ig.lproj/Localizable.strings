@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Nsoro Mmefu";
+"DONE" = "Emechara";
+"ERROR" = "Njehie";
+"OK" = "Ọ dị mma";
+"YES" = "Ee";
+"NO" = "Mba";
+"UPDATE" = "Melite";
+"ATTENTION" = "Ntị";
+"SUPPORT" = "Nkwado";
+"NEXT" = "Ọzọ";
+"BACK" = "Azụ";
+"REMOVE" = "Wepụ";
+"DELETE" = "Hichapụ";
+"CANCEL" = "Kagbuo";
+"UNDO" = "Megharịa";
+"CLEAR" = "Kpochapụ";
+"CLOSE" = "Mechie";
+"RETRY" = "Nwaa ọzọ";
+"REPEAT" = "Mee ọzọ";
+"SOMETHING_WENT_WRONG" = "Ihe adịghị mma mere...";
+"CONTINUE" = "Gaa n'ihu";
+"SHARE" = "Kekọrịta";
+"SAVE" = "Chekwaa";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Tinye mmefu";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Buru ụzọ tinye ego ole";
+"STARTVIEW_BALANCE" = "Ego fọdụrụ";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Mmefu";
+"STATISTICS_DAY" = "Ụbọchị";
+"STATISTICS_MONTH" = "Ọnwa";
+"STATISTICS_YEAR" = "Afọ";
+"STATISTICS_TOTAL_SPENT" = "Mkpokọta e mefuru";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Site n'ụbọchị ọnwa";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Site n'ego ole";
+
+// MARK: - History
+"HISTORY_TITLE" = "Akụkọ ihe mere eme";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Dezie";
+"TRANSACTION_EDIT_CATEGORY" = "Ụdị";
+"TRANSACTION_EDIT_AMOUNT" = "Ego ole";
+"TRANSACTION_EDIT_DATE" = "Ụbọchị ọnwa";
+"TRANSACTION_EDIT_TIME" = "Oge";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Tinye nkọwa";
+"TRANSACTION_EDIT_DELETE" = "Hichapụ azụmahịa";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Hichapụ azụmahịa a?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Ụdị dị iche iche";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Ụdị niile";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Enweghị azụmahịa";
+"TRANSACTIONS_LIST_DELETE" = "Hichapụ";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Etinyela azụmahịa";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Ehichapụla azụmahịa";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "E mefuru taa";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "E mefuru ụnyaahụ";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Dezie ụdị";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Folda ụdị ọhụrụ";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Tinye aha maka folda ụdị ọhụrụ";
+"CATEGORIES_EDIT_CANCEL" = "Kagbuo";
+"CATEGORIES_EDIT_CREATE" = "Mepụta";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Dezie";
+"EDIT_CATEGORY_NEW_TITLE" = "Ụdị ọhụrụ";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Tinye aha ụdị";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Ụdị nne";
+"EDIT_CATEGORY_NO_PARENT" = "Enweghị ụdị nne";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Ụdị nta";
+"EDIT_CATEGORY_ICON" = "Akara ngosi";
+"EDIT_CATEGORY_MORE_ICONS" = "Ndị ọzọ";
+"EDIT_CATEGORY_COLOR" = "Agba";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Hichapụ ụdị";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Hichapụ folda";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Enweghị ike ịmegharị omume a. A ga-ehichapụ azụmahịa niile nwere ụdị a.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Aha ụdị";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Ụdị ọhụrụ";
+"EDIT_CATEGORY_CREATE" = "Mepụta";
+"EDIT_CATEGORY_NAME" = "Aha";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "Ụgbọala";
+"DEFAULT_CATEGORY_FOOD" = "Nri";
+"DEFAULT_CATEGORY_HOME" = "Ụlọ";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "Ndozi";
+"DEFAULT_CATEGORY_CAR_FUEL" = "Mmanụ ụgbọala";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "Ụlọ nri";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "Ngwa nri";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "Ngwa ụlọ";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "Ụgwọ ọkụ na mmiri";
+"DEFAULT_CATEGORY_CLOTHING" = "Uwe";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "Ahụike na ịma mma";
+"DEFAULT_CATEGORY_OTHER" = "Ndị ọzọ";
+"DEFAULT_CATEGORY_CHARITY" = "Ọrụ ebere";
+"DEFAULT_CATEGORY_INTERNET" = "Ịntanetị";
+"DEFAULT_CATEGORY_TRANSPORT" = "Njem";

@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Moʻolelo Lilo";
+"DONE" = "Pau";
+"ERROR" = "Hewa";
+"OK" = "Hiki";
+"YES" = "ʻAe";
+"NO" = "ʻAʻole";
+"UPDATE" = "Hōʻano hou";
+"ATTENTION" = "E nānā";
+"SUPPORT" = "Kākoʻo";
+"NEXT" = "Aʻe";
+"BACK" = "Hoʻi";
+"REMOVE" = "Wehe";
+"DELETE" = "Holoi";
+"CANCEL" = "Hoʻōki";
+"UNDO" = "Hoʻihoʻi mai";
+"CLEAR" = "Hoʻomaʻemaʻe";
+"CLOSE" = "Pani";
+"RETRY" = "Hoʻāʻo hou";
+"REPEAT" = "Hana hou";
+"SOMETHING_WENT_WRONG" = "Ua hewa kekahi mea...";
+"CONTINUE" = "Hoʻomau";
+"SHARE" = "Kaʻana like";
+"SAVE" = "Mālama";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "E kikokiko i ka lilo";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "E kikokiko mua i ka huina kālā";
+"STARTVIEW_BALANCE" = "Koena";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Nā lilo";
+"STATISTICS_DAY" = "Lā";
+"STATISTICS_MONTH" = "Mahina";
+"STATISTICS_YEAR" = "Makahiki";
+"STATISTICS_TOTAL_SPENT" = "Huina i hoʻolilo ʻia";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Ma ka lā o ka mahina";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Ma ka huina kālā";
+
+// MARK: - History
+"HISTORY_TITLE" = "Mōʻaukala";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Hoʻoponopono";
+"TRANSACTION_EDIT_CATEGORY" = "Māhele";
+"TRANSACTION_EDIT_AMOUNT" = "Huina kālā";
+"TRANSACTION_EDIT_DATE" = "Lā o ka mahina";
+"TRANSACTION_EDIT_TIME" = "Hola";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Hoʻohui i ka manaʻo";
+"TRANSACTION_EDIT_DELETE" = "Holoi i ka hana kālā";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "E holoi i ka hana kālā?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Nā māhele";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Nā māhele a pau";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ʻAʻohe hana kālā";
+"TRANSACTIONS_LIST_DELETE" = "Holoi";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Ua hoʻohui ʻia ka hana kālā";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Ua holoi ʻia ka hana kālā";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Hoʻolilo ʻia i kēia lā";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Hoʻolilo ʻia i nehinei";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Hoʻoponopono i nā māhele";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Wahī māhele hou";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "E kikokiko i ka inoa no ka wahī māhele hou";
+"CATEGORIES_EDIT_CANCEL" = "Hoʻōki";
+"CATEGORIES_EDIT_CREATE" = "Hana";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Hoʻoponopono";
+"EDIT_CATEGORY_NEW_TITLE" = "Māhele hou";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "E kikokiko i ka inoa māhele";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Māhele makua";
+"EDIT_CATEGORY_NO_PARENT" = "ʻAʻohe makua";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Nā māhele lalo";
+"EDIT_CATEGORY_ICON" = "Kiʻiona";
+"EDIT_CATEGORY_MORE_ICONS" = "Hou aku";
+"EDIT_CATEGORY_COLOR" = "Waihoʻoluʻu";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Holoi i ka māhele";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Holoi i ka wahī";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "ʻAʻole hiki ke hoʻihoʻi ʻia kēia hana. E holoi ʻia nā hana kālā a pau o kēia māhele.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Inoa māhele";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Māhele hou";
+"EDIT_CATEGORY_CREATE" = "Hana";
+"EDIT_CATEGORY_NAME" = "Inoa";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "Kaʻa";
+"DEFAULT_CATEGORY_FOOD" = "Meaʻai";
+"DEFAULT_CATEGORY_HOME" = "Home";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "Mālama kaʻa";
+"DEFAULT_CATEGORY_CAR_FUEL" = "Wahie";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "Nā hale ʻaina";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "Nā meaʻai o ka hale kūʻai";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "Nā lako hale";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "Nā pila hale";
+"DEFAULT_CATEGORY_CLOTHING" = "Lole";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "Olakino a me ka nani";
+"DEFAULT_CATEGORY_OTHER" = "ʻĒ aʻe";
+"DEFAULT_CATEGORY_CHARITY" = "Manawaleʻa";
+"DEFAULT_CATEGORY_INTERNET" = "Pūnaewele";
+"DEFAULT_CATEGORY_TRANSPORT" = "Halihali";

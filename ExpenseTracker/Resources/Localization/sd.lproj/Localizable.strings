@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "خرچ جو حساب";
+"DONE" = "ٿي ويو";
+"ERROR" = "غلطي";
+"OK" = "ٺيڪ";
+"YES" = "ها";
+"NO" = "نه";
+"UPDATE" = "تازه ڪريو";
+"ATTENTION" = "ڌيان";
+"SUPPORT" = "مدد";
+"NEXT" = "اڳيون";
+"BACK" = "واپس";
+"REMOVE" = "هٽايو";
+"DELETE" = "ختم ڪريو";
+"CANCEL" = "رد ڪريو";
+"UNDO" = "واپس ڪريو";
+"CLEAR" = "صاف ڪريو";
+"CLOSE" = "بند ڪريو";
+"RETRY" = "ٻيهر ڪوشش ڪريو";
+"REPEAT" = "ورجايو";
+"SOMETHING_WENT_WRONG" = "ڪجھ غلط ٿي ويو...";
+"CONTINUE" = "جاري رکو";
+"SHARE" = "ونڊيو";
+"SAVE" = "محفوظ ڪريو";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "خرچ داخل ڪريو";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "پهريان رقم داخل ڪريو";
+"STARTVIEW_BALANCE" = "بيلنس";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "خرچ";
+"STATISTICS_DAY" = "ڏينهن";
+"STATISTICS_MONTH" = "مهينو";
+"STATISTICS_YEAR" = "سال";
+"STATISTICS_TOTAL_SPENT" = "ڪل خرچ";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "تاريخ موجب";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "رقم موجب";
+
+// MARK: - History
+"HISTORY_TITLE" = "تاريخچو";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "ترميم";
+"TRANSACTION_EDIT_CATEGORY" = "درجو";
+"TRANSACTION_EDIT_AMOUNT" = "رقم";
+"TRANSACTION_EDIT_DATE" = "تاريخ";
+"TRANSACTION_EDIT_TIME" = "وقت";
+"TRANSACTION_EDIT_ADD_COMMENT" = "تبصرو شامل ڪريو";
+"TRANSACTION_EDIT_DELETE" = "لين دين ختم ڪريو";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "لين دين ختم ڪجي؟";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "درجا";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "سڀ درجا";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ڪا لين دين ناهي";
+"TRANSACTIONS_LIST_DELETE" = "ختم ڪريو";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "لين دين شامل ٿي";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "لين دين ختم ٿي";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "اڄ خرچ ٿيو";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ڪالهه خرچ ٿيو";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "درجن ۾ ترميم";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "درجن جو نئون فولڊر";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "درجن جي نئين فولڊر جو نالو داخل ڪريو";
+"CATEGORIES_EDIT_CANCEL" = "رد ڪريو";
+"CATEGORIES_EDIT_CREATE" = "ٺاهيو";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "ترميم";
+"EDIT_CATEGORY_NEW_TITLE" = "نئون درجو";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "درجي جو نالو داخل ڪريو";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "مکيه درجو";
+"EDIT_CATEGORY_NO_PARENT" = "ڪو مکيه درجو ناهي";
+"EDIT_CATEGORY_SUBCATEGORIES" = "ذيلي درجا";
+"EDIT_CATEGORY_ICON" = "آئڪن";
+"EDIT_CATEGORY_MORE_ICONS" = "وڌيڪ";
+"EDIT_CATEGORY_COLOR" = "رنگ";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "درجو ختم ڪريو";
+"EDIT_CATEGORY_DELETE_FOLDER" = "فولڊر ختم ڪريو";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "هي عمل واپس نٿو ٿي سگهي. هن درجي جون سڀ لين دين ختم ٿي وينديون.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "درجي جو نالو";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "نئون درجو";
+"EDIT_CATEGORY_CREATE" = "ٺاهيو";
+"EDIT_CATEGORY_NAME" = "نالو";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "ڪار";
+"DEFAULT_CATEGORY_FOOD" = "کاڌو";
+"DEFAULT_CATEGORY_HOME" = "گهر";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "سار سنڀال";
+"DEFAULT_CATEGORY_CAR_FUEL" = "ٻارڻ";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "ريسٽورنٽ";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "سودو سلف";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "گهريلو سامان";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "گهر جا بل";
+"DEFAULT_CATEGORY_CLOTHING" = "ڪپڙا";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "صحت ۽ سونهن";
+"DEFAULT_CATEGORY_OTHER" = "ٻيا";
+"DEFAULT_CATEGORY_CHARITY" = "خيرات";
+"DEFAULT_CATEGORY_INTERNET" = "انٽرنيٽ";
+"DEFAULT_CATEGORY_TRANSPORT" = "ٽرانسپورٽ";

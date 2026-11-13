@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Чыгымнар исәбе";
+"DONE" = "Әзер";
+"ERROR" = "Хата";
+"OK" = "OK";
+"YES" = "Әйе";
+"NO" = "Юк";
+"UPDATE" = "Яңарту";
+"ATTENTION" = "Игътибар";
+"SUPPORT" = "Ярдәм";
+"NEXT" = "Алга";
+"BACK" = "Артка";
+"REMOVE" = "Алып ташлау";
+"DELETE" = "Бетерү";
+"CANCEL" = "Баш тарту";
+"UNDO" = "Кире кайтару";
+"CLEAR" = "Чистарту";
+"CLOSE" = "Ябу";
+"RETRY" = "Кабатлап карау";
+"REPEAT" = "Кабатлау";
+"SOMETHING_WENT_WRONG" = "Нидер дөрес булмады...";
+"CONTINUE" = "Дәвам итү";
+"SHARE" = "Уртаклашу";
+"SAVE" = "Саклау";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Чыгымны кертегез";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Башта сумманы кертегез";
+"STARTVIEW_BALANCE" = "Баланс";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Чыгымнар";
+"STATISTICS_DAY" = "Көн";
+"STATISTICS_MONTH" = "Ай";
+"STATISTICS_YEAR" = "Ел";
+"STATISTICS_TOTAL_SPENT" = "Барлыгы тотылган";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "Дата буенча";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Сумма буенча";
+
+// MARK: - History
+"HISTORY_TITLE" = "Тарих";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Үзгәртү";
+"TRANSACTION_EDIT_CATEGORY" = "Категория";
+"TRANSACTION_EDIT_AMOUNT" = "Сумма";
+"TRANSACTION_EDIT_DATE" = "Дата";
+"TRANSACTION_EDIT_TIME" = "Вакыт";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Аңлатма өстәү";
+"TRANSACTION_EDIT_DELETE" = "Операцияне бетерү";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Операцияне бетерергәме?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Категорияләр";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "Барлык категорияләр";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Операцияләр юк";
+"TRANSACTIONS_LIST_DELETE" = "Бетерү";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Операция өстәлде";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Операция бетерелде";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Бүген тотылган";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Кичә тотылган";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Категорияләрне үзгәртү";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Яңа категорияләр папкасы";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Яңа категорияләр папкасының исемен кертегез";
+"CATEGORIES_EDIT_CANCEL" = "Баш тарту";
+"CATEGORIES_EDIT_CREATE" = "Булдыру";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Үзгәртү";
+"EDIT_CATEGORY_NEW_TITLE" = "Яңа категория";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Категория исемен кертегез";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Төп категория";
+"EDIT_CATEGORY_NO_PARENT" = "Төп категориясез";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Аскатегорияләр";
+"EDIT_CATEGORY_ICON" = "Билге";
+"EDIT_CATEGORY_MORE_ICONS" = "Тагын";
+"EDIT_CATEGORY_COLOR" = "Төс";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Категорияне бетерү";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Папканы бетерү";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Бу гамәлне кире кайтарып булмый. Бу категориядәге барлык операцияләр бетереләчәк.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Категория исеме";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Яңа категория";
+"EDIT_CATEGORY_CREATE" = "Булдыру";
+"EDIT_CATEGORY_NAME" = "Исем";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "Автомобиль";
+"DEFAULT_CATEGORY_FOOD" = "Азык";
+"DEFAULT_CATEGORY_HOME" = "Өй";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "Хезмәт күрсәтү";
+"DEFAULT_CATEGORY_CAR_FUEL" = "Ягулык";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "Рестораннар";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "Азык-төлек";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "Көнкүреш кирәк-яраклары";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "Коммуналь түләүләр";
+"DEFAULT_CATEGORY_CLOTHING" = "Кием";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "Сәламәтлек һәм матурлык";
+"DEFAULT_CATEGORY_OTHER" = "Башка";
+"DEFAULT_CATEGORY_CHARITY" = "Хәйрия";
+"DEFAULT_CATEGORY_INTERNET" = "Интернет";
+"DEFAULT_CATEGORY_TRANSPORT" = "Транспорт";

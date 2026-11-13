@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Dmytro Onyshchuk on 20.06.2025.
+  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
+*/
+
+// MARK: - Common
+"APP_NAME" = "Lorgaire chosgaisean";
+"DONE" = "Deiseil";
+"ERROR" = "Mearachd";
+"OK" = "Ceart ma-thà";
+"YES" = "Tha";
+"NO" = "Chan eil";
+"UPDATE" = "Ùraich";
+"ATTENTION" = "An aire";
+"SUPPORT" = "Taic";
+"NEXT" = "Air adhart";
+"BACK" = "Air ais";
+"REMOVE" = "Thoir air falbh";
+"DELETE" = "Sguab às";
+"CANCEL" = "Sguir dheth";
+"UNDO" = "Neo-dhèan";
+"CLEAR" = "Falamhaich";
+"CLOSE" = "Dùin";
+"RETRY" = "Feuch ris a-rithist";
+"REPEAT" = "Dèan a-rithist";
+"SOMETHING_WENT_WRONG" = "Chaidh rudeigin ceàrr...";
+"CONTINUE" = "Lean air adhart";
+"SHARE" = "Co-roinn";
+"SAVE" = "Sàbhail";
+
+// MARK: - StartView
+"STARTVIEW_ENTER_EXPENSE" = "Cuir a-steach cosgais";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Cuir a-steach an t-suim an toiseach";
+"STARTVIEW_BALANCE" = "Cothrom";
+
+// MARK: - Statistics
+"STATISTICS_TITLE" = "Cosgaisean";
+"STATISTICS_DAY" = "Latha";
+"STATISTICS_MONTH" = "Mìos";
+"STATISTICS_YEAR" = "Bliadhna";
+"STATISTICS_TOTAL_SPENT" = "Iomlan air a chosg";
+
+// MARK: - TransactionDetails
+"TRANSACTION_DETAILS_SORT_BY_DATE" = "A-rèir ceann-là";
+"TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "A-rèir suime";
+
+// MARK: - History
+"HISTORY_TITLE" = "Eachdraidh";
+
+// MARK: - TransactionEdit
+"TRANSACTION_EDIT_TITLE" = "Deasaich";
+"TRANSACTION_EDIT_CATEGORY" = "Roinn-seòrsa";
+"TRANSACTION_EDIT_AMOUNT" = "Suim";
+"TRANSACTION_EDIT_DATE" = "Ceann-là";
+"TRANSACTION_EDIT_TIME" = "Àm";
+"TRANSACTION_EDIT_ADD_COMMENT" = "Cuir beachd ris";
+"TRANSACTION_EDIT_DELETE" = "Sguab às an tar-chur";
+"TRANSACTION_EDIT_DELETE_CONFIRMATION" = "A bheil thu airson an tar-chur a sguabadh às?";
+"TRANSACTION_EDIT_CATEGORIES_TITLE" = "Roinnean-seòrsa";
+
+// MARK: - CategoryGrid
+"CATEGORY_GRID_ALL_CATEGORIES" = "A h-uile roinn-seòrsa";
+
+// MARK: - TransactionsList
+"TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Chan eil tar-chur ann";
+"TRANSACTIONS_LIST_DELETE" = "Sguab às";
+"TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Chaidh tar-chur a chur ris";
+"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Chaidh an tar-chur a sguabadh às";
+"TRANSACTIONS_LIST_SPENT_TODAY" = "Air a chosg an-diugh";
+"TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Air a chosg an-dè";
+
+// MARK: - CategoriesEdit
+"CATEGORIES_EDIT_TITLE" = "Deasaich na roinnean-seòrsa";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Pasgan ùr de roinnean-seòrsa";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Cuir a-steach ainm airson a’ phasgain ùir";
+"CATEGORIES_EDIT_CANCEL" = "Sguir dheth";
+"CATEGORIES_EDIT_CREATE" = "Cruthaich";
+
+// MARK: - EditCategoryView
+"EDIT_CATEGORY_TITLE" = "Deasaich";
+"EDIT_CATEGORY_NEW_TITLE" = "Roinn-seòrsa ùr";
+"EDIT_CATEGORY_NAME_PLACEHOLDER" = "Cuir a-steach ainm na roinne-seòrsa";
+"EDIT_CATEGORY_PARENT_CATEGORY" = "Roinn-seòrsa pàrant";
+"EDIT_CATEGORY_NO_PARENT" = "Gun phàrant";
+"EDIT_CATEGORY_SUBCATEGORIES" = "Fo-roinnean-seòrsa";
+"EDIT_CATEGORY_ICON" = "Ìomhaigheag";
+"EDIT_CATEGORY_MORE_ICONS" = "Barrachd";
+"EDIT_CATEGORY_COLOR" = "Dath";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Sguab às an roinn-seòrsa";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Sguab às am pasgan";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Cha ghabh seo a neo-dhèanamh. Thèid a h-uile tar-chur san roinn-seòrsa seo a sguabadh às.";
+"EDIT_CATEGORY_DEFAULT_NAME" = "Ainm na roinne-seòrsa";
+"EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Roinn-seòrsa ùr";
+"EDIT_CATEGORY_CREATE" = "Cruthaich";
+"EDIT_CATEGORY_NAME" = "Ainm";
+
+// MARK: - DefaultCategories
+"DEFAULT_CATEGORY_CAR" = "Càr";
+"DEFAULT_CATEGORY_FOOD" = "Biadh";
+"DEFAULT_CATEGORY_HOME" = "Dachaigh";
+"DEFAULT_CATEGORY_CAR_MAINTENANCE" = "Obair-ghlèidhidh";
+"DEFAULT_CATEGORY_CAR_FUEL" = "Connadh";
+"DEFAULT_CATEGORY_FOOD_RESTAURANTS" = "Taighean-bìdh";
+"DEFAULT_CATEGORY_FOOD_GROCERIES" = "Grosaireachd";
+"DEFAULT_CATEGORY_HOME_HOUSEHOLD" = "Bathar taighe";
+"DEFAULT_CATEGORY_HOME_UTILITIES" = "Bilean taighe";
+"DEFAULT_CATEGORY_CLOTHING" = "Aodach";
+"DEFAULT_CATEGORY_HEALTH_BEAUTY" = "Slàinte is maise";
+"DEFAULT_CATEGORY_OTHER" = "Eile";
+"DEFAULT_CATEGORY_CHARITY" = "Carthannas";
+"DEFAULT_CATEGORY_INTERNET" = "Eadar-lìon";
+"DEFAULT_CATEGORY_TRANSPORT" = "Còmhdhail";
