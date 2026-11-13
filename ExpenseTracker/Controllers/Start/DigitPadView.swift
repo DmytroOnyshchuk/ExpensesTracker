@@ -32,8 +32,7 @@ struct DigitPadView: View {
                             FeedbackManager.keyTapped(key)
                             input.tap(key)
                         }) {
-                            Text(symbol(for: key))
-                                .font(.appMedium(36))
+                            label(for: key)
                                 .frame(width: 75, height: 75)
                                 .background(.appLabel.opacity(0.1))
                                 .foregroundColor(.appWhite)
@@ -45,14 +44,18 @@ struct DigitPadView: View {
         }
     }
 
-    private func symbol(for key: AmountInput.Key) -> String {
+    @ViewBuilder
+    private func label(for key: AmountInput.Key) -> some View {
         switch key {
         case let .digit(digit):
-            String(digit)
+            Text(String(digit))
+                .font(.appMedium(36))
         case .decimalSeparator:
-            "."
+            Text(".")
+                .font(.appMedium(36))
         case .backspace:
-            "⌫"
+            Image(systemName: "delete.backward.fill")
+                .font(.system(size: 20, weight: .medium))
         }
     }
 }
