@@ -10,7 +10,14 @@ import AudioToolbox
 import UIKit
 
 enum FeedbackManager {
-    private static let transactionAddedSoundID: SystemSoundID = 1104
+    private static let fallbackTransactionAddedSoundID: SystemSoundID = 1104
+    private static let transactionAddedSoundID: SystemSoundID = {
+        let url = URL(fileURLWithPath: "/System/Library/Audio/UISounds/payment_success.caf")
+        var soundID: SystemSoundID = 0
+        let status = AudioServicesCreateSystemSoundID(url as CFURL, &soundID)
+        return status == kAudioServicesNoError ? soundID : fallbackTransactionAddedSoundID
+    }()
+
     private static let amountMissingSoundID: SystemSoundID = 1053
 
     static func transactionAdded() {
