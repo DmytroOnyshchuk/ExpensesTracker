@@ -19,6 +19,13 @@ enum FeedbackManager {
     }()
 
     private static let amountMissingSoundID: SystemSoundID = 1053
+    private static let keyTapSoundID: SystemSoundID = 1104
+    private static let keyDeleteSoundID: SystemSoundID = 1155
+
+    static func keyTapped(_ key: AmountInput.Key) {
+        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+        AudioServicesPlaySystemSound(key == .backspace ? keyDeleteSoundID : keyTapSoundID)
+    }
 
     static func transactionAdded() {
         UINotificationFeedbackGenerator().notificationOccurred(.success)

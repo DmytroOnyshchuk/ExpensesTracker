@@ -29,6 +29,7 @@ struct DigitPadView: View {
                 HStack(spacing: 12) {
                     ForEach(row, id: \.self) { key in
                         Button(action: {
+                            FeedbackManager.keyTapped(key)
                             input.tap(key)
                         }) {
                             Text(symbol(for: key))
