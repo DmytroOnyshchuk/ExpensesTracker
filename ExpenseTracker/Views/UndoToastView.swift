@@ -85,7 +85,7 @@ private struct UndoToastModifier: ViewModifier {
                     }
                     .id(item.id)
                     .transition(.move(edge: .bottom).combined(with: .opacity))
-                    .task {
+                    .task(id: item.id) {
                         try? await Task.sleep(for: duration)
                         guard !Task.isCancelled else { return }
                         center.dismiss(item.id)
