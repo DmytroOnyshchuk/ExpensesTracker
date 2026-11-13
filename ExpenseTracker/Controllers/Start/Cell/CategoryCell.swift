@@ -8,11 +8,6 @@
 
 import SwiftUI
 
-private struct Pulse {
-    var scale = 1.0
-    var opacity = 1.0
-}
-
 struct CategoryCell: View {
     let category: TransactionCategory
     var action: () -> Bool
@@ -50,19 +45,11 @@ struct CategoryCell: View {
             Button(action: select) {
                 VStack {
                     icon
-                        .keyframeAnimator(initialValue: Pulse(), trigger: pulseTrigger) { content, pulse in
-                            content
-                                .scaleEffect(pulse.scale)
-                                .opacity(pulse.opacity)
+                        .keyframeAnimator(initialValue: 1.0, trigger: pulseTrigger) { content, scale in
+                            content.scaleEffect(scale)
                         } keyframes: { _ in
-                            KeyframeTrack(\.scale) {
-                                LinearKeyframe(2.5, duration: 0.35, timingCurve: .easeOut)
-                                LinearKeyframe(1.0, duration: 0.35, timingCurve: .easeInOut)
-                            }
-                            KeyframeTrack(\.opacity) {
-                                LinearKeyframe(0.65, duration: 0.35, timingCurve: .easeOut)
-                                LinearKeyframe(1.0, duration: 0.35, timingCurve: .easeInOut)
-                            }
+                            LinearKeyframe(2.5, duration: 0.2, timingCurve: .easeOut)
+                            LinearKeyframe(1.0, duration: 0.2, timingCurve: .easeInOut)
                         }
 
                     Spacer(minLength: 8)
