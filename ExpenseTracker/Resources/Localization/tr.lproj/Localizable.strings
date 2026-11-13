@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Tarihe göre";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Tutara göre";
 
+// MARK: - History
+"HISTORY_TITLE" = "Geçmiş";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Düzenle";
 "TRANSACTION_EDIT_CATEGORY" = "Kategori";

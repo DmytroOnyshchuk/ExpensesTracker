@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Sipas datës";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Sipas shumës";
 
+// MARK: - History
+"HISTORY_TITLE" = "Historiku";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Ndrysho";
 "TRANSACTION_EDIT_CATEGORY" = "Kategoria";

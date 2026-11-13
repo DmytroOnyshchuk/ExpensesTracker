@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Po datumu";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Po znesku";
 
+// MARK: - History
+"HISTORY_TITLE" = "Zgodovina";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Uredi";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorija";

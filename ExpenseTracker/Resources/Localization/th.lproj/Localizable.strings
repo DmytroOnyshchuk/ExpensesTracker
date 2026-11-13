@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "ตามวันที่";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "ตามจำนวนเงิน";
 
+// MARK: - History
+"HISTORY_TITLE" = "ประวัติ";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "แก้ไข";
 "TRANSACTION_EDIT_CATEGORY" = "หมวดหมู่";

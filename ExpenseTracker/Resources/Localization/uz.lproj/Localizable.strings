@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Sana bo‘yicha";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Summa bo‘yicha";
 
+// MARK: - History
+"HISTORY_TITLE" = "Tarix";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Tahrirlash";
 "TRANSACTION_EDIT_CATEGORY" = "Toifa";

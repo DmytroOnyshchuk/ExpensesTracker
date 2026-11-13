@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "依日期";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "依金額";
 
+// MARK: - History
+"HISTORY_TITLE" = "歷史記錄";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "編輯";
 "TRANSACTION_EDIT_CATEGORY" = "類別";

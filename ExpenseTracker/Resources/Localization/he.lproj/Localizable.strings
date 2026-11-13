@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "לפי תאריך";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "לפי סכום";
 
+// MARK: - History
+"HISTORY_TITLE" = "היסטוריה";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "עריכה";
 "TRANSACTION_EDIT_CATEGORY" = "קטגוריה";

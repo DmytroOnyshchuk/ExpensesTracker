@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Ngosuku";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Ngenani";
 
+// MARK: - History
+"HISTORY_TITLE" = "Umlando";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Hlela";
 "TRANSACTION_EDIT_CATEGORY" = "Isigaba";

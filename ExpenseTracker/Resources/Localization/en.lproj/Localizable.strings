@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "By date";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "By amount";
 
+// MARK: - History
+"HISTORY_TITLE" = "History";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Edit";
 "TRANSACTION_EDIT_CATEGORY" = "Category";

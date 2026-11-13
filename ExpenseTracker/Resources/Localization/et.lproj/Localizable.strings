@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Kuupäeva järgi";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Summa järgi";
 
+// MARK: - History
+"HISTORY_TITLE" = "Ajalugu";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Muuda";
 "TRANSACTION_EDIT_CATEGORY" = "Kategooria";

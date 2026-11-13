@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Огноогоор";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Дүнгээр";
 
+// MARK: - History
+"HISTORY_TITLE" = "Түүх";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Засах";
 "TRANSACTION_EDIT_CATEGORY" = "Ангилал";

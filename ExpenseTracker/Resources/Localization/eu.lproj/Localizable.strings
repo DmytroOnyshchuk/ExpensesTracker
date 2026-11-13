@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Dataren arabera";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Zenbatekoaren arabera";
 
+// MARK: - History
+"HISTORY_TITLE" = "Historia";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Editatu";
 "TRANSACTION_EDIT_CATEGORY" = "Kategoria";

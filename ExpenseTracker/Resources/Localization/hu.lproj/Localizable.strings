@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Dátum szerint";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Összeg szerint";
 
+// MARK: - History
+"HISTORY_TITLE" = "Előzmények";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Szerkesztés";
 "TRANSACTION_EDIT_CATEGORY" = "Kategória";

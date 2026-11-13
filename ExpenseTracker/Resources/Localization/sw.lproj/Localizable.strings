@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Kwa tarehe";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Kwa kiasi";
 
+// MARK: - History
+"HISTORY_TITLE" = "Historia";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Hariri";
 "TRANSACTION_EDIT_CATEGORY" = "Kategoria";

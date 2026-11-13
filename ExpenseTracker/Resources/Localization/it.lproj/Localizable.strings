@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Per data";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Per importo";
 
+// MARK: - History
+"HISTORY_TITLE" = "Cronologia";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Modifica";
 "TRANSACTION_EDIT_CATEGORY" = "Categoria";

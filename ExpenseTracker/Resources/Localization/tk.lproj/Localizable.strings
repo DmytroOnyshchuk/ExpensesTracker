@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Sene boýunça";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Mukdar boýunça";
 
+// MARK: - History
+"HISTORY_TITLE" = "Taryh";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Üýtget";
 "TRANSACTION_EDIT_CATEGORY" = "Kategoriýa";

@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "După dată";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "După sumă";
 
+// MARK: - History
+"HISTORY_TITLE" = "Istoric";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Editează";
 "TRANSACTION_EDIT_CATEGORY" = "Categorie";

@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "തീയതി പ്രകാരം";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "തുക പ്രകാരം";
 
+// MARK: - History
+"HISTORY_TITLE" = "ചരിത്രം";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "എഡിറ്റ് ചെയ്യുക";
 "TRANSACTION_EDIT_CATEGORY" = "വിഭാഗം";

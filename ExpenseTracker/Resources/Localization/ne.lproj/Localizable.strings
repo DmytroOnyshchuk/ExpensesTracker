@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "मिति अनुसार";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "रकम अनुसार";
 
+// MARK: - History
+"HISTORY_TITLE" = "इतिहास";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "सम्पादन गर्नुहोस्";
 "TRANSACTION_EDIT_CATEGORY" = "श्रेणी";

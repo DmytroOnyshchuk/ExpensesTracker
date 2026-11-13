@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Menurut tanggal";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Menurut jumlah";
 
+// MARK: - History
+"HISTORY_TITLE" = "Riwayat";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Edit";
 "TRANSACTION_EDIT_CATEGORY" = "Kategori";

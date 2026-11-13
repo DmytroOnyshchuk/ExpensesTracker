@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "По датуму";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "По износу";
 
+// MARK: - History
+"HISTORY_TITLE" = "Историја";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Уреди";
 "TRANSACTION_EDIT_CATEGORY" = "Категорија";

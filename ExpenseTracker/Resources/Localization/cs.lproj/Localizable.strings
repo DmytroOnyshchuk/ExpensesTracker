@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Podle data";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Podle částky";
 
+// MARK: - History
+"HISTORY_TITLE" = "Historie";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Upravit";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorie";

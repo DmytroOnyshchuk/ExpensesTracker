@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "தேதி வாரியாக";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "தொகை வாரியாக";
 
+// MARK: - History
+"HISTORY_TITLE" = "வரலாறு";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "திருத்து";
 "TRANSACTION_EDIT_CATEGORY" = "வகை";

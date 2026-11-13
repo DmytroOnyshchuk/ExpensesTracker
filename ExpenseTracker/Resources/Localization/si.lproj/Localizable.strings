@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "දිනය අනුව";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "මුදල අනුව";
 
+// MARK: - History
+"HISTORY_TITLE" = "ඉතිහාසය";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "සංස්කරණය";
 "TRANSACTION_EDIT_CATEGORY" = "ප්‍රවර්ගය";

@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "ຕາມວັນທີ";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "ຕາມຈຳນວນເງິນ";
 
+// MARK: - History
+"HISTORY_TITLE" = "ປະຫວັດ";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ແກ້ໄຂ";
 "TRANSACTION_EDIT_CATEGORY" = "ໝວດໝູ່";

@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "តាមកាលបរិច្ឆេទ";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "តាមចំនួនទឹកប្រាក់";
 
+// MARK: - History
+"HISTORY_TITLE" = "ប្រវត្តិ";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "កែ";
 "TRANSACTION_EDIT_CATEGORY" = "ប្រភេទ";

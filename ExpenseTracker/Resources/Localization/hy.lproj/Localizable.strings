@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Ըստ ամսաթվի";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Ըստ գումարի";
 
+// MARK: - History
+"HISTORY_TITLE" = "Պատմություն";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Խմբագրել";
 "TRANSACTION_EDIT_CATEGORY" = "Կատեգորիա";

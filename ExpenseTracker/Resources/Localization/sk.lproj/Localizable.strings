@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Podľa dátumu";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Podľa sumy";
 
+// MARK: - History
+"HISTORY_TITLE" = "História";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Upraviť";
 "TRANSACTION_EDIT_CATEGORY" = "Kategória";

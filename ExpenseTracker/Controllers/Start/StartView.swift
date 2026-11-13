@@ -14,6 +14,7 @@ struct StartView: View {
 
     @State private var input = AmountInput()
     @State private var showStatistics = false
+    @State private var showHistory = false
     @State private var comment = ""
     @State private var showCommentInput = false
     @Query(sort: \Transaction.date, order: .reverse) private var transactions: [Transaction]
@@ -35,6 +36,8 @@ struct StartView: View {
                     }
 
                     TransactionsList(transactions: transactions)
+
+                    historyButton
                 }
                 .padding(.vertical, 16)
                 .frame(maxWidth: .infinity, alignment: .top)
@@ -42,6 +45,9 @@ struct StartView: View {
             .background(.appMain)
             .navigationDestination(isPresented: $showStatistics) {
                 StatisticsView()
+            }
+            .navigationDestination(isPresented: $showHistory) {
+                HistoryView()
             }
         }
         .overlay {
@@ -63,6 +69,17 @@ struct StartView: View {
                 .clipShape(UnevenRoundedRectangle(topLeadingRadius: 25, bottomLeadingRadius: 25))
         }
         .padding(.bottom, 12)
+    }
+
+    private var historyButton: some View {
+        Button(action: openHistory) {
+            Text(L10n.historyTitle)
+                .font(.appLight(22))
+                .foregroundColor(.appBlue)
+                .frame(maxWidth: .infinity)
+                .frame(height: 44)
+                .contentShape(Rectangle())
+        }
     }
 
     private var topBar: some View {
@@ -89,6 +106,10 @@ struct StartView: View {
 
     private func openStatistics() {
         showStatistics = true
+    }
+
+    private func openHistory() {
+        showHistory = true
     }
 
     private func openCommentInput() {

@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "日付順";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "金額順";
 
+// MARK: - History
+"HISTORY_TITLE" = "履歴";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "編集";
 "TRANSACTION_EDIT_CATEGORY" = "カテゴリ";

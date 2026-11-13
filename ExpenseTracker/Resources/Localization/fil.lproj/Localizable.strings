@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Ayon sa petsa";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Ayon sa halaga";
 
+// MARK: - History
+"HISTORY_TITLE" = "Kasaysayan";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "I-edit";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorya";

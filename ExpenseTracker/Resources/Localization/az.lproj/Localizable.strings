@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Tarixə görə";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Məbləğə görə";
 
+// MARK: - History
+"HISTORY_TITLE" = "Tarixçə";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Redaktə";
 "TRANSACTION_EDIT_CATEGORY" = "Kateqoriya";

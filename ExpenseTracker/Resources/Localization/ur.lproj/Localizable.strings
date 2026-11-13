@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "تاریخ کے لحاظ سے";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "رقم کے لحاظ سے";
 
+// MARK: - History
+"HISTORY_TITLE" = "تاریخ";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ترمیم کریں";
 "TRANSACTION_EDIT_CATEGORY" = "زمرہ";

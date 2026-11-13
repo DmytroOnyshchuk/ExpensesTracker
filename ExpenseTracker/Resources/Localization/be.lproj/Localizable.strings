@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Па даце";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Па суме";
 
+// MARK: - History
+"HISTORY_TITLE" = "Гісторыя";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Рэдагаванне";
 "TRANSACTION_EDIT_CATEGORY" = "Катэгорыя";

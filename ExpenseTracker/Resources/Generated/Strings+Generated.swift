@@ -108,6 +108,8 @@ internal enum L10n {
   internal static let editCategoryTitle = L10n.tr("Localizable", "EDIT_CATEGORY_TITLE", fallback: "Edit")
   /// Error
   internal static let error = L10n.tr("Localizable", "ERROR", fallback: "Error")
+  /// History
+  internal static let historyTitle = L10n.tr("Localizable", "HISTORY_TITLE", fallback: "History")
   /// Next
   internal static let next = L10n.tr("Localizable", "NEXT", fallback: "Next")
   /// No

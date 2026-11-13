@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "按日期";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "按金额";
 
+// MARK: - History
+"HISTORY_TITLE" = "历史记录";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "编辑";
 "TRANSACTION_EDIT_CATEGORY" = "类别";

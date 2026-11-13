@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Күні бойынша";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Сомасы бойынша";
 
+// MARK: - History
+"HISTORY_TITLE" = "Тарих";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Өңдеу";
 "TRANSACTION_EDIT_CATEGORY" = "Санат";

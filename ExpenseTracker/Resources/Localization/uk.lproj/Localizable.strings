@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "За датою";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "За сумою";
 
+// MARK: - History
+"HISTORY_TITLE" = "Історія";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Редагування";
 "TRANSACTION_EDIT_CATEGORY" = "Стаття";

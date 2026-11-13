@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "తేదీ ప్రకారం";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "మొత్తం ప్రకారం";
 
+// MARK: - History
+"HISTORY_TITLE" = "చరిత్ర";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "సవరించండి";
 "TRANSACTION_EDIT_CATEGORY" = "వర్గం";

@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "तारीख के अनुसार";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "राशि के अनुसार";
 
+// MARK: - History
+"HISTORY_TITLE" = "इतिहास";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "संपादित करें";
 "TRANSACTION_EDIT_CATEGORY" = "श्रेणी";

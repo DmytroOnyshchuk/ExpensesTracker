@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Op datum";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Op bedrag";
 
+// MARK: - History
+"HISTORY_TITLE" = "Geschiedenis";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Bewerken";
 "TRANSACTION_EDIT_CATEGORY" = "Categorie";

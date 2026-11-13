@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Pagal datą";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "Pagal sumą";
 
+// MARK: - History
+"HISTORY_TITLE" = "Istorija";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Redaguoti";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorija";

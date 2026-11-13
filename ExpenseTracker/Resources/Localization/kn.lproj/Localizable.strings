@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "ದಿನಾಂಕದ ಪ್ರಕಾರ";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "ಮೊತ್ತದ ಪ್ರಕಾರ";
 
+// MARK: - History
+"HISTORY_TITLE" = "ಇತಿಹಾಸ";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ಎಡಿಟ್ ಮಾಡಿ";
 "TRANSACTION_EDIT_CATEGORY" = "ವರ್ಗ";

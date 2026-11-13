@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "თარიღით";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "თანხით";
 
+// MARK: - History
+"HISTORY_TITLE" = "ისტორია";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "რედაქტირება";
 "TRANSACTION_EDIT_CATEGORY" = "კატეგორია";

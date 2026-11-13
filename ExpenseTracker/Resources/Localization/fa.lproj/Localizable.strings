@@ -44,6 +44,9 @@
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "بر اساس تاریخ";
 "TRANSACTION_DETAILS_SORT_BY_AMOUNT" = "بر اساس مبلغ";
 
+// MARK: - History
+"HISTORY_TITLE" = "تاریخچه";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ویرایش";
 "TRANSACTION_EDIT_CATEGORY" = "دسته‌بندی";
