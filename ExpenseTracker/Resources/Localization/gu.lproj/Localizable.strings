@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "ખર્ચ દાખલ કરો";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "પહેલા રકમ દાખલ કરો";
+"STARTVIEW_BALANCE" = "બેલેન્સ";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ખર્ચ";

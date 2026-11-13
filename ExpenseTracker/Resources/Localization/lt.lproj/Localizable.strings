@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Įveskite išlaidas";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Pirmiausia įveskite sumą";
+"STARTVIEW_BALANCE" = "Likutis";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Išlaidos";

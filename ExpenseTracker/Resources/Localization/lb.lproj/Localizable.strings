@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Ausgab aginn";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Gitt fir d'éischt de Betrag an";
+"STARTVIEW_BALANCE" = "Solde";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Ausgaben";

@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Fut shpenzimin";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Së pari vendosni shumën";
+"STARTVIEW_BALANCE" = "Balanca";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Shpenzimet";

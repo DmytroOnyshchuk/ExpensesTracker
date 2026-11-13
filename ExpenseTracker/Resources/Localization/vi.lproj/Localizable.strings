@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Nhập khoản chi";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Hãy nhập số tiền trước";
+"STARTVIEW_BALANCE" = "Số dư";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Chi tiêu";

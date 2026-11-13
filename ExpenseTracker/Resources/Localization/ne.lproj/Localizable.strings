@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "खर्च प्रविष्ट गर्नुहोस्";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "पहिले रकम प्रविष्ट गर्नुहोस्";
+"STARTVIEW_BALANCE" = "ब्यालेन्स";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "खर्च";

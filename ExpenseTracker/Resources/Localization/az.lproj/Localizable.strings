@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Xərci daxil edin";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Əvvəlcə məbləği daxil edin";
+"STARTVIEW_BALANCE" = "Balans";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Xərclər";

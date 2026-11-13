@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Wprowadź wydatek";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Najpierw wprowadź kwotę";
+"STARTVIEW_BALANCE" = "Saldo";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Wydatki";

@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "ປ້ອນລາຍຈ່າຍ";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "ກະລຸນາປ້ອນຈຳນວນເງິນກ່ອນ";
+"STARTVIEW_BALANCE" = "ຍອດເງິນ";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ລາຍຈ່າຍ";

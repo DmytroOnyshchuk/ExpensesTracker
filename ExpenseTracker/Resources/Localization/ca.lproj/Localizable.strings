@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Introdueix la despesa";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Primer introduïu l'import";
+"STARTVIEW_BALANCE" = "Saldo";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Despeses";

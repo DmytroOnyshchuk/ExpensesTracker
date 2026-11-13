@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Ausgabe eingeben";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Zuerst den Betrag eingeben";
+"STARTVIEW_BALANCE" = "Kontostand";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Ausgaben";

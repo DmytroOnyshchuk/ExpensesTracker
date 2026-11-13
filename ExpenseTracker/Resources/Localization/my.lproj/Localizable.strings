@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "အသုံးစရိတ် ထည့်ပါ";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "ပမာဏကို အရင်ထည့်ပါ";
+"STARTVIEW_BALANCE" = "လက်ကျန်ငွေ";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "အသုံးစရိတ်များ";

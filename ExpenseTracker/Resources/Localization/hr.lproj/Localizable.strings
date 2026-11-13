@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Unesite trošak";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Najprije unesite iznos";
+"STARTVIEW_BALANCE" = "Stanje";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Troškovi";

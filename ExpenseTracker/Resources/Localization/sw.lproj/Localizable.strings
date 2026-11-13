@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Weka matumizi";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Weka kiasi kwanza";
+"STARTVIEW_BALANCE" = "Salio";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Matumizi";

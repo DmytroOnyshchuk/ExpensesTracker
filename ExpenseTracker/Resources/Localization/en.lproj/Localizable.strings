@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Enter expense";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Enter the amount first";
+"STARTVIEW_BALANCE" = "Balance";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Expenses";

@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Masukkan pengeluaran";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Masukkan jumlah terlebih dahulu";
+"STARTVIEW_BALANCE" = "Saldo";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Pengeluaran";

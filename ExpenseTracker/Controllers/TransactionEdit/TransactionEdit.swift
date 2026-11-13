@@ -106,12 +106,12 @@ struct TransactionEdit: View {
             }
             .onChange(of: isAmountFocused) { _, isFocused in
                 if isFocused {
-                    amountText = text(from: draft.amount)
+                    amountText = AmountInput.text(from: draft.amount)
                 }
             }
             .onChange(of: amountText) { _, text in
                 if isAmountFocused {
-                    draft.amount = amount(from: text)
+                    draft.amount = AmountInput.amount(from: text)
                 }
             }
             .navigationDestination(isPresented: $showCategoryPicker) {
@@ -228,26 +228,6 @@ struct TransactionEdit: View {
             .font(.appLight(20))
             .foregroundColor(.appWhite)
             .lineLimit(1)
-    }
-
-    private func text(from amount: Int) -> String {
-        guard amount > 0 else { return "" }
-
-        let fraction = amount % 100
-        guard fraction != 0 else { return String(amount / 100) }
-
-        let text = String(format: "%d.%02d", amount / 100, fraction)
-        return text.hasSuffix("0") ? String(text.dropLast()) : text
-    }
-
-    private func amount(from text: String) -> Int {
-        let normalized = text.replacingOccurrences(of: ",", with: ".")
-        guard let value = Decimal(string: normalized, locale: Locale(identifier: "en_US_POSIX")) else { return 0 }
-
-        var scaled = value * 100
-        var rounded = Decimal()
-        NSDecimalRound(&rounded, &scaled, 0, .plain)
-        return max(NSDecimalNumber(decimal: rounded).intValue, 0)
     }
 
     private func row(

@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Ilagay ang gastos";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Ilagay muna ang halaga";
+"STARTVIEW_BALANCE" = "Balanse";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Mga gastos";

@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "أدخل المصروف";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "أدخل المبلغ أولاً";
+"STARTVIEW_BALANCE" = "الرصيد";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "المصروفات";

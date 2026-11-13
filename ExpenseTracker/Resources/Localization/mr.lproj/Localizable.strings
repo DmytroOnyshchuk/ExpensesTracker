@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "खर्च प्रविष्ट करा";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "प्रथम रक्कम प्रविष्ट करा";
+"STARTVIEW_BALANCE" = "शिल्लक";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "खर्च";

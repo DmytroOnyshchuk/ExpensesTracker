@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "ਖਰਚਾ ਦਰਜ ਕਰੋ";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "ਪਹਿਲਾਂ ਰਕਮ ਦਰਜ ਕਰੋ";
+"STARTVIEW_BALANCE" = "ਬੈਲੇਂਸ";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ਖਰਚੇ";

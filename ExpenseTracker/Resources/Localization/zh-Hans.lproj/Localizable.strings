@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "输入支出";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "请先输入金额";
+"STARTVIEW_BALANCE" = "余额";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "支出";

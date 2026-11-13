@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Idatzi gastua";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Sartu lehenik zenbatekoa";
+"STARTVIEW_BALANCE" = "Saldoa";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Gastuak";

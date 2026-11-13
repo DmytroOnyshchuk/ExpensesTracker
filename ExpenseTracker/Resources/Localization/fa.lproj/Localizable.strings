@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "هزینه را وارد کنید";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "ابتدا مبلغ را وارد کنید";
+"STARTVIEW_BALANCE" = "موجودی";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "هزینه‌ها";

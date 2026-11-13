@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Skriv inn utgift";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Skriv inn beløpet først";
+"STARTVIEW_BALANCE" = "Saldo";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Utgifter";

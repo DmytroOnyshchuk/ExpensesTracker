@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Введите расход";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Сначала введите сумму";
+"STARTVIEW_BALANCE" = "Баланс";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Расходы";

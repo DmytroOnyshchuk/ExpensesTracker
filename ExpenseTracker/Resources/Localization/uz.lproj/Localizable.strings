@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Xarajatni kiriting";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Avval summani kiriting";
+"STARTVIEW_BALANCE" = "Balans";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Xarajatlar";

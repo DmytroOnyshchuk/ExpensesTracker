@@ -128,6 +128,8 @@ internal enum L10n {
   internal static let share = L10n.tr("Localizable", "SHARE", fallback: "Share")
   /// Something went wrong...
   internal static let somethingWentWrong = L10n.tr("Localizable", "SOMETHING_WENT_WRONG", fallback: "Something went wrong...")
+  /// Balance
+  internal static let startviewBalance = L10n.tr("Localizable", "STARTVIEW_BALANCE", fallback: "Balance")
   /// Enter the amount first
   internal static let startviewEnterAmountFirst = L10n.tr("Localizable", "STARTVIEW_ENTER_AMOUNT_FIRST", fallback: "Enter the amount first")
   /// Enter expense

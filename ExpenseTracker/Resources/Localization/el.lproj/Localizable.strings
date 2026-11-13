@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Εισαγάγετε έξοδο";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Πρώτα εισαγάγετε το ποσό";
+"STARTVIEW_BALANCE" = "Υπόλοιπο";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Έξοδα";

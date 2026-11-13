@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "වියදම ඇතුළත් කරන්න";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "පළමුව මුදල ඇතුළත් කරන්න";
+"STARTVIEW_BALANCE" = "ශේෂය";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "වියදම්";

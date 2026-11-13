@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Шығынды енгізіңіз";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Алдымен соманы енгізіңіз";
+"STARTVIEW_BALANCE" = "Баланс";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Шығындар";

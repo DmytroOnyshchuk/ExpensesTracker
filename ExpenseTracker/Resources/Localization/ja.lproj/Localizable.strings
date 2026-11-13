@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "支出を入力";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "先に金額を入力してください";
+"STARTVIEW_BALANCE" = "残高";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "支出";

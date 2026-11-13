@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "ఖర్చును నమోదు చేయండి";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "ముందుగా మొత్తాన్ని నమోదు చేయండి";
+"STARTVIEW_BALANCE" = "బ్యాలెన్స్";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ఖర్చులు";

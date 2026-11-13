@@ -18,12 +18,17 @@ struct StartView: View {
     @State private var comment = ""
     @State private var showCommentInput = false
     @State private var amountAttentionTrigger = 0
+    @State private var showBalanceInput = false
+    @AppStorage(UDKey.balanceAmount.rawValue) private var balanceAmount = 0
+    @AppStorage(UDKey.balanceDate.rawValue) private var balanceTimestamp = 0.0
     @Query(sort: \Transaction.date, order: .reverse, animation: .default) private var transactions: [Transaction]
 
     var body: some View {
         NavigationStack {
             ScrollView(.vertical) {
                 VStack(spacing: 16) {
+                    BalanceCard(balance: balance, action: openBalanceInput)
+
                     DigitPadView(input: $input, attentionTrigger: amountAttentionTrigger)
                         .frame(maxWidth: .infinity)
                         .overlay(alignment: .top) {
@@ -57,8 +62,28 @@ struct StartView: View {
                     .transition(.opacity)
             }
         }
+        .overlay {
+            if showBalanceInput {
+                BalanceInputPopup(balance: balance, onCancel: closeBalanceInput) { amount in
+                    setBalance(amount)
+                    closeBalanceInput()
+                }
+                .transition(.opacity)
+            }
+        }
         .animation(.easeInOut(duration: 0.2), value: showCommentInput)
+        .animation(.easeInOut(duration: 0.2), value: showBalanceInput)
         .undoToast()
+    }
+
+    private var balance: Int? {
+        guard balanceTimestamp > 0 else { return nil }
+
+        let balanceDate = Date(timeIntervalSinceReferenceDate: balanceTimestamp)
+        let spent = transactions
+            .filter { $0.date > balanceDate }
+            .reduce(0) { $0 + $1.amount }
+        return balanceAmount - spent
     }
 
     private var commentButton: some View {
@@ -118,6 +143,20 @@ struct StartView: View {
     private func openCommentInput() {
         FeedbackManager.buttonTapped()
         showCommentInput = true
+    }
+
+    private func openBalanceInput() {
+        FeedbackManager.buttonTapped()
+        showBalanceInput = true
+    }
+
+    private func closeBalanceInput() {
+        showBalanceInput = false
+    }
+
+    private func setBalance(_ amount: Int) {
+        balanceAmount = amount
+        balanceTimestamp = Date().timeIntervalSinceReferenceDate
     }
 
     private func addTransaction(with category: TransactionCategory) -> Bool {

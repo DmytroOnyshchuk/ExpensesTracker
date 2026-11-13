@@ -89,3 +89,25 @@ struct AmountInput {
         digits[digits.count - 1] = digit
     }
 }
+
+extension AmountInput {
+    static func text(from amount: Int) -> String {
+        guard amount > 0 else { return "" }
+
+        let fraction = amount % 100
+        guard fraction != 0 else { return String(amount / 100) }
+
+        let text = String(format: "%d.%02d", amount / 100, fraction)
+        return text.hasSuffix("0") ? String(text.dropLast()) : text
+    }
+
+    static func amount(from text: String) -> Int {
+        let normalized = text.replacingOccurrences(of: ",", with: ".")
+        guard let value = Decimal(string: normalized, locale: Locale(identifier: "en_US_POSIX")) else { return 0 }
+
+        var scaled = value * 100
+        var rounded = Decimal()
+        NSDecimalRound(&rounded, &scaled, 0, .plain)
+        return max(NSDecimalNumber(decimal: rounded).intValue, 0)
+    }
+}

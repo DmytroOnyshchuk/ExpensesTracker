@@ -34,6 +34,7 @@
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Introdu cheltuiala";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Introduceți mai întâi suma";
+"STARTVIEW_BALANCE" = "Sold";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Cheltuieli";
