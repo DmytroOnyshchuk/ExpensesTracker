@@ -36,7 +36,9 @@ struct TransactionDetails: View {
     let category: TransactionCategory
     let interval: DateInterval
 
-    @Query private var transactions: [Transaction]
+    @Environment(\.modelContext) private var modelContext
+
+    @Query(animation: .default) private var transactions: [Transaction]
     @State private var sorting: TransactionsSorting = .date
     @State private var editedTransaction: Transaction?
 
@@ -53,44 +55,62 @@ struct TransactionDetails: View {
     var body: some View {
         let visibleTransactions = visibleTransactions
 
-        ScrollView(.vertical) {
-            VStack(spacing: 16) {
-                SegmentedControl(items: TransactionsSorting.allCases, selection: $sorting, title: \.title)
-                    .padding(.horizontal, 80)
+        List {
+            SegmentedControl(items: TransactionsSorting.allCases, selection: $sorting, title: \.title)
+                .padding(.horizontal, 80)
+                .padding(.vertical, 16)
+                .listRowInsets(EdgeInsets())
+                .listRowBackground(Color.appMain)
+                .listRowSeparator(.hidden)
 
-                if visibleTransactions.isEmpty {
-                    Text(L10n.transactionsListNoTransactions)
-                        .font(.appLight(18))
-                        .foregroundColor(.gray.opacity(0.6))
-                        .frame(height: 120)
-                } else {
-                    LazyVStack(spacing: 0) {
-                        ForEach(visibleTransactions, id: \.id) { transaction in
-                            TransactionDetailsRow(transaction: transaction)
-                                .contentShape(Rectangle())
-                                .onTapGesture {
-                                    editedTransaction = transaction
-                                }
-
-                            if transaction.id != visibleTransactions.last?.id {
-                                Rectangle()
-                                    .fill(.appSecond)
-                                    .frame(height: 1)
-                                    .padding(.leading, 64)
+            if visibleTransactions.isEmpty {
+                Text(L10n.transactionsListNoTransactions)
+                    .font(.appLight(18))
+                    .foregroundColor(.gray.opacity(0.6))
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 120)
+                    .listRowInsets(EdgeInsets())
+                    .listRowBackground(Color.appMain)
+                    .listRowSeparator(.hidden)
+            } else {
+                ForEach(visibleTransactions, id: \.id) { transaction in
+                    TransactionDetailsRow(transaction: transaction)
+                        .contentShape(Rectangle())
+                        .onTapGesture {
+                            editedTransaction = transaction
+                        }
+                        .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+                            Button(role: .destructive) {
+                                delete(transaction)
+                            } label: {
+                                Label(L10n.delete, systemImage: "trash")
                             }
                         }
-                    }
+                        .listRowInsets(EdgeInsets())
+                        .listRowBackground(Color.appMain)
+                        .listRowSeparatorTint(.appSecond)
+                        .listRowSeparator(.hidden, edges: .top)
+                        .listRowSeparator(
+                            transaction.id == visibleTransactions.last?.id ? .hidden : .visible,
+                            edges: .bottom
+                        )
+                        .alignmentGuide(.listRowSeparatorLeading) { _ in 64 }
                 }
             }
-            .padding(.vertical, 16)
-            .frame(maxWidth: .infinity, alignment: .top)
         }
+        .listStyle(.plain)
+        .scrollContentBackground(.hidden)
         .background(.appMain)
         .navigationTitle(category.name.localized)
         .navigationBarTitleDisplayMode(.inline)
         .fullScreenCover(item: $editedTransaction) { transaction in
             TransactionEdit(transaction: transaction)
         }
+    }
+
+    private func delete(_ transaction: Transaction) {
+        modelContext.delete(transaction)
+        try? modelContext.save()
     }
 }
 

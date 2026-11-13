@@ -18,7 +18,7 @@ struct StartView: View {
     @State private var comment = ""
     @State private var showCommentInput = false
     @State private var amountAttentionTrigger = 0
-    @Query(sort: \Transaction.date, order: .reverse) private var transactions: [Transaction]
+    @Query(sort: \Transaction.date, order: .reverse, animation: .default) private var transactions: [Transaction]
 
     var body: some View {
         NavigationStack {
