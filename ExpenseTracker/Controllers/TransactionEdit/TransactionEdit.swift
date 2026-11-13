@@ -34,67 +34,47 @@ struct TransactionEdit: View {
 
     var body: some View {
         NavigationStack {
-            VStack(spacing: 0) {
-                row(L10n.transactionEditCategory) {
-                    isAmountFocused = false
-                    showCategoryPicker = true
-                } value: {
-                    valueText(draft.category.name.localized)
+            ScrollView(.vertical) {
+                VStack(spacing: 20) {
+                    header
+                    transactionSummary
+
+                    VStack(spacing: 0) {
+                        row(L10n.transactionEditDate) {
+                            isAmountFocused = false
+                            popup = .date
+                        } value: {
+                            valueText(draft.date.dayString(.dateTime.day().month(.wide).year()))
+                        }
+                        separator.padding(.leading, 16)
+
+                        row(L10n.transactionEditTime) {
+                            isAmountFocused = false
+                            popup = .time
+                        } value: {
+                            valueText(draft.date.formatted(date: .omitted, time: .shortened))
+                        }
+                    }
+                    .padding(.vertical, 6)
+                    .background(.appLabel.opacity(0.1))
+                    .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+
+                    VStack(spacing: 0) {
+                        commentRow
+                    }
+                    .padding(.vertical, 6)
+                    .background(.appLabel.opacity(0.1))
+                    .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+
+                    deleteButton
+                        .padding(.top, 4)
                 }
-                separator
-                    .padding(.leading, 16)
-
-                row(L10n.transactionEditAmount) {
-                    isAmountFocused = true
-                } value: {
-                    amountField
-                }
-                separator
-                    .padding(.leading, 16)
-
-                row(L10n.transactionEditDate) {
-                    isAmountFocused = false
-                    popup = .date
-                } value: {
-                    valueText(draft.date.dayString(.dateTime.day().month(.wide).year()))
-                }
-                separator
-                    .padding(.leading, 16)
-
-                row(L10n.transactionEditTime) {
-                    isAmountFocused = false
-                    popup = .time
-                } value: {
-                    valueText(draft.date.formatted(date: .omitted, time: .shortened))
-                }
-                separator
-                    .padding(.leading, 16)
-
-                commentRow
-                separator
-
-                deleteButton
-                    .padding(.top, 24)
-
-                Spacer(minLength: 16)
+                .padding(16)
+                .frame(maxWidth: .infinity, alignment: .top)
             }
             .background(.appMain)
-            .navigationTitle(L10n.transactionEditTitle)
-            .navigationBarTitleDisplayMode(.inline)
+            .toolbar(.hidden, for: .navigationBar)
             .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button(L10n.cancel) {
-                        dismiss()
-                    }
-                    .foregroundColor(.appLabel)
-                }
-
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(L10n.ok, action: save)
-                        .foregroundColor(.appLabel)
-                        .disabled(!draft.canSave)
-                }
-
                 if isAmountFocused {
                     ToolbarItemGroup(placement: .keyboard) {
                         Spacer()
@@ -127,10 +107,95 @@ struct TransactionEdit: View {
         .animation(.easeInOut(duration: 0.2), value: popup)
     }
 
+    private var header: some View {
+        HStack(spacing: 12) {
+            headerIconButton(systemImage: "xmark", label: L10n.cancel) { dismiss() }
+
+            Spacer(minLength: 0)
+
+            Button(action: save) {
+                Text(L10n.save)
+                    .font(.appLight(17))
+                    .foregroundColor(.appWhite)
+                    .padding(.horizontal, 22)
+                    .frame(height: 56)
+                    .background(.appBlack.opacity(0.2))
+                    .clipShape(Capsule())
+                    .overlay(Capsule().stroke(.appPrimary.opacity(0.22), lineWidth: 1))
+            }
+            .disabled(!draft.canSave)
+            .opacity(draft.canSave ? 1 : 0.5)
+        }
+    }
+
+    private var transactionSummary: some View {
+        VStack(spacing: 12) {
+            Button {
+                isAmountFocused = false
+                showCategoryPicker = true
+            } label: {
+                VStack(spacing: 12) {
+                    draft.category.categoryIcon.image
+                        .resizable()
+                        .scaledToFit()
+                        .foregroundColor(draft.category.categoryIcon.color)
+                        .frame(width: 42, height: 42)
+                        .frame(width: 88, height: 88)
+                        .background(.appBlack.opacity(0.2))
+                        .clipShape(Circle())
+
+                    Text(draft.category.name.localized)
+                        .font(.appLight(20))
+                        .foregroundColor(.appWhite)
+                        .lineLimit(2)
+                        .multilineTextAlignment(.center)
+                }
+                .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+
+            amountField
+                .frame(height: 60)
+        }
+        .frame(maxWidth: .infinity)
+        .padding(.top, 8)
+        .padding(.bottom, 12)
+    }
+
+    private func headerIconButton(systemImage: String, label: String, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            Image(systemName: systemImage)
+                .font(.system(size: 22, weight: .medium))
+                .foregroundColor(.appWhite)
+                .frame(width: 56, height: 56)
+                .background(.appBlack.opacity(0.2))
+                .clipShape(Circle())
+                .overlay(Circle().stroke(.appPrimary.opacity(0.22), lineWidth: 1))
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(label)
+    }
+
     private var separator: some View {
         Rectangle()
             .fill(.appSecond)
             .frame(height: 1)
+    }
+
+    private var deleteButton: some View {
+        Button {
+            isAmountFocused = false
+            delete()
+        } label: {
+            Image(systemName: "trash")
+                .font(.system(size: 22, weight: .medium))
+                .foregroundColor(.appRed)
+                .frame(width: 60, height: 60)
+                .background(.appRed.opacity(0.15))
+                .clipShape(Circle())
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(L10n.transactionEditDelete)
     }
 
     private var commentRow: some View {
@@ -156,22 +221,6 @@ struct TransactionEdit: View {
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
-    }
-
-    private var deleteButton: some View {
-        Button {
-            isAmountFocused = false
-            delete()
-        } label: {
-            Image(systemName: "trash")
-                .font(.system(size: 22, weight: .medium))
-                .foregroundColor(.appRed)
-                .frame(width: 60, height: 60)
-                .background(.appRed.opacity(0.15))
-                .clipShape(Circle())
-        }
-        .buttonStyle(.plain)
-        .accessibilityLabel(L10n.transactionEditDelete)
     }
 
     @ViewBuilder
@@ -208,24 +257,26 @@ struct TransactionEdit: View {
     }
 
     private var amountField: some View {
-        ZStack(alignment: .trailing) {
+        ZStack {
             TextField("", text: $amountText)
                 .keyboardType(.decimalPad)
                 .focused($isAmountFocused)
-                .font(.appLight(20))
+                .font(.appRegular(40))
                 .foregroundColor(.appWhite)
-                .multilineTextAlignment(.trailing)
+                .multilineTextAlignment(.center)
                 .opacity(isAmountFocused ? 1 : 0)
 
             valueText(draft.amount.getAmount())
+                .font(.appRegular(40))
                 .opacity(isAmountFocused ? 0 : 1)
                 .allowsHitTesting(false)
         }
+        .contentShape(Rectangle())
+        .onTapGesture { isAmountFocused = true }
     }
 
     private func valueText(_ text: String) -> some View {
         Text(text)
-            .font(.appLight(20))
             .foregroundColor(.appWhite)
             .lineLimit(1)
     }
