@@ -15,16 +15,10 @@ struct BalanceCard: View {
     var body: some View {
         Button(action: action) {
             HStack(spacing: 12) {
-                Image(systemName: "creditcard.fill")
-                    .font(.system(size: 20))
-                    .foregroundColor(.appBlue)
-
                 Text(L10n.startviewBalance)
                     .font(.appLight(18))
                     .foregroundColor(.appLabel)
                     .lineLimit(1)
-
-                Spacer(minLength: 8)
 
                 Text(balance?.getAmount() ?? "—")
                     .font(.appRegular(22))
@@ -34,14 +28,12 @@ struct BalanceCard: View {
                     .contentTransition(.numericText())
             }
             .padding(.horizontal, 16)
-            .frame(maxWidth: .infinity)
             .frame(height: 60)
             .background(.appLabel.opacity(0.1))
             .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
             .contentShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
         }
         .buttonStyle(.plain)
-        .padding(.horizontal, 16)
         .animation(.default, value: balance)
     }
 
@@ -107,6 +99,7 @@ struct BalanceInputPopup: View {
         BalanceCard(balance: -36050, action: {})
         BalanceCard(balance: nil, action: {})
     }
+    .padding(.horizontal, 16)
     .frame(maxWidth: .infinity, maxHeight: .infinity)
     .background(.appMain)
 }

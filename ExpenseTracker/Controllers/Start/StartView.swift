@@ -27,13 +27,17 @@ struct StartView: View {
         NavigationStack {
             ScrollView(.vertical) {
                 VStack(spacing: 16) {
-                    BalanceCard(balance: balance, action: openBalanceInput)
+                    HStack(spacing: 4) {
+                        topBarButton(systemImage: "list.bullet", action: openMenu)
+                        Spacer(minLength: 0)
+                        BalanceCard(balance: balance, action: openBalanceInput)
+                        Spacer(minLength: 0)
+                        topBarButton(systemImage: "chart.pie", action: openStatistics)
+                    }
+                    .padding(.horizontal, 8)
 
                     DigitPadView(input: $input, attentionTrigger: amountAttentionTrigger)
                         .frame(maxWidth: .infinity)
-                        .overlay(alignment: .top) {
-                            topBar
-                        }
                         .overlay(alignment: .bottomTrailing) {
                             commentButton
                         }
@@ -105,16 +109,6 @@ struct StartView: View {
                 .clipShape(Circle())
         }
         .accessibilityLabel(L10n.historyTitle)
-    }
-
-    private var topBar: some View {
-        HStack {
-            topBarButton(systemImage: "list.bullet", action: openMenu)
-            Spacer()
-            topBarButton(systemImage: "chart.pie", action: openStatistics)
-        }
-        .padding(.horizontal, 8)
-        .frame(height: 64)
     }
 
     private func topBarButton(systemImage: String, action: @escaping () -> Void) -> some View {
