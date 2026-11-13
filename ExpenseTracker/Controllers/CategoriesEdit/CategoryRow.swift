@@ -11,6 +11,7 @@ import SwiftUI
 struct CategoryRow: View {
     let category: TransactionCategory
     var subtitle: String?
+    var transactionsCount: Int?
     var showsChevron: Bool = true
     var action: () -> Void
 
@@ -36,6 +37,13 @@ struct CategoryRow: View {
                 }
 
                 Spacer(minLength: 8)
+
+                if let transactionsCount {
+                    Text(String(transactionsCount))
+                        .font(.appLight(16))
+                        .foregroundColor(.gray)
+                        .lineLimit(1)
+                }
 
                 if showsChevron {
                     Image(systemName: "chevron.right")

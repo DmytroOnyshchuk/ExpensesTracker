@@ -11,6 +11,7 @@ import SwiftUI
 
 struct CategoriesEdit: View {
     @Query private var categories: [TransactionCategory]
+    @Query private var transactions: [Transaction]
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var modelContext
 
@@ -24,12 +25,23 @@ struct CategoriesEdit: View {
         categories.inDisplayOrder
     }
 
+    private var transactionsCounts: [UUID: Int] {
+        var counts: [UUID: Int] = [:]
+        for transaction in transactions {
+            counts[transaction.category.uuid, default: 0] += 1
+        }
+        return counts
+    }
+
     var body: some View {
+        let transactionsCounts = transactionsCounts
+
         List {
             ForEach(orderedCategories, id: \.id) { category in
                 CategoryRow(
                     category: category,
-                    subtitle: category.parent(from: categories)?.name.localized
+                    subtitle: category.parent(from: categories)?.name.localized,
+                    transactionsCount: category.isDirectory ? nil : transactionsCounts[category.uuid] ?? 0
                 ) {
                     selectedCategory = category
                 }
