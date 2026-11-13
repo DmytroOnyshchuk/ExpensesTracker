@@ -41,7 +41,7 @@ struct StatisticsView: View {
                 if slices.isEmpty {
                     Text(L10n.transactionsListNoTransactions)
                         .font(.appLight(18))
-                        .foregroundColor(.gray.opacity(0.6))
+                        .foregroundColor(.appGray.opacity(0.6))
                         .frame(height: 120)
                 } else {
                     StatisticsPieChart(slices: slices)
@@ -231,7 +231,7 @@ struct StatisticsDayPicker: View {
 
     var body: some View {
         ZStack {
-            Color.black.opacity(0.4)
+            Color.appOverlay.opacity(0.4)
                 .ignoresSafeArea(edges: .bottom)
                 .onTapGesture {
                     onFinish(nil)

@@ -67,7 +67,7 @@ struct TransactionDetails: View {
             if visibleTransactions.isEmpty {
                 Text(L10n.transactionsListNoTransactions)
                     .font(.appLight(18))
-                    .foregroundColor(.gray.opacity(0.6))
+                    .foregroundColor(.appGray.opacity(0.6))
                     .frame(maxWidth: .infinity)
                     .frame(height: 120)
                     .listRowInsets(EdgeInsets())

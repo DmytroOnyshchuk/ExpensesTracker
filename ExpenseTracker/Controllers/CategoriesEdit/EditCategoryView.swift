@@ -187,7 +187,7 @@ struct EditCategoryView: View {
                     Image(systemName: "folder.fill")
                         .resizable()
                         .scaledToFit()
-                        .foregroundColor(.yellow)
+                        .foregroundColor(.appYellow)
                         .frame(width: 64, height: 64)
 
                     draft.icon.image
@@ -302,7 +302,7 @@ struct EditCategoryView: View {
                         Text(L10n.editCategoryMoreIcons)
                     }
                     .font(.appRegular(14))
-                    .foregroundColor(.yellow)
+                    .foregroundColor(.appYellow)
                 }
             }
 
@@ -337,7 +337,7 @@ struct EditCategoryView: View {
                 .foregroundColor(.appWhite)
                 .frame(maxWidth: .infinity)
                 .frame(height: 50)
-                .background(.red.opacity(0.8))
+                .background(.appRed.opacity(0.8))
                 .cornerRadius(12)
         }
         .alert(isDirectory ? L10n.editCategoryDeleteFolder : L10n.editCategoryDeleteCategory, isPresented: $showDeleteConfirmation) {

@@ -34,6 +34,7 @@ struct MenuView: View {
     @Query private var transactions: [Transaction]
 
     @State private var showStatistics = false
+    @State private var showSettings = false
 
     private let period = StatisticsPeriod.month
 
@@ -62,6 +63,9 @@ struct MenuView: View {
         .navigationDestination(isPresented: $showStatistics) {
             StatisticsView()
         }
+        .navigationDestination(isPresented: $showSettings) {
+            SettingsView()
+        }
     }
 
     private var spentTitle: String {
@@ -77,7 +81,8 @@ struct MenuView: View {
 
     private func open(_ item: MenuItem) {
         switch item {
-        case .budget, .settings: break
+        case .budget: break
+        case .settings: showSettings = true
         }
     }
 

@@ -85,33 +85,6 @@ enum IconColor: String, Codable, CaseIterable {
     case red, pink, blue, yellow, orange, purple, green, brown, white, cyan, indigo, gray, black
 
     var color: Color {
-        switch self {
-        case .red:
-            .red
-        case .pink:
-            .pink
-        case .blue:
-            .blue
-        case .yellow:
-            .yellow
-        case .orange:
-            .orange
-        case .purple:
-            .purple
-        case .green:
-            .green
-        case .brown:
-            .brown
-        case .white:
-            .white
-        case .cyan:
-            .cyan
-        case .indigo:
-            .indigo
-        case .gray:
-            .gray
-        case .black:
-            .black
-        }
+        ThemeManager.shared.theme.color(for: self)
     }
 }

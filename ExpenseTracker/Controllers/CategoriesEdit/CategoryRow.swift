@@ -31,7 +31,7 @@ struct CategoryRow: View {
                     if let subtitle {
                         Text(subtitle)
                             .font(.appLight(13))
-                            .foregroundColor(.gray)
+                            .foregroundColor(.appGray)
                             .lineLimit(1)
                     }
                 }
@@ -41,7 +41,7 @@ struct CategoryRow: View {
                 if let transactionsCount {
                     Text(String(transactionsCount))
                         .font(.appLight(16))
-                        .foregroundColor(.gray)
+                        .foregroundColor(.appGray)
                         .lineLimit(1)
                 }
 
@@ -76,7 +76,7 @@ struct CategoryRow: View {
                 Image(systemName: "folder.fill")
                     .resizable()
                     .scaledToFit()
-                    .foregroundColor(.yellow)
+                    .foregroundColor(.appYellow)
 
                 category.categoryIcon.image
                     .resizable()

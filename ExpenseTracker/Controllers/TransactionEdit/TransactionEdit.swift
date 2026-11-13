@@ -165,9 +165,9 @@ struct TransactionEdit: View {
         } label: {
             Image(systemName: "trash")
                 .font(.system(size: 22, weight: .medium))
-                .foregroundColor(.red)
+                .foregroundColor(.appRed)
                 .frame(width: 60, height: 60)
-                .background(.red.opacity(0.15))
+                .background(.appRed.opacity(0.15))
                 .clipShape(Circle())
         }
         .buttonStyle(.plain)

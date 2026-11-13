@@ -42,7 +42,7 @@ struct TransactionsList: View {
                     if day.transactions.isEmpty {
                         Text(L10n.transactionsListNoTransactions)
                             .font(.appLight(18))
-                            .foregroundColor(.gray.opacity(0.6))
+                            .foregroundColor(.appGray.opacity(0.6))
                             .frame(maxWidth: .infinity)
                             .frame(height: 48)
                             .listRowBackground(Color.appMain)
@@ -120,7 +120,7 @@ struct TransactionsDayHeader: View {
         HStack(spacing: 12) {
             Text(day.title)
                 .font(.appLight(16))
-                .foregroundColor(.gray)
+                .foregroundColor(.appGray)
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
 
@@ -161,7 +161,7 @@ struct TransactionRow: View {
                 if let note = transaction.comment, !note.isEmpty {
                     Text(note)
                         .font(.appLight(13))
-                        .foregroundColor(.gray)
+                        .foregroundColor(.appGray)
                         .lineLimit(1)
                 }
             }

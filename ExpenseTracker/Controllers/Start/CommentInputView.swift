@@ -17,7 +17,7 @@ struct CommentInputView: View {
 
     var body: some View {
         ZStack(alignment: .bottom) {
-            Color.black.opacity(0.5)
+            Color.appOverlay.opacity(0.5)
                 .ignoresSafeArea()
                 .onTapGesture(perform: close)
 
@@ -31,7 +31,7 @@ struct CommentInputView: View {
             .padding(16)
             .background(.appSecond)
             .clipShape(RoundedRectangle(cornerRadius: 28, style: .continuous))
-            .shadow(color: .black.opacity(0.3), radius: 24, y: 8)
+            .shadow(color: .appOverlay.opacity(0.3), radius: 24, y: 8)
             .padding(.horizontal, 12)
             .padding(.bottom, 8)
         }

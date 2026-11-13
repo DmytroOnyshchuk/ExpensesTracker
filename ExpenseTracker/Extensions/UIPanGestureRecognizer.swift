@@ -30,7 +30,7 @@ extension UIPanGestureRecognizer {
         let velocity = velocity(in: view)
         let isVertical: Bool = abs(velocity.y) > abs(velocity.x)
 
-        var direction: UIPanGestureRecognizerDirection = if isVertical {
+        let direction: UIPanGestureRecognizerDirection = if isVertical {
             velocity.y > 0 ? .topToBottom : .bottomToTop
         } else {
             velocity.x > 0 ? .leftToRight : .rightToLeft
@@ -67,7 +67,7 @@ extension UIPanGestureRecognizer {
     }
 
     public func set(gestureHandle: @escaping (UIPanGestureRecognizer) -> Void) {
-        weak var weakSelf = self
+        weak let weakSelf = self
         let tuple = (weakSelf, gestureHandle)
         UIPanGestureRecognizer.handlers.append(tuple)
         addTarget(self, action: #selector(handleGesture))

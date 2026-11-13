@@ -22,7 +22,7 @@ struct CategoryCell: View {
                         Image(systemName: "folder.fill")
                             .resizable()
                             .scaledToFit()
-                            .foregroundColor(.yellow)
+                            .foregroundColor(.appYellow)
                             .frame(height: 60)
 
                         category.categoryIcon.image

@@ -188,11 +188,11 @@ struct CustomIconPickerView: View {
             VStack(spacing: 8) {
                 Image(systemName: icon)
                     .font(.system(size: 24))
-                    .foregroundColor(selectedIcon == icon ? .yellow : .appWhite)
+                    .foregroundColor(selectedIcon == icon ? .appYellow : .appWhite)
                     .frame(width: 50, height: 50)
                     .background(
                         RoundedRectangle(cornerRadius: 12)
-                            .stroke(selectedIcon == icon ? Color.yellow : Color.clear, lineWidth: 2)
+                            .stroke(selectedIcon == icon ? Color.appYellow : Color.clear, lineWidth: 2)
                     )
 
                 Text(icon)

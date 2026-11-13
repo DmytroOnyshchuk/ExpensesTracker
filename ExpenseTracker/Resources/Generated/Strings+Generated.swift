@@ -134,6 +134,16 @@ internal enum L10n {
   internal static let retry = L10n.tr("Localizable", "RETRY", fallback: "RETRY")
   /// Save
   internal static let save = L10n.tr("Localizable", "SAVE", fallback: "Save")
+  /// Appearance
+  internal static let settingsAppearance = L10n.tr("Localizable", "SETTINGS_APPEARANCE", fallback: "Appearance")
+  /// Classic
+  internal static let settingsThemeClassic = L10n.tr("Localizable", "SETTINGS_THEME_CLASSIC", fallback: "Classic")
+  /// Forest
+  internal static let settingsThemeForest = L10n.tr("Localizable", "SETTINGS_THEME_FOREST", fallback: "Forest")
+  /// Light
+  internal static let settingsThemeLight = L10n.tr("Localizable", "SETTINGS_THEME_LIGHT", fallback: "Light")
+  /// Midnight
+  internal static let settingsThemeMidnight = L10n.tr("Localizable", "SETTINGS_THEME_MIDNIGHT", fallback: "Midnight")
   /// Share
   internal static let share = L10n.tr("Localizable", "SHARE", fallback: "Share")
   /// Something went wrong...
