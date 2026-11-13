@@ -54,7 +54,7 @@ struct UndoToastView: View {
             Button(action: onUndo) {
                 Text(L10n.undo)
                     .font(.appMedium(16))
-                    .foregroundColor(.appBlue)
+                    .foregroundColor(.appPrimary)
                     .frame(minHeight: 44)
                     .contentShape(Rectangle())
             }

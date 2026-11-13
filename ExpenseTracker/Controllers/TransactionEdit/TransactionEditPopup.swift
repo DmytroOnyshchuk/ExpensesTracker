@@ -43,7 +43,7 @@ struct TransactionEditPopup<Content: View>: View {
         Button(action: action) {
             Text(title)
                 .font(.appLight(20))
-                .foregroundColor(.appBlue)
+                .foregroundColor(.appPrimary)
                 .frame(maxWidth: .infinity, minHeight: 52)
                 .contentShape(Rectangle())
         }
@@ -87,7 +87,7 @@ struct TransactionDatePopup: View {
         } label: {
             Text(day.relativeDayName ?? "")
                 .font(.appLight(20))
-                .foregroundColor(isSelected ? .appBlue : .appLabel)
+                .foregroundColor(isSelected ? .appPrimary : .appLabel)
                 .frame(maxWidth: .infinity, minHeight: 44)
                 .contentShape(Rectangle())
         }

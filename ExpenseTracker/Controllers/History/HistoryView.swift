@@ -82,7 +82,7 @@ struct HistoryView: View {
         ZStack {
             Text(period.title(for: start))
                 .font(.appRegular(22))
-                .foregroundColor(.appBlue)
+                .foregroundColor(.appPrimary)
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
                 .id(start)
@@ -129,7 +129,7 @@ struct HistoryView: View {
         } label: {
             Image(systemName: systemImage)
                 .font(.system(size: 20, weight: .medium))
-                .foregroundColor(.appBlue.opacity(isEnabled ? 1 : 0.3))
+                .foregroundColor(.appPrimary.opacity(isEnabled ? 1 : 0.3))
                 .frame(width: 44, height: 44)
                 .contentShape(Rectangle())
         }

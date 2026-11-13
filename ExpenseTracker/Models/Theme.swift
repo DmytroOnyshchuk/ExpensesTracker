@@ -11,7 +11,7 @@ struct Theme {
     let appBlack: Color
     let appLightGrey: Color
 
-    let appBlue: Color
+    let appPrimary: Color
     let appDarkGreen: Color
 
     let appGray: Color
@@ -84,7 +84,7 @@ extension Theme {
         appWhite: Color(.appWhite),
         appBlack: Color(.appBlack),
         appLightGrey: Color(.appLightGrey),
-        appBlue: Color(.appBlue),
+        appPrimary: Color(.appPrimary),
         appDarkGreen: Color(.appDarkGreen),
         appGray: .gray,
         appYellow: .yellow,
@@ -100,7 +100,7 @@ extension Theme {
         appWhite: Color(hex: "#F2F4F8"),
         appBlack: Color(hex: "#000000"),
         appLightGrey: Color(hex: "#E3E6EE"),
-        appBlue: Color(hex: "#6C8CFF"),
+        appPrimary: Color(hex: "#6C8CFF"),
         appDarkGreen: Color(hex: "#2FA36B"),
         appGray: Color(hex: "#6B7183"),
         appYellow: Color(hex: "#FFD166"),
@@ -116,7 +116,7 @@ extension Theme {
         appWhite: Color(hex: "#F4F7F2"),
         appBlack: Color(hex: "#0B120F"),
         appLightGrey: Color(hex: "#E6ECE6"),
-        appBlue: Color(hex: "#5FD19A"),
+        appPrimary: Color(hex: "#5FD19A"),
         appDarkGreen: Color(hex: "#349C5D"),
         appGray: Color(hex: "#7C8F84"),
         appYellow: Color(hex: "#F2C14E"),
@@ -132,7 +132,7 @@ extension Theme {
         appWhite: Color(hex: "#F2F2F7"),
         appBlack: Color(hex: "#111111"),
         appLightGrey: Color(hex: "#E5E5EA"),
-        appBlue: Color(hex: "#8FB0CC"),
+        appPrimary: Color(hex: "#8FB0CC"),
         appDarkGreen: Color(hex: "#4E9E73"),
         appGray: Color(hex: "#7C7C80"),
         appYellow: Color(hex: "#D9B95B"),
@@ -148,7 +148,7 @@ extension Theme {
         appWhite: Color(hex: "#F7F7F8"),
         appBlack: Color(hex: "#000000"),
         appLightGrey: Color(hex: "#E6EAEC"),
-        appBlue: Color(hex: "#2FE0B5"),
+        appPrimary: Color(hex: "#E6E6E8"),
         appDarkGreen: Color(hex: "#35B98D"),
         appGray: Color(hex: "#85878B"),
         appYellow: Color(hex: "#FFD000"),
@@ -164,7 +164,7 @@ extension Theme {
         appWhite: Color(hex: "#E8E8E8"),
         appBlack: Color(hex: "#121212"),
         appLightGrey: Color(hex: "#D8D8D8"),
-        appBlue: Color(hex: "#51B5FF"),
+        appPrimary: Color(hex: "#8BAFC6"),
         appDarkGreen: Color(hex: "#45B98A"),
         appGray: Color(hex: "#85878B"),
         appYellow: Color(hex: "#FFD44A"),

@@ -23,7 +23,7 @@ struct SegmentedControl<Item: Hashable>: View {
                         .font(.appLight(18))
                         .lineLimit(1)
                         .minimumScaleFactor(0.7)
-                        .foregroundColor(item == selection ? .appWhite : .appBlue)
+                        .foregroundColor(item == selection ? .appWhite : .appPrimary)
                         .padding(.horizontal, 4)
                         .frame(maxWidth: .infinity)
                         .frame(height: 36)

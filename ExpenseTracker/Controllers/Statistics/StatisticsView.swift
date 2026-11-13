@@ -98,7 +98,7 @@ struct StatisticsView: View {
         ZStack {
             Text(period.title(for: start))
                 .font(.appRegular(22))
-                .foregroundColor(.appBlue)
+                .foregroundColor(.appPrimary)
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
                 .id(period.interval(containing: start))
@@ -151,7 +151,7 @@ struct StatisticsView: View {
         } label: {
             Image(systemName: systemImage)
                 .font(.system(size: 20, weight: .medium))
-                .foregroundColor(.appBlue.opacity(isEnabled ? 1 : 0.3))
+                .foregroundColor(.appPrimary.opacity(isEnabled ? 1 : 0.3))
                 .frame(width: 44, height: 44)
                 .contentShape(Rectangle())
         }
@@ -280,7 +280,7 @@ struct StatisticsDayPicker: View {
         Button(action: action) {
             Text(title)
                 .font(.appRegular(20))
-                .foregroundColor(.appBlue)
+                .foregroundColor(.appPrimary)
                 .frame(maxWidth: .infinity)
                 .frame(height: 48)
                 .contentShape(Rectangle())

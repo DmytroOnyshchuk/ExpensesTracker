@@ -118,12 +118,12 @@ struct MenuSpentCard: View {
 
                 Image(systemName: "chart.pie.fill")
                     .font(.system(size: 34))
-                    .foregroundColor(.appBlue)
+                    .foregroundColor(.appPrimary)
             }
             .padding(.horizontal, 20)
             .frame(maxWidth: .infinity)
             .frame(height: 100)
-            .background(.appBlue.opacity(0.15))
+            .background(.appPrimary.opacity(0.15))
             .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
             .contentShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
         }
@@ -140,7 +140,7 @@ struct MenuRow: View {
             HStack(spacing: 16) {
                 Image(systemName: item.systemImage)
                     .font(.system(size: 22))
-                    .foregroundColor(.appBlue)
+                    .foregroundColor(.appPrimary)
                     .frame(width: 32)
 
                 Text(item.title)

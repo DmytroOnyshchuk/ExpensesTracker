@@ -68,7 +68,7 @@ struct BalanceInputPopup: View {
                     .focused($isFocused)
                     .font(.appLight(32))
                     .foregroundColor(.appWhite)
-                    .tint(.appBlue)
+                    .tint(.appPrimary)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 16)
                     .frame(height: 60)

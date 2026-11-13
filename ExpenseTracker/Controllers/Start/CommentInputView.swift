@@ -54,7 +54,7 @@ struct CommentInputView: View {
                 Button(action: { tap(clear) }) {
                     Text(L10n.clear)
                         .font(.appRegular(15))
-                        .foregroundColor(.appBlue)
+                        .foregroundColor(.appPrimary)
                         .padding(.horizontal, 10)
                         .frame(minHeight: 32)
                         .contentShape(Rectangle())
@@ -85,7 +85,7 @@ struct CommentInputView: View {
         .focused($isFocused)
         .font(.appLight(18))
         .foregroundColor(.appWhite)
-        .tint(.appBlue)
+        .tint(.appPrimary)
         .padding(.horizontal, 16)
         .padding(.vertical, 11)
         .frame(minHeight: 44)
@@ -99,7 +99,7 @@ struct CommentInputView: View {
                 .font(.system(size: 17, weight: .semibold))
                 .foregroundColor(.appWhite)
                 .frame(width: 44, height: 44)
-                .background(.appBlue)
+                .background(.appPrimary)
                 .clipShape(Circle())
         }
     }

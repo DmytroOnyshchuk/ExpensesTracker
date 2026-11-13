@@ -52,7 +52,7 @@ struct ThemePresetCell: View {
         Button(action: action) {
             VStack(spacing: 10) {
                 HStack(spacing: 6) {
-                    ForEach(Array([theme.appBlue, theme.appWhite, theme.appLabel].enumerated()), id: \.offset) { _, color in
+                    ForEach(Array([theme.appPrimary, theme.appWhite, theme.appLabel].enumerated()), id: \.offset) { _, color in
                         RoundedRectangle(cornerRadius: 6, style: .continuous)
                             .fill(color)
                             .frame(width: 16, height: 16)
@@ -64,7 +64,7 @@ struct ThemePresetCell: View {
                 .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
                 .overlay {
                     RoundedRectangle(cornerRadius: 14, style: .continuous)
-                        .stroke(isSelected ? theme.appBlue : theme.appLabel.opacity(0.4), lineWidth: isSelected ? 3 : 1)
+                        .stroke(isSelected ? theme.appPrimary : theme.appLabel.opacity(0.4), lineWidth: isSelected ? 3 : 1)
                 }
 
                 Text(preset.title)

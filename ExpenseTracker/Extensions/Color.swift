@@ -68,7 +68,7 @@ extension Color {
     static var appBlack: Color { ThemeManager.shared.theme.appBlack }
     static var appLightGrey: Color { ThemeManager.shared.theme.appLightGrey }
 
-    static var appBlue: Color { ThemeManager.shared.theme.appBlue }
+    static var appPrimary: Color { ThemeManager.shared.theme.appPrimary }
     static var appDarkGreen: Color { ThemeManager.shared.theme.appDarkGreen }
 
     static var appGray: Color { ThemeManager.shared.theme.appGray }
@@ -86,7 +86,7 @@ extension ShapeStyle where Self == Color {
     static var appBlack: Color { Color.appBlack }
     static var appLightGrey: Color { Color.appLightGrey }
 
-    static var appBlue: Color { Color.appBlue }
+    static var appPrimary: Color { Color.appPrimary }
     static var appDarkGreen: Color { Color.appDarkGreen }
 
     static var appGray: Color { Color.appGray }
