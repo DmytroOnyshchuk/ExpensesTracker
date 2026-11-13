@@ -16,36 +16,24 @@ struct CommentInputView: View {
     @FocusState private var isFocused: Bool
 
     var body: some View {
-        ZStack(alignment: .top) {
-            Color.black.opacity(0.4)
+        ZStack(alignment: .bottom) {
+            Color.black.opacity(0.5)
                 .ignoresSafeArea()
                 .onTapGesture(perform: close)
 
-            VStack(spacing: 0) {
-                TextEditor(text: $draft)
-                    .focused($isFocused)
-                    .font(.appLight(18))
-                    .foregroundColor(.appWhite)
-                    .scrollContentBackground(.hidden)
-                    .frame(height: 150)
-                    .padding(.horizontal, 8)
-                    .padding(.top, 8)
-
-                HStack {
-                    actionButton(L10n.clear) {
-                        draft = ""
-                    }
-                    Spacer()
-                    actionButton(L10n.cancel, action: close)
-                    Spacer()
-                    actionButton(L10n.ok, action: save)
+            VStack(spacing: 14) {
+                header
+                HStack(alignment: .bottom, spacing: 10) {
+                    field
+                    saveButton
                 }
-                .padding(.horizontal, 4)
             }
+            .padding(16)
             .background(.appSecond)
-            .clipShape(RoundedRectangle(cornerRadius: 4))
-            .padding(.horizontal, 20)
-            .padding(.top, 96)
+            .clipShape(RoundedRectangle(cornerRadius: 28, style: .continuous))
+            .shadow(color: .black.opacity(0.3), radius: 24, y: 8)
+            .padding(.horizontal, 12)
+            .padding(.bottom, 8)
         }
         .onAppear {
             draft = comment
@@ -53,15 +41,71 @@ struct CommentInputView: View {
         }
     }
 
-    private func actionButton(_ title: String, action: @escaping () -> Void) -> some View {
-        Button(action: action) {
-            Text(title)
-                .font(.appLight(18))
-                .foregroundColor(.appBlue)
-                .padding(.horizontal, 12)
-                .frame(minWidth: 44, minHeight: 48)
-                .contentShape(Rectangle())
+    private var header: some View {
+        HStack(spacing: 4) {
+            Text(L10n.transactionEditAddComment)
+                .font(.appMedium(16))
+                .foregroundColor(.appLabel)
+                .padding(.leading, 4)
+
+            Spacer()
+
+            if !draft.isEmpty {
+                Button(action: clear) {
+                    Text(L10n.clear)
+                        .font(.appRegular(15))
+                        .foregroundColor(.appBlue)
+                        .padding(.horizontal, 10)
+                        .frame(minHeight: 32)
+                        .contentShape(Rectangle())
+                }
+                .transition(.opacity)
+            }
+
+            Button(action: close) {
+                Image(systemName: "xmark")
+                    .font(.system(size: 12, weight: .bold))
+                    .foregroundColor(.appLabel)
+                    .frame(width: 32, height: 32)
+                    .background(.appLabel.opacity(0.15))
+                    .clipShape(Circle())
+            }
         }
+        .animation(.easeInOut(duration: 0.15), value: draft.isEmpty)
+    }
+
+    private var field: some View {
+        TextField(
+            "",
+            text: $draft,
+            prompt: Text(L10n.transactionEditAddComment).foregroundColor(.appLabel.opacity(0.6)),
+            axis: .vertical
+        )
+        .lineLimit(3 ... 6)
+        .focused($isFocused)
+        .font(.appLight(18))
+        .foregroundColor(.appWhite)
+        .tint(.appBlue)
+        .padding(.horizontal, 16)
+        .padding(.vertical, 11)
+        .frame(minHeight: 44)
+        .background(.appMain)
+        .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
+    }
+
+    private var saveButton: some View {
+        Button(action: save) {
+            Image(systemName: "checkmark")
+                .font(.system(size: 17, weight: .semibold))
+                .foregroundColor(.appWhite)
+                .frame(width: 44, height: 44)
+                .background(.appBlue)
+                .clipShape(Circle())
+        }
+    }
+
+    private func clear() {
+        draft = ""
     }
 
     private func save() {
