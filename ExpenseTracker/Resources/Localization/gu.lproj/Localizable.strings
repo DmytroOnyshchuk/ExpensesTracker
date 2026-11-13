@@ -32,6 +32,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "ખર્ચ દાખલ કરો";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "પહેલા રકમ દાખલ કરો";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ખર્ચ";

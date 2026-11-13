@@ -32,6 +32,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "செலவை உள்ளிடவும்";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "முதலில் தொகையை உள்ளிடவும்";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "செலவுகள்";

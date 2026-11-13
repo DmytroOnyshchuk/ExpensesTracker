@@ -32,6 +32,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Ange utgift";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Ange beloppet först";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Utgifter";

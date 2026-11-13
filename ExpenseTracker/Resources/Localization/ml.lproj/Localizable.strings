@@ -32,6 +32,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "ചെലവ് നൽകുക";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "ആദ്യം തുക നൽകുക";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ചെലവുകൾ";

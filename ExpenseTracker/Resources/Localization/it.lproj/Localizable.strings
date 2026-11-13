@@ -32,6 +32,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Inserisci la spesa";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Inserisci prima l'importo";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Spese";

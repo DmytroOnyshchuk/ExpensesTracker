@@ -32,6 +32,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Introduce el gasto";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Primero introduce el importe";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Gastos";

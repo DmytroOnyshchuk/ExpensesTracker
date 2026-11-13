@@ -32,6 +32,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Harcama girin";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Önce tutarı girin";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Harcamalar";

@@ -32,6 +32,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Sláðu inn útgjöld";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Sláðu fyrst inn upphæðina";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Útgjöld";

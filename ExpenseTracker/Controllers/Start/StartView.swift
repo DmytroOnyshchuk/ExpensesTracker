@@ -17,6 +17,7 @@ struct StartView: View {
     @State private var showHistory = false
     @State private var comment = ""
     @State private var showCommentInput = false
+    @State private var toastMessage: String?
     @Query(sort: \Transaction.date, order: .reverse) private var transactions: [Transaction]
 
     var body: some View {
@@ -57,6 +58,7 @@ struct StartView: View {
             }
         }
         .animation(.easeInOut(duration: 0.2), value: showCommentInput)
+        .toast($toastMessage)
     }
 
     private var commentButton: some View {
@@ -117,7 +119,11 @@ struct StartView: View {
     }
 
     private func addTransaction(with category: TransactionCategory) {
-        guard input.amount != 0 else { return }
+        guard input.amount != 0 else {
+            toastMessage = L10n.startviewEnterAmountFirst
+            FeedbackManager.amountMissing()
+            return
+        }
 
         let transaction = Transaction(
             amount: input.amount,
@@ -126,6 +132,7 @@ struct StartView: View {
             note: comment.isBlank ? nil : comment
         )
 
+        toastMessage = nil
         modelContext.insert(transaction)
         FeedbackManager.transactionAdded()
         input.reset()

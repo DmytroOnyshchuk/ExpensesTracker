@@ -32,6 +32,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "지출 입력";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "먼저 금액을 입력하세요";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "지출";

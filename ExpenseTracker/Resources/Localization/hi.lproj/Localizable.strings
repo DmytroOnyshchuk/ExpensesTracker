@@ -32,6 +32,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "खर्च दर्ज करें";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "पहले राशि दर्ज करें";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "खर्च";

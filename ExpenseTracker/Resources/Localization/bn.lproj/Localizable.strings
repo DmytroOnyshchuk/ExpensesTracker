@@ -32,6 +32,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "খরচ লিখুন";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "প্রথমে পরিমাণ লিখুন";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "খরচ";

@@ -11,9 +11,15 @@ import UIKit
 
 enum FeedbackManager {
     private static let transactionAddedSoundID: SystemSoundID = 1104
+    private static let amountMissingSoundID: SystemSoundID = 1053
 
     static func transactionAdded() {
         UINotificationFeedbackGenerator().notificationOccurred(.success)
         AudioServicesPlaySystemSound(transactionAddedSoundID)
+    }
+
+    static func amountMissing() {
+        UINotificationFeedbackGenerator().notificationOccurred(.error)
+        AudioServicesPlaySystemSound(amountMissingSoundID)
     }
 }

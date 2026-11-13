@@ -32,6 +32,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Faka izindleko";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Qala ngokufaka inani";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Izindleko";

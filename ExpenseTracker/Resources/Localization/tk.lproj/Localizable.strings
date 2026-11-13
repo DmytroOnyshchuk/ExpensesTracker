@@ -32,6 +32,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Çykdajyny giriziň";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Ilki bilen mukdary giriziň";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Çykdajylar";

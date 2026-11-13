@@ -32,6 +32,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "הזינו הוצאה";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "הזינו קודם את הסכום";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "הוצאות";

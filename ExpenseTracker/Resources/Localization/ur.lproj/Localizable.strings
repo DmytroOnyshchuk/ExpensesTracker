@@ -32,6 +32,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "خرچ درج کریں";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "پہلے رقم درج کریں";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "اخراجات";

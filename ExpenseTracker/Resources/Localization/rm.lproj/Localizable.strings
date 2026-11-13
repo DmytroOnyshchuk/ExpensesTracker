@@ -32,6 +32,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Endatar l'expensa";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Endatescha l'emprim l'import";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Expensas";

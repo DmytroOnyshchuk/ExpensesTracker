@@ -32,6 +32,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Syötä kulu";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Syötä ensin summa";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Kulut";

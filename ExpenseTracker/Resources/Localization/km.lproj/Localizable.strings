@@ -32,6 +32,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "បញ្ចូលចំណាយ";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "សូមបញ្ចូលចំនួនទឹកប្រាក់ជាមុនសិន";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ចំណាយ";

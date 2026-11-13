@@ -32,6 +32,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Zadajte výdavok";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "Najprv zadajte sumu";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Výdavky";

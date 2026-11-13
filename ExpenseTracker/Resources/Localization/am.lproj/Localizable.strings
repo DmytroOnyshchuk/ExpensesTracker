@@ -32,6 +32,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "ወጪ ያስገቡ";
+"STARTVIEW_ENTER_AMOUNT_FIRST" = "መጀመሪያ መጠኑን ያስገቡ";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ወጪዎች";
