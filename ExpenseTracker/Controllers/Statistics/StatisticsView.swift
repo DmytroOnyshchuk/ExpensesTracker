@@ -331,7 +331,7 @@ struct StatisticsPieChart: View {
     var body: some View {
         Chart(slices) { slice in
             SectorMark(angle: .value("Amount", slice.amount), angularInset: 1)
-                .foregroundStyle(slice.category.categoryIcon.color)
+                .foregroundStyle(slice.category.categoryIcon.color.opacity(0.75))
                 .annotation(position: .overlay) {
                     if slice.share >= Self.minLabelShare {
                         Text(slice.category.name.localized)
