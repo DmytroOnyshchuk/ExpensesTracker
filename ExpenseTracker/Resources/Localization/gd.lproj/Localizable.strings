@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Mìos";
 "STATISTICS_YEAR" = "Bliadhna";
 "STATISTICS_TOTAL_SPENT" = "Iomlan air a chosg";
+"STATISTICS_AVERAGE_PER_DAY" = "cuibheas: %@ gach latha";
+"STATISTICS_AVERAGE_PER_MONTH" = "cuibheas: %@ gach mìos";
+"STATISTICS_AVERAGE_PER_YEAR" = "cuibheas: %@ gach bliadhna";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "A-rèir ceann-là";

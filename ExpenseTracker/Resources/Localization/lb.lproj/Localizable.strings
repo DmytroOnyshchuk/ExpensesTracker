@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Mount";
 "STATISTICS_YEAR" = "Joer";
 "STATISTICS_TOTAL_SPENT" = "Total ausginn";
+"STATISTICS_AVERAGE_PER_DAY" = "Duerchschnëtt: %@ pro Dag";
+"STATISTICS_AVERAGE_PER_MONTH" = "Duerchschnëtt: %@ pro Mount";
+"STATISTICS_AVERAGE_PER_YEAR" = "Duerchschnëtt: %@ pro Joer";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "No Datum";

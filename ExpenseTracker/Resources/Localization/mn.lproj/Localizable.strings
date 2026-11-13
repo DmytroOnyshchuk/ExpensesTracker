@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Сар";
 "STATISTICS_YEAR" = "Жил";
 "STATISTICS_TOTAL_SPENT" = "Нийт зарцуулсан";
+"STATISTICS_AVERAGE_PER_DAY" = "дундаж: өдөрт %@";
+"STATISTICS_AVERAGE_PER_MONTH" = "дундаж: сард %@";
+"STATISTICS_AVERAGE_PER_YEAR" = "дундаж: жилд %@";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Огноогоор";

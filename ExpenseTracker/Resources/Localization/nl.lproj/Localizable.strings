@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Maand";
 "STATISTICS_YEAR" = "Jaar";
 "STATISTICS_TOTAL_SPENT" = "Totaal uitgegeven";
+"STATISTICS_AVERAGE_PER_DAY" = "gemiddeld: %@ per dag";
+"STATISTICS_AVERAGE_PER_MONTH" = "gemiddeld: %@ per maand";
+"STATISTICS_AVERAGE_PER_YEAR" = "gemiddeld: %@ per jaar";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Op datum";

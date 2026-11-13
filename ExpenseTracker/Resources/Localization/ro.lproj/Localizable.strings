@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Lună";
 "STATISTICS_YEAR" = "An";
 "STATISTICS_TOTAL_SPENT" = "Total cheltuit";
+"STATISTICS_AVERAGE_PER_DAY" = "medie: %@ pe zi";
+"STATISTICS_AVERAGE_PER_MONTH" = "medie: %@ pe lună";
+"STATISTICS_AVERAGE_PER_YEAR" = "medie: %@ pe an";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "După dată";

@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Mwezi";
 "STATISTICS_YEAR" = "Mwaka";
 "STATISTICS_TOTAL_SPENT" = "Jumla ya matumizi";
+"STATISTICS_AVERAGE_PER_DAY" = "wastani: %@ kwa siku";
+"STATISTICS_AVERAGE_PER_MONTH" = "wastani: %@ kwa mwezi";
+"STATISTICS_AVERAGE_PER_YEAR" = "wastani: %@ kwa mwaka";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Kwa tarehe";

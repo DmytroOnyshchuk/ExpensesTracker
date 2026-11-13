@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Buwan";
 "STATISTICS_YEAR" = "Taon";
 "STATISTICS_TOTAL_SPENT" = "Kabuuang nagastos";
+"STATISTICS_AVERAGE_PER_DAY" = "karaniwan: %@ kada araw";
+"STATISTICS_AVERAGE_PER_MONTH" = "karaniwan: %@ kada buwan";
+"STATISTICS_AVERAGE_PER_YEAR" = "karaniwan: %@ kada taon";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Ayon sa petsa";

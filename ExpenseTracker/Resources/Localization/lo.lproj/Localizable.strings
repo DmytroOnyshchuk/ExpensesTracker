@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "ເດືອນ";
 "STATISTICS_YEAR" = "ປີ";
 "STATISTICS_TOTAL_SPENT" = "ໃຊ້ຈ່າຍທັງໝົດ";
+"STATISTICS_AVERAGE_PER_DAY" = "ສະເລ່ຍ: %@ ຕໍ່ມື້";
+"STATISTICS_AVERAGE_PER_MONTH" = "ສະເລ່ຍ: %@ ຕໍ່ເດືອນ";
+"STATISTICS_AVERAGE_PER_YEAR" = "ສະເລ່ຍ: %@ ຕໍ່ປີ";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "ຕາມວັນທີ";

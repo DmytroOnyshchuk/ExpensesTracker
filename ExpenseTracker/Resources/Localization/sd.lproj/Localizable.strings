@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "مهينو";
 "STATISTICS_YEAR" = "سال";
 "STATISTICS_TOTAL_SPENT" = "ڪل خرچ";
+"STATISTICS_AVERAGE_PER_DAY" = "سراسري: %@ في ڏينهن";
+"STATISTICS_AVERAGE_PER_MONTH" = "سراسري: %@ في مهينو";
+"STATISTICS_AVERAGE_PER_YEAR" = "سراسري: %@ في سال";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "تاريخ موجب";

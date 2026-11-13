@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Mí";
 "STATISTICS_YEAR" = "Bliain";
 "STATISTICS_TOTAL_SPENT" = "Iomlán caite";
+"STATISTICS_AVERAGE_PER_DAY" = "meán: %@ in aghaidh an lae";
+"STATISTICS_AVERAGE_PER_MONTH" = "meán: %@ in aghaidh na míosa";
+"STATISTICS_AVERAGE_PER_YEAR" = "meán: %@ in aghaidh na bliana";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "De réir dáta";

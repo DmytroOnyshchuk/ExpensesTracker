@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "মাস";
 "STATISTICS_YEAR" = "বছর";
 "STATISTICS_TOTAL_SPENT" = "মোট খরচ";
+"STATISTICS_AVERAGE_PER_DAY" = "গড়: প্রতিদিন %@";
+"STATISTICS_AVERAGE_PER_MONTH" = "গড়: প্রতি মাসে %@";
+"STATISTICS_AVERAGE_PER_YEAR" = "গড়: প্রতি বছরে %@";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "তারিখ অনুযায়ী";

@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Hónap";
 "STATISTICS_YEAR" = "Év";
 "STATISTICS_TOTAL_SPENT" = "Összes költés";
+"STATISTICS_AVERAGE_PER_DAY" = "átlag: %@ naponta";
+"STATISTICS_AVERAGE_PER_MONTH" = "átlag: %@ havonta";
+"STATISTICS_AVERAGE_PER_YEAR" = "átlag: %@ évente";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Dátum szerint";

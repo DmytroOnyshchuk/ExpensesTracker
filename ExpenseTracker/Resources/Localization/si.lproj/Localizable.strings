@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "මාසය";
 "STATISTICS_YEAR" = "වසර";
 "STATISTICS_TOTAL_SPENT" = "මුළු වියදම";
+"STATISTICS_AVERAGE_PER_DAY" = "සාමාන්‍යය: දිනකට %@";
+"STATISTICS_AVERAGE_PER_MONTH" = "සාමාන්‍යය: මාසයකට %@";
+"STATISTICS_AVERAGE_PER_YEAR" = "සාමාන්‍යය: වසරකට %@";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "දිනය අනුව";

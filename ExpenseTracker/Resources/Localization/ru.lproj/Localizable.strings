@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Месяц";
 "STATISTICS_YEAR" = "Год";
 "STATISTICS_TOTAL_SPENT" = "Всего потрачено";
+"STATISTICS_AVERAGE_PER_DAY" = "среднее: %@ в день";
+"STATISTICS_AVERAGE_PER_MONTH" = "среднее: %@ в месяц";
+"STATISTICS_AVERAGE_PER_YEAR" = "среднее: %@ в год";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "По дате";

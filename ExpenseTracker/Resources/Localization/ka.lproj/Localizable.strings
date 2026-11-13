@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "თვე";
 "STATISTICS_YEAR" = "წელი";
 "STATISTICS_TOTAL_SPENT" = "სულ დახარჯული";
+"STATISTICS_AVERAGE_PER_DAY" = "საშუალოდ: %@ დღეში";
+"STATISTICS_AVERAGE_PER_MONTH" = "საშუალოდ: %@ თვეში";
+"STATISTICS_AVERAGE_PER_YEAR" = "საშუალოდ: %@ წელიწადში";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "თარიღით";

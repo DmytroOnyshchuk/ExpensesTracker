@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Месяц";
 "STATISTICS_YEAR" = "Год";
 "STATISTICS_TOTAL_SPENT" = "Усяго выдаткавана";
+"STATISTICS_AVERAGE_PER_DAY" = "у сярэднім: %@ у дзень";
+"STATISTICS_AVERAGE_PER_MONTH" = "у сярэднім: %@ у месяц";
+"STATISTICS_AVERAGE_PER_YEAR" = "у сярэднім: %@ у год";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Па даце";

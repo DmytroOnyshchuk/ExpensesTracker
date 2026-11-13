@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "شهر";
 "STATISTICS_YEAR" = "سنة";
 "STATISTICS_TOTAL_SPENT" = "إجمالي المصروف";
+"STATISTICS_AVERAGE_PER_DAY" = "المتوسط: %@ في اليوم";
+"STATISTICS_AVERAGE_PER_MONTH" = "المتوسط: %@ في الشهر";
+"STATISTICS_AVERAGE_PER_YEAR" = "المتوسط: %@ في السنة";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "حسب التاريخ";

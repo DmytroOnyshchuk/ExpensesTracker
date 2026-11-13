@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "ماه";
 "STATISTICS_YEAR" = "سال";
 "STATISTICS_TOTAL_SPENT" = "مجموع هزینه";
+"STATISTICS_AVERAGE_PER_DAY" = "میانگین: %@ در روز";
+"STATISTICS_AVERAGE_PER_MONTH" = "میانگین: %@ در ماه";
+"STATISTICS_AVERAGE_PER_YEAR" = "میانگین: %@ در سال";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "بر اساس تاریخ";

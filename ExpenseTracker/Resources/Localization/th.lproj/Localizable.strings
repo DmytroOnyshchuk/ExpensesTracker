@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "เดือน";
 "STATISTICS_YEAR" = "ปี";
 "STATISTICS_TOTAL_SPENT" = "ใช้จ่ายทั้งหมด";
+"STATISTICS_AVERAGE_PER_DAY" = "เฉลี่ย: %@ ต่อวัน";
+"STATISTICS_AVERAGE_PER_MONTH" = "เฉลี่ย: %@ ต่อเดือน";
+"STATISTICS_AVERAGE_PER_YEAR" = "เฉลี่ย: %@ ต่อปี";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "ตามวันที่";

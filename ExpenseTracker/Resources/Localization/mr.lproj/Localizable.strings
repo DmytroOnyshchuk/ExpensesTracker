@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "महिना";
 "STATISTICS_YEAR" = "वर्ष";
 "STATISTICS_TOTAL_SPENT" = "एकूण खर्च";
+"STATISTICS_AVERAGE_PER_DAY" = "सरासरी: दररोज %@";
+"STATISTICS_AVERAGE_PER_MONTH" = "सरासरी: दरमहा %@";
+"STATISTICS_AVERAGE_PER_YEAR" = "सरासरी: दरवर्षी %@";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "तारखेनुसार";

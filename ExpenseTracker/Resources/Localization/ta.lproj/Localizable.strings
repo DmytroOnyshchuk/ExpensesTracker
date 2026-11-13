@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "மாதம்";
 "STATISTICS_YEAR" = "ஆண்டு";
 "STATISTICS_TOTAL_SPENT" = "மொத்த செலவு";
+"STATISTICS_AVERAGE_PER_DAY" = "சராசரி: நாளொன்றுக்கு %@";
+"STATISTICS_AVERAGE_PER_MONTH" = "சராசரி: மாதத்திற்கு %@";
+"STATISTICS_AVERAGE_PER_YEAR" = "சராசரி: ஆண்டுக்கு %@";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "தேதி வாரியாக";

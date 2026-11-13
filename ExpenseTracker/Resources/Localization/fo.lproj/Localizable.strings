@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Mánaður";
 "STATISTICS_YEAR" = "Ár";
 "STATISTICS_TOTAL_SPENT" = "Brúkt í alt";
+"STATISTICS_AVERAGE_PER_DAY" = "miðal: %@ um dagin";
+"STATISTICS_AVERAGE_PER_MONTH" = "miðal: %@ um mánaðin";
+"STATISTICS_AVERAGE_PER_YEAR" = "miðal: %@ um árið";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Eftir dato";

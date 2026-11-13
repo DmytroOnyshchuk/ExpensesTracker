@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Xahar";
 "STATISTICS_YEAR" = "Sena";
 "STATISTICS_TOTAL_SPENT" = "Total minfuq";
+"STATISTICS_AVERAGE_PER_DAY" = "medja: %@ kuljum";
+"STATISTICS_AVERAGE_PER_MONTH" = "medja: %@ fix-xahar";
+"STATISTICS_AVERAGE_PER_YEAR" = "medja: %@ fis-sena";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Skont id-data";

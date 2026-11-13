@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Mesec";
 "STATISTICS_YEAR" = "Leto";
 "STATISTICS_TOTAL_SPENT" = "Skupaj porabljeno";
+"STATISTICS_AVERAGE_PER_DAY" = "povprečje: %@ na dan";
+"STATISTICS_AVERAGE_PER_MONTH" = "povprečje: %@ na mesec";
+"STATISTICS_AVERAGE_PER_YEAR" = "povprečje: %@ na leto";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Po datumu";

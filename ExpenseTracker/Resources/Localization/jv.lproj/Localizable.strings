@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Sasi";
 "STATISTICS_YEAR" = "Taun";
 "STATISTICS_TOTAL_SPENT" = "Total sing dientekake";
+"STATISTICS_AVERAGE_PER_DAY" = "rata-rata: %@ saben dina";
+"STATISTICS_AVERAGE_PER_MONTH" = "rata-rata: %@ saben sasi";
+"STATISTICS_AVERAGE_PER_YEAR" = "rata-rata: %@ saben taun";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Miturut tanggal";

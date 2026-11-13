@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Ọnwa";
 "STATISTICS_YEAR" = "Afọ";
 "STATISTICS_TOTAL_SPENT" = "Mkpokọta e mefuru";
+"STATISTICS_AVERAGE_PER_DAY" = "nkezi: %@ kwa ụbọchị";
+"STATISTICS_AVERAGE_PER_MONTH" = "nkezi: %@ kwa ọnwa";
+"STATISTICS_AVERAGE_PER_YEAR" = "nkezi: %@ kwa afọ";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Site n'ụbọchị ọnwa";

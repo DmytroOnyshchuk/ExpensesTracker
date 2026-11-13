@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Marama";
 "STATISTICS_YEAR" = "Tau";
 "STATISTICS_TOTAL_SPENT" = "Tapeke i whakapaua";
+"STATISTICS_AVERAGE_PER_DAY" = "toharite: %@ i ia rā";
+"STATISTICS_AVERAGE_PER_MONTH" = "toharite: %@ i ia marama";
+"STATISTICS_AVERAGE_PER_YEAR" = "toharite: %@ i ia tau";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Mā te rā";

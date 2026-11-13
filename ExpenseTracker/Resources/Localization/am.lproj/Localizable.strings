@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "ወር";
 "STATISTICS_YEAR" = "ዓመት";
 "STATISTICS_TOTAL_SPENT" = "ጠቅላላ ወጪ";
+"STATISTICS_AVERAGE_PER_DAY" = "አማካይ: %@ በቀን";
+"STATISTICS_AVERAGE_PER_MONTH" = "አማካይ: %@ በወር";
+"STATISTICS_AVERAGE_PER_YEAR" = "አማካይ: %@ በዓመት";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "በቀን";

@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Hilabetea";
 "STATISTICS_YEAR" = "Urtea";
 "STATISTICS_TOTAL_SPENT" = "Guztira gastatua";
+"STATISTICS_AVERAGE_PER_DAY" = "batez beste: %@ eguneko";
+"STATISTICS_AVERAGE_PER_MONTH" = "batez beste: %@ hileko";
+"STATISTICS_AVERAGE_PER_YEAR" = "batez beste: %@ urteko";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Dataren arabera";

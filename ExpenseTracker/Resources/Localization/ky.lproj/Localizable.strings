@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Ай";
 "STATISTICS_YEAR" = "Жыл";
 "STATISTICS_TOTAL_SPENT" = "Баары сарпталды";
+"STATISTICS_AVERAGE_PER_DAY" = "орточо: күнүнө %@";
+"STATISTICS_AVERAGE_PER_MONTH" = "орточо: айына %@";
+"STATISTICS_AVERAGE_PER_YEAR" = "орточо: жылына %@";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Күнү боюнча";

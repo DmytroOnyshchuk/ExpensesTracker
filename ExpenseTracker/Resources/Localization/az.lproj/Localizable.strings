@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Ay";
 "STATISTICS_YEAR" = "İl";
 "STATISTICS_TOTAL_SPENT" = "Cəmi xərclənib";
+"STATISTICS_AVERAGE_PER_DAY" = "orta: gündə %@";
+"STATISTICS_AVERAGE_PER_MONTH" = "orta: ayda %@";
+"STATISTICS_AVERAGE_PER_YEAR" = "orta: ildə %@";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Tarixə görə";

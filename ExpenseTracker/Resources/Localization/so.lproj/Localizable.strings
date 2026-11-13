@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Bil";
 "STATISTICS_YEAR" = "Sannad";
 "STATISTICS_TOTAL_SPENT" = "Wadarta la kharash gareeyay";
+"STATISTICS_AVERAGE_PER_DAY" = "celcelis: %@ maalintii";
+"STATISTICS_AVERAGE_PER_MONTH" = "celcelis: %@ bishii";
+"STATISTICS_AVERAGE_PER_YEAR" = "celcelis: %@ sannadkii";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Taariikh ahaan";

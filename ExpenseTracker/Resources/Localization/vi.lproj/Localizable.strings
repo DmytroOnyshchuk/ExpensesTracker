@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Tháng";
 "STATISTICS_YEAR" = "Năm";
 "STATISTICS_TOTAL_SPENT" = "Tổng chi tiêu";
+"STATISTICS_AVERAGE_PER_DAY" = "trung bình: %@ mỗi ngày";
+"STATISTICS_AVERAGE_PER_MONTH" = "trung bình: %@ mỗi tháng";
+"STATISTICS_AVERAGE_PER_YEAR" = "trung bình: %@ mỗi năm";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Theo ngày";

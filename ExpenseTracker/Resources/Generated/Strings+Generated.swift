@@ -134,6 +134,18 @@ internal enum L10n {
   internal static let startviewEnterAmountFirst = L10n.tr("Localizable", "STARTVIEW_ENTER_AMOUNT_FIRST", fallback: "Enter the amount first")
   /// Enter expense
   internal static let startviewEnterExpense = L10n.tr("Localizable", "STARTVIEW_ENTER_EXPENSE", fallback: "Enter expense")
+  /// average: %@ per day
+  internal static func statisticsAveragePerDay(_ p1: Any) -> String {
+    return L10n.tr("Localizable", "STATISTICS_AVERAGE_PER_DAY", String(describing: p1), fallback: "average: %@ per day")
+  }
+  /// average: %@ per month
+  internal static func statisticsAveragePerMonth(_ p1: Any) -> String {
+    return L10n.tr("Localizable", "STATISTICS_AVERAGE_PER_MONTH", String(describing: p1), fallback: "average: %@ per month")
+  }
+  /// average: %@ per year
+  internal static func statisticsAveragePerYear(_ p1: Any) -> String {
+    return L10n.tr("Localizable", "STATISTICS_AVERAGE_PER_YEAR", String(describing: p1), fallback: "average: %@ per year")
+  }
   /// Day
   internal static let statisticsDay = L10n.tr("Localizable", "STATISTICS_DAY", fallback: "Day")
   /// Month

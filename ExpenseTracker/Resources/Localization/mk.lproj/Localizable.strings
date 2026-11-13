@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Месец";
 "STATISTICS_YEAR" = "Година";
 "STATISTICS_TOTAL_SPENT" = "Вкупно потрошено";
+"STATISTICS_AVERAGE_PER_DAY" = "просек: %@ дневно";
+"STATISTICS_AVERAGE_PER_MONTH" = "просек: %@ месечно";
+"STATISTICS_AVERAGE_PER_YEAR" = "просек: %@ годишно";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "По датум";

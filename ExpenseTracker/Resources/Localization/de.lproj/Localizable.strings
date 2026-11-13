@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Monat";
 "STATISTICS_YEAR" = "Jahr";
 "STATISTICS_TOTAL_SPENT" = "Insgesamt ausgegeben";
+"STATISTICS_AVERAGE_PER_DAY" = "Durchschnitt: %@ pro Tag";
+"STATISTICS_AVERAGE_PER_MONTH" = "Durchschnitt: %@ pro Monat";
+"STATISTICS_AVERAGE_PER_YEAR" = "Durchschnitt: %@ pro Jahr";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Nach Datum";

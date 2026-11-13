@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Oṣù";
 "STATISTICS_YEAR" = "Ọdún";
 "STATISTICS_TOTAL_SPENT" = "Àpapọ̀ tí a ná";
+"STATISTICS_AVERAGE_PER_DAY" = "ìpíndọ́gba: %@ lójoojúmọ́";
+"STATISTICS_AVERAGE_PER_MONTH" = "ìpíndọ́gba: %@ lóṣooṣù";
+"STATISTICS_AVERAGE_PER_YEAR" = "ìpíndọ́gba: %@ lọ́dọọdún";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Nípa déètì";

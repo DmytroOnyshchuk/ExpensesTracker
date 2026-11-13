@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Månad";
 "STATISTICS_YEAR" = "År";
 "STATISTICS_TOTAL_SPENT" = "Totalt spenderat";
+"STATISTICS_AVERAGE_PER_DAY" = "genomsnitt: %@ per dag";
+"STATISTICS_AVERAGE_PER_MONTH" = "genomsnitt: %@ per månad";
+"STATISTICS_AVERAGE_PER_YEAR" = "genomsnitt: %@ per år";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Efter datum";

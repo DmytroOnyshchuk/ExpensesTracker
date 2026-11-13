@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Kuukausi";
 "STATISTICS_YEAR" = "Vuosi";
 "STATISTICS_TOTAL_SPENT" = "Käytetty yhteensä";
+"STATISTICS_AVERAGE_PER_DAY" = "keskiarvo: %@ päivässä";
+"STATISTICS_AVERAGE_PER_MONTH" = "keskiarvo: %@ kuukaudessa";
+"STATISTICS_AVERAGE_PER_YEAR" = "keskiarvo: %@ vuodessa";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Päivän mukaan";

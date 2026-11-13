@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Ay";
 "STATISTICS_YEAR" = "Yıl";
 "STATISTICS_TOTAL_SPENT" = "Toplam harcama";
+"STATISTICS_AVERAGE_PER_DAY" = "ortalama: günde %@";
+"STATISTICS_AVERAGE_PER_MONTH" = "ortalama: ayda %@";
+"STATISTICS_AVERAGE_PER_YEAR" = "ortalama: yılda %@";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Tarihe göre";

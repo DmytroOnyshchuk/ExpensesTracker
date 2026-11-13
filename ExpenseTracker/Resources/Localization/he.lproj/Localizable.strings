@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "חודש";
 "STATISTICS_YEAR" = "שנה";
 "STATISTICS_TOTAL_SPENT" = "סך ההוצאות";
+"STATISTICS_AVERAGE_PER_DAY" = "ממוצע: %@ ליום";
+"STATISTICS_AVERAGE_PER_MONTH" = "ממוצע: %@ לחודש";
+"STATISTICS_AVERAGE_PER_YEAR" = "ממוצע: %@ לשנה";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "לפי תאריך";

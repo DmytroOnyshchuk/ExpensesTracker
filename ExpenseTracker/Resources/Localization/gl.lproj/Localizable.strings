@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Mes";
 "STATISTICS_YEAR" = "Ano";
 "STATISTICS_TOTAL_SPENT" = "Total gastado";
+"STATISTICS_AVERAGE_PER_DAY" = "media: %@ ao día";
+"STATISTICS_AVERAGE_PER_MONTH" = "media: %@ ao mes";
+"STATISTICS_AVERAGE_PER_YEAR" = "media: %@ ao ano";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Por data";

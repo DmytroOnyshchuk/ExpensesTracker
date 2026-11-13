@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "ئاي";
 "STATISTICS_YEAR" = "يىل";
 "STATISTICS_TOTAL_SPENT" = "جەمئىي چىقىم";
+"STATISTICS_AVERAGE_PER_DAY" = "ئوتتۇرىچە: كۈنىگە %@";
+"STATISTICS_AVERAGE_PER_MONTH" = "ئوتتۇرىچە: ئېيىغا %@";
+"STATISTICS_AVERAGE_PER_YEAR" = "ئوتتۇرىچە: يىلىغا %@";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "چېسلا بويىچە";

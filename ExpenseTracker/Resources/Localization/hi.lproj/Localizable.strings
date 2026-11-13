@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "महीना";
 "STATISTICS_YEAR" = "साल";
 "STATISTICS_TOTAL_SPENT" = "कुल खर्च";
+"STATISTICS_AVERAGE_PER_DAY" = "औसत: %@ प्रति दिन";
+"STATISTICS_AVERAGE_PER_MONTH" = "औसत: %@ प्रति माह";
+"STATISTICS_AVERAGE_PER_YEAR" = "औसत: %@ प्रति वर्ष";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "तारीख के अनुसार";

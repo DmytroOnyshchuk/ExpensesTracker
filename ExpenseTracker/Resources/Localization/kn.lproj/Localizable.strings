@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "ತಿಂಗಳು";
 "STATISTICS_YEAR" = "ವರ್ಷ";
 "STATISTICS_TOTAL_SPENT" = "ಒಟ್ಟು ವೆಚ್ಚ";
+"STATISTICS_AVERAGE_PER_DAY" = "ಸರಾಸರಿ: ದಿನಕ್ಕೆ %@";
+"STATISTICS_AVERAGE_PER_MONTH" = "ಸರಾಸರಿ: ತಿಂಗಳಿಗೆ %@";
+"STATISTICS_AVERAGE_PER_YEAR" = "ಸರಾಸರಿ: ವರ್ಷಕ್ಕೆ %@";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "ದಿನಾಂಕದ ಪ್ರಕಾರ";

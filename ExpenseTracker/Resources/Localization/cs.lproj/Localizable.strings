@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Měsíc";
 "STATISTICS_YEAR" = "Rok";
 "STATISTICS_TOTAL_SPENT" = "Celkem utraceno";
+"STATISTICS_AVERAGE_PER_DAY" = "průměr: %@ za den";
+"STATISTICS_AVERAGE_PER_MONTH" = "průměr: %@ za měsíc";
+"STATISTICS_AVERAGE_PER_YEAR" = "průměr: %@ za rok";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Podle data";

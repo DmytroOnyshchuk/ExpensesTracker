@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Mahina";
 "STATISTICS_YEAR" = "Makahiki";
 "STATISTICS_TOTAL_SPENT" = "Huina i hoʻolilo ʻia";
+"STATISTICS_AVERAGE_PER_DAY" = "awelika: %@ i ka lā";
+"STATISTICS_AVERAGE_PER_MONTH" = "awelika: %@ i ka mahina";
+"STATISTICS_AVERAGE_PER_YEAR" = "awelika: %@ i ka makahiki";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Ma ka lā o ka mahina";

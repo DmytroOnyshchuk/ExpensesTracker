@@ -33,6 +33,9 @@ struct StatisticsView: View {
             VStack(spacing: 12) {
                 periodPicker
                 periodTitle(start: start, starts: starts)
+                if let average = period.average(of: transactions) {
+                    averageLabel(average)
+                }
                 totalLabel(total)
 
                 if slices.isEmpty {
@@ -154,6 +157,16 @@ struct StatisticsView: View {
         }
         .buttonStyle(.plain)
         .disabled(!isEnabled)
+    }
+
+    private func averageLabel(_ average: Int) -> some View {
+        Text(period.averageTitle(for: average.getAmount()))
+            .font(.appLight(13))
+            .foregroundColor(.appWhite.opacity(0.6))
+            .lineLimit(1)
+            .minimumScaleFactor(0.7)
+            .padding(.horizontal, 16)
+            .padding(.top, -12)
     }
 
     private func totalLabel(_ total: Int) -> some View {

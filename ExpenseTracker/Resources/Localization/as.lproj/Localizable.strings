@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "মাহ";
 "STATISTICS_YEAR" = "বছৰ";
 "STATISTICS_TOTAL_SPENT" = "মুঠ খৰচ";
+"STATISTICS_AVERAGE_PER_DAY" = "গড়: প্ৰতি দিন %@";
+"STATISTICS_AVERAGE_PER_MONTH" = "গড়: প্ৰতি মাহ %@";
+"STATISTICS_AVERAGE_PER_YEAR" = "গড়: প্ৰতি বছৰ %@";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "তাৰিখ অনুসৰি";

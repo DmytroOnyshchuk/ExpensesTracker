@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Inyanga";
 "STATISTICS_YEAR" = "Unyaka";
 "STATISTICS_TOTAL_SPENT" = "Iyonke echithiweyo";
+"STATISTICS_AVERAGE_PER_DAY" = "umyinge: %@ ngosuku";
+"STATISTICS_AVERAGE_PER_MONTH" = "umyinge: %@ ngenyanga";
+"STATISTICS_AVERAGE_PER_YEAR" = "umyinge: %@ ngonyaka";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Ngomhla";

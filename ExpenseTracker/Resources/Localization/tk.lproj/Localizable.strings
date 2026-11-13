@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Aý";
 "STATISTICS_YEAR" = "Ýyl";
 "STATISTICS_TOTAL_SPENT" = "Jemi harçlandy";
+"STATISTICS_AVERAGE_PER_DAY" = "ortaça: günde %@";
+"STATISTICS_AVERAGE_PER_MONTH" = "ortaça: aýda %@";
+"STATISTICS_AVERAGE_PER_YEAR" = "ortaça: ýylda %@";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Sene boýunça";

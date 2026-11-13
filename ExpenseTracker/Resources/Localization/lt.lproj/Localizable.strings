@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Mėnuo";
 "STATISTICS_YEAR" = "Metai";
 "STATISTICS_TOTAL_SPENT" = "Iš viso išleista";
+"STATISTICS_AVERAGE_PER_DAY" = "vidurkis: %@ per dieną";
+"STATISTICS_AVERAGE_PER_MONTH" = "vidurkis: %@ per mėnesį";
+"STATISTICS_AVERAGE_PER_YEAR" = "vidurkis: %@ per metus";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Pagal datą";

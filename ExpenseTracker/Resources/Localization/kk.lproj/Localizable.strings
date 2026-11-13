@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Ай";
 "STATISTICS_YEAR" = "Жыл";
 "STATISTICS_TOTAL_SPENT" = "Барлығы жұмсалды";
+"STATISTICS_AVERAGE_PER_DAY" = "орташа: күніне %@";
+"STATISTICS_AVERAGE_PER_MONTH" = "орташа: айына %@";
+"STATISTICS_AVERAGE_PER_YEAR" = "орташа: жылына %@";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Күні бойынша";

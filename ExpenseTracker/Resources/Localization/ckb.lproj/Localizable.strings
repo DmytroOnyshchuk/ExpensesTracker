@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "مانگ";
 "STATISTICS_YEAR" = "ساڵ";
 "STATISTICS_TOTAL_SPENT" = "کۆی خەرجکراو";
+"STATISTICS_AVERAGE_PER_DAY" = "تێکڕا: %@ لە ڕۆژێکدا";
+"STATISTICS_AVERAGE_PER_MONTH" = "تێکڕا: %@ لە مانگێکدا";
+"STATISTICS_AVERAGE_PER_YEAR" = "تێکڕا: %@ لە ساڵێکدا";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "بەپێی بەروار";

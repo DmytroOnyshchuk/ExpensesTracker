@@ -39,6 +39,24 @@ enum StatisticsPeriod: CaseIterable, Identifiable {
         Set(transactions.map { interval(containing: $0.date, calendar: calendar).start }).sorted(by: >)
     }
 
+    func average(of transactions: [Transaction], calendar: Calendar = .current) -> Int? {
+        guard let first = transactions.map(\.date).min(), let last = transactions.map(\.date).max() else { return nil }
+
+        let from = interval(containing: first, calendar: calendar).start
+        let to = interval(containing: max(last, Date()), calendar: calendar).start
+        let count = (calendar.dateComponents([component], from: from, to: to).value(for: component) ?? 0) + 1
+        let total = transactions.reduce(0) { $0 + $1.amount }
+        return total / max(count, 1)
+    }
+
+    func averageTitle(for amount: String) -> String {
+        switch self {
+        case .day: L10n.statisticsAveragePerDay(amount)
+        case .month: L10n.statisticsAveragePerMonth(amount)
+        case .year: L10n.statisticsAveragePerYear(amount)
+        }
+    }
+
     func title(for date: Date) -> String {
         let text = switch self {
         case .day: date.dayString(.dateTime.day().month(.wide).year())

@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Mánuður";
 "STATISTICS_YEAR" = "Ár";
 "STATISTICS_TOTAL_SPENT" = "Samtals eytt";
+"STATISTICS_AVERAGE_PER_DAY" = "meðaltal: %@ á dag";
+"STATISTICS_AVERAGE_PER_MONTH" = "meðaltal: %@ á mánuði";
+"STATISTICS_AVERAGE_PER_YEAR" = "meðaltal: %@ á ári";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Eftir dagsetningu";

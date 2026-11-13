@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Ամիս";
 "STATISTICS_YEAR" = "Տարի";
 "STATISTICS_TOTAL_SPENT" = "Ընդամենը ծախսվել է";
+"STATISTICS_AVERAGE_PER_DAY" = "միջինը՝ օրական %@";
+"STATISTICS_AVERAGE_PER_MONTH" = "միջինը՝ ամսական %@";
+"STATISTICS_AVERAGE_PER_YEAR" = "միջինը՝ տարեկան %@";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Ըստ ամսաթվի";

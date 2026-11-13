@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Μήνας";
 "STATISTICS_YEAR" = "Έτος";
 "STATISTICS_TOTAL_SPENT" = "Σύνολο εξόδων";
+"STATISTICS_AVERAGE_PER_DAY" = "μέσος όρος: %@ την ημέρα";
+"STATISTICS_AVERAGE_PER_MONTH" = "μέσος όρος: %@ τον μήνα";
+"STATISTICS_AVERAGE_PER_YEAR" = "μέσος όρος: %@ τον χρόνο";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Κατά ημερομηνία";

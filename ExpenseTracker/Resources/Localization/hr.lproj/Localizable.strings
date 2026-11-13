@@ -42,6 +42,9 @@
 "STATISTICS_MONTH" = "Mjesec";
 "STATISTICS_YEAR" = "Godina";
 "STATISTICS_TOTAL_SPENT" = "Ukupno potrošeno";
+"STATISTICS_AVERAGE_PER_DAY" = "prosjek: %@ dnevno";
+"STATISTICS_AVERAGE_PER_MONTH" = "prosjek: %@ mjesečno";
+"STATISTICS_AVERAGE_PER_YEAR" = "prosjek: %@ godišnje";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Po datumu";
