@@ -10,7 +10,7 @@ import SwiftUI
 
 private struct Pulse {
     var scale = 1.0
-    var opacity = 0.0
+    var opacity = 1.0
 }
 
 struct CategoryCell: View {
@@ -50,23 +50,19 @@ struct CategoryCell: View {
             Button(action: select) {
                 VStack {
                     icon
-                        .overlay {
-                            icon
-                                .keyframeAnimator(initialValue: Pulse(), trigger: pulseTrigger) { content, pulse in
-                                    content
-                                        .scaleEffect(pulse.scale)
-                                        .opacity(pulse.opacity)
-                                } keyframes: { _ in
-                                    KeyframeTrack(\.scale) {
-                                        MoveKeyframe(1.0)
-                                        LinearKeyframe(2.5, duration: 0.6, timingCurve: .easeOut)
-                                    }
-                                    KeyframeTrack(\.opacity) {
-                                        MoveKeyframe(1.0)
-                                        LinearKeyframe(0.0, duration: 0.6, timingCurve: .easeIn)
-                                    }
-                                }
-                                .allowsHitTesting(false)
+                        .keyframeAnimator(initialValue: Pulse(), trigger: pulseTrigger) { content, pulse in
+                            content
+                                .scaleEffect(pulse.scale)
+                                .opacity(pulse.opacity)
+                        } keyframes: { _ in
+                            KeyframeTrack(\.scale) {
+                                LinearKeyframe(2.5, duration: 0.35, timingCurve: .easeOut)
+                                LinearKeyframe(1.0, duration: 0.35, timingCurve: .easeInOut)
+                            }
+                            KeyframeTrack(\.opacity) {
+                                LinearKeyframe(0.65, duration: 0.35, timingCurve: .easeOut)
+                                LinearKeyframe(1.0, duration: 0.35, timingCurve: .easeInOut)
+                            }
                         }
 
                     Spacer(minLength: 8)
