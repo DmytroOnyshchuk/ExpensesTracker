@@ -100,6 +100,7 @@ struct StatisticsView: View {
                 .id(period.interval(containing: start))
                 .transition(.push(from: slideEdge))
         }
+        .padding(.horizontal, 64)
         .frame(maxWidth: .infinity)
         .frame(height: 44)
         .clipped()
@@ -120,6 +121,14 @@ struct StatisticsView: View {
                     shiftPeriod(by: value.translation.width < 0 ? 1 : -1, from: start, in: starts)
                 }
         )
+        .overlay {
+            HStack {
+                periodArrow(systemImage: "chevron.left", shift: -1, start: start, starts: starts)
+                Spacer()
+                periodArrow(systemImage: "chevron.right", shift: 1, start: start, starts: starts)
+            }
+            .padding(.horizontal, 16)
+        }
         .popover(isPresented: $showPeriodList, attachmentAnchor: .rect(.bounds), arrowEdge: .top) {
             StatisticsPeriodList(period: period, starts: starts, selected: start) { date in
                 showPeriodList = false
@@ -128,6 +137,22 @@ struct StatisticsView: View {
             .presentationCompactAdaptation(.popover)
             .presentationBackground(.appSecond)
         }
+    }
+
+    private func periodArrow(systemImage: String, shift: Int, start: Date, starts: [Date]) -> some View {
+        let isEnabled = neighbour(of: start, by: shift, in: starts) != nil
+
+        return Button {
+            shiftPeriod(by: shift, from: start, in: starts)
+        } label: {
+            Image(systemName: systemImage)
+                .font(.system(size: 20, weight: .medium))
+                .foregroundColor(.appBlue.opacity(isEnabled ? 1 : 0.3))
+                .frame(width: 44, height: 44)
+                .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .disabled(!isEnabled)
     }
 
     private func totalLabel(_ total: Int) -> some View {
@@ -150,9 +175,12 @@ struct StatisticsView: View {
     }
 
     private func shiftPeriod(by value: Int, from start: Date, in starts: [Date]) {
-        let target = value > 0 ? starts.last { $0 > start } : starts.first { $0 < start }
-        guard let target else { return }
+        guard let target = neighbour(of: start, by: value, in: starts) else { return }
         select(target, from: start)
+    }
+
+    private func neighbour(of start: Date, by value: Int, in starts: [Date]) -> Date? {
+        value > 0 ? starts.last { $0 > start } : starts.first { $0 < start }
     }
 
     private func selectDay(_ date: Date, from start: Date) {
