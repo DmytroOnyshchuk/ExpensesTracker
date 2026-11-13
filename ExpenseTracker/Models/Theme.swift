@@ -30,7 +30,7 @@ enum ThemePreset: String, CaseIterable, Identifiable, Codable {
     case classic
     case midnight
     case forest
-    case light
+    case gray
 
     var id: String { rawValue }
 
@@ -39,7 +39,7 @@ enum ThemePreset: String, CaseIterable, Identifiable, Codable {
         case .classic: L10n.settingsThemeClassic
         case .midnight: L10n.settingsThemeMidnight
         case .forest: L10n.settingsThemeForest
-        case .light: L10n.settingsThemeLight
+        case .gray: L10n.settingsThemeGray
         }
     }
 
@@ -48,7 +48,7 @@ enum ThemePreset: String, CaseIterable, Identifiable, Codable {
         case .classic: .classic
         case .midnight: .midnight
         case .forest: .forest
-        case .light: .light
+        case .gray: .gray
         }
     }
 }
@@ -118,23 +118,19 @@ extension Theme {
         appOverlay: .black
     )
 
-    static let light = Theme(
-        colorScheme: .light,
-        appMain: Color(hex: "#F6F6FB"),
-        appSecond: Color(hex: "#E2E2EC"),
-        appLabel: Color(hex: "#6E6C82"),
-        appWhite: Color(hex: "#1E1D29"),
-        appBlack: Color(hex: "#141414"),
-        appLightGrey: Color(hex: "#403E50"),
-        appBlue: Color(hex: "#2E8FB5"),
-        appDarkGreen: Color(hex: "#2A7F4B"),
-        appGray: Color(hex: "#9A99A8"),
-        appYellow: Color(hex: "#F2B200"),
-        appRed: Color(hex: "#D93A3A"),
-        appOverlay: .black,
-        iconColors: systemIconColors.merging([
-            .white: Color(hex: "#B9B8C6"),
-            .yellow: Color(hex: "#E0A800"),
-        ]) { _, new in new }
+    static let gray = Theme(
+        colorScheme: .dark,
+        appMain: Color(hex: "#2C2C2E"),
+        appSecond: Color(hex: "#3A3A3C"),
+        appLabel: Color(hex: "#98989F"),
+        appWhite: Color(hex: "#F2F2F7"),
+        appBlack: Color(hex: "#111111"),
+        appLightGrey: Color(hex: "#E5E5EA"),
+        appBlue: Color(hex: "#8FB0CC"),
+        appDarkGreen: Color(hex: "#4E9E73"),
+        appGray: Color(hex: "#7C7C80"),
+        appYellow: Color(hex: "#D9B95B"),
+        appRed: Color(hex: "#E0666A"),
+        appOverlay: .black
     )
 }

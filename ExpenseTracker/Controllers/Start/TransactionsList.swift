@@ -56,10 +56,12 @@ struct TransactionsList: View {
                                 }
                                 .listRowBackground(Color.appMain)
                                 .listRowSeparatorTint(.appSecond)
+                                .listRowSeparator(.hidden, edges: .top)
                                 .listRowSeparator(
                                     transaction.id == day.transactions.last?.id ? .hidden : .visible,
                                     edges: .bottom
                                 )
+                                .alignmentGuide(.listRowSeparatorLeading) { _ in 48 }
                         }
                     }
                 } header: {
@@ -72,7 +74,6 @@ struct TransactionsList: View {
         .scrollDisabled(true)
         .listStyle(.plain)
         .environment(\.defaultMinListHeaderHeight, 0)
-        .background(.appMain)
         .scrollContentBackground(.hidden)
         .background(.appMain)
         .onScrollGeometryChange(for: CGFloat.self) { geometry in

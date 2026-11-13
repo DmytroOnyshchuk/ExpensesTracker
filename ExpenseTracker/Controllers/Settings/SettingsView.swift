@@ -3,7 +3,7 @@ import SwiftUI
 struct SettingsView: View {
     private let themeManager = ThemeManager.shared
 
-    private let columns = Array(repeating: GridItem(.flexible(), spacing: 12), count: 2)
+    private let columns = Array(repeating: GridItem(.flexible(), spacing: 12), count: 3)
 
     var body: some View {
         ScrollView(.vertical) {
@@ -51,11 +51,11 @@ struct ThemePresetCell: View {
 
         Button(action: action) {
             VStack(spacing: 10) {
-                HStack(spacing: 8) {
+                HStack(spacing: 6) {
                     ForEach(Array([theme.appBlue, theme.appWhite, theme.appLabel].enumerated()), id: \.offset) { _, color in
                         RoundedRectangle(cornerRadius: 6, style: .continuous)
                             .fill(color)
-                            .frame(width: 20, height: 20)
+                            .frame(width: 16, height: 16)
                     }
                 }
                 .frame(maxWidth: .infinity)

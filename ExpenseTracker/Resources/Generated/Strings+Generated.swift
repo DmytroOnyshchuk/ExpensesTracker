@@ -140,8 +140,8 @@ internal enum L10n {
   internal static let settingsThemeClassic = L10n.tr("Localizable", "SETTINGS_THEME_CLASSIC", fallback: "Classic")
   /// Forest
   internal static let settingsThemeForest = L10n.tr("Localizable", "SETTINGS_THEME_FOREST", fallback: "Forest")
-  /// Light
-  internal static let settingsThemeLight = L10n.tr("Localizable", "SETTINGS_THEME_LIGHT", fallback: "Light")
+  /// Gray
+  internal static let settingsThemeGray = L10n.tr("Localizable", "SETTINGS_THEME_GRAY", fallback: "Gray")
   /// Midnight
   internal static let settingsThemeMidnight = L10n.tr("Localizable", "SETTINGS_THEME_MIDNIGHT", fallback: "Midnight")
   /// Share
