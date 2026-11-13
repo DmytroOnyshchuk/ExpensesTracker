@@ -106,6 +106,7 @@ struct StartView: View {
         )
 
         modelContext.insert(transaction)
+        FeedbackManager.transactionAdded()
         input.reset()
         comment = ""
     }
