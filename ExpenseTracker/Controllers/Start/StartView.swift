@@ -17,14 +17,14 @@ struct StartView: View {
     @State private var showHistory = false
     @State private var comment = ""
     @State private var showCommentInput = false
-    @State private var toastMessage: String?
+    @State private var amountAttentionTrigger = 0
     @Query(sort: \Transaction.date, order: .reverse) private var transactions: [Transaction]
 
     var body: some View {
         NavigationStack {
             ScrollView(.vertical) {
                 VStack(spacing: 16) {
-                    DigitPadView(input: $input)
+                    DigitPadView(input: $input, attentionTrigger: amountAttentionTrigger)
                         .frame(maxWidth: .infinity)
                         .overlay(alignment: .top) {
                             topBar
@@ -58,7 +58,6 @@ struct StartView: View {
             }
         }
         .animation(.easeInOut(duration: 0.2), value: showCommentInput)
-        .toast($toastMessage)
     }
 
     private var commentButton: some View {
@@ -120,7 +119,7 @@ struct StartView: View {
 
     private func addTransaction(with category: TransactionCategory) {
         guard input.amount != 0 else {
-            toastMessage = L10n.startviewEnterAmountFirst
+            amountAttentionTrigger += 1
             FeedbackManager.amountMissing()
             return
         }
@@ -132,7 +131,6 @@ struct StartView: View {
             note: comment.isBlank ? nil : comment
         )
 
-        toastMessage = nil
         modelContext.insert(transaction)
         FeedbackManager.transactionAdded()
         input.reset()

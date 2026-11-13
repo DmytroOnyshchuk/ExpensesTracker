@@ -10,6 +10,7 @@ import SwiftUI
 
 struct DigitPadView: View {
     @Binding var input: AmountInput
+    var attentionTrigger = 0
 
     private let buttons: [[AmountInput.Key]] = [
         [.digit(1), .digit(2), .digit(3)],
@@ -23,6 +24,12 @@ struct DigitPadView: View {
             Text(input.text ?? L10n.startviewEnterExpense)
                 .font(input.isEmpty ? .appLight(24) : .appLight(32))
                 .foregroundColor(input.isEmpty ? .appLabel : .appWhite)
+                .keyframeAnimator(initialValue: 1.0, trigger: attentionTrigger) { content, scale in
+                    content.scaleEffect(scale)
+                } keyframes: { _ in
+                    CubicKeyframe(1.5, duration: 0.15)
+                    SpringKeyframe(1.0, duration: 0.3)
+                }
                 .frame(height: 64)
 
             ForEach(buttons, id: \.self) { row in
