@@ -467,7 +467,7 @@ struct StatisticsRow: View {
         return shape
             .fill(
                 LinearGradient(
-                    colors: [color.opacity(0.3), color.opacity(0.6)],
+                    colors: [color.opacity(0.14), color.opacity(0.38)],
                     startPoint: .leading,
                     endPoint: .trailing
                 )
@@ -476,7 +476,7 @@ struct StatisticsRow: View {
                 shape
                     .fill(
                         LinearGradient(
-                            colors: [.white.opacity(0.22), .white.opacity(0.02), .black.opacity(0.12)],
+                            colors: [color.opacity(0.22), color.opacity(0), .black.opacity(0.14)],
                             startPoint: .top,
                             endPoint: .bottom
                         )
@@ -486,14 +486,14 @@ struct StatisticsRow: View {
                 shape
                     .strokeBorder(
                         LinearGradient(
-                            colors: [.white.opacity(0.45), color.opacity(0.35)],
+                            colors: [color.opacity(0.85), color.opacity(0.25)],
                             startPoint: .top,
                             endPoint: .bottom
                         ),
                         lineWidth: 1
                     )
             }
-            .shadow(color: color.opacity(0.45), radius: 6)
+            .shadow(color: color.opacity(0.4), radius: 8)
     }
 }
 
