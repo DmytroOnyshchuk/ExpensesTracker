@@ -464,10 +464,10 @@ struct StatisticsRow: View {
         let shape = Rectangle()
 
         return shape
-            .fill(color.opacity(0.95))
+            .fill(color.opacity(0.75))
             .overlay {
                 shape
-                    .strokeBorder(color.opacity(0.75), lineWidth: 0.25)
+                    .strokeBorder(color.opacity(0.45), lineWidth: 0.15)
             }
             .background {
                 shape
