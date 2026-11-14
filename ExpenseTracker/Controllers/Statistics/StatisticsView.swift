@@ -468,7 +468,7 @@ struct StatisticsRow: View {
             .fill(color.opacity(0.32))
             .overlay {
                 shape
-                    .strokeBorder(color.opacity(0.75), lineWidth: 1)
+                    .strokeBorder(color.opacity(0.75), lineWidth: 0.5)
             }
             .background {
                 shape
