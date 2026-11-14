@@ -17,33 +17,33 @@ final class DataSeeder: NSObject {
         let existingCategories = try? context.fetch(descriptor)
 
         if existingCategories?.isEmpty ?? true {
-            let car = TransactionCategory(name: .car, categoryIcon: CategoryIcon(name: "car", iconColor: .pink), isDirectory: true)
+            let car = TransactionCategory(name: .car, categoryIcon: CategoryIcon(name: "car.fill", iconColor: .pink), isDirectory: true)
             let food = TransactionCategory(name: .food, categoryIcon: CategoryIcon(name: "fork.knife", iconColor: .yellow), isDirectory: true)
-            let house = TransactionCategory(name: .home, categoryIcon: CategoryIcon(name: "house", iconColor: .yellow), isDirectory: true)
+            let house = TransactionCategory(name: .home, categoryIcon: CategoryIcon(name: "house.fill", iconColor: .yellow), isDirectory: true)
             context.insert(car)
             context.insert(food)
             context.insert(house)
 
             let defaultCategories = [
-                TransactionCategory(name: .carMaintenance, categoryIcon: CategoryIcon(name: "car", iconColor: .red), parentUuid: car.uuid),
-                TransactionCategory(name: .carFuel, categoryIcon: CategoryIcon(name: "fuelpump", iconColor: .pink), parentUuid: car.uuid),
+                TransactionCategory(name: .carMaintenance, categoryIcon: CategoryIcon(name: "car.fill", iconColor: .red), parentUuid: car.uuid),
+                TransactionCategory(name: .carFuel, categoryIcon: CategoryIcon(name: "fuelpump.fill", iconColor: .pink), parentUuid: car.uuid),
 
-                TransactionCategory(name: .foodRestaurants, categoryIcon: CategoryIcon(name: "wineglass", iconColor: .blue), parentUuid: food.uuid),
+                TransactionCategory(name: .foodRestaurants, categoryIcon: CategoryIcon(name: "wineglass.fill", iconColor: .blue), parentUuid: food.uuid),
                 TransactionCategory(name: .foodGroceries, categoryIcon: CategoryIcon(name: "fork.knife", iconColor: .yellow), parentUuid: food.uuid),
 
-                TransactionCategory(name: .homeHousehold, categoryIcon: CategoryIcon(name: "house", iconColor: .orange), parentUuid: house.uuid),
-                TransactionCategory(name: .homeUtilities, categoryIcon: CategoryIcon(name: "house", iconColor: .pink), parentUuid: house.uuid),
+                TransactionCategory(name: .homeHousehold, categoryIcon: CategoryIcon(name: "house.fill", iconColor: .orange), parentUuid: house.uuid),
+                TransactionCategory(name: .homeUtilities, categoryIcon: CategoryIcon(name: "house.fill", iconColor: .pink), parentUuid: house.uuid),
 
-                TransactionCategory(name: .clothing, categoryIcon: CategoryIcon(name: "tshirt", iconColor: .purple)),
+                TransactionCategory(name: .clothing, categoryIcon: CategoryIcon(name: "tshirt.fill", iconColor: .purple)),
 
-                TransactionCategory(name: .healthBeauty, categoryIcon: CategoryIcon(name: "cross.case", iconColor: .red)),
+                TransactionCategory(name: .healthBeauty, categoryIcon: CategoryIcon(name: "cross.case.fill", iconColor: .red)),
 
-                TransactionCategory(name: .other, categoryIcon: CategoryIcon(name: "star", iconColor: .blue)),
+                TransactionCategory(name: .other, categoryIcon: CategoryIcon(name: "star.fill", iconColor: .blue)),
 
-                TransactionCategory(name: .charity, categoryIcon: CategoryIcon(name: "heart", iconColor: .red)),
-                TransactionCategory(name: .internet, categoryIcon: CategoryIcon(name: "gamecontroller", iconColor: .green)),
+                TransactionCategory(name: .charity, categoryIcon: CategoryIcon(name: "heart.fill", iconColor: .red)),
+                TransactionCategory(name: .internet, categoryIcon: CategoryIcon(name: "gamecontroller.fill", iconColor: .green)),
 
-                TransactionCategory(name: .transport, categoryIcon: CategoryIcon(name: "bus", iconColor: .green)),
+                TransactionCategory(name: .transport, categoryIcon: CategoryIcon(name: "bus.fill", iconColor: .green)),
             ]
 
             for category in defaultCategories {
