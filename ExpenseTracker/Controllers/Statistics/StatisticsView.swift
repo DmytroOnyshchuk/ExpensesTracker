@@ -31,15 +31,13 @@ struct StatisticsView: View {
             VStack(spacing: 12) {
                 periodPicker
                 periodTitle(start: start, starts: starts)
-                if let average = period.average(of: transactions) {
-                    averageLabel(average)
-                }
                 StatisticsBreakdown(
                     slices: slices,
                     interval: interval,
                     categories: categories,
                     period: period,
-                    points: period.chartPoints(of: transactions, in: interval)
+                    points: period.chartPoints(of: transactions, in: interval),
+                    averageTitle: period.average(of: transactions).map { period.averageTitle(for: $0.getAmount()) }
                 )
             }
             .padding(.vertical, 16)
@@ -147,16 +145,6 @@ struct StatisticsView: View {
         .disabled(!isEnabled)
     }
 
-    private func averageLabel(_ average: Int) -> some View {
-        Text(period.averageTitle(for: average.getAmount()))
-            .font(.appLight(13))
-            .foregroundColor(.appWhite.opacity(0.6))
-            .lineLimit(1)
-            .minimumScaleFactor(0.7)
-            .padding(.horizontal, 16)
-            .padding(.top, -12)
-    }
-
     private func displayedStart(in starts: [Date]) -> Date {
         let start = period.interval(containing: anchorDate).start
         if starts.isEmpty || starts.contains(start) || start == exactStart {
@@ -197,6 +185,7 @@ struct StatisticsBreakdown: View {
     let categories: [TransactionCategory]
     var period: StatisticsPeriod?
     var points: [StatisticsChartPoint] = []
+    var averageTitle: String?
 
     @AppStorage(UDKey.statisticsChartStyle.rawValue) private var chartStyle: StatisticsChartStyle = .pie
 
@@ -210,16 +199,21 @@ struct StatisticsBreakdown: View {
 
         VStack(spacing: 12) {
             HStack(spacing: 8) {
-                HStack(alignment: .firstTextBaseline, spacing: 8) {
-                    Text(L10n.statisticsTotalSpent + ":")
-                        .font(.appLight(16))
+                VStack(alignment: showsStylePicker ? .leading : .center, spacing: 4) {
+                    Text((total > 0 ? "-" : "") + total.getAmount())
+                        .font(.appRegular(28))
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.6)
+                        .foregroundColor(.appWhite)
 
-                    Text(total.getAmount())
-                        .font(.appLight(24))
+                    if let averageTitle {
+                        Text(averageTitle)
+                            .font(.appLight(13))
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.7)
+                            .foregroundColor(.appWhite.opacity(0.6))
+                    }
                 }
-                .lineLimit(1)
-                .minimumScaleFactor(0.6)
-                .foregroundColor(.appWhite)
 
                 if showsStylePicker {
                     Spacer(minLength: 8)

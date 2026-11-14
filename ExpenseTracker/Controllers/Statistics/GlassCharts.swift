@@ -266,13 +266,12 @@ struct GlassDonutChart: View {
                     .foregroundColor(segment.color)
                     .frame(width: 20, height: 20)
             }
-            .overlay(alignment: isUpper ? .top : .bottom) {
+            .overlay {
                 Text("\(segment.slice.percent)%")
                     .font(.appRegular(12))
                     .foregroundColor(segment.color)
                     .fixedSize()
-                    .alignmentGuide(VerticalAlignment.top) { $0[VerticalAlignment.bottom] + 2 }
-                    .alignmentGuide(VerticalAlignment.bottom) { $0[VerticalAlignment.top] - 2 }
+                    .offset(y: (Self.badgeSize / 2 + 10) * (isUpper ? -1 : 1))
             }
             .position(
                 x: center.x + CGFloat(cos(segment.middle)) * radius,
