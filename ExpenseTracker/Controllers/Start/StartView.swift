@@ -28,11 +28,11 @@ struct StartView: View {
             ScrollView(.vertical) {
                 VStack(spacing: 16) {
                     HStack(spacing: 4) {
-                        topBarButton(systemImage: "list.bullet", action: openMenu)
+                        topBarButton(systemImage: "list.dash", action: openMenu)
                         Spacer(minLength: 0)
                         BalanceCard(balance: balance, action: openBalanceInput)
                         Spacer(minLength: 0)
-                        topBarButton(systemImage: "chart.pie", action: openStatistics)
+                        topBarButton(systemImage: "chart.pie.fill", action: openStatistics)
                     }
                     .padding(.horizontal, 8)
 
