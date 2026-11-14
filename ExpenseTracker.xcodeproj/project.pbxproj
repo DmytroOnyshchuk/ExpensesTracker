@@ -721,7 +721,7 @@
 		668E98AC2DFAF77600EB9CD8 /* DebugDev configuration for PBXNativeTarget "ExpenseTracker" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconOrange;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ExpenseTracker/Resources/SwiftTemplateDev.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -752,7 +752,7 @@
 		668E98AD2DFAF77600EB9CD8 /* ReleaseDev configuration for PBXNativeTarget "ExpenseTracker" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconOrange;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ExpenseTracker/Resources/SwiftTemplateDev.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -1248,7 +1248,7 @@
 		66A8DCDB2E04598000AC58CA /* ReleaseProd configuration for PBXNativeTarget "ExpenseTracker" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconOrange;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ExpenseTracker/Resources/SwiftTemplateProd.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -1344,7 +1344,7 @@
 		66A8DCDD2E04598900AC58CA /* DebugProd configuration for PBXNativeTarget "ExpenseTracker" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconOrange;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ExpenseTracker/Resources/SwiftTemplateProd.entitlements;
 				CODE_SIGN_STYLE = Automatic;
