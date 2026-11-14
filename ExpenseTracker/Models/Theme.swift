@@ -91,7 +91,7 @@ extension Theme {
         appDarkGreen: Color(hex: "#35B98D"),
         appGray: Color(hex: "#85878B"),
         appYellow: Color(hex: "#FFD000"),
-        appRed: Color(hex: "#FF625C"),
+        appRed: Color(hex: "#F33F4D"),
         appOverlay: .black
     )
 

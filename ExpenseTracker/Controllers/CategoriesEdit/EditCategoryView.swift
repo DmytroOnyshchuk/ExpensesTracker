@@ -340,8 +340,8 @@ struct EditCategoryView: View {
                 .font(.appMedium(16))
                 .foregroundColor(.appWhite)
                 .frame(maxWidth: .infinity)
-                .frame(height: 50)
-                .background(.appRed.opacity(0.8))
+                .frame(height: 52)
+                .background(.appRed)
                 .cornerRadius(12)
         }
         .alert(isDirectory ? L10n.editCategoryDeleteFolder : L10n.editCategoryDeleteCategory, isPresented: $showDeleteConfirmation) {
