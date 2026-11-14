@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "matsakaici: %@ a rana";
 "STATISTICS_AVERAGE_PER_MONTH" = "matsakaici: %@ a wata";
 "STATISTICS_AVERAGE_PER_YEAR" = "matsakaici: %@ a shekara";
+"STATISTICS_CHART" = "Jadawali";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Bisa kwanan wata";

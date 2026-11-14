@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "oʻrtacha: kuniga %@";
 "STATISTICS_AVERAGE_PER_MONTH" = "oʻrtacha: oyiga %@";
 "STATISTICS_AVERAGE_PER_YEAR" = "oʻrtacha: yiliga %@";
+"STATISTICS_CHART" = "Diagramma";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Sana bo‘yicha";

@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "ହାରାହାରି: ପ୍ରତିଦିନ %@";
 "STATISTICS_AVERAGE_PER_MONTH" = "ହାରାହାରି: ପ୍ରତି ମାସ %@";
 "STATISTICS_AVERAGE_PER_YEAR" = "ହାରାହାରି: ପ୍ରତି ବର୍ଷ %@";
+"STATISTICS_CHART" = "ଚାର୍ଟ";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "ତାରିଖ ଅନୁସାରେ";

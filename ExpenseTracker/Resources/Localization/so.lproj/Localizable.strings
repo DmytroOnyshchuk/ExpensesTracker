@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "celcelis: %@ maalintii";
 "STATISTICS_AVERAGE_PER_MONTH" = "celcelis: %@ bishii";
 "STATISTICS_AVERAGE_PER_YEAR" = "celcelis: %@ sannadkii";
+"STATISTICS_CHART" = "Jaantus";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Taariikh ahaan";

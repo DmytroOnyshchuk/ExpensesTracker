@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "mesatarja: %@ në ditë";
 "STATISTICS_AVERAGE_PER_MONTH" = "mesatarja: %@ në muaj";
 "STATISTICS_AVERAGE_PER_YEAR" = "mesatarja: %@ në vit";
+"STATISTICS_CHART" = "Grafik";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Sipas datës";

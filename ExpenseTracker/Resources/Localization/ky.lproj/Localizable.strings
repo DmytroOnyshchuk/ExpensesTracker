@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "орточо: күнүнө %@";
 "STATISTICS_AVERAGE_PER_MONTH" = "орточо: айына %@";
 "STATISTICS_AVERAGE_PER_YEAR" = "орточо: жылына %@";
+"STATISTICS_CHART" = "Диаграмма";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Күнү боюнча";

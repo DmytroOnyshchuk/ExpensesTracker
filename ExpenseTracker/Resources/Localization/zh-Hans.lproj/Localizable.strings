@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "平均：每天 %@";
 "STATISTICS_AVERAGE_PER_MONTH" = "平均：每月 %@";
 "STATISTICS_AVERAGE_PER_YEAR" = "平均：每年 %@";
+"STATISTICS_CHART" = "图表";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "按日期";

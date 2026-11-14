@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "සාමාන්‍යය: දිනකට %@";
 "STATISTICS_AVERAGE_PER_MONTH" = "සාමාන්‍යය: මාසයකට %@";
 "STATISTICS_AVERAGE_PER_YEAR" = "සාමාන්‍යය: වසරකට %@";
+"STATISTICS_CHART" = "ප්‍රස්තාරය";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "දිනය අනුව";

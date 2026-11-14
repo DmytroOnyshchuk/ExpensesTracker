@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "media: %@ ao día";
 "STATISTICS_AVERAGE_PER_MONTH" = "media: %@ ao mes";
 "STATISTICS_AVERAGE_PER_YEAR" = "media: %@ ao ano";
+"STATISTICS_CHART" = "Gráfico";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Por data";

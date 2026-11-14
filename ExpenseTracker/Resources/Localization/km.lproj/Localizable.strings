@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "មធ្យម៖ %@ ក្នុងមួយថ្ងៃ";
 "STATISTICS_AVERAGE_PER_MONTH" = "មធ្យម៖ %@ ក្នុងមួយខែ";
 "STATISTICS_AVERAGE_PER_YEAR" = "មធ្យម៖ %@ ក្នុងមួយឆ្នាំ";
+"STATISTICS_CHART" = "គំនូសតាង";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "តាមកាលបរិច្ឆេទ";

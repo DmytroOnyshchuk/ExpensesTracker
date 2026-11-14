@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "середнє: %@ на день";
 "STATISTICS_AVERAGE_PER_MONTH" = "середнє: %@ на місяць";
 "STATISTICS_AVERAGE_PER_YEAR" = "середнє: %@ на рік";
+"STATISTICS_CHART" = "Графік";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "За датою";

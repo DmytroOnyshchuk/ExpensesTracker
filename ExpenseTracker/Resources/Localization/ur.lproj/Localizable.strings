@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "اوسط: %@ فی دن";
 "STATISTICS_AVERAGE_PER_MONTH" = "اوسط: %@ فی مہینہ";
 "STATISTICS_AVERAGE_PER_YEAR" = "اوسط: %@ فی سال";
+"STATISTICS_CHART" = "چارٹ";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "تاریخ کے لحاظ سے";

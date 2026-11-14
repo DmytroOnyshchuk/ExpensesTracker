@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "medie: %@ pe zi";
 "STATISTICS_AVERAGE_PER_MONTH" = "medie: %@ pe lună";
 "STATISTICS_AVERAGE_PER_YEAR" = "medie: %@ pe an";
+"STATISTICS_CHART" = "Grafic";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "După dată";

@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "አማካይ: %@ በቀን";
 "STATISTICS_AVERAGE_PER_MONTH" = "አማካይ: %@ በወር";
 "STATISTICS_AVERAGE_PER_YEAR" = "አማካይ: %@ በዓመት";
+"STATISTICS_CHART" = "ገበታ";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "በቀን";

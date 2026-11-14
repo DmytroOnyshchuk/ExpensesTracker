@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "gennemsnit: %@ pr. dag";
 "STATISTICS_AVERAGE_PER_MONTH" = "gennemsnit: %@ pr. måned";
 "STATISTICS_AVERAGE_PER_YEAR" = "gennemsnit: %@ pr. år";
+"STATISTICS_CHART" = "Diagram";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Efter dato";

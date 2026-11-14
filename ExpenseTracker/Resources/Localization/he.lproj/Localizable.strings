@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "ממוצע: %@ ליום";
 "STATISTICS_AVERAGE_PER_MONTH" = "ממוצע: %@ לחודש";
 "STATISTICS_AVERAGE_PER_YEAR" = "ממוצע: %@ לשנה";
+"STATISTICS_CHART" = "תרשים";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "לפי תאריך";

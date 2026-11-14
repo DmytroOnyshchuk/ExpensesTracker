@@ -26,8 +26,6 @@ struct StatisticsView: View {
         let start = displayedStart(in: starts)
         let interval = period.interval(containing: start)
         let slices = StatisticsSlice.slices(from: transactions, in: interval)
-        let total = slices.reduce(0) { $0 + $1.amount }
-        let maxAmount = slices.first?.amount ?? .zero
 
         ScrollView(.vertical) {
             VStack(spacing: 12) {
@@ -36,36 +34,7 @@ struct StatisticsView: View {
                 if let average = period.average(of: transactions) {
                     averageLabel(average)
                 }
-                totalLabel(total)
-
-                if slices.isEmpty {
-                    Text(L10n.transactionsListNoTransactions)
-                        .font(.appLight(18))
-                        .foregroundColor(.appGray.opacity(0.6))
-                        .frame(height: 120)
-                } else {
-                    StatisticsPieChart(slices: slices)
-                        .frame(height: 264)
-                        .padding(.horizontal, 48)
-
-                    VStack(spacing: 0) {
-                        ForEach(slices) { slice in
-                            NavigationLink {
-                                TransactionDetails(category: slice.category, interval: interval)
-                            } label: {
-                                StatisticsRow(
-                                    slice: slice,
-                                    parentName: parentName(of: slice.category),
-                                    barRatio: maxAmount > 0 ? slice.amount.asDouble / maxAmount.asDouble : 0
-                                )
-                                .contentShape(Rectangle())
-                            }
-                            .buttonStyle(.plain)
-                            .disabled(slice.category.isDirectory)
-                        }
-                    }
-                    .padding(.top, 16)
-                }
+                StatisticsBreakdown(slices: slices, interval: interval, categories: categories)
             }
             .padding(.vertical, 16)
             .frame(maxWidth: .infinity, alignment: .top)
@@ -86,6 +55,18 @@ struct StatisticsView: View {
         }
         .navigationTitle(L10n.statisticsTitle)
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                NavigationLink {
+                    ExpensesChartView()
+                } label: {
+                    Image(systemName: "chart.bar.fill")
+                        .font(.system(size: 14))
+                        .foregroundColor(.appWhite)
+                }
+                .accessibilityLabel(L10n.statisticsChart)
+            }
+        }
     }
 
     private var periodPicker: some View {
@@ -169,17 +150,6 @@ struct StatisticsView: View {
             .padding(.top, -12)
     }
 
-    private func totalLabel(_ total: Int) -> some View {
-        HStack(alignment: .firstTextBaseline, spacing: 8) {
-            Text(L10n.statisticsTotalSpent + ":")
-                .font(.appLight(16))
-
-            Text(total.getAmount())
-                .font(.appLight(24))
-        }
-        .foregroundColor(.appWhite)
-    }
-
     private func displayedStart(in starts: [Date]) -> Date {
         let start = period.interval(containing: anchorDate).start
         if starts.isEmpty || starts.contains(start) || start == exactStart {
@@ -210,6 +180,57 @@ struct StatisticsView: View {
         slideEdge = date > start ? .trailing : .leading
         withAnimation(.easeInOut(duration: 0.25)) {
             anchorDate = date
+        }
+    }
+}
+
+struct StatisticsBreakdown: View {
+    let slices: [StatisticsSlice]
+    let interval: DateInterval
+    let categories: [TransactionCategory]
+
+    var body: some View {
+        let total = slices.reduce(0) { $0 + $1.amount }
+        let maxAmount = slices.first?.amount ?? .zero
+
+        VStack(spacing: 12) {
+            HStack(alignment: .firstTextBaseline, spacing: 8) {
+                Text(L10n.statisticsTotalSpent + ":")
+                    .font(.appLight(16))
+
+                Text(total.getAmount())
+                    .font(.appLight(24))
+            }
+            .foregroundColor(.appWhite)
+
+            if slices.isEmpty {
+                Text(L10n.transactionsListNoTransactions)
+                    .font(.appLight(18))
+                    .foregroundColor(.appGray.opacity(0.6))
+                    .frame(height: 120)
+            } else {
+                StatisticsPieChart(slices: slices)
+                    .frame(height: 264)
+                    .padding(.horizontal, 48)
+
+                VStack(spacing: 0) {
+                    ForEach(slices) { slice in
+                        NavigationLink {
+                            TransactionDetails(category: slice.category, interval: interval)
+                        } label: {
+                            StatisticsRow(
+                                slice: slice,
+                                parentName: parentName(of: slice.category),
+                                barRatio: maxAmount > 0 ? slice.amount.asDouble / maxAmount.asDouble : 0
+                            )
+                            .contentShape(Rectangle())
+                        }
+                        .buttonStyle(.plain)
+                        .disabled(slice.category.isDirectory)
+                    }
+                }
+                .padding(.top, 16)
+            }
         }
     }
 

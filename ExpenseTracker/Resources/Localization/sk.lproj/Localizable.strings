@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "priemer: %@ za deň";
 "STATISTICS_AVERAGE_PER_MONTH" = "priemer: %@ za mesiac";
 "STATISTICS_AVERAGE_PER_YEAR" = "priemer: %@ za rok";
+"STATISTICS_CHART" = "Graf";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Podľa dátumu";

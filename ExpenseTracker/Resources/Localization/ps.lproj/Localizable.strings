@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "اوسط: %@ په ورځ کې";
 "STATISTICS_AVERAGE_PER_MONTH" = "اوسط: %@ په میاشت کې";
 "STATISTICS_AVERAGE_PER_YEAR" = "اوسط: %@ په کال کې";
+"STATISTICS_CHART" = "چارټ";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "د نېټې له مخې";

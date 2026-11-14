@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "Duerchschnëtt: %@ pro Dag";
 "STATISTICS_AVERAGE_PER_MONTH" = "Duerchschnëtt: %@ pro Mount";
 "STATISTICS_AVERAGE_PER_YEAR" = "Duerchschnëtt: %@ pro Joer";
+"STATISTICS_CHART" = "Diagramm";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "No Datum";

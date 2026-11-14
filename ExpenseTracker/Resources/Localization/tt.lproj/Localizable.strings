@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "уртача: көненә %@";
 "STATISTICS_AVERAGE_PER_MONTH" = "уртача: аена %@";
 "STATISTICS_AVERAGE_PER_YEAR" = "уртача: елына %@";
+"STATISTICS_CHART" = "Диаграмма";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Дата буенча";

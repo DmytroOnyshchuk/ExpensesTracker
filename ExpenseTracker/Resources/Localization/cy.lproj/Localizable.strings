@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "cyfartaledd: %@ y dydd";
 "STATISTICS_AVERAGE_PER_MONTH" = "cyfartaledd: %@ y mis";
 "STATISTICS_AVERAGE_PER_YEAR" = "cyfartaledd: %@ y flwyddyn";
+"STATISTICS_CHART" = "Siart";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Yn ôl dyddiad";

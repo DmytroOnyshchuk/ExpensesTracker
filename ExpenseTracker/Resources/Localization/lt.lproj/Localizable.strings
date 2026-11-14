@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "vidurkis: %@ per dieną";
 "STATISTICS_AVERAGE_PER_MONTH" = "vidurkis: %@ per mėnesį";
 "STATISTICS_AVERAGE_PER_YEAR" = "vidurkis: %@ per metus";
+"STATISTICS_CHART" = "Diagrama";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Pagal datą";

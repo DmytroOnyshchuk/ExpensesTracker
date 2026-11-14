@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "purata: %@ sehari";
 "STATISTICS_AVERAGE_PER_MONTH" = "purata: %@ sebulan";
 "STATISTICS_AVERAGE_PER_YEAR" = "purata: %@ setahun";
+"STATISTICS_CHART" = "Carta";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Mengikut tarikh";

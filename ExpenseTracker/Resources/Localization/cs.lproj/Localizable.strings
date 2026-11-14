@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "průměr: %@ za den";
 "STATISTICS_AVERAGE_PER_MONTH" = "průměr: %@ za měsíc";
 "STATISTICS_AVERAGE_PER_YEAR" = "průměr: %@ za rok";
+"STATISTICS_CHART" = "Graf";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Podle data";

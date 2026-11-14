@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "batez beste: %@ eguneko";
 "STATISTICS_AVERAGE_PER_MONTH" = "batez beste: %@ hileko";
 "STATISTICS_AVERAGE_PER_YEAR" = "batez beste: %@ urteko";
+"STATISTICS_CHART" = "Grafikoa";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Dataren arabera";

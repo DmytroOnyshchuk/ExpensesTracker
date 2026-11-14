@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "meðaltal: %@ á dag";
 "STATISTICS_AVERAGE_PER_MONTH" = "meðaltal: %@ á mánuði";
 "STATISTICS_AVERAGE_PER_YEAR" = "meðaltal: %@ á ári";
+"STATISTICS_CHART" = "Línurit";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Eftir dagsetningu";

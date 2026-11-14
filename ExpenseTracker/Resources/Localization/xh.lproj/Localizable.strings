@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "umyinge: %@ ngosuku";
 "STATISTICS_AVERAGE_PER_MONTH" = "umyinge: %@ ngenyanga";
 "STATISTICS_AVERAGE_PER_YEAR" = "umyinge: %@ ngonyaka";
+"STATISTICS_CHART" = "Itshathi";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Ngomhla";

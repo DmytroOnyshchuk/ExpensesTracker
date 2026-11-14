@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "સરેરાશ: %@ પ્રતિ દિવસ";
 "STATISTICS_AVERAGE_PER_MONTH" = "સરેરાશ: %@ પ્રતિ મહિનો";
 "STATISTICS_AVERAGE_PER_YEAR" = "સરેરાશ: %@ પ્રતિ વર્ષ";
+"STATISTICS_CHART" = "ચાર્ટ";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "તારીખ પ્રમાણે";

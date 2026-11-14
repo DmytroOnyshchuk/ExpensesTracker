@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "prosek: %@ dnevno";
 "STATISTICS_AVERAGE_PER_MONTH" = "prosek: %@ mesečno";
 "STATISTICS_AVERAGE_PER_YEAR" = "prosek: %@ godišnje";
+"STATISTICS_CHART" = "Grafikon";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Po datumu";

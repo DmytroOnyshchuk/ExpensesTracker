@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "เฉลี่ย: %@ ต่อวัน";
 "STATISTICS_AVERAGE_PER_MONTH" = "เฉลี่ย: %@ ต่อเดือน";
 "STATISTICS_AVERAGE_PER_YEAR" = "เฉลี่ย: %@ ต่อปี";
+"STATISTICS_CHART" = "แผนภูมิ";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "ตามวันที่";

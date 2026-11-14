@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "ਔਸਤ: %@ ਪ੍ਰਤੀ ਦਿਨ";
 "STATISTICS_AVERAGE_PER_MONTH" = "ਔਸਤ: %@ ਪ੍ਰਤੀ ਮਹੀਨਾ";
 "STATISTICS_AVERAGE_PER_YEAR" = "ਔਸਤ: %@ ਪ੍ਰਤੀ ਸਾਲ";
+"STATISTICS_CHART" = "ਚਾਰਟ";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "ਤਾਰੀਖ ਅਨੁਸਾਰ";

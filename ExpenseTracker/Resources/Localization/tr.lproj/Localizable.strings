@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "ortalama: günde %@";
 "STATISTICS_AVERAGE_PER_MONTH" = "ortalama: ayda %@";
 "STATISTICS_AVERAGE_PER_YEAR" = "ortalama: yılda %@";
+"STATISTICS_CHART" = "Grafik";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Tarihe göre";

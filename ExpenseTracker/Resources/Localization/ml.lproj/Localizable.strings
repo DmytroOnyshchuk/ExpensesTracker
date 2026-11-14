@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "ശരാശരി: പ്രതിദിനം %@";
 "STATISTICS_AVERAGE_PER_MONTH" = "ശരാശരി: പ്രതിമാസം %@";
 "STATISTICS_AVERAGE_PER_YEAR" = "ശരാശരി: പ്രതിവർഷം %@";
+"STATISTICS_CHART" = "ചാർട്ട്";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "തീയതി പ്രകാരം";

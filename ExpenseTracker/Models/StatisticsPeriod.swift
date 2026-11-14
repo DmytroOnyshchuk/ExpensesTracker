@@ -67,6 +67,71 @@ enum StatisticsPeriod: CaseIterable, Identifiable {
     }
 }
 
+extension StatisticsPeriod {
+    var unitDuration: TimeInterval {
+        switch self {
+        case .day: 86400
+        case .month: 86400 * 30.44
+        case .year: 86400 * 365.25
+        }
+    }
+
+    var defaultVisibleLength: TimeInterval {
+        switch self {
+        case .day: unitDuration * 30
+        case .month: unitDuration * 12
+        case .year: unitDuration * 5
+        }
+    }
+
+    var minVisibleLength: TimeInterval {
+        switch self {
+        case .day: unitDuration * 7
+        case .month: unitDuration * 4
+        case .year: unitDuration * 3
+        }
+    }
+
+    var maxVisibleLength: TimeInterval {
+        switch self {
+        case .day: unitDuration * 366
+        case .month: unitDuration * 120
+        case .year: unitDuration * 50
+        }
+    }
+
+    func amounts(of transactions: [Transaction], calendar: Calendar = .current) -> [Date: Int] {
+        transactions.reduce(into: [:]) { result, transaction in
+            result[interval(containing: transaction.date, calendar: calendar).start, default: .zero] += transaction.amount
+        }
+    }
+
+    func boundary(nearest date: Date, calendar: Calendar = .current) -> Date {
+        let bucket = interval(containing: date, calendar: calendar)
+        return date.timeIntervalSince(bucket.start) < bucket.end.timeIntervalSince(date) ? bucket.start : bucket.end
+    }
+
+    func shifted(_ date: Date, by value: Int, calendar: Calendar = .current) -> Date {
+        calendar.date(byAdding: component, value: value, to: date) ?? date
+    }
+
+    func rangeTitle(for range: DateInterval, calendar: Calendar = .current) -> String {
+        let first = range.start
+        let last = interval(containing: shifted(range.end, by: -1, calendar: calendar), calendar: calendar).start
+        guard last > first else { return title(for: first) }
+
+        return "\(rangeLabel(for: first)) – \(rangeLabel(for: last))"
+    }
+
+    private func rangeLabel(for date: Date) -> String {
+        switch self {
+        case .day: date.formatted(.dateTime.day(.twoDigits).month(.twoDigits).year())
+        case .month: date.formatted(.dateTime.month(.abbreviated).year())
+        case .year: date.formatted(.dateTime.year())
+        }
+    }
+}
+
 struct StatisticsSlice: Identifiable {
     let category: TransactionCategory
     let amount: Int

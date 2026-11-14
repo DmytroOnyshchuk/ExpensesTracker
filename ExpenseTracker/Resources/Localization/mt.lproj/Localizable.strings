@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "medja: %@ kuljum";
 "STATISTICS_AVERAGE_PER_MONTH" = "medja: %@ fix-xahar";
 "STATISTICS_AVERAGE_PER_YEAR" = "medja: %@ fis-sena";
+"STATISTICS_CHART" = "Grafika";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Skont id-data";

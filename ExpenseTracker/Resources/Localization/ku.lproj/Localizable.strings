@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "navînî: %@ rojê";
 "STATISTICS_AVERAGE_PER_MONTH" = "navînî: %@ mehê";
 "STATISTICS_AVERAGE_PER_YEAR" = "navînî: %@ salê";
+"STATISTICS_CHART" = "Grafîk";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Li gorî tarîxê";

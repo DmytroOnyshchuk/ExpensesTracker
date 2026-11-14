@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "media: %@ per di";
 "STATISTICS_AVERAGE_PER_MONTH" = "media: %@ per mais";
 "STATISTICS_AVERAGE_PER_YEAR" = "media: %@ per onn";
+"STATISTICS_CHART" = "Diagram";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Tenor data";

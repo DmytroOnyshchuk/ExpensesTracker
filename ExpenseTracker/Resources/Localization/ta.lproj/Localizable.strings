@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "சராசரி: நாளொன்றுக்கு %@";
 "STATISTICS_AVERAGE_PER_MONTH" = "சராசரி: மாதத்திற்கு %@";
 "STATISTICS_AVERAGE_PER_YEAR" = "சராசரி: ஆண்டுக்கு %@";
+"STATISTICS_CHART" = "விளக்கப்படம்";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "தேதி வாரியாக";

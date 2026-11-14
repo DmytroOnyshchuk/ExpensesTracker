@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "mitjana: %@ al dia";
 "STATISTICS_AVERAGE_PER_MONTH" = "mitjana: %@ al mes";
 "STATISTICS_AVERAGE_PER_YEAR" = "mitjana: %@ a l'any";
+"STATISTICS_CHART" = "Gràfic";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Per data";

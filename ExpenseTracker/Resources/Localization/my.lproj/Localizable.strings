@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "ပျမ်းမျှ: တစ်ရက်လျှင် %@";
 "STATISTICS_AVERAGE_PER_MONTH" = "ပျမ်းမျှ: တစ်လလျှင် %@";
 "STATISTICS_AVERAGE_PER_YEAR" = "ပျမ်းမျှ: တစ်နှစ်လျှင် %@";
+"STATISTICS_CHART" = "ဇယား";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "ရက်စွဲအလိုက်";

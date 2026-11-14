@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "średnio: %@ dziennie";
 "STATISTICS_AVERAGE_PER_MONTH" = "średnio: %@ miesięcznie";
 "STATISTICS_AVERAGE_PER_YEAR" = "średnio: %@ rocznie";
+"STATISTICS_CHART" = "Wykres";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Według daty";

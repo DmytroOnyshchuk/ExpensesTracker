@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "საშუალოდ: %@ დღეში";
 "STATISTICS_AVERAGE_PER_MONTH" = "საშუალოდ: %@ თვეში";
 "STATISTICS_AVERAGE_PER_YEAR" = "საშუალოდ: %@ წელიწადში";
+"STATISTICS_CHART" = "დიაგრამა";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "თარიღით";

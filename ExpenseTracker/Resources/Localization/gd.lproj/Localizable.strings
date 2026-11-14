@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "cuibheas: %@ gach latha";
 "STATISTICS_AVERAGE_PER_MONTH" = "cuibheas: %@ gach mìos";
 "STATISTICS_AVERAGE_PER_YEAR" = "cuibheas: %@ gach bliadhna";
+"STATISTICS_CHART" = "Cairt";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "A-rèir ceann-là";

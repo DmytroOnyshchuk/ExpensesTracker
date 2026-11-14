@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "ಸರಾಸರಿ: ದಿನಕ್ಕೆ %@";
 "STATISTICS_AVERAGE_PER_MONTH" = "ಸರಾಸರಿ: ತಿಂಗಳಿಗೆ %@";
 "STATISTICS_AVERAGE_PER_YEAR" = "ಸರಾಸರಿ: ವರ್ಷಕ್ಕೆ %@";
+"STATISTICS_CHART" = "ಚಾರ್ಟ್";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "ದಿನಾಂಕದ ಪ್ರಕಾರ";

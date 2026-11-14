@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "gemiddeld: %@ per dag";
 "STATISTICS_AVERAGE_PER_MONTH" = "gemiddeld: %@ per maand";
 "STATISTICS_AVERAGE_PER_YEAR" = "gemiddeld: %@ per jaar";
+"STATISTICS_CHART" = "Grafiek";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Volgens datum";

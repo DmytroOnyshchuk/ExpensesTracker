@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "सरासरी: दररोज %@";
 "STATISTICS_AVERAGE_PER_MONTH" = "सरासरी: दरमहा %@";
 "STATISTICS_AVERAGE_PER_YEAR" = "सरासरी: दरवर्षी %@";
+"STATISTICS_CHART" = "चार्ट";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "तारखेनुसार";

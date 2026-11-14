@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "평균: 하루 %@";
 "STATISTICS_AVERAGE_PER_MONTH" = "평균: 월 %@";
 "STATISTICS_AVERAGE_PER_YEAR" = "평균: 연 %@";
+"STATISTICS_CHART" = "차트";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "날짜순";

@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "povprečje: %@ na dan";
 "STATISTICS_AVERAGE_PER_MONTH" = "povprečje: %@ na mesec";
 "STATISTICS_AVERAGE_PER_YEAR" = "povprečje: %@ na leto";
+"STATISTICS_CHART" = "Grafikon";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Po datumu";

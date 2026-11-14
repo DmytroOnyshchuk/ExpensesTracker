@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "средно: %@ на ден";
 "STATISTICS_AVERAGE_PER_MONTH" = "средно: %@ на месец";
 "STATISTICS_AVERAGE_PER_YEAR" = "средно: %@ на година";
+"STATISTICS_CHART" = "Графика";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "По дата";

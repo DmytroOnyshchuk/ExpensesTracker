@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "ìpíndọ́gba: %@ lójoojúmọ́";
 "STATISTICS_AVERAGE_PER_MONTH" = "ìpíndọ́gba: %@ lóṣooṣù";
 "STATISTICS_AVERAGE_PER_YEAR" = "ìpíndọ́gba: %@ lọ́dọọdún";
+"STATISTICS_CHART" = "Àtẹ";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Nípa déètì";

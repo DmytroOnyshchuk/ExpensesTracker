@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "औसत: प्रति दिन %@";
 "STATISTICS_AVERAGE_PER_MONTH" = "औसत: प्रति महिना %@";
 "STATISTICS_AVERAGE_PER_YEAR" = "औसत: प्रति वर्ष %@";
+"STATISTICS_CHART" = "चार्ट";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "मिति अनुसार";

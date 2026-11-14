@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "rata-rata: %@ per hari";
 "STATISTICS_AVERAGE_PER_MONTH" = "rata-rata: %@ per bulan";
 "STATISTICS_AVERAGE_PER_YEAR" = "rata-rata: %@ per tahun";
+"STATISTICS_CHART" = "Grafik";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Menurut tanggal";

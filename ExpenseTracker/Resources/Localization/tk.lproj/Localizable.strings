@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "ortaça: günde %@";
 "STATISTICS_AVERAGE_PER_MONTH" = "ortaça: aýda %@";
 "STATISTICS_AVERAGE_PER_YEAR" = "ortaça: ýylda %@";
+"STATISTICS_CHART" = "Diagramma";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Sene boýunça";

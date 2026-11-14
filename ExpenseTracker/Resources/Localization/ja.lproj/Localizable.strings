@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "平均: 1日あたり %@";
 "STATISTICS_AVERAGE_PER_MONTH" = "平均: 1か月あたり %@";
 "STATISTICS_AVERAGE_PER_YEAR" = "平均: 1年あたり %@";
+"STATISTICS_CHART" = "グラフ";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "日付順";

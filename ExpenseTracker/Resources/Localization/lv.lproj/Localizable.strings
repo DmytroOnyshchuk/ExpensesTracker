@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "vidēji: %@ dienā";
 "STATISTICS_AVERAGE_PER_MONTH" = "vidēji: %@ mēnesī";
 "STATISTICS_AVERAGE_PER_YEAR" = "vidēji: %@ gadā";
+"STATISTICS_CHART" = "Diagramma";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Pēc datuma";

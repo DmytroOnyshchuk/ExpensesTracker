@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "keskiarvo: %@ päivässä";
 "STATISTICS_AVERAGE_PER_MONTH" = "keskiarvo: %@ kuukaudessa";
 "STATISTICS_AVERAGE_PER_YEAR" = "keskiarvo: %@ vuodessa";
+"STATISTICS_CHART" = "Kaavio";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Päivän mukaan";

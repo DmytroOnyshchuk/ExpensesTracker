@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "rata-rata: %@ saben dina";
 "STATISTICS_AVERAGE_PER_MONTH" = "rata-rata: %@ saben sasi";
 "STATISTICS_AVERAGE_PER_YEAR" = "rata-rata: %@ saben taun";
+"STATISTICS_CHART" = "Grafik";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Miturut tanggal";

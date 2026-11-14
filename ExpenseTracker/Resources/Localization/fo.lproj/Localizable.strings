@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "miðal: %@ um dagin";
 "STATISTICS_AVERAGE_PER_MONTH" = "miðal: %@ um mánaðin";
 "STATISTICS_AVERAGE_PER_YEAR" = "miðal: %@ um árið";
+"STATISTICS_CHART" = "Graf";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Eftir dato";

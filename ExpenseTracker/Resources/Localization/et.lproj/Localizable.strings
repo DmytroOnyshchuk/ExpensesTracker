@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "keskmine: %@ päevas";
 "STATISTICS_AVERAGE_PER_MONTH" = "keskmine: %@ kuus";
 "STATISTICS_AVERAGE_PER_YEAR" = "keskmine: %@ aastas";
+"STATISTICS_CHART" = "Graafik";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Kuupäeva järgi";

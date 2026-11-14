@@ -174,6 +174,8 @@ internal enum L10n {
   internal static func statisticsAveragePerYear(_ p1: Any) -> String {
     return L10n.tr("Localizable", "STATISTICS_AVERAGE_PER_YEAR", String(describing: p1), fallback: "average: %@ per year")
   }
+  /// Chart
+  internal static let statisticsChart = L10n.tr("Localizable", "STATISTICS_CHART", fallback: "Chart")
   /// Day
   internal static let statisticsDay = L10n.tr("Localizable", "STATISTICS_DAY", fallback: "Day")
   /// Month

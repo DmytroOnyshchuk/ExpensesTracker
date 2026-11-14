@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "సగటు: రోజుకు %@";
 "STATISTICS_AVERAGE_PER_MONTH" = "సగటు: నెలకు %@";
 "STATISTICS_AVERAGE_PER_YEAR" = "సగటు: సంవత్సరానికి %@";
+"STATISTICS_CHART" = "చార్ట్";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "తేదీ ప్రకారం";

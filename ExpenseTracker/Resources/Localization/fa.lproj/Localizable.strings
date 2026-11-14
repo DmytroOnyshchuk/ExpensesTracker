@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "میانگین: %@ در روز";
 "STATISTICS_AVERAGE_PER_MONTH" = "میانگین: %@ در ماه";
 "STATISTICS_AVERAGE_PER_YEAR" = "میانگین: %@ در سال";
+"STATISTICS_CHART" = "نمودار";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "بر اساس تاریخ";

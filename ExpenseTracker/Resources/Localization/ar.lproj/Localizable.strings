@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "المتوسط: %@ في اليوم";
 "STATISTICS_AVERAGE_PER_MONTH" = "المتوسط: %@ في الشهر";
 "STATISTICS_AVERAGE_PER_YEAR" = "المتوسط: %@ في السنة";
+"STATISTICS_CHART" = "الرسم البياني";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "حسب التاريخ";

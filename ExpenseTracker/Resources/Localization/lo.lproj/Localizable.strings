@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "ສະເລ່ຍ: %@ ຕໍ່ມື້";
 "STATISTICS_AVERAGE_PER_MONTH" = "ສະເລ່ຍ: %@ ຕໍ່ເດືອນ";
 "STATISTICS_AVERAGE_PER_YEAR" = "ສະເລ່ຍ: %@ ຕໍ່ປີ";
+"STATISTICS_CHART" = "ແຜນວາດ";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "ຕາມວັນທີ";

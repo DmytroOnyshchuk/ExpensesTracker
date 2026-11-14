@@ -45,6 +45,7 @@
 "STATISTICS_AVERAGE_PER_DAY" = "миёна: %@ дар як рӯз";
 "STATISTICS_AVERAGE_PER_MONTH" = "миёна: %@ дар як моҳ";
 "STATISTICS_AVERAGE_PER_YEAR" = "миёна: %@ дар як сол";
+"STATISTICS_CHART" = "Диаграмма";
 
 // MARK: - TransactionDetails
 "TRANSACTION_DETAILS_SORT_BY_DATE" = "Аз рӯи сана";
