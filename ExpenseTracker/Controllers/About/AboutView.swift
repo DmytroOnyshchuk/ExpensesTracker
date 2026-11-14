@@ -8,9 +8,9 @@ struct AboutView: View {
         ScrollView(.vertical) {
             VStack(spacing: 16) {
                 VStack(spacing: 8) {
-                    Image(systemName: "chart.pie.fill")
-                        .font(.system(size: 56))
-                        .foregroundColor(.appPrimary)
+                    Image("AboutIcon")
+                        .resizable()
+                        .frame(width: 102, height: 102)
                         .padding(.bottom, 8)
 
                     Text(L10n.appName)
