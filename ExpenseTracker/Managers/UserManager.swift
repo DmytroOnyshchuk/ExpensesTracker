@@ -8,6 +8,7 @@ enum UDKey: String {
     case userId = "UDKey.userId"
     case balance = "UDKey.balance"
     case theme = "UDKey.theme"
+    case statisticsChartStyle = "UDKey.statisticsChartStyle"
 }
 
 final class UserManager: NSObject {

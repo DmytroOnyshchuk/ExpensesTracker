@@ -162,12 +162,25 @@ struct ExpensesChart: View {
 
             ForEach(buckets) { bucket in
                 if period == .day {
+                    AreaMark(
+                        x: .value("Date", bucket.start, unit: .day),
+                        y: .value("Amount", bucket.value)
+                    )
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [Color.appRed.opacity(0.3), Color.appRed.opacity(0.02)],
+                            startPoint: .top,
+                            endPoint: .bottom
+                        )
+                    )
+
                     LineMark(
                         x: .value("Date", bucket.start, unit: .day),
                         y: .value("Amount", bucket.value)
                     )
                     .foregroundStyle(Color.appRed)
-                    .lineStyle(StrokeStyle(lineWidth: 2, lineJoin: .round))
+                    .lineStyle(StrokeStyle(lineWidth: 2, lineCap: .round, lineJoin: .round))
+                    .shadow(color: Color.appRed.opacity(0.8), radius: 5)
 
                     if showsPoints {
                         PointMark(
@@ -183,7 +196,15 @@ struct ExpensesChart: View {
                         y: .value("Amount", bucket.value),
                         width: .ratio(0.6)
                     )
-                    .foregroundStyle(Color.appRed)
+                    .cornerRadius(5)
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [Color.appRed.mix(with: .white, by: 0.3), Color.appRed, Color.appRed.mix(with: .black, by: 0.12)],
+                            startPoint: .top,
+                            endPoint: .bottom
+                        )
+                    )
+                    .shadow(color: Color.appRed.opacity(0.55), radius: 8)
                 }
             }
         }

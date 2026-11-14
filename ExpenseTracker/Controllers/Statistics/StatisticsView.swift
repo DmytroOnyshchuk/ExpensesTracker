@@ -34,7 +34,13 @@ struct StatisticsView: View {
                 if let average = period.average(of: transactions) {
                     averageLabel(average)
                 }
-                StatisticsBreakdown(slices: slices, interval: interval, categories: categories)
+                StatisticsBreakdown(
+                    slices: slices,
+                    interval: interval,
+                    categories: categories,
+                    period: period,
+                    points: period.chartPoints(of: transactions, in: interval)
+                )
             }
             .padding(.vertical, 16)
             .frame(maxWidth: .infinity, alignment: .top)
@@ -189,20 +195,39 @@ struct StatisticsBreakdown: View {
     let slices: [StatisticsSlice]
     let interval: DateInterval
     let categories: [TransactionCategory]
+    var period: StatisticsPeriod?
+    var points: [StatisticsChartPoint] = []
+
+    @AppStorage(UDKey.statisticsChartStyle.rawValue) private var chartStyle: StatisticsChartStyle = .pie
+
+    private var showsStylePicker: Bool {
+        period != nil && !slices.isEmpty && !points.isEmpty
+    }
 
     var body: some View {
         let total = slices.reduce(0) { $0 + $1.amount }
         let maxAmount = slices.first?.amount ?? .zero
 
         VStack(spacing: 12) {
-            HStack(alignment: .firstTextBaseline, spacing: 8) {
-                Text(L10n.statisticsTotalSpent + ":")
-                    .font(.appLight(16))
+            HStack(spacing: 8) {
+                HStack(alignment: .firstTextBaseline, spacing: 8) {
+                    Text(L10n.statisticsTotalSpent + ":")
+                        .font(.appLight(16))
 
-                Text(total.getAmount())
-                    .font(.appLight(24))
+                    Text(total.getAmount())
+                        .font(.appLight(24))
+                }
+                .lineLimit(1)
+                .minimumScaleFactor(0.6)
+                .foregroundColor(.appWhite)
+
+                if showsStylePicker {
+                    Spacer(minLength: 8)
+
+                    ChartStylePicker(selection: $chartStyle)
+                }
             }
-            .foregroundColor(.appWhite)
+            .padding(.horizontal, 16)
 
             if slices.isEmpty {
                 Text(L10n.transactionsListNoTransactions)
@@ -210,9 +235,9 @@ struct StatisticsBreakdown: View {
                     .foregroundColor(.appGray.opacity(0.6))
                     .frame(height: 120)
             } else {
-                StatisticsPieChart(slices: slices)
-                    .frame(height: 264)
-                    .padding(.horizontal, 48)
+                chart
+                    .frame(height: 320)
+                    .padding(.horizontal, 16)
 
                 VStack(spacing: 0) {
                     ForEach(slices) { slice in
@@ -232,6 +257,22 @@ struct StatisticsBreakdown: View {
                 }
                 .padding(.top, 16)
             }
+        }
+    }
+
+    @ViewBuilder
+    private var chart: some View {
+        if let period, showsStylePicker, chartStyle != .pie {
+            Group {
+                if chartStyle == .bars {
+                    GlassBarChart(points: points, period: period)
+                } else {
+                    GlassLineChart(points: points, interval: interval, period: period)
+                }
+            }
+            .padding(.vertical, 24)
+        } else {
+            GlassDonutChart(slices: slices)
         }
     }
 
@@ -357,29 +398,6 @@ struct StatisticsPeriodList: View {
             }
         }
         .frame(width: 280, height: min(starts.count.asCgFloat * Self.rowHeight, Self.maxHeight))
-    }
-}
-
-struct StatisticsPieChart: View {
-    let slices: [StatisticsSlice]
-
-    private static let minLabelShare = 0.08
-
-    var body: some View {
-        Chart(slices) { slice in
-            SectorMark(angle: .value("Amount", slice.amount), angularInset: 1)
-                .foregroundStyle(slice.category.categoryIcon.color.opacity(0.70))
-                .annotation(position: .overlay) {
-                    if slice.share >= Self.minLabelShare {
-                        Text(slice.category.name.localized)
-                            .font(.appRegular(12))
-                            .foregroundColor(.appWhite)
-                            .lineLimit(1)
-                            .frame(maxWidth: 72)
-                    }
-                }
-        }
-        .chartLegend(.hidden)
     }
 }
 
