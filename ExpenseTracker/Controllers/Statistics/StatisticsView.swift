@@ -471,8 +471,8 @@ struct StatisticsRow: View {
             }
             .background {
                 shape
-                    .stroke(color, lineWidth: 1.5)
-                    .blur(radius: 2)
+                    .stroke(color, lineWidth: 0.5)
+                    .blur(radius: 0.5)
                     .opacity(0.7)
             }
     }
