@@ -240,7 +240,7 @@ struct StatisticsBreakdown: View {
             .simultaneousGesture(swipeGesture)
 
             if !slices.isEmpty {
-                VStack(spacing: 0.5) {
+                VStack(spacing: 0) {
                     ForEach(slices) { slice in
                         NavigationLink {
                             TransactionDetails(category: slice.category, interval: interval)
@@ -464,7 +464,7 @@ struct StatisticsRow: View {
         let shape = Rectangle()
 
         return shape
-            .fill(color.opacity(0.32))
+            .fill(color.opacity(0.95))
             .overlay {
                 shape
                     .strokeBorder(color.opacity(0.75), lineWidth: 0.25)
