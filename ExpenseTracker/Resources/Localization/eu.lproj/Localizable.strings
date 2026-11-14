@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Ezarpenak";
 "MENU_SPENT_IN_MONTH" = "Guztira gastatua · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Hasiera";
+"TAB_STATISTICS" = "Estatistikak";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Editatu";
 "TRANSACTION_EDIT_CATEGORY" = "Kategoria";

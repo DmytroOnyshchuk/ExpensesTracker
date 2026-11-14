@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Sazlamalar";
 "MENU_SPENT_IN_MONTH" = "Jemi harçlandy · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Baş sahypa";
+"TAB_STATISTICS" = "Statistika";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Üýtget";
 "TRANSACTION_EDIT_CATEGORY" = "Kategoriýa";

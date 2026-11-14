@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "सेटिङहरू";
 "MENU_SPENT_IN_MONTH" = "कुल खर्च · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "गृह";
+"TAB_STATISTICS" = "तथ्याङ्क";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "सम्पादन गर्नुहोस्";
 "TRANSACTION_EDIT_CATEGORY" = "श्रेणी";

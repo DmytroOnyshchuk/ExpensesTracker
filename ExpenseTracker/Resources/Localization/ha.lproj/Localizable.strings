@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Saituna";
 "MENU_SPENT_IN_MONTH" = "Jimillar da aka kashe · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Gida";
+"TAB_STATISTICS" = "Ƙididdiga";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Gyara";
 "TRANSACTION_EDIT_CATEGORY" = "Rukuni";

@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Көйләүләр";
 "MENU_SPENT_IN_MONTH" = "Барлыгы тотылган · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Баш бит";
+"TAB_STATISTICS" = "Статистика";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Үзгәртү";
 "TRANSACTION_EDIT_CATEGORY" = "Категория";

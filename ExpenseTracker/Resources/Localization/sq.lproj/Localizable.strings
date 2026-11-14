@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Cilësimet";
 "MENU_SPENT_IN_MONTH" = "Gjithsej shpenzuar · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Kreu";
+"TAB_STATISTICS" = "Statistikat";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Ndrysho";
 "TRANSACTION_EDIT_CATEGORY" = "Kategoria";

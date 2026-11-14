@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Nastavení";
 "MENU_SPENT_IN_MONTH" = "Utraceno za %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Domů";
+"TAB_STATISTICS" = "Statistiky";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Upravit";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorie";

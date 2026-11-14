@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Тохиргоо";
 "MENU_SPENT_IN_MONTH" = "Нийт зарцуулсан · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Нүүр";
+"TAB_STATISTICS" = "Статистик";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Засах";
 "TRANSACTION_EDIT_CATEGORY" = "Ангилал";

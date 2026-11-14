@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Танзимот";
 "MENU_SPENT_IN_MONTH" = "Ҳамагӣ сарф шуд · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Асосӣ";
+"TAB_STATISTICS" = "Омор";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Таҳрир";
 "TRANSACTION_EDIT_CATEGORY" = "Категория";

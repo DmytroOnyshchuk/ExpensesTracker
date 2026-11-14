@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Կարգավորումներ";
 "MENU_SPENT_IN_MONTH" = "Ընդամենը ծախսվել է · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Գլխավոր";
+"TAB_STATISTICS" = "Վիճակագրություն";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Խմբագրել";
 "TRANSACTION_EDIT_CATEGORY" = "Կատեգորիա";

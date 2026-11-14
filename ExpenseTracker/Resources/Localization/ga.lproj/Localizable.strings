@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Socruithe";
 "MENU_SPENT_IN_MONTH" = "Iomlán caite · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Baile";
+"TAB_STATISTICS" = "Staitisticí";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Cuir in eagar";
 "TRANSACTION_EDIT_CATEGORY" = "Catagóir";

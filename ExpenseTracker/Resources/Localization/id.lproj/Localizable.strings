@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Pengaturan";
 "MENU_SPENT_IN_MONTH" = "Pengeluaran %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Beranda";
+"TAB_STATISTICS" = "Statistik";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Edit";
 "TRANSACTION_EDIT_CATEGORY" = "Kategori";

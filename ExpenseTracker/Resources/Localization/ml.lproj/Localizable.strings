@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "ക്രമീകരണങ്ങൾ";
 "MENU_SPENT_IN_MONTH" = "ആകെ ചെലവ് · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "ഹോം";
+"TAB_STATISTICS" = "സ്ഥിതിവിവരം";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "എഡിറ്റ് ചെയ്യുക";
 "TRANSACTION_EDIT_CATEGORY" = "വിഭാഗം";

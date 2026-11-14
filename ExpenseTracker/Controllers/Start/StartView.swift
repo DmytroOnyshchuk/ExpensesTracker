@@ -13,9 +13,7 @@ struct StartView: View {
     @Environment(\.modelContext) private var modelContext
 
     @State private var input = AmountInput()
-    @State private var showStatistics = false
     @State private var showHistory = false
-    @State private var showMenu = false
     @State private var comment = ""
     @State private var showCommentInput = false
     @State private var amountAttentionTrigger: Int = .zero
@@ -27,14 +25,8 @@ struct StartView: View {
         NavigationStack {
             ScrollView(.vertical) {
                 VStack(spacing: 16) {
-                    HStack(spacing: 4) {
-                        topBarButton(systemImage: "list.dash", action: openMenu)
-                        Spacer(minLength: 0)
-                        BalanceCard(balance: balance, action: openBalanceInput)
-                        Spacer(minLength: 0)
-                        topBarButton(systemImage: "chart.pie.fill", action: openStatistics)
-                    }
-                    .padding(.horizontal, 8)
+                    BalanceCard(balance: balance, action: openBalanceInput)
+                        .padding(.horizontal, 8)
 
                     DigitPadView(input: $input, attentionTrigger: amountAttentionTrigger)
                         .frame(maxWidth: .infinity)
@@ -53,14 +45,8 @@ struct StartView: View {
                 .frame(maxWidth: .infinity, alignment: .top)
             }
             .background(.appMain)
-            .navigationDestination(isPresented: $showStatistics) {
-                StatisticsView()
-            }
             .navigationDestination(isPresented: $showHistory) {
                 HistoryView()
-            }
-            .navigationDestination(isPresented: $showMenu) {
-                MenuView()
             }
         }
         .overlay {
@@ -80,7 +66,6 @@ struct StartView: View {
         }
         .animation(.easeInOut(duration: 0.2), value: showCommentInput)
         .animation(.easeInOut(duration: 0.2), value: showBalanceInput)
-        .undoToast()
     }
 
     private var balance: Int? {
@@ -117,25 +102,6 @@ struct StartView: View {
                 )
         }
         .accessibilityLabel(L10n.historyTitle)
-    }
-
-    private func topBarButton(systemImage: String, action: @escaping () -> Void) -> some View {
-        Button(action: action) {
-            Image(systemName: systemImage)
-                .font(.system(size: LiquidGlass.isAvailable ? 18 : 24))
-                .foregroundColor(.appLabel)
-                .frame(width: 44, height: 44)
-                .contentShape(Rectangle())
-                .glassSurface(in: Circle(), isInteractive: true, fallback: .clear)
-        }
-    }
-
-    private func openMenu() {
-        showMenu = true
-    }
-
-    private func openStatistics() {
-        showStatistics = true
     }
 
     private func openHistory() {
@@ -196,6 +162,7 @@ struct StartView: View {
 
 #Preview {
     StartView()
+        .undoToast()
         .modelContainer(makePreviewModelContainer())
 }
 

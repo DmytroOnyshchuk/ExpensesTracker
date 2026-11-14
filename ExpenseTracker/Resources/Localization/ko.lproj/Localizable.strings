@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "설정";
 "MENU_SPENT_IN_MONTH" = "%@ 지출";
 
+// MARK: - Tabs
+"TAB_HOME" = "홈";
+"TAB_STATISTICS" = "통계";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "편집";
 "TRANSACTION_EDIT_CATEGORY" = "카테고리";

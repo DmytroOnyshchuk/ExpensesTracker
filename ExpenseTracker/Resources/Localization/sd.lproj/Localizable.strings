@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "سيٽنگون";
 "MENU_SPENT_IN_MONTH" = "ڪل خرچ · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "گهر";
+"TAB_STATISTICS" = "انگ اکر";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ترميم";
 "TRANSACTION_EDIT_CATEGORY" = "درجو";

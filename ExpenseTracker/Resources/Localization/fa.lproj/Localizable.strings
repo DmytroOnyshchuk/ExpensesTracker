@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "تنظیمات";
 "MENU_SPENT_IN_MONTH" = "هزینه‌های %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "خانه";
+"TAB_STATISTICS" = "آمار";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ویرایش";
 "TRANSACTION_EDIT_CATEGORY" = "دسته‌بندی";

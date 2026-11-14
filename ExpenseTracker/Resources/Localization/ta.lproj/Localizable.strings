@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "அமைப்புகள்";
 "MENU_SPENT_IN_MONTH" = "மொத்த செலவு · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "முகப்பு";
+"TAB_STATISTICS" = "புள்ளிவிவரம்";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "திருத்து";
 "TRANSACTION_EDIT_CATEGORY" = "வகை";

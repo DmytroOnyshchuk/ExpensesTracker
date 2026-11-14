@@ -12,7 +12,7 @@ import SwiftUI
 struct ExpenseTracker: App {
     var body: some Scene {
         WindowGroup {
-            StartView()
+            RootTabView()
                 .preferredColorScheme(ThemeManager.shared.colorScheme)
         }
         .modelContainer(for: [Transaction.self, TransactionCategory.self]) { result in

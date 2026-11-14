@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Mipangilio";
 "MENU_SPENT_IN_MONTH" = "Matumizi ya %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Mwanzo";
+"TAB_STATISTICS" = "Takwimu";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Hariri";
 "TRANSACTION_EDIT_CATEGORY" = "Kategoria";

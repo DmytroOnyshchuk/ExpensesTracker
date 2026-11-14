@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Izilungiselelo";
 "MENU_SPENT_IN_MONTH" = "Isamba esichithiwe · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Ekhaya";
+"TAB_STATISTICS" = "Izibalo";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Hlela";
 "TRANSACTION_EDIT_CATEGORY" = "Isigaba";

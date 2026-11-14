@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "הגדרות";
 "MENU_SPENT_IN_MONTH" = "הוצאות ב%@";
 
+// MARK: - Tabs
+"TAB_HOME" = "בית";
+"TAB_STATISTICS" = "סטטיסטיקה";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "עריכה";
 "TRANSACTION_EDIT_CATEGORY" = "קטגוריה";

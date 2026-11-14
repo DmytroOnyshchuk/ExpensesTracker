@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Sozlamalar";
 "MENU_SPENT_IN_MONTH" = "Jami sarflandi · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Asosiy";
+"TAB_STATISTICS" = "Statistika";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Tahrirlash";
 "TRANSACTION_EDIT_CATEGORY" = "Toifa";

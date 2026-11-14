@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "सेटिंग्स";
 "MENU_SPENT_IN_MONTH" = "%@ में खर्च";
 
+// MARK: - Tabs
+"TAB_HOME" = "होम";
+"TAB_STATISTICS" = "आँकड़े";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "संपादित करें";
 "TRANSACTION_EDIT_CATEGORY" = "श्रेणी";

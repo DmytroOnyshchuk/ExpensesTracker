@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "設定";
 "MENU_SPENT_IN_MONTH" = "%@支出";
 
+// MARK: - Tabs
+"TAB_HOME" = "主頁";
+"TAB_STATISTICS" = "統計";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "編輯";
 "TRANSACTION_EDIT_CATEGORY" = "類別";

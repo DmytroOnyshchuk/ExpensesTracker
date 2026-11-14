@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "సెట్టింగ్‌లు";
 "MENU_SPENT_IN_MONTH" = "మొత్తం ఖర్చు · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "హోమ్";
+"TAB_STATISTICS" = "గణాంకాలు";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "సవరించండి";
 "TRANSACTION_EDIT_CATEGORY" = "వర్గం";

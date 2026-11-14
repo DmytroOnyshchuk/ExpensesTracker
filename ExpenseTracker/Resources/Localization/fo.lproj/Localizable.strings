@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Stillingar";
 "MENU_SPENT_IN_MONTH" = "Brúkt í alt · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Heim";
+"TAB_STATISTICS" = "Hagtøl";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Broyt";
 "TRANSACTION_EDIT_CATEGORY" = "Bólkur";

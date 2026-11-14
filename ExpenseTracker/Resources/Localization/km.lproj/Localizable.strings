@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "ការកំណត់";
 "MENU_SPENT_IN_MONTH" = "ចំណាយសរុប · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "ទំព័រដើម";
+"TAB_STATISTICS" = "ស្ថិតិ";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "កែ";
 "TRANSACTION_EDIT_CATEGORY" = "ប្រភេទ";

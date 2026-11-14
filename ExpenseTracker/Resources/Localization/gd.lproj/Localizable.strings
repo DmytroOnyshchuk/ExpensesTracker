@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Roghainnean";
 "MENU_SPENT_IN_MONTH" = "Iomlan air a chosg · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Dachaigh";
+"TAB_STATISTICS" = "Staitistearachd";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Deasaich";
 "TRANSACTION_EDIT_CATEGORY" = "Roinn-seòrsa";

@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Parameters";
 "MENU_SPENT_IN_MONTH" = "Total expendì · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Partenza";
+"TAB_STATISTICS" = "Statistica";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Modifitgar";
 "TRANSACTION_EDIT_CATEGORY" = "Categoria";

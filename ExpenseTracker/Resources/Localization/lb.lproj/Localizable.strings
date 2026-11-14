@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Astellungen";
 "MENU_SPENT_IN_MONTH" = "Total ausginn · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Start";
+"TAB_STATISTICS" = "Statistiken";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Änneren";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorie";

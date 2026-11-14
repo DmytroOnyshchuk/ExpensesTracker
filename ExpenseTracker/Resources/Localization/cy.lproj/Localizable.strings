@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Gosodiadau";
 "MENU_SPENT_IN_MONTH" = "Cyfanswm a wariwyd · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Hafan";
+"TAB_STATISTICS" = "Ystadegau";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Golygu";
 "TRANSACTION_EDIT_CATEGORY" = "Categori";

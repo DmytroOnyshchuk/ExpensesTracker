@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "ဆက်တင်များ";
 "MENU_SPENT_IN_MONTH" = "စုစုပေါင်း အသုံးစရိတ် · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "ပင်မ";
+"TAB_STATISTICS" = "စာရင်းအင်း";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ပြင်ရန်";
 "TRANSACTION_EDIT_CATEGORY" = "အမျိုးအစား";

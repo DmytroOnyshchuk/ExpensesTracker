@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Nastavenia";
 "MENU_SPENT_IN_MONTH" = "Minuté za %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Domov";
+"TAB_STATISTICS" = "Štatistiky";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Upraviť";
 "TRANSACTION_EDIT_CATEGORY" = "Kategória";

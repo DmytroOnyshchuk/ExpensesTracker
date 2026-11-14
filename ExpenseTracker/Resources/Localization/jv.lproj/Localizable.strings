@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Setelan";
 "MENU_SPENT_IN_MONTH" = "Total sing dientekake · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Ngarep";
+"TAB_STATISTICS" = "Statistik";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Owahi";
 "TRANSACTION_EDIT_CATEGORY" = "Kategori";

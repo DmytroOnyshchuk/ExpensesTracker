@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "การตั้งค่า";
 "MENU_SPENT_IN_MONTH" = "ใช้จ่ายในเดือน%@";
 
+// MARK: - Tabs
+"TAB_HOME" = "หน้าหลัก";
+"TAB_STATISTICS" = "สถิติ";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "แก้ไข";
 "TRANSACTION_EDIT_CATEGORY" = "หมวดหมู่";

@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "პარამეტრები";
 "MENU_SPENT_IN_MONTH" = "სულ დახარჯული · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "მთავარი";
+"TAB_STATISTICS" = "სტატისტიკა";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "რედაქტირება";
 "TRANSACTION_EDIT_CATEGORY" = "კატეგორია";

@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Tautuhinga";
 "MENU_SPENT_IN_MONTH" = "Tapeke i whakapaua · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Kāinga";
+"TAB_STATISTICS" = "Tatauranga";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Whakatika";
 "TRANSACTION_EDIT_CATEGORY" = "Kāwai";

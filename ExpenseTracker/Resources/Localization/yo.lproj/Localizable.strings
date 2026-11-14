@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Ètò";
 "MENU_SPENT_IN_MONTH" = "Àpapọ̀ tí a ná · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Ilé";
+"TAB_STATISTICS" = "Ìṣirò";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Ṣàtúnṣe";
 "TRANSACTION_EDIT_CATEGORY" = "Ẹ̀ka";

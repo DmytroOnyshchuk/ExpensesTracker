@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "સેટિંગ્સ";
 "MENU_SPENT_IN_MONTH" = "કુલ ખર્ચ · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "હોમ";
+"TAB_STATISTICS" = "આંકડા";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "સંપાદિત કરો";
 "TRANSACTION_EDIT_CATEGORY" = "શ્રેણી";

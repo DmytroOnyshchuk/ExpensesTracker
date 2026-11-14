@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "ቅንብሮች";
 "MENU_SPENT_IN_MONTH" = "ጠቅላላ ወጪ · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "መነሻ";
+"TAB_STATISTICS" = "ስታቲስቲክስ";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "አርትዕ";
 "TRANSACTION_EDIT_CATEGORY" = "ምድብ";

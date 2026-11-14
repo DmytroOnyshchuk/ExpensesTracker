@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "ڕێکخستنەکان";
 "MENU_SPENT_IN_MONTH" = "کۆی خەرجکراو · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "سەرەکی";
+"TAB_STATISTICS" = "ئامار";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "دەستکاری";
 "TRANSACTION_EDIT_CATEGORY" = "پۆل";

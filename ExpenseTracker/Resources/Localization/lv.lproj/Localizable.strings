@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Iestatījumi";
 "MENU_SPENT_IN_MONTH" = "Kopā iztērēts · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Sākums";
+"TAB_STATISTICS" = "Statistika";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Rediģēt";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorija";

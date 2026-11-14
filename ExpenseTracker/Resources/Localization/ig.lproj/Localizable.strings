@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Ntọala";
 "MENU_SPENT_IN_MONTH" = "Mkpokọta e mefuru · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Ụlọ";
+"TAB_STATISTICS" = "Ọnụ ọgụgụ";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Dezie";
 "TRANSACTION_EDIT_CATEGORY" = "Ụdị";

@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "الإعدادات";
 "MENU_SPENT_IN_MONTH" = "المصروفات في %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "الرئيسية";
+"TAB_STATISTICS" = "الإحصائيات";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "تعديل";
 "TRANSACTION_EDIT_CATEGORY" = "الفئة";

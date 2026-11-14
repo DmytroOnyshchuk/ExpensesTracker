@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "ترتیبات";
 "MENU_SPENT_IN_MONTH" = "%@ کے اخراجات";
 
+// MARK: - Tabs
+"TAB_HOME" = "ہوم";
+"TAB_STATISTICS" = "اعداد و شمار";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ترمیم کریں";
 "TRANSACTION_EDIT_CATEGORY" = "زمرہ";

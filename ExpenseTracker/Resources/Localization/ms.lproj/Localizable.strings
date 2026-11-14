@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Tetapan";
 "MENU_SPENT_IN_MONTH" = "Perbelanjaan %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Utama";
+"TAB_STATISTICS" = "Statistik";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Edit";
 "TRANSACTION_EDIT_CATEGORY" = "Kategori";

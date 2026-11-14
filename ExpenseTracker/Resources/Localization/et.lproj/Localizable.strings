@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Seaded";
 "MENU_SPENT_IN_MONTH" = "Kokku kulutatud · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Avaleht";
+"TAB_STATISTICS" = "Statistika";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Muuda";
 "TRANSACTION_EDIT_CATEGORY" = "Kategooria";

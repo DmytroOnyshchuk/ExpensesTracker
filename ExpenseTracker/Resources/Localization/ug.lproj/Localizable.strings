@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "تەڭشەكلەر";
 "MENU_SPENT_IN_MONTH" = "جەمئىي چىقىم · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "باش بەت";
+"TAB_STATISTICS" = "ستاتىستىكا";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "تەھرىرلە";
 "TRANSACTION_EDIT_CATEGORY" = "تۈر";

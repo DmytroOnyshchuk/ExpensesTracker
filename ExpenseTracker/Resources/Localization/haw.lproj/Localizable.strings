@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Hoʻonohonoho";
 "MENU_SPENT_IN_MONTH" = "Huina i hoʻolilo ʻia · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Home";
+"TAB_STATISTICS" = "Helu ʻikepili";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Hoʻoponopono";
 "TRANSACTION_EDIT_CATEGORY" = "Māhele";

@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Beállítások";
 "MENU_SPENT_IN_MONTH" = "Összes költés · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Kezdőlap";
+"TAB_STATISTICS" = "Statisztika";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Szerkesztés";
 "TRANSACTION_EDIT_CATEGORY" = "Kategória";

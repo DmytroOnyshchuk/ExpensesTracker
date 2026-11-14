@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Mîheng";
 "MENU_SPENT_IN_MONTH" = "Tevahiya xerckirî · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Sereke";
+"TAB_STATISTICS" = "Statîstîk";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Sererast bike";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorî";

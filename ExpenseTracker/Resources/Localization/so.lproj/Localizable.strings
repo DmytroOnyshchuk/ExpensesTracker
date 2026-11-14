@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Dejinta";
 "MENU_SPENT_IN_MONTH" = "Wadarta la kharash gareeyay · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Hoyga";
+"TAB_STATISTICS" = "Tirakoob";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Wax ka beddel";
 "TRANSACTION_EDIT_CATEGORY" = "Qayb";

@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Instellings";
 "MENU_SPENT_IN_MONTH" = "Spandeer in %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Tuis";
+"TAB_STATISTICS" = "Statistiek";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Wysig";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorie";

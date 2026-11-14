@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "සැකසුම්";
 "MENU_SPENT_IN_MONTH" = "මුළු වියදම · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "මුල් පිටුව";
+"TAB_STATISTICS" = "සංඛ්‍යාලේඛන";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "සංස්කරණය";
 "TRANSACTION_EDIT_CATEGORY" = "ප්‍රවර්ගය";

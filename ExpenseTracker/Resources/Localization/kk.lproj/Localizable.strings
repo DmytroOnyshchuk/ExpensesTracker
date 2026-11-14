@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Баптаулар";
 "MENU_SPENT_IN_MONTH" = "Барлығы жұмсалды · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Басты";
+"TAB_STATISTICS" = "Статистика";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Өңдеу";
 "TRANSACTION_EDIT_CATEGORY" = "Санат";

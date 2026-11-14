@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Setări";
 "MENU_SPENT_IN_MONTH" = "Cheltuit în %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Acasă";
+"TAB_STATISTICS" = "Statistici";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Editează";
 "TRANSACTION_EDIT_CATEGORY" = "Categorie";

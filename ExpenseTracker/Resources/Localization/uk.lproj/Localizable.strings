@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Налаштування";
 "MENU_SPENT_IN_MONTH" = "Витрачено за %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Головна";
+"TAB_STATISTICS" = "Статистика";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Редагування";
 "TRANSACTION_EDIT_CATEGORY" = "Стаття";

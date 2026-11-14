@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "ছেটিংছ";
 "MENU_SPENT_IN_MONTH" = "মুঠ খৰচ · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "গৃহ";
+"TAB_STATISTICS" = "পৰিসংখ্যা";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "সম্পাদনা কৰক";
 "TRANSACTION_EDIT_CATEGORY" = "শ্ৰেণী";

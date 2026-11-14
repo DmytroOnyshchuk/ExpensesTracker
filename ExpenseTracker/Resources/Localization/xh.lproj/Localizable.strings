@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Iisetingi";
 "MENU_SPENT_IN_MONTH" = "Iyonke echithiweyo · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Ekhaya";
+"TAB_STATISTICS" = "Izibalo";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Hlela";
 "TRANSACTION_EDIT_CATEGORY" = "Udidi";

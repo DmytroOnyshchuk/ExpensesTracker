@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Жөндөөлөр";
 "MENU_SPENT_IN_MONTH" = "Баары сарпталды · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Башкы";
+"TAB_STATISTICS" = "Статистика";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Түзөтүү";
 "TRANSACTION_EDIT_CATEGORY" = "Категория";

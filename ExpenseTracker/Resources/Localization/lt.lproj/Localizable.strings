@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Nustatymai";
 "MENU_SPENT_IN_MONTH" = "Iš viso išleista · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Pradžia";
+"TAB_STATISTICS" = "Statistika";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Redaguoti";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorija";

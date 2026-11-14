@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "সেটিংস";
 "MENU_SPENT_IN_MONTH" = "মোট খরচ · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "হোম";
+"TAB_STATISTICS" = "পরিসংখ্যান";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "সম্পাদনা";
 "TRANSACTION_EDIT_CATEGORY" = "বিভাগ";

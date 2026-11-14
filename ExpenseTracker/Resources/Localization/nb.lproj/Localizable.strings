@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Innstillinger";
 "MENU_SPENT_IN_MONTH" = "Brukt i %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Hjem";
+"TAB_STATISTICS" = "Statistikk";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Rediger";
 "TRANSACTION_EDIT_CATEGORY" = "Kategori";

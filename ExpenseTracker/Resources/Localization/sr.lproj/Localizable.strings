@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Подешавања";
 "MENU_SPENT_IN_MONTH" = "Потрошено за %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Почетна";
+"TAB_STATISTICS" = "Статистика";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Уреди";
 "TRANSACTION_EDIT_CATEGORY" = "Категорија";

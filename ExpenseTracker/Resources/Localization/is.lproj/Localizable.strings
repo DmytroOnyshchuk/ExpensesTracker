@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Stillingar";
 "MENU_SPENT_IN_MONTH" = "Samtals eytt · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Heim";
+"TAB_STATISTICS" = "Tölfræði";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Breyta";
 "TRANSACTION_EDIT_CATEGORY" = "Flokkur";

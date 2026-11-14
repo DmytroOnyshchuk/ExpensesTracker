@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Cài đặt";
 "MENU_SPENT_IN_MONTH" = "Đã chi trong %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Trang chủ";
+"TAB_STATISTICS" = "Thống kê";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Sửa";
 "TRANSACTION_EDIT_CATEGORY" = "Danh mục";

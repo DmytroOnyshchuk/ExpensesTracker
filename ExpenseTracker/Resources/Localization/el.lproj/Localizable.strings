@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Ρυθμίσεις";
 "MENU_SPENT_IN_MONTH" = "Σύνολο εξόδων · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Αρχική";
+"TAB_STATISTICS" = "Στατιστικά";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Επεξεργασία";
 "TRANSACTION_EDIT_CATEGORY" = "Κατηγορία";

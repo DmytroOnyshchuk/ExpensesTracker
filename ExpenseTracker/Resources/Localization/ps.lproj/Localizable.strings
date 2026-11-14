@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "تنظیمات";
 "MENU_SPENT_IN_MONTH" = "ټول لګښت · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "کور";
+"TAB_STATISTICS" = "شمېرې";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "سمول";
 "TRANSACTION_EDIT_CATEGORY" = "کټګوري";

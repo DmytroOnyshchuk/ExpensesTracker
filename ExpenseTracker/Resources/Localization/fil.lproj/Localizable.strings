@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Mga Setting";
 "MENU_SPENT_IN_MONTH" = "Gastos sa %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Home";
+"TAB_STATISTICS" = "Estadistika";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "I-edit";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorya";

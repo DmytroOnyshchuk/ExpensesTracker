@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "ਸੈਟਿੰਗਾਂ";
 "MENU_SPENT_IN_MONTH" = "ਕੁੱਲ ਖਰਚ · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "ਹੋਮ";
+"TAB_STATISTICS" = "ਅੰਕੜੇ";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ਸੋਧੋ";
 "TRANSACTION_EDIT_CATEGORY" = "ਸ਼੍ਰੇਣੀ";

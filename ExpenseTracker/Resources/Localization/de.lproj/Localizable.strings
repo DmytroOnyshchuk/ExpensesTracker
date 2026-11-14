@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Einstellungen";
 "MENU_SPENT_IN_MONTH" = "Ausgaben im %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Start";
+"TAB_STATISTICS" = "Statistik";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Bearbeiten";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorie";

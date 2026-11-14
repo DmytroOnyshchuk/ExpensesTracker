@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "ಸೆಟ್ಟಿಂಗ್‌ಗಳು";
 "MENU_SPENT_IN_MONTH" = "ಒಟ್ಟು ವೆಚ್ಚ · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "ಮುಖಪುಟ";
+"TAB_STATISTICS" = "ಅಂಕಿಅಂಶಗಳು";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ಎಡಿಟ್ ಮಾಡಿ";
 "TRANSACTION_EDIT_CATEGORY" = "ವರ್ಗ";

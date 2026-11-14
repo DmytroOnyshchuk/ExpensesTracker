@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Ayarlar";
 "MENU_SPENT_IN_MONTH" = "%@ xərcləri";
 
+// MARK: - Tabs
+"TAB_HOME" = "Əsas";
+"TAB_STATISTICS" = "Statistika";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Redaktə";
 "TRANSACTION_EDIT_CATEGORY" = "Kateqoriya";

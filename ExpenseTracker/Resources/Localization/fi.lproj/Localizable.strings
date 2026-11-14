@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Asetukset";
 "MENU_SPENT_IN_MONTH" = "Käytetty yhteensä · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Koti";
+"TAB_STATISTICS" = "Tilastot";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Muokkaa";
 "TRANSACTION_EDIT_CATEGORY" = "Luokka";

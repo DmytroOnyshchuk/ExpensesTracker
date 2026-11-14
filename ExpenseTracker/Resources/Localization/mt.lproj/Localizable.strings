@@ -60,6 +60,10 @@
 "MENU_SETTINGS" = "Settings";
 "MENU_SPENT_IN_MONTH" = "Total minfuq · %@";
 
+// MARK: - Tabs
+"TAB_HOME" = "Ewlenija";
+"TAB_STATISTICS" = "Statistika";
+
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Editja";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorija";
