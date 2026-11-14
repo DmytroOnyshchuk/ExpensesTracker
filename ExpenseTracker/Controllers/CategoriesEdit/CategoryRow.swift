@@ -19,17 +19,11 @@ struct CategoryRow: View {
     var subtitle: String?
     var transactionsCount: Int?
     var accessory: Accessory = .chevron
-    var showsLeadingDragHandle: Bool = false
     var action: () -> Void
 
     var body: some View {
         Button(action: action) {
             HStack(spacing: 16) {
-                if showsLeadingDragHandle {
-                    dragHandle
-                        .opacity(category.isDirectory ? 0 : 1)
-                }
-
                 icon
 
                 VStack(alignment: .leading, spacing: 2) {
@@ -72,18 +66,6 @@ struct CategoryRow: View {
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
-    }
-
-    private var dragHandle: some View {
-        VStack(spacing: 3) {
-            ForEach(0 ..< 3, id: \.self) { _ in
-                HStack(spacing: 3) {
-                    Circle().frame(width: 4, height: 4)
-                    Circle().frame(width: 4, height: 4)
-                }
-            }
-        }
-        .foregroundColor(.appWhite.opacity(0.5))
     }
 
     @ViewBuilder

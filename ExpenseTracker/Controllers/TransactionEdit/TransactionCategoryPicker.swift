@@ -25,11 +25,7 @@ struct TransactionCategoryPicker: View {
     var body: some View {
         List {
             ForEach(visibleCategories, id: \.id) { category in
-                CategoryRow(
-                    category: category,
-                    accessory: category.isDirectory ? .chevron : .none,
-                    showsLeadingDragHandle: true
-                ) {
+                CategoryRow(category: category) {
                     if category.isDirectory {
                         openedFolder = category
                     } else {
