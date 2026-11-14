@@ -25,48 +25,42 @@ struct CustomIconPickerView: View {
         "figure.skiing.downhill", "checkerboard.rectangle",
 
         // Transportation
-        "car.fill", "bus.fill", "airplane", "airplane.departure", "airplane.arrival", "bicycle", "scooter",
-        "train.side.front.car", "tram.fill", "ferry.fill", "sailboat.fill", "truck.box.fill", "suv.side.fill",
+        "airplane.departure", "airplane.arrival", "scooter", "train.side.front.car", "tram.fill", "ferry.fill",
+        "sailboat.fill", "truck.box.fill", "suv.side.fill",
 
         // Shopping & Money
-        "cart.fill", "bag.fill", "basket.fill", "creditcard.fill", "banknote.fill", "eurosign.circle.fill",
-        "yensign.circle.fill", "sterlingsign.circle.fill", "bitcoinsign.circle.fill", "bag.badge.plus",
-        "bag.badge.minus",
+        "bag.fill", "basket.fill", "eurosign.circle.fill", "yensign.circle.fill", "sterlingsign.circle.fill",
+        "bitcoinsign.circle.fill", "bag.badge.plus", "bag.badge.minus",
 
         // Home & Living
-        "house.fill", "building.fill", "bed.double.fill", "sofa.fill", "chair.fill", "chair.lounge.fill",
-        "lamp.table.fill", "lightbulb.fill", "fan.fill", "air.conditioner.horizontal.fill", "washer.fill",
-        "dryer.fill", "dishwasher.fill", "microwave.fill",
+        "building.fill", "bed.double.fill", "sofa.fill", "chair.fill", "chair.lounge.fill", "lamp.table.fill",
+        "fan.fill", "air.conditioner.horizontal.fill", "washer.fill", "dryer.fill", "dishwasher.fill",
+        "microwave.fill",
 
         // Food & Drink
-        "fork.knife", "fork.knife.circle.fill", "cup.and.saucer.fill", "wineglass.fill", "mug.fill",
-        "takeoutbag.and.cup.and.straw.fill", "apple.logo", "birthday.cake.fill",
+        "fork.knife.circle.fill", "mug.fill", "apple.logo", "birthday.cake.fill",
 
         // Health & Fitness
-        "heart.fill", "stethoscope", "cross.case.fill", "pills.fill", "syringe.fill", "lungs.fill",
-        "brain.head.profile.fill", "dumbbell.fill", "figure.walk", "figure.run", "figure.yoga",
+        "pills.fill", "syringe.fill", "lungs.fill", "brain.head.profile.fill", "figure.walk", "figure.run",
+        "figure.yoga",
 
         // Technology
         "iphone", "iphone.gen3", "ipad", "ipad.gen2", "macbook", "applewatch", "airpods", "airpods.gen3",
         "display.2", "printer.fill", "video.fill", "speaker.fill", "headphones", "headphones.circle.fill",
 
         // Education & Work
-        "book.fill", "books.vertical.fill", "graduationcap.fill", "pencil", "pencil.circle.fill",
-        "pencil.and.outline", "note.text", "doc.fill", "folder.fill", "briefcase.fill", "building.2.fill",
-        "person.badge.plus.fill",
+        "books.vertical.fill", "pencil", "pencil.circle.fill", "pencil.and.outline", "note.text", "doc.fill",
+        "folder.fill", "building.2.fill", "person.badge.plus.fill",
 
         // Entertainment
-        "gamecontroller.fill", "dice.fill", "puzzlepiece.fill", "tv.fill", "film.fill", "music.note",
-        "music.note.list", "theatermasks.fill", "ticket.fill",
+        "dice.fill", "puzzlepiece.fill", "music.note.list", "ticket.fill",
 
         // Nature & Weather
         "sun.max.fill", "moon.fill", "cloud.fill", "cloud.rain.fill", "cloud.snow.fill", "bolt.fill", "tornado",
-        "hurricane", "thermometer", "drop.fill", "flame.fill", "snowflake", "leaf.arrow.circlepath",
-        "tree.fill",
+        "hurricane", "thermometer", "snowflake", "leaf.arrow.circlepath", "tree.fill",
 
         // People & Social
-        "person.2.fill", "face.dashed.fill", "hands.clap.fill", "hands.sparkles.fill", "figure.2.arms.open",
-        "message.fill", "phone.fill",
+        "face.dashed.fill", "hands.clap.fill", "hands.sparkles.fill", "figure.2.arms.open", "message.fill",
 
         // Transportation & Travel
         "suitcase.fill", "backpack.fill", "tent.fill", "map.fill", "location.fill", "compass.drawing", "globe",
@@ -77,20 +71,19 @@ struct CustomIconPickerView: View {
         "skateboard.fill", "surfboard.fill", "figure.surfing", "figure.snowboarding", "figure.skating",
 
         // Tools & Utilities
-        "hammer.fill", "wrench.fill", "screwdriver.fill", "scissors", "scissors.badge.ellipsis",
-        "paintbrush.fill", "ruler.fill", "level.fill", "flashlight.on.fill", "flashlight.off.fill", "key.fill",
+        "wrench.fill", "screwdriver.fill", "scissors.badge.ellipsis", "paintbrush.fill", "ruler.fill",
+        "level.fill", "flashlight.on.fill", "flashlight.off.fill", "key.fill",
 
         // Fashion & Style
-        "tshirt.fill", "handbag.fill", "eyeglasses", "sunglasses.fill", "crown.fill", "shoe.fill",
-        "shoe.2.fill",
+        "eyeglasses", "sunglasses.fill", "crown.fill", "shoe.fill", "shoe.2.fill",
 
         // Symbols & Icons
-        "star.fill", "heart.circle.fill", "checkmark.circle.fill", "xmark.circle.fill", "plus.circle.fill",
+        "heart.circle.fill", "checkmark.circle.fill", "xmark.circle.fill", "plus.circle.fill",
         "minus.circle.fill", "exclamationmark.triangle.fill", "questionmark.circle.fill", "info.circle.fill",
         "gear", "gear.circle.fill",
 
         // Animals & Pets
-        "cat.fill", "bird.fill", "tortoise.fill", "ladybug.fill", "ant.fill", "pawprint.fill", "hare.fill",
+        "cat.fill", "bird.fill", "tortoise.fill", "ladybug.fill", "ant.fill", "hare.fill",
 
         // Business & Finance
         "chart.line.uptrend.xyaxis", "chart.bar.fill", "chart.pie.fill", "percent", "plusminus", "divide",
