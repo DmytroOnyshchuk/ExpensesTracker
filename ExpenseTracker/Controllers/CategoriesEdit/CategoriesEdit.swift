@@ -41,7 +41,7 @@ struct CategoriesEdit: View {
                 CategoryRow(
                     category: category,
                     subtitle: category.parent(from: categories)?.name.localized,
-                    transactionsCount: category.isDirectory ? nil : transactionsCounts[category.uuid] ?? 0
+                    transactionsCount: category.isDirectory ? nil : transactionsCounts[category.uuid] ?? .zero
                 ) {
                     selectedCategory = category
                 }

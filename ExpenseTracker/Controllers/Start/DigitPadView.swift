@@ -10,7 +10,7 @@ import SwiftUI
 
 struct DigitPadView: View {
     @Binding var input: AmountInput
-    var attentionTrigger = 0
+    var attentionTrigger: Int = .zero
 
     private let buttons: [[AmountInput.Key]] = [
         [.digit(1), .digit(2), .digit(3)],

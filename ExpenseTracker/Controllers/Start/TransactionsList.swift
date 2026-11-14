@@ -16,7 +16,7 @@ struct TransactionsList: View {
     private static let headerHeight = 40
     private static let sectionSpacing = 28
 
-    @State private var contentHeight: CGFloat = 0
+    @State private var contentHeight: CGFloat = .zero
     @State private var editedTransaction: Transaction?
 
     private var days: [TransactionsDay] {

@@ -14,7 +14,7 @@ struct TransactionDraft {
     var date: Date
     var comment: String
 
-    var canSave: Bool { amount != 0 }
+    var canSave: Bool { amount != .zero }
 
     init(_ transaction: Transaction) {
         self.category = transaction.category

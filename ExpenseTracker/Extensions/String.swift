@@ -2,22 +2,6 @@ import Foundation
 import UIKit
 
 extension String {
-    var asInt: Int {
-        Int(self) ?? 0
-    }
-
-    var asFloat: Float {
-        Float(self) ?? 0.0
-    }
-
-    var asDouble: Double {
-        Double(self) ?? 0.0
-    }
-
-    var asBool: Bool {
-        Bool(self) ?? false
-    }
-
     func toURL() -> URL? {
         URL(string: self)
     }
@@ -103,13 +87,5 @@ extension String {
         let formatter = ISO8601DateFormatter()
         formatter.formatOptions = [.withInternetDateTime]
         return formatter.date(from: self)
-    }
-
-    var convertToTime: String? {
-        let hours = asInt / 3600
-        let minutes = (asInt % 3600) / 60
-
-        let formattedTime = String(format: "%02d:%02d", hours, minutes)
-        return formattedTime
     }
 }

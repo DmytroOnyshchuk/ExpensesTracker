@@ -10,7 +10,7 @@ import UIKit
 
 open class FadeTransition: NSObject, UIViewControllerAnimatedTransitioning {
     var transitionDuration: TimeInterval = 0.5
-    var startingAlpha: CGFloat = 0.0
+    var startingAlpha: CGFloat = .zero
 
     public convenience init(transitionDuration: TimeInterval, startingAlpha: CGFloat) {
         self.init()
@@ -36,8 +36,8 @@ open class FadeTransition: NSObject, UIViewControllerAnimatedTransitioning {
 
         UIView.animate(withDuration: transitionDuration(using: transitionContext), animations: { () in
             toView.alpha = 1.0
-            fromView.alpha = 0.0
-        }, completion: { [weak self] _ in
+            fromView.alpha = .zero
+        }, completion: { _ in
             fromView.alpha = 1.0
             transitionContext.completeTransition(true)
         })

@@ -15,7 +15,7 @@ extension UIColor {
         let index = hex.index(hex.startIndex, offsetBy: 1)
         let hexString = String(hex[index...])
         let scanner = Scanner(string: hexString)
-        var hexValue: CUnsignedLongLong = 0
+        var hexValue: CUnsignedLongLong = .zero
         if scanner.scanHexInt64(&hexValue) {
             if hexString.count == 6 {
                 red = CGFloat((hexValue & 0xFF0000) >> 16) / 255.0
@@ -37,10 +37,10 @@ extension UIColor {
     }
 
     func toHexString() -> String {
-        var r: CGFloat = 0
-        var g: CGFloat = 0
-        var b: CGFloat = 0
-        var a: CGFloat = 0
+        var r: CGFloat = .zero
+        var g: CGFloat = .zero
+        var b: CGFloat = .zero
+        var a: CGFloat = .zero
 
         getRed(&r, green: &g, blue: &b, alpha: &a)
 

@@ -42,7 +42,7 @@ extension UITableView {
         let labelMessage = UILabel(frame: CGRect(x: 0, y: 0, width: bounds.size.width, height: bounds.size.height))
         labelMessage.text = message
         labelMessage.textColor = .lightGray
-        labelMessage.numberOfLines = 0
+        labelMessage.numberOfLines = .zero
         labelMessage.textAlignment = .center
         labelMessage.font = UIFont(name: "TrebuchetMS", size: 22)
         labelMessage.sizeToFit()
@@ -59,7 +59,7 @@ extension UITableView {
     func scrollToBottom(animated: Bool = true) {
         DispatchQueue.main.async {
             let lastSection = self.numberOfSections - 1
-            guard lastSection >= 0, self.numberOfRows(inSection: lastSection) > 0 else { return }
+            guard lastSection >= .zero, self.numberOfRows(inSection: lastSection) > 0 else { return }
             let lastRow = self.numberOfRows(inSection: lastSection) - 1
             let indexPath = IndexPath(row: lastRow, section: lastSection)
             self.layoutIfNeeded()
@@ -75,7 +75,7 @@ extension UITableView {
 
                 let placeholderLabel = UILabel()
                 placeholderLabel.font = .appRegularFont(ofSize: 20)
-                placeholderLabel.numberOfLines = 0
+                placeholderLabel.numberOfLines = .zero
                 placeholderLabel.textColor = .black
                 placeholderLabel.text = text ?? "No data"
                 placeholderLabel.textAlignment = .center

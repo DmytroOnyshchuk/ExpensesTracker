@@ -68,7 +68,7 @@ struct AmountInput {
         }
 
         // When the amount is erased down to zero, the input resets completely and the keypad shows the hint again.
-        if amount == 0, previousAmount != 0 {
+        if amount == .zero, previousAmount != .zero {
             reset()
         }
     }
@@ -85,7 +85,7 @@ struct AmountInput {
 
         // The fraction part is full, extra digits are ignored.
         // Exception: after "0.00" a non-zero digit replaces the last zero ("0.00" + 5 → "0.05").
-        guard digit != 0, digits.allSatisfy({ $0 == 0 }) else { return }
+        guard digit != .zero, digits.allSatisfy({ $0 == .zero }) else { return }
         digits[digits.count - 1] = digit
     }
 }
@@ -95,7 +95,7 @@ extension AmountInput {
         guard amount > 0 else { return "" }
 
         let fraction = amount % 100
-        guard fraction != 0 else { return String(amount / 100) }
+        guard fraction != .zero else { return String(amount / 100) }
 
         let text = String(format: "%d.%02d", amount / 100, fraction)
         return text.hasSuffix("0") ? String(text.dropLast()) : text

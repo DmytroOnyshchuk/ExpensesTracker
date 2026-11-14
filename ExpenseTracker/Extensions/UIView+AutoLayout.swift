@@ -74,11 +74,11 @@ extension UIView {
             centerYAnchor.constraint(equalTo: centerY).isActive = true
         }
 
-        if size.width != 0 {
+        if size.width != .zero {
             widthAnchor.constraint(equalToConstant: size.width).isActive = true
         }
 
-        if size.height != 0 {
+        if size.height != .zero {
             heightAnchor.constraint(equalToConstant: size.height).isActive = true
         }
     }

@@ -14,7 +14,7 @@ extension Double {
         let formatter = NumberFormatter()
         formatter.locale = .current
         formatter.numberStyle = .decimal
-        formatter.minimumFractionDigits = 0
+        formatter.minimumFractionDigits = .zero
         formatter.maximumFractionDigits = 2
         formatter.decimalSeparator = "."
         formatter.groupingSeparator = " "
@@ -25,7 +25,7 @@ extension Double {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal
         numberFormatter.locale = Locale.current
-        numberFormatter.minimumFractionDigits = 0
+        numberFormatter.minimumFractionDigits = .zero
         numberFormatter.maximumFractionDigits = 2
         return numberFormatter.string(from: NSNumber(value: self)) ?? String(self)
     }

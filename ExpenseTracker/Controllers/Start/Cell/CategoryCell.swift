@@ -12,7 +12,7 @@ struct CategoryCell: View {
     let category: TransactionCategory
     var action: () -> Bool
 
-    @State private var pulseTrigger = 0
+    @State private var pulseTrigger: Int = .zero
 
     var body: some View {
         if category.isDirectory {

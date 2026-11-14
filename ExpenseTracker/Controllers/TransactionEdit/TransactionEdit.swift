@@ -34,50 +34,47 @@ struct TransactionEdit: View {
 
     var body: some View {
         NavigationStack {
-            VStack(spacing: 0) {
-                row(L10n.transactionEditCategory) {
-                    isAmountFocused = false
-                    showCategoryPicker = true
-                } value: {
-                    valueText(draft.category.name.localized)
+            ScrollView(.vertical) {
+                VStack(spacing: 16) {
+                    header
+                        .padding(.top, 8)
+                        .padding(.bottom, 8)
+
+                    VStack(spacing: 0) {
+                        row(L10n.transactionEditCategory) {
+                            isAmountFocused = false
+                            showCategoryPicker = true
+                        } value: {
+                            valueText(draft.category.name.localized)
+                        }
+
+                        row(L10n.transactionEditDate) {
+                            isAmountFocused = false
+                            popup = .date
+                        } value: {
+                            valueText(draft.date.dayString(.dateTime.day().month(.wide).year()))
+                        }
+
+                        row(L10n.transactionEditTime) {
+                            isAmountFocused = false
+                            popup = .time
+                        } value: {
+                            valueText(draft.date.formatted(date: .omitted, time: .shortened))
+                        }
+                    }
+                    .padding(.vertical, 6)
+                    .background(.appLabel.opacity(0.1))
+                    .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+
+                    commentRow
+
+                    deleteButton
+                        .padding(.top, 8)
                 }
-                separator
-                    .padding(.leading, 16)
-
-                row(L10n.transactionEditAmount) {
-                    isAmountFocused = true
-                } value: {
-                    amountField
-                }
-                separator
-                    .padding(.leading, 16)
-
-                row(L10n.transactionEditDate) {
-                    isAmountFocused = false
-                    popup = .date
-                } value: {
-                    valueText(draft.date.dayString(.dateTime.day().month(.wide).year()))
-                }
-                separator
-                    .padding(.leading, 16)
-
-                row(L10n.transactionEditTime) {
-                    isAmountFocused = false
-                    popup = .time
-                } value: {
-                    valueText(draft.date.formatted(date: .omitted, time: .shortened))
-                }
-                separator
-                    .padding(.leading, 16)
-
-                commentRow
-                separator
-
-                deleteButton
-                    .padding(.top, 24)
-
-                Spacer(minLength: 16)
+                .padding(16)
+                .frame(maxWidth: .infinity, alignment: .top)
             }
+            .scrollDismissesKeyboard(.interactively)
             .background(.appMain)
             .navigationTitle(L10n.transactionEditTitle)
             .navigationBarTitleDisplayMode(.inline)
@@ -127,10 +124,24 @@ struct TransactionEdit: View {
         .animation(.easeInOut(duration: 0.2), value: popup)
     }
 
-    private var separator: some View {
-        Rectangle()
-            .fill(.appSecond)
-            .frame(height: 1)
+    private var header: some View {
+        VStack(spacing: 12) {
+            Button {
+                isAmountFocused = false
+                showCategoryPicker = true
+            } label: {
+                draft.category.categoryIcon.image
+                    .font(.system(size: 44))
+                    .foregroundColor(draft.category.categoryIcon.color)
+                    .frame(width: 72, height: 72)
+                    .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel(draft.category.name.localized)
+
+            amountField
+        }
+        .frame(maxWidth: .infinity)
     }
 
     private var commentRow: some View {
@@ -138,22 +149,17 @@ struct TransactionEdit: View {
             isAmountFocused = false
             popup = .comment
         } label: {
-            HStack(spacing: 12) {
-                Text(draft.comment.isBlank ? L10n.transactionEditAddComment : draft.comment)
-                    .font(.appLight(draft.comment.isBlank ? 18 : 20))
-                    .foregroundColor(draft.comment.isBlank ? .appLabel : .appWhite)
-                    .multilineTextAlignment(.leading)
-                    .lineLimit(4)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-
-                Image(systemName: "chevron.right")
-                    .font(.system(size: 15, weight: .semibold))
-                    .foregroundColor(.appLabel)
-            }
-            .padding(.horizontal, 16)
-            .padding(.vertical, 12)
-            .frame(minHeight: 60)
-            .contentShape(Rectangle())
+            Text(draft.comment.isBlank ? L10n.transactionEditAddComment : draft.comment)
+                .font(.appLight(18))
+                .foregroundColor(draft.comment.isBlank ? .appLabel : .appWhite)
+                .multilineTextAlignment(.leading)
+                .lineLimit(6)
+                .frame(maxWidth: .infinity, minHeight: 72, alignment: .topLeading)
+                .padding(.horizontal, 20)
+                .padding(.vertical, 16)
+                .background(.appLabel.opacity(0.1))
+                .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+                .contentShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
         }
         .buttonStyle(.plain)
     }
@@ -208,24 +214,34 @@ struct TransactionEdit: View {
     }
 
     private var amountField: some View {
-        ZStack(alignment: .trailing) {
+        ZStack {
             TextField("", text: $amountText)
                 .keyboardType(.decimalPad)
                 .focused($isAmountFocused)
-                .font(.appLight(20))
+                .font(.appMedium(44))
                 .foregroundColor(.appWhite)
-                .multilineTextAlignment(.trailing)
+                .multilineTextAlignment(.center)
                 .opacity(isAmountFocused ? 1 : 0)
 
-            valueText(draft.amount.getAmount())
+            Text(draft.amount.getAmount())
+                .font(.appMedium(44))
+                .foregroundColor(.appWhite)
+                .lineLimit(1)
+                .minimumScaleFactor(0.5)
                 .opacity(isAmountFocused ? 0 : 1)
                 .allowsHitTesting(false)
+        }
+        .frame(maxWidth: .infinity)
+        .frame(height: 56)
+        .contentShape(Rectangle())
+        .onTapGesture {
+            isAmountFocused = true
         }
     }
 
     private func valueText(_ text: String) -> some View {
         Text(text)
-            .font(.appLight(20))
+            .font(.appLight(18))
             .foregroundColor(.appWhite)
             .lineLimit(1)
     }
@@ -246,10 +262,10 @@ struct TransactionEdit: View {
                 value()
 
                 Image(systemName: "chevron.right")
-                    .font(.system(size: 15, weight: .semibold))
-                    .foregroundColor(.appLabel)
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundColor(.appWhite.opacity(0.6))
             }
-            .padding(.horizontal, 16)
+            .padding(.horizontal, 20)
             .frame(height: 60)
             .contentShape(Rectangle())
         }
@@ -260,9 +276,9 @@ struct TransactionEdit: View {
         let calendar = Calendar.current
         let components = calendar.dateComponents([.hour, .minute, .second], from: time)
         return calendar.date(
-            bySettingHour: components.hour ?? 0,
-            minute: components.minute ?? 0,
-            second: components.second ?? 0,
+            bySettingHour: components.hour ?? .zero,
+            minute: components.minute ?? .zero,
+            second: components.second ?? .zero,
             of: day
         ) ?? day
     }

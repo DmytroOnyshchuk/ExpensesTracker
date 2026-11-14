@@ -14,7 +14,7 @@ struct CategoryGrid: View {
     var categories: [TransactionCategory]
     var onSelect: (TransactionCategory) -> Bool
 
-    @State private var currentPage: Int? = 0
+    @State private var currentPage: Int? = .zero
     @State private var showAllCategories = false
     @State private var navigateToEditCategories = false
 

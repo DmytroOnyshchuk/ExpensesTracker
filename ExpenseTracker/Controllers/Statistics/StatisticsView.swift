@@ -27,7 +27,7 @@ struct StatisticsView: View {
         let interval = period.interval(containing: start)
         let slices = StatisticsSlice.slices(from: transactions, in: interval)
         let total = slices.reduce(0) { $0 + $1.amount }
-        let maxAmount = slices.first?.amount ?? 0
+        let maxAmount = slices.first?.amount ?? .zero
 
         ScrollView(.vertical) {
             VStack(spacing: 12) {

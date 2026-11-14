@@ -14,7 +14,7 @@ extension Int {
     var asDigits: [Int] { String(self).compactMap { $0.wholeNumberValue } }
 
     var asBool: Bool {
-        self != 0
+        self != .zero
     }
 
     func degreesToRads() -> Double {

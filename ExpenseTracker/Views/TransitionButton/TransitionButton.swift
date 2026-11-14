@@ -43,7 +43,7 @@ import UIKit
                 newIndicator.centerXAnchor.constraint(equalTo: self.centerXAnchor),
                 newIndicator.centerYAnchor.constraint(equalTo: self.centerYAnchor),
             ])
-            newIndicator.alpha = 0
+            newIndicator.alpha = .zero
         }
         return newIndicator
     }()
@@ -235,7 +235,7 @@ public enum StopAnimationStyle {
 extension UIImage {
     convenience init?(color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) {
         let rect = CGRect(origin: .zero, size: size)
-        UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
+        UIGraphicsBeginImageContextWithOptions(rect.size, false, .zero)
         color.setFill()
         UIRectFill(rect)
         let image = UIGraphicsGetImageFromCurrentImageContext()

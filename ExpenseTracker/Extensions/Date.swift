@@ -145,19 +145,19 @@ extension Date {
         let weekAgo = calendar.date(byAdding: .day, value: -7, to: Date())!
 
         if minuteAgo < self {
-            //            let diff = Calendar.current.dateComponents([.second], from: self, to: Date()).second ?? 0
+            //            let diff = Calendar.current.dateComponents([.second], from: self, to: Date()).second ?? .zero
             return "just now"
         } else if hourAgo < self {
-            let diff = Calendar.current.dateComponents([.minute], from: self, to: Date()).minute ?? 0
+            let diff = Calendar.current.dateComponents([.minute], from: self, to: Date()).minute ?? .zero
             return "\(diff)min ago"
         } else if dayAgo < self {
-            let diff = Calendar.current.dateComponents([.hour], from: self, to: Date()).hour ?? 0
+            let diff = Calendar.current.dateComponents([.hour], from: self, to: Date()).hour ?? .zero
             return "\(diff)hrs ago"
         } else if weekAgo < self {
-            let diff = Calendar.current.dateComponents([.day], from: self, to: Date()).day ?? 0
+            let diff = Calendar.current.dateComponents([.day], from: self, to: Date()).day ?? .zero
             return "\(diff)days ago"
         }
-        let diff = Calendar.current.dateComponents([.weekOfYear], from: self, to: Date()).weekOfYear ?? 0
+        let diff = Calendar.current.dateComponents([.weekOfYear], from: self, to: Date()).weekOfYear ?? .zero
         return "\(diff)weeks ago"
     }
 
@@ -179,8 +179,8 @@ extension Date {
         let calendar = Calendar(identifier: .gregorian)
 
         let currentDateComponent = calendar.dateComponents([.hour, .minute], from: date)
-        let hours = ((currentDateComponent.hour ?? 0) * 60)
-        let minutes = currentDateComponent.minute ?? 0
+        let hours = ((currentDateComponent.hour ?? .zero) * 60)
+        let minutes = currentDateComponent.minute ?? .zero
 
         return hours + minutes
     }
@@ -225,7 +225,7 @@ extension Date {
         let firstTime = Date.timeToMinutes(start)
         let lastTime = Date.timeToMinutes(end)
         var t = firstTime
-        var i = 0
+        var i: Int = .zero
         while t <= lastTime {
             t = firstTime + i * interval
             timeSlots.append(Date.minutesToHoursMinutes(t))
@@ -295,7 +295,7 @@ extension Date {
     var secondsSinceStartOfDay: Int {
         let calendar = Calendar.current
         let components = calendar.dateComponents([.hour, .minute, .second], from: self)
-        let seconds = (components.hour ?? 0) * 3600 + (components.minute ?? 0) * 60 + (components.second ?? 0)
+        let seconds = (components.hour ?? .zero) * 3600 + (components.minute ?? .zero) * 60 + (components.second ?? .zero)
         return seconds
     }
 

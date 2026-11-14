@@ -91,7 +91,7 @@ extension UIImage {
 
         let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
 
-        UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0)
+        UIGraphicsBeginImageContextWithOptions(newSize, false, .zero)
         draw(in: rect)
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
@@ -120,7 +120,7 @@ extension UIImage {
 
 extension UIImage {
     enum JPEGQuality: CGFloat {
-        case lowest = 0
+        case lowest = 0.0
         case low = 0.25
         case medium = 0.5
         case high = 0.75

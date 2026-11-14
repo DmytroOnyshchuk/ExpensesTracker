@@ -44,7 +44,7 @@ enum StatisticsPeriod: CaseIterable, Identifiable {
 
         let from = interval(containing: first, calendar: calendar).start
         let to = interval(containing: max(last, Date()), calendar: calendar).start
-        let count = (calendar.dateComponents([component], from: from, to: to).value(for: component) ?? 0) + 1
+        let count = (calendar.dateComponents([component], from: from, to: to).value(for: component) ?? .zero) + 1
         let total = transactions.reduce(0) { $0 + $1.amount }
         return total / max(count, 1)
     }

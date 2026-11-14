@@ -33,24 +33,6 @@ extension UILabel {
         }
     }
 
-    @IBInspectable var lineHeightMultipleValue: CGFloat {
-        set(value) {
-            let paragraphStyle = NSMutableParagraphStyle()
-            paragraphStyle.alignment = textAlignment
-            paragraphStyle.lineHeightMultiple = value
-            attributedText = NSAttributedString(string: text ?? "", attributes: [
-                .font: font,
-                .paragraphStyle: paragraphStyle,
-                .foregroundColor: textColor,
-            ])
-
-            invalidateIntrinsicContentSize()
-        }
-        get {
-            self.lineHeightMultipleValue
-        }
-    }
-
     @IBInspectable var fontSize: CGFloat {
         get {
             font.pointSize

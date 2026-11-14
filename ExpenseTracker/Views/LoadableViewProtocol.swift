@@ -35,7 +35,7 @@ extension LoadableViewProtocol {
 
     func hideContent() {
         isUserInteractionEnabled = false
-        alpha = 0
+        alpha = .zero
     }
 
     func stopLoadingIndicator() {

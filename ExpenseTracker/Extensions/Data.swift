@@ -8,7 +8,7 @@ extension Data {
     }
 
     func getSizeIn(_ type: DataUnits) -> Double {
-        var size = 0.0
+        var size: Double = .zero
 
         switch type {
         case .byte:

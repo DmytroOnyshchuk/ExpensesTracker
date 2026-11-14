@@ -7,16 +7,16 @@ extension Color {
             return
         }
 
-        var red: Double = 0
-        var green: Double = 0
-        var blue: Double = 0
+        var red: Double = .zero
+        var green: Double = .zero
+        var blue: Double = .zero
         var opacity: Double = opacity
 
         if hex.hasPrefix("#") {
             let start = hex.index(hex.startIndex, offsetBy: 1)
             let hexColor = String(hex[start...])
 
-            var hexNumber: UInt64 = 0
+            var hexNumber: UInt64 = .zero
             let scanner = Scanner(string: hexColor)
             scanner.scanHexInt64(&hexNumber)
 

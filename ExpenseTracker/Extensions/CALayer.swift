@@ -32,8 +32,8 @@ extension CALayer {
         var topWidth = frame.size.width; var bottomWidth = topWidth
         var leftHeight = frame.size.height; var rightHeight = leftHeight
 
-        var topXOffset: CGFloat = 0; var bottomXOffset: CGFloat = 0
-        var leftYOffset: CGFloat = 0; var rightYOffset: CGFloat = 0
+        var topXOffset: CGFloat = .zero; var bottomXOffset: CGFloat = .zero
+        var leftYOffset: CGFloat = .zero; var rightYOffset: CGFloat = .zero
 
         // Draw the corners and set side offsets
         switch maskedCorners {
@@ -137,11 +137,11 @@ extension CALayer {
         case .bottomRight:
             x = width - cornerRadius
             y = height - cornerRadius
-            startAngle = 0; endAngle = .pi / 2
+            startAngle = .zero; endAngle = .pi / 2
 
         case .topRight:
             x = width - cornerRadius
-            startAngle = .pi * 3 / 2; endAngle = 0
+            startAngle = .pi * 3 / 2; endAngle = .zero
 
         default: break
         }

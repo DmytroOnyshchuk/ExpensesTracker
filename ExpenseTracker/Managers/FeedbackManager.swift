@@ -13,7 +13,7 @@ enum FeedbackManager {
     private static let fallbackTransactionAddedSoundID: SystemSoundID = 1104
     private static let transactionAddedSoundID: SystemSoundID = {
         let url = URL(fileURLWithPath: "/System/Library/Audio/UISounds/payment_success.caf")
-        var soundID: SystemSoundID = 0
+        var soundID: SystemSoundID = .zero
         let status = AudioServicesCreateSystemSoundID(url as CFURL, &soundID)
         return status == kAudioServicesNoError ? soundID : fallbackTransactionAddedSoundID
     }()

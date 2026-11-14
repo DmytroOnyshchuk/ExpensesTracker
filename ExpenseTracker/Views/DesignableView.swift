@@ -5,7 +5,7 @@ import UIKit
         didSet { setNeedsLayout() }
     }
 
-    @IBInspectable var borderWidth: CGFloat = 0 {
+    @IBInspectable var borderWidth: CGFloat = .zero {
         didSet { setNeedsLayout() }
     }
 
@@ -13,15 +13,15 @@ import UIKit
         didSet { setNeedsLayout() }
     }
 
-    @IBInspectable var cornerRadius: CGFloat = 0 {
+    @IBInspectable var cornerRadius: CGFloat = .zero {
         didSet { setNeedsLayout() }
     }
 
-    @IBInspectable var shadowRadius: CGFloat = 0 {
+    @IBInspectable var shadowRadius: CGFloat = .zero {
         didSet { setNeedsLayout() }
     }
 
-    @IBInspectable var shadowOpacity: CGFloat = 0 {
+    @IBInspectable var shadowOpacity: CGFloat = .zero {
         didSet { setNeedsLayout() }
     }
 
@@ -53,11 +53,11 @@ import UIKit
         didSet { setNeedsLayout() }
     }
 
-    @IBInspectable var borderWidth: CGFloat = 0 {
+    @IBInspectable var borderWidth: CGFloat = .zero {
         didSet { setNeedsLayout() }
     }
 
-    @IBInspectable var cornerRadius: CGFloat = 0 {
+    @IBInspectable var cornerRadius: CGFloat = .zero {
         didSet { setNeedsLayout() }
     }
 
@@ -65,11 +65,11 @@ import UIKit
         didSet { setNeedsLayout() }
     }
 
-    @IBInspectable var shadowRadius: CGFloat = 0 {
+    @IBInspectable var shadowRadius: CGFloat = .zero {
         didSet { setNeedsLayout() }
     }
 
-    @IBInspectable var shadowOpacity: CGFloat = 0 {
+    @IBInspectable var shadowOpacity: CGFloat = .zero {
         didSet { setNeedsLayout() }
     }
 
@@ -81,7 +81,7 @@ import UIKit
         didSet { setNeedsLayout() }
     }
 
-    @IBInspectable var areaExtension: CGFloat = 0
+    @IBInspectable var areaExtension: CGFloat = .zero
 
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -147,11 +147,11 @@ protocol DesignableTextFieldDelegate: AnyObject {
         didSet { setNeedsLayout() }
     }
 
-    @IBInspectable var borderWidth: CGFloat = 0 {
+    @IBInspectable var borderWidth: CGFloat = .zero {
         didSet { setNeedsLayout() }
     }
 
-    @IBInspectable var cornerRadius: CGFloat = 0 {
+    @IBInspectable var cornerRadius: CGFloat = .zero {
         didSet { setNeedsLayout() }
     }
 
@@ -159,11 +159,11 @@ protocol DesignableTextFieldDelegate: AnyObject {
         didSet { setNeedsLayout() }
     }
 
-    @IBInspectable var shadowRadius: CGFloat = 0 {
+    @IBInspectable var shadowRadius: CGFloat = .zero {
         didSet { setNeedsLayout() }
     }
 
-    @IBInspectable var shadowOpacity: CGFloat = 0 {
+    @IBInspectable var shadowOpacity: CGFloat = .zero {
         didSet { setNeedsLayout() }
     }
 
@@ -175,7 +175,7 @@ protocol DesignableTextFieldDelegate: AnyObject {
         didSet { setNeedsLayout() }
     }
 
-    @IBInspectable var contentPadding: CGFloat = 0
+    @IBInspectable var contentPadding: CGFloat = .zero
 
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -217,11 +217,11 @@ protocol DesignableTextFieldDelegate: AnyObject {
         didSet { setNeedsLayout() }
     }
 
-    @IBInspectable var borderWidth: CGFloat = 0 {
+    @IBInspectable var borderWidth: CGFloat = .zero {
         didSet { setNeedsLayout() }
     }
 
-    @IBInspectable var cornerRadius: CGFloat = 0 {
+    @IBInspectable var cornerRadius: CGFloat = .zero {
         didSet { setNeedsLayout() }
     }
 
@@ -239,7 +239,7 @@ protocol DesignableTextFieldDelegate: AnyObject {
         didSet { setNeedsLayout() }
     }
 
-    @IBInspectable var cornerRadius: CGFloat = 0 {
+    @IBInspectable var cornerRadius: CGFloat = .zero {
         didSet { setNeedsLayout() }
     }
 

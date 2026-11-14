@@ -18,7 +18,7 @@ struct StartView: View {
     @State private var showMenu = false
     @State private var comment = ""
     @State private var showCommentInput = false
-    @State private var amountAttentionTrigger = 0
+    @State private var amountAttentionTrigger: Int = .zero
     @State private var showBalanceInput = false
     @AppStorage(UDKey.balance.rawValue) private var balanceData: Data?
     @Query(sort: \Transaction.date, order: .reverse, animation: .default) private var transactions: [Transaction]
@@ -152,7 +152,7 @@ struct StartView: View {
     }
 
     private func addTransaction(with category: TransactionCategory) -> Bool {
-        guard input.amount != 0 else {
+        guard input.amount != .zero else {
             amountAttentionTrigger += 1
             FeedbackManager.amountMissing()
             return false

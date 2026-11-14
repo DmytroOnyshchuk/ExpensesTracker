@@ -53,7 +53,7 @@ struct BalanceInputPopup: View {
     init(balance: Int?, onCancel: @escaping () -> Void, onConfirm: @escaping (Int) -> Void) {
         self.onCancel = onCancel
         self.onConfirm = onConfirm
-        _text = State(initialValue: AmountInput.text(from: balance ?? 0))
+        _text = State(initialValue: AmountInput.text(from: balance ?? .zero))
     }
 
     var body: some View {

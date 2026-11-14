@@ -22,17 +22,17 @@ open class GrowingTextView: UITextView {
     private var heightConstraint: NSLayoutConstraint?
 
     // Maximum length of text. 0 means no limit.
-    @IBInspectable open var maxLength: Int = 0
+    @IBInspectable open var maxLength: Int = .zero
 
     // Trim white space and newline characters when end editing. Default is true
     @IBInspectable open var trimWhiteSpaceWhenEndEditing: Bool = true
 
     // Customization
-    @IBInspectable open var minHeight: CGFloat = 0 {
+    @IBInspectable open var minHeight: CGFloat = .zero {
         didSet { forceLayoutSubviews() }
     }
 
-    @IBInspectable open var maxHeight: CGFloat = 0 {
+    @IBInspectable open var maxHeight: CGFloat = .zero {
         didSet { forceLayoutSubviews() }
     }
 

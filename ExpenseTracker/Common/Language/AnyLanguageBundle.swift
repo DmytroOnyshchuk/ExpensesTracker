@@ -8,12 +8,10 @@
 
 import Foundation
 
-var bundleKey: UInt8 = 0
+var bundleKey: UInt8 = .zero
 
 final class AnyLanguageBundle: Bundle {
-    override func localizedString(forKey key: String,
-                                  value: String?,
-                                  table tableName: String?) -> String {
+    override func localizedString(forKey key: String, value: String?, table tableName: String?) -> String {
         guard let path = objc_getAssociatedObject(self, &bundleKey) as? String,
               let bundle = Bundle(path: path)
         else {

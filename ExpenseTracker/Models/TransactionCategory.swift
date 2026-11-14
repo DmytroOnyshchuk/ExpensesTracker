@@ -19,7 +19,7 @@ final class TransactionCategory {
     var parentUuid: UUID?
     var sortIndex: Int = 0
 
-    init(name: TransactionCategoryName, categoryIcon: CategoryIcon, isDirectory: Bool = false, parentUuid: UUID? = nil, sortIndex: Int = 0) {
+    init(name: TransactionCategoryName, categoryIcon: CategoryIcon, isDirectory: Bool = false, parentUuid: UUID? = nil, sortIndex: Int = .zero) {
         self.uuid = UUID()
         self.name = name
         self.categoryIcon = categoryIcon

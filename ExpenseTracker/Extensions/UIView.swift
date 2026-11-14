@@ -60,7 +60,7 @@ extension UIView {
     @discardableResult
     func addBorders(edges: UIRectEdge,
                     color: UIColor,
-                    inset: CGFloat = 0.0,
+                    inset: CGFloat = .zero,
                     thickness: CGFloat = 1.0) -> [UIView] {
         var borders = [UIView]()
 
@@ -198,8 +198,8 @@ extension UIView {
     func removeShadow() {
         layer.shadowColor = nil
         layer.shadowOffset = .zero
-        layer.shadowOpacity = 0
-        layer.shadowRadius = 0
+        layer.shadowOpacity = .zero
+        layer.shadowRadius = .zero
     }
 
     func addInnerShadow(topColor: UIColor = UIColor.black.withAlphaComponent(0.3)) {
@@ -222,7 +222,7 @@ extension UIView {
         layer.addSublayer(shadowLayer)
     }
 
-    func linearGradientBackgroundBorder(angleInDegs: Int, colors: [CGColor], locations: [NSNumber]? = nil, radius: CGFloat = 0, width: CGFloat = 2) {
+    func linearGradientBackgroundBorder(angleInDegs: Int, colors: [CGColor], locations: [NSNumber]? = nil, radius: CGFloat = .zero, width: CGFloat = 2) {
         layer.cornerRadius = radius
 
         let gradientBaseLayer = CAGradientLayer()
@@ -258,7 +258,7 @@ extension UIView {
         }
     }
 
-    func linearGradientBackground(angleInDegs: Int, colors: [CGColor], locations: [NSNumber]? = nil, radius: CGFloat = 0) {
+    func linearGradientBackground(angleInDegs: Int, colors: [CGColor], locations: [NSNumber]? = nil, radius: CGFloat = .zero) {
         let gradientBaseLayer = CAGradientLayer()
         gradientBaseLayer.frame = bounds
         gradientBaseLayer.colors = colors
@@ -303,24 +303,24 @@ extension UIView {
         var endPoint: CGPoint
 
         switch true {
-        case angle == 0:
+        case angle == .zero:
             startPointX = 0.5
             startPointY = 1.0
         case angle == 45:
-            startPointX = 0.0
+            startPointX = .zero
             startPointY = 1.0
         case angle == 90:
-            startPointX = 0.0
+            startPointX = .zero
             startPointY = 0.5
         case angle == 135:
-            startPointX = 0.0
+            startPointX = .zero
             startPointY = 0.0
         case angle == 180:
             startPointX = 0.5
-            startPointY = 0.0
+            startPointY = .zero
         case angle == 225:
             startPointX = 1.0
-            startPointY = 0.0
+            startPointY = .zero
         case angle == 270:
             startPointX = 1.0
             startPointY = 0.5
@@ -352,7 +352,7 @@ extension UIView {
             DispatchQueue.main.async {
                 UIView.animate(withDuration: duration, animations: {
                     self.alpha = alpha
-                    if isHiddenFlagUse, alpha == 0 {
+                    if isHiddenFlagUse, alpha == .zero {
                         self.isHidden = true
                     } else if isHiddenFlagUse, alpha == 1 {
                         self.isHidden = false
@@ -362,7 +362,7 @@ extension UIView {
         } else {
             UIView.animate(withDuration: duration, animations: {
                 self.alpha = alpha
-                if isHiddenFlagUse, alpha == 0 {
+                if isHiddenFlagUse, alpha == .zero {
                     self.isHidden = true
                 } else if isHiddenFlagUse, alpha == 1 {
                     self.isHidden = false
@@ -376,7 +376,7 @@ extension UIView {
     }
 
     func fadeOut(_ duration: TimeInterval = 0.1, async: Bool = false, isHiddenFlagUse: Bool = false, complete: ((_ finish: Bool) -> Void)? = nil) {
-        fadeTo(0.0, duration: duration, async: async, isHiddenFlagUse: isHiddenFlagUse, complete: complete)
+        fadeTo(.zero, duration: duration, async: async, isHiddenFlagUse: isHiddenFlagUse, complete: complete)
     }
 
     @discardableResult
@@ -386,7 +386,7 @@ extension UIView {
     }
 
     func rotateView(duration: TimeInterval = 0.25, infinity: Bool = false, double: Bool = false) {
-        UIView.animate(withDuration: duration, delay: 0.0, options: .curveLinear, animations: {
+        UIView.animate(withDuration: duration, delay: .zero, options: .curveLinear, animations: {
             self.transform = self.transform.rotated(by: .pi)
         }) { [weak self] _ in
             if infinity {

@@ -8,21 +8,6 @@ extension UIApplication {
 }
 
 extension UIApplication {
-    var visibleViewController: UIViewController? {
-        guard let rootViewController = keyWindow?.rootViewController else { return nil }
-        return getVisibleViewController(rootViewController)
-    }
-
-    func showMainTabBarController(withTab tab: Int = 0, animated: Bool = true) {
-        guard let visibleVC = visibleViewController else { return }
-        if let visibleNC = visibleVC as? UINavigationController {
-            visibleNC.popToRootViewController(animated: animated)
-        } else {
-            visibleVC.navigationController?.popToRootViewController(animated: animated)
-        }
-        visibleVC.tabBarController?.selectedIndex = tab
-    }
-
     private func getVisibleViewController(_ rootViewController: UIViewController) -> UIViewController? {
         if let presentedViewController = rootViewController.presentedViewController {
             return getVisibleViewController(presentedViewController)
