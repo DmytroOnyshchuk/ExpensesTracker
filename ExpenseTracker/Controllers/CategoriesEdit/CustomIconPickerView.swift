@@ -17,32 +17,37 @@ struct CustomIconPickerView: View {
 
     private let allSFSymbols = [
         // Primary
-        "bag.fill.badge.plus", "leaf.fill", "envelope.fill", "camera.fill", "display", "keyboard.fill",
-        "speaker.wave.2.fill", "app.fill", "soccerball", "steeringwheel", "face.smiling.fill",
-        "clock.badge.exclamationmark.fill", "figure.dance", "dog.fill", "powerplug.fill", "person.3.fill",
-        "fish.fill", "carrot.fill", "guitars.fill", "at", "iphone.gen2", "person.fill",
-        "dollarsign.circle.fill", "shoeprints.fill", "figure.strengthtraining.traditional",
-        "figure.skiing.downhill", "checkerboard.rectangle",
+        "fuelpump.fill", "parkingsign.circle.fill", "tram.fill", "train.side.front.car", "scooter",
+        "bolt.car.fill", "basket.fill", "bag.fill", "shippingbox.fill", "mug.fill", "building.2.fill",
+        "key.fill", "wrench.and.screwdriver.fill", "washer.fill", "sofa.fill", "trash.fill", "wifi",
+        "antenna.radiowaves.left.and.right", "play.rectangle.fill", "laptopcomputer", "pills.fill",
+        "eyeglasses", "comb.fill", "figure.run", "ticket.fill", "popcorn.fill", "birthday.cake.fill",
+        "suitcase.fill", "bed.double.fill", "stroller.fill", "teddybear.fill", "backpack.fill", "cat.fill",
+        "building.columns.fill", "shield.fill", "doc.text.fill", "percent", "chart.line.uptrend.xyaxis",
+        "arrow.left.arrow.right", "questionmark.circle.fill", "bag.fill.badge.plus", "leaf.fill",
+        "envelope.fill", "camera.fill", "display", "keyboard.fill", "speaker.wave.2.fill", "app.fill",
+        "soccerball", "steeringwheel", "face.smiling.fill", "clock.badge.exclamationmark.fill", "figure.dance",
+        "dog.fill", "powerplug.fill", "person.3.fill", "fish.fill", "carrot.fill", "guitars.fill", "at",
+        "iphone.gen2", "person.fill", "dollarsign.circle.fill", "shoeprints.fill",
+        "figure.strengthtraining.traditional", "figure.skiing.downhill", "checkerboard.rectangle",
 
         // Transportation
-        "airplane.departure", "airplane.arrival", "scooter", "train.side.front.car", "tram.fill", "ferry.fill",
-        "sailboat.fill", "truck.box.fill", "suv.side.fill",
+        "airplane.departure", "airplane.arrival", "ferry.fill", "sailboat.fill", "truck.box.fill",
+        "suv.side.fill",
 
         // Shopping & Money
-        "bag.fill", "basket.fill", "eurosign.circle.fill", "yensign.circle.fill", "sterlingsign.circle.fill",
-        "bitcoinsign.circle.fill", "bag.badge.plus", "bag.badge.minus",
+        "eurosign.circle.fill", "yensign.circle.fill", "sterlingsign.circle.fill", "bitcoinsign.circle.fill",
+        "bag.badge.plus", "bag.badge.minus",
 
         // Home & Living
-        "building.fill", "bed.double.fill", "sofa.fill", "chair.fill", "chair.lounge.fill", "lamp.table.fill",
-        "fan.fill", "air.conditioner.horizontal.fill", "washer.fill", "dryer.fill", "dishwasher.fill",
-        "microwave.fill",
+        "building.fill", "chair.fill", "chair.lounge.fill", "lamp.table.fill", "fan.fill",
+        "air.conditioner.horizontal.fill", "dryer.fill", "dishwasher.fill", "microwave.fill",
 
         // Food & Drink
-        "fork.knife.circle.fill", "mug.fill", "apple.logo", "birthday.cake.fill",
+        "fork.knife.circle.fill", "apple.logo",
 
         // Health & Fitness
-        "pills.fill", "syringe.fill", "lungs.fill", "brain.head.profile.fill", "figure.walk", "figure.run",
-        "figure.yoga",
+        "syringe.fill", "lungs.fill", "brain.head.profile.fill", "figure.walk", "figure.yoga",
 
         // Technology
         "iphone", "iphone.gen3", "ipad", "ipad.gen2", "macbook", "applewatch", "airpods", "airpods.gen3",
@@ -50,10 +55,10 @@ struct CustomIconPickerView: View {
 
         // Education & Work
         "books.vertical.fill", "pencil", "pencil.circle.fill", "pencil.and.outline", "note.text", "doc.fill",
-        "folder.fill", "building.2.fill", "person.badge.plus.fill",
+        "folder.fill", "person.badge.plus.fill",
 
         // Entertainment
-        "dice.fill", "puzzlepiece.fill", "music.note.list", "ticket.fill",
+        "dice.fill", "puzzlepiece.fill", "music.note.list",
 
         // Nature & Weather
         "sun.max.fill", "moon.fill", "cloud.fill", "cloud.rain.fill", "cloud.snow.fill", "bolt.fill", "tornado",
@@ -63,8 +68,7 @@ struct CustomIconPickerView: View {
         "face.dashed.fill", "hands.clap.fill", "hands.sparkles.fill", "figure.2.arms.open", "message.fill",
 
         // Transportation & Travel
-        "suitcase.fill", "backpack.fill", "tent.fill", "map.fill", "location.fill", "compass.drawing", "globe",
-        "globe.americas.fill",
+        "tent.fill", "map.fill", "location.fill", "compass.drawing", "globe", "globe.americas.fill",
 
         // Sports & Activities
         "sportscourt.fill", "basketball.fill", "football.fill", "tennis.racket", "hockey.puck.fill",
@@ -72,22 +76,20 @@ struct CustomIconPickerView: View {
 
         // Tools & Utilities
         "wrench.fill", "screwdriver.fill", "scissors.badge.ellipsis", "paintbrush.fill", "ruler.fill",
-        "level.fill", "flashlight.on.fill", "flashlight.off.fill", "key.fill",
+        "level.fill", "flashlight.on.fill", "flashlight.off.fill",
 
         // Fashion & Style
-        "eyeglasses", "sunglasses.fill", "crown.fill", "shoe.fill", "shoe.2.fill",
+        "sunglasses.fill", "crown.fill", "shoe.fill", "shoe.2.fill",
 
         // Symbols & Icons
         "heart.circle.fill", "checkmark.circle.fill", "xmark.circle.fill", "plus.circle.fill",
-        "minus.circle.fill", "exclamationmark.triangle.fill", "questionmark.circle.fill", "info.circle.fill",
-        "gear", "gear.circle.fill",
+        "minus.circle.fill", "exclamationmark.triangle.fill", "info.circle.fill", "gear", "gear.circle.fill",
 
         // Animals & Pets
-        "cat.fill", "bird.fill", "tortoise.fill", "ladybug.fill", "ant.fill", "hare.fill",
+        "bird.fill", "tortoise.fill", "ladybug.fill", "ant.fill", "hare.fill",
 
         // Business & Finance
-        "chart.line.uptrend.xyaxis", "chart.bar.fill", "chart.pie.fill", "percent", "plusminus", "divide",
-        "multiply", "equal", "scale.3d", "building.columns.fill",
+        "chart.bar.fill", "chart.pie.fill", "plusminus", "divide", "multiply", "equal", "scale.3d",
     ]
 
     var body: some View {

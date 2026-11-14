@@ -88,7 +88,7 @@ struct EditCategoriesCell: View {
     var body: some View {
         Button(action: action) {
             VStack {
-                Image(systemName: "square.grid.2x2")
+                Image(systemName: "square.grid.2x2.fill")
                     .resizable()
                     .scaledToFit()
                     .foregroundColor(IconColor.yellow.color)
