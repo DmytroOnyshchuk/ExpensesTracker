@@ -11,16 +11,18 @@ import SwiftUI
 
 enum MenuItem: CaseIterable, Identifiable {
     case settings
+    case backups
     case language
     case about
 
-    static let sections: [[MenuItem]] = [[.settings], [.language, .about]]
+    static let sections: [[MenuItem]] = [[.settings, .backups], [.language, .about]]
 
     var id: Self { self }
 
     var title: String {
         switch self {
         case .settings: L10n.menuSettings
+        case .backups: L10n.menuBackups
         case .language: L10n.menuLanguage
         case .about: L10n.menuAbout
         }
@@ -29,6 +31,7 @@ enum MenuItem: CaseIterable, Identifiable {
     var systemImage: String {
         switch self {
         case .settings: "slider.horizontal.3"
+        case .backups: "externaldrive"
         case .language: "globe"
         case .about: "info.circle"
         }
@@ -40,6 +43,7 @@ struct MenuView: View {
 
     @State private var showStatistics = false
     @State private var showSettings = false
+    @State private var showBackups = false
     @State private var showAbout = false
 
     private let period = StatisticsPeriod.month
@@ -73,6 +77,9 @@ struct MenuView: View {
         .navigationDestination(isPresented: $showSettings) {
             SettingsView()
         }
+        .navigationDestination(isPresented: $showBackups) {
+            BackupsView()
+        }
         .navigationDestination(isPresented: $showAbout) {
             AboutView()
         }
@@ -92,6 +99,7 @@ struct MenuView: View {
     private func open(_ item: MenuItem) {
         switch item {
         case .settings: showSettings = true
+        case .backups: showBackups = true
         case .language: UIApplication.shared.openSettings()
         case .about: showAbout = true
         }

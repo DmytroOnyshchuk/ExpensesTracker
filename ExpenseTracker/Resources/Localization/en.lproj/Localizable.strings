@@ -58,6 +58,7 @@
 "MENU_TITLE" = "Menu";
 "MENU_BUDGET" = "Budget";
 "MENU_SETTINGS" = "Settings";
+"MENU_BACKUPS" = "Backups";
 "MENU_SPENT_IN_MONTH" = "Spent in %@";
 "MENU_LANGUAGE" = "Language";
 "MENU_ABOUT" = "About";
@@ -143,3 +144,25 @@
 "SETTINGS_THEME_INDIGO" = "Indigo";
 "SETTINGS_THEME_LIQUID_BLACK" = "Liquid black";
 "SETTINGS_THEME_SLATE" = "Slate";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Categories: %d";
+"BACKUPS_CURRENT_DATA" = "In the app";
+"BACKUPS_ERROR_CORRUPTED" = "The file is damaged or cannot be read.";
+"BACKUPS_ERROR_NEWER_VERSION" = "This backup was made by a newer version of the app.";
+"BACKUPS_ERROR_UNSUPPORTED" = "This file format is not supported.";
+"BACKUPS_EXPORT_ACTION" = "Save backup";
+"BACKUPS_EXPORT_DONE" = "Backup saved";
+"BACKUPS_EXPORT_HINT" = "Saves all categories, transactions and the balance to a single file.";
+"BACKUPS_EXPORT_SECTION" = "Export";
+"BACKUPS_IMPORT_ACTION" = "Import from file";
+"BACKUPS_IMPORT_DONE" = "Added transactions: %d, categories: %d";
+"BACKUPS_IMPORT_HINT" = "Supports backups made by this app and .mok files.";
+"BACKUPS_IMPORT_MERGE" = "Add to current data";
+"BACKUPS_IMPORT_PERIOD" = "Period: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Found in file";
+"BACKUPS_IMPORT_REPLACE" = "Replace all data";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "All current transactions and categories will be deleted. This cannot be undone.";
+"BACKUPS_IMPORT_SECTION" = "Import";
+"BACKUPS_IMPORT_SKIPPED" = "Income skipped: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Transactions: %d";

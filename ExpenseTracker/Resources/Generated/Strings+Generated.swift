@@ -28,6 +28,56 @@ internal enum L10n {
   internal static let attention = L10n.tr("Localizable", "ATTENTION", fallback: "Attention")
   /// Back
   internal static let back = L10n.tr("Localizable", "BACK", fallback: "Back")
+  /// Categories: %d
+  internal static func backupsCategoriesCount(_ p1: Int) -> String {
+    return L10n.tr("Localizable", "BACKUPS_CATEGORIES_COUNT", p1, fallback: "Categories: %d")
+  }
+  /// In the app
+  internal static let backupsCurrentData = L10n.tr("Localizable", "BACKUPS_CURRENT_DATA", fallback: "In the app")
+  /// The file is damaged or cannot be read.
+  internal static let backupsErrorCorrupted = L10n.tr("Localizable", "BACKUPS_ERROR_CORRUPTED", fallback: "The file is damaged or cannot be read.")
+  /// This backup was made by a newer version of the app.
+  internal static let backupsErrorNewerVersion = L10n.tr("Localizable", "BACKUPS_ERROR_NEWER_VERSION", fallback: "This backup was made by a newer version of the app.")
+  /// This file format is not supported.
+  internal static let backupsErrorUnsupported = L10n.tr("Localizable", "BACKUPS_ERROR_UNSUPPORTED", fallback: "This file format is not supported.")
+  /// Save backup
+  internal static let backupsExportAction = L10n.tr("Localizable", "BACKUPS_EXPORT_ACTION", fallback: "Save backup")
+  /// Backup saved
+  internal static let backupsExportDone = L10n.tr("Localizable", "BACKUPS_EXPORT_DONE", fallback: "Backup saved")
+  /// Saves all categories, transactions and the balance to a single file.
+  internal static let backupsExportHint = L10n.tr("Localizable", "BACKUPS_EXPORT_HINT", fallback: "Saves all categories, transactions and the balance to a single file.")
+  /// Export
+  internal static let backupsExportSection = L10n.tr("Localizable", "BACKUPS_EXPORT_SECTION", fallback: "Export")
+  /// Import from file
+  internal static let backupsImportAction = L10n.tr("Localizable", "BACKUPS_IMPORT_ACTION", fallback: "Import from file")
+  /// Added transactions: %d, categories: %d
+  internal static func backupsImportDone(_ p1: Int, _ p2: Int) -> String {
+    return L10n.tr("Localizable", "BACKUPS_IMPORT_DONE", p1, p2, fallback: "Added transactions: %d, categories: %d")
+  }
+  /// Supports backups made by this app and .mok files.
+  internal static let backupsImportHint = L10n.tr("Localizable", "BACKUPS_IMPORT_HINT", fallback: "Supports backups made by this app and .mok files.")
+  /// Add to current data
+  internal static let backupsImportMerge = L10n.tr("Localizable", "BACKUPS_IMPORT_MERGE", fallback: "Add to current data")
+  /// Period: %@
+  internal static func backupsImportPeriod(_ p1: Any) -> String {
+    return L10n.tr("Localizable", "BACKUPS_IMPORT_PERIOD", String(describing: p1), fallback: "Period: %@")
+  }
+  /// Found in file
+  internal static let backupsImportPreviewTitle = L10n.tr("Localizable", "BACKUPS_IMPORT_PREVIEW_TITLE", fallback: "Found in file")
+  /// Replace all data
+  internal static let backupsImportReplace = L10n.tr("Localizable", "BACKUPS_IMPORT_REPLACE", fallback: "Replace all data")
+  /// All current transactions and categories will be deleted. This cannot be undone.
+  internal static let backupsImportReplaceWarning = L10n.tr("Localizable", "BACKUPS_IMPORT_REPLACE_WARNING", fallback: "All current transactions and categories will be deleted. This cannot be undone.")
+  /// Import
+  internal static let backupsImportSection = L10n.tr("Localizable", "BACKUPS_IMPORT_SECTION", fallback: "Import")
+  /// Income skipped: %d
+  internal static func backupsImportSkipped(_ p1: Int) -> String {
+    return L10n.tr("Localizable", "BACKUPS_IMPORT_SKIPPED", p1, fallback: "Income skipped: %d")
+  }
+  /// Transactions: %d
+  internal static func backupsTransactionsCount(_ p1: Int) -> String {
+    return L10n.tr("Localizable", "BACKUPS_TRANSACTIONS_COUNT", p1, fallback: "Transactions: %d")
+  }
   /// Cancel
   internal static let cancel = L10n.tr("Localizable", "CANCEL", fallback: "Cancel")
   /// Cancel
@@ -120,6 +170,8 @@ internal enum L10n {
   internal static let historyTitle = L10n.tr("Localizable", "HISTORY_TITLE", fallback: "History")
   /// About
   internal static let menuAbout = L10n.tr("Localizable", "MENU_ABOUT", fallback: "About")
+  /// Backups
+  internal static let menuBackups = L10n.tr("Localizable", "MENU_BACKUPS", fallback: "Backups")
   /// Budget
   internal static let menuBudget = L10n.tr("Localizable", "MENU_BUDGET", fallback: "Budget")
   /// Language
