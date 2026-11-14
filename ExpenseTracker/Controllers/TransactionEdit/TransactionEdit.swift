@@ -41,25 +41,20 @@ struct TransactionEdit: View {
                         .padding(.bottom, 8)
 
                     VStack(spacing: 0) {
-                        row(L10n.transactionEditCategory) {
-                            isAmountFocused = false
-                            showCategoryPicker = true
-                        } value: {
-                            valueText(draft.category.name.localized)
-                        }
-
                         row(L10n.transactionEditDate) {
                             isAmountFocused = false
                             popup = .date
                         } value: {
-                            valueText(draft.date.dayString(.dateTime.day().month(.wide).year()))
-                        }
+                            HStack(spacing: 8) {
+                                valueText(draft.date.dayString(.dateTime.day().month(.wide).year()))
+                                    .minimumScaleFactor(0.7)
 
-                        row(L10n.transactionEditTime) {
-                            isAmountFocused = false
-                            popup = .time
-                        } value: {
-                            valueText(draft.date.formatted(date: .omitted, time: .shortened))
+                                valueText(draft.date.formatted(date: .omitted, time: .shortened))
+                                    .padding(.horizontal, 10)
+                                    .frame(height: 32)
+                                    .background(.appLabel.opacity(0.15))
+                                    .clipShape(Capsule())
+                            }
                         }
                     }
                     .padding(.vertical, 6)
@@ -130,11 +125,19 @@ struct TransactionEdit: View {
                 isAmountFocused = false
                 showCategoryPicker = true
             } label: {
-                draft.category.categoryIcon.image
-                    .font(.system(size: 44))
-                    .foregroundColor(draft.category.categoryIcon.color)
-                    .frame(width: 72, height: 72)
-                    .contentShape(Rectangle())
+                VStack(spacing: 4) {
+                    draft.category.categoryIcon.image
+                        .font(.system(size: 44))
+                        .foregroundColor(draft.category.categoryIcon.color)
+                        .frame(width: 72, height: 72)
+
+                    Text(draft.category.name.localized)
+                        .font(.appLight(18))
+                        .foregroundColor(.appLabel)
+                        .lineLimit(2)
+                        .multilineTextAlignment(.center)
+                }
+                .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
             .accessibilityLabel(draft.category.name.localized)
@@ -260,10 +263,6 @@ struct TransactionEdit: View {
                 Spacer(minLength: 8)
 
                 value()
-
-                Image(systemName: "chevron.right")
-                    .font(.system(size: 14, weight: .semibold))
-                    .foregroundColor(.appWhite.opacity(0.6))
             }
             .padding(.horizontal, 20)
             .frame(height: 60)
