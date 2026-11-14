@@ -110,8 +110,8 @@ struct CategoryColorPickerView: View {
 
     private var colorWheel: some View {
         GeometryReader { geometry in
-            let borderWidth = 2.0
-            let borderGap = 1.5
+            let borderWidth = 0.5
+            let borderGap = 0.5
             let outerRadius = min(geometry.size.width, geometry.size.height) / 2
             let radius = outerRadius - borderWidth - borderGap
             let angle = hue * 2 * .pi
@@ -189,7 +189,7 @@ struct CategoryColorPickerView: View {
                 ),
                 in: 0 ... 1
             )
-            .tint(.appWhite)
+            .tint(.appWhite.opacity(0.9))
             Image(systemName: "sun.max.fill")
         }
         .foregroundColor(.appWhite.opacity(0.6))
@@ -224,9 +224,8 @@ struct CategoryColorPickerView: View {
                     .stroke(.appSecond, lineWidth: 1)
             )
 
-            RoundedRectangle(cornerRadius: 8)
-                .fill(previewColor)
-                .frame(width: 56, height: 28)
+            ColorSwatch(color: previewColor)
+                .frame(width: 56)
         }
     }
 
@@ -236,13 +235,7 @@ struct CategoryColorPickerView: View {
                 Button {
                     hexInput = String(hex.dropFirst())
                 } label: {
-                    RoundedRectangle(cornerRadius: 8)
-                        .fill(Color(hex: hex))
-                        .frame(height: 28)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 8)
-                                .strokeBorder(Color.appWhite, lineWidth: selectedHex == hex ? 3 : 0)
-                        )
+                    ColorSwatch(color: Color(hex: hex), isSelected: selectedHex == hex)
                 }
                 .buttonStyle(.plain)
             }

@@ -407,13 +407,8 @@ struct EditCategoryView: View {
     }
 
     private func colorCell(_ color: Color, isSelected: Bool) -> some View {
-        RoundedRectangle(cornerRadius: 8)
-            .fill(color)
-            .frame(width: 56, height: 28)
-            .overlay(
-                RoundedRectangle(cornerRadius: 8)
-                    .strokeBorder(Color.appWhite, lineWidth: isSelected ? 3 : 0)
-            )
+        ColorSwatch(color: color, isSelected: isSelected)
+            .frame(width: 56)
     }
 
     // MARK: - Actions
