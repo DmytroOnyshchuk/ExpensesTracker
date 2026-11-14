@@ -81,7 +81,7 @@ extension Theme {
 
     static let classic = Theme(
         colorScheme: .dark,
-        appMain: Color(hex: "#0F0F10"),
+        appMain: Color(hex: "#111416"),
         appSecond: Color(hex: "#1F1F21"),
         appLabel: Color(hex: "#A0B3BC"),
         appWhite: Color(hex: "#F7F7F8"),
