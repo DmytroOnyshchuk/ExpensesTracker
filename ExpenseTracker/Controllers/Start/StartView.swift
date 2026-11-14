@@ -89,7 +89,7 @@ struct StartView: View {
 
     private var commentButton: some View {
         Button(action: openCommentInput) {
-            Image(systemName: "text.bubble.fill")
+            Image(systemName: "bubble.fill")
                 .font(.system(size: 20))
                 .foregroundColor(comment.isBlank ? .appLabel : .appWhite)
                 .frame(width: 48, height: 50)
