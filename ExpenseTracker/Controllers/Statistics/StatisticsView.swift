@@ -465,35 +465,17 @@ struct StatisticsRow: View {
         let shape = UnevenRoundedRectangle(bottomTrailingRadius: 10, topTrailingRadius: 10, style: .continuous)
 
         return shape
-            .fill(
-                LinearGradient(
-                    colors: [color.opacity(0.14), color.opacity(0.38)],
-                    startPoint: .leading,
-                    endPoint: .trailing
-                )
-            )
+            .fill(color.opacity(0.32))
             .overlay {
                 shape
-                    .fill(
-                        LinearGradient(
-                            colors: [color.opacity(0.22), color.opacity(0), .black.opacity(0.14)],
-                            startPoint: .top,
-                            endPoint: .bottom
-                        )
-                    )
+                    .strokeBorder(color.opacity(0.75), lineWidth: 1)
             }
-            .overlay {
+            .background {
                 shape
-                    .strokeBorder(
-                        LinearGradient(
-                            colors: [color.opacity(0.85), color.opacity(0.25)],
-                            startPoint: .top,
-                            endPoint: .bottom
-                        ),
-                        lineWidth: 1
-                    )
+                    .stroke(color, lineWidth: 1.5)
+                    .blur(radius: 2)
+                    .opacity(0.7)
             }
-            .shadow(color: color.opacity(0.4), radius: 8)
     }
 }
 
