@@ -180,4 +180,28 @@ final class CategoryRulesTests: XCTestCase {
 
         XCTAssertNil(draft.parentUuid)
     }
+
+    // MARK: - Custom color
+
+    func testNormalizedHexAcceptsSixDigitsWithOrWithoutHash() {
+        XCTAssertEqual(CategoryIcon.normalizedHex("ff8800"), "#FF8800")
+        XCTAssertEqual(CategoryIcon.normalizedHex(" #1a2B3c "), "#1A2B3C")
+    }
+
+    func testNormalizedHexRejectsInvalidInput() {
+        XCTAssertNil(CategoryIcon.normalizedHex(""))
+        XCTAssertNil(CategoryIcon.normalizedHex("#FFF"))
+        XCTAssertNil(CategoryIcon.normalizedHex("GG0000"))
+        XCTAssertNil(CategoryIcon.normalizedHex("#FF88001"))
+    }
+
+    func testSelectingPresetColorClearsCustomColor() {
+        var icon = CategoryIcon(name: "cart", iconColor: .yellow)
+        icon.customColorHex = "#FF8800"
+
+        icon.select(.red)
+
+        XCTAssertEqual(icon.iconColor, .red)
+        XCTAssertNil(icon.customColorHex)
+    }
 }

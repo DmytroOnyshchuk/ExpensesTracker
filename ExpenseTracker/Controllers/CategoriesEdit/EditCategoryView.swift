@@ -20,6 +20,7 @@ struct EditCategoryView: View {
     @State private var draft: CategoryDraft
     @State private var showDeleteConfirmation = false
     @State private var showCustomIconPicker = false
+    @State private var showColorPicker = false
     @State private var selectedSubcategory: TransactionCategory?
 
     private var isEdit: Bool { category != nil }
@@ -151,6 +152,9 @@ struct EditCategoryView: View {
         }
         .sheet(isPresented: $showCustomIconPicker) {
             CustomIconPickerView(selectedIcon: $draft.icon.name)
+        }
+        .sheet(isPresented: $showColorPicker) {
+            CategoryColorPickerView(icon: $draft.icon)
         }
     }
 
@@ -316,12 +320,35 @@ struct EditCategoryView: View {
 
     private var colorSelectionSection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text(L10n.editCategoryColor)
-                .font(.appMedium(16))
-                .foregroundColor(.appWhite)
+            HStack {
+                Text(L10n.editCategoryColor)
+                    .font(.appMedium(16))
+                    .foregroundColor(.appWhite)
+
+                Spacer()
+
+                Button {
+                    showColorPicker = true
+                } label: {
+                    HStack(spacing: 4) {
+                        Image(systemName: "plus.circle")
+                        Text(L10n.editCategoryMoreIcons)
+                    }
+                    .font(.appRegular(14))
+                    .foregroundColor(.appYellow)
+                }
+            }
 
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 12) {
+                    if draft.icon.customColorHex != nil {
+                        Button {
+                            showColorPicker = true
+                        } label: {
+                            colorCell(draft.icon.color, isSelected: true)
+                        }
+                    }
+
                     ForEach(IconColor.allCases, id: \.self) { color in
                         colorButton(color)
                     }
@@ -373,16 +400,20 @@ struct EditCategoryView: View {
 
     private func colorButton(_ color: IconColor) -> some View {
         Button {
-            draft.icon.iconColor = color
+            draft.icon.select(color)
         } label: {
-            RoundedRectangle(cornerRadius: 8)
-                .fill(color.color)
-                .frame(width: 56, height: 28)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 8)
-                        .strokeBorder(Color.appWhite, lineWidth: draft.icon.iconColor == color ? 3 : 0)
-                )
+            colorCell(color.color, isSelected: draft.icon.customColorHex == nil && draft.icon.iconColor == color)
         }
+    }
+
+    private func colorCell(_ color: Color, isSelected: Bool) -> some View {
+        RoundedRectangle(cornerRadius: 8)
+            .fill(color)
+            .frame(width: 56, height: 28)
+            .overlay(
+                RoundedRectangle(cornerRadius: 8)
+                    .strokeBorder(Color.appWhite, lineWidth: isSelected ? 3 : 0)
+            )
     }
 
     // MARK: - Actions
