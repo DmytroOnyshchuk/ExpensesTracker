@@ -19,12 +19,13 @@ struct CategoryRow: View {
     var subtitle: String?
     var transactionsCount: Int?
     var accessory: Accessory = .chevron
+    var showsLeadingDragHandle: Bool = false
     var action: () -> Void
 
     var body: some View {
         Button(action: action) {
             HStack(spacing: 16) {
-                if accessory != .reorder {
+                if showsLeadingDragHandle {
                     dragHandle
                         .opacity(category.isDirectory ? 0 : 1)
                 }
@@ -117,6 +118,7 @@ extension View {
         listRowBackground(Color.appMain)
             .listRowInsets(EdgeInsets(top: 12, leading: 24, bottom: 12, trailing: 24))
             .listRowSeparatorTint(.appSecond)
+            .listRowSeparator(.hidden, edges: .top)
             .listRowSeparator(isLast ? .hidden : .visible, edges: .bottom)
     }
 }
