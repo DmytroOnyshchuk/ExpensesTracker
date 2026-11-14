@@ -13,7 +13,6 @@ struct TransactionEdit: View {
     private enum Popup {
         case date
         case time
-        case comment
     }
 
     private let transaction: Transaction
@@ -23,6 +22,7 @@ struct TransactionEdit: View {
     @State private var showCategoryPicker = false
     @State private var amountText = ""
     @FocusState private var isAmountFocused: Bool
+    @FocusState private var isCommentFocused: Bool
 
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var modelContext
@@ -43,6 +43,7 @@ struct TransactionEdit: View {
                     VStack(spacing: 0) {
                         row(L10n.transactionEditDate) {
                             isAmountFocused = false
+                            isCommentFocused = false
                             popup = .date
                         } value: {
                             HStack(spacing: 8) {
@@ -70,6 +71,13 @@ struct TransactionEdit: View {
                 .frame(maxWidth: .infinity, alignment: .top)
             }
             .scrollDismissesKeyboard(.interactively)
+            .safeAreaInset(edge: .bottom, spacing: 0) {
+                if isAmountFocused || isCommentFocused {
+                    keyboardDoneButton
+                        .transition(.opacity)
+                }
+            }
+            .animation(.easeInOut(duration: 0.2), value: isAmountFocused || isCommentFocused)
             .background(.appMain)
             .navigationTitle(L10n.transactionEditTitle)
             .navigationBarTitleDisplayMode(.inline)
@@ -85,15 +93,6 @@ struct TransactionEdit: View {
                     Button(L10n.ok, action: save)
                         .foregroundColor(.appLabel)
                         .disabled(!draft.canSave)
-                }
-
-                if isAmountFocused {
-                    ToolbarItemGroup(placement: .keyboard) {
-                        Spacer()
-                        Button(L10n.done) {
-                            isAmountFocused = false
-                        }
-                    }
                 }
             }
             .onChange(of: isAmountFocused) { _, isFocused in
@@ -123,6 +122,7 @@ struct TransactionEdit: View {
         VStack(spacing: 12) {
             Button {
                 isAmountFocused = false
+                isCommentFocused = false
                 showCategoryPicker = true
             } label: {
                 VStack(spacing: 4) {
@@ -148,28 +148,52 @@ struct TransactionEdit: View {
     }
 
     private var commentRow: some View {
+        TextField(
+            "",
+            text: $draft.comment,
+            prompt: Text(L10n.transactionEditAddComment).foregroundColor(.appLabel),
+            axis: .vertical
+        )
+        .lineLimit(3 ... 6)
+        .focused($isCommentFocused)
+        .font(.appLight(18))
+        .foregroundColor(.appWhite)
+        .tint(.appPrimary)
+        .padding(.horizontal, 20)
+        .padding(.vertical, 16)
+        .background(.appLabel.opacity(0.1))
+        .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+        .contentShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+        .onTapGesture {
+            isCommentFocused = true
+        }
+    }
+
+    private var keyboardDoneButton: some View {
         Button {
             isAmountFocused = false
-            popup = .comment
+            isCommentFocused = false
         } label: {
-            Text(draft.comment.isBlank ? L10n.transactionEditAddComment : draft.comment)
-                .font(.appLight(18))
-                .foregroundColor(draft.comment.isBlank ? .appLabel : .appWhite)
-                .multilineTextAlignment(.leading)
-                .lineLimit(6)
-                .frame(maxWidth: .infinity, minHeight: 72, alignment: .topLeading)
-                .padding(.horizontal, 20)
-                .padding(.vertical, 16)
-                .background(.appLabel.opacity(0.1))
-                .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
-                .contentShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+            Text(L10n.done)
+                .font(.appMedium(17))
+                .foregroundColor(.appWhite)
+                .padding(.horizontal, 22)
+                .frame(height: 44)
+                .background(.appSecond)
+                .clipShape(Capsule())
+                .shadow(color: .appOverlay.opacity(0.3), radius: 12, y: 4)
+                .contentShape(Capsule())
         }
         .buttonStyle(.plain)
+        .frame(maxWidth: .infinity, alignment: .trailing)
+        .padding(.horizontal, 16)
+        .padding(.vertical, 8)
     }
 
     private var deleteButton: some View {
         Button {
             isAmountFocused = false
+            isCommentFocused = false
             delete()
         } label: {
             Image(systemName: "trash")
@@ -197,19 +221,6 @@ struct TransactionEdit: View {
                 draft.date = combined(day: draft.date, time: time)
                 closePopup()
             }
-            .transition(.opacity)
-        case .comment:
-            CommentInputView(
-                comment: $draft.comment,
-                isPresented: Binding(
-                    get: { popup == .comment },
-                    set: { isPresented in
-                        if !isPresented {
-                            closePopup()
-                        }
-                    }
-                )
-            )
             .transition(.opacity)
         case nil:
             EmptyView()
