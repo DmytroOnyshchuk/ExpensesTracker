@@ -110,7 +110,10 @@ struct CategoryColorPickerView: View {
 
     private var colorWheel: some View {
         GeometryReader { geometry in
-            let radius = min(geometry.size.width, geometry.size.height) / 2
+            let borderWidth = 2.0
+            let borderGap = 1.5
+            let outerRadius = min(geometry.size.width, geometry.size.height) / 2
+            let radius = outerRadius - borderWidth - borderGap
             let angle = hue * 2 * .pi
 
             ZStack {
@@ -123,6 +126,7 @@ struct CategoryColorPickerView: View {
                             center: .center
                         )
                     )
+                    .frame(width: radius * 2, height: radius * 2)
 
                 Circle()
                     .fill(
@@ -133,9 +137,14 @@ struct CategoryColorPickerView: View {
                             endRadius: radius
                         )
                     )
+                    .frame(width: radius * 2, height: radius * 2)
 
                 Circle()
                     .fill(Color.black.opacity(1 - brightness))
+                    .frame(width: radius * 2, height: radius * 2)
+
+                Circle()
+                    .strokeBorder(Color.appWhite.opacity(0.9), lineWidth: borderWidth)
 
                 if selectedHex != nil {
                     Circle()
@@ -150,7 +159,7 @@ struct CategoryColorPickerView: View {
                         .allowsHitTesting(false)
                 }
             }
-            .frame(width: radius * 2, height: radius * 2)
+            .frame(width: outerRadius * 2, height: outerRadius * 2)
             .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
             .contentShape(Circle())
             .gesture(
