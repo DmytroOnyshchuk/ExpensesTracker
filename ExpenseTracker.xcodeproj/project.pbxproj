@@ -390,6 +390,7 @@
 		};
 		66D5058830A4D83D00035700 /* SwiftFormat */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			name = SwiftFormat;
 			shellPath = /bin/sh;
 			shellScript = (

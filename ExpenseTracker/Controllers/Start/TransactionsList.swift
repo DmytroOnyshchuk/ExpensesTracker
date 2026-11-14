@@ -133,7 +133,7 @@ struct TransactionsDayHeader: View {
                 .lineLimit(1)
                 .padding(.horizontal, 12)
                 .frame(height: 28)
-                .background(totalColor?.opacity(0.45) ?? .appLabel.opacity(0.4))
+                .background(totalColor?.opacity(0.40) ?? .appLabel.opacity(0.4))
                 .clipShape(Capsule())
         }
         .padding(.horizontal, 16)

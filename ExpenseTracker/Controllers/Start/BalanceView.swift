@@ -28,7 +28,7 @@ struct BalanceCard: View {
                     .contentTransition(.numericText())
             }
             .padding(.horizontal, 16)
-            .frame(height: 60)
+            .padding(.vertical, 12)
             .background(.appLabel.opacity(0.1))
             .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
             .contentShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
