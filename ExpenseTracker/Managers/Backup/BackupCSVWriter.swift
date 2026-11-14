@@ -1,6 +1,6 @@
 import Foundation
 
-struct BackupCSVRow {
+struct BackupTableRow {
     let date: Date
     let folder: String
     let category: String
@@ -9,7 +9,7 @@ struct BackupCSVRow {
 }
 
 enum BackupCSVWriter {
-    static func data(header: [String], rows: [BackupCSVRow], locale: Locale = .current) -> Data {
+    static func data(header: [String], rows: [BackupTableRow], locale: Locale = .current) -> Data {
         let decimalSeparator = locale.decimalSeparator ?? "."
         let delimiter = decimalSeparator == "," ? ";" : ","
 
