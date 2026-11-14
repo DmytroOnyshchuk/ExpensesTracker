@@ -58,7 +58,15 @@
 "MENU_TITLE" = "మెనూ";
 "MENU_BUDGET" = "బడ్జెట్";
 "MENU_SETTINGS" = "సెట్టింగ్‌లు";
+"MENU_BACKUPS" = "బ్యాకప్‌లు";
 "MENU_SPENT_IN_MONTH" = "మొత్తం ఖర్చు · %@";
+"MENU_LANGUAGE" = "భాష";
+"MENU_ABOUT" = "పరిచయం";
+
+// MARK: - About
+"ABOUT_VERSION" = "వెర్షన్ %@";
+"ABOUT_SHARE" = "యాప్‌ను షేర్ చేయండి";
+"ABOUT_RATE" = "యాప్‌కు రేటింగ్ ఇవ్వండి";
 
 // MARK: - Tabs
 "TAB_HOME" = "హోమ్";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "దానం";
 "DEFAULT_CATEGORY_INTERNET" = "ఇంటర్నెట్";
 "DEFAULT_CATEGORY_TRANSPORT" = "రవాణా";
+"SETTINGS_APPEARANCE" = "రూపం";
+"SETTINGS_THEME_CLASSIC" = "క్లాసిక్";
+"SETTINGS_THEME_EMBER" = "నిప్పు కణిక";
+"SETTINGS_THEME_MIDNIGHT" = "అర్ధరాత్రి";
+"SETTINGS_THEME_FOREST" = "అడవి";
+"SETTINGS_THEME_GRAY" = "బూడిద";
+"SETTINGS_THEME_INDIGO" = "నీలిమందు";
+"SETTINGS_THEME_LIQUID_BLACK" = "ద్రవ నలుపు";
+"SETTINGS_THEME_SLATE" = "స్లేట్";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "వర్గాలు: %d";
+"BACKUPS_CURRENT_DATA" = "యాప్‌లో";
+"BACKUPS_ERROR_CORRUPTED" = "ఫైల్ పాడైంది లేదా చదవడం సాధ్యం కాదు.";
+"BACKUPS_ERROR_NEWER_VERSION" = "ఈ బ్యాకప్ యాప్ కొత్త వెర్షన్‌తో సృష్టించబడింది.";
+"BACKUPS_ERROR_UNSUPPORTED" = "ఈ ఫైల్ ఫార్మాట్‌కు మద్దతు లేదు.";
+"BACKUPS_EXPORT_SECTION" = "ఎగుమతి";
+"BACKUPS_IMPORT_ACTION" = "ఫైల్ నుండి దిగుమతి చేయండి";
+"BACKUPS_IMPORT_DONE" = "జోడించిన లావాదేవీలు: %d, వర్గాలు: %d";
+"BACKUPS_IMPORT_MERGE" = "ప్రస్తుత డేటాకు జోడించండి";
+"BACKUPS_IMPORT_PERIOD" = "వ్యవధి: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "ఫైల్‌లో కనుగొనబడింది";
+"BACKUPS_IMPORT_REPLACE" = "మొత్తం డేటాను భర్తీ చేయండి";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "ప్రస్తుత లావాదేవీలు, వర్గాలు అన్నీ తొలగించబడతాయి. దీన్ని రద్దు చేయడం సాధ్యం కాదు.";
+"BACKUPS_IMPORT_SECTION" = "దిగుమతి";
+"BACKUPS_SHARE_ACTION" = "డేటాను ఎగుమతి చేయండి";
+"BACKUPS_CSV_COMMENT" = "వ్యాఖ్య";
+"BACKUPS_CSV_FOLDER" = "ఫోల్డర్";
+"BACKUPS_FORMAT_CSV" = "CSV — వీక్షణకు మాత్రమే";
+"BACKUPS_FORMAT_JSON" = "JSON — పూర్తి బ్యాకప్";
+"BACKUPS_FORMAT_MESSAGE" = "JSON అనేది తిరిగి దిగుమతి చేయగల పూర్తి బ్యాకప్. CSV అనేది స్ప్రెడ్‌షీట్‌లో చూడటానికి లావాదేవీల పట్టిక — దీన్ని యాప్‌లోకి దిగుమతి చేయడం సాధ్యం కాదు.";
+"BACKUPS_FORMAT_TITLE" = "ఎగుమతి ఫార్మాట్";
+"BACKUPS_IMPORT_SKIPPED" = "దాటవేసిన ఆదాయం: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "లావాదేవీలు: %d";

@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Kieslys";
 "MENU_BUDGET" = "Begroting";
 "MENU_SETTINGS" = "Instellings";
+"MENU_BACKUPS" = "Rugsteune";
 "MENU_SPENT_IN_MONTH" = "Spandeer in %@";
+"MENU_LANGUAGE" = "Taal";
+"MENU_ABOUT" = "Meer oor";
+
+// MARK: - About
+"ABOUT_VERSION" = "Weergawe %@";
+"ABOUT_SHARE" = "Deel app";
+"ABOUT_RATE" = "Gradeer app";
 
 // MARK: - Tabs
 "TAB_HOME" = "Tuis";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Liefdadigheid";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Vervoer";
+"SETTINGS_APPEARANCE" = "Voorkoms";
+"SETTINGS_THEME_CLASSIC" = "Klassiek";
+"SETTINGS_THEME_EMBER" = "Gloed";
+"SETTINGS_THEME_MIDNIGHT" = "Middernag";
+"SETTINGS_THEME_FOREST" = "Woud";
+"SETTINGS_THEME_GRAY" = "Grys";
+"SETTINGS_THEME_INDIGO" = "Indigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Vloeibare swart";
+"SETTINGS_THEME_SLATE" = "Leiklip";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Kategorieë: %d";
+"BACKUPS_CURRENT_DATA" = "In die app";
+"BACKUPS_ERROR_CORRUPTED" = "Die lêer is beskadig of kan nie gelees word nie.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Hierdie rugsteun is met ’n nuwer weergawe van die app gemaak.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Hierdie lêerformaat word nie ondersteun nie.";
+"BACKUPS_EXPORT_SECTION" = "Uitvoer";
+"BACKUPS_IMPORT_ACTION" = "Voer in vanaf lêer";
+"BACKUPS_IMPORT_DONE" = "Transaksies bygevoeg: %d, kategorieë: %d";
+"BACKUPS_IMPORT_MERGE" = "Voeg by huidige data";
+"BACKUPS_IMPORT_PERIOD" = "Tydperk: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "In lêer gevind";
+"BACKUPS_IMPORT_REPLACE" = "Vervang alle data";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Alle huidige transaksies en kategorieë sal uitgevee word. Dit kan nie ontdoen word nie.";
+"BACKUPS_IMPORT_SECTION" = "Invoer";
+"BACKUPS_SHARE_ACTION" = "Voer data uit";
+"BACKUPS_CSV_COMMENT" = "Opmerking";
+"BACKUPS_CSV_FOLDER" = "Vouer";
+"BACKUPS_FORMAT_CSV" = "CSV — slegs vir besigtiging";
+"BACKUPS_FORMAT_JSON" = "JSON — volledige rugsteun";
+"BACKUPS_FORMAT_MESSAGE" = "JSON is ’n volledige rugsteun wat weer ingevoer kan word. CSV is ’n tabel van transaksies om in ’n sigblad te bekyk — dit kan nie in die app ingevoer word nie.";
+"BACKUPS_FORMAT_TITLE" = "Uitvoerformaat";
+"BACKUPS_IMPORT_SKIPPED" = "Inkomste oorgeslaan: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Transaksies: %d";

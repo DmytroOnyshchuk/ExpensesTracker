@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Menu";
 "MENU_BUDGET" = "Baġit";
 "MENU_SETTINGS" = "Settings";
+"MENU_BACKUPS" = "Backups";
 "MENU_SPENT_IN_MONTH" = "Total minfuq · %@";
+"MENU_LANGUAGE" = "Lingwa";
+"MENU_ABOUT" = "Dwar";
+
+// MARK: - About
+"ABOUT_VERSION" = "Verżjoni %@";
+"ABOUT_SHARE" = "Aqsam l-app";
+"ABOUT_RATE" = "Ikklassifika l-app";
 
 // MARK: - Tabs
 "TAB_HOME" = "Ewlenija";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Karità";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Trasport";
+"SETTINGS_APPEARANCE" = "Dehra";
+"SETTINGS_THEME_CLASSIC" = "Klassiku";
+"SETTINGS_THEME_EMBER" = "Ġamra";
+"SETTINGS_THEME_MIDNIGHT" = "Nofsillejl";
+"SETTINGS_THEME_FOREST" = "Foresta";
+"SETTINGS_THEME_GRAY" = "Griż";
+"SETTINGS_THEME_INDIGO" = "Indigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Iswed likwidu";
+"SETTINGS_THEME_SLATE" = "Lavanja";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Kategoriji: %d";
+"BACKUPS_CURRENT_DATA" = "Fl-app";
+"BACKUPS_ERROR_CORRUPTED" = "Il-fajl huwa bil-ħsara jew ma jistax jinqara.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Dan il-backup inħoloq b’verżjoni aktar ġdida tal-app.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Dan il-format tal-fajl mhux appoġġjat.";
+"BACKUPS_EXPORT_SECTION" = "Esportazzjoni";
+"BACKUPS_IMPORT_ACTION" = "Importa minn fajl";
+"BACKUPS_IMPORT_DONE" = "Tranżazzjonijiet miżjuda: %d, kategoriji: %d";
+"BACKUPS_IMPORT_MERGE" = "Żid mad-data attwali";
+"BACKUPS_IMPORT_PERIOD" = "Perjodu: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Misjub fil-fajl";
+"BACKUPS_IMPORT_REPLACE" = "Ibdel id-data kollha";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "It-tranżazzjonijiet u l-kategoriji attwali kollha se jitħassru. Dan ma jistax jitreġġa’ lura.";
+"BACKUPS_IMPORT_SECTION" = "Importazzjoni";
+"BACKUPS_SHARE_ACTION" = "Esporta d-data";
+"BACKUPS_CSV_COMMENT" = "Kumment";
+"BACKUPS_CSV_FOLDER" = "Folder";
+"BACKUPS_FORMAT_CSV" = "CSV — għall-wiri biss";
+"BACKUPS_FORMAT_JSON" = "JSON — backup sħiħ";
+"BACKUPS_FORMAT_MESSAGE" = "JSON huwa backup sħiħ li jista’ jerġa’ jiġi importat. CSV hija tabella ta’ tranżazzjonijiet għall-wiri fi spreadsheet — ma tistax tiġi importata fl-app.";
+"BACKUPS_FORMAT_TITLE" = "Format tal-esportazzjoni";
+"BACKUPS_IMPORT_SKIPPED" = "Dħul maqbuż: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Tranżazzjonijiet: %d";

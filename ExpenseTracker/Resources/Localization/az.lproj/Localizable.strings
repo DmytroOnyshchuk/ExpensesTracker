@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Menyu";
 "MENU_BUDGET" = "Büdcə";
 "MENU_SETTINGS" = "Ayarlar";
+"MENU_BACKUPS" = "Ehtiyat nüsxələr";
 "MENU_SPENT_IN_MONTH" = "%@ xərcləri";
+"MENU_LANGUAGE" = "Dil";
+"MENU_ABOUT" = "Haqqında";
+
+// MARK: - About
+"ABOUT_VERSION" = "Versiya %@";
+"ABOUT_SHARE" = "Tətbiqi paylaş";
+"ABOUT_RATE" = "Tətbiqi qiymətləndir";
 
 // MARK: - Tabs
 "TAB_HOME" = "Əsas";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Xeyriyyə";
 "DEFAULT_CATEGORY_INTERNET" = "İnternet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Nəqliyyat";
+"SETTINGS_APPEARANCE" = "Görünüş";
+"SETTINGS_THEME_CLASSIC" = "Klassik";
+"SETTINGS_THEME_EMBER" = "Köz";
+"SETTINGS_THEME_MIDNIGHT" = "Gecəyarısı";
+"SETTINGS_THEME_FOREST" = "Meşə";
+"SETTINGS_THEME_GRAY" = "Boz";
+"SETTINGS_THEME_INDIGO" = "İndiqo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Maye qara";
+"SETTINGS_THEME_SLATE" = "Şifer";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Kateqoriyalar: %d";
+"BACKUPS_CURRENT_DATA" = "Tətbiqdə";
+"BACKUPS_ERROR_CORRUPTED" = "Fayl zədələnib və ya oxunmur.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Bu nüsxə tətbiqin daha yeni versiyası ilə yaradılıb.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Bu fayl formatı dəstəklənmir.";
+"BACKUPS_EXPORT_SECTION" = "İxrac";
+"BACKUPS_IMPORT_ACTION" = "Fayldan idxal et";
+"BACKUPS_IMPORT_DONE" = "Əlavə edilən əməliyyatlar: %d, kateqoriyalar: %d";
+"BACKUPS_IMPORT_MERGE" = "Cari məlumatlara əlavə et";
+"BACKUPS_IMPORT_PERIOD" = "Dövr: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Faylda tapıldı";
+"BACKUPS_IMPORT_REPLACE" = "Bütün məlumatları əvəz et";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Bütün cari əməliyyatlar və kateqoriyalar silinəcək. Bu əməliyyatı geri qaytarmaq olmaz.";
+"BACKUPS_IMPORT_SECTION" = "İdxal";
+"BACKUPS_SHARE_ACTION" = "Məlumatları ixrac et";
+"BACKUPS_CSV_COMMENT" = "Şərh";
+"BACKUPS_CSV_FOLDER" = "Qovluq";
+"BACKUPS_FORMAT_CSV" = "CSV — yalnız baxış";
+"BACKUPS_FORMAT_JSON" = "JSON — tam nüsxə";
+"BACKUPS_FORMAT_MESSAGE" = "JSON yenidən idxal edilə bilən tam nüsxədir. CSV elektron cədvəldə baxmaq üçün əməliyyatlar cədvəlidir — onu tətbiqə idxal etmək olmaz.";
+"BACKUPS_FORMAT_TITLE" = "İxrac formatı";
+"BACKUPS_IMPORT_SKIPPED" = "Ötürülən gəlirlər: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Əməliyyatlar: %d";

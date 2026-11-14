@@ -58,7 +58,15 @@
 "MENU_TITLE" = "ເມນູ";
 "MENU_BUDGET" = "ງົບປະມານ";
 "MENU_SETTINGS" = "ການຕັ້ງຄ່າ";
+"MENU_BACKUPS" = "ການສຳຮອງຂໍ້ມູນ";
 "MENU_SPENT_IN_MONTH" = "ໃຊ້ຈ່າຍທັງໝົດ · %@";
+"MENU_LANGUAGE" = "ພາສາ";
+"MENU_ABOUT" = "ກ່ຽວກັບ";
+
+// MARK: - About
+"ABOUT_VERSION" = "ເວີຊັນ %@";
+"ABOUT_SHARE" = "ແບ່ງປັນແອັບ";
+"ABOUT_RATE" = "ໃຫ້ຄະແນນແອັບ";
 
 // MARK: - Tabs
 "TAB_HOME" = "ໜ້າຫຼັກ";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "ການກຸສົນ";
 "DEFAULT_CATEGORY_INTERNET" = "ອິນເຕີເນັດ";
 "DEFAULT_CATEGORY_TRANSPORT" = "ການເດີນທາງ";
+"SETTINGS_APPEARANCE" = "ຮູບລັກສະນະ";
+"SETTINGS_THEME_CLASSIC" = "ຄລາສສິກ";
+"SETTINGS_THEME_EMBER" = "ຖ່ານໄຟ";
+"SETTINGS_THEME_MIDNIGHT" = "ທ່ຽງຄືນ";
+"SETTINGS_THEME_FOREST" = "ປ່າ";
+"SETTINGS_THEME_GRAY" = "ເທົາ";
+"SETTINGS_THEME_INDIGO" = "ຄາມ";
+"SETTINGS_THEME_LIQUID_BLACK" = "ດຳແຫຼວ";
+"SETTINGS_THEME_SLATE" = "ຫີນຊະນວນ";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "ໝວດໝູ່: %d";
+"BACKUPS_CURRENT_DATA" = "ໃນແອັບ";
+"BACKUPS_ERROR_CORRUPTED" = "ໄຟລ໌ເສຍຫາຍ ຫຼື ບໍ່ສາມາດອ່ານໄດ້.";
+"BACKUPS_ERROR_NEWER_VERSION" = "ການສຳຮອງນີ້ສ້າງດ້ວຍແອັບເວີຊັນທີ່ໃໝ່ກວ່າ.";
+"BACKUPS_ERROR_UNSUPPORTED" = "ບໍ່ຮອງຮັບຮູບແບບໄຟລ໌ນີ້.";
+"BACKUPS_EXPORT_SECTION" = "ສົ່ງອອກ";
+"BACKUPS_IMPORT_ACTION" = "ນຳເຂົ້າຈາກໄຟລ໌";
+"BACKUPS_IMPORT_DONE" = "ລາຍການທີ່ເພີ່ມ: %d, ໝວດໝູ່: %d";
+"BACKUPS_IMPORT_MERGE" = "ເພີ່ມໃສ່ຂໍ້ມູນປັດຈຸບັນ";
+"BACKUPS_IMPORT_PERIOD" = "ໄລຍະເວລາ: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "ພົບໃນໄຟລ໌";
+"BACKUPS_IMPORT_REPLACE" = "ແທນທີ່ຂໍ້ມູນທັງໝົດ";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "ລາຍການ ແລະ ໝວດໝູ່ປັດຈຸບັນທັງໝົດຈະຖືກລຶບ. ການດຳເນີນການນີ້ບໍ່ສາມາດຍົກເລີກໄດ້.";
+"BACKUPS_IMPORT_SECTION" = "ນຳເຂົ້າ";
+"BACKUPS_SHARE_ACTION" = "ສົ່ງອອກຂໍ້ມູນ";
+"BACKUPS_CSV_COMMENT" = "ໝາຍເຫດ";
+"BACKUPS_CSV_FOLDER" = "ໂຟນເດີ";
+"BACKUPS_FORMAT_CSV" = "CSV — ສຳລັບເບິ່ງເທົ່ານັ້ນ";
+"BACKUPS_FORMAT_JSON" = "JSON — ສຳຮອງຂໍ້ມູນເຕັມ";
+"BACKUPS_FORMAT_MESSAGE" = "JSON ເປັນການສຳຮອງຂໍ້ມູນເຕັມທີ່ສາມາດນຳເຂົ້າຄືນໄດ້. CSV ເປັນຕາຕະລາງລາຍການສຳລັບເບິ່ງໃນສະເປຣດຊີດ — ບໍ່ສາມາດນຳເຂົ້າແອັບໄດ້.";
+"BACKUPS_FORMAT_TITLE" = "ຮູບແບບການສົ່ງອອກ";
+"BACKUPS_IMPORT_SKIPPED" = "ລາຍຮັບທີ່ຂ້າມ: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "ລາຍການ: %d";

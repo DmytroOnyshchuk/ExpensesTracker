@@ -58,7 +58,15 @@
 "MENU_TITLE" = "مینو";
 "MENU_BUDGET" = "بجٹ";
 "MENU_SETTINGS" = "ترتیبات";
+"MENU_BACKUPS" = "بیک اپس";
 "MENU_SPENT_IN_MONTH" = "%@ کے اخراجات";
+"MENU_LANGUAGE" = "زبان";
+"MENU_ABOUT" = "تعارف";
+
+// MARK: - About
+"ABOUT_VERSION" = "ورژن %@";
+"ABOUT_SHARE" = "ایپ شیئر کریں";
+"ABOUT_RATE" = "ایپ کی درجہ بندی کریں";
 
 // MARK: - Tabs
 "TAB_HOME" = "ہوم";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "خیرات";
 "DEFAULT_CATEGORY_INTERNET" = "انٹرنیٹ";
 "DEFAULT_CATEGORY_TRANSPORT" = "ٹرانسپورٹ";
+"SETTINGS_APPEARANCE" = "ظاہری شکل";
+"SETTINGS_THEME_CLASSIC" = "کلاسک";
+"SETTINGS_THEME_EMBER" = "انگارہ";
+"SETTINGS_THEME_MIDNIGHT" = "آدھی رات";
+"SETTINGS_THEME_FOREST" = "جنگل";
+"SETTINGS_THEME_GRAY" = "سرمئی";
+"SETTINGS_THEME_INDIGO" = "نیلا";
+"SETTINGS_THEME_LIQUID_BLACK" = "مائع سیاہ";
+"SETTINGS_THEME_SLATE" = "سلیٹ";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "زمرے: %d";
+"BACKUPS_CURRENT_DATA" = "ایپ میں";
+"BACKUPS_ERROR_CORRUPTED" = "فائل خراب ہے یا پڑھی نہیں جا سکتی۔";
+"BACKUPS_ERROR_NEWER_VERSION" = "یہ بیک اپ ایپ کے نئے ورژن سے بنایا گیا ہے۔";
+"BACKUPS_ERROR_UNSUPPORTED" = "یہ فائل فارمیٹ تعاون یافتہ نہیں ہے۔";
+"BACKUPS_EXPORT_SECTION" = "ایکسپورٹ";
+"BACKUPS_IMPORT_ACTION" = "فائل سے امپورٹ کریں";
+"BACKUPS_IMPORT_DONE" = "شامل کیے گئے لین دین: %d، زمرے: %d";
+"BACKUPS_IMPORT_MERGE" = "موجودہ ڈیٹا میں شامل کریں";
+"BACKUPS_IMPORT_PERIOD" = "مدت: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "فائل میں ملا";
+"BACKUPS_IMPORT_REPLACE" = "تمام ڈیٹا تبدیل کریں";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "تمام موجودہ لین دین اور زمرے حذف ہو جائیں گے۔ یہ عمل واپس نہیں ہو سکتا۔";
+"BACKUPS_IMPORT_SECTION" = "امپورٹ";
+"BACKUPS_SHARE_ACTION" = "ڈیٹا ایکسپورٹ کریں";
+"BACKUPS_CSV_COMMENT" = "تبصرہ";
+"BACKUPS_CSV_FOLDER" = "فولڈر";
+"BACKUPS_FORMAT_CSV" = "CSV — صرف دیکھنے کے لیے";
+"BACKUPS_FORMAT_JSON" = "JSON — مکمل بیک اپ";
+"BACKUPS_FORMAT_MESSAGE" = "JSON ایک مکمل بیک اپ ہے جسے دوبارہ امپورٹ کیا جا سکتا ہے۔ CSV لین دین کا جدول ہے جو اسپریڈشیٹ میں دیکھنے کے لیے ہے — اسے ایپ میں امپورٹ نہیں کیا جا سکتا۔";
+"BACKUPS_FORMAT_TITLE" = "ایکسپورٹ فارمیٹ";
+"BACKUPS_IMPORT_SKIPPED" = "چھوڑی گئی آمدنی: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "لین دین: %d";

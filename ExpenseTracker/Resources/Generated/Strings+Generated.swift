@@ -32,6 +32,10 @@ internal enum L10n {
   internal static func backupsCategoriesCount(_ p1: Int) -> String {
     return L10n.tr("Localizable", "BACKUPS_CATEGORIES_COUNT", p1, fallback: "Categories: %d")
   }
+  /// Comment
+  internal static let backupsCsvComment = L10n.tr("Localizable", "BACKUPS_CSV_COMMENT", fallback: "Comment")
+  /// Folder
+  internal static let backupsCsvFolder = L10n.tr("Localizable", "BACKUPS_CSV_FOLDER", fallback: "Folder")
   /// In the app
   internal static let backupsCurrentData = L10n.tr("Localizable", "BACKUPS_CURRENT_DATA", fallback: "In the app")
   /// The file is damaged or cannot be read.
@@ -42,6 +46,14 @@ internal enum L10n {
   internal static let backupsErrorUnsupported = L10n.tr("Localizable", "BACKUPS_ERROR_UNSUPPORTED", fallback: "This file format is not supported.")
   /// Export
   internal static let backupsExportSection = L10n.tr("Localizable", "BACKUPS_EXPORT_SECTION", fallback: "Export")
+  /// CSV — view only
+  internal static let backupsFormatCsv = L10n.tr("Localizable", "BACKUPS_FORMAT_CSV", fallback: "CSV — view only")
+  /// JSON — full backup
+  internal static let backupsFormatJson = L10n.tr("Localizable", "BACKUPS_FORMAT_JSON", fallback: "JSON — full backup")
+  /// JSON is a full backup that can be imported back. CSV is a table of transactions for viewing in a spreadsheet — it cannot be imported into the app.
+  internal static let backupsFormatMessage = L10n.tr("Localizable", "BACKUPS_FORMAT_MESSAGE", fallback: "JSON is a full backup that can be imported back. CSV is a table of transactions for viewing in a spreadsheet — it cannot be imported into the app.")
+  /// Export format
+  internal static let backupsFormatTitle = L10n.tr("Localizable", "BACKUPS_FORMAT_TITLE", fallback: "Export format")
   /// Import from file
   internal static let backupsImportAction = L10n.tr("Localizable", "BACKUPS_IMPORT_ACTION", fallback: "Import from file")
   /// Added transactions: %d, categories: %d
@@ -68,18 +80,6 @@ internal enum L10n {
   }
   /// Export data
   internal static let backupsShareAction = L10n.tr("Localizable", "BACKUPS_SHARE_ACTION", fallback: "Export data")
-  /// Comment
-  internal static let backupsCsvComment = L10n.tr("Localizable", "BACKUPS_CSV_COMMENT", fallback: "Comment")
-  /// Folder
-  internal static let backupsCsvFolder = L10n.tr("Localizable", "BACKUPS_CSV_FOLDER", fallback: "Folder")
-  /// CSV — view only
-  internal static let backupsFormatCsv = L10n.tr("Localizable", "BACKUPS_FORMAT_CSV", fallback: "CSV — view only")
-  /// JSON — full backup
-  internal static let backupsFormatJson = L10n.tr("Localizable", "BACKUPS_FORMAT_JSON", fallback: "JSON — full backup")
-  /// JSON is a full backup that can be imported back. CSV is a table of transactions for viewing in a spreadsheet — it cannot be imported into the app.
-  internal static let backupsFormatMessage = L10n.tr("Localizable", "BACKUPS_FORMAT_MESSAGE", fallback: "JSON is a full backup that can be imported back. CSV is a table of transactions for viewing in a spreadsheet — it cannot be imported into the app.")
-  /// Export format
-  internal static let backupsFormatTitle = L10n.tr("Localizable", "BACKUPS_FORMAT_TITLE", fallback: "Export format")
   /// Transactions: %d
   internal static func backupsTransactionsCount(_ p1: Int) -> String {
     return L10n.tr("Localizable", "BACKUPS_TRANSACTIONS_COUNT", p1, fallback: "Transactions: %d")

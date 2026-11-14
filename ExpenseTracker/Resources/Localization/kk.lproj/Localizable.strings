@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Мәзір";
 "MENU_BUDGET" = "Бюджет";
 "MENU_SETTINGS" = "Баптаулар";
+"MENU_BACKUPS" = "Сақтық көшірмелер";
 "MENU_SPENT_IN_MONTH" = "Барлығы жұмсалды · %@";
+"MENU_LANGUAGE" = "Тіл";
+"MENU_ABOUT" = "Қолданба туралы";
+
+// MARK: - About
+"ABOUT_VERSION" = "Нұсқа %@";
+"ABOUT_SHARE" = "Қолданбамен бөлісу";
+"ABOUT_RATE" = "Қолданбаны бағалау";
 
 // MARK: - Tabs
 "TAB_HOME" = "Басты";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Қайырымдылық";
 "DEFAULT_CATEGORY_INTERNET" = "Интернет";
 "DEFAULT_CATEGORY_TRANSPORT" = "Қоғамдық көлік";
+"SETTINGS_APPEARANCE" = "Көрініс";
+"SETTINGS_THEME_CLASSIC" = "Классикалық";
+"SETTINGS_THEME_EMBER" = "Шоқ";
+"SETTINGS_THEME_MIDNIGHT" = "Түн ортасы";
+"SETTINGS_THEME_FOREST" = "Орман";
+"SETTINGS_THEME_GRAY" = "Сұр";
+"SETTINGS_THEME_INDIGO" = "Индиго";
+"SETTINGS_THEME_LIQUID_BLACK" = "Сұйық қара";
+"SETTINGS_THEME_SLATE" = "Тақтатас";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Санаттар: %d";
+"BACKUPS_CURRENT_DATA" = "Қолданбада";
+"BACKUPS_ERROR_CORRUPTED" = "Файл бүлінген немесе оқылмайды.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Бұл көшірме қолданбаның жаңарақ нұсқасында жасалған.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Бұл файл пішіміне қолдау көрсетілмейді.";
+"BACKUPS_EXPORT_SECTION" = "Экспорт";
+"BACKUPS_IMPORT_ACTION" = "Файлдан импорттау";
+"BACKUPS_IMPORT_DONE" = "Қосылған операциялар: %d, санаттар: %d";
+"BACKUPS_IMPORT_MERGE" = "Ағымдағы деректерге қосу";
+"BACKUPS_IMPORT_PERIOD" = "Кезең: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Файлдан табылды";
+"BACKUPS_IMPORT_REPLACE" = "Барлық деректерді ауыстыру";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Барлық ағымдағы операциялар мен санаттар жойылады. Бұл әрекетті қайтару мүмкін емес.";
+"BACKUPS_IMPORT_SECTION" = "Импорт";
+"BACKUPS_SHARE_ACTION" = "Деректерді экспорттау";
+"BACKUPS_CSV_COMMENT" = "Түсініктеме";
+"BACKUPS_CSV_FOLDER" = "Қалта";
+"BACKUPS_FORMAT_CSV" = "CSV — тек қарау үшін";
+"BACKUPS_FORMAT_JSON" = "JSON — толық көшірме";
+"BACKUPS_FORMAT_MESSAGE" = "JSON — қайта импорттауға болатын толық көшірме. CSV — электрондық кестеде қарауға арналған операциялар кестесі, оны қолданбаға импорттау мүмкін емес.";
+"BACKUPS_FORMAT_TITLE" = "Экспорт пішімі";
+"BACKUPS_IMPORT_SKIPPED" = "Өткізілген кірістер: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Операциялар: %d";

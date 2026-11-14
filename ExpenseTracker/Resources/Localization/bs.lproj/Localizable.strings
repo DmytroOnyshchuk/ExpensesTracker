@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Meni";
 "MENU_BUDGET" = "Budžet";
 "MENU_SETTINGS" = "Postavke";
+"MENU_BACKUPS" = "Sigurnosne kopije";
 "MENU_SPENT_IN_MONTH" = "Potrošeno za %@";
+"MENU_LANGUAGE" = "Jezik";
+"MENU_ABOUT" = "O aplikaciji";
+
+// MARK: - About
+"ABOUT_VERSION" = "Verzija %@";
+"ABOUT_SHARE" = "Podijeli aplikaciju";
+"ABOUT_RATE" = "Ocijeni aplikaciju";
 
 // MARK: - Tabs
 "TAB_HOME" = "Početna";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Dobrotvorni prilozi";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Prijevoz";
+"SETTINGS_APPEARANCE" = "Izgled";
+"SETTINGS_THEME_CLASSIC" = "Klasična";
+"SETTINGS_THEME_EMBER" = "Žar";
+"SETTINGS_THEME_MIDNIGHT" = "Ponoć";
+"SETTINGS_THEME_FOREST" = "Šuma";
+"SETTINGS_THEME_GRAY" = "Siva";
+"SETTINGS_THEME_INDIGO" = "Indigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Tečna crna";
+"SETTINGS_THEME_SLATE" = "Škriljac";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Kategorije: %d";
+"BACKUPS_CURRENT_DATA" = "U aplikaciji";
+"BACKUPS_ERROR_CORRUPTED" = "Datoteka je oštećena ili se ne može pročitati.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Ova kopija je napravljena novijom verzijom aplikacije.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Ovaj format datoteke nije podržan.";
+"BACKUPS_EXPORT_SECTION" = "Izvoz";
+"BACKUPS_IMPORT_ACTION" = "Uvezi iz datoteke";
+"BACKUPS_IMPORT_DONE" = "Dodane transakcije: %d, kategorije: %d";
+"BACKUPS_IMPORT_MERGE" = "Dodaj trenutnim podacima";
+"BACKUPS_IMPORT_PERIOD" = "Period: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Pronađeno u datoteci";
+"BACKUPS_IMPORT_REPLACE" = "Zamijeni sve podatke";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Sve trenutne transakcije i kategorije bit će izbrisane. Ova radnja se ne može poništiti.";
+"BACKUPS_IMPORT_SECTION" = "Uvoz";
+"BACKUPS_SHARE_ACTION" = "Izvezi podatke";
+"BACKUPS_CSV_COMMENT" = "Komentar";
+"BACKUPS_CSV_FOLDER" = "Fascikla";
+"BACKUPS_FORMAT_CSV" = "CSV — samo pregled";
+"BACKUPS_FORMAT_JSON" = "JSON — potpuna kopija";
+"BACKUPS_FORMAT_MESSAGE" = "JSON je potpuna kopija koja se može ponovo uvesti. CSV je tabela transakcija za pregled u tabelarnom programu — ne može se uvesti u aplikaciju.";
+"BACKUPS_FORMAT_TITLE" = "Format izvoza";
+"BACKUPS_IMPORT_SKIPPED" = "Preskočeni prihodi: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Transakcije: %d";

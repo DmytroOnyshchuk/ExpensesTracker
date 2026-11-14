@@ -58,7 +58,15 @@
 "MENU_TITLE" = "メニュー";
 "MENU_BUDGET" = "予算";
 "MENU_SETTINGS" = "設定";
+"MENU_BACKUPS" = "バックアップ";
 "MENU_SPENT_IN_MONTH" = "%@の支出";
+"MENU_LANGUAGE" = "言語";
+"MENU_ABOUT" = "このアプリについて";
+
+// MARK: - About
+"ABOUT_VERSION" = "バージョン %@";
+"ABOUT_SHARE" = "アプリを共有";
+"ABOUT_RATE" = "アプリを評価";
 
 // MARK: - Tabs
 "TAB_HOME" = "ホーム";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "寄付";
 "DEFAULT_CATEGORY_INTERNET" = "インターネット";
 "DEFAULT_CATEGORY_TRANSPORT" = "交通";
+"SETTINGS_APPEARANCE" = "外観";
+"SETTINGS_THEME_CLASSIC" = "クラシック";
+"SETTINGS_THEME_EMBER" = "エンバー";
+"SETTINGS_THEME_MIDNIGHT" = "ミッドナイト";
+"SETTINGS_THEME_FOREST" = "フォレスト";
+"SETTINGS_THEME_GRAY" = "グレー";
+"SETTINGS_THEME_INDIGO" = "インディゴ";
+"SETTINGS_THEME_LIQUID_BLACK" = "リキッドブラック";
+"SETTINGS_THEME_SLATE" = "スレート";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "カテゴリ：%d";
+"BACKUPS_CURRENT_DATA" = "アプリ内";
+"BACKUPS_ERROR_CORRUPTED" = "ファイルが破損しているか、読み込めません。";
+"BACKUPS_ERROR_NEWER_VERSION" = "このバックアップは新しいバージョンのアプリで作成されています。";
+"BACKUPS_ERROR_UNSUPPORTED" = "このファイル形式には対応していません。";
+"BACKUPS_EXPORT_SECTION" = "エクスポート";
+"BACKUPS_IMPORT_ACTION" = "ファイルからインポート";
+"BACKUPS_IMPORT_DONE" = "追加した取引：%d、カテゴリ：%d";
+"BACKUPS_IMPORT_MERGE" = "現在のデータに追加";
+"BACKUPS_IMPORT_PERIOD" = "期間：%@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "ファイル内の内容";
+"BACKUPS_IMPORT_REPLACE" = "すべてのデータを置き換え";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "現在の取引とカテゴリはすべて削除されます。この操作は取り消せません。";
+"BACKUPS_IMPORT_SECTION" = "インポート";
+"BACKUPS_SHARE_ACTION" = "データをエクスポート";
+"BACKUPS_CSV_COMMENT" = "コメント";
+"BACKUPS_CSV_FOLDER" = "フォルダ";
+"BACKUPS_FORMAT_CSV" = "CSV — 閲覧専用";
+"BACKUPS_FORMAT_JSON" = "JSON — 完全バックアップ";
+"BACKUPS_FORMAT_MESSAGE" = "JSON は再インポートできる完全なバックアップです。CSV は表計算ソフトで閲覧するための取引一覧で、アプリにインポートすることはできません。";
+"BACKUPS_FORMAT_TITLE" = "エクスポート形式";
+"BACKUPS_IMPORT_SKIPPED" = "スキップした収入：%d";
+"BACKUPS_TRANSACTIONS_COUNT" = "取引：%d";

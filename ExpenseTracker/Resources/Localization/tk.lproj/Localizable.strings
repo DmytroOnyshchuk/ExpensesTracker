@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Menýu";
 "MENU_BUDGET" = "Býujet";
 "MENU_SETTINGS" = "Sazlamalar";
+"MENU_BACKUPS" = "Ätiýaçlyk nusgalar";
 "MENU_SPENT_IN_MONTH" = "Jemi harçlandy · %@";
+"MENU_LANGUAGE" = "Dil";
+"MENU_ABOUT" = "Programma barada";
+
+// MARK: - About
+"ABOUT_VERSION" = "Wersiýa %@";
+"ABOUT_SHARE" = "Programmany paýlaş";
+"ABOUT_RATE" = "Programma baha ber";
 
 // MARK: - Tabs
 "TAB_HOME" = "Baş sahypa";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Haýyr-sahawat";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Ulag";
+"SETTINGS_APPEARANCE" = "Daşky görnüş";
+"SETTINGS_THEME_CLASSIC" = "Klassyk";
+"SETTINGS_THEME_EMBER" = "Köz";
+"SETTINGS_THEME_MIDNIGHT" = "Ýary gije";
+"SETTINGS_THEME_FOREST" = "Tokaý";
+"SETTINGS_THEME_GRAY" = "Çal";
+"SETTINGS_THEME_INDIGO" = "Indigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Suwuk gara";
+"SETTINGS_THEME_SLATE" = "Slanes";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Kategoriýalar: %d";
+"BACKUPS_CURRENT_DATA" = "Programmada";
+"BACKUPS_ERROR_CORRUPTED" = "Faýl zeperlenen ýa-da okalmaýar.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Bu nusga programmanyň has täze wersiýasynda döredilen.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Bu faýl formaty goldanylmaýar.";
+"BACKUPS_EXPORT_SECTION" = "Eksport";
+"BACKUPS_IMPORT_ACTION" = "Faýldan import et";
+"BACKUPS_IMPORT_DONE" = "Goşulan amallar: %d, kategoriýalar: %d";
+"BACKUPS_IMPORT_MERGE" = "Häzirki maglumatlara goş";
+"BACKUPS_IMPORT_PERIOD" = "Döwür: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Faýlda tapyldy";
+"BACKUPS_IMPORT_REPLACE" = "Ähli maglumatlary çalyş";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Häzirki ähli amallar we kategoriýalar pozular. Bu hereketi yzyna gaýtaryp bolmaýar.";
+"BACKUPS_IMPORT_SECTION" = "Import";
+"BACKUPS_SHARE_ACTION" = "Maglumatlary eksport et";
+"BACKUPS_CSV_COMMENT" = "Teswir";
+"BACKUPS_CSV_FOLDER" = "Bukja";
+"BACKUPS_FORMAT_CSV" = "CSV — diňe görmek üçin";
+"BACKUPS_FORMAT_JSON" = "JSON — doly nusga";
+"BACKUPS_FORMAT_MESSAGE" = "JSON — gaýtadan import edip bolýan doly nusga. CSV — elektron tablisada görmek üçin amallaryň tablisasy, ony programma import edip bolmaýar.";
+"BACKUPS_FORMAT_TITLE" = "Eksport formaty";
+"BACKUPS_IMPORT_SKIPPED" = "Goýberilen girdejiler: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Amallar: %d";

@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Menú";
 "MENU_BUDGET" = "Pressupost";
 "MENU_SETTINGS" = "Configuració";
+"MENU_BACKUPS" = "Còpies de seguretat";
 "MENU_SPENT_IN_MONTH" = "Total gastat · %@";
+"MENU_LANGUAGE" = "Idioma";
+"MENU_ABOUT" = "Quant a";
+
+// MARK: - About
+"ABOUT_VERSION" = "Versió %@";
+"ABOUT_SHARE" = "Comparteix l’app";
+"ABOUT_RATE" = "Valora l’app";
 
 // MARK: - Tabs
 "TAB_HOME" = "Inici";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Donacions";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Transport";
+"SETTINGS_APPEARANCE" = "Aparença";
+"SETTINGS_THEME_CLASSIC" = "Clàssic";
+"SETTINGS_THEME_EMBER" = "Brasa";
+"SETTINGS_THEME_MIDNIGHT" = "Mitjanit";
+"SETTINGS_THEME_FOREST" = "Bosc";
+"SETTINGS_THEME_GRAY" = "Gris";
+"SETTINGS_THEME_INDIGO" = "Indi";
+"SETTINGS_THEME_LIQUID_BLACK" = "Negre líquid";
+"SETTINGS_THEME_SLATE" = "Pissarra";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Categories: %d";
+"BACKUPS_CURRENT_DATA" = "A l’app";
+"BACKUPS_ERROR_CORRUPTED" = "El fitxer està malmès o no es pot llegir.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Aquesta còpia s’ha creat amb una versió més recent de l’app.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Aquest format de fitxer no és compatible.";
+"BACKUPS_EXPORT_SECTION" = "Exportació";
+"BACKUPS_IMPORT_ACTION" = "Importa des d’un fitxer";
+"BACKUPS_IMPORT_DONE" = "Transaccions afegides: %d, categories: %d";
+"BACKUPS_IMPORT_MERGE" = "Afegeix a les dades actuals";
+"BACKUPS_IMPORT_PERIOD" = "Període: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Trobat al fitxer";
+"BACKUPS_IMPORT_REPLACE" = "Substitueix totes les dades";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "S’eliminaran totes les transaccions i categories actuals. Aquesta acció no es pot desfer.";
+"BACKUPS_IMPORT_SECTION" = "Importació";
+"BACKUPS_SHARE_ACTION" = "Exporta les dades";
+"BACKUPS_CSV_COMMENT" = "Comentari";
+"BACKUPS_CSV_FOLDER" = "Carpeta";
+"BACKUPS_FORMAT_CSV" = "CSV — només visualització";
+"BACKUPS_FORMAT_JSON" = "JSON — còpia completa";
+"BACKUPS_FORMAT_MESSAGE" = "JSON és una còpia completa que es pot tornar a importar. CSV és una taula de transaccions per veure en un full de càlcul; no es pot importar a l’app.";
+"BACKUPS_FORMAT_TITLE" = "Format d’exportació";
+"BACKUPS_IMPORT_SKIPPED" = "Ingressos omesos: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Transaccions: %d";

@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Liiska";
 "MENU_BUDGET" = "Miisaaniyad";
 "MENU_SETTINGS" = "Dejinta";
+"MENU_BACKUPS" = "Kaydka";
 "MENU_SPENT_IN_MONTH" = "Wadarta la kharash gareeyay · %@";
+"MENU_LANGUAGE" = "Luqadda";
+"MENU_ABOUT" = "Ku saabsan";
+
+// MARK: - About
+"ABOUT_VERSION" = "Nooca %@";
+"ABOUT_SHARE" = "La wadaag abka";
+"ABOUT_RATE" = "Qiimee abka";
 
 // MARK: - Tabs
 "TAB_HOME" = "Hoyga";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Sadaqo";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Gaadiid";
+"SETTINGS_APPEARANCE" = "Muuqaalka";
+"SETTINGS_THEME_CLASSIC" = "Caadi";
+"SETTINGS_THEME_EMBER" = "Dhuxul shidan";
+"SETTINGS_THEME_MIDNIGHT" = "Saqdhexe";
+"SETTINGS_THEME_FOREST" = "Kayn";
+"SETTINGS_THEME_GRAY" = "Cawlan";
+"SETTINGS_THEME_INDIGO" = "Buluug madow";
+"SETTINGS_THEME_LIQUID_BLACK" = "Madow dareere ah";
+"SETTINGS_THEME_SLATE" = "Dhagax looxeed";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Qaybaha: %d";
+"BACKUPS_CURRENT_DATA" = "Abka gudihiisa";
+"BACKUPS_ERROR_CORRUPTED" = "Faylku wuu xumaaday ama lama akhriyi karo.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Kaydkan waxaa lagu sameeyay nooc ka cusub abka.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Qaabka faylkan lama taageero.";
+"BACKUPS_EXPORT_SECTION" = "Dhoofin";
+"BACKUPS_IMPORT_ACTION" = "Ka soo deji fayl";
+"BACKUPS_IMPORT_DONE" = "Dhaqdhaqaaqyada lagu daray: %d, qaybaha: %d";
+"BACKUPS_IMPORT_MERGE" = "Ku dar xogta hadda";
+"BACKUPS_IMPORT_PERIOD" = "Muddada: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Laga helay faylka";
+"BACKUPS_IMPORT_REPLACE" = "Beddel dhammaan xogta";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Dhammaan dhaqdhaqaaqyada iyo qaybaha hadda jira waa la tirtiri doonaa. Tan lagama noqon karo.";
+"BACKUPS_IMPORT_SECTION" = "Soo dejin";
+"BACKUPS_SHARE_ACTION" = "Dhoofi xogta";
+"BACKUPS_CSV_COMMENT" = "Faallo";
+"BACKUPS_CSV_FOLDER" = "Gal";
+"BACKUPS_FORMAT_CSV" = "CSV — daawasho keliya";
+"BACKUPS_FORMAT_JSON" = "JSON — kayd buuxa";
+"BACKUPS_FORMAT_MESSAGE" = "JSON waa kayd buuxa oo dib loo soo dejin karo. CSV waa shax dhaqdhaqaaqyo ah oo lagu daawado xaashi xisaabeed — laguma soo dejin karo abka.";
+"BACKUPS_FORMAT_TITLE" = "Qaabka dhoofinta";
+"BACKUPS_IMPORT_SKIPPED" = "Dakhliga la booday: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Dhaqdhaqaaqyada: %d";

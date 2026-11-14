@@ -58,7 +58,15 @@
 "MENU_TITLE" = "মেনু";
 "MENU_BUDGET" = "বাজেট";
 "MENU_SETTINGS" = "ছেটিংছ";
+"MENU_BACKUPS" = "বেকআপ";
 "MENU_SPENT_IN_MONTH" = "মুঠ খৰচ · %@";
+"MENU_LANGUAGE" = "ভাষা";
+"MENU_ABOUT" = "বিষয়ে";
+
+// MARK: - About
+"ABOUT_VERSION" = "সংস্কৰণ %@";
+"ABOUT_SHARE" = "এপ্ শ্বেয়াৰ কৰক";
+"ABOUT_RATE" = "এপ্‌ক ৰেট কৰক";
 
 // MARK: - Tabs
 "TAB_HOME" = "গৃহ";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "দান";
 "DEFAULT_CATEGORY_INTERNET" = "ইণ্টাৰনেট";
 "DEFAULT_CATEGORY_TRANSPORT" = "পৰিবহণ";
+"SETTINGS_APPEARANCE" = "ৰূপ";
+"SETTINGS_THEME_CLASSIC" = "ক্লাছিক";
+"SETTINGS_THEME_EMBER" = "আঙঠা";
+"SETTINGS_THEME_MIDNIGHT" = "মাজনিশা";
+"SETTINGS_THEME_FOREST" = "অৰণ্য";
+"SETTINGS_THEME_GRAY" = "ধূসৰ";
+"SETTINGS_THEME_INDIGO" = "নীল";
+"SETTINGS_THEME_LIQUID_BLACK" = "তৰল ক'লা";
+"SETTINGS_THEME_SLATE" = "শ্লেট";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "শ্ৰেণী: %d";
+"BACKUPS_CURRENT_DATA" = "এপ্‌ত";
+"BACKUPS_ERROR_CORRUPTED" = "ফাইলটো নষ্ট হৈছে বা পঢ়িব পৰা নাই।";
+"BACKUPS_ERROR_NEWER_VERSION" = "এই বেকআপ এপ্‌ৰ নতুন সংস্কৰণেৰে তৈয়াৰ কৰা হৈছে।";
+"BACKUPS_ERROR_UNSUPPORTED" = "এই ফাইল ফৰ্মেট সমৰ্থিত নহয়।";
+"BACKUPS_EXPORT_SECTION" = "ৰপ্তানি";
+"BACKUPS_IMPORT_ACTION" = "ফাইলৰ পৰা আমদানি কৰক";
+"BACKUPS_IMPORT_DONE" = "যোগ কৰা লেনদেন: %d, শ্ৰেণী: %d";
+"BACKUPS_IMPORT_MERGE" = "বৰ্তমানৰ ডেটাত যোগ কৰক";
+"BACKUPS_IMPORT_PERIOD" = "সময়সীমা: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "ফাইলত পোৱা গৈছে";
+"BACKUPS_IMPORT_REPLACE" = "সকলো ডেটা সলনি কৰক";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "বৰ্তমানৰ সকলো লেনদেন আৰু শ্ৰেণী মচি পেলোৱা হ'ব। এইটো পূৰ্বৱৎ কৰিব নোৱাৰি।";
+"BACKUPS_IMPORT_SECTION" = "আমদানি";
+"BACKUPS_SHARE_ACTION" = "ডেটা ৰপ্তানি কৰক";
+"BACKUPS_CSV_COMMENT" = "মন্তব্য";
+"BACKUPS_CSV_FOLDER" = "ফ'ল্ডাৰ";
+"BACKUPS_FORMAT_CSV" = "CSV — কেৱল চাবৰ বাবে";
+"BACKUPS_FORMAT_JSON" = "JSON — সম্পূৰ্ণ বেকআপ";
+"BACKUPS_FORMAT_MESSAGE" = "JSON হৈছে পুনৰ আমদানি কৰিব পৰা সম্পূৰ্ণ বেকআপ। CSV হৈছে স্প্ৰেডশ্বীটত চাবৰ বাবে লেনদেনৰ তালিকা — ইয়াক এপ্‌ত আমদানি কৰিব নোৱাৰি।";
+"BACKUPS_FORMAT_TITLE" = "ৰপ্তানি ফৰ্মেট";
+"BACKUPS_IMPORT_SKIPPED" = "বাদ দিয়া আয়: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "লেনদেন: %d";

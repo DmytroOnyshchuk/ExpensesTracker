@@ -58,7 +58,15 @@
 "MENU_TITLE" = "مینو";
 "MENU_BUDGET" = "بودیجه";
 "MENU_SETTINGS" = "تنظیمات";
+"MENU_BACKUPS" = "بېک اپونه";
 "MENU_SPENT_IN_MONTH" = "ټول لګښت · %@";
+"MENU_LANGUAGE" = "ژبه";
+"MENU_ABOUT" = "په اړه";
+
+// MARK: - About
+"ABOUT_VERSION" = "نسخه %@";
+"ABOUT_SHARE" = "اپ شریک کړئ";
+"ABOUT_RATE" = "اپ ته درجه ورکړئ";
 
 // MARK: - Tabs
 "TAB_HOME" = "کور";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "خیرات";
 "DEFAULT_CATEGORY_INTERNET" = "انټرنېټ";
 "DEFAULT_CATEGORY_TRANSPORT" = "ټرانسپورټ";
+"SETTINGS_APPEARANCE" = "بڼه";
+"SETTINGS_THEME_CLASSIC" = "کلاسیک";
+"SETTINGS_THEME_EMBER" = "سکروټه";
+"SETTINGS_THEME_MIDNIGHT" = "نیمه شپه";
+"SETTINGS_THEME_FOREST" = "ځنګل";
+"SETTINGS_THEME_GRAY" = "خړ";
+"SETTINGS_THEME_INDIGO" = "نیلي";
+"SETTINGS_THEME_LIQUID_BLACK" = "مایع تور";
+"SETTINGS_THEME_SLATE" = "سلېټ";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "کټګورۍ: %d";
+"BACKUPS_CURRENT_DATA" = "په اپ کې";
+"BACKUPS_ERROR_CORRUPTED" = "فایل خراب دی یا نه لوستل کېږي.";
+"BACKUPS_ERROR_NEWER_VERSION" = "دا بېک اپ د اپ په نوې نسخه جوړ شوی دی.";
+"BACKUPS_ERROR_UNSUPPORTED" = "د دې فایل بڼه نه ملاتړ کېږي.";
+"BACKUPS_EXPORT_SECTION" = "صادرول";
+"BACKUPS_IMPORT_ACTION" = "له فایل څخه وارد کړئ";
+"BACKUPS_IMPORT_DONE" = "ور زیاتې شوې راکړې ورکړې: %d، کټګورۍ: %d";
+"BACKUPS_IMPORT_MERGE" = "اوسنۍ ډېټا ته ور زیات کړئ";
+"BACKUPS_IMPORT_PERIOD" = "موده: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "په فایل کې وموندل شو";
+"BACKUPS_IMPORT_REPLACE" = "ټوله ډېټا بدله کړئ";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "ټولې اوسنۍ راکړې ورکړې او کټګورۍ به حذف شي. دا کار بېرته نه شي اړول کېدای.";
+"BACKUPS_IMPORT_SECTION" = "واردول";
+"BACKUPS_SHARE_ACTION" = "ډېټا صادر کړئ";
+"BACKUPS_CSV_COMMENT" = "تبصره";
+"BACKUPS_CSV_FOLDER" = "پوښۍ";
+"BACKUPS_FORMAT_CSV" = "CSV — یوازې د کتلو لپاره";
+"BACKUPS_FORMAT_JSON" = "JSON — بشپړ بېک اپ";
+"BACKUPS_FORMAT_MESSAGE" = "JSON بشپړ بېک اپ دی چې بېرته واردېدای شي. CSV د راکړو ورکړو جدول دی چې په سپریډشیټ کې د کتلو لپاره دی — اپ ته نه شي واردېدای.";
+"BACKUPS_FORMAT_TITLE" = "د صادرولو بڼه";
+"BACKUPS_IMPORT_SKIPPED" = "پرېښودل شوی عاید: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "راکړې ورکړې: %d";

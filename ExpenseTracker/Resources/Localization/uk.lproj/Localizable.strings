@@ -135,6 +135,15 @@
 "DEFAULT_CATEGORY_CHARITY" = "Благодійність";
 "DEFAULT_CATEGORY_INTERNET" = "Інтернет";
 "DEFAULT_CATEGORY_TRANSPORT" = "Транспорт";
+"SETTINGS_APPEARANCE" = "Оформлення";
+"SETTINGS_THEME_CLASSIC" = "Класична";
+"SETTINGS_THEME_EMBER" = "Жар";
+"SETTINGS_THEME_MIDNIGHT" = "Північ";
+"SETTINGS_THEME_FOREST" = "Ліс";
+"SETTINGS_THEME_GRAY" = "Сіра";
+"SETTINGS_THEME_INDIGO" = "Індиго";
+"SETTINGS_THEME_LIQUID_BLACK" = "Рідкий чорний";
+"SETTINGS_THEME_SLATE" = "Сланець";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Категорії: %d";

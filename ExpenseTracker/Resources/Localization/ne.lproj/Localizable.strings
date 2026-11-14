@@ -58,7 +58,15 @@
 "MENU_TITLE" = "मेनु";
 "MENU_BUDGET" = "बजेट";
 "MENU_SETTINGS" = "सेटिङहरू";
+"MENU_BACKUPS" = "ब्याकअपहरू";
 "MENU_SPENT_IN_MONTH" = "कुल खर्च · %@";
+"MENU_LANGUAGE" = "भाषा";
+"MENU_ABOUT" = "बारेमा";
+
+// MARK: - About
+"ABOUT_VERSION" = "संस्करण %@";
+"ABOUT_SHARE" = "एप सेयर गर्नुहोस्";
+"ABOUT_RATE" = "एपलाई मूल्याङ्कन गर्नुहोस्";
 
 // MARK: - Tabs
 "TAB_HOME" = "गृह";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "दान";
 "DEFAULT_CATEGORY_INTERNET" = "इन्टरनेट";
 "DEFAULT_CATEGORY_TRANSPORT" = "यातायात";
+"SETTINGS_APPEARANCE" = "रूप";
+"SETTINGS_THEME_CLASSIC" = "क्लासिक";
+"SETTINGS_THEME_EMBER" = "भुङ्ग्रो";
+"SETTINGS_THEME_MIDNIGHT" = "मध्यरात";
+"SETTINGS_THEME_FOREST" = "वन";
+"SETTINGS_THEME_GRAY" = "खैरो";
+"SETTINGS_THEME_INDIGO" = "नीर";
+"SETTINGS_THEME_LIQUID_BLACK" = "तरल कालो";
+"SETTINGS_THEME_SLATE" = "स्लेट";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "श्रेणीहरू: %d";
+"BACKUPS_CURRENT_DATA" = "एपमा";
+"BACKUPS_ERROR_CORRUPTED" = "फाइल बिग्रिएको छ वा पढ्न सकिँदैन।";
+"BACKUPS_ERROR_NEWER_VERSION" = "यो ब्याकअप एपको नयाँ संस्करणबाट बनाइएको हो।";
+"BACKUPS_ERROR_UNSUPPORTED" = "यो फाइल ढाँचा समर्थित छैन।";
+"BACKUPS_EXPORT_SECTION" = "निर्यात";
+"BACKUPS_IMPORT_ACTION" = "फाइलबाट आयात गर्नुहोस्";
+"BACKUPS_IMPORT_DONE" = "थपिएका कारोबारहरू: %d, श्रेणीहरू: %d";
+"BACKUPS_IMPORT_MERGE" = "हालको डेटामा थप्नुहोस्";
+"BACKUPS_IMPORT_PERIOD" = "अवधि: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "फाइलमा भेटियो";
+"BACKUPS_IMPORT_REPLACE" = "सबै डेटा प्रतिस्थापन गर्नुहोस्";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "हालका सबै कारोबार र श्रेणीहरू मेटिनेछन्। यसलाई पूर्ववत गर्न सकिँदैन।";
+"BACKUPS_IMPORT_SECTION" = "आयात";
+"BACKUPS_SHARE_ACTION" = "डेटा निर्यात गर्नुहोस्";
+"BACKUPS_CSV_COMMENT" = "टिप्पणी";
+"BACKUPS_CSV_FOLDER" = "फोल्डर";
+"BACKUPS_FORMAT_CSV" = "CSV — हेर्नका लागि मात्र";
+"BACKUPS_FORMAT_JSON" = "JSON — पूर्ण ब्याकअप";
+"BACKUPS_FORMAT_MESSAGE" = "JSON फेरि आयात गर्न सकिने पूर्ण ब्याकअप हो। CSV स्प्रेडसिटमा हेर्नका लागि कारोबारको तालिका हो — यसलाई एपमा आयात गर्न सकिँदैन।";
+"BACKUPS_FORMAT_TITLE" = "निर्यात ढाँचा";
+"BACKUPS_IMPORT_SKIPPED" = "छोडिएको आम्दानी: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "कारोबारहरू: %d";

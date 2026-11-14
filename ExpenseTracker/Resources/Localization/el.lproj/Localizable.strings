@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Μενού";
 "MENU_BUDGET" = "Προϋπολογισμός";
 "MENU_SETTINGS" = "Ρυθμίσεις";
+"MENU_BACKUPS" = "Αντίγραφα ασφαλείας";
 "MENU_SPENT_IN_MONTH" = "Σύνολο εξόδων · %@";
+"MENU_LANGUAGE" = "Γλώσσα";
+"MENU_ABOUT" = "Πληροφορίες";
+
+// MARK: - About
+"ABOUT_VERSION" = "Έκδοση %@";
+"ABOUT_SHARE" = "Κοινοποίηση εφαρμογής";
+"ABOUT_RATE" = "Αξιολόγηση εφαρμογής";
 
 // MARK: - Tabs
 "TAB_HOME" = "Αρχική";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Φιλανθρωπία";
 "DEFAULT_CATEGORY_INTERNET" = "Ίντερνετ";
 "DEFAULT_CATEGORY_TRANSPORT" = "Μετακινήσεις";
+"SETTINGS_APPEARANCE" = "Εμφάνιση";
+"SETTINGS_THEME_CLASSIC" = "Κλασικό";
+"SETTINGS_THEME_EMBER" = "Θράκα";
+"SETTINGS_THEME_MIDNIGHT" = "Μεσάνυχτα";
+"SETTINGS_THEME_FOREST" = "Δάσος";
+"SETTINGS_THEME_GRAY" = "Γκρι";
+"SETTINGS_THEME_INDIGO" = "Λουλακί";
+"SETTINGS_THEME_LIQUID_BLACK" = "Υγρό μαύρο";
+"SETTINGS_THEME_SLATE" = "Σχιστόλιθος";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Κατηγορίες: %d";
+"BACKUPS_CURRENT_DATA" = "Στην εφαρμογή";
+"BACKUPS_ERROR_CORRUPTED" = "Το αρχείο είναι κατεστραμμένο ή δεν μπορεί να διαβαστεί.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Αυτό το αντίγραφο δημιουργήθηκε από νεότερη έκδοση της εφαρμογής.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Αυτή η μορφή αρχείου δεν υποστηρίζεται.";
+"BACKUPS_EXPORT_SECTION" = "Εξαγωγή";
+"BACKUPS_IMPORT_ACTION" = "Εισαγωγή από αρχείο";
+"BACKUPS_IMPORT_DONE" = "Συναλλαγές που προστέθηκαν: %d, κατηγορίες: %d";
+"BACKUPS_IMPORT_MERGE" = "Προσθήκη στα τρέχοντα δεδομένα";
+"BACKUPS_IMPORT_PERIOD" = "Περίοδος: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Βρέθηκαν στο αρχείο";
+"BACKUPS_IMPORT_REPLACE" = "Αντικατάσταση όλων των δεδομένων";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Όλες οι τρέχουσες συναλλαγές και κατηγορίες θα διαγραφούν. Η ενέργεια δεν μπορεί να αναιρεθεί.";
+"BACKUPS_IMPORT_SECTION" = "Εισαγωγή";
+"BACKUPS_SHARE_ACTION" = "Εξαγωγή δεδομένων";
+"BACKUPS_CSV_COMMENT" = "Σχόλιο";
+"BACKUPS_CSV_FOLDER" = "Φάκελος";
+"BACKUPS_FORMAT_CSV" = "CSV — μόνο προβολή";
+"BACKUPS_FORMAT_JSON" = "JSON — πλήρες αντίγραφο";
+"BACKUPS_FORMAT_MESSAGE" = "Το JSON είναι πλήρες αντίγραφο που μπορεί να εισαχθεί ξανά. Το CSV είναι πίνακας συναλλαγών για προβολή σε υπολογιστικό φύλλο — δεν μπορεί να εισαχθεί στην εφαρμογή.";
+"BACKUPS_FORMAT_TITLE" = "Μορφή εξαγωγής";
+"BACKUPS_IMPORT_SKIPPED" = "Έσοδα που παραλείφθηκαν: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Συναλλαγές: %d";

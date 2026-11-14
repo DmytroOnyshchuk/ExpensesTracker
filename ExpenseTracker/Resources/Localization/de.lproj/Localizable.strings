@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Menü";
 "MENU_BUDGET" = "Budget";
 "MENU_SETTINGS" = "Einstellungen";
+"MENU_BACKUPS" = "Backups";
 "MENU_SPENT_IN_MONTH" = "Ausgaben im %@";
+"MENU_LANGUAGE" = "Sprache";
+"MENU_ABOUT" = "Über";
+
+// MARK: - About
+"ABOUT_VERSION" = "Version %@";
+"ABOUT_SHARE" = "App teilen";
+"ABOUT_RATE" = "App bewerten";
 
 // MARK: - Tabs
 "TAB_HOME" = "Start";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Spenden";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Verkehr";
+"SETTINGS_APPEARANCE" = "Erscheinungsbild";
+"SETTINGS_THEME_CLASSIC" = "Klassisch";
+"SETTINGS_THEME_EMBER" = "Glut";
+"SETTINGS_THEME_MIDNIGHT" = "Mitternacht";
+"SETTINGS_THEME_FOREST" = "Wald";
+"SETTINGS_THEME_GRAY" = "Grau";
+"SETTINGS_THEME_INDIGO" = "Indigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Flüssiges Schwarz";
+"SETTINGS_THEME_SLATE" = "Schiefer";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Kategorien: %d";
+"BACKUPS_CURRENT_DATA" = "In der App";
+"BACKUPS_ERROR_CORRUPTED" = "Die Datei ist beschädigt oder kann nicht gelesen werden.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Dieses Backup wurde mit einer neueren Version der App erstellt.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Dieses Dateiformat wird nicht unterstützt.";
+"BACKUPS_EXPORT_SECTION" = "Export";
+"BACKUPS_IMPORT_ACTION" = "Aus Datei importieren";
+"BACKUPS_IMPORT_DONE" = "Hinzugefügte Transaktionen: %d, Kategorien: %d";
+"BACKUPS_IMPORT_MERGE" = "Zu aktuellen Daten hinzufügen";
+"BACKUPS_IMPORT_PERIOD" = "Zeitraum: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "In der Datei gefunden";
+"BACKUPS_IMPORT_REPLACE" = "Alle Daten ersetzen";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Alle aktuellen Transaktionen und Kategorien werden gelöscht. Dies kann nicht rückgängig gemacht werden.";
+"BACKUPS_IMPORT_SECTION" = "Import";
+"BACKUPS_SHARE_ACTION" = "Daten exportieren";
+"BACKUPS_CSV_COMMENT" = "Kommentar";
+"BACKUPS_CSV_FOLDER" = "Ordner";
+"BACKUPS_FORMAT_CSV" = "CSV — nur zur Ansicht";
+"BACKUPS_FORMAT_JSON" = "JSON — vollständiges Backup";
+"BACKUPS_FORMAT_MESSAGE" = "JSON ist ein vollständiges Backup, das wieder importiert werden kann. CSV ist eine Tabelle der Transaktionen zur Ansicht in einer Tabellenkalkulation — sie kann nicht in die App importiert werden.";
+"BACKUPS_FORMAT_TITLE" = "Exportformat";
+"BACKUPS_IMPORT_SKIPPED" = "Einnahmen übersprungen: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Transaktionen: %d";

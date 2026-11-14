@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Menu";
 "MENU_BUDGET" = "Budżet";
 "MENU_SETTINGS" = "Ustawienia";
+"MENU_BACKUPS" = "Kopie zapasowe";
 "MENU_SPENT_IN_MONTH" = "Wydatki za %@";
+"MENU_LANGUAGE" = "Język";
+"MENU_ABOUT" = "O aplikacji";
+
+// MARK: - About
+"ABOUT_VERSION" = "Wersja %@";
+"ABOUT_SHARE" = "Udostępnij aplikację";
+"ABOUT_RATE" = "Oceń aplikację";
 
 // MARK: - Tabs
 "TAB_HOME" = "Główna";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Dobroczynność";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Transport";
+"SETTINGS_APPEARANCE" = "Wygląd";
+"SETTINGS_THEME_CLASSIC" = "Klasyczny";
+"SETTINGS_THEME_EMBER" = "Żar";
+"SETTINGS_THEME_MIDNIGHT" = "Północ";
+"SETTINGS_THEME_FOREST" = "Las";
+"SETTINGS_THEME_GRAY" = "Szary";
+"SETTINGS_THEME_INDIGO" = "Indygo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Płynna czerń";
+"SETTINGS_THEME_SLATE" = "Łupek";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Kategorie: %d";
+"BACKUPS_CURRENT_DATA" = "W aplikacji";
+"BACKUPS_ERROR_CORRUPTED" = "Plik jest uszkodzony lub nie można go odczytać.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Ta kopia została utworzona w nowszej wersji aplikacji.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Ten format pliku nie jest obsługiwany.";
+"BACKUPS_EXPORT_SECTION" = "Eksport";
+"BACKUPS_IMPORT_ACTION" = "Importuj z pliku";
+"BACKUPS_IMPORT_DONE" = "Dodane transakcje: %d, kategorie: %d";
+"BACKUPS_IMPORT_MERGE" = "Dodaj do bieżących danych";
+"BACKUPS_IMPORT_PERIOD" = "Okres: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Znaleziono w pliku";
+"BACKUPS_IMPORT_REPLACE" = "Zastąp wszystkie dane";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Wszystkie bieżące transakcje i kategorie zostaną usunięte. Tej operacji nie można cofnąć.";
+"BACKUPS_IMPORT_SECTION" = "Import";
+"BACKUPS_SHARE_ACTION" = "Eksportuj dane";
+"BACKUPS_CSV_COMMENT" = "Komentarz";
+"BACKUPS_CSV_FOLDER" = "Folder";
+"BACKUPS_FORMAT_CSV" = "CSV — tylko podgląd";
+"BACKUPS_FORMAT_JSON" = "JSON — pełna kopia";
+"BACKUPS_FORMAT_MESSAGE" = "JSON to pełna kopia, którą można zaimportować z powrotem. CSV to tabela transakcji do przeglądania w arkuszu kalkulacyjnym — nie można jej zaimportować do aplikacji.";
+"BACKUPS_FORMAT_TITLE" = "Format eksportu";
+"BACKUPS_IMPORT_SKIPPED" = "Pominięte przychody: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Transakcje: %d";

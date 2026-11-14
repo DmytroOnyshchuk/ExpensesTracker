@@ -58,7 +58,15 @@
 "MENU_TITLE" = "תפריט";
 "MENU_BUDGET" = "תקציב";
 "MENU_SETTINGS" = "הגדרות";
+"MENU_BACKUPS" = "גיבויים";
 "MENU_SPENT_IN_MONTH" = "הוצאות ב%@";
+"MENU_LANGUAGE" = "שפה";
+"MENU_ABOUT" = "אודות";
+
+// MARK: - About
+"ABOUT_VERSION" = "גרסה %@";
+"ABOUT_SHARE" = "שיתוף האפליקציה";
+"ABOUT_RATE" = "דירוג האפליקציה";
 
 // MARK: - Tabs
 "TAB_HOME" = "בית";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "תרומות";
 "DEFAULT_CATEGORY_INTERNET" = "אינטרנט";
 "DEFAULT_CATEGORY_TRANSPORT" = "תחבורה";
+"SETTINGS_APPEARANCE" = "מראה";
+"SETTINGS_THEME_CLASSIC" = "קלאסי";
+"SETTINGS_THEME_EMBER" = "גחלת";
+"SETTINGS_THEME_MIDNIGHT" = "חצות";
+"SETTINGS_THEME_FOREST" = "יער";
+"SETTINGS_THEME_GRAY" = "אפור";
+"SETTINGS_THEME_INDIGO" = "אינדיגו";
+"SETTINGS_THEME_LIQUID_BLACK" = "שחור נוזלי";
+"SETTINGS_THEME_SLATE" = "צפחה";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "קטגוריות: %d";
+"BACKUPS_CURRENT_DATA" = "באפליקציה";
+"BACKUPS_ERROR_CORRUPTED" = "הקובץ פגום או שלא ניתן לקרוא אותו.";
+"BACKUPS_ERROR_NEWER_VERSION" = "גיבוי זה נוצר בגרסה חדשה יותר של האפליקציה.";
+"BACKUPS_ERROR_UNSUPPORTED" = "תבנית קובץ זו אינה נתמכת.";
+"BACKUPS_EXPORT_SECTION" = "ייצוא";
+"BACKUPS_IMPORT_ACTION" = "ייבוא מקובץ";
+"BACKUPS_IMPORT_DONE" = "עסקאות שנוספו: %d, קטגוריות: %d";
+"BACKUPS_IMPORT_MERGE" = "הוספה לנתונים הנוכחיים";
+"BACKUPS_IMPORT_PERIOD" = "תקופה: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "נמצא בקובץ";
+"BACKUPS_IMPORT_REPLACE" = "החלפת כל הנתונים";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "כל העסקאות והקטגוריות הנוכחיות יימחקו. לא ניתן לבטל פעולה זו.";
+"BACKUPS_IMPORT_SECTION" = "ייבוא";
+"BACKUPS_SHARE_ACTION" = "ייצוא נתונים";
+"BACKUPS_CSV_COMMENT" = "הערה";
+"BACKUPS_CSV_FOLDER" = "תיקייה";
+"BACKUPS_FORMAT_CSV" = "CSV — לצפייה בלבד";
+"BACKUPS_FORMAT_JSON" = "JSON — גיבוי מלא";
+"BACKUPS_FORMAT_MESSAGE" = "JSON הוא גיבוי מלא שניתן לייבא חזרה. CSV הוא טבלת עסקאות לצפייה בגיליון אלקטרוני — לא ניתן לייבא אותו לאפליקציה.";
+"BACKUPS_FORMAT_TITLE" = "תבנית ייצוא";
+"BACKUPS_IMPORT_SKIPPED" = "הכנסות שדולגו: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "עסקאות: %d";

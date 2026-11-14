@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Menyja";
 "MENU_BUDGET" = "Buxheti";
 "MENU_SETTINGS" = "Cilësimet";
+"MENU_BACKUPS" = "Kopjet rezervë";
 "MENU_SPENT_IN_MONTH" = "Gjithsej shpenzuar · %@";
+"MENU_LANGUAGE" = "Gjuha";
+"MENU_ABOUT" = "Rreth";
+
+// MARK: - About
+"ABOUT_VERSION" = "Versioni %@";
+"ABOUT_SHARE" = "Ndaj aplikacionin";
+"ABOUT_RATE" = "Vlerëso aplikacionin";
 
 // MARK: - Tabs
 "TAB_HOME" = "Kreu";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Bamirësi";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Transport";
+"SETTINGS_APPEARANCE" = "Pamja";
+"SETTINGS_THEME_CLASSIC" = "Klasike";
+"SETTINGS_THEME_EMBER" = "Prush";
+"SETTINGS_THEME_MIDNIGHT" = "Mesnatë";
+"SETTINGS_THEME_FOREST" = "Pyll";
+"SETTINGS_THEME_GRAY" = "Gri";
+"SETTINGS_THEME_INDIGO" = "Indigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "E zezë e lëngshme";
+"SETTINGS_THEME_SLATE" = "Rrasë";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Kategori: %d";
+"BACKUPS_CURRENT_DATA" = "Në aplikacion";
+"BACKUPS_ERROR_CORRUPTED" = "Skedari është i dëmtuar ose nuk mund të lexohet.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Kjo kopje është krijuar me një version më të ri të aplikacionit.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Ky format skedari nuk mbështetet.";
+"BACKUPS_EXPORT_SECTION" = "Eksport";
+"BACKUPS_IMPORT_ACTION" = "Importo nga skedari";
+"BACKUPS_IMPORT_DONE" = "Transaksione të shtuara: %d, kategori: %d";
+"BACKUPS_IMPORT_MERGE" = "Shto te të dhënat aktuale";
+"BACKUPS_IMPORT_PERIOD" = "Periudha: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Gjetur në skedar";
+"BACKUPS_IMPORT_REPLACE" = "Zëvendëso të gjitha të dhënat";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Të gjitha transaksionet dhe kategoritë aktuale do të fshihen. Ky veprim nuk mund të zhbëhet.";
+"BACKUPS_IMPORT_SECTION" = "Import";
+"BACKUPS_SHARE_ACTION" = "Eksporto të dhënat";
+"BACKUPS_CSV_COMMENT" = "Koment";
+"BACKUPS_CSV_FOLDER" = "Dosja";
+"BACKUPS_FORMAT_CSV" = "CSV — vetëm për shikim";
+"BACKUPS_FORMAT_JSON" = "JSON — kopje e plotë";
+"BACKUPS_FORMAT_MESSAGE" = "JSON është kopje e plotë që mund të importohet sërish. CSV është tabelë transaksionesh për t’u parë në një fletëllogaritëse — nuk mund të importohet në aplikacion.";
+"BACKUPS_FORMAT_TITLE" = "Formati i eksportit";
+"BACKUPS_IMPORT_SKIPPED" = "Të ardhura të anashkaluara: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Transaksione: %d";

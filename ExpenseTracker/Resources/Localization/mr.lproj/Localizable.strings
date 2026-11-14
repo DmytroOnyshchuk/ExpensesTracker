@@ -58,7 +58,15 @@
 "MENU_TITLE" = "मेनू";
 "MENU_BUDGET" = "बजेट";
 "MENU_SETTINGS" = "सेटिंग्ज";
+"MENU_BACKUPS" = "बॅकअप";
 "MENU_SPENT_IN_MONTH" = "एकूण खर्च · %@";
+"MENU_LANGUAGE" = "भाषा";
+"MENU_ABOUT" = "विषयी";
+
+// MARK: - About
+"ABOUT_VERSION" = "आवृत्ती %@";
+"ABOUT_SHARE" = "ॲप शेअर करा";
+"ABOUT_RATE" = "ॲपला रेटिंग द्या";
 
 // MARK: - Tabs
 "TAB_HOME" = "होम";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "दान";
 "DEFAULT_CATEGORY_INTERNET" = "इंटरनेट";
 "DEFAULT_CATEGORY_TRANSPORT" = "वाहतूक";
+"SETTINGS_APPEARANCE" = "स्वरूप";
+"SETTINGS_THEME_CLASSIC" = "क्लासिक";
+"SETTINGS_THEME_EMBER" = "निखारा";
+"SETTINGS_THEME_MIDNIGHT" = "मध्यरात्र";
+"SETTINGS_THEME_FOREST" = "वन";
+"SETTINGS_THEME_GRAY" = "राखाडी";
+"SETTINGS_THEME_INDIGO" = "नीळ";
+"SETTINGS_THEME_LIQUID_BLACK" = "द्रव काळा";
+"SETTINGS_THEME_SLATE" = "स्लेट";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "श्रेण्या: %d";
+"BACKUPS_CURRENT_DATA" = "ॲपमध्ये";
+"BACKUPS_ERROR_CORRUPTED" = "फाइल खराब आहे किंवा वाचता येत नाही.";
+"BACKUPS_ERROR_NEWER_VERSION" = "हा बॅकअप ॲपच्या नवीन आवृत्तीने तयार केला आहे.";
+"BACKUPS_ERROR_UNSUPPORTED" = "हा फाइल फॉरमॅट समर्थित नाही.";
+"BACKUPS_EXPORT_SECTION" = "निर्यात";
+"BACKUPS_IMPORT_ACTION" = "फाइलमधून आयात करा";
+"BACKUPS_IMPORT_DONE" = "जोडलेले व्यवहार: %d, श्रेण्या: %d";
+"BACKUPS_IMPORT_MERGE" = "सध्याच्या डेटामध्ये जोडा";
+"BACKUPS_IMPORT_PERIOD" = "कालावधी: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "फाइलमध्ये आढळले";
+"BACKUPS_IMPORT_REPLACE" = "सर्व डेटा बदला";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "सध्याचे सर्व व्यवहार आणि श्रेण्या हटवल्या जातील. हे पूर्ववत करता येणार नाही.";
+"BACKUPS_IMPORT_SECTION" = "आयात";
+"BACKUPS_SHARE_ACTION" = "डेटा निर्यात करा";
+"BACKUPS_CSV_COMMENT" = "टिप्पणी";
+"BACKUPS_CSV_FOLDER" = "फोल्डर";
+"BACKUPS_FORMAT_CSV" = "CSV — फक्त पाहण्यासाठी";
+"BACKUPS_FORMAT_JSON" = "JSON — पूर्ण बॅकअप";
+"BACKUPS_FORMAT_MESSAGE" = "JSON हा पुन्हा आयात करता येणारा पूर्ण बॅकअप आहे. CSV ही स्प्रेडशीटमध्ये पाहण्यासाठी व्यवहारांची सारणी आहे — ती ॲपमध्ये आयात करता येत नाही.";
+"BACKUPS_FORMAT_TITLE" = "निर्यात फॉरमॅट";
+"BACKUPS_IMPORT_SKIPPED" = "वगळलेले उत्पन्न: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "व्यवहार: %d";

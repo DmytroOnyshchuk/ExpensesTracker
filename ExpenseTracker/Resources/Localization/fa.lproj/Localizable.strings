@@ -58,7 +58,15 @@
 "MENU_TITLE" = "منو";
 "MENU_BUDGET" = "بودجه";
 "MENU_SETTINGS" = "تنظیمات";
+"MENU_BACKUPS" = "پشتیبان‌ها";
 "MENU_SPENT_IN_MONTH" = "هزینه‌های %@";
+"MENU_LANGUAGE" = "زبان";
+"MENU_ABOUT" = "درباره";
+
+// MARK: - About
+"ABOUT_VERSION" = "نسخه %@";
+"ABOUT_SHARE" = "اشتراک‌گذاری برنامه";
+"ABOUT_RATE" = "امتیاز دادن به برنامه";
 
 // MARK: - Tabs
 "TAB_HOME" = "خانه";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "خیریه";
 "DEFAULT_CATEGORY_INTERNET" = "اینترنت";
 "DEFAULT_CATEGORY_TRANSPORT" = "حمل‌ونقل";
+"SETTINGS_APPEARANCE" = "ظاهر";
+"SETTINGS_THEME_CLASSIC" = "کلاسیک";
+"SETTINGS_THEME_EMBER" = "اخگر";
+"SETTINGS_THEME_MIDNIGHT" = "نیمه‌شب";
+"SETTINGS_THEME_FOREST" = "جنگل";
+"SETTINGS_THEME_GRAY" = "خاکستری";
+"SETTINGS_THEME_INDIGO" = "نیلی";
+"SETTINGS_THEME_LIQUID_BLACK" = "سیاه مایع";
+"SETTINGS_THEME_SLATE" = "تخته‌سنگ";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "دسته‌ها: %d";
+"BACKUPS_CURRENT_DATA" = "در برنامه";
+"BACKUPS_ERROR_CORRUPTED" = "فایل خراب است یا خوانده نمی‌شود.";
+"BACKUPS_ERROR_NEWER_VERSION" = "این پشتیبان با نسخه جدیدتری از برنامه ساخته شده است.";
+"BACKUPS_ERROR_UNSUPPORTED" = "این قالب فایل پشتیبانی نمی‌شود.";
+"BACKUPS_EXPORT_SECTION" = "خروجی";
+"BACKUPS_IMPORT_ACTION" = "وارد کردن از فایل";
+"BACKUPS_IMPORT_DONE" = "تراکنش‌های افزوده‌شده: %d، دسته‌ها: %d";
+"BACKUPS_IMPORT_MERGE" = "افزودن به داده‌های فعلی";
+"BACKUPS_IMPORT_PERIOD" = "دوره: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "یافت‌شده در فایل";
+"BACKUPS_IMPORT_REPLACE" = "جایگزینی همه داده‌ها";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "همه تراکنش‌ها و دسته‌های فعلی حذف می‌شوند. این کار قابل بازگشت نیست.";
+"BACKUPS_IMPORT_SECTION" = "ورودی";
+"BACKUPS_SHARE_ACTION" = "خروجی گرفتن از داده‌ها";
+"BACKUPS_CSV_COMMENT" = "توضیح";
+"BACKUPS_CSV_FOLDER" = "پوشه";
+"BACKUPS_FORMAT_CSV" = "CSV — فقط مشاهده";
+"BACKUPS_FORMAT_JSON" = "JSON — پشتیبان کامل";
+"BACKUPS_FORMAT_MESSAGE" = "JSON پشتیبان کاملی است که می‌توان دوباره آن را وارد کرد. CSV جدولی از تراکنش‌ها برای مشاهده در صفحه‌گسترده است و نمی‌توان آن را به برنامه وارد کرد.";
+"BACKUPS_FORMAT_TITLE" = "قالب خروجی";
+"BACKUPS_IMPORT_SKIPPED" = "درآمدهای نادیده‌گرفته‌شده: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "تراکنش‌ها: %d";

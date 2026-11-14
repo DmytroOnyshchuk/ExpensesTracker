@@ -58,7 +58,15 @@
 "MENU_TITLE" = "القائمة";
 "MENU_BUDGET" = "الميزانية";
 "MENU_SETTINGS" = "الإعدادات";
+"MENU_BACKUPS" = "النسخ الاحتياطية";
 "MENU_SPENT_IN_MONTH" = "المصروفات في %@";
+"MENU_LANGUAGE" = "اللغة";
+"MENU_ABOUT" = "حول";
+
+// MARK: - About
+"ABOUT_VERSION" = "الإصدار %@";
+"ABOUT_SHARE" = "مشاركة التطبيق";
+"ABOUT_RATE" = "تقييم التطبيق";
 
 // MARK: - Tabs
 "TAB_HOME" = "الرئيسية";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "التبرعات";
 "DEFAULT_CATEGORY_INTERNET" = "الإنترنت";
 "DEFAULT_CATEGORY_TRANSPORT" = "المواصلات";
+"SETTINGS_APPEARANCE" = "المظهر";
+"SETTINGS_THEME_CLASSIC" = "كلاسيكي";
+"SETTINGS_THEME_EMBER" = "جمر";
+"SETTINGS_THEME_MIDNIGHT" = "منتصف الليل";
+"SETTINGS_THEME_FOREST" = "غابة";
+"SETTINGS_THEME_GRAY" = "رمادي";
+"SETTINGS_THEME_INDIGO" = "نيلي";
+"SETTINGS_THEME_LIQUID_BLACK" = "أسود سائل";
+"SETTINGS_THEME_SLATE" = "أردواز";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "الفئات: %d";
+"BACKUPS_CURRENT_DATA" = "في التطبيق";
+"BACKUPS_ERROR_CORRUPTED" = "الملف تالف أو تتعذر قراءته.";
+"BACKUPS_ERROR_NEWER_VERSION" = "تم إنشاء هذه النسخة بإصدار أحدث من التطبيق.";
+"BACKUPS_ERROR_UNSUPPORTED" = "تنسيق الملف هذا غير مدعوم.";
+"BACKUPS_EXPORT_SECTION" = "تصدير";
+"BACKUPS_IMPORT_ACTION" = "استيراد من ملف";
+"BACKUPS_IMPORT_DONE" = "المعاملات المضافة: %d، الفئات: %d";
+"BACKUPS_IMPORT_MERGE" = "إضافة إلى البيانات الحالية";
+"BACKUPS_IMPORT_PERIOD" = "الفترة: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "تم العثور عليه في الملف";
+"BACKUPS_IMPORT_REPLACE" = "استبدال كل البيانات";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "سيتم حذف جميع المعاملات والفئات الحالية. لا يمكن التراجع عن هذا الإجراء.";
+"BACKUPS_IMPORT_SECTION" = "استيراد";
+"BACKUPS_SHARE_ACTION" = "تصدير البيانات";
+"BACKUPS_CSV_COMMENT" = "تعليق";
+"BACKUPS_CSV_FOLDER" = "المجلد";
+"BACKUPS_FORMAT_CSV" = "CSV — للعرض فقط";
+"BACKUPS_FORMAT_JSON" = "JSON — نسخة كاملة";
+"BACKUPS_FORMAT_MESSAGE" = "JSON نسخة كاملة يمكن استيرادها مرة أخرى. CSV جدول معاملات للعرض في جدول بيانات ولا يمكن استيراده إلى التطبيق.";
+"BACKUPS_FORMAT_TITLE" = "تنسيق التصدير";
+"BACKUPS_IMPORT_SKIPPED" = "الدخل المتخطى: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "المعاملات: %d";

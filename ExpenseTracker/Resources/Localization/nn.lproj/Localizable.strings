@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Meny";
 "MENU_BUDGET" = "Budsjett";
 "MENU_SETTINGS" = "Innstillingar";
+"MENU_BACKUPS" = "Tryggingskopiar";
 "MENU_SPENT_IN_MONTH" = "Brukt i %@";
+"MENU_LANGUAGE" = "Språk";
+"MENU_ABOUT" = "Om";
+
+// MARK: - About
+"ABOUT_VERSION" = "Versjon %@";
+"ABOUT_SHARE" = "Del appen";
+"ABOUT_RATE" = "Vurder appen";
 
 // MARK: - Tabs
 "TAB_HOME" = "Heim";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Velgjerd";
 "DEFAULT_CATEGORY_INTERNET" = "Internett";
 "DEFAULT_CATEGORY_TRANSPORT" = "Transport";
+"SETTINGS_APPEARANCE" = "Utsjånad";
+"SETTINGS_THEME_CLASSIC" = "Klassisk";
+"SETTINGS_THEME_EMBER" = "Glød";
+"SETTINGS_THEME_MIDNIGHT" = "Midnatt";
+"SETTINGS_THEME_FOREST" = "Skog";
+"SETTINGS_THEME_GRAY" = "Grå";
+"SETTINGS_THEME_INDIGO" = "Indigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Flytande svart";
+"SETTINGS_THEME_SLATE" = "Skifer";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Kategoriar: %d";
+"BACKUPS_CURRENT_DATA" = "I appen";
+"BACKUPS_ERROR_CORRUPTED" = "Fila er skadd eller kan ikkje lesast.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Denne tryggingskopien vart laga med ein nyare versjon av appen.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Dette filformatet er ikkje støtta.";
+"BACKUPS_EXPORT_SECTION" = "Eksport";
+"BACKUPS_IMPORT_ACTION" = "Importer frå fil";
+"BACKUPS_IMPORT_DONE" = "Transaksjonar lagde til: %d, kategoriar: %d";
+"BACKUPS_IMPORT_MERGE" = "Legg til i gjeldande data";
+"BACKUPS_IMPORT_PERIOD" = "Periode: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Funne i fila";
+"BACKUPS_IMPORT_REPLACE" = "Erstatt alle data";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Alle gjeldande transaksjonar og kategoriar blir sletta. Dette kan ikkje angrast.";
+"BACKUPS_IMPORT_SECTION" = "Import";
+"BACKUPS_SHARE_ACTION" = "Eksporter data";
+"BACKUPS_CSV_COMMENT" = "Kommentar";
+"BACKUPS_CSV_FOLDER" = "Mappe";
+"BACKUPS_FORMAT_CSV" = "CSV — berre vising";
+"BACKUPS_FORMAT_JSON" = "JSON — full tryggingskopi";
+"BACKUPS_FORMAT_MESSAGE" = "JSON er ein full tryggingskopi som kan importerast tilbake. CSV er ein tabell med transaksjonar for vising i eit rekneark — han kan ikkje importerast i appen.";
+"BACKUPS_FORMAT_TITLE" = "Eksportformat";
+"BACKUPS_IMPORT_SKIPPED" = "Inntekter hoppa over: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Transaksjonar: %d";

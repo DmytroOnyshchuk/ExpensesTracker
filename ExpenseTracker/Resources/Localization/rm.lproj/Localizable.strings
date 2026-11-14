@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Menu";
 "MENU_BUDGET" = "Budget";
 "MENU_SETTINGS" = "Parameters";
+"MENU_BACKUPS" = "Copias da segirezza";
 "MENU_SPENT_IN_MONTH" = "Total expendì · %@";
+"MENU_LANGUAGE" = "Lingua";
+"MENU_ABOUT" = "Davart";
+
+// MARK: - About
+"ABOUT_VERSION" = "Versiun %@";
+"ABOUT_SHARE" = "Cundivider l’app";
+"ABOUT_RATE" = "Valitar l’app";
 
 // MARK: - Tabs
 "TAB_HOME" = "Partenza";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Donaziuns";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Transport";
+"SETTINGS_APPEARANCE" = "Parita";
+"SETTINGS_THEME_CLASSIC" = "Classic";
+"SETTINGS_THEME_EMBER" = "Burnida";
+"SETTINGS_THEME_MIDNIGHT" = "Mesanotg";
+"SETTINGS_THEME_FOREST" = "Guaud";
+"SETTINGS_THEME_GRAY" = "Grisch";
+"SETTINGS_THEME_INDIGO" = "Indigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Nair liquid";
+"SETTINGS_THEME_SLATE" = "Plattamorta";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Categorias: %d";
+"BACKUPS_CURRENT_DATA" = "En l’app";
+"BACKUPS_ERROR_CORRUPTED" = "La datoteca è donnegiada u na po betg vegnir legida.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Questa copia è vegnida creada cun ina versiun pli nova da l’app.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Quest format da datoteca na vegn betg sustegnì.";
+"BACKUPS_EXPORT_SECTION" = "Export";
+"BACKUPS_IMPORT_ACTION" = "Importar dad ina datoteca";
+"BACKUPS_IMPORT_DONE" = "Transacziuns agiuntadas: %d, categorias: %d";
+"BACKUPS_IMPORT_MERGE" = "Agiuntar a las datas actualas";
+"BACKUPS_IMPORT_PERIOD" = "Perioda: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Chattà en la datoteca";
+"BACKUPS_IMPORT_REPLACE" = "Remplazzar tut las datas";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Tut las transacziuns e categorias actualas vegnan stizzadas. Quai na po betg vegnir revocà.";
+"BACKUPS_IMPORT_SECTION" = "Import";
+"BACKUPS_SHARE_ACTION" = "Exportar datas";
+"BACKUPS_CSV_COMMENT" = "Commentari";
+"BACKUPS_CSV_FOLDER" = "Ordinatur";
+"BACKUPS_FORMAT_CSV" = "CSV — mo per guardar";
+"BACKUPS_FORMAT_JSON" = "JSON — copia cumpletta";
+"BACKUPS_FORMAT_MESSAGE" = "JSON è ina copia cumpletta che po vegnir importada puspè. CSV è ina tabella da transacziuns per guardar en in program da tabellas — ella na po betg vegnir importada en l’app.";
+"BACKUPS_FORMAT_TITLE" = "Format d’export";
+"BACKUPS_IMPORT_SKIPPED" = "Entradas sursiglidas: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Transacziuns: %d";

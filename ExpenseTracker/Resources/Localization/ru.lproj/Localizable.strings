@@ -135,6 +135,15 @@
 "DEFAULT_CATEGORY_CHARITY" = "Благотворительность";
 "DEFAULT_CATEGORY_INTERNET" = "Интернет";
 "DEFAULT_CATEGORY_TRANSPORT" = "Транспорт";
+"SETTINGS_APPEARANCE" = "Оформление";
+"SETTINGS_THEME_CLASSIC" = "Классическая";
+"SETTINGS_THEME_EMBER" = "Угли";
+"SETTINGS_THEME_MIDNIGHT" = "Полночь";
+"SETTINGS_THEME_FOREST" = "Лес";
+"SETTINGS_THEME_GRAY" = "Серая";
+"SETTINGS_THEME_INDIGO" = "Индиго";
+"SETTINGS_THEME_LIQUID_BLACK" = "Жидкий чёрный";
+"SETTINGS_THEME_SLATE" = "Сланец";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Категории: %d";

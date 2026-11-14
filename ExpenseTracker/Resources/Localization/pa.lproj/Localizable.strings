@@ -58,7 +58,15 @@
 "MENU_TITLE" = "ਮੀਨੂ";
 "MENU_BUDGET" = "ਬਜਟ";
 "MENU_SETTINGS" = "ਸੈਟਿੰਗਾਂ";
+"MENU_BACKUPS" = "ਬੈਕਅੱਪ";
 "MENU_SPENT_IN_MONTH" = "ਕੁੱਲ ਖਰਚ · %@";
+"MENU_LANGUAGE" = "ਭਾਸ਼ਾ";
+"MENU_ABOUT" = "ਬਾਰੇ";
+
+// MARK: - About
+"ABOUT_VERSION" = "ਵਰਜਨ %@";
+"ABOUT_SHARE" = "ਐਪ ਸਾਂਝੀ ਕਰੋ";
+"ABOUT_RATE" = "ਐਪ ਨੂੰ ਰੇਟ ਕਰੋ";
 
 // MARK: - Tabs
 "TAB_HOME" = "ਹੋਮ";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "ਦਾਨ";
 "DEFAULT_CATEGORY_INTERNET" = "ਇੰਟਰਨੈੱਟ";
 "DEFAULT_CATEGORY_TRANSPORT" = "ਆਵਾਜਾਈ";
+"SETTINGS_APPEARANCE" = "ਦਿੱਖ";
+"SETTINGS_THEME_CLASSIC" = "ਕਲਾਸਿਕ";
+"SETTINGS_THEME_EMBER" = "ਅੰਗਿਆਰ";
+"SETTINGS_THEME_MIDNIGHT" = "ਅੱਧੀ ਰਾਤ";
+"SETTINGS_THEME_FOREST" = "ਜੰਗਲ";
+"SETTINGS_THEME_GRAY" = "ਸਲੇਟੀ";
+"SETTINGS_THEME_INDIGO" = "ਨੀਲ";
+"SETTINGS_THEME_LIQUID_BLACK" = "ਤਰਲ ਕਾਲਾ";
+"SETTINGS_THEME_SLATE" = "ਸਲੇਟ";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "ਸ਼੍ਰੇਣੀਆਂ: %d";
+"BACKUPS_CURRENT_DATA" = "ਐਪ ਵਿੱਚ";
+"BACKUPS_ERROR_CORRUPTED" = "ਫ਼ਾਈਲ ਖ਼ਰਾਬ ਹੈ ਜਾਂ ਪੜ੍ਹੀ ਨਹੀਂ ਜਾ ਸਕਦੀ।";
+"BACKUPS_ERROR_NEWER_VERSION" = "ਇਹ ਬੈਕਅੱਪ ਐਪ ਦੇ ਨਵੇਂ ਵਰਜਨ ਨਾਲ ਬਣਾਇਆ ਗਿਆ ਹੈ।";
+"BACKUPS_ERROR_UNSUPPORTED" = "ਇਹ ਫ਼ਾਈਲ ਫਾਰਮੈਟ ਸਮਰਥਿਤ ਨਹੀਂ ਹੈ।";
+"BACKUPS_EXPORT_SECTION" = "ਐਕਸਪੋਰਟ";
+"BACKUPS_IMPORT_ACTION" = "ਫ਼ਾਈਲ ਤੋਂ ਇੰਪੋਰਟ ਕਰੋ";
+"BACKUPS_IMPORT_DONE" = "ਜੋੜੇ ਗਏ ਲੈਣ-ਦੇਣ: %d, ਸ਼੍ਰੇਣੀਆਂ: %d";
+"BACKUPS_IMPORT_MERGE" = "ਮੌਜੂਦਾ ਡਾਟੇ ਵਿੱਚ ਜੋੜੋ";
+"BACKUPS_IMPORT_PERIOD" = "ਮਿਆਦ: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "ਫ਼ਾਈਲ ਵਿੱਚ ਮਿਲਿਆ";
+"BACKUPS_IMPORT_REPLACE" = "ਸਾਰਾ ਡਾਟਾ ਬਦਲੋ";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "ਸਾਰੇ ਮੌਜੂਦਾ ਲੈਣ-ਦੇਣ ਅਤੇ ਸ਼੍ਰੇਣੀਆਂ ਮਿਟਾ ਦਿੱਤੀਆਂ ਜਾਣਗੀਆਂ। ਇਸਨੂੰ ਵਾਪਸ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।";
+"BACKUPS_IMPORT_SECTION" = "ਇੰਪੋਰਟ";
+"BACKUPS_SHARE_ACTION" = "ਡਾਟਾ ਐਕਸਪੋਰਟ ਕਰੋ";
+"BACKUPS_CSV_COMMENT" = "ਟਿੱਪਣੀ";
+"BACKUPS_CSV_FOLDER" = "ਫੋਲਡਰ";
+"BACKUPS_FORMAT_CSV" = "CSV — ਸਿਰਫ਼ ਦੇਖਣ ਲਈ";
+"BACKUPS_FORMAT_JSON" = "JSON — ਪੂਰਾ ਬੈਕਅੱਪ";
+"BACKUPS_FORMAT_MESSAGE" = "JSON ਇੱਕ ਪੂਰਾ ਬੈਕਅੱਪ ਹੈ ਜਿਸਨੂੰ ਦੁਬਾਰਾ ਇੰਪੋਰਟ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ। CSV ਸਪ੍ਰੈਡਸ਼ੀਟ ਵਿੱਚ ਦੇਖਣ ਲਈ ਲੈਣ-ਦੇਣ ਦੀ ਸਾਰਣੀ ਹੈ — ਇਸਨੂੰ ਐਪ ਵਿੱਚ ਇੰਪੋਰਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।";
+"BACKUPS_FORMAT_TITLE" = "ਐਕਸਪੋਰਟ ਫਾਰਮੈਟ";
+"BACKUPS_IMPORT_SKIPPED" = "ਛੱਡੀ ਗਈ ਆਮਦਨ: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "ਲੈਣ-ਦੇਣ: %d";

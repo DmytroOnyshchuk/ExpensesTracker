@@ -58,7 +58,15 @@
 "MENU_TITLE" = "ម៉ឺនុយ";
 "MENU_BUDGET" = "ថវិកា";
 "MENU_SETTINGS" = "ការកំណត់";
+"MENU_BACKUPS" = "ការបម្រុងទុក";
 "MENU_SPENT_IN_MONTH" = "ចំណាយសរុប · %@";
+"MENU_LANGUAGE" = "ភាសា";
+"MENU_ABOUT" = "អំពី";
+
+// MARK: - About
+"ABOUT_VERSION" = "កំណែ %@";
+"ABOUT_SHARE" = "ចែករំលែកកម្មវិធី";
+"ABOUT_RATE" = "វាយតម្លៃកម្មវិធី";
 
 // MARK: - Tabs
 "TAB_HOME" = "ទំព័រដើម";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "សប្បុរសធម៌";
 "DEFAULT_CATEGORY_INTERNET" = "អ៊ីនធឺណិត";
 "DEFAULT_CATEGORY_TRANSPORT" = "ដឹកជញ្ជូន";
+"SETTINGS_APPEARANCE" = "រូបរាង";
+"SETTINGS_THEME_CLASSIC" = "បុរាណ";
+"SETTINGS_THEME_EMBER" = "រងើកភ្លើង";
+"SETTINGS_THEME_MIDNIGHT" = "អធ្រាត្រ";
+"SETTINGS_THEME_FOREST" = "ព្រៃ";
+"SETTINGS_THEME_GRAY" = "ប្រផេះ";
+"SETTINGS_THEME_INDIGO" = "ខៀវចាស់";
+"SETTINGS_THEME_LIQUID_BLACK" = "ខ្មៅរាវ";
+"SETTINGS_THEME_SLATE" = "ថ្មក្តារ";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "ប្រភេទ៖ %d";
+"BACKUPS_CURRENT_DATA" = "ក្នុងកម្មវិធី";
+"BACKUPS_ERROR_CORRUPTED" = "ឯកសារខូច ឬមិនអាចអានបាន។";
+"BACKUPS_ERROR_NEWER_VERSION" = "ការបម្រុងទុកនេះត្រូវបានបង្កើតដោយកំណែកម្មវិធីថ្មីជាង។";
+"BACKUPS_ERROR_UNSUPPORTED" = "ទ្រង់ទ្រាយឯកសារនេះមិនត្រូវបានគាំទ្រទេ។";
+"BACKUPS_EXPORT_SECTION" = "នាំចេញ";
+"BACKUPS_IMPORT_ACTION" = "នាំចូលពីឯកសារ";
+"BACKUPS_IMPORT_DONE" = "ប្រតិបត្តិការដែលបានបន្ថែម៖ %d, ប្រភេទ៖ %d";
+"BACKUPS_IMPORT_MERGE" = "បន្ថែមទៅទិន្នន័យបច្ចុប្បន្ន";
+"BACKUPS_IMPORT_PERIOD" = "រយៈពេល៖ %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "រកឃើញក្នុងឯកសារ";
+"BACKUPS_IMPORT_REPLACE" = "ជំនួសទិន្នន័យទាំងអស់";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "ប្រតិបត្តិការ និងប្រភេទបច្ចុប្បន្នទាំងអស់នឹងត្រូវលុប។ សកម្មភាពនេះមិនអាចត្រឡប់វិញបានទេ។";
+"BACKUPS_IMPORT_SECTION" = "នាំចូល";
+"BACKUPS_SHARE_ACTION" = "នាំចេញទិន្នន័យ";
+"BACKUPS_CSV_COMMENT" = "មតិយោបល់";
+"BACKUPS_CSV_FOLDER" = "ថត";
+"BACKUPS_FORMAT_CSV" = "CSV — សម្រាប់មើលប៉ុណ្ណោះ";
+"BACKUPS_FORMAT_JSON" = "JSON — ការបម្រុងទុកពេញលេញ";
+"BACKUPS_FORMAT_MESSAGE" = "JSON គឺជាការបម្រុងទុកពេញលេញដែលអាចនាំចូលវិញបាន។ CSV គឺជាតារាងប្រតិបត្តិការសម្រាប់មើលក្នុងសៀវភៅបញ្ជី — មិនអាចនាំចូលទៅក្នុងកម្មវិធីបានទេ។";
+"BACKUPS_FORMAT_TITLE" = "ទ្រង់ទ្រាយនាំចេញ";
+"BACKUPS_IMPORT_SKIPPED" = "ចំណូលដែលបានរំលង៖ %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "ប្រតិបត្តិការ៖ %d";

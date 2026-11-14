@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Menu";
 "MENU_BUDGET" = "Badyet";
 "MENU_SETTINGS" = "Mga Setting";
+"MENU_BACKUPS" = "Mga Backup";
 "MENU_SPENT_IN_MONTH" = "Gastos sa %@";
+"MENU_LANGUAGE" = "Wika";
+"MENU_ABOUT" = "Tungkol";
+
+// MARK: - About
+"ABOUT_VERSION" = "Bersyon %@";
+"ABOUT_SHARE" = "Ibahagi ang app";
+"ABOUT_RATE" = "I-rate ang app";
 
 // MARK: - Tabs
 "TAB_HOME" = "Home";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Kawanggawa";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Transportasyon";
+"SETTINGS_APPEARANCE" = "Hitsura";
+"SETTINGS_THEME_CLASSIC" = "Klasiko";
+"SETTINGS_THEME_EMBER" = "Baga";
+"SETTINGS_THEME_MIDNIGHT" = "Hatinggabi";
+"SETTINGS_THEME_FOREST" = "Gubat";
+"SETTINGS_THEME_GRAY" = "Abo";
+"SETTINGS_THEME_INDIGO" = "Indigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Likidong itim";
+"SETTINGS_THEME_SLATE" = "Slate";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Mga kategorya: %d";
+"BACKUPS_CURRENT_DATA" = "Sa app";
+"BACKUPS_ERROR_CORRUPTED" = "Sira ang file o hindi ito mabasa.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Ginawa ang backup na ito gamit ang mas bagong bersyon ng app.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Hindi sinusuportahan ang format ng file na ito.";
+"BACKUPS_EXPORT_SECTION" = "Export";
+"BACKUPS_IMPORT_ACTION" = "Mag-import mula sa file";
+"BACKUPS_IMPORT_DONE" = "Naidagdag na transaksyon: %d, kategorya: %d";
+"BACKUPS_IMPORT_MERGE" = "Idagdag sa kasalukuyang data";
+"BACKUPS_IMPORT_PERIOD" = "Panahon: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Nakita sa file";
+"BACKUPS_IMPORT_REPLACE" = "Palitan ang lahat ng data";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Mabubura ang lahat ng kasalukuyang transaksyon at kategorya. Hindi na ito maibabalik.";
+"BACKUPS_IMPORT_SECTION" = "Import";
+"BACKUPS_SHARE_ACTION" = "I-export ang data";
+"BACKUPS_CSV_COMMENT" = "Komento";
+"BACKUPS_CSV_FOLDER" = "Folder";
+"BACKUPS_FORMAT_CSV" = "CSV — pantingin lang";
+"BACKUPS_FORMAT_JSON" = "JSON — buong backup";
+"BACKUPS_FORMAT_MESSAGE" = "Ang JSON ay buong backup na maaaring i-import muli. Ang CSV ay talaan ng mga transaksyon para tingnan sa spreadsheet — hindi ito maaaring i-import sa app.";
+"BACKUPS_FORMAT_TITLE" = "Format ng export";
+"BACKUPS_IMPORT_SKIPPED" = "Nilaktawang kita: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Mga transaksyon: %d";

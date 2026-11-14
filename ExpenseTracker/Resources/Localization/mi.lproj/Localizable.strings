@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Tahua";
 "MENU_BUDGET" = "Tahua pūtea";
 "MENU_SETTINGS" = "Tautuhinga";
+"MENU_BACKUPS" = "Ngā Tārua";
 "MENU_SPENT_IN_MONTH" = "Tapeke i whakapaua · %@";
+"MENU_LANGUAGE" = "Reo";
+"MENU_ABOUT" = "Mō";
+
+// MARK: - About
+"ABOUT_VERSION" = "Putanga %@";
+"ABOUT_SHARE" = "Tuaritia te taupānga";
+"ABOUT_RATE" = "Whakatauria te taupānga";
 
 // MARK: - Tabs
 "TAB_HOME" = "Kāinga";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Kaupapa atawhai";
 "DEFAULT_CATEGORY_INTERNET" = "Ipurangi";
 "DEFAULT_CATEGORY_TRANSPORT" = "Waka";
+"SETTINGS_APPEARANCE" = "Āhua";
+"SETTINGS_THEME_CLASSIC" = "Tawhito";
+"SETTINGS_THEME_EMBER" = "Ngārahu kā";
+"SETTINGS_THEME_MIDNIGHT" = "Waenganui pō";
+"SETTINGS_THEME_FOREST" = "Ngahere";
+"SETTINGS_THEME_GRAY" = "Kiwikiwi";
+"SETTINGS_THEME_INDIGO" = "Kikorangi pōuri";
+"SETTINGS_THEME_LIQUID_BLACK" = "Pango wai";
+"SETTINGS_THEME_SLATE" = "Kōhatu papa";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Ngā kāwai: %d";
+"BACKUPS_CURRENT_DATA" = "I te taupānga";
+"BACKUPS_ERROR_CORRUPTED" = "Kua pakaru te kōnae, kāore rānei e taea te pānui.";
+"BACKUPS_ERROR_NEWER_VERSION" = "I hangaia tēnei tārua ki tētahi putanga hou ake o te taupānga.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Kāore tēnei hōputu kōnae e tautokona.";
+"BACKUPS_EXPORT_SECTION" = "Kaweake";
+"BACKUPS_IMPORT_ACTION" = "Kawemai i te kōnae";
+"BACKUPS_IMPORT_DONE" = "Tauwhitinga i tāpirihia: %d, kāwai: %d";
+"BACKUPS_IMPORT_MERGE" = "Tāpiri ki ngā raraunga o nāianei";
+"BACKUPS_IMPORT_PERIOD" = "Wā: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "I kitea i te kōnae";
+"BACKUPS_IMPORT_REPLACE" = "Whakakapi i ngā raraunga katoa";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Ka mukua ngā tauwhitinga me ngā kāwai katoa o nāianei. Kāore e taea te whakakore.";
+"BACKUPS_IMPORT_SECTION" = "Kawemai";
+"BACKUPS_SHARE_ACTION" = "Kaweake raraunga";
+"BACKUPS_CSV_COMMENT" = "Tākupu";
+"BACKUPS_CSV_FOLDER" = "Kōpaki";
+"BACKUPS_FORMAT_CSV" = "CSV — hei titiro anake";
+"BACKUPS_FORMAT_JSON" = "JSON — tārua katoa";
+"BACKUPS_FORMAT_MESSAGE" = "He tārua katoa a JSON ka taea te kawemai anō. He ripanga tauwhitinga a CSV hei titiro i te ripakaute — kāore e taea te kawemai ki te taupānga.";
+"BACKUPS_FORMAT_TITLE" = "Hōputu kaweake";
+"BACKUPS_IMPORT_SKIPPED" = "Moni whiwhi i pekehia: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Ngā tauwhitinga: %d";

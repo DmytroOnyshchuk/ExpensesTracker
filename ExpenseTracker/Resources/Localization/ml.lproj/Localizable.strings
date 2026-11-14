@@ -58,7 +58,15 @@
 "MENU_TITLE" = "മെനു";
 "MENU_BUDGET" = "ബജറ്റ്";
 "MENU_SETTINGS" = "ക്രമീകരണങ്ങൾ";
+"MENU_BACKUPS" = "ബാക്കപ്പുകൾ";
 "MENU_SPENT_IN_MONTH" = "ആകെ ചെലവ് · %@";
+"MENU_LANGUAGE" = "ഭാഷ";
+"MENU_ABOUT" = "വിവരം";
+
+// MARK: - About
+"ABOUT_VERSION" = "പതിപ്പ് %@";
+"ABOUT_SHARE" = "ആപ്പ് പങ്കിടുക";
+"ABOUT_RATE" = "ആപ്പ് റേറ്റ് ചെയ്യുക";
 
 // MARK: - Tabs
 "TAB_HOME" = "ഹോം";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "ദാനം";
 "DEFAULT_CATEGORY_INTERNET" = "ഇന്റർനെറ്റ്";
 "DEFAULT_CATEGORY_TRANSPORT" = "ഗതാഗതം";
+"SETTINGS_APPEARANCE" = "രൂപം";
+"SETTINGS_THEME_CLASSIC" = "ക്ലാസിക്";
+"SETTINGS_THEME_EMBER" = "കനൽ";
+"SETTINGS_THEME_MIDNIGHT" = "അർദ്ധരാത്രി";
+"SETTINGS_THEME_FOREST" = "കാട്";
+"SETTINGS_THEME_GRAY" = "ചാരനിറം";
+"SETTINGS_THEME_INDIGO" = "ഇൻഡിഗോ";
+"SETTINGS_THEME_LIQUID_BLACK" = "ദ്രാവക കറുപ്പ്";
+"SETTINGS_THEME_SLATE" = "സ്ലേറ്റ്";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "വിഭാഗങ്ങൾ: %d";
+"BACKUPS_CURRENT_DATA" = "ആപ്പിൽ";
+"BACKUPS_ERROR_CORRUPTED" = "ഫയൽ കേടായിരിക്കുന്നു അല്ലെങ്കിൽ വായിക്കാനാവുന്നില്ല.";
+"BACKUPS_ERROR_NEWER_VERSION" = "ഈ ബാക്കപ്പ് ആപ്പിന്റെ പുതിയ പതിപ്പിൽ സൃഷ്ടിച്ചതാണ്.";
+"BACKUPS_ERROR_UNSUPPORTED" = "ഈ ഫയൽ ഫോർമാറ്റ് പിന്തുണയ്ക്കുന്നില്ല.";
+"BACKUPS_EXPORT_SECTION" = "എക്സ്പോർട്ട്";
+"BACKUPS_IMPORT_ACTION" = "ഫയലിൽ നിന്ന് ഇംപോർട്ട് ചെയ്യുക";
+"BACKUPS_IMPORT_DONE" = "ചേർത്ത ഇടപാടുകൾ: %d, വിഭാഗങ്ങൾ: %d";
+"BACKUPS_IMPORT_MERGE" = "നിലവിലെ ഡാറ്റയിലേക്ക് ചേർക്കുക";
+"BACKUPS_IMPORT_PERIOD" = "കാലയളവ്: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "ഫയലിൽ കണ്ടെത്തിയത്";
+"BACKUPS_IMPORT_REPLACE" = "എല്ലാ ഡാറ്റയും മാറ്റിസ്ഥാപിക്കുക";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "നിലവിലെ എല്ലാ ഇടപാടുകളും വിഭാഗങ്ങളും ഇല്ലാതാക്കും. ഇത് പഴയപടിയാക്കാനാവില്ല.";
+"BACKUPS_IMPORT_SECTION" = "ഇംപോർട്ട്";
+"BACKUPS_SHARE_ACTION" = "ഡാറ്റ എക്സ്പോർട്ട് ചെയ്യുക";
+"BACKUPS_CSV_COMMENT" = "അഭിപ്രായം";
+"BACKUPS_CSV_FOLDER" = "ഫോൾഡർ";
+"BACKUPS_FORMAT_CSV" = "CSV — കാണാൻ മാത്രം";
+"BACKUPS_FORMAT_JSON" = "JSON — പൂർണ്ണ ബാക്കപ്പ്";
+"BACKUPS_FORMAT_MESSAGE" = "JSON വീണ്ടും ഇംപോർട്ട് ചെയ്യാവുന്ന പൂർണ്ണ ബാക്കപ്പാണ്. CSV സ്പ്രെഡ്ഷീറ്റിൽ കാണാനുള്ള ഇടപാടുകളുടെ പട്ടികയാണ് — അത് ആപ്പിലേക്ക് ഇംപോർട്ട് ചെയ്യാനാവില്ല.";
+"BACKUPS_FORMAT_TITLE" = "എക്സ്പോർട്ട് ഫോർമാറ്റ്";
+"BACKUPS_IMPORT_SKIPPED" = "ഒഴിവാക്കിയ വരുമാനം: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "ഇടപാടുകൾ: %d";

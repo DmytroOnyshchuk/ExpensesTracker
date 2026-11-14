@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Menu";
 "MENU_BUDGET" = "Budget";
 "MENU_SETTINGS" = "Settings";
+"MENU_BACKUPS" = "Backups";
 "MENU_SPENT_IN_MONTH" = "Spent in %@";
+"MENU_LANGUAGE" = "Language";
+"MENU_ABOUT" = "About";
+
+// MARK: - About
+"ABOUT_VERSION" = "Version %@";
+"ABOUT_SHARE" = "Share app";
+"ABOUT_RATE" = "Rate app";
 
 // MARK: - Tabs
 "TAB_HOME" = "Home";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Charity";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Transport";
+"SETTINGS_APPEARANCE" = "Appearance";
+"SETTINGS_THEME_CLASSIC" = "Classic";
+"SETTINGS_THEME_EMBER" = "Ember";
+"SETTINGS_THEME_MIDNIGHT" = "Midnight";
+"SETTINGS_THEME_FOREST" = "Forest";
+"SETTINGS_THEME_GRAY" = "Grey";
+"SETTINGS_THEME_INDIGO" = "Indigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Liquid black";
+"SETTINGS_THEME_SLATE" = "Slate";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Categories: %d";
+"BACKUPS_CURRENT_DATA" = "In the app";
+"BACKUPS_ERROR_CORRUPTED" = "The file is damaged or cannot be read.";
+"BACKUPS_ERROR_NEWER_VERSION" = "This backup was made by a newer version of the app.";
+"BACKUPS_ERROR_UNSUPPORTED" = "This file format is not supported.";
+"BACKUPS_EXPORT_SECTION" = "Export";
+"BACKUPS_IMPORT_ACTION" = "Import from file";
+"BACKUPS_IMPORT_DONE" = "Added transactions: %d, categories: %d";
+"BACKUPS_IMPORT_MERGE" = "Add to current data";
+"BACKUPS_IMPORT_PERIOD" = "Period: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Found in file";
+"BACKUPS_IMPORT_REPLACE" = "Replace all data";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "All current transactions and categories will be deleted. This cannot be undone.";
+"BACKUPS_IMPORT_SECTION" = "Import";
+"BACKUPS_SHARE_ACTION" = "Export data";
+"BACKUPS_CSV_COMMENT" = "Comment";
+"BACKUPS_CSV_FOLDER" = "Folder";
+"BACKUPS_FORMAT_CSV" = "CSV — view only";
+"BACKUPS_FORMAT_JSON" = "JSON — full backup";
+"BACKUPS_FORMAT_MESSAGE" = "JSON is a full backup that can be imported back. CSV is a table of transactions for viewing in a spreadsheet — it cannot be imported into the app.";
+"BACKUPS_FORMAT_TITLE" = "Export format";
+"BACKUPS_IMPORT_SKIPPED" = "Income skipped: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Transactions: %d";

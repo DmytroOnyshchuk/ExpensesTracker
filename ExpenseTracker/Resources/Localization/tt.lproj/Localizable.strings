@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Меню";
 "MENU_BUDGET" = "Бюджет";
 "MENU_SETTINGS" = "Көйләүләр";
+"MENU_BACKUPS" = "Резерв күчермәләр";
 "MENU_SPENT_IN_MONTH" = "Барлыгы тотылган · %@";
+"MENU_LANGUAGE" = "Тел";
+"MENU_ABOUT" = "Кушымта турында";
+
+// MARK: - About
+"ABOUT_VERSION" = "Версия %@";
+"ABOUT_SHARE" = "Кушымта белән уртаклашу";
+"ABOUT_RATE" = "Кушымтаны бәяләү";
 
 // MARK: - Tabs
 "TAB_HOME" = "Баш бит";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Хәйрия";
 "DEFAULT_CATEGORY_INTERNET" = "Интернет";
 "DEFAULT_CATEGORY_TRANSPORT" = "Транспорт";
+"SETTINGS_APPEARANCE" = "Күренеш";
+"SETTINGS_THEME_CLASSIC" = "Классик";
+"SETTINGS_THEME_EMBER" = "Күмер";
+"SETTINGS_THEME_MIDNIGHT" = "Төн уртасы";
+"SETTINGS_THEME_FOREST" = "Урман";
+"SETTINGS_THEME_GRAY" = "Соры";
+"SETTINGS_THEME_INDIGO" = "Индиго";
+"SETTINGS_THEME_LIQUID_BLACK" = "Сыек кара";
+"SETTINGS_THEME_SLATE" = "Сланец";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Категорияләр: %d";
+"BACKUPS_CURRENT_DATA" = "Кушымтада";
+"BACKUPS_ERROR_CORRUPTED" = "Файл бозылган яки укылмый.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Бу күчермә кушымтаның яңарак версиясендә ясалган.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Бу файл форматы хупланмый.";
+"BACKUPS_EXPORT_SECTION" = "Экспорт";
+"BACKUPS_IMPORT_ACTION" = "Файлдан импортлау";
+"BACKUPS_IMPORT_DONE" = "Өстәлгән операцияләр: %d, категорияләр: %d";
+"BACKUPS_IMPORT_MERGE" = "Хәзерге мәгълүматка өстәү";
+"BACKUPS_IMPORT_PERIOD" = "Чор: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Файлда табылды";
+"BACKUPS_IMPORT_REPLACE" = "Барлык мәгълүматны алыштыру";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Хәзерге барлык операцияләр һәм категорияләр бетереләчәк. Бу гамәлне кире кайтарып булмый.";
+"BACKUPS_IMPORT_SECTION" = "Импорт";
+"BACKUPS_SHARE_ACTION" = "Мәгълүматны экспортлау";
+"BACKUPS_CSV_COMMENT" = "Аңлатма";
+"BACKUPS_CSV_FOLDER" = "Папка";
+"BACKUPS_FORMAT_CSV" = "CSV — карау өчен генә";
+"BACKUPS_FORMAT_JSON" = "JSON — тулы күчермә";
+"BACKUPS_FORMAT_MESSAGE" = "JSON — кире импортлап була торган тулы күчермә. CSV — электрон таблицада карау өчен операцияләр таблицасы, аны кушымтага импортлап булмый.";
+"BACKUPS_FORMAT_TITLE" = "Экспорт форматы";
+"BACKUPS_IMPORT_SKIPPED" = "Төшереп калдырылган керемнәр: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Операцияләр: %d";

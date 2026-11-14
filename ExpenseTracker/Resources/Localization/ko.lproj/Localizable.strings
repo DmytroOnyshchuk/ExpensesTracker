@@ -58,7 +58,15 @@
 "MENU_TITLE" = "메뉴";
 "MENU_BUDGET" = "예산";
 "MENU_SETTINGS" = "설정";
+"MENU_BACKUPS" = "백업";
 "MENU_SPENT_IN_MONTH" = "%@ 지출";
+"MENU_LANGUAGE" = "언어";
+"MENU_ABOUT" = "정보";
+
+// MARK: - About
+"ABOUT_VERSION" = "버전 %@";
+"ABOUT_SHARE" = "앱 공유";
+"ABOUT_RATE" = "앱 평가";
 
 // MARK: - Tabs
 "TAB_HOME" = "홈";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "기부";
 "DEFAULT_CATEGORY_INTERNET" = "인터넷";
 "DEFAULT_CATEGORY_TRANSPORT" = "교통";
+"SETTINGS_APPEARANCE" = "모양";
+"SETTINGS_THEME_CLASSIC" = "클래식";
+"SETTINGS_THEME_EMBER" = "엠버";
+"SETTINGS_THEME_MIDNIGHT" = "미드나이트";
+"SETTINGS_THEME_FOREST" = "포레스트";
+"SETTINGS_THEME_GRAY" = "그레이";
+"SETTINGS_THEME_INDIGO" = "인디고";
+"SETTINGS_THEME_LIQUID_BLACK" = "리퀴드 블랙";
+"SETTINGS_THEME_SLATE" = "슬레이트";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "카테고리: %d";
+"BACKUPS_CURRENT_DATA" = "앱 내 데이터";
+"BACKUPS_ERROR_CORRUPTED" = "파일이 손상되었거나 읽을 수 없습니다.";
+"BACKUPS_ERROR_NEWER_VERSION" = "이 백업은 더 최신 버전의 앱에서 만들어졌습니다.";
+"BACKUPS_ERROR_UNSUPPORTED" = "지원하지 않는 파일 형식입니다.";
+"BACKUPS_EXPORT_SECTION" = "내보내기";
+"BACKUPS_IMPORT_ACTION" = "파일에서 가져오기";
+"BACKUPS_IMPORT_DONE" = "추가된 거래: %d, 카테고리: %d";
+"BACKUPS_IMPORT_MERGE" = "현재 데이터에 추가";
+"BACKUPS_IMPORT_PERIOD" = "기간: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "파일에서 찾은 항목";
+"BACKUPS_IMPORT_REPLACE" = "모든 데이터 대체";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "현재의 모든 거래와 카테고리가 삭제됩니다. 이 작업은 되돌릴 수 없습니다.";
+"BACKUPS_IMPORT_SECTION" = "가져오기";
+"BACKUPS_SHARE_ACTION" = "데이터 내보내기";
+"BACKUPS_CSV_COMMENT" = "메모";
+"BACKUPS_CSV_FOLDER" = "폴더";
+"BACKUPS_FORMAT_CSV" = "CSV — 보기 전용";
+"BACKUPS_FORMAT_JSON" = "JSON — 전체 백업";
+"BACKUPS_FORMAT_MESSAGE" = "JSON은 다시 가져올 수 있는 전체 백업입니다. CSV는 스프레드시트에서 보기 위한 거래 표이며 앱으로 가져올 수 없습니다.";
+"BACKUPS_FORMAT_TITLE" = "내보내기 형식";
+"BACKUPS_IMPORT_SKIPPED" = "건너뛴 수입: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "거래: %d";

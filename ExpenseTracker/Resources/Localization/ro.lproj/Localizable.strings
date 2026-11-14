@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Meniu";
 "MENU_BUDGET" = "Buget";
 "MENU_SETTINGS" = "Setări";
+"MENU_BACKUPS" = "Copii de rezervă";
 "MENU_SPENT_IN_MONTH" = "Cheltuit în %@";
+"MENU_LANGUAGE" = "Limbă";
+"MENU_ABOUT" = "Despre";
+
+// MARK: - About
+"ABOUT_VERSION" = "Versiunea %@";
+"ABOUT_SHARE" = "Distribuie aplicația";
+"ABOUT_RATE" = "Evaluează aplicația";
 
 // MARK: - Tabs
 "TAB_HOME" = "Acasă";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Donații";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Transport";
+"SETTINGS_APPEARANCE" = "Aspect";
+"SETTINGS_THEME_CLASSIC" = "Clasic";
+"SETTINGS_THEME_EMBER" = "Jar";
+"SETTINGS_THEME_MIDNIGHT" = "Miezul nopții";
+"SETTINGS_THEME_FOREST" = "Pădure";
+"SETTINGS_THEME_GRAY" = "Gri";
+"SETTINGS_THEME_INDIGO" = "Indigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Negru lichid";
+"SETTINGS_THEME_SLATE" = "Ardezie";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Categorii: %d";
+"BACKUPS_CURRENT_DATA" = "În aplicație";
+"BACKUPS_ERROR_CORRUPTED" = "Fișierul este deteriorat sau nu poate fi citit.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Această copie a fost creată cu o versiune mai nouă a aplicației.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Acest format de fișier nu este acceptat.";
+"BACKUPS_EXPORT_SECTION" = "Export";
+"BACKUPS_IMPORT_ACTION" = "Importă din fișier";
+"BACKUPS_IMPORT_DONE" = "Tranzacții adăugate: %d, categorii: %d";
+"BACKUPS_IMPORT_MERGE" = "Adaugă la datele curente";
+"BACKUPS_IMPORT_PERIOD" = "Perioadă: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Găsit în fișier";
+"BACKUPS_IMPORT_REPLACE" = "Înlocuiește toate datele";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Toate tranzacțiile și categoriile curente vor fi șterse. Această acțiune nu poate fi anulată.";
+"BACKUPS_IMPORT_SECTION" = "Import";
+"BACKUPS_SHARE_ACTION" = "Exportă datele";
+"BACKUPS_CSV_COMMENT" = "Comentariu";
+"BACKUPS_CSV_FOLDER" = "Dosar";
+"BACKUPS_FORMAT_CSV" = "CSV — doar vizualizare";
+"BACKUPS_FORMAT_JSON" = "JSON — copie completă";
+"BACKUPS_FORMAT_MESSAGE" = "JSON este o copie completă care poate fi importată înapoi. CSV este un tabel cu tranzacții pentru vizualizare într-un program de calcul tabelar — nu poate fi importat în aplicație.";
+"BACKUPS_FORMAT_TITLE" = "Format de export";
+"BACKUPS_IMPORT_SKIPPED" = "Venituri omise: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Tranzacții: %d";

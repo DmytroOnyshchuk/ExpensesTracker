@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Մենյու";
 "MENU_BUDGET" = "Բյուջե";
 "MENU_SETTINGS" = "Կարգավորումներ";
+"MENU_BACKUPS" = "Պահուստային պատճեններ";
 "MENU_SPENT_IN_MONTH" = "Ընդամենը ծախսվել է · %@";
+"MENU_LANGUAGE" = "Լեզու";
+"MENU_ABOUT" = "Ծրագրի մասին";
+
+// MARK: - About
+"ABOUT_VERSION" = "Տարբերակ %@";
+"ABOUT_SHARE" = "Կիսվել հավելվածով";
+"ABOUT_RATE" = "Գնահատել հավելվածը";
 
 // MARK: - Tabs
 "TAB_HOME" = "Գլխավոր";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Բարեգործություն";
 "DEFAULT_CATEGORY_INTERNET" = "Ինտերնետ";
 "DEFAULT_CATEGORY_TRANSPORT" = "Տրանսպորտ";
+"SETTINGS_APPEARANCE" = "Տեսք";
+"SETTINGS_THEME_CLASSIC" = "Դասական";
+"SETTINGS_THEME_EMBER" = "Կայծ";
+"SETTINGS_THEME_MIDNIGHT" = "Կեսգիշեր";
+"SETTINGS_THEME_FOREST" = "Անտառ";
+"SETTINGS_THEME_GRAY" = "Մոխրագույն";
+"SETTINGS_THEME_INDIGO" = "Ինդիգո";
+"SETTINGS_THEME_LIQUID_BLACK" = "Հեղուկ սև";
+"SETTINGS_THEME_SLATE" = "Թերթաքար";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Կատեգորիաներ՝ %d";
+"BACKUPS_CURRENT_DATA" = "Հավելվածում";
+"BACKUPS_ERROR_CORRUPTED" = "Ֆայլը վնասված է կամ չի կարդացվում։";
+"BACKUPS_ERROR_NEWER_VERSION" = "Այս պատճենը ստեղծվել է հավելվածի ավելի նոր տարբերակով։";
+"BACKUPS_ERROR_UNSUPPORTED" = "Ֆայլի այս ձևաչափը չի աջակցվում։";
+"BACKUPS_EXPORT_SECTION" = "Արտահանում";
+"BACKUPS_IMPORT_ACTION" = "Ներմուծել ֆայլից";
+"BACKUPS_IMPORT_DONE" = "Ավելացված գործարքներ՝ %d, կատեգորիաներ՝ %d";
+"BACKUPS_IMPORT_MERGE" = "Ավելացնել ընթացիկ տվյալներին";
+"BACKUPS_IMPORT_PERIOD" = "Ժամանակահատված՝ %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Գտնվել է ֆայլում";
+"BACKUPS_IMPORT_REPLACE" = "Փոխարինել բոլոր տվյալները";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Բոլոր ընթացիկ գործարքները և կատեգորիաները կջնջվեն։ Այս գործողությունը հնարավոր չէ հետարկել։";
+"BACKUPS_IMPORT_SECTION" = "Ներմուծում";
+"BACKUPS_SHARE_ACTION" = "Արտահանել տվյալները";
+"BACKUPS_CSV_COMMENT" = "Մեկնաբանություն";
+"BACKUPS_CSV_FOLDER" = "Պանակ";
+"BACKUPS_FORMAT_CSV" = "CSV — միայն դիտելու համար";
+"BACKUPS_FORMAT_JSON" = "JSON — ամբողջական պատճեն";
+"BACKUPS_FORMAT_MESSAGE" = "JSON-ը ամբողջական պատճեն է, որը կարելի է նորից ներմուծել։ CSV-ն գործարքների աղյուսակ է էլեկտրոնային աղյուսակում դիտելու համար. այն հնարավոր չէ ներմուծել հավելված։";
+"BACKUPS_FORMAT_TITLE" = "Արտահանման ձևաչափ";
+"BACKUPS_IMPORT_SKIPPED" = "Բաց թողնված եկամուտներ՝ %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Գործարքներ՝ %d";

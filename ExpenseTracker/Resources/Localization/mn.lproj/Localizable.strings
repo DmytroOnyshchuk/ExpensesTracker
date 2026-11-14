@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Цэс";
 "MENU_BUDGET" = "Төсөв";
 "MENU_SETTINGS" = "Тохиргоо";
+"MENU_BACKUPS" = "Нөөц хуулбарууд";
 "MENU_SPENT_IN_MONTH" = "Нийт зарцуулсан · %@";
+"MENU_LANGUAGE" = "Хэл";
+"MENU_ABOUT" = "Аппын тухай";
+
+// MARK: - About
+"ABOUT_VERSION" = "Хувилбар %@";
+"ABOUT_SHARE" = "Апп хуваалцах";
+"ABOUT_RATE" = "Аппыг үнэлэх";
 
 // MARK: - Tabs
 "TAB_HOME" = "Нүүр";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Хандив";
 "DEFAULT_CATEGORY_INTERNET" = "Интернэт";
 "DEFAULT_CATEGORY_TRANSPORT" = "Тээвэр";
+"SETTINGS_APPEARANCE" = "Харагдац";
+"SETTINGS_THEME_CLASSIC" = "Сонгодог";
+"SETTINGS_THEME_EMBER" = "Цог";
+"SETTINGS_THEME_MIDNIGHT" = "Шөнө дунд";
+"SETTINGS_THEME_FOREST" = "Ой";
+"SETTINGS_THEME_GRAY" = "Саарал";
+"SETTINGS_THEME_INDIGO" = "Индиго";
+"SETTINGS_THEME_LIQUID_BLACK" = "Шингэн хар";
+"SETTINGS_THEME_SLATE" = "Занар";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Ангилал: %d";
+"BACKUPS_CURRENT_DATA" = "Апп дотор";
+"BACKUPS_ERROR_CORRUPTED" = "Файл гэмтсэн эсвэл уншигдахгүй байна.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Энэ хуулбарыг аппын шинэ хувилбараар үүсгэсэн.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Энэ файлын форматыг дэмжихгүй.";
+"BACKUPS_EXPORT_SECTION" = "Экспорт";
+"BACKUPS_IMPORT_ACTION" = "Файлаас импортлох";
+"BACKUPS_IMPORT_DONE" = "Нэмэгдсэн гүйлгээ: %d, ангилал: %d";
+"BACKUPS_IMPORT_MERGE" = "Одоогийн өгөгдөлд нэмэх";
+"BACKUPS_IMPORT_PERIOD" = "Хугацаа: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Файлаас олдсон";
+"BACKUPS_IMPORT_REPLACE" = "Бүх өгөгдлийг солих";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Одоогийн бүх гүйлгээ, ангилал устгагдана. Энэ үйлдлийг буцаах боломжгүй.";
+"BACKUPS_IMPORT_SECTION" = "Импорт";
+"BACKUPS_SHARE_ACTION" = "Өгөгдөл экспортлох";
+"BACKUPS_CSV_COMMENT" = "Тайлбар";
+"BACKUPS_CSV_FOLDER" = "Хавтас";
+"BACKUPS_FORMAT_CSV" = "CSV — зөвхөн үзэхэд";
+"BACKUPS_FORMAT_JSON" = "JSON — бүрэн хуулбар";
+"BACKUPS_FORMAT_MESSAGE" = "JSON бол буцааж импортлох боломжтой бүрэн хуулбар. CSV бол хүснэгтийн программд үзэх гүйлгээний хүснэгт бөгөөд апп руу импортлох боломжгүй.";
+"BACKUPS_FORMAT_TITLE" = "Экспортын формат";
+"BACKUPS_IMPORT_SKIPPED" = "Алгассан орлого: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Гүйлгээ: %d";

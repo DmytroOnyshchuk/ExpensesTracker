@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Valmynd";
 "MENU_BUDGET" = "Fjárhagsáætlun";
 "MENU_SETTINGS" = "Stillingar";
+"MENU_BACKUPS" = "Öryggisafrit";
 "MENU_SPENT_IN_MONTH" = "Samtals eytt · %@";
+"MENU_LANGUAGE" = "Tungumál";
+"MENU_ABOUT" = "Um forritið";
+
+// MARK: - About
+"ABOUT_VERSION" = "Útgáfa %@";
+"ABOUT_SHARE" = "Deila forriti";
+"ABOUT_RATE" = "Gefa forriti einkunn";
 
 // MARK: - Tabs
 "TAB_HOME" = "Heim";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Góðgerðarmál";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Samgöngur";
+"SETTINGS_APPEARANCE" = "Útlit";
+"SETTINGS_THEME_CLASSIC" = "Klassískt";
+"SETTINGS_THEME_EMBER" = "Glóð";
+"SETTINGS_THEME_MIDNIGHT" = "Miðnætti";
+"SETTINGS_THEME_FOREST" = "Skógur";
+"SETTINGS_THEME_GRAY" = "Grátt";
+"SETTINGS_THEME_INDIGO" = "Indígó";
+"SETTINGS_THEME_LIQUID_BLACK" = "Fljótandi svart";
+"SETTINGS_THEME_SLATE" = "Flöguberg";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Flokkar: %d";
+"BACKUPS_CURRENT_DATA" = "Í forritinu";
+"BACKUPS_ERROR_CORRUPTED" = "Skráin er skemmd eða ólæsileg.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Þetta öryggisafrit var búið til með nýrri útgáfu forritsins.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Þetta skráarsnið er ekki stutt.";
+"BACKUPS_EXPORT_SECTION" = "Útflutningur";
+"BACKUPS_IMPORT_ACTION" = "Flytja inn úr skrá";
+"BACKUPS_IMPORT_DONE" = "Færslum bætt við: %d, flokkum: %d";
+"BACKUPS_IMPORT_MERGE" = "Bæta við núverandi gögn";
+"BACKUPS_IMPORT_PERIOD" = "Tímabil: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Fannst í skrá";
+"BACKUPS_IMPORT_REPLACE" = "Skipta út öllum gögnum";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Öllum núverandi færslum og flokkum verður eytt. Ekki er hægt að afturkalla þetta.";
+"BACKUPS_IMPORT_SECTION" = "Innflutningur";
+"BACKUPS_SHARE_ACTION" = "Flytja út gögn";
+"BACKUPS_CSV_COMMENT" = "Athugasemd";
+"BACKUPS_CSV_FOLDER" = "Mappa";
+"BACKUPS_FORMAT_CSV" = "CSV — aðeins til skoðunar";
+"BACKUPS_FORMAT_JSON" = "JSON — fullt öryggisafrit";
+"BACKUPS_FORMAT_MESSAGE" = "JSON er fullt öryggisafrit sem hægt er að flytja inn aftur. CSV er tafla yfir færslur til skoðunar í töflureikni — ekki er hægt að flytja hana inn í forritið.";
+"BACKUPS_FORMAT_TITLE" = "Útflutningssnið";
+"BACKUPS_IMPORT_SKIPPED" = "Tekjum sleppt: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Færslur: %d";

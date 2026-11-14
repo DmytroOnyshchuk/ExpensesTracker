@@ -58,7 +58,15 @@
 "MENU_TITLE" = "لیست";
 "MENU_BUDGET" = "بودجە";
 "MENU_SETTINGS" = "ڕێکخستنەکان";
+"MENU_BACKUPS" = "پاڵپشتەکان";
 "MENU_SPENT_IN_MONTH" = "کۆی خەرجکراو · %@";
+"MENU_LANGUAGE" = "زمان";
+"MENU_ABOUT" = "دەربارە";
+
+// MARK: - About
+"ABOUT_VERSION" = "وەشانی %@";
+"ABOUT_SHARE" = "هاوبەشکردنی ئەپ";
+"ABOUT_RATE" = "هەڵسەنگاندنی ئەپ";
 
 // MARK: - Tabs
 "TAB_HOME" = "سەرەکی";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "خێرخوازی";
 "DEFAULT_CATEGORY_INTERNET" = "ئینتەرنێت";
 "DEFAULT_CATEGORY_TRANSPORT" = "گواستنەوە";
+"SETTINGS_APPEARANCE" = "ڕووکار";
+"SETTINGS_THEME_CLASSIC" = "کلاسیک";
+"SETTINGS_THEME_EMBER" = "پشکۆ";
+"SETTINGS_THEME_MIDNIGHT" = "نیوەشەو";
+"SETTINGS_THEME_FOREST" = "دارستان";
+"SETTINGS_THEME_GRAY" = "خۆڵەمێشی";
+"SETTINGS_THEME_INDIGO" = "نیلی";
+"SETTINGS_THEME_LIQUID_BLACK" = "ڕەشی شل";
+"SETTINGS_THEME_SLATE" = "بەردەتاش";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "پۆلەکان: %d";
+"BACKUPS_CURRENT_DATA" = "لە ئەپەکەدا";
+"BACKUPS_ERROR_CORRUPTED" = "فایلەکە تێکچووە یان ناخوێندرێتەوە.";
+"BACKUPS_ERROR_NEWER_VERSION" = "ئەم پاڵپشتە بە وەشانێکی نوێتری ئەپەکە دروست کراوە.";
+"BACKUPS_ERROR_UNSUPPORTED" = "ئەم جۆرە فایلە پشتگیری ناکرێت.";
+"BACKUPS_EXPORT_SECTION" = "هەناردەکردن";
+"BACKUPS_IMPORT_ACTION" = "هاوردەکردن لە فایل";
+"BACKUPS_IMPORT_DONE" = "مامەڵەی زیادکراو: %d، پۆل: %d";
+"BACKUPS_IMPORT_MERGE" = "زیادکردن بۆ داتای ئێستا";
+"BACKUPS_IMPORT_PERIOD" = "ماوە: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "لە فایلەکەدا دۆزرایەوە";
+"BACKUPS_IMPORT_REPLACE" = "جێگرتنەوەی هەموو داتاکان";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "هەموو مامەڵە و پۆلەکانی ئێستا دەسڕدرێنەوە. ئەم کارە ناگەڕێندرێتەوە.";
+"BACKUPS_IMPORT_SECTION" = "هاوردەکردن";
+"BACKUPS_SHARE_ACTION" = "هەناردەکردنی داتا";
+"BACKUPS_CSV_COMMENT" = "تێبینی";
+"BACKUPS_CSV_FOLDER" = "بوخچە";
+"BACKUPS_FORMAT_CSV" = "CSV — تەنها بۆ بینین";
+"BACKUPS_FORMAT_JSON" = "JSON — پاڵپشتی تەواو";
+"BACKUPS_FORMAT_MESSAGE" = "JSON پاڵپشتێکی تەواوە کە دەتوانرێت دووبارە هاوردە بکرێتەوە. CSV خشتەی مامەڵەکانە بۆ بینین لە خشتەکاردا — ناتوانرێت هاوردەی ئەپەکە بکرێت.";
+"BACKUPS_FORMAT_TITLE" = "جۆری هەناردەکردن";
+"BACKUPS_IMPORT_SKIPPED" = "داهاتی پەڕێنراو: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "مامەڵەکان: %d";

@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Menyu";
 "MENU_BUDGET" = "Budjet";
 "MENU_SETTINGS" = "Sozlamalar";
+"MENU_BACKUPS" = "Zaxira nusxalar";
 "MENU_SPENT_IN_MONTH" = "Jami sarflandi · %@";
+"MENU_LANGUAGE" = "Til";
+"MENU_ABOUT" = "Ilova haqida";
+
+// MARK: - About
+"ABOUT_VERSION" = "Versiya %@";
+"ABOUT_SHARE" = "Ilovani ulashish";
+"ABOUT_RATE" = "Ilovani baholash";
 
 // MARK: - Tabs
 "TAB_HOME" = "Asosiy";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Xayriya";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Transport";
+"SETTINGS_APPEARANCE" = "Koʻrinish";
+"SETTINGS_THEME_CLASSIC" = "Klassik";
+"SETTINGS_THEME_EMBER" = "Choʻgʻ";
+"SETTINGS_THEME_MIDNIGHT" = "Yarim tun";
+"SETTINGS_THEME_FOREST" = "Oʻrmon";
+"SETTINGS_THEME_GRAY" = "Kulrang";
+"SETTINGS_THEME_INDIGO" = "Indigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Suyuq qora";
+"SETTINGS_THEME_SLATE" = "Slanets";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Toifalar: %d";
+"BACKUPS_CURRENT_DATA" = "Ilovada";
+"BACKUPS_ERROR_CORRUPTED" = "Fayl shikastlangan yoki oʻqib boʻlmaydi.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Bu nusxa ilovaning yangiroq versiyasida yaratilgan.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Bu fayl formati qoʻllab-quvvatlanmaydi.";
+"BACKUPS_EXPORT_SECTION" = "Eksport";
+"BACKUPS_IMPORT_ACTION" = "Fayldan import qilish";
+"BACKUPS_IMPORT_DONE" = "Qoʻshilgan operatsiyalar: %d, toifalar: %d";
+"BACKUPS_IMPORT_MERGE" = "Joriy maʼlumotlarga qoʻshish";
+"BACKUPS_IMPORT_PERIOD" = "Davr: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Faylda topildi";
+"BACKUPS_IMPORT_REPLACE" = "Barcha maʼlumotlarni almashtirish";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Barcha joriy operatsiyalar va toifalar oʻchiriladi. Bu amalni ortga qaytarib boʻlmaydi.";
+"BACKUPS_IMPORT_SECTION" = "Import";
+"BACKUPS_SHARE_ACTION" = "Maʼlumotlarni eksport qilish";
+"BACKUPS_CSV_COMMENT" = "Izoh";
+"BACKUPS_CSV_FOLDER" = "Jild";
+"BACKUPS_FORMAT_CSV" = "CSV — faqat koʻrish uchun";
+"BACKUPS_FORMAT_JSON" = "JSON — toʻliq nusxa";
+"BACKUPS_FORMAT_MESSAGE" = "JSON — qayta import qilish mumkin boʻlgan toʻliq nusxa. CSV — elektron jadvalda koʻrish uchun operatsiyalar jadvali, uni ilovaga import qilib boʻlmaydi.";
+"BACKUPS_FORMAT_TITLE" = "Eksport formati";
+"BACKUPS_IMPORT_SKIPPED" = "Oʻtkazib yuborilgan daromadlar: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Operatsiyalar: %d";

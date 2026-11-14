@@ -58,7 +58,15 @@
 "MENU_TITLE" = "ಮೆನು";
 "MENU_BUDGET" = "ಬಜೆಟ್";
 "MENU_SETTINGS" = "ಸೆಟ್ಟಿಂಗ್‌ಗಳು";
+"MENU_BACKUPS" = "ಬ್ಯಾಕಪ್‌ಗಳು";
 "MENU_SPENT_IN_MONTH" = "ಒಟ್ಟು ವೆಚ್ಚ · %@";
+"MENU_LANGUAGE" = "ಭಾಷೆ";
+"MENU_ABOUT" = "ಕುರಿತು";
+
+// MARK: - About
+"ABOUT_VERSION" = "ಆವೃತ್ತಿ %@";
+"ABOUT_SHARE" = "ಆ್ಯಪ್ ಹಂಚಿಕೊಳ್ಳಿ";
+"ABOUT_RATE" = "ಆ್ಯಪ್‌ಗೆ ರೇಟಿಂಗ್ ನೀಡಿ";
 
 // MARK: - Tabs
 "TAB_HOME" = "ಮುಖಪುಟ";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "ದಾನ";
 "DEFAULT_CATEGORY_INTERNET" = "ಇಂಟರ್ನೆಟ್";
 "DEFAULT_CATEGORY_TRANSPORT" = "ಸಾರಿಗೆ";
+"SETTINGS_APPEARANCE" = "ನೋಟ";
+"SETTINGS_THEME_CLASSIC" = "ಕ್ಲಾಸಿಕ್";
+"SETTINGS_THEME_EMBER" = "ಕೆಂಡ";
+"SETTINGS_THEME_MIDNIGHT" = "ಮಧ್ಯರಾತ್ರಿ";
+"SETTINGS_THEME_FOREST" = "ಕಾಡು";
+"SETTINGS_THEME_GRAY" = "ಬೂದು";
+"SETTINGS_THEME_INDIGO" = "ಇಂಡಿಗೊ";
+"SETTINGS_THEME_LIQUID_BLACK" = "ದ್ರವ ಕಪ್ಪು";
+"SETTINGS_THEME_SLATE" = "ಸ್ಲೇಟ್";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "ವರ್ಗಗಳು: %d";
+"BACKUPS_CURRENT_DATA" = "ಆ್ಯಪ್‌ನಲ್ಲಿ";
+"BACKUPS_ERROR_CORRUPTED" = "ಫೈಲ್ ಹಾನಿಗೊಂಡಿದೆ ಅಥವಾ ಓದಲು ಸಾಧ್ಯವಿಲ್ಲ.";
+"BACKUPS_ERROR_NEWER_VERSION" = "ಈ ಬ್ಯಾಕಪ್ ಅನ್ನು ಆ್ಯಪ್‌ನ ಹೊಸ ಆವೃತ್ತಿಯಿಂದ ರಚಿಸಲಾಗಿದೆ.";
+"BACKUPS_ERROR_UNSUPPORTED" = "ಈ ಫೈಲ್ ಫಾರ್ಮ್ಯಾಟ್ ಬೆಂಬಲಿತವಾಗಿಲ್ಲ.";
+"BACKUPS_EXPORT_SECTION" = "ರಫ್ತು";
+"BACKUPS_IMPORT_ACTION" = "ಫೈಲ್‌ನಿಂದ ಆಮದು ಮಾಡಿ";
+"BACKUPS_IMPORT_DONE" = "ಸೇರಿಸಿದ ವಹಿವಾಟುಗಳು: %d, ವರ್ಗಗಳು: %d";
+"BACKUPS_IMPORT_MERGE" = "ಪ್ರಸ್ತುತ ಡೇಟಾಗೆ ಸೇರಿಸಿ";
+"BACKUPS_IMPORT_PERIOD" = "ಅವಧಿ: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "ಫೈಲ್‌ನಲ್ಲಿ ಕಂಡುಬಂದಿದೆ";
+"BACKUPS_IMPORT_REPLACE" = "ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ಬದಲಾಯಿಸಿ";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "ಪ್ರಸ್ತುತ ಎಲ್ಲಾ ವಹಿವಾಟುಗಳು ಮತ್ತು ವರ್ಗಗಳನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ. ಇದನ್ನು ರದ್ದುಗೊಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.";
+"BACKUPS_IMPORT_SECTION" = "ಆಮದು";
+"BACKUPS_SHARE_ACTION" = "ಡೇಟಾ ರಫ್ತು ಮಾಡಿ";
+"BACKUPS_CSV_COMMENT" = "ಟಿಪ್ಪಣಿ";
+"BACKUPS_CSV_FOLDER" = "ಫೋಲ್ಡರ್";
+"BACKUPS_FORMAT_CSV" = "CSV — ವೀಕ್ಷಣೆಗೆ ಮಾತ್ರ";
+"BACKUPS_FORMAT_JSON" = "JSON — ಪೂರ್ಣ ಬ್ಯಾಕಪ್";
+"BACKUPS_FORMAT_MESSAGE" = "JSON ಮತ್ತೆ ಆಮದು ಮಾಡಬಹುದಾದ ಪೂರ್ಣ ಬ್ಯಾಕಪ್ ಆಗಿದೆ. CSV ಸ್ಪ್ರೆಡ್‌ಶೀಟ್‌ನಲ್ಲಿ ನೋಡಲು ವಹಿವಾಟುಗಳ ಕೋಷ್ಟಕವಾಗಿದೆ — ಅದನ್ನು ಆ್ಯಪ್‌ಗೆ ಆಮದು ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ.";
+"BACKUPS_FORMAT_TITLE" = "ರಫ್ತು ಫಾರ್ಮ್ಯಾಟ್";
+"BACKUPS_IMPORT_SKIPPED" = "ಬಿಟ್ಟುಬಿಟ್ಟ ಆದಾಯ: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "ವಹಿವಾಟುಗಳು: %d";

@@ -58,7 +58,15 @@
 "MENU_TITLE" = "მენიუ";
 "MENU_BUDGET" = "ბიუჯეტი";
 "MENU_SETTINGS" = "პარამეტრები";
+"MENU_BACKUPS" = "სარეზერვო ასლები";
 "MENU_SPENT_IN_MONTH" = "სულ დახარჯული · %@";
+"MENU_LANGUAGE" = "ენა";
+"MENU_ABOUT" = "აპის შესახებ";
+
+// MARK: - About
+"ABOUT_VERSION" = "ვერსია %@";
+"ABOUT_SHARE" = "აპის გაზიარება";
+"ABOUT_RATE" = "აპის შეფასება";
 
 // MARK: - Tabs
 "TAB_HOME" = "მთავარი";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "ქველმოქმედება";
 "DEFAULT_CATEGORY_INTERNET" = "ინტერნეტი";
 "DEFAULT_CATEGORY_TRANSPORT" = "ტრანსპორტი";
+"SETTINGS_APPEARANCE" = "იერსახე";
+"SETTINGS_THEME_CLASSIC" = "კლასიკური";
+"SETTINGS_THEME_EMBER" = "ნაკვერჩხალი";
+"SETTINGS_THEME_MIDNIGHT" = "შუაღამე";
+"SETTINGS_THEME_FOREST" = "ტყე";
+"SETTINGS_THEME_GRAY" = "ნაცრისფერი";
+"SETTINGS_THEME_INDIGO" = "ინდიგო";
+"SETTINGS_THEME_LIQUID_BLACK" = "თხევადი შავი";
+"SETTINGS_THEME_SLATE" = "ფიქალი";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "კატეგორიები: %d";
+"BACKUPS_CURRENT_DATA" = "აპში";
+"BACKUPS_ERROR_CORRUPTED" = "ფაილი დაზიანებულია ან არ იკითხება.";
+"BACKUPS_ERROR_NEWER_VERSION" = "ეს ასლი შექმნილია აპის უფრო ახალი ვერსიით.";
+"BACKUPS_ERROR_UNSUPPORTED" = "ფაილის ეს ფორმატი არ არის მხარდაჭერილი.";
+"BACKUPS_EXPORT_SECTION" = "ექსპორტი";
+"BACKUPS_IMPORT_ACTION" = "იმპორტი ფაილიდან";
+"BACKUPS_IMPORT_DONE" = "დამატებული ტრანზაქციები: %d, კატეგორიები: %d";
+"BACKUPS_IMPORT_MERGE" = "მიმდინარე მონაცემებზე დამატება";
+"BACKUPS_IMPORT_PERIOD" = "პერიოდი: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "ნაპოვნია ფაილში";
+"BACKUPS_IMPORT_REPLACE" = "ყველა მონაცემის ჩანაცვლება";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "ყველა მიმდინარე ტრანზაქცია და კატეგორია წაიშლება. ამ მოქმედების გაუქმება შეუძლებელია.";
+"BACKUPS_IMPORT_SECTION" = "იმპორტი";
+"BACKUPS_SHARE_ACTION" = "მონაცემების ექსპორტი";
+"BACKUPS_CSV_COMMENT" = "კომენტარი";
+"BACKUPS_CSV_FOLDER" = "საქაღალდე";
+"BACKUPS_FORMAT_CSV" = "CSV — მხოლოდ სანახავად";
+"BACKUPS_FORMAT_JSON" = "JSON — სრული ასლი";
+"BACKUPS_FORMAT_MESSAGE" = "JSON სრული ასლია, რომლის ხელახლა იმპორტი შესაძლებელია. CSV ტრანზაქციების ცხრილია ელცხრილში სანახავად — მისი იმპორტი აპში შეუძლებელია.";
+"BACKUPS_FORMAT_TITLE" = "ექსპორტის ფორმატი";
+"BACKUPS_IMPORT_SKIPPED" = "გამოტოვებული შემოსავლები: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "ტრანზაქციები: %d";

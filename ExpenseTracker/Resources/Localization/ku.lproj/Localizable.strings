@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Menû";
 "MENU_BUDGET" = "Budçe";
 "MENU_SETTINGS" = "Mîheng";
+"MENU_BACKUPS" = "Paşkopî";
 "MENU_SPENT_IN_MONTH" = "Tevahiya xerckirî · %@";
+"MENU_LANGUAGE" = "Ziman";
+"MENU_ABOUT" = "Derbar";
+
+// MARK: - About
+"ABOUT_VERSION" = "Guherto %@";
+"ABOUT_SHARE" = "Sepanê parve bike";
+"ABOUT_RATE" = "Sepanê binirxîne";
 
 // MARK: - Tabs
 "TAB_HOME" = "Sereke";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Xêrxwazî";
 "DEFAULT_CATEGORY_INTERNET" = "Înternet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Veguhestin";
+"SETTINGS_APPEARANCE" = "Xuyang";
+"SETTINGS_THEME_CLASSIC" = "Klasîk";
+"SETTINGS_THEME_EMBER" = "Bizot";
+"SETTINGS_THEME_MIDNIGHT" = "Nîvê şevê";
+"SETTINGS_THEME_FOREST" = "Daristan";
+"SETTINGS_THEME_GRAY" = "Gewr";
+"SETTINGS_THEME_INDIGO" = "Çîvît";
+"SETTINGS_THEME_LIQUID_BLACK" = "Reşa şil";
+"SETTINGS_THEME_SLATE" = "Kevirê reş";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Kategorî: %d";
+"BACKUPS_CURRENT_DATA" = "Di sepanê de";
+"BACKUPS_ERROR_CORRUPTED" = "Pel xera bûye an nayê xwendin.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Ev paşkopî bi guhertoyeke nûtir a sepanê hatiye çêkirin.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Ev formata pelê nayê piştgirîkirin.";
+"BACKUPS_EXPORT_SECTION" = "Derxistin";
+"BACKUPS_IMPORT_ACTION" = "Ji pelê bîne";
+"BACKUPS_IMPORT_DONE" = "Danûstandinên zêdekirî: %d, kategorî: %d";
+"BACKUPS_IMPORT_MERGE" = "Li daneyên heyî zêde bike";
+"BACKUPS_IMPORT_PERIOD" = "Dem: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Di pelê de hat dîtin";
+"BACKUPS_IMPORT_REPLACE" = "Hemû daneyan biguherîne";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Hemû danûstandin û kategoriyên heyî dê bên jêbirin. Ev kiryar nayê vegerandin.";
+"BACKUPS_IMPORT_SECTION" = "Anîn";
+"BACKUPS_SHARE_ACTION" = "Daneyan derxîne";
+"BACKUPS_CSV_COMMENT" = "Şîrove";
+"BACKUPS_CSV_FOLDER" = "Peldank";
+"BACKUPS_FORMAT_CSV" = "CSV — tenê ji bo dîtinê";
+"BACKUPS_FORMAT_JSON" = "JSON — paşkopiya tam";
+"BACKUPS_FORMAT_MESSAGE" = "JSON paşkopiyeke tam e ku dikare dîsa bê anîn. CSV tabloya danûstandinan e ji bo dîtinê di tabloyeke hesabkirinê de — nayê anîn nav sepanê.";
+"BACKUPS_FORMAT_TITLE" = "Formata derxistinê";
+"BACKUPS_IMPORT_SKIPPED" = "Dahatên derbaskirî: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Danûstandin: %d";

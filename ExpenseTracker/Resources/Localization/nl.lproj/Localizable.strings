@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Menu";
 "MENU_BUDGET" = "Budget";
 "MENU_SETTINGS" = "Instellingen";
+"MENU_BACKUPS" = "Back-ups";
 "MENU_SPENT_IN_MONTH" = "Uitgegeven in %@";
+"MENU_LANGUAGE" = "Taal";
+"MENU_ABOUT" = "Over";
+
+// MARK: - About
+"ABOUT_VERSION" = "Versie %@";
+"ABOUT_SHARE" = "App delen";
+"ABOUT_RATE" = "App beoordelen";
 
 // MARK: - Tabs
 "TAB_HOME" = "Home";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Goede doelen";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Vervoer";
+"SETTINGS_APPEARANCE" = "Weergave";
+"SETTINGS_THEME_CLASSIC" = "Klassiek";
+"SETTINGS_THEME_EMBER" = "Gloed";
+"SETTINGS_THEME_MIDNIGHT" = "Middernacht";
+"SETTINGS_THEME_FOREST" = "Bos";
+"SETTINGS_THEME_GRAY" = "Grijs";
+"SETTINGS_THEME_INDIGO" = "Indigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Vloeibaar zwart";
+"SETTINGS_THEME_SLATE" = "Leisteen";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Categorieën: %d";
+"BACKUPS_CURRENT_DATA" = "In de app";
+"BACKUPS_ERROR_CORRUPTED" = "Het bestand is beschadigd of kan niet worden gelezen.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Deze back-up is gemaakt met een nieuwere versie van de app.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Deze bestandsindeling wordt niet ondersteund.";
+"BACKUPS_EXPORT_SECTION" = "Exporteren";
+"BACKUPS_IMPORT_ACTION" = "Importeren uit bestand";
+"BACKUPS_IMPORT_DONE" = "Toegevoegde transacties: %d, categorieën: %d";
+"BACKUPS_IMPORT_MERGE" = "Toevoegen aan huidige gegevens";
+"BACKUPS_IMPORT_PERIOD" = "Periode: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Gevonden in bestand";
+"BACKUPS_IMPORT_REPLACE" = "Alle gegevens vervangen";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Alle huidige transacties en categorieën worden verwijderd. Dit kan niet ongedaan worden gemaakt.";
+"BACKUPS_IMPORT_SECTION" = "Importeren";
+"BACKUPS_SHARE_ACTION" = "Gegevens exporteren";
+"BACKUPS_CSV_COMMENT" = "Opmerking";
+"BACKUPS_CSV_FOLDER" = "Map";
+"BACKUPS_FORMAT_CSV" = "CSV — alleen bekijken";
+"BACKUPS_FORMAT_JSON" = "JSON — volledige back-up";
+"BACKUPS_FORMAT_MESSAGE" = "JSON is een volledige back-up die weer kan worden geïmporteerd. CSV is een tabel met transacties om in een spreadsheet te bekijken — het kan niet in de app worden geïmporteerd.";
+"BACKUPS_FORMAT_TITLE" = "Exportindeling";
+"BACKUPS_IMPORT_SKIPPED" = "Inkomsten overgeslagen: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Transacties: %d";

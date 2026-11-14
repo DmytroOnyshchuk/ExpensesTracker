@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Valikko";
 "MENU_BUDGET" = "Budjetti";
 "MENU_SETTINGS" = "Asetukset";
+"MENU_BACKUPS" = "Varmuuskopiot";
 "MENU_SPENT_IN_MONTH" = "Käytetty yhteensä · %@";
+"MENU_LANGUAGE" = "Kieli";
+"MENU_ABOUT" = "Tietoja";
+
+// MARK: - About
+"ABOUT_VERSION" = "Versio %@";
+"ABOUT_SHARE" = "Jaa sovellus";
+"ABOUT_RATE" = "Arvioi sovellus";
 
 // MARK: - Tabs
 "TAB_HOME" = "Koti";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Hyväntekeväisyys";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Liikenne";
+"SETTINGS_APPEARANCE" = "Ulkoasu";
+"SETTINGS_THEME_CLASSIC" = "Klassinen";
+"SETTINGS_THEME_EMBER" = "Hiillos";
+"SETTINGS_THEME_MIDNIGHT" = "Keskiyö";
+"SETTINGS_THEME_FOREST" = "Metsä";
+"SETTINGS_THEME_GRAY" = "Harmaa";
+"SETTINGS_THEME_INDIGO" = "Indigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Nestemäinen musta";
+"SETTINGS_THEME_SLATE" = "Liuske";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Luokat: %d";
+"BACKUPS_CURRENT_DATA" = "Sovelluksessa";
+"BACKUPS_ERROR_CORRUPTED" = "Tiedosto on vioittunut tai sitä ei voi lukea.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Tämä varmuuskopio on tehty sovelluksen uudemmalla versiolla.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Tätä tiedostomuotoa ei tueta.";
+"BACKUPS_EXPORT_SECTION" = "Vienti";
+"BACKUPS_IMPORT_ACTION" = "Tuo tiedostosta";
+"BACKUPS_IMPORT_DONE" = "Lisätyt tapahtumat: %d, luokat: %d";
+"BACKUPS_IMPORT_MERGE" = "Lisää nykyisiin tietoihin";
+"BACKUPS_IMPORT_PERIOD" = "Ajanjakso: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Tiedostosta löytyi";
+"BACKUPS_IMPORT_REPLACE" = "Korvaa kaikki tiedot";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Kaikki nykyiset tapahtumat ja luokat poistetaan. Tätä ei voi kumota.";
+"BACKUPS_IMPORT_SECTION" = "Tuonti";
+"BACKUPS_SHARE_ACTION" = "Vie tiedot";
+"BACKUPS_CSV_COMMENT" = "Kommentti";
+"BACKUPS_CSV_FOLDER" = "Kansio";
+"BACKUPS_FORMAT_CSV" = "CSV — vain katselu";
+"BACKUPS_FORMAT_JSON" = "JSON — täysi varmuuskopio";
+"BACKUPS_FORMAT_MESSAGE" = "JSON on täysi varmuuskopio, jonka voi tuoda takaisin. CSV on tapahtumataulukko taulukkolaskentaohjelmassa katselua varten — sitä ei voi tuoda sovellukseen.";
+"BACKUPS_FORMAT_TITLE" = "Vientimuoto";
+"BACKUPS_IMPORT_SKIPPED" = "Ohitetut tulot: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Tapahtumat: %d";

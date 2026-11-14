@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Imenyu";
 "MENU_BUDGET" = "Isabelomali";
 "MENU_SETTINGS" = "Izilungiselelo";
+"MENU_BACKUPS" = "Izipele";
 "MENU_SPENT_IN_MONTH" = "Isamba esichithiwe · %@";
+"MENU_LANGUAGE" = "Ulimi";
+"MENU_ABOUT" = "Mayelana";
+
+// MARK: - About
+"ABOUT_VERSION" = "Inguqulo %@";
+"ABOUT_SHARE" = "Yabelana nge-app";
+"ABOUT_RATE" = "Linganisa i-app";
 
 // MARK: - Tabs
 "TAB_HOME" = "Ekhaya";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Umnikelo";
 "DEFAULT_CATEGORY_INTERNET" = "I-inthanethi";
 "DEFAULT_CATEGORY_TRANSPORT" = "Ezokuthutha";
+"SETTINGS_APPEARANCE" = "Ukubukeka";
+"SETTINGS_THEME_CLASSIC" = "Okwakudala";
+"SETTINGS_THEME_EMBER" = "Ilahle elivuthayo";
+"SETTINGS_THEME_MIDNIGHT" = "Phakathi kwamabili";
+"SETTINGS_THEME_FOREST" = "Ihlathi";
+"SETTINGS_THEME_GRAY" = "Mpunga";
+"SETTINGS_THEME_INDIGO" = "I-indigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Mnyama owuketshezi";
+"SETTINGS_THEME_SLATE" = "Itshe lesileti";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Izigaba: %d";
+"BACKUPS_CURRENT_DATA" = "Ku-app";
+"BACKUPS_ERROR_CORRUPTED" = "Ifayela lonakele noma alifundeki.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Lesi sipele senziwe ngenguqulo entsha ye-app.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Le fomethi yefayela ayisekelwa.";
+"BACKUPS_EXPORT_SECTION" = "Ukuthekelisa";
+"BACKUPS_IMPORT_ACTION" = "Ngenisa kusuka kufayela";
+"BACKUPS_IMPORT_DONE" = "Imisebenzi yemali eyengeziwe: %d, izigaba: %d";
+"BACKUPS_IMPORT_MERGE" = "Engeza kudatha yamanje";
+"BACKUPS_IMPORT_PERIOD" = "Isikhathi: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Kutholakale kufayela";
+"BACKUPS_IMPORT_REPLACE" = "Shintsha yonke idatha";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Yonke imisebenzi yemali nezigaba zamanje kuzosuswa. Lokhu akukwazi ukuhlehliswa.";
+"BACKUPS_IMPORT_SECTION" = "Ukungenisa";
+"BACKUPS_SHARE_ACTION" = "Thekelisa idatha";
+"BACKUPS_CSV_COMMENT" = "Amazwana";
+"BACKUPS_CSV_FOLDER" = "Ifolda";
+"BACKUPS_FORMAT_CSV" = "CSV — okokubuka kuphela";
+"BACKUPS_FORMAT_JSON" = "JSON — isipele esigcwele";
+"BACKUPS_FORMAT_MESSAGE" = "I-JSON iyisipele esigcwele esingangeniswa futhi. I-CSV yithebula lemisebenzi yemali lokubuka kuspredishithi — ayikwazi ukungeniswa ku-app.";
+"BACKUPS_FORMAT_TITLE" = "Ifomethi yokuthekelisa";
+"BACKUPS_IMPORT_SKIPPED" = "Imali engenayo eyeqiwe: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Imisebenzi yemali: %d";

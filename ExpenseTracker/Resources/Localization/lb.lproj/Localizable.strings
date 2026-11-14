@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Menü";
 "MENU_BUDGET" = "Budget";
 "MENU_SETTINGS" = "Astellungen";
+"MENU_BACKUPS" = "Backups";
 "MENU_SPENT_IN_MONTH" = "Total ausginn · %@";
+"MENU_LANGUAGE" = "Sprooch";
+"MENU_ABOUT" = "Iwwer";
+
+// MARK: - About
+"ABOUT_VERSION" = "Versioun %@";
+"ABOUT_SHARE" = "App deelen";
+"ABOUT_RATE" = "App bewäerten";
 
 // MARK: - Tabs
 "TAB_HOME" = "Start";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Spenden";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Transport";
+"SETTINGS_APPEARANCE" = "Ausgesinn";
+"SETTINGS_THEME_CLASSIC" = "Klassesch";
+"SETTINGS_THEME_EMBER" = "Glous";
+"SETTINGS_THEME_MIDNIGHT" = "Mëtternuecht";
+"SETTINGS_THEME_FOREST" = "Bësch";
+"SETTINGS_THEME_GRAY" = "Gro";
+"SETTINGS_THEME_INDIGO" = "Indigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Flësseg Schwaarz";
+"SETTINGS_THEME_SLATE" = "Schifer";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Kategorien: %d";
+"BACKUPS_CURRENT_DATA" = "An der App";
+"BACKUPS_ERROR_CORRUPTED" = "D’Datei ass beschiedegt oder kann net gelies ginn.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Dëse Backup gouf mat enger méi neier Versioun vun der App erstallt.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Dëst Dateiformat gëtt net ënnerstëtzt.";
+"BACKUPS_EXPORT_SECTION" = "Export";
+"BACKUPS_IMPORT_ACTION" = "Aus Datei importéieren";
+"BACKUPS_IMPORT_DONE" = "Derbäigesate Transaktiounen: %d, Kategorien: %d";
+"BACKUPS_IMPORT_MERGE" = "Bei déi aktuell Daten derbäisetzen";
+"BACKUPS_IMPORT_PERIOD" = "Zäitraum: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "An der Datei fonnt";
+"BACKUPS_IMPORT_REPLACE" = "All Daten ersetzen";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "All aktuell Transaktiounen a Kategorië gi geläscht. Dëst kann net réckgängeg gemaach ginn.";
+"BACKUPS_IMPORT_SECTION" = "Import";
+"BACKUPS_SHARE_ACTION" = "Daten exportéieren";
+"BACKUPS_CSV_COMMENT" = "Kommentar";
+"BACKUPS_CSV_FOLDER" = "Dossier";
+"BACKUPS_FORMAT_CSV" = "CSV — nëmme fir ze kucken";
+"BACKUPS_FORMAT_JSON" = "JSON — komplette Backup";
+"BACKUPS_FORMAT_MESSAGE" = "JSON ass e komplette Backup, deen erëm importéiert ka ginn. CSV ass eng Tabell vun Transaktioune fir an enger Tabellekalkulatioun ze kucken — se kann net an d’App importéiert ginn.";
+"BACKUPS_FORMAT_TITLE" = "Exportformat";
+"BACKUPS_IMPORT_SKIPPED" = "Iwwersprongen Akommes: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Transaktiounen: %d";

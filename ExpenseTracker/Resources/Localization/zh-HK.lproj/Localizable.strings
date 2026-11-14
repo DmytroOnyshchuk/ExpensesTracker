@@ -58,7 +58,15 @@
 "MENU_TITLE" = "選單";
 "MENU_BUDGET" = "預算";
 "MENU_SETTINGS" = "設定";
+"MENU_BACKUPS" = "備份";
 "MENU_SPENT_IN_MONTH" = "%@支出";
+"MENU_LANGUAGE" = "語言";
+"MENU_ABOUT" = "關於";
+
+// MARK: - About
+"ABOUT_VERSION" = "版本 %@";
+"ABOUT_SHARE" = "分享 App";
+"ABOUT_RATE" = "為 App 評分";
 
 // MARK: - Tabs
 "TAB_HOME" = "主頁";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "慈善";
 "DEFAULT_CATEGORY_INTERNET" = "互聯網";
 "DEFAULT_CATEGORY_TRANSPORT" = "交通";
+"SETTINGS_APPEARANCE" = "外觀";
+"SETTINGS_THEME_CLASSIC" = "經典";
+"SETTINGS_THEME_EMBER" = "餘燼";
+"SETTINGS_THEME_MIDNIGHT" = "午夜";
+"SETTINGS_THEME_FOREST" = "森林";
+"SETTINGS_THEME_GRAY" = "灰色";
+"SETTINGS_THEME_INDIGO" = "靛藍";
+"SETTINGS_THEME_LIQUID_BLACK" = "液態黑";
+"SETTINGS_THEME_SLATE" = "石板";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "類別：%d";
+"BACKUPS_CURRENT_DATA" = "App 中";
+"BACKUPS_ERROR_CORRUPTED" = "檔案已損毀或無法讀取。";
+"BACKUPS_ERROR_NEWER_VERSION" = "此備份由較新版本的 App 製作。";
+"BACKUPS_ERROR_UNSUPPORTED" = "不支援此檔案格式。";
+"BACKUPS_EXPORT_SECTION" = "輸出";
+"BACKUPS_IMPORT_ACTION" = "從檔案輸入";
+"BACKUPS_IMPORT_DONE" = "已加入交易：%d，類別：%d";
+"BACKUPS_IMPORT_MERGE" = "加入目前資料";
+"BACKUPS_IMPORT_PERIOD" = "期間：%@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "檔案中的內容";
+"BACKUPS_IMPORT_REPLACE" = "取代所有資料";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "目前所有交易和類別都將被刪除。此動作無法還原。";
+"BACKUPS_IMPORT_SECTION" = "輸入";
+"BACKUPS_SHARE_ACTION" = "輸出資料";
+"BACKUPS_CSV_COMMENT" = "備註";
+"BACKUPS_CSV_FOLDER" = "檔案夾";
+"BACKUPS_FORMAT_CSV" = "CSV — 僅供檢視";
+"BACKUPS_FORMAT_JSON" = "JSON — 完整備份";
+"BACKUPS_FORMAT_MESSAGE" = "JSON 是可以重新輸入的完整備份。CSV 是用於在試算表中檢視的交易表格，無法輸入 App。";
+"BACKUPS_FORMAT_TITLE" = "輸出格式";
+"BACKUPS_IMPORT_SKIPPED" = "已略過收入：%d";
+"BACKUPS_TRANSACTIONS_COUNT" = "交易：%d";

@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Menüü";
 "MENU_BUDGET" = "Eelarve";
 "MENU_SETTINGS" = "Seaded";
+"MENU_BACKUPS" = "Varukoopiad";
 "MENU_SPENT_IN_MONTH" = "Kokku kulutatud · %@";
+"MENU_LANGUAGE" = "Keel";
+"MENU_ABOUT" = "Teave";
+
+// MARK: - About
+"ABOUT_VERSION" = "Versioon %@";
+"ABOUT_SHARE" = "Jaga rakendust";
+"ABOUT_RATE" = "Hinda rakendust";
 
 // MARK: - Tabs
 "TAB_HOME" = "Avaleht";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Heategevus";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Transport";
+"SETTINGS_APPEARANCE" = "Välimus";
+"SETTINGS_THEME_CLASSIC" = "Klassikaline";
+"SETTINGS_THEME_EMBER" = "Hõõguv süsi";
+"SETTINGS_THEME_MIDNIGHT" = "Kesköö";
+"SETTINGS_THEME_FOREST" = "Mets";
+"SETTINGS_THEME_GRAY" = "Hall";
+"SETTINGS_THEME_INDIGO" = "Indigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Vedel must";
+"SETTINGS_THEME_SLATE" = "Kiltkivi";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Kategooriad: %d";
+"BACKUPS_CURRENT_DATA" = "Rakenduses";
+"BACKUPS_ERROR_CORRUPTED" = "Fail on kahjustatud või seda ei saa lugeda.";
+"BACKUPS_ERROR_NEWER_VERSION" = "See varukoopia on loodud rakenduse uuema versiooniga.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Seda failivormingut ei toetata.";
+"BACKUPS_EXPORT_SECTION" = "Eksport";
+"BACKUPS_IMPORT_ACTION" = "Impordi failist";
+"BACKUPS_IMPORT_DONE" = "Lisatud tehingud: %d, kategooriad: %d";
+"BACKUPS_IMPORT_MERGE" = "Lisa praegustele andmetele";
+"BACKUPS_IMPORT_PERIOD" = "Periood: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Failist leitud";
+"BACKUPS_IMPORT_REPLACE" = "Asenda kõik andmed";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Kõik praegused tehingud ja kategooriad kustutatakse. Seda ei saa tagasi võtta.";
+"BACKUPS_IMPORT_SECTION" = "Import";
+"BACKUPS_SHARE_ACTION" = "Ekspordi andmed";
+"BACKUPS_CSV_COMMENT" = "Kommentaar";
+"BACKUPS_CSV_FOLDER" = "Kaust";
+"BACKUPS_FORMAT_CSV" = "CSV — ainult vaatamiseks";
+"BACKUPS_FORMAT_JSON" = "JSON — täielik varukoopia";
+"BACKUPS_FORMAT_MESSAGE" = "JSON on täielik varukoopia, mille saab tagasi importida. CSV on tehingute tabel tabelarvutuses vaatamiseks — seda ei saa rakendusse importida.";
+"BACKUPS_FORMAT_TITLE" = "Ekspordivorming";
+"BACKUPS_IMPORT_SKIPPED" = "Vahele jäetud tulud: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Tehingud: %d";

@@ -58,7 +58,15 @@
 "MENU_TITLE" = "মেনু";
 "MENU_BUDGET" = "বাজেট";
 "MENU_SETTINGS" = "সেটিংস";
+"MENU_BACKUPS" = "ব্যাকআপ";
 "MENU_SPENT_IN_MONTH" = "মোট খরচ · %@";
+"MENU_LANGUAGE" = "ভাষা";
+"MENU_ABOUT" = "সম্পর্কে";
+
+// MARK: - About
+"ABOUT_VERSION" = "সংস্করণ %@";
+"ABOUT_SHARE" = "অ্যাপ শেয়ার করুন";
+"ABOUT_RATE" = "অ্যাপ রেট করুন";
 
 // MARK: - Tabs
 "TAB_HOME" = "হোম";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "দান";
 "DEFAULT_CATEGORY_INTERNET" = "ইন্টারনেট";
 "DEFAULT_CATEGORY_TRANSPORT" = "পরিবহন";
+"SETTINGS_APPEARANCE" = "চেহারা";
+"SETTINGS_THEME_CLASSIC" = "ক্লাসিক";
+"SETTINGS_THEME_EMBER" = "অঙ্গার";
+"SETTINGS_THEME_MIDNIGHT" = "মধ্যরাত";
+"SETTINGS_THEME_FOREST" = "বন";
+"SETTINGS_THEME_GRAY" = "ধূসর";
+"SETTINGS_THEME_INDIGO" = "নীল";
+"SETTINGS_THEME_LIQUID_BLACK" = "তরল কালো";
+"SETTINGS_THEME_SLATE" = "স্লেট";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "বিভাগ: %d";
+"BACKUPS_CURRENT_DATA" = "অ্যাপে";
+"BACKUPS_ERROR_CORRUPTED" = "ফাইলটি ক্ষতিগ্রস্ত বা পড়া যাচ্ছে না।";
+"BACKUPS_ERROR_NEWER_VERSION" = "এই ব্যাকআপটি অ্যাপের নতুন সংস্করণে তৈরি।";
+"BACKUPS_ERROR_UNSUPPORTED" = "এই ফাইল ফরম্যাট সমর্থিত নয়।";
+"BACKUPS_EXPORT_SECTION" = "এক্সপোর্ট";
+"BACKUPS_IMPORT_ACTION" = "ফাইল থেকে ইমপোর্ট করুন";
+"BACKUPS_IMPORT_DONE" = "যোগ করা লেনদেন: %d, বিভাগ: %d";
+"BACKUPS_IMPORT_MERGE" = "বর্তমান ডেটায় যোগ করুন";
+"BACKUPS_IMPORT_PERIOD" = "সময়কাল: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "ফাইলে পাওয়া গেছে";
+"BACKUPS_IMPORT_REPLACE" = "সব ডেটা প্রতিস্থাপন করুন";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "বর্তমান সব লেনদেন ও বিভাগ মুছে ফেলা হবে। এটি পূর্বাবস্থায় ফেরানো যাবে না।";
+"BACKUPS_IMPORT_SECTION" = "ইমপোর্ট";
+"BACKUPS_SHARE_ACTION" = "ডেটা এক্সপোর্ট করুন";
+"BACKUPS_CSV_COMMENT" = "মন্তব্য";
+"BACKUPS_CSV_FOLDER" = "ফোল্ডার";
+"BACKUPS_FORMAT_CSV" = "CSV — শুধু দেখার জন্য";
+"BACKUPS_FORMAT_JSON" = "JSON — সম্পূর্ণ ব্যাকআপ";
+"BACKUPS_FORMAT_MESSAGE" = "JSON একটি সম্পূর্ণ ব্যাকআপ যা আবার ইমপোর্ট করা যায়। CSV হলো স্প্রেডশিটে দেখার জন্য লেনদেনের টেবিল — এটি অ্যাপে ইমপোর্ট করা যায় না।";
+"BACKUPS_FORMAT_TITLE" = "এক্সপোর্ট ফরম্যাট";
+"BACKUPS_IMPORT_SKIPPED" = "বাদ দেওয়া আয়: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "লেনদেন: %d";

@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Menu";
 "MENU_BUDGET" = "Ngân sách";
 "MENU_SETTINGS" = "Cài đặt";
+"MENU_BACKUPS" = "Bản sao lưu";
 "MENU_SPENT_IN_MONTH" = "Đã chi trong %@";
+"MENU_LANGUAGE" = "Ngôn ngữ";
+"MENU_ABOUT" = "Giới thiệu";
+
+// MARK: - About
+"ABOUT_VERSION" = "Phiên bản %@";
+"ABOUT_SHARE" = "Chia sẻ ứng dụng";
+"ABOUT_RATE" = "Đánh giá ứng dụng";
 
 // MARK: - Tabs
 "TAB_HOME" = "Trang chủ";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Từ thiện";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Đi lại";
+"SETTINGS_APPEARANCE" = "Giao diện";
+"SETTINGS_THEME_CLASSIC" = "Cổ điển";
+"SETTINGS_THEME_EMBER" = "Than hồng";
+"SETTINGS_THEME_MIDNIGHT" = "Nửa đêm";
+"SETTINGS_THEME_FOREST" = "Rừng";
+"SETTINGS_THEME_GRAY" = "Xám";
+"SETTINGS_THEME_INDIGO" = "Chàm";
+"SETTINGS_THEME_LIQUID_BLACK" = "Đen lỏng";
+"SETTINGS_THEME_SLATE" = "Đá phiến";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Danh mục: %d";
+"BACKUPS_CURRENT_DATA" = "Trong ứng dụng";
+"BACKUPS_ERROR_CORRUPTED" = "Tệp bị hỏng hoặc không đọc được.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Bản sao lưu này được tạo bằng phiên bản ứng dụng mới hơn.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Định dạng tệp này không được hỗ trợ.";
+"BACKUPS_EXPORT_SECTION" = "Xuất";
+"BACKUPS_IMPORT_ACTION" = "Nhập từ tệp";
+"BACKUPS_IMPORT_DONE" = "Giao dịch đã thêm: %d, danh mục: %d";
+"BACKUPS_IMPORT_MERGE" = "Thêm vào dữ liệu hiện tại";
+"BACKUPS_IMPORT_PERIOD" = "Khoảng thời gian: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Tìm thấy trong tệp";
+"BACKUPS_IMPORT_REPLACE" = "Thay thế toàn bộ dữ liệu";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Tất cả giao dịch và danh mục hiện tại sẽ bị xóa. Không thể hoàn tác thao tác này.";
+"BACKUPS_IMPORT_SECTION" = "Nhập";
+"BACKUPS_SHARE_ACTION" = "Xuất dữ liệu";
+"BACKUPS_CSV_COMMENT" = "Ghi chú";
+"BACKUPS_CSV_FOLDER" = "Thư mục";
+"BACKUPS_FORMAT_CSV" = "CSV — chỉ để xem";
+"BACKUPS_FORMAT_JSON" = "JSON — sao lưu đầy đủ";
+"BACKUPS_FORMAT_MESSAGE" = "JSON là bản sao lưu đầy đủ có thể nhập lại. CSV là bảng giao dịch để xem trong bảng tính — không thể nhập vào ứng dụng.";
+"BACKUPS_FORMAT_TITLE" = "Định dạng xuất";
+"BACKUPS_IMPORT_SKIPPED" = "Thu nhập đã bỏ qua: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Giao dịch: %d";

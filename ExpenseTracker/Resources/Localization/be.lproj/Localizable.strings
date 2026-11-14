@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Меню";
 "MENU_BUDGET" = "Бюджэт";
 "MENU_SETTINGS" = "Налады";
+"MENU_BACKUPS" = "Рэзервовыя копіі";
 "MENU_SPENT_IN_MONTH" = "Выдаткавана за %@";
+"MENU_LANGUAGE" = "Мова";
+"MENU_ABOUT" = "Пра праграму";
+
+// MARK: - About
+"ABOUT_VERSION" = "Версія %@";
+"ABOUT_SHARE" = "Падзяліцца праграмай";
+"ABOUT_RATE" = "Ацаніць праграму";
 
 // MARK: - Tabs
 "TAB_HOME" = "Галоўная";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Дабрачыннасць";
 "DEFAULT_CATEGORY_INTERNET" = "Інтэрнэт";
 "DEFAULT_CATEGORY_TRANSPORT" = "Транспарт";
+"SETTINGS_APPEARANCE" = "Выгляд";
+"SETTINGS_THEME_CLASSIC" = "Класічная";
+"SETTINGS_THEME_EMBER" = "Жар";
+"SETTINGS_THEME_MIDNIGHT" = "Поўнач";
+"SETTINGS_THEME_FOREST" = "Лес";
+"SETTINGS_THEME_GRAY" = "Шэрая";
+"SETTINGS_THEME_INDIGO" = "Індыга";
+"SETTINGS_THEME_LIQUID_BLACK" = "Вадкі чорны";
+"SETTINGS_THEME_SLATE" = "Сланец";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Катэгорыі: %d";
+"BACKUPS_CURRENT_DATA" = "У праграме";
+"BACKUPS_ERROR_CORRUPTED" = "Файл пашкоджаны або не чытаецца.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Гэта копія створана навейшай версіяй праграмы.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Гэты фармат файла не падтрымліваецца.";
+"BACKUPS_EXPORT_SECTION" = "Экспарт";
+"BACKUPS_IMPORT_ACTION" = "Імпартаваць з файла";
+"BACKUPS_IMPORT_DONE" = "Дададзена аперацый: %d, катэгорый: %d";
+"BACKUPS_IMPORT_MERGE" = "Дадаць да бягучых даных";
+"BACKUPS_IMPORT_PERIOD" = "Перыяд: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Знойдзена ў файле";
+"BACKUPS_IMPORT_REPLACE" = "Замяніць усе даныя";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Усе бягучыя аперацыі і катэгорыі будуць выдалены. Гэта дзеянне нельга адмяніць.";
+"BACKUPS_IMPORT_SECTION" = "Імпарт";
+"BACKUPS_SHARE_ACTION" = "Экспартаваць даныя";
+"BACKUPS_CSV_COMMENT" = "Каментарый";
+"BACKUPS_CSV_FOLDER" = "Папка";
+"BACKUPS_FORMAT_CSV" = "CSV — толькі прагляд";
+"BACKUPS_FORMAT_JSON" = "JSON — поўная копія";
+"BACKUPS_FORMAT_MESSAGE" = "JSON — поўная копія, якую можна імпартаваць назад. CSV — табліца аперацый для прагляду ў электроннай табліцы, імпартаваць яе ў праграму нельга.";
+"BACKUPS_FORMAT_TITLE" = "Фармат экспарту";
+"BACKUPS_IMPORT_SKIPPED" = "Прапушчана даходаў: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Аперацыі: %d";

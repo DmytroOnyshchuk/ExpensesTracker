@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Meny";
 "MENU_BUDGET" = "Budget";
 "MENU_SETTINGS" = "Inställningar";
+"MENU_BACKUPS" = "Säkerhetskopior";
 "MENU_SPENT_IN_MONTH" = "Spenderat i %@";
+"MENU_LANGUAGE" = "Språk";
+"MENU_ABOUT" = "Om";
+
+// MARK: - About
+"ABOUT_VERSION" = "Version %@";
+"ABOUT_SHARE" = "Dela appen";
+"ABOUT_RATE" = "Betygsätt appen";
 
 // MARK: - Tabs
 "TAB_HOME" = "Hem";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Välgörenhet";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Transport";
+"SETTINGS_APPEARANCE" = "Utseende";
+"SETTINGS_THEME_CLASSIC" = "Klassisk";
+"SETTINGS_THEME_EMBER" = "Glöd";
+"SETTINGS_THEME_MIDNIGHT" = "Midnatt";
+"SETTINGS_THEME_FOREST" = "Skog";
+"SETTINGS_THEME_GRAY" = "Grå";
+"SETTINGS_THEME_INDIGO" = "Indigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Flytande svart";
+"SETTINGS_THEME_SLATE" = "Skiffer";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Kategorier: %d";
+"BACKUPS_CURRENT_DATA" = "I appen";
+"BACKUPS_ERROR_CORRUPTED" = "Filen är skadad eller kan inte läsas.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Säkerhetskopian skapades med en nyare version av appen.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Det här filformatet stöds inte.";
+"BACKUPS_EXPORT_SECTION" = "Export";
+"BACKUPS_IMPORT_ACTION" = "Importera från fil";
+"BACKUPS_IMPORT_DONE" = "Tillagda transaktioner: %d, kategorier: %d";
+"BACKUPS_IMPORT_MERGE" = "Lägg till i aktuella data";
+"BACKUPS_IMPORT_PERIOD" = "Period: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Hittades i filen";
+"BACKUPS_IMPORT_REPLACE" = "Ersätt alla data";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Alla aktuella transaktioner och kategorier raderas. Detta kan inte ångras.";
+"BACKUPS_IMPORT_SECTION" = "Import";
+"BACKUPS_SHARE_ACTION" = "Exportera data";
+"BACKUPS_CSV_COMMENT" = "Kommentar";
+"BACKUPS_CSV_FOLDER" = "Mapp";
+"BACKUPS_FORMAT_CSV" = "CSV — endast visning";
+"BACKUPS_FORMAT_JSON" = "JSON — fullständig säkerhetskopia";
+"BACKUPS_FORMAT_MESSAGE" = "JSON är en fullständig säkerhetskopia som kan importeras tillbaka. CSV är en tabell med transaktioner för visning i ett kalkylprogram — den kan inte importeras till appen.";
+"BACKUPS_FORMAT_TITLE" = "Exportformat";
+"BACKUPS_IMPORT_SKIPPED" = "Överhoppade inkomster: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Transaktioner: %d";

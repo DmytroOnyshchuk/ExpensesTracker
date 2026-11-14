@@ -58,7 +58,15 @@
 "MENU_TITLE" = "မီနူး";
 "MENU_BUDGET" = "ဘတ်ဂျက်";
 "MENU_SETTINGS" = "ဆက်တင်များ";
+"MENU_BACKUPS" = "အရန်မိတ္တူများ";
 "MENU_SPENT_IN_MONTH" = "စုစုပေါင်း အသုံးစရိတ် · %@";
+"MENU_LANGUAGE" = "ဘာသာစကား";
+"MENU_ABOUT" = "အကြောင်း";
+
+// MARK: - About
+"ABOUT_VERSION" = "ဗားရှင်း %@";
+"ABOUT_SHARE" = "အက်ပ်ကို မျှဝေရန်";
+"ABOUT_RATE" = "အက်ပ်ကို အဆင့်သတ်မှတ်ရန်";
 
 // MARK: - Tabs
 "TAB_HOME" = "ပင်မ";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "အလှူ";
 "DEFAULT_CATEGORY_INTERNET" = "အင်တာနက်";
 "DEFAULT_CATEGORY_TRANSPORT" = "သယ်ယူပို့ဆောင်ရေး";
+"SETTINGS_APPEARANCE" = "အသွင်အပြင်";
+"SETTINGS_THEME_CLASSIC" = "ဂန္ထဝင်";
+"SETTINGS_THEME_EMBER" = "မီးကျီခဲ";
+"SETTINGS_THEME_MIDNIGHT" = "သန်းခေါင်";
+"SETTINGS_THEME_FOREST" = "သစ်တော";
+"SETTINGS_THEME_GRAY" = "မီးခိုးရောင်";
+"SETTINGS_THEME_INDIGO" = "မဲနယ်ရောင်";
+"SETTINGS_THEME_LIQUID_BLACK" = "အရည်အနက်";
+"SETTINGS_THEME_SLATE" = "ကျောက်သင်ပုန်း";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "အမျိုးအစားများ- %d";
+"BACKUPS_CURRENT_DATA" = "အက်ပ်ထဲတွင်";
+"BACKUPS_ERROR_CORRUPTED" = "ဖိုင်ပျက်စီးနေသည် သို့မဟုတ် ဖတ်၍မရပါ။";
+"BACKUPS_ERROR_NEWER_VERSION" = "ဤအရန်မိတ္တူကို အက်ပ်၏ ပိုသစ်သော ဗားရှင်းဖြင့် ပြုလုပ်ထားသည်။";
+"BACKUPS_ERROR_UNSUPPORTED" = "ဤဖိုင်ဖော်မတ်ကို မပံ့ပိုးပါ။";
+"BACKUPS_EXPORT_SECTION" = "ထုတ်ယူခြင်း";
+"BACKUPS_IMPORT_ACTION" = "ဖိုင်မှ တင်သွင်းရန်";
+"BACKUPS_IMPORT_DONE" = "ထည့်ထားသော မှတ်တမ်းများ- %d၊ အမျိုးအစားများ- %d";
+"BACKUPS_IMPORT_MERGE" = "လက်ရှိဒေတာသို့ ထည့်ရန်";
+"BACKUPS_IMPORT_PERIOD" = "ကာလ- %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "ဖိုင်ထဲတွင် တွေ့ရှိသည်";
+"BACKUPS_IMPORT_REPLACE" = "ဒေတာအားလုံး အစားထိုးရန်";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "လက်ရှိ မှတ်တမ်းများနှင့် အမျိုးအစားများအားလုံး ဖျက်ပါမည်။ ၎င်းကို ပြန်ပြင်၍မရပါ။";
+"BACKUPS_IMPORT_SECTION" = "တင်သွင်းခြင်း";
+"BACKUPS_SHARE_ACTION" = "ဒေတာ ထုတ်ယူရန်";
+"BACKUPS_CSV_COMMENT" = "မှတ်ချက်";
+"BACKUPS_CSV_FOLDER" = "ဖိုင်တွဲ";
+"BACKUPS_FORMAT_CSV" = "CSV — ကြည့်ရန်သာ";
+"BACKUPS_FORMAT_JSON" = "JSON — အရန်မိတ္တူအပြည့်";
+"BACKUPS_FORMAT_MESSAGE" = "JSON သည် ပြန်လည်တင်သွင်းနိုင်သော အရန်မိတ္တူအပြည့်ဖြစ်သည်။ CSV သည် စာရင်းဇယားတွင် ကြည့်ရန် မှတ်တမ်းဇယားဖြစ်ပြီး အက်ပ်ထဲသို့ တင်သွင်း၍မရပါ။";
+"BACKUPS_FORMAT_TITLE" = "ထုတ်ယူမည့် ဖော်မတ်";
+"BACKUPS_IMPORT_SKIPPED" = "ကျော်ထားသော ဝင်ငွေ- %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "ငွေလွှဲမှတ်တမ်းများ- %d";

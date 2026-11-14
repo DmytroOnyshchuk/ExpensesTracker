@@ -117,10 +117,9 @@ enum BackupManager {
         try? FileManager.default.removeItem(at: directory)
         try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
 
-        let data: Data
-        switch format {
-        case .json: data = try exportData(from: context)
-        case .csv: data = try csvData(from: context)
+        let data: Data = switch format {
+        case .json: try exportData(from: context)
+        case .csv: try csvData(from: context)
         }
         let url = directory.appendingPathComponent(defaultFilename).appendingPathExtension(format.fileExtension)
         try data.write(to: url, options: .atomic)

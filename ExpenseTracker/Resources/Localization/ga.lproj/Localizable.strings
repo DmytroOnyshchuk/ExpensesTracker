@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Roghchlár";
 "MENU_BUDGET" = "Buiséad";
 "MENU_SETTINGS" = "Socruithe";
+"MENU_BACKUPS" = "Cúltacaí";
 "MENU_SPENT_IN_MONTH" = "Iomlán caite · %@";
+"MENU_LANGUAGE" = "Teanga";
+"MENU_ABOUT" = "Maidir leis";
+
+// MARK: - About
+"ABOUT_VERSION" = "Leagan %@";
+"ABOUT_SHARE" = "Comhroinn an aip";
+"ABOUT_RATE" = "Rátáil an aip";
 
 // MARK: - Tabs
 "TAB_HOME" = "Baile";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Carthanacht";
 "DEFAULT_CATEGORY_INTERNET" = "Idirlíon";
 "DEFAULT_CATEGORY_TRANSPORT" = "Iompar";
+"SETTINGS_APPEARANCE" = "Cuma";
+"SETTINGS_THEME_CLASSIC" = "Clasaiceach";
+"SETTINGS_THEME_EMBER" = "Aibhleog";
+"SETTINGS_THEME_MIDNIGHT" = "Meán oíche";
+"SETTINGS_THEME_FOREST" = "Foraois";
+"SETTINGS_THEME_GRAY" = "Liath";
+"SETTINGS_THEME_INDIGO" = "Indeagó";
+"SETTINGS_THEME_LIQUID_BLACK" = "Dubh leachtach";
+"SETTINGS_THEME_SLATE" = "Slinn";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Catagóirí: %d";
+"BACKUPS_CURRENT_DATA" = "San aip";
+"BACKUPS_ERROR_CORRUPTED" = "Tá an comhad damáistithe nó ní féidir é a léamh.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Cruthaíodh an cúltaca seo le leagan níos nuaí den aip.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Ní thacaítear leis an bhformáid comhaid seo.";
+"BACKUPS_EXPORT_SECTION" = "Easpórtáil";
+"BACKUPS_IMPORT_ACTION" = "Iompórtáil ó chomhad";
+"BACKUPS_IMPORT_DONE" = "Idirbhearta a cuireadh leis: %d, catagóirí: %d";
+"BACKUPS_IMPORT_MERGE" = "Cuir leis na sonraí reatha";
+"BACKUPS_IMPORT_PERIOD" = "Tréimhse: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Aimsithe sa chomhad";
+"BACKUPS_IMPORT_REPLACE" = "Ionadaigh na sonraí go léir";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Scriosfar na hidirbhearta agus na catagóirí reatha go léir. Ní féidir é seo a chealú.";
+"BACKUPS_IMPORT_SECTION" = "Iompórtáil";
+"BACKUPS_SHARE_ACTION" = "Easpórtáil sonraí";
+"BACKUPS_CSV_COMMENT" = "Nóta tráchta";
+"BACKUPS_CSV_FOLDER" = "Fillteán";
+"BACKUPS_FORMAT_CSV" = "CSV — le hamharc amháin";
+"BACKUPS_FORMAT_JSON" = "JSON — cúltaca iomlán";
+"BACKUPS_FORMAT_MESSAGE" = "Is cúltaca iomlán é JSON is féidir a iompórtáil ar ais. Is tábla idirbheart é CSV le hamharc air i scarbhileog — ní féidir é a iompórtáil isteach san aip.";
+"BACKUPS_FORMAT_TITLE" = "Formáid easpórtála";
+"BACKUPS_IMPORT_SKIPPED" = "Ioncam a fágadh ar lár: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Idirbhearta: %d";

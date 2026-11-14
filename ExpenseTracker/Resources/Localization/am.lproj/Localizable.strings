@@ -58,7 +58,15 @@
 "MENU_TITLE" = "ምናሌ";
 "MENU_BUDGET" = "በጀት";
 "MENU_SETTINGS" = "ቅንብሮች";
+"MENU_BACKUPS" = "መጠባበቂያዎች";
 "MENU_SPENT_IN_MONTH" = "ጠቅላላ ወጪ · %@";
+"MENU_LANGUAGE" = "ቋንቋ";
+"MENU_ABOUT" = "ስለ";
+
+// MARK: - About
+"ABOUT_VERSION" = "ስሪት %@";
+"ABOUT_SHARE" = "መተግበሪያውን አጋራ";
+"ABOUT_RATE" = "መተግበሪያውን ደረጃ ስጥ";
 
 // MARK: - Tabs
 "TAB_HOME" = "መነሻ";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "በጎ አድራጎት";
 "DEFAULT_CATEGORY_INTERNET" = "ኢንተርኔት";
 "DEFAULT_CATEGORY_TRANSPORT" = "ትራንስፖርት";
+"SETTINGS_APPEARANCE" = "መልክ";
+"SETTINGS_THEME_CLASSIC" = "ክላሲክ";
+"SETTINGS_THEME_EMBER" = "ፍም";
+"SETTINGS_THEME_MIDNIGHT" = "እኩለ ሌሊት";
+"SETTINGS_THEME_FOREST" = "ደን";
+"SETTINGS_THEME_GRAY" = "ግራጫ";
+"SETTINGS_THEME_INDIGO" = "ኢንዲጎ";
+"SETTINGS_THEME_LIQUID_BLACK" = "ፈሳሽ ጥቁር";
+"SETTINGS_THEME_SLATE" = "ስሌት";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "ምድቦች፦ %d";
+"BACKUPS_CURRENT_DATA" = "በመተግበሪያው ውስጥ";
+"BACKUPS_ERROR_CORRUPTED" = "ፋይሉ ተበላሽቷል ወይም ሊነበብ አይችልም።";
+"BACKUPS_ERROR_NEWER_VERSION" = "ይህ መጠባበቂያ በአዲስ የመተግበሪያው ስሪት የተፈጠረ ነው።";
+"BACKUPS_ERROR_UNSUPPORTED" = "ይህ የፋይል ቅርጸት አይደገፍም።";
+"BACKUPS_EXPORT_SECTION" = "ወደ ውጭ መላክ";
+"BACKUPS_IMPORT_ACTION" = "ከፋይል አስመጣ";
+"BACKUPS_IMPORT_DONE" = "የተጨመሩ ግብይቶች፦ %d፣ ምድቦች፦ %d";
+"BACKUPS_IMPORT_MERGE" = "ወደ አሁኑ ውሂብ አክል";
+"BACKUPS_IMPORT_PERIOD" = "ጊዜ፦ %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "በፋይሉ ውስጥ የተገኘ";
+"BACKUPS_IMPORT_REPLACE" = "ሁሉንም ውሂብ ተካ";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "አሁን ያሉ ሁሉም ግብይቶች እና ምድቦች ይሰረዛሉ። ይህ ሊቀለበስ አይችልም።";
+"BACKUPS_IMPORT_SECTION" = "ማስመጣት";
+"BACKUPS_SHARE_ACTION" = "ውሂብ ወደ ውጭ ላክ";
+"BACKUPS_CSV_COMMENT" = "አስተያየት";
+"BACKUPS_CSV_FOLDER" = "አቃፊ";
+"BACKUPS_FORMAT_CSV" = "CSV — ለመመልከት ብቻ";
+"BACKUPS_FORMAT_JSON" = "JSON — ሙሉ መጠባበቂያ";
+"BACKUPS_FORMAT_MESSAGE" = "JSON መልሶ ሊመጣ የሚችል ሙሉ መጠባበቂያ ነው። CSV በተመን ሉህ ለመመልከት የግብይቶች ሰንጠረዥ ነው — ወደ መተግበሪያው ሊመጣ አይችልም።";
+"BACKUPS_FORMAT_TITLE" = "የመላኪያ ቅርጸት";
+"BACKUPS_IMPORT_SKIPPED" = "የተዘለሉ ገቢዎች፦ %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "ግብይቶች፦ %d";

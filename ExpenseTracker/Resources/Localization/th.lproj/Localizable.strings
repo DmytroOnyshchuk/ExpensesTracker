@@ -58,7 +58,15 @@
 "MENU_TITLE" = "เมนู";
 "MENU_BUDGET" = "งบประมาณ";
 "MENU_SETTINGS" = "การตั้งค่า";
+"MENU_BACKUPS" = "ข้อมูลสำรอง";
 "MENU_SPENT_IN_MONTH" = "ใช้จ่ายในเดือน%@";
+"MENU_LANGUAGE" = "ภาษา";
+"MENU_ABOUT" = "เกี่ยวกับ";
+
+// MARK: - About
+"ABOUT_VERSION" = "เวอร์ชัน %@";
+"ABOUT_SHARE" = "แชร์แอป";
+"ABOUT_RATE" = "ให้คะแนนแอป";
 
 // MARK: - Tabs
 "TAB_HOME" = "หน้าหลัก";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "บริจาค";
 "DEFAULT_CATEGORY_INTERNET" = "อินเทอร์เน็ต";
 "DEFAULT_CATEGORY_TRANSPORT" = "การเดินทาง";
+"SETTINGS_APPEARANCE" = "ลักษณะ";
+"SETTINGS_THEME_CLASSIC" = "คลาสสิก";
+"SETTINGS_THEME_EMBER" = "ถ่านไฟ";
+"SETTINGS_THEME_MIDNIGHT" = "เที่ยงคืน";
+"SETTINGS_THEME_FOREST" = "ป่า";
+"SETTINGS_THEME_GRAY" = "เทา";
+"SETTINGS_THEME_INDIGO" = "คราม";
+"SETTINGS_THEME_LIQUID_BLACK" = "ดำเหลว";
+"SETTINGS_THEME_SLATE" = "หินชนวน";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "หมวดหมู่: %d";
+"BACKUPS_CURRENT_DATA" = "ในแอป";
+"BACKUPS_ERROR_CORRUPTED" = "ไฟล์เสียหายหรืออ่านไม่ได้";
+"BACKUPS_ERROR_NEWER_VERSION" = "ข้อมูลสำรองนี้สร้างด้วยแอปเวอร์ชันที่ใหม่กว่า";
+"BACKUPS_ERROR_UNSUPPORTED" = "ไม่รองรับรูปแบบไฟล์นี้";
+"BACKUPS_EXPORT_SECTION" = "ส่งออก";
+"BACKUPS_IMPORT_ACTION" = "นำเข้าจากไฟล์";
+"BACKUPS_IMPORT_DONE" = "รายการที่เพิ่ม: %d, หมวดหมู่: %d";
+"BACKUPS_IMPORT_MERGE" = "เพิ่มในข้อมูลปัจจุบัน";
+"BACKUPS_IMPORT_PERIOD" = "ช่วงเวลา: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "พบในไฟล์";
+"BACKUPS_IMPORT_REPLACE" = "แทนที่ข้อมูลทั้งหมด";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "รายการและหมวดหมู่ปัจจุบันทั้งหมดจะถูกลบ การดำเนินการนี้ไม่สามารถยกเลิกได้";
+"BACKUPS_IMPORT_SECTION" = "นำเข้า";
+"BACKUPS_SHARE_ACTION" = "ส่งออกข้อมูล";
+"BACKUPS_CSV_COMMENT" = "หมายเหตุ";
+"BACKUPS_CSV_FOLDER" = "โฟลเดอร์";
+"BACKUPS_FORMAT_CSV" = "CSV — ดูอย่างเดียว";
+"BACKUPS_FORMAT_JSON" = "JSON — สำรองข้อมูลทั้งหมด";
+"BACKUPS_FORMAT_MESSAGE" = "JSON เป็นข้อมูลสำรองทั้งหมดที่นำเข้ากลับได้ CSV เป็นตารางรายการสำหรับดูในสเปรดชีต ไม่สามารถนำเข้าแอปได้";
+"BACKUPS_FORMAT_TITLE" = "รูปแบบการส่งออก";
+"BACKUPS_IMPORT_SKIPPED" = "รายรับที่ข้าม: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "รายการ: %d";

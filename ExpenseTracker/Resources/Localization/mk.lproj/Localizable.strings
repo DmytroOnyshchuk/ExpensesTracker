@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Мени";
 "MENU_BUDGET" = "Буџет";
 "MENU_SETTINGS" = "Поставки";
+"MENU_BACKUPS" = "Резервни копии";
 "MENU_SPENT_IN_MONTH" = "Потрошено во %@";
+"MENU_LANGUAGE" = "Јазик";
+"MENU_ABOUT" = "За апликацијата";
+
+// MARK: - About
+"ABOUT_VERSION" = "Верзија %@";
+"ABOUT_SHARE" = "Сподели ја апликацијата";
+"ABOUT_RATE" = "Оцени ја апликацијата";
 
 // MARK: - Tabs
 "TAB_HOME" = "Почетна";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Добротворни цели";
 "DEFAULT_CATEGORY_INTERNET" = "Интернет";
 "DEFAULT_CATEGORY_TRANSPORT" = "Превоз";
+"SETTINGS_APPEARANCE" = "Изглед";
+"SETTINGS_THEME_CLASSIC" = "Класична";
+"SETTINGS_THEME_EMBER" = "Жар";
+"SETTINGS_THEME_MIDNIGHT" = "Полноќ";
+"SETTINGS_THEME_FOREST" = "Шума";
+"SETTINGS_THEME_GRAY" = "Сива";
+"SETTINGS_THEME_INDIGO" = "Индиго";
+"SETTINGS_THEME_LIQUID_BLACK" = "Течно црно";
+"SETTINGS_THEME_SLATE" = "Шкрилец";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Категории: %d";
+"BACKUPS_CURRENT_DATA" = "Во апликацијата";
+"BACKUPS_ERROR_CORRUPTED" = "Датотеката е оштетена или не може да се прочита.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Оваа копија е направена со понова верзија на апликацијата.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Овој формат на датотека не е поддржан.";
+"BACKUPS_EXPORT_SECTION" = "Извоз";
+"BACKUPS_IMPORT_ACTION" = "Увези од датотека";
+"BACKUPS_IMPORT_DONE" = "Додадени трансакции: %d, категории: %d";
+"BACKUPS_IMPORT_MERGE" = "Додај на тековните податоци";
+"BACKUPS_IMPORT_PERIOD" = "Период: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Пронајдено во датотеката";
+"BACKUPS_IMPORT_REPLACE" = "Замени ги сите податоци";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Сите тековни трансакции и категории ќе бидат избришани. Ова дејство не може да се врати.";
+"BACKUPS_IMPORT_SECTION" = "Увоз";
+"BACKUPS_SHARE_ACTION" = "Извези податоци";
+"BACKUPS_CSV_COMMENT" = "Коментар";
+"BACKUPS_CSV_FOLDER" = "Папка";
+"BACKUPS_FORMAT_CSV" = "CSV — само преглед";
+"BACKUPS_FORMAT_JSON" = "JSON — целосна копија";
+"BACKUPS_FORMAT_MESSAGE" = "JSON е целосна копија што може повторно да се увезе. CSV е табела со трансакции за преглед во табеларна програма — не може да се увезе во апликацијата.";
+"BACKUPS_FORMAT_TITLE" = "Формат за извоз";
+"BACKUPS_IMPORT_SKIPPED" = "Прескокнати приходи: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Трансакции: %d";

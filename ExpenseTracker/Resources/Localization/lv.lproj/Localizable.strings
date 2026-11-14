@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Izvēlne";
 "MENU_BUDGET" = "Budžets";
 "MENU_SETTINGS" = "Iestatījumi";
+"MENU_BACKUPS" = "Dublējumi";
 "MENU_SPENT_IN_MONTH" = "Kopā iztērēts · %@";
+"MENU_LANGUAGE" = "Valoda";
+"MENU_ABOUT" = "Par lietotni";
+
+// MARK: - About
+"ABOUT_VERSION" = "Versija %@";
+"ABOUT_SHARE" = "Kopīgot lietotni";
+"ABOUT_RATE" = "Novērtēt lietotni";
 
 // MARK: - Tabs
 "TAB_HOME" = "Sākums";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Labdarība";
 "DEFAULT_CATEGORY_INTERNET" = "Internets";
 "DEFAULT_CATEGORY_TRANSPORT" = "Transports";
+"SETTINGS_APPEARANCE" = "Izskats";
+"SETTINGS_THEME_CLASSIC" = "Klasiskais";
+"SETTINGS_THEME_EMBER" = "Ogles";
+"SETTINGS_THEME_MIDNIGHT" = "Pusnakts";
+"SETTINGS_THEME_FOREST" = "Mežs";
+"SETTINGS_THEME_GRAY" = "Pelēks";
+"SETTINGS_THEME_INDIGO" = "Indigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Šķidri melns";
+"SETTINGS_THEME_SLATE" = "Šīferis";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Kategorijas: %d";
+"BACKUPS_CURRENT_DATA" = "Lietotnē";
+"BACKUPS_ERROR_CORRUPTED" = "Fails ir bojāts vai to nevar nolasīt.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Šis dublējums izveidots ar jaunāku lietotnes versiju.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Šis faila formāts netiek atbalstīts.";
+"BACKUPS_EXPORT_SECTION" = "Eksports";
+"BACKUPS_IMPORT_ACTION" = "Importēt no faila";
+"BACKUPS_IMPORT_DONE" = "Pievienoti darījumi: %d, kategorijas: %d";
+"BACKUPS_IMPORT_MERGE" = "Pievienot pašreizējiem datiem";
+"BACKUPS_IMPORT_PERIOD" = "Periods: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Atrasts failā";
+"BACKUPS_IMPORT_REPLACE" = "Aizstāt visus datus";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Visi pašreizējie darījumi un kategorijas tiks dzēsti. Šo darbību nevar atsaukt.";
+"BACKUPS_IMPORT_SECTION" = "Imports";
+"BACKUPS_SHARE_ACTION" = "Eksportēt datus";
+"BACKUPS_CSV_COMMENT" = "Komentārs";
+"BACKUPS_CSV_FOLDER" = "Mape";
+"BACKUPS_FORMAT_CSV" = "CSV — tikai skatīšanai";
+"BACKUPS_FORMAT_JSON" = "JSON — pilns dublējums";
+"BACKUPS_FORMAT_MESSAGE" = "JSON ir pilns dublējums, ko var importēt atpakaļ. CSV ir darījumu tabula skatīšanai izklājlapā — to nevar importēt lietotnē.";
+"BACKUPS_FORMAT_TITLE" = "Eksporta formāts";
+"BACKUPS_IMPORT_SKIPPED" = "Izlaisti ienākumi: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Darījumi: %d";

@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Menyu";
 "MENU_BUDGET" = "Bajeti";
 "MENU_SETTINGS" = "Mipangilio";
+"MENU_BACKUPS" = "Nakala rudufu";
 "MENU_SPENT_IN_MONTH" = "Matumizi ya %@";
+"MENU_LANGUAGE" = "Lugha";
+"MENU_ABOUT" = "Kuhusu";
+
+// MARK: - About
+"ABOUT_VERSION" = "Toleo %@";
+"ABOUT_SHARE" = "Shiriki programu";
+"ABOUT_RATE" = "Kadiria programu";
 
 // MARK: - Tabs
 "TAB_HOME" = "Mwanzo";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Misaada";
 "DEFAULT_CATEGORY_INTERNET" = "Intaneti";
 "DEFAULT_CATEGORY_TRANSPORT" = "Usafiri";
+"SETTINGS_APPEARANCE" = "Mwonekano";
+"SETTINGS_THEME_CLASSIC" = "Ya kawaida";
+"SETTINGS_THEME_EMBER" = "Kaa la moto";
+"SETTINGS_THEME_MIDNIGHT" = "Usiku wa manane";
+"SETTINGS_THEME_FOREST" = "Msitu";
+"SETTINGS_THEME_GRAY" = "Kijivu";
+"SETTINGS_THEME_INDIGO" = "Nili";
+"SETTINGS_THEME_LIQUID_BLACK" = "Nyeusi kiowevu";
+"SETTINGS_THEME_SLATE" = "Jiwe la grife";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Aina: %d";
+"BACKUPS_CURRENT_DATA" = "Katika programu";
+"BACKUPS_ERROR_CORRUPTED" = "Faili imeharibika au haiwezi kusomwa.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Nakala hii iliundwa kwa toleo jipya zaidi la programu.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Muundo huu wa faili hautumiki.";
+"BACKUPS_EXPORT_SECTION" = "Hamisha";
+"BACKUPS_IMPORT_ACTION" = "Leta kutoka faili";
+"BACKUPS_IMPORT_DONE" = "Miamala iliyoongezwa: %d, aina: %d";
+"BACKUPS_IMPORT_MERGE" = "Ongeza kwenye data ya sasa";
+"BACKUPS_IMPORT_PERIOD" = "Kipindi: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Imepatikana kwenye faili";
+"BACKUPS_IMPORT_REPLACE" = "Badilisha data yote";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Miamala na aina zote za sasa zitafutwa. Hatua hii haiwezi kutenduliwa.";
+"BACKUPS_IMPORT_SECTION" = "Leta";
+"BACKUPS_SHARE_ACTION" = "Hamisha data";
+"BACKUPS_CSV_COMMENT" = "Maoni";
+"BACKUPS_CSV_FOLDER" = "Folda";
+"BACKUPS_FORMAT_CSV" = "CSV — ya kutazama tu";
+"BACKUPS_FORMAT_JSON" = "JSON — nakala kamili";
+"BACKUPS_FORMAT_MESSAGE" = "JSON ni nakala kamili inayoweza kuletwa tena. CSV ni jedwali la miamala la kutazama kwenye lahajedwali — haiwezi kuletwa kwenye programu.";
+"BACKUPS_FORMAT_TITLE" = "Muundo wa kuhamisha";
+"BACKUPS_IMPORT_SKIPPED" = "Mapato yaliyorukwa: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Miamala: %d";

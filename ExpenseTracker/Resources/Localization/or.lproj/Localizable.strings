@@ -58,7 +58,15 @@
 "MENU_TITLE" = "ମେନୁ";
 "MENU_BUDGET" = "ବଜେଟ୍";
 "MENU_SETTINGS" = "ସେଟିଂସ୍";
+"MENU_BACKUPS" = "ବ୍ୟାକଅପ୍";
 "MENU_SPENT_IN_MONTH" = "ମୋଟ ଖର୍ଚ୍ଚ · %@";
+"MENU_LANGUAGE" = "ଭାଷା";
+"MENU_ABOUT" = "ବିଷୟରେ";
+
+// MARK: - About
+"ABOUT_VERSION" = "ସଂସ୍କରଣ %@";
+"ABOUT_SHARE" = "ଆପ୍ ସେୟାର କରନ୍ତୁ";
+"ABOUT_RATE" = "ଆପ୍‌କୁ ରେଟ୍ କରନ୍ତୁ";
 
 // MARK: - Tabs
 "TAB_HOME" = "ହୋମ";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "ଦାନ";
 "DEFAULT_CATEGORY_INTERNET" = "ଇଣ୍ଟରନେଟ";
 "DEFAULT_CATEGORY_TRANSPORT" = "ପରିବହନ";
+"SETTINGS_APPEARANCE" = "ରୂପ";
+"SETTINGS_THEME_CLASSIC" = "କ୍ଲାସିକ୍";
+"SETTINGS_THEME_EMBER" = "ଅଙ୍ଗାର";
+"SETTINGS_THEME_MIDNIGHT" = "ମଧ୍ୟରାତ୍ରି";
+"SETTINGS_THEME_FOREST" = "ଜଙ୍ଗଲ";
+"SETTINGS_THEME_GRAY" = "ଧୂସର";
+"SETTINGS_THEME_INDIGO" = "ନୀଳ";
+"SETTINGS_THEME_LIQUID_BLACK" = "ତରଳ କଳା";
+"SETTINGS_THEME_SLATE" = "ସ୍ଲେଟ୍";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "ଶ୍ରେଣୀ: %d";
+"BACKUPS_CURRENT_DATA" = "ଆପ୍‌ରେ";
+"BACKUPS_ERROR_CORRUPTED" = "ଫାଇଲ୍ ଖରାପ ହୋଇଛି କିମ୍ବା ପଢ଼ିହେଉନାହିଁ।";
+"BACKUPS_ERROR_NEWER_VERSION" = "ଏହି ବ୍ୟାକଅପ୍ ଆପ୍‌ର ନୂଆ ସଂସ୍କରଣରେ ତିଆରି ହୋଇଛି।";
+"BACKUPS_ERROR_UNSUPPORTED" = "ଏହି ଫାଇଲ୍ ଫର୍ମାଟ୍ ସମର୍ଥିତ ନୁହେଁ।";
+"BACKUPS_EXPORT_SECTION" = "ରପ୍ତାନି";
+"BACKUPS_IMPORT_ACTION" = "ଫାଇଲ୍‌ରୁ ଆମଦାନି କରନ୍ତୁ";
+"BACKUPS_IMPORT_DONE" = "ଯୋଡ଼ାଯାଇଥିବା କାରବାର: %d, ଶ୍ରେଣୀ: %d";
+"BACKUPS_IMPORT_MERGE" = "ବର୍ତ୍ତମାନର ଡାଟାରେ ଯୋଡ଼ନ୍ତୁ";
+"BACKUPS_IMPORT_PERIOD" = "ଅବଧି: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "ଫାଇଲ୍‌ରେ ମିଳିଲା";
+"BACKUPS_IMPORT_REPLACE" = "ସମସ୍ତ ଡାଟା ବଦଳାନ୍ତୁ";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "ବର୍ତ୍ତମାନର ସମସ୍ତ କାରବାର ଓ ଶ୍ରେଣୀ ବିଲୋପ ହେବ। ଏହାକୁ ପୂର୍ବବତ୍ କରାଯାଇପାରିବ ନାହିଁ।";
+"BACKUPS_IMPORT_SECTION" = "ଆମଦାନି";
+"BACKUPS_SHARE_ACTION" = "ଡାଟା ରପ୍ତାନି କରନ୍ତୁ";
+"BACKUPS_CSV_COMMENT" = "ମନ୍ତବ୍ୟ";
+"BACKUPS_CSV_FOLDER" = "ଫୋଲ୍ଡର୍";
+"BACKUPS_FORMAT_CSV" = "CSV — କେବଳ ଦେଖିବା ପାଇଁ";
+"BACKUPS_FORMAT_JSON" = "JSON — ସମ୍ପୂର୍ଣ୍ଣ ବ୍ୟାକଅପ୍";
+"BACKUPS_FORMAT_MESSAGE" = "JSON ଏକ ସମ୍ପୂର୍ଣ୍ଣ ବ୍ୟାକଅପ୍ ଯାହାକୁ ପୁଣି ଆମଦାନି କରିହେବ। CSV ସ୍ପ୍ରେଡ୍‌ସିଟ୍‌ରେ ଦେଖିବା ପାଇଁ କାରବାରର ସାରଣୀ — ଏହାକୁ ଆପ୍‌ରେ ଆମଦାନି କରିହେବ ନାହିଁ।";
+"BACKUPS_FORMAT_TITLE" = "ରପ୍ତାନି ଫର୍ମାଟ୍";
+"BACKUPS_IMPORT_SKIPPED" = "ଛାଡ଼ିଦିଆଯାଇଥିବା ଆୟ: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "କାରବାର: %d";

@@ -58,7 +58,15 @@
 "MENU_TITLE" = "تىزىملىك";
 "MENU_BUDGET" = "خامچوت";
 "MENU_SETTINGS" = "تەڭشەكلەر";
+"MENU_BACKUPS" = "زاپاس نۇسخىلار";
 "MENU_SPENT_IN_MONTH" = "جەمئىي چىقىم · %@";
+"MENU_LANGUAGE" = "تىل";
+"MENU_ABOUT" = "ھەققىدە";
+
+// MARK: - About
+"ABOUT_VERSION" = "نەشرى %@";
+"ABOUT_SHARE" = "ئەپنى ھەمبەھىرلەش";
+"ABOUT_RATE" = "ئەپنى باھالاش";
 
 // MARK: - Tabs
 "TAB_HOME" = "باش بەت";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "خەير-ساخاۋەت";
 "DEFAULT_CATEGORY_INTERNET" = "ئىنتېرنېت";
 "DEFAULT_CATEGORY_TRANSPORT" = "قاتناش";
+"SETTINGS_APPEARANCE" = "كۆرۈنۈش";
+"SETTINGS_THEME_CLASSIC" = "كلاسسىك";
+"SETTINGS_THEME_EMBER" = "چوغ";
+"SETTINGS_THEME_MIDNIGHT" = "يېرىم كېچە";
+"SETTINGS_THEME_FOREST" = "ئورمان";
+"SETTINGS_THEME_GRAY" = "كۈلرەڭ";
+"SETTINGS_THEME_INDIGO" = "نىل رەڭ";
+"SETTINGS_THEME_LIQUID_BLACK" = "سۇيۇق قارا";
+"SETTINGS_THEME_SLATE" = "تاختا تاش";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "تۈرلەر: %d";
+"BACKUPS_CURRENT_DATA" = "ئەپتە";
+"BACKUPS_ERROR_CORRUPTED" = "ھۆججەت بۇزۇلغان ياكى ئوقۇغىلى بولمايدۇ.";
+"BACKUPS_ERROR_NEWER_VERSION" = "بۇ زاپاس نۇسخا ئەپنىڭ يېڭىراق نەشرىدە ياسالغان.";
+"BACKUPS_ERROR_UNSUPPORTED" = "بۇ ھۆججەت فورماتى قوللىمايدۇ.";
+"BACKUPS_EXPORT_SECTION" = "چىقىرىش";
+"BACKUPS_IMPORT_ACTION" = "ھۆججەتتىن كىرگۈزۈش";
+"BACKUPS_IMPORT_DONE" = "قوشۇلغان سودىلار: %d، تۈرلەر: %d";
+"BACKUPS_IMPORT_MERGE" = "نۆۋەتتىكى سانلىق مەلۇماتقا قوشۇش";
+"BACKUPS_IMPORT_PERIOD" = "مەزگىل: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "ھۆججەتتىن تېپىلدى";
+"BACKUPS_IMPORT_REPLACE" = "بارلىق سانلىق مەلۇماتنى ئالماشتۇرۇش";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "نۆۋەتتىكى بارلىق سودىلار ۋە تۈرلەر ئۆچۈرۈلىدۇ. بۇ مەشغۇلاتنى ئەسلىگە قايتۇرغىلى بولمايدۇ.";
+"BACKUPS_IMPORT_SECTION" = "كىرگۈزۈش";
+"BACKUPS_SHARE_ACTION" = "سانلىق مەلۇماتنى چىقىرىش";
+"BACKUPS_CSV_COMMENT" = "ئىزاھات";
+"BACKUPS_CSV_FOLDER" = "قىسقۇچ";
+"BACKUPS_FORMAT_CSV" = "CSV — پەقەت كۆرۈش ئۈچۈن";
+"BACKUPS_FORMAT_JSON" = "JSON — تولۇق زاپاس نۇسخا";
+"BACKUPS_FORMAT_MESSAGE" = "JSON قايتا كىرگۈزگىلى بولىدىغان تولۇق زاپاس نۇسخا. CSV ئېلېكترونلۇق جەدۋەلدە كۆرۈش ئۈچۈن سودا جەدۋىلى بولۇپ، ئۇنى ئەپكە كىرگۈزگىلى بولمايدۇ.";
+"BACKUPS_FORMAT_TITLE" = "چىقىرىش فورماتى";
+"BACKUPS_IMPORT_SKIPPED" = "ئاتلاپ ئۆتۈلگەن كىرىم: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "سودىلار: %d";

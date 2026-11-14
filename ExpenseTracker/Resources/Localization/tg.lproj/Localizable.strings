@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Меню";
 "MENU_BUDGET" = "Буҷет";
 "MENU_SETTINGS" = "Танзимот";
+"MENU_BACKUPS" = "Нусхаҳои эҳтиётӣ";
 "MENU_SPENT_IN_MONTH" = "Ҳамагӣ сарф шуд · %@";
+"MENU_LANGUAGE" = "Забон";
+"MENU_ABOUT" = "Дар бораи барнома";
+
+// MARK: - About
+"ABOUT_VERSION" = "Версия %@";
+"ABOUT_SHARE" = "Мубодилаи барнома";
+"ABOUT_RATE" = "Баҳо додан ба барнома";
 
 // MARK: - Tabs
 "TAB_HOME" = "Асосӣ";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Хайрия";
 "DEFAULT_CATEGORY_INTERNET" = "Интернет";
 "DEFAULT_CATEGORY_TRANSPORT" = "Нақлиёт";
+"SETTINGS_APPEARANCE" = "Намуд";
+"SETTINGS_THEME_CLASSIC" = "Классикӣ";
+"SETTINGS_THEME_EMBER" = "Лахча";
+"SETTINGS_THEME_MIDNIGHT" = "Нисфи шаб";
+"SETTINGS_THEME_FOREST" = "Ҷангал";
+"SETTINGS_THEME_GRAY" = "Хокистарӣ";
+"SETTINGS_THEME_INDIGO" = "Нилӣ";
+"SETTINGS_THEME_LIQUID_BLACK" = "Сиёҳи моеъ";
+"SETTINGS_THEME_SLATE" = "Сланец";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Категорияҳо: %d";
+"BACKUPS_CURRENT_DATA" = "Дар барнома";
+"BACKUPS_ERROR_CORRUPTED" = "Файл вайрон шудааст ё хонда намешавад.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Ин нусха бо версияи навтари барнома сохта шудааст.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Ин формати файл дастгирӣ намешавад.";
+"BACKUPS_EXPORT_SECTION" = "Содирот";
+"BACKUPS_IMPORT_ACTION" = "Ворид кардан аз файл";
+"BACKUPS_IMPORT_DONE" = "Амалиётҳои иловашуда: %d, категорияҳо: %d";
+"BACKUPS_IMPORT_MERGE" = "Илова ба маълумоти ҷорӣ";
+"BACKUPS_IMPORT_PERIOD" = "Давра: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Дар файл ёфт шуд";
+"BACKUPS_IMPORT_REPLACE" = "Иваз кардани ҳамаи маълумот";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Ҳамаи амалиётҳо ва категорияҳои ҷорӣ нест карда мешаванд. Ин амалро бекор кардан мумкин нест.";
+"BACKUPS_IMPORT_SECTION" = "Воридот";
+"BACKUPS_SHARE_ACTION" = "Содир кардани маълумот";
+"BACKUPS_CSV_COMMENT" = "Шарҳ";
+"BACKUPS_CSV_FOLDER" = "Ҷузвдон";
+"BACKUPS_FORMAT_CSV" = "CSV — танҳо барои тамошо";
+"BACKUPS_FORMAT_JSON" = "JSON — нусхаи пурра";
+"BACKUPS_FORMAT_MESSAGE" = "JSON нусхаи пурраест, ки онро бозпас ворид кардан мумкин аст. CSV ҷадвали амалиётҳо барои тамошо дар ҷадвали электронӣ аст — онро ба барнома ворид кардан мумкин нест.";
+"BACKUPS_FORMAT_TITLE" = "Формати содирот";
+"BACKUPS_IMPORT_SKIPPED" = "Даромадҳои гузаронидашуда: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Амалиётҳо: %d";

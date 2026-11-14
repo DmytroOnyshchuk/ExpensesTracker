@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Menu";
 "MENU_BUDGET" = "Anggaran";
 "MENU_SETTINGS" = "Pengaturan";
+"MENU_BACKUPS" = "Cadangan";
 "MENU_SPENT_IN_MONTH" = "Pengeluaran %@";
+"MENU_LANGUAGE" = "Bahasa";
+"MENU_ABOUT" = "Tentang";
+
+// MARK: - About
+"ABOUT_VERSION" = "Versi %@";
+"ABOUT_SHARE" = "Bagikan aplikasi";
+"ABOUT_RATE" = "Beri nilai aplikasi";
 
 // MARK: - Tabs
 "TAB_HOME" = "Beranda";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Donasi";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Transportasi";
+"SETTINGS_APPEARANCE" = "Tampilan";
+"SETTINGS_THEME_CLASSIC" = "Klasik";
+"SETTINGS_THEME_EMBER" = "Bara";
+"SETTINGS_THEME_MIDNIGHT" = "Tengah malam";
+"SETTINGS_THEME_FOREST" = "Hutan";
+"SETTINGS_THEME_GRAY" = "Abu-abu";
+"SETTINGS_THEME_INDIGO" = "Nila";
+"SETTINGS_THEME_LIQUID_BLACK" = "Hitam cair";
+"SETTINGS_THEME_SLATE" = "Batu sabak";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Kategori: %d";
+"BACKUPS_CURRENT_DATA" = "Di aplikasi";
+"BACKUPS_ERROR_CORRUPTED" = "File rusak atau tidak dapat dibaca.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Cadangan ini dibuat dengan versi aplikasi yang lebih baru.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Format file ini tidak didukung.";
+"BACKUPS_EXPORT_SECTION" = "Ekspor";
+"BACKUPS_IMPORT_ACTION" = "Impor dari file";
+"BACKUPS_IMPORT_DONE" = "Transaksi ditambahkan: %d, kategori: %d";
+"BACKUPS_IMPORT_MERGE" = "Tambahkan ke data saat ini";
+"BACKUPS_IMPORT_PERIOD" = "Periode: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Ditemukan di file";
+"BACKUPS_IMPORT_REPLACE" = "Ganti semua data";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Semua transaksi dan kategori saat ini akan dihapus. Tindakan ini tidak dapat dibatalkan.";
+"BACKUPS_IMPORT_SECTION" = "Impor";
+"BACKUPS_SHARE_ACTION" = "Ekspor data";
+"BACKUPS_CSV_COMMENT" = "Komentar";
+"BACKUPS_CSV_FOLDER" = "Folder";
+"BACKUPS_FORMAT_CSV" = "CSV — hanya untuk dilihat";
+"BACKUPS_FORMAT_JSON" = "JSON — cadangan lengkap";
+"BACKUPS_FORMAT_MESSAGE" = "JSON adalah cadangan lengkap yang dapat diimpor kembali. CSV adalah tabel transaksi untuk dilihat di spreadsheet — tidak dapat diimpor ke aplikasi.";
+"BACKUPS_FORMAT_TITLE" = "Format ekspor";
+"BACKUPS_IMPORT_SKIPPED" = "Pemasukan dilewati: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Transaksi: %d";

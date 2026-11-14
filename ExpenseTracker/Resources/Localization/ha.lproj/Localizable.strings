@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Menu";
 "MENU_BUDGET" = "Kasafin kuɗi";
 "MENU_SETTINGS" = "Saituna";
+"MENU_BACKUPS" = "Ajiyar bayanai";
 "MENU_SPENT_IN_MONTH" = "Jimillar da aka kashe · %@";
+"MENU_LANGUAGE" = "Harshe";
+"MENU_ABOUT" = "Game da";
+
+// MARK: - About
+"ABOUT_VERSION" = "Siga %@";
+"ABOUT_SHARE" = "Raba manhaja";
+"ABOUT_RATE" = "Kimanta manhaja";
 
 // MARK: - Tabs
 "TAB_HOME" = "Gida";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Sadaka";
 "DEFAULT_CATEGORY_INTERNET" = "Intanet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Sufuri";
+"SETTINGS_APPEARANCE" = "Kamanni";
+"SETTINGS_THEME_CLASSIC" = "Na gargajiya";
+"SETTINGS_THEME_EMBER" = "Garwashi";
+"SETTINGS_THEME_MIDNIGHT" = "Tsakar dare";
+"SETTINGS_THEME_FOREST" = "Daji";
+"SETTINGS_THEME_GRAY" = "Toka-toka";
+"SETTINGS_THEME_INDIGO" = "Shuɗi mai duhu";
+"SETTINGS_THEME_LIQUID_BLACK" = "Baƙi mai ruwa";
+"SETTINGS_THEME_SLATE" = "Dutsen allo";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Rukunoni: %d";
+"BACKUPS_CURRENT_DATA" = "A cikin manhaja";
+"BACKUPS_ERROR_CORRUPTED" = "Fayil ɗin ya lalace ko ba a iya karanta shi ba.";
+"BACKUPS_ERROR_NEWER_VERSION" = "An ƙirƙiri wannan ajiyar da sabuwar sigar manhajar.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Ba a goyon bayan wannan tsarin fayil.";
+"BACKUPS_EXPORT_SECTION" = "Fitarwa";
+"BACKUPS_IMPORT_ACTION" = "Shigo da daga fayil";
+"BACKUPS_IMPORT_DONE" = "Hada-hada da aka ƙara: %d, rukunoni: %d";
+"BACKUPS_IMPORT_MERGE" = "Ƙara zuwa bayanan yanzu";
+"BACKUPS_IMPORT_PERIOD" = "Lokaci: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "An samu a cikin fayil";
+"BACKUPS_IMPORT_REPLACE" = "Maye gurbin duk bayanai";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Za a goge duk hada-hada da rukunonin yanzu. Ba za a iya soke wannan ba.";
+"BACKUPS_IMPORT_SECTION" = "Shigowa";
+"BACKUPS_SHARE_ACTION" = "Fitar da bayanai";
+"BACKUPS_CSV_COMMENT" = "Tsokaci";
+"BACKUPS_CSV_FOLDER" = "Babban fayil";
+"BACKUPS_FORMAT_CSV" = "CSV — don kallo kawai";
+"BACKUPS_FORMAT_JSON" = "JSON — cikakkiyar ajiya";
+"BACKUPS_FORMAT_MESSAGE" = "JSON cikakkiyar ajiya ce da za a iya sake shigo da ita. CSV jadawalin hada-hada ne don kallo a cikin maƙunsar bayanai — ba za a iya shigo da shi cikin manhajar ba.";
+"BACKUPS_FORMAT_TITLE" = "Tsarin fitarwa";
+"BACKUPS_IMPORT_SKIPPED" = "Kuɗin shiga da aka tsallake: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Hada-hada: %d";

@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Dewislen";
 "MENU_BUDGET" = "Cyllideb";
 "MENU_SETTINGS" = "Gosodiadau";
+"MENU_BACKUPS" = "Copïau wrth gefn";
 "MENU_SPENT_IN_MONTH" = "Cyfanswm a wariwyd · %@";
+"MENU_LANGUAGE" = "Iaith";
+"MENU_ABOUT" = "Ynghylch";
+
+// MARK: - About
+"ABOUT_VERSION" = "Fersiwn %@";
+"ABOUT_SHARE" = "Rhannu’r ap";
+"ABOUT_RATE" = "Graddio’r ap";
 
 // MARK: - Tabs
 "TAB_HOME" = "Hafan";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Elusen";
 "DEFAULT_CATEGORY_INTERNET" = "Rhyngrwyd";
 "DEFAULT_CATEGORY_TRANSPORT" = "Trafnidiaeth";
+"SETTINGS_APPEARANCE" = "Golwg";
+"SETTINGS_THEME_CLASSIC" = "Clasurol";
+"SETTINGS_THEME_EMBER" = "Marwor";
+"SETTINGS_THEME_MIDNIGHT" = "Hanner nos";
+"SETTINGS_THEME_FOREST" = "Coedwig";
+"SETTINGS_THEME_GRAY" = "Llwyd";
+"SETTINGS_THEME_INDIGO" = "Indigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Du hylifol";
+"SETTINGS_THEME_SLATE" = "Llechen";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Categorïau: %d";
+"BACKUPS_CURRENT_DATA" = "Yn yr ap";
+"BACKUPS_ERROR_CORRUPTED" = "Mae’r ffeil wedi’i difrodi neu ni ellir ei darllen.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Crëwyd y copi wrth gefn hwn gan fersiwn mwy diweddar o’r ap.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Ni chefnogir y fformat ffeil hwn.";
+"BACKUPS_EXPORT_SECTION" = "Allforio";
+"BACKUPS_IMPORT_ACTION" = "Mewnforio o ffeil";
+"BACKUPS_IMPORT_DONE" = "Trafodion a ychwanegwyd: %d, categorïau: %d";
+"BACKUPS_IMPORT_MERGE" = "Ychwanegu at y data presennol";
+"BACKUPS_IMPORT_PERIOD" = "Cyfnod: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Wedi’i ganfod yn y ffeil";
+"BACKUPS_IMPORT_REPLACE" = "Disodli’r holl ddata";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Bydd yr holl drafodion a chategorïau presennol yn cael eu dileu. Ni ellir dadwneud hyn.";
+"BACKUPS_IMPORT_SECTION" = "Mewnforio";
+"BACKUPS_SHARE_ACTION" = "Allforio data";
+"BACKUPS_CSV_COMMENT" = "Sylw";
+"BACKUPS_CSV_FOLDER" = "Ffolder";
+"BACKUPS_FORMAT_CSV" = "CSV — i’w weld yn unig";
+"BACKUPS_FORMAT_JSON" = "JSON — copi wrth gefn llawn";
+"BACKUPS_FORMAT_MESSAGE" = "Mae JSON yn gopi wrth gefn llawn y gellir ei fewnforio yn ôl. Tabl o drafodion i’w weld mewn taenlen yw CSV — ni ellir ei fewnforio i’r ap.";
+"BACKUPS_FORMAT_TITLE" = "Fformat allforio";
+"BACKUPS_IMPORT_SKIPPED" = "Incwm wedi’i hepgor: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Trafodion: %d";

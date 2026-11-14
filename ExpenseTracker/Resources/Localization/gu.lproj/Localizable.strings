@@ -58,7 +58,15 @@
 "MENU_TITLE" = "મેનૂ";
 "MENU_BUDGET" = "બજેટ";
 "MENU_SETTINGS" = "સેટિંગ્સ";
+"MENU_BACKUPS" = "બેકઅપ";
 "MENU_SPENT_IN_MONTH" = "કુલ ખર્ચ · %@";
+"MENU_LANGUAGE" = "ભાષા";
+"MENU_ABOUT" = "વિશે";
+
+// MARK: - About
+"ABOUT_VERSION" = "સંસ્કરણ %@";
+"ABOUT_SHARE" = "ઍપ શેર કરો";
+"ABOUT_RATE" = "ઍપને રેટ કરો";
 
 // MARK: - Tabs
 "TAB_HOME" = "હોમ";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "દાન";
 "DEFAULT_CATEGORY_INTERNET" = "ઇન્ટરનેટ";
 "DEFAULT_CATEGORY_TRANSPORT" = "પરિવહન";
+"SETTINGS_APPEARANCE" = "દેખાવ";
+"SETTINGS_THEME_CLASSIC" = "ક્લાસિક";
+"SETTINGS_THEME_EMBER" = "અંગારો";
+"SETTINGS_THEME_MIDNIGHT" = "મધ્યરાત્રિ";
+"SETTINGS_THEME_FOREST" = "જંગલ";
+"SETTINGS_THEME_GRAY" = "રાખોડી";
+"SETTINGS_THEME_INDIGO" = "ગળી";
+"SETTINGS_THEME_LIQUID_BLACK" = "પ્રવાહી કાળો";
+"SETTINGS_THEME_SLATE" = "સ્લેટ";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "શ્રેણીઓ: %d";
+"BACKUPS_CURRENT_DATA" = "ઍપમાં";
+"BACKUPS_ERROR_CORRUPTED" = "ફાઇલ ખરાબ છે અથવા વાંચી શકાતી નથી.";
+"BACKUPS_ERROR_NEWER_VERSION" = "આ બેકઅપ ઍપના નવા સંસ્કરણથી બનાવવામાં આવ્યો છે.";
+"BACKUPS_ERROR_UNSUPPORTED" = "આ ફાઇલ ફોર્મેટ સમર્થિત નથી.";
+"BACKUPS_EXPORT_SECTION" = "નિકાસ";
+"BACKUPS_IMPORT_ACTION" = "ફાઇલમાંથી આયાત કરો";
+"BACKUPS_IMPORT_DONE" = "ઉમેરેલા વ્યવહારો: %d, શ્રેણીઓ: %d";
+"BACKUPS_IMPORT_MERGE" = "હાલના ડેટામાં ઉમેરો";
+"BACKUPS_IMPORT_PERIOD" = "સમયગાળો: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "ફાઇલમાં મળ્યું";
+"BACKUPS_IMPORT_REPLACE" = "બધો ડેટા બદલો";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "હાલના બધા વ્યવહારો અને શ્રેણીઓ કાઢી નાખવામાં આવશે. આ પૂર્વવત્ કરી શકાતું નથી.";
+"BACKUPS_IMPORT_SECTION" = "આયાત";
+"BACKUPS_SHARE_ACTION" = "ડેટા નિકાસ કરો";
+"BACKUPS_CSV_COMMENT" = "ટિપ્પણી";
+"BACKUPS_CSV_FOLDER" = "ફોલ્ડર";
+"BACKUPS_FORMAT_CSV" = "CSV — ફક્ત જોવા માટે";
+"BACKUPS_FORMAT_JSON" = "JSON — સંપૂર્ણ બેકઅપ";
+"BACKUPS_FORMAT_MESSAGE" = "JSON એ સંપૂર્ણ બેકઅપ છે જે ફરી આયાત કરી શકાય છે. CSV એ સ્પ્રેડશીટમાં જોવા માટે વ્યવહારોનું કોષ્ટક છે — તેને ઍપમાં આયાત કરી શકાતું નથી.";
+"BACKUPS_FORMAT_TITLE" = "નિકાસ ફોર્મેટ";
+"BACKUPS_IMPORT_SKIPPED" = "છોડેલી આવક: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "વ્યવહારો: %d";

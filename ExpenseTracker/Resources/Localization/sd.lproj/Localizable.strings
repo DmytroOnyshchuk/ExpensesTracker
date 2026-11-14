@@ -58,7 +58,15 @@
 "MENU_TITLE" = "مينيو";
 "MENU_BUDGET" = "بجيٽ";
 "MENU_SETTINGS" = "سيٽنگون";
+"MENU_BACKUPS" = "بيڪ اپ";
 "MENU_SPENT_IN_MONTH" = "ڪل خرچ · %@";
+"MENU_LANGUAGE" = "ٻولي";
+"MENU_ABOUT" = "بابت";
+
+// MARK: - About
+"ABOUT_VERSION" = "ورزن %@";
+"ABOUT_SHARE" = "ايپ شيئر ڪريو";
+"ABOUT_RATE" = "ايپ کي درجو ڏيو";
 
 // MARK: - Tabs
 "TAB_HOME" = "گهر";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "خيرات";
 "DEFAULT_CATEGORY_INTERNET" = "انٽرنيٽ";
 "DEFAULT_CATEGORY_TRANSPORT" = "ٽرانسپورٽ";
+"SETTINGS_APPEARANCE" = "ڏيک";
+"SETTINGS_THEME_CLASSIC" = "ڪلاسڪ";
+"SETTINGS_THEME_EMBER" = "ٽانڊو";
+"SETTINGS_THEME_MIDNIGHT" = "اڌ رات";
+"SETTINGS_THEME_FOREST" = "ٻيلو";
+"SETTINGS_THEME_GRAY" = "ناسي";
+"SETTINGS_THEME_INDIGO" = "نيرو";
+"SETTINGS_THEME_LIQUID_BLACK" = "پاڻياٺو ڪارو";
+"SETTINGS_THEME_SLATE" = "سليٽ";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "درجا: %d";
+"BACKUPS_CURRENT_DATA" = "ايپ ۾";
+"BACKUPS_ERROR_CORRUPTED" = "فائل خراب آهي يا پڙهي نٿي سگهجي.";
+"BACKUPS_ERROR_NEWER_VERSION" = "هي بيڪ اپ ايپ جي نئين ورزن سان ٺاهيو ويو آهي.";
+"BACKUPS_ERROR_UNSUPPORTED" = "هي فائل فارميٽ سپورٽ ٿيل ناهي.";
+"BACKUPS_EXPORT_SECTION" = "ايڪسپورٽ";
+"BACKUPS_IMPORT_ACTION" = "فائل مان امپورٽ ڪريو";
+"BACKUPS_IMPORT_DONE" = "شامل ڪيل ٽرانزيڪشنون: %d، درجا: %d";
+"BACKUPS_IMPORT_MERGE" = "موجوده ڊيٽا ۾ شامل ڪريو";
+"BACKUPS_IMPORT_PERIOD" = "مدت: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "فائل ۾ مليو";
+"BACKUPS_IMPORT_REPLACE" = "سڄي ڊيٽا مٽايو";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "سڀ موجوده ٽرانزيڪشنون ۽ درجا ختم ڪيا ويندا. هي عمل واپس نٿو ٿي سگهي.";
+"BACKUPS_IMPORT_SECTION" = "امپورٽ";
+"BACKUPS_SHARE_ACTION" = "ڊيٽا ايڪسپورٽ ڪريو";
+"BACKUPS_CSV_COMMENT" = "تبصرو";
+"BACKUPS_CSV_FOLDER" = "فولڊر";
+"BACKUPS_FORMAT_CSV" = "CSV — صرف ڏسڻ لاءِ";
+"BACKUPS_FORMAT_JSON" = "JSON — مڪمل بيڪ اپ";
+"BACKUPS_FORMAT_MESSAGE" = "JSON مڪمل بيڪ اپ آهي جيڪو ٻيهر امپورٽ ڪري سگهجي ٿو. CSV ٽرانزيڪشنن جي جدول آهي جيڪا اسپريڊ شيٽ ۾ ڏسڻ لاءِ آهي — ان کي ايپ ۾ امپورٽ نٿو ڪري سگهجي.";
+"BACKUPS_FORMAT_TITLE" = "ايڪسپورٽ فارميٽ";
+"BACKUPS_IMPORT_SKIPPED" = "ڇڏيل آمدني: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "ٽرانزيڪشنون: %d";

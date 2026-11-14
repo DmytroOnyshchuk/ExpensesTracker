@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Ponuka";
 "MENU_BUDGET" = "Rozpočet";
 "MENU_SETTINGS" = "Nastavenia";
+"MENU_BACKUPS" = "Zálohy";
 "MENU_SPENT_IN_MONTH" = "Minuté za %@";
+"MENU_LANGUAGE" = "Jazyk";
+"MENU_ABOUT" = "O aplikácii";
+
+// MARK: - About
+"ABOUT_VERSION" = "Verzia %@";
+"ABOUT_SHARE" = "Zdieľať aplikáciu";
+"ABOUT_RATE" = "Ohodnotiť aplikáciu";
 
 // MARK: - Tabs
 "TAB_HOME" = "Domov";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Charita";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Doprava";
+"SETTINGS_APPEARANCE" = "Vzhľad";
+"SETTINGS_THEME_CLASSIC" = "Klasický";
+"SETTINGS_THEME_EMBER" = "Žeravý uhlík";
+"SETTINGS_THEME_MIDNIGHT" = "Polnoc";
+"SETTINGS_THEME_FOREST" = "Les";
+"SETTINGS_THEME_GRAY" = "Sivý";
+"SETTINGS_THEME_INDIGO" = "Indigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Tekutá čierna";
+"SETTINGS_THEME_SLATE" = "Bridlica";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Kategórie: %d";
+"BACKUPS_CURRENT_DATA" = "V aplikácii";
+"BACKUPS_ERROR_CORRUPTED" = "Súbor je poškodený alebo ho nemožno prečítať.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Táto záloha bola vytvorená novšou verziou aplikácie.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Tento formát súboru nie je podporovaný.";
+"BACKUPS_EXPORT_SECTION" = "Export";
+"BACKUPS_IMPORT_ACTION" = "Importovať zo súboru";
+"BACKUPS_IMPORT_DONE" = "Pridané transakcie: %d, kategórie: %d";
+"BACKUPS_IMPORT_MERGE" = "Pridať k aktuálnym dátam";
+"BACKUPS_IMPORT_PERIOD" = "Obdobie: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Nájdené v súbore";
+"BACKUPS_IMPORT_REPLACE" = "Nahradiť všetky dáta";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Všetky aktuálne transakcie a kategórie budú vymazané. Túto akciu nemožno vrátiť späť.";
+"BACKUPS_IMPORT_SECTION" = "Import";
+"BACKUPS_SHARE_ACTION" = "Exportovať dáta";
+"BACKUPS_CSV_COMMENT" = "Komentár";
+"BACKUPS_CSV_FOLDER" = "Priečinok";
+"BACKUPS_FORMAT_CSV" = "CSV — iba na prezeranie";
+"BACKUPS_FORMAT_JSON" = "JSON — úplná záloha";
+"BACKUPS_FORMAT_MESSAGE" = "JSON je úplná záloha, ktorú možno importovať späť. CSV je tabuľka transakcií na prezeranie v tabuľkovom procesore — do aplikácie ju importovať nemožno.";
+"BACKUPS_FORMAT_TITLE" = "Formát exportu";
+"BACKUPS_IMPORT_SKIPPED" = "Preskočené príjmy: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Transakcie: %d";

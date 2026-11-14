@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Àtòjọ";
 "MENU_BUDGET" = "Ìṣúná";
 "MENU_SETTINGS" = "Ètò";
+"MENU_BACKUPS" = "Àwọn àfẹ̀yìntì";
 "MENU_SPENT_IN_MONTH" = "Àpapọ̀ tí a ná · %@";
+"MENU_LANGUAGE" = "Èdè";
+"MENU_ABOUT" = "Nípa";
+
+// MARK: - About
+"ABOUT_VERSION" = "Ẹ̀dà %@";
+"ABOUT_SHARE" = "Pín áàpù";
+"ABOUT_RATE" = "Ṣe ìdíyelé áàpù";
 
 // MARK: - Tabs
 "TAB_HOME" = "Ilé";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Ìtọrẹ àánú";
 "DEFAULT_CATEGORY_INTERNET" = "Íńtánẹ́ẹ̀tì";
 "DEFAULT_CATEGORY_TRANSPORT" = "Ìrìnnà";
+"SETTINGS_APPEARANCE" = "Ìrísí";
+"SETTINGS_THEME_CLASSIC" = "Ti àtijọ́";
+"SETTINGS_THEME_EMBER" = "Ẹ̀yín iná";
+"SETTINGS_THEME_MIDNIGHT" = "Ọ̀gànjọ́ òru";
+"SETTINGS_THEME_FOREST" = "Igbó";
+"SETTINGS_THEME_GRAY" = "Eérú";
+"SETTINGS_THEME_INDIGO" = "Aró";
+"SETTINGS_THEME_LIQUID_BLACK" = "Dúdú olómi";
+"SETTINGS_THEME_SLATE" = "Òkúta síléètì";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Àwọn ẹ̀ka: %d";
+"BACKUPS_CURRENT_DATA" = "Nínú áàpù";
+"BACKUPS_ERROR_CORRUPTED" = "Fáìlì náà ti bàjẹ́ tàbí kò ṣe é kà.";
+"BACKUPS_ERROR_NEWER_VERSION" = "A ṣe àfẹ̀yìntì yìí pẹ̀lú ẹ̀dà áàpù tuntun jù.";
+"BACKUPS_ERROR_UNSUPPORTED" = "A kò ṣe àtìlẹ́yìn fún irú fáìlì yìí.";
+"BACKUPS_EXPORT_SECTION" = "Ìkójáde";
+"BACKUPS_IMPORT_ACTION" = "Kó wọlé láti fáìlì";
+"BACKUPS_IMPORT_DONE" = "Ìdúnàádúrà tí a fi kún: %d, ẹ̀ka: %d";
+"BACKUPS_IMPORT_MERGE" = "Fi kún dátà lọ́wọ́lọ́wọ́";
+"BACKUPS_IMPORT_PERIOD" = "Àkókò: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "A rí i nínú fáìlì";
+"BACKUPS_IMPORT_REPLACE" = "Rọ́pò gbogbo dátà";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Gbogbo ìdúnàádúrà àti ẹ̀ka lọ́wọ́lọ́wọ́ ni a ó parẹ́. Èyí kò ṣe é dá padà.";
+"BACKUPS_IMPORT_SECTION" = "Ìkówọlé";
+"BACKUPS_SHARE_ACTION" = "Kó dátà jáde";
+"BACKUPS_CSV_COMMENT" = "Àlàyé";
+"BACKUPS_CSV_FOLDER" = "Fódà";
+"BACKUPS_FORMAT_CSV" = "CSV — fún wíwò nìkan";
+"BACKUPS_FORMAT_JSON" = "JSON — àfẹ̀yìntì kíkún";
+"BACKUPS_FORMAT_MESSAGE" = "JSON jẹ́ àfẹ̀yìntì kíkún tí a lè kó wọlé padà. CSV jẹ́ tábìlì ìdúnàádúrà fún wíwò nínú ìwé àkọsílẹ̀ ìṣirò — a kò lè kó o wọlé sínú áàpù.";
+"BACKUPS_FORMAT_TITLE" = "Irú ìkójáde";
+"BACKUPS_IMPORT_SKIPPED" = "Owó-wíwọlé tí a fò: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Àwọn ìdúnàádúrà: %d";

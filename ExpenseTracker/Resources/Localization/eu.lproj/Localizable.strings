@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Menua";
 "MENU_BUDGET" = "Aurrekontua";
 "MENU_SETTINGS" = "Ezarpenak";
+"MENU_BACKUPS" = "Babeskopiak";
 "MENU_SPENT_IN_MONTH" = "Guztira gastatua · %@";
+"MENU_LANGUAGE" = "Hizkuntza";
+"MENU_ABOUT" = "Honi buruz";
+
+// MARK: - About
+"ABOUT_VERSION" = "%@ bertsioa";
+"ABOUT_SHARE" = "Partekatu aplikazioa";
+"ABOUT_RATE" = "Baloratu aplikazioa";
 
 // MARK: - Tabs
 "TAB_HOME" = "Hasiera";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Dohaintzak";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Garraioa";
+"SETTINGS_APPEARANCE" = "Itxura";
+"SETTINGS_THEME_CLASSIC" = "Klasikoa";
+"SETTINGS_THEME_EMBER" = "Txingarra";
+"SETTINGS_THEME_MIDNIGHT" = "Gauerdia";
+"SETTINGS_THEME_FOREST" = "Basoa";
+"SETTINGS_THEME_GRAY" = "Grisa";
+"SETTINGS_THEME_INDIGO" = "Indigoa";
+"SETTINGS_THEME_LIQUID_BLACK" = "Beltz likidoa";
+"SETTINGS_THEME_SLATE" = "Arbela";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Kategoriak: %d";
+"BACKUPS_CURRENT_DATA" = "Aplikazioan";
+"BACKUPS_ERROR_CORRUPTED" = "Fitxategia hondatuta dago edo ezin da irakurri.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Babeskopia hau aplikazioaren bertsio berriago batekin sortu da.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Fitxategi-formatu hau ez da onartzen.";
+"BACKUPS_EXPORT_SECTION" = "Esportazioa";
+"BACKUPS_IMPORT_ACTION" = "Inportatu fitxategitik";
+"BACKUPS_IMPORT_DONE" = "Gehitutako transakzioak: %d, kategoriak: %d";
+"BACKUPS_IMPORT_MERGE" = "Gehitu uneko datuei";
+"BACKUPS_IMPORT_PERIOD" = "Aldia: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Fitxategian aurkitua";
+"BACKUPS_IMPORT_REPLACE" = "Ordeztu datu guztiak";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Uneko transakzio eta kategoria guztiak ezabatuko dira. Ekintza hau ezin da desegin.";
+"BACKUPS_IMPORT_SECTION" = "Inportazioa";
+"BACKUPS_SHARE_ACTION" = "Esportatu datuak";
+"BACKUPS_CSV_COMMENT" = "Iruzkina";
+"BACKUPS_CSV_FOLDER" = "Karpeta";
+"BACKUPS_FORMAT_CSV" = "CSV — ikusteko soilik";
+"BACKUPS_FORMAT_JSON" = "JSON — babeskopia osoa";
+"BACKUPS_FORMAT_MESSAGE" = "JSON berriro inporta daitekeen babeskopia osoa da. CSV transakzioen taula bat da, kalkulu-orri batean ikusteko; ezin da aplikaziora inportatu.";
+"BACKUPS_FORMAT_TITLE" = "Esportazio-formatua";
+"BACKUPS_IMPORT_SKIPPED" = "Saltatutako diru-sarrerak: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Transakzioak: %d";

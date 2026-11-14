@@ -58,7 +58,15 @@
 "MENU_TITLE" = "මෙනුව";
 "MENU_BUDGET" = "අයවැය";
 "MENU_SETTINGS" = "සැකසුම්";
+"MENU_BACKUPS" = "උපස්ථ";
 "MENU_SPENT_IN_MONTH" = "මුළු වියදම · %@";
+"MENU_LANGUAGE" = "භාෂාව";
+"MENU_ABOUT" = "පිළිබඳව";
+
+// MARK: - About
+"ABOUT_VERSION" = "අනුවාදය %@";
+"ABOUT_SHARE" = "යෙදුම බෙදාගන්න";
+"ABOUT_RATE" = "යෙදුම අගයන්න";
 
 // MARK: - Tabs
 "TAB_HOME" = "මුල් පිටුව";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "පුණ්‍ය කටයුතු";
 "DEFAULT_CATEGORY_INTERNET" = "අන්තර්ජාලය";
 "DEFAULT_CATEGORY_TRANSPORT" = "ප්‍රවාහනය";
+"SETTINGS_APPEARANCE" = "පෙනුම";
+"SETTINGS_THEME_CLASSIC" = "සම්භාව්‍ය";
+"SETTINGS_THEME_EMBER" = "ගිනි අඟුරු";
+"SETTINGS_THEME_MIDNIGHT" = "මධ්‍යම රාත්‍රිය";
+"SETTINGS_THEME_FOREST" = "වනය";
+"SETTINGS_THEME_GRAY" = "අළු";
+"SETTINGS_THEME_INDIGO" = "ඉන්ඩිගෝ";
+"SETTINGS_THEME_LIQUID_BLACK" = "ද්‍රව කළු";
+"SETTINGS_THEME_SLATE" = "ස්ලේට්";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "ප්‍රවර්ග: %d";
+"BACKUPS_CURRENT_DATA" = "යෙදුමේ";
+"BACKUPS_ERROR_CORRUPTED" = "ගොනුව හානි වී ඇත හෝ කියවිය නොහැක.";
+"BACKUPS_ERROR_NEWER_VERSION" = "මෙම උපස්ථය යෙදුමේ නව අනුවාදයකින් සාදා ඇත.";
+"BACKUPS_ERROR_UNSUPPORTED" = "මෙම ගොනු ආකෘතියට සහාය නොදක්වයි.";
+"BACKUPS_EXPORT_SECTION" = "නිර්යාත";
+"BACKUPS_IMPORT_ACTION" = "ගොනුවකින් ආයාත කරන්න";
+"BACKUPS_IMPORT_DONE" = "එක් කළ ගනුදෙනු: %d, ප්‍රවර්ග: %d";
+"BACKUPS_IMPORT_MERGE" = "වත්මන් දත්තවලට එක් කරන්න";
+"BACKUPS_IMPORT_PERIOD" = "කාලසීමාව: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "ගොනුවේ හමු විය";
+"BACKUPS_IMPORT_REPLACE" = "සියලු දත්ත ප්‍රතිස්ථාපනය කරන්න";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "වත්මන් සියලු ගනුදෙනු සහ ප්‍රවර්ග මකා දැමේ. මෙය අහෝසි කළ නොහැක.";
+"BACKUPS_IMPORT_SECTION" = "ආයාත";
+"BACKUPS_SHARE_ACTION" = "දත්ත නිර්යාත කරන්න";
+"BACKUPS_CSV_COMMENT" = "සටහන";
+"BACKUPS_CSV_FOLDER" = "ෆෝල්ඩරය";
+"BACKUPS_FORMAT_CSV" = "CSV — බැලීමට පමණි";
+"BACKUPS_FORMAT_JSON" = "JSON — සම්පූර්ණ උපස්ථය";
+"BACKUPS_FORMAT_MESSAGE" = "JSON යනු නැවත ආයාත කළ හැකි සම්පූර්ණ උපස්ථයකි. CSV යනු පැතුරුම්පතක බැලීම සඳහා ගනුදෙනු වගුවකි — එය යෙදුමට ආයාත කළ නොහැක.";
+"BACKUPS_FORMAT_TITLE" = "නිර්යාත ආකෘතිය";
+"BACKUPS_IMPORT_SKIPPED" = "මඟහැරි ආදායම්: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "ගනුදෙනු: %d";

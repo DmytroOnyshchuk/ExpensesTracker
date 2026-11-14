@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Meniu";
 "MENU_BUDGET" = "Biudžetas";
 "MENU_SETTINGS" = "Nustatymai";
+"MENU_BACKUPS" = "Atsarginės kopijos";
 "MENU_SPENT_IN_MONTH" = "Iš viso išleista · %@";
+"MENU_LANGUAGE" = "Kalba";
+"MENU_ABOUT" = "Apie";
+
+// MARK: - About
+"ABOUT_VERSION" = "Versija %@";
+"ABOUT_SHARE" = "Bendrinti programėlę";
+"ABOUT_RATE" = "Įvertinti programėlę";
 
 // MARK: - Tabs
 "TAB_HOME" = "Pradžia";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Labdara";
 "DEFAULT_CATEGORY_INTERNET" = "Internetas";
 "DEFAULT_CATEGORY_TRANSPORT" = "Transportas";
+"SETTINGS_APPEARANCE" = "Išvaizda";
+"SETTINGS_THEME_CLASSIC" = "Klasikinė";
+"SETTINGS_THEME_EMBER" = "Žarijos";
+"SETTINGS_THEME_MIDNIGHT" = "Vidurnaktis";
+"SETTINGS_THEME_FOREST" = "Miškas";
+"SETTINGS_THEME_GRAY" = "Pilka";
+"SETTINGS_THEME_INDIGO" = "Indigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Skysta juoda";
+"SETTINGS_THEME_SLATE" = "Skalūnas";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Kategorijos: %d";
+"BACKUPS_CURRENT_DATA" = "Programėlėje";
+"BACKUPS_ERROR_CORRUPTED" = "Failas sugadintas arba jo nepavyksta nuskaityti.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Ši kopija sukurta naujesne programėlės versija.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Šis failo formatas nepalaikomas.";
+"BACKUPS_EXPORT_SECTION" = "Eksportas";
+"BACKUPS_IMPORT_ACTION" = "Importuoti iš failo";
+"BACKUPS_IMPORT_DONE" = "Pridėta operacijų: %d, kategorijų: %d";
+"BACKUPS_IMPORT_MERGE" = "Pridėti prie dabartinių duomenų";
+"BACKUPS_IMPORT_PERIOD" = "Laikotarpis: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Rasta faile";
+"BACKUPS_IMPORT_REPLACE" = "Pakeisti visus duomenis";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Visos dabartinės operacijos ir kategorijos bus ištrintos. Šio veiksmo anuliuoti negalima.";
+"BACKUPS_IMPORT_SECTION" = "Importas";
+"BACKUPS_SHARE_ACTION" = "Eksportuoti duomenis";
+"BACKUPS_CSV_COMMENT" = "Komentaras";
+"BACKUPS_CSV_FOLDER" = "Aplankas";
+"BACKUPS_FORMAT_CSV" = "CSV — tik peržiūrai";
+"BACKUPS_FORMAT_JSON" = "JSON — visa kopija";
+"BACKUPS_FORMAT_MESSAGE" = "JSON yra visa kopija, kurią galima importuoti atgal. CSV yra operacijų lentelė peržiūrai skaičiuoklėje — jos importuoti į programėlę negalima.";
+"BACKUPS_FORMAT_TITLE" = "Eksporto formatas";
+"BACKUPS_IMPORT_SKIPPED" = "Praleista pajamų: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Operacijos: %d";

@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Clàr-taice";
 "MENU_BUDGET" = "Buidseat";
 "MENU_SETTINGS" = "Roghainnean";
+"MENU_BACKUPS" = "Lethbhreacan-glèidhidh";
 "MENU_SPENT_IN_MONTH" = "Iomlan air a chosg · %@";
+"MENU_LANGUAGE" = "Cànan";
+"MENU_ABOUT" = "Mu dhèidhinn";
+
+// MARK: - About
+"ABOUT_VERSION" = "Tionndadh %@";
+"ABOUT_SHARE" = "Co-roinn an aplacaid";
+"ABOUT_RATE" = "Thoir rangachadh dhan aplacaid";
 
 // MARK: - Tabs
 "TAB_HOME" = "Dachaigh";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Carthannas";
 "DEFAULT_CATEGORY_INTERNET" = "Eadar-lìon";
 "DEFAULT_CATEGORY_TRANSPORT" = "Còmhdhail";
+"SETTINGS_APPEARANCE" = "Coltas";
+"SETTINGS_THEME_CLASSIC" = "Clasaigeach";
+"SETTINGS_THEME_EMBER" = "Èibhleag";
+"SETTINGS_THEME_MIDNIGHT" = "Meadhan-oidhche";
+"SETTINGS_THEME_FOREST" = "Coille";
+"SETTINGS_THEME_GRAY" = "Liath";
+"SETTINGS_THEME_INDIGO" = "Guirmean";
+"SETTINGS_THEME_LIQUID_BLACK" = "Dubh lionnach";
+"SETTINGS_THEME_SLATE" = "Sglèat";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Roinnean-seòrsa: %d";
+"BACKUPS_CURRENT_DATA" = "San aplacaid";
+"BACKUPS_ERROR_CORRUPTED" = "Tha am faidhle millte no cha ghabh a leughadh.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Chaidh an lethbhreac-glèidhidh seo a chruthachadh le tionndadh nas ùire dhen aplacaid.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Chan eil taic ris an fhòrmat faidhle seo.";
+"BACKUPS_EXPORT_SECTION" = "Às-phortadh";
+"BACKUPS_IMPORT_ACTION" = "Ion-phortaich o fhaidhle";
+"BACKUPS_IMPORT_DONE" = "Tar-chuiridhean air an cur ris: %d, roinnean-seòrsa: %d";
+"BACKUPS_IMPORT_MERGE" = "Cuir ris an dàta làithreach";
+"BACKUPS_IMPORT_PERIOD" = "Ùine: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Air a lorg san fhaidhle";
+"BACKUPS_IMPORT_REPLACE" = "Cuir an àite an dàta air fad";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Thèid a h-uile tar-chur is roinn-seòrsa làithreach a sguabadh às. Cha ghabh seo a neo-dhèanamh.";
+"BACKUPS_IMPORT_SECTION" = "Ion-phortadh";
+"BACKUPS_SHARE_ACTION" = "Às-phortaich an dàta";
+"BACKUPS_CSV_COMMENT" = "Beachd";
+"BACKUPS_CSV_FOLDER" = "Pasgan";
+"BACKUPS_FORMAT_CSV" = "CSV — airson coimhead a-mhàin";
+"BACKUPS_FORMAT_JSON" = "JSON — lethbhreac-glèidhidh slàn";
+"BACKUPS_FORMAT_MESSAGE" = "’S e lethbhreac-glèidhidh slàn a th’ ann an JSON a ghabhas ion-phortadh air ais. ’S e clàr de thar-chuiridhean a th’ ann an CSV airson coimhead air ann an cliath-dhuilleag — cha ghabh ion-phortadh dhan aplacaid.";
+"BACKUPS_FORMAT_TITLE" = "Fòrmat às-phortaidh";
+"BACKUPS_IMPORT_SKIPPED" = "Teachd-a-steach air a leigeil seachad: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Tar-chuiridhean: %d";

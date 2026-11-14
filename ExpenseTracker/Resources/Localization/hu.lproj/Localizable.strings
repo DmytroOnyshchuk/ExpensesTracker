@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Menü";
 "MENU_BUDGET" = "Költségvetés";
 "MENU_SETTINGS" = "Beállítások";
+"MENU_BACKUPS" = "Biztonsági mentések";
 "MENU_SPENT_IN_MONTH" = "Összes költés · %@";
+"MENU_LANGUAGE" = "Nyelv";
+"MENU_ABOUT" = "Névjegy";
+
+// MARK: - About
+"ABOUT_VERSION" = "Verzió: %@";
+"ABOUT_SHARE" = "App megosztása";
+"ABOUT_RATE" = "App értékelése";
 
 // MARK: - Tabs
 "TAB_HOME" = "Kezdőlap";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Jótékonyság";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Közlekedés";
+"SETTINGS_APPEARANCE" = "Megjelenés";
+"SETTINGS_THEME_CLASSIC" = "Klasszikus";
+"SETTINGS_THEME_EMBER" = "Parázs";
+"SETTINGS_THEME_MIDNIGHT" = "Éjfél";
+"SETTINGS_THEME_FOREST" = "Erdő";
+"SETTINGS_THEME_GRAY" = "Szürke";
+"SETTINGS_THEME_INDIGO" = "Indigó";
+"SETTINGS_THEME_LIQUID_BLACK" = "Folyékony fekete";
+"SETTINGS_THEME_SLATE" = "Pala";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Kategóriák: %d";
+"BACKUPS_CURRENT_DATA" = "Az appban";
+"BACKUPS_ERROR_CORRUPTED" = "A fájl sérült vagy nem olvasható.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Ez a mentés az app újabb verziójával készült.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Ez a fájlformátum nem támogatott.";
+"BACKUPS_EXPORT_SECTION" = "Exportálás";
+"BACKUPS_IMPORT_ACTION" = "Importálás fájlból";
+"BACKUPS_IMPORT_DONE" = "Hozzáadott tranzakciók: %d, kategóriák: %d";
+"BACKUPS_IMPORT_MERGE" = "Hozzáadás a jelenlegi adatokhoz";
+"BACKUPS_IMPORT_PERIOD" = "Időszak: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "A fájlban található";
+"BACKUPS_IMPORT_REPLACE" = "Összes adat cseréje";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Minden jelenlegi tranzakció és kategória törlődik. Ez a művelet nem vonható vissza.";
+"BACKUPS_IMPORT_SECTION" = "Importálás";
+"BACKUPS_SHARE_ACTION" = "Adatok exportálása";
+"BACKUPS_CSV_COMMENT" = "Megjegyzés";
+"BACKUPS_CSV_FOLDER" = "Mappa";
+"BACKUPS_FORMAT_CSV" = "CSV — csak megtekintés";
+"BACKUPS_FORMAT_JSON" = "JSON — teljes mentés";
+"BACKUPS_FORMAT_MESSAGE" = "A JSON teljes mentés, amely visszaimportálható. A CSV a tranzakciók táblázata táblázatkezelőben való megtekintéshez — az appba nem importálható.";
+"BACKUPS_FORMAT_TITLE" = "Exportformátum";
+"BACKUPS_IMPORT_SKIPPED" = "Kihagyott bevételek: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Tranzakciók: %d";

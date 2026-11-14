@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Меню";
 "MENU_BUDGET" = "Бюджет";
 "MENU_SETTINGS" = "Жөндөөлөр";
+"MENU_BACKUPS" = "Камдык көчүрмөлөр";
 "MENU_SPENT_IN_MONTH" = "Баары сарпталды · %@";
+"MENU_LANGUAGE" = "Тил";
+"MENU_ABOUT" = "Колдонмо жөнүндө";
+
+// MARK: - About
+"ABOUT_VERSION" = "Версия %@";
+"ABOUT_SHARE" = "Колдонмо менен бөлүшүү";
+"ABOUT_RATE" = "Колдонмону баалоо";
 
 // MARK: - Tabs
 "TAB_HOME" = "Башкы";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Кайрымдуулук";
 "DEFAULT_CATEGORY_INTERNET" = "Интернет";
 "DEFAULT_CATEGORY_TRANSPORT" = "Транспорт";
+"SETTINGS_APPEARANCE" = "Көрүнүш";
+"SETTINGS_THEME_CLASSIC" = "Классикалык";
+"SETTINGS_THEME_EMBER" = "Чок";
+"SETTINGS_THEME_MIDNIGHT" = "Түн ортосу";
+"SETTINGS_THEME_FOREST" = "Токой";
+"SETTINGS_THEME_GRAY" = "Боз";
+"SETTINGS_THEME_INDIGO" = "Индиго";
+"SETTINGS_THEME_LIQUID_BLACK" = "Суюк кара";
+"SETTINGS_THEME_SLATE" = "Шифер";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Категориялар: %d";
+"BACKUPS_CURRENT_DATA" = "Колдонмодо";
+"BACKUPS_ERROR_CORRUPTED" = "Файл бузулган же окулбайт.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Бул көчүрмө колдонмонун жаңыраак версиясында түзүлгөн.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Бул файл форматы колдоого алынбайт.";
+"BACKUPS_EXPORT_SECTION" = "Экспорт";
+"BACKUPS_IMPORT_ACTION" = "Файлдан импорттоо";
+"BACKUPS_IMPORT_DONE" = "Кошулган операциялар: %d, категориялар: %d";
+"BACKUPS_IMPORT_MERGE" = "Учурдагы дайындарга кошуу";
+"BACKUPS_IMPORT_PERIOD" = "Мезгил: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Файлдан табылды";
+"BACKUPS_IMPORT_REPLACE" = "Бардык дайындарды алмаштыруу";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Учурдагы бардык операциялар жана категориялар өчүрүлөт. Бул аракетти артка кайтаруу мүмкүн эмес.";
+"BACKUPS_IMPORT_SECTION" = "Импорт";
+"BACKUPS_SHARE_ACTION" = "Дайындарды экспорттоо";
+"BACKUPS_CSV_COMMENT" = "Комментарий";
+"BACKUPS_CSV_FOLDER" = "Папка";
+"BACKUPS_FORMAT_CSV" = "CSV — көрүү үчүн гана";
+"BACKUPS_FORMAT_JSON" = "JSON — толук көчүрмө";
+"BACKUPS_FORMAT_MESSAGE" = "JSON — кайра импорттоого боло турган толук көчүрмө. CSV — электрондук жадыбалда көрүү үчүн операциялардын жадыбалы, аны колдонмого импорттоого болбойт.";
+"BACKUPS_FORMAT_TITLE" = "Экспорт форматы";
+"BACKUPS_IMPORT_SKIPPED" = "Өткөрүлгөн кирешелер: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Операциялар: %d";

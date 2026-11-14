@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Menu";
 "MENU_BUDGET" = "Mmefu ego";
 "MENU_SETTINGS" = "Ntọala";
+"MENU_BACKUPS" = "Ndabere";
 "MENU_SPENT_IN_MONTH" = "Mkpokọta e mefuru · %@";
+"MENU_LANGUAGE" = "Asụsụ";
+"MENU_ABOUT" = "Maka";
+
+// MARK: - About
+"ABOUT_VERSION" = "Ụdị %@";
+"ABOUT_SHARE" = "Kekọrịta ngwa";
+"ABOUT_RATE" = "Nye ngwa ọkwa";
 
 // MARK: - Tabs
 "TAB_HOME" = "Ụlọ";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Ọrụ ebere";
 "DEFAULT_CATEGORY_INTERNET" = "Ịntanetị";
 "DEFAULT_CATEGORY_TRANSPORT" = "Njem";
+"SETTINGS_APPEARANCE" = "Ọdịdị";
+"SETTINGS_THEME_CLASSIC" = "Kpochapụwo";
+"SETTINGS_THEME_EMBER" = "Icheku ọkụ";
+"SETTINGS_THEME_MIDNIGHT" = "Etiti abalị";
+"SETTINGS_THEME_FOREST" = "Ọhịa";
+"SETTINGS_THEME_GRAY" = "Ntụ ntụ";
+"SETTINGS_THEME_INDIGO" = "Indigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Oji mmiri";
+"SETTINGS_THEME_SLATE" = "Nkume slate";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Ngalaba: %d";
+"BACKUPS_CURRENT_DATA" = "N’ime ngwa";
+"BACKUPS_ERROR_CORRUPTED" = "Faịlụ ahụ emebiela ma ọ bụ enweghị ike ịgụ ya.";
+"BACKUPS_ERROR_NEWER_VERSION" = "E ji ụdị ngwa ọhụrụ karịa mee ndabere a.";
+"BACKUPS_ERROR_UNSUPPORTED" = "A naghị akwado ụdị faịlụ a.";
+"BACKUPS_EXPORT_SECTION" = "Mbupụ";
+"BACKUPS_IMPORT_ACTION" = "Bubata site na faịlụ";
+"BACKUPS_IMPORT_DONE" = "Azụmahịa etinyere: %d, ngalaba: %d";
+"BACKUPS_IMPORT_MERGE" = "Tinye na data dị ugbu a";
+"BACKUPS_IMPORT_PERIOD" = "Oge: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Achọtara na faịlụ";
+"BACKUPS_IMPORT_REPLACE" = "Dochie data niile";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "A ga-ehichapụ azụmahịa na ngalaba niile dị ugbu a. Enweghị ike imegharị nke a.";
+"BACKUPS_IMPORT_SECTION" = "Mbubata";
+"BACKUPS_SHARE_ACTION" = "Bupụ data";
+"BACKUPS_CSV_COMMENT" = "Nkọwa";
+"BACKUPS_CSV_FOLDER" = "Folda";
+"BACKUPS_FORMAT_CSV" = "CSV — maka ile naanị";
+"BACKUPS_FORMAT_JSON" = "JSON — ndabere zuru ezu";
+"BACKUPS_FORMAT_MESSAGE" = "JSON bụ ndabere zuru ezu a pụrụ ibubata ọzọ. CSV bụ tebụl azụmahịa maka ile na mpempe akwụkwọ ngụkọ — enweghị ike ibubata ya na ngwa.";
+"BACKUPS_FORMAT_TITLE" = "Ụdị mbupụ";
+"BACKUPS_IMPORT_SKIPPED" = "Ego mbata awụfere: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Azụmahịa: %d";

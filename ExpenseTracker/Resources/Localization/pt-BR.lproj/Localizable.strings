@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Menu";
 "MENU_BUDGET" = "Orçamento";
 "MENU_SETTINGS" = "Ajustes";
+"MENU_BACKUPS" = "Backups";
 "MENU_SPENT_IN_MONTH" = "Gasto em %@";
+"MENU_LANGUAGE" = "Idioma";
+"MENU_ABOUT" = "Sobre";
+
+// MARK: - About
+"ABOUT_VERSION" = "Versão %@";
+"ABOUT_SHARE" = "Compartilhar app";
+"ABOUT_RATE" = "Avaliar app";
 
 // MARK: - Tabs
 "TAB_HOME" = "Início";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Doações";
 "DEFAULT_CATEGORY_INTERNET" = "Internet";
 "DEFAULT_CATEGORY_TRANSPORT" = "Transporte";
+"SETTINGS_APPEARANCE" = "Aparência";
+"SETTINGS_THEME_CLASSIC" = "Clássico";
+"SETTINGS_THEME_EMBER" = "Brasa";
+"SETTINGS_THEME_MIDNIGHT" = "Meia-noite";
+"SETTINGS_THEME_FOREST" = "Floresta";
+"SETTINGS_THEME_GRAY" = "Cinza";
+"SETTINGS_THEME_INDIGO" = "Índigo";
+"SETTINGS_THEME_LIQUID_BLACK" = "Preto líquido";
+"SETTINGS_THEME_SLATE" = "Ardósia";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Categorias: %d";
+"BACKUPS_CURRENT_DATA" = "No app";
+"BACKUPS_ERROR_CORRUPTED" = "O arquivo está danificado ou não pode ser lido.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Este backup foi criado por uma versão mais recente do app.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Este formato de arquivo não é compatível.";
+"BACKUPS_EXPORT_SECTION" = "Exportar";
+"BACKUPS_IMPORT_ACTION" = "Importar de arquivo";
+"BACKUPS_IMPORT_DONE" = "Transações adicionadas: %d, categorias: %d";
+"BACKUPS_IMPORT_MERGE" = "Adicionar aos dados atuais";
+"BACKUPS_IMPORT_PERIOD" = "Período: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Encontrado no arquivo";
+"BACKUPS_IMPORT_REPLACE" = "Substituir todos os dados";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Todas as transações e categorias atuais serão excluídas. Esta ação não pode ser desfeita.";
+"BACKUPS_IMPORT_SECTION" = "Importar";
+"BACKUPS_SHARE_ACTION" = "Exportar dados";
+"BACKUPS_CSV_COMMENT" = "Comentário";
+"BACKUPS_CSV_FOLDER" = "Pasta";
+"BACKUPS_FORMAT_CSV" = "CSV — somente visualização";
+"BACKUPS_FORMAT_JSON" = "JSON — backup completo";
+"BACKUPS_FORMAT_MESSAGE" = "JSON é um backup completo que pode ser importado de volta. CSV é uma tabela de transações para visualizar em uma planilha — não pode ser importado para o app.";
+"BACKUPS_FORMAT_TITLE" = "Formato de exportação";
+"BACKUPS_IMPORT_SKIPPED" = "Receitas ignoradas: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Transações: %d";

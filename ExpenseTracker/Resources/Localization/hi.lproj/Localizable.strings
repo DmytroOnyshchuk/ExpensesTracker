@@ -58,7 +58,15 @@
 "MENU_TITLE" = "मेनू";
 "MENU_BUDGET" = "बजट";
 "MENU_SETTINGS" = "सेटिंग्स";
+"MENU_BACKUPS" = "बैकअप";
 "MENU_SPENT_IN_MONTH" = "%@ में खर्च";
+"MENU_LANGUAGE" = "भाषा";
+"MENU_ABOUT" = "परिचय";
+
+// MARK: - About
+"ABOUT_VERSION" = "संस्करण %@";
+"ABOUT_SHARE" = "ऐप शेयर करें";
+"ABOUT_RATE" = "ऐप को रेट करें";
 
 // MARK: - Tabs
 "TAB_HOME" = "होम";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "दान";
 "DEFAULT_CATEGORY_INTERNET" = "इंटरनेट";
 "DEFAULT_CATEGORY_TRANSPORT" = "परिवहन";
+"SETTINGS_APPEARANCE" = "रूप";
+"SETTINGS_THEME_CLASSIC" = "क्लासिक";
+"SETTINGS_THEME_EMBER" = "अंगारा";
+"SETTINGS_THEME_MIDNIGHT" = "मध्यरात्रि";
+"SETTINGS_THEME_FOREST" = "वन";
+"SETTINGS_THEME_GRAY" = "स्लेटी";
+"SETTINGS_THEME_INDIGO" = "नील";
+"SETTINGS_THEME_LIQUID_BLACK" = "तरल काला";
+"SETTINGS_THEME_SLATE" = "स्लेट";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "श्रेणियाँ: %d";
+"BACKUPS_CURRENT_DATA" = "ऐप में";
+"BACKUPS_ERROR_CORRUPTED" = "फ़ाइल ख़राब है या पढ़ी नहीं जा सकती।";
+"BACKUPS_ERROR_NEWER_VERSION" = "यह बैकअप ऐप के नए संस्करण से बनाया गया है।";
+"BACKUPS_ERROR_UNSUPPORTED" = "यह फ़ाइल फ़ॉर्मैट समर्थित नहीं है।";
+"BACKUPS_EXPORT_SECTION" = "निर्यात";
+"BACKUPS_IMPORT_ACTION" = "फ़ाइल से आयात करें";
+"BACKUPS_IMPORT_DONE" = "जोड़े गए लेन-देन: %d, श्रेणियाँ: %d";
+"BACKUPS_IMPORT_MERGE" = "मौजूदा डेटा में जोड़ें";
+"BACKUPS_IMPORT_PERIOD" = "अवधि: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "फ़ाइल में मिला";
+"BACKUPS_IMPORT_REPLACE" = "सारा डेटा बदलें";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "सभी मौजूदा लेन-देन और श्रेणियाँ हटा दी जाएँगी। इसे पूर्ववत नहीं किया जा सकता।";
+"BACKUPS_IMPORT_SECTION" = "आयात";
+"BACKUPS_SHARE_ACTION" = "डेटा निर्यात करें";
+"BACKUPS_CSV_COMMENT" = "टिप्पणी";
+"BACKUPS_CSV_FOLDER" = "फ़ोल्डर";
+"BACKUPS_FORMAT_CSV" = "CSV — केवल देखने के लिए";
+"BACKUPS_FORMAT_JSON" = "JSON — पूरा बैकअप";
+"BACKUPS_FORMAT_MESSAGE" = "JSON एक पूरा बैकअप है जिसे वापस आयात किया जा सकता है। CSV स्प्रेडशीट में देखने के लिए लेन-देन की तालिका है — इसे ऐप में आयात नहीं किया जा सकता।";
+"BACKUPS_FORMAT_TITLE" = "निर्यात फ़ॉर्मैट";
+"BACKUPS_IMPORT_SKIPPED" = "छोड़ी गई आय: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "लेन-देन: %d";

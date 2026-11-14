@@ -58,7 +58,15 @@
 "MENU_TITLE" = "Меню";
 "MENU_BUDGET" = "Бюджет";
 "MENU_SETTINGS" = "Настройки";
+"MENU_BACKUPS" = "Резервни копия";
 "MENU_SPENT_IN_MONTH" = "Похарчено през %@";
+"MENU_LANGUAGE" = "Език";
+"MENU_ABOUT" = "За приложението";
+
+// MARK: - About
+"ABOUT_VERSION" = "Версия %@";
+"ABOUT_SHARE" = "Сподели приложението";
+"ABOUT_RATE" = "Оцени приложението";
 
 // MARK: - Tabs
 "TAB_HOME" = "Начало";
@@ -127,3 +135,37 @@
 "DEFAULT_CATEGORY_CHARITY" = "Благотворителност";
 "DEFAULT_CATEGORY_INTERNET" = "Интернет";
 "DEFAULT_CATEGORY_TRANSPORT" = "Транспорт";
+"SETTINGS_APPEARANCE" = "Външен вид";
+"SETTINGS_THEME_CLASSIC" = "Класическа";
+"SETTINGS_THEME_EMBER" = "Жарава";
+"SETTINGS_THEME_MIDNIGHT" = "Полунощ";
+"SETTINGS_THEME_FOREST" = "Гора";
+"SETTINGS_THEME_GRAY" = "Сива";
+"SETTINGS_THEME_INDIGO" = "Индиго";
+"SETTINGS_THEME_LIQUID_BLACK" = "Течно черно";
+"SETTINGS_THEME_SLATE" = "Шисти";
+
+// MARK: - Backups
+"BACKUPS_CATEGORIES_COUNT" = "Категории: %d";
+"BACKUPS_CURRENT_DATA" = "В приложението";
+"BACKUPS_ERROR_CORRUPTED" = "Файлът е повреден или не може да бъде прочетен.";
+"BACKUPS_ERROR_NEWER_VERSION" = "Това копие е създадено с по-нова версия на приложението.";
+"BACKUPS_ERROR_UNSUPPORTED" = "Този файлов формат не се поддържа.";
+"BACKUPS_EXPORT_SECTION" = "Експорт";
+"BACKUPS_IMPORT_ACTION" = "Импортиране от файл";
+"BACKUPS_IMPORT_DONE" = "Добавени транзакции: %d, категории: %d";
+"BACKUPS_IMPORT_MERGE" = "Добави към текущите данни";
+"BACKUPS_IMPORT_PERIOD" = "Период: %@";
+"BACKUPS_IMPORT_PREVIEW_TITLE" = "Намерено във файла";
+"BACKUPS_IMPORT_REPLACE" = "Замени всички данни";
+"BACKUPS_IMPORT_REPLACE_WARNING" = "Всички текущи транзакции и категории ще бъдат изтрити. Това действие не може да бъде отменено.";
+"BACKUPS_IMPORT_SECTION" = "Импорт";
+"BACKUPS_SHARE_ACTION" = "Експортиране на данни";
+"BACKUPS_CSV_COMMENT" = "Коментар";
+"BACKUPS_CSV_FOLDER" = "Папка";
+"BACKUPS_FORMAT_CSV" = "CSV — само за преглед";
+"BACKUPS_FORMAT_JSON" = "JSON — пълно копие";
+"BACKUPS_FORMAT_MESSAGE" = "JSON е пълно копие, което може да се импортира обратно. CSV е таблица с транзакции за преглед в електронна таблица — не може да се импортира в приложението.";
+"BACKUPS_FORMAT_TITLE" = "Формат за експорт";
+"BACKUPS_IMPORT_SKIPPED" = "Пропуснати приходи: %d";
+"BACKUPS_TRANSACTIONS_COUNT" = "Транзакции: %d";
