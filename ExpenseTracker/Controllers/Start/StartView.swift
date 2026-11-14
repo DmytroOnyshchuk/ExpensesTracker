@@ -33,8 +33,11 @@ struct StartView: View {
                         .overlay(alignment: .bottomTrailing) {
                             commentButton
                         }
-                    CategoryGrid { category in
-                        addTransaction(with: category)
+                    if isAmountEntered {
+                        CategoryGrid { category in
+                            addTransaction(with: category)
+                        }
+                        .transition(.opacity)
                     }
 
                     TransactionsList(transactions: transactions)
@@ -43,6 +46,7 @@ struct StartView: View {
                 }
                 .padding(.vertical, 16)
                 .frame(maxWidth: .infinity, alignment: .top)
+                .animation(.easeInOut(duration: 0.25), value: isAmountEntered)
             }
             .background(.appMain)
             .navigationDestination(isPresented: $showHistory) {
@@ -66,6 +70,10 @@ struct StartView: View {
         }
         .animation(.easeInOut(duration: 0.2), value: showCommentInput)
         .animation(.easeInOut(duration: 0.2), value: showBalanceInput)
+    }
+
+    private var isAmountEntered: Bool {
+        input.amount != .zero
     }
 
     private var balance: Int? {

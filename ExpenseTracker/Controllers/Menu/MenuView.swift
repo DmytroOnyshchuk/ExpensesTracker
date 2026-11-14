@@ -10,21 +10,18 @@ import SwiftData
 import SwiftUI
 
 enum MenuItem: CaseIterable, Identifiable {
-    case budget
     case settings
 
     var id: Self { self }
 
     var title: String {
         switch self {
-        case .budget: L10n.menuBudget
         case .settings: L10n.menuSettings
         }
     }
 
     var systemImage: String {
         switch self {
-        case .budget: "wallet.bifold"
         case .settings: "slider.horizontal.3"
         }
     }
@@ -80,7 +77,6 @@ struct MenuView: View {
 
     private func open(_ item: MenuItem) {
         switch item {
-        case .budget: break
         case .settings: showSettings = true
         }
     }
