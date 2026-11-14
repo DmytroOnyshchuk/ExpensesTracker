@@ -9,16 +9,25 @@
 import SwiftUI
 
 struct CategoryRow: View {
+    enum Accessory {
+        case chevron
+        case reorder
+        case none
+    }
+
     let category: TransactionCategory
     var subtitle: String?
     var transactionsCount: Int?
-    var showsChevron: Bool = true
+    var accessory: Accessory = .chevron
     var action: () -> Void
 
     var body: some View {
         Button(action: action) {
             HStack(spacing: 16) {
-                dragHandle
+                if accessory != .reorder {
+                    dragHandle
+                        .opacity(category.isDirectory ? 0 : 1)
+                }
 
                 icon
 
@@ -45,10 +54,17 @@ struct CategoryRow: View {
                         .lineLimit(1)
                 }
 
-                if showsChevron {
+                switch accessory {
+                case .chevron:
                     Image(systemName: "chevron.right")
                         .font(.system(size: 14, weight: .semibold))
                         .foregroundColor(.appWhite.opacity(0.6))
+                case .reorder:
+                    Image(systemName: "line.3.horizontal")
+                        .font(.system(size: 18, weight: .regular))
+                        .foregroundColor(.appWhite.opacity(0.5))
+                case .none:
+                    EmptyView()
                 }
             }
             .frame(height: 48)

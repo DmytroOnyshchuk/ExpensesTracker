@@ -25,13 +25,14 @@ struct TransactionCategoryPicker: View {
     var body: some View {
         List {
             ForEach(visibleCategories, id: \.id) { category in
-                CategoryRow(category: category, showsChevron: category.isDirectory) {
+                CategoryRow(category: category, accessory: category.isDirectory ? .chevron : .none) {
                     if category.isDirectory {
                         openedFolder = category
                     } else {
                         onSelect(category)
                     }
                 }
+                .moveDisabled(category.isDirectory)
                 .categoryListRow(isLast: category.id == visibleCategories.last?.id)
             }
             .onMove(perform: moveCategories)
@@ -47,7 +48,8 @@ struct TransactionCategoryPicker: View {
     }
 
     private func moveCategories(from source: IndexSet, to destination: Int) {
-        visibleCategories.reorder(fromOffsets: source, toOffset: destination, among: categories)
+        let foldersCount = visibleCategories.count(where: \.isDirectory)
+        visibleCategories.reorder(fromOffsets: source, toOffset: max(destination, foldersCount), among: categories)
         try? modelContext.save()
     }
 }

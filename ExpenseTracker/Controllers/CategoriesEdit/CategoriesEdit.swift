@@ -41,10 +41,12 @@ struct CategoriesEdit: View {
                 CategoryRow(
                     category: category,
                     subtitle: category.parent(from: categories)?.name.localized,
-                    transactionsCount: category.isDirectory ? nil : transactionsCounts[category.uuid] ?? .zero
+                    transactionsCount: category.isDirectory ? nil : transactionsCounts[category.uuid] ?? .zero,
+                    accessory: category.isDirectory ? .none : .reorder
                 ) {
                     selectedCategory = category
                 }
+                .moveDisabled(category.isDirectory)
                 .categoryListRow(isLast: category.id == orderedCategories.last?.id)
             }
             .onMove(perform: moveCategories)
@@ -90,7 +92,8 @@ struct CategoriesEdit: View {
     }
 
     private func moveCategories(from source: IndexSet, to destination: Int) {
-        orderedCategories.reorder(fromOffsets: source, toOffset: destination, among: categories)
+        let foldersCount = orderedCategories.count(where: \.isDirectory)
+        orderedCategories.reorder(fromOffsets: source, toOffset: max(destination, foldersCount), among: categories)
         try? modelContext.save()
     }
 
