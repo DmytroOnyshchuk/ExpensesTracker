@@ -377,7 +377,7 @@ struct EditCategoryView: View {
         } label: {
             RoundedRectangle(cornerRadius: 8)
                 .fill(color.color)
-                .frame(width: 56, height: 36)
+                .frame(width: 56, height: 28)
                 .overlay(
                     RoundedRectangle(cornerRadius: 8)
                         .strokeBorder(Color.appWhite, lineWidth: draft.icon.iconColor == color ? 3 : 0)
