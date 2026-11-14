@@ -2,22 +2,10 @@ import SwiftData
 import SwiftUI
 import UniformTypeIdentifiers
 
-struct BackupDocument: FileDocument {
-    static let readableContentTypes: [UTType] = [.json]
+struct BackupShareFile: Identifiable {
+    let url: URL
 
-    let data: Data
-
-    init(data: Data) {
-        self.data = data
-    }
-
-    init(configuration: ReadConfiguration) throws {
-        self.data = configuration.file.regularFileContents ?? Data()
-    }
-
-    func fileWrapper(configuration _: WriteConfiguration) throws -> FileWrapper {
-        FileWrapper(regularFileWithContents: data)
-    }
+    var id: URL { url }
 }
 
 struct BackupsView: View {
@@ -26,13 +14,10 @@ struct BackupsView: View {
     @Query private var transactions: [Transaction]
     @Query private var categories: [TransactionCategory]
 
-    @State private var exportDocument: BackupDocument?
-    @State private var isExporting = false
     @State private var isImporting = false
-    @State private var isWorking = false
-    @State private var pendingImport: ImportedBackup?
+    @State private var sharedFile: BackupShareFile?
+    @State private var pickedFileURL: URL?
     @State private var errorMessage: String?
-    @State private var toastMessage: String?
 
     var body: some View {
         ScrollView(.vertical) {
@@ -43,21 +28,14 @@ struct BackupsView: View {
                         .padding(.vertical, 12)
                 }
 
-                BackupSection(title: L10n.backupsExportSection, hint: L10n.backupsExportHint) {
-                    MenuRow(title: L10n.backupsExportAction, systemImage: "square.and.arrow.up", action: startExport)
+                BackupSection(title: L10n.backupsExportSection) {
+                    MenuRow(title: L10n.backupsShareAction, systemImage: "square.and.arrow.up", action: startSharing)
                 }
-                .fileExporter(
-                    isPresented: $isExporting,
-                    document: exportDocument,
-                    contentType: .json,
-                    defaultFilename: BackupManager.defaultFilename,
-                    onCompletion: finishExport
-                )
 
-                BackupSection(title: L10n.backupsImportSection, hint: L10n.backupsImportHint) {
+                BackupSection(title: L10n.backupsImportSection) {
                     MenuRow(title: L10n.backupsImportAction, systemImage: "square.and.arrow.down", action: startImport)
                 }
-                .fileImporter(isPresented: $isImporting, allowedContentTypes: [.data], onCompletion: readPickedFile)
+                .fileImporter(isPresented: $isImporting, allowedContentTypes: [.data], onCompletion: pickFile)
             }
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .top)
@@ -65,22 +43,10 @@ struct BackupsView: View {
         .background(.appMain)
         .navigationTitle(L10n.menuBackups)
         .navigationBarTitleDisplayMode(.inline)
-        .disabled(isWorking)
-        .overlay {
-            if isWorking {
-                ProgressView()
-                    .controlSize(.large)
-                    .tint(.appPrimary)
-                    .padding(28)
-                    .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.2))
-            }
-        }
-        .toast($toastMessage)
-        .sheet(item: $pendingImport) { backup in
-            BackupImportSheet(backup: backup, onCancel: cancelImport) { mode in
-                apply(backup, mode: mode)
-            }
-            .presentationDetents([.medium])
+        .backupImport(from: $pickedFileURL)
+        .sheet(item: $sharedFile) { file in
+            ActivityView(items: [file.url])
+                .presentationDetents([.medium, .large])
         }
         .alert(L10n.error, isPresented: isErrorPresented) {
             Button(L10n.ok, role: .cancel) {}
@@ -93,21 +59,12 @@ struct BackupsView: View {
         Binding(get: { errorMessage != nil }, set: { if !$0 { errorMessage = nil } })
     }
 
-    private func startExport() {
+    private func startSharing() {
         FeedbackManager.buttonTapped()
         do {
-            exportDocument = try BackupDocument(data: BackupManager.exportData(from: modelContext))
-            isExporting = true
+            sharedFile = try BackupShareFile(url: BackupManager.writeExportFile(from: modelContext))
         } catch {
             show(error)
-        }
-    }
-
-    private func finishExport(_ result: Result<URL, Error>) {
-        exportDocument = nil
-        switch result {
-        case .success: toastMessage = L10n.backupsExportDone
-        case let .failure(error): show(error)
         }
     }
 
@@ -116,9 +73,63 @@ struct BackupsView: View {
         isImporting = true
     }
 
-    private func readPickedFile(_ result: Result<URL, Error>) {
+    private func pickFile(_ result: Result<URL, Error>) {
         guard case let .success(url) = result else { return }
+        pickedFileURL = url
+    }
 
+    private func show(_ error: Error) {
+        Logger.default.logError("Backup export failed", error: error, category: "BackupsView")
+        errorMessage = error.localizedDescription
+    }
+}
+
+private struct BackupImportModifier: ViewModifier {
+    @Binding var fileURL: URL?
+
+    @Environment(\.modelContext) private var modelContext
+
+    @State private var isWorking = false
+    @State private var pendingImport: ImportedBackup?
+    @State private var errorMessage: String?
+    @State private var toastMessage: String?
+
+    func body(content: Content) -> some View {
+        content
+            .disabled(isWorking)
+            .overlay {
+                if isWorking {
+                    ProgressView()
+                        .controlSize(.large)
+                        .tint(.appPrimary)
+                        .padding(28)
+                        .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.2))
+                }
+            }
+            .toast($toastMessage, duration: .seconds(3))
+            .sheet(item: $pendingImport) { backup in
+                BackupImportSheet(backup: backup, onCancel: cancelImport) { mode in
+                    apply(backup, mode: mode)
+                }
+                .presentationDetents([.medium])
+            }
+            .alert(L10n.error, isPresented: isErrorPresented) {
+                Button(L10n.ok, role: .cancel) {}
+            } message: {
+                Text(errorMessage ?? "")
+            }
+            .onChange(of: fileURL) { _, url in
+                guard let url else { return }
+                fileURL = nil
+                read(url)
+            }
+    }
+
+    private var isErrorPresented: Binding<Bool> {
+        Binding(get: { errorMessage != nil }, set: { if !$0 { errorMessage = nil } })
+    }
+
+    private func read(_ url: URL) {
         isWorking = true
         Task {
             defer { isWorking = false }
@@ -151,14 +162,19 @@ struct BackupsView: View {
     }
 
     private func show(_ error: Error) {
-        Logger.default.logError("Backup operation failed", error: error, category: "BackupsView")
+        Logger.default.logError("Backup import failed", error: error, category: "BackupImport")
         errorMessage = error.localizedDescription
+    }
+}
+
+extension View {
+    func backupImport(from fileURL: Binding<URL?>) -> some View {
+        modifier(BackupImportModifier(fileURL: fileURL))
     }
 }
 
 struct BackupSection<Content: View>: View {
     let title: String
-    var hint: String?
     @ViewBuilder let content: Content
 
     var body: some View {
@@ -174,13 +190,6 @@ struct BackupSection<Content: View>: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.vertical, 6)
             .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
-
-            if let hint {
-                Text(hint)
-                    .font(.appLight(13))
-                    .foregroundColor(.appLabel)
-                    .padding(.horizontal, 6)
-            }
         }
     }
 }

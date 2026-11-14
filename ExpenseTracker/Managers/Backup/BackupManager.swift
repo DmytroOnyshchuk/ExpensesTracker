@@ -75,6 +75,17 @@ enum BackupManager {
         return try encoder.encode(snapshot)
     }
 
+    @MainActor
+    static func writeExportFile(from context: ModelContext) throws -> URL {
+        let directory = FileManager.default.temporaryDirectory.appendingPathComponent("BackupExport", isDirectory: true)
+        try? FileManager.default.removeItem(at: directory)
+        try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
+
+        let url = directory.appendingPathComponent(defaultFilename).appendingPathExtension("json")
+        try exportData(from: context).write(to: url, options: .atomic)
+        return url
+    }
+
     static func read(from url: URL) throws -> ImportedBackup {
         let isAccessing = url.startAccessingSecurityScopedResource()
         defer {

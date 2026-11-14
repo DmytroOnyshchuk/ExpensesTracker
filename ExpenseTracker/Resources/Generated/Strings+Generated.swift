@@ -40,12 +40,6 @@ internal enum L10n {
   internal static let backupsErrorNewerVersion = L10n.tr("Localizable", "BACKUPS_ERROR_NEWER_VERSION", fallback: "This backup was made by a newer version of the app.")
   /// This file format is not supported.
   internal static let backupsErrorUnsupported = L10n.tr("Localizable", "BACKUPS_ERROR_UNSUPPORTED", fallback: "This file format is not supported.")
-  /// Save backup
-  internal static let backupsExportAction = L10n.tr("Localizable", "BACKUPS_EXPORT_ACTION", fallback: "Save backup")
-  /// Backup saved
-  internal static let backupsExportDone = L10n.tr("Localizable", "BACKUPS_EXPORT_DONE", fallback: "Backup saved")
-  /// Saves all categories, transactions and the balance to a single file.
-  internal static let backupsExportHint = L10n.tr("Localizable", "BACKUPS_EXPORT_HINT", fallback: "Saves all categories, transactions and the balance to a single file.")
   /// Export
   internal static let backupsExportSection = L10n.tr("Localizable", "BACKUPS_EXPORT_SECTION", fallback: "Export")
   /// Import from file
@@ -54,8 +48,6 @@ internal enum L10n {
   internal static func backupsImportDone(_ p1: Int, _ p2: Int) -> String {
     return L10n.tr("Localizable", "BACKUPS_IMPORT_DONE", p1, p2, fallback: "Added transactions: %d, categories: %d")
   }
-  /// Supports backups made by this app and .mok files.
-  internal static let backupsImportHint = L10n.tr("Localizable", "BACKUPS_IMPORT_HINT", fallback: "Supports backups made by this app and .mok files.")
   /// Add to current data
   internal static let backupsImportMerge = L10n.tr("Localizable", "BACKUPS_IMPORT_MERGE", fallback: "Add to current data")
   /// Period: %@
@@ -74,6 +66,8 @@ internal enum L10n {
   internal static func backupsImportSkipped(_ p1: Int) -> String {
     return L10n.tr("Localizable", "BACKUPS_IMPORT_SKIPPED", p1, fallback: "Income skipped: %d")
   }
+  /// Share backup
+  internal static let backupsShareAction = L10n.tr("Localizable", "BACKUPS_SHARE_ACTION", fallback: "Share backup")
   /// Transactions: %d
   internal static func backupsTransactionsCount(_ p1: Int) -> String {
     return L10n.tr("Localizable", "BACKUPS_TRANSACTIONS_COUNT", p1, fallback: "Transactions: %d")

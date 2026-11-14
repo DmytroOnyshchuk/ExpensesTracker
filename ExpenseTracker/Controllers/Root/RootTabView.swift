@@ -18,6 +18,7 @@ enum AppTab: Hashable {
 
 struct RootTabView: View {
     @State private var selection: AppTab = .home
+    @State private var openedFileURL: URL?
 
     var body: some View {
         TabView(selection: $selection) {
@@ -47,6 +48,13 @@ struct RootTabView: View {
             }
         }
         .tint(.appPrimary)
+        .onOpenURL(perform: openFile)
+        .backupImport(from: $openedFileURL)
+    }
+
+    private func openFile(_ url: URL) {
+        guard url.isFileURL else { return }
+        openedFileURL = url
     }
 }
 
