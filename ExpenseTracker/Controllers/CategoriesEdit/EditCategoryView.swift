@@ -167,8 +167,8 @@ struct EditCategoryView: View {
             if !subcategories.isEmpty {
                 subcategoriesSection
             }
-            iconSelectionSection
             colorSelectionSection
+            iconSelectionSection
 
             if isEdit {
                 Spacer(minLength: 40)
@@ -320,11 +320,15 @@ struct EditCategoryView: View {
                 .font(.appMedium(16))
                 .foregroundColor(.appWhite)
 
-            LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 4), spacing: 16) {
-                ForEach(IconColor.allCases, id: \.self) { color in
-                    colorButton(color)
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 12) {
+                    ForEach(IconColor.allCases, id: \.self) { color in
+                        colorButton(color)
+                    }
                 }
+                .padding(.horizontal, 24)
             }
+            .padding(.horizontal, -24)
         }
     }
 
@@ -371,19 +375,13 @@ struct EditCategoryView: View {
         Button {
             draft.icon.iconColor = color
         } label: {
-            VStack(spacing: 4) {
-                RoundedRectangle(cornerRadius: 6)
-                    .fill(color.color)
-                    .frame(height: 32)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 6)
-                            .stroke(Color.appWhite, lineWidth: draft.icon.iconColor == color ? 3 : 0)
-                    )
-
-                Text(color.rawValue.capitalized)
-                    .font(.appRegular(12))
-                    .foregroundColor(.appWhite.opacity(0.8))
-            }
+            RoundedRectangle(cornerRadius: 8)
+                .fill(color.color)
+                .frame(width: 56, height: 36)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8)
+                        .strokeBorder(Color.appWhite, lineWidth: draft.icon.iconColor == color ? 3 : 0)
+                )
         }
     }
 
