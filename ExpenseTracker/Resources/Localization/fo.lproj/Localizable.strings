@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Flyt út dátur";
 "BACKUPS_CSV_COMMENT" = "Viðmerking";
 "BACKUPS_CSV_FOLDER" = "Mappa";
-"BACKUPS_FORMAT_CSV" = "CSV — bert at hyggja at";
-"BACKUPS_FORMAT_JSON" = "JSON — fult trygdaravrit";
-"BACKUPS_FORMAT_MESSAGE" = "JSON er eitt fult trygdaravrit, sum kann flytast inn aftur. CSV er ein talva við flytingum at hyggja at í einum rokniarki — hon kann ikki flytast inn í appina.";
+"BACKUPS_FORMAT_CSV" = "Bert at hyggja at";
+"BACKUPS_FORMAT_JSON" = "Fult trygdaravrit";
 "BACKUPS_FORMAT_TITLE" = "Útflutningssnið";
 "BACKUPS_IMPORT_SKIPPED" = "Inntøkur lopnar um: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Flytingar: %d";

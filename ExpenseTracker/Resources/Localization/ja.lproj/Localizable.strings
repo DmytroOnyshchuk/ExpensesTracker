@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "データをエクスポート";
 "BACKUPS_CSV_COMMENT" = "コメント";
 "BACKUPS_CSV_FOLDER" = "フォルダ";
-"BACKUPS_FORMAT_CSV" = "CSV — 閲覧専用";
-"BACKUPS_FORMAT_JSON" = "JSON — 完全バックアップ";
-"BACKUPS_FORMAT_MESSAGE" = "JSON は再インポートできる完全なバックアップです。CSV は表計算ソフトで閲覧するための取引一覧で、アプリにインポートすることはできません。";
+"BACKUPS_FORMAT_CSV" = "閲覧専用";
+"BACKUPS_FORMAT_JSON" = "完全バックアップ";
 "BACKUPS_FORMAT_TITLE" = "エクスポート形式";
 "BACKUPS_IMPORT_SKIPPED" = "スキップした収入：%d";
 "BACKUPS_TRANSACTIONS_COUNT" = "取引：%d";

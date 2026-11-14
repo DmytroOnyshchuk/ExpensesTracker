@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "ډېټا صادر کړئ";
 "BACKUPS_CSV_COMMENT" = "تبصره";
 "BACKUPS_CSV_FOLDER" = "پوښۍ";
-"BACKUPS_FORMAT_CSV" = "CSV — یوازې د کتلو لپاره";
-"BACKUPS_FORMAT_JSON" = "JSON — بشپړ بېک اپ";
-"BACKUPS_FORMAT_MESSAGE" = "JSON بشپړ بېک اپ دی چې بېرته واردېدای شي. CSV د راکړو ورکړو جدول دی چې په سپریډشیټ کې د کتلو لپاره دی — اپ ته نه شي واردېدای.";
+"BACKUPS_FORMAT_CSV" = "یوازې د کتلو لپاره";
+"BACKUPS_FORMAT_JSON" = "بشپړ بېک اپ";
 "BACKUPS_FORMAT_TITLE" = "د صادرولو بڼه";
 "BACKUPS_IMPORT_SKIPPED" = "پرېښودل شوی عاید: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "راکړې ورکړې: %d";

@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "I-export ang data";
 "BACKUPS_CSV_COMMENT" = "Komento";
 "BACKUPS_CSV_FOLDER" = "Folder";
-"BACKUPS_FORMAT_CSV" = "CSV — pantingin lang";
-"BACKUPS_FORMAT_JSON" = "JSON — buong backup";
-"BACKUPS_FORMAT_MESSAGE" = "Ang JSON ay buong backup na maaaring i-import muli. Ang CSV ay talaan ng mga transaksyon para tingnan sa spreadsheet — hindi ito maaaring i-import sa app.";
+"BACKUPS_FORMAT_CSV" = "Pantingin lang";
+"BACKUPS_FORMAT_JSON" = "Buong backup";
 "BACKUPS_FORMAT_TITLE" = "Format ng export";
 "BACKUPS_IMPORT_SKIPPED" = "Nilaktawang kita: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Mga transaksyon: %d";

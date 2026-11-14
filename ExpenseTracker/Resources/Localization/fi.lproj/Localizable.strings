@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Vie tiedot";
 "BACKUPS_CSV_COMMENT" = "Kommentti";
 "BACKUPS_CSV_FOLDER" = "Kansio";
-"BACKUPS_FORMAT_CSV" = "CSV — vain katselu";
-"BACKUPS_FORMAT_JSON" = "JSON — täysi varmuuskopio";
-"BACKUPS_FORMAT_MESSAGE" = "JSON on täysi varmuuskopio, jonka voi tuoda takaisin. CSV on tapahtumataulukko taulukkolaskentaohjelmassa katselua varten — sitä ei voi tuoda sovellukseen.";
+"BACKUPS_FORMAT_CSV" = "Vain katselu";
+"BACKUPS_FORMAT_JSON" = "Täysi varmuuskopio";
 "BACKUPS_FORMAT_TITLE" = "Vientimuoto";
 "BACKUPS_IMPORT_SKIPPED" = "Ohitetut tulot: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Tapahtumat: %d";

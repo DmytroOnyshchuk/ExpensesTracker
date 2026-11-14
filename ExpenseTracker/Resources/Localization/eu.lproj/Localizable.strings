@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Esportatu datuak";
 "BACKUPS_CSV_COMMENT" = "Iruzkina";
 "BACKUPS_CSV_FOLDER" = "Karpeta";
-"BACKUPS_FORMAT_CSV" = "CSV — ikusteko soilik";
-"BACKUPS_FORMAT_JSON" = "JSON — babeskopia osoa";
-"BACKUPS_FORMAT_MESSAGE" = "JSON berriro inporta daitekeen babeskopia osoa da. CSV transakzioen taula bat da, kalkulu-orri batean ikusteko; ezin da aplikaziora inportatu.";
+"BACKUPS_FORMAT_CSV" = "Ikusteko soilik";
+"BACKUPS_FORMAT_JSON" = "Babeskopia osoa";
 "BACKUPS_FORMAT_TITLE" = "Esportazio-formatua";
 "BACKUPS_IMPORT_SKIPPED" = "Saltatutako diru-sarrerak: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transakzioak: %d";

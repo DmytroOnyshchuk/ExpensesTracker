@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "ส่งออกข้อมูล";
 "BACKUPS_CSV_COMMENT" = "หมายเหตุ";
 "BACKUPS_CSV_FOLDER" = "โฟลเดอร์";
-"BACKUPS_FORMAT_CSV" = "CSV — ดูอย่างเดียว";
-"BACKUPS_FORMAT_JSON" = "JSON — สำรองข้อมูลทั้งหมด";
-"BACKUPS_FORMAT_MESSAGE" = "JSON เป็นข้อมูลสำรองทั้งหมดที่นำเข้ากลับได้ CSV เป็นตารางรายการสำหรับดูในสเปรดชีต ไม่สามารถนำเข้าแอปได้";
+"BACKUPS_FORMAT_CSV" = "ดูอย่างเดียว";
+"BACKUPS_FORMAT_JSON" = "สำรองข้อมูลทั้งหมด";
 "BACKUPS_FORMAT_TITLE" = "รูปแบบการส่งออก";
 "BACKUPS_IMPORT_SKIPPED" = "รายรับที่ข้าม: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "รายการ: %d";

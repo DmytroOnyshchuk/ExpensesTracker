@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "تصدير البيانات";
 "BACKUPS_CSV_COMMENT" = "تعليق";
 "BACKUPS_CSV_FOLDER" = "المجلد";
-"BACKUPS_FORMAT_CSV" = "CSV — للعرض فقط";
-"BACKUPS_FORMAT_JSON" = "JSON — نسخة كاملة";
-"BACKUPS_FORMAT_MESSAGE" = "JSON نسخة كاملة يمكن استيرادها مرة أخرى. CSV جدول معاملات للعرض في جدول بيانات ولا يمكن استيراده إلى التطبيق.";
+"BACKUPS_FORMAT_CSV" = "للعرض فقط";
+"BACKUPS_FORMAT_JSON" = "نسخة كاملة";
 "BACKUPS_FORMAT_TITLE" = "تنسيق التصدير";
 "BACKUPS_IMPORT_SKIPPED" = "الدخل المتخطى: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "المعاملات: %d";

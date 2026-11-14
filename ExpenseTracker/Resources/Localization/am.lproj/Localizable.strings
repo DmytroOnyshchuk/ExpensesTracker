@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "ውሂብ ወደ ውጭ ላክ";
 "BACKUPS_CSV_COMMENT" = "አስተያየት";
 "BACKUPS_CSV_FOLDER" = "አቃፊ";
-"BACKUPS_FORMAT_CSV" = "CSV — ለመመልከት ብቻ";
-"BACKUPS_FORMAT_JSON" = "JSON — ሙሉ መጠባበቂያ";
-"BACKUPS_FORMAT_MESSAGE" = "JSON መልሶ ሊመጣ የሚችል ሙሉ መጠባበቂያ ነው። CSV በተመን ሉህ ለመመልከት የግብይቶች ሰንጠረዥ ነው — ወደ መተግበሪያው ሊመጣ አይችልም።";
+"BACKUPS_FORMAT_CSV" = "ለመመልከት ብቻ";
+"BACKUPS_FORMAT_JSON" = "ሙሉ መጠባበቂያ";
 "BACKUPS_FORMAT_TITLE" = "የመላኪያ ቅርጸት";
 "BACKUPS_IMPORT_SKIPPED" = "የተዘለሉ ገቢዎች፦ %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "ግብይቶች፦ %d";

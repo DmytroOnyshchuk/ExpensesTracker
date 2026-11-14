@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Fitar da bayanai";
 "BACKUPS_CSV_COMMENT" = "Tsokaci";
 "BACKUPS_CSV_FOLDER" = "Babban fayil";
-"BACKUPS_FORMAT_CSV" = "CSV — don kallo kawai";
-"BACKUPS_FORMAT_JSON" = "JSON — cikakkiyar ajiya";
-"BACKUPS_FORMAT_MESSAGE" = "JSON cikakkiyar ajiya ce da za a iya sake shigo da ita. CSV jadawalin hada-hada ne don kallo a cikin maƙunsar bayanai — ba za a iya shigo da shi cikin manhajar ba.";
+"BACKUPS_FORMAT_CSV" = "Don kallo kawai";
+"BACKUPS_FORMAT_JSON" = "Cikakkiyar ajiya";
 "BACKUPS_FORMAT_TITLE" = "Tsarin fitarwa";
 "BACKUPS_IMPORT_SKIPPED" = "Kuɗin shiga da aka tsallake: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Hada-hada: %d";

@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "ڈیٹا ایکسپورٹ کریں";
 "BACKUPS_CSV_COMMENT" = "تبصرہ";
 "BACKUPS_CSV_FOLDER" = "فولڈر";
-"BACKUPS_FORMAT_CSV" = "CSV — صرف دیکھنے کے لیے";
-"BACKUPS_FORMAT_JSON" = "JSON — مکمل بیک اپ";
-"BACKUPS_FORMAT_MESSAGE" = "JSON ایک مکمل بیک اپ ہے جسے دوبارہ امپورٹ کیا جا سکتا ہے۔ CSV لین دین کا جدول ہے جو اسپریڈشیٹ میں دیکھنے کے لیے ہے — اسے ایپ میں امپورٹ نہیں کیا جا سکتا۔";
+"BACKUPS_FORMAT_CSV" = "صرف دیکھنے کے لیے";
+"BACKUPS_FORMAT_JSON" = "مکمل بیک اپ";
 "BACKUPS_FORMAT_TITLE" = "ایکسپورٹ فارمیٹ";
 "BACKUPS_IMPORT_SKIPPED" = "چھوڑی گئی آمدنی: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "لین دین: %d";

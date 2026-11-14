@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "தரவை ஏற்றுமதி செய்";
 "BACKUPS_CSV_COMMENT" = "கருத்து";
 "BACKUPS_CSV_FOLDER" = "கோப்புறை";
-"BACKUPS_FORMAT_CSV" = "CSV — பார்வைக்கு மட்டும்";
-"BACKUPS_FORMAT_JSON" = "JSON — முழுக் காப்புப்பிரதி";
-"BACKUPS_FORMAT_MESSAGE" = "JSON என்பது மீண்டும் இறக்குமதி செய்யக்கூடிய முழுக் காப்புப்பிரதி. CSV என்பது விரிதாளில் பார்ப்பதற்கான பரிவர்த்தனை அட்டவணை — இதை ஆப்பில் இறக்குமதி செய்ய முடியாது.";
+"BACKUPS_FORMAT_CSV" = "பார்வைக்கு மட்டும்";
+"BACKUPS_FORMAT_JSON" = "முழுக் காப்புப்பிரதி";
 "BACKUPS_FORMAT_TITLE" = "ஏற்றுமதி வடிவம்";
 "BACKUPS_IMPORT_SKIPPED" = "தவிர்க்கப்பட்ட வருமானம்: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "பரிவர்த்தனைகள்: %d";

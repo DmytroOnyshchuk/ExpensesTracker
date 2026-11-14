@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "هەناردەکردنی داتا";
 "BACKUPS_CSV_COMMENT" = "تێبینی";
 "BACKUPS_CSV_FOLDER" = "بوخچە";
-"BACKUPS_FORMAT_CSV" = "CSV — تەنها بۆ بینین";
-"BACKUPS_FORMAT_JSON" = "JSON — پاڵپشتی تەواو";
-"BACKUPS_FORMAT_MESSAGE" = "JSON پاڵپشتێکی تەواوە کە دەتوانرێت دووبارە هاوردە بکرێتەوە. CSV خشتەی مامەڵەکانە بۆ بینین لە خشتەکاردا — ناتوانرێت هاوردەی ئەپەکە بکرێت.";
+"BACKUPS_FORMAT_CSV" = "تەنها بۆ بینین";
+"BACKUPS_FORMAT_JSON" = "پاڵپشتی تەواو";
 "BACKUPS_FORMAT_TITLE" = "جۆری هەناردەکردن";
 "BACKUPS_IMPORT_SKIPPED" = "داهاتی پەڕێنراو: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "مامەڵەکان: %d";

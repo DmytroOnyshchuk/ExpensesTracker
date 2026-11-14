@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Kó dátà jáde";
 "BACKUPS_CSV_COMMENT" = "Àlàyé";
 "BACKUPS_CSV_FOLDER" = "Fódà";
-"BACKUPS_FORMAT_CSV" = "CSV — fún wíwò nìkan";
-"BACKUPS_FORMAT_JSON" = "JSON — àfẹ̀yìntì kíkún";
-"BACKUPS_FORMAT_MESSAGE" = "JSON jẹ́ àfẹ̀yìntì kíkún tí a lè kó wọlé padà. CSV jẹ́ tábìlì ìdúnàádúrà fún wíwò nínú ìwé àkọsílẹ̀ ìṣirò — a kò lè kó o wọlé sínú áàpù.";
+"BACKUPS_FORMAT_CSV" = "Fún wíwò nìkan";
+"BACKUPS_FORMAT_JSON" = "Àfẹ̀yìntì kíkún";
 "BACKUPS_FORMAT_TITLE" = "Irú ìkójáde";
 "BACKUPS_IMPORT_SKIPPED" = "Owó-wíwọlé tí a fò: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Àwọn ìdúnàádúrà: %d";

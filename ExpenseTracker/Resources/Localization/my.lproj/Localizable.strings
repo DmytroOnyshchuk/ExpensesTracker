@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "ဒေတာ ထုတ်ယူရန်";
 "BACKUPS_CSV_COMMENT" = "မှတ်ချက်";
 "BACKUPS_CSV_FOLDER" = "ဖိုင်တွဲ";
-"BACKUPS_FORMAT_CSV" = "CSV — ကြည့်ရန်သာ";
-"BACKUPS_FORMAT_JSON" = "JSON — အရန်မိတ္တူအပြည့်";
-"BACKUPS_FORMAT_MESSAGE" = "JSON သည် ပြန်လည်တင်သွင်းနိုင်သော အရန်မိတ္တူအပြည့်ဖြစ်သည်။ CSV သည် စာရင်းဇယားတွင် ကြည့်ရန် မှတ်တမ်းဇယားဖြစ်ပြီး အက်ပ်ထဲသို့ တင်သွင်း၍မရပါ။";
+"BACKUPS_FORMAT_CSV" = "ကြည့်ရန်သာ";
+"BACKUPS_FORMAT_JSON" = "အရန်မိတ္တူအပြည့်";
 "BACKUPS_FORMAT_TITLE" = "ထုတ်ယူမည့် ဖော်မတ်";
 "BACKUPS_IMPORT_SKIPPED" = "ကျော်ထားသော ဝင်ငွေ- %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "ငွေလွှဲမှတ်တမ်းများ- %d";

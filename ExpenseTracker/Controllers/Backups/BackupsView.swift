@@ -32,17 +32,6 @@ struct BackupsView: View {
                 BackupSection(title: L10n.backupsExportSection) {
                     MenuRow(title: L10n.backupsShareAction, systemImage: "square.and.arrow.up", action: chooseFormat)
                 }
-                .confirmationDialog(L10n.backupsFormatTitle, isPresented: $isChoosingFormat, titleVisibility: .visible) {
-                    Button(L10n.backupsFormatJson) {
-                        share(.json)
-                    }
-                    Button(L10n.backupsFormatCsv) {
-                        share(.csv)
-                    }
-                    Button(L10n.cancel, role: .cancel) {}
-                } message: {
-                    Text(L10n.backupsFormatMessage)
-                }
 
                 BackupSection(title: L10n.backupsImportSection) {
                     MenuRow(title: L10n.backupsImportAction, systemImage: "square.and.arrow.down", action: startImport)
@@ -56,6 +45,16 @@ struct BackupsView: View {
         .navigationTitle(L10n.menuBackups)
         .navigationBarTitleDisplayMode(.inline)
         .backupImport(from: $pickedFileURL)
+        .overlay {
+            if isChoosingFormat {
+                BackupFormatPopup(onCancel: closeFormatPopup) { format in
+                    closeFormatPopup()
+                    share(format)
+                }
+                .transition(.opacity)
+            }
+        }
+        .animation(.easeInOut(duration: 0.2), value: isChoosingFormat)
         .sheet(item: $sharedFile) { file in
             ActivityView(items: [file.url])
                 .presentationDetents([.medium, .large])
@@ -74,6 +73,10 @@ struct BackupsView: View {
     private func chooseFormat() {
         FeedbackManager.buttonTapped()
         isChoosingFormat = true
+    }
+
+    private func closeFormatPopup() {
+        isChoosingFormat = false
     }
 
     private func share(_ format: BackupExportFormat) {
@@ -186,6 +189,76 @@ private struct BackupImportModifier: ViewModifier {
 extension View {
     func backupImport(from fileURL: Binding<URL?>) -> some View {
         modifier(BackupImportModifier(fileURL: fileURL))
+    }
+}
+
+struct BackupFormatPopup: View {
+    let onCancel: () -> Void
+    let onConfirm: (BackupExportFormat) -> Void
+
+    @State private var selection = BackupExportFormat.json
+
+    var body: some View {
+        TransactionEditPopup(onCancel: onCancel, onConfirm: { onConfirm(selection) }) {
+            VStack(spacing: 12) {
+                Text(L10n.backupsFormatTitle)
+                    .font(.appMedium(16))
+                    .foregroundColor(.appLabel)
+
+                ForEach(BackupExportFormat.allCases) { format in
+                    BackupFormatRow(format: format, isSelected: format == selection) {
+                        select(format)
+                    }
+                }
+            }
+            .padding(.horizontal, 16)
+        }
+    }
+
+    private func select(_ format: BackupExportFormat) {
+        guard format != selection else { return }
+        FeedbackManager.selectionChanged()
+        selection = format
+    }
+}
+
+struct BackupFormatRow: View {
+    let format: BackupExportFormat
+    let isSelected: Bool
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            HStack(spacing: 12) {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(format.title)
+                        .font(.appRegular(18))
+                        .foregroundColor(.appWhite)
+
+                    Text(format.summary)
+                        .font(.appLight(14))
+                        .foregroundColor(.appLabel)
+                        .multilineTextAlignment(.leading)
+                }
+
+                Spacer(minLength: 8)
+
+                Image(systemName: isSelected ? "checkmark.circle.fill" : "circle")
+                    .font(.system(size: 24))
+                    .foregroundColor(isSelected ? .appPrimary : .appLabel.opacity(0.6))
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(.appMain.opacity(LiquidGlass.isAvailable ? 0.5 : 1))
+            .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+            .overlay {
+                RoundedRectangle(cornerRadius: 14, style: .continuous)
+                    .stroke(Color.appPrimary, lineWidth: isSelected ? 1.5 : 0)
+            }
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
     }
 }
 
@@ -315,6 +388,11 @@ struct BackupSheetButton: View {
         BackupsView()
     }
     .modelContainer(makePreviewModelContainer())
+}
+
+#Preview("Format popup") {
+    BackupFormatPopup(onCancel: {}, onConfirm: { _ in })
+        .background(.appMain)
 }
 
 #Preview("Import sheet") {

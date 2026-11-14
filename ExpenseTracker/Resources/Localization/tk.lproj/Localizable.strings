@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Maglumatlary eksport et";
 "BACKUPS_CSV_COMMENT" = "Teswir";
 "BACKUPS_CSV_FOLDER" = "Bukja";
-"BACKUPS_FORMAT_CSV" = "CSV — diňe görmek üçin";
-"BACKUPS_FORMAT_JSON" = "JSON — doly nusga";
-"BACKUPS_FORMAT_MESSAGE" = "JSON — gaýtadan import edip bolýan doly nusga. CSV — elektron tablisada görmek üçin amallaryň tablisasy, ony programma import edip bolmaýar.";
+"BACKUPS_FORMAT_CSV" = "Diňe görmek üçin";
+"BACKUPS_FORMAT_JSON" = "Doly nusga";
 "BACKUPS_FORMAT_TITLE" = "Eksport formaty";
 "BACKUPS_IMPORT_SKIPPED" = "Goýberilen girdejiler: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Amallar: %d";

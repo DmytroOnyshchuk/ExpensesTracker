@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Exporta les dades";
 "BACKUPS_CSV_COMMENT" = "Comentari";
 "BACKUPS_CSV_FOLDER" = "Carpeta";
-"BACKUPS_FORMAT_CSV" = "CSV — només visualització";
-"BACKUPS_FORMAT_JSON" = "JSON — còpia completa";
-"BACKUPS_FORMAT_MESSAGE" = "JSON és una còpia completa que es pot tornar a importar. CSV és una taula de transaccions per veure en un full de càlcul; no es pot importar a l’app.";
+"BACKUPS_FORMAT_CSV" = "Només visualització";
+"BACKUPS_FORMAT_JSON" = "Còpia completa";
 "BACKUPS_FORMAT_TITLE" = "Format d’exportació";
 "BACKUPS_IMPORT_SKIPPED" = "Ingressos omesos: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transaccions: %d";

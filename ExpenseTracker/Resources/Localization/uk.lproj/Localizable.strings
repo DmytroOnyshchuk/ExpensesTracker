@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Експортувати дані";
 "BACKUPS_CSV_COMMENT" = "Коментар";
 "BACKUPS_CSV_FOLDER" = "Папка";
-"BACKUPS_FORMAT_CSV" = "CSV — лише перегляд";
-"BACKUPS_FORMAT_JSON" = "JSON — повна копія";
-"BACKUPS_FORMAT_MESSAGE" = "JSON — повна копія, яку можна імпортувати назад. CSV — таблиця операцій для перегляду в Excel або Numbers, імпортувати її в застосунок неможливо.";
+"BACKUPS_FORMAT_CSV" = "Лише перегляд";
+"BACKUPS_FORMAT_JSON" = "Повна копія";
 "BACKUPS_FORMAT_TITLE" = "Формат експорту";
 "BACKUPS_IMPORT_SKIPPED" = "Пропущено доходів: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Операції: %d";

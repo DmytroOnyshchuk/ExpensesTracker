@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "දත්ත නිර්යාත කරන්න";
 "BACKUPS_CSV_COMMENT" = "සටහන";
 "BACKUPS_CSV_FOLDER" = "ෆෝල්ඩරය";
-"BACKUPS_FORMAT_CSV" = "CSV — බැලීමට පමණි";
-"BACKUPS_FORMAT_JSON" = "JSON — සම්පූර්ණ උපස්ථය";
-"BACKUPS_FORMAT_MESSAGE" = "JSON යනු නැවත ආයාත කළ හැකි සම්පූර්ණ උපස්ථයකි. CSV යනු පැතුරුම්පතක බැලීම සඳහා ගනුදෙනු වගුවකි — එය යෙදුමට ආයාත කළ නොහැක.";
+"BACKUPS_FORMAT_CSV" = "බැලීමට පමණි";
+"BACKUPS_FORMAT_JSON" = "සම්පූර්ණ උපස්ථය";
 "BACKUPS_FORMAT_TITLE" = "නිර්යාත ආකෘතිය";
 "BACKUPS_IMPORT_SKIPPED" = "මඟහැරි ආදායම්: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "ගනුදෙනු: %d";

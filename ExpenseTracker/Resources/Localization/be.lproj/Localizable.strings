@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Экспартаваць даныя";
 "BACKUPS_CSV_COMMENT" = "Каментарый";
 "BACKUPS_CSV_FOLDER" = "Папка";
-"BACKUPS_FORMAT_CSV" = "CSV — толькі прагляд";
-"BACKUPS_FORMAT_JSON" = "JSON — поўная копія";
-"BACKUPS_FORMAT_MESSAGE" = "JSON — поўная копія, якую можна імпартаваць назад. CSV — табліца аперацый для прагляду ў электроннай табліцы, імпартаваць яе ў праграму нельга.";
+"BACKUPS_FORMAT_CSV" = "Толькі прагляд";
+"BACKUPS_FORMAT_JSON" = "Поўная копія";
 "BACKUPS_FORMAT_TITLE" = "Фармат экспарту";
 "BACKUPS_IMPORT_SKIPPED" = "Прапушчана даходаў: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Аперацыі: %d";

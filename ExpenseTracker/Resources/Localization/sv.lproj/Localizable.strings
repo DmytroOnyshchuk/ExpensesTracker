@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Exportera data";
 "BACKUPS_CSV_COMMENT" = "Kommentar";
 "BACKUPS_CSV_FOLDER" = "Mapp";
-"BACKUPS_FORMAT_CSV" = "CSV — endast visning";
-"BACKUPS_FORMAT_JSON" = "JSON — fullständig säkerhetskopia";
-"BACKUPS_FORMAT_MESSAGE" = "JSON är en fullständig säkerhetskopia som kan importeras tillbaka. CSV är en tabell med transaktioner för visning i ett kalkylprogram — den kan inte importeras till appen.";
+"BACKUPS_FORMAT_CSV" = "Endast visning";
+"BACKUPS_FORMAT_JSON" = "Fullständig säkerhetskopia";
 "BACKUPS_FORMAT_TITLE" = "Exportformat";
 "BACKUPS_IMPORT_SKIPPED" = "Överhoppade inkomster: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transaktioner: %d";

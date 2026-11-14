@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Xuất dữ liệu";
 "BACKUPS_CSV_COMMENT" = "Ghi chú";
 "BACKUPS_CSV_FOLDER" = "Thư mục";
-"BACKUPS_FORMAT_CSV" = "CSV — chỉ để xem";
-"BACKUPS_FORMAT_JSON" = "JSON — sao lưu đầy đủ";
-"BACKUPS_FORMAT_MESSAGE" = "JSON là bản sao lưu đầy đủ có thể nhập lại. CSV là bảng giao dịch để xem trong bảng tính — không thể nhập vào ứng dụng.";
+"BACKUPS_FORMAT_CSV" = "Chỉ để xem";
+"BACKUPS_FORMAT_JSON" = "Sao lưu đầy đủ";
 "BACKUPS_FORMAT_TITLE" = "Định dạng xuất";
 "BACKUPS_IMPORT_SKIPPED" = "Thu nhập đã bỏ qua: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Giao dịch: %d";

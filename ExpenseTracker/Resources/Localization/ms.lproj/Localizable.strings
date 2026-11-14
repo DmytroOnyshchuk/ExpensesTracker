@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Eksport data";
 "BACKUPS_CSV_COMMENT" = "Komen";
 "BACKUPS_CSV_FOLDER" = "Folder";
-"BACKUPS_FORMAT_CSV" = "CSV — untuk paparan sahaja";
-"BACKUPS_FORMAT_JSON" = "JSON — sandaran penuh";
-"BACKUPS_FORMAT_MESSAGE" = "JSON ialah sandaran penuh yang boleh diimport semula. CSV ialah jadual transaksi untuk dilihat dalam hamparan — ia tidak boleh diimport ke dalam aplikasi.";
+"BACKUPS_FORMAT_CSV" = "Untuk paparan sahaja";
+"BACKUPS_FORMAT_JSON" = "Sandaran penuh";
 "BACKUPS_FORMAT_TITLE" = "Format eksport";
 "BACKUPS_IMPORT_SKIPPED" = "Pendapatan dilangkau: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transaksi: %d";

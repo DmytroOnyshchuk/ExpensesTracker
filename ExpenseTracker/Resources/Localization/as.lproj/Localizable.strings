@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "ডেটা ৰপ্তানি কৰক";
 "BACKUPS_CSV_COMMENT" = "মন্তব্য";
 "BACKUPS_CSV_FOLDER" = "ফ'ল্ডাৰ";
-"BACKUPS_FORMAT_CSV" = "CSV — কেৱল চাবৰ বাবে";
-"BACKUPS_FORMAT_JSON" = "JSON — সম্পূৰ্ণ বেকআপ";
-"BACKUPS_FORMAT_MESSAGE" = "JSON হৈছে পুনৰ আমদানি কৰিব পৰা সম্পূৰ্ণ বেকআপ। CSV হৈছে স্প্ৰেডশ্বীটত চাবৰ বাবে লেনদেনৰ তালিকা — ইয়াক এপ্‌ত আমদানি কৰিব নোৱাৰি।";
+"BACKUPS_FORMAT_CSV" = "কেৱল চাবৰ বাবে";
+"BACKUPS_FORMAT_JSON" = "সম্পূৰ্ণ বেকআপ";
 "BACKUPS_FORMAT_TITLE" = "ৰপ্তানি ফৰ্মেট";
 "BACKUPS_IMPORT_SKIPPED" = "বাদ দিয়া আয়: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "লেনদেন: %d";

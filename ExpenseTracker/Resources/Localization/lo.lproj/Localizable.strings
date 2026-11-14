@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "ສົ່ງອອກຂໍ້ມູນ";
 "BACKUPS_CSV_COMMENT" = "ໝາຍເຫດ";
 "BACKUPS_CSV_FOLDER" = "ໂຟນເດີ";
-"BACKUPS_FORMAT_CSV" = "CSV — ສຳລັບເບິ່ງເທົ່ານັ້ນ";
-"BACKUPS_FORMAT_JSON" = "JSON — ສຳຮອງຂໍ້ມູນເຕັມ";
-"BACKUPS_FORMAT_MESSAGE" = "JSON ເປັນການສຳຮອງຂໍ້ມູນເຕັມທີ່ສາມາດນຳເຂົ້າຄືນໄດ້. CSV ເປັນຕາຕະລາງລາຍການສຳລັບເບິ່ງໃນສະເປຣດຊີດ — ບໍ່ສາມາດນຳເຂົ້າແອັບໄດ້.";
+"BACKUPS_FORMAT_CSV" = "ສຳລັບເບິ່ງເທົ່ານັ້ນ";
+"BACKUPS_FORMAT_JSON" = "ສຳຮອງຂໍ້ມູນເຕັມ";
 "BACKUPS_FORMAT_TITLE" = "ຮູບແບບການສົ່ງອອກ";
 "BACKUPS_IMPORT_SKIPPED" = "ລາຍຮັບທີ່ຂ້າມ: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "ລາຍການ: %d";

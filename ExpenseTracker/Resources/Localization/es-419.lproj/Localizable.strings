@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Exportar datos";
 "BACKUPS_CSV_COMMENT" = "Comentario";
 "BACKUPS_CSV_FOLDER" = "Carpeta";
-"BACKUPS_FORMAT_CSV" = "CSV — solo lectura";
-"BACKUPS_FORMAT_JSON" = "JSON — copia completa";
-"BACKUPS_FORMAT_MESSAGE" = "JSON es una copia completa que se puede volver a importar. CSV es una tabla de transacciones para ver en una hoja de cálculo; no se puede importar en la app.";
+"BACKUPS_FORMAT_CSV" = "Solo lectura";
+"BACKUPS_FORMAT_JSON" = "Copia completa";
 "BACKUPS_FORMAT_TITLE" = "Formato de exportación";
 "BACKUPS_IMPORT_SKIPPED" = "Ingresos omitidos: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transacciones: %d";

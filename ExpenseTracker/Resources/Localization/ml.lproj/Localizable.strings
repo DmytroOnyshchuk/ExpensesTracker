@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "ഡാറ്റ എക്സ്പോർട്ട് ചെയ്യുക";
 "BACKUPS_CSV_COMMENT" = "അഭിപ്രായം";
 "BACKUPS_CSV_FOLDER" = "ഫോൾഡർ";
-"BACKUPS_FORMAT_CSV" = "CSV — കാണാൻ മാത്രം";
-"BACKUPS_FORMAT_JSON" = "JSON — പൂർണ്ണ ബാക്കപ്പ്";
-"BACKUPS_FORMAT_MESSAGE" = "JSON വീണ്ടും ഇംപോർട്ട് ചെയ്യാവുന്ന പൂർണ്ണ ബാക്കപ്പാണ്. CSV സ്പ്രെഡ്ഷീറ്റിൽ കാണാനുള്ള ഇടപാടുകളുടെ പട്ടികയാണ് — അത് ആപ്പിലേക്ക് ഇംപോർട്ട് ചെയ്യാനാവില്ല.";
+"BACKUPS_FORMAT_CSV" = "കാണാൻ മാത്രം";
+"BACKUPS_FORMAT_JSON" = "പൂർണ്ണ ബാക്കപ്പ്";
 "BACKUPS_FORMAT_TITLE" = "എക്സ്പോർട്ട് ഫോർമാറ്റ്";
 "BACKUPS_IMPORT_SKIPPED" = "ഒഴിവാക്കിയ വരുമാനം: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "ഇടപാടുകൾ: %d";

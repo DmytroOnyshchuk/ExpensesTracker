@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Adatok exportálása";
 "BACKUPS_CSV_COMMENT" = "Megjegyzés";
 "BACKUPS_CSV_FOLDER" = "Mappa";
-"BACKUPS_FORMAT_CSV" = "CSV — csak megtekintés";
-"BACKUPS_FORMAT_JSON" = "JSON — teljes mentés";
-"BACKUPS_FORMAT_MESSAGE" = "A JSON teljes mentés, amely visszaimportálható. A CSV a tranzakciók táblázata táblázatkezelőben való megtekintéshez — az appba nem importálható.";
+"BACKUPS_FORMAT_CSV" = "Csak megtekintés";
+"BACKUPS_FORMAT_JSON" = "Teljes mentés";
 "BACKUPS_FORMAT_TITLE" = "Exportformátum";
 "BACKUPS_IMPORT_SKIPPED" = "Kihagyott bevételek: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Tranzakciók: %d";

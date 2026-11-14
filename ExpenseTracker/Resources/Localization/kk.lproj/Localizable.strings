@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Деректерді экспорттау";
 "BACKUPS_CSV_COMMENT" = "Түсініктеме";
 "BACKUPS_CSV_FOLDER" = "Қалта";
-"BACKUPS_FORMAT_CSV" = "CSV — тек қарау үшін";
-"BACKUPS_FORMAT_JSON" = "JSON — толық көшірме";
-"BACKUPS_FORMAT_MESSAGE" = "JSON — қайта импорттауға болатын толық көшірме. CSV — электрондық кестеде қарауға арналған операциялар кестесі, оны қолданбаға импорттау мүмкін емес.";
+"BACKUPS_FORMAT_CSV" = "Тек қарау үшін";
+"BACKUPS_FORMAT_JSON" = "Толық көшірме";
 "BACKUPS_FORMAT_TITLE" = "Экспорт пішімі";
 "BACKUPS_IMPORT_SKIPPED" = "Өткізілген кірістер: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Операциялар: %d";

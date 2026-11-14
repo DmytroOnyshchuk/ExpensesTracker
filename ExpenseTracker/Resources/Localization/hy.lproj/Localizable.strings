@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Արտահանել տվյալները";
 "BACKUPS_CSV_COMMENT" = "Մեկնաբանություն";
 "BACKUPS_CSV_FOLDER" = "Պանակ";
-"BACKUPS_FORMAT_CSV" = "CSV — միայն դիտելու համար";
-"BACKUPS_FORMAT_JSON" = "JSON — ամբողջական պատճեն";
-"BACKUPS_FORMAT_MESSAGE" = "JSON-ը ամբողջական պատճեն է, որը կարելի է նորից ներմուծել։ CSV-ն գործարքների աղյուսակ է էլեկտրոնային աղյուսակում դիտելու համար. այն հնարավոր չէ ներմուծել հավելված։";
+"BACKUPS_FORMAT_CSV" = "Միայն դիտելու համար";
+"BACKUPS_FORMAT_JSON" = "Ամբողջական պատճեն";
 "BACKUPS_FORMAT_TITLE" = "Արտահանման ձևաչափ";
 "BACKUPS_IMPORT_SKIPPED" = "Բաց թողնված եկամուտներ՝ %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Գործարքներ՝ %d";

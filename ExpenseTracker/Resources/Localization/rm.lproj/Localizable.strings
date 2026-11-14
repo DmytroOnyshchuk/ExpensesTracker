@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Exportar datas";
 "BACKUPS_CSV_COMMENT" = "Commentari";
 "BACKUPS_CSV_FOLDER" = "Ordinatur";
-"BACKUPS_FORMAT_CSV" = "CSV — mo per guardar";
-"BACKUPS_FORMAT_JSON" = "JSON — copia cumpletta";
-"BACKUPS_FORMAT_MESSAGE" = "JSON è ina copia cumpletta che po vegnir importada puspè. CSV è ina tabella da transacziuns per guardar en in program da tabellas — ella na po betg vegnir importada en l’app.";
+"BACKUPS_FORMAT_CSV" = "Mo per guardar";
+"BACKUPS_FORMAT_JSON" = "Copia cumpletta";
 "BACKUPS_FORMAT_TITLE" = "Format d’export";
 "BACKUPS_IMPORT_SKIPPED" = "Entradas sursiglidas: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transacziuns: %d";

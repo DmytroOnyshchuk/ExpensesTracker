@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Eksportuoti duomenis";
 "BACKUPS_CSV_COMMENT" = "Komentaras";
 "BACKUPS_CSV_FOLDER" = "Aplankas";
-"BACKUPS_FORMAT_CSV" = "CSV — tik peržiūrai";
-"BACKUPS_FORMAT_JSON" = "JSON — visa kopija";
-"BACKUPS_FORMAT_MESSAGE" = "JSON yra visa kopija, kurią galima importuoti atgal. CSV yra operacijų lentelė peržiūrai skaičiuoklėje — jos importuoti į programėlę negalima.";
+"BACKUPS_FORMAT_CSV" = "Tik peržiūrai";
+"BACKUPS_FORMAT_JSON" = "Visa kopija";
 "BACKUPS_FORMAT_TITLE" = "Eksporto formatas";
 "BACKUPS_IMPORT_SKIPPED" = "Praleista pajamų: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Operacijos: %d";

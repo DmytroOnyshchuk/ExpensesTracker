@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "డేటాను ఎగుమతి చేయండి";
 "BACKUPS_CSV_COMMENT" = "వ్యాఖ్య";
 "BACKUPS_CSV_FOLDER" = "ఫోల్డర్";
-"BACKUPS_FORMAT_CSV" = "CSV — వీక్షణకు మాత్రమే";
-"BACKUPS_FORMAT_JSON" = "JSON — పూర్తి బ్యాకప్";
-"BACKUPS_FORMAT_MESSAGE" = "JSON అనేది తిరిగి దిగుమతి చేయగల పూర్తి బ్యాకప్. CSV అనేది స్ప్రెడ్‌షీట్‌లో చూడటానికి లావాదేవీల పట్టిక — దీన్ని యాప్‌లోకి దిగుమతి చేయడం సాధ్యం కాదు.";
+"BACKUPS_FORMAT_CSV" = "వీక్షణకు మాత్రమే";
+"BACKUPS_FORMAT_JSON" = "పూర్తి బ్యాకప్";
 "BACKUPS_FORMAT_TITLE" = "ఎగుమతి ఫార్మాట్";
 "BACKUPS_IMPORT_SKIPPED" = "దాటవేసిన ఆదాయం: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "లావాదేవీలు: %d";

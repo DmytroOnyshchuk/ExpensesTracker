@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Dhoofi xogta";
 "BACKUPS_CSV_COMMENT" = "Faallo";
 "BACKUPS_CSV_FOLDER" = "Gal";
-"BACKUPS_FORMAT_CSV" = "CSV — daawasho keliya";
-"BACKUPS_FORMAT_JSON" = "JSON — kayd buuxa";
-"BACKUPS_FORMAT_MESSAGE" = "JSON waa kayd buuxa oo dib loo soo dejin karo. CSV waa shax dhaqdhaqaaqyo ah oo lagu daawado xaashi xisaabeed — laguma soo dejin karo abka.";
+"BACKUPS_FORMAT_CSV" = "Daawasho keliya";
+"BACKUPS_FORMAT_JSON" = "Kayd buuxa";
 "BACKUPS_FORMAT_TITLE" = "Qaabka dhoofinta";
 "BACKUPS_IMPORT_SKIPPED" = "Dakhliga la booday: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Dhaqdhaqaaqyada: %d";

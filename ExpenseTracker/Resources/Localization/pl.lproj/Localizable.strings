@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Eksportuj dane";
 "BACKUPS_CSV_COMMENT" = "Komentarz";
 "BACKUPS_CSV_FOLDER" = "Folder";
-"BACKUPS_FORMAT_CSV" = "CSV — tylko podgląd";
-"BACKUPS_FORMAT_JSON" = "JSON — pełna kopia";
-"BACKUPS_FORMAT_MESSAGE" = "JSON to pełna kopia, którą można zaimportować z powrotem. CSV to tabela transakcji do przeglądania w arkuszu kalkulacyjnym — nie można jej zaimportować do aplikacji.";
+"BACKUPS_FORMAT_CSV" = "Tylko podgląd";
+"BACKUPS_FORMAT_JSON" = "Pełna kopia";
 "BACKUPS_FORMAT_TITLE" = "Format eksportu";
 "BACKUPS_IMPORT_SKIPPED" = "Pominięte przychody: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transakcje: %d";

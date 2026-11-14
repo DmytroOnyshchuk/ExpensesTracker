@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "輸出資料";
 "BACKUPS_CSV_COMMENT" = "備註";
 "BACKUPS_CSV_FOLDER" = "檔案夾";
-"BACKUPS_FORMAT_CSV" = "CSV — 僅供檢視";
-"BACKUPS_FORMAT_JSON" = "JSON — 完整備份";
-"BACKUPS_FORMAT_MESSAGE" = "JSON 是可以重新輸入的完整備份。CSV 是用於在試算表中檢視的交易表格，無法輸入 App。";
+"BACKUPS_FORMAT_CSV" = "僅供檢視";
+"BACKUPS_FORMAT_JSON" = "完整備份";
 "BACKUPS_FORMAT_TITLE" = "輸出格式";
 "BACKUPS_IMPORT_SKIPPED" = "已略過收入：%d";
 "BACKUPS_TRANSACTIONS_COUNT" = "交易：%d";

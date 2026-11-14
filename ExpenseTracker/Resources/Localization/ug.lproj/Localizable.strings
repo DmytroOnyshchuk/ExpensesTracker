@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "سانلىق مەلۇماتنى چىقىرىش";
 "BACKUPS_CSV_COMMENT" = "ئىزاھات";
 "BACKUPS_CSV_FOLDER" = "قىسقۇچ";
-"BACKUPS_FORMAT_CSV" = "CSV — پەقەت كۆرۈش ئۈچۈن";
-"BACKUPS_FORMAT_JSON" = "JSON — تولۇق زاپاس نۇسخا";
-"BACKUPS_FORMAT_MESSAGE" = "JSON قايتا كىرگۈزگىلى بولىدىغان تولۇق زاپاس نۇسخا. CSV ئېلېكترونلۇق جەدۋەلدە كۆرۈش ئۈچۈن سودا جەدۋىلى بولۇپ، ئۇنى ئەپكە كىرگۈزگىلى بولمايدۇ.";
+"BACKUPS_FORMAT_CSV" = "پەقەت كۆرۈش ئۈچۈن";
+"BACKUPS_FORMAT_JSON" = "تولۇق زاپاس نۇسخا";
 "BACKUPS_FORMAT_TITLE" = "چىقىرىش فورماتى";
 "BACKUPS_IMPORT_SKIPPED" = "ئاتلاپ ئۆتۈلگەن كىرىم: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "سودىلار: %d";

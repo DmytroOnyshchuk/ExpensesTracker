@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "डेटा निर्यात करा";
 "BACKUPS_CSV_COMMENT" = "टिप्पणी";
 "BACKUPS_CSV_FOLDER" = "फोल्डर";
-"BACKUPS_FORMAT_CSV" = "CSV — फक्त पाहण्यासाठी";
-"BACKUPS_FORMAT_JSON" = "JSON — पूर्ण बॅकअप";
-"BACKUPS_FORMAT_MESSAGE" = "JSON हा पुन्हा आयात करता येणारा पूर्ण बॅकअप आहे. CSV ही स्प्रेडशीटमध्ये पाहण्यासाठी व्यवहारांची सारणी आहे — ती ॲपमध्ये आयात करता येत नाही.";
+"BACKUPS_FORMAT_CSV" = "फक्त पाहण्यासाठी";
+"BACKUPS_FORMAT_JSON" = "पूर्ण बॅकअप";
 "BACKUPS_FORMAT_TITLE" = "निर्यात फॉरमॅट";
 "BACKUPS_IMPORT_SKIPPED" = "वगळलेले उत्पन्न: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "व्यवहार: %d";

@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Өгөгдөл экспортлох";
 "BACKUPS_CSV_COMMENT" = "Тайлбар";
 "BACKUPS_CSV_FOLDER" = "Хавтас";
-"BACKUPS_FORMAT_CSV" = "CSV — зөвхөн үзэхэд";
-"BACKUPS_FORMAT_JSON" = "JSON — бүрэн хуулбар";
-"BACKUPS_FORMAT_MESSAGE" = "JSON бол буцааж импортлох боломжтой бүрэн хуулбар. CSV бол хүснэгтийн программд үзэх гүйлгээний хүснэгт бөгөөд апп руу импортлох боломжгүй.";
+"BACKUPS_FORMAT_CSV" = "Зөвхөн үзэхэд";
+"BACKUPS_FORMAT_JSON" = "Бүрэн хуулбар";
 "BACKUPS_FORMAT_TITLE" = "Экспортын формат";
 "BACKUPS_IMPORT_SKIPPED" = "Алгассан орлого: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Гүйлгээ: %d";

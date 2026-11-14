@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Извези податке";
 "BACKUPS_CSV_COMMENT" = "Коментар";
 "BACKUPS_CSV_FOLDER" = "Фасцикла";
-"BACKUPS_FORMAT_CSV" = "CSV — само преглед";
-"BACKUPS_FORMAT_JSON" = "JSON — потпуна копија";
-"BACKUPS_FORMAT_MESSAGE" = "JSON је потпуна копија која се може поново увести. CSV је табела трансакција за преглед у табеларном програму — не може се увести у апликацију.";
+"BACKUPS_FORMAT_CSV" = "Само преглед";
+"BACKUPS_FORMAT_JSON" = "Потпуна копија";
 "BACKUPS_FORMAT_TITLE" = "Формат извоза";
 "BACKUPS_IMPORT_SKIPPED" = "Прескочени приходи: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Трансакције: %d";

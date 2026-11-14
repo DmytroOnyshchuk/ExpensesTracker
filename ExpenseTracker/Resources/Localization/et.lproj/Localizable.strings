@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Ekspordi andmed";
 "BACKUPS_CSV_COMMENT" = "Kommentaar";
 "BACKUPS_CSV_FOLDER" = "Kaust";
-"BACKUPS_FORMAT_CSV" = "CSV — ainult vaatamiseks";
-"BACKUPS_FORMAT_JSON" = "JSON — täielik varukoopia";
-"BACKUPS_FORMAT_MESSAGE" = "JSON on täielik varukoopia, mille saab tagasi importida. CSV on tehingute tabel tabelarvutuses vaatamiseks — seda ei saa rakendusse importida.";
+"BACKUPS_FORMAT_CSV" = "Ainult vaatamiseks";
+"BACKUPS_FORMAT_JSON" = "Täielik varukoopia";
 "BACKUPS_FORMAT_TITLE" = "Ekspordivorming";
 "BACKUPS_IMPORT_SKIPPED" = "Vahele jäetud tulud: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Tehingud: %d";

@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Hoʻopuka i ka ʻikepili";
 "BACKUPS_CSV_COMMENT" = "Manaʻo";
 "BACKUPS_CSV_FOLDER" = "Wahī";
-"BACKUPS_FORMAT_CSV" = "CSV — no ka nānā wale nō";
-"BACKUPS_FORMAT_JSON" = "JSON — kope papaʻa piha";
-"BACKUPS_FORMAT_MESSAGE" = "He kope papaʻa piha ʻo JSON e hiki ke hoʻokomo hou ʻia. He pākaukau kālepa ʻo CSV no ka nānā ʻana ma ka pakuhi — ʻaʻole hiki ke hoʻokomo ʻia i ka polokamu.";
+"BACKUPS_FORMAT_CSV" = "No ka nānā wale nō";
+"BACKUPS_FORMAT_JSON" = "Kope papaʻa piha";
 "BACKUPS_FORMAT_TITLE" = "ʻAno hoʻopuka";
 "BACKUPS_IMPORT_SKIPPED" = "Loaʻa kālā i kāpae ʻia: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Nā kālepa: %d";

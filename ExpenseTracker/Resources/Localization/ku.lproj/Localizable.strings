@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Daneyan derxîne";
 "BACKUPS_CSV_COMMENT" = "Şîrove";
 "BACKUPS_CSV_FOLDER" = "Peldank";
-"BACKUPS_FORMAT_CSV" = "CSV — tenê ji bo dîtinê";
-"BACKUPS_FORMAT_JSON" = "JSON — paşkopiya tam";
-"BACKUPS_FORMAT_MESSAGE" = "JSON paşkopiyeke tam e ku dikare dîsa bê anîn. CSV tabloya danûstandinan e ji bo dîtinê di tabloyeke hesabkirinê de — nayê anîn nav sepanê.";
+"BACKUPS_FORMAT_CSV" = "Tenê ji bo dîtinê";
+"BACKUPS_FORMAT_JSON" = "Paşkopiya tam";
 "BACKUPS_FORMAT_TITLE" = "Formata derxistinê";
 "BACKUPS_IMPORT_SKIPPED" = "Dahatên derbaskirî: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Danûstandin: %d";

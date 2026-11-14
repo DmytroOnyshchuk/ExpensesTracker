@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Voer data uit";
 "BACKUPS_CSV_COMMENT" = "Opmerking";
 "BACKUPS_CSV_FOLDER" = "Vouer";
-"BACKUPS_FORMAT_CSV" = "CSV — slegs vir besigtiging";
-"BACKUPS_FORMAT_JSON" = "JSON — volledige rugsteun";
-"BACKUPS_FORMAT_MESSAGE" = "JSON is ’n volledige rugsteun wat weer ingevoer kan word. CSV is ’n tabel van transaksies om in ’n sigblad te bekyk — dit kan nie in die app ingevoer word nie.";
+"BACKUPS_FORMAT_CSV" = "Slegs vir besigtiging";
+"BACKUPS_FORMAT_JSON" = "Volledige rugsteun";
 "BACKUPS_FORMAT_TITLE" = "Uitvoerformaat";
 "BACKUPS_IMPORT_SKIPPED" = "Inkomste oorgeslaan: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transaksies: %d";

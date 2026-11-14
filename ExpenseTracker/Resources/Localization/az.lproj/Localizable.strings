@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Məlumatları ixrac et";
 "BACKUPS_CSV_COMMENT" = "Şərh";
 "BACKUPS_CSV_FOLDER" = "Qovluq";
-"BACKUPS_FORMAT_CSV" = "CSV — yalnız baxış";
-"BACKUPS_FORMAT_JSON" = "JSON — tam nüsxə";
-"BACKUPS_FORMAT_MESSAGE" = "JSON yenidən idxal edilə bilən tam nüsxədir. CSV elektron cədvəldə baxmaq üçün əməliyyatlar cədvəlidir — onu tətbiqə idxal etmək olmaz.";
+"BACKUPS_FORMAT_CSV" = "Yalnız baxış";
+"BACKUPS_FORMAT_JSON" = "Tam nüsxə";
 "BACKUPS_FORMAT_TITLE" = "İxrac formatı";
 "BACKUPS_IMPORT_SKIPPED" = "Ötürülən gəlirlər: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Əməliyyatlar: %d";

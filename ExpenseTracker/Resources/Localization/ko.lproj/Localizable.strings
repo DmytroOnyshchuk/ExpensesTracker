@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "데이터 내보내기";
 "BACKUPS_CSV_COMMENT" = "메모";
 "BACKUPS_CSV_FOLDER" = "폴더";
-"BACKUPS_FORMAT_CSV" = "CSV — 보기 전용";
-"BACKUPS_FORMAT_JSON" = "JSON — 전체 백업";
-"BACKUPS_FORMAT_MESSAGE" = "JSON은 다시 가져올 수 있는 전체 백업입니다. CSV는 스프레드시트에서 보기 위한 거래 표이며 앱으로 가져올 수 없습니다.";
+"BACKUPS_FORMAT_CSV" = "보기 전용";
+"BACKUPS_FORMAT_JSON" = "전체 백업";
 "BACKUPS_FORMAT_TITLE" = "내보내기 형식";
 "BACKUPS_IMPORT_SKIPPED" = "건너뛴 수입: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "거래: %d";

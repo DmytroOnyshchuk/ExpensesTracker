@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Thekelisa idatha";
 "BACKUPS_CSV_COMMENT" = "Amazwana";
 "BACKUPS_CSV_FOLDER" = "Ifolda";
-"BACKUPS_FORMAT_CSV" = "CSV — okokubuka kuphela";
-"BACKUPS_FORMAT_JSON" = "JSON — isipele esigcwele";
-"BACKUPS_FORMAT_MESSAGE" = "I-JSON iyisipele esigcwele esingangeniswa futhi. I-CSV yithebula lemisebenzi yemali lokubuka kuspredishithi — ayikwazi ukungeniswa ku-app.";
+"BACKUPS_FORMAT_CSV" = "Okokubuka kuphela";
+"BACKUPS_FORMAT_JSON" = "Isipele esigcwele";
 "BACKUPS_FORMAT_TITLE" = "Ifomethi yokuthekelisa";
 "BACKUPS_IMPORT_SKIPPED" = "Imali engenayo eyeqiwe: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Imisebenzi yemali: %d";

@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "នាំចេញទិន្នន័យ";
 "BACKUPS_CSV_COMMENT" = "មតិយោបល់";
 "BACKUPS_CSV_FOLDER" = "ថត";
-"BACKUPS_FORMAT_CSV" = "CSV — សម្រាប់មើលប៉ុណ្ណោះ";
-"BACKUPS_FORMAT_JSON" = "JSON — ការបម្រុងទុកពេញលេញ";
-"BACKUPS_FORMAT_MESSAGE" = "JSON គឺជាការបម្រុងទុកពេញលេញដែលអាចនាំចូលវិញបាន។ CSV គឺជាតារាងប្រតិបត្តិការសម្រាប់មើលក្នុងសៀវភៅបញ្ជី — មិនអាចនាំចូលទៅក្នុងកម្មវិធីបានទេ។";
+"BACKUPS_FORMAT_CSV" = "សម្រាប់មើលប៉ុណ្ណោះ";
+"BACKUPS_FORMAT_JSON" = "ការបម្រុងទុកពេញលេញ";
 "BACKUPS_FORMAT_TITLE" = "ទ្រង់ទ្រាយនាំចេញ";
 "BACKUPS_IMPORT_SKIPPED" = "ចំណូលដែលបានរំលង៖ %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "ប្រតិបត្តិការ៖ %d";

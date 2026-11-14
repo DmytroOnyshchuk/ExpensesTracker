@@ -1,14 +1,32 @@
 import Foundation
 import SwiftData
 
-enum BackupExportFormat {
+enum BackupExportFormat: CaseIterable, Identifiable {
     case json
     case csv
+
+    var id: Self { self }
 
     var fileExtension: String {
         switch self {
         case .json: "json"
         case .csv: "csv"
+        }
+    }
+}
+
+extension BackupExportFormat {
+    var title: String {
+        switch self {
+        case .json: "JSON"
+        case .csv: "CSV"
+        }
+    }
+    
+    var summary: String {
+        switch self {
+        case .json: L10n.backupsFormatJson
+        case .csv: L10n.backupsFormatCsv
         }
     }
 }

@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Verileri dışa aktar";
 "BACKUPS_CSV_COMMENT" = "Yorum";
 "BACKUPS_CSV_FOLDER" = "Klasör";
-"BACKUPS_FORMAT_CSV" = "CSV — yalnızca görüntüleme";
-"BACKUPS_FORMAT_JSON" = "JSON — tam yedek";
-"BACKUPS_FORMAT_MESSAGE" = "JSON, geri içe aktarılabilen tam bir yedektir. CSV, bir hesap tablosunda görüntülemek için işlem tablosudur; uygulamaya içe aktarılamaz.";
+"BACKUPS_FORMAT_CSV" = "Yalnızca görüntüleme";
+"BACKUPS_FORMAT_JSON" = "Tam yedek";
 "BACKUPS_FORMAT_TITLE" = "Dışa aktarma biçimi";
 "BACKUPS_IMPORT_SKIPPED" = "Atlanan gelirler: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "İşlemler: %d";

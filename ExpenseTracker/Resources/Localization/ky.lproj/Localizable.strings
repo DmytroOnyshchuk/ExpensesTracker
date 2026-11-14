@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Дайындарды экспорттоо";
 "BACKUPS_CSV_COMMENT" = "Комментарий";
 "BACKUPS_CSV_FOLDER" = "Папка";
-"BACKUPS_FORMAT_CSV" = "CSV — көрүү үчүн гана";
-"BACKUPS_FORMAT_JSON" = "JSON — толук көчүрмө";
-"BACKUPS_FORMAT_MESSAGE" = "JSON — кайра импорттоого боло турган толук көчүрмө. CSV — электрондук жадыбалда көрүү үчүн операциялардын жадыбалы, аны колдонмого импорттоого болбойт.";
+"BACKUPS_FORMAT_CSV" = "Көрүү үчүн гана";
+"BACKUPS_FORMAT_JSON" = "Толук көчүрмө";
 "BACKUPS_FORMAT_TITLE" = "Экспорт форматы";
 "BACKUPS_IMPORT_SKIPPED" = "Өткөрүлгөн кирешелер: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Операциялар: %d";

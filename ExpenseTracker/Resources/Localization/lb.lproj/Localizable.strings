@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Daten exportéieren";
 "BACKUPS_CSV_COMMENT" = "Kommentar";
 "BACKUPS_CSV_FOLDER" = "Dossier";
-"BACKUPS_FORMAT_CSV" = "CSV — nëmme fir ze kucken";
-"BACKUPS_FORMAT_JSON" = "JSON — komplette Backup";
-"BACKUPS_FORMAT_MESSAGE" = "JSON ass e komplette Backup, deen erëm importéiert ka ginn. CSV ass eng Tabell vun Transaktioune fir an enger Tabellekalkulatioun ze kucken — se kann net an d’App importéiert ginn.";
+"BACKUPS_FORMAT_CSV" = "Nëmme fir ze kucken";
+"BACKUPS_FORMAT_JSON" = "Komplette Backup";
 "BACKUPS_FORMAT_TITLE" = "Exportformat";
 "BACKUPS_IMPORT_SKIPPED" = "Iwwersprongen Akommes: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transaktiounen: %d";

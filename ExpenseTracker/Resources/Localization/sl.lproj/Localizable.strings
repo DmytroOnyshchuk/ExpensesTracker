@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Izvozi podatke";
 "BACKUPS_CSV_COMMENT" = "Komentar";
 "BACKUPS_CSV_FOLDER" = "Mapa";
-"BACKUPS_FORMAT_CSV" = "CSV — samo ogled";
-"BACKUPS_FORMAT_JSON" = "JSON — popolna kopija";
-"BACKUPS_FORMAT_MESSAGE" = "JSON je popolna kopija, ki jo je mogoče znova uvoziti. CSV je tabela transakcij za ogled v preglednici — v aplikacijo je ni mogoče uvoziti.";
+"BACKUPS_FORMAT_CSV" = "Samo ogled";
+"BACKUPS_FORMAT_JSON" = "Popolna kopija";
 "BACKUPS_FORMAT_TITLE" = "Oblika izvoza";
 "BACKUPS_IMPORT_SKIPPED" = "Preskočeni prihodki: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transakcije: %d";

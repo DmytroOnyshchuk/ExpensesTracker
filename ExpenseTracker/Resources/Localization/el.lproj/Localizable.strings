@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Εξαγωγή δεδομένων";
 "BACKUPS_CSV_COMMENT" = "Σχόλιο";
 "BACKUPS_CSV_FOLDER" = "Φάκελος";
-"BACKUPS_FORMAT_CSV" = "CSV — μόνο προβολή";
-"BACKUPS_FORMAT_JSON" = "JSON — πλήρες αντίγραφο";
-"BACKUPS_FORMAT_MESSAGE" = "Το JSON είναι πλήρες αντίγραφο που μπορεί να εισαχθεί ξανά. Το CSV είναι πίνακας συναλλαγών για προβολή σε υπολογιστικό φύλλο — δεν μπορεί να εισαχθεί στην εφαρμογή.";
+"BACKUPS_FORMAT_CSV" = "Μόνο προβολή";
+"BACKUPS_FORMAT_JSON" = "Πλήρες αντίγραφο";
 "BACKUPS_FORMAT_TITLE" = "Μορφή εξαγωγής";
 "BACKUPS_IMPORT_SKIPPED" = "Έσοδα που παραλείφθηκαν: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Συναλλαγές: %d";

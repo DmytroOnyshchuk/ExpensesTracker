@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Eksportēt datus";
 "BACKUPS_CSV_COMMENT" = "Komentārs";
 "BACKUPS_CSV_FOLDER" = "Mape";
-"BACKUPS_FORMAT_CSV" = "CSV — tikai skatīšanai";
-"BACKUPS_FORMAT_JSON" = "JSON — pilns dublējums";
-"BACKUPS_FORMAT_MESSAGE" = "JSON ir pilns dublējums, ko var importēt atpakaļ. CSV ir darījumu tabula skatīšanai izklājlapā — to nevar importēt lietotnē.";
+"BACKUPS_FORMAT_CSV" = "Tikai skatīšanai";
+"BACKUPS_FORMAT_JSON" = "Pilns dublējums";
 "BACKUPS_FORMAT_TITLE" = "Eksporta formāts";
 "BACKUPS_IMPORT_SKIPPED" = "Izlaisti ienākumi: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Darījumi: %d";

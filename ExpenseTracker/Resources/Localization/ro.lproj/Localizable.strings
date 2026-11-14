@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Exportă datele";
 "BACKUPS_CSV_COMMENT" = "Comentariu";
 "BACKUPS_CSV_FOLDER" = "Dosar";
-"BACKUPS_FORMAT_CSV" = "CSV — doar vizualizare";
-"BACKUPS_FORMAT_JSON" = "JSON — copie completă";
-"BACKUPS_FORMAT_MESSAGE" = "JSON este o copie completă care poate fi importată înapoi. CSV este un tabel cu tranzacții pentru vizualizare într-un program de calcul tabelar — nu poate fi importat în aplicație.";
+"BACKUPS_FORMAT_CSV" = "Doar vizualizare";
+"BACKUPS_FORMAT_JSON" = "Copie completă";
 "BACKUPS_FORMAT_TITLE" = "Format de export";
 "BACKUPS_IMPORT_SKIPPED" = "Venituri omise: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Tranzacții: %d";

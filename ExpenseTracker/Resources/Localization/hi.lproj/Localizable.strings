@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "डेटा निर्यात करें";
 "BACKUPS_CSV_COMMENT" = "टिप्पणी";
 "BACKUPS_CSV_FOLDER" = "फ़ोल्डर";
-"BACKUPS_FORMAT_CSV" = "CSV — केवल देखने के लिए";
-"BACKUPS_FORMAT_JSON" = "JSON — पूरा बैकअप";
-"BACKUPS_FORMAT_MESSAGE" = "JSON एक पूरा बैकअप है जिसे वापस आयात किया जा सकता है। CSV स्प्रेडशीट में देखने के लिए लेन-देन की तालिका है — इसे ऐप में आयात नहीं किया जा सकता।";
+"BACKUPS_FORMAT_CSV" = "केवल देखने के लिए";
+"BACKUPS_FORMAT_JSON" = "पूरा बैकअप";
 "BACKUPS_FORMAT_TITLE" = "निर्यात फ़ॉर्मैट";
 "BACKUPS_IMPORT_SKIPPED" = "छोड़ी गई आय: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "लेन-देन: %d";

@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Thumela idatha ngaphandle";
 "BACKUPS_CSV_COMMENT" = "Inkcazo";
 "BACKUPS_CSV_FOLDER" = "Ifolda";
-"BACKUPS_FORMAT_CSV" = "CSV — yokujonga kuphela";
-"BACKUPS_FORMAT_JSON" = "JSON — ikopi epheleleyo";
-"BACKUPS_FORMAT_MESSAGE" = "I-JSON yikopi epheleleyo enokungeniswa kwakhona. I-CSV yitheyibhile yeentengiselwano yokujonga kwispredishithi — ayinakungeniswa kwiapp.";
+"BACKUPS_FORMAT_CSV" = "Yokujonga kuphela";
+"BACKUPS_FORMAT_JSON" = "Ikopi epheleleyo";
 "BACKUPS_FORMAT_TITLE" = "Uhlobo lokuthumela";
 "BACKUPS_IMPORT_SKIPPED" = "Ingeniso etsityiweyo: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Iintengiselwano: %d";

@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Gegevens exporteren";
 "BACKUPS_CSV_COMMENT" = "Opmerking";
 "BACKUPS_CSV_FOLDER" = "Map";
-"BACKUPS_FORMAT_CSV" = "CSV — alleen bekijken";
-"BACKUPS_FORMAT_JSON" = "JSON — volledige back-up";
-"BACKUPS_FORMAT_MESSAGE" = "JSON is een volledige back-up die weer kan worden geïmporteerd. CSV is een tabel met transacties om in een spreadsheet te bekijken — het kan niet in de app worden geïmporteerd.";
+"BACKUPS_FORMAT_CSV" = "Alleen bekijken";
+"BACKUPS_FORMAT_JSON" = "Volledige back-up";
 "BACKUPS_FORMAT_TITLE" = "Exportindeling";
 "BACKUPS_IMPORT_SKIPPED" = "Inkomsten overgeslagen: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transacties: %d";

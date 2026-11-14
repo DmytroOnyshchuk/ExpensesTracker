@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Ekspor data";
 "BACKUPS_CSV_COMMENT" = "Komentar";
 "BACKUPS_CSV_FOLDER" = "Folder";
-"BACKUPS_FORMAT_CSV" = "CSV — mung kanggo dideleng";
-"BACKUPS_FORMAT_JSON" = "JSON — serepan lengkap";
-"BACKUPS_FORMAT_MESSAGE" = "JSON iku serepan lengkap sing bisa diimpor maneh. CSV iku tabel transaksi kanggo dideleng ing spreadsheet — ora bisa diimpor menyang aplikasi.";
+"BACKUPS_FORMAT_CSV" = "Mung kanggo dideleng";
+"BACKUPS_FORMAT_JSON" = "Serepan lengkap";
 "BACKUPS_FORMAT_TITLE" = "Format ekspor";
 "BACKUPS_IMPORT_SKIPPED" = "Pemasukan sing dilewati: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transaksi: %d";

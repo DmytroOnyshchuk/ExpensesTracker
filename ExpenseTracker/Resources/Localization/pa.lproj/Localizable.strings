@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "ਡਾਟਾ ਐਕਸਪੋਰਟ ਕਰੋ";
 "BACKUPS_CSV_COMMENT" = "ਟਿੱਪਣੀ";
 "BACKUPS_CSV_FOLDER" = "ਫੋਲਡਰ";
-"BACKUPS_FORMAT_CSV" = "CSV — ਸਿਰਫ਼ ਦੇਖਣ ਲਈ";
-"BACKUPS_FORMAT_JSON" = "JSON — ਪੂਰਾ ਬੈਕਅੱਪ";
-"BACKUPS_FORMAT_MESSAGE" = "JSON ਇੱਕ ਪੂਰਾ ਬੈਕਅੱਪ ਹੈ ਜਿਸਨੂੰ ਦੁਬਾਰਾ ਇੰਪੋਰਟ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ। CSV ਸਪ੍ਰੈਡਸ਼ੀਟ ਵਿੱਚ ਦੇਖਣ ਲਈ ਲੈਣ-ਦੇਣ ਦੀ ਸਾਰਣੀ ਹੈ — ਇਸਨੂੰ ਐਪ ਵਿੱਚ ਇੰਪੋਰਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।";
+"BACKUPS_FORMAT_CSV" = "ਸਿਰਫ਼ ਦੇਖਣ ਲਈ";
+"BACKUPS_FORMAT_JSON" = "ਪੂਰਾ ਬੈਕਅੱਪ";
 "BACKUPS_FORMAT_TITLE" = "ਐਕਸਪੋਰਟ ਫਾਰਮੈਟ";
 "BACKUPS_IMPORT_SKIPPED" = "ਛੱਡੀ ਗਈ ਆਮਦਨ: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "ਲੈਣ-ਦੇਣ: %d";

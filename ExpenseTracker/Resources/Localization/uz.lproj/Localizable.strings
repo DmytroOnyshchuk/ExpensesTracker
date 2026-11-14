@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Maʼlumotlarni eksport qilish";
 "BACKUPS_CSV_COMMENT" = "Izoh";
 "BACKUPS_CSV_FOLDER" = "Jild";
-"BACKUPS_FORMAT_CSV" = "CSV — faqat koʻrish uchun";
-"BACKUPS_FORMAT_JSON" = "JSON — toʻliq nusxa";
-"BACKUPS_FORMAT_MESSAGE" = "JSON — qayta import qilish mumkin boʻlgan toʻliq nusxa. CSV — elektron jadvalda koʻrish uchun operatsiyalar jadvali, uni ilovaga import qilib boʻlmaydi.";
+"BACKUPS_FORMAT_CSV" = "Faqat koʻrish uchun";
+"BACKUPS_FORMAT_JSON" = "Toʻliq nusxa";
 "BACKUPS_FORMAT_TITLE" = "Eksport formati";
 "BACKUPS_IMPORT_SKIPPED" = "Oʻtkazib yuborilgan daromadlar: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Operatsiyalar: %d";

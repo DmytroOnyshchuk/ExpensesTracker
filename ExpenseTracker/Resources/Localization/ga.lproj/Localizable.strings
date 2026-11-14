@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Easpórtáil sonraí";
 "BACKUPS_CSV_COMMENT" = "Nóta tráchta";
 "BACKUPS_CSV_FOLDER" = "Fillteán";
-"BACKUPS_FORMAT_CSV" = "CSV — le hamharc amháin";
-"BACKUPS_FORMAT_JSON" = "JSON — cúltaca iomlán";
-"BACKUPS_FORMAT_MESSAGE" = "Is cúltaca iomlán é JSON is féidir a iompórtáil ar ais. Is tábla idirbheart é CSV le hamharc air i scarbhileog — ní féidir é a iompórtáil isteach san aip.";
+"BACKUPS_FORMAT_CSV" = "Le hamharc amháin";
+"BACKUPS_FORMAT_JSON" = "Cúltaca iomlán";
 "BACKUPS_FORMAT_TITLE" = "Formáid easpórtála";
 "BACKUPS_IMPORT_SKIPPED" = "Ioncam a fágadh ar lár: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Idirbhearta: %d";

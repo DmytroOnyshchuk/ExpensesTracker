@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Bupụ data";
 "BACKUPS_CSV_COMMENT" = "Nkọwa";
 "BACKUPS_CSV_FOLDER" = "Folda";
-"BACKUPS_FORMAT_CSV" = "CSV — maka ile naanị";
-"BACKUPS_FORMAT_JSON" = "JSON — ndabere zuru ezu";
-"BACKUPS_FORMAT_MESSAGE" = "JSON bụ ndabere zuru ezu a pụrụ ibubata ọzọ. CSV bụ tebụl azụmahịa maka ile na mpempe akwụkwọ ngụkọ — enweghị ike ibubata ya na ngwa.";
+"BACKUPS_FORMAT_CSV" = "Maka ile naanị";
+"BACKUPS_FORMAT_JSON" = "Ndabere zuru ezu";
 "BACKUPS_FORMAT_TITLE" = "Ụdị mbupụ";
 "BACKUPS_IMPORT_SKIPPED" = "Ego mbata awụfere: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Azụmahịa: %d";

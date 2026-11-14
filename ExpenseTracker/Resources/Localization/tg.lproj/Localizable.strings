@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Содир кардани маълумот";
 "BACKUPS_CSV_COMMENT" = "Шарҳ";
 "BACKUPS_CSV_FOLDER" = "Ҷузвдон";
-"BACKUPS_FORMAT_CSV" = "CSV — танҳо барои тамошо";
-"BACKUPS_FORMAT_JSON" = "JSON — нусхаи пурра";
-"BACKUPS_FORMAT_MESSAGE" = "JSON нусхаи пурраест, ки онро бозпас ворид кардан мумкин аст. CSV ҷадвали амалиётҳо барои тамошо дар ҷадвали электронӣ аст — онро ба барнома ворид кардан мумкин нест.";
+"BACKUPS_FORMAT_CSV" = "Танҳо барои тамошо";
+"BACKUPS_FORMAT_JSON" = "Нусхаи пурра";
 "BACKUPS_FORMAT_TITLE" = "Формати содирот";
 "BACKUPS_IMPORT_SKIPPED" = "Даромадҳои гузаронидашуда: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Амалиётҳо: %d";

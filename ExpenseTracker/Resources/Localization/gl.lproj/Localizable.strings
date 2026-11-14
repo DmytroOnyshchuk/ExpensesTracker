@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Exportar datos";
 "BACKUPS_CSV_COMMENT" = "Comentario";
 "BACKUPS_CSV_FOLDER" = "Cartafol";
-"BACKUPS_FORMAT_CSV" = "CSV — só visualización";
-"BACKUPS_FORMAT_JSON" = "JSON — copia completa";
-"BACKUPS_FORMAT_MESSAGE" = "JSON é unha copia completa que se pode volver importar. CSV é unha táboa de transaccións para ver nunha folla de cálculo; non se pode importar na app.";
+"BACKUPS_FORMAT_CSV" = "Só visualización";
+"BACKUPS_FORMAT_JSON" = "Copia completa";
 "BACKUPS_FORMAT_TITLE" = "Formato de exportación";
 "BACKUPS_IMPORT_SKIPPED" = "Ingresos omitidos: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transaccións: %d";

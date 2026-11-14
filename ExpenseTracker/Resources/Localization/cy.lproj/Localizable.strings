@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Allforio data";
 "BACKUPS_CSV_COMMENT" = "Sylw";
 "BACKUPS_CSV_FOLDER" = "Ffolder";
-"BACKUPS_FORMAT_CSV" = "CSV — i’w weld yn unig";
-"BACKUPS_FORMAT_JSON" = "JSON — copi wrth gefn llawn";
-"BACKUPS_FORMAT_MESSAGE" = "Mae JSON yn gopi wrth gefn llawn y gellir ei fewnforio yn ôl. Tabl o drafodion i’w weld mewn taenlen yw CSV — ni ellir ei fewnforio i’r ap.";
+"BACKUPS_FORMAT_CSV" = "I’w weld yn unig";
+"BACKUPS_FORMAT_JSON" = "Copi wrth gefn llawn";
 "BACKUPS_FORMAT_TITLE" = "Fformat allforio";
 "BACKUPS_IMPORT_SKIPPED" = "Incwm wedi’i hepgor: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Trafodion: %d";

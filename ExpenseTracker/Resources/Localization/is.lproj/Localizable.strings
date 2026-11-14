@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Flytja út gögn";
 "BACKUPS_CSV_COMMENT" = "Athugasemd";
 "BACKUPS_CSV_FOLDER" = "Mappa";
-"BACKUPS_FORMAT_CSV" = "CSV — aðeins til skoðunar";
-"BACKUPS_FORMAT_JSON" = "JSON — fullt öryggisafrit";
-"BACKUPS_FORMAT_MESSAGE" = "JSON er fullt öryggisafrit sem hægt er að flytja inn aftur. CSV er tafla yfir færslur til skoðunar í töflureikni — ekki er hægt að flytja hana inn í forritið.";
+"BACKUPS_FORMAT_CSV" = "Aðeins til skoðunar";
+"BACKUPS_FORMAT_JSON" = "Fullt öryggisafrit";
 "BACKUPS_FORMAT_TITLE" = "Útflutningssnið";
 "BACKUPS_IMPORT_SKIPPED" = "Tekjum sleppt: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Færslur: %d";

@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Eksporter data";
 "BACKUPS_CSV_COMMENT" = "Kommentar";
 "BACKUPS_CSV_FOLDER" = "Mappe";
-"BACKUPS_FORMAT_CSV" = "CSV — kun visning";
-"BACKUPS_FORMAT_JSON" = "JSON — full sikkerhetskopi";
-"BACKUPS_FORMAT_MESSAGE" = "JSON er en full sikkerhetskopi som kan importeres tilbake. CSV er en tabell med transaksjoner for visning i et regneark — den kan ikke importeres i appen.";
+"BACKUPS_FORMAT_CSV" = "Kun visning";
+"BACKUPS_FORMAT_JSON" = "Full sikkerhetskopi";
 "BACKUPS_FORMAT_TITLE" = "Eksportformat";
 "BACKUPS_IMPORT_SKIPPED" = "Inntekter hoppet over: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transaksjoner: %d";

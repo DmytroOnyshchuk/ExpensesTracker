@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Às-phortaich an dàta";
 "BACKUPS_CSV_COMMENT" = "Beachd";
 "BACKUPS_CSV_FOLDER" = "Pasgan";
-"BACKUPS_FORMAT_CSV" = "CSV — airson coimhead a-mhàin";
-"BACKUPS_FORMAT_JSON" = "JSON — lethbhreac-glèidhidh slàn";
-"BACKUPS_FORMAT_MESSAGE" = "’S e lethbhreac-glèidhidh slàn a th’ ann an JSON a ghabhas ion-phortadh air ais. ’S e clàr de thar-chuiridhean a th’ ann an CSV airson coimhead air ann an cliath-dhuilleag — cha ghabh ion-phortadh dhan aplacaid.";
+"BACKUPS_FORMAT_CSV" = "Airson coimhead a-mhàin";
+"BACKUPS_FORMAT_JSON" = "Lethbhreac-glèidhidh slàn";
 "BACKUPS_FORMAT_TITLE" = "Fòrmat às-phortaidh";
 "BACKUPS_IMPORT_SKIPPED" = "Teachd-a-steach air a leigeil seachad: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Tar-chuiridhean: %d";

@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "ଡାଟା ରପ୍ତାନି କରନ୍ତୁ";
 "BACKUPS_CSV_COMMENT" = "ମନ୍ତବ୍ୟ";
 "BACKUPS_CSV_FOLDER" = "ଫୋଲ୍ଡର୍";
-"BACKUPS_FORMAT_CSV" = "CSV — କେବଳ ଦେଖିବା ପାଇଁ";
-"BACKUPS_FORMAT_JSON" = "JSON — ସମ୍ପୂର୍ଣ୍ଣ ବ୍ୟାକଅପ୍";
-"BACKUPS_FORMAT_MESSAGE" = "JSON ଏକ ସମ୍ପୂର୍ଣ୍ଣ ବ୍ୟାକଅପ୍ ଯାହାକୁ ପୁଣି ଆମଦାନି କରିହେବ। CSV ସ୍ପ୍ରେଡ୍‌ସିଟ୍‌ରେ ଦେଖିବା ପାଇଁ କାରବାରର ସାରଣୀ — ଏହାକୁ ଆପ୍‌ରେ ଆମଦାନି କରିହେବ ନାହିଁ।";
+"BACKUPS_FORMAT_CSV" = "କେବଳ ଦେଖିବା ପାଇଁ";
+"BACKUPS_FORMAT_JSON" = "ସମ୍ପୂର୍ଣ୍ଣ ବ୍ୟାକଅପ୍";
 "BACKUPS_FORMAT_TITLE" = "ରପ୍ତାନି ଫର୍ମାଟ୍";
 "BACKUPS_IMPORT_SKIPPED" = "ଛାଡ଼ିଦିଆଯାଇଥିବା ଆୟ: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "କାରବାର: %d";

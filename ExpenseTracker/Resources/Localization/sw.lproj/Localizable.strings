@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Hamisha data";
 "BACKUPS_CSV_COMMENT" = "Maoni";
 "BACKUPS_CSV_FOLDER" = "Folda";
-"BACKUPS_FORMAT_CSV" = "CSV — ya kutazama tu";
-"BACKUPS_FORMAT_JSON" = "JSON — nakala kamili";
-"BACKUPS_FORMAT_MESSAGE" = "JSON ni nakala kamili inayoweza kuletwa tena. CSV ni jedwali la miamala la kutazama kwenye lahajedwali — haiwezi kuletwa kwenye programu.";
+"BACKUPS_FORMAT_CSV" = "Ya kutazama tu";
+"BACKUPS_FORMAT_JSON" = "Nakala kamili";
 "BACKUPS_FORMAT_TITLE" = "Muundo wa kuhamisha";
 "BACKUPS_IMPORT_SKIPPED" = "Mapato yaliyorukwa: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Miamala: %d";

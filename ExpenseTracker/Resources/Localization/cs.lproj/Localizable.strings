@@ -163,9 +163,8 @@
 "BACKUPS_SHARE_ACTION" = "Exportovat data";
 "BACKUPS_CSV_COMMENT" = "Komentář";
 "BACKUPS_CSV_FOLDER" = "Složka";
-"BACKUPS_FORMAT_CSV" = "CSV — pouze k prohlížení";
-"BACKUPS_FORMAT_JSON" = "JSON — úplná záloha";
-"BACKUPS_FORMAT_MESSAGE" = "JSON je úplná záloha, kterou lze importovat zpět. CSV je tabulka transakcí k prohlížení v tabulkovém procesoru — do aplikace ji importovat nelze.";
+"BACKUPS_FORMAT_CSV" = "Pouze k prohlížení";
+"BACKUPS_FORMAT_JSON" = "Úplná záloha";
 "BACKUPS_FORMAT_TITLE" = "Formát exportu";
 "BACKUPS_IMPORT_SKIPPED" = "Přeskočené příjmy: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transakce: %d";
