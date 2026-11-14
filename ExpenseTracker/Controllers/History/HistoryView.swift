@@ -117,7 +117,7 @@ struct HistoryView: View {
                 select(date, from: start)
             }
             .presentationCompactAdaptation(.popover)
-            .presentationBackground(.appSecond)
+            .legacyPresentationBackground(.appSecond)
         }
     }
 
@@ -132,6 +132,7 @@ struct HistoryView: View {
                 .foregroundColor(.appPrimary.opacity(isEnabled ? 1 : 0.3))
                 .frame(width: 44, height: 44)
                 .contentShape(Rectangle())
+                .glassSurface(in: Circle(), isInteractive: isEnabled, fallback: .clear)
         }
         .buttonStyle(.plain)
         .disabled(!isEnabled)

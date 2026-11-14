@@ -29,8 +29,11 @@ struct BalanceCard: View {
             }
             .padding(.horizontal, 16)
             .padding(.vertical, 12)
-            .background(.appLabel.opacity(0.1))
-            .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+            .glassSurface(
+                in: RoundedRectangle(cornerRadius: 18, style: .continuous),
+                isInteractive: true,
+                fallback: .appLabel.opacity(0.1)
+            )
             .contentShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
         }
         .buttonStyle(.plain)
@@ -72,7 +75,7 @@ struct BalanceInputPopup: View {
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 16)
                     .frame(height: 60)
-                    .background(.appMain)
+                    .background(.appMain.opacity(LiquidGlass.isAvailable ? 0.5 : 1))
                     .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
                     .padding(.horizontal, 16)
             }

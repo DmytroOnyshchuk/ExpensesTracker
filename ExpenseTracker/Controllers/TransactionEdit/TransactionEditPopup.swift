@@ -33,8 +33,10 @@ struct TransactionEditPopup<Content: View>: View {
             .padding(.top, 20)
             .padding(.bottom, 8)
             .frame(maxWidth: .infinity)
-            .background(.appSecond)
-            .clipShape(RoundedRectangle(cornerRadius: 14))
+            .glassSurface(
+                in: RoundedRectangle(cornerRadius: LiquidGlass.isAvailable ? 28 : 14, style: .continuous),
+                fallback: .appSecond
+            )
             .padding(.horizontal, 36)
         }
     }

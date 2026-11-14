@@ -51,8 +51,7 @@ struct MenuView: View {
                     }
                 }
                 .padding(.vertical, 6)
-                .background(.appLabel.opacity(0.1))
-                .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+                .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
             }
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .top)
@@ -123,8 +122,12 @@ struct MenuSpentCard: View {
             .padding(.horizontal, 20)
             .frame(maxWidth: .infinity)
             .frame(height: 100)
-            .background(.appPrimary.opacity(0.15))
-            .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+            .glassSurface(
+                in: RoundedRectangle(cornerRadius: 18, style: .continuous),
+                tint: .appPrimary.opacity(0.15),
+                isInteractive: true,
+                fallback: .appPrimary.opacity(0.15)
+            )
             .contentShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
         }
         .buttonStyle(.plain)

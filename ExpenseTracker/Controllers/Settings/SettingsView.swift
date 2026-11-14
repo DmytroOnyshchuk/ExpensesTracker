@@ -21,8 +21,7 @@ struct SettingsView: View {
                     }
                 }
                 .padding(16)
-                .background(.appLabel.opacity(0.1))
-                .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+                .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
             }
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .top)

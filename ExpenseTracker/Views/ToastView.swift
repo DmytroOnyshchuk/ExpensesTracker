@@ -14,13 +14,12 @@ struct ToastView: View {
     var body: some View {
         Text(message)
             .font(.appRegular(16))
-            .foregroundColor(.appMain)
+            .foregroundColor(LiquidGlass.isAvailable ? .appWhite : .appMain)
             .multilineTextAlignment(.center)
             .padding(.horizontal, 20)
             .padding(.vertical, 12)
-            .background(.appWhite)
-            .clipShape(Capsule())
-            .shadow(color: .appBlack.opacity(0.25), radius: 12, y: 4)
+            .glassSurface(in: Capsule(), fallback: .appWhite)
+            .legacyShadow(color: .appBlack.opacity(0.25), radius: 12, y: 4)
             .padding(.horizontal, 24)
             .padding(.top, 8)
     }

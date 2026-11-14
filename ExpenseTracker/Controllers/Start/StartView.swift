@@ -93,8 +93,12 @@ struct StartView: View {
                 .font(.system(size: 20))
                 .foregroundColor(comment.isBlank ? .appLabel : .appWhite)
                 .frame(width: 48, height: 50)
-                .background(.appLabel.opacity(comment.isBlank ? 0.1 : 0.3))
-                .clipShape(UnevenRoundedRectangle(topLeadingRadius: 25, bottomLeadingRadius: 25))
+                .glassSurface(
+                    in: UnevenRoundedRectangle(topLeadingRadius: 25, bottomLeadingRadius: 25),
+                    tint: comment.isBlank ? nil : .appLabel.opacity(0.3),
+                    isInteractive: true,
+                    fallback: .appLabel.opacity(comment.isBlank ? 0.1 : 0.3)
+                )
         }
         .padding(.bottom, 12)
     }
@@ -105,8 +109,12 @@ struct StartView: View {
                 .font(.system(size: 22, weight: .semibold))
                 .foregroundColor(.appPrimary)
                 .frame(width: 60, height: 60)
-                .background(.appPrimary.opacity(0.15))
-                .clipShape(Circle())
+                .glassSurface(
+                    in: Circle(),
+                    tint: .appPrimary.opacity(0.15),
+                    isInteractive: true,
+                    fallback: .appPrimary.opacity(0.15)
+                )
         }
         .accessibilityLabel(L10n.historyTitle)
     }
@@ -114,10 +122,11 @@ struct StartView: View {
     private func topBarButton(systemImage: String, action: @escaping () -> Void) -> some View {
         Button(action: action) {
             Image(systemName: systemImage)
-                .font(.system(size: 24))
+                .font(.system(size: LiquidGlass.isAvailable ? 18 : 24))
                 .foregroundColor(.appLabel)
                 .frame(width: 44, height: 44)
                 .contentShape(Rectangle())
+                .glassSurface(in: Circle(), isInteractive: true, fallback: .clear)
         }
     }
 

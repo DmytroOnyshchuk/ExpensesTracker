@@ -47,7 +47,7 @@ struct UndoToastView: View {
         HStack(spacing: 12) {
             Text(message)
                 .font(.appRegular(16))
-                .foregroundColor(.appMain)
+                .foregroundColor(LiquidGlass.isAvailable ? .appWhite : .appMain)
                 .lineLimit(2)
                 .frame(maxWidth: .infinity, alignment: .leading)
 
@@ -62,9 +62,11 @@ struct UndoToastView: View {
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 4)
-        .background(.appWhite)
-        .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
-        .shadow(color: .appBlack.opacity(0.3), radius: 12, y: 4)
+        .glassSurface(
+            in: RoundedRectangle(cornerRadius: LiquidGlass.isAvailable ? 26 : 8, style: .continuous),
+            fallback: .appWhite
+        )
+        .legacyShadow(color: .appBlack.opacity(0.3), radius: 12, y: 4)
         .padding(.horizontal, 12)
         .padding(.bottom, 8)
     }

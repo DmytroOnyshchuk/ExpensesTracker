@@ -32,18 +32,21 @@ struct DigitPadView: View {
                 }
                 .frame(height: 64)
 
-            ForEach(buttons, id: \.self) { row in
-                HStack(spacing: 12) {
-                    ForEach(row, id: \.self) { key in
-                        Button(action: {
-                            FeedbackManager.keyTapped(key)
-                            input.tap(key)
-                        }) {
-                            label(for: key)
-                                .frame(width: 75, height: 75)
-                                .background(.appLabel.opacity(0.1))
-                                .foregroundColor(.appWhite)
-                                .clipShape(Circle())
+            GlassContainer(spacing: 0) {
+                VStack(spacing: 12) {
+                    ForEach(buttons, id: \.self) { row in
+                        HStack(spacing: 12) {
+                            ForEach(row, id: \.self) { key in
+                                Button(action: {
+                                    FeedbackManager.keyTapped(key)
+                                    input.tap(key)
+                                }) {
+                                    label(for: key)
+                                        .frame(width: 75, height: 75)
+                                        .foregroundColor(.appWhite)
+                                        .glassSurface(in: Circle(), isInteractive: true, fallback: .appLabel.opacity(0.1))
+                                }
+                            }
                         }
                     }
                 }

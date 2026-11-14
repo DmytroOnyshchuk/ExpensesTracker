@@ -29,9 +29,8 @@ struct CommentInputView: View {
                 }
             }
             .padding(16)
-            .background(.appSecond)
-            .clipShape(RoundedRectangle(cornerRadius: 28, style: .continuous))
-            .shadow(color: .appOverlay.opacity(0.3), radius: 24, y: 8)
+            .glassSurface(in: RoundedRectangle(cornerRadius: 28, style: .continuous), fallback: .appSecond)
+            .legacyShadow(color: .appOverlay.opacity(0.3), radius: 24, y: 8)
             .padding(.horizontal, 12)
             .padding(.bottom, 8)
         }
@@ -89,7 +88,7 @@ struct CommentInputView: View {
         .padding(.horizontal, 16)
         .padding(.vertical, 11)
         .frame(minHeight: 44)
-        .background(.appMain)
+        .background(.appMain.opacity(LiquidGlass.isAvailable ? 0.5 : 1))
         .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
     }
 

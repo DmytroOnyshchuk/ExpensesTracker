@@ -59,8 +59,7 @@ struct TransactionEdit: View {
                         }
                     }
                     .padding(.vertical, 6)
-                    .background(.appLabel.opacity(0.1))
-                    .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+                    .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
 
                     commentRow
 
@@ -161,8 +160,7 @@ struct TransactionEdit: View {
         .tint(.appPrimary)
         .padding(.horizontal, 20)
         .padding(.vertical, 16)
-        .background(.appLabel.opacity(0.1))
-        .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+        .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
         .contentShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
         .onTapGesture {
             isCommentFocused = true
@@ -179,9 +177,8 @@ struct TransactionEdit: View {
                 .foregroundColor(.appWhite)
                 .padding(.horizontal, 22)
                 .frame(height: 44)
-                .background(.appSecond)
-                .clipShape(Capsule())
-                .shadow(color: .appOverlay.opacity(0.3), radius: 12, y: 4)
+                .glassSurface(in: Capsule(), isInteractive: true, fallback: .appSecond)
+                .legacyShadow(color: .appOverlay.opacity(0.3), radius: 12, y: 4)
                 .contentShape(Capsule())
         }
         .buttonStyle(.plain)
@@ -200,8 +197,12 @@ struct TransactionEdit: View {
                 .font(.system(size: 22, weight: .medium))
                 .foregroundColor(.appRed)
                 .frame(width: 60, height: 60)
-                .background(.appRed.opacity(0.15))
-                .clipShape(Circle())
+                .glassSurface(
+                    in: Circle(),
+                    tint: .appRed.opacity(0.15),
+                    isInteractive: true,
+                    fallback: .appRed.opacity(0.15)
+                )
         }
         .buttonStyle(.plain)
         .accessibilityLabel(L10n.transactionEditDelete)

@@ -148,8 +148,10 @@ struct CustomIconPickerView: View {
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 12)
-        .background(.appWhite.opacity(0.1))
-        .cornerRadius(10)
+        .glassSurface(
+            in: RoundedRectangle(cornerRadius: LiquidGlass.isAvailable ? 22 : 10, style: .continuous),
+            fallback: .appWhite.opacity(0.1)
+        )
         .padding(.horizontal, 16)
         .padding(.top, 16)
     }

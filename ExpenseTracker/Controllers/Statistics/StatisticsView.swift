@@ -120,7 +120,7 @@ struct StatisticsView: View {
                 select(date, from: start)
             }
             .presentationCompactAdaptation(.popover)
-            .presentationBackground(.appSecond)
+            .legacyPresentationBackground(.appSecond)
         }
     }
 
@@ -135,6 +135,7 @@ struct StatisticsView: View {
                 .foregroundColor(.appPrimary.opacity(isEnabled ? 1 : 0.3))
                 .frame(width: 44, height: 44)
                 .contentShape(Rectangle())
+                .glassSurface(in: Circle(), isInteractive: isEnabled, fallback: .clear)
         }
         .buttonStyle(.plain)
         .disabled(!isEnabled)
@@ -277,8 +278,10 @@ struct StatisticsDayPicker: View {
                 }
             }
             .padding(.vertical, 12)
-            .background(.appSecond)
-            .clipShape(RoundedRectangle(cornerRadius: 16))
+            .glassSurface(
+                in: RoundedRectangle(cornerRadius: LiquidGlass.isAvailable ? 28 : 16, style: .continuous),
+                fallback: .appSecond
+            )
             .padding(.horizontal, 32)
         }
     }

@@ -253,8 +253,11 @@ struct EditCategoryView: View {
                                 .truncationMode(.tail)
                         }
                         .padding(8)
-                        .background(.appWhite.opacity(0.1))
-                        .cornerRadius(8)
+                        .glassSurface(
+                            in: RoundedRectangle(cornerRadius: 8),
+                            isInteractive: true,
+                            fallback: .appWhite.opacity(0.1)
+                        )
                     }
                     .buttonStyle(PlainButtonStyle())
                 }
@@ -341,8 +344,12 @@ struct EditCategoryView: View {
                 .foregroundColor(.appWhite)
                 .frame(maxWidth: .infinity)
                 .frame(height: 52)
-                .background(.appRed)
-                .cornerRadius(12)
+                .glassSurface(
+                    in: RoundedRectangle(cornerRadius: LiquidGlass.isAvailable ? 26 : 12, style: .continuous),
+                    tint: .appRed,
+                    isInteractive: true,
+                    fallback: .appRed
+                )
         }
         .alert(isDirectory ? L10n.editCategoryDeleteFolder : L10n.editCategoryDeleteCategory, isPresented: $showDeleteConfirmation) {
             Button(L10n.cancel, role: .cancel) {}

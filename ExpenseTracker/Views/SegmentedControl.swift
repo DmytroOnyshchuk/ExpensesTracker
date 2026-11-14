@@ -39,9 +39,12 @@ struct SegmentedControl<Item: Hashable>: View {
             }
         }
         .padding(2)
+        .glassSurface(in: RoundedRectangle(cornerRadius: 10), fallback: .clear)
         .overlay {
-            RoundedRectangle(cornerRadius: 10)
-                .stroke(.appLabel.opacity(0.4), lineWidth: 1.5)
+            if !LiquidGlass.isAvailable {
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(.appLabel.opacity(0.4), lineWidth: 1.5)
+            }
         }
     }
 }
