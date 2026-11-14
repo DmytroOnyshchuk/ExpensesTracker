@@ -59,6 +59,13 @@
 "MENU_BUDGET" = "Бюджет";
 "MENU_SETTINGS" = "Настройки";
 "MENU_SPENT_IN_MONTH" = "Потрачено за %@";
+"MENU_LANGUAGE" = "Язык";
+"MENU_ABOUT" = "О программе";
+
+// MARK: - About
+"ABOUT_VERSION" = "Версия %@";
+"ABOUT_SHARE" = "Поделиться приложением";
+"ABOUT_RATE" = "Оценить приложение";
 
 // MARK: - Tabs
 "TAB_HOME" = "Главная";

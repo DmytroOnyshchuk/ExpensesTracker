@@ -59,6 +59,13 @@
 "MENU_BUDGET" = "Budget";
 "MENU_SETTINGS" = "Settings";
 "MENU_SPENT_IN_MONTH" = "Spent in %@";
+"MENU_LANGUAGE" = "Language";
+"MENU_ABOUT" = "About";
+
+// MARK: - About
+"ABOUT_VERSION" = "Version %@";
+"ABOUT_SHARE" = "Share app";
+"ABOUT_RATE" = "Rate app";
 
 // MARK: - Tabs
 "TAB_HOME" = "Home";

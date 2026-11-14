@@ -11,18 +11,26 @@ import SwiftUI
 
 enum MenuItem: CaseIterable, Identifiable {
     case settings
+    case language
+    case about
+
+    static let sections: [[MenuItem]] = [[.settings], [.language, .about]]
 
     var id: Self { self }
 
     var title: String {
         switch self {
         case .settings: L10n.menuSettings
+        case .language: L10n.menuLanguage
+        case .about: L10n.menuAbout
         }
     }
 
     var systemImage: String {
         switch self {
         case .settings: "slider.horizontal.3"
+        case .language: "globe"
+        case .about: "info.circle"
         }
     }
 }
@@ -32,6 +40,7 @@ struct MenuView: View {
 
     @State private var showStatistics = false
     @State private var showSettings = false
+    @State private var showAbout = false
 
     private let period = StatisticsPeriod.month
 
@@ -40,15 +49,17 @@ struct MenuView: View {
             VStack(spacing: 16) {
                 MenuSpentCard(title: spentTitle, amount: spentAmount, action: openStatistics)
 
-                VStack(spacing: 0) {
-                    ForEach(MenuItem.allCases) { item in
-                        MenuRow(item: item) {
-                            open(item)
+                ForEach(MenuItem.sections, id: \.self) { section in
+                    VStack(spacing: 0) {
+                        ForEach(section) { item in
+                            MenuRow(title: item.title, systemImage: item.systemImage) {
+                                open(item)
+                            }
                         }
                     }
+                    .padding(.vertical, 6)
+                    .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
                 }
-                .padding(.vertical, 6)
-                .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
             }
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .top)
@@ -61,6 +72,9 @@ struct MenuView: View {
         }
         .navigationDestination(isPresented: $showSettings) {
             SettingsView()
+        }
+        .navigationDestination(isPresented: $showAbout) {
+            AboutView()
         }
     }
 
@@ -78,6 +92,8 @@ struct MenuView: View {
     private func open(_ item: MenuItem) {
         switch item {
         case .settings: showSettings = true
+        case .language: UIApplication.shared.openSettings()
+        case .about: showAbout = true
         }
     }
 
@@ -131,33 +147,44 @@ struct MenuSpentCard: View {
 }
 
 struct MenuRow: View {
-    let item: MenuItem
+    let title: String
+    let systemImage: String
     let action: () -> Void
 
     var body: some View {
         Button(action: action) {
-            HStack(spacing: 16) {
-                Image(systemName: item.systemImage)
-                    .font(.system(size: 22))
-                    .foregroundColor(.appPrimary)
-                    .frame(width: 32)
-
-                Text(item.title)
-                    .font(.appLight(18))
-                    .foregroundColor(.appWhite)
-                    .lineLimit(1)
-
-                Spacer(minLength: 8)
-
-                Image(systemName: "chevron.right")
-                    .font(.system(size: 14, weight: .semibold))
-                    .foregroundColor(.appWhite.opacity(0.6))
-            }
-            .padding(.horizontal, 20)
-            .frame(height: 60)
-            .contentShape(Rectangle())
+            MenuRowLabel(title: title, systemImage: systemImage)
         }
         .buttonStyle(.plain)
+    }
+}
+
+struct MenuRowLabel: View {
+    let title: String
+    let systemImage: String
+
+    var body: some View {
+        HStack(spacing: 16) {
+            Image(systemName: systemImage)
+                .font(.system(size: 22))
+                .foregroundColor(.appPrimary)
+                .frame(width: 32)
+
+            Text(title)
+                .font(.appLight(18))
+                .foregroundColor(.appWhite)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+
+            Spacer(minLength: 8)
+
+            Image(systemName: "chevron.right")
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundColor(.appWhite.opacity(0.6))
+        }
+        .padding(.horizontal, 20)
+        .frame(height: 60)
+        .contentShape(Rectangle())
     }
 }
 

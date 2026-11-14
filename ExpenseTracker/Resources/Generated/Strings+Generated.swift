@@ -10,6 +10,14 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  /// Rate app
+  internal static let aboutRate = L10n.tr("Localizable", "ABOUT_RATE", fallback: "Rate app")
+  /// Share app
+  internal static let aboutShare = L10n.tr("Localizable", "ABOUT_SHARE", fallback: "Share app")
+  /// Version %@
+  internal static func aboutVersion(_ p1: Any) -> String {
+    return L10n.tr("Localizable", "ABOUT_VERSION", String(describing: p1), fallback: "Version %@")
+  }
   /// Localizable.strings
   ///   SwiftTemplate
   /// 
@@ -110,8 +118,12 @@ internal enum L10n {
   internal static let error = L10n.tr("Localizable", "ERROR", fallback: "Error")
   /// History
   internal static let historyTitle = L10n.tr("Localizable", "HISTORY_TITLE", fallback: "History")
+  /// About
+  internal static let menuAbout = L10n.tr("Localizable", "MENU_ABOUT", fallback: "About")
   /// Budget
   internal static let menuBudget = L10n.tr("Localizable", "MENU_BUDGET", fallback: "Budget")
+  /// Language
+  internal static let menuLanguage = L10n.tr("Localizable", "MENU_LANGUAGE", fallback: "Language")
   /// Settings
   internal static let menuSettings = L10n.tr("Localizable", "MENU_SETTINGS", fallback: "Settings")
   /// Spent in %@

@@ -18,4 +18,10 @@ enum Constants {
     }
 
     static let testId: String = "testId"
+
+    static let appStoreId: String = "0000000000"
+
+    static var appStoreURL: URL {
+        URL(string: "https://apps.apple.com/app/id\(appStoreId)") ?? URL(fileURLWithPath: "/")
+    }
 }
