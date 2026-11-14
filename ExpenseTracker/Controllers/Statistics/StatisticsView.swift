@@ -240,7 +240,7 @@ struct StatisticsBreakdown: View {
             .simultaneousGesture(swipeGesture)
 
             if !slices.isEmpty {
-                VStack(spacing: 0) {
+                VStack(spacing: 0.5) {
                     ForEach(slices) { slice in
                         NavigationLink {
                             TransactionDetails(category: slice.category, interval: interval)
@@ -467,11 +467,11 @@ struct StatisticsRow: View {
             .fill(color.opacity(0.32))
             .overlay {
                 shape
-                    .strokeBorder(color.opacity(0.75), lineWidth: 0.5)
+                    .strokeBorder(color.opacity(0.75), lineWidth: 0.25)
             }
             .background {
                 shape
-                    .stroke(color, lineWidth: 0.5)
+                    .stroke(color, lineWidth: 0.25)
                     .blur(radius: 0.5)
                     .opacity(0.7)
             }
