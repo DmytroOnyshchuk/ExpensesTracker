@@ -448,15 +448,52 @@ struct StatisticsRow: View {
                 .frame(width: 110, alignment: .trailing)
         }
         .foregroundColor(.appWhite)
+        .shadow(color: .black.opacity(0.35), radius: 2, y: 1)
         .padding(.horizontal, 16)
         .frame(height: 52)
         .background(alignment: .leading) {
             GeometryReader { geometry in
-                Rectangle()
-                    .fill(slice.category.categoryIcon.color.opacity(0.70))
-                    .frame(width: geometry.size.width * barRatio)
+                glassBar
+                    .frame(width: max(geometry.size.width * barRatio, 6))
+                    .padding(.vertical, 1)
             }
         }
+    }
+
+    private var glassBar: some View {
+        let color = slice.category.categoryIcon.color
+        let shape = UnevenRoundedRectangle(bottomTrailingRadius: 10, topTrailingRadius: 10, style: .continuous)
+
+        return shape
+            .fill(
+                LinearGradient(
+                    colors: [color.opacity(0.3), color.opacity(0.6)],
+                    startPoint: .leading,
+                    endPoint: .trailing
+                )
+            )
+            .overlay {
+                shape
+                    .fill(
+                        LinearGradient(
+                            colors: [.white.opacity(0.22), .white.opacity(0.02), .black.opacity(0.12)],
+                            startPoint: .top,
+                            endPoint: .bottom
+                        )
+                    )
+            }
+            .overlay {
+                shape
+                    .strokeBorder(
+                        LinearGradient(
+                            colors: [.white.opacity(0.45), color.opacity(0.35)],
+                            startPoint: .top,
+                            endPoint: .bottom
+                        ),
+                        lineWidth: 1
+                    )
+            }
+            .shadow(color: color.opacity(0.45), radius: 6)
     }
 }
 
