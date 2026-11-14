@@ -1,6 +1,18 @@
 import Foundation
 import SwiftData
 
+enum BackupExportFormat {
+    case json
+    case csv
+
+    var fileExtension: String {
+        switch self {
+        case .json: "json"
+        case .csv: "csv"
+        }
+    }
+}
+
 enum BackupImportMode {
     case merge
     case replace
@@ -76,13 +88,42 @@ enum BackupManager {
     }
 
     @MainActor
-    static func writeExportFile(from context: ModelContext) throws -> URL {
+    static func csvData(from context: ModelContext) throws -> Data {
+        let categories = try context.fetch(FetchDescriptor<TransactionCategory>())
+        let transactions = try context.fetch(FetchDescriptor<Transaction>(sortBy: [SortDescriptor(\.date)]))
+
+        let rows = transactions.map { transaction in
+            BackupCSVRow(
+                date: transaction.date,
+                folder: transaction.category.parent(from: categories)?.name.localized ?? "",
+                category: transaction.category.name.localized,
+                amount: transaction.amount,
+                comment: transaction.comment ?? ""
+            )
+        }
+        let header = [
+            L10n.transactionEditDate,
+            L10n.backupsCsvFolder,
+            L10n.transactionEditCategory,
+            L10n.transactionEditAmount,
+            L10n.backupsCsvComment,
+        ]
+        return BackupCSVWriter.data(header: header, rows: rows)
+    }
+
+    @MainActor
+    static func writeExportFile(from context: ModelContext, format: BackupExportFormat) throws -> URL {
         let directory = FileManager.default.temporaryDirectory.appendingPathComponent("BackupExport", isDirectory: true)
         try? FileManager.default.removeItem(at: directory)
         try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
 
-        let url = directory.appendingPathComponent(defaultFilename).appendingPathExtension("json")
-        try exportData(from: context).write(to: url, options: .atomic)
+        let data: Data
+        switch format {
+        case .json: data = try exportData(from: context)
+        case .csv: data = try csvData(from: context)
+        }
+        let url = directory.appendingPathComponent(defaultFilename).appendingPathExtension(format.fileExtension)
+        try data.write(to: url, options: .atomic)
         return url
     }
 

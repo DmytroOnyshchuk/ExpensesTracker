@@ -15,6 +15,7 @@ struct BackupsView: View {
     @Query private var categories: [TransactionCategory]
 
     @State private var isImporting = false
+    @State private var isChoosingFormat = false
     @State private var sharedFile: BackupShareFile?
     @State private var pickedFileURL: URL?
     @State private var errorMessage: String?
@@ -29,7 +30,18 @@ struct BackupsView: View {
                 }
 
                 BackupSection(title: L10n.backupsExportSection) {
-                    MenuRow(title: L10n.backupsShareAction, systemImage: "square.and.arrow.up", action: startSharing)
+                    MenuRow(title: L10n.backupsShareAction, systemImage: "square.and.arrow.up", action: chooseFormat)
+                }
+                .confirmationDialog(L10n.backupsFormatTitle, isPresented: $isChoosingFormat, titleVisibility: .visible) {
+                    Button(L10n.backupsFormatJson) {
+                        share(.json)
+                    }
+                    Button(L10n.backupsFormatCsv) {
+                        share(.csv)
+                    }
+                    Button(L10n.cancel, role: .cancel) {}
+                } message: {
+                    Text(L10n.backupsFormatMessage)
                 }
 
                 BackupSection(title: L10n.backupsImportSection) {
@@ -59,10 +71,14 @@ struct BackupsView: View {
         Binding(get: { errorMessage != nil }, set: { if !$0 { errorMessage = nil } })
     }
 
-    private func startSharing() {
+    private func chooseFormat() {
         FeedbackManager.buttonTapped()
+        isChoosingFormat = true
+    }
+
+    private func share(_ format: BackupExportFormat) {
         do {
-            sharedFile = try BackupShareFile(url: BackupManager.writeExportFile(from: modelContext))
+            sharedFile = try BackupShareFile(url: BackupManager.writeExportFile(from: modelContext, format: format))
         } catch {
             show(error)
         }

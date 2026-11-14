@@ -160,6 +160,12 @@
 "BACKUPS_IMPORT_REPLACE" = "Replace all data";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "All current transactions and categories will be deleted. This cannot be undone.";
 "BACKUPS_IMPORT_SECTION" = "Import";
-"BACKUPS_SHARE_ACTION" = "Share backup";
+"BACKUPS_SHARE_ACTION" = "Export data";
+"BACKUPS_CSV_COMMENT" = "Comment";
+"BACKUPS_CSV_FOLDER" = "Folder";
+"BACKUPS_FORMAT_CSV" = "CSV — view only";
+"BACKUPS_FORMAT_JSON" = "JSON — full backup";
+"BACKUPS_FORMAT_MESSAGE" = "JSON is a full backup that can be imported back. CSV is a table of transactions for viewing in a spreadsheet — it cannot be imported into the app.";
+"BACKUPS_FORMAT_TITLE" = "Export format";
 "BACKUPS_IMPORT_SKIPPED" = "Income skipped: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transactions: %d";

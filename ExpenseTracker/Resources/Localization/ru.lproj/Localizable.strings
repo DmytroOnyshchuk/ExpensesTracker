@@ -151,6 +151,12 @@
 "BACKUPS_IMPORT_REPLACE" = "Заменить все данные";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "Все текущие операции и категории будут удалены. Это действие нельзя отменить.";
 "BACKUPS_IMPORT_SECTION" = "Импорт";
-"BACKUPS_SHARE_ACTION" = "Поделиться копией";
+"BACKUPS_SHARE_ACTION" = "Экспортировать данные";
+"BACKUPS_CSV_COMMENT" = "Комментарий";
+"BACKUPS_CSV_FOLDER" = "Папка";
+"BACKUPS_FORMAT_CSV" = "CSV — только просмотр";
+"BACKUPS_FORMAT_JSON" = "JSON — полная копия";
+"BACKUPS_FORMAT_MESSAGE" = "JSON — полная копия, которую можно импортировать обратно. CSV — таблица операций для просмотра в Excel или Numbers, импортировать её в приложение нельзя.";
+"BACKUPS_FORMAT_TITLE" = "Формат экспорта";
 "BACKUPS_IMPORT_SKIPPED" = "Пропущено доходов: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Операции: %d";
