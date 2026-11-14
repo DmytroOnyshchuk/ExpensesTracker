@@ -37,7 +37,8 @@ struct StatisticsView: View {
                     categories: categories,
                     period: period,
                     points: period.chartPoints(of: transactions, in: interval),
-                    averageTitle: period.average(of: transactions).map { period.averageTitle(for: $0.getAmount()) }
+                    averageTitle: period.average(of: transactions).map { period.averageTitle(for: $0.getAmount()) },
+                    onSwipe: { shiftPeriod(by: $0, from: start, in: starts) }
                 )
             }
             .padding(.vertical, 16)
@@ -186,10 +187,11 @@ struct StatisticsBreakdown: View {
     var period: StatisticsPeriod?
     var points: [StatisticsChartPoint] = []
     var averageTitle: String?
+    var onSwipe: ((Int) -> Void)?
 
     @AppStorage(UDKey.statisticsChartStyle.rawValue) private var chartStyle: StatisticsChartStyle = .pie
 
-    private var showsStylePicker: Bool {
+    private var canSwitchStyle: Bool {
         period != nil && !slices.isEmpty && !points.isEmpty
     }
 
@@ -198,9 +200,9 @@ struct StatisticsBreakdown: View {
         let maxAmount = slices.first?.amount ?? .zero
 
         VStack(spacing: 12) {
-            HStack(spacing: 8) {
-                VStack(alignment: showsStylePicker ? .leading : .center, spacing: 4) {
-                    Text((total > 0 ? "-" : "") + total.getAmount())
+            VStack(spacing: 12) {
+                VStack(spacing: 4) {
+                    Text(total.getAmount())
                         .font(.appRegular(28))
                         .lineLimit(1)
                         .minimumScaleFactor(0.6)
@@ -214,25 +216,30 @@ struct StatisticsBreakdown: View {
                             .foregroundColor(.appWhite.opacity(0.6))
                     }
                 }
+                .padding(.horizontal, 16)
 
-                if showsStylePicker {
-                    Spacer(minLength: 8)
-
-                    ChartStylePicker(selection: $chartStyle)
+                if slices.isEmpty {
+                    Text(L10n.transactionsListNoTransactions)
+                        .font(.appLight(18))
+                        .foregroundColor(.appGray.opacity(0.6))
+                        .frame(height: 120)
+                } else {
+                    chart
+                        .frame(height: 350)
+                        .padding(.horizontal, 16)
+                        .contentShape(Rectangle())
+                        .onTapGesture {
+                            guard canSwitchStyle else { return }
+                            chartStyle = chartStyle.next
+                        }
+                        .sensoryFeedback(.selection, trigger: chartStyle)
                 }
             }
-            .padding(.horizontal, 16)
+            .frame(maxWidth: .infinity)
+            .contentShape(Rectangle())
+            .simultaneousGesture(swipeGesture)
 
-            if slices.isEmpty {
-                Text(L10n.transactionsListNoTransactions)
-                    .font(.appLight(18))
-                    .foregroundColor(.appGray.opacity(0.6))
-                    .frame(height: 120)
-            } else {
-                chart
-                    .frame(height: 320)
-                    .padding(.horizontal, 16)
-
+            if !slices.isEmpty {
                 VStack(spacing: 0) {
                     ForEach(slices) { slice in
                         NavigationLink {
@@ -254,9 +261,18 @@ struct StatisticsBreakdown: View {
         }
     }
 
+    private var swipeGesture: some Gesture {
+        DragGesture(minimumDistance: 20)
+            .onEnded { value in
+                let width = value.translation.width
+                guard abs(width) > 40, abs(width) > abs(value.translation.height) * 1.5 else { return }
+                onSwipe?(width < 0 ? 1 : -1)
+            }
+    }
+
     @ViewBuilder
     private var chart: some View {
-        if let period, showsStylePicker, chartStyle != .pie {
+        if let period, canSwitchStyle, chartStyle != .pie {
             Group {
                 if chartStyle == .bars {
                     GlassBarChart(points: points, period: period)

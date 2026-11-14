@@ -16,11 +16,11 @@ enum StatisticsChartStyle: String, CaseIterable, Identifiable {
 
     var id: Self { self }
 
-    var systemImage: String {
+    var next: Self {
         switch self {
-        case .pie: "chart.pie.fill"
-        case .bars: "chart.bar.fill"
-        case .line: "chart.line.uptrend.xyaxis"
+        case .pie: .bars
+        case .bars: .line
+        case .line: .pie
         }
     }
 }
@@ -77,42 +77,6 @@ extension StatisticsPeriod {
             date = next
         }
         return result
-    }
-}
-
-struct ChartStylePicker: View {
-    @Binding var selection: StatisticsChartStyle
-
-    var body: some View {
-        HStack(spacing: 0) {
-            ForEach(StatisticsChartStyle.allCases) { style in
-                Button {
-                    selection = style
-                } label: {
-                    Image(systemName: style.systemImage)
-                        .font(.system(size: 15, weight: .semibold))
-                        .foregroundColor(style == selection ? .appWhite : .appPrimary)
-                        .frame(width: 40, height: 32)
-                        .background {
-                            if style == selection {
-                                Capsule()
-                                    .fill(.appLabel.opacity(0.25))
-                            }
-                        }
-                        .contentShape(Rectangle())
-                }
-                .buttonStyle(.plain)
-            }
-        }
-        .padding(2)
-        .glassSurface(in: Capsule(), fallback: .clear)
-        .overlay {
-            if !LiquidGlass.isAvailable {
-                Capsule()
-                    .stroke(.appLabel.opacity(0.4), lineWidth: 1.5)
-            }
-        }
-        .sensoryFeedback(.selection, trigger: selection)
     }
 }
 
