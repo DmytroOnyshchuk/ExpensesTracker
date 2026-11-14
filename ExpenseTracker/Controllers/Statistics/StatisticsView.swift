@@ -455,14 +455,13 @@ struct StatisticsRow: View {
             GeometryReader { geometry in
                 glassBar
                     .frame(width: max(geometry.size.width * barRatio, 6))
-                    .padding(.vertical, 1)
             }
         }
     }
 
     private var glassBar: some View {
         let color = slice.category.categoryIcon.color
-        let shape = UnevenRoundedRectangle(bottomTrailingRadius: 10, topTrailingRadius: 10, style: .continuous)
+        let shape = Rectangle()
 
         return shape
             .fill(color.opacity(0.32))
