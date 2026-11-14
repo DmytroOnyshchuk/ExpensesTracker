@@ -10,7 +10,7 @@ import Foundation
 
 var bundleKey: UInt8 = .zero
 
-final class AnyLanguageBundle: Bundle {
+final class AnyLanguageBundle: Bundle, @unchecked Sendable {
     override func localizedString(forKey key: String, value: String?, table tableName: String?) -> String {
         guard let path = objc_getAssociatedObject(self, &bundleKey) as? String,
               let bundle = Bundle(path: path)
@@ -25,7 +25,7 @@ final class AnyLanguageBundle: Bundle {
 extension Bundle {
     class func setCurrentLanguage() {
         guard let code = Bundle.main.preferredLocalizations.first?.components(separatedBy: "-").first else {
-            setLanguage(Locale.current.languageCode ?? Language.English.rawValue)
+            setLanguage(Locale.current.language.languageCode?.identifier ?? Language.English.rawValue)
             return
         }
         setLanguage(code)

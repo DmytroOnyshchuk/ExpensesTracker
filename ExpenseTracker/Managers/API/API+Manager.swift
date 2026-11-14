@@ -1,4 +1,5 @@
 import Alamofire
+import Network
 import PromiseKit
 import UIKit
 
@@ -21,7 +22,7 @@ extension API {
             }
         }
 
-        private var reachabilityManager = NetworkReachabilityManager.default
+        private let pathMonitor = NWPathMonitor()
 
         // MARK: - Initialization
 
@@ -32,9 +33,14 @@ extension API {
             self.userManager = userManager
             self.session = Manager.session(configuration: configWithHeaders, userManager: userManager)
 
-            reachabilityManager?.startListening(onUpdatePerforming: { status in
-                Logger.default.logMessage("Reachability Status: \(status)", category: "Network")
-            })
+            pathMonitor.pathUpdateHandler = { path in
+                Logger.default.logMessage("Reachability Status: \(path.status)", category: "Network")
+            }
+            pathMonitor.start(queue: .main)
+        }
+
+        deinit {
+            pathMonitor.cancel()
         }
     }
 }
