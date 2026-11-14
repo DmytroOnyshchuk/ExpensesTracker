@@ -21,7 +21,7 @@ struct CategoryDraft {
     /// Draft of a new category.
     init() {
         self.name = L10n.editCategoryDefaultName
-        self.icon = CategoryIcon(name: "cart", iconColor: .yellow)
+        self.icon = CategoryIcon(name: "cart.fill", iconColor: .yellow)
     }
 
     /// Draft with the current values of an existing category.

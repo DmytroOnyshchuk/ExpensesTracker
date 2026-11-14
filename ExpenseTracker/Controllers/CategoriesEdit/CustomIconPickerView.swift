@@ -16,14 +16,22 @@ struct CustomIconPickerView: View {
     @State private var filteredIcons: [String] = []
 
     private let allSFSymbols = [
+        // Primary
+        "bag.fill.badge.plus", "leaf.fill", "envelope.fill", "camera.fill", "display", "keyboard.fill",
+        "speaker.wave.2.fill", "app.fill", "soccerball", "steeringwheel", "face.smiling.fill",
+        "clock.badge.exclamationmark.fill", "figure.dance", "dog.fill", "powerplug.fill", "person.3.fill",
+        "fish.fill", "carrot.fill", "guitars.fill", "at", "iphone.gen2", "person.fill",
+        "dollarsign.circle.fill", "shoeprints.fill", "figure.strengthtraining.traditional",
+        "figure.skiing.downhill", "checkerboard.rectangle",
+
         // Transportation
         "car.fill", "bus.fill", "airplane", "airplane.departure", "airplane.arrival", "bicycle", "scooter",
         "train.side.front.car", "tram.fill", "ferry.fill", "sailboat.fill", "truck.box.fill", "suv.side.fill",
 
         // Shopping & Money
-        "cart.fill", "bag.fill", "basket.fill", "creditcard.fill", "banknote.fill", "dollarsign.circle.fill",
-        "eurosign.circle.fill", "yensign.circle.fill", "sterlingsign.circle.fill", "bitcoinsign.circle.fill",
-        "bag.badge.plus", "bag.badge.minus",
+        "cart.fill", "bag.fill", "basket.fill", "creditcard.fill", "banknote.fill", "eurosign.circle.fill",
+        "yensign.circle.fill", "sterlingsign.circle.fill", "bitcoinsign.circle.fill", "bag.badge.plus",
+        "bag.badge.minus",
 
         // Home & Living
         "house.fill", "building.fill", "bed.double.fill", "sofa.fill", "chair.fill", "chair.lounge.fill",
@@ -32,18 +40,15 @@ struct CustomIconPickerView: View {
 
         // Food & Drink
         "fork.knife", "fork.knife.circle.fill", "cup.and.saucer.fill", "wineglass.fill", "mug.fill",
-        "takeoutbag.and.cup.and.straw.fill", "carrot.fill", "apple.logo", "leaf.fill", "birthday.cake.fill",
+        "takeoutbag.and.cup.and.straw.fill", "apple.logo", "birthday.cake.fill",
 
         // Health & Fitness
         "heart.fill", "stethoscope", "cross.case.fill", "pills.fill", "syringe.fill", "lungs.fill",
-        "brain.head.profile.fill", "dumbbell.fill", "figure.walk", "figure.run",
-        "figure.strengthtraining.traditional", "figure.yoga", "figure.dance", "figure.skiing.downhill",
-        "soccerball",
+        "brain.head.profile.fill", "dumbbell.fill", "figure.walk", "figure.run", "figure.yoga",
 
         // Technology
-        "iphone", "iphone.gen2", "iphone.gen3", "ipad", "ipad.gen2", "macbook", "applewatch", "airpods",
-        "airpods.gen3", "keyboard.fill", "display", "display.2", "printer.fill", "camera.fill", "video.fill",
-        "speaker.fill", "speaker.wave.2.fill", "headphones", "headphones.circle.fill",
+        "iphone", "iphone.gen3", "ipad", "ipad.gen2", "macbook", "applewatch", "airpods", "airpods.gen3",
+        "display.2", "printer.fill", "video.fill", "speaker.fill", "headphones", "headphones.circle.fill",
 
         // Education & Work
         "book.fill", "books.vertical.fill", "graduationcap.fill", "pencil", "pencil.circle.fill",
@@ -52,7 +57,7 @@ struct CustomIconPickerView: View {
 
         // Entertainment
         "gamecontroller.fill", "dice.fill", "puzzlepiece.fill", "tv.fill", "film.fill", "music.note",
-        "music.note.list", "guitars.fill", "theatermasks.fill", "ticket.fill",
+        "music.note.list", "theatermasks.fill", "ticket.fill",
 
         // Nature & Weather
         "sun.max.fill", "moon.fill", "cloud.fill", "cloud.rain.fill", "cloud.snow.fill", "bolt.fill", "tornado",
@@ -60,9 +65,8 @@ struct CustomIconPickerView: View {
         "tree.fill",
 
         // People & Social
-        "person.fill", "person.2.fill", "person.3.fill", "face.smiling.fill", "face.dashed.fill",
-        "hands.clap.fill", "hands.sparkles.fill", "figure.2.arms.open", "message.fill", "phone.fill",
-        "envelope.fill",
+        "person.2.fill", "face.dashed.fill", "hands.clap.fill", "hands.sparkles.fill", "figure.2.arms.open",
+        "message.fill", "phone.fill",
 
         // Transportation & Travel
         "suitcase.fill", "backpack.fill", "tent.fill", "map.fill", "location.fill", "compass.drawing", "globe",
@@ -77,8 +81,8 @@ struct CustomIconPickerView: View {
         "paintbrush.fill", "ruler.fill", "level.fill", "flashlight.on.fill", "flashlight.off.fill", "key.fill",
 
         // Fashion & Style
-        "tshirt.fill", "handbag.fill", "eyeglasses", "sunglasses.fill", "crown.fill", "shoeprints.fill",
-        "shoe.fill", "shoe.2.fill",
+        "tshirt.fill", "handbag.fill", "eyeglasses", "sunglasses.fill", "crown.fill", "shoe.fill",
+        "shoe.2.fill",
 
         // Symbols & Icons
         "star.fill", "heart.circle.fill", "checkmark.circle.fill", "xmark.circle.fill", "plus.circle.fill",
@@ -86,8 +90,7 @@ struct CustomIconPickerView: View {
         "gear", "gear.circle.fill",
 
         // Animals & Pets
-        "dog.fill", "cat.fill", "bird.fill", "fish.fill", "tortoise.fill", "ladybug.fill", "ant.fill",
-        "pawprint.fill", "hare.fill",
+        "cat.fill", "bird.fill", "tortoise.fill", "ladybug.fill", "ant.fill", "pawprint.fill", "hare.fill",
 
         // Business & Finance
         "chart.line.uptrend.xyaxis", "chart.bar.fill", "chart.pie.fill", "percent", "plusminus", "divide",

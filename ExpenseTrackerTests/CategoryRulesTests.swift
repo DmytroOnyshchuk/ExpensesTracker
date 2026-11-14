@@ -73,7 +73,7 @@ final class CategoryRulesTests: XCTestCase {
         let draft = CategoryDraft()
 
         XCTAssertEqual(draft.name, L10n.editCategoryDefaultName)
-        XCTAssertEqual(draft.icon.name, "cart")
+        XCTAssertEqual(draft.icon.name, "cart.fill")
         XCTAssertEqual(draft.icon.iconColor, .yellow)
         XCTAssertNil(draft.parentUuid)
     }
