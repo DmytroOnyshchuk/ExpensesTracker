@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ئەخلەت ساندۇقى قۇرۇق";
-"TRASH_RESTORE_CONFIRMATION" = "ئەسلىگە كەلتۈرۈش؟";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "سودىنى ئەسلىگە كەلتۈرەمسىز؟";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "تۈرنى ئەسلىگە كەلتۈرەمسىز؟";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "تۈرنى ئۆچۈرەمسىز؟";
+"TRASH_DELETE_MESSAGE" = "بۇ مەشغۇلاتنى ئەمەلدىن قالدۇرغىلى بولمايدۇ.";
 "TRASH_CLEAR_CONFIRMATION" = "ئەخلەت ساندۇقىدىكى بارلىق تۈرلەر مەڭگۈلۈك ئۆچۈرۈلىدۇ. بۇ مەشغۇلاتنى ئەمەلدىن قالدۇرغىلى بولمايدۇ.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "سودا يوق";
 "TRANSACTIONS_LIST_DELETE" = "ئۆچۈر";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "سودا قوشۇلدى";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "سودا ئۆچۈرۈلدى";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ئەخلەت ساندۇقىغا يۆتكەلدى";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "بۈگۈنكى چىقىم";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "تۈنۈگۈنكى چىقىم";
 
@@ -115,8 +118,8 @@
 "EDIT_CATEGORY_ICON" = "سىنبەلگە";
 "EDIT_CATEGORY_MORE_ICONS" = "تېخىمۇ كۆپ";
 "EDIT_CATEGORY_COLOR" = "رەڭ";
-"EDIT_CATEGORY_DELETE_CATEGORY" = "تۈرنى ئۆچۈر";
-"EDIT_CATEGORY_DELETE_FOLDER" = "قىسقۇچنى ئۆچۈر";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "تۈرنى چىقىرىۋەت";
+"EDIT_CATEGORY_DELETE_FOLDER" = "قىسقۇچنى چىقىرىۋەت";
 "EDIT_CATEGORY_DELETE_CONFIRMATION" = "تۈر ۋە ئۇنىڭ بارلىق سودىلىرى ئەخلەت ساندۇقىغا يۆتكىلىدۇ.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "تۈر نامى";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "يېڭى تۈر";
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "قىزغۇچ سېرىق";
 "SETTINGS_THEME_LIGHT" = "يورۇق";
 "SETTINGS_SOUNDS" = "ئاۋازلار";
+"SETTINGS_HAPTIC" = "تىترەش";
 "SETTINGS_HIDE_CATEGORIES" = "تۈرلەرنى يوشۇرۇش";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "سومما كىرگۈزگەندە تۈرلەر كۆرۈنىدۇ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "تۈرلەر: %d";

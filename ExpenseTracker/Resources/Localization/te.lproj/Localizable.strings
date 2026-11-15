@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ట్రాష్ ఖాళీగా ఉంది";
-"TRASH_RESTORE_CONFIRMATION" = "పునరుద్ధరించు?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "లావాదేవీని పునరుద్ధరించాలా?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "వర్గాన్ని పునరుద్ధరించాలా?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "వర్గాన్ని తొలగించాలా?";
+"TRASH_DELETE_MESSAGE" = "ఈ చర్యను రద్దు చేయడం సాధ్యం కాదు.";
 "TRASH_CLEAR_CONFIRMATION" = "ట్రాష్‌లోని అన్ని అంశాలు శాశ్వతంగా తొలగించబడతాయి. ఈ చర్యను రద్దు చేయడం సాధ్యం కాదు.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "లావాదేవీలు లేవు";
 "TRANSACTIONS_LIST_DELETE" = "తొలగించండి";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "లావాదేవీ జోడించబడింది";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "లావాదేవీ తొలగించబడింది";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ట్రాష్‌కు తరలించబడింది";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ఈరోజు ఖర్చు";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "నిన్నటి ఖర్చు";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "నారింజ";
 "SETTINGS_THEME_LIGHT" = "లేత";
 "SETTINGS_SOUNDS" = "ధ్వనులు";
+"SETTINGS_HAPTIC" = "వైబ్రేషన్";
 "SETTINGS_HIDE_CATEGORIES" = "వర్గాలను దాచు";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "మొత్తాన్ని నమోదు చేసినప్పుడు వర్గాలు కనిపిస్తాయి";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "వర్గాలు: %d";

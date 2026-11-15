@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ردی خالی ہے";
-"TRASH_RESTORE_CONFIRMATION" = "بحال کریں؟";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "لین دین بحال کریں؟";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "زمرہ بحال کریں؟";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "زمرہ حذف کریں؟";
+"TRASH_DELETE_MESSAGE" = "یہ عمل واپس نہیں کیا جا سکتا۔";
 "TRASH_CLEAR_CONFIRMATION" = "ردی میں موجود تمام آئٹمز مستقل طور پر حذف کر دیے جائیں گے۔ یہ عمل واپس نہیں کیا جا سکتا۔";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "کوئی لین دین نہیں";
 "TRANSACTIONS_LIST_DELETE" = "حذف کریں";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "لین دین شامل ہو گیا";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "لین دین حذف ہو گیا";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ردی میں منتقل کر دیا گیا";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "آج کا خرچ";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "کل کا خرچ";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "نارنجی";
 "SETTINGS_THEME_LIGHT" = "ہلکا";
 "SETTINGS_SOUNDS" = "آوازیں";
+"SETTINGS_HAPTIC" = "تھرتھراہٹ";
 "SETTINGS_HIDE_CATEGORIES" = "زمرے چھپائیں";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "رقم درج کرنے پر زمرے ظاہر ہوتے ہیں";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "زمرے: %d";

@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Smeće je prazno";
-"TRASH_RESTORE_CONFIRMATION" = "Vrati?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Vratiti transakciju?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Vratiti kategoriju?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Izbrisati kategoriju?";
+"TRASH_DELETE_MESSAGE" = "Ova se radnja ne može poništiti.";
 "TRASH_CLEAR_CONFIRMATION" = "Sve stavke u smeću bit će trajno izbrisane. Ova se radnja ne može poništiti.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nema transakcija";
 "TRANSACTIONS_LIST_DELETE" = "Izbriši";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transakcija dodana";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transakcija izbrisana";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Premješteno u smeće";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Potrošeno danas";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Potrošeno jučer";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Narančasta";
 "SETTINGS_THEME_LIGHT" = "Svijetla";
 "SETTINGS_SOUNDS" = "Zvukovi";
+"SETTINGS_HAPTIC" = "Vibracija";
 "SETTINGS_HIDE_CATEGORIES" = "Sakrij kategorije";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategorije se pojavljuju pri unosu iznosa";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorije: %d";

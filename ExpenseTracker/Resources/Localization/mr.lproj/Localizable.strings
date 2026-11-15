@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ट्रॅश रिकामा आहे";
-"TRASH_RESTORE_CONFIRMATION" = "पुनर्संचयित करा?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "व्यवहार पुनर्संचयित करायचा?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "श्रेणी पुनर्संचयित करायची?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "श्रेणी हटवायची?";
+"TRASH_DELETE_MESSAGE" = "ही क्रिया पूर्ववत करता येणार नाही.";
 "TRASH_CLEAR_CONFIRMATION" = "ट्रॅशमधील सर्व आयटम कायमचे हटवले जातील. ही क्रिया पूर्ववत करता येणार नाही.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "कोणतेही व्यवहार नाहीत";
 "TRANSACTIONS_LIST_DELETE" = "हटवा";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "व्यवहार जोडला";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "व्यवहार हटवला";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ट्रॅशमध्ये हलवले";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "आजचा खर्च";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "कालचा खर्च";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "नारिंगी";
 "SETTINGS_THEME_LIGHT" = "हलका";
 "SETTINGS_SOUNDS" = "ध्वनी";
+"SETTINGS_HAPTIC" = "कंपन";
 "SETTINGS_HIDE_CATEGORIES" = "श्रेणी लपवा";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "रक्कम टाकताना श्रेण्या दिसतात";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "श्रेण्या: %d";

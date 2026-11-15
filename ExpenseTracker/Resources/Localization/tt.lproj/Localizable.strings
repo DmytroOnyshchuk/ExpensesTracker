@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Кәрзин буш";
-"TRASH_RESTORE_CONFIRMATION" = "Кайтару?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Операцияне кайтарыргамы?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Категорияне кайтарыргамы?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Категорияне бетерергәме?";
+"TRASH_DELETE_MESSAGE" = "Бу гамәлне кире кайтарып булмый.";
 "TRASH_CLEAR_CONFIRMATION" = "Кәрзиндәге барлык элементлар мәңгегә бетереләчәк. Бу гамәлне кире кайтарып булмый.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Операцияләр юк";
 "TRANSACTIONS_LIST_DELETE" = "Бетерү";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Операция өстәлде";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Операция бетерелде";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Кәрзингә күчерелде";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Бүген тотылган";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Кичә тотылган";
 
@@ -115,8 +118,8 @@
 "EDIT_CATEGORY_ICON" = "Билге";
 "EDIT_CATEGORY_MORE_ICONS" = "Тагын";
 "EDIT_CATEGORY_COLOR" = "Төс";
-"EDIT_CATEGORY_DELETE_CATEGORY" = "Категорияне бетерү";
-"EDIT_CATEGORY_DELETE_FOLDER" = "Папканы бетерү";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Категорияне алып ташлау";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Папканы алып ташлау";
 "EDIT_CATEGORY_DELETE_CONFIRMATION" = "Категория һәм аның барлык транзакцияләре кәрзингә күчереләчәк.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Категория исеме";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Яңа категория";
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Кызгылт сары";
 "SETTINGS_THEME_LIGHT" = "Якты";
 "SETTINGS_SOUNDS" = "Тавышлар";
+"SETTINGS_HAPTIC" = "Тибрәнү";
 "SETTINGS_HIDE_CATEGORIES" = "Категорияләрне яшерү";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Категорияләр сумма кертелгәндә күренә";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Категорияләр: %d";

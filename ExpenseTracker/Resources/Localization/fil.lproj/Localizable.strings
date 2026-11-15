@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Walang laman ang basurahan";
-"TRASH_RESTORE_CONFIRMATION" = "Ibalik?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Ibalik ang transaksyon?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Ibalik ang kategorya?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "I-delete ang kategorya?";
+"TRASH_DELETE_MESSAGE" = "Hindi na maa-undo ang aksyong ito.";
 "TRASH_CLEAR_CONFIRMATION" = "Permanenteng ide-delete ang lahat ng item sa basurahan. Hindi na maa-undo ang aksyong ito.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Walang transaksyon";
 "TRANSACTIONS_LIST_DELETE" = "I-delete";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Naidagdag ang transaksyon";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Na-delete ang transaksyon";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Inilipat sa basurahan";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Nagastos ngayong araw";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Nagastos kahapon";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Kahel";
 "SETTINGS_THEME_LIGHT" = "Maliwanag";
 "SETTINGS_SOUNDS" = "Mga tunog";
+"SETTINGS_HAPTIC" = "Vibration";
 "SETTINGS_HIDE_CATEGORIES" = "Itago ang mga kategorya";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Lumalabas ang mga kategorya kapag naglagay ka ng halaga";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Mga kategorya: %d";

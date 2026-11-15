@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "කුණු කූඩය හිස්ය";
-"TRASH_RESTORE_CONFIRMATION" = "ප්‍රතිසාධනය?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "ගනුදෙනුව ප්‍රතිසාධනය කරන්නද?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "ප්‍රවර්ගය ප්‍රතිසාධනය කරන්නද?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "ප්‍රවර්ගය මකන්නද?";
+"TRASH_DELETE_MESSAGE" = "මෙම ක්‍රියාව අහෝසි කළ නොහැක.";
 "TRASH_CLEAR_CONFIRMATION" = "කුණු කූඩයේ ඇති සියලු අයිතම ස්ථිරවම මකා දැමෙනු ඇත. මෙම ක්‍රියාව අහෝසි කළ නොහැක.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ගනුදෙනු නැත";
 "TRANSACTIONS_LIST_DELETE" = "මකන්න";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "ගනුදෙනුව එක් කළා";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "ගනුදෙනුව මකා දැමුවා";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "කුණු කූඩයට ගෙන යන ලදී";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "අද වියදම";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ඊයේ වියදම";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "තැඹිලි";
 "SETTINGS_THEME_LIGHT" = "ආලෝකමත්";
 "SETTINGS_SOUNDS" = "ශබ්ද";
+"SETTINGS_HAPTIC" = "කම්පනය";
 "SETTINGS_HIDE_CATEGORIES" = "ප්‍රවර්ග සඟවන්න";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "මුදල ඇතුළත් කරන විට ප්‍රවර්ග දිස්වේ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "ප්‍රවර්ග: %d";

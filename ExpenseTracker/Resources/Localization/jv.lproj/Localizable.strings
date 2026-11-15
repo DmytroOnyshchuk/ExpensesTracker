@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Tong sampah kosong";
-"TRASH_RESTORE_CONFIRMATION" = "Balèkaké?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Balèkaké transaksi?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Balèkaké kategori?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Busak kategori?";
+"TRASH_DELETE_MESSAGE" = "Tindakan iki ora bisa dibatalaké.";
 "TRASH_CLEAR_CONFIRMATION" = "Kabèh item ing tong sampah bakal dibusak permanèn. Tumindak iki ora bisa dibatalaké.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ora ana transaksi";
 "TRANSACTIONS_LIST_DELETE" = "Busak";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transaksi ditambahake";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transaksi dibusak";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Dipindhah menyang tong sampah";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Dientekake dina iki";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Dientekake wingi";
 
@@ -115,8 +118,8 @@
 "EDIT_CATEGORY_ICON" = "Ikon";
 "EDIT_CATEGORY_MORE_ICONS" = "Luwih akeh";
 "EDIT_CATEGORY_COLOR" = "Werna";
-"EDIT_CATEGORY_DELETE_CATEGORY" = "Busak kategori";
-"EDIT_CATEGORY_DELETE_FOLDER" = "Busak folder";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Copot kategori";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Copot folder";
 "EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kategori lan kabèh transaksiné bakal dipindhah menyang tong sampah.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Jeneng kategori";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Kategori anyar";
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Oranye";
 "SETTINGS_THEME_LIGHT" = "Padhang";
 "SETTINGS_SOUNDS" = "Swara";
+"SETTINGS_HAPTIC" = "Geter";
 "SETTINGS_HIDE_CATEGORIES" = "Dhelikake kategori";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategori katon nalika sampeyan ngisi jumlah";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategori: %d";

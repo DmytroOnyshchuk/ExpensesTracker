@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Kei te wātea te ipu para";
-"TRASH_RESTORE_CONFIRMATION" = "Whakaora?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Me whakaora te tauwhitinga?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Me whakaora te kāwai?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Me muku te kāwai?";
+"TRASH_DELETE_MESSAGE" = "Kāore e taea te whakakore i tēnei mahi.";
 "TRASH_CLEAR_CONFIRMATION" = "Ka mukua pūmautia ngā mea katoa kei te ipu para. Kāore e taea te whakakore i tēnei mahi.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Kāore he tauwhitinga";
 "TRANSACTIONS_LIST_DELETE" = "Mukua";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Kua tāpirihia te tauwhitinga";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Kua mukua te tauwhitinga";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Kua nekehia ki te ipu para";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "I whakapaua i tēnei rā";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "I whakapaua inanahi";
 
@@ -115,8 +118,8 @@
 "EDIT_CATEGORY_ICON" = "Ata";
 "EDIT_CATEGORY_MORE_ICONS" = "Ētahi atu";
 "EDIT_CATEGORY_COLOR" = "Tae";
-"EDIT_CATEGORY_DELETE_CATEGORY" = "Mukua te kāwai";
-"EDIT_CATEGORY_DELETE_FOLDER" = "Mukua te kōpaki";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Tangohia te kāwai";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Tangohia te kōpaki";
 "EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ka nekehia te kāwai me āna whakawhitinga katoa ki te ipu para.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Ingoa kāwai";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Kāwai hou";
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Karaka";
 "SETTINGS_THEME_LIGHT" = "Māmā";
 "SETTINGS_SOUNDS" = "Ngā oro";
+"SETTINGS_HAPTIC" = "Wiri";
 "SETTINGS_HIDE_CATEGORIES" = "Huna ngā kāwai";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Ka puta ngā kāwai ina tāuru koe i te moni";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Ngā kāwai: %d";

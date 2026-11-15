@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "D'Dreckskëscht ass eidel";
-"TRASH_RESTORE_CONFIRMATION" = "Erëmhierstellen?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Transaktioun erëmhierstellen?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Kategorie erëmhierstellen?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Kategorie läschen?";
+"TRASH_DELETE_MESSAGE" = "Dës Aktioun kann net réckgängeg gemaach ginn.";
 "TRASH_CLEAR_CONFIRMATION" = "All Elementer an der Dreckskëscht ginn definitiv geläscht. Dës Aktioun kann net réckgängeg gemaach ginn.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Keng Transaktiounen";
 "TRANSACTIONS_LIST_DELETE" = "Läschen";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transaktioun bäigefüügt";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transaktioun geläscht";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "An d'Dreckskëscht geréckelt";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Haut ausginn";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Gëschter ausginn";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Orange";
 "SETTINGS_THEME_LIGHT" = "Hell";
 "SETTINGS_SOUNDS" = "Téin";
+"SETTINGS_HAPTIC" = "Haptik";
 "SETTINGS_HIDE_CATEGORIES" = "Kategorien verstoppen";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategorien erschéngen, wann e Betrag aginn gëtt";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorien: %d";

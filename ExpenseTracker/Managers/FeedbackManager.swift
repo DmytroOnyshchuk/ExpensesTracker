@@ -7,6 +7,7 @@
 //
 
 import AudioToolbox
+import SwiftUI
 import UIKit
 
 enum FeedbackSound {
@@ -44,40 +45,63 @@ final class FeedbackManager {
 
 extension FeedbackManager {
     var soundIsEnable: Bool {
-        userManager.soundsEnabled ?? true
+        userManager.soundsEnabled!
     }
 
     func enableSound(_ enable: Bool) {
         userManager.soundsEnabled = enable
     }
 
+    var hapticIsEnable: Bool {
+        userManager.hapticEnabled!
+    }
+
+    func enableHaptic(_ enable: Bool) {
+        userManager.hapticEnabled = enable
+    }
+
+    var selectionFeedback: SensoryFeedback? {
+        hapticIsEnable ? .selection : nil
+    }
+
     // MARK: -
 
     func keyTapped(_ key: AmountInput.Key) {
-        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+        impact()
         playSound(key == .backspace ? .keyDelete : .keyTap)
     }
 
     func buttonTapped() {
-        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+        impact()
     }
 
     func selectionChanged() {
+        guard hapticIsEnable else { return }
         UISelectionFeedbackGenerator().selectionChanged()
     }
 
     func transactionAdded() {
-        UINotificationFeedbackGenerator().notificationOccurred(.success)
+        notify(.success)
         playSound(.transactionAdded)
     }
 
     func amountMissing() {
-        UINotificationFeedbackGenerator().notificationOccurred(.error)
+        notify(.error)
         playSound(.amountMissing)
     }
 }
 
 extension FeedbackManager {
+    private func impact() {
+        guard hapticIsEnable else { return }
+        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+    }
+
+    private func notify(_ type: UINotificationFeedbackGenerator.FeedbackType) {
+        guard hapticIsEnable else { return }
+        UINotificationFeedbackGenerator().notificationOccurred(type)
+    }
+
     private func playSound(_ sound: FeedbackSound) {
         guard soundIsEnable else { return }
         AudioServicesPlaySystemSound(soundID(for: sound))

@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Il recipient da rument è vid";
-"TRASH_RESTORE_CONFIRMATION" = "Restaurar?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Restaurar la transacziun?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Restaurar la categoria?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Stizzar la categoria?";
+"TRASH_DELETE_MESSAGE" = "Questa acziun na po betg vegnir revocada.";
 "TRASH_CLEAR_CONFIRMATION" = "Tut ils elements en il recipient da rument vegnan stizzads definitivamain. Questa acziun na po betg vegnir revocada.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Naginas transacziuns";
 "TRANSACTIONS_LIST_DELETE" = "Stizzar";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transacziun agiuntada";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transacziun stizzada";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Spustà en il recipient da rument";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Spendì oz";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Spendì ier";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Oransch";
 "SETTINGS_THEME_LIGHT" = "Cler";
 "SETTINGS_SOUNDS" = "Tuns";
+"SETTINGS_HAPTIC" = "Vibraziun";
 "SETTINGS_HIDE_CATEGORIES" = "Zuppentar categorias";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Las categorias cumparan cun endatar ina summa";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categorias: %d";

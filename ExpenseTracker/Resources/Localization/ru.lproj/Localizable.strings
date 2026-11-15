@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Корзина пуста";
-"TRASH_RESTORE_CONFIRMATION" = "Восстановить?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Восстановить транзакцию?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Восстановить категорию?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Удалить категорию?";
+"TRASH_DELETE_MESSAGE" = "Это действие нельзя отменить.";
 "TRASH_CLEAR_CONFIRMATION" = "Все объекты в корзине будут удалены навсегда. Это действие нельзя отменить.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Нет транзакций";
 "TRANSACTIONS_LIST_DELETE" = "Удалить";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Транзакция добавлена";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Транзакция удалена";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Перемещено в корзину";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Потрачено сегодня";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Потрачено вчера";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Оранжевая";
 "SETTINGS_THEME_LIGHT" = "Светлая";
 "SETTINGS_SOUNDS" = "Звуки";
+"SETTINGS_HAPTIC" = "Виброотклик";
 "SETTINGS_HIDE_CATEGORIES" = "Скрывать категории";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Категории появляются при вводе суммы";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Категории: %d";

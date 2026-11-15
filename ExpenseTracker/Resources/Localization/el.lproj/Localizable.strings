@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Ο κάδος είναι άδειος";
-"TRASH_RESTORE_CONFIRMATION" = "Επαναφορά;";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Επαναφορά συναλλαγής;";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Επαναφορά κατηγορίας;";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Διαγραφή κατηγορίας;";
+"TRASH_DELETE_MESSAGE" = "Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.";
 "TRASH_CLEAR_CONFIRMATION" = "Όλα τα στοιχεία στον κάδο θα διαγραφούν οριστικά. Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Δεν υπάρχουν συναλλαγές";
 "TRANSACTIONS_LIST_DELETE" = "Διαγραφή";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Η συναλλαγή προστέθηκε";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Η συναλλαγή διαγράφηκε";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Μετακινήθηκε στον κάδο";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Έξοδα σήμερα";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Έξοδα χθες";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Πορτοκαλί";
 "SETTINGS_THEME_LIGHT" = "Φωτεινό";
 "SETTINGS_SOUNDS" = "Ήχοι";
+"SETTINGS_HAPTIC" = "Δόνηση";
 "SETTINGS_HIDE_CATEGORIES" = "Απόκρυψη κατηγοριών";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Οι κατηγορίες εμφανίζονται όταν εισάγετε ποσό";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Κατηγορίες: %d";

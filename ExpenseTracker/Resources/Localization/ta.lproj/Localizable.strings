@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "குப்பைத் தொட்டி காலியாக உள்ளது";
-"TRASH_RESTORE_CONFIRMATION" = "மீட்டமை?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "பரிவர்த்தனையை மீட்டமைக்கவா?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "வகையை மீட்டமைக்கவா?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "வகையை நீக்கவா?";
+"TRASH_DELETE_MESSAGE" = "இந்தச் செயலைச் செயல்தவிர்க்க முடியாது.";
 "TRASH_CLEAR_CONFIRMATION" = "குப்பைத் தொட்டியில் உள்ள அனைத்தும் நிரந்தரமாக நீக்கப்படும். இந்தச் செயலைச் செயல்தவிர்க்க முடியாது.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "பரிவர்த்தனைகள் இல்லை";
 "TRANSACTIONS_LIST_DELETE" = "நீக்கு";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "பரிவர்த்தனை சேர்க்கப்பட்டது";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "பரிவர்த்தனை நீக்கப்பட்டது";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "குப்பைத் தொட்டிக்கு நகர்த்தப்பட்டது";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "இன்றைய செலவு";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "நேற்றைய செலவு";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "ஆரஞ்சு";
 "SETTINGS_THEME_LIGHT" = "வெளிர்";
 "SETTINGS_SOUNDS" = "ஒலிகள்";
+"SETTINGS_HAPTIC" = "அதிர்வு";
 "SETTINGS_HIDE_CATEGORIES" = "வகைகளை மறை";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "தொகையை உள்ளிடும்போது வகைகள் தோன்றும்";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "வகைகள்: %d";

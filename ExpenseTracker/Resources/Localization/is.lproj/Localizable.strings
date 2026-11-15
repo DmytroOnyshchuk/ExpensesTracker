@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Ruslið er tómt";
-"TRASH_RESTORE_CONFIRMATION" = "Endurheimta?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Endurheimta færslu?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Endurheimta flokk?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Eyða flokki?";
+"TRASH_DELETE_MESSAGE" = "Ekki er hægt að afturkalla þessa aðgerð.";
 "TRASH_CLEAR_CONFIRMATION" = "Öllum atriðum í ruslinu verður eytt varanlega. Ekki er hægt að afturkalla þessa aðgerð.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Engar færslur";
 "TRANSACTIONS_LIST_DELETE" = "Eyða";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Færslu bætt við";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Færslu eytt";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Fært í ruslið";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Eytt í dag";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Eytt í gær";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Appelsínugult";
 "SETTINGS_THEME_LIGHT" = "Ljóst";
 "SETTINGS_SOUNDS" = "Hljóð";
+"SETTINGS_HAPTIC" = "Titringur";
 "SETTINGS_HIDE_CATEGORIES" = "Fela flokka";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Flokkar birtast þegar upphæð er slegin inn";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Flokkar: %d";

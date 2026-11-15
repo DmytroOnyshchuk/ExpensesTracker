@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ធុងសំរាមទទេ";
-"TRASH_RESTORE_CONFIRMATION" = "ស្ដារ?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "ស្ដារប្រតិបត្តិការឬ?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "ស្ដារប្រភេទឬ?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "លុបប្រភេទឬ?";
+"TRASH_DELETE_MESSAGE" = "សកម្មភាពនេះមិនអាចត្រឡប់វិញបានទេ។";
 "TRASH_CLEAR_CONFIRMATION" = "ធាតុទាំងអស់ក្នុងធុងសំរាមនឹងត្រូវលុបជាអចិន្ត្រៃយ៍។ សកម្មភាពនេះមិនអាចត្រឡប់វិញបានទេ។";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "គ្មានប្រតិបត្តិការ";
 "TRANSACTIONS_LIST_DELETE" = "លុប";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "បានបន្ថែមប្រតិបត្តិការ";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "បានលុបប្រតិបត្តិការ";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "បានផ្លាស់ទីទៅធុងសំរាម";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ចំណាយថ្ងៃនេះ";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ចំណាយម្សិលមិញ";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "ទឹកក្រូច";
 "SETTINGS_THEME_LIGHT" = "ភ្លឺ";
 "SETTINGS_SOUNDS" = "សំឡេង";
+"SETTINGS_HAPTIC" = "ការញ័រ";
 "SETTINGS_HIDE_CATEGORIES" = "លាក់ប្រភេទ";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "ប្រភេទបង្ហាញនៅពេលបញ្ចូលចំនួនទឹកប្រាក់";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "ប្រភេទ៖ %d";

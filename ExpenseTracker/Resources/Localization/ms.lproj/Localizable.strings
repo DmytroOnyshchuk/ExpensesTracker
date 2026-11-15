@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Tong sampah kosong";
-"TRASH_RESTORE_CONFIRMATION" = "Pulihkan?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Pulihkan transaksi?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Pulihkan kategori?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Padam kategori?";
+"TRASH_DELETE_MESSAGE" = "Tindakan ini tidak boleh dibuat asal.";
 "TRASH_CLEAR_CONFIRMATION" = "Semua item dalam tong sampah akan dipadamkan secara kekal. Tindakan ini tidak boleh dibuat asal.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Tiada transaksi";
 "TRANSACTIONS_LIST_DELETE" = "Padam";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transaksi ditambah";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transaksi dipadam";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Dialihkan ke Tong Sampah";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Dibelanjakan hari ini";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Dibelanjakan semalam";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Jingga";
 "SETTINGS_THEME_LIGHT" = "Cerah";
 "SETTINGS_SOUNDS" = "Bunyi";
+"SETTINGS_HAPTIC" = "Getaran";
 "SETTINGS_HIDE_CATEGORIES" = "Sembunyikan kategori";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategori muncul apabila anda memasukkan jumlah";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategori: %d";

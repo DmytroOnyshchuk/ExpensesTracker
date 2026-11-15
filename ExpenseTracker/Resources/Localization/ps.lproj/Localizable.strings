@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "کثافت‌دانۍ تشه ده";
-"TRASH_RESTORE_CONFIRMATION" = "بېرته راوستل؟";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "راکړه ورکړه بېرته راوستل شي؟";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "کټګوري بېرته راوستل شي؟";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "کټګوري ړنګه شي؟";
+"TRASH_DELETE_MESSAGE" = "دا کړنه بېرته نه شي کېدای.";
 "TRASH_CLEAR_CONFIRMATION" = "په کثافت‌دانۍ کې ټول توکي به د تل لپاره ړنګ شي. دا کړنه بېرته نه شي کېدای.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "هیڅ راکړه ورکړه نشته";
 "TRANSACTIONS_LIST_DELETE" = "ړنګول";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "راکړه ورکړه زیاته شوه";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "راکړه ورکړه ړنګه شوه";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "کثافت‌دانۍ ته ولېږدول شو";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "نن ولګول شول";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "پرون ولګول شول";
 
@@ -115,8 +118,8 @@
 "EDIT_CATEGORY_ICON" = "انځورن";
 "EDIT_CATEGORY_MORE_ICONS" = "نور";
 "EDIT_CATEGORY_COLOR" = "رنګ";
-"EDIT_CATEGORY_DELETE_CATEGORY" = "کټګوري ړنګول";
-"EDIT_CATEGORY_DELETE_FOLDER" = "پوښۍ ړنګول";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "کټګوري لرې کول";
+"EDIT_CATEGORY_DELETE_FOLDER" = "پوښۍ لرې کول";
 "EDIT_CATEGORY_DELETE_CONFIRMATION" = "کټګوري او د هغې ټولې معاملې به کثافت‌دانۍ ته ولېږدول شي.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "د کټګورۍ نوم";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "نوې کټګوري";
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "نارنجي";
 "SETTINGS_THEME_LIGHT" = "روښانه";
 "SETTINGS_SOUNDS" = "غږونه";
+"SETTINGS_HAPTIC" = "لړزه";
 "SETTINGS_HIDE_CATEGORIES" = "کټګورۍ پټې کړئ";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "کټګورۍ د مبلغ د داخلولو پر مهال ښکاري";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "کټګورۍ: %d";

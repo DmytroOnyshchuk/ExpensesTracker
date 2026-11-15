@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ટ્રેશ ખાલી છે";
-"TRASH_RESTORE_CONFIRMATION" = "પુનઃસ્થાપિત કરો?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "વ્યવહાર પુનઃસ્થાપિત કરવો છે?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "શ્રેણી પુનઃસ્થાપિત કરવી છે?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "શ્રેણી કાઢી નાખવી છે?";
+"TRASH_DELETE_MESSAGE" = "આ ક્રિયા પૂર્વવત્ કરી શકાતી નથી.";
 "TRASH_CLEAR_CONFIRMATION" = "ટ્રેશમાંની બધી આઇટમ કાયમ માટે ડિલીટ થઈ જશે. આ ક્રિયા પૂર્વવત્ કરી શકાતી નથી.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "કોઈ વ્યવહાર નથી";
 "TRANSACTIONS_LIST_DELETE" = "કાઢી નાખો";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "વ્યવહાર ઉમેરાયો";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "વ્યવહાર કાઢી નખાયો";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ટ્રેશમાં ખસેડાયું";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "આજે ખર્ચ";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ગઈકાલે ખર્ચ";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "નારંગી";
 "SETTINGS_THEME_LIGHT" = "આછો";
 "SETTINGS_SOUNDS" = "અવાજો";
+"SETTINGS_HAPTIC" = "કંપન";
 "SETTINGS_HIDE_CATEGORIES" = "શ્રેણીઓ છુપાવો";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "રકમ દાખલ કરતાં શ્રેણીઓ દેખાય છે";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "શ્રેણીઓ: %d";

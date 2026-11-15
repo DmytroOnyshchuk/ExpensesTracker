@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Hakahaka ka ʻōpala";
-"TRASH_RESTORE_CONFIRMATION" = "Hoʻihoʻi?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "E hoʻihoʻi i ka hana kālā?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "E hoʻihoʻi i ka māhele?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "E holoi i ka māhele?";
+"TRASH_DELETE_MESSAGE" = "ʻAʻole hiki ke hoʻihoʻi ʻia kēia hana.";
 "TRASH_CLEAR_CONFIRMATION" = "E holoi mau loa ʻia nā mea a pau i loko o ka ʻōpala. ʻAʻole hiki ke hoʻihoʻi ʻia kēia hana.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ʻAʻohe hana kālā";
 "TRANSACTIONS_LIST_DELETE" = "Holoi";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Ua hoʻohui ʻia ka hana kālā";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Ua holoi ʻia ka hana kālā";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Ua hoʻoneʻe ʻia i ka ʻōpala";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Hoʻolilo ʻia i kēia lā";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Hoʻolilo ʻia i nehinei";
 
@@ -115,8 +118,8 @@
 "EDIT_CATEGORY_ICON" = "Kiʻiona";
 "EDIT_CATEGORY_MORE_ICONS" = "Hou aku";
 "EDIT_CATEGORY_COLOR" = "Waihoʻoluʻu";
-"EDIT_CATEGORY_DELETE_CATEGORY" = "Holoi i ka māhele";
-"EDIT_CATEGORY_DELETE_FOLDER" = "Holoi i ka wahī";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Wehe i ka māhele";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Wehe i ka wahī";
 "EDIT_CATEGORY_DELETE_CONFIRMATION" = "E hoʻoneʻe ʻia ka māhele a me kāna mau kālepa a pau i ka ʻōpala.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Inoa māhele";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Māhele hou";
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "ʻAlani";
 "SETTINGS_THEME_LIGHT" = "Mālamalama";
 "SETTINGS_SOUNDS" = "Nā kani";
+"SETTINGS_HAPTIC" = "Haʻalulu";
 "SETTINGS_HIDE_CATEGORIES" = "Hūnā i nā māhele";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Hōʻike ʻia nā māhele ke hoʻokomo ʻoe i ka huina";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Nā māhele: %d";

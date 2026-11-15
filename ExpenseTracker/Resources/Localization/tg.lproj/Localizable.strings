@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Сабад холӣ аст";
-"TRASH_RESTORE_CONFIRMATION" = "Барқарор кардан?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Амалиёт барқарор карда шавад?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Категория барқарор карда шавад?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Категория нест карда шавад?";
+"TRASH_DELETE_MESSAGE" = "Ин амалро бекор кардан ғайриимкон аст.";
 "TRASH_CLEAR_CONFIRMATION" = "Ҳамаи унсурҳои сабад барои ҳамеша нест карда мешаванд. Ин амалро бекор кардан ғайриимкон аст.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Амалиёт нест";
 "TRANSACTIONS_LIST_DELETE" = "Нест кардан";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Амалиёт илова шуд";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Амалиёт нест карда шуд";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Ба сабад интиқол дода шуд";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Имрӯз сарф шуд";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Дирӯз сарф шуд";
 
@@ -115,8 +118,8 @@
 "EDIT_CATEGORY_ICON" = "Нишона";
 "EDIT_CATEGORY_MORE_ICONS" = "Бештар";
 "EDIT_CATEGORY_COLOR" = "Ранг";
-"EDIT_CATEGORY_DELETE_CATEGORY" = "Нест кардани категория";
-"EDIT_CATEGORY_DELETE_FOLDER" = "Нест кардани ҷузвдон";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Хориҷ кардани категория";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Хориҷ кардани ҷузвдон";
 "EDIT_CATEGORY_DELETE_CONFIRMATION" = "Категория ва ҳамаи транзаксияҳои он ба сабад интиқол дода мешаванд.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Номи категория";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Категорияи нав";
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Норанҷӣ";
 "SETTINGS_THEME_LIGHT" = "Равшан";
 "SETTINGS_SOUNDS" = "Садоҳо";
+"SETTINGS_HAPTIC" = "Ларзиш";
 "SETTINGS_HIDE_CATEGORIES" = "Пинҳон кардани категорияҳо";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Категорияҳо ҳангоми ворид кардани маблағ пайдо мешаванд";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Категорияҳо: %d";

@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Qashinku waa madhan yahay";
-"TRASH_RESTORE_CONFIRMATION" = "Soo celi?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Ma soo celisaa macaamilka?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Ma soo celisaa qaybta?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Ma tirtirtaa qaybta?";
+"TRASH_DELETE_MESSAGE" = "Ficilkan lama noqon karo.";
 "TRASH_CLEAR_CONFIRMATION" = "Dhammaan waxyaabaha ku jira qashinka si joogto ah ayaa loo tirtiri doonaa. Tallaabadan lagama noqon karo.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Macaamil ma jiro";
 "TRANSACTIONS_LIST_DELETE" = "Tirtir";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Macaamil waa la daray";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Macaamil waa la tirtiray";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Waxaa loo wareejiyay qashinka";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Maanta la kharash gareeyay";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Shalay la kharash gareeyay";
 
@@ -115,8 +118,8 @@
 "EDIT_CATEGORY_ICON" = "Astaan";
 "EDIT_CATEGORY_MORE_ICONS" = "Wax dheeraad ah";
 "EDIT_CATEGORY_COLOR" = "Midab";
-"EDIT_CATEGORY_DELETE_CATEGORY" = "Tirtir qaybta";
-"EDIT_CATEGORY_DELETE_FOLDER" = "Tirtir galka";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Ka saar qaybta";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Ka saar galka";
 "EDIT_CATEGORY_DELETE_CONFIRMATION" = "Qaybta iyo dhammaan macaamilkeeda waxaa loo wareejin doonaa qashinka.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Magaca qaybta";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Qayb cusub";
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Oranji";
 "SETTINGS_THEME_LIGHT" = "Iftiin";
 "SETTINGS_SOUNDS" = "Codadka";
+"SETTINGS_HAPTIC" = "Gariir";
 "SETTINGS_HIDE_CATEGORIES" = "Qari qaybaha";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Qaybuhu waxay soo muuqdaan marka aad geliso lacagta";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Qaybaha: %d";

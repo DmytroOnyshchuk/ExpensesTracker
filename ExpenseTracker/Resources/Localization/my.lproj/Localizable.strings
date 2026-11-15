@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "အမှိုက်ပုံး ဗလာဖြစ်နေသည်";
-"TRASH_RESTORE_CONFIRMATION" = "ပြန်ယူရန်?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "ငွေလွှဲမှုကို ပြန်ယူမလား?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "အမျိုးအစားကို ပြန်ယူမလား?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "အမျိုးအစားကို ဖျက်မလား?";
+"TRASH_DELETE_MESSAGE" = "ဤလုပ်ဆောင်ချက်ကို ပြန်ဖျက်၍မရပါ။";
 "TRASH_CLEAR_CONFIRMATION" = "အမှိုက်ပုံးထဲရှိ အရာအားလုံးကို အပြီးတိုင် ဖျက်ပါမည်။ ဤလုပ်ဆောင်ချက်ကို ပြန်ပြင်၍မရပါ။";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ငွေလွှဲမှတ်တမ်း မရှိပါ";
 "TRANSACTIONS_LIST_DELETE" = "ဖျက်ရန်";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "ငွေလွှဲမှု ထည့်ပြီးပါပြီ";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "ငွေလွှဲမှု ဖျက်ပြီးပါပြီ";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "အမှိုက်ပုံးသို့ ရွှေ့ပြီးပါပြီ";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ယနေ့ အသုံးစရိတ်";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "မနေ့က အသုံးစရိတ်";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "လိမ္မော်ရောင်";
 "SETTINGS_THEME_LIGHT" = "အလင်း";
 "SETTINGS_SOUNDS" = "အသံများ";
+"SETTINGS_HAPTIC" = "တုန်ခါမှု";
 "SETTINGS_HIDE_CATEGORIES" = "အမျိုးအစားများကို ဖျောက်ရန်";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "ပမာဏထည့်သည့်အခါ အမျိုးအစားများ ပေါ်လာမည်";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "အမျိုးအစားများ- %d";

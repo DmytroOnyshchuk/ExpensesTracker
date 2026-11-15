@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "It-trash huwa vojt";
-"TRASH_RESTORE_CONFIRMATION" = "Irrestawra?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Tirrestawra t-tranżazzjoni?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Tirrestawra l-kategorija?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Tħassar il-kategorija?";
+"TRASH_DELETE_MESSAGE" = "Din l-azzjoni ma tistax titreġġa’ lura.";
 "TRASH_CLEAR_CONFIRMATION" = "L-oġġetti kollha fit-trash se jitħassru b'mod permanenti. Din l-azzjoni ma tistax titreġġa' lura.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "L-ebda tranżazzjoni";
 "TRANSACTIONS_LIST_DELETE" = "Ħassar";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Tranżazzjoni miżjuda";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Tranżazzjoni mħassra";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Imċaqlaq għat-Trash";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Minfuq illum";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Minfuq ilbieraħ";
 
@@ -115,8 +118,8 @@
 "EDIT_CATEGORY_ICON" = "Ikona";
 "EDIT_CATEGORY_MORE_ICONS" = "Aktar";
 "EDIT_CATEGORY_COLOR" = "Kulur";
-"EDIT_CATEGORY_DELETE_CATEGORY" = "Ħassar il-kategorija";
-"EDIT_CATEGORY_DELETE_FOLDER" = "Ħassar il-folder";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Neħħi l-kategorija";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Neħħi l-folder";
 "EDIT_CATEGORY_DELETE_CONFIRMATION" = "Il-kategorija u t-tranżazzjonijiet kollha tagħha se jitmexxew fit-trash.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Isem tal-kategorija";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Kategorija ġdida";
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Oranġjo";
 "SETTINGS_THEME_LIGHT" = "Ċar";
 "SETTINGS_SOUNDS" = "Ħsejjes";
+"SETTINGS_HAPTIC" = "Vibrazzjoni";
 "SETTINGS_HIDE_CATEGORIES" = "Aħbi l-kategoriji";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Il-kategoriji jidhru meta ddaħħal ammont";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategoriji: %d";

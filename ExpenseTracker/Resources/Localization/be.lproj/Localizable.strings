@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Сметніца пустая";
-"TRASH_RESTORE_CONFIRMATION" = "Аднавіць?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Аднавіць транзакцыю?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Аднавіць катэгорыю?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Выдаліць катэгорыю?";
+"TRASH_DELETE_MESSAGE" = "Гэта дзеянне нельга адмяніць.";
 "TRASH_CLEAR_CONFIRMATION" = "Усе элементы ў сметніцы будуць выдалены назаўсёды. Гэта дзеянне нельга адмяніць.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Няма транзакцый";
 "TRANSACTIONS_LIST_DELETE" = "Выдаліць";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Транзакцыя дададзена";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Транзакцыя выдалена";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Перамешчана ў сметніцу";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Выдаткавана сёння";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Выдаткавана ўчора";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Аранжавы";
 "SETTINGS_THEME_LIGHT" = "Светлая";
 "SETTINGS_SOUNDS" = "Гукі";
+"SETTINGS_HAPTIC" = "Вібраводгук";
 "SETTINGS_HIDE_CATEGORIES" = "Хаваць катэгорыі";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Катэгорыі з’яўляюцца пры ўводзе сумы";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Катэгорыі: %d";

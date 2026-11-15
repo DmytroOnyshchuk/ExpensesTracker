@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Kôš je prázdny";
-"TRASH_RESTORE_CONFIRMATION" = "Obnoviť?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Obnoviť transakciu?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Obnoviť kategóriu?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Vymazať kategóriu?";
+"TRASH_DELETE_MESSAGE" = "Túto akciu nie je možné vrátiť späť.";
 "TRASH_CLEAR_CONFIRMATION" = "Všetky položky v koši budú natrvalo vymazané. Túto akciu nemožno vrátiť späť.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Žiadne transakcie";
 "TRANSACTIONS_LIST_DELETE" = "Vymazať";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transakcia pridaná";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transakcia vymazaná";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Presunuté do koša";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Minuté dnes";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Minuté včera";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Oranžová";
 "SETTINGS_THEME_LIGHT" = "Svetlá";
 "SETTINGS_SOUNDS" = "Zvuky";
+"SETTINGS_HAPTIC" = "Haptická odozva";
 "SETTINGS_HIDE_CATEGORIES" = "Skryť kategórie";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategórie sa zobrazia pri zadávaní sumy";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategórie: %d";

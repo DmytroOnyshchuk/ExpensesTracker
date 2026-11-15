@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Zakarrontzia hutsik dago";
-"TRASH_RESTORE_CONFIRMATION" = "Leheneratu?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Leheneratu transakzioa?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Leheneratu kategoria?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Ezabatu kategoria?";
+"TRASH_DELETE_MESSAGE" = "Ekintza hau ezin da desegin.";
 "TRASH_CLEAR_CONFIRMATION" = "Zakarrontziko elementu guztiak behin betiko ezabatuko dira. Ekintza hau ezin da desegin.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ez dago transakziorik";
 "TRANSACTIONS_LIST_DELETE" = "Ezabatu";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transakzioa gehitu da";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transakzioa ezabatu da";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Zakarrontzira eraman da";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Gaur gastatua";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Atzo gastatua";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Laranja";
 "SETTINGS_THEME_LIGHT" = "Argia";
 "SETTINGS_SOUNDS" = "Soinuak";
+"SETTINGS_HAPTIC" = "Bibrazioa";
 "SETTINGS_HIDE_CATEGORIES" = "Ezkutatu kategoriak";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategoriak zenbateko bat sartzean agertzen dira";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategoriak: %d";

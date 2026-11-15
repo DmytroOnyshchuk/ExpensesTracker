@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Kwandon shara babu komai";
-"TRASH_RESTORE_CONFIRMATION" = "Mayar?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "A mayar da ma'amalar?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "A mayar da rukunin?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "A share rukunin?";
+"TRASH_DELETE_MESSAGE" = "Ba za a iya soke wannan aikin ba.";
 "TRASH_CLEAR_CONFIRMATION" = "Za a goge duk abubuwan da ke cikin kwandon shara har abada. Ba za a iya soke wannan aikin ba.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Babu ma'amaloli";
 "TRANSACTIONS_LIST_DELETE" = "Share";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "An ƙara ma'amala";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "An share ma'amala";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "An matsar zuwa kwandon shara";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "An kashe yau";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "An kashe jiya";
 
@@ -115,8 +118,8 @@
 "EDIT_CATEGORY_ICON" = "Alama";
 "EDIT_CATEGORY_MORE_ICONS" = "Ƙari";
 "EDIT_CATEGORY_COLOR" = "Launi";
-"EDIT_CATEGORY_DELETE_CATEGORY" = "Share rukuni";
-"EDIT_CATEGORY_DELETE_FOLDER" = "Share babban fayil";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Cire rukuni";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Cire babban fayil";
 "EDIT_CATEGORY_DELETE_CONFIRMATION" = "Za a matsar da rukunin da duk ma'amalolinsa zuwa kwandon shara.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Sunan rukuni";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Sabon rukuni";
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Ruwan lemu";
 "SETTINGS_THEME_LIGHT" = "Haske";
 "SETTINGS_SOUNDS" = "Sautuka";
+"SETTINGS_HAPTIC" = "Jijjiga";
 "SETTINGS_HIDE_CATEGORIES" = "Ɓoye rukunoni";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Rukunoni suna bayyana idan ka shigar da adadi";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Rukunoni: %d";

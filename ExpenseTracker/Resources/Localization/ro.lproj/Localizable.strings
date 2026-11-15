@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Coșul este gol";
-"TRASH_RESTORE_CONFIRMATION" = "Restaurează?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Restaurezi tranzacția?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Restaurezi categoria?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Ștergi categoria?";
+"TRASH_DELETE_MESSAGE" = "Această acțiune nu poate fi anulată.";
 "TRASH_CLEAR_CONFIRMATION" = "Toate elementele din coș vor fi șterse definitiv. Această acțiune nu poate fi anulată.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nicio tranzacție";
 "TRANSACTIONS_LIST_DELETE" = "Șterge";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Tranzacție adăugată";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Tranzacție ștearsă";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Mutat în coș";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Cheltuit azi";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Cheltuit ieri";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Portocaliu";
 "SETTINGS_THEME_LIGHT" = "Luminos";
 "SETTINGS_SOUNDS" = "Sunete";
+"SETTINGS_HAPTIC" = "Vibrații";
 "SETTINGS_HIDE_CATEGORIES" = "Ascunde categoriile";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Categoriile apar când introduci o sumă";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categorii: %d";

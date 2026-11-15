@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "A papeleira está baleira";
-"TRASH_RESTORE_CONFIRMATION" = "Restaurar?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Restaurar a transacción?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Restaurar a categoría?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Eliminar a categoría?";
+"TRASH_DELETE_MESSAGE" = "Esta acción non se pode desfacer.";
 "TRASH_CLEAR_CONFIRMATION" = "Todos os elementos da papeleira eliminaranse definitivamente. Esta acción non se pode desfacer.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Non hai transaccións";
 "TRANSACTIONS_LIST_DELETE" = "Eliminar";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transacción engadida";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transacción eliminada";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Movido á papeleira";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Gastado hoxe";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Gastado onte";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Laranxa";
 "SETTINGS_THEME_LIGHT" = "Claro";
 "SETTINGS_SOUNDS" = "Sons";
+"SETTINGS_HAPTIC" = "Vibración";
 "SETTINGS_HIDE_CATEGORIES" = "Ocultar categorías";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "As categorías aparecen ao introducir un importe";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categorías: %d";

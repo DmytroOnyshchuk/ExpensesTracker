@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Roskakori on tyhjä";
-"TRASH_RESTORE_CONFIRMATION" = "Palauta?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Palautetaanko tapahtuma?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Palautetaanko luokka?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Poistetaanko luokka?";
+"TRASH_DELETE_MESSAGE" = "Tätä toimintoa ei voi kumota.";
 "TRASH_CLEAR_CONFIRMATION" = "Kaikki roskakorin kohteet poistetaan pysyvästi. Tätä toimintoa ei voi kumota.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ei tapahtumia";
 "TRANSACTIONS_LIST_DELETE" = "Poista";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Tapahtuma lisätty";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Tapahtuma poistettu";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Siirretty roskakoriin";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Käytetty tänään";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Käytetty eilen";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Oranssi";
 "SETTINGS_THEME_LIGHT" = "Vaalea";
 "SETTINGS_SOUNDS" = "Äänet";
+"SETTINGS_HAPTIC" = "Värinä";
 "SETTINGS_HIDE_CATEGORIES" = "Piilota luokat";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategoriat näkyvät, kun syötät summan";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Luokat: %d";

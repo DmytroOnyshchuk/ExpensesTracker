@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Çöp sepeti boş";
-"TRASH_RESTORE_CONFIRMATION" = "Geri Yükle?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "İşlem geri yüklensin mi?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Kategori geri yüklensin mi?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Kategori silinsin mi?";
+"TRASH_DELETE_MESSAGE" = "Bu işlem geri alınamaz.";
 "TRASH_CLEAR_CONFIRMATION" = "Çöp sepetindeki tüm öğeler kalıcı olarak silinecek. Bu işlem geri alınamaz.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "İşlem yok";
 "TRANSACTIONS_LIST_DELETE" = "Sil";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "İşlem eklendi";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "İşlem silindi";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Çöp Sepeti’ne taşındı";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Bugün harcanan";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Dün harcanan";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Turuncu";
 "SETTINGS_THEME_LIGHT" = "Açık";
 "SETTINGS_SOUNDS" = "Sesler";
+"SETTINGS_HAPTIC" = "Titreşim";
 "SETTINGS_HIDE_CATEGORIES" = "Kategorileri gizle";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategoriler tutar girildiğinde görünür";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategoriler: %d";

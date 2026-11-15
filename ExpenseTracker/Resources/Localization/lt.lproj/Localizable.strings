@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Šiukšlinė tuščia";
-"TRASH_RESTORE_CONFIRMATION" = "Atkurti?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Atkurti transakciją?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Atkurti kategoriją?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Ištrinti kategoriją?";
+"TRASH_DELETE_MESSAGE" = "Šio veiksmo anuliuoti negalima.";
 "TRASH_CLEAR_CONFIRMATION" = "Visi šiukšlinėje esantys elementai bus ištrinti visam laikui. Šio veiksmo anuliuoti negalima.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Transakcijų nėra";
 "TRANSACTIONS_LIST_DELETE" = "Ištrinti";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transakcija pridėta";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transakcija ištrinta";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Perkelta į šiukšlinę";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Išleista šiandien";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Išleista vakar";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Oranžinė";
 "SETTINGS_THEME_LIGHT" = "Šviesi";
 "SETTINGS_SOUNDS" = "Garsai";
+"SETTINGS_HAPTIC" = "Vibracija";
 "SETTINGS_HIDE_CATEGORIES" = "Slėpti kategorijas";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategorijos rodomos įvedant sumą";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorijos: %d";

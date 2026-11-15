@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Mae'r bin yn wag";
-"TRASH_RESTORE_CONFIRMATION" = "Adfer?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Adfer y trafodyn?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Adfer y categori?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Dileu'r categori?";
+"TRASH_DELETE_MESSAGE" = "Ni ellir dadwneud y weithred hon.";
 "TRASH_CLEAR_CONFIRMATION" = "Bydd pob eitem yn y bin yn cael ei dileu'n barhaol. Ni ellir dadwneud y weithred hon.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Dim trafodion";
 "TRANSACTIONS_LIST_DELETE" = "Dileu";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Trafodyn wedi'i ychwanegu";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Trafodyn wedi'i ddileu";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Wedi'i symud i'r bin";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Gwariwyd heddiw";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Gwariwyd ddoe";
 
@@ -115,8 +118,8 @@
 "EDIT_CATEGORY_ICON" = "Eicon";
 "EDIT_CATEGORY_MORE_ICONS" = "Rhagor";
 "EDIT_CATEGORY_COLOR" = "Lliw";
-"EDIT_CATEGORY_DELETE_CATEGORY" = "Dileu'r categori";
-"EDIT_CATEGORY_DELETE_FOLDER" = "Dileu'r ffolder";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Tynnu'r categori";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Tynnu'r ffolder";
 "EDIT_CATEGORY_DELETE_CONFIRMATION" = "Bydd y categori a'i holl drafodion yn cael eu symud i'r bin.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Enw'r categori";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Categori newydd";
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Oren";
 "SETTINGS_THEME_LIGHT" = "Golau";
 "SETTINGS_SOUNDS" = "Seiniau";
+"SETTINGS_HAPTIC" = "Dirgryniad";
 "SETTINGS_HIDE_CATEGORIES" = "Cuddio categorïau";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Mae categorïau’n ymddangos wrth roi swm";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categorïau: %d";

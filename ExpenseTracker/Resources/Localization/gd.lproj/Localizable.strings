@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Tha an sgudal falamh";
-"TRASH_RESTORE_CONFIRMATION" = "Aisig?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "A bheil thu airson an tar-chur aiseag?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "A bheil thu airson an roinn-seòrsa aiseag?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "A bheil thu airson an roinn-seòrsa a sguabadh às?";
+"TRASH_DELETE_MESSAGE" = "Cha ghabh seo a neo-dhèanamh.";
 "TRASH_CLEAR_CONFIRMATION" = "Thèid a h-uile nì san sgudal a sguabadh às gu buan. Cha ghabh an gnìomh seo a neo-dhèanamh.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Chan eil tar-chur ann";
 "TRANSACTIONS_LIST_DELETE" = "Sguab às";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Chaidh tar-chur a chur ris";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Chaidh an tar-chur a sguabadh às";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Chaidh a ghluasad dhan sgudal";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Air a chosg an-diugh";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Air a chosg an-dè";
 
@@ -115,8 +118,8 @@
 "EDIT_CATEGORY_ICON" = "Ìomhaigheag";
 "EDIT_CATEGORY_MORE_ICONS" = "Barrachd";
 "EDIT_CATEGORY_COLOR" = "Dath";
-"EDIT_CATEGORY_DELETE_CATEGORY" = "Sguab às an roinn-seòrsa";
-"EDIT_CATEGORY_DELETE_FOLDER" = "Sguab às am pasgan";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Thoir air falbh an roinn-seòrsa";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Thoir air falbh am pasgan";
 "EDIT_CATEGORY_DELETE_CONFIRMATION" = "Thèid an roinn-seòrsa agus a h-uile tar-chur aice a ghluasad dhan sgudal.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Ainm na roinne-seòrsa";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Roinn-seòrsa ùr";
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Orains";
 "SETTINGS_THEME_LIGHT" = "Soilleir";
 "SETTINGS_SOUNDS" = "Fuaimean";
+"SETTINGS_HAPTIC" = "Crith";
 "SETTINGS_HIDE_CATEGORIES" = "Falaich roinnean-seòrsa";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Nochdaidh roinnean-seòrsa nuair a chuireas tu suim a-steach";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Roinnean-seòrsa: %d";

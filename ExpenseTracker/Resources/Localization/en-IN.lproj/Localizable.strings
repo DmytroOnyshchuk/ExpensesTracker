@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Bin is empty";
-"TRASH_RESTORE_CONFIRMATION" = "Restore?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Restore transaction?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Restore category?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Delete category?";
+"TRASH_DELETE_MESSAGE" = "This action cannot be undone.";
 "TRASH_CLEAR_CONFIRMATION" = "All items in the Bin will be permanently deleted. This action cannot be undone.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "No transactions";
 "TRANSACTIONS_LIST_DELETE" = "Delete";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transaction added";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transaction deleted";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Moved to Bin";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Spent today";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Spent yesterday";
 
@@ -115,8 +118,8 @@
 "EDIT_CATEGORY_ICON" = "Icon";
 "EDIT_CATEGORY_MORE_ICONS" = "More";
 "EDIT_CATEGORY_COLOR" = "Colour";
-"EDIT_CATEGORY_DELETE_CATEGORY" = "Delete category";
-"EDIT_CATEGORY_DELETE_FOLDER" = "Delete folder";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Remove category";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Remove folder";
 "EDIT_CATEGORY_DELETE_CONFIRMATION" = "The category and all its transactions will be moved to the Bin.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Category name";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "New category";
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Orange";
 "SETTINGS_THEME_LIGHT" = "Light";
 "SETTINGS_SOUNDS" = "Sounds";
+"SETTINGS_HAPTIC" = "Haptic";
 "SETTINGS_HIDE_CATEGORIES" = "Hide categories";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Categories appear when you enter an amount";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categories: %d";

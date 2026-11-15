@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ट्रैश खाली है";
-"TRASH_RESTORE_CONFIRMATION" = "पुनर्स्थापित करें?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "लेनदेन पुनर्स्थापित करें?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "श्रेणी पुनर्स्थापित करें?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "श्रेणी हटाएँ?";
+"TRASH_DELETE_MESSAGE" = "यह क्रिया पूर्ववत नहीं की जा सकती।";
 "TRASH_CLEAR_CONFIRMATION" = "ट्रैश के सभी आइटम स्थायी रूप से हटा दिए जाएँगे। यह क्रिया पूर्ववत नहीं की जा सकती।";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "कोई लेन-देन नहीं";
 "TRANSACTIONS_LIST_DELETE" = "हटाएँ";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "लेनदेन जोड़ा गया";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "लेनदेन हटाया गया";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ट्रैश में ले जाया गया";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "आज खर्च";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "कल खर्च";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "नारंगी";
 "SETTINGS_THEME_LIGHT" = "हल्का";
 "SETTINGS_SOUNDS" = "ध्वनियाँ";
+"SETTINGS_HAPTIC" = "कंपन";
 "SETTINGS_HIDE_CATEGORIES" = "श्रेणियाँ छिपाएँ";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "राशि दर्ज करने पर श्रेणियाँ दिखाई देती हैं";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "श्रेणियाँ: %d";

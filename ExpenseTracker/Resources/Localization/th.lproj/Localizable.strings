@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ถังขยะว่างเปล่า";
-"TRASH_RESTORE_CONFIRMATION" = "กู้คืน?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "กู้คืนรายการนี้หรือไม่";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "กู้คืนหมวดหมู่นี้หรือไม่";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "ลบหมวดหมู่นี้หรือไม่";
+"TRASH_DELETE_MESSAGE" = "การดำเนินการนี้ไม่สามารถยกเลิกได้";
 "TRASH_CLEAR_CONFIRMATION" = "รายการทั้งหมดในถังขยะจะถูกลบอย่างถาวร การดำเนินการนี้ไม่สามารถเลิกทำได้";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ไม่มีรายการ";
 "TRANSACTIONS_LIST_DELETE" = "ลบ";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "เพิ่มรายการแล้ว";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "ลบรายการแล้ว";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ย้ายไปถังขยะแล้ว";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ใช้จ่ายวันนี้";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ใช้จ่ายเมื่อวาน";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "ส้ม";
 "SETTINGS_THEME_LIGHT" = "สว่าง";
 "SETTINGS_SOUNDS" = "เสียง";
+"SETTINGS_HAPTIC" = "การสั่น";
 "SETTINGS_HIDE_CATEGORIES" = "ซ่อนหมวดหมู่";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "หมวดหมู่จะแสดงเมื่อป้อนจำนวนเงิน";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "หมวดหมู่: %d";

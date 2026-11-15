@@ -11,6 +11,7 @@ enum UDKey: String {
     case statisticsChartStyle = "UDKey.statisticsChartStyle"
     case soundsEnabled = "UDKey.soundsEnabled"
     case hideCategories = "UDKey.hideCategories"
+    case hapticEnabled = "UDKey.hapticEnabled"
 }
 
 final class UserManager {
@@ -25,6 +26,7 @@ final class UserManager {
     @UserDefault(.userId, defaultValue: nil) var userId: String?
     @UserDefaultCodable(.theme, defaultValue: ThemePreset.dark) var theme: ThemePreset!
     @UserDefault(.soundsEnabled, defaultValue: true) var soundsEnabled: Bool!
+    @UserDefault(.hapticEnabled, defaultValue: true) var hapticEnabled: Bool!
 }
 
 extension UserManager {

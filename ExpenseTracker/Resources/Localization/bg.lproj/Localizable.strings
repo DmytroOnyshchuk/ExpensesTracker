@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Кошчето е празно";
-"TRASH_RESTORE_CONFIRMATION" = "Възстановяване?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Възстановяване на транзакцията?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Възстановяване на категорията?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Изтриване на категорията?";
+"TRASH_DELETE_MESSAGE" = "Това действие не може да бъде отменено.";
 "TRASH_CLEAR_CONFIRMATION" = "Всички елементи в кошчето ще бъдат изтрити завинаги. Това действие не може да бъде отменено.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Няма транзакции";
 "TRANSACTIONS_LIST_DELETE" = "Изтриване";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Транзакцията е добавена";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Транзакцията е изтрита";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Преместено в кошчето";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Похарчено днес";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Похарчено вчера";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Оранжево";
 "SETTINGS_THEME_LIGHT" = "Светла";
 "SETTINGS_SOUNDS" = "Звуци";
+"SETTINGS_HAPTIC" = "Вибрация";
 "SETTINGS_HIDE_CATEGORIES" = "Скриване на категориите";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Категориите се появяват при въвеждане на сума";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Категории: %d";

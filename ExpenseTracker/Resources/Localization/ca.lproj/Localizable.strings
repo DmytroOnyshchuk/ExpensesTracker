@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "La paperera és buida";
-"TRASH_RESTORE_CONFIRMATION" = "Restaura?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Vols restaurar la transacció?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Vols restaurar la categoria?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Vols eliminar la categoria?";
+"TRASH_DELETE_MESSAGE" = "Aquesta acció no es pot desfer.";
 "TRASH_CLEAR_CONFIRMATION" = "Tots els elements de la paperera s'eliminaran definitivament. Aquesta acció no es pot desfer.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "No hi ha transaccions";
 "TRANSACTIONS_LIST_DELETE" = "Elimina";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transacció afegida";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transacció eliminada";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "S’ha mogut a la paperera";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Gastat avui";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Gastat ahir";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Taronja";
 "SETTINGS_THEME_LIGHT" = "Clar";
 "SETTINGS_SOUNDS" = "Sons";
+"SETTINGS_HAPTIC" = "Vibració";
 "SETTINGS_HIDE_CATEGORIES" = "Amaga les categories";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Les categories apareixen en introduir un import";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categories: %d";

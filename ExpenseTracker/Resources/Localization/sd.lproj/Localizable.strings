@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ردي خالي آهي";
-"TRASH_RESTORE_CONFIRMATION" = "بحال ڪريو؟";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "لين دين بحال ڪجي؟";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "درجو بحال ڪجي؟";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "درجو ختم ڪجي؟";
+"TRASH_DELETE_MESSAGE" = "هي عمل واپس نٿو ٿي سگهي.";
 "TRASH_CLEAR_CONFIRMATION" = "ردي ۾ موجود سڀ شيون هميشه لاءِ ختم ڪيون وينديون. هي عمل واپس نٿو ڪري سگهجي.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ڪا لين دين ناهي";
 "TRANSACTIONS_LIST_DELETE" = "ختم ڪريو";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "لين دين شامل ٿي";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "لين دين ختم ٿي";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "رديءَ ۾ منتقل ٿي ويو";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "اڄ خرچ ٿيو";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ڪالهه خرچ ٿيو";
 
@@ -115,8 +118,8 @@
 "EDIT_CATEGORY_ICON" = "آئڪن";
 "EDIT_CATEGORY_MORE_ICONS" = "وڌيڪ";
 "EDIT_CATEGORY_COLOR" = "رنگ";
-"EDIT_CATEGORY_DELETE_CATEGORY" = "درجو ختم ڪريو";
-"EDIT_CATEGORY_DELETE_FOLDER" = "فولڊر ختم ڪريو";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "درجو هٽايو";
+"EDIT_CATEGORY_DELETE_FOLDER" = "فولڊر هٽايو";
 "EDIT_CATEGORY_DELETE_CONFIRMATION" = "زمرو ۽ ان جون سڀ ٽرانزيڪشنون ردي ۾ منتقل ڪيون وينديون.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "درجي جو نالو";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "نئون درجو";
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "نارنگي";
 "SETTINGS_THEME_LIGHT" = "روشن";
 "SETTINGS_SOUNDS" = "آواز";
+"SETTINGS_HAPTIC" = "وائبريشن";
 "SETTINGS_HIDE_CATEGORIES" = "ڪيٽيگريون لڪايو";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "رقم داخل ڪرڻ تي زمرا ظاهر ٿين ٿا";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "درجا: %d";

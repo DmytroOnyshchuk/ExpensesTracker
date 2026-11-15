@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ଟ୍ରାସ୍ ଖାଲି ଅଛି";
-"TRASH_RESTORE_CONFIRMATION" = "ପୁନଃସ୍ଥାପନ କରନ୍ତୁ?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "କାରବାର ପୁନଃସ୍ଥାପନ କରିବେ?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "ବର୍ଗ ପୁନଃସ୍ଥାପନ କରିବେ?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "ବର୍ଗ ଡିଲିଟ କରିବେ?";
+"TRASH_DELETE_MESSAGE" = "ଏହି କାର୍ଯ୍ୟକୁ ପୂର୍ବବତ୍ କରାଯାଇପାରିବ ନାହିଁ।";
 "TRASH_CLEAR_CONFIRMATION" = "ଟ୍ରାସ୍‌ରେ ଥିବା ସମସ୍ତ ଆଇଟମ୍ ସ୍ଥାୟୀ ଭାବେ ଡିଲିଟ୍ ହେବ। ଏହି କାର୍ଯ୍ୟକୁ ପୂର୍ବବତ୍ କରାଯାଇପାରିବ ନାହିଁ।";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "କୌଣସି କାରବାର ନାହିଁ";
 "TRANSACTIONS_LIST_DELETE" = "ଡିଲିଟ କରନ୍ତୁ";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "କାରବାର ଯୋଡ଼ାଗଲା";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "କାରବାର ଡିଲିଟ ହେଲା";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ଟ୍ରାସ୍‌କୁ ଘୁଞ୍ଚାଗଲା";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ଆଜିର ଖର୍ଚ୍ଚ";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ଗତକାଲିର ଖର୍ଚ୍ଚ";
 
@@ -115,8 +118,8 @@
 "EDIT_CATEGORY_ICON" = "ଆଇକନ";
 "EDIT_CATEGORY_MORE_ICONS" = "ଅଧିକ";
 "EDIT_CATEGORY_COLOR" = "ରଙ୍ଗ";
-"EDIT_CATEGORY_DELETE_CATEGORY" = "ବର୍ଗ ଡିଲିଟ କରନ୍ତୁ";
-"EDIT_CATEGORY_DELETE_FOLDER" = "ଫୋଲ୍ଡର ଡିଲିଟ କରନ୍ତୁ";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "ବର୍ଗ କାଢ଼ନ୍ତୁ";
+"EDIT_CATEGORY_DELETE_FOLDER" = "ଫୋଲ୍ଡର କାଢ଼ନ୍ତୁ";
 "EDIT_CATEGORY_DELETE_CONFIRMATION" = "ବର୍ଗ ଏବଂ ଏହାର ସମସ୍ତ କାରବାର ଟ୍ରାସ୍‌କୁ ନିଆଯିବ।";
 "EDIT_CATEGORY_DEFAULT_NAME" = "ବର୍ଗର ନାମ";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "ନୂଆ ବର୍ଗ";
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "କମଳା";
 "SETTINGS_THEME_LIGHT" = "ହାଲୁକା";
 "SETTINGS_SOUNDS" = "ଧ୍ୱନି";
+"SETTINGS_HAPTIC" = "କମ୍ପନ";
 "SETTINGS_HIDE_CATEGORIES" = "ବର୍ଗଗୁଡ଼ିକ ଲୁଚାନ୍ତୁ";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "ପରିମାଣ ଲେଖିଲେ ଶ୍ରେଣୀଗୁଡ଼ିକ ଦେଖାଯାଏ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "ଶ୍ରେଣୀ: %d";

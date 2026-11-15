@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Себет бош";
-"TRASH_RESTORE_CONFIRMATION" = "Калыбына келтирүү?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Транзакция калыбына келтирилсинби?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Категория калыбына келтирилсинби?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Категория өчүрүлсүнбү?";
+"TRASH_DELETE_MESSAGE" = "Бул аракетти артка кайтаруу мүмкүн эмес.";
 "TRASH_CLEAR_CONFIRMATION" = "Себеттеги бардык элементтер биротоло өчүрүлөт. Бул аракетти артка кайтаруу мүмкүн эмес.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Транзакциялар жок";
 "TRANSACTIONS_LIST_DELETE" = "Өчүрүү";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Транзакция кошулду";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Транзакция өчүрүлдү";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Себетке жылдырылды";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Бүгүн сарпталды";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Кечээ сарпталды";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Кызгылт сары";
 "SETTINGS_THEME_LIGHT" = "Жарык";
 "SETTINGS_SOUNDS" = "Үндөр";
+"SETTINGS_HAPTIC" = "Дирилдөө";
 "SETTINGS_HIDE_CATEGORIES" = "Категорияларды жашыруу";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Категориялар сумманы киргизгенде пайда болот";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Категориялар: %d";

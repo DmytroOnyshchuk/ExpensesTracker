@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "تەنەکەی خۆڵ بەتاڵە";
-"TRASH_RESTORE_CONFIRMATION" = "گەڕاندنەوە؟";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "مامەڵەکە بگەڕێندرێتەوە؟";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "پۆلەکە بگەڕێندرێتەوە؟";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "پۆلەکە بسڕدرێتەوە؟";
+"TRASH_DELETE_MESSAGE" = "ئەم کردارە ناگەڕێندرێتەوە.";
 "TRASH_CLEAR_CONFIRMATION" = "هەموو شتەکانی ناو تەنەکەی خۆڵ بە یەکجاری دەسڕدرێنەوە. ئەم کردارە ناگەڕێندرێتەوە.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "هیچ مامەڵەیەک نییە";
 "TRANSACTIONS_LIST_DELETE" = "سڕینەوە";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "مامەڵە زیادکرا";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "مامەڵە سڕایەوە";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "گوازرایەوە بۆ تەنەکەی خۆڵ";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ئەمڕۆ خەرجکراوە";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "دوێنێ خەرجکراوە";
 
@@ -115,8 +118,8 @@
 "EDIT_CATEGORY_ICON" = "ئایکۆن";
 "EDIT_CATEGORY_MORE_ICONS" = "زیاتر";
 "EDIT_CATEGORY_COLOR" = "ڕەنگ";
-"EDIT_CATEGORY_DELETE_CATEGORY" = "سڕینەوەی پۆل";
-"EDIT_CATEGORY_DELETE_FOLDER" = "سڕینەوەی بوخچە";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "لابردنی پۆل";
+"EDIT_CATEGORY_DELETE_FOLDER" = "لابردنی بوخچە";
 "EDIT_CATEGORY_DELETE_CONFIRMATION" = "پۆلەکە و هەموو مامەڵەکانی دەگوازرێنەوە بۆ تەنەکەی خۆڵ.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "ناوی پۆل";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "پۆلی نوێ";
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "پرتەقاڵی";
 "SETTINGS_THEME_LIGHT" = "ڕووناک";
 "SETTINGS_SOUNDS" = "دەنگەکان";
+"SETTINGS_HAPTIC" = "لەرزین";
 "SETTINGS_HIDE_CATEGORIES" = "شاردنەوەی پۆلەکان";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "پۆلەکان لە کاتی نووسینی بڕدا دەردەکەون";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "پۆلەکان: %d";

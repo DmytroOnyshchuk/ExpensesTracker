@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Tupio ni tupu";
-"TRASH_RESTORE_CONFIRMATION" = "Rejesha?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Rejesha muamala?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Rejesha aina?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Futa aina?";
+"TRASH_DELETE_MESSAGE" = "Kitendo hiki hakiwezi kutenduliwa.";
 "TRASH_CLEAR_CONFIRMATION" = "Vipengee vyote kwenye tupio vitafutwa kabisa. Kitendo hiki hakiwezi kutenduliwa.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Hakuna miamala";
 "TRANSACTIONS_LIST_DELETE" = "Futa";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Muamala umeongezwa";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Muamala umefutwa";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Imehamishiwa kwenye tupio";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Matumizi ya leo";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Matumizi ya jana";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Machungwa";
 "SETTINGS_THEME_LIGHT" = "Angavu";
 "SETTINGS_SOUNDS" = "Sauti";
+"SETTINGS_HAPTIC" = "Mtetemo";
 "SETTINGS_HIDE_CATEGORIES" = "Ficha kategoria";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategoria huonekana unapoweka kiasi";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Aina: %d";

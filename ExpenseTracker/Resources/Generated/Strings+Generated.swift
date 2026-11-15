@@ -140,12 +140,12 @@ internal enum L10n {
   internal static let editCategoryCreate = L10n.tr("Localizable", "EDIT_CATEGORY_CREATE", fallback: "Create")
   /// Category name
   internal static let editCategoryDefaultName = L10n.tr("Localizable", "EDIT_CATEGORY_DEFAULT_NAME", fallback: "Category name")
-  /// Delete category
-  internal static let editCategoryDeleteCategory = L10n.tr("Localizable", "EDIT_CATEGORY_DELETE_CATEGORY", fallback: "Delete category")
+  /// Remove category
+  internal static let editCategoryDeleteCategory = L10n.tr("Localizable", "EDIT_CATEGORY_DELETE_CATEGORY", fallback: "Remove category")
   /// The category and all its transactions will be moved to the Trash.
   internal static let editCategoryDeleteConfirmation = L10n.tr("Localizable", "EDIT_CATEGORY_DELETE_CONFIRMATION", fallback: "The category and all its transactions will be moved to the Trash.")
-  /// Delete folder
-  internal static let editCategoryDeleteFolder = L10n.tr("Localizable", "EDIT_CATEGORY_DELETE_FOLDER", fallback: "Delete folder")
+  /// Remove folder
+  internal static let editCategoryDeleteFolder = L10n.tr("Localizable", "EDIT_CATEGORY_DELETE_FOLDER", fallback: "Remove folder")
   /// Icon
   internal static let editCategoryIcon = L10n.tr("Localizable", "EDIT_CATEGORY_ICON", fallback: "Icon")
   /// More
@@ -206,8 +206,12 @@ internal enum L10n {
   internal static let save = L10n.tr("Localizable", "SAVE", fallback: "Save")
   /// Appearance
   internal static let settingsAppearance = L10n.tr("Localizable", "SETTINGS_APPEARANCE", fallback: "Appearance")
+  /// Haptic
+  internal static let settingsHaptic = L10n.tr("Localizable", "SETTINGS_HAPTIC", fallback: "Haptic")
   /// Hide categories
   internal static let settingsHideCategories = L10n.tr("Localizable", "SETTINGS_HIDE_CATEGORIES", fallback: "Hide categories")
+  /// Categories appear when you enter an amount
+  internal static let settingsHideCategoriesDescription = L10n.tr("Localizable", "SETTINGS_HIDE_CATEGORIES_DESCRIPTION", fallback: "Categories appear when you enter an amount")
   /// Sounds
   internal static let settingsSounds = L10n.tr("Localizable", "SETTINGS_SOUNDS", fallback: "Sounds")
   /// Dark
@@ -296,6 +300,8 @@ internal enum L10n {
   internal static let transactionEditTitle = L10n.tr("Localizable", "TRANSACTION_EDIT_TITLE", fallback: "Edit")
   /// Delete
   internal static let transactionsListDelete = L10n.tr("Localizable", "TRANSACTIONS_LIST_DELETE", fallback: "Delete")
+  /// Moved to Trash
+  internal static let transactionsListMovedToTrash = L10n.tr("Localizable", "TRANSACTIONS_LIST_MOVED_TO_TRASH", fallback: "Moved to Trash")
   /// No transactions
   internal static let transactionsListNoTransactions = L10n.tr("Localizable", "TRANSACTIONS_LIST_NO_TRANSACTIONS", fallback: "No transactions")
   /// Spent today
@@ -304,14 +310,18 @@ internal enum L10n {
   internal static let transactionsListSpentYesterday = L10n.tr("Localizable", "TRANSACTIONS_LIST_SPENT_YESTERDAY", fallback: "Spent yesterday")
   /// Transaction added
   internal static let transactionsListTransactionAdded = L10n.tr("Localizable", "TRANSACTIONS_LIST_TRANSACTION_ADDED", fallback: "Transaction added")
-  /// Transaction deleted
-  internal static let transactionsListTransactionDeleted = L10n.tr("Localizable", "TRANSACTIONS_LIST_TRANSACTION_DELETED", fallback: "Transaction deleted")
   /// All items in the Trash will be permanently deleted. This action cannot be undone.
   internal static let trashClearConfirmation = L10n.tr("Localizable", "TRASH_CLEAR_CONFIRMATION", fallback: "All items in the Trash will be permanently deleted. This action cannot be undone.")
+  /// Delete category?
+  internal static let trashDeleteCategoryConfirmation = L10n.tr("Localizable", "TRASH_DELETE_CATEGORY_CONFIRMATION", fallback: "Delete category?")
+  /// This action cannot be undone.
+  internal static let trashDeleteMessage = L10n.tr("Localizable", "TRASH_DELETE_MESSAGE", fallback: "This action cannot be undone.")
   /// Trash is empty
   internal static let trashEmpty = L10n.tr("Localizable", "TRASH_EMPTY", fallback: "Trash is empty")
-  /// Restore?
-  internal static let trashRestoreConfirmation = L10n.tr("Localizable", "TRASH_RESTORE_CONFIRMATION", fallback: "Restore?")
+  /// Restore category?
+  internal static let trashRestoreCategoryConfirmation = L10n.tr("Localizable", "TRASH_RESTORE_CATEGORY_CONFIRMATION", fallback: "Restore category?")
+  /// Restore transaction?
+  internal static let trashRestoreTransactionConfirmation = L10n.tr("Localizable", "TRASH_RESTORE_TRANSACTION_CONFIRMATION", fallback: "Restore transaction?")
   /// Undo
   internal static let undo = L10n.tr("Localizable", "UNDO", fallback: "Undo")
   /// Update

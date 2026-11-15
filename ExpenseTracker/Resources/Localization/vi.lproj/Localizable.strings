@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Thùng rác trống";
-"TRASH_RESTORE_CONFIRMATION" = "Khôi phục?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Khôi phục giao dịch?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Khôi phục danh mục?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Xóa danh mục?";
+"TRASH_DELETE_MESSAGE" = "Không thể hoàn tác hành động này.";
 "TRASH_CLEAR_CONFIRMATION" = "Tất cả các mục trong thùng rác sẽ bị xóa vĩnh viễn. Không thể hoàn tác hành động này.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Không có giao dịch";
 "TRANSACTIONS_LIST_DELETE" = "Xóa";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Đã thêm giao dịch";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Đã xóa giao dịch";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Đã chuyển vào thùng rác";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Đã chi hôm nay";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Đã chi hôm qua";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Cam";
 "SETTINGS_THEME_LIGHT" = "Sáng";
 "SETTINGS_SOUNDS" = "Âm thanh";
+"SETTINGS_HAPTIC" = "Rung";
 "SETTINGS_HIDE_CATEGORIES" = "Ẩn danh mục";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Danh mục xuất hiện khi bạn nhập số tiền";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Danh mục: %d";

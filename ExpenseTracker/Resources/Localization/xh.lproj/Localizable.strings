@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Umgqomo wenkunkuma awunanto";
-"TRASH_RESTORE_CONFIRMATION" = "Buyisela?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Buyisela intengiselwano?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Buyisela udidi?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Cima udidi?";
+"TRASH_DELETE_MESSAGE" = "Eli nyathelo alinakubuyiselwa.";
 "TRASH_CLEAR_CONFIRMATION" = "Zonke izinto ezikumgqomo wenkunkuma ziza kucinywa ngokusisigxina. Eli nyathelo alinakurhoxiswa.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Akukho ntengiselwano";
 "TRANSACTIONS_LIST_DELETE" = "Cima";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Intengiselwano yongeziwe";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Intengiselwano icinyiwe";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Kufuduselwe kumgqomo wenkunkuma";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Echithwe namhlanje";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Echithwe izolo";
 
@@ -115,8 +118,8 @@
 "EDIT_CATEGORY_ICON" = "I-icon";
 "EDIT_CATEGORY_MORE_ICONS" = "Okungakumbi";
 "EDIT_CATEGORY_COLOR" = "Umbala";
-"EDIT_CATEGORY_DELETE_CATEGORY" = "Cima udidi";
-"EDIT_CATEGORY_DELETE_FOLDER" = "Cima ifolda";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Susa udidi";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Susa ifolda";
 "EDIT_CATEGORY_DELETE_CONFIRMATION" = "Udidi nazo zonke iintengiselwano zalo ziza kufuduselwa kumgqomo wenkunkuma.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Igama lodidi";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Udidi olutsha";
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Orenji";
 "SETTINGS_THEME_LIGHT" = "Khanyayo";
 "SETTINGS_SOUNDS" = "Izandi";
+"SETTINGS_HAPTIC" = "Ukungcangcazela";
 "SETTINGS_HIDE_CATEGORIES" = "Fihla iindidi";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Iindidi zivela xa ufaka isixa";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Iindidi: %d";

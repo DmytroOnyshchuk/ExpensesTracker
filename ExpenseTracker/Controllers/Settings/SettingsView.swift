@@ -2,6 +2,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @State private var soundsEnabled = FeedbackManager.shared.soundIsEnable
+    @State private var hapticEnabled = FeedbackManager.shared.hapticIsEnable
     @AppStorage(UDKey.hideCategories.rawValue) private var hideCategories = false
 
     @Inject private var themeManager: ThemeManager
@@ -27,45 +28,23 @@ struct SettingsView: View {
                 .padding(16)
                 .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
 
-                Toggle(isOn: $soundsEnabled) {
-                    HStack(spacing: 16) {
-                        Image(systemName: "speaker.wave.2")
-                            .font(.system(size: 22))
-                            .foregroundColor(.appPrimary)
-                            .frame(width: 32)
-
-                        Text(L10n.settingsSounds)
-                            .font(.appLight(18))
-                            .foregroundColor(.appWhite)
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.7)
+                toggleRow(L10n.settingsSounds, systemImage: "speaker.wave.2", isOn: $soundsEnabled)
+                    .padding(.top, 6)
+                    .onChange(of: soundsEnabled) { _, isEnabled in
+                        feedbackManager.enableSound(isEnabled)
                     }
-                }
-                .padding(.horizontal, 20)
-                .frame(height: 60)
-                .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
-                .padding(.top, 6)
-                .onChange(of: soundsEnabled) { _, isEnabled in
-                    feedbackManager.enableSound(isEnabled)
-                }
 
-                Toggle(isOn: $hideCategories) {
-                    HStack(spacing: 16) {
-                        Image(systemName: "square.grid.2x2.fill")
-                            .font(.system(size: 22))
-                            .foregroundColor(.appPrimary)
-                            .frame(width: 32)
-
-                        Text(L10n.settingsHideCategories)
-                            .font(.appLight(18))
-                            .foregroundColor(.appWhite)
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.7)
+                toggleRow(L10n.settingsHaptic, systemImage: "iphone.radiowaves.left.and.right", isOn: $hapticEnabled)
+                    .onChange(of: hapticEnabled) { _, isEnabled in
+                        feedbackManager.enableHaptic(isEnabled)
                     }
-                }
-                .padding(.horizontal, 20)
-                .frame(height: 60)
-                .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
+
+                toggleRow(
+                    L10n.settingsHideCategories,
+                    subtitle: L10n.settingsHideCategoriesDescription,
+                    systemImage: "square.grid.2x2.fill",
+                    isOn: $hideCategories
+                )
             }
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .top)
@@ -73,6 +52,40 @@ struct SettingsView: View {
         .appBackground()
         .navigationTitle(L10n.menuSettings)
         .navigationBarTitleDisplayMode(.inline)
+    }
+
+    private func toggleRow(_ title: String, subtitle: String? = nil, systemImage: String, isOn: Binding<Bool>) -> some View {
+        Toggle(isOn: isOn) {
+            HStack(spacing: 16) {
+                Image(systemName: systemImage)
+                    .font(.system(size: 22))
+                    .foregroundColor(.appPrimary)
+                    .frame(width: 32)
+
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(title)
+                        .font(.appLight(18))
+                        .foregroundColor(.appWhite)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.7)
+
+                    if let subtitle {
+                        Text(subtitle)
+                            .font(.appLight(13))
+                            .foregroundColor(.appLabel)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+            }
+        }
+        .padding(.horizontal, 20)
+        .padding(.vertical, 10)
+        .frame(minHeight: 60)
+        .contentShape(Rectangle())
+        .onTapGesture {
+            withAnimation { isOn.wrappedValue.toggle() }
+        }
+        .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
     }
 
     private func select(_ preset: ThemePreset) {

@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Savat bo'sh";
-"TRASH_RESTORE_CONFIRMATION" = "Tiklash?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Tranzaksiya tiklansinmi?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Turkum tiklansinmi?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Turkum oʻchirilsinmi?";
+"TRASH_DELETE_MESSAGE" = "Bu amalni ortga qaytarib boʻlmaydi.";
 "TRASH_CLEAR_CONFIRMATION" = "Savatdagi barcha elementlar butunlay o'chiriladi. Bu amalni ortga qaytarib bo'lmaydi.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Tranzaksiyalar yoʻq";
 "TRANSACTIONS_LIST_DELETE" = "Oʻchirish";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Tranzaksiya qoʻshildi";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Tranzaksiya oʻchirildi";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Savatga koʻchirildi";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Bugun sarflandi";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Kecha sarflandi";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "To‘q sariq";
 "SETTINGS_THEME_LIGHT" = "Yorug‘";
 "SETTINGS_SOUNDS" = "Tovushlar";
+"SETTINGS_HAPTIC" = "Tebranish";
 "SETTINGS_HIDE_CATEGORIES" = "Toifalarni yashirish";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Turkumlar summa kiritilganda koʻrinadi";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Toifalar: %d";

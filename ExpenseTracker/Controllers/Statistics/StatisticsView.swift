@@ -79,7 +79,7 @@ struct StatisticsView: View {
 
     private var periodPicker: some View {
         SegmentedControl(items: StatisticsPeriod.allCases, selection: $period, title: \.title)
-            .sensoryFeedback(.selection, trigger: period)
+            .sensoryFeedback(trigger: period) { _, _ in FeedbackManager.shared.selectionFeedback }
             .padding(.horizontal, 64)
     }
 
@@ -233,7 +233,7 @@ struct StatisticsBreakdown: View {
                             guard canSwitchStyle else { return }
                             chartStyle = chartStyle.next
                         }
-                        .sensoryFeedback(.selection, trigger: chartStyle)
+                        .sensoryFeedback(trigger: chartStyle) { _, _ in FeedbackManager.shared.selectionFeedback }
                 }
             }
             .frame(maxWidth: .infinity)

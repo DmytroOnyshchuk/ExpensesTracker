@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ຖັງຂີ້ເຫຍື້ອຫວ່າງເປົ່າ";
-"TRASH_RESTORE_CONFIRMATION" = "ກູ້ຄືນ?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "ກູ້ຄືນທຸລະກຳບໍ?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "ກູ້ຄືນໝວດໝູ່ບໍ?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "ລຶບໝວດໝູ່ບໍ?";
+"TRASH_DELETE_MESSAGE" = "ການກະທຳນີ້ບໍ່ສາມາດຍົກເລີກໄດ້.";
 "TRASH_CLEAR_CONFIRMATION" = "ລາຍການທັງໝົດໃນຖັງຂີ້ເຫຍື້ອຈະຖືກລຶບຢ່າງຖາວອນ. ການກະທຳນີ້ບໍ່ສາມາດຍົກເລີກໄດ້.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ບໍ່ມີທຸລະກຳ";
 "TRANSACTIONS_LIST_DELETE" = "ລຶບ";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "ເພີ່ມທຸລະກຳແລ້ວ";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "ລຶບທຸລະກຳແລ້ວ";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ຍ້າຍໄປຖັງຂີ້ເຫຍື້ອແລ້ວ";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ໃຊ້ຈ່າຍມື້ນີ້";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ໃຊ້ຈ່າຍມື້ວານນີ້";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "ສີສົ້ມ";
 "SETTINGS_THEME_LIGHT" = "ສະຫວ່າງ";
 "SETTINGS_SOUNDS" = "ສຽງ";
+"SETTINGS_HAPTIC" = "ການສັ່ນ";
 "SETTINGS_HIDE_CATEGORIES" = "ເຊື່ອງໝວດໝູ່";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "ໝວດໝູ່ຈະສະແດງເມື່ອປ້ອນຈຳນວນເງິນ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "ໝວດໝູ່: %d";

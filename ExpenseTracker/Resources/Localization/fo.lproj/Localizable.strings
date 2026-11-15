@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Ruskspannin er tóm";
-"TRASH_RESTORE_CONFIRMATION" = "Endurstovna?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Endurstovna flyting?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Endurstovna bólk?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Strika bólk?";
+"TRASH_DELETE_MESSAGE" = "Hetta kann ikki angrast.";
 "TRASH_CLEAR_CONFIRMATION" = "Allir lutir í ruskspannini verða strikaðir endaliga. Hendan handlingin kann ikki angrast.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ongar flytingar";
 "TRANSACTIONS_LIST_DELETE" = "Strika";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Flyting løgd afturat";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Flyting strikað";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Flutt í ruskspannina";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Brúkt í dag";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Brúkt í gjár";
 
@@ -115,8 +118,8 @@
 "EDIT_CATEGORY_ICON" = "Ímynd";
 "EDIT_CATEGORY_MORE_ICONS" = "Meira";
 "EDIT_CATEGORY_COLOR" = "Litur";
-"EDIT_CATEGORY_DELETE_CATEGORY" = "Strika bólk";
-"EDIT_CATEGORY_DELETE_FOLDER" = "Strika mappu";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Tak bólk burtur";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Tak mappu burtur";
 "EDIT_CATEGORY_DELETE_CONFIRMATION" = "Bólkurin og allar flytingar hansara verða fluttar í ruskspannina.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Navn á bólki";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nýggjur bólkur";
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Appilsingult";
 "SETTINGS_THEME_LIGHT" = "Ljóst";
 "SETTINGS_SOUNDS" = "Ljóð";
+"SETTINGS_HAPTIC" = "Ristingar";
 "SETTINGS_HIDE_CATEGORIES" = "Fjal bólkar";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Bólkar verða vístir, tá ið upphædd verður skrivað";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Bólkar: %d";

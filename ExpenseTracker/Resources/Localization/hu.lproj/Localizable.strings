@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "A kuka üres";
-"TRASH_RESTORE_CONFIRMATION" = "Visszaállítás?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Visszaállítja a tranzakciót?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Visszaállítja a kategóriát?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Törli a kategóriát?";
+"TRASH_DELETE_MESSAGE" = "Ez a művelet nem vonható vissza.";
 "TRASH_CLEAR_CONFIRMATION" = "A kukában lévő összes elem véglegesen törlődik. Ez a művelet nem vonható vissza.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nincsenek tranzakciók";
 "TRANSACTIONS_LIST_DELETE" = "Törlés";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Tranzakció hozzáadva";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Tranzakció törölve";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Áthelyezve a kukába";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Ma elköltve";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Tegnap elköltve";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Narancs";
 "SETTINGS_THEME_LIGHT" = "Világos";
 "SETTINGS_SOUNDS" = "Hangok";
+"SETTINGS_HAPTIC" = "Rezgés";
 "SETTINGS_HIDE_CATEGORIES" = "Kategóriák elrejtése";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "A kategóriák összeg megadásakor jelennek meg";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategóriák: %d";

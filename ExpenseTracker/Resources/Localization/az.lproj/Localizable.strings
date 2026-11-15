@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Səbət boşdur";
-"TRASH_RESTORE_CONFIRMATION" = "Bərpa et?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Tranzaksiya bərpa edilsin?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Kateqoriya bərpa edilsin?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Kateqoriya silinsin?";
+"TRASH_DELETE_MESSAGE" = "Bu əməliyyatı geri qaytarmaq mümkün deyil.";
 "TRASH_CLEAR_CONFIRMATION" = "Səbətdəki bütün elementlər həmişəlik silinəcək. Bu əməliyyatı geri qaytarmaq mümkün deyil.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Tranzaksiya yoxdur";
 "TRANSACTIONS_LIST_DELETE" = "Sil";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Tranzaksiya əlavə edildi";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Tranzaksiya silindi";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Səbətə köçürüldü";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Bu gün xərclənib";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Dünən xərclənib";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Narıncı";
 "SETTINGS_THEME_LIGHT" = "Açıq";
 "SETTINGS_SOUNDS" = "Səslər";
+"SETTINGS_HAPTIC" = "Vibrasiya";
 "SETTINGS_HIDE_CATEGORIES" = "Kateqoriyaları gizlət";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kateqoriyalar məbləğ daxil edildikdə görünür";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kateqoriyalar: %d";

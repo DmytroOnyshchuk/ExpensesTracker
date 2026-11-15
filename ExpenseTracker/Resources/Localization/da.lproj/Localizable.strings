@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Papirkurven er tom";
-"TRASH_RESTORE_CONFIRMATION" = "Gendan?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Gendan transaktion?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Gendan kategori?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Slet kategori?";
+"TRASH_DELETE_MESSAGE" = "Denne handling kan ikke fortrydes.";
 "TRASH_CLEAR_CONFIRMATION" = "Alle emner i papirkurven slettes permanent. Denne handling kan ikke fortrydes.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ingen transaktioner";
 "TRANSACTIONS_LIST_DELETE" = "Slet";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transaktion tilføjet";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transaktion slettet";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Flyttet til papirkurven";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Brugt i dag";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Brugt i går";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Orange";
 "SETTINGS_THEME_LIGHT" = "Lys";
 "SETTINGS_SOUNDS" = "Lyde";
+"SETTINGS_HAPTIC" = "Vibration";
 "SETTINGS_HIDE_CATEGORIES" = "Skjul kategorier";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategorier vises, når du indtaster et beløb";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorier: %d";

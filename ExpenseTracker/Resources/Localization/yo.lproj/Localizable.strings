@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Àpótí ìdọ̀tí ṣófo";
-"TRASH_RESTORE_CONFIRMATION" = "Mú padà?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Ṣé kí a mú ìdúnàádúrà padà?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Ṣé kí a mú ẹ̀ka padà?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Ṣé kí a pa ẹ̀ka rẹ́?";
+"TRASH_DELETE_MESSAGE" = "A kò lè yí ìgbésẹ̀ yìí padà.";
 "TRASH_CLEAR_CONFIRMATION" = "Gbogbo ohun tó wà nínú àpótí ìdọ̀tí ni a ó parẹ́ pátápátá. A kò lè yí ìgbésẹ̀ yìí padà.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Kò sí ìdúnàádúrà";
 "TRANSACTIONS_LIST_DELETE" = "Pa rẹ́";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "A ti fi ìdúnàádúrà kún un";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "A ti pa ìdúnàádúrà rẹ́";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "A ti gbé e lọ sí àpótí ìdọ̀tí";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Ohun tí a ná lónìí";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Ohun tí a ná lánàá";
 
@@ -115,8 +118,8 @@
 "EDIT_CATEGORY_ICON" = "Àmì";
 "EDIT_CATEGORY_MORE_ICONS" = "Síwájú sí i";
 "EDIT_CATEGORY_COLOR" = "Àwọ̀";
-"EDIT_CATEGORY_DELETE_CATEGORY" = "Pa ẹ̀ka rẹ́";
-"EDIT_CATEGORY_DELETE_FOLDER" = "Pa fódà rẹ́";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Yọ ẹ̀ka kúrò";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Yọ fódà kúrò";
 "EDIT_CATEGORY_DELETE_CONFIRMATION" = "A ó gbé ẹ̀ka náà àti gbogbo ìdúnàádúrà rẹ̀ lọ sí àpótí ìdọ̀tí.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Orúkọ ẹ̀ka";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Ẹ̀ka tuntun";
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Ọsàn";
 "SETTINGS_THEME_LIGHT" = "Ìmọ́lẹ̀";
 "SETTINGS_SOUNDS" = "Àwọn ohùn";
+"SETTINGS_HAPTIC" = "Gbígbọ̀n";
 "SETTINGS_HIDE_CATEGORIES" = "Fi àwọn ẹ̀ka pamọ́";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Àwọn ẹ̀ka máa ń hàn nígbà tí o bá tẹ iye owó";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Àwọn ẹ̀ka: %d";

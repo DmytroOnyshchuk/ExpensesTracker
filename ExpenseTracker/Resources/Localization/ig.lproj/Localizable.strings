@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Ahịhịa tọgbọ chakoo";
-"TRASH_RESTORE_CONFIRMATION" = "Weghachi?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Weghachi azụmahịa a?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Weghachi ụdị a?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Hichapụ ụdị a?";
+"TRASH_DELETE_MESSAGE" = "Enweghị ike imegharị omume a.";
 "TRASH_CLEAR_CONFIRMATION" = "A ga-ehichapụ ihe niile dị na ahịhịa kpamkpam. Enweghị ike ịmegharị omume a.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Enweghị azụmahịa";
 "TRANSACTIONS_LIST_DELETE" = "Hichapụ";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Etinyela azụmahịa";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Ehichapụla azụmahịa";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "E bugara ya n'ahịhịa";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "E mefuru taa";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "E mefuru ụnyaahụ";
 
@@ -115,8 +118,8 @@
 "EDIT_CATEGORY_ICON" = "Akara ngosi";
 "EDIT_CATEGORY_MORE_ICONS" = "Ndị ọzọ";
 "EDIT_CATEGORY_COLOR" = "Agba";
-"EDIT_CATEGORY_DELETE_CATEGORY" = "Hichapụ ụdị";
-"EDIT_CATEGORY_DELETE_FOLDER" = "Hichapụ folda";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Wepụ ụdị";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Wepụ folda";
 "EDIT_CATEGORY_DELETE_CONFIRMATION" = "A ga-ebuga otu a na azụmahịa ya niile na ahịhịa.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Aha ụdị";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Ụdị ọhụrụ";
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Oroma";
 "SETTINGS_THEME_LIGHT" = "Ìhè";
 "SETTINGS_SOUNDS" = "Ụda";
+"SETTINGS_HAPTIC" = "Ịma jijiji";
 "SETTINGS_HIDE_CATEGORIES" = "Zoo ngalaba";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Ngalaba na-apụta mgbe ị tinyere ego";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Ngalaba: %d";

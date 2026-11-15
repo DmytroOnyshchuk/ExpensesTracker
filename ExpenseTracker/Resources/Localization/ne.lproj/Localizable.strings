@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "रद्दीटोकरी खाली छ";
-"TRASH_RESTORE_CONFIRMATION" = "पुनर्स्थापना गर्नुहोस्?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "कारोबार पुनर्स्थापना गर्ने हो?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "श्रेणी पुनर्स्थापना गर्ने हो?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "श्रेणी मेटाउने हो?";
+"TRASH_DELETE_MESSAGE" = "यो कार्य पूर्ववत गर्न सकिँदैन।";
 "TRASH_CLEAR_CONFIRMATION" = "रद्दीटोकरीका सबै वस्तुहरू स्थायी रूपमा मेटाइनेछन्। यो कार्य पूर्ववत गर्न सकिँदैन।";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "कुनै कारोबार छैन";
 "TRANSACTIONS_LIST_DELETE" = "मेटाउनुहोस्";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "कारोबार थपियो";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "कारोबार मेटाइयो";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "रद्दीटोकरीमा सारियो";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "आजको खर्च";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "हिजोको खर्च";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "सुन्तला";
 "SETTINGS_THEME_LIGHT" = "उज्यालो";
 "SETTINGS_SOUNDS" = "ध्वनिहरू";
+"SETTINGS_HAPTIC" = "कम्पन";
 "SETTINGS_HIDE_CATEGORIES" = "श्रेणीहरू लुकाउनुहोस्";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "रकम प्रविष्ट गर्दा श्रेणीहरू देखिन्छन्";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "श्रेणीहरू: %d";

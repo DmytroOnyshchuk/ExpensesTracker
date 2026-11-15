@@ -109,7 +109,7 @@ extension ModelContext {
     func deleteWithUndo(_ transaction: Transaction) {
         moveToTrash(transaction)
 
-        UndoToastCenter.shared.show(L10n.transactionsListTransactionDeleted) {
+        UndoToastCenter.shared.show(L10n.transactionsListMovedToTrash) {
             self.restore(transaction)
         }
     }

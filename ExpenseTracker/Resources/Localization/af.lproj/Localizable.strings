@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Die asblik is leeg";
-"TRASH_RESTORE_CONFIRMATION" = "Herstel?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Herstel transaksie?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Herstel kategorie?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Vee kategorie uit?";
+"TRASH_DELETE_MESSAGE" = "Hierdie aksie kan nie ontdoen word nie.";
 "TRASH_CLEAR_CONFIRMATION" = "Alle items in die asblik sal permanent verwyder word. Hierdie aksie kan nie ontdoen word nie.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Geen transaksies nie";
 "TRANSACTIONS_LIST_DELETE" = "Vee uit";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transaksie bygevoeg";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transaksie uitgevee";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Na asblik geskuif";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Vandag spandeer";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Gister spandeer";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Oranje";
 "SETTINGS_THEME_LIGHT" = "Lig";
 "SETTINGS_SOUNDS" = "Klanke";
+"SETTINGS_HAPTIC" = "Vibrasie";
 "SETTINGS_HIDE_CATEGORIES" = "Versteek kategorieë";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategorieë verskyn wanneer jy ’n bedrag invoer";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorieë: %d";

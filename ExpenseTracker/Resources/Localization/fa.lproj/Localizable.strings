@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "سطل زباله خالی است";
-"TRASH_RESTORE_CONFIRMATION" = "بازیابی؟";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "تراکنش بازیابی شود؟";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "دسته بازیابی شود؟";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "دسته حذف شود؟";
+"TRASH_DELETE_MESSAGE" = "این عمل قابل بازگشت نیست.";
 "TRASH_CLEAR_CONFIRMATION" = "همه موارد موجود در سطل زباله برای همیشه حذف می‌شوند. این عمل قابل بازگشت نیست.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "تراکنشی وجود ندارد";
 "TRANSACTIONS_LIST_DELETE" = "حذف";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "تراکنش اضافه شد";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "تراکنش حذف شد";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "به سطل زباله منتقل شد";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "هزینهٔ امروز";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "هزینهٔ دیروز";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "نارنجی";
 "SETTINGS_THEME_LIGHT" = "روشن";
 "SETTINGS_SOUNDS" = "صداها";
+"SETTINGS_HAPTIC" = "لرزش";
 "SETTINGS_HIDE_CATEGORIES" = "پنهان کردن دسته‌ها";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "دسته‌ها هنگام وارد کردن مبلغ نمایش داده می‌شوند";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "دسته‌ها: %d";

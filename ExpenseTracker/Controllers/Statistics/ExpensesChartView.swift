@@ -38,7 +38,7 @@ struct ExpensesChartView: View {
         ScrollView(.vertical) {
             VStack(spacing: 12) {
                 SegmentedControl(items: StatisticsPeriod.allCases, selection: periodBinding, title: \.title)
-                    .sensoryFeedback(.selection, trigger: period)
+                    .sensoryFeedback(trigger: period) { _, _ in FeedbackManager.shared.selectionFeedback }
                     .padding(.horizontal, 64)
 
                 if amounts.isEmpty {

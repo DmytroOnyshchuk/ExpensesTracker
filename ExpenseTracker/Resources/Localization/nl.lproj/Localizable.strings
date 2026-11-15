@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "De prullenmand is leeg";
-"TRASH_RESTORE_CONFIRMATION" = "Zet terug?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Transactie terugzetten?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Categorie terugzetten?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Categorie verwijderen?";
+"TRASH_DELETE_MESSAGE" = "Deze actie kan niet ongedaan worden gemaakt.";
 "TRASH_CLEAR_CONFIRMATION" = "Alle onderdelen in de prullenmand worden definitief verwijderd. Deze actie kan niet ongedaan worden gemaakt.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Geen transacties";
 "TRANSACTIONS_LIST_DELETE" = "Verwijderen";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transactie toegevoegd";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transactie verwijderd";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Verplaatst naar prullenmand";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Vandaag uitgegeven";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Gisteren uitgegeven";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Oranje";
 "SETTINGS_THEME_LIGHT" = "Licht";
 "SETTINGS_SOUNDS" = "Geluiden";
+"SETTINGS_HAPTIC" = "Trillingen";
 "SETTINGS_HIDE_CATEGORIES" = "Categorieën verbergen";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Categorieën verschijnen wanneer je een bedrag invoert";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categorieën: %d";

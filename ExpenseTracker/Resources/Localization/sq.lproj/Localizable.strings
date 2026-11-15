@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Koshi është bosh";
-"TRASH_RESTORE_CONFIRMATION" = "Rikthe?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Të rikthehet transaksioni?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Të rikthehet kategoria?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Të fshihet kategoria?";
+"TRASH_DELETE_MESSAGE" = "Ky veprim nuk mund të zhbëhet.";
 "TRASH_CLEAR_CONFIRMATION" = "Të gjithë artikujt në kosh do të fshihen përgjithmonë. Ky veprim nuk mund të zhbëhet.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nuk ka transaksione";
 "TRANSACTIONS_LIST_DELETE" = "Fshi";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transaksioni u shtua";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transaksioni u fshi";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "U zhvendos në kosh";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Shpenzuar sot";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Shpenzuar dje";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Portokalli";
 "SETTINGS_THEME_LIGHT" = "E çelët";
 "SETTINGS_SOUNDS" = "Tingujt";
+"SETTINGS_HAPTIC" = "Dridhje";
 "SETTINGS_HIDE_CATEGORIES" = "Fshih kategoritë";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategoritë shfaqen kur fut një shumë";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategori: %d";

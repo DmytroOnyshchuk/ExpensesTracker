@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Prügikast on tühi";
-"TRASH_RESTORE_CONFIRMATION" = "Taasta?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Taasta tehing?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Taasta kategooria?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Kustuta kategooria?";
+"TRASH_DELETE_MESSAGE" = "Seda toimingut ei saa tagasi võtta.";
 "TRASH_CLEAR_CONFIRMATION" = "Kõik prügikastis olevad üksused kustutatakse jäädavalt. Seda toimingut ei saa tagasi võtta.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Tehinguid pole";
 "TRANSACTIONS_LIST_DELETE" = "Kustuta";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Tehing lisatud";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Tehing kustutatud";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Teisaldatud prügikasti";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Täna kulutatud";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Eile kulutatud";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Oranž";
 "SETTINGS_THEME_LIGHT" = "Hele";
 "SETTINGS_SOUNDS" = "Helid";
+"SETTINGS_HAPTIC" = "Värin";
 "SETTINGS_HIDE_CATEGORIES" = "Peida kategooriad";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategooriad ilmuvad summa sisestamisel";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategooriad: %d";

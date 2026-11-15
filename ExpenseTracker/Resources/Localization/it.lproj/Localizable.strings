@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Il cestino è vuoto";
-"TRASH_RESTORE_CONFIRMATION" = "Ripristina?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Ripristinare la transazione?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Ripristinare la categoria?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Eliminare la categoria?";
+"TRASH_DELETE_MESSAGE" = "Questa azione non può essere annullata.";
 "TRASH_CLEAR_CONFIRMATION" = "Tutti gli elementi nel cestino verranno eliminati definitivamente. Questa azione non può essere annullata.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nessuna transazione";
 "TRANSACTIONS_LIST_DELETE" = "Elimina";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transazione aggiunta";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transazione eliminata";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Spostato nel cestino";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Speso oggi";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Speso ieri";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Arancione";
 "SETTINGS_THEME_LIGHT" = "Chiaro";
 "SETTINGS_SOUNDS" = "Suoni";
+"SETTINGS_HAPTIC" = "Vibrazione";
 "SETTINGS_HIDE_CATEGORIES" = "Nascondi categorie";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Le categorie compaiono quando inserisci un importo";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categorie: %d";

@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Papirkorga er tom";
-"TRASH_RESTORE_CONFIRMATION" = "Gjenopprett?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Gjenopprett transaksjon?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Gjenopprett kategori?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Slett kategori?";
+"TRASH_DELETE_MESSAGE" = "Denne handlinga kan ikkje angrast.";
 "TRASH_CLEAR_CONFIRMATION" = "Alle objekt i papirkorga blir sletta permanent. Denne handlinga kan ikkje angrast.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ingen transaksjonar";
 "TRANSACTIONS_LIST_DELETE" = "Slett";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transaksjon lagd til";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Transaksjon sletta";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Flytta til papirkorga";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Brukt i dag";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Brukt i går";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Oransje";
 "SETTINGS_THEME_LIGHT" = "Lys";
 "SETTINGS_SOUNDS" = "Lydar";
+"SETTINGS_HAPTIC" = "Vibrasjon";
 "SETTINGS_HIDE_CATEGORIES" = "Skjul kategoriar";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategoriar blir viste når du skriv inn eit beløp";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategoriar: %d";

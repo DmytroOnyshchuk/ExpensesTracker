@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "መጣያው ባዶ ነው";
-"TRASH_RESTORE_CONFIRMATION" = "መልስ?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "ግብይቱ ይመለስ?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "ምድቡ ይመለስ?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "ምድቡ ይሰረዝ?";
+"TRASH_DELETE_MESSAGE" = "ይህ ድርጊት ሊቀለበስ አይችልም።";
 "TRASH_CLEAR_CONFIRMATION" = "በመጣያው ውስጥ ያሉ ሁሉም ንጥሎች በቋሚነት ይሰረዛሉ። ይህ ድርጊት ሊቀለበስ አይችልም።";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ምንም ግብይቶች የሉም";
 "TRANSACTIONS_LIST_DELETE" = "ሰርዝ";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "ግብይት ታክሏል";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "ግብይት ተሰርዟል";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ወደ መጣያ ተወስዷል";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ዛሬ የወጣ";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ትናንት የወጣ";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "ብርቱካናማ";
 "SETTINGS_THEME_LIGHT" = "ብሩህ";
 "SETTINGS_SOUNDS" = "ድምፆች";
+"SETTINGS_HAPTIC" = "ንዝረት";
 "SETTINGS_HIDE_CATEGORIES" = "ምድቦችን ደብቅ";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "መጠን ሲያስገቡ ምድቦች ይታያሉ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "ምድቦች፦ %d";

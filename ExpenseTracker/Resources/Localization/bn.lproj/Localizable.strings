@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ট্র্যাশ খালি";
-"TRASH_RESTORE_CONFIRMATION" = "পুনরুদ্ধার করুন?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "লেনদেন পুনরুদ্ধার করবেন?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "বিভাগ পুনরুদ্ধার করবেন?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "বিভাগ মুছুন?";
+"TRASH_DELETE_MESSAGE" = "এই কাজটি পূর্বাবস্থায় ফেরানো যাবে না।";
 "TRASH_CLEAR_CONFIRMATION" = "ট্র্যাশের সব আইটেম স্থায়ীভাবে মুছে ফেলা হবে। এই কাজটি পূর্বাবস্থায় ফেরানো যাবে না।";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "কোনো লেনদেন নেই";
 "TRANSACTIONS_LIST_DELETE" = "মুছুন";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "লেনদেন যোগ করা হয়েছে";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "লেনদেন মুছে ফেলা হয়েছে";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ট্র্যাশে সরানো হয়েছে";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "আজ খরচ হয়েছে";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "গতকাল খরচ হয়েছে";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "কমলা";
 "SETTINGS_THEME_LIGHT" = "হালকা";
 "SETTINGS_SOUNDS" = "শব্দ";
+"SETTINGS_HAPTIC" = "কম্পন";
 "SETTINGS_HIDE_CATEGORIES" = "বিভাগ লুকান";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "পরিমাণ লিখলে বিভাগগুলো দেখা যায়";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "বিভাগ: %d";

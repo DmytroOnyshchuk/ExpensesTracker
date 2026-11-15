@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ნაგავი ცარიელია";
-"TRASH_RESTORE_CONFIRMATION" = "აღდგენა?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "აღდგეს ტრანზაქცია?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "აღდგეს კატეგორია?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "წაიშალოს კატეგორია?";
+"TRASH_DELETE_MESSAGE" = "ამ მოქმედების გაუქმება შეუძლებელია.";
 "TRASH_CLEAR_CONFIRMATION" = "ნაგავში არსებული ყველა ელემენტი სამუდამოდ წაიშლება. ამ მოქმედების გაუქმება შეუძლებელია.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ტრანზაქციები არ არის";
 "TRANSACTIONS_LIST_DELETE" = "წაშლა";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "ტრანზაქცია დაემატა";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "ტრანზაქცია წაიშალა";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "გადატანილია ნაგავში";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "დღეს დახარჯული";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "გუშინ დახარჯული";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "ნარინჯისფერი";
 "SETTINGS_THEME_LIGHT" = "ნათელი";
 "SETTINGS_SOUNDS" = "ხმები";
+"SETTINGS_HAPTIC" = "ვიბრაცია";
 "SETTINGS_HIDE_CATEGORIES" = "კატეგორიების დამალვა";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "კატეგორიები ჩნდება თანხის შეყვანისას";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "კატეგორიები: %d";

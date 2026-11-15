@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Хогийн сав хоосон байна";
-"TRASH_RESTORE_CONFIRMATION" = "Сэргээх?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Гүйлгээг сэргээх үү?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Ангиллыг сэргээх үү?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Ангиллыг устгах уу?";
+"TRASH_DELETE_MESSAGE" = "Энэ үйлдлийг буцаах боломжгүй.";
 "TRASH_CLEAR_CONFIRMATION" = "Хогийн сав дахь бүх зүйл бүрмөсөн устгагдана. Энэ үйлдлийг буцаах боломжгүй.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Гүйлгээ алга";
 "TRANSACTIONS_LIST_DELETE" = "Устгах";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Гүйлгээ нэмэгдлээ";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Гүйлгээ устгагдлаа";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Хогийн сав руу зөөгдлөө";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Өнөөдөр зарцуулсан";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Өчигдөр зарцуулсан";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Улбар шар";
 "SETTINGS_THEME_LIGHT" = "Цайвар";
 "SETTINGS_SOUNDS" = "Дуу";
+"SETTINGS_HAPTIC" = "Чичиргээ";
 "SETTINGS_HIDE_CATEGORIES" = "Ангиллыг нуух";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Ангиллууд дүн оруулах үед гарч ирнэ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Ангилал: %d";

@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Çopdank vala ye";
-"TRASH_RESTORE_CONFIRMATION" = "Vegerîne?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Danûstandinê vegerîne?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Kategoriyê vegerîne?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Kategoriyê jê bibe?";
+"TRASH_DELETE_MESSAGE" = "Ev kiryar nayê vegerandin.";
 "TRASH_CLEAR_CONFIRMATION" = "Hemû hêmanên di çopdankê de dê bi temamî werin jêbirin. Ev çalakî nayê vegerandin.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Danûstandin tune";
 "TRANSACTIONS_LIST_DELETE" = "Jê bibe";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Danûstandin hat zêdekirin";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Danûstandin hat jêbirin";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Bo çopdankê hat veguhastin";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Îro hat xerckirin";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Duh hat xerckirin";
 
@@ -115,8 +118,8 @@
 "EDIT_CATEGORY_ICON" = "Îkon";
 "EDIT_CATEGORY_MORE_ICONS" = "Zêdetir";
 "EDIT_CATEGORY_COLOR" = "Reng";
-"EDIT_CATEGORY_DELETE_CATEGORY" = "Kategoriyê jê bibe";
-"EDIT_CATEGORY_DELETE_FOLDER" = "Peldankê jê bibe";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Kategoriyê rake";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Peldankê rake";
 "EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kategorî û hemû danûstandinên wê dê biçin çopdankê.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Navê kategoriyê";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Kategoriya nû";
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Pirteqalî";
 "SETTINGS_THEME_LIGHT" = "Ronî";
 "SETTINGS_SOUNDS" = "Deng";
+"SETTINGS_HAPTIC" = "Lerizîn";
 "SETTINGS_HIDE_CATEGORIES" = "Kategoriyan veşêre";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategorî dema ku mîqdar tê nivîsandin xuya dibin";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorî: %d";

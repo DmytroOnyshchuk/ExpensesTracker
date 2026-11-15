@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Tá an bruscar folamh";
-"TRASH_RESTORE_CONFIRMATION" = "Athchóirigh?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Athchóirigh an t-idirbheart?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Athchóirigh an chatagóir?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Scrios an chatagóir?";
+"TRASH_DELETE_MESSAGE" = "Ní féidir an gníomh seo a chealú.";
 "TRASH_CLEAR_CONFIRMATION" = "Scriosfar gach mír sa bhruscar go buan. Ní féidir an gníomh seo a chealú.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Níl aon idirbhearta ann";
 "TRANSACTIONS_LIST_DELETE" = "Scrios";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Idirbheart curtha leis";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Idirbheart scriosta";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Bogadh go dtí an bruscar";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Caite inniu";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Caite inné";
 
@@ -115,8 +118,8 @@
 "EDIT_CATEGORY_ICON" = "Deilbhín";
 "EDIT_CATEGORY_MORE_ICONS" = "Tuilleadh";
 "EDIT_CATEGORY_COLOR" = "Dath";
-"EDIT_CATEGORY_DELETE_CATEGORY" = "Scrios an chatagóir";
-"EDIT_CATEGORY_DELETE_FOLDER" = "Scrios an fillteán";
+"EDIT_CATEGORY_DELETE_CATEGORY" = "Bain an chatagóir";
+"EDIT_CATEGORY_DELETE_FOLDER" = "Bain an fillteán";
 "EDIT_CATEGORY_DELETE_CONFIRMATION" = "Bogfar an chatagóir agus a hidirbhearta uile go dtí an bruscar.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Ainm na catagóire";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Catagóir nua";
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Oráiste";
 "SETTINGS_THEME_LIGHT" = "Geal";
 "SETTINGS_SOUNDS" = "Fuaimeanna";
+"SETTINGS_HAPTIC" = "Creathadh";
 "SETTINGS_HIDE_CATEGORIES" = "Folaigh catagóirí";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Taispeántar catagóirí nuair a chuireann tú suim isteach";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Catagóirí: %d";

@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Udoti awunalutho";
-"TRASH_RESTORE_CONFIRMATION" = "Buyisela?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Buyisela umsebenzi?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Buyisela isigaba?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Susa isigaba?";
+"TRASH_DELETE_MESSAGE" = "Lesi senzo asikwazi ukuhlehliswa.";
 "TRASH_CLEAR_CONFIRMATION" = "Zonke izinto ezisodotini zizosuswa unomphela. Lesi senzo asikwazi ukuhlehliswa.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Akukho okwenziwe";
 "TRANSACTIONS_LIST_DELETE" = "Susa";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Okwenziwe kwengeziwe";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Okwenziwe kususiwe";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Kuyiswe kudoti";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Okuchithwe namuhla";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Okuchithwe izolo";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Okuwolintshi";
 "SETTINGS_THEME_LIGHT" = "Okukhanyayo";
 "SETTINGS_SOUNDS" = "Imisindo";
+"SETTINGS_HAPTIC" = "Ukudlidliza";
 "SETTINGS_HIDE_CATEGORIES" = "Fihla izigaba";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Izigaba zivela uma ufaka inani";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Izigaba: %d";

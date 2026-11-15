@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Себет бос";
-"TRASH_RESTORE_CONFIRMATION" = "Қалпына келтіру?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Транзакцияны қалпына келтіру керек пе?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Санатты қалпына келтіру керек пе?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "Санатты жою керек пе?";
+"TRASH_DELETE_MESSAGE" = "Бұл әрекетті қайтару мүмкін емес.";
 "TRASH_CLEAR_CONFIRMATION" = "Себеттегі барлық элементтер біржола жойылады. Бұл әрекетті қайтару мүмкін емес.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Транзакциялар жоқ";
 "TRANSACTIONS_LIST_DELETE" = "Жою";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Транзакция қосылды";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "Транзакция жойылды";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Себетке жылжытылды";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Бүгін жұмсалды";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Кеше жұмсалды";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "Қызғылт сары";
 "SETTINGS_THEME_LIGHT" = "Ашық";
 "SETTINGS_SOUNDS" = "Дыбыстар";
+"SETTINGS_HAPTIC" = "Діріл";
 "SETTINGS_HIDE_CATEGORIES" = "Санаттарды жасыру";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Санаттар соманы енгізген кезде пайда болады";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Санаттар: %d";

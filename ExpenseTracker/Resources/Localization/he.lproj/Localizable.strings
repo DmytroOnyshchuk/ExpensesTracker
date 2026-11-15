@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "פח האשפה ריק";
-"TRASH_RESTORE_CONFIRMATION" = "שחזור?";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "לשחזר את העסקה?";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "לשחזר את הקטגוריה?";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "למחוק את הקטגוריה?";
+"TRASH_DELETE_MESSAGE" = "לא ניתן לבטל פעולה זו.";
 "TRASH_CLEAR_CONFIRMATION" = "כל הפריטים בפח האשפה יימחקו לצמיתות. לא ניתן לבטל פעולה זו.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "אין עסקאות";
 "TRANSACTIONS_LIST_DELETE" = "מחיקה";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "העסקה נוספה";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "העסקה נמחקה";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "הועבר לפח האשפה";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "הוצאות היום";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "הוצאות אתמול";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "כתום";
 "SETTINGS_THEME_LIGHT" = "בהיר";
 "SETTINGS_SOUNDS" = "צלילים";
+"SETTINGS_HAPTIC" = "רטט";
 "SETTINGS_HIDE_CATEGORIES" = "הסתרת קטגוריות";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "הקטגוריות מופיעות בעת הזנת סכום";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "קטגוריות: %d";

@@ -67,7 +67,10 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "سلة المحذوفات فارغة";
-"TRASH_RESTORE_CONFIRMATION" = "استعادة؟";
+"TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "استعادة المعاملة؟";
+"TRASH_RESTORE_CATEGORY_CONFIRMATION" = "استعادة الفئة؟";
+"TRASH_DELETE_CATEGORY_CONFIRMATION" = "حذف الفئة؟";
+"TRASH_DELETE_MESSAGE" = "لا يمكن التراجع عن هذا الإجراء.";
 "TRASH_CLEAR_CONFIRMATION" = "سيتم حذف جميع العناصر في سلة المحذوفات نهائيًا. لا يمكن التراجع عن هذا الإجراء.";
 
 // MARK: - About
@@ -94,7 +97,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "لا توجد معاملات";
 "TRANSACTIONS_LIST_DELETE" = "حذف";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "تمت إضافة المعاملة";
-"TRANSACTIONS_LIST_TRANSACTION_DELETED" = "تم حذف المعاملة";
+"TRANSACTIONS_LIST_MOVED_TO_TRASH" = "تم النقل إلى سلة المحذوفات";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "المصروف اليوم";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "المصروف أمس";
 
@@ -152,7 +155,9 @@
 "SETTINGS_THEME_ORANGE" = "برتقالي";
 "SETTINGS_THEME_LIGHT" = "فاتح";
 "SETTINGS_SOUNDS" = "الأصوات";
+"SETTINGS_HAPTIC" = "الاهتزاز";
 "SETTINGS_HIDE_CATEGORIES" = "إخفاء الفئات";
+"SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "تظهر الفئات عند إدخال مبلغ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "الفئات: %d";
