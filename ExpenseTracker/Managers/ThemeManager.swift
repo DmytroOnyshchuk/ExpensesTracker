@@ -5,14 +5,14 @@ import UIKit
 @Observable
 final class ThemeManager {
     static let shared = ThemeManager()
-
+    
     @ObservationIgnored
-    @UserDefault(.theme, defaultValue: nil) private var storedPreset: String?
-
+    @Inject private var userManager: UserManager
+    
     var preset: ThemePreset {
         didSet {
             guard preset != oldValue else { return }
-            storedPreset = preset.rawValue
+            userManager.theme = preset
             systemColorScheme = Self.currentSystemColorScheme
         }
     }
@@ -32,8 +32,8 @@ final class ThemeManager {
     private init() {
         self.preset = .system
         self.systemColorScheme = Self.currentSystemColorScheme
-        if let storedPreset, let saved = ThemePreset(storedValue: storedPreset) {
-            self.preset = saved
+        if let theme = UserManager.shared.theme {
+            self.preset = theme
         }
     }
 

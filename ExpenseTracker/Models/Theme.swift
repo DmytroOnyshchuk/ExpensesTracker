@@ -34,10 +34,6 @@ enum ThemePreset: String, CaseIterable, Identifiable, Codable {
 
     var id: String { rawValue }
 
-    init?(storedValue: String) {
-        self.init(rawValue: storedValue == "classic" ? ThemePreset.dark.rawValue : storedValue)
-    }
-
     var title: String {
         switch self {
         case .system: L10n.settingsThemeSystem
