@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Oransch";
 "SETTINGS_THEME_LIGHT" = "Cler";
 "SETTINGS_SOUNDS" = "Tuns";
+"SETTINGS_HIDE_CATEGORIES" = "Zuppentar categorias";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categorias: %d";

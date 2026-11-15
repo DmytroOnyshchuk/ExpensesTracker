@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "কমলা";
 "SETTINGS_THEME_LIGHT" = "পাতল";
 "SETTINGS_SOUNDS" = "ধ্বনি";
+"SETTINGS_HIDE_CATEGORIES" = "শ্ৰেণীসমূহ লুকুৱাওক";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "শ্ৰেণী: %d";

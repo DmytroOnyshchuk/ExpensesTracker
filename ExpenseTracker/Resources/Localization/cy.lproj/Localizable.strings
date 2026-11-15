@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Oren";
 "SETTINGS_THEME_LIGHT" = "Golau";
 "SETTINGS_SOUNDS" = "Seiniau";
+"SETTINGS_HIDE_CATEGORIES" = "Cuddio categorïau";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categorïau: %d";

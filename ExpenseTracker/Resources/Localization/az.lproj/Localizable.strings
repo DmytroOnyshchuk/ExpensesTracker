@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Narıncı";
 "SETTINGS_THEME_LIGHT" = "Açıq";
 "SETTINGS_SOUNDS" = "Səslər";
+"SETTINGS_HIDE_CATEGORIES" = "Kateqoriyaları gizlət";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kateqoriyalar: %d";

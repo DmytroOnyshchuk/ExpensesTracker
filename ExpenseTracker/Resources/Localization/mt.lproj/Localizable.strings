@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Oranġjo";
 "SETTINGS_THEME_LIGHT" = "Ċar";
 "SETTINGS_SOUNDS" = "Ħsejjes";
+"SETTINGS_HIDE_CATEGORIES" = "Aħbi l-kategoriji";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategoriji: %d";

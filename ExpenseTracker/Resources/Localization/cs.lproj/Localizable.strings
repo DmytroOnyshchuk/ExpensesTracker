@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Oranžová";
 "SETTINGS_THEME_LIGHT" = "Světlý";
 "SETTINGS_SOUNDS" = "Zvuky";
+"SETTINGS_HIDE_CATEGORIES" = "Skrýt kategorie";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorie: %d";

@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Oranž";
 "SETTINGS_THEME_LIGHT" = "Hele";
 "SETTINGS_SOUNDS" = "Helid";
+"SETTINGS_HIDE_CATEGORIES" = "Peida kategooriad";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategooriad: %d";

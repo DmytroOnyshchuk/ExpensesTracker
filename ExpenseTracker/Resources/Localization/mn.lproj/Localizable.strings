@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Улбар шар";
 "SETTINGS_THEME_LIGHT" = "Цайвар";
 "SETTINGS_SOUNDS" = "Дуу";
+"SETTINGS_HIDE_CATEGORIES" = "Ангиллыг нуух";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Ангилал: %d";

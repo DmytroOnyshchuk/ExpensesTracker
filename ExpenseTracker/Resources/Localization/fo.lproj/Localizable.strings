@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Appilsingult";
 "SETTINGS_THEME_LIGHT" = "Ljóst";
 "SETTINGS_SOUNDS" = "Ljóð";
+"SETTINGS_HIDE_CATEGORIES" = "Fjal bólkar";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Bólkar: %d";

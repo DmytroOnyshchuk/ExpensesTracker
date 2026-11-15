@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Jingga";
 "SETTINGS_THEME_LIGHT" = "Cerah";
 "SETTINGS_SOUNDS" = "Bunyi";
+"SETTINGS_HIDE_CATEGORIES" = "Sembunyikan kategori";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategori: %d";

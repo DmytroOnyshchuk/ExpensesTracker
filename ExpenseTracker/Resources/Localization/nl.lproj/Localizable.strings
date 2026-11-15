@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Oranje";
 "SETTINGS_THEME_LIGHT" = "Licht";
 "SETTINGS_SOUNDS" = "Geluiden";
+"SETTINGS_HIDE_CATEGORIES" = "Categorieën verbergen";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categorieën: %d";

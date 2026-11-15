@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "پرتەقاڵی";
 "SETTINGS_THEME_LIGHT" = "ڕووناک";
 "SETTINGS_SOUNDS" = "دەنگەکان";
+"SETTINGS_HIDE_CATEGORIES" = "شاردنەوەی پۆلەکان";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "پۆلەکان: %d";

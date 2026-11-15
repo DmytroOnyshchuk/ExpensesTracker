@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "نارنجي";
 "SETTINGS_THEME_LIGHT" = "روښانه";
 "SETTINGS_SOUNDS" = "غږونه";
+"SETTINGS_HIDE_CATEGORIES" = "کټګورۍ پټې کړئ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "کټګورۍ: %d";

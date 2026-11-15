@@ -19,6 +19,7 @@ struct StartView: View {
     @State private var amountAttentionTrigger: Int = .zero
     @State private var showBalanceInput = false
     @AppStorage(UDKey.balance.rawValue) private var balanceData: Data?
+    @AppStorage(UDKey.hideCategories.rawValue) private var hideCategories = true
     @Query(sort: \Transaction.date, order: .reverse, animation: .default) private var storedTransactions: [Transaction]
 
     private var transactions: [Transaction] { storedTransactions.notDeleted }
@@ -35,7 +36,7 @@ struct StartView: View {
                         .overlay(alignment: .bottomTrailing) {
                             commentButton
                         }
-                    if isAmountEntered {
+                    if showCategories {
                         CategoryGrid { category in
                             addTransaction(with: category)
                         }
@@ -48,7 +49,7 @@ struct StartView: View {
                 }
                 .padding(.vertical, 16)
                 .frame(maxWidth: .infinity, alignment: .top)
-                .animation(.easeInOut(duration: 0.25), value: isAmountEntered)
+                .animation(.easeInOut(duration: 0.25), value: showCategories)
             }
             .background(.appMain)
             .navigationDestination(isPresented: $showHistory) {
@@ -76,6 +77,10 @@ struct StartView: View {
 
     private var isAmountEntered: Bool {
         input.amount != .zero
+    }
+
+    private var showCategories: Bool {
+        !hideCategories || isAmountEntered
     }
 
     private var balance: Int? {

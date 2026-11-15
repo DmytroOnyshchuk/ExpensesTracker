@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "ብርቱካናማ";
 "SETTINGS_THEME_LIGHT" = "ብሩህ";
 "SETTINGS_SOUNDS" = "ድምፆች";
+"SETTINGS_HIDE_CATEGORIES" = "ምድቦችን ደብቅ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "ምድቦች፦ %d";

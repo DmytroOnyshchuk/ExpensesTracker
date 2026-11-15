@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Оранжево";
 "SETTINGS_THEME_LIGHT" = "Светла";
 "SETTINGS_SOUNDS" = "Звуци";
+"SETTINGS_HIDE_CATEGORIES" = "Скриване на категориите";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Категории: %d";

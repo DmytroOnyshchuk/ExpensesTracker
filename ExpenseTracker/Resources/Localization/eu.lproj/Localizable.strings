@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Laranja";
 "SETTINGS_THEME_LIGHT" = "Argia";
 "SETTINGS_SOUNDS" = "Soinuak";
+"SETTINGS_HIDE_CATEGORIES" = "Ezkutatu kategoriak";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategoriak: %d";

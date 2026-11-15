@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Okuwolintshi";
 "SETTINGS_THEME_LIGHT" = "Okukhanyayo";
 "SETTINGS_SOUNDS" = "Imisindo";
+"SETTINGS_HIDE_CATEGORIES" = "Fihla izigaba";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Izigaba: %d";

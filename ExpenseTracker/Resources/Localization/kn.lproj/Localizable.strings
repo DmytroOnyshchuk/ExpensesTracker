@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "ಕಿತ್ತಳೆ";
 "SETTINGS_THEME_LIGHT" = "ತಿಳಿ";
 "SETTINGS_SOUNDS" = "ಧ್ವನಿಗಳು";
+"SETTINGS_HIDE_CATEGORIES" = "ವರ್ಗಗಳನ್ನು ಮರೆಮಾಡಿ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "ವರ್ಗಗಳು: %d";

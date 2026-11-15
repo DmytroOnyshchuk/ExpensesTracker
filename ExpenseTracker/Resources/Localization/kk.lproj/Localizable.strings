@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Қызғылт сары";
 "SETTINGS_THEME_LIGHT" = "Ашық";
 "SETTINGS_SOUNDS" = "Дыбыстар";
+"SETTINGS_HIDE_CATEGORIES" = "Санаттарды жасыру";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Санаттар: %d";

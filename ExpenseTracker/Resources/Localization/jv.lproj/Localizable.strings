@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Oranye";
 "SETTINGS_THEME_LIGHT" = "Padhang";
 "SETTINGS_SOUNDS" = "Swara";
+"SETTINGS_HIDE_CATEGORIES" = "Dhelikake kategori";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategori: %d";

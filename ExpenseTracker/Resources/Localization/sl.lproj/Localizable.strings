@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Oranžna";
 "SETTINGS_THEME_LIGHT" = "Svetla";
 "SETTINGS_SOUNDS" = "Zvoki";
+"SETTINGS_HIDE_CATEGORIES" = "Skrij kategorije";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorije: %d";

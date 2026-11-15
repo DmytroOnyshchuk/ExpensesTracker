@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Oranji";
 "SETTINGS_THEME_LIGHT" = "Iftiin";
 "SETTINGS_SOUNDS" = "Codadka";
+"SETTINGS_HIDE_CATEGORIES" = "Qari qaybaha";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Qaybaha: %d";

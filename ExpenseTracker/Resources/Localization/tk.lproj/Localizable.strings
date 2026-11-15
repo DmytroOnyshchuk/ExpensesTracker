@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Mämişi";
 "SETTINGS_THEME_LIGHT" = "Açyk";
 "SETTINGS_SOUNDS" = "Sesler";
+"SETTINGS_HIDE_CATEGORIES" = "Kategoriýalary gizle";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategoriýalar: %d";

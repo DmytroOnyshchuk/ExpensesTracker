@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Oransje";
 "SETTINGS_THEME_LIGHT" = "Lys";
 "SETTINGS_SOUNDS" = "Lydar";
+"SETTINGS_HIDE_CATEGORIES" = "Skjul kategoriar";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategoriar: %d";

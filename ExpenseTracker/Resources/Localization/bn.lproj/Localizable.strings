@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "কমলা";
 "SETTINGS_THEME_LIGHT" = "হালকা";
 "SETTINGS_SOUNDS" = "শব্দ";
+"SETTINGS_HIDE_CATEGORIES" = "বিভাগ লুকান";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "বিভাগ: %d";

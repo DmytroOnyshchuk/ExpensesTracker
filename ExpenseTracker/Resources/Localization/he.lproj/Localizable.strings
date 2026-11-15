@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "כתום";
 "SETTINGS_THEME_LIGHT" = "בהיר";
 "SETTINGS_SOUNDS" = "צלילים";
+"SETTINGS_HIDE_CATEGORIES" = "הסתרת קטגוריות";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "קטגוריות: %d";

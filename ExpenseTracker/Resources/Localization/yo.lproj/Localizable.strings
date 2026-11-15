@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Ọsàn";
 "SETTINGS_THEME_LIGHT" = "Ìmọ́lẹ̀";
 "SETTINGS_SOUNDS" = "Àwọn ohùn";
+"SETTINGS_HIDE_CATEGORIES" = "Fi àwọn ẹ̀ka pamọ́";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Àwọn ẹ̀ka: %d";

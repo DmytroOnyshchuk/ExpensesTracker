@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "ສີສົ້ມ";
 "SETTINGS_THEME_LIGHT" = "ສະຫວ່າງ";
 "SETTINGS_SOUNDS" = "ສຽງ";
+"SETTINGS_HIDE_CATEGORIES" = "ເຊື່ອງໝວດໝູ່";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "ໝວດໝູ່: %d";

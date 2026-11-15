@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Portokalli";
 "SETTINGS_THEME_LIGHT" = "E çelët";
 "SETTINGS_SOUNDS" = "Tingujt";
+"SETTINGS_HIDE_CATEGORIES" = "Fshih kategoritë";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategori: %d";

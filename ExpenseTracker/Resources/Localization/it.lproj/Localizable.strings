@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Arancione";
 "SETTINGS_THEME_LIGHT" = "Chiaro";
 "SETTINGS_SOUNDS" = "Suoni";
+"SETTINGS_HIDE_CATEGORIES" = "Nascondi categorie";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categorie: %d";

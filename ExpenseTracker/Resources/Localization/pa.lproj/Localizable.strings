@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "ਸੰਤਰੀ";
 "SETTINGS_THEME_LIGHT" = "ਹਲਕਾ";
 "SETTINGS_SOUNDS" = "ਧੁਨੀਆਂ";
+"SETTINGS_HIDE_CATEGORIES" = "ਸ਼੍ਰੇਣੀਆਂ ਲੁਕਾਓ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "ਸ਼੍ਰੇਣੀਆਂ: %d";

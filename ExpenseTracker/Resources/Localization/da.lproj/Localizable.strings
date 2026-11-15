@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Orange";
 "SETTINGS_THEME_LIGHT" = "Lys";
 "SETTINGS_SOUNDS" = "Lyde";
+"SETTINGS_HIDE_CATEGORIES" = "Skjul kategorier";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorier: %d";

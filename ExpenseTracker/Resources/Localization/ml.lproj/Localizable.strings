@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "ഓറഞ്ച്";
 "SETTINGS_THEME_LIGHT" = "ലൈറ്റ്";
 "SETTINGS_SOUNDS" = "ശബ്ദങ്ങൾ";
+"SETTINGS_HIDE_CATEGORIES" = "വിഭാഗങ്ങൾ മറയ്ക്കുക";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "വിഭാഗങ്ങൾ: %d";

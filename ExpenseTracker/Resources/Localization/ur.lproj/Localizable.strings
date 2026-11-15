@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "نارنجی";
 "SETTINGS_THEME_LIGHT" = "ہلکا";
 "SETTINGS_SOUNDS" = "آوازیں";
+"SETTINGS_HIDE_CATEGORIES" = "زمرے چھپائیں";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "زمرے: %d";

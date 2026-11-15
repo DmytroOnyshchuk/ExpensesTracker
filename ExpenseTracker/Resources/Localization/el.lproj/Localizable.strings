@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Πορτοκαλί";
 "SETTINGS_THEME_LIGHT" = "Φωτεινό";
 "SETTINGS_SOUNDS" = "Ήχοι";
+"SETTINGS_HIDE_CATEGORIES" = "Απόκρυψη κατηγοριών";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Κατηγορίες: %d";

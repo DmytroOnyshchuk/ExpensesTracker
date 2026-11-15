@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Pirteqalî";
 "SETTINGS_THEME_LIGHT" = "Ronî";
 "SETTINGS_SOUNDS" = "Deng";
+"SETTINGS_HIDE_CATEGORIES" = "Kategoriyan veşêre";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorî: %d";

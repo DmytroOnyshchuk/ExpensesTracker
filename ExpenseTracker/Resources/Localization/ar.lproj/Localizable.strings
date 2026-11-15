@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "برتقالي";
 "SETTINGS_THEME_LIGHT" = "فاتح";
 "SETTINGS_SOUNDS" = "الأصوات";
+"SETTINGS_HIDE_CATEGORIES" = "إخفاء الفئات";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "الفئات: %d";

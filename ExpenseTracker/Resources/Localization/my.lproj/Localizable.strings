@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "လိမ္မော်ရောင်";
 "SETTINGS_THEME_LIGHT" = "အလင်း";
 "SETTINGS_SOUNDS" = "အသံများ";
+"SETTINGS_HIDE_CATEGORIES" = "အမျိုးအစားများကို ဖျောက်ရန်";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "အမျိုးအစားများ- %d";

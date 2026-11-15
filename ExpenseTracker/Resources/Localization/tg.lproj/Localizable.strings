@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Норанҷӣ";
 "SETTINGS_THEME_LIGHT" = "Равшан";
 "SETTINGS_SOUNDS" = "Садоҳо";
+"SETTINGS_HIDE_CATEGORIES" = "Пинҳон кардани категорияҳо";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Категорияҳо: %d";

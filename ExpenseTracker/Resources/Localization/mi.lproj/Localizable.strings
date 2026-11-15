@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Karaka";
 "SETTINGS_THEME_LIGHT" = "Māmā";
 "SETTINGS_SOUNDS" = "Ngā oro";
+"SETTINGS_HIDE_CATEGORIES" = "Huna ngā kāwai";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Ngā kāwai: %d";

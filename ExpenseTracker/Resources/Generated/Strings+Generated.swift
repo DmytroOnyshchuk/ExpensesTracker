@@ -206,6 +206,8 @@ internal enum L10n {
   internal static let save = L10n.tr("Localizable", "SAVE", fallback: "Save")
   /// Appearance
   internal static let settingsAppearance = L10n.tr("Localizable", "SETTINGS_APPEARANCE", fallback: "Appearance")
+  /// Hide categories
+  internal static let settingsHideCategories = L10n.tr("Localizable", "SETTINGS_HIDE_CATEGORIES", fallback: "Hide categories")
   /// Sounds
   internal static let settingsSounds = L10n.tr("Localizable", "SETTINGS_SOUNDS", fallback: "Sounds")
   /// Dark

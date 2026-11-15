@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Orange";
 "SETTINGS_THEME_LIGHT" = "Clair";
 "SETTINGS_SOUNDS" = "Sons";
+"SETTINGS_HIDE_CATEGORIES" = "Masquer les catégories";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Catégories : %d";

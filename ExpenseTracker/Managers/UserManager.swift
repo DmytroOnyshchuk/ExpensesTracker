@@ -10,6 +10,7 @@ enum UDKey: String {
     case theme = "UDKey.theme"
     case statisticsChartStyle = "UDKey.statisticsChartStyle"
     case soundsEnabled = "UDKey.soundsEnabled"
+    case hideCategories = "UDKey.hideCategories"
 }
 
 final class UserManager {

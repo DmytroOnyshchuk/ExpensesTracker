@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Orains";
 "SETTINGS_THEME_LIGHT" = "Soilleir";
 "SETTINGS_SOUNDS" = "Fuaimean";
+"SETTINGS_HIDE_CATEGORIES" = "Falaich roinnean-seòrsa";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Roinnean-seòrsa: %d";

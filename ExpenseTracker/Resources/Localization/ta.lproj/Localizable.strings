@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "ஆரஞ்சு";
 "SETTINGS_THEME_LIGHT" = "வெளிர்";
 "SETTINGS_SOUNDS" = "ஒலிகள்";
+"SETTINGS_HIDE_CATEGORIES" = "வகைகளை மறை";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "வகைகள்: %d";

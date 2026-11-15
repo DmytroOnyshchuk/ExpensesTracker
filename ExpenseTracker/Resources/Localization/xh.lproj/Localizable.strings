@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Orenji";
 "SETTINGS_THEME_LIGHT" = "Khanyayo";
 "SETTINGS_SOUNDS" = "Izandi";
+"SETTINGS_HIDE_CATEGORIES" = "Fihla iindidi";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Iindidi: %d";

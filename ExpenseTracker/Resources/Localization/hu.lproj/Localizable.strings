@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Narancs";
 "SETTINGS_THEME_LIGHT" = "Világos";
 "SETTINGS_SOUNDS" = "Hangok";
+"SETTINGS_HIDE_CATEGORIES" = "Kategóriák elrejtése";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategóriák: %d";

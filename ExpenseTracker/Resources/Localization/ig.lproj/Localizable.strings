@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Oroma";
 "SETTINGS_THEME_LIGHT" = "Ìhè";
 "SETTINGS_SOUNDS" = "Ụda";
+"SETTINGS_HIDE_CATEGORIES" = "Zoo ngalaba";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Ngalaba: %d";

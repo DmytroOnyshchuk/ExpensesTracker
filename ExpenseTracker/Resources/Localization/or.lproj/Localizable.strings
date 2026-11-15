@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "କମଳା";
 "SETTINGS_THEME_LIGHT" = "ହାଲୁକା";
 "SETTINGS_SOUNDS" = "ଧ୍ୱନି";
+"SETTINGS_HIDE_CATEGORIES" = "ବର୍ଗଗୁଡ଼ିକ ଲୁଚାନ୍ତୁ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "ଶ୍ରେଣୀ: %d";

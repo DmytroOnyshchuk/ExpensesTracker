@@ -2,6 +2,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @State private var soundsEnabled = FeedbackManager.shared.soundIsEnable
+    @AppStorage(UDKey.hideCategories.rawValue) private var hideCategories = true
 
     @Inject private var themeManager: ThemeManager
     @Inject private var feedbackManager: FeedbackManager
@@ -47,6 +48,24 @@ struct SettingsView: View {
                 .onChange(of: soundsEnabled) { _, isEnabled in
                     feedbackManager.enableSound(isEnabled)
                 }
+
+                Toggle(isOn: $hideCategories) {
+                    HStack(spacing: 16) {
+                        Image(systemName: "square.grid.2x2.fill")
+                            .font(.system(size: 22))
+                            .foregroundColor(.appPrimary)
+                            .frame(width: 32)
+
+                        Text(L10n.settingsHideCategories)
+                            .font(.appLight(18))
+                            .foregroundColor(.appWhite)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.7)
+                    }
+                }
+                .padding(.horizontal, 20)
+                .frame(height: 60)
+                .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
             }
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .top)

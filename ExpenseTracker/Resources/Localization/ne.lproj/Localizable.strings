@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "सुन्तला";
 "SETTINGS_THEME_LIGHT" = "उज्यालो";
 "SETTINGS_SOUNDS" = "ध्वनिहरू";
+"SETTINGS_HIDE_CATEGORIES" = "श्रेणीहरू लुकाउनुहोस्";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "श्रेणीहरू: %d";

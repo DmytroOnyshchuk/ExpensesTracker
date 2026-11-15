@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "ʻAlani";
 "SETTINGS_THEME_LIGHT" = "Mālamalama";
 "SETTINGS_SOUNDS" = "Nā kani";
+"SETTINGS_HIDE_CATEGORIES" = "Hūnā i nā māhele";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Nā māhele: %d";

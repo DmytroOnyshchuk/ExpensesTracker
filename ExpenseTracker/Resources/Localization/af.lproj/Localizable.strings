@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Oranje";
 "SETTINGS_THEME_LIGHT" = "Lig";
 "SETTINGS_SOUNDS" = "Klanke";
+"SETTINGS_HIDE_CATEGORIES" = "Versteek kategorieë";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorieë: %d";

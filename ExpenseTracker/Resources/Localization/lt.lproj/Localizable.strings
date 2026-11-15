@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Oranžinė";
 "SETTINGS_THEME_LIGHT" = "Šviesi";
 "SETTINGS_SOUNDS" = "Garsai";
+"SETTINGS_HIDE_CATEGORIES" = "Slėpti kategorijas";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorijos: %d";

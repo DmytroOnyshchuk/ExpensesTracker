@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "ส้ม";
 "SETTINGS_THEME_LIGHT" = "สว่าง";
 "SETTINGS_SOUNDS" = "เสียง";
+"SETTINGS_HIDE_CATEGORIES" = "ซ่อนหมวดหมู่";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "หมวดหมู่: %d";

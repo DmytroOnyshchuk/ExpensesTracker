@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Oráiste";
 "SETTINGS_THEME_LIGHT" = "Geal";
 "SETTINGS_SOUNDS" = "Fuaimeanna";
+"SETTINGS_HIDE_CATEGORIES" = "Folaigh catagóirí";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Catagóirí: %d";

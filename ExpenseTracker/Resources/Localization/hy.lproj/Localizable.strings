@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Նարնջագույն";
 "SETTINGS_THEME_LIGHT" = "Բաց";
 "SETTINGS_SOUNDS" = "Ձայներ";
+"SETTINGS_HIDE_CATEGORIES" = "Թաքցնել կատեգորիաները";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Կատեգորիաներ՝ %d";

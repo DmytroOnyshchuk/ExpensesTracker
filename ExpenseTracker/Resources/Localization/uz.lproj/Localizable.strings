@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "To‘q sariq";
 "SETTINGS_THEME_LIGHT" = "Yorug‘";
 "SETTINGS_SOUNDS" = "Tovushlar";
+"SETTINGS_HIDE_CATEGORIES" = "Toifalarni yashirish";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Toifalar: %d";

@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "नारिंगी";
 "SETTINGS_THEME_LIGHT" = "हलका";
 "SETTINGS_SOUNDS" = "ध्वनी";
+"SETTINGS_HIDE_CATEGORIES" = "श्रेणी लपवा";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "श्रेण्या: %d";

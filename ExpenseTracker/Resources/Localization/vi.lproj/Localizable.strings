@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Cam";
 "SETTINGS_THEME_LIGHT" = "Sáng";
 "SETTINGS_SOUNDS" = "Âm thanh";
+"SETTINGS_HIDE_CATEGORIES" = "Ẩn danh mục";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Danh mục: %d";

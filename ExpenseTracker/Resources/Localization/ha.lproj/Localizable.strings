@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Ruwan lemu";
 "SETTINGS_THEME_LIGHT" = "Haske";
 "SETTINGS_SOUNDS" = "Sautuka";
+"SETTINGS_HIDE_CATEGORIES" = "Ɓoye rukunoni";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Rukunoni: %d";

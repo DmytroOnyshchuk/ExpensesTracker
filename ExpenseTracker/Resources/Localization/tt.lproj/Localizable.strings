@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Кызгылт сары";
 "SETTINGS_THEME_LIGHT" = "Якты";
 "SETTINGS_SOUNDS" = "Тавышлар";
+"SETTINGS_HIDE_CATEGORIES" = "Категорияләрне яшерү";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Категорияләр: %d";

@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Turuncu";
 "SETTINGS_THEME_LIGHT" = "Açık";
 "SETTINGS_SOUNDS" = "Sesler";
+"SETTINGS_HIDE_CATEGORIES" = "Kategorileri gizle";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategoriler: %d";

@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "नारंगी";
 "SETTINGS_THEME_LIGHT" = "हल्का";
 "SETTINGS_SOUNDS" = "ध्वनियाँ";
+"SETTINGS_HIDE_CATEGORIES" = "श्रेणियाँ छिपाएँ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "श्रेणियाँ: %d";

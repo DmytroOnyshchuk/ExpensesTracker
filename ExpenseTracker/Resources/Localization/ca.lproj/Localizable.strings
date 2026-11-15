@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Taronja";
 "SETTINGS_THEME_LIGHT" = "Clar";
 "SETTINGS_SOUNDS" = "Sons";
+"SETTINGS_HIDE_CATEGORIES" = "Amaga les categories";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categories: %d";

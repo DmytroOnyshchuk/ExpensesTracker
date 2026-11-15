@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "Machungwa";
 "SETTINGS_THEME_LIGHT" = "Angavu";
 "SETTINGS_SOUNDS" = "Sauti";
+"SETTINGS_HIDE_CATEGORIES" = "Ficha kategoria";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Aina: %d";

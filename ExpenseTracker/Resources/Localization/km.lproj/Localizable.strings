@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "ទឹកក្រូច";
 "SETTINGS_THEME_LIGHT" = "ភ្លឺ";
 "SETTINGS_SOUNDS" = "សំឡេង";
+"SETTINGS_HIDE_CATEGORIES" = "លាក់ប្រភេទ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "ប្រភេទ៖ %d";

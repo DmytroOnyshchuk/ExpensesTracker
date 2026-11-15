@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "තැඹිලි";
 "SETTINGS_THEME_LIGHT" = "ආලෝකමත්";
 "SETTINGS_SOUNDS" = "ශබ්ද";
+"SETTINGS_HIDE_CATEGORIES" = "ප්‍රවර්ග සඟවන්න";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "ප්‍රවර්ග: %d";

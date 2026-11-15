@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "నారింజ";
 "SETTINGS_THEME_LIGHT" = "లేత";
 "SETTINGS_SOUNDS" = "ధ్వనులు";
+"SETTINGS_HIDE_CATEGORIES" = "వర్గాలను దాచు";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "వర్గాలు: %d";

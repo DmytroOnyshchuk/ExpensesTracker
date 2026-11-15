@@ -152,6 +152,7 @@
 "SETTINGS_THEME_ORANGE" = "オレンジ";
 "SETTINGS_THEME_LIGHT" = "ライト";
 "SETTINGS_SOUNDS" = "サウンド";
+"SETTINGS_HIDE_CATEGORIES" = "カテゴリを隠す";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "カテゴリ：%d";
