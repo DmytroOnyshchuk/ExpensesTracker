@@ -15,14 +15,25 @@ struct ExpensesChartView: View {
     @Query private var categories: [TransactionCategory]
 
     @State private var period: StatisticsPeriod = .day
-    @State private var selection: DateInterval?
+    @State private var selection: DateInterval? = StatisticsPeriod.day.defaultSelection()
+
+    private var periodBinding: Binding<StatisticsPeriod> {
+        Binding(
+            get: { period },
+            set: { newValue in
+                guard newValue != period else { return }
+                period = newValue
+                selection = newValue.defaultSelection()
+            }
+        )
+    }
 
     var body: some View {
         let amounts = period.amounts(of: transactions)
 
         ScrollView(.vertical) {
             VStack(spacing: 12) {
-                SegmentedControl(items: StatisticsPeriod.allCases, selection: $period, title: \.title)
+                SegmentedControl(items: StatisticsPeriod.allCases, selection: periodBinding, title: \.title)
                     .sensoryFeedback(.selection, trigger: period)
                     .padding(.horizontal, 64)
 
@@ -63,9 +74,6 @@ struct ExpensesChartView: View {
         .background(.appMain)
         .navigationTitle(L10n.statisticsChart)
         .navigationBarTitleDisplayMode(.inline)
-        .onChange(of: period) {
-            selection = nil
-        }
     }
 }
 
@@ -106,8 +114,16 @@ struct ExpensesChart: View {
         let now = Date()
         let end = period.interval(containing: max(amounts.keys.max() ?? now, now)).end
         let paddedStart = period.interval(containing: end.addingTimeInterval(-period.defaultVisibleLength)).start
-        let domain = DateInterval(start: min(amounts.keys.min() ?? paddedStart, paddedStart), end: end)
-        let length = min(period.defaultVisibleLength, domain.duration)
+        let selectionStart = selection.wrappedValue?.start
+        let domainStart = [amounts.keys.min(), paddedStart, selectionStart].compactMap { $0 }.min() ?? paddedStart
+        let domain = DateInterval(start: domainStart, end: end)
+        var length = min(period.defaultVisibleLength, domain.duration)
+        if let selectionStart {
+            let required = end.timeIntervalSince(selectionStart)
+            if required > length, required <= period.maxVisibleLength {
+                length = required
+            }
+        }
 
         self.domain = domain
         _visibleStart = State(initialValue: end.addingTimeInterval(-length))

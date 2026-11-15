@@ -106,6 +106,18 @@ extension StatisticsPeriod {
         }
     }
 
+    func defaultSelection(now: Date = Date(), calendar: Calendar = .current) -> DateInterval {
+        switch self {
+        case .day:
+            DateInterval(
+                start: StatisticsPeriod.month.interval(containing: now, calendar: calendar).start,
+                end: interval(containing: now, calendar: calendar).end
+            )
+        case .month, .year:
+            interval(containing: now, calendar: calendar)
+        }
+    }
+
     func boundary(nearest date: Date, calendar: Calendar = .current) -> Date {
         let bucket = interval(containing: date, calendar: calendar)
         return date.timeIntervalSince(bucket.start) < bucket.end.timeIntervalSince(date) ? bucket.start : bucket.end
