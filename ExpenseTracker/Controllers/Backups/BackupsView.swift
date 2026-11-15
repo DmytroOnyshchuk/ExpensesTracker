@@ -125,7 +125,7 @@ private struct BackupImportModifier: ViewModifier {
                         .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.2))
                 }
             }
-            .toast($toastMessage, duration: .seconds(3))
+            .toast($toastMessage, icon: .success, duration: .seconds(3))
             .sheet(item: $pendingImport) { backup in
                 BackupImportSheet(backup: backup, onCancel: cancelImport) { mode in
                     apply(backup, mode: mode)
@@ -171,8 +171,8 @@ private struct BackupImportModifier: ViewModifier {
             defer { isWorking = false }
             try? await Task.sleep(for: .milliseconds(350))
             do {
-                let result = try BackupManager.apply(backup, mode: mode, to: modelContext)
-                toastMessage = L10n.backupsImportDone(result.transactions, result.categories)
+                _ = try BackupManager.apply(backup, mode: mode, to: modelContext)
+                toastMessage = L10n.done
             } catch {
                 modelContext.rollback()
                 show(error)
@@ -344,11 +344,13 @@ struct BackupImportSheet: View {
         .padding(24)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
         .background(.appMain)
-        .confirmationDialog(L10n.backupsImportReplaceWarning, isPresented: $showReplaceConfirmation, titleVisibility: .visible) {
+        .alert(L10n.backupsImportReplace, isPresented: $showReplaceConfirmation) {
             Button(L10n.backupsImportReplace, role: .destructive) {
                 onImport(.replace)
             }
             Button(L10n.cancel, role: .cancel) {}
+        } message: {
+            Text(L10n.backupsImportReplaceWarning)
         }
     }
 
