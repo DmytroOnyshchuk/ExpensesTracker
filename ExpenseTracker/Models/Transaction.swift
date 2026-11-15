@@ -26,12 +26,14 @@ final class Transaction {
         self.date = date
         self.comment = note
     }
+}
 
-    static var notDeleted: Predicate<Transaction> {
-        #Predicate { $0.deletedAt == nil }
+extension [Transaction] {
+    var notDeleted: [Transaction] {
+        filter { $0.deletedAt == nil }
     }
 
-    static var inTrash: Predicate<Transaction> {
-        #Predicate { $0.deletedAt != nil }
+    var inTrash: [Transaction] {
+        filter { $0.deletedAt != nil }
     }
 }

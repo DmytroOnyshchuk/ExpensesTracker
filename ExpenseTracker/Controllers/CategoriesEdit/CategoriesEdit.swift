@@ -10,8 +10,12 @@ import SwiftData
 import SwiftUI
 
 struct CategoriesEdit: View {
-    @Query(filter: TransactionCategory.notDeleted) private var categories: [TransactionCategory]
-    @Query(filter: Transaction.notDeleted) private var transactions: [Transaction]
+    @Query private var storedCategories: [TransactionCategory]
+    @Query private var storedTransactions: [Transaction]
+
+    private var categories: [TransactionCategory] { storedCategories.notDeleted }
+
+    private var transactions: [Transaction] { storedTransactions.notDeleted }
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var modelContext
 

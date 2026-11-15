@@ -11,8 +11,12 @@ import SwiftData
 import SwiftUI
 
 struct StatisticsView: View {
-    @Query(filter: Transaction.notDeleted) private var transactions: [Transaction]
-    @Query(filter: TransactionCategory.notDeleted) private var categories: [TransactionCategory]
+    @Query private var storedTransactions: [Transaction]
+    @Query private var storedCategories: [TransactionCategory]
+
+    private var transactions: [Transaction] { storedTransactions.notDeleted }
+
+    private var categories: [TransactionCategory] { storedCategories.notDeleted }
 
     @State private var period: StatisticsPeriod = .month
     @State private var anchorDate = Date()

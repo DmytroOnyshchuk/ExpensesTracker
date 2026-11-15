@@ -29,14 +29,6 @@ final class TransactionCategory {
         self.sortIndex = sortIndex
     }
     
-    static var notDeleted: Predicate<TransactionCategory> {
-        #Predicate { $0.deletedAt == nil }
-    }
-
-    static var inTrash: Predicate<TransactionCategory> {
-        #Predicate { $0.deletedAt != nil }
-    }
-
     var isMainCategory: Bool {
         parentUuid == nil
     }
@@ -51,6 +43,14 @@ final class TransactionCategory {
 }
 
 extension [TransactionCategory] {
+    var notDeleted: [TransactionCategory] {
+        filter { $0.deletedAt == nil }
+    }
+
+    var inTrash: [TransactionCategory] {
+        filter { $0.deletedAt != nil }
+    }
+
     /// The order in which categories are shown: folders first, then by user-defined sort index, then by name.
     var inDisplayOrder: [TransactionCategory] {
         sorted {

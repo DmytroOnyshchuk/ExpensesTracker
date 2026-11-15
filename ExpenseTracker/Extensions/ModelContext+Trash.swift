@@ -57,8 +57,8 @@ extension ModelContext {
         for transaction in transactions where transaction.deletedAt != nil || transaction.category.deletedAt != nil {
             delete(transaction)
         }
-        let categories = (try? fetch(FetchDescriptor<TransactionCategory>(predicate: TransactionCategory.inTrash))) ?? []
-        for category in categories {
+        let categories = (try? fetch(FetchDescriptor<TransactionCategory>())) ?? []
+        for category in categories.inTrash {
             delete(category)
         }
         try? save()

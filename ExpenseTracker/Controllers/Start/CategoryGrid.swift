@@ -10,8 +10,8 @@ import SwiftData
 import SwiftUI
 
 struct CategoryGrid: View {
-    @Query(filter: #Predicate<TransactionCategory> { !$0.isDirectory && $0.deletedAt == nil })
-    var categories: [TransactionCategory]
+    @Query(filter: #Predicate<TransactionCategory> { !$0.isDirectory })
+    private var storedCategories: [TransactionCategory]
     var onSelect: (TransactionCategory) -> Bool
 
     @State private var currentPage: Int? = .zero
@@ -21,6 +21,8 @@ struct CategoryGrid: View {
     private var gridLayout: [GridItem] {
         Array(repeating: GridItem(.flexible(), spacing: 20), count: 4)
     }
+
+    private var categories: [TransactionCategory] { storedCategories.notDeleted }
 
     private var chunkedCategories: [[TransactionCategory]] {
         categories.inDisplayOrder.chunked(into: 8)

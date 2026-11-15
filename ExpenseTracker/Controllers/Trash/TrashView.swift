@@ -12,28 +12,22 @@ import SwiftUI
 struct TrashView: View {
     @Environment(\.modelContext) private var modelContext
 
-    @Query(filter: TransactionCategory.inTrash, sort: \TransactionCategory.deletedAt, order: .reverse, animation: .default)
-    private var categories: [TransactionCategory]
-    @Query(filter: Transaction.inTrash, sort: \Transaction.deletedAt, order: .reverse, animation: .default)
-    private var transactions: [Transaction]
+    @Query private var storedCategories: [TransactionCategory]
+    @Query private var storedTransactions: [Transaction]
 
     @State private var showClearConfirmation = false
 
-    private var visibleTransactions: [Transaction] {
-        transactions.filter { $0.category.deletedAt == nil }
-    }
-
-    private var transactionsCounts: [UUID: Int] {
-        var counts: [UUID: Int] = [:]
-        for transaction in transactions {
-            counts[transaction.category.uuid, default: 0] += 1
-        }
-        return counts
+    private var categories: [TransactionCategory] {
+        storedCategories.inTrash.sorted { ($0.deletedAt ?? .distantPast) > ($1.deletedAt ?? .distantPast) }
     }
 
     var body: some View {
-        let visibleTransactions = visibleTransactions
-        let transactionsCounts = transactionsCounts
+        let categories = categories
+        let transactions = storedTransactions.inTrash
+        let visibleTransactions = transactions
+            .filter { $0.category.deletedAt == nil }
+            .sorted { ($0.deletedAt ?? .distantPast) > ($1.deletedAt ?? .distantPast) }
+        let transactionsCounts = transactions.reduce(into: [UUID: Int]()) { $0[$1.category.uuid, default: 0] += 1 }
         let isEmpty = categories.isEmpty && visibleTransactions.isEmpty
 
         List {
@@ -57,18 +51,18 @@ struct TrashView: View {
                     .padding(.horizontal, 16)
                     .frame(minHeight: 68)
                     .trashRow(isLast: category.id == categories.last?.id && visibleTransactions.isEmpty) {
-                        modelContext.restore(category)
+                        withAnimation { modelContext.restore(category) }
                     } onDelete: {
-                        modelContext.deletePermanently(category)
+                        withAnimation { modelContext.deletePermanently(category) }
                     }
                 }
 
                 ForEach(visibleTransactions, id: \.id) { transaction in
                     TransactionDetailsRow(transaction: transaction)
                         .trashRow(isLast: transaction.id == visibleTransactions.last?.id) {
-                            modelContext.restore(transaction)
+                            withAnimation { modelContext.restore(transaction) }
                         } onDelete: {
-                            modelContext.deletePermanently(transaction)
+                            withAnimation { modelContext.deletePermanently(transaction) }
                         }
                 }
             }
@@ -79,13 +73,12 @@ struct TrashView: View {
         .navigationTitle(L10n.menuTrash)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
-            if !isEmpty {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(L10n.clear) {
-                        showClearConfirmation = true
-                    }
-                    .foregroundColor(.appWhite)
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(L10n.clear) {
+                    showClearConfirmation = true
                 }
+                .foregroundColor(.appWhite.opacity(isEmpty ? 0.4 : 1))
+                .disabled(isEmpty)
             }
         }
         .alert(L10n.menuTrash, isPresented: $showClearConfirmation) {

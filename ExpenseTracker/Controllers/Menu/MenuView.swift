@@ -45,7 +45,9 @@ enum MenuItem: CaseIterable, Identifiable {
 }
 
 struct MenuView: View {
-    @Query(filter: Transaction.notDeleted) private var transactions: [Transaction]
+    @Query private var storedTransactions: [Transaction]
+
+    private var transactions: [Transaction] { storedTransactions.notDeleted }
 
     @State private var showStatistics = false
     @State private var showCategories = false

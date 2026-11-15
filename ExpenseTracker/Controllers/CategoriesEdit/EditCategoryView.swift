@@ -11,9 +11,12 @@ import SwiftData
 import SwiftUI
 
 struct EditCategoryView: View {
-    @Query(filter: #Predicate<TransactionCategory> { $0.isDirectory && $0.deletedAt == nil })
-    private var allDirectories: [TransactionCategory]
-    @Query(filter: TransactionCategory.notDeleted) private var allCategories: [TransactionCategory]
+    @Query(filter: #Predicate<TransactionCategory> { $0.isDirectory })
+    private var storedDirectories: [TransactionCategory]
+    @Query private var storedCategories: [TransactionCategory]
+
+    private var allDirectories: [TransactionCategory] { storedDirectories.notDeleted }
+    private var allCategories: [TransactionCategory] { storedCategories.notDeleted }
 
     /// The category being edited; `nil` when a new one is created.
     private let category: TransactionCategory?
