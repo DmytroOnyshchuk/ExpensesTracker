@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Uredi kategorije";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nova fascikla kategorija";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Unesite naziv nove fascikle kategorija";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Unesite naziv";
 "CATEGORIES_EDIT_CANCEL" = "Otkaži";
 "CATEGORIES_EDIT_CREATE" = "Napravi";
 

@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Upraviť kategórie";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nový priečinok kategórií";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Zadajte názov nového priečinka kategórií";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Zadajte názov";
 "CATEGORIES_EDIT_CANCEL" = "Zrušiť";
 "CATEGORIES_EDIT_CREATE" = "Vytvoriť";
 

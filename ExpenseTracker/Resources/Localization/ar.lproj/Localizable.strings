@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "تعديل الفئات";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "مجلد فئات جديد";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "أدخل اسمًا لمجلد الفئات الجديد";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "أدخل الاسم";
 "CATEGORIES_EDIT_CANCEL" = "إلغاء";
 "CATEGORIES_EDIT_CREATE" = "إنشاء";
 

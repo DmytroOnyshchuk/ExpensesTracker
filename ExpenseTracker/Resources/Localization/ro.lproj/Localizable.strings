@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Editează categoriile";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Dosar nou de categorii";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Introdu un nume pentru noul dosar de categorii";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Introdu numele";
 "CATEGORIES_EDIT_CANCEL" = "Anulează";
 "CATEGORIES_EDIT_CREATE" = "Creează";
 

@@ -88,8 +88,8 @@ internal enum L10n {
   internal static let categoriesEditCancel = L10n.tr("Localizable", "CATEGORIES_EDIT_CANCEL", fallback: "Cancel")
   /// Create
   internal static let categoriesEditCreate = L10n.tr("Localizable", "CATEGORIES_EDIT_CREATE", fallback: "Create")
-  /// Enter name for new category folder
-  internal static let categoriesEditNewFolderAlertMessage = L10n.tr("Localizable", "CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE", fallback: "Enter name for new category folder")
+  /// Enter name
+  internal static let categoriesEditNewFolderAlertPlaceholder = L10n.tr("Localizable", "CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER", fallback: "Enter name")
   /// New folder category
   internal static let categoriesEditNewFolderAlertTitle = L10n.tr("Localizable", "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE", fallback: "New folder category")
   /// Edit categories

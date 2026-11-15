@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Golygu categorïau";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Ffolder categorïau newydd";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Rhowch enw ar gyfer y ffolder categorïau newydd";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Rhowch enw";
 "CATEGORIES_EDIT_CANCEL" = "Canslo";
 "CATEGORIES_EDIT_CREATE" = "Creu";
 

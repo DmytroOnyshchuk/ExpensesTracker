@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Kategoriyan sererast bike";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Peldanka kategoriyan a nû";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Ji bo peldanka kategoriyan a nû navekî binivîse";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Navê binivîse";
 "CATEGORIES_EDIT_CANCEL" = "Betal bike";
 "CATEGORIES_EDIT_CREATE" = "Biafirîne";
 

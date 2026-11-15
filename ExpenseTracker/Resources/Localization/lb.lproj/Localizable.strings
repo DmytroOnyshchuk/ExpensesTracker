@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Kategorien änneren";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Neie Kategorie-Dossier";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Gitt en Numm fir den neie Kategorie-Dossier an";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Numm aginn";
 "CATEGORIES_EDIT_CANCEL" = "Ofbriechen";
 "CATEGORIES_EDIT_CREATE" = "Erstellen";
 

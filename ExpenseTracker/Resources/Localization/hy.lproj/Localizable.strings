@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Խմբագրել կատեգորիաները";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Կատեգորիաների նոր պանակ";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Մուտքագրեք կատեգորիաների նոր պանակի անունը";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Մուտքագրեք անունը";
 "CATEGORIES_EDIT_CANCEL" = "Չեղարկել";
 "CATEGORIES_EDIT_CREATE" = "Ստեղծել";
 

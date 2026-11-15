@@ -84,14 +84,12 @@ struct CategoriesEdit: View {
             EditCategoryView()
         }
         .alert(L10n.categoriesEditNewFolderAlertTitle, isPresented: $showAddFolderAlert) {
-            TextField(L10n.categoriesEditNewFolderAlertMessage, text: $newFolderName)
+            TextField(L10n.categoriesEditNewFolderAlertPlaceholder, text: $newFolderName)
                 .foregroundColor(.black)
             Button(L10n.cancel, role: .cancel) {}
             Button(L10n.categoriesEditCreate, role: .none) {
                 createFolderCategory()
             }
-        } message: {
-            Text(L10n.categoriesEditNewFolderAlertMessage)
         }
     }
 

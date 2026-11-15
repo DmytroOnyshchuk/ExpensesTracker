@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Επεξεργασία κατηγοριών";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Νέος φάκελος κατηγοριών";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Εισαγάγετε όνομα για τον νέο φάκελο κατηγοριών";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Εισαγάγετε όνομα";
 "CATEGORIES_EDIT_CANCEL" = "Άκυρο";
 "CATEGORIES_EDIT_CREATE" = "Δημιουργία";
 

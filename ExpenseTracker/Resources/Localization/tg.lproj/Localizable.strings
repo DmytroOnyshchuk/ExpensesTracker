@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Таҳрири категорияҳо";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Ҷузвдони нави категорияҳо";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Номи ҷузвдони нави категорияҳоро ворид кунед";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Номро ворид кунед";
 "CATEGORIES_EDIT_CANCEL" = "Бекор кардан";
 "CATEGORIES_EDIT_CREATE" = "Эҷод кардан";
 

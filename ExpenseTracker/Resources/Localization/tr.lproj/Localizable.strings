@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Kategorileri düzenle";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Yeni kategori klasörü";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Yeni kategori klasörü için bir ad girin";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Ad girin";
 "CATEGORIES_EDIT_CANCEL" = "Vazgeç";
 "CATEGORIES_EDIT_CREATE" = "Oluştur";
 

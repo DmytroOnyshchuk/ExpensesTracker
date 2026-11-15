@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "درجن ۾ ترميم";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "درجن جو نئون فولڊر";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "درجن جي نئين فولڊر جو نالو داخل ڪريو";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "نالو داخل ڪريو";
 "CATEGORIES_EDIT_CANCEL" = "رد ڪريو";
 "CATEGORIES_EDIT_CREATE" = "ٺاهيو";
 

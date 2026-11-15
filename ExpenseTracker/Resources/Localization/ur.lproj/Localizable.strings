@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "زمروں میں ترمیم کریں";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "نیا زمرہ فولڈر";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "نئے زمرہ فولڈر کا نام درج کریں";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "نام درج کریں";
 "CATEGORIES_EDIT_CANCEL" = "منسوخ کریں";
 "CATEGORIES_EDIT_CREATE" = "بنائیں";
 

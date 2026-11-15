@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "ਸ਼੍ਰੇਣੀਆਂ ਸੋਧੋ";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "ਨਵਾਂ ਸ਼੍ਰੇਣੀ ਫੋਲਡਰ";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "ਨਵੇਂ ਸ਼੍ਰੇਣੀ ਫੋਲਡਰ ਲਈ ਨਾਮ ਦਰਜ ਕਰੋ";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "ਨਾਮ ਦਰਜ ਕਰੋ";
 "CATEGORIES_EDIT_CANCEL" = "ਰੱਦ ਕਰੋ";
 "CATEGORIES_EDIT_CREATE" = "ਬਣਾਓ";
 

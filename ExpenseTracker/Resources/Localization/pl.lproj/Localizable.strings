@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Edytuj kategorie";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nowy folder kategorii";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Wprowadź nazwę nowego folderu kategorii";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Wpisz nazwę";
 "CATEGORIES_EDIT_CANCEL" = "Anuluj";
 "CATEGORIES_EDIT_CREATE" = "Utwórz";
 

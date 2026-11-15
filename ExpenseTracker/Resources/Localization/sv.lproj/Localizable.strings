@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Redigera kategorier";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Ny kategorimapp";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Ange ett namn på den nya kategorimappen";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Ange namn";
 "CATEGORIES_EDIT_CANCEL" = "Avbryt";
 "CATEGORIES_EDIT_CREATE" = "Skapa";
 

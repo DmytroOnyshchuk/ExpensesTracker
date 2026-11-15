@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Уреди категории";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Нова папка со категории";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Внесете име за новата папка со категории";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Внесете име";
 "CATEGORIES_EDIT_CANCEL" = "Откажи";
 "CATEGORIES_EDIT_CREATE" = "Создај";
 

@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Hariri aina";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Folda mpya ya aina";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Weka jina la folda mpya ya aina";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Weka jina";
 "CATEGORIES_EDIT_CANCEL" = "Ghairi";
 "CATEGORIES_EDIT_CREATE" = "Unda";
 

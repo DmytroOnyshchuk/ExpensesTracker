@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "კატეგორიების რედაქტირება";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "კატეგორიების ახალი საქაღალდე";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "შეიყვანეთ კატეგორიების ახალი საქაღალდის სახელი";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "შეიყვანეთ სახელი";
 "CATEGORIES_EDIT_CANCEL" = "გაუქმება";
 "CATEGORIES_EDIT_CREATE" = "შექმნა";
 

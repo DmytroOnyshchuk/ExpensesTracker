@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Breyta flokkum";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Ný flokkamappa";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Sláðu inn heiti nýju flokkamöppunnar";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Sláðu inn heiti";
 "CATEGORIES_EDIT_CANCEL" = "Hætta við";
 "CATEGORIES_EDIT_CREATE" = "Búa til";
 

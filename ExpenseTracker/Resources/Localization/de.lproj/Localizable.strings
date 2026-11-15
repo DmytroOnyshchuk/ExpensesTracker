@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Kategorien bearbeiten";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Neuer Kategorieordner";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Gib einen Namen für den neuen Kategorieordner ein";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Namen eingeben";
 "CATEGORIES_EDIT_CANCEL" = "Abbrechen";
 "CATEGORIES_EDIT_CREATE" = "Erstellen";
 

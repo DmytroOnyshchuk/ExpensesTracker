@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "വിഭാഗങ്ങൾ എഡിറ്റ് ചെയ്യുക";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "പുതിയ വിഭാഗ ഫോൾഡർ";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "പുതിയ വിഭാഗ ഫോൾഡറിന് ഒരു പേര് നൽകുക";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "പേര് നൽകുക";
 "CATEGORIES_EDIT_CANCEL" = "റദ്ദാക്കുക";
 "CATEGORIES_EDIT_CREATE" = "സൃഷ്ടിക്കുക";
 

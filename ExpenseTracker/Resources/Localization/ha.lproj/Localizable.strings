@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Gyara rukunoni";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Sabon babban fayil na rukunoni";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Shigar da sunan sabon babban fayil na rukunoni";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Shigar da suna";
 "CATEGORIES_EDIT_CANCEL" = "Soke";
 "CATEGORIES_EDIT_CREATE" = "Ƙirƙira";
 

@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "ବର୍ଗ ସମ୍ପାଦନା କରନ୍ତୁ";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "ନୂଆ ବର୍ଗ ଫୋଲ୍ଡର";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "ନୂଆ ବର୍ଗ ଫୋଲ୍ଡରର ନାମ ଲେଖନ୍ତୁ";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "ନାମ ଲେଖନ୍ତୁ";
 "CATEGORIES_EDIT_CANCEL" = "ବାତିଲ କରନ୍ତୁ";
 "CATEGORIES_EDIT_CREATE" = "ତିଆରି କରନ୍ତୁ";
 

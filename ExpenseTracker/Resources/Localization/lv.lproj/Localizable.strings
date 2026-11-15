@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Rediģēt kategorijas";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Jauna kategoriju mape";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Ievadiet jaunās kategoriju mapes nosaukumu";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Ievadiet nosaukumu";
 "CATEGORIES_EDIT_CANCEL" = "Atcelt";
 "CATEGORIES_EDIT_CREATE" = "Izveidot";
 

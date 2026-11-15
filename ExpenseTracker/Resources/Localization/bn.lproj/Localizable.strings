@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "বিভাগ সম্পাদনা";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "নতুন বিভাগ ফোল্ডার";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "নতুন বিভাগ ফোল্ডারের নাম লিখুন";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "নাম লিখুন";
 "CATEGORIES_EDIT_CANCEL" = "বাতিল";
 "CATEGORIES_EDIT_CREATE" = "তৈরি করুন";
 

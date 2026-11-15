@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Editatu kategoriak";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Kategoria-karpeta berria";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Idatzi kategoria-karpeta berriaren izena";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Idatzi izena";
 "CATEGORIES_EDIT_CANCEL" = "Utzi";
 "CATEGORIES_EDIT_CREATE" = "Sortu";
 

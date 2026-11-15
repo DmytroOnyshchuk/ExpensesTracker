@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Категорияларды түзөтүү";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Жаңы категория папкасы";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Жаңы категория папкасынын атын киргизиңиз";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Аталышын киргизиңиз";
 "CATEGORIES_EDIT_CANCEL" = "Жокко чыгаруу";
 "CATEGORIES_EDIT_CREATE" = "Түзүү";
 

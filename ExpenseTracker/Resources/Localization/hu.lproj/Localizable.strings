@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Kategóriák szerkesztése";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Új kategóriamappa";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Add meg az új kategóriamappa nevét";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Adja meg a nevet";
 "CATEGORIES_EDIT_CANCEL" = "Mégse";
 "CATEGORIES_EDIT_CREATE" = "Létrehozás";
 

@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Рэдагаванне катэгорый";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Новая папка катэгорый";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Увядзіце назву новай папкі для катэгорый";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Увядзіце назву";
 "CATEGORIES_EDIT_CANCEL" = "Скасаваць";
 "CATEGORIES_EDIT_CREATE" = "Стварыць";
 

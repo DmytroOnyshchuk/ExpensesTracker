@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Muuda kategooriaid";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Uus kategooriakaust";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Sisesta uue kategooriakausta nimi";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Sisesta nimi";
 "CATEGORIES_EDIT_CANCEL" = "Tühista";
 "CATEGORIES_EDIT_CREATE" = "Loo";
 

@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "עריכת קטגוריות";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "תיקיית קטגוריות חדשה";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "הזינו שם לתיקיית הקטגוריות החדשה";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "הזינו שם";
 "CATEGORIES_EDIT_CANCEL" = "ביטול";
 "CATEGORIES_EDIT_CREATE" = "יצירה";
 

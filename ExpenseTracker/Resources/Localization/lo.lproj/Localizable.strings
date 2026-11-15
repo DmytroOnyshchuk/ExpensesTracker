@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "ແກ້ໄຂໝວດໝູ່";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "ໂຟນເດີໝວດໝູ່ໃໝ່";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "ປ້ອນຊື່ສຳລັບໂຟນເດີໝວດໝູ່ໃໝ່";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "ປ້ອນຊື່";
 "CATEGORIES_EDIT_CANCEL" = "ຍົກເລີກ";
 "CATEGORIES_EDIT_CREATE" = "ສ້າງ";
 

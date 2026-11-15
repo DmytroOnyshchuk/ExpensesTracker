@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "వర్గాలను సవరించండి";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "కొత్త వర్గం ఫోల్డర్";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "కొత్త వర్గం ఫోల్డర్‌కు పేరు నమోదు చేయండి";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "పేరు నమోదు చేయండి";
 "CATEGORIES_EDIT_CANCEL" = "రద్దు చేయండి";
 "CATEGORIES_EDIT_CREATE" = "సృష్టించండి";
 

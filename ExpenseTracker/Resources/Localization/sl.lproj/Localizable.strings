@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Uredi kategorije";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nova mapa kategorij";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Vnesite ime nove mape kategorij";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Vnesite ime";
 "CATEGORIES_EDIT_CANCEL" = "Prekliči";
 "CATEGORIES_EDIT_CREATE" = "Ustvari";
 

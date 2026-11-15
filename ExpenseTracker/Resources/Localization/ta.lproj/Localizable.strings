@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "வகைகளைத் திருத்து";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "புதிய வகைக் கோப்புறை";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "புதிய வகைக் கோப்புறைக்கு ஒரு பெயரை உள்ளிடவும்";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "பெயரை உள்ளிடவும்";
 "CATEGORIES_EDIT_CANCEL" = "ரத்துசெய்";
 "CATEGORIES_EDIT_CREATE" = "உருவாக்கு";
 

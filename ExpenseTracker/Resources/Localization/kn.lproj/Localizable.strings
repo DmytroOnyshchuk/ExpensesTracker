@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "ವರ್ಗಗಳನ್ನು ಎಡಿಟ್ ಮಾಡಿ";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "ಹೊಸ ವರ್ಗ ಫೋಲ್ಡರ್";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "ಹೊಸ ವರ್ಗ ಫೋಲ್ಡರ್‌ಗೆ ಹೆಸರು ನಮೂದಿಸಿ";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "ಹೆಸರು ನಮೂದಿಸಿ";
 "CATEGORIES_EDIT_CANCEL" = "ರದ್ದುಮಾಡಿ";
 "CATEGORIES_EDIT_CREATE" = "ರಚಿಸಿ";
 

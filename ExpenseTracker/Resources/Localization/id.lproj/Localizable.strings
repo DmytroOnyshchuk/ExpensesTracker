@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Edit kategori";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Folder kategori baru";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Masukkan nama untuk folder kategori baru";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Masukkan nama";
 "CATEGORIES_EDIT_CANCEL" = "Batal";
 "CATEGORIES_EDIT_CREATE" = "Buat";
 

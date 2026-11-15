@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "แก้ไขหมวดหมู่";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "โฟลเดอร์หมวดหมู่ใหม่";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "ป้อนชื่อสำหรับโฟลเดอร์หมวดหมู่ใหม่";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "ป้อนชื่อ";
 "CATEGORIES_EDIT_CANCEL" = "ยกเลิก";
 "CATEGORIES_EDIT_CREATE" = "สร้าง";
 

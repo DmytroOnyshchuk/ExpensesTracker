@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Hlela iindidi";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Ifolda entsha yeendidi";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Faka igama lefolda entsha yeendidi";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Faka igama";
 "CATEGORIES_EDIT_CANCEL" = "Rhoxisa";
 "CATEGORIES_EDIT_CREATE" = "Yenza";
 

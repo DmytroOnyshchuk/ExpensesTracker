@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Sửa danh mục";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Thư mục danh mục mới";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Nhập tên cho thư mục danh mục mới";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Nhập tên";
 "CATEGORIES_EDIT_CANCEL" = "Hủy";
 "CATEGORIES_EDIT_CREATE" = "Tạo";
 

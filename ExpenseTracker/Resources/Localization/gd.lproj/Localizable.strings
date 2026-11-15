@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Deasaich na roinnean-seòrsa";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Pasgan ùr de roinnean-seòrsa";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Cuir a-steach ainm airson a’ phasgain ùir";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Cuir a-steach ainm";
 "CATEGORIES_EDIT_CANCEL" = "Sguir dheth";
 "CATEGORIES_EDIT_CREATE" = "Cruthaich";
 

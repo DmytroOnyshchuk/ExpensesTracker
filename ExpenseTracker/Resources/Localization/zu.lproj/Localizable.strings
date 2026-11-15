@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Hlela izigaba";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Ifolda entsha yezigaba";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Faka igama lefolda entsha yezigaba";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Faka igama";
 "CATEGORIES_EDIT_CANCEL" = "Khansela";
 "CATEGORIES_EDIT_CREATE" = "Dala";
 

@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Hoʻoponopono i nā māhele";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Wahī māhele hou";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "E kikokiko i ka inoa no ka wahī māhele hou";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "E hoʻokomo i ka inoa";
 "CATEGORIES_EDIT_CANCEL" = "Hoʻōki";
 "CATEGORIES_EDIT_CREATE" = "Hana";
 

@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Turkumlarni tahrirlash";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Yangi turkumlar jildi";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Yangi turkumlar jildi uchun nom kiriting";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Nomini kiriting";
 "CATEGORIES_EDIT_CANCEL" = "Bekor qilish";
 "CATEGORIES_EDIT_CREATE" = "Yaratish";
 

@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "အမျိုးအစားများ ပြင်ရန်";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "အမျိုးအစား ဖိုင်တွဲအသစ်";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "အမျိုးအစား ဖိုင်တွဲအသစ်အတွက် အမည်ထည့်ပါ";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "အမည်ထည့်ပါ";
 "CATEGORIES_EDIT_CANCEL" = "မလုပ်တော့ပါ";
 "CATEGORIES_EDIT_CREATE" = "ဖန်တီးရန်";
 

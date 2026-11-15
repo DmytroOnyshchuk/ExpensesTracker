@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Editja l-kategoriji";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Folder ġdid tal-kategoriji";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Daħħal isem għall-folder ġdid tal-kategoriji";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Daħħal l-isem";
 "CATEGORIES_EDIT_CANCEL" = "Ikkanċella";
 "CATEGORIES_EDIT_CREATE" = "Oħloq";
 

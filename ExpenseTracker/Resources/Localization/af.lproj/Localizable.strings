@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Wysig kategorieë";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nuwe kategorie-lêergids";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Voer 'n naam vir die nuwe kategorie-lêergids in";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Voer naam in";
 "CATEGORIES_EDIT_CANCEL" = "Kanselleer";
 "CATEGORIES_EDIT_CREATE" = "Skep";
 

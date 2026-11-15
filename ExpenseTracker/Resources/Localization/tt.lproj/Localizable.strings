@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Категорияләрне үзгәртү";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Яңа категорияләр папкасы";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Яңа категорияләр папкасының исемен кертегез";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Исемне кертегез";
 "CATEGORIES_EDIT_CANCEL" = "Баш тарту";
 "CATEGORIES_EDIT_CREATE" = "Булдыру";
 

@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Redaguoti kategorijas";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Naujas kategorijų aplankas";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Įveskite naujo kategorijų aplanko pavadinimą";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Įveskite pavadinimą";
 "CATEGORIES_EDIT_CANCEL" = "Atšaukti";
 "CATEGORIES_EDIT_CREATE" = "Sukurti";
 

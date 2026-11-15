@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Owahi kategori";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Folder kategori anyar";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Lebokake jeneng kanggo folder kategori anyar";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Lebokna jeneng";
 "CATEGORIES_EDIT_CANCEL" = "Batal";
 "CATEGORIES_EDIT_CREATE" = "Gawe";
 

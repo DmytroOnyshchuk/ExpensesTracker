@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Wax ka beddel qaybaha";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Gal cusub oo qaybaha ah";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Geli magaca galka cusub ee qaybaha";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Geli magaca";
 "CATEGORIES_EDIT_CANCEL" = "Jooji";
 "CATEGORIES_EDIT_CREATE" = "Samee";
 

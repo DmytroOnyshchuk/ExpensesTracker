@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "શ્રેણીઓ સંપાદિત કરો";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "નવું શ્રેણી ફોલ્ડર";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "નવા શ્રેણી ફોલ્ડર માટે નામ દાખલ કરો";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "નામ દાખલ કરો";
 "CATEGORIES_EDIT_CANCEL" = "રદ કરો";
 "CATEGORIES_EDIT_CREATE" = "બનાવો";
 

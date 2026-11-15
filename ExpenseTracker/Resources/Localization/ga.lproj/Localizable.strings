@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Cuir catagóirí in eagar";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Fillteán catagóirí nua";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Cuir isteach ainm don fhillteán catagóirí nua";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Cuir isteach ainm";
 "CATEGORIES_EDIT_CANCEL" = "Cuir ar ceal";
 "CATEGORIES_EDIT_CREATE" = "Cruthaigh";
 

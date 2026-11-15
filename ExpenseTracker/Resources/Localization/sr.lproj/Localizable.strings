@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Уреди категорије";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Нова фасцикла категорија";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Унесите назив нове фасцикле категорија";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Унесите назив";
 "CATEGORIES_EDIT_CANCEL" = "Откажи";
 "CATEGORIES_EDIT_CREATE" = "Направи";
 

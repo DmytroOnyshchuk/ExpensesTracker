@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Ангилал засах";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Ангиллын шинэ хавтас";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Ангиллын шинэ хавтасны нэрийг оруулна уу";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Нэр оруулна уу";
 "CATEGORIES_EDIT_CANCEL" = "Цуцлах";
 "CATEGORIES_EDIT_CREATE" = "Үүсгэх";
 

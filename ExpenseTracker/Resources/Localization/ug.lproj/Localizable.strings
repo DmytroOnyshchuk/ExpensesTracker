@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "تۈرلەرنى تەھرىرلە";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "يېڭى تۈر قىسقۇچى";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "يېڭى تۈر قىسقۇچىنىڭ نامىنى كىرگۈزۈڭ";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "نامىنى كىرگۈزۈڭ";
 "CATEGORIES_EDIT_CANCEL" = "بىكار قىل";
 "CATEGORIES_EDIT_CREATE" = "قۇر";
 

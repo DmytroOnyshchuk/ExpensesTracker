@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Ṣàtúnṣe àwọn ẹ̀ka";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Fódà ẹ̀ka tuntun";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Tẹ orúkọ fún fódà ẹ̀ka tuntun";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Tẹ orúkọ";
 "CATEGORIES_EDIT_CANCEL" = "Fagilé";
 "CATEGORIES_EDIT_CREATE" = "Ṣẹ̀dá";
 

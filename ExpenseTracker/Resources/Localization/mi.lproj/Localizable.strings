@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Whakatika kāwai";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Kōpaki kāwai hou";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Tāurua he ingoa mō te kōpaki kāwai hou";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Tāurua te ingoa";
 "CATEGORIES_EDIT_CANCEL" = "Whakakore";
 "CATEGORIES_EDIT_CREATE" = "Waihanga";
 

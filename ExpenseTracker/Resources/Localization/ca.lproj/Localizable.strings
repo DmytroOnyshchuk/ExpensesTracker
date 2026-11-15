@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Edita les categories";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nova carpeta de categories";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Introdueix un nom per a la nova carpeta de categories";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Introdueix el nom";
 "CATEGORIES_EDIT_CANCEL" = "Cancel·la";
 "CATEGORIES_EDIT_CREATE" = "Crea";
 

@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Kategoriýalary üýtget";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Täze kategoriýa bukjasy";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Täze kategoriýa bukjasy üçin at giriziň";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Ady giriziň";
 "CATEGORIES_EDIT_CANCEL" = "Ýatyr";
 "CATEGORIES_EDIT_CREATE" = "Döret";
 

@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Categorieën bewerken";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nieuwe categoriemap";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Voer een naam in voor de nieuwe categoriemap";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Voer naam in";
 "CATEGORIES_EDIT_CANCEL" = "Annuleren";
 "CATEGORIES_EDIT_CREATE" = "Aanmaken";
 

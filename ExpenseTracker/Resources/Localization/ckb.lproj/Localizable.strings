@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "دەستکاریی پۆلەکان";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "بوخچەی نوێی پۆلەکان";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "ناوێک بۆ بوخچە نوێیەکەی پۆلەکان بنووسە";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "ناو بنووسە";
 "CATEGORIES_EDIT_CANCEL" = "پاشگەزبوونەوە";
 "CATEGORIES_EDIT_CREATE" = "دروستکردن";
 

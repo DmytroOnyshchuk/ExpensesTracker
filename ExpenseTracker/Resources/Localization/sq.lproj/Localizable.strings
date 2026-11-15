@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Ndrysho kategoritë";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Dosje e re kategorish";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Fut një emër për dosjen e re të kategorive";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Fut emrin";
 "CATEGORIES_EDIT_CANCEL" = "Anulo";
 "CATEGORIES_EDIT_CREATE" = "Krijo";
 

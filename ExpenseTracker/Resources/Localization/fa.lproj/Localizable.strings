@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "ویرایش دسته‌ها";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "پوشه دسته جدید";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "نامی برای پوشه دسته جدید وارد کنید";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "نام را وارد کنید";
 "CATEGORIES_EDIT_CANCEL" = "لغو";
 "CATEGORIES_EDIT_CREATE" = "ایجاد";
 

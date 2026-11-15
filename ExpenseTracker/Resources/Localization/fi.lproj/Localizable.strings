@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Muokkaa luokkia";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Uusi luokkakansio";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Anna uuden luokkakansion nimi";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Anna nimi";
 "CATEGORIES_EDIT_CANCEL" = "Kumoa";
 "CATEGORIES_EDIT_CREATE" = "Luo";
 

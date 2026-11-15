@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Broyt bólkar";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nýggj bólkamappa";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Skriva navn á nýggju bólkamappuni";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Skriva navn";
 "CATEGORIES_EDIT_CANCEL" = "Ógilda";
 "CATEGORIES_EDIT_CREATE" = "Stovna";
 

@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "I-edit ang mga kategorya";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Bagong folder ng kategorya";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Maglagay ng pangalan para sa bagong folder ng kategorya";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Ilagay ang pangalan";
 "CATEGORIES_EDIT_CANCEL" = "Kanselahin";
 "CATEGORIES_EDIT_CREATE" = "Gumawa";
 

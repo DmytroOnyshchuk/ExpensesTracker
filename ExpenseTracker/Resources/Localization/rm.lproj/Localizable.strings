@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Modifitgar las categorias";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nov ordinatur da categorias";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Endatescha in num per il nov ordinatur da categorias";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Endatar il num";
 "CATEGORIES_EDIT_CANCEL" = "Interrumper";
 "CATEGORIES_EDIT_CREATE" = "Crear";
 

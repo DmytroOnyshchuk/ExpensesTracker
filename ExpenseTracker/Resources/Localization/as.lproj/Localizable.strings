@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "শ্ৰেণী সম্পাদনা কৰক";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "নতুন শ্ৰেণী ফ'ল্ডাৰ";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "নতুন শ্ৰেণী ফ'ল্ডাৰৰ নাম লিখক";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "নাম লিখক";
 "CATEGORIES_EDIT_CANCEL" = "বাতিল কৰক";
 "CATEGORIES_EDIT_CREATE" = "সৃষ্টি কৰক";
 

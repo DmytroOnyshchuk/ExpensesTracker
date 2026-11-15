@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "श्रेणियाँ संपादित करें";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "नया श्रेणी फ़ोल्डर";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "नए श्रेणी फ़ोल्डर का नाम दर्ज करें";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "नाम दर्ज करें";
 "CATEGORIES_EDIT_CANCEL" = "रद्द करें";
 "CATEGORIES_EDIT_CREATE" = "बनाएँ";
 

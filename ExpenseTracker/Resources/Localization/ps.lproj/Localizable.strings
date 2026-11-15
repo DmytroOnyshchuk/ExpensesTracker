@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "کټګورۍ سمول";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "د کټګوریو نوې پوښۍ";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "د کټګوریو د نوې پوښۍ نوم ولیکئ";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "نوم ولیکئ";
 "CATEGORIES_EDIT_CANCEL" = "لغوه کول";
 "CATEGORIES_EDIT_CREATE" = "جوړول";
 

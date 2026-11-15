@@ -93,7 +93,7 @@ extension [TransactionCategory] {
 enum IconColor: String, Codable, CaseIterable {
     case red, pink, blue, yellow, orange, purple, green, brown, white, cyan, indigo, gray, black, mint, teal
     
-    static let primary: [IconColor] = [.red, .yellow, .cyan, .purple, .pink, .brown]
+    static let primary: [IconColor] = [.red, .blue, .yellow, .purple, .brown]
     
     var color: Color {
         switch self {

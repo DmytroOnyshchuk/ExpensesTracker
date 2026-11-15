@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "ප්‍රවර්ග සංස්කරණය";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "නව ප්‍රවර්ග ෆෝල්ඩරය";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "නව ප්‍රවර්ග ෆෝල්ඩරය සඳහා නමක් ඇතුළත් කරන්න";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "නම ඇතුළත් කරන්න";
 "CATEGORIES_EDIT_CANCEL" = "අවලංගු කරන්න";
 "CATEGORIES_EDIT_CREATE" = "සාදන්න";
 

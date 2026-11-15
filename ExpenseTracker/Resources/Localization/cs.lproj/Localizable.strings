@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Upravit kategorie";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Nová složka kategorií";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Zadejte název nové složky kategorií";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Zadejte název";
 "CATEGORIES_EDIT_CANCEL" = "Zrušit";
 "CATEGORIES_EDIT_CREATE" = "Vytvořit";
 

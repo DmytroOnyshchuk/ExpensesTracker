@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Kateqoriyaları redaktə et";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Yeni kateqoriya qovluğu";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Yeni kateqoriya qovluğu üçün ad daxil edin";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Ad daxil edin";
 "CATEGORIES_EDIT_CANCEL" = "Ləğv et";
 "CATEGORIES_EDIT_CREATE" = "Yarat";
 

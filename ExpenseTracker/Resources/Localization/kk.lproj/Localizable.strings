@@ -104,7 +104,7 @@
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Санаттарды өңдеу";
 "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE" = "Жаңа санаттар қалтасы";
-"CATEGORIES_EDIT_NEW_FOLDER_ALERT_MESSAGE" = "Жаңа санаттар қалтасының атауын енгізіңіз";
+"CATEGORIES_EDIT_NEW_FOLDER_ALERT_PLACEHOLDER" = "Атауын енгізіңіз";
 "CATEGORIES_EDIT_CANCEL" = "Бас тарту";
 "CATEGORIES_EDIT_CREATE" = "Жасау";
 
