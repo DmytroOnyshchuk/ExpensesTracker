@@ -1,6 +1,22 @@
 import SwiftUI
 
 extension Color {
+    var hexString: String? {
+        var red: CGFloat = .zero
+        var green: CGFloat = .zero
+        var blue: CGFloat = .zero
+        guard UIColor(self).getRed(&red, green: &green, blue: &blue, alpha: nil) else {
+            return nil
+        }
+
+        return String(
+            format: "#%02X%02X%02X",
+            Int((red * 255).rounded()),
+            Int((green * 255).rounded()),
+            Int((blue * 255).rounded())
+        )
+    }
+
     init(hex: String?, opacity: Double = 1) {
         guard let hex else {
             self.init(.sRGB, red: 0, green: 0, blue: 0, opacity: opacity)

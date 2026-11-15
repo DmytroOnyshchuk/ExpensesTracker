@@ -17,10 +17,22 @@ struct CategoryColorPickerView: View {
     @State private var saturation: Double = .zero
     @State private var brightness: Double = 1
 
-    private let palette = [
-        "#FFA200", "#FFC107", "#FFFF00", "#CDDC39", "#00FF00",
-        "#00796B", "#00BCD4", "#0000FF", "#3F51B5", "#8000FF", "#FF00FF",
-        "#E91E63", "#FF0000", "#804000", "#455A64", "#808080", "#FFFFFF", "#000000",
+    private let palette: [Color] = [
+        Color.red,
+        Color.pink,
+        Color.blue,
+        Color.yellow,
+        Color.orange,
+        Color.purple,
+        Color.green),
+    Color.brown,
+    Color.white,
+    Color.cyan,
+    Color.indigo,
+    Color.gray,
+    Color.black,
+    Color.mint,
+    Color.teal,
     ]
 
     private var selectedHex: String? {
@@ -224,11 +236,13 @@ struct CategoryColorPickerView: View {
 
     private var paletteGrid: some View {
         LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 12), count: 6), spacing: 12) {
-            ForEach(palette, id: \.self) { hex in
+            ForEach(palette.indices, id: \.self) { index in
+                let color = palette[index]
+                let hex = color.hexString ?? ""
                 Button {
                     hexInput = String(hex.dropFirst())
                 } label: {
-                    ColorSwatch(color: Color(hex: hex), isSelected: selectedHex == hex)
+                    ColorSwatch(color: color, isSelected: selectedHex == hex)
                 }
                 .buttonStyle(.plain)
             }
