@@ -407,6 +407,13 @@ struct EditCategoryView: View {
     private func deleteCategory() {
         guard let category else { return }
 
+        let categoryUuid = category.uuid
+        let descriptor = FetchDescriptor<Transaction>(predicate: #Predicate { $0.category.uuid == categoryUuid })
+        guard let transactions = try? modelContext.fetch(descriptor) else { return }
+
+        for transaction in transactions {
+            modelContext.delete(transaction)
+        }
         modelContext.delete(category)
         try? modelContext.save()
         dismiss()
