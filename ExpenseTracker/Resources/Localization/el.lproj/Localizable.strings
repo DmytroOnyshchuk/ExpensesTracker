@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Υγρό μαύρο";
 "SETTINGS_THEME_SLATE" = "Σχιστόλιθος";
 "SETTINGS_THEME_ORANGE" = "Πορτοκαλί";
+"SETTINGS_THEME_LIGHT" = "Φωτεινό";
 "SETTINGS_SOUNDS" = "Ήχοι";
 
 // MARK: - Backups

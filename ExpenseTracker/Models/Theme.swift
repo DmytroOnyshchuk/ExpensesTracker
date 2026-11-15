@@ -23,12 +23,13 @@ struct Theme {
 enum ThemePreset: String, CaseIterable, Identifiable, Codable {
     case classic
     case ember
+    case orange
+    case indigo
+    case gray
     case midnight
     case forest
-    case gray
-    case liquidBlack
     case slate
-    case orange
+    case light
 
     var id: String { rawValue }
 
@@ -39,9 +40,10 @@ enum ThemePreset: String, CaseIterable, Identifiable, Codable {
         case .midnight: L10n.settingsThemeMidnight
         case .forest: L10n.settingsThemeForest
         case .gray: L10n.settingsThemeGray
-        case .liquidBlack: L10n.settingsThemeIndigo
+        case .indigo: L10n.settingsThemeIndigo
         case .slate: L10n.settingsThemeSlate
         case .orange: L10n.settingsThemeOrange
+        case .light: L10n.settingsThemeLight
         }
     }
 
@@ -52,9 +54,10 @@ enum ThemePreset: String, CaseIterable, Identifiable, Codable {
         case .midnight: .midnight
         case .forest: .forest
         case .gray: .gray
-        case .liquidBlack: .liquidBlack
+        case .indigo: .liquidBlack
         case .slate: .slate
         case .orange: .orange
+        case .light: .light
         }
     }
 }
@@ -186,5 +189,21 @@ extension Theme {
         appYellow: Color(hex: "#FFD23F"),
         appRed: Color(hex: "#F2554A"),
         appOverlay: .black
+    )
+
+    static let light = Theme(
+        colorScheme: .light,
+        appMain: Color(hex: "#ECEFF1"),
+        appSecond: Color(hex: "#FFFFFF"),
+        appLabel: Color(hex: "#6E7B8A"),
+        appWhite: Color(hex: "#14263D"),
+        appBlack: Color(hex: "#0E1A2B"),
+        appLightGrey: Color(hex: "#3A4A5E"),
+        appPrimary: Color(hex: "#1DC65B"),
+        appDarkGreen: Color(hex: "#17A34A"),
+        appGray: Color(hex: "#9AA5B1"),
+        appYellow: Color(hex: "#F5B82E"),
+        appRed: Color(hex: "#E8424F"),
+        appOverlay: Color(hex: "#0E1A2B")
     )
 }

@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "שחור נוזלי";
 "SETTINGS_THEME_SLATE" = "צפחה";
 "SETTINGS_THEME_ORANGE" = "כתום";
+"SETTINGS_THEME_LIGHT" = "בהיר";
 "SETTINGS_SOUNDS" = "צלילים";
 
 // MARK: - Backups

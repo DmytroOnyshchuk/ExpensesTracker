@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Hitam cair";
 "SETTINGS_THEME_SLATE" = "Batu sabak";
 "SETTINGS_THEME_ORANGE" = "Oranye";
+"SETTINGS_THEME_LIGHT" = "Terang";
 "SETTINGS_SOUNDS" = "Suara";
 
 // MARK: - Backups

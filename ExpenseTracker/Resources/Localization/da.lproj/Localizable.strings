@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Flydende sort";
 "SETTINGS_THEME_SLATE" = "Skifer";
 "SETTINGS_THEME_ORANGE" = "Orange";
+"SETTINGS_THEME_LIGHT" = "Lys";
 "SETTINGS_SOUNDS" = "Lyde";
 
 // MARK: - Backups

@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Folyékony fekete";
 "SETTINGS_THEME_SLATE" = "Pala";
 "SETTINGS_THEME_ORANGE" = "Narancs";
+"SETTINGS_THEME_LIGHT" = "Világos";
 "SETTINGS_SOUNDS" = "Hangok";
 
 // MARK: - Backups

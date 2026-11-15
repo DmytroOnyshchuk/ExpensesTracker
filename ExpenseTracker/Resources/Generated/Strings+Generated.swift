@@ -216,6 +216,8 @@ internal enum L10n {
   internal static let settingsThemeGray = L10n.tr("Localizable", "SETTINGS_THEME_GRAY", fallback: "Gray")
   /// Indigo
   internal static let settingsThemeIndigo = L10n.tr("Localizable", "SETTINGS_THEME_INDIGO", fallback: "Indigo")
+  /// Light
+  internal static let settingsThemeLight = L10n.tr("Localizable", "SETTINGS_THEME_LIGHT", fallback: "Light")
   /// Liquid black
   internal static let settingsThemeLiquidBlack = L10n.tr("Localizable", "SETTINGS_THEME_LIQUID_BLACK", fallback: "Liquid black")
   /// Midnight

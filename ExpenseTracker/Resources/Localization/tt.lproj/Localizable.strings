@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Сыек кара";
 "SETTINGS_THEME_SLATE" = "Сланец";
 "SETTINGS_THEME_ORANGE" = "Кызгылт сары";
+"SETTINGS_THEME_LIGHT" = "Якты";
 "SETTINGS_SOUNDS" = "Тавышлар";
 
 // MARK: - Backups

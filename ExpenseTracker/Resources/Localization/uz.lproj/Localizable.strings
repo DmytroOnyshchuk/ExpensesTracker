@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Suyuq qora";
 "SETTINGS_THEME_SLATE" = "Slanets";
 "SETTINGS_THEME_ORANGE" = "To‘q sariq";
+"SETTINGS_THEME_LIGHT" = "Yorug‘";
 "SETTINGS_SOUNDS" = "Tovushlar";
 
 // MARK: - Backups

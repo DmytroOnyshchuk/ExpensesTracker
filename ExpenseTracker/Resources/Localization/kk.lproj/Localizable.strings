@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Сұйық қара";
 "SETTINGS_THEME_SLATE" = "Тақтатас";
 "SETTINGS_THEME_ORANGE" = "Қызғылт сары";
+"SETTINGS_THEME_LIGHT" = "Ашық";
 "SETTINGS_SOUNDS" = "Дыбыстар";
 
 // MARK: - Backups

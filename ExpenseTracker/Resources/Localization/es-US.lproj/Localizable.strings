@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Negro líquido";
 "SETTINGS_THEME_SLATE" = "Pizarra";
 "SETTINGS_THEME_ORANGE" = "Naranja";
+"SETTINGS_THEME_LIGHT" = "Claro";
 "SETTINGS_SOUNDS" = "Sonidos";
 
 // MARK: - Backups

@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Płynna czerń";
 "SETTINGS_THEME_SLATE" = "Łupek";
 "SETTINGS_THEME_ORANGE" = "Pomarańczowy";
+"SETTINGS_THEME_LIGHT" = "Jasny";
 "SETTINGS_SOUNDS" = "Dźwięki";
 
 // MARK: - Backups

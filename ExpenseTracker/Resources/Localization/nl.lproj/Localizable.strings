@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Vloeibaar zwart";
 "SETTINGS_THEME_SLATE" = "Leisteen";
 "SETTINGS_THEME_ORANGE" = "Oranje";
+"SETTINGS_THEME_LIGHT" = "Licht";
 "SETTINGS_SOUNDS" = "Geluiden";
 
 // MARK: - Backups

@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Flytande svart";
 "SETTINGS_THEME_SLATE" = "Skifer";
 "SETTINGS_THEME_ORANGE" = "Oransje";
+"SETTINGS_THEME_LIGHT" = "Lys";
 "SETTINGS_SOUNDS" = "Lydar";
 
 // MARK: - Backups

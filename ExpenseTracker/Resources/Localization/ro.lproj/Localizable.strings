@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Negru lichid";
 "SETTINGS_THEME_SLATE" = "Ardezie";
 "SETTINGS_THEME_ORANGE" = "Portocaliu";
+"SETTINGS_THEME_LIGHT" = "Luminos";
 "SETTINGS_SOUNDS" = "Sunete";
 
 // MARK: - Backups

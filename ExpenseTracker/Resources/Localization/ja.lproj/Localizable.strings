@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "リキッドブラック";
 "SETTINGS_THEME_SLATE" = "スレート";
 "SETTINGS_THEME_ORANGE" = "オレンジ";
+"SETTINGS_THEME_LIGHT" = "ライト";
 "SETTINGS_SOUNDS" = "サウンド";
 
 // MARK: - Backups

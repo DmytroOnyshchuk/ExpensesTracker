@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Суюк кара";
 "SETTINGS_THEME_SLATE" = "Шифер";
 "SETTINGS_THEME_ORANGE" = "Кызгылт сары";
+"SETTINGS_THEME_LIGHT" = "Жарык";
 "SETTINGS_SOUNDS" = "Үндөр";
 
 // MARK: - Backups

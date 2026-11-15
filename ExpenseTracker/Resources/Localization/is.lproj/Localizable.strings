@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Fljótandi svart";
 "SETTINGS_THEME_SLATE" = "Flöguberg";
 "SETTINGS_THEME_ORANGE" = "Appelsínugult";
+"SETTINGS_THEME_LIGHT" = "Ljóst";
 "SETTINGS_SOUNDS" = "Hljóð";
 
 // MARK: - Backups

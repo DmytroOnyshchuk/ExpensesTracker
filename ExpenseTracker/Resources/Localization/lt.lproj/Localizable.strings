@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Skysta juoda";
 "SETTINGS_THEME_SLATE" = "Skalūnas";
 "SETTINGS_THEME_ORANGE" = "Oranžinė";
+"SETTINGS_THEME_LIGHT" = "Šviesi";
 "SETTINGS_SOUNDS" = "Garsai";
 
 // MARK: - Backups

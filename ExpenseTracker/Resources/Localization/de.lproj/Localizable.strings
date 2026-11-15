@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Flüssiges Schwarz";
 "SETTINGS_THEME_SLATE" = "Schiefer";
 "SETTINGS_THEME_ORANGE" = "Orange";
+"SETTINGS_THEME_LIGHT" = "Hell";
 "SETTINGS_SOUNDS" = "Töne";
 
 // MARK: - Backups

@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Tekuća crna";
 "SETTINGS_THEME_SLATE" = "Škriljevac";
 "SETTINGS_THEME_ORANGE" = "Narančasta";
+"SETTINGS_THEME_LIGHT" = "Svijetla";
 "SETTINGS_SOUNDS" = "Zvukovi";
 
 // MARK: - Backups

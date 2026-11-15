@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "ດຳແຫຼວ";
 "SETTINGS_THEME_SLATE" = "ຫີນຊະນວນ";
 "SETTINGS_THEME_ORANGE" = "ສີສົ້ມ";
+"SETTINGS_THEME_LIGHT" = "ສະຫວ່າງ";
 "SETTINGS_SOUNDS" = "ສຽງ";
 
 // MARK: - Backups
