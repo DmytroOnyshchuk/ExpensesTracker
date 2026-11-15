@@ -68,8 +68,8 @@ enum BackupManager {
     }
 
     private static var storedBalance: Balance? {
-        get { Balance(jsonData: UserDefaults.standard.data(forKey: UDKey.balance.rawValue)) }
-        set { UserDefaults.standard.set(newValue?.jsonData(), forKey: UDKey.balance.rawValue) }
+        get { UserManager.shared.balance }
+        set { UserManager.shared.balance = newValue }
     }
 
     @MainActor

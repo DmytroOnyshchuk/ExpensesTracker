@@ -3,7 +3,7 @@ import SwiftUI
 struct SettingsView: View {
     @State private var soundsEnabled = FeedbackManager.shared.soundIsEnable
     @State private var hapticEnabled = FeedbackManager.shared.hapticIsEnable
-    @AppStorage(UDKey.hideCategories.rawValue) private var hideCategories = false
+    @AppStorage(UDKey.hideCategories.rawValue, store: UserDefaults.shared) private var hideCategories = false
 
     @Inject private var themeManager: ThemeManager
     @Inject private var feedbackManager: FeedbackManager

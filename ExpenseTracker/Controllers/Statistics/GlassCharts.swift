@@ -9,7 +9,7 @@
 import Charts
 import SwiftUI
 
-enum StatisticsChartStyle: String, CaseIterable, Identifiable {
+enum StatisticsChartStyle: String, CaseIterable, Identifiable, Codable {
     case pie
     case bars
     case line

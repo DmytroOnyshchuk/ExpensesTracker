@@ -191,7 +191,12 @@ struct StatisticsBreakdown: View {
     var averageTitle: String?
     var onSwipe: ((Int) -> Void)?
 
-    @AppStorage(UDKey.statisticsChartStyle.rawValue) private var chartStyle: StatisticsChartStyle = .pie
+    @AppStorage(UDKey.statisticsChartStyle.rawValue, store: UserDefaults.shared) private var chartStyleData: Data?
+
+    private var chartStyle: StatisticsChartStyle {
+        get { StatisticsChartStyle(jsonData: chartStyleData) ?? .pie }
+        nonmutating set { chartStyleData = newValue.jsonData() }
+    }
 
     private var canSwitchStyle: Bool {
         period != nil && !slices.isEmpty && !points.isEmpty

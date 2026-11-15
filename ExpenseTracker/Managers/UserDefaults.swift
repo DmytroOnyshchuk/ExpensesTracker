@@ -1,7 +1,7 @@
 import Foundation
 
 extension UserDefaults {
-    fileprivate static var shared: UserDefaults = {
+    static var shared: UserDefaults = {
         guard let groupDefaults = UserDefaults(suiteName: Constants.groupIdentifier) else {
             Logger.default.logMessage("App group \(Constants.groupIdentifier) not available, using standard defaults", category: "UserDefaults", type: .warning)
             return .standard

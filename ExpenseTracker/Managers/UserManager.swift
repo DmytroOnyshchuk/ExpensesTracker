@@ -1,7 +1,7 @@
 import Foundation
 import SwiftData
 
-enum UDKey: String, CaseIterable {
+enum UDKey: String {
     case currentLanguage = "UDKey.currentLanguage"
     case lastApplicationEnvironment = "UDKey.lastApplicationEnvironment"
     case fcmToken = "UDKey.fcmToken"
@@ -26,10 +26,11 @@ final class UserManager {
     @UserDefault(.apiToken, defaultValue: nil) var apiToken: String?
     @UserDefault(.userId, defaultValue: nil) var userId: String?
     @UserDefaultCodable(.theme, defaultValue: ThemePreset.dark) var theme: ThemePreset!
+    @UserDefaultCodable(.balance, defaultValue: nil, enableCaching: false) var balance: Balance?
+    @UserDefaultCodable(.statisticsChartStyle, defaultValue: .pie, enableCaching: false) var statisticsChartStyle: StatisticsChartStyle!
     @UserDefault(.soundsEnabled, defaultValue: true) var soundsEnabled: Bool!
     @UserDefault(.hapticEnabled, defaultValue: true) var hapticEnabled: Bool!
     @UserDefault(.hideCategories, defaultValue: false) var hideCategories: Bool!
-    
 }
 
 extension UserManager {
@@ -45,16 +46,18 @@ extension UserManager {
         for key in dictionary.keys {
             defaults.removeObject(forKey: key)
         }
-        for key in UDKey.allCases {
-            UserDefaults.standard.removeObject(forKey: key.rawValue)
-        }
-        lastApplicationEnvironment = savedEnvironment
+        _currentLanguage.reset()
+        _lastApplicationEnvironment.reset()
         _fcmToken.reset()
         _apiToken.reset()
         _userId.reset()
+        _theme.reset()
         _soundsEnabled.reset()
         _hapticEnabled.reset()
-        _theme.reset()
+        _hideCategories.reset()
+        _balance.reset()
+        _statisticsChartStyle.reset()
+        lastApplicationEnvironment = savedEnvironment
         ThemeManager.shared.preset = theme
 
         Logger.default.logMessage("Logout end", category: "UserManager")
