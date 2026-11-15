@@ -20,7 +20,7 @@ struct CategoryDraft {
 
     /// Draft of a new category.
     init() {
-        self.name = L10n.editCategoryDefaultName
+        self.name = ""
         self.icon = CategoryIcon(name: "cart.fill", iconColor: .yellow)
     }
 

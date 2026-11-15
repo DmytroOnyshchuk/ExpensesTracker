@@ -72,7 +72,8 @@ final class CategoryRulesTests: XCTestCase {
     func testNewDraftHasDefaults() {
         let draft = CategoryDraft()
 
-        XCTAssertEqual(draft.name, L10n.editCategoryDefaultName)
+        XCTAssertTrue(draft.name.isEmpty)
+        XCTAssertFalse(draft.canSave)
         XCTAssertEqual(draft.icon.name, "cart.fill")
         XCTAssertEqual(draft.icon.iconColor, .yellow)
         XCTAssertNil(draft.parentUuid)
