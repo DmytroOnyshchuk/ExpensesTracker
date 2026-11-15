@@ -18,7 +18,7 @@ struct CategoryColorPickerView: View {
     @State private var brightness: Double = 1
 
     private let palette = [
-        "#FF0000", "#FF8000", "#FFC107", "#FFFF00", "#CDDC39", "#00B300",
+        "#FF0000", "#FFA200", "#FFC107", "#FFFF00", "#CDDC39", "#00FF00",
         "#00796B", "#00BCD4", "#0000FF", "#3F51B5", "#8000FF", "#FF00FF",
         "#E91E63", "#804000", "#455A64", "#FFFFFF", "#808080", "#000000",
     ]
