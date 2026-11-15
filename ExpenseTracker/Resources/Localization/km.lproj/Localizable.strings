@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ធុងសំរាមទទេ";
-"TRASH_RESTORE" = "ស្ដារ";
+"TRASH_RESTORE_CONFIRMATION" = "ស្ដារ?";
 "TRASH_CLEAR_CONFIRMATION" = "ធាតុទាំងអស់ក្នុងធុងសំរាមនឹងត្រូវលុបជាអចិន្ត្រៃយ៍។ សកម្មភាពនេះមិនអាចត្រឡប់វិញបានទេ។";
 
 // MARK: - About

@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ଟ୍ରାସ୍ ଖାଲି ଅଛି";
-"TRASH_RESTORE" = "ପୁନଃସ୍ଥାପନ କରନ୍ତୁ";
+"TRASH_RESTORE_CONFIRMATION" = "ପୁନଃସ୍ଥାପନ କରନ୍ତୁ?";
 "TRASH_CLEAR_CONFIRMATION" = "ଟ୍ରାସ୍‌ରେ ଥିବା ସମସ୍ତ ଆଇଟମ୍ ସ୍ଥାୟୀ ଭାବେ ଡିଲିଟ୍ ହେବ। ଏହି କାର୍ଯ୍ୟକୁ ପୂର୍ବବତ୍ କରାଯାଇପାରିବ ନାହିଁ।";
 
 // MARK: - About

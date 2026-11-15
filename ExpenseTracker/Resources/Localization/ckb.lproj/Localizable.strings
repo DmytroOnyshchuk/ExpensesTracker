@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "تەنەکەی خۆڵ بەتاڵە";
-"TRASH_RESTORE" = "گەڕاندنەوە";
+"TRASH_RESTORE_CONFIRMATION" = "گەڕاندنەوە؟";
 "TRASH_CLEAR_CONFIRMATION" = "هەموو شتەکانی ناو تەنەکەی خۆڵ بە یەکجاری دەسڕدرێنەوە. ئەم کردارە ناگەڕێندرێتەوە.";
 
 // MARK: - About

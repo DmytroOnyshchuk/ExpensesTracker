@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "D'Dreckskëscht ass eidel";
-"TRASH_RESTORE" = "Erëmhierstellen";
+"TRASH_RESTORE_CONFIRMATION" = "Erëmhierstellen?";
 "TRASH_CLEAR_CONFIRMATION" = "All Elementer an der Dreckskëscht ginn definitiv geläscht. Dës Aktioun kann net réckgängeg gemaach ginn.";
 
 // MARK: - About

@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ട്രാഷ് ശൂന്യമാണ്";
-"TRASH_RESTORE" = "പുനഃസ്ഥാപിക്കുക";
+"TRASH_RESTORE_CONFIRMATION" = "പുനഃസ്ഥാപിക്കുക?";
 "TRASH_CLEAR_CONFIRMATION" = "ട്രാഷിലെ എല്ലാ ഇനങ്ങളും ശാശ്വതമായി ഇല്ലാതാക്കും. ഈ പ്രവർത്തനം പഴയപടിയാക്കാനാവില്ല.";
 
 // MARK: - About

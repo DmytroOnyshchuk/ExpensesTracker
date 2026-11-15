@@ -310,8 +310,8 @@ internal enum L10n {
   internal static let trashClearConfirmation = L10n.tr("Localizable", "TRASH_CLEAR_CONFIRMATION", fallback: "All items in the Trash will be permanently deleted. This action cannot be undone.")
   /// Trash is empty
   internal static let trashEmpty = L10n.tr("Localizable", "TRASH_EMPTY", fallback: "Trash is empty")
-  /// Restore
-  internal static let trashRestore = L10n.tr("Localizable", "TRASH_RESTORE", fallback: "Restore")
+  /// Restore?
+  internal static let trashRestoreConfirmation = L10n.tr("Localizable", "TRASH_RESTORE_CONFIRMATION", fallback: "Restore?")
   /// Undo
   internal static let undo = L10n.tr("Localizable", "UNDO", fallback: "Undo")
   /// Update

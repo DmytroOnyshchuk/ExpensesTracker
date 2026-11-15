@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Səbət boşdur";
-"TRASH_RESTORE" = "Bərpa et";
+"TRASH_RESTORE_CONFIRMATION" = "Bərpa et?";
 "TRASH_CLEAR_CONFIRMATION" = "Səbətdəki bütün elementlər həmişəlik silinəcək. Bu əməliyyatı geri qaytarmaq mümkün deyil.";
 
 // MARK: - About

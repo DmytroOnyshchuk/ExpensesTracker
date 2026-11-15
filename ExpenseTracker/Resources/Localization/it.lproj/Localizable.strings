@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Il cestino è vuoto";
-"TRASH_RESTORE" = "Ripristina";
+"TRASH_RESTORE_CONFIRMATION" = "Ripristina?";
 "TRASH_CLEAR_CONFIRMATION" = "Tutti gli elementi nel cestino verranno eliminati definitivamente. Questa azione non può essere annullata.";
 
 // MARK: - About

@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "La paperera és buida";
-"TRASH_RESTORE" = "Restaura";
+"TRASH_RESTORE_CONFIRMATION" = "Restaura?";
 "TRASH_CLEAR_CONFIRMATION" = "Tots els elements de la paperera s'eliminaran definitivament. Aquesta acció no es pot desfer.";
 
 // MARK: - About

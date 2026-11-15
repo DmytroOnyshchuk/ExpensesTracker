@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Çopdank vala ye";
-"TRASH_RESTORE" = "Vegerîne";
+"TRASH_RESTORE_CONFIRMATION" = "Vegerîne?";
 "TRASH_CLEAR_CONFIRMATION" = "Hemû hêmanên di çopdankê de dê bi temamî werin jêbirin. Ev çalakî nayê vegerandin.";
 
 // MARK: - About

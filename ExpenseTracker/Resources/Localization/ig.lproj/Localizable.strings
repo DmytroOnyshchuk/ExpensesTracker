@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Ahịhịa tọgbọ chakoo";
-"TRASH_RESTORE" = "Weghachi";
+"TRASH_RESTORE_CONFIRMATION" = "Weghachi?";
 "TRASH_CLEAR_CONFIRMATION" = "A ga-ehichapụ ihe niile dị na ahịhịa kpamkpam. Enweghị ike ịmegharị omume a.";
 
 // MARK: - About

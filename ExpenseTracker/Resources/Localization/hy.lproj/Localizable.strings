@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Աղբարկղը դատարկ է";
-"TRASH_RESTORE" = "Վերականգնել";
+"TRASH_RESTORE_CONFIRMATION" = "Վերականգնե՞լ";
 "TRASH_CLEAR_CONFIRMATION" = "Աղբարկղի բոլոր տարրերը ընդմիշտ կջնջվեն։ Այս գործողությունը հնարավոր չէ հետարկել։";
 
 // MARK: - About

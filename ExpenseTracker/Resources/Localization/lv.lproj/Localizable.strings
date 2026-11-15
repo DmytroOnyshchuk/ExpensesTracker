@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Atkritne ir tukša";
-"TRASH_RESTORE" = "Atjaunot";
+"TRASH_RESTORE_CONFIRMATION" = "Atjaunot?";
 "TRASH_CLEAR_CONFIRMATION" = "Visi atkritnes vienumi tiks neatgriezeniski dzēsti. Šo darbību nevar atsaukt.";
 
 // MARK: - About

@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "کثافت‌دانۍ تشه ده";
-"TRASH_RESTORE" = "بېرته راوستل";
+"TRASH_RESTORE_CONFIRMATION" = "بېرته راوستل؟";
 "TRASH_CLEAR_CONFIRMATION" = "په کثافت‌دانۍ کې ټول توکي به د تل لپاره ړنګ شي. دا کړنه بېرته نه شي کېدای.";
 
 // MARK: - About

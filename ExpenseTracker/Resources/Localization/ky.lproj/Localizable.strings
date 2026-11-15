@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Себет бош";
-"TRASH_RESTORE" = "Калыбына келтирүү";
+"TRASH_RESTORE_CONFIRMATION" = "Калыбына келтирүү?";
 "TRASH_CLEAR_CONFIRMATION" = "Себеттеги бардык элементтер биротоло өчүрүлөт. Бул аракетти артка кайтаруу мүмкүн эмес.";
 
 // MARK: - About

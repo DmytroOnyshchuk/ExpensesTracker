@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Udoti awunalutho";
-"TRASH_RESTORE" = "Buyisela";
+"TRASH_RESTORE_CONFIRMATION" = "Buyisela?";
 "TRASH_CLEAR_CONFIRMATION" = "Zonke izinto ezisodotini zizosuswa unomphela. Lesi senzo asikwazi ukuhlehliswa.";
 
 // MARK: - About

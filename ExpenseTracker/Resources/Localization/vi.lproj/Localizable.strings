@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Thùng rác trống";
-"TRASH_RESTORE" = "Khôi phục";
+"TRASH_RESTORE_CONFIRMATION" = "Khôi phục?";
 "TRASH_CLEAR_CONFIRMATION" = "Tất cả các mục trong thùng rác sẽ bị xóa vĩnh viễn. Không thể hoàn tác hành động này.";
 
 // MARK: - About

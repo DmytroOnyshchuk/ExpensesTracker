@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Koshi është bosh";
-"TRASH_RESTORE" = "Rikthe";
+"TRASH_RESTORE_CONFIRMATION" = "Rikthe?";
 "TRASH_CLEAR_CONFIRMATION" = "Të gjithë artikujt në kosh do të fshihen përgjithmonë. Ky veprim nuk mund të zhbëhet.";
 
 // MARK: - About

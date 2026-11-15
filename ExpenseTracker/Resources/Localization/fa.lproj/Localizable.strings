@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "سطل زباله خالی است";
-"TRASH_RESTORE" = "بازیابی";
+"TRASH_RESTORE_CONFIRMATION" = "بازیابی؟";
 "TRASH_CLEAR_CONFIRMATION" = "همه موارد موجود در سطل زباله برای همیشه حذف می‌شوند. این عمل قابل بازگشت نیست.";
 
 // MARK: - About

@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "La papelera está vacía";
-"TRASH_RESTORE" = "Restaurar";
+"TRASH_RESTORE_CONFIRMATION" = "¿Restaurar?";
 "TRASH_CLEAR_CONFIRMATION" = "Todos los elementos de la papelera se eliminarán definitivamente. Esta acción no se puede deshacer.";
 
 // MARK: - About

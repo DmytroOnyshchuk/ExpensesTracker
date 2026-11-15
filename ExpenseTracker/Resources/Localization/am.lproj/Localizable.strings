@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "መጣያው ባዶ ነው";
-"TRASH_RESTORE" = "መልስ";
+"TRASH_RESTORE_CONFIRMATION" = "መልስ?";
 "TRASH_CLEAR_CONFIRMATION" = "በመጣያው ውስጥ ያሉ ሁሉም ንጥሎች በቋሚነት ይሰረዛሉ። ይህ ድርጊት ሊቀለበስ አይችልም።";
 
 // MARK: - About

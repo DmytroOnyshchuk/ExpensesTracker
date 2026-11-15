@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Tá an bruscar folamh";
-"TRASH_RESTORE" = "Athchóirigh";
+"TRASH_RESTORE_CONFIRMATION" = "Athchóirigh?";
 "TRASH_CLEAR_CONFIRMATION" = "Scriosfar gach mír sa bhruscar go buan. Ní féidir an gníomh seo a chealú.";
 
 // MARK: - About

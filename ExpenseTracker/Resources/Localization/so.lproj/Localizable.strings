@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Qashinku waa madhan yahay";
-"TRASH_RESTORE" = "Soo celi";
+"TRASH_RESTORE_CONFIRMATION" = "Soo celi?";
 "TRASH_CLEAR_CONFIRMATION" = "Dhammaan waxyaabaha ku jira qashinka si joogto ah ayaa loo tirtiri doonaa. Tallaabadan lagama noqon karo.";
 
 // MARK: - About

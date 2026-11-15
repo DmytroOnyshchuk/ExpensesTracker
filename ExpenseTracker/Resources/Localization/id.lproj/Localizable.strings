@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Tempat sampah kosong";
-"TRASH_RESTORE" = "Pulihkan";
+"TRASH_RESTORE_CONFIRMATION" = "Pulihkan?";
 "TRASH_CLEAR_CONFIRMATION" = "Semua item di tempat sampah akan dihapus secara permanen. Tindakan ini tidak dapat dibatalkan.";
 
 // MARK: - About

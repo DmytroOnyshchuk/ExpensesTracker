@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ردي خالي آهي";
-"TRASH_RESTORE" = "بحال ڪريو";
+"TRASH_RESTORE_CONFIRMATION" = "بحال ڪريو؟";
 "TRASH_CLEAR_CONFIRMATION" = "ردي ۾ موجود سڀ شيون هميشه لاءِ ختم ڪيون وينديون. هي عمل واپس نٿو ڪري سگهجي.";
 
 // MARK: - About

@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Корзина пуста";
-"TRASH_RESTORE" = "Восстановить";
+"TRASH_RESTORE_CONFIRMATION" = "Восстановить?";
 "TRASH_CLEAR_CONFIRMATION" = "Все объекты в корзине будут удалены навсегда. Это действие нельзя отменить.";
 
 // MARK: - About

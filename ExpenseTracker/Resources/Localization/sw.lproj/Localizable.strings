@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Tupio ni tupu";
-"TRASH_RESTORE" = "Rejesha";
+"TRASH_RESTORE_CONFIRMATION" = "Rejesha?";
 "TRASH_CLEAR_CONFIRMATION" = "Vipengee vyote kwenye tupio vitafutwa kabisa. Kitendo hiki hakiwezi kutenduliwa.";
 
 // MARK: - About

@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ટ્રેશ ખાલી છે";
-"TRASH_RESTORE" = "પુનઃસ્થાપિત કરો";
+"TRASH_RESTORE_CONFIRMATION" = "પુનઃસ્થાપિત કરો?";
 "TRASH_CLEAR_CONFIRMATION" = "ટ્રેશમાંની બધી આઇટમ કાયમ માટે ડિલીટ થઈ જશે. આ ક્રિયા પૂર્વવત્ કરી શકાતી નથી.";
 
 // MARK: - About

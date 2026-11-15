@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Хогийн сав хоосон байна";
-"TRASH_RESTORE" = "Сэргээх";
+"TRASH_RESTORE_CONFIRMATION" = "Сэргээх?";
 "TRASH_CLEAR_CONFIRMATION" = "Хогийн сав дахь бүх зүйл бүрмөсөн устгагдана. Энэ үйлдлийг буцаах боломжгүй.";
 
 // MARK: - About

@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Ruslið er tómt";
-"TRASH_RESTORE" = "Endurheimta";
+"TRASH_RESTORE_CONFIRMATION" = "Endurheimta?";
 "TRASH_CLEAR_CONFIRMATION" = "Öllum atriðum í ruslinu verður eytt varanlega. Ekki er hægt að afturkalla þessa aðgerð.";
 
 // MARK: - About

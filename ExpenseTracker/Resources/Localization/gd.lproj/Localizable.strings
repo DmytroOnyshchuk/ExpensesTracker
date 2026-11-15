@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Tha an sgudal falamh";
-"TRASH_RESTORE" = "Aisig";
+"TRASH_RESTORE_CONFIRMATION" = "Aisig?";
 "TRASH_CLEAR_CONFIRMATION" = "Thèid a h-uile nì san sgudal a sguabadh às gu buan. Cha ghabh an gnìomh seo a neo-dhèanamh.";
 
 // MARK: - About

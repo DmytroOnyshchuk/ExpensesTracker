@@ -176,7 +176,7 @@ struct TransactionRow: View {
             Button(role: .destructive) {
                 modelContext.deleteWithUndo(transaction)
             } label: {
-                Label(L10n.delete, systemImage: "trash")
+                Label(L10n.remove, systemImage: "trash")
             }
             .tint(.appRed)
         }

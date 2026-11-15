@@ -2,7 +2,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @State private var soundsEnabled = FeedbackManager.shared.soundIsEnable
-    @AppStorage(UDKey.hideCategories.rawValue) private var hideCategories = true
+    @AppStorage(UDKey.hideCategories.rawValue) private var hideCategories = false
 
     @Inject private var themeManager: ThemeManager
     @Inject private var feedbackManager: FeedbackManager

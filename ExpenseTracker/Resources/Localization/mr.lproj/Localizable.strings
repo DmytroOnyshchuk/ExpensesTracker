@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ट्रॅश रिकामा आहे";
-"TRASH_RESTORE" = "पुनर्संचयित करा";
+"TRASH_RESTORE_CONFIRMATION" = "पुनर्संचयित करा?";
 "TRASH_CLEAR_CONFIRMATION" = "ट्रॅशमधील सर्व आयटम कायमचे हटवले जातील. ही क्रिया पूर्ववत करता येणार नाही.";
 
 // MARK: - About

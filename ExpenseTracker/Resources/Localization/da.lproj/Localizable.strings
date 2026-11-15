@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Papirkurven er tom";
-"TRASH_RESTORE" = "Gendan";
+"TRASH_RESTORE_CONFIRMATION" = "Gendan?";
 "TRASH_CLEAR_CONFIRMATION" = "Alle emner i papirkurven slettes permanent. Denne handling kan ikke fortrydes.";
 
 // MARK: - About

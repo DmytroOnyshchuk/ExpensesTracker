@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Šiukšlinė tuščia";
-"TRASH_RESTORE" = "Atkurti";
+"TRASH_RESTORE_CONFIRMATION" = "Atkurti?";
 "TRASH_CLEAR_CONFIRMATION" = "Visi šiukšlinėje esantys elementai bus ištrinti visam laikui. Šio veiksmo anuliuoti negalima.";
 
 // MARK: - About

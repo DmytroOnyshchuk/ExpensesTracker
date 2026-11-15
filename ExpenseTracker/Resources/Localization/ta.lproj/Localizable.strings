@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "குப்பைத் தொட்டி காலியாக உள்ளது";
-"TRASH_RESTORE" = "மீட்டமை";
+"TRASH_RESTORE_CONFIRMATION" = "மீட்டமை?";
 "TRASH_CLEAR_CONFIRMATION" = "குப்பைத் தொட்டியில் உள்ள அனைத்தும் நிரந்தரமாக நீக்கப்படும். இந்தச் செயலைச் செயல்தவிர்க்க முடியாது.";
 
 // MARK: - About

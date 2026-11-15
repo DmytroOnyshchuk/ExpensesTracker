@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Prügikast on tühi";
-"TRASH_RESTORE" = "Taasta";
+"TRASH_RESTORE_CONFIRMATION" = "Taasta?";
 "TRASH_CLEAR_CONFIRMATION" = "Kõik prügikastis olevad üksused kustutatakse jäädavalt. Seda toimingut ei saa tagasi võtta.";
 
 // MARK: - About

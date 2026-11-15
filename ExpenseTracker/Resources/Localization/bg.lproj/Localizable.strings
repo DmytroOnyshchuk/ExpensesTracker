@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Кошчето е празно";
-"TRASH_RESTORE" = "Възстановяване";
+"TRASH_RESTORE_CONFIRMATION" = "Възстановяване?";
 "TRASH_CLEAR_CONFIRMATION" = "Всички елементи в кошчето ще бъдат изтрити завинаги. Това действие не може да бъде отменено.";
 
 // MARK: - About

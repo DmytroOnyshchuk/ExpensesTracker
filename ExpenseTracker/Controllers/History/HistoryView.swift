@@ -55,7 +55,7 @@ struct HistoryView: View {
                             Button(role: .destructive) {
                                 delete(transaction)
                             } label: {
-                                Label(L10n.delete, systemImage: "trash")
+                                Label(L10n.remove, systemImage: "trash")
                             }
                             .tint(.appRed)
                         }

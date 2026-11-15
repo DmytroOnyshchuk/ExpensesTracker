@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Hakahaka ka ʻōpala";
-"TRASH_RESTORE" = "Hoʻihoʻi";
+"TRASH_RESTORE_CONFIRMATION" = "Hoʻihoʻi?";
 "TRASH_CLEAR_CONFIRMATION" = "E holoi mau loa ʻia nā mea a pau i loko o ka ʻōpala. ʻAʻole hiki ke hoʻihoʻi ʻia kēia hana.";
 
 // MARK: - About

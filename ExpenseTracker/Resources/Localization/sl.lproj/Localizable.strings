@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Koš je prazen";
-"TRASH_RESTORE" = "Obnovi";
+"TRASH_RESTORE_CONFIRMATION" = "Obnovi?";
 "TRASH_CLEAR_CONFIRMATION" = "Vsi elementi v košu bodo trajno izbrisani. Tega dejanja ni mogoče razveljaviti.";
 
 // MARK: - About

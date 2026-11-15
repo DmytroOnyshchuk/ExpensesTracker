@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Koš je prázdný";
-"TRASH_RESTORE" = "Obnovit";
+"TRASH_RESTORE_CONFIRMATION" = "Obnovit?";
 "TRASH_CLEAR_CONFIRMATION" = "Všechny položky v koši budou trvale smazány. Tuto akci nelze vrátit zpět.";
 
 // MARK: - About

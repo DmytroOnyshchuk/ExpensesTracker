@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Kei te wātea te ipu para";
-"TRASH_RESTORE" = "Whakaora";
+"TRASH_RESTORE_CONFIRMATION" = "Whakaora?";
 "TRASH_CLEAR_CONFIRMATION" = "Ka mukua pūmautia ngā mea katoa kei te ipu para. Kāore e taea te whakakore i tēnei mahi.";
 
 // MARK: - About

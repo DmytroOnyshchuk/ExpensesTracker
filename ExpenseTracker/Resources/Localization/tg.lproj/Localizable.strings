@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Сабад холӣ аст";
-"TRASH_RESTORE" = "Барқарор кардан";
+"TRASH_RESTORE_CONFIRMATION" = "Барқарор кардан?";
 "TRASH_CLEAR_CONFIRMATION" = "Ҳамаи унсурҳои сабад барои ҳамеша нест карда мешаванд. Ин амалро бекор кардан ғайриимкон аст.";
 
 // MARK: - About

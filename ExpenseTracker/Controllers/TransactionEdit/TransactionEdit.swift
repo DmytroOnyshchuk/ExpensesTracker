@@ -168,23 +168,10 @@ struct TransactionEdit: View {
     }
 
     private var keyboardDoneButton: some View {
-        Button {
+        KeyboardDoneButton {
             isAmountFocused = false
             isCommentFocused = false
-        } label: {
-            Text(L10n.done)
-                .font(.appMedium(17))
-                .foregroundColor(.appWhite)
-                .padding(.horizontal, 22)
-                .frame(height: 44)
-                .glassSurface(in: Capsule(), isInteractive: true, fallback: .appSecond)
-                .legacyShadow(color: .appOverlay.opacity(0.3), radius: 12, y: 4)
-                .contentShape(Capsule())
         }
-        .buttonStyle(.plain)
-        .frame(maxWidth: .infinity, alignment: .trailing)
-        .padding(.horizontal, 16)
-        .padding(.vertical, 8)
     }
 
     private var deleteButton: some View {

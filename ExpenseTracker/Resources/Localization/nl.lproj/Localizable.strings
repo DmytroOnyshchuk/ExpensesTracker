@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "De prullenmand is leeg";
-"TRASH_RESTORE" = "Zet terug";
+"TRASH_RESTORE_CONFIRMATION" = "Zet terug?";
 "TRASH_CLEAR_CONFIRMATION" = "Alle onderdelen in de prullenmand worden definitief verwijderd. Deze actie kan niet ongedaan worden gemaakt.";
 
 // MARK: - About

@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ট্ৰেছ খালী আছে";
-"TRASH_RESTORE" = "পুনঃস্থাপন কৰক";
+"TRASH_RESTORE_CONFIRMATION" = "পুনঃস্থাপন কৰক?";
 "TRASH_CLEAR_CONFIRMATION" = "ট্ৰেছত থকা সকলো বস্তু স্থায়ীভাৱে মচি পেলোৱা হ'ব। এই কাৰ্য পূৰ্বৱৎ কৰিব নোৱাৰি।";
 
 // MARK: - About

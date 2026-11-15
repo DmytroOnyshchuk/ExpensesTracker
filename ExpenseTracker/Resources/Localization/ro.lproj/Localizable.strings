@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Coșul este gol";
-"TRASH_RESTORE" = "Restaurează";
+"TRASH_RESTORE_CONFIRMATION" = "Restaurează?";
 "TRASH_CLEAR_CONFIRMATION" = "Toate elementele din coș vor fi șterse definitiv. Această acțiune nu poate fi anulată.";
 
 // MARK: - About

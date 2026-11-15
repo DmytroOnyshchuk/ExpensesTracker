@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Papirkurven er tom";
-"TRASH_RESTORE" = "Gjenopprett";
+"TRASH_RESTORE_CONFIRMATION" = "Gjenopprett?";
 "TRASH_CLEAR_CONFIRMATION" = "Alle objekter i papirkurven slettes permanent. Denne handlingen kan ikke angres.";
 
 // MARK: - About

@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "रद्दीटोकरी खाली छ";
-"TRASH_RESTORE" = "पुनर्स्थापना गर्नुहोस्";
+"TRASH_RESTORE_CONFIRMATION" = "पुनर्स्थापना गर्नुहोस्?";
 "TRASH_CLEAR_CONFIRMATION" = "रद्दीटोकरीका सबै वस्तुहरू स्थायी रूपमा मेटाइनेछन्। यो कार्य पूर्ववत गर्न सकिँदैन।";
 
 // MARK: - About

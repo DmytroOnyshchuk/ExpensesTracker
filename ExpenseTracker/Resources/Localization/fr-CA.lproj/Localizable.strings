@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "La corbeille est vide";
-"TRASH_RESTORE" = "Restaurer";
+"TRASH_RESTORE_CONFIRMATION" = "Restaurer ?";
 "TRASH_CLEAR_CONFIRMATION" = "Tous les éléments de la corbeille seront supprimés définitivement. Cette action est irréversible.";
 
 // MARK: - About

@@ -25,6 +25,7 @@ struct EditCategoryView: View {
     @State private var showCustomIconPicker = false
     @State private var showColorPicker = false
     @State private var selectedSubcategory: TransactionCategory?
+    @FocusState private var isNameFocused: Bool
 
     private var isEdit: Bool { category != nil }
     private var isDirectory: Bool { category?.isDirectory ?? false }
@@ -99,6 +100,16 @@ struct EditCategoryView: View {
                     .padding(.horizontal, 24)
                     .padding(.vertical, 16)
             }
+            .scrollDismissesKeyboard(.interactively)
+            .safeAreaInset(edge: .bottom, spacing: 0) {
+                if isNameFocused {
+                    KeyboardDoneButton {
+                        isNameFocused = false
+                    }
+                    .transition(.opacity)
+                }
+            }
+            .animation(.easeInOut(duration: 0.2), value: isNameFocused)
             .appBackground()
             .navigationTitle(isEdit ? L10n.editCategoryTitle : L10n.editCategoryNewTitle)
             .navigationBarTitleDisplayMode(.inline)
@@ -111,7 +122,7 @@ struct EditCategoryView: View {
                 }
 
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    Button(isEdit ? L10n.save : L10n.editCategoryDefaultName) {
+                    Button(isEdit ? L10n.save : L10n.editCategoryCreate) {
                         save()
                         dismiss()
                     }
@@ -220,6 +231,7 @@ struct EditCategoryView: View {
                 .foregroundColor(.appWhite)
 
             TextField(L10n.editCategoryNamePlaceholder, text: $draft.name)
+                .focused($isNameFocused)
                 .padding(10)
                 .background(.appMain.opacity(0.5))
                 .cornerRadius(8)

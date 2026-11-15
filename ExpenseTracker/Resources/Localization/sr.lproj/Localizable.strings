@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Смеће је празно";
-"TRASH_RESTORE" = "Врати";
+"TRASH_RESTORE_CONFIRMATION" = "Врати?";
 "TRASH_CLEAR_CONFIRMATION" = "Све ставке у смећу биће трајно избрисане. Ова радња се не може опозвати.";
 
 // MARK: - About

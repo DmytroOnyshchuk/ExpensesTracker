@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ຖັງຂີ້ເຫຍື້ອຫວ່າງເປົ່າ";
-"TRASH_RESTORE" = "ກູ້ຄືນ";
+"TRASH_RESTORE_CONFIRMATION" = "ກູ້ຄືນ?";
 "TRASH_CLEAR_CONFIRMATION" = "ລາຍການທັງໝົດໃນຖັງຂີ້ເຫຍື້ອຈະຖືກລຶບຢ່າງຖາວອນ. ການກະທຳນີ້ບໍ່ສາມາດຍົກເລີກໄດ້.";
 
 // MARK: - About

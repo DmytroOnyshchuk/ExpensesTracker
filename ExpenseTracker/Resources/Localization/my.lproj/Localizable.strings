@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "အမှိုက်ပုံး ဗလာဖြစ်နေသည်";
-"TRASH_RESTORE" = "ပြန်ယူရန်";
+"TRASH_RESTORE_CONFIRMATION" = "ပြန်ယူရန်?";
 "TRASH_CLEAR_CONFIRMATION" = "အမှိုက်ပုံးထဲရှိ အရာအားလုံးကို အပြီးတိုင် ဖျက်ပါမည်။ ဤလုပ်ဆောင်ချက်ကို ပြန်ပြင်၍မရပါ။";
 
 // MARK: - About

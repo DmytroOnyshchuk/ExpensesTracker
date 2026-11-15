@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Umgqomo wenkunkuma awunanto";
-"TRASH_RESTORE" = "Buyisela";
+"TRASH_RESTORE_CONFIRMATION" = "Buyisela?";
 "TRASH_CLEAR_CONFIRMATION" = "Zonke izinto ezikumgqomo wenkunkuma ziza kucinywa ngokusisigxina. Eli nyathelo alinakurhoxiswa.";
 
 // MARK: - About

@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ნაგავი ცარიელია";
-"TRASH_RESTORE" = "აღდგენა";
+"TRASH_RESTORE_CONFIRMATION" = "აღდგენა?";
 "TRASH_CLEAR_CONFIRMATION" = "ნაგავში არსებული ყველა ელემენტი სამუდამოდ წაიშლება. ამ მოქმედების გაუქმება შეუძლებელია.";
 
 // MARK: - About

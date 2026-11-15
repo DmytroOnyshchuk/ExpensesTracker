@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "废纸篓为空";
-"TRASH_RESTORE" = "恢复";
+"TRASH_RESTORE_CONFIRMATION" = "恢复？";
 "TRASH_CLEAR_CONFIRMATION" = "废纸篓中的所有项目将被永久删除。此操作无法撤销。";
 
 // MARK: - About

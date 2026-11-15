@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "سلة المحذوفات فارغة";
-"TRASH_RESTORE" = "استعادة";
+"TRASH_RESTORE_CONFIRMATION" = "استعادة؟";
 "TRASH_CLEAR_CONFIRMATION" = "سيتم حذف جميع العناصر في سلة المحذوفات نهائيًا. لا يمكن التراجع عن هذا الإجراء.";
 
 // MARK: - About

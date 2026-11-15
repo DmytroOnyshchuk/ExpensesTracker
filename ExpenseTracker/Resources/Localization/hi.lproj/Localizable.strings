@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ट्रैश खाली है";
-"TRASH_RESTORE" = "पुनर्स्थापित करें";
+"TRASH_RESTORE_CONFIRMATION" = "पुनर्स्थापित करें?";
 "TRASH_CLEAR_CONFIRMATION" = "ट्रैश के सभी आइटम स्थायी रूप से हटा दिए जाएँगे। यह क्रिया पूर्ववत नहीं की जा सकती।";
 
 // MARK: - About

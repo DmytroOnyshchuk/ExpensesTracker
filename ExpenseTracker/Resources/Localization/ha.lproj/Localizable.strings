@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Kwandon shara babu komai";
-"TRASH_RESTORE" = "Mayar";
+"TRASH_RESTORE_CONFIRMATION" = "Mayar?";
 "TRASH_CLEAR_CONFIRMATION" = "Za a goge duk abubuwan da ke cikin kwandon shara har abada. Ba za a iya soke wannan aikin ba.";
 
 // MARK: - About

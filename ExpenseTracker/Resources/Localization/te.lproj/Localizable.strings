@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ట్రాష్ ఖాళీగా ఉంది";
-"TRASH_RESTORE" = "పునరుద్ధరించు";
+"TRASH_RESTORE_CONFIRMATION" = "పునరుద్ధరించు?";
 "TRASH_CLEAR_CONFIRMATION" = "ట్రాష్‌లోని అన్ని అంశాలు శాశ్వతంగా తొలగించబడతాయి. ఈ చర్యను రద్దు చేయడం సాధ్యం కాదు.";
 
 // MARK: - About

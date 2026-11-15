@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "It-trash huwa vojt";
-"TRASH_RESTORE" = "Irrestawra";
+"TRASH_RESTORE_CONFIRMATION" = "Irrestawra?";
 "TRASH_CLEAR_CONFIRMATION" = "L-oġġetti kollha fit-trash se jitħassru b'mod permanenti. Din l-azzjoni ma tistax titreġġa' lura.";
 
 // MARK: - About

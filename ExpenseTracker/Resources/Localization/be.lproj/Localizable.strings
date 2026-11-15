@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Сметніца пустая";
-"TRASH_RESTORE" = "Аднавіць";
+"TRASH_RESTORE_CONFIRMATION" = "Аднавіць?";
 "TRASH_CLEAR_CONFIRMATION" = "Усе элементы ў сметніцы будуць выдалены назаўсёды. Гэта дзеянне нельга адмяніць.";
 
 // MARK: - About

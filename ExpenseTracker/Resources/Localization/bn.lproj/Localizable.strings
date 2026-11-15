@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ট্র্যাশ খালি";
-"TRASH_RESTORE" = "পুনরুদ্ধার করুন";
+"TRASH_RESTORE_CONFIRMATION" = "পুনরুদ্ধার করুন?";
 "TRASH_CLEAR_CONFIRMATION" = "ট্র্যাশের সব আইটেম স্থায়ীভাবে মুছে ফেলা হবে। এই কাজটি পূর্বাবস্থায় ফেরানো যাবে না।";
 
 // MARK: - About

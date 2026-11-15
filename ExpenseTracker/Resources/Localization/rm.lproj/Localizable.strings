@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Il recipient da rument è vid";
-"TRASH_RESTORE" = "Restaurar";
+"TRASH_RESTORE_CONFIRMATION" = "Restaurar?";
 "TRASH_CLEAR_CONFIRMATION" = "Tut ils elements en il recipient da rument vegnan stizzads definitivamain. Questa acziun na po betg vegnir revocada.";
 
 // MARK: - About

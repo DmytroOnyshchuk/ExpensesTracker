@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Zakarrontzia hutsik dago";
-"TRASH_RESTORE" = "Leheneratu";
+"TRASH_RESTORE_CONFIRMATION" = "Leheneratu?";
 "TRASH_CLEAR_CONFIRMATION" = "Zakarrontziko elementu guztiak behin betiko ezabatuko dira. Ekintza hau ezin da desegin.";
 
 // MARK: - About

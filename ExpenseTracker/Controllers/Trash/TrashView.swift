@@ -10,12 +10,18 @@ import SwiftData
 import SwiftUI
 
 struct TrashView: View {
+    private enum RestoreTarget {
+        case category(TransactionCategory)
+        case transaction(Transaction)
+    }
+
     @Environment(\.modelContext) private var modelContext
 
     @Query private var storedCategories: [TransactionCategory]
     @Query private var storedTransactions: [Transaction]
 
     @State private var showClearConfirmation = false
+    @State private var restoreTarget: RestoreTarget?
 
     private var categories: [TransactionCategory] {
         storedCategories.inTrash.sorted { ($0.deletedAt ?? .distantPast) > ($1.deletedAt ?? .distantPast) }
@@ -46,22 +52,22 @@ struct TrashView: View {
                         category: category,
                         subtitle: category.isDirectory ? nil : L10n.backupsTransactionsCount(transactionsCounts[category.uuid] ?? .zero),
                         accessory: .none,
-                        action: {}
+                        action: { restoreTarget = .category(category) }
                     )
                     .padding(.horizontal, 16)
                     .frame(minHeight: 68)
                     .trashRow(isLast: category.id == categories.last?.id && visibleTransactions.isEmpty) {
-                        withAnimation { modelContext.restore(category) }
-                    } onDelete: {
                         withAnimation { modelContext.deletePermanently(category) }
                     }
                 }
 
                 ForEach(visibleTransactions, id: \.id) { transaction in
                     TransactionDetailsRow(transaction: transaction)
+                        .contentShape(Rectangle())
+                        .onTapGesture {
+                            restoreTarget = .transaction(transaction)
+                        }
                         .trashRow(isLast: transaction.id == visibleTransactions.last?.id) {
-                            withAnimation { modelContext.restore(transaction) }
-                        } onDelete: {
                             withAnimation { modelContext.deletePermanently(transaction) }
                         }
                 }
@@ -89,18 +95,30 @@ struct TrashView: View {
         } message: {
             Text(L10n.trashClearConfirmation)
         }
+        .alert(
+            L10n.trashRestoreConfirmation,
+            isPresented: Binding(
+                get: { restoreTarget != nil },
+                set: { if !$0 { restoreTarget = nil } }
+            ),
+            presenting: restoreTarget
+        ) { target in
+            Button(L10n.yes) {
+                withAnimation {
+                    switch target {
+                    case .category(let category): modelContext.restore(category)
+                    case .transaction(let transaction): modelContext.restore(transaction)
+                    }
+                }
+            }
+            Button(L10n.no, role: .cancel) {}
+        }
     }
 }
 
 extension View {
-    fileprivate func trashRow(isLast: Bool, onRestore: @escaping () -> Void, onDelete: @escaping () -> Void) -> some View {
-        swipeActions(edge: .leading, allowsFullSwipe: true) {
-            Button(action: onRestore) {
-                Label(L10n.trashRestore, systemImage: "arrow.uturn.backward")
-            }
-            .tint(.appPrimary)
-        }
-        .swipeActions(edge: .trailing, allowsFullSwipe: false) {
+    fileprivate func trashRow(isLast: Bool, onDelete: @escaping () -> Void) -> some View {
+        swipeActions(edge: .trailing, allowsFullSwipe: false) {
             Button(role: .destructive, action: onDelete) {
                 Label(L10n.delete, systemImage: "trash")
             }

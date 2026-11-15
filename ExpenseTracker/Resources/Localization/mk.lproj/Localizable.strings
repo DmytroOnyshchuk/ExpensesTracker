@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Корпата е празна";
-"TRASH_RESTORE" = "Врати";
+"TRASH_RESTORE_CONFIRMATION" = "Врати?";
 "TRASH_CLEAR_CONFIRMATION" = "Сите ставки во корпата ќе бидат трајно избришани. Ова дејство не може да се врати.";
 
 // MARK: - About

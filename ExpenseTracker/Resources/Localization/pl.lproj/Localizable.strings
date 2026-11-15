@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Kosz jest pusty";
-"TRASH_RESTORE" = "Przywróć";
+"TRASH_RESTORE_CONFIRMATION" = "Przywróć?";
 "TRASH_CLEAR_CONFIRMATION" = "Wszystkie elementy w koszu zostaną trwale usunięte. Tej czynności nie można cofnąć.";
 
 // MARK: - About

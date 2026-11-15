@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ถังขยะว่างเปล่า";
-"TRASH_RESTORE" = "กู้คืน";
+"TRASH_RESTORE_CONFIRMATION" = "กู้คืน?";
 "TRASH_CLEAR_CONFIRMATION" = "รายการทั้งหมดในถังขยะจะถูกลบอย่างถาวร การดำเนินการนี้ไม่สามารถเลิกทำได้";
 
 // MARK: - About

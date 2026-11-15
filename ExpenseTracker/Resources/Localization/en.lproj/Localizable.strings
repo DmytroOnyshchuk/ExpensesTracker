@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Trash is empty";
-"TRASH_RESTORE" = "Restore";
+"TRASH_RESTORE_CONFIRMATION" = "Restore?";
 "TRASH_CLEAR_CONFIRMATION" = "All items in the Trash will be permanently deleted. This action cannot be undone.";
 
 // MARK: - About

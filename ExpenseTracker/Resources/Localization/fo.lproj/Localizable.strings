@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Ruskspannin er tóm";
-"TRASH_RESTORE" = "Endurstovna";
+"TRASH_RESTORE_CONFIRMATION" = "Endurstovna?";
 "TRASH_CLEAR_CONFIRMATION" = "Allir lutir í ruskspannini verða strikaðir endaliga. Hendan handlingin kann ikki angrast.";
 
 // MARK: - About

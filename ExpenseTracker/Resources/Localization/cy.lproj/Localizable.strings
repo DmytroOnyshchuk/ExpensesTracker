@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Mae'r bin yn wag";
-"TRASH_RESTORE" = "Adfer";
+"TRASH_RESTORE_CONFIRMATION" = "Adfer?";
 "TRASH_CLEAR_CONFIRMATION" = "Bydd pob eitem yn y bin yn cael ei dileu'n barhaol. Ni ellir dadwneud y weithred hon.";
 
 // MARK: - About

@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Die asblik is leeg";
-"TRASH_RESTORE" = "Herstel";
+"TRASH_RESTORE_CONFIRMATION" = "Herstel?";
 "TRASH_CLEAR_CONFIRMATION" = "Alle items in die asblik sal permanent verwyder word. Hierdie aksie kan nie ontdoen word nie.";
 
 // MARK: - About

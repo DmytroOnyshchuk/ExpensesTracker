@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Der Papierkorb ist leer";
-"TRASH_RESTORE" = "Wiederherstellen";
+"TRASH_RESTORE_CONFIRMATION" = "Wiederherstellen?";
 "TRASH_CLEAR_CONFIRMATION" = "Alle Objekte im Papierkorb werden endgültig gelöscht. Diese Aktion kann nicht rückgängig gemacht werden.";
 
 // MARK: - About

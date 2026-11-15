@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Papperskorgen är tom";
-"TRASH_RESTORE" = "Återställ";
+"TRASH_RESTORE_CONFIRMATION" = "Återställ?";
 "TRASH_CLEAR_CONFIRMATION" = "Alla objekt i papperskorgen raderas permanent. Den här åtgärden kan inte ångras.";
 
 // MARK: - About

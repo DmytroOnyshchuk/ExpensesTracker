@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ಅನುಪಯುಕ್ತ ಖಾಲಿಯಾಗಿದೆ";
-"TRASH_RESTORE" = "ಮರುಸ್ಥಾಪಿಸಿ";
+"TRASH_RESTORE_CONFIRMATION" = "ಮರುಸ್ಥಾಪಿಸಿ?";
 "TRASH_CLEAR_CONFIRMATION" = "ಅನುಪಯುಕ್ತದಲ್ಲಿರುವ ಎಲ್ಲಾ ಐಟಂಗಳನ್ನು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸಲಾಗುತ್ತದೆ. ಈ ಕ್ರಿಯೆಯನ್ನು ರದ್ದುಗೊಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.";
 
 // MARK: - About

@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Çöp sepeti boş";
-"TRASH_RESTORE" = "Geri Yükle";
+"TRASH_RESTORE_CONFIRMATION" = "Geri Yükle?";
 "TRASH_CLEAR_CONFIRMATION" = "Çöp sepetindeki tüm öğeler kalıcı olarak silinecek. Bu işlem geri alınamaz.";
 
 // MARK: - About

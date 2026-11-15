@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Papirkorga er tom";
-"TRASH_RESTORE" = "Gjenopprett";
+"TRASH_RESTORE_CONFIRMATION" = "Gjenopprett?";
 "TRASH_CLEAR_CONFIRMATION" = "Alle objekt i papirkorga blir sletta permanent. Denne handlinga kan ikkje angrast.";
 
 // MARK: - About

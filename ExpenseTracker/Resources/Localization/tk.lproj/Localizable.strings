@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Sebet boş";
-"TRASH_RESTORE" = "Dikeltmek";
+"TRASH_RESTORE_CONFIRMATION" = "Dikeltmek?";
 "TRASH_CLEAR_CONFIRMATION" = "Sebetdäki ähli elementler hemişelik pozular. Bu hereketi yzyna gaýtaryp bolmaýar.";
 
 // MARK: - About

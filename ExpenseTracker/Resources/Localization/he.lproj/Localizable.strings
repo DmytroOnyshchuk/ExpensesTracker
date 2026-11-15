@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "פח האשפה ריק";
-"TRASH_RESTORE" = "שחזור";
+"TRASH_RESTORE_CONFIRMATION" = "שחזור?";
 "TRASH_CLEAR_CONFIRMATION" = "כל הפריטים בפח האשפה יימחקו לצמיתות. לא ניתן לבטל פעולה זו.";
 
 // MARK: - About

@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ئەخلەت ساندۇقى قۇرۇق";
-"TRASH_RESTORE" = "ئەسلىگە كەلتۈرۈش";
+"TRASH_RESTORE_CONFIRMATION" = "ئەسلىگە كەلتۈرۈش؟";
 "TRASH_CLEAR_CONFIRMATION" = "ئەخلەت ساندۇقىدىكى بارلىق تۈرلەر مەڭگۈلۈك ئۆچۈرۈلىدۇ. بۇ مەشغۇلاتنى ئەمەلدىن قالدۇرغىلى بولمايدۇ.";
 
 // MARK: - About

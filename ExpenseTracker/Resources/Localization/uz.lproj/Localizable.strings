@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Savat bo'sh";
-"TRASH_RESTORE" = "Tiklash";
+"TRASH_RESTORE_CONFIRMATION" = "Tiklash?";
 "TRASH_CLEAR_CONFIRMATION" = "Savatdagi barcha elementlar butunlay o'chiriladi. Bu amalni ortga qaytarib bo'lmaydi.";
 
 // MARK: - About

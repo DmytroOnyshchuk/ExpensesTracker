@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ਰੱਦੀ ਖਾਲੀ ਹੈ";
-"TRASH_RESTORE" = "ਮੁੜ-ਬਹਾਲ ਕਰੋ";
+"TRASH_RESTORE_CONFIRMATION" = "ਮੁੜ-ਬਹਾਲ ਕਰੋ?";
 "TRASH_CLEAR_CONFIRMATION" = "ਰੱਦੀ ਵਿਚਲੀਆਂ ਸਾਰੀਆਂ ਆਈਟਮਾਂ ਪੱਕੇ ਤੌਰ 'ਤੇ ਮਿਟਾ ਦਿੱਤੀਆਂ ਜਾਣਗੀਆਂ। ਇਸ ਕਾਰਵਾਈ ਨੂੰ ਵਾਪਸ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।";
 
 // MARK: - About

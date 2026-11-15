@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Walang laman ang basurahan";
-"TRASH_RESTORE" = "Ibalik";
+"TRASH_RESTORE_CONFIRMATION" = "Ibalik?";
 "TRASH_CLEAR_CONFIRMATION" = "Permanenteng ide-delete ang lahat ng item sa basurahan. Hindi na maa-undo ang aksyong ito.";
 
 // MARK: - About

@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Àpótí ìdọ̀tí ṣófo";
-"TRASH_RESTORE" = "Mú padà";
+"TRASH_RESTORE_CONFIRMATION" = "Mú padà?";
 "TRASH_CLEAR_CONFIRMATION" = "Gbogbo ohun tó wà nínú àpótí ìdọ̀tí ni a ó parẹ́ pátápátá. A kò lè yí ìgbésẹ̀ yìí padà.";
 
 // MARK: - About

@@ -67,7 +67,7 @@
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Кәрзин буш";
-"TRASH_RESTORE" = "Кайтару";
+"TRASH_RESTORE_CONFIRMATION" = "Кайтару?";
 "TRASH_CLEAR_CONFIRMATION" = "Кәрзиндәге барлык элементлар мәңгегә бетереләчәк. Бу гамәлне кире кайтарып булмый.";
 
 // MARK: - About
