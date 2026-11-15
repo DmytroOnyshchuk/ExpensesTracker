@@ -325,7 +325,7 @@ struct EditCategoryView: View {
                         }
                     }
 
-                    ForEach(IconColor.allCases, id: \.self) { color in
+                    ForEach(IconColor.primary, id: \.self) { color in
                         colorButton(color)
                     }
                 }

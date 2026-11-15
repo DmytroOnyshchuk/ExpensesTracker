@@ -18,12 +18,6 @@ struct Theme {
     let appYellow: Color
     let appRed: Color
     let appOverlay: Color
-
-    var iconColors: [IconColor: Color] = Theme.systemIconColors
-
-    func color(for iconColor: IconColor) -> Color {
-        iconColors[iconColor] ?? Theme.systemIconColors[iconColor] ?? .gray
-    }
 }
 
 enum ThemePreset: String, CaseIterable, Identifiable, Codable {
@@ -63,22 +57,6 @@ enum ThemePreset: String, CaseIterable, Identifiable, Codable {
 }
 
 extension Theme {
-    static let systemIconColors: [IconColor: Color] = [
-        .red: .red,
-        .pink: .pink,
-        .blue: .blue,
-        .yellow: .yellow,
-        .orange: .orange,
-        .purple: .purple,
-        .green: .green,
-        .brown: .brown,
-        .white: .white,
-        .cyan: .cyan,
-        .indigo: .indigo,
-        .gray: .gray,
-        .black: .black,
-    ]
-
     static let classic = Theme(
         colorScheme: .dark,
         appMain: Color(hex: "#111416"),

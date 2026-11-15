@@ -18,7 +18,7 @@ final class TransactionCategory {
     var isDirectory: Bool = false
     var parentUuid: UUID?
     var sortIndex: Int = 0
-
+    
     init(name: TransactionCategoryName, categoryIcon: CategoryIcon, isDirectory: Bool = false, parentUuid: UUID? = nil, sortIndex: Int = .zero) {
         self.uuid = UUID()
         self.name = name
@@ -27,15 +27,15 @@ final class TransactionCategory {
         self.parentUuid = parentUuid
         self.sortIndex = sortIndex
     }
-
+    
     var isMainCategory: Bool {
         parentUuid == nil
     }
-
+    
     func parent(from allCategories: [TransactionCategory]) -> TransactionCategory? {
         allCategories.first { $0.uuid == parentUuid }
     }
-
+    
     func allSubcategories(from allCategories: [TransactionCategory]) -> [TransactionCategory] {
         allCategories.filter { !$0.isDirectory }.filter { $0.parentUuid == uuid }
     }
@@ -54,16 +54,16 @@ extension [TransactionCategory] {
             return $0.name.localized < $1.name.localized
         }
     }
-
+    
     /// Top-level categories, i.e. those that are not inside a folder.
     var topLevel: [TransactionCategory] {
         filter { !($0.parent(from: self)?.isDirectory ?? false) }
     }
-
+    
     var nextSortIndex: Int {
         (map(\.sortIndex).max() ?? -1) + 1
     }
-
+    
     func reorder(fromOffsets source: IndexSet, toOffset destination: Int, among allCategories: [TransactionCategory]) {
         let ordered = allCategories.inDisplayOrder
         if Set(ordered.map(\.sortIndex)).count != ordered.count {
@@ -71,7 +71,7 @@ extension [TransactionCategory] {
                 category.sortIndex = index
             }
         }
-
+        
         let slots = map(\.sortIndex).sorted()
         var reordered = self
         reordered.move(fromOffsets: source, toOffset: destination)
@@ -82,9 +82,27 @@ extension [TransactionCategory] {
 }
 
 enum IconColor: String, Codable, CaseIterable {
-    case red, pink, blue, yellow, orange, purple, green, brown, white, cyan, indigo, gray, black
-
+    case red, pink, blue, yellow, orange, purple, green, brown, white, cyan, indigo, gray, black, mint, teal
+    
+    static let primary: [IconColor] = [.red, .yellow, .cyan, .purple, .pink, .brown]
+    
     var color: Color {
-        ThemeManager.shared.theme.color(for: self)
+        switch self {
+        case .red: .red
+        case .yellow: .yellow
+        case .cyan: .cyan
+        case .purple: .purple
+        case .pink: .pink
+        case .brown:.brown
+        case .orange: .orange
+        case .green: .green
+        case .blue: .blue
+        case .indigo: .indigo
+        case .white: .white
+        case .gray: .gray
+        case .black: .black
+        case .mint: .mint
+        case .teal: .teal
+        }
     }
 }
