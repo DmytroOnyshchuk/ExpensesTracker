@@ -254,6 +254,6 @@ private struct ZipArchive {
 
 extension Data {
     fileprivate mutating func append<T: FixedWidthInteger>(littleEndian value: T) {
-        withUnsafeBytes(of: value.littleEndian) { append(contentsOf: $0) }
+        Swift.withUnsafeBytes(of: value.littleEndian) { append(contentsOf: $0) }
     }
 }
