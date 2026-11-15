@@ -47,10 +47,12 @@ struct TransactionDetails: View {
 
     private var visibleTransactions: [Transaction] {
         let categoryUuid = category.uuid
+        let isDirectory = category.isDirectory
 
         return sorting.sorted(
             transactions.filter {
-                $0.category.uuid == categoryUuid && $0.date >= interval.start && $0.date < interval.end
+                let belongs = $0.category.uuid == categoryUuid || (isDirectory && $0.category.parentUuid == categoryUuid)
+                return belongs && $0.date >= interval.start && $0.date < interval.end
             }
         )
     }

@@ -29,7 +29,7 @@ struct StatisticsView: View {
         let starts = period.starts(of: transactions)
         let start = displayedStart(in: starts)
         let interval = period.interval(containing: start)
-        let slices = StatisticsSlice.slices(from: transactions, in: interval)
+        let slices = StatisticsSlice.slices(from: transactions, in: interval, categories: categories)
 
         ScrollView(.vertical) {
             VStack(spacing: 12) {
@@ -38,7 +38,6 @@ struct StatisticsView: View {
                 StatisticsBreakdown(
                     slices: slices,
                     interval: interval,
-                    categories: categories,
                     period: period,
                     points: period.chartPoints(of: transactions, in: interval),
                     averageTitle: period.unitAverageTitle(of: transactions, in: interval),
@@ -187,7 +186,6 @@ struct StatisticsView: View {
 struct StatisticsBreakdown: View {
     let slices: [StatisticsSlice]
     let interval: DateInterval
-    let categories: [TransactionCategory]
     var period: StatisticsPeriod?
     var points: [StatisticsChartPoint] = []
     var averageTitle: String?
@@ -250,13 +248,11 @@ struct StatisticsBreakdown: View {
                         } label: {
                             StatisticsRow(
                                 slice: slice,
-                                parentName: parentName(of: slice.category),
                                 barRatio: maxAmount > 0 ? slice.amount.asDouble / maxAmount.asDouble : 0
                             )
                             .contentShape(Rectangle())
                         }
                         .buttonStyle(.plain)
-                        .disabled(slice.category.isDirectory)
                     }
                 }
             }
@@ -288,11 +284,6 @@ struct StatisticsBreakdown: View {
         } else {
             GlassDonutChart(slices: slices)
         }
-    }
-
-    private func parentName(of category: TransactionCategory) -> String? {
-        guard let parent = category.parent(from: categories), parent.isDirectory else { return nil }
-        return parent.name.localized
     }
 }
 
@@ -417,7 +408,6 @@ struct StatisticsPeriodList: View {
 
 struct StatisticsRow: View {
     let slice: StatisticsSlice
-    let parentName: String?
     let barRatio: Double
 
     var body: some View {
@@ -427,17 +417,9 @@ struct StatisticsRow: View {
                 .scaledToFit()
                 .frame(width: 28, height: 28)
 
-            VStack(alignment: .leading, spacing: 0) {
-                Text(slice.category.name.localized)
-                    .font(.appLight(18))
-                    .lineLimit(1)
-
-                if let parentName {
-                    Text(parentName)
-                        .font(.appLight(12))
-                        .lineLimit(1)
-                }
-            }
+            Text(slice.category.name.localized)
+                .font(.appLight(18))
+                .lineLimit(1)
 
             Spacer(minLength: 8)
 
@@ -510,11 +492,10 @@ struct StatisticsRow: View {
 #Preview("Statistics row") {
     StatisticsRow(
         slice: StatisticsSlice(
-            category: TransactionCategory(name: "Groceries", categoryIcon: CategoryIcon(name: "cart", iconColor: .green)),
+            category: TransactionCategory(name: "Food", categoryIcon: CategoryIcon(name: "fork.knife", iconColor: .yellow), isDirectory: true),
             amount: 1248500,
             share: 0.16
         ),
-        parentName: "Food",
         barRatio: 0.53
     )
     .background(.appMain)

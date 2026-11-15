@@ -175,15 +175,27 @@ struct StatisticsSlice: Identifiable {
 
     var percent: Int { Int((share * 100).rounded()) }
 
-    static func slices(from transactions: [Transaction], in interval: DateInterval) -> [StatisticsSlice] {
+    static func slices(
+        from transactions: [Transaction],
+        in interval: DateInterval,
+        categories: [TransactionCategory]
+    ) -> [StatisticsSlice] {
         let matching = transactions.filter { $0.date >= interval.start && $0.date < interval.end }
         let total = matching.reduce(0) { $0 + $1.amount }
         guard total > 0 else { return [] }
 
-        return Dictionary(grouping: matching) { $0.category.uuid }
+        let directories = Dictionary(
+            categories.filter(\.isDirectory).map { ($0.uuid, $0) },
+            uniquingKeysWith: { first, _ in first }
+        )
+        let owner: (Transaction) -> TransactionCategory = { transaction in
+            transaction.category.parentUuid.flatMap { directories[$0] } ?? transaction.category
+        }
+
+        return Dictionary(grouping: matching) { owner($0).uuid }
             .values
             .compactMap { group in
-                guard let category = group.first?.category else { return nil }
+                guard let category = group.first.map(owner) else { return nil }
                 let amount = group.reduce(0) { $0 + $1.amount }
                 return StatisticsSlice(category: category, amount: amount, share: amount.asDouble / total.asDouble)
             }
