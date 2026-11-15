@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "ගනුදෙනුව මකන්නද?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "ප්‍රවර්ග";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "සියලු ප්‍රවර්ග";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ගනුදෙනු නැත";
 "TRANSACTIONS_LIST_DELETE" = "මකන්න";

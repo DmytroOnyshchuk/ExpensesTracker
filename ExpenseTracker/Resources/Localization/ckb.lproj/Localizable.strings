@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "مامەڵەکە بسڕدرێتەوە؟";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "پۆلەکان";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "هەموو پۆلەکان";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "هیچ مامەڵەیەک نییە";
 "TRANSACTIONS_LIST_DELETE" = "سڕینەوە";

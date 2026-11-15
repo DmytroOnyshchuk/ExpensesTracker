@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "ਲੈਣ-ਦੇਣ ਮਿਟਾਉਣਾ ਹੈ?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "ਸ਼੍ਰੇਣੀਆਂ";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "ਸਾਰੀਆਂ ਸ਼੍ਰੇਣੀਆਂ";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ਕੋਈ ਲੈਣ-ਦੇਣ ਨਹੀਂ";
 "TRANSACTIONS_LIST_DELETE" = "ਮਿਟਾਓ";

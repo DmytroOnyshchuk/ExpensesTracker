@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "حذف المعاملة؟";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "الفئات";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "كل الفئات";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "لا توجد معاملات";
 "TRANSACTIONS_LIST_DELETE" = "حذف";

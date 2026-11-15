@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Scrios an t-idirbheart?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Catagóirí";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Gach catagóir";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Níl aon idirbhearta ann";
 "TRANSACTIONS_LIST_DELETE" = "Scrios";

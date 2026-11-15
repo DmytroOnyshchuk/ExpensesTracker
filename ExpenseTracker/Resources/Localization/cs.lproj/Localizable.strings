@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Smazat transakci?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategorie";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Všechny kategorie";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Žádné transakce";
 "TRANSACTIONS_LIST_DELETE" = "Smazat";

@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Транзакцияны жою керек пе?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Санаттар";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Барлық санаттар";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Транзакциялар жоқ";
 "TRANSACTIONS_LIST_DELETE" = "Жою";

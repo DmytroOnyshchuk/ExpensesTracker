@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Futa muamala?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategoria";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Aina zote";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Hakuna miamala";
 "TRANSACTIONS_LIST_DELETE" = "Futa";

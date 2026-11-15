@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "ລຶບທຸລະກຳບໍ?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "ໝວດໝູ່";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "ໝວດໝູ່ທັງໝົດ";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ບໍ່ມີທຸລະກຳ";
 "TRANSACTIONS_LIST_DELETE" = "ລຶບ";

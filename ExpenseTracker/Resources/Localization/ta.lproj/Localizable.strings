@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "பரிவர்த்தனையை நீக்கவா?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "வகைகள்";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "அனைத்து வகைகளும்";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "பரிவர்த்தனைகள் இல்லை";
 "TRANSACTIONS_LIST_DELETE" = "நீக்கு";

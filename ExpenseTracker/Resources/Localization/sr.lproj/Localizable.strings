@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Избрисати трансакцију?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Категорије";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Све категорије";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Нема трансакција";
 "TRANSACTIONS_LIST_DELETE" = "Избриши";

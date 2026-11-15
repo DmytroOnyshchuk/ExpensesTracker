@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Me muku te tauwhitinga?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Ngā kāwai";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Ngā kāwai katoa";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Kāore he tauwhitinga";
 "TRANSACTIONS_LIST_DELETE" = "Mukua";

@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "ငွေလွှဲမှုကို ဖျက်မလား?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "အမျိုးအစားများ";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "အမျိုးအစားအားလုံး";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ငွေလွှဲမှတ်တမ်း မရှိပါ";
 "TRANSACTIONS_LIST_DELETE" = "ဖျက်ရန်";

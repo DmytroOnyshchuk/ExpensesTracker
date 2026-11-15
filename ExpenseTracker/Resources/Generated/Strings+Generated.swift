@@ -94,8 +94,6 @@ internal enum L10n {
   internal static let categoriesEditNewFolderAlertTitle = L10n.tr("Localizable", "CATEGORIES_EDIT_NEW_FOLDER_ALERT_TITLE", fallback: "New folder category")
   /// Edit categories
   internal static let categoriesEditTitle = L10n.tr("Localizable", "CATEGORIES_EDIT_TITLE", fallback: "Edit categories")
-  /// All categories
-  internal static let categoryGridAllCategories = L10n.tr("Localizable", "CATEGORY_GRID_ALL_CATEGORIES", fallback: "All categories")
   /// Clear
   internal static let clear = L10n.tr("Localizable", "CLEAR", fallback: "Clear")
   /// Close

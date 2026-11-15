@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Ștergi tranzacția?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Categorii";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Toate categoriile";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nicio tranzacție";
 "TRANSACTIONS_LIST_DELETE" = "Șterge";

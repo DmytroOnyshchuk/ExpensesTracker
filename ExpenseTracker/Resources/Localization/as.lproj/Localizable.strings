@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "লেনদেন মচি পেলাবনে?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "শ্ৰেণীসমূহ";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "সকলো শ্ৰেণী";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "কোনো লেনদেন নাই";
 "TRANSACTIONS_LIST_DELETE" = "মচি পেলাওক";

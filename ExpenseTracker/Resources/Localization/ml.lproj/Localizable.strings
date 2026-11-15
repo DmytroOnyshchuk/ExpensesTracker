@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "ഇടപാട് ഇല്ലാതാക്കണോ?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "വിഭാഗങ്ങൾ";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "എല്ലാ വിഭാഗങ്ങളും";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ഇടപാടുകളൊന്നുമില്ല";
 "TRANSACTIONS_LIST_DELETE" = "ഇല്ലാതാക്കുക";

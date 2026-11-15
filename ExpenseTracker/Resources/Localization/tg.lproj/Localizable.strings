@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Амалиёт нест карда шавад?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Категорияҳо";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Ҳамаи категорияҳо";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Амалиёт нест";
 "TRANSACTIONS_LIST_DELETE" = "Нест кардан";

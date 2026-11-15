@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Ma tirtirtaa macaamilka?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Qaybaha";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Dhammaan qaybaha";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Macaamil ma jiro";
 "TRANSACTIONS_LIST_DELETE" = "Tirtir";

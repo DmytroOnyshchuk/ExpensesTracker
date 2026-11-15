@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "ವಹಿವಾಟು ಅಳಿಸಬೇಕೇ?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "ವರ್ಗಗಳು";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "ಎಲ್ಲಾ ವರ್ಗಗಳು";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ಯಾವುದೇ ವಹಿವಾಟುಗಳಿಲ್ಲ";
 "TRANSACTIONS_LIST_DELETE" = "ಅಳಿಸಿ";

@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "I-delete ang transaksyon?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Mga kategorya";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Lahat ng kategorya";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Walang transaksyon";
 "TRANSACTIONS_LIST_DELETE" = "I-delete";

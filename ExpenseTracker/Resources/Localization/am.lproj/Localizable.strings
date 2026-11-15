@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "ግብይቱ ይሰረዝ?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "ምድቦች";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "ሁሉም ምድቦች";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ምንም ግብይቶች የሉም";
 "TRANSACTIONS_LIST_DELETE" = "ሰርዝ";

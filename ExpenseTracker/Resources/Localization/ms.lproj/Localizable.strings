@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Padam transaksi?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategori";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Semua kategori";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Tiada transaksi";
 "TRANSACTIONS_LIST_DELETE" = "Padam";

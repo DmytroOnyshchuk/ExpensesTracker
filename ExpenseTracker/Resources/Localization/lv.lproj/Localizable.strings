@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Dzēst darījumu?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategorijas";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Visas kategorijas";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nav darījumu";
 "TRANSACTIONS_LIST_DELETE" = "Dzēst";

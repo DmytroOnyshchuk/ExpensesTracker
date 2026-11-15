@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Tranzaksiya silinsin?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kateqoriyalar";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Bütün kateqoriyalar";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Tranzaksiya yoxdur";
 "TRANSACTIONS_LIST_DELETE" = "Sil";

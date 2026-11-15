@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "व्यवहार हटवायचा?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "श्रेण्या";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "सर्व श्रेण्या";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "कोणतेही व्यवहार नाहीत";
 "TRANSACTIONS_LIST_DELETE" = "हटवा";

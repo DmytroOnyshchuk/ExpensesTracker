@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "E holoi i ka hana kālā?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Nā māhele";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Nā māhele a pau";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ʻAʻohe hana kālā";
 "TRANSACTIONS_LIST_DELETE" = "Holoi";

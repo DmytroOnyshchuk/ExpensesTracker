@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "లావాదేవీని తొలగించాలా?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "వర్గాలు";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "అన్ని వర్గాలు";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "లావాదేవీలు లేవు";
 "TRANSACTIONS_LIST_DELETE" = "తొలగించండి";

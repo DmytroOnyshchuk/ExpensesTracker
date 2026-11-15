@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Danûstandinê jê bibe?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategorî";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Hemû kategorî";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Danûstandin tune";
 "TRANSACTIONS_LIST_DELETE" = "Jê bibe";

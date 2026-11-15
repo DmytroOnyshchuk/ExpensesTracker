@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "تراکنش حذف شود؟";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "دسته‌بندی‌ها";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "همه دسته‌ها";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "تراکنشی وجود ندارد";
 "TRANSACTIONS_LIST_DELETE" = "حذف";

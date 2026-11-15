@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Eyða færslu?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Flokkar";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Allir flokkar";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Engar færslur";
 "TRANSACTIONS_LIST_DELETE" = "Eyða";

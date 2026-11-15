@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Xóa giao dịch?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Danh mục";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Tất cả danh mục";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Không có giao dịch";
 "TRANSACTIONS_LIST_DELETE" = "Xóa";

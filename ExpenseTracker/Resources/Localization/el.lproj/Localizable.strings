@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Διαγραφή συναλλαγής;";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Κατηγορίες";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Όλες οι κατηγορίες";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Δεν υπάρχουν συναλλαγές";
 "TRANSACTIONS_LIST_DELETE" = "Διαγραφή";

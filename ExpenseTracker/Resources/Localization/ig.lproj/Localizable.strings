@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Hichapụ azụmahịa a?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Ụdị dị iche iche";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Ụdị niile";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Enweghị azụmahịa";
 "TRANSACTIONS_LIST_DELETE" = "Hichapụ";

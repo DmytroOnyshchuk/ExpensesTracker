@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "İşlem silinsin mi?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategoriler";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Tüm kategoriler";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "İşlem yok";
 "TRANSACTIONS_LIST_DELETE" = "Sil";

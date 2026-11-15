@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Stizzar la transacziun?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Categorias";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Tut las categorias";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Naginas transacziuns";
 "TRANSACTIONS_LIST_DELETE" = "Stizzar";

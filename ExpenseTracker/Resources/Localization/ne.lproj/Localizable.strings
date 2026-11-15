@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "कारोबार मेटाउने हो?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "श्रेणीहरू";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "सबै श्रेणीहरू";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "कुनै कारोबार छैन";
 "TRANSACTIONS_LIST_DELETE" = "मेटाउनुहोस्";

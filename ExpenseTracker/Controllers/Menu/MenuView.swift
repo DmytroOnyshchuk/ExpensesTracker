@@ -16,7 +16,7 @@ enum MenuItem: CaseIterable, Identifiable {
     case language
     case about
 
-    static let sections: [[MenuItem]] = [[.categories], [.backups], [.settings, .language, .about]]
+    static let sections: [[MenuItem]] = [[.settings], [.categories], [.backups], [.language, .about]]
 
     var id: Self { self }
 

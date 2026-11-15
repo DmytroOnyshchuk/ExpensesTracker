@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Poistetaanko tapahtuma?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Luokat";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Kaikki luokat";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ei tapahtumia";
 "TRANSACTIONS_LIST_DELETE" = "Poista";

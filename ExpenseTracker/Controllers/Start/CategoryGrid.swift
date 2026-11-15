@@ -96,7 +96,7 @@ struct EditCategoriesCell: View {
 
                 Spacer(minLength: 8)
 
-                Text(L10n.categoryGridAllCategories)
+                Text(L10n.menuCategories)
                     .font(.appRegular(12))
                     .multilineTextAlignment(.center)
                     .foregroundColor(.appWhite)

@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Törli a tranzakciót?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategóriák";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Összes kategória";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nincsenek tranzakciók";
 "TRANSACTIONS_LIST_DELETE" = "Törlés";

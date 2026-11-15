@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Izbrisati transakciju?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategorije";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Sve kategorije";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Nema transakcija";
 "TRANSACTIONS_LIST_DELETE" = "Izbriši";

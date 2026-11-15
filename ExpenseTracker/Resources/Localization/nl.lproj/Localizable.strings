@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Transactie verwijderen?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Categorieën";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Alle categorieën";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Geen transacties";
 "TRANSACTIONS_LIST_DELETE" = "Verwijderen";

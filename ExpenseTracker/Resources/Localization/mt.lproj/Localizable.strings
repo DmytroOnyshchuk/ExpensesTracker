@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Tħassar it-tranżazzjoni?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategoriji";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Il-kategoriji kollha";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "L-ebda tranżazzjoni";
 "TRANSACTIONS_LIST_DELETE" = "Ħassar";

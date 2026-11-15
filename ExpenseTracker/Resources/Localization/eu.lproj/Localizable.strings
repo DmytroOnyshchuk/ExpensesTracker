@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Ezabatu transakzioa?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategoriak";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Kategoria guztiak";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ez dago transakziorik";
 "TRANSACTIONS_LIST_DELETE" = "Ezabatu";

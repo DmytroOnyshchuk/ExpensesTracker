@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "למחוק את העסקה?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "קטגוריות";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "כל הקטגוריות";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "אין עסקאות";
 "TRANSACTIONS_LIST_DELETE" = "מחיקה";

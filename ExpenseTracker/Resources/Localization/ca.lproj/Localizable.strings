@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Vols eliminar la transacció?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Categories";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Totes les categories";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "No hi ha transaccions";
 "TRANSACTIONS_LIST_DELETE" = "Elimina";

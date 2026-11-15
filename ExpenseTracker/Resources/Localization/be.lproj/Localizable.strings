@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Выдаліць транзакцыю?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Катэгорыі";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Усе катэгорыі";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Няма транзакцый";
 "TRANSACTIONS_LIST_DELETE" = "Выдаліць";

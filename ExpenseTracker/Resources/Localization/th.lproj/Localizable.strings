@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "ลบรายการนี้หรือไม่";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "หมวดหมู่";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "หมวดหมู่ทั้งหมด";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ไม่มีรายการ";
 "TRANSACTIONS_LIST_DELETE" = "ลบ";

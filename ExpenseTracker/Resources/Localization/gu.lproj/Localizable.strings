@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "વ્યવહાર કાઢી નાખવો છે?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "શ્રેણીઓ";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "બધી શ્રેણીઓ";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "કોઈ વ્યવહાર નથી";
 "TRANSACTIONS_LIST_DELETE" = "કાઢી નાખો";

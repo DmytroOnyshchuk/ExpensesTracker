@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Slett transaksjon?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategoriar";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Alle kategoriar";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ingen transaksjonar";
 "TRANSACTIONS_LIST_DELETE" = "Slett";

@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Транзакция өчүрүлсүнбү?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Категориялар";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Бардык категориялар";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Транзакциялар жок";
 "TRANSACTIONS_LIST_DELETE" = "Өчүрүү";

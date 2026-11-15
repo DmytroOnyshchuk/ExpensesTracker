@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Cima intengiselwano?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Iindidi";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Zonke iindidi";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Akukho ntengiselwano";
 "TRANSACTIONS_LIST_DELETE" = "Cima";

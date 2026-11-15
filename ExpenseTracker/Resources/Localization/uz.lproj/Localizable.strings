@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Tranzaksiya oʻchirilsinmi?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Toifalar";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Barcha turkumlar";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Tranzaksiyalar yoʻq";
 "TRANSACTIONS_LIST_DELETE" = "Oʻchirish";

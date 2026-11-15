@@ -22,7 +22,7 @@ final class UserManager {
     @UserDefault(.fcmToken, defaultValue: nil) var fcmToken: String?
     @UserDefault(.apiToken, defaultValue: nil) var apiToken: String?
     @UserDefault(.userId, defaultValue: nil) var userId: String?
-    @UserDefaultCodable(.theme, defaultValue: ThemePreset.system) var theme: ThemePreset!
+    @UserDefaultCodable(.theme, defaultValue: ThemePreset.dark) var theme: ThemePreset!
     @UserDefault(.soundsEnabled, defaultValue: true) var soundsEnabled: Bool!
 }
 

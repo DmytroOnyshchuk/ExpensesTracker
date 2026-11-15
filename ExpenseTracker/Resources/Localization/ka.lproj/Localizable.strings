@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "წაიშალოს ტრანზაქცია?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "კატეგორიები";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "ყველა კატეგორია";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ტრანზაქციები არ არის";
 "TRANSACTIONS_LIST_DELETE" = "წაშლა";

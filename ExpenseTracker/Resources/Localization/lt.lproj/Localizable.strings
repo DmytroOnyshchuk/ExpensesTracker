@@ -84,9 +84,6 @@
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Ištrinti transakciją?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategorijos";
 
-// MARK: - CategoryGrid
-"CATEGORY_GRID_ALL_CATEGORIES" = "Visos kategorijos";
-
 // MARK: - TransactionsList
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Transakcijų nėra";
 "TRANSACTIONS_LIST_DELETE" = "Ištrinti";
