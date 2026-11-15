@@ -199,7 +199,7 @@ extension Theme {
         appWhite: Color(hex: "#14263D"),
         appBlack: Color(hex: "#0E1A2B"),
         appLightGrey: Color(hex: "#3A4A5E"),
-        appPrimary: Color(hex: "#1DC65B"),
+        appPrimary: Color(hex: "#1F3A5F"),
         appDarkGreen: Color(hex: "#17A34A"),
         appGray: Color(hex: "#9AA5B1"),
         appYellow: Color(hex: "#F5B82E"),

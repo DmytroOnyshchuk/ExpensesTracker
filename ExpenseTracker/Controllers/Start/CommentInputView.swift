@@ -96,7 +96,7 @@ struct CommentInputView: View {
         Button(action: { tap(save) }) {
             Image(systemName: "checkmark")
                 .font(.system(size: 17, weight: .semibold))
-                .foregroundColor(.appWhite)
+                .foregroundColor(.appMain)
                 .frame(width: 44, height: 44)
                 .background(.appPrimary)
                 .clipShape(Circle())
