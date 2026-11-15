@@ -18,11 +18,12 @@ struct CategoryColorPickerView: View {
     @State private var brightness: Double = 1
 
     private let palette: [Color] = [
-        Color.orange, Color(hex: "#FFC107"), Color.yellow, Color(hex: "#FFFF00"), Color(hex: "#CDDC39"), Color(hex: "#00FF00"),
-        Color.green, Color(hex: "#00796B"), Color.mint, Color.cyan, Color.teal, Color(hex: "#00BCD4"),
-        Color.blue, Color.indigo, Color(hex: "#8000FF"), Color.purple, Color.pink, Color.red,
-        Color(hex: "#804000"), Color.brown, Color.black, Color(hex: "#455A64"), Color(hex: "#808080"), Color.gray,
-        Color.white,
+        Color.red, Color.pink, Color(hex: "#804000"), Color.brown,
+        Color.orange, Color(hex: "#FFC107"), Color.yellow, Color(hex: "#FFFF00"),
+        Color(hex: "#CDDC39"), Color(hex: "#00FF00"), Color.green,
+        Color(hex: "#00796B"), Color.teal, Color.mint, Color.cyan, Color(hex: "#00BCD4"),
+        Color.blue, Color.indigo, Color(hex: "#8000FF"), Color.purple,
+        Color(hex: "#455A64"), Color(hex: "#808080"), Color.gray, Color.black, Color.white,
     ]
 
     private var selectedHex: String? {
