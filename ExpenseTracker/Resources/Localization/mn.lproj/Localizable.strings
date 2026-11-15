@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Цэс";
+"MENU_CATEGORIES" = "Ангилал";
 "MENU_BUDGET" = "Төсөв";
 "MENU_SETTINGS" = "Тохиргоо";
 "MENU_BACKUPS" = "Нөөц хуулбарууд";

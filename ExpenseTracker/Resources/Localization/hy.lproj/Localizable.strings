@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Մենյու";
+"MENU_CATEGORIES" = "Կատեգորիաներ";
 "MENU_BUDGET" = "Բյուջե";
 "MENU_SETTINGS" = "Կարգավորումներ";
 "MENU_BACKUPS" = "Պահուստային պատճեններ";

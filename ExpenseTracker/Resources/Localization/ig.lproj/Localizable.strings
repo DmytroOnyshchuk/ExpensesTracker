@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Menu";
+"MENU_CATEGORIES" = "Ngalaba";
 "MENU_BUDGET" = "Mmefu ego";
 "MENU_SETTINGS" = "Ntọala";
 "MENU_BACKUPS" = "Ndabere";

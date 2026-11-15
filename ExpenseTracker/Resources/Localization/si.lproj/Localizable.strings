@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "මෙනුව";
+"MENU_CATEGORIES" = "ප්‍රවර්ග";
 "MENU_BUDGET" = "අයවැය";
 "MENU_SETTINGS" = "සැකසුම්";
 "MENU_BACKUPS" = "උපස්ථ";

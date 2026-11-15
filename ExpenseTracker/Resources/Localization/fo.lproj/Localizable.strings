@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Valmynd";
+"MENU_CATEGORIES" = "Bólkar";
 "MENU_BUDGET" = "Fíggjarætlan";
 "MENU_SETTINGS" = "Stillingar";
 "MENU_BACKUPS" = "Trygdaravrit";

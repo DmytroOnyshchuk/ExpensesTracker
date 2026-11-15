@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "మెనూ";
+"MENU_CATEGORIES" = "వర్గాలు";
 "MENU_BUDGET" = "బడ్జెట్";
 "MENU_SETTINGS" = "సెట్టింగ్‌లు";
 "MENU_BACKUPS" = "బ్యాకప్‌లు";

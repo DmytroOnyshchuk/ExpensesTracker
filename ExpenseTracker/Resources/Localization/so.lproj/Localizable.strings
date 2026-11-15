@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Liiska";
+"MENU_CATEGORIES" = "Qaybaha";
 "MENU_BUDGET" = "Miisaaniyad";
 "MENU_SETTINGS" = "Dejinta";
 "MENU_BACKUPS" = "Kaydka";

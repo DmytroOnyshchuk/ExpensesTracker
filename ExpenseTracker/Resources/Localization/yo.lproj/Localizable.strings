@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Àtòjọ";
+"MENU_CATEGORIES" = "Àwọn ẹ̀ka";
 "MENU_BUDGET" = "Ìṣúná";
 "MENU_SETTINGS" = "Ètò";
 "MENU_BACKUPS" = "Àwọn àfẹ̀yìntì";

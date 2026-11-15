@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Menu";
+"MENU_CATEGORIES" = "Kategori";
 "MENU_BUDGET" = "Anggaran";
 "MENU_SETTINGS" = "Setelan";
 "MENU_BACKUPS" = "Serepan";

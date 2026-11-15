@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "மெனு";
+"MENU_CATEGORIES" = "வகைகள்";
 "MENU_BUDGET" = "பட்ஜெட்";
 "MENU_SETTINGS" = "அமைப்புகள்";
 "MENU_BACKUPS" = "காப்புப்பிரதிகள்";

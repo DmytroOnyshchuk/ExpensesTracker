@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Menû";
+"MENU_CATEGORIES" = "Kategorî";
 "MENU_BUDGET" = "Budçe";
 "MENU_SETTINGS" = "Mîheng";
 "MENU_BACKUPS" = "Paşkopî";

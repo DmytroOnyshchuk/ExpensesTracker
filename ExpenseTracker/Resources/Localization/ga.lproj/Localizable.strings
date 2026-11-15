@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Roghchlár";
+"MENU_CATEGORIES" = "Catagóirí";
 "MENU_BUDGET" = "Buiséad";
 "MENU_SETTINGS" = "Socruithe";
 "MENU_BACKUPS" = "Cúltacaí";

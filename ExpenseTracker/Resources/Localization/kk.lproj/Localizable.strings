@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Мәзір";
+"MENU_CATEGORIES" = "Санаттар";
 "MENU_BUDGET" = "Бюджет";
 "MENU_SETTINGS" = "Баптаулар";
 "MENU_BACKUPS" = "Сақтық көшірмелер";

@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "เมนู";
+"MENU_CATEGORIES" = "หมวดหมู่";
 "MENU_BUDGET" = "งบประมาณ";
 "MENU_SETTINGS" = "การตั้งค่า";
 "MENU_BACKUPS" = "ข้อมูลสำรอง";

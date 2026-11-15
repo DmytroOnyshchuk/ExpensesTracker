@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "മെനു";
+"MENU_CATEGORIES" = "വിഭാഗങ്ങൾ";
 "MENU_BUDGET" = "ബജറ്റ്";
 "MENU_SETTINGS" = "ക്രമീകരണങ്ങൾ";
 "MENU_BACKUPS" = "ബാക്കപ്പുകൾ";

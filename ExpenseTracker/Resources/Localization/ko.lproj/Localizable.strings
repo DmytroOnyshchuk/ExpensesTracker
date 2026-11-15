@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "메뉴";
+"MENU_CATEGORIES" = "카테고리";
 "MENU_BUDGET" = "예산";
 "MENU_SETTINGS" = "설정";
 "MENU_BACKUPS" = "백업";

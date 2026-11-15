@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "選單";
+"MENU_CATEGORIES" = "類別";
 "MENU_BUDGET" = "預算";
 "MENU_SETTINGS" = "設定";
 "MENU_BACKUPS" = "備份";

@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "ਮੀਨੂ";
+"MENU_CATEGORIES" = "ਸ਼੍ਰੇਣੀਆਂ";
 "MENU_BUDGET" = "ਬਜਟ";
 "MENU_SETTINGS" = "ਸੈਟਿੰਗਾਂ";
 "MENU_BACKUPS" = "ਬੈਕਅੱਪ";

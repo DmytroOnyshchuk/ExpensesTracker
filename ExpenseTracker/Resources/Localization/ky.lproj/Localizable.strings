@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Меню";
+"MENU_CATEGORIES" = "Категориялар";
 "MENU_BUDGET" = "Бюджет";
 "MENU_SETTINGS" = "Жөндөөлөр";
 "MENU_BACKUPS" = "Камдык көчүрмөлөр";

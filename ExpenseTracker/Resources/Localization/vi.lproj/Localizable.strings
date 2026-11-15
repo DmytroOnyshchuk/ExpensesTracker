@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Menu";
+"MENU_CATEGORIES" = "Danh mục";
 "MENU_BUDGET" = "Ngân sách";
 "MENU_SETTINGS" = "Cài đặt";
 "MENU_BACKUPS" = "Bản sao lưu";

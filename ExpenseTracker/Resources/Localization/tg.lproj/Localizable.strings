@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Меню";
+"MENU_CATEGORIES" = "Категорияҳо";
 "MENU_BUDGET" = "Буҷет";
 "MENU_SETTINGS" = "Танзимот";
 "MENU_BACKUPS" = "Нусхаҳои эҳтиётӣ";

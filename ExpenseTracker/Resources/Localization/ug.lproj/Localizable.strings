@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "تىزىملىك";
+"MENU_CATEGORIES" = "تۈرلەر";
 "MENU_BUDGET" = "خامچوت";
 "MENU_SETTINGS" = "تەڭشەكلەر";
 "MENU_BACKUPS" = "زاپاس نۇسخىلار";

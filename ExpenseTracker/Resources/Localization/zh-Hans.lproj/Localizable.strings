@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "菜单";
+"MENU_CATEGORIES" = "类别";
 "MENU_BUDGET" = "预算";
 "MENU_SETTINGS" = "设置";
 "MENU_BACKUPS" = "备份";

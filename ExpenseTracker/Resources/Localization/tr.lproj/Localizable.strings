@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Menü";
+"MENU_CATEGORIES" = "Kategoriler";
 "MENU_BUDGET" = "Bütçe";
 "MENU_SETTINGS" = "Ayarlar";
 "MENU_BACKUPS" = "Yedekler";

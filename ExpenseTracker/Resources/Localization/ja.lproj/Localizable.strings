@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "メニュー";
+"MENU_CATEGORIES" = "カテゴリ";
 "MENU_BUDGET" = "予算";
 "MENU_SETTINGS" = "設定";
 "MENU_BACKUPS" = "バックアップ";

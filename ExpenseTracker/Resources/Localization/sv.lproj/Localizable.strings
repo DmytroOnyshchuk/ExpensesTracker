@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Meny";
+"MENU_CATEGORIES" = "Kategorier";
 "MENU_BUDGET" = "Budget";
 "MENU_SETTINGS" = "Inställningar";
 "MENU_BACKUPS" = "Säkerhetskopior";

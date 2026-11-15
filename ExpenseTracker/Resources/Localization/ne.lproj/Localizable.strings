@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "मेनु";
+"MENU_CATEGORIES" = "श्रेणीहरू";
 "MENU_BUDGET" = "बजेट";
 "MENU_SETTINGS" = "सेटिङहरू";
 "MENU_BACKUPS" = "ब्याकअपहरू";

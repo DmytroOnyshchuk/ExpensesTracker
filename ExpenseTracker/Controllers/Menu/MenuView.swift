@@ -16,13 +16,13 @@ enum MenuItem: CaseIterable, Identifiable {
     case language
     case about
 
-    static let sections: [[MenuItem]] = [[.categories, .settings, .backups], [.language, .about]]
+    static let sections: [[MenuItem]] = [[.categories], [.backups], [.settings, .language, .about]]
 
     var id: Self { self }
 
     var title: String {
         switch self {
-        case .categories: L10n.categoryGridAllCategories
+        case .categories: L10n.menuCategories
         case .settings: L10n.menuSettings
         case .backups: L10n.menuBackups
         case .language: L10n.menuLanguage

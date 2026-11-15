@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "مینو";
+"MENU_CATEGORIES" = "زمرے";
 "MENU_BUDGET" = "بجٹ";
 "MENU_SETTINGS" = "ترتیبات";
 "MENU_BACKUPS" = "بیک اپس";

@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Μενού";
+"MENU_CATEGORIES" = "Κατηγορίες";
 "MENU_BUDGET" = "Προϋπολογισμός";
 "MENU_SETTINGS" = "Ρυθμίσεις";
 "MENU_BACKUPS" = "Αντίγραφα ασφαλείας";

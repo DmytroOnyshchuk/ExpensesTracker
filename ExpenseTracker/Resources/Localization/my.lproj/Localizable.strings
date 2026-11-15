@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "မီနူး";
+"MENU_CATEGORIES" = "အမျိုးအစားများ";
 "MENU_BUDGET" = "ဘတ်ဂျက်";
 "MENU_SETTINGS" = "ဆက်တင်များ";
 "MENU_BACKUPS" = "အရန်မိတ္တူများ";

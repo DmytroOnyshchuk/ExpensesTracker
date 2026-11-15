@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Menu";
+"MENU_CATEGORIES" = "Kategoriji";
 "MENU_BUDGET" = "Baġit";
 "MENU_SETTINGS" = "Settings";
 "MENU_BACKUPS" = "Backups";

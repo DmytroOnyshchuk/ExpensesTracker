@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "ಮೆನು";
+"MENU_CATEGORIES" = "ವರ್ಗಗಳು";
 "MENU_BUDGET" = "ಬಜೆಟ್";
 "MENU_SETTINGS" = "ಸೆಟ್ಟಿಂಗ್‌ಗಳು";
 "MENU_BACKUPS" = "ಬ್ಯಾಕಪ್‌ಗಳು";

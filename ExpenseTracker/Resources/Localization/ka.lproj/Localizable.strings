@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "მენიუ";
+"MENU_CATEGORIES" = "კატეგორიები";
 "MENU_BUDGET" = "ბიუჯეტი";
 "MENU_SETTINGS" = "პარამეტრები";
 "MENU_BACKUPS" = "სარეზერვო ასლები";

@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Izvēlne";
+"MENU_CATEGORIES" = "Kategorijas";
 "MENU_BUDGET" = "Budžets";
 "MENU_SETTINGS" = "Iestatījumi";
 "MENU_BACKUPS" = "Dublējumi";

@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "لیست";
+"MENU_CATEGORIES" = "پۆلەکان";
 "MENU_BUDGET" = "بودجە";
 "MENU_SETTINGS" = "ڕێکخستنەکان";
 "MENU_BACKUPS" = "پاڵپشتەکان";

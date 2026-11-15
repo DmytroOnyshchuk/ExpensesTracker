@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Clàr-taice";
+"MENU_CATEGORIES" = "Roinnean-seòrsa";
 "MENU_BUDGET" = "Buidseat";
 "MENU_SETTINGS" = "Roghainnean";
 "MENU_BACKUPS" = "Lethbhreacan-glèidhidh";

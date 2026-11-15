@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "ምናሌ";
+"MENU_CATEGORIES" = "ምድቦች";
 "MENU_BUDGET" = "በጀት";
 "MENU_SETTINGS" = "ቅንብሮች";
 "MENU_BACKUPS" = "መጠባበቂያዎች";

@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Menu";
+"MENU_CATEGORIES" = "Mga kategorya";
 "MENU_BUDGET" = "Badyet";
 "MENU_SETTINGS" = "Mga Setting";
 "MENU_BACKUPS" = "Mga Backup";

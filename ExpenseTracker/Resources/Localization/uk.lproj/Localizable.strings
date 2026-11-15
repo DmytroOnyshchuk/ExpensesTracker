@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Меню";
+"MENU_CATEGORIES" = "Категорії";
 "MENU_BUDGET" = "Бюджет";
 "MENU_SETTINGS" = "Налаштування";
 "MENU_BACKUPS" = "Резервні копії";

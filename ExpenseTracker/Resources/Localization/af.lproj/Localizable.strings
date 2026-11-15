@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Kieslys";
+"MENU_CATEGORIES" = "Kategorieë";
 "MENU_BUDGET" = "Begroting";
 "MENU_SETTINGS" = "Instellings";
 "MENU_BACKUPS" = "Rugsteune";

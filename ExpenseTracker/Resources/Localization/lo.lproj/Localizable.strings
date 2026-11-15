@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "ເມນູ";
+"MENU_CATEGORIES" = "ໝວດໝູ່";
 "MENU_BUDGET" = "ງົບປະມານ";
 "MENU_SETTINGS" = "ການຕັ້ງຄ່າ";
 "MENU_BACKUPS" = "ການສຳຮອງຂໍ້ມູນ";

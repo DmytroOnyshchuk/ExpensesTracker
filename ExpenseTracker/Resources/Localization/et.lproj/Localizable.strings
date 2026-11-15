@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Menüü";
+"MENU_CATEGORIES" = "Kategooriad";
 "MENU_BUDGET" = "Eelarve";
 "MENU_SETTINGS" = "Seaded";
 "MENU_BACKUPS" = "Varukoopiad";

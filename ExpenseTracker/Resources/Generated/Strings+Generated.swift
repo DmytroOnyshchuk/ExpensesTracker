@@ -178,6 +178,8 @@ internal enum L10n {
   internal static let menuBackups = L10n.tr("Localizable", "MENU_BACKUPS", fallback: "Backups")
   /// Budget
   internal static let menuBudget = L10n.tr("Localizable", "MENU_BUDGET", fallback: "Budget")
+  /// Categories
+  internal static let menuCategories = L10n.tr("Localizable", "MENU_CATEGORIES", fallback: "Categories")
   /// Language
   internal static let menuLanguage = L10n.tr("Localizable", "MENU_LANGUAGE", fallback: "Language")
   /// Settings

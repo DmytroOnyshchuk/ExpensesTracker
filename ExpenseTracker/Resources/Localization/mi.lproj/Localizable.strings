@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Tahua";
+"MENU_CATEGORIES" = "Ngā kāwai";
 "MENU_BUDGET" = "Tahua pūtea";
 "MENU_SETTINGS" = "Tautuhinga";
 "MENU_BACKUPS" = "Ngā Tārua";

@@ -56,6 +56,7 @@
 
 // MARK: - Menu
 "MENU_TITLE" = "Papa kuhikuhi";
+"MENU_CATEGORIES" = "Nā māhele";
 "MENU_BUDGET" = "Moʻohelu kālā";
 "MENU_SETTINGS" = "Hoʻonohonoho";
 "MENU_BACKUPS" = "Nā Kope Papaʻa";
