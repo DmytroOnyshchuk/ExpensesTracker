@@ -30,8 +30,12 @@ struct CategoriesEdit: View {
     }
 
     private var transactionsCounts: [UUID: Int] {
+        let transactions = transactions
+        let period = StatisticsPeriod.year
+        let interval = period.interval(containing: period.starts(of: transactions).first ?? Date())
+
         var counts: [UUID: Int] = [:]
-        for transaction in transactions {
+        for transaction in transactions where transaction.date >= interval.start && transaction.date < interval.end {
             counts[transaction.category.uuid, default: 0] += 1
         }
         return counts
