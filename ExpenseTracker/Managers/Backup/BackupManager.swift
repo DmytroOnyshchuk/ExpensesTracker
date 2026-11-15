@@ -239,7 +239,7 @@ enum BackupManager {
         }
 
         let existingIds: Set<UUID> = try mode == .replace ? [] : Set(context.fetch(FetchDescriptor<Transaction>()).map(\.id))
-        var addedTransactions = 0
+        var addedTransactions: Int = .zero
 
         for item in snapshot.transactions where !existingIds.contains(item.id) {
             guard let category = resolved[item.categoryUuid], !category.isDirectory else { continue }

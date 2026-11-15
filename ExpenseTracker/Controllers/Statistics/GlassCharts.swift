@@ -67,7 +67,7 @@ extension StatisticsPeriod {
         }
 
         var result: [StatisticsChartPoint] = []
-        var total = 0
+        var total: Int = .zero
         var date = interval.start
         while date < interval.end {
             let amount = amounts[date] ?? .zero
@@ -99,7 +99,7 @@ struct DonutArc: Shape {
 struct GlassDonutChart: View {
     let slices: [StatisticsSlice]
 
-    @State private var progress: CGFloat = 0
+    @State private var progress: CGFloat = .zero
 
     private static let minLabelShare = 0.06
     private static let innerRatio: CGFloat = 0.56
@@ -378,7 +378,7 @@ private func makePreviewSlices() -> [StatisticsSlice] {
 private func makePreviewPoints() -> [StatisticsChartPoint] {
     let start = StatisticsPeriod.month.interval(containing: Date()).start
     let amounts = [0, 85000, 0, 65000, 65000, 0, 0, 120000, 30000, 0, 45000, 0, 210000, 15000]
-    var total = 0
+    var total: Int = .zero
     return amounts.enumerated().map { index, amount in
         total += amount
         return StatisticsChartPoint(start: start.adding(index, .day), amount: amount, total: total)
