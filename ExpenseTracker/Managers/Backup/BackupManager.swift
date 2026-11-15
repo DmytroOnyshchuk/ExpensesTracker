@@ -4,6 +4,7 @@ import SwiftData
 enum BackupExportFormat: CaseIterable, Identifiable {
     case json
     case csv
+    case xlsx
 
     var id: Self { self }
 
@@ -11,6 +12,7 @@ enum BackupExportFormat: CaseIterable, Identifiable {
         switch self {
         case .json: "json"
         case .csv: "csv"
+        case .xlsx: "xlsx"
         }
     }
 }
@@ -20,13 +22,14 @@ extension BackupExportFormat {
         switch self {
         case .json: "JSON"
         case .csv: "CSV"
+        case .xlsx: "Excel"
         }
     }
     
     var summary: String {
         switch self {
         case .json: L10n.backupsFormatJson
-        case .csv: L10n.backupsFormatCsv
+        case .csv, .xlsx: L10n.backupsFormatCsv
         }
     }
 }
@@ -106,12 +109,12 @@ enum BackupManager {
     }
 
     @MainActor
-    static func csvData(from context: ModelContext) throws -> Data {
+    static func tableData(from context: ModelContext, format: BackupExportFormat) throws -> Data {
         let categories = try context.fetch(FetchDescriptor<TransactionCategory>())
         let transactions = try context.fetch(FetchDescriptor<Transaction>(sortBy: [SortDescriptor(\.date)]))
 
         let rows = transactions.map { transaction in
-            BackupCSVRow(
+            BackupTableRow(
                 date: transaction.date,
                 folder: transaction.category.parent(from: categories)?.name.localized ?? "",
                 category: transaction.category.name.localized,
@@ -126,7 +129,10 @@ enum BackupManager {
             L10n.transactionEditAmount,
             L10n.backupsCsvComment,
         ]
-        return BackupCSVWriter.data(header: header, rows: rows)
+        return switch format {
+        case .xlsx: BackupXLSXWriter.data(header: header, rows: rows, sheetName: L10n.appName)
+        case .json, .csv: BackupCSVWriter.data(header: header, rows: rows)
+        }
     }
 
     @MainActor
@@ -137,7 +143,7 @@ enum BackupManager {
 
         let data: Data = switch format {
         case .json: try exportData(from: context)
-        case .csv: try csvData(from: context)
+        case .csv, .xlsx: try tableData(from: context, format: format)
         }
         let url = directory.appendingPathComponent(defaultFilename).appendingPathExtension(format.fileExtension)
         try data.write(to: url, options: .atomic)
