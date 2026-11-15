@@ -104,6 +104,7 @@ extension View {
             Button(role: .destructive, action: onDelete) {
                 Label(L10n.delete, systemImage: "trash")
             }
+            .tint(.appRed)
         }
         .alignmentGuide(.listRowSeparatorLeading) { _ in 64 }
         .listRowInsets(EdgeInsets())

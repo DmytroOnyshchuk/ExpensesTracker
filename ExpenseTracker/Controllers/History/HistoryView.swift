@@ -57,6 +57,7 @@ struct HistoryView: View {
                             } label: {
                                 Label(L10n.delete, systemImage: "trash")
                             }
+                            .tint(.appRed)
                         }
                         .alignmentGuide(.listRowSeparatorLeading) { _ in 64 }
                         .listRowInsets(EdgeInsets())

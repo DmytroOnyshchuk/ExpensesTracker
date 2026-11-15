@@ -89,6 +89,7 @@ struct TransactionDetails: View {
                             } label: {
                                 Label(L10n.delete, systemImage: "trash")
                             }
+                            .tint(.appRed)
                         }
                         .listRowInsets(EdgeInsets())
                         .listRowBackground(Color.clear)

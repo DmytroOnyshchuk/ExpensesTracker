@@ -178,6 +178,7 @@ struct TransactionRow: View {
             } label: {
                 Label(L10n.delete, systemImage: "trash")
             }
+            .tint(.appRed)
         }
     }
 }
