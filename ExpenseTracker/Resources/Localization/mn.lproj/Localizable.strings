@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "Бүх өгөгдлийг солих";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "Одоогийн бүх гүйлгээ, ангилал устгагдана. Энэ үйлдлийг буцаах боломжгүй.";
 "BACKUPS_IMPORT_SECTION" = "Импорт";
+"BACKUPS_RESET_ACTION" = "Бүгдийг устгаж, дахин тохируулах";
+"BACKUPS_RESET_WARNING" = "Бүх гүйлгээ, ангилал, тохиргоо устгагдана. Үүнийг буцаах боломжгүй.";
 "BACKUPS_SHARE_ACTION" = "Өгөгдөл экспортлох";
 "BACKUPS_CSV_COMMENT" = "Тайлбар";
 "BACKUPS_CSV_FOLDER" = "Хавтас";

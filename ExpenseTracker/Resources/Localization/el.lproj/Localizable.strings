@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "Αντικατάσταση όλων των δεδομένων";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "Όλες οι τρέχουσες συναλλαγές και κατηγορίες θα διαγραφούν. Η ενέργεια δεν μπορεί να αναιρεθεί.";
 "BACKUPS_IMPORT_SECTION" = "Εισαγωγή";
+"BACKUPS_RESET_ACTION" = "Διαγραφή όλων και επαναφορά";
+"BACKUPS_RESET_WARNING" = "Όλες οι συναλλαγές, οι κατηγορίες και οι ρυθμίσεις θα διαγραφούν. Αυτό δεν μπορεί να αναιρεθεί.";
 "BACKUPS_SHARE_ACTION" = "Εξαγωγή δεδομένων";
 "BACKUPS_CSV_COMMENT" = "Σχόλιο";
 "BACKUPS_CSV_FOLDER" = "Φάκελος";

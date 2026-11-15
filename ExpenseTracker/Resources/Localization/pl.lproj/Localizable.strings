@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "Zastąp wszystkie dane";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "Wszystkie bieżące transakcje i kategorie zostaną usunięte. Tej operacji nie można cofnąć.";
 "BACKUPS_IMPORT_SECTION" = "Import";
+"BACKUPS_RESET_ACTION" = "Usuń wszystko i zresetuj";
+"BACKUPS_RESET_WARNING" = "Wszystkie transakcje, kategorie i ustawienia zostaną usunięte. Tej czynności nie można cofnąć.";
 "BACKUPS_SHARE_ACTION" = "Eksportuj dane";
 "BACKUPS_CSV_COMMENT" = "Komentarz";
 "BACKUPS_CSV_FOLDER" = "Folder";

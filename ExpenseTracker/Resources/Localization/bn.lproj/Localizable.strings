@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "সব ডেটা প্রতিস্থাপন করুন";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "বর্তমান সব লেনদেন ও বিভাগ মুছে ফেলা হবে। এটি পূর্বাবস্থায় ফেরানো যাবে না।";
 "BACKUPS_IMPORT_SECTION" = "ইমপোর্ট";
+"BACKUPS_RESET_ACTION" = "সব মুছে রিসেট করুন";
+"BACKUPS_RESET_WARNING" = "সব লেনদেন, বিভাগ ও সেটিংস মুছে ফেলা হবে। এটি পূর্বাবস্থায় ফেরানো যাবে না।";
 "BACKUPS_SHARE_ACTION" = "ডেটা এক্সপোর্ট করুন";
 "BACKUPS_CSV_COMMENT" = "মন্তব্য";
 "BACKUPS_CSV_FOLDER" = "ফোল্ডার";

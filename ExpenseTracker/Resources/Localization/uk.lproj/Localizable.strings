@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "Замінити всі дані";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "Усі поточні операції та категорії буде видалено. Цю дію неможливо скасувати.";
 "BACKUPS_IMPORT_SECTION" = "Імпорт";
+"BACKUPS_RESET_ACTION" = "Видалити все та скинути";
+"BACKUPS_RESET_WARNING" = "Усі транзакції, категорії та налаштування буде видалено. Цю дію не можна скасувати.";
 "BACKUPS_SHARE_ACTION" = "Експортувати дані";
 "BACKUPS_CSV_COMMENT" = "Коментар";
 "BACKUPS_CSV_FOLDER" = "Папка";

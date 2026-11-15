@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "All Daten ersetzen";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "All aktuell Transaktiounen a Kategorië gi geläscht. Dëst kann net réckgängeg gemaach ginn.";
 "BACKUPS_IMPORT_SECTION" = "Import";
+"BACKUPS_RESET_ACTION" = "Alles läschen an zrécksetzen";
+"BACKUPS_RESET_WARNING" = "All Transaktiounen, Kategorien an Astellunge gi geläscht. Dëst kann net réckgängeg gemaach ginn.";
 "BACKUPS_SHARE_ACTION" = "Daten exportéieren";
 "BACKUPS_CSV_COMMENT" = "Kommentar";
 "BACKUPS_CSV_FOLDER" = "Dossier";

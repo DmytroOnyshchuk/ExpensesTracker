@@ -10,7 +10,8 @@ struct BackupShareFile: Identifiable {
 
 struct BackupsView: View {
     @Environment(\.modelContext) private var modelContext
-
+    @Inject private var userManager: UserManager
+    
     @Query private var storedTransactions: [Transaction]
     @Query private var storedCategories: [TransactionCategory]
 
@@ -23,6 +24,7 @@ struct BackupsView: View {
     @State private var sharedFile: BackupShareFile?
     @State private var pickedFileURL: URL?
     @State private var errorMessage: String?
+    @State private var showResetConfirmation = false
 
     var body: some View {
         ScrollView(.vertical) {
@@ -41,6 +43,19 @@ struct BackupsView: View {
                     MenuRow(title: L10n.backupsImportAction, systemImage: "square.and.arrow.down", action: startImport)
                 }
                 .fileImporter(isPresented: $isImporting, allowedContentTypes: [.data], onCompletion: pickFile)
+
+                Button {
+                    showResetConfirmation = true
+                } label: {
+                    Text(L10n.backupsResetAction)
+                        .font(.appLight(14))
+                        .foregroundColor(.appRed)
+                        .multilineTextAlignment(.center)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 8)
+                        .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
             }
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .top)
@@ -68,10 +83,26 @@ struct BackupsView: View {
         } message: {
             Text(errorMessage ?? "")
         }
+        .alert(L10n.backupsResetAction, isPresented: $showResetConfirmation) {
+            Button(L10n.cancel, role: .cancel) {}
+            Button(L10n.delete, role: .destructive, action: clear)
+        } message: {
+            Text(L10n.backupsResetWarning)
+        }
     }
 
     private var isErrorPresented: Binding<Bool> {
         Binding(get: { errorMessage != nil }, set: { if !$0 { errorMessage = nil } })
+    }
+
+    private func clear() {
+        do {
+            try userManager.logout(context: modelContext)
+        } catch {
+            modelContext.rollback()
+            Logger.default.logError("Clear failed", error: error, category: "BackupsView")
+            errorMessage = error.localizedDescription
+        }
     }
 
     private func chooseFormat() {

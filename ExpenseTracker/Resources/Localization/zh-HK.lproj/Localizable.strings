@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "取代所有資料";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "目前所有交易和類別都將被刪除。此動作無法還原。";
 "BACKUPS_IMPORT_SECTION" = "輸入";
+"BACKUPS_RESET_ACTION" = "刪除所有資料並重設";
+"BACKUPS_RESET_WARNING" = "所有交易、類別和設定都會被刪除，此操作無法還原。";
 "BACKUPS_SHARE_ACTION" = "輸出資料";
 "BACKUPS_CSV_COMMENT" = "備註";
 "BACKUPS_CSV_FOLDER" = "檔案夾";

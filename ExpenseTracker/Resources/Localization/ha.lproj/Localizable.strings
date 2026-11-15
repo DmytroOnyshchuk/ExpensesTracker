@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "Maye gurbin duk bayanai";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "Za a goge duk hada-hada da rukunonin yanzu. Ba za a iya soke wannan ba.";
 "BACKUPS_IMPORT_SECTION" = "Shigowa";
+"BACKUPS_RESET_ACTION" = "Share komai kuma sake saitawa";
+"BACKUPS_RESET_WARNING" = "Za a share duk ma'amaloli, rukunoni da saituna. Ba za a iya soke wannan ba.";
 "BACKUPS_SHARE_ACTION" = "Fitar da bayanai";
 "BACKUPS_CSV_COMMENT" = "Tsokaci";
 "BACKUPS_CSV_FOLDER" = "Babban fayil";

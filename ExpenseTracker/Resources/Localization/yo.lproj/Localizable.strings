@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "Rọ́pò gbogbo dátà";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "Gbogbo ìdúnàádúrà àti ẹ̀ka lọ́wọ́lọ́wọ́ ni a ó parẹ́. Èyí kò ṣe é dá padà.";
 "BACKUPS_IMPORT_SECTION" = "Ìkówọlé";
+"BACKUPS_RESET_ACTION" = "Pa gbogbo rẹ̀ rẹ́ kí o sì tún un tò";
+"BACKUPS_RESET_WARNING" = "A ó pa gbogbo ìdúnàádúrà, ẹ̀ka àti ètò rẹ́. A kò lè yí èyí padà.";
 "BACKUPS_SHARE_ACTION" = "Kó dátà jáde";
 "BACKUPS_CSV_COMMENT" = "Àlàyé";
 "BACKUPS_CSV_FOLDER" = "Fódà";

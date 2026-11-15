@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "Бардык дайындарды алмаштыруу";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "Учурдагы бардык операциялар жана категориялар өчүрүлөт. Бул аракетти артка кайтаруу мүмкүн эмес.";
 "BACKUPS_IMPORT_SECTION" = "Импорт";
+"BACKUPS_RESET_ACTION" = "Баарын өчүрүп, баштапкы абалга келтирүү";
+"BACKUPS_RESET_WARNING" = "Бардык транзакциялар, категориялар жана жөндөөлөр өчүрүлөт. Муну артка кайтаруу мүмкүн эмес.";
 "BACKUPS_SHARE_ACTION" = "Дайындарды экспорттоо";
 "BACKUPS_CSV_COMMENT" = "Комментарий";
 "BACKUPS_CSV_FOLDER" = "Папка";

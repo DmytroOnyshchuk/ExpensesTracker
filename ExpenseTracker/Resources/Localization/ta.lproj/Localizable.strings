@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "அனைத்துத் தரவையும் மாற்று";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "தற்போதைய அனைத்துப் பரிவர்த்தனைகளும் வகைகளும் நீக்கப்படும். இதைச் செயல்தவிர்க்க முடியாது.";
 "BACKUPS_IMPORT_SECTION" = "இறக்குமதி";
+"BACKUPS_RESET_ACTION" = "அனைத்தையும் நீக்கி மீட்டமை";
+"BACKUPS_RESET_WARNING" = "அனைத்துப் பரிவர்த்தனைகள், வகைகள் மற்றும் அமைப்புகள் நீக்கப்படும். இதைச் செயல்தவிர்க்க முடியாது.";
 "BACKUPS_SHARE_ACTION" = "தரவை ஏற்றுமதி செய்";
 "BACKUPS_CSV_COMMENT" = "கருத்து";
 "BACKUPS_CSV_FOLDER" = "கோப்புறை";

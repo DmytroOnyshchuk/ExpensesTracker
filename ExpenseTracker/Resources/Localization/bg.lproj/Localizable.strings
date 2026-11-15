@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "Замени всички данни";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "Всички текущи транзакции и категории ще бъдат изтрити. Това действие не може да бъде отменено.";
 "BACKUPS_IMPORT_SECTION" = "Импорт";
+"BACKUPS_RESET_ACTION" = "Изтриване на всичко и нулиране";
+"BACKUPS_RESET_WARNING" = "Всички транзакции, категории и настройки ще бъдат изтрити. Това не може да бъде отменено.";
 "BACKUPS_SHARE_ACTION" = "Експортиране на данни";
 "BACKUPS_CSV_COMMENT" = "Коментар";
 "BACKUPS_CSV_FOLDER" = "Папка";

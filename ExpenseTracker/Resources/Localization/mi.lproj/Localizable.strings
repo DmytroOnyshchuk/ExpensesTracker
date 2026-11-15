@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "Whakakapi i ngā raraunga katoa";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "Ka mukua ngā tauwhitinga me ngā kāwai katoa o nāianei. Kāore e taea te whakakore.";
 "BACKUPS_IMPORT_SECTION" = "Kawemai";
+"BACKUPS_RESET_ACTION" = "Mukua te katoa ka tautuhi anō";
+"BACKUPS_RESET_WARNING" = "Ka mukua ngā tauwhitinga, ngā kāwai me ngā tautuhinga katoa. Kāore e taea te whakakore.";
 "BACKUPS_SHARE_ACTION" = "Kaweake raraunga";
 "BACKUPS_CSV_COMMENT" = "Tākupu";
 "BACKUPS_CSV_FOLDER" = "Kōpaki";

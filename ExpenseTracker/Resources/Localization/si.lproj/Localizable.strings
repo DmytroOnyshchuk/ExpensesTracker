@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "සියලු දත්ත ප්‍රතිස්ථාපනය කරන්න";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "වත්මන් සියලු ගනුදෙනු සහ ප්‍රවර්ග මකා දැමේ. මෙය අහෝසි කළ නොහැක.";
 "BACKUPS_IMPORT_SECTION" = "ආයාත";
+"BACKUPS_RESET_ACTION" = "සියල්ල මකා යළි සකසන්න";
+"BACKUPS_RESET_WARNING" = "සියලුම ගනුදෙනු, ප්‍රවර්ග සහ සැකසුම් මකා දැමෙනු ඇත. මෙය අහෝසි කළ නොහැක.";
 "BACKUPS_SHARE_ACTION" = "දත්ත නිර්යාත කරන්න";
 "BACKUPS_CSV_COMMENT" = "සටහන";
 "BACKUPS_CSV_FOLDER" = "ෆෝල්ඩරය";

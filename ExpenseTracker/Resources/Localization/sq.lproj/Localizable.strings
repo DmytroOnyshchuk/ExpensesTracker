@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "Zëvendëso të gjitha të dhënat";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "Të gjitha transaksionet dhe kategoritë aktuale do të fshihen. Ky veprim nuk mund të zhbëhet.";
 "BACKUPS_IMPORT_SECTION" = "Import";
+"BACKUPS_RESET_ACTION" = "Fshi gjithçka dhe rivendos";
+"BACKUPS_RESET_WARNING" = "Të gjitha transaksionet, kategoritë dhe cilësimet do të fshihen. Kjo nuk mund të zhbëhet.";
 "BACKUPS_SHARE_ACTION" = "Eksporto të dhënat";
 "BACKUPS_CSV_COMMENT" = "Koment";
 "BACKUPS_CSV_FOLDER" = "Dosja";

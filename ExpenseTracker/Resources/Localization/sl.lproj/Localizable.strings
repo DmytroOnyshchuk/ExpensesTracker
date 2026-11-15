@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "Zamenjaj vse podatke";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "Vse trenutne transakcije in kategorije bodo izbrisane. Tega dejanja ni mogoče razveljaviti.";
 "BACKUPS_IMPORT_SECTION" = "Uvoz";
+"BACKUPS_RESET_ACTION" = "Izbriši vse in ponastavi";
+"BACKUPS_RESET_WARNING" = "Vse transakcije, kategorije in nastavitve bodo izbrisane. Tega ni mogoče razveljaviti.";
 "BACKUPS_SHARE_ACTION" = "Izvozi podatke";
 "BACKUPS_CSV_COMMENT" = "Komentar";
 "BACKUPS_CSV_FOLDER" = "Mapa";

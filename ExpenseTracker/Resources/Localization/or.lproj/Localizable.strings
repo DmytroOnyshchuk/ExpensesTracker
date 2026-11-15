@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "ସମସ୍ତ ଡାଟା ବଦଳାନ୍ତୁ";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "ବର୍ତ୍ତମାନର ସମସ୍ତ କାରବାର ଓ ଶ୍ରେଣୀ ବିଲୋପ ହେବ। ଏହାକୁ ପୂର୍ବବତ୍ କରାଯାଇପାରିବ ନାହିଁ।";
 "BACKUPS_IMPORT_SECTION" = "ଆମଦାନି";
+"BACKUPS_RESET_ACTION" = "ସବୁ ଡିଲିଟ କରି ରିସେଟ୍ କରନ୍ତୁ";
+"BACKUPS_RESET_WARNING" = "ସମସ୍ତ କାରବାର, ବର୍ଗ ଏବଂ ସେଟିଂସ୍ ଡିଲିଟ ହେବ। ଏହାକୁ ପୂର୍ବବତ୍ କରାଯାଇପାରିବ ନାହିଁ।";
 "BACKUPS_SHARE_ACTION" = "ଡାଟା ରପ୍ତାନି କରନ୍ତୁ";
 "BACKUPS_CSV_COMMENT" = "ମନ୍ତବ୍ୟ";
 "BACKUPS_CSV_FOLDER" = "ଫୋଲ୍ଡର୍";

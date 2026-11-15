@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "ټوله ډېټا بدله کړئ";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "ټولې اوسنۍ راکړې ورکړې او کټګورۍ به حذف شي. دا کار بېرته نه شي اړول کېدای.";
 "BACKUPS_IMPORT_SECTION" = "واردول";
+"BACKUPS_RESET_ACTION" = "هر څه ړنګول او بیا تنظیمول";
+"BACKUPS_RESET_WARNING" = "ټولې راکړې ورکړې، کټګورۍ او تنظیمات به ړنګ شي. دا بېرته نه شي کېدای.";
 "BACKUPS_SHARE_ACTION" = "ډېټا صادر کړئ";
 "BACKUPS_CSV_COMMENT" = "تبصره";
 "BACKUPS_CSV_FOLDER" = "پوښۍ";

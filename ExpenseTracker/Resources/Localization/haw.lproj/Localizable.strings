@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "Pani i ka ʻikepili a pau";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "E holoi ʻia nā kālepa a me nā māhele a pau o kēia manawa. ʻAʻole hiki ke hoʻihoʻi.";
 "BACKUPS_IMPORT_SECTION" = "Hoʻokomo";
+"BACKUPS_RESET_ACTION" = "Holoi i nā mea a pau a hoʻonohonoho hou";
+"BACKUPS_RESET_WARNING" = "E holoi ʻia nā hana kālā, nā māhele, a me nā hoʻonohonoho a pau. ʻAʻole hiki ke hoʻihoʻi ʻia.";
 "BACKUPS_SHARE_ACTION" = "Hoʻopuka i ka ʻikepili";
 "BACKUPS_CSV_COMMENT" = "Manaʻo";
 "BACKUPS_CSV_FOLDER" = "Wahī";

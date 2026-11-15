@@ -11,8 +11,10 @@ import SwiftData
 
 final class DataSeeder: NSObject {
     static func seedDefaultCategories(container: ModelContainer) {
-        let context = ModelContext(container)
+        seedDefaultCategories(in: ModelContext(container))
+    }
 
+    static func seedDefaultCategories(in context: ModelContext) {
         let descriptor = FetchDescriptor<TransactionCategory>()
         let existingCategories = try? context.fetch(descriptor)
 

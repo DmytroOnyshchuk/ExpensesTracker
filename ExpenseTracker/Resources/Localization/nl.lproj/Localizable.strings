@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "Alle gegevens vervangen";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "Alle huidige transacties en categorieën worden verwijderd. Dit kan niet ongedaan worden gemaakt.";
 "BACKUPS_IMPORT_SECTION" = "Importeren";
+"BACKUPS_RESET_ACTION" = "Alles verwijderen en resetten";
+"BACKUPS_RESET_WARNING" = "Alle transacties, categorieën en instellingen worden verwijderd. Dit kan niet ongedaan worden gemaakt.";
 "BACKUPS_SHARE_ACTION" = "Gegevens exporteren";
 "BACKUPS_CSV_COMMENT" = "Opmerking";
 "BACKUPS_CSV_FOLDER" = "Map";

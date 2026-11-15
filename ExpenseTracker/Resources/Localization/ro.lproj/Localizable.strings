@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "Înlocuiește toate datele";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "Toate tranzacțiile și categoriile curente vor fi șterse. Această acțiune nu poate fi anulată.";
 "BACKUPS_IMPORT_SECTION" = "Import";
+"BACKUPS_RESET_ACTION" = "Șterge tot și resetează";
+"BACKUPS_RESET_WARNING" = "Toate tranzacțiile, categoriile și setările vor fi șterse. Această acțiune nu poate fi anulată.";
 "BACKUPS_SHARE_ACTION" = "Exportă datele";
 "BACKUPS_CSV_COMMENT" = "Comentariu";
 "BACKUPS_CSV_FOLDER" = "Dosar";

@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "すべてのデータを置き換え";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "現在の取引とカテゴリはすべて削除されます。この操作は取り消せません。";
 "BACKUPS_IMPORT_SECTION" = "インポート";
+"BACKUPS_RESET_ACTION" = "すべて削除してリセット";
+"BACKUPS_RESET_WARNING" = "すべての取引、カテゴリ、設定が削除されます。この操作は取り消せません。";
 "BACKUPS_SHARE_ACTION" = "データをエクスポート";
 "BACKUPS_CSV_COMMENT" = "コメント";
 "BACKUPS_CSV_FOLDER" = "フォルダ";

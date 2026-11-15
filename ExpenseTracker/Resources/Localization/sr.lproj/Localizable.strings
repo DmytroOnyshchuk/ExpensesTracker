@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "Замени све податке";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "Све тренутне трансакције и категорије биће обрисане. Ова радња се не може опозвати.";
 "BACKUPS_IMPORT_SECTION" = "Увоз";
+"BACKUPS_RESET_ACTION" = "Избриши све и ресетуј";
+"BACKUPS_RESET_WARNING" = "Све трансакције, категорије и подешавања биће избрисани. Ово се не може опозвати.";
 "BACKUPS_SHARE_ACTION" = "Извези податке";
 "BACKUPS_CSV_COMMENT" = "Коментар";
 "BACKUPS_CSV_FOLDER" = "Фасцикла";

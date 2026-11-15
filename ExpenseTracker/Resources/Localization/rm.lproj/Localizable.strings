@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "Remplazzar tut las datas";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "Tut las transacziuns e categorias actualas vegnan stizzadas. Quai na po betg vegnir revocà.";
 "BACKUPS_IMPORT_SECTION" = "Import";
+"BACKUPS_RESET_ACTION" = "Stizzar tut e reinizialisar";
+"BACKUPS_RESET_WARNING" = "Tut las transacziuns, categorias e configuraziuns vegnan stizzadas. Quai na po betg vegnir revocà.";
 "BACKUPS_SHARE_ACTION" = "Exportar datas";
 "BACKUPS_CSV_COMMENT" = "Commentari";
 "BACKUPS_CSV_FOLDER" = "Ordinatur";

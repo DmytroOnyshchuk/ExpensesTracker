@@ -1,6 +1,7 @@
 import Foundation
+import SwiftData
 
-enum UDKey: String {
+enum UDKey: String, CaseIterable {
     case currentLanguage = "UDKey.currentLanguage"
     case lastApplicationEnvironment = "UDKey.lastApplicationEnvironment"
     case fcmToken = "UDKey.fcmToken"
@@ -27,11 +28,16 @@ final class UserManager {
     @UserDefaultCodable(.theme, defaultValue: ThemePreset.dark) var theme: ThemePreset!
     @UserDefault(.soundsEnabled, defaultValue: true) var soundsEnabled: Bool!
     @UserDefault(.hapticEnabled, defaultValue: true) var hapticEnabled: Bool!
+    @UserDefault(.hideCategories, defaultValue: false) var hideCategories: Bool!
+    
 }
 
 extension UserManager {
     @MainActor
-    func logout() {
+    func logout(context: ModelContext) throws {
+        try clearDatabase(context)
+        DataSeeder.seedDefaultCategories(in: context)
+
         let savedEnvironment: AppEnvironment = lastApplicationEnvironment
 
         let defaults = UserDefaults(suiteName: Constants.groupIdentifier) ?? .standard
@@ -39,12 +45,29 @@ extension UserManager {
         for key in dictionary.keys {
             defaults.removeObject(forKey: key)
         }
+        for key in UDKey.allCases {
+            UserDefaults.standard.removeObject(forKey: key.rawValue)
+        }
         lastApplicationEnvironment = savedEnvironment
-        fcmToken = nil
-        apiToken = nil
-        userId = nil
+        _fcmToken.reset()
+        _apiToken.reset()
+        _userId.reset()
+        _soundsEnabled.reset()
+        _hapticEnabled.reset()
+        _theme.reset()
+        ThemeManager.shared.preset = theme
 
         Logger.default.logMessage("Logout end", category: "UserManager")
+    }
+
+    private func clearDatabase(_ context: ModelContext) throws {
+        for transaction in try context.fetch(FetchDescriptor<Transaction>()) {
+            context.delete(transaction)
+        }
+        for category in try context.fetch(FetchDescriptor<TransactionCategory>()) {
+            context.delete(category)
+        }
+        try context.save()
     }
 
     func isLoggedIn() -> Bool {

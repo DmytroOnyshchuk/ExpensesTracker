@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "Aizstāt visus datus";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "Visi pašreizējie darījumi un kategorijas tiks dzēsti. Šo darbību nevar atsaukt.";
 "BACKUPS_IMPORT_SECTION" = "Imports";
+"BACKUPS_RESET_ACTION" = "Dzēst visu un atiestatīt";
+"BACKUPS_RESET_WARNING" = "Visi darījumi, kategorijas un iestatījumi tiks dzēsti. To nevar atsaukt.";
 "BACKUPS_SHARE_ACTION" = "Eksportēt datus";
 "BACKUPS_CSV_COMMENT" = "Komentārs";
 "BACKUPS_CSV_FOLDER" = "Mape";

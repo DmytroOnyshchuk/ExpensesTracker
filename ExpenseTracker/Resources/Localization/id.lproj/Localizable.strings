@@ -174,6 +174,8 @@
 "BACKUPS_IMPORT_REPLACE" = "Ganti semua data";
 "BACKUPS_IMPORT_REPLACE_WARNING" = "Semua transaksi dan kategori saat ini akan dihapus. Tindakan ini tidak dapat dibatalkan.";
 "BACKUPS_IMPORT_SECTION" = "Impor";
+"BACKUPS_RESET_ACTION" = "Hapus semua dan atur ulang";
+"BACKUPS_RESET_WARNING" = "Semua transaksi, kategori, dan pengaturan akan dihapus. Tindakan ini tidak dapat dibatalkan.";
 "BACKUPS_SHARE_ACTION" = "Ekspor data";
 "BACKUPS_CSV_COMMENT" = "Komentar";
 "BACKUPS_CSV_FOLDER" = "Folder";

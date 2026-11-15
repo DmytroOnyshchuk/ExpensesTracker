@@ -76,6 +76,10 @@ internal enum L10n {
   internal static func backupsImportSkipped(_ p1: Int) -> String {
     return L10n.tr("Localizable", "BACKUPS_IMPORT_SKIPPED", p1, fallback: "Income skipped: %d")
   }
+  /// Delete all and reset
+  internal static let backupsResetAction = L10n.tr("Localizable", "BACKUPS_RESET_ACTION", fallback: "Delete all and reset")
+  /// All transactions, categories and settings will be deleted. This cannot be undone.
+  internal static let backupsResetWarning = L10n.tr("Localizable", "BACKUPS_RESET_WARNING", fallback: "All transactions, categories and settings will be deleted. This cannot be undone.")
   /// Export data
   internal static let backupsShareAction = L10n.tr("Localizable", "BACKUPS_SHARE_ACTION", fallback: "Export data")
   /// Transactions: %d
