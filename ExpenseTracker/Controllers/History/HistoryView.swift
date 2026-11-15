@@ -28,6 +28,7 @@ struct HistoryView: View {
         let start = displayedStart(in: starts)
         let interval = period.interval(containing: start)
         let visibleTransactions = transactions.filter { $0.date >= interval.start && $0.date < interval.end }
+        let days = days(of: visibleTransactions)
 
         List {
             monthTitle(start: start, starts: starts)
@@ -45,33 +46,42 @@ struct HistoryView: View {
                     .listRowBackground(Color.clear)
                     .listRowSeparator(.hidden)
             } else {
-                ForEach(visibleTransactions, id: \.id) { transaction in
-                    TransactionDetailsRow(transaction: transaction)
-                        .contentShape(Rectangle())
-                        .onTapGesture {
-                            editedTransaction = transaction
+                ForEach(days) { day in
+                    Section {
+                        ForEach(day.transactions, id: \.id) { transaction in
+                            TransactionDetailsRow(transaction: transaction)
+                                .contentShape(Rectangle())
+                                .onTapGesture {
+                                    editedTransaction = transaction
+                                }
+                                .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+                                    Button(role: .destructive) {
+                                        delete(transaction)
+                                    } label: {
+                                        Label(L10n.remove, systemImage: "trash")
+                                    }
+                                    .tint(.appRed)
+                                }
+                                .alignmentGuide(.listRowSeparatorLeading) { _ in 64 }
+                                .listRowInsets(EdgeInsets())
+                                .listRowBackground(Color.clear)
+                                .listRowSeparatorTint(.appSecond)
+                                .listRowSeparator(.hidden, edges: .top)
+                                .listRowSeparator(
+                                    transaction.id == day.transactions.last?.id ? .hidden : .visible,
+                                    edges: .bottom
+                                )
                         }
-                        .swipeActions(edge: .trailing, allowsFullSwipe: true) {
-                            Button(role: .destructive) {
-                                delete(transaction)
-                            } label: {
-                                Label(L10n.remove, systemImage: "trash")
-                            }
-                            .tint(.appRed)
-                        }
-                        .alignmentGuide(.listRowSeparatorLeading) { _ in 64 }
-                        .listRowInsets(EdgeInsets())
-                        .listRowBackground(Color.clear)
-                        .listRowSeparatorTint(.appSecond)
-                        .listRowSeparator(.hidden, edges: .top)
-                        .listRowSeparator(
-                            transaction.id == visibleTransactions.last?.id ? .hidden : .visible,
-                            edges: .bottom
-                        )
+                    } header: {
+                        TransactionsDayHeader(day: day)
+                            .frame(height: 40)
+                            .listRowInsets(EdgeInsets())
+                    }
                 }
             }
         }
         .listStyle(.plain)
+        .environment(\.defaultMinListHeaderHeight, 0)
         .scrollContentBackground(.hidden)
         .appBackground()
         .navigationTitle(L10n.historyTitle)
@@ -139,6 +149,19 @@ struct HistoryView: View {
         }
         .buttonStyle(.plain)
         .disabled(!isEnabled)
+    }
+
+    private func days(of transactions: [Transaction]) -> [TransactionsDay] {
+        let calendar = Calendar.current
+
+        return Dictionary(grouping: transactions) { calendar.startOfDay(for: $0.date) }
+            .sorted { $0.key > $1.key }
+            .map { date, transactions in
+                TransactionsDay(
+                    title: date.dayString(.dateTime.weekday(.wide).day().month(.wide)),
+                    transactions: transactions.sorted { $0.date > $1.date }
+                )
+            }
     }
 
     private func delete(_ transaction: Transaction) {
