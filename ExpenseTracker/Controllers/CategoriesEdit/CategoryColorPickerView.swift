@@ -18,14 +18,9 @@ struct CategoryColorPickerView: View {
     @State private var brightness: Double = 1
 
     private let palette = [
-        "#FF0000", "#E57373", "#D32F2F", "#5D4037", "#A1887F", "#804000",
-        "#FF5722", "#FF8A65", "#FF8000", "#FFB74D", "#FFA000", "#FFC107",
-        "#FFF176", "#FFFF00", "#AFB42B", "#CDDC39", "#8BC34A", "#00FF00",
-        "#00B300", "#81C784", "#388E3C", "#00796B", "#4DB6AC", "#00FFFF",
-        "#0097A7", "#00BCD4", "#03A9F4", "#64B5F6", "#1976D2", "#7986CB",
-        "#3F51B5", "#0000FF", "#512DA8", "#9575CD", "#8000FF", "#BA68C8",
-        "#9C27B0", "#FF00FF", "#C2185B", "#E91E63", "#F06292", "#90A4AE",
-        "#455A64", "#FFFFFF", "#BDBDBD", "#808080", "#424242", "#000000",
+        "#FF0000", "#FF8000", "#FFC107", "#FFFF00", "#CDDC39", "#00B300",
+        "#00796B", "#00BCD4", "#0000FF", "#3F51B5", "#8000FF", "#FF00FF",
+        "#E91E63", "#804000", "#455A64", "#FFFFFF", "#808080", "#000000",
     ]
 
     private var selectedHex: String? {
