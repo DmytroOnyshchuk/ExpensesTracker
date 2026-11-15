@@ -1,9 +1,7 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @State private var soundsEnabled = FeedbackManager.shared.soundIsEnable
-    @State private var hapticEnabled = FeedbackManager.shared.hapticIsEnable
-    @AppStorage(UDKey.hideCategories.rawValue, store: UserDefaults.shared) private var hideCategories = false
+    @StoredSettings private var appSettings
 
     @Inject private var themeManager: ThemeManager
     @Inject private var feedbackManager: FeedbackManager
@@ -28,22 +26,16 @@ struct SettingsView: View {
                 .padding(16)
                 .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
 
-                toggleRow(L10n.settingsSounds, systemImage: "speaker.wave.2", isOn: $soundsEnabled)
+                toggleRow(L10n.settingsSounds, systemImage: "speaker.wave.2", isOn: $appSettings.feedback.soundsEnabled)
                     .padding(.top, 6)
-                    .onChange(of: soundsEnabled) { _, isEnabled in
-                        feedbackManager.enableSound(isEnabled)
-                    }
 
-                toggleRow(L10n.settingsHaptic, systemImage: "iphone.radiowaves.left.and.right", isOn: $hapticEnabled)
-                    .onChange(of: hapticEnabled) { _, isEnabled in
-                        feedbackManager.enableHaptic(isEnabled)
-                    }
+                toggleRow(L10n.settingsHaptic, systemImage: "iphone.radiowaves.left.and.right", isOn: $appSettings.feedback.hapticEnabled)
 
                 toggleRow(
                     L10n.settingsHideCategories,
                     subtitle: L10n.settingsHideCategoriesDescription,
                     systemImage: "square.grid.2x2.fill",
-                    isOn: $hideCategories
+                    isOn: $appSettings.hideCategories
                 )
             }
             .padding(16)

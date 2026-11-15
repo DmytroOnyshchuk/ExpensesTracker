@@ -19,7 +19,7 @@ struct StartView: View {
     @State private var amountAttentionTrigger: Int = .zero
     @State private var showBalanceInput = false
     @AppStorage(UDKey.balance.rawValue, store: UserDefaults.shared) private var balanceData: Data?
-    @AppStorage(UDKey.hideCategories.rawValue, store: UserDefaults.shared) private var hideCategories = false
+    @StoredSettings private var appSettings
     @Query(sort: \Transaction.date, order: .reverse, animation: .default) private var storedTransactions: [Transaction]
 
     private var transactions: [Transaction] { storedTransactions.notDeleted }
@@ -80,7 +80,7 @@ struct StartView: View {
     }
 
     private var showCategories: Bool {
-        !hideCategories || isAmountEntered
+        !appSettings.hideCategories || isAmountEntered
     }
 
     private var balance: Int? {

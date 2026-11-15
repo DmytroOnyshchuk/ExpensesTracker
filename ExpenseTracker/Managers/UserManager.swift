@@ -8,11 +8,7 @@ enum UDKey: String {
     case apiToken = "UDKey.apiToken"
     case userId = "UDKey.userId"
     case balance = "UDKey.balance"
-    case theme = "UDKey.theme"
-    case statisticsChartStyle = "UDKey.statisticsChartStyle"
-    case soundsEnabled = "UDKey.soundsEnabled"
-    case hideCategories = "UDKey.hideCategories"
-    case hapticEnabled = "UDKey.hapticEnabled"
+    case appSettings = "UDKey.appSettings"
 }
 
 final class UserManager {
@@ -25,12 +21,8 @@ final class UserManager {
     @UserDefault(.fcmToken, defaultValue: nil) var fcmToken: String?
     @UserDefault(.apiToken, defaultValue: nil) var apiToken: String?
     @UserDefault(.userId, defaultValue: nil) var userId: String?
-    @UserDefaultCodable(.theme, defaultValue: ThemePreset.dark) var theme: ThemePreset!
     @UserDefaultCodable(.balance, defaultValue: nil, enableCaching: false) var balance: Balance?
-    @UserDefaultCodable(.statisticsChartStyle, defaultValue: .pie, enableCaching: false) var statisticsChartStyle: StatisticsChartStyle!
-    @UserDefault(.soundsEnabled, defaultValue: true) var soundsEnabled: Bool!
-    @UserDefault(.hapticEnabled, defaultValue: true) var hapticEnabled: Bool!
-    @UserDefault(.hideCategories, defaultValue: false) var hideCategories: Bool!
+    @UserDefaultCodable(.appSettings, defaultValue: AppSettings(), enableCaching: false) var appSettings: AppSettings!
 }
 
 extension UserManager {
@@ -51,14 +43,10 @@ extension UserManager {
         _fcmToken.reset()
         _apiToken.reset()
         _userId.reset()
-        _theme.reset()
-        _soundsEnabled.reset()
-        _hapticEnabled.reset()
-        _hideCategories.reset()
         _balance.reset()
-        _statisticsChartStyle.reset()
+        _appSettings.reset()
         lastApplicationEnvironment = savedEnvironment
-        ThemeManager.shared.preset = theme
+        ThemeManager.shared.preset = appSettings.theme
 
         Logger.default.logMessage("Logout end", category: "UserManager")
     }

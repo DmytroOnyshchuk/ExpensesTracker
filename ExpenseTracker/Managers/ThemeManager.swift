@@ -9,7 +9,7 @@ final class ThemeManager {
     var preset: ThemePreset {
         didSet {
             guard preset != oldValue else { return }
-            UserManager.shared.theme = preset
+            UserManager.shared.appSettings.theme = preset
             systemColorScheme = Self.currentSystemColorScheme
         }
     }
@@ -29,9 +29,7 @@ final class ThemeManager {
     private init() {
         self.preset = .system
         self.systemColorScheme = Self.currentSystemColorScheme
-        if let theme = UserManager.shared.theme {
-            self.preset = theme
-        }
+        self.preset = UserManager.shared.appSettings.theme
     }
 
     func updateSystemColorScheme(_ colorScheme: ColorScheme) {

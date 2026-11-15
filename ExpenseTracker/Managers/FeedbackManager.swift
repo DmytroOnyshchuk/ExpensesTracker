@@ -45,19 +45,11 @@ final class FeedbackManager {
 
 extension FeedbackManager {
     var soundIsEnable: Bool {
-        userManager.soundsEnabled!
-    }
-
-    func enableSound(_ enable: Bool) {
-        userManager.soundsEnabled = enable
+        userManager.appSettings.feedback.soundsEnabled
     }
 
     var hapticIsEnable: Bool {
-        userManager.hapticEnabled!
-    }
-
-    func enableHaptic(_ enable: Bool) {
-        userManager.hapticEnabled = enable
+        userManager.appSettings.feedback.hapticEnabled
     }
 
     var selectionFeedback: SensoryFeedback? {
