@@ -28,6 +28,14 @@ enum TransactionCategoryName: Hashable {
     case internet
     case other
     case transport
+    case family
+    case taxi
+    case taxes
+    case repair
+    case electronics
+    case carParking
+    case pets
+    case savings
 
     case custom(String)
 
@@ -35,6 +43,7 @@ enum TransactionCategoryName: Hashable {
     static let predefined: [TransactionCategoryName] = [
         .car, .carFuel, .carMaintenance, .charity, .clothing, .food, .foodGroceries, .foodRestaurants,
         .healthBeauty, .home, .homeHousehold, .homeUtilities, .internet, .other, .transport,
+        .family, .taxi, .taxes, .repair, .electronics, .carParking, .pets, .savings,
     ]
 
     /// Display text in the current app language.
@@ -55,6 +64,14 @@ enum TransactionCategoryName: Hashable {
         case .internet: L10n.defaultCategoryInternet
         case .other: L10n.defaultCategoryOther
         case .transport: L10n.defaultCategoryTransport
+        case .family: L10n.defaultCategoryFamily
+        case .taxi: L10n.defaultCategoryTaxi
+        case .taxes: L10n.defaultCategoryTaxes
+        case .repair: L10n.defaultCategoryRepair
+        case .electronics: L10n.defaultCategoryElectronics
+        case .carParking: L10n.defaultCategoryCarParking
+        case .pets: L10n.defaultCategoryPets
+        case .savings: L10n.defaultCategorySavings
         case let .custom(text): text
         }
     }
@@ -92,6 +109,14 @@ extension TransactionCategoryName: RawRepresentable, Codable {
         case .internet: "DEFAULT_CATEGORY_INTERNET"
         case .other: "DEFAULT_CATEGORY_OTHER"
         case .transport: "DEFAULT_CATEGORY_TRANSPORT"
+        case .family: "DEFAULT_CATEGORY_FAMILY"
+        case .taxi: "DEFAULT_CATEGORY_TAXI"
+        case .taxes: "DEFAULT_CATEGORY_TAXES"
+        case .repair: "DEFAULT_CATEGORY_REPAIR"
+        case .electronics: "DEFAULT_CATEGORY_ELECTRONICS"
+        case .carParking: "DEFAULT_CATEGORY_CAR_PARKING"
+        case .pets: "DEFAULT_CATEGORY_PETS"
+        case .savings: "DEFAULT_CATEGORY_SAVINGS"
         case let .custom(text): text
         }
     }

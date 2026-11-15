@@ -110,10 +110,16 @@ internal enum L10n {
   internal static let defaultCategoryCarFuel = L10n.tr("Localizable", "DEFAULT_CATEGORY_CAR_FUEL", fallback: "Fuel")
   /// Maintenance
   internal static let defaultCategoryCarMaintenance = L10n.tr("Localizable", "DEFAULT_CATEGORY_CAR_MAINTENANCE", fallback: "Maintenance")
+  /// Parking
+  internal static let defaultCategoryCarParking = L10n.tr("Localizable", "DEFAULT_CATEGORY_CAR_PARKING", fallback: "Parking")
   /// Charity
   internal static let defaultCategoryCharity = L10n.tr("Localizable", "DEFAULT_CATEGORY_CHARITY", fallback: "Charity")
   /// Clothing
   internal static let defaultCategoryClothing = L10n.tr("Localizable", "DEFAULT_CATEGORY_CLOTHING", fallback: "Clothing")
+  /// Electronics
+  internal static let defaultCategoryElectronics = L10n.tr("Localizable", "DEFAULT_CATEGORY_ELECTRONICS", fallback: "Electronics")
+  /// Family
+  internal static let defaultCategoryFamily = L10n.tr("Localizable", "DEFAULT_CATEGORY_FAMILY", fallback: "Family")
   /// Food
   internal static let defaultCategoryFood = L10n.tr("Localizable", "DEFAULT_CATEGORY_FOOD", fallback: "Food")
   /// Groceries
@@ -132,6 +138,16 @@ internal enum L10n {
   internal static let defaultCategoryInternet = L10n.tr("Localizable", "DEFAULT_CATEGORY_INTERNET", fallback: "Internet")
   /// Other
   internal static let defaultCategoryOther = L10n.tr("Localizable", "DEFAULT_CATEGORY_OTHER", fallback: "Other")
+  /// Pets
+  internal static let defaultCategoryPets = L10n.tr("Localizable", "DEFAULT_CATEGORY_PETS", fallback: "Pets")
+  /// Repairs
+  internal static let defaultCategoryRepair = L10n.tr("Localizable", "DEFAULT_CATEGORY_REPAIR", fallback: "Repairs")
+  /// Savings
+  internal static let defaultCategorySavings = L10n.tr("Localizable", "DEFAULT_CATEGORY_SAVINGS", fallback: "Savings")
+  /// Taxes
+  internal static let defaultCategoryTaxes = L10n.tr("Localizable", "DEFAULT_CATEGORY_TAXES", fallback: "Taxes")
+  /// Taxi
+  internal static let defaultCategoryTaxi = L10n.tr("Localizable", "DEFAULT_CATEGORY_TAXI", fallback: "Taxi")
   /// Transport
   internal static let defaultCategoryTransport = L10n.tr("Localizable", "DEFAULT_CATEGORY_TRANSPORT", fallback: "Transport")
   /// Delete

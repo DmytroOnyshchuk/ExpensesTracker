@@ -19,36 +19,39 @@ final class DataSeeder: NSObject {
         let existingCategories = try? context.fetch(descriptor)
 
         if existingCategories?.isEmpty ?? true {
-            let car = TransactionCategory(name: .car, categoryIcon: CategoryIcon(name: "car.fill", iconColor: .pink), isDirectory: true)
             let food = TransactionCategory(name: .food, categoryIcon: CategoryIcon(name: "fork.knife", iconColor: .yellow), isDirectory: true)
+            let car = TransactionCategory(name: .car, categoryIcon: CategoryIcon(name: "car.fill", iconColor: .pink), isDirectory: true)
             let house = TransactionCategory(name: .home, categoryIcon: CategoryIcon(name: "house.fill", iconColor: .yellow), isDirectory: true)
-            context.insert(car)
-            context.insert(food)
-            context.insert(house)
+            let folders = [food, car, house]
+            for (index, folder) in folders.enumerated() {
+                folder.sortIndex = index
+                context.insert(folder)
+            }
 
             let defaultCategories = [
-                TransactionCategory(name: .carMaintenance, categoryIcon: CategoryIcon(name: "car.fill", iconColor: .red), parentUuid: car.uuid),
-                TransactionCategory(name: .carFuel, categoryIcon: CategoryIcon(name: "fuelpump.fill", iconColor: .pink), parentUuid: car.uuid),
-
                 TransactionCategory(name: .foodRestaurants, categoryIcon: CategoryIcon(name: "wineglass.fill", iconColor: .blue), parentUuid: food.uuid),
-                TransactionCategory(name: .foodGroceries, categoryIcon: CategoryIcon(name: "fork.knife", iconColor: .yellow), parentUuid: food.uuid),
-
-                TransactionCategory(name: .homeHousehold, categoryIcon: CategoryIcon(name: "house.fill", iconColor: .orange), parentUuid: house.uuid),
-                TransactionCategory(name: .homeUtilities, categoryIcon: CategoryIcon(name: "house.fill", iconColor: .pink), parentUuid: house.uuid),
-
-                TransactionCategory(name: .clothing, categoryIcon: CategoryIcon(name: "tshirt.fill", iconColor: .purple)),
-
-                TransactionCategory(name: .healthBeauty, categoryIcon: CategoryIcon(name: "cross.case.fill", iconColor: .red)),
-
-                TransactionCategory(name: .other, categoryIcon: CategoryIcon(name: "star.fill", iconColor: .blue)),
-
+                TransactionCategory(name: .foodGroceries, categoryIcon: CategoryIcon(name: "cart.fill", iconColor: .yellow), parentUuid: food.uuid),
                 TransactionCategory(name: .charity, categoryIcon: CategoryIcon(name: "heart.fill", iconColor: .red)),
+                TransactionCategory(name: .carFuel, categoryIcon: CategoryIcon(name: "fuelpump.fill", iconColor: .pink), parentUuid: car.uuid),
+                TransactionCategory(name: .family, categoryIcon: CategoryIcon(name: "person.2.fill", iconColor: .orange)),
+                TransactionCategory(name: .homeHousehold, categoryIcon: CategoryIcon(name: "house.fill", iconColor: .orange), parentUuid: house.uuid),
+                TransactionCategory(name: .carMaintenance, categoryIcon: CategoryIcon(name: "car.fill", iconColor: .red), parentUuid: car.uuid),
+                TransactionCategory(name: .healthBeauty, categoryIcon: CategoryIcon(name: "cross.case.fill", iconColor: .red)),
                 TransactionCategory(name: .internet, categoryIcon: CategoryIcon(name: "gamecontroller.fill", iconColor: .green)),
-
-                TransactionCategory(name: .transport, categoryIcon: CategoryIcon(name: "bus.fill", iconColor: .green)),
+                TransactionCategory(name: .homeUtilities, categoryIcon: CategoryIcon(name: "lightbulb.fill", iconColor: .pink), parentUuid: house.uuid),
+                TransactionCategory(name: .taxi, categoryIcon: CategoryIcon(name: "car.side.fill", iconColor: .yellow)),
+                TransactionCategory(name: .other, categoryIcon: CategoryIcon(name: "star.fill", iconColor: .blue)),
+                TransactionCategory(name: .taxes, categoryIcon: CategoryIcon(name: "building.columns.fill", iconColor: .gray)),
+                TransactionCategory(name: .repair, categoryIcon: CategoryIcon(name: "hammer.fill", iconColor: .brown)),
+                TransactionCategory(name: .clothing, categoryIcon: CategoryIcon(name: "tshirt.fill", iconColor: .purple)),
+                TransactionCategory(name: .electronics, categoryIcon: CategoryIcon(name: "tv.fill", iconColor: .indigo)),
+                TransactionCategory(name: .carParking, categoryIcon: CategoryIcon(name: "parkingsign.circle.fill", iconColor: .blue), parentUuid: car.uuid),
+                TransactionCategory(name: .pets, categoryIcon: CategoryIcon(name: "pawprint.fill", iconColor: .orange)),
+                TransactionCategory(name: .savings, categoryIcon: CategoryIcon(name: "banknote.fill", iconColor: .mint)),
             ]
 
-            for category in defaultCategories {
+            for (index, category) in defaultCategories.enumerated() {
+                category.sortIndex = folders.count + index
                 context.insert(category)
             }
 
