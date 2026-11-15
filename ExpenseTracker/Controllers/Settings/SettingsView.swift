@@ -75,21 +75,14 @@ struct ThemePresetCell: View {
 
         Button(action: action) {
             VStack(spacing: 10) {
-                HStack(spacing: 6) {
-                    ForEach(Array([theme.appPrimary, theme.appWhite, theme.appLabel].enumerated()), id: \.offset) { _, color in
-                        RoundedRectangle(cornerRadius: 6, style: .continuous)
-                            .fill(color)
-                            .frame(width: 16, height: 16)
+                preview(theme)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 64)
+                    .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 14, style: .continuous)
+                            .stroke(isSelected ? theme.appPrimary : theme.appLabel.opacity(0.4), lineWidth: isSelected ? 3 : 1)
                     }
-                }
-                .frame(maxWidth: .infinity)
-                .frame(height: 64)
-                .background(theme.appMain)
-                .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
-                .overlay {
-                    RoundedRectangle(cornerRadius: 14, style: .continuous)
-                        .stroke(isSelected ? theme.appPrimary : theme.appLabel.opacity(0.4), lineWidth: isSelected ? 3 : 1)
-                }
 
                 Text(preset.title)
                     .font(.appLight(15))
@@ -100,6 +93,49 @@ struct ThemePresetCell: View {
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
+    }
+
+    @ViewBuilder
+    private func preview(_ theme: Theme) -> some View {
+        if preset == .system {
+            ZStack {
+                Theme.light.appMain
+                Theme.dark.appMain
+                    .clipShape(DiagonalHalf())
+                DiagonalLine()
+                    .stroke(Theme.dark.appGray, lineWidth: 1.5)
+            }
+        } else {
+            HStack(spacing: 6) {
+                ForEach(Array([theme.appPrimary, theme.appWhite, theme.appLabel].enumerated()), id: \.offset) { _, color in
+                    RoundedRectangle(cornerRadius: 6, style: .continuous)
+                        .fill(color)
+                        .frame(width: 16, height: 16)
+                }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(theme.appMain)
+        }
+    }
+}
+
+struct DiagonalHalf: Shape {
+    func path(in rect: CGRect) -> Path {
+        var path = Path()
+        path.move(to: CGPoint(x: rect.minX, y: rect.maxY))
+        path.addLine(to: CGPoint(x: rect.maxX, y: rect.minY))
+        path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
+        path.closeSubpath()
+        return path
+    }
+}
+
+struct DiagonalLine: Shape {
+    func path(in rect: CGRect) -> Path {
+        var path = Path()
+        path.move(to: CGPoint(x: rect.minX, y: rect.maxY))
+        path.addLine(to: CGPoint(x: rect.maxX, y: rect.minY))
+        return path
     }
 }
 
