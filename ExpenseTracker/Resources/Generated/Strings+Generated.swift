@@ -206,8 +206,8 @@ internal enum L10n {
   internal static let settingsAppearance = L10n.tr("Localizable", "SETTINGS_APPEARANCE", fallback: "Appearance")
   /// Sounds
   internal static let settingsSounds = L10n.tr("Localizable", "SETTINGS_SOUNDS", fallback: "Sounds")
-  /// Classic
-  internal static let settingsThemeClassic = L10n.tr("Localizable", "SETTINGS_THEME_CLASSIC", fallback: "Classic")
+  /// Dark
+  internal static let settingsThemeDark = L10n.tr("Localizable", "SETTINGS_THEME_DARK", fallback: "Dark")
   /// Ember
   internal static let settingsThemeEmber = L10n.tr("Localizable", "SETTINGS_THEME_EMBER", fallback: "Ember")
   /// Forest
@@ -226,6 +226,8 @@ internal enum L10n {
   internal static let settingsThemeOrange = L10n.tr("Localizable", "SETTINGS_THEME_ORANGE", fallback: "Orange")
   /// Slate
   internal static let settingsThemeSlate = L10n.tr("Localizable", "SETTINGS_THEME_SLATE", fallback: "Slate")
+  /// System
+  internal static let settingsThemeSystem = L10n.tr("Localizable", "SETTINGS_THEME_SYSTEM", fallback: "System")
   /// Share
   internal static let share = L10n.tr("Localizable", "SHARE", fallback: "Share")
   /// Something went wrong...

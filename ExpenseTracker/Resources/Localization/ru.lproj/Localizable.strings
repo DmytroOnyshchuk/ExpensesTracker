@@ -136,7 +136,8 @@
 "DEFAULT_CATEGORY_INTERNET" = "Интернет";
 "DEFAULT_CATEGORY_TRANSPORT" = "Транспорт";
 "SETTINGS_APPEARANCE" = "Оформление";
-"SETTINGS_THEME_CLASSIC" = "Классическая";
+"SETTINGS_THEME_SYSTEM" = "Системная";
+"SETTINGS_THEME_DARK" = "Тёмная";
 "SETTINGS_THEME_EMBER" = "Угли";
 "SETTINGS_THEME_MIDNIGHT" = "Полночь";
 "SETTINGS_THEME_FOREST" = "Лес";

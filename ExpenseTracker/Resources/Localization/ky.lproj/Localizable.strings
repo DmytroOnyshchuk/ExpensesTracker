@@ -136,7 +136,8 @@
 "DEFAULT_CATEGORY_INTERNET" = "Интернет";
 "DEFAULT_CATEGORY_TRANSPORT" = "Транспорт";
 "SETTINGS_APPEARANCE" = "Көрүнүш";
-"SETTINGS_THEME_CLASSIC" = "Классикалык";
+"SETTINGS_THEME_SYSTEM" = "Системалык";
+"SETTINGS_THEME_DARK" = "Караңгы";
 "SETTINGS_THEME_EMBER" = "Чок";
 "SETTINGS_THEME_MIDNIGHT" = "Түн ортосу";
 "SETTINGS_THEME_FOREST" = "Токой";

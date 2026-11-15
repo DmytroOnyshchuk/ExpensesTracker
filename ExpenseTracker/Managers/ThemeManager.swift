@@ -1,5 +1,6 @@
 import Observation
 import SwiftUI
+import UIKit
 
 @Observable
 final class ThemeManager {
@@ -12,17 +13,42 @@ final class ThemeManager {
         didSet {
             guard preset != oldValue else { return }
             storedPreset = preset.rawValue
+            systemColorScheme = Self.currentSystemColorScheme
         }
     }
 
-    var theme: Theme { preset.theme }
+    private(set) var systemColorScheme: ColorScheme
 
-    var colorScheme: ColorScheme { theme.colorScheme }
+    var theme: Theme { preset.theme(for: systemColorScheme) }
+
+    var preferredColorScheme: ColorScheme? {
+        preset == .system ? nil : theme.colorScheme
+    }
+
+    private static var currentSystemColorScheme: ColorScheme {
+        UIScreen.main.traitCollection.userInterfaceStyle == .light ? .light : .dark
+    }
 
     private init() {
-        self.preset = .classic
-        if let storedPreset, let saved = ThemePreset(rawValue: storedPreset) {
+        self.preset = .system
+        self.systemColorScheme = Self.currentSystemColorScheme
+        if let storedPreset, let saved = ThemePreset(storedValue: storedPreset) {
             self.preset = saved
+        }
+    }
+
+    func updateSystemColorScheme(_ colorScheme: ColorScheme) {
+        guard preset == .system, colorScheme != systemColorScheme else { return }
+        systemColorScheme = colorScheme
+    }
+}
+
+struct SystemColorSchemeObserver: ViewModifier {
+    @Environment(\.colorScheme) private var colorScheme
+
+    func body(content: Content) -> some View {
+        content.onChange(of: colorScheme, initial: true) { _, colorScheme in
+            ThemeManager.shared.updateSystemColorScheme(colorScheme)
         }
     }
 }

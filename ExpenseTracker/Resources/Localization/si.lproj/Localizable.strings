@@ -136,7 +136,8 @@
 "DEFAULT_CATEGORY_INTERNET" = "අන්තර්ජාලය";
 "DEFAULT_CATEGORY_TRANSPORT" = "ප්‍රවාහනය";
 "SETTINGS_APPEARANCE" = "පෙනුම";
-"SETTINGS_THEME_CLASSIC" = "සම්භාව්‍ය";
+"SETTINGS_THEME_SYSTEM" = "පද්ධතිය";
+"SETTINGS_THEME_DARK" = "අඳුරු";
 "SETTINGS_THEME_EMBER" = "ගිනි අඟුරු";
 "SETTINGS_THEME_MIDNIGHT" = "මධ්‍යම රාත්‍රිය";
 "SETTINGS_THEME_FOREST" = "වනය";

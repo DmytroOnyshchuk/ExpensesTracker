@@ -136,7 +136,8 @@
 "DEFAULT_CATEGORY_INTERNET" = "I-inthanethi";
 "DEFAULT_CATEGORY_TRANSPORT" = "Ezokuthutha";
 "SETTINGS_APPEARANCE" = "Ukubukeka";
-"SETTINGS_THEME_CLASSIC" = "Okwakudala";
+"SETTINGS_THEME_SYSTEM" = "Isistimu";
+"SETTINGS_THEME_DARK" = "Okumnyama";
 "SETTINGS_THEME_EMBER" = "Ilahle elivuthayo";
 "SETTINGS_THEME_MIDNIGHT" = "Phakathi kwamabili";
 "SETTINGS_THEME_FOREST" = "Ihlathi";

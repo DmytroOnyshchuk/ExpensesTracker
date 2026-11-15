@@ -21,7 +21,9 @@ struct Theme {
 }
 
 enum ThemePreset: String, CaseIterable, Identifiable, Codable {
-    case classic
+    case system
+    case light
+    case dark
     case ember
     case orange
     case indigo
@@ -29,13 +31,17 @@ enum ThemePreset: String, CaseIterable, Identifiable, Codable {
     case midnight
     case forest
     case slate
-    case light
 
     var id: String { rawValue }
 
+    init?(storedValue: String) {
+        self.init(rawValue: storedValue == "classic" ? ThemePreset.dark.rawValue : storedValue)
+    }
+
     var title: String {
         switch self {
-        case .classic: L10n.settingsThemeClassic
+        case .system: L10n.settingsThemeSystem
+        case .dark: L10n.settingsThemeDark
         case .ember: L10n.settingsThemeEmber
         case .midnight: L10n.settingsThemeMidnight
         case .forest: L10n.settingsThemeForest
@@ -47,9 +53,10 @@ enum ThemePreset: String, CaseIterable, Identifiable, Codable {
         }
     }
 
-    var theme: Theme {
+    func theme(for systemColorScheme: ColorScheme) -> Theme {
         switch self {
-        case .classic: .classic
+        case .system: systemColorScheme == .dark ? .dark : .light
+        case .dark: .dark
         case .ember: .ember
         case .midnight: .midnight
         case .forest: .forest
@@ -63,7 +70,7 @@ enum ThemePreset: String, CaseIterable, Identifiable, Codable {
 }
 
 extension Theme {
-    static let classic = Theme(
+    static let dark = Theme(
         colorScheme: .dark,
         appMain: Color(hex: "#111416"),
         appSecond: Color(hex: "#1F1F21"),
@@ -194,7 +201,7 @@ extension Theme {
     static let light = Theme(
         colorScheme: .light,
         appMain: Color(hex: "#ECEFF1"),
-        appSecond: Color(hex: "#FFFFFF"),
+        appSecond: Color(hex: "#F6F8F9"),
         appLabel: Color(hex: "#6E7B8A"),
         appWhite: Color(hex: "#14263D"),
         appBlack: Color(hex: "#0E1A2B"),

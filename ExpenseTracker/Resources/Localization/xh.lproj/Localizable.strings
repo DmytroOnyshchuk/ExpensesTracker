@@ -136,7 +136,8 @@
 "DEFAULT_CATEGORY_INTERNET" = "I-intanethi";
 "DEFAULT_CATEGORY_TRANSPORT" = "Ezothutho";
 "SETTINGS_APPEARANCE" = "Inkangeleko";
-"SETTINGS_THEME_CLASSIC" = "Yakudala";
+"SETTINGS_THEME_SYSTEM" = "Inkqubo";
+"SETTINGS_THEME_DARK" = "Mnyama";
 "SETTINGS_THEME_EMBER" = "Ilahle elivuthayo";
 "SETTINGS_THEME_MIDNIGHT" = "Ezinzulwini zobusuku";
 "SETTINGS_THEME_FOREST" = "Ihlathi";

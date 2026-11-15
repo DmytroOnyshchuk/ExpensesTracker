@@ -71,7 +71,7 @@ struct ThemePresetCell: View {
     let action: () -> Void
 
     var body: some View {
-        let theme = preset.theme
+        let theme = preset.theme(for: ThemeManager.shared.systemColorScheme)
 
         Button(action: action) {
             VStack(spacing: 10) {

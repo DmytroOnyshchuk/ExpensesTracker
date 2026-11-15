@@ -136,7 +136,8 @@
 "DEFAULT_CATEGORY_INTERNET" = "အင်တာနက်";
 "DEFAULT_CATEGORY_TRANSPORT" = "သယ်ယူပို့ဆောင်ရေး";
 "SETTINGS_APPEARANCE" = "အသွင်အပြင်";
-"SETTINGS_THEME_CLASSIC" = "ဂန္ထဝင်";
+"SETTINGS_THEME_SYSTEM" = "စနစ်";
+"SETTINGS_THEME_DARK" = "အမှောင်";
 "SETTINGS_THEME_EMBER" = "မီးကျီခဲ";
 "SETTINGS_THEME_MIDNIGHT" = "သန်းခေါင်";
 "SETTINGS_THEME_FOREST" = "သစ်တော";

@@ -136,7 +136,8 @@
 "DEFAULT_CATEGORY_INTERNET" = "ინტერნეტი";
 "DEFAULT_CATEGORY_TRANSPORT" = "ტრანსპორტი";
 "SETTINGS_APPEARANCE" = "იერსახე";
-"SETTINGS_THEME_CLASSIC" = "კლასიკური";
+"SETTINGS_THEME_SYSTEM" = "სისტემური";
+"SETTINGS_THEME_DARK" = "მუქი";
 "SETTINGS_THEME_EMBER" = "ნაკვერჩხალი";
 "SETTINGS_THEME_MIDNIGHT" = "შუაღამე";
 "SETTINGS_THEME_FOREST" = "ტყე";
