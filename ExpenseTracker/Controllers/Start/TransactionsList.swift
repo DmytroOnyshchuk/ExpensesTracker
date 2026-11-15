@@ -45,7 +45,7 @@ struct TransactionsList: View {
                             .foregroundColor(.appGray.opacity(0.6))
                             .frame(maxWidth: .infinity)
                             .frame(height: 48)
-                            .listRowBackground(Color.appMain)
+                            .listRowBackground(Color.clear)
                             .listRowSeparator(.hidden)
                     } else {
                         ForEach(day.transactions, id: \.id) { transaction in
@@ -54,7 +54,7 @@ struct TransactionsList: View {
                                 .onTapGesture {
                                     editedTransaction = transaction
                                 }
-                                .listRowBackground(Color.appMain)
+                                .listRowBackground(Color.clear)
                                 .listRowSeparatorTint(.appSecond)
                                 .listRowSeparator(.hidden, edges: .top)
                                 .listRowSeparator(
@@ -75,7 +75,6 @@ struct TransactionsList: View {
         .listStyle(.plain)
         .environment(\.defaultMinListHeaderHeight, 0)
         .scrollContentBackground(.hidden)
-        .background(.appMain)
         .onScrollGeometryChange(for: CGFloat.self) { geometry in
             geometry.contentSize.height
         } action: { _, height in
@@ -139,7 +138,7 @@ struct TransactionsDayHeader: View {
         .padding(.horizontal, 16)
         .textCase(nil)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(.appSecond)
+        .background(.appSecond.opacity(0.6))
     }
 }
 
