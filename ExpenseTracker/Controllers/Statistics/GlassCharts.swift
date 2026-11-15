@@ -105,9 +105,9 @@ struct GlassDonutChart: View {
     private static let minLabelShare = 0.06
     private static let innerRatio: CGFloat = 0.56
     private static let innerBandRatio: CGFloat = 0.24
-    private static let badgeSize: CGFloat = 40
-    private static let badgeDistance: CGFloat = 30
-    private static let labelReach: CGFloat = 18
+    private static let iconSize: CGFloat = 22
+    private static let labelDistance: CGFloat = 18
+    private static let labelHalfHeight: CGFloat = 9
     private static let maxOuter: CGFloat = 105
 
     private struct Segment: Identifiable {
@@ -137,15 +137,13 @@ struct GlassDonutChart: View {
     }
 
     private func verticalExtents(_ segments: [Segment], outer: CGFloat) -> (top: CGFloat, bottom: CGFloat) {
-        let radius = outer + Self.badgeDistance
+        let radius = outer + Self.labelDistance
         var top = outer
         var bottom = outer
         for segment in segments where segment.slice.share >= Self.minLabelShare {
-            let sine = CGFloat(sin(segment.middle))
-            let offset = sine * radius
-            let half = Self.badgeSize / 2
-            top = max(top, half + (sine < 0 ? Self.labelReach : 0) - offset)
-            bottom = max(bottom, half + (sine < 0 ? 0 : Self.labelReach) + offset)
+            let offset = CGFloat(sin(segment.middle)) * radius
+            top = max(top, Self.labelHalfHeight - offset)
+            bottom = max(bottom, Self.labelHalfHeight + offset)
         }
         return (top, bottom)
     }
@@ -216,7 +214,7 @@ struct GlassDonutChart: View {
 
                 ForEach(segments) { segment in
                     if segment.slice.share >= Self.minLabelShare {
-                        badge(for: segment, center: center, radius: outer + Self.badgeDistance)
+                        label(for: segment, center: center, inner: inner, outer: outer)
                     }
                 }
             }
@@ -249,31 +247,29 @@ struct GlassDonutChart: View {
         }
     }
 
-    private func badge(for segment: Segment, center: CGPoint, radius: CGFloat) -> some View {
-        let isUpper = sin(segment.middle) < 0
+    private func label(for segment: Segment, center: CGPoint, inner: CGFloat, outer: CGFloat) -> some View {
+        let cosine = CGFloat(cos(segment.middle))
+        let sine = CGFloat(sin(segment.middle))
+        let bandEdge = inner + (outer - inner) * Self.innerBandRatio
+        let iconRadius = (bandEdge + outer) / 2
+        let iconSize = min(Self.iconSize, (outer - bandEdge) * 0.65)
+        let labelRadius = outer + Self.labelDistance
 
-        return Circle()
-            .fill(segment.color.opacity(0.22))
-            .frame(width: Self.badgeSize, height: Self.badgeSize)
-            .overlay {
-                segment.slice.category.categoryIcon.image
-                    .resizable()
-                    .scaledToFit()
-                    .foregroundColor(segment.color)
-                    .frame(width: 20, height: 20)
-            }
-            .overlay {
-                Text("\(segment.slice.percent)%")
-                    .font(.appRegular(12))
-                    .foregroundColor(segment.color)
-                    .fixedSize()
-                    .offset(y: (Self.badgeSize / 2 + 10) * (isUpper ? -1 : 1))
-            }
-            .position(
-                x: center.x + CGFloat(cos(segment.middle)) * radius,
-                y: center.y + CGFloat(sin(segment.middle)) * radius
-            )
-            .opacity(Double(progress))
+        return ZStack {
+            segment.slice.category.categoryIcon.image
+                .resizable()
+                .scaledToFit()
+                .foregroundColor(.appWhite)
+                .frame(width: iconSize, height: iconSize)
+                .position(x: center.x + cosine * iconRadius, y: center.y + sine * iconRadius)
+
+            Text("\(segment.slice.percent)%")
+                .font(.appRegular(12))
+                .foregroundColor(segment.color)
+                .fixedSize()
+                .position(x: center.x + cosine * labelRadius, y: center.y + sine * labelRadius)
+        }
+        .opacity(Double(progress))
     }
 }
 
