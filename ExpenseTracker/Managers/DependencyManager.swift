@@ -20,7 +20,7 @@ open class DependencyManager {
         Self.root = self
     }
 
-    fileprivate init() {}
+    private init() {}
 
     deinit { modules.removeAll() }
 }

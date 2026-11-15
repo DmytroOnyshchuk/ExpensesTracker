@@ -12,11 +12,10 @@ enum UDKey: String {
     case soundsEnabled = "UDKey.soundsEnabled"
 }
 
-final class UserManager: NSObject {
-    
+final class UserManager {
     static let shared = UserManager()
     
-    private override init() {}
+    private init() {}
     
     @UserDefaultCodable(.currentLanguage, defaultValue: .English) var currentLanguage: Language!
     @UserDefaultCodable(.lastApplicationEnvironment, defaultValue: .develop) var lastApplicationEnvironment: AppEnvironment!
@@ -41,7 +40,7 @@ extension UserManager {
         apiToken = nil
         userId = nil
 
-        Logger.default.logMessage("Logout end", category: className)
+        Logger.default.logMessage("Logout end", category: "UserManager")
     }
 
     func isLoggedIn() -> Bool {
