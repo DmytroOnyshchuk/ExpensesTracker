@@ -39,14 +39,28 @@ enum StatisticsPeriod: CaseIterable, Identifiable {
         Set(transactions.map { interval(containing: $0.date, calendar: calendar).start }).sorted(by: >)
     }
 
-    func average(of transactions: [Transaction], calendar: Calendar = .current) -> Int? {
-        guard let first = transactions.map(\.date).min(), let last = transactions.map(\.date).max() else { return nil }
+    var averageUnit: StatisticsPeriod? {
+        switch self {
+        case .day: nil
+        case .month: .day
+        case .year: .month
+        }
+    }
 
-        let from = interval(containing: first, calendar: calendar).start
-        let to = interval(containing: max(last, Date()), calendar: calendar).start
-        let count = (calendar.dateComponents([component], from: from, to: to).value(for: component) ?? .zero) + 1
-        let total = transactions.reduce(0) { $0 + $1.amount }
-        return total / max(count, 1)
+    func unitAverageTitle(
+        of transactions: [Transaction],
+        in interval: DateInterval,
+        now: Date = Date(),
+        calendar: Calendar = .current
+    ) -> String? {
+        guard let unit = averageUnit else { return nil }
+
+        let end = interval.contains(now) ? min(unit.interval(containing: now, calendar: calendar).end, interval.end) : interval.end
+        let count = calendar.dateComponents([unit.component], from: interval.start, to: end).value(for: unit.component) ?? .zero
+        let total = transactions
+            .filter { $0.date >= interval.start && $0.date < interval.end }
+            .reduce(0) { $0 + $1.amount }
+        return unit.averageTitle(for: (total / max(count, 1)).getAmount())
     }
 
     func average(of transactions: [Transaction], in range: DateInterval, calendar: Calendar = .current) -> Int {

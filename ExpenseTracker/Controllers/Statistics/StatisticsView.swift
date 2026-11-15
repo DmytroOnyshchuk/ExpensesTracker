@@ -37,7 +37,7 @@ struct StatisticsView: View {
                     categories: categories,
                     period: period,
                     points: period.chartPoints(of: transactions, in: interval),
-                    averageTitle: period.average(of: transactions).map { period.averageTitle(for: $0.getAmount()) },
+                    averageTitle: period.unitAverageTitle(of: transactions, in: interval),
                     onSwipe: { shiftPeriod(by: $0, from: start, in: starts) }
                 )
             }
