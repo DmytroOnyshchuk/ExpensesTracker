@@ -63,7 +63,10 @@ struct ExpensesChartView: View {
                         StatisticsBreakdown(
                             slices: StatisticsSlice.slices(from: transactions, in: selection),
                             interval: selection,
-                            categories: categories
+                            categories: categories,
+                            averageTitle: period.averageTitle(
+                                for: period.average(of: transactions, in: selection).getAmount()
+                            )
                         )
                     }
                 }

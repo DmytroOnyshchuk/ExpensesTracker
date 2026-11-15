@@ -49,6 +49,14 @@ enum StatisticsPeriod: CaseIterable, Identifiable {
         return total / max(count, 1)
     }
 
+    func average(of transactions: [Transaction], in range: DateInterval, calendar: Calendar = .current) -> Int {
+        let count = calendar.dateComponents([component], from: range.start, to: range.end).value(for: component) ?? .zero
+        let total = transactions
+            .filter { $0.date >= range.start && $0.date < range.end }
+            .reduce(0) { $0 + $1.amount }
+        return total / max(count, 1)
+    }
+
     func averageTitle(for amount: String) -> String {
         switch self {
         case .day: L10n.statisticsAveragePerDay(amount)
