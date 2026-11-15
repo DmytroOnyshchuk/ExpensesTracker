@@ -99,7 +99,7 @@ struct EditCategoryView: View {
                     .padding(.horizontal, 24)
                     .padding(.vertical, 16)
             }
-            .background(.appMain)
+            .appBackground()
             .navigationTitle(isEdit ? L10n.editCategoryTitle : L10n.editCategoryNewTitle)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -221,7 +221,7 @@ struct EditCategoryView: View {
 
             TextField(L10n.editCategoryNamePlaceholder, text: $draft.name)
                 .padding(10)
-                .background(.appMain)
+                .background(.appMain.opacity(0.5))
                 .cornerRadius(8)
                 .overlay(
                     RoundedRectangle(cornerRadius: 8)

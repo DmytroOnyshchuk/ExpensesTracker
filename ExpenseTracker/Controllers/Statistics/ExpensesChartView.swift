@@ -78,7 +78,7 @@ struct ExpensesChartView: View {
             .padding(.vertical, 16)
             .frame(maxWidth: .infinity, alignment: .top)
         }
-        .background(.appMain)
+        .appBackground()
         .navigationTitle(L10n.statisticsChart)
         .navigationBarTitleDisplayMode(.inline)
     }

@@ -38,7 +38,7 @@ struct TrashView: View {
                     .frame(maxWidth: .infinity)
                     .frame(height: 120)
                     .listRowInsets(EdgeInsets())
-                    .listRowBackground(Color.appMain)
+                    .listRowBackground(Color.clear)
                     .listRowSeparator(.hidden)
             } else {
                 ForEach(categories, id: \.id) { category in
@@ -69,7 +69,7 @@ struct TrashView: View {
         }
         .listStyle(.plain)
         .scrollContentBackground(.hidden)
-        .background(.appMain)
+        .appBackground()
         .navigationTitle(L10n.menuTrash)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
@@ -107,7 +107,7 @@ extension View {
         }
         .alignmentGuide(.listRowSeparatorLeading) { _ in 64 }
         .listRowInsets(EdgeInsets())
-        .listRowBackground(Color.appMain)
+        .listRowBackground(Color.clear)
         .listRowSeparatorTint(.appSecond)
         .listRowSeparator(.hidden, edges: .top)
         .listRowSeparator(isLast ? .hidden : .visible, edges: .bottom)

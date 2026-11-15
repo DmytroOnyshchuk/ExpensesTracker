@@ -33,7 +33,7 @@ struct HistoryView: View {
             monthTitle(start: start, starts: starts)
                 .padding(.vertical, 8)
                 .listRowInsets(EdgeInsets())
-                .listRowBackground(Color.appMain)
+                .listRowBackground(Color.clear)
                 .listRowSeparator(.hidden)
 
             if visibleTransactions.isEmpty {
@@ -42,7 +42,7 @@ struct HistoryView: View {
                     .foregroundColor(.appGray.opacity(0.6))
                     .frame(maxWidth: .infinity)
                     .frame(height: 120)
-                    .listRowBackground(Color.appMain)
+                    .listRowBackground(Color.clear)
                     .listRowSeparator(.hidden)
             } else {
                 ForEach(visibleTransactions, id: \.id) { transaction in
@@ -60,7 +60,7 @@ struct HistoryView: View {
                         }
                         .alignmentGuide(.listRowSeparatorLeading) { _ in 64 }
                         .listRowInsets(EdgeInsets())
-                        .listRowBackground(Color.appMain)
+                        .listRowBackground(Color.clear)
                         .listRowSeparatorTint(.appSecond)
                         .listRowSeparator(.hidden, edges: .top)
                         .listRowSeparator(
@@ -72,7 +72,7 @@ struct HistoryView: View {
         }
         .listStyle(.plain)
         .scrollContentBackground(.hidden)
-        .background(.appMain)
+        .appBackground()
         .navigationTitle(L10n.historyTitle)
         .navigationBarTitleDisplayMode(.inline)
         .fullScreenCover(item: $editedTransaction) { transaction in

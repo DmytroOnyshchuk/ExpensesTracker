@@ -72,7 +72,7 @@ struct CategoryColorPickerView: View {
                 .padding(.horizontal, 24)
                 .padding(.vertical, 16)
             }
-            .background(.appMain)
+            .appBackground()
             .onAppear {
                 syncWheel(with: hexInput)
             }

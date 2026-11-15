@@ -97,7 +97,7 @@ struct CategoryRow: View {
 
 extension View {
     func categoryListRow(isLast: Bool) -> some View {
-        listRowBackground(Color.appMain)
+        listRowBackground(Color.clear)
             .listRowInsets(EdgeInsets(top: 12, leading: 24, bottom: 12, trailing: 24))
             .listRowSeparatorTint(.appSecond)
             .listRowSeparator(.hidden, edges: .top)

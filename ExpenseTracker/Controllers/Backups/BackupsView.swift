@@ -45,7 +45,7 @@ struct BackupsView: View {
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .top)
         }
-        .background(.appMain)
+        .appBackground()
         .navigationTitle(L10n.menuBackups)
         .navigationBarTitleDisplayMode(.inline)
         .backupImport(from: $pickedFileURL)
@@ -347,7 +347,7 @@ struct BackupImportSheet: View {
         }
         .padding(24)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-        .background(.appMain)
+        .appBackground()
         .alert(L10n.backupsImportReplace, isPresented: $showReplaceConfirmation) {
             Button(L10n.backupsImportReplace, role: .destructive) {
                 onImport(.replace)

@@ -77,7 +77,7 @@ struct TransactionEdit: View {
                 }
             }
             .animation(.easeInOut(duration: 0.2), value: isAmountFocused || isCommentFocused)
-            .background(.appMain)
+            .appBackground()
             .navigationTitle(L10n.transactionEditTitle)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

@@ -70,7 +70,7 @@ struct SettingsView: View {
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .top)
         }
-        .background(.appMain)
+        .appBackground()
         .navigationTitle(L10n.menuSettings)
         .navigationBarTitleDisplayMode(.inline)
     }

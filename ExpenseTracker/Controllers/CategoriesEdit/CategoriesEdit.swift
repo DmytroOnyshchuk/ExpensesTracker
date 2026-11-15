@@ -57,7 +57,7 @@ struct CategoriesEdit: View {
         }
         .listStyle(.plain)
         .scrollContentBackground(.hidden)
-        .background(.appMain)
+        .appBackground()
         .navigationTitle(L10n.categoriesEditTitle)
         .toolbar {
             ToolbarItemGroup(placement: .navigationBarTrailing) {

@@ -41,7 +41,7 @@ struct TransactionCategoryPicker: View {
         }
         .listStyle(.plain)
         .scrollContentBackground(.hidden)
-        .background(.appMain)
+        .appBackground()
         .navigationTitle(folder?.name.localized ?? L10n.transactionEditCategoriesTitle)
         .navigationBarTitleDisplayMode(.inline)
         .navigationDestination(item: $openedFolder) { folder in

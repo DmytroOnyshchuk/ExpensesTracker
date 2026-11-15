@@ -20,7 +20,7 @@ struct BudgetView: View {
                 .foregroundColor(.appLabel)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(.appMain)
+        .appBackground()
         .navigationTitle(L10n.menuBudget)
         .navigationBarTitleDisplayMode(.inline)
     }

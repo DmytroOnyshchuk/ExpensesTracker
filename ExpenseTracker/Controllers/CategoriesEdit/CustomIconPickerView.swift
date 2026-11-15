@@ -98,7 +98,7 @@ struct CustomIconPickerView: View {
                 searchBar
                 iconGrid
             }
-            .background(.appMain)
+            .appBackground()
             .navigationTitle("Choose icon")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

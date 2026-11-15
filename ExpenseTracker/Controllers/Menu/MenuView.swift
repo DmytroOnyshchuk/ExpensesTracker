@@ -78,7 +78,7 @@ struct MenuView: View {
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .top)
         }
-        .background(.appMain)
+        .appBackground()
         .navigationTitle(L10n.menuTitle)
         .navigationBarTitleDisplayMode(.inline)
         .navigationDestination(isPresented: $showStatistics) {

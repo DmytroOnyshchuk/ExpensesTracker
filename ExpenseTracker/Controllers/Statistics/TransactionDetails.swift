@@ -64,7 +64,7 @@ struct TransactionDetails: View {
                 .padding(.horizontal, 80)
                 .padding(.vertical, 16)
                 .listRowInsets(EdgeInsets())
-                .listRowBackground(Color.appMain)
+                .listRowBackground(Color.clear)
                 .listRowSeparator(.hidden)
 
             if visibleTransactions.isEmpty {
@@ -74,7 +74,7 @@ struct TransactionDetails: View {
                     .frame(maxWidth: .infinity)
                     .frame(height: 120)
                     .listRowInsets(EdgeInsets())
-                    .listRowBackground(Color.appMain)
+                    .listRowBackground(Color.clear)
                     .listRowSeparator(.hidden)
             } else {
                 ForEach(visibleTransactions, id: \.id) { transaction in
@@ -91,7 +91,7 @@ struct TransactionDetails: View {
                             }
                         }
                         .listRowInsets(EdgeInsets())
-                        .listRowBackground(Color.appMain)
+                        .listRowBackground(Color.clear)
                         .listRowSeparatorTint(.appSecond)
                         .listRowSeparator(.hidden, edges: .top)
                         .listRowSeparator(
@@ -104,7 +104,7 @@ struct TransactionDetails: View {
         }
         .listStyle(.plain)
         .scrollContentBackground(.hidden)
-        .background(.appMain)
+        .appBackground()
         .navigationTitle(category.name.localized)
         .navigationBarTitleDisplayMode(.inline)
         .fullScreenCover(item: $editedTransaction) { transaction in

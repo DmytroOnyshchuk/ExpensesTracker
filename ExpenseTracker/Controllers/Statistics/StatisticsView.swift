@@ -48,7 +48,7 @@ struct StatisticsView: View {
             .padding(.vertical, 16)
             .frame(maxWidth: .infinity, alignment: .top)
         }
-        .background(.appMain)
+        .appBackground()
         .overlay {
             if showDayPicker {
                 StatisticsDayPicker(selected: start) { date in

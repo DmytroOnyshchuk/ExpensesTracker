@@ -51,9 +51,7 @@ struct StartView: View {
                 .frame(maxWidth: .infinity, alignment: .top)
                 .animation(.easeInOut(duration: 0.25), value: showCategories)
             }
-            .background {
-                AppBackground()
-            }
+            .appBackground()
             .navigationDestination(isPresented: $showHistory) {
                 HistoryView()
             }
