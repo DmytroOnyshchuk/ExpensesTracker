@@ -6,13 +6,10 @@ import UIKit
 final class ThemeManager {
     static let shared = ThemeManager()
     
-    @ObservationIgnored
-    @Inject private var userManager: UserManager
-    
     var preset: ThemePreset {
         didSet {
             guard preset != oldValue else { return }
-            userManager.theme = preset
+            UserManager.shared.theme = preset
             systemColorScheme = Self.currentSystemColorScheme
         }
     }

@@ -24,8 +24,7 @@ struct AboutView: View {
                         .foregroundColor(.appLabel)
                 }
                 .padding(.vertical, 28)
-                .padding(.horizontal, 20)
-                .frame(maxWidth: .infinity)
+                .padding(.horizontal, 64)
                 .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
 
                 VStack(spacing: 0) {
