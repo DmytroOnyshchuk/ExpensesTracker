@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Nestemäinen musta";
 "SETTINGS_THEME_SLATE" = "Liuske";
 "SETTINGS_THEME_ORANGE" = "Oranssi";
+"SETTINGS_SOUNDS" = "Äänet";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Luokat: %d";

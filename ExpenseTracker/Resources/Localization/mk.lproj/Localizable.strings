@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Течно црно";
 "SETTINGS_THEME_SLATE" = "Шкрилец";
 "SETTINGS_THEME_ORANGE" = "Портокалова";
+"SETTINGS_SOUNDS" = "Звуци";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Категории: %d";

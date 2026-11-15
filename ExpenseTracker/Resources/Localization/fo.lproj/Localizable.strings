@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Flótandi svart";
 "SETTINGS_THEME_SLATE" = "Fløgugrót";
 "SETTINGS_THEME_ORANGE" = "Appilsingult";
+"SETTINGS_SOUNDS" = "Ljóð";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Bólkar: %d";

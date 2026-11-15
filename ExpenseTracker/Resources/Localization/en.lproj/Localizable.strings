@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Liquid black";
 "SETTINGS_THEME_SLATE" = "Slate";
 "SETTINGS_THEME_ORANGE" = "Orange";
+"SETTINGS_SOUNDS" = "Sounds";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categories: %d";

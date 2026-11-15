@@ -117,12 +117,12 @@ struct StartView: View {
     }
 
     private func openCommentInput() {
-        FeedbackManager.buttonTapped()
+        FeedbackManager.shared.buttonTapped()
         showCommentInput = true
     }
 
     private func openBalanceInput() {
-        FeedbackManager.buttonTapped()
+        FeedbackManager.shared.buttonTapped()
         showBalanceInput = true
     }
 
@@ -137,7 +137,7 @@ struct StartView: View {
     private func addTransaction(with category: TransactionCategory) -> Bool {
         guard input.amount != .zero else {
             amountAttentionTrigger += 1
-            FeedbackManager.amountMissing()
+            FeedbackManager.shared.amountMissing()
             return false
         }
 
@@ -152,7 +152,7 @@ struct StartView: View {
         let previousComment = comment
 
         modelContext.insert(transaction)
-        FeedbackManager.transactionAdded()
+        FeedbackManager.shared.transactionAdded()
         input.reset()
         comment = ""
 

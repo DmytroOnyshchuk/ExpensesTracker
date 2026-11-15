@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "ದ್ರವ ಕಪ್ಪು";
 "SETTINGS_THEME_SLATE" = "ಸ್ಲೇಟ್";
 "SETTINGS_THEME_ORANGE" = "ಕಿತ್ತಳೆ";
+"SETTINGS_SOUNDS" = "ಧ್ವನಿಗಳು";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "ವರ್ಗಗಳು: %d";

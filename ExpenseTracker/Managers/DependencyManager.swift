@@ -27,7 +27,7 @@ open class DependencyManager {
 
 extension DependencyManager {
     /// Composition root container of dependencies.
-    fileprivate static var root = DependencyManager()
+    fileprivate static var root = DependencyManager.makeDefault()
 
     /// Registers a specific type and its instantiating factory.
     private func add(module: Module) {

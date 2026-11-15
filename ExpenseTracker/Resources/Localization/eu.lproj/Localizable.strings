@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Beltz likidoa";
 "SETTINGS_THEME_SLATE" = "Arbela";
 "SETTINGS_THEME_ORANGE" = "Laranja";
+"SETTINGS_SOUNDS" = "Soinuak";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategoriak: %d";

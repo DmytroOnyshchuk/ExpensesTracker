@@ -9,14 +9,21 @@ enum UDKey: String {
     case balance = "UDKey.balance"
     case theme = "UDKey.theme"
     case statisticsChartStyle = "UDKey.statisticsChartStyle"
+    case soundsEnabled = "UDKey.soundsEnabled"
 }
 
 final class UserManager: NSObject {
+    
+    static let shared = UserManager()
+    
+    private override init() {}
+    
     @UserDefaultCodable(.currentLanguage, defaultValue: .English) var currentLanguage: Language!
     @UserDefaultCodable(.lastApplicationEnvironment, defaultValue: .develop) var lastApplicationEnvironment: AppEnvironment!
     @UserDefault(.fcmToken, defaultValue: nil) var fcmToken: String?
     @UserDefault(.apiToken, defaultValue: nil) var apiToken: String?
     @UserDefault(.userId, defaultValue: nil) var userId: String?
+    @UserDefault(.soundsEnabled, defaultValue: true) var soundsEnabled: Bool!
 }
 
 extension UserManager {

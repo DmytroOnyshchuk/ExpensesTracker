@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Negre líquid";
 "SETTINGS_THEME_SLATE" = "Pissarra";
 "SETTINGS_THEME_ORANGE" = "Taronja";
+"SETTINGS_SOUNDS" = "Sons";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categories: %d";

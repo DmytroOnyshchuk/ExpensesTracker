@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Pango wai";
 "SETTINGS_THEME_SLATE" = "Kōhatu papa";
 "SETTINGS_THEME_ORANGE" = "Karaka";
+"SETTINGS_SOUNDS" = "Ngā oro";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Ngā kāwai: %d";

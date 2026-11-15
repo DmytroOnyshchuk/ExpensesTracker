@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "ڕەشی شل";
 "SETTINGS_THEME_SLATE" = "بەردەتاش";
 "SETTINGS_THEME_ORANGE" = "پرتەقاڵی";
+"SETTINGS_SOUNDS" = "دەنگەکان";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "پۆلەکان: %d";

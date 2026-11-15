@@ -62,7 +62,7 @@ struct AboutView: View {
     }
 
     private func rate() {
-        FeedbackManager.buttonTapped()
+        FeedbackManager.shared.buttonTapped()
         requestReview()
     }
 }

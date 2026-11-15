@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "E zezë e lëngshme";
 "SETTINGS_THEME_SLATE" = "Rrasë";
 "SETTINGS_THEME_ORANGE" = "Portokalli";
+"SETTINGS_SOUNDS" = "Tingujt";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategori: %d";

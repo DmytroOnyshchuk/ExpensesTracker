@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "द्रव काळा";
 "SETTINGS_THEME_SLATE" = "स्लेट";
 "SETTINGS_THEME_ORANGE" = "नारिंगी";
+"SETTINGS_SOUNDS" = "ध्वनी";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "श्रेण्या: %d";

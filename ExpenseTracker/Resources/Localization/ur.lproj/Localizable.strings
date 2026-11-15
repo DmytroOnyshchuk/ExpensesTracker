@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "مائع سیاہ";
 "SETTINGS_THEME_SLATE" = "سلیٹ";
 "SETTINGS_THEME_ORANGE" = "نارنجی";
+"SETTINGS_SOUNDS" = "آوازیں";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "زمرے: %d";

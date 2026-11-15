@@ -152,7 +152,7 @@ struct HistoryView: View {
 
     private func shiftMonth(by value: Int, from start: Date, in starts: [Date]) {
         guard let target = neighbour(of: start, by: value, in: starts) else { return }
-        FeedbackManager.selectionChanged()
+        FeedbackManager.shared.selectionChanged()
         select(target, from: start)
     }
 

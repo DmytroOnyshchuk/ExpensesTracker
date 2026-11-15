@@ -1,7 +1,10 @@
 import SwiftUI
 
 struct SettingsView: View {
-    private let themeManager = ThemeManager.shared
+    @State private var soundsEnabled = FeedbackManager.shared.soundIsEnable
+
+    @Inject private var themeManager: ThemeManager
+    @Inject private var feedbackManager: FeedbackManager
 
     private let columns = Array(repeating: GridItem(.flexible(), spacing: 12), count: 3)
 
@@ -22,6 +25,28 @@ struct SettingsView: View {
                 }
                 .padding(16)
                 .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
+
+                Toggle(isOn: $soundsEnabled) {
+                    HStack(spacing: 16) {
+                        Image(systemName: "speaker.wave.2")
+                            .font(.system(size: 22))
+                            .foregroundColor(.appPrimary)
+                            .frame(width: 32)
+
+                        Text(L10n.settingsSounds)
+                            .font(.appLight(18))
+                            .foregroundColor(.appWhite)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.7)
+                    }
+                }
+                .padding(.horizontal, 20)
+                .frame(height: 60)
+                .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
+                .padding(.top, 6)
+                .onChange(of: soundsEnabled) { _, isEnabled in
+                    feedbackManager.enableSound(isEnabled)
+                }
             }
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .top)
@@ -33,7 +58,7 @@ struct SettingsView: View {
 
     private func select(_ preset: ThemePreset) {
         guard preset != themeManager.preset else { return }
-        FeedbackManager.buttonTapped()
+        feedbackManager.buttonTapped()
         withAnimation(.easeInOut(duration: 0.25)) {
             themeManager.preset = preset
         }

@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "أسود سائل";
 "SETTINGS_THEME_SLATE" = "أردواز";
 "SETTINGS_THEME_ORANGE" = "برتقالي";
+"SETTINGS_SOUNDS" = "الأصوات";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "الفئات: %d";

@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Baƙi mai ruwa";
 "SETTINGS_THEME_SLATE" = "Dutsen allo";
 "SETTINGS_THEME_ORANGE" = "Ruwan lemu";
+"SETTINGS_SOUNDS" = "Sautuka";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Rukunoni: %d";

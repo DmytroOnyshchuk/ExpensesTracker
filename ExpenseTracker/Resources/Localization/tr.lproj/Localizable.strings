@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Sıvı siyah";
 "SETTINGS_THEME_SLATE" = "Arduvaz";
 "SETTINGS_THEME_ORANGE" = "Turuncu";
+"SETTINGS_SOUNDS" = "Sesler";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategoriler: %d";

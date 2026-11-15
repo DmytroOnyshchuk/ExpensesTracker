@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Šķidri melns";
 "SETTINGS_THEME_SLATE" = "Šīferis";
 "SETTINGS_THEME_ORANGE" = "Oranža";
+"SETTINGS_SOUNDS" = "Skaņas";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorijas: %d";

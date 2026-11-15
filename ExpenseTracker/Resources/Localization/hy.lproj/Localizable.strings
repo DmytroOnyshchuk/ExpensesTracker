@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Հեղուկ սև";
 "SETTINGS_THEME_SLATE" = "Թերթաքար";
 "SETTINGS_THEME_ORANGE" = "Նարնջագույն";
+"SETTINGS_SOUNDS" = "Ձայներ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Կատեգորիաներ՝ %d";

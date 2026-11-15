@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Flytande svart";
 "SETTINGS_THEME_SLATE" = "Skiffer";
 "SETTINGS_THEME_ORANGE" = "Orange";
+"SETTINGS_SOUNDS" = "Ljud";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorier: %d";

@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Vedel must";
 "SETTINGS_THEME_SLATE" = "Kiltkivi";
 "SETTINGS_THEME_ORANGE" = "Oranž";
+"SETTINGS_SOUNDS" = "Helid";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategooriad: %d";

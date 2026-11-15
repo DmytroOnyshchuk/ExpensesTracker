@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Шингэн хар";
 "SETTINGS_THEME_SLATE" = "Занар";
 "SETTINGS_THEME_ORANGE" = "Улбар шар";
+"SETTINGS_SOUNDS" = "Дуу";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Ангилал: %d";

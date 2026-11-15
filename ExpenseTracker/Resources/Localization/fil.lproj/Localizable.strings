@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Likidong itim";
 "SETTINGS_THEME_SLATE" = "Slate";
 "SETTINGS_THEME_ORANGE" = "Kahel";
+"SETTINGS_SOUNDS" = "Mga tunog";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Mga kategorya: %d";

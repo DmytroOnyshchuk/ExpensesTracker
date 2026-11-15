@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Đen lỏng";
 "SETTINGS_THEME_SLATE" = "Đá phiến";
 "SETTINGS_THEME_ORANGE" = "Cam";
+"SETTINGS_SOUNDS" = "Âm thanh";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Danh mục: %d";

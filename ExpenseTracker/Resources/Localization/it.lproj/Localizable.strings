@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Nero liquido";
 "SETTINGS_THEME_SLATE" = "Ardesia";
 "SETTINGS_THEME_ORANGE" = "Arancione";
+"SETTINGS_SOUNDS" = "Suoni";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categorie: %d";

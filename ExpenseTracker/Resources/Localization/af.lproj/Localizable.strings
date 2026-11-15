@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Vloeibare swart";
 "SETTINGS_THEME_SLATE" = "Leiklip";
 "SETTINGS_THEME_ORANGE" = "Oranje";
+"SETTINGS_SOUNDS" = "Klanke";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorieë: %d";

@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Nyeusi kiowevu";
 "SETTINGS_THEME_SLATE" = "Jiwe la grife";
 "SETTINGS_THEME_ORANGE" = "Machungwa";
+"SETTINGS_SOUNDS" = "Sauti";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Aina: %d";

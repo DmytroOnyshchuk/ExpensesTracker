@@ -328,7 +328,7 @@ struct ExpensesChart: View {
         let updated = DateInterval(start: start, end: end)
         guard updated != selection else { return }
 
-        FeedbackManager.selectionChanged()
+        FeedbackManager.shared.selectionChanged()
         selection = updated
     }
 

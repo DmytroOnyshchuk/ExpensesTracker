@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "အရည်အနက်";
 "SETTINGS_THEME_SLATE" = "ကျောက်သင်ပုန်း";
 "SETTINGS_THEME_ORANGE" = "လိမ္မော်ရောင်";
+"SETTINGS_SOUNDS" = "အသံများ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "အမျိုးအစားများ- %d";

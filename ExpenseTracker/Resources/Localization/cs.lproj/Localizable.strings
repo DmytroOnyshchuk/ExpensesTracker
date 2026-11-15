@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Tekutá černá";
 "SETTINGS_THEME_SLATE" = "Břidlice";
 "SETTINGS_THEME_ORANGE" = "Oranžová";
+"SETTINGS_SOUNDS" = "Zvuky";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorie: %d";

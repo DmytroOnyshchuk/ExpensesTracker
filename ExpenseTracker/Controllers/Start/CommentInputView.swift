@@ -104,7 +104,7 @@ struct CommentInputView: View {
     }
 
     private func tap(_ action: () -> Void) {
-        FeedbackManager.buttonTapped()
+        FeedbackManager.shared.buttonTapped()
         action()
     }
 

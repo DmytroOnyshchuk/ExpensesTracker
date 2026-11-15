@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Iswed likwidu";
 "SETTINGS_THEME_SLATE" = "Lavanja";
 "SETTINGS_THEME_ORANGE" = "Oranġjo";
+"SETTINGS_SOUNDS" = "Ħsejjes";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategoriji: %d";

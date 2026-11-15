@@ -82,7 +82,7 @@ private struct UndoToastModifier: ViewModifier {
             .overlay(alignment: .bottom) {
                 if let item = center.item {
                     UndoToastView(message: item.message) {
-                        FeedbackManager.buttonTapped()
+                        FeedbackManager.shared.buttonTapped()
                         center.undo()
                     }
                     .id(item.id)

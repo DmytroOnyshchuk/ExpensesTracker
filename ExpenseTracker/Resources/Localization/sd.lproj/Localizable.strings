@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "پاڻياٺو ڪارو";
 "SETTINGS_THEME_SLATE" = "سليٽ";
 "SETTINGS_THEME_ORANGE" = "نارنگي";
+"SETTINGS_SOUNDS" = "آواز";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "درجا: %d";

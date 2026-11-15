@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "თხევადი შავი";
 "SETTINGS_THEME_SLATE" = "ფიქალი";
 "SETTINGS_THEME_ORANGE" = "ნარინჯისფერი";
+"SETTINGS_SOUNDS" = "ხმები";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "კატეგორიები: %d";

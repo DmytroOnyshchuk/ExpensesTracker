@@ -204,6 +204,8 @@ internal enum L10n {
   internal static let save = L10n.tr("Localizable", "SAVE", fallback: "Save")
   /// Appearance
   internal static let settingsAppearance = L10n.tr("Localizable", "SETTINGS_APPEARANCE", fallback: "Appearance")
+  /// Sounds
+  internal static let settingsSounds = L10n.tr("Localizable", "SETTINGS_SOUNDS", fallback: "Sounds")
   /// Classic
   internal static let settingsThemeClassic = L10n.tr("Localizable", "SETTINGS_THEME_CLASSIC", fallback: "Classic")
   /// Ember

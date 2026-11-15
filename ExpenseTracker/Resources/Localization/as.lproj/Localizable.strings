@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "তৰল ক'লা";
 "SETTINGS_THEME_SLATE" = "শ্লেট";
 "SETTINGS_THEME_ORANGE" = "কমলা";
+"SETTINGS_SOUNDS" = "ধ্বনি";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "শ্ৰেণী: %d";

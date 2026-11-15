@@ -71,7 +71,7 @@ struct BackupsView: View {
     }
 
     private func chooseFormat() {
-        FeedbackManager.buttonTapped()
+        FeedbackManager.shared.buttonTapped()
         isChoosingFormat = true
     }
 
@@ -88,7 +88,7 @@ struct BackupsView: View {
     }
 
     private func startImport() {
-        FeedbackManager.buttonTapped()
+        FeedbackManager.shared.buttonTapped()
         isImporting = true
     }
 
@@ -217,7 +217,7 @@ struct BackupFormatPopup: View {
 
     private func select(_ format: BackupExportFormat) {
         guard format != selection else { return }
-        FeedbackManager.selectionChanged()
+        FeedbackManager.shared.selectionChanged()
         selection = format
     }
 }

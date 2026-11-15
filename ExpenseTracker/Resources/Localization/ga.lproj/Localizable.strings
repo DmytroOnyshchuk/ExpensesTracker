@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Dubh leachtach";
 "SETTINGS_THEME_SLATE" = "Slinn";
 "SETTINGS_THEME_ORANGE" = "Oráiste";
+"SETTINGS_SOUNDS" = "Fuaimeanna";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Catagóirí: %d";

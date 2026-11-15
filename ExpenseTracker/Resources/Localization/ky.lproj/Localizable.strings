@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "Суюк кара";
 "SETTINGS_THEME_SLATE" = "Шифер";
 "SETTINGS_THEME_ORANGE" = "Кызгылт сары";
+"SETTINGS_SOUNDS" = "Үндөр";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Категориялар: %d";

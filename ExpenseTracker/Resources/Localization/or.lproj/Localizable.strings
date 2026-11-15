@@ -145,6 +145,7 @@
 "SETTINGS_THEME_LIQUID_BLACK" = "ତରଳ କଳା";
 "SETTINGS_THEME_SLATE" = "ସ୍ଲେଟ୍";
 "SETTINGS_THEME_ORANGE" = "କମଳା";
+"SETTINGS_SOUNDS" = "ଧ୍ୱନି";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "ଶ୍ରେଣୀ: %d";
