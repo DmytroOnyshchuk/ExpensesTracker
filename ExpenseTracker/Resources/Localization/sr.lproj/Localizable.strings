@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "Индиго";
 "SETTINGS_THEME_LIQUID_BLACK" = "Течна црна";
 "SETTINGS_THEME_SLATE" = "Шкриљац";
+"SETTINGS_THEME_ORANGE" = "Наранџаста";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Категорије: %d";

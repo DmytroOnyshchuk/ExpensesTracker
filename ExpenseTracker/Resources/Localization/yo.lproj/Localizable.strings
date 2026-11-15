@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "Aró";
 "SETTINGS_THEME_LIQUID_BLACK" = "Dúdú olómi";
 "SETTINGS_THEME_SLATE" = "Òkúta síléètì";
+"SETTINGS_THEME_ORANGE" = "Ọsàn";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Àwọn ẹ̀ka: %d";

@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "ʻInikō";
 "SETTINGS_THEME_LIQUID_BLACK" = "ʻEleʻele wai";
 "SETTINGS_THEME_SLATE" = "Pōhaku papa";
+"SETTINGS_THEME_ORANGE" = "ʻAlani";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Nā māhele: %d";

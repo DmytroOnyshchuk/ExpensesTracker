@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "ਨੀਲ";
 "SETTINGS_THEME_LIQUID_BLACK" = "ਤਰਲ ਕਾਲਾ";
 "SETTINGS_THEME_SLATE" = "ਸਲੇਟ";
+"SETTINGS_THEME_ORANGE" = "ਸੰਤਰੀ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "ਸ਼੍ਰੇਣੀਆਂ: %d";

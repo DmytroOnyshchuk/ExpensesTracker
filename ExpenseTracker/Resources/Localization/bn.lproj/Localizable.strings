@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "নীল";
 "SETTINGS_THEME_LIQUID_BLACK" = "তরল কালো";
 "SETTINGS_THEME_SLATE" = "স্লেট";
+"SETTINGS_THEME_ORANGE" = "কমলা";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "বিভাগ: %d";

@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "نیلي";
 "SETTINGS_THEME_LIQUID_BLACK" = "مایع تور";
 "SETTINGS_THEME_SLATE" = "سلېټ";
+"SETTINGS_THEME_ORANGE" = "نارنجي";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "کټګورۍ: %d";

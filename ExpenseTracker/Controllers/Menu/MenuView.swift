@@ -10,17 +10,19 @@ import SwiftData
 import SwiftUI
 
 enum MenuItem: CaseIterable, Identifiable {
+    case categories
     case settings
     case backups
     case language
     case about
 
-    static let sections: [[MenuItem]] = [[.settings, .backups], [.language, .about]]
+    static let sections: [[MenuItem]] = [[.categories, .settings, .backups], [.language, .about]]
 
     var id: Self { self }
 
     var title: String {
         switch self {
+        case .categories: L10n.categoryGridAllCategories
         case .settings: L10n.menuSettings
         case .backups: L10n.menuBackups
         case .language: L10n.menuLanguage
@@ -30,6 +32,7 @@ enum MenuItem: CaseIterable, Identifiable {
 
     var systemImage: String {
         switch self {
+        case .categories: "square.grid.2x2"
         case .settings: "slider.horizontal.3"
         case .backups: "externaldrive"
         case .language: "globe"
@@ -42,6 +45,7 @@ struct MenuView: View {
     @Query private var transactions: [Transaction]
 
     @State private var showStatistics = false
+    @State private var showCategories = false
     @State private var showSettings = false
     @State private var showBackups = false
     @State private var showAbout = false
@@ -74,6 +78,9 @@ struct MenuView: View {
         .navigationDestination(isPresented: $showStatistics) {
             StatisticsView()
         }
+        .navigationDestination(isPresented: $showCategories) {
+            CategoriesEdit()
+        }
         .navigationDestination(isPresented: $showSettings) {
             SettingsView()
         }
@@ -98,6 +105,7 @@ struct MenuView: View {
 
     private func open(_ item: MenuItem) {
         switch item {
+        case .categories: showCategories = true
         case .settings: showSettings = true
         case .backups: showBackups = true
         case .language: UIApplication.shared.openSettings()

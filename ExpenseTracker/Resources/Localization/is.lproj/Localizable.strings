@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "Indígó";
 "SETTINGS_THEME_LIQUID_BLACK" = "Fljótandi svart";
 "SETTINGS_THEME_SLATE" = "Flöguberg";
+"SETTINGS_THEME_ORANGE" = "Appelsínugult";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Flokkar: %d";

@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "Indigo";
 "SETTINGS_THEME_LIQUID_BLACK" = "Tekutá čierna";
 "SETTINGS_THEME_SLATE" = "Bridlica";
+"SETTINGS_THEME_ORANGE" = "Oranžová";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategórie: %d";

@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "Indigo";
 "SETTINGS_THEME_LIQUID_BLACK" = "Flytende svart";
 "SETTINGS_THEME_SLATE" = "Skifer";
+"SETTINGS_THEME_ORANGE" = "Oransje";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorier: %d";

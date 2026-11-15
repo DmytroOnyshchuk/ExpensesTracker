@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "Çîvît";
 "SETTINGS_THEME_LIQUID_BLACK" = "Reşa şil";
 "SETTINGS_THEME_SLATE" = "Kevirê reş";
+"SETTINGS_THEME_ORANGE" = "Pirteqalî";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorî: %d";

@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "Індыга";
 "SETTINGS_THEME_LIQUID_BLACK" = "Вадкі чорны";
 "SETTINGS_THEME_SLATE" = "Сланец";
+"SETTINGS_THEME_ORANGE" = "Аранжавы";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Катэгорыі: %d";

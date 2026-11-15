@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "నీలిమందు";
 "SETTINGS_THEME_LIQUID_BLACK" = "ద్రవ నలుపు";
 "SETTINGS_THEME_SLATE" = "స్లేట్";
+"SETTINGS_THEME_ORANGE" = "నారింజ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "వర్గాలు: %d";

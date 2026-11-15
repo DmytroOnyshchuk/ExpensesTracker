@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "கருநீலம்";
 "SETTINGS_THEME_LIQUID_BLACK" = "திரவக் கருப்பு";
 "SETTINGS_THEME_SLATE" = "ஸ்லேட்";
+"SETTINGS_THEME_ORANGE" = "ஆரஞ்சு";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "வகைகள்: %d";

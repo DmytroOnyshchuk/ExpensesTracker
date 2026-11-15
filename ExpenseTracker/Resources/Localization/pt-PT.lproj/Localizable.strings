@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "Índigo";
 "SETTINGS_THEME_LIQUID_BLACK" = "Preto líquido";
 "SETTINGS_THEME_SLATE" = "Ardósia";
+"SETTINGS_THEME_ORANGE" = "Laranja";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categorias: %d";

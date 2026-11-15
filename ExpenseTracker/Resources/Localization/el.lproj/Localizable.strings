@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "Λουλακί";
 "SETTINGS_THEME_LIQUID_BLACK" = "Υγρό μαύρο";
 "SETTINGS_THEME_SLATE" = "Σχιστόλιθος";
+"SETTINGS_THEME_ORANGE" = "Πορτοκαλί";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Κατηγορίες: %d";

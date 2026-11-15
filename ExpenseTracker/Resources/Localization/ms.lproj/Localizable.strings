@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "Nila";
 "SETTINGS_THEME_LIQUID_BLACK" = "Hitam cecair";
 "SETTINGS_THEME_SLATE" = "Batu loh";
+"SETTINGS_THEME_ORANGE" = "Jingga";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategori: %d";

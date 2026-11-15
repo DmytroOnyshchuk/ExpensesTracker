@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "Indigó";
 "SETTINGS_THEME_LIQUID_BLACK" = "Folyékony fekete";
 "SETTINGS_THEME_SLATE" = "Pala";
+"SETTINGS_THEME_ORANGE" = "Narancs";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategóriák: %d";

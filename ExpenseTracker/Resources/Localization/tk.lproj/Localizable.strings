@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "Indigo";
 "SETTINGS_THEME_LIQUID_BLACK" = "Suwuk gara";
 "SETTINGS_THEME_SLATE" = "Slanes";
+"SETTINGS_THEME_ORANGE" = "Mämişi";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategoriýalar: %d";

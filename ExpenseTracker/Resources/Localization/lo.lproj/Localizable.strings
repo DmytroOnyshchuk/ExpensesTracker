@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "ຄາມ";
 "SETTINGS_THEME_LIQUID_BLACK" = "ດຳແຫຼວ";
 "SETTINGS_THEME_SLATE" = "ຫີນຊະນວນ";
+"SETTINGS_THEME_ORANGE" = "ສີສົ້ມ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "ໝວດໝູ່: %d";

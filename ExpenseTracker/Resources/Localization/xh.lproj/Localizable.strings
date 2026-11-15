@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "Indigo";
 "SETTINGS_THEME_LIQUID_BLACK" = "Mnyama olulwelo";
 "SETTINGS_THEME_SLATE" = "Ilitye lesileyiti";
+"SETTINGS_THEME_ORANGE" = "Orenji";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Iindidi: %d";

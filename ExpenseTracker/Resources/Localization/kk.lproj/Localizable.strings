@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "Индиго";
 "SETTINGS_THEME_LIQUID_BLACK" = "Сұйық қара";
 "SETTINGS_THEME_SLATE" = "Тақтатас";
+"SETTINGS_THEME_ORANGE" = "Қызғылт сары";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Санаттар: %d";

@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "نیلا";
 "SETTINGS_THEME_LIQUID_BLACK" = "مائع سیاہ";
 "SETTINGS_THEME_SLATE" = "سلیٹ";
+"SETTINGS_THEME_ORANGE" = "نارنجی";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "زمرے: %d";

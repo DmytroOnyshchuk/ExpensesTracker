@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "ኢንዲጎ";
 "SETTINGS_THEME_LIQUID_BLACK" = "ፈሳሽ ጥቁር";
 "SETTINGS_THEME_SLATE" = "ስሌት";
+"SETTINGS_THEME_ORANGE" = "ብርቱካናማ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "ምድቦች፦ %d";

@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "نىل رەڭ";
 "SETTINGS_THEME_LIQUID_BLACK" = "سۇيۇق قارا";
 "SETTINGS_THEME_SLATE" = "تاختا تاش";
+"SETTINGS_THEME_ORANGE" = "قىزغۇچ سېرىق";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "تۈرلەر: %d";

@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "คราม";
 "SETTINGS_THEME_LIQUID_BLACK" = "ดำเหลว";
 "SETTINGS_THEME_SLATE" = "หินชนวน";
+"SETTINGS_THEME_ORANGE" = "ส้ม";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "หมวดหมู่: %d";

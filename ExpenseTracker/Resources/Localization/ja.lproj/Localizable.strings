@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "インディゴ";
 "SETTINGS_THEME_LIQUID_BLACK" = "リキッドブラック";
 "SETTINGS_THEME_SLATE" = "スレート";
+"SETTINGS_THEME_ORANGE" = "オレンジ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "カテゴリ：%d";

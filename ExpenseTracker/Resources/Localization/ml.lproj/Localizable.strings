@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "ഇൻഡിഗോ";
 "SETTINGS_THEME_LIQUID_BLACK" = "ദ്രാവക കറുപ്പ്";
 "SETTINGS_THEME_SLATE" = "സ്ലേറ്റ്";
+"SETTINGS_THEME_ORANGE" = "ഓറഞ്ച്";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "വിഭാഗങ്ങൾ: %d";

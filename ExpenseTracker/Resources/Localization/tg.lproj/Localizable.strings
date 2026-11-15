@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "Нилӣ";
 "SETTINGS_THEME_LIQUID_BLACK" = "Сиёҳи моеъ";
 "SETTINGS_THEME_SLATE" = "Сланец";
+"SETTINGS_THEME_ORANGE" = "Норанҷӣ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Категорияҳо: %d";

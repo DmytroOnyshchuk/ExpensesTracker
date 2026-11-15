@@ -144,6 +144,7 @@
 "SETTINGS_THEME_INDIGO" = "نیلی";
 "SETTINGS_THEME_LIQUID_BLACK" = "سیاه مایع";
 "SETTINGS_THEME_SLATE" = "تخته‌سنگ";
+"SETTINGS_THEME_ORANGE" = "نارنجی";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "دسته‌ها: %d";
