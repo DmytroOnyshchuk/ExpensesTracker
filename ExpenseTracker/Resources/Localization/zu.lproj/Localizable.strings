@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Isamba esichithiwe · %@";
 "MENU_LANGUAGE" = "Ulimi";
 "MENU_ABOUT" = "Mayelana";
+"MENU_TRASH" = "Udoti";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Udoti awunalutho";
+"TRASH_RESTORE" = "Buyisela";
+"TRASH_CLEAR_CONFIRMATION" = "Zonke izinto ezisodotini zizosuswa unomphela. Lesi senzo asikwazi ukuhlehliswa.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Inguqulo %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Umbala";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Susa isigaba";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Susa ifolda";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Lesi senzo asikwazi ukuhlehliswa. Konke okwenziwe kulesi sigaba kuzosuswa.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Isigaba nayo yonke imisebenzi yaso kuzothuthelwa kudoti.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Igama lesigaba";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Isigaba esisha";
 "EDIT_CATEGORY_CREATE" = "Dala";

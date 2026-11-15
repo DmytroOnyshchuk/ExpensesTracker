@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Guztira gastatua · %@";
 "MENU_LANGUAGE" = "Hizkuntza";
 "MENU_ABOUT" = "Honi buruz";
+"MENU_TRASH" = "Zakarrontzia";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Zakarrontzia hutsik dago";
+"TRASH_RESTORE" = "Leheneratu";
+"TRASH_CLEAR_CONFIRMATION" = "Zakarrontziko elementu guztiak behin betiko ezabatuko dira. Ekintza hau ezin da desegin.";
 
 // MARK: - About
 "ABOUT_VERSION" = "%@ bertsioa";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Kolorea";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Ezabatu kategoria";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Ezabatu karpeta";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ekintza hau ezin da desegin. Kategoria honetako transakzio guztiak ezabatuko dira.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kategoria eta bere transakzio guztiak zakarrontzira eramango dira.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Kategoriaren izena";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Kategoria berria";
 "EDIT_CATEGORY_CREATE" = "Sortu";

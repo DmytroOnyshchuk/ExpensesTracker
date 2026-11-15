@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Барлығы жұмсалды · %@";
 "MENU_LANGUAGE" = "Тіл";
 "MENU_ABOUT" = "Қолданба туралы";
+"MENU_TRASH" = "Себет";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Себет бос";
+"TRASH_RESTORE" = "Қалпына келтіру";
+"TRASH_CLEAR_CONFIRMATION" = "Себеттегі барлық элементтер біржола жойылады. Бұл әрекетті қайтару мүмкін емес.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Нұсқа %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Түс";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Санатты жою";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Қалтаны жою";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Бұл әрекетті қайтару мүмкін емес. Осы санаттағы барлық транзакциялар жойылады.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Санат пен оның барлық транзакциялары себетке жылжытылады.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Санат атауы";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Жаңа санат";
 "EDIT_CATEGORY_CREATE" = "Жасау";

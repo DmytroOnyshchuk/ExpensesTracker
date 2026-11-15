@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Выдаткавана за %@";
 "MENU_LANGUAGE" = "Мова";
 "MENU_ABOUT" = "Пра праграму";
+"MENU_TRASH" = "Сметніца";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Сметніца пустая";
+"TRASH_RESTORE" = "Аднавіць";
+"TRASH_CLEAR_CONFIRMATION" = "Усе элементы ў сметніцы будуць выдалены назаўсёды. Гэта дзеянне нельга адмяніць.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Версія %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Колер";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Выдаліць катэгорыю";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Выдаліць папку";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Гэта дзеянне нельга скасаваць. Усе транзакцыі з гэтай катэгорыяй будуць выдалены.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Катэгорыя і ўсе яе транзакцыі будуць перамешчаны ў сметніцу.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Назва катэгорыі";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Новая катэгорыя";
 "EDIT_CATEGORY_CREATE" = "Стварыць";

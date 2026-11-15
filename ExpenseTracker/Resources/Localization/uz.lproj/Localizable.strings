@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Jami sarflandi · %@";
 "MENU_LANGUAGE" = "Til";
 "MENU_ABOUT" = "Ilova haqida";
+"MENU_TRASH" = "Savat";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Savat bo'sh";
+"TRASH_RESTORE" = "Tiklash";
+"TRASH_CLEAR_CONFIRMATION" = "Savatdagi barcha elementlar butunlay o'chiriladi. Bu amalni ortga qaytarib bo'lmaydi.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Versiya %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Rang";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Turkumni oʻchirish";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Jildni oʻchirish";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Bu amalni ortga qaytarib boʻlmaydi. Bu turkumdagi barcha tranzaksiyalar oʻchiriladi.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Turkum va uning barcha tranzaksiyalari savatga ko'chiriladi.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Turkum nomi";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Yangi turkum";
 "EDIT_CATEGORY_CREATE" = "Yaratish";

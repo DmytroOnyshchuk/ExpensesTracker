@@ -11,8 +11,8 @@ struct BackupShareFile: Identifiable {
 struct BackupsView: View {
     @Environment(\.modelContext) private var modelContext
 
-    @Query private var transactions: [Transaction]
-    @Query private var categories: [TransactionCategory]
+    @Query(filter: Transaction.notDeleted) private var transactions: [Transaction]
+    @Query(filter: TransactionCategory.notDeleted) private var categories: [TransactionCategory]
 
     @State private var isImporting = false
     @State private var isChoosingFormat = false

@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Ausgaben im %@";
 "MENU_LANGUAGE" = "Sprache";
 "MENU_ABOUT" = "Über";
+"MENU_TRASH" = "Papierkorb";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Der Papierkorb ist leer";
+"TRASH_RESTORE" = "Wiederherstellen";
+"TRASH_CLEAR_CONFIRMATION" = "Alle Objekte im Papierkorb werden endgültig gelöscht. Diese Aktion kann nicht rückgängig gemacht werden.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Version %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Farbe";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Kategorie löschen";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Ordner löschen";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Diese Aktion kann nicht rückgängig gemacht werden. Alle Transaktionen dieser Kategorie werden gelöscht.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Die Kategorie und alle zugehörigen Transaktionen werden in den Papierkorb verschoben.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Kategoriename";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Neue Kategorie";
 "EDIT_CATEGORY_CREATE" = "Erstellen";

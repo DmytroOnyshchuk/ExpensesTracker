@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "மொத்த செலவு · %@";
 "MENU_LANGUAGE" = "மொழி";
 "MENU_ABOUT" = "அறிமுகம்";
+"MENU_TRASH" = "குப்பைத் தொட்டி";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "குப்பைத் தொட்டி காலியாக உள்ளது";
+"TRASH_RESTORE" = "மீட்டமை";
+"TRASH_CLEAR_CONFIRMATION" = "குப்பைத் தொட்டியில் உள்ள அனைத்தும் நிரந்தரமாக நீக்கப்படும். இந்தச் செயலைச் செயல்தவிர்க்க முடியாது.";
 
 // MARK: - About
 "ABOUT_VERSION" = "பதிப்பு %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "நிறம்";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "வகையை நீக்கு";
 "EDIT_CATEGORY_DELETE_FOLDER" = "கோப்புறையை நீக்கு";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "இந்தச் செயலைச் செயல்தவிர்க்க முடியாது. இந்த வகையிலுள்ள அனைத்துப் பரிவர்த்தனைகளும் நீக்கப்படும்.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "வகையும் அதன் அனைத்துப் பரிவர்த்தனைகளும் குப்பைத் தொட்டிக்கு நகர்த்தப்படும்.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "வகையின் பெயர்";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "புதிய வகை";
 "EDIT_CATEGORY_CREATE" = "உருவாக்கு";

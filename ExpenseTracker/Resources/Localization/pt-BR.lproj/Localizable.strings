@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Gasto em %@";
 "MENU_LANGUAGE" = "Idioma";
 "MENU_ABOUT" = "Sobre";
+"MENU_TRASH" = "Lixeira";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "A lixeira está vazia";
+"TRASH_RESTORE" = "Restaurar";
+"TRASH_CLEAR_CONFIRMATION" = "Todos os itens da lixeira serão apagados permanentemente. Esta ação não pode ser desfeita.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Versão %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Cor";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Excluir categoria";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Excluir pasta";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Esta ação não pode ser desfeita. Todas as transações desta categoria serão excluídas.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "A categoria e todas as suas transações serão movidas para a lixeira.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Nome da categoria";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nova categoria";
 "EDIT_CATEGORY_CREATE" = "Criar";

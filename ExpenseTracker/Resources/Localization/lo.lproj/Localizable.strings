@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "ໃຊ້ຈ່າຍທັງໝົດ · %@";
 "MENU_LANGUAGE" = "ພາສາ";
 "MENU_ABOUT" = "ກ່ຽວກັບ";
+"MENU_TRASH" = "ຖັງຂີ້ເຫຍື້ອ";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "ຖັງຂີ້ເຫຍື້ອຫວ່າງເປົ່າ";
+"TRASH_RESTORE" = "ກູ້ຄືນ";
+"TRASH_CLEAR_CONFIRMATION" = "ລາຍການທັງໝົດໃນຖັງຂີ້ເຫຍື້ອຈະຖືກລຶບຢ່າງຖາວອນ. ການກະທຳນີ້ບໍ່ສາມາດຍົກເລີກໄດ້.";
 
 // MARK: - About
 "ABOUT_VERSION" = "ເວີຊັນ %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "ສີ";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "ລຶບໝວດໝູ່";
 "EDIT_CATEGORY_DELETE_FOLDER" = "ລຶບໂຟນເດີ";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "ການກະທຳນີ້ບໍ່ສາມາດຍົກເລີກໄດ້. ທຸລະກຳທັງໝົດໃນໝວດໝູ່ນີ້ຈະຖືກລຶບ.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "ໝວດໝູ່ ແລະ ທຸລະກຳທັງໝົດຂອງມັນຈະຖືກຍ້າຍໄປຖັງຂີ້ເຫຍື້ອ.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "ຊື່ໝວດໝູ່";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "ໝວດໝູ່ໃໝ່";
 "EDIT_CATEGORY_CREATE" = "ສ້າງ";

@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "%@支出";
 "MENU_LANGUAGE" = "语言";
 "MENU_ABOUT" = "关于";
+"MENU_TRASH" = "废纸篓";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "废纸篓为空";
+"TRASH_RESTORE" = "恢复";
+"TRASH_CLEAR_CONFIRMATION" = "废纸篓中的所有项目将被永久删除。此操作无法撤销。";
 
 // MARK: - About
 "ABOUT_VERSION" = "版本 %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "颜色";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "删除类别";
 "EDIT_CATEGORY_DELETE_FOLDER" = "删除文件夹";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "此操作无法撤销。该类别下的所有交易都将被删除。";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "该类别及其所有交易将被移到废纸篓。";
 "EDIT_CATEGORY_DEFAULT_NAME" = "类别名称";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "新建类别";
 "EDIT_CATEGORY_CREATE" = "创建";

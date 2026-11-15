@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Total sing dientekake · %@";
 "MENU_LANGUAGE" = "Basa";
 "MENU_ABOUT" = "Babagan";
+"MENU_TRASH" = "Tong sampah";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Tong sampah kosong";
+"TRASH_RESTORE" = "Balèkaké";
+"TRASH_CLEAR_CONFIRMATION" = "Kabèh item ing tong sampah bakal dibusak permanèn. Tumindak iki ora bisa dibatalaké.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Versi %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Werna";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Busak kategori";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Busak folder";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Tindakan iki ora bisa diwurungake. Kabeh transaksi ing kategori iki bakal dibusak.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kategori lan kabèh transaksiné bakal dipindhah menyang tong sampah.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Jeneng kategori";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Kategori anyar";
 "EDIT_CATEGORY_CREATE" = "Gawe";

@@ -15,8 +15,9 @@ enum MenuItem: CaseIterable, Identifiable {
     case backups
     case language
     case about
+    case trash
 
-    static let sections: [[MenuItem]] = [[.settings], [.categories], [.backups], [.language, .about]]
+    static let sections: [[MenuItem]] = [[.settings], [.categories], [.backups], [.language, .about], [.trash]]
 
     var id: Self { self }
 
@@ -27,6 +28,7 @@ enum MenuItem: CaseIterable, Identifiable {
         case .backups: L10n.menuBackups
         case .language: L10n.menuLanguage
         case .about: L10n.menuAbout
+        case .trash: L10n.menuTrash
         }
     }
 
@@ -37,18 +39,20 @@ enum MenuItem: CaseIterable, Identifiable {
         case .backups: "externaldrive"
         case .language: "globe"
         case .about: "info.circle"
+        case .trash: "trash"
         }
     }
 }
 
 struct MenuView: View {
-    @Query private var transactions: [Transaction]
+    @Query(filter: Transaction.notDeleted) private var transactions: [Transaction]
 
     @State private var showStatistics = false
     @State private var showCategories = false
     @State private var showSettings = false
     @State private var showBackups = false
     @State private var showAbout = false
+    @State private var showTrash = false
 
     private let period = StatisticsPeriod.month
 
@@ -90,6 +94,9 @@ struct MenuView: View {
         .navigationDestination(isPresented: $showAbout) {
             AboutView()
         }
+        .navigationDestination(isPresented: $showTrash) {
+            TrashView()
+        }
     }
 
     private var spentTitle: String {
@@ -110,6 +117,7 @@ struct MenuView: View {
         case .backups: showBackups = true
         case .language: UIApplication.shared.openSettings()
         case .about: showAbout = true
+        case .trash: showTrash = true
         }
     }
 

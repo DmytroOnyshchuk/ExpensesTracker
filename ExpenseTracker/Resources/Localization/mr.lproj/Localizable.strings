@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "एकूण खर्च · %@";
 "MENU_LANGUAGE" = "भाषा";
 "MENU_ABOUT" = "विषयी";
+"MENU_TRASH" = "ट्रॅश";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "ट्रॅश रिकामा आहे";
+"TRASH_RESTORE" = "पुनर्संचयित करा";
+"TRASH_CLEAR_CONFIRMATION" = "ट्रॅशमधील सर्व आयटम कायमचे हटवले जातील. ही क्रिया पूर्ववत करता येणार नाही.";
 
 // MARK: - About
 "ABOUT_VERSION" = "आवृत्ती %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "रंग";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "श्रेणी हटवा";
 "EDIT_CATEGORY_DELETE_FOLDER" = "फोल्डर हटवा";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "ही क्रिया पूर्ववत करता येणार नाही. या श्रेणीतील सर्व व्यवहार हटवले जातील.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "श्रेणी आणि तिचे सर्व व्यवहार ट्रॅशमध्ये हलवले जातील.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "श्रेणीचे नाव";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "नवीन श्रेणी";
 "EDIT_CATEGORY_CREATE" = "तयार करा";

@@ -18,6 +18,7 @@ final class TransactionCategory {
     var isDirectory: Bool = false
     var parentUuid: UUID?
     var sortIndex: Int = 0
+    var deletedAt: Date?
     
     init(name: TransactionCategoryName, categoryIcon: CategoryIcon, isDirectory: Bool = false, parentUuid: UUID? = nil, sortIndex: Int = .zero) {
         self.uuid = UUID()
@@ -28,6 +29,14 @@ final class TransactionCategory {
         self.sortIndex = sortIndex
     }
     
+    static var notDeleted: Predicate<TransactionCategory> {
+        #Predicate { $0.deletedAt == nil }
+    }
+
+    static var inTrash: Predicate<TransactionCategory> {
+        #Predicate { $0.deletedAt != nil }
+    }
+
     var isMainCategory: Bool {
         parentUuid == nil
     }

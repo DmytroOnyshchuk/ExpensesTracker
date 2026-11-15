@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "ចំណាយសរុប · %@";
 "MENU_LANGUAGE" = "ភាសា";
 "MENU_ABOUT" = "អំពី";
+"MENU_TRASH" = "ធុងសំរាម";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "ធុងសំរាមទទេ";
+"TRASH_RESTORE" = "ស្ដារ";
+"TRASH_CLEAR_CONFIRMATION" = "ធាតុទាំងអស់ក្នុងធុងសំរាមនឹងត្រូវលុបជាអចិន្ត្រៃយ៍។ សកម្មភាពនេះមិនអាចត្រឡប់វិញបានទេ។";
 
 // MARK: - About
 "ABOUT_VERSION" = "កំណែ %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "ពណ៌";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "លុបប្រភេទ";
 "EDIT_CATEGORY_DELETE_FOLDER" = "លុបថត";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "សកម្មភាពនេះមិនអាចត្រឡប់វិញបានទេ។ ប្រតិបត្តិការទាំងអស់ក្នុងប្រភេទនេះនឹងត្រូវលុប។";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "ប្រភេទ និងប្រតិបត្តិការទាំងអស់របស់វានឹងត្រូវផ្លាស់ទីទៅធុងសំរាម។";
 "EDIT_CATEGORY_DEFAULT_NAME" = "ឈ្មោះប្រភេទ";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "ប្រភេទថ្មី";
 "EDIT_CATEGORY_CREATE" = "បង្កើត";

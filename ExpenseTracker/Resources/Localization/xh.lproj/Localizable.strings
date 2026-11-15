@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Iyonke echithiweyo · %@";
 "MENU_LANGUAGE" = "Ulwimi";
 "MENU_ABOUT" = "Malunga";
+"MENU_TRASH" = "Umgqomo wenkunkuma";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Umgqomo wenkunkuma awunanto";
+"TRASH_RESTORE" = "Buyisela";
+"TRASH_CLEAR_CONFIRMATION" = "Zonke izinto ezikumgqomo wenkunkuma ziza kucinywa ngokusisigxina. Eli nyathelo alinakurhoxiswa.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Inguqulelo %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Umbala";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Cima udidi";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Cima ifolda";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Eli nyathelo alinakubuyiselwa. Zonke iintengiselwano zolu didi ziya kucinywa.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Udidi nazo zonke iintengiselwano zalo ziza kufuduselwa kumgqomo wenkunkuma.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Igama lodidi";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Udidi olutsha";
 "EDIT_CATEGORY_CREATE" = "Yenza";

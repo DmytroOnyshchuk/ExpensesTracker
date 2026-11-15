@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Huina i hoʻolilo ʻia · %@";
 "MENU_LANGUAGE" = "ʻŌlelo";
 "MENU_ABOUT" = "E pili ana";
+"MENU_TRASH" = "ʻŌpala";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Hakahaka ka ʻōpala";
+"TRASH_RESTORE" = "Hoʻihoʻi";
+"TRASH_CLEAR_CONFIRMATION" = "E holoi mau loa ʻia nā mea a pau i loko o ka ʻōpala. ʻAʻole hiki ke hoʻihoʻi ʻia kēia hana.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Mana %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Waihoʻoluʻu";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Holoi i ka māhele";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Holoi i ka wahī";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "ʻAʻole hiki ke hoʻihoʻi ʻia kēia hana. E holoi ʻia nā hana kālā a pau o kēia māhele.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "E hoʻoneʻe ʻia ka māhele a me kāna mau kālepa a pau i ka ʻōpala.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Inoa māhele";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Māhele hou";
 "EDIT_CATEGORY_CREATE" = "Hana";

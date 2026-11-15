@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "הוצאות ב%@";
 "MENU_LANGUAGE" = "שפה";
 "MENU_ABOUT" = "אודות";
+"MENU_TRASH" = "פח אשפה";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "פח האשפה ריק";
+"TRASH_RESTORE" = "שחזור";
+"TRASH_CLEAR_CONFIRMATION" = "כל הפריטים בפח האשפה יימחקו לצמיתות. לא ניתן לבטל פעולה זו.";
 
 // MARK: - About
 "ABOUT_VERSION" = "גרסה %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "צבע";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "מחיקת קטגוריה";
 "EDIT_CATEGORY_DELETE_FOLDER" = "מחיקת תיקייה";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "לא ניתן לבטל פעולה זו. כל העסקאות בקטגוריה זו יימחקו.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "הקטגוריה וכל העסקאות שלה יועברו לפח האשפה.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "שם הקטגוריה";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "קטגוריה חדשה";
 "EDIT_CATEGORY_CREATE" = "יצירה";

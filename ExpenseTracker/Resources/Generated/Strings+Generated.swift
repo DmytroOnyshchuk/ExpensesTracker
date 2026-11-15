@@ -142,8 +142,8 @@ internal enum L10n {
   internal static let editCategoryDefaultName = L10n.tr("Localizable", "EDIT_CATEGORY_DEFAULT_NAME", fallback: "Category name")
   /// Delete category
   internal static let editCategoryDeleteCategory = L10n.tr("Localizable", "EDIT_CATEGORY_DELETE_CATEGORY", fallback: "Delete category")
-  /// This action cannot be undone. All transactions with this category will be deleted.
-  internal static let editCategoryDeleteConfirmation = L10n.tr("Localizable", "EDIT_CATEGORY_DELETE_CONFIRMATION", fallback: "This action cannot be undone. All transactions with this category will be deleted.")
+  /// The category and all its transactions will be moved to the Trash.
+  internal static let editCategoryDeleteConfirmation = L10n.tr("Localizable", "EDIT_CATEGORY_DELETE_CONFIRMATION", fallback: "The category and all its transactions will be moved to the Trash.")
   /// Delete folder
   internal static let editCategoryDeleteFolder = L10n.tr("Localizable", "EDIT_CATEGORY_DELETE_FOLDER", fallback: "Delete folder")
   /// Icon
@@ -188,6 +188,8 @@ internal enum L10n {
   }
   /// Menu
   internal static let menuTitle = L10n.tr("Localizable", "MENU_TITLE", fallback: "Menu")
+  /// Trash
+  internal static let menuTrash = L10n.tr("Localizable", "MENU_TRASH", fallback: "Trash")
   /// Next
   internal static let next = L10n.tr("Localizable", "NEXT", fallback: "Next")
   /// No
@@ -302,6 +304,12 @@ internal enum L10n {
   internal static let transactionsListTransactionAdded = L10n.tr("Localizable", "TRANSACTIONS_LIST_TRANSACTION_ADDED", fallback: "Transaction added")
   /// Transaction deleted
   internal static let transactionsListTransactionDeleted = L10n.tr("Localizable", "TRANSACTIONS_LIST_TRANSACTION_DELETED", fallback: "Transaction deleted")
+  /// All items in the Trash will be permanently deleted. This action cannot be undone.
+  internal static let trashClearConfirmation = L10n.tr("Localizable", "TRASH_CLEAR_CONFIRMATION", fallback: "All items in the Trash will be permanently deleted. This action cannot be undone.")
+  /// Trash is empty
+  internal static let trashEmpty = L10n.tr("Localizable", "TRASH_EMPTY", fallback: "Trash is empty")
+  /// Restore
+  internal static let trashRestore = L10n.tr("Localizable", "TRASH_RESTORE", fallback: "Restore")
   /// Undo
   internal static let undo = L10n.tr("Localizable", "UNDO", fallback: "Undo")
   /// Update

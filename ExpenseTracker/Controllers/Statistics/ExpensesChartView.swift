@@ -11,8 +11,8 @@ import SwiftData
 import SwiftUI
 
 struct ExpensesChartView: View {
-    @Query private var transactions: [Transaction]
-    @Query private var categories: [TransactionCategory]
+    @Query(filter: Transaction.notDeleted) private var transactions: [Transaction]
+    @Query(filter: TransactionCategory.notDeleted) private var categories: [TransactionCategory]
 
     @State private var period: StatisticsPeriod = .day
     @State private var selection: DateInterval? = StatisticsPeriod.day.defaultSelection()

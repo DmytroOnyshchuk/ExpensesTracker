@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Gastado en %@";
 "MENU_LANGUAGE" = "Idioma";
 "MENU_ABOUT" = "Acerca de";
+"MENU_TRASH" = "Papeleira";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "A papeleira está baleira";
+"TRASH_RESTORE" = "Restaurar";
+"TRASH_CLEAR_CONFIRMATION" = "Todos os elementos da papeleira eliminaranse definitivamente. Esta acción non se pode desfacer.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Versión %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Cor";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Eliminar categoría";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Eliminar cartafol";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Esta acción non se pode desfacer. Eliminaranse todas as transaccións desta categoría.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "A categoría e todas as súas transaccións moveranse á papeleira.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Nome da categoría";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nova categoría";
 "EDIT_CATEGORY_CREATE" = "Crear";

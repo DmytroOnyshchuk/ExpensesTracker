@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Total expendì · %@";
 "MENU_LANGUAGE" = "Lingua";
 "MENU_ABOUT" = "Davart";
+"MENU_TRASH" = "Recipient da rument";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Il recipient da rument è vid";
+"TRASH_RESTORE" = "Restaurar";
+"TRASH_CLEAR_CONFIRMATION" = "Tut ils elements en il recipient da rument vegnan stizzads definitivamain. Questa acziun na po betg vegnir revocada.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Versiun %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Colur";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Stizzar la categoria";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Stizzar l'ordinatur";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Questa acziun na po betg vegnir revocada. Tut las transacziuns da questa categoria vegnan stizzadas.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "La categoria e tut sias transacziuns vegnan spustadas en il recipient da rument.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Num da la categoria";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nova categoria";
 "EDIT_CATEGORY_CREATE" = "Crear";

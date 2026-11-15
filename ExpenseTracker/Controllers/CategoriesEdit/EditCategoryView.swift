@@ -11,9 +11,9 @@ import SwiftData
 import SwiftUI
 
 struct EditCategoryView: View {
-    @Query(filter: #Predicate<TransactionCategory> { $0.isDirectory })
+    @Query(filter: #Predicate<TransactionCategory> { $0.isDirectory && $0.deletedAt == nil })
     private var allDirectories: [TransactionCategory]
-    @Query private var allCategories: [TransactionCategory]
+    @Query(filter: TransactionCategory.notDeleted) private var allCategories: [TransactionCategory]
 
     /// The category being edited; `nil` when a new one is created.
     private let category: TransactionCategory?
@@ -407,15 +407,7 @@ struct EditCategoryView: View {
     private func deleteCategory() {
         guard let category else { return }
 
-        let categoryUuid = category.uuid
-        let descriptor = FetchDescriptor<Transaction>(predicate: #Predicate { $0.category.uuid == categoryUuid })
-        guard let transactions = try? modelContext.fetch(descriptor) else { return }
-
-        for transaction in transactions {
-            modelContext.delete(transaction)
-        }
-        modelContext.delete(category)
-        try? modelContext.save()
+        modelContext.moveToTrash(category)
         dismiss()
     }
 }

@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Porabljeno za %@";
 "MENU_LANGUAGE" = "Jezik";
 "MENU_ABOUT" = "O aplikaciji";
+"MENU_TRASH" = "Koš";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Koš je prazen";
+"TRASH_RESTORE" = "Obnovi";
+"TRASH_CLEAR_CONFIRMATION" = "Vsi elementi v košu bodo trajno izbrisani. Tega dejanja ni mogoče razveljaviti.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Različica %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Barva";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Izbriši kategorijo";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Izbriši mapo";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Tega dejanja ni mogoče razveljaviti. Vse transakcije s to kategorijo bodo izbrisane.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kategorija in vse njene transakcije bodo premaknjene v koš.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Ime kategorije";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nova kategorija";
 "EDIT_CATEGORY_CREATE" = "Ustvari";

@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Gastos sa %@";
 "MENU_LANGUAGE" = "Wika";
 "MENU_ABOUT" = "Tungkol";
+"MENU_TRASH" = "Basurahan";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Walang laman ang basurahan";
+"TRASH_RESTORE" = "Ibalik";
+"TRASH_CLEAR_CONFIRMATION" = "Permanenteng ide-delete ang lahat ng item sa basurahan. Hindi na maa-undo ang aksyong ito.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Bersyon %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Kulay";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "I-delete ang kategorya";
 "EDIT_CATEGORY_DELETE_FOLDER" = "I-delete ang folder";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Hindi na maa-undo ang pagkilos na ito. Made-delete ang lahat ng transaksyon sa kategoryang ito.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ililipat sa basurahan ang kategorya at lahat ng transaksyon nito.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Pangalan ng kategorya";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Bagong kategorya";
 "EDIT_CATEGORY_CREATE" = "Gumawa";

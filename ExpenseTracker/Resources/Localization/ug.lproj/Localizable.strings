@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "جەمئىي چىقىم · %@";
 "MENU_LANGUAGE" = "تىل";
 "MENU_ABOUT" = "ھەققىدە";
+"MENU_TRASH" = "ئەخلەت ساندۇقى";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "ئەخلەت ساندۇقى قۇرۇق";
+"TRASH_RESTORE" = "ئەسلىگە كەلتۈرۈش";
+"TRASH_CLEAR_CONFIRMATION" = "ئەخلەت ساندۇقىدىكى بارلىق تۈرلەر مەڭگۈلۈك ئۆچۈرۈلىدۇ. بۇ مەشغۇلاتنى ئەمەلدىن قالدۇرغىلى بولمايدۇ.";
 
 // MARK: - About
 "ABOUT_VERSION" = "نەشرى %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "رەڭ";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "تۈرنى ئۆچۈر";
 "EDIT_CATEGORY_DELETE_FOLDER" = "قىسقۇچنى ئۆچۈر";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "بۇ مەشغۇلاتنى يېنىۋالغىلى بولمايدۇ. بۇ تۈردىكى بارلىق سودىلار ئۆچۈرۈلىدۇ.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "تۈر ۋە ئۇنىڭ بارلىق سودىلىرى ئەخلەت ساندۇقىغا يۆتكىلىدۇ.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "تۈر نامى";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "يېڭى تۈر";
 "EDIT_CATEGORY_CREATE" = "قۇر";

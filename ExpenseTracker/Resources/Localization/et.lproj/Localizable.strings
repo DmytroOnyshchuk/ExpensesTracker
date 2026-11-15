@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Kokku kulutatud · %@";
 "MENU_LANGUAGE" = "Keel";
 "MENU_ABOUT" = "Teave";
+"MENU_TRASH" = "Prügikast";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Prügikast on tühi";
+"TRASH_RESTORE" = "Taasta";
+"TRASH_CLEAR_CONFIRMATION" = "Kõik prügikastis olevad üksused kustutatakse jäädavalt. Seda toimingut ei saa tagasi võtta.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Versioon %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Värv";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Kustuta kategooria";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Kustuta kaust";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Seda toimingut ei saa tagasi võtta. Kõik selle kategooria tehingud kustutatakse.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kategooria ja kõik selle tehingud teisaldatakse prügikasti.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Kategooria nimi";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Uus kategooria";
 "EDIT_CATEGORY_CREATE" = "Loo";

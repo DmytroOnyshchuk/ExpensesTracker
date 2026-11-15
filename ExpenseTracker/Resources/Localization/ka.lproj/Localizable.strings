@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "სულ დახარჯული · %@";
 "MENU_LANGUAGE" = "ენა";
 "MENU_ABOUT" = "აპის შესახებ";
+"MENU_TRASH" = "ნაგავი";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "ნაგავი ცარიელია";
+"TRASH_RESTORE" = "აღდგენა";
+"TRASH_CLEAR_CONFIRMATION" = "ნაგავში არსებული ყველა ელემენტი სამუდამოდ წაიშლება. ამ მოქმედების გაუქმება შეუძლებელია.";
 
 // MARK: - About
 "ABOUT_VERSION" = "ვერსია %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "ფერი";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "კატეგორიის წაშლა";
 "EDIT_CATEGORY_DELETE_FOLDER" = "საქაღალდის წაშლა";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "ამ მოქმედების გაუქმება შეუძლებელია. ამ კატეგორიის ყველა ტრანზაქცია წაიშლება.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "კატეგორია და მისი ყველა ტრანზაქცია ნაგავში გადავა.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "კატეგორიის სახელი";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "ახალი კატეგორია";
 "EDIT_CATEGORY_CREATE" = "შექმნა";

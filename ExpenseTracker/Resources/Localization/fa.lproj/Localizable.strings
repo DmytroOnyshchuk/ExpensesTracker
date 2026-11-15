@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "هزینه‌های %@";
 "MENU_LANGUAGE" = "زبان";
 "MENU_ABOUT" = "درباره";
+"MENU_TRASH" = "سطل زباله";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "سطل زباله خالی است";
+"TRASH_RESTORE" = "بازیابی";
+"TRASH_CLEAR_CONFIRMATION" = "همه موارد موجود در سطل زباله برای همیشه حذف می‌شوند. این عمل قابل بازگشت نیست.";
 
 // MARK: - About
 "ABOUT_VERSION" = "نسخه %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "رنگ";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "حذف دسته";
 "EDIT_CATEGORY_DELETE_FOLDER" = "حذف پوشه";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "این عمل قابل بازگشت نیست. همه تراکنش‌های این دسته حذف خواهند شد.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "دسته‌بندی و همه تراکنش‌های آن به سطل زباله منتقل می‌شوند.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "نام دسته";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "دسته جدید";
 "EDIT_CATEGORY_CREATE" = "ایجاد";

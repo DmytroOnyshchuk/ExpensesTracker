@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "ਕੁੱਲ ਖਰਚ · %@";
 "MENU_LANGUAGE" = "ਭਾਸ਼ਾ";
 "MENU_ABOUT" = "ਬਾਰੇ";
+"MENU_TRASH" = "ਰੱਦੀ";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "ਰੱਦੀ ਖਾਲੀ ਹੈ";
+"TRASH_RESTORE" = "ਮੁੜ-ਬਹਾਲ ਕਰੋ";
+"TRASH_CLEAR_CONFIRMATION" = "ਰੱਦੀ ਵਿਚਲੀਆਂ ਸਾਰੀਆਂ ਆਈਟਮਾਂ ਪੱਕੇ ਤੌਰ 'ਤੇ ਮਿਟਾ ਦਿੱਤੀਆਂ ਜਾਣਗੀਆਂ। ਇਸ ਕਾਰਵਾਈ ਨੂੰ ਵਾਪਸ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।";
 
 // MARK: - About
 "ABOUT_VERSION" = "ਵਰਜਨ %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "ਰੰਗ";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "ਸ਼੍ਰੇਣੀ ਮਿਟਾਓ";
 "EDIT_CATEGORY_DELETE_FOLDER" = "ਫੋਲਡਰ ਮਿਟਾਓ";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "ਇਹ ਕਾਰਵਾਈ ਵਾਪਸ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ। ਇਸ ਸ਼੍ਰੇਣੀ ਦੇ ਸਾਰੇ ਲੈਣ-ਦੇਣ ਮਿਟਾ ਦਿੱਤੇ ਜਾਣਗੇ।";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "ਸ਼੍ਰੇਣੀ ਅਤੇ ਇਸਦੇ ਸਾਰੇ ਲੈਣ-ਦੇਣ ਰੱਦੀ ਵਿੱਚ ਭੇਜ ਦਿੱਤੇ ਜਾਣਗੇ।";
 "EDIT_CATEGORY_DEFAULT_NAME" = "ਸ਼੍ਰੇਣੀ ਦਾ ਨਾਮ";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "ਨਵੀਂ ਸ਼੍ਰੇਣੀ";
 "EDIT_CATEGORY_CREATE" = "ਬਣਾਓ";

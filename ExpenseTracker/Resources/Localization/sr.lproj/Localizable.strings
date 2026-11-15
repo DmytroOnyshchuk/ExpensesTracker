@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Потрошено за %@";
 "MENU_LANGUAGE" = "Језик";
 "MENU_ABOUT" = "О апликацији";
+"MENU_TRASH" = "Смеће";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Смеће је празно";
+"TRASH_RESTORE" = "Врати";
+"TRASH_CLEAR_CONFIRMATION" = "Све ставке у смећу биће трајно избрисане. Ова радња се не може опозвати.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Верзија %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Боја";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Избриши категорију";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Избриши фасциклу";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ова радња се не може опозвати. Све трансакције са овом категоријом биће избрисане.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Категорија и све њене трансакције биће премештене у смеће.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Назив категорије";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Нова категорија";
 "EDIT_CATEGORY_CREATE" = "Направи";

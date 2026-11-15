@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Brugt i %@";
 "MENU_LANGUAGE" = "Sprog";
 "MENU_ABOUT" = "Om";
+"MENU_TRASH" = "Papirkurv";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Papirkurven er tom";
+"TRASH_RESTORE" = "Gendan";
+"TRASH_CLEAR_CONFIRMATION" = "Alle emner i papirkurven slettes permanent. Denne handling kan ikke fortrydes.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Version %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Farve";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Slet kategori";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Slet mappe";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Denne handling kan ikke fortrydes. Alle transaktioner med denne kategori bliver slettet.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kategorien og alle dens transaktioner flyttes til papirkurven.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Kategorinavn";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Ny kategori";
 "EDIT_CATEGORY_CREATE" = "Opret";

@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Brukt i %@";
 "MENU_LANGUAGE" = "Språk";
 "MENU_ABOUT" = "Om";
+"MENU_TRASH" = "Papirkorg";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Papirkorga er tom";
+"TRASH_RESTORE" = "Gjenopprett";
+"TRASH_CLEAR_CONFIRMATION" = "Alle objekt i papirkorga blir sletta permanent. Denne handlinga kan ikkje angrast.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Versjon %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Farge";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Slett kategori";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Slett mappe";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Denne handlinga kan ikkje angrast. Alle transaksjonar med denne kategorien blir sletta.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kategorien og alle transaksjonane i han blir flytta til papirkorga.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Kategorinamn";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Ny kategori";
 "EDIT_CATEGORY_CREATE" = "Opprett";

@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Wydatki za %@";
 "MENU_LANGUAGE" = "Język";
 "MENU_ABOUT" = "O aplikacji";
+"MENU_TRASH" = "Kosz";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Kosz jest pusty";
+"TRASH_RESTORE" = "Przywróć";
+"TRASH_CLEAR_CONFIRMATION" = "Wszystkie elementy w koszu zostaną trwale usunięte. Tej czynności nie można cofnąć.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Wersja %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Kolor";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Usuń kategorię";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Usuń folder";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Tej czynności nie można cofnąć. Wszystkie transakcje z tą kategorią zostaną usunięte.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kategoria i wszystkie jej transakcje zostaną przeniesione do kosza.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Nazwa kategorii";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nowa kategoria";
 "EDIT_CATEGORY_CREATE" = "Utwórz";

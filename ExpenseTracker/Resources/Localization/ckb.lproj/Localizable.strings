@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "کۆی خەرجکراو · %@";
 "MENU_LANGUAGE" = "زمان";
 "MENU_ABOUT" = "دەربارە";
+"MENU_TRASH" = "تەنەکەی خۆڵ";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "تەنەکەی خۆڵ بەتاڵە";
+"TRASH_RESTORE" = "گەڕاندنەوە";
+"TRASH_CLEAR_CONFIRMATION" = "هەموو شتەکانی ناو تەنەکەی خۆڵ بە یەکجاری دەسڕدرێنەوە. ئەم کردارە ناگەڕێندرێتەوە.";
 
 // MARK: - About
 "ABOUT_VERSION" = "وەشانی %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "ڕەنگ";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "سڕینەوەی پۆل";
 "EDIT_CATEGORY_DELETE_FOLDER" = "سڕینەوەی بوخچە";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "ئەم کردارە ناگەڕێندرێتەوە. هەموو مامەڵەکانی ئەم پۆلە دەسڕدرێنەوە.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "پۆلەکە و هەموو مامەڵەکانی دەگوازرێنەوە بۆ تەنەکەی خۆڵ.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "ناوی پۆل";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "پۆلی نوێ";
 "EDIT_CATEGORY_CREATE" = "دروستکردن";

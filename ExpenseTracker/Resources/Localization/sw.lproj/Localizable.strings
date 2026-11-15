@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Matumizi ya %@";
 "MENU_LANGUAGE" = "Lugha";
 "MENU_ABOUT" = "Kuhusu";
+"MENU_TRASH" = "Tupio";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Tupio ni tupu";
+"TRASH_RESTORE" = "Rejesha";
+"TRASH_CLEAR_CONFIRMATION" = "Vipengee vyote kwenye tupio vitafutwa kabisa. Kitendo hiki hakiwezi kutenduliwa.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Toleo %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Rangi";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Futa aina";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Futa folda";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kitendo hiki hakiwezi kutenduliwa. Miamala yote ya aina hii itafutwa.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kategoria na miamala yake yote itahamishiwa kwenye tupio.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Jina la aina";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Aina mpya";
 "EDIT_CATEGORY_CREATE" = "Unda";

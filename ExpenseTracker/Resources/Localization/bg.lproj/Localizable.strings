@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Похарчено през %@";
 "MENU_LANGUAGE" = "Език";
 "MENU_ABOUT" = "За приложението";
+"MENU_TRASH" = "Кошче";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Кошчето е празно";
+"TRASH_RESTORE" = "Възстановяване";
+"TRASH_CLEAR_CONFIRMATION" = "Всички елементи в кошчето ще бъдат изтрити завинаги. Това действие не може да бъде отменено.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Версия %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Цвят";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Изтриване на категорията";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Изтриване на папката";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Това действие не може да бъде отменено. Всички транзакции с тази категория ще бъдат изтрити.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Категорията и всички нейни транзакции ще бъдат преместени в кошчето.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Име на категорията";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Нова категория";
 "EDIT_CATEGORY_CREATE" = "Създаване";

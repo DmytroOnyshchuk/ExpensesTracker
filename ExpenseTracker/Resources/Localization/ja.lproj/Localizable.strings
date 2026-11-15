@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "%@の支出";
 "MENU_LANGUAGE" = "言語";
 "MENU_ABOUT" = "このアプリについて";
+"MENU_TRASH" = "ゴミ箱";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "ゴミ箱は空です";
+"TRASH_RESTORE" = "復元";
+"TRASH_CLEAR_CONFIRMATION" = "ゴミ箱内のすべての項目が完全に削除されます。この操作は取り消せません。";
 
 // MARK: - About
 "ABOUT_VERSION" = "バージョン %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "カラー";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "カテゴリを削除";
 "EDIT_CATEGORY_DELETE_FOLDER" = "フォルダを削除";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "この操作は取り消せません。このカテゴリの取引はすべて削除されます。";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "カテゴリとそのすべての取引がゴミ箱に移動されます。";
 "EDIT_CATEGORY_DEFAULT_NAME" = "カテゴリ名";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "新規カテゴリ";
 "EDIT_CATEGORY_CREATE" = "作成";

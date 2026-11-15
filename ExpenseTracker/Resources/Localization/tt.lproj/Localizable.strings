@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Барлыгы тотылган · %@";
 "MENU_LANGUAGE" = "Тел";
 "MENU_ABOUT" = "Кушымта турында";
+"MENU_TRASH" = "Кәрзин";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Кәрзин буш";
+"TRASH_RESTORE" = "Кайтару";
+"TRASH_CLEAR_CONFIRMATION" = "Кәрзиндәге барлык элементлар мәңгегә бетереләчәк. Бу гамәлне кире кайтарып булмый.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Версия %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Төс";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Категорияне бетерү";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Папканы бетерү";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Бу гамәлне кире кайтарып булмый. Бу категориядәге барлык операцияләр бетереләчәк.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Категория һәм аның барлык транзакцияләре кәрзингә күчереләчәк.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Категория исеме";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Яңа категория";
 "EDIT_CATEGORY_CREATE" = "Булдыру";

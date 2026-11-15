@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Total gastat · %@";
 "MENU_LANGUAGE" = "Idioma";
 "MENU_ABOUT" = "Quant a";
+"MENU_TRASH" = "Paperera";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "La paperera és buida";
+"TRASH_RESTORE" = "Restaura";
+"TRASH_CLEAR_CONFIRMATION" = "Tots els elements de la paperera s'eliminaran definitivament. Aquesta acció no es pot desfer.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Versió %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Color";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Elimina la categoria";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Elimina la carpeta";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Aquesta acció no es pot desfer. S'eliminaran totes les transaccions d'aquesta categoria.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "La categoria i totes les seves transaccions es mouran a la paperera.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Nom de la categoria";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nova categoria";
 "EDIT_CATEGORY_CREATE" = "Crea";

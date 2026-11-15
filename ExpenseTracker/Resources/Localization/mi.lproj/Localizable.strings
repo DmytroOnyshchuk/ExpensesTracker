@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Tapeke i whakapaua · %@";
 "MENU_LANGUAGE" = "Reo";
 "MENU_ABOUT" = "Mō";
+"MENU_TRASH" = "Ipu para";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Kei te wātea te ipu para";
+"TRASH_RESTORE" = "Whakaora";
+"TRASH_CLEAR_CONFIRMATION" = "Ka mukua pūmautia ngā mea katoa kei te ipu para. Kāore e taea te whakakore i tēnei mahi.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Putanga %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Tae";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Mukua te kāwai";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Mukua te kōpaki";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kāore e taea tēnei mahi te wetekina. Ka mukua ngā tauwhitinga katoa o tēnei kāwai.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ka nekehia te kāwai me āna whakawhitinga katoa ki te ipu para.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Ingoa kāwai";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Kāwai hou";
 "EDIT_CATEGORY_CREATE" = "Waihanga";

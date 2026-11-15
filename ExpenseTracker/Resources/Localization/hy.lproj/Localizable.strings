@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Ընդամենը ծախսվել է · %@";
 "MENU_LANGUAGE" = "Լեզու";
 "MENU_ABOUT" = "Ծրագրի մասին";
+"MENU_TRASH" = "Աղբարկղ";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Աղբարկղը դատարկ է";
+"TRASH_RESTORE" = "Վերականգնել";
+"TRASH_CLEAR_CONFIRMATION" = "Աղբարկղի բոլոր տարրերը ընդմիշտ կջնջվեն։ Այս գործողությունը հնարավոր չէ հետարկել։";
 
 // MARK: - About
 "ABOUT_VERSION" = "Տարբերակ %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Գույն";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Ջնջել կատեգորիան";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Ջնջել պանակը";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Այս գործողությունը հնարավոր չէ հետարկել։ Այս կատեգորիայի բոլոր գործարքները կջնջվեն։";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Կատեգորիան և դրա բոլոր գործարքները կտեղափոխվեն աղբարկղ։";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Կատեգորիայի անունը";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Նոր կատեգորիա";
 "EDIT_CATEGORY_CREATE" = "Ստեղծել";

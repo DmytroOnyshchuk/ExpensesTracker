@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Iomlan air a chosg · %@";
 "MENU_LANGUAGE" = "Cànan";
 "MENU_ABOUT" = "Mu dhèidhinn";
+"MENU_TRASH" = "Sgudal";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Tha an sgudal falamh";
+"TRASH_RESTORE" = "Aisig";
+"TRASH_CLEAR_CONFIRMATION" = "Thèid a h-uile nì san sgudal a sguabadh às gu buan. Cha ghabh an gnìomh seo a neo-dhèanamh.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Tionndadh %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Dath";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Sguab às an roinn-seòrsa";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Sguab às am pasgan";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Cha ghabh seo a neo-dhèanamh. Thèid a h-uile tar-chur san roinn-seòrsa seo a sguabadh às.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Thèid an roinn-seòrsa agus a h-uile tar-chur aice a ghluasad dhan sgudal.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Ainm na roinne-seòrsa";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Roinn-seòrsa ùr";
 "EDIT_CATEGORY_CREATE" = "Cruthaich";

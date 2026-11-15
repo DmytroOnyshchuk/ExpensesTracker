@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Баары сарпталды · %@";
 "MENU_LANGUAGE" = "Тил";
 "MENU_ABOUT" = "Колдонмо жөнүндө";
+"MENU_TRASH" = "Себет";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Себет бош";
+"TRASH_RESTORE" = "Калыбына келтирүү";
+"TRASH_CLEAR_CONFIRMATION" = "Себеттеги бардык элементтер биротоло өчүрүлөт. Бул аракетти артка кайтаруу мүмкүн эмес.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Версия %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Түс";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Категорияны өчүрүү";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Папканы өчүрүү";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Бул аракетти артка кайтаруу мүмкүн эмес. Бул категориядагы бардык транзакциялар өчүрүлөт.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Категория жана анын бардык транзакциялары себетке жылдырылат.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Категориянын аты";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Жаңы категория";
 "EDIT_CATEGORY_CREATE" = "Түзүү";

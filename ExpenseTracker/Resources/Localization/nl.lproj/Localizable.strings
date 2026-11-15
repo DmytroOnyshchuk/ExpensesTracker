@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Uitgegeven in %@";
 "MENU_LANGUAGE" = "Taal";
 "MENU_ABOUT" = "Over";
+"MENU_TRASH" = "Prullenmand";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "De prullenmand is leeg";
+"TRASH_RESTORE" = "Zet terug";
+"TRASH_CLEAR_CONFIRMATION" = "Alle onderdelen in de prullenmand worden definitief verwijderd. Deze actie kan niet ongedaan worden gemaakt.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Versie %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Kleur";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Categorie verwijderen";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Map verwijderen";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Deze actie kan niet ongedaan worden gemaakt. Alle transacties met deze categorie worden verwijderd.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "De categorie en alle bijbehorende transacties worden naar de prullenmand verplaatst.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Categorienaam";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nieuwe categorie";
 "EDIT_CATEGORY_CREATE" = "Aanmaken";

@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Gjithsej shpenzuar · %@";
 "MENU_LANGUAGE" = "Gjuha";
 "MENU_ABOUT" = "Rreth";
+"MENU_TRASH" = "Koshi";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Koshi është bosh";
+"TRASH_RESTORE" = "Rikthe";
+"TRASH_CLEAR_CONFIRMATION" = "Të gjithë artikujt në kosh do të fshihen përgjithmonë. Ky veprim nuk mund të zhbëhet.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Versioni %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Ngjyra";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Fshi kategorinë";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Fshi dosjen";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ky veprim nuk mund të zhbëhet. Të gjitha transaksionet me këtë kategori do të fshihen.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kategoria dhe të gjitha transaksionet e saj do të zhvendosen në kosh.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Emri i kategorisë";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Kategori e re";
 "EDIT_CATEGORY_CREATE" = "Krijo";

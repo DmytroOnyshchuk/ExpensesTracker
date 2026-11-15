@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "المصروفات في %@";
 "MENU_LANGUAGE" = "اللغة";
 "MENU_ABOUT" = "حول";
+"MENU_TRASH" = "سلة المحذوفات";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "سلة المحذوفات فارغة";
+"TRASH_RESTORE" = "استعادة";
+"TRASH_CLEAR_CONFIRMATION" = "سيتم حذف جميع العناصر في سلة المحذوفات نهائيًا. لا يمكن التراجع عن هذا الإجراء.";
 
 // MARK: - About
 "ABOUT_VERSION" = "الإصدار %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "اللون";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "حذف الفئة";
 "EDIT_CATEGORY_DELETE_FOLDER" = "حذف المجلد";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "لا يمكن التراجع عن هذا الإجراء. سيتم حذف جميع المعاملات في هذه الفئة.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "سيتم نقل الفئة وجميع معاملاتها إلى سلة المحذوفات.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "اسم الفئة";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "فئة جديدة";
 "EDIT_CATEGORY_CREATE" = "إنشاء";

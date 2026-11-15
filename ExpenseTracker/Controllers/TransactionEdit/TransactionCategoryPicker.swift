@@ -13,7 +13,7 @@ struct TransactionCategoryPicker: View {
     var folder: TransactionCategory?
     let onSelect: (TransactionCategory) -> Void
 
-    @Query private var categories: [TransactionCategory]
+    @Query(filter: TransactionCategory.notDeleted) private var categories: [TransactionCategory]
     @Environment(\.modelContext) private var modelContext
     @State private var openedFolder: TransactionCategory?
 

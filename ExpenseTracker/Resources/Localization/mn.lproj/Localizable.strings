@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Нийт зарцуулсан · %@";
 "MENU_LANGUAGE" = "Хэл";
 "MENU_ABOUT" = "Аппын тухай";
+"MENU_TRASH" = "Хогийн сав";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Хогийн сав хоосон байна";
+"TRASH_RESTORE" = "Сэргээх";
+"TRASH_CLEAR_CONFIRMATION" = "Хогийн сав дахь бүх зүйл бүрмөсөн устгагдана. Энэ үйлдлийг буцаах боломжгүй.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Хувилбар %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Өнгө";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Ангилал устгах";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Хавтас устгах";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Энэ үйлдлийг буцаах боломжгүй. Энэ ангиллын бүх гүйлгээ устгагдана.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ангилал болон түүний бүх гүйлгээ хогийн сав руу зөөгдөнө.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Ангиллын нэр";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Шинэ ангилал";
 "EDIT_CATEGORY_CREATE" = "Үүсгэх";

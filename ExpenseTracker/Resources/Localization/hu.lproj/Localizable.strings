@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Összes költés · %@";
 "MENU_LANGUAGE" = "Nyelv";
 "MENU_ABOUT" = "Névjegy";
+"MENU_TRASH" = "Kuka";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "A kuka üres";
+"TRASH_RESTORE" = "Visszaállítás";
+"TRASH_CLEAR_CONFIRMATION" = "A kukában lévő összes elem véglegesen törlődik. Ez a művelet nem vonható vissza.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Verzió: %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Szín";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Kategória törlése";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Mappa törlése";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ez a művelet nem vonható vissza. A kategória összes tranzakciója törlődik.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "A kategória és minden tranzakciója a kukába kerül.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Kategória neve";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Új kategória";
 "EDIT_CATEGORY_CREATE" = "Létrehozás";

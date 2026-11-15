@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Cyfanswm a wariwyd · %@";
 "MENU_LANGUAGE" = "Iaith";
 "MENU_ABOUT" = "Ynghylch";
+"MENU_TRASH" = "Bin";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Mae'r bin yn wag";
+"TRASH_RESTORE" = "Adfer";
+"TRASH_CLEAR_CONFIRMATION" = "Bydd pob eitem yn y bin yn cael ei dileu'n barhaol. Ni ellir dadwneud y weithred hon.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Fersiwn %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Lliw";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Dileu'r categori";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Dileu'r ffolder";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ni ellir dadwneud y weithred hon. Bydd pob trafodyn yn y categori hwn yn cael ei ddileu.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Bydd y categori a'i holl drafodion yn cael eu symud i'r bin.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Enw'r categori";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Categori newydd";
 "EDIT_CATEGORY_CREATE" = "Creu";

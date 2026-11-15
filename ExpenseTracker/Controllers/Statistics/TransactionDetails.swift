@@ -38,7 +38,7 @@ struct TransactionDetails: View {
 
     @Environment(\.modelContext) private var modelContext
 
-    @Query(animation: .default) private var transactions: [Transaction]
+    @Query(filter: Transaction.notDeleted, animation: .default) private var transactions: [Transaction]
     @State private var sorting: TransactionsSorting = .date
     @State private var editedTransaction: Transaction?
 

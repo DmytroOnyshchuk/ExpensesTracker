@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "ጠቅላላ ወጪ · %@";
 "MENU_LANGUAGE" = "ቋንቋ";
 "MENU_ABOUT" = "ስለ";
+"MENU_TRASH" = "መጣያ";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "መጣያው ባዶ ነው";
+"TRASH_RESTORE" = "መልስ";
+"TRASH_CLEAR_CONFIRMATION" = "በመጣያው ውስጥ ያሉ ሁሉም ንጥሎች በቋሚነት ይሰረዛሉ። ይህ ድርጊት ሊቀለበስ አይችልም።";
 
 // MARK: - About
 "ABOUT_VERSION" = "ስሪት %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "ቀለም";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "ምድብ ሰርዝ";
 "EDIT_CATEGORY_DELETE_FOLDER" = "አቃፊ ሰርዝ";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "ይህ ድርጊት ሊቀለበስ አይችልም። በዚህ ምድብ ያሉ ሁሉም ግብይቶች ይሰረዛሉ።";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "ምድቡ እና ሁሉም ግብይቶቹ ወደ መጣያው ይወሰዳሉ።";
 "EDIT_CATEGORY_DEFAULT_NAME" = "የምድብ ስም";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "አዲስ ምድብ";
 "EDIT_CATEGORY_CREATE" = "ፍጠር";

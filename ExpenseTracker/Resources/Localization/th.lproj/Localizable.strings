@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "ใช้จ่ายในเดือน%@";
 "MENU_LANGUAGE" = "ภาษา";
 "MENU_ABOUT" = "เกี่ยวกับ";
+"MENU_TRASH" = "ถังขยะ";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "ถังขยะว่างเปล่า";
+"TRASH_RESTORE" = "กู้คืน";
+"TRASH_CLEAR_CONFIRMATION" = "รายการทั้งหมดในถังขยะจะถูกลบอย่างถาวร การดำเนินการนี้ไม่สามารถเลิกทำได้";
 
 // MARK: - About
 "ABOUT_VERSION" = "เวอร์ชัน %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "สี";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "ลบหมวดหมู่";
 "EDIT_CATEGORY_DELETE_FOLDER" = "ลบโฟลเดอร์";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "การดำเนินการนี้ไม่สามารถยกเลิกได้ รายการทั้งหมดในหมวดหมู่นี้จะถูกลบ";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "หมวดหมู่และธุรกรรมทั้งหมดในหมวดหมู่จะถูกย้ายไปที่ถังขยะ";
 "EDIT_CATEGORY_DEFAULT_NAME" = "ชื่อหมวดหมู่";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "หมวดหมู่ใหม่";
 "EDIT_CATEGORY_CREATE" = "สร้าง";

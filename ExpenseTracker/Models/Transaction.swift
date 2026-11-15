@@ -17,6 +17,7 @@ final class Transaction {
     var date: Date
     var comment: String?
     var category: TransactionCategory
+    var deletedAt: Date?
 
     init(amount: Int, category: TransactionCategory, date: Date = Date(), note: String? = nil) {
         self.id = UUID()
@@ -24,5 +25,13 @@ final class Transaction {
         self.category = category
         self.date = date
         self.comment = note
+    }
+
+    static var notDeleted: Predicate<Transaction> {
+        #Predicate { $0.deletedAt == nil }
+    }
+
+    static var inTrash: Predicate<Transaction> {
+        #Predicate { $0.deletedAt != nil }
     }
 }

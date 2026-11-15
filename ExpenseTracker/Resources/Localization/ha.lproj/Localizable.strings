@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Jimillar da aka kashe · %@";
 "MENU_LANGUAGE" = "Harshe";
 "MENU_ABOUT" = "Game da";
+"MENU_TRASH" = "Kwandon shara";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Kwandon shara babu komai";
+"TRASH_RESTORE" = "Mayar";
+"TRASH_CLEAR_CONFIRMATION" = "Za a goge duk abubuwan da ke cikin kwandon shara har abada. Ba za a iya soke wannan aikin ba.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Siga %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Launi";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Share rukuni";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Share babban fayil";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ba za a iya mayar da wannan aikin ba. Za a share duk ma'amalolin wannan rukuni.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Za a matsar da rukunin da duk ma'amalolinsa zuwa kwandon shara.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Sunan rukuni";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Sabon rukuni";
 "EDIT_CATEGORY_CREATE" = "Ƙirƙira";

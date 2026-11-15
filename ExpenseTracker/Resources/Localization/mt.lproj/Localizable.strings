@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Total minfuq · %@";
 "MENU_LANGUAGE" = "Lingwa";
 "MENU_ABOUT" = "Dwar";
+"MENU_TRASH" = "Trash";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "It-trash huwa vojt";
+"TRASH_RESTORE" = "Irrestawra";
+"TRASH_CLEAR_CONFIRMATION" = "L-oġġetti kollha fit-trash se jitħassru b'mod permanenti. Din l-azzjoni ma tistax titreġġa' lura.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Verżjoni %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Kulur";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Ħassar il-kategorija";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Ħassar il-folder";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Din l-azzjoni ma tistax titreġġa' lura. It-tranżazzjonijiet kollha b'din il-kategorija se jitħassru.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Il-kategorija u t-tranżazzjonijiet kollha tagħha se jitmexxew fit-trash.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Isem tal-kategorija";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Kategorija ġdida";
 "EDIT_CATEGORY_CREATE" = "Oħloq";

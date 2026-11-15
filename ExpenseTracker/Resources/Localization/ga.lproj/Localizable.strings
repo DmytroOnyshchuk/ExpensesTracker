@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Iomlán caite · %@";
 "MENU_LANGUAGE" = "Teanga";
 "MENU_ABOUT" = "Maidir leis";
+"MENU_TRASH" = "Bruscar";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Tá an bruscar folamh";
+"TRASH_RESTORE" = "Athchóirigh";
+"TRASH_CLEAR_CONFIRMATION" = "Scriosfar gach mír sa bhruscar go buan. Ní féidir an gníomh seo a chealú.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Leagan %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Dath";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Scrios an chatagóir";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Scrios an fillteán";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ní féidir an gníomh seo a chealú. Scriosfar gach idirbheart sa chatagóir seo.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Bogfar an chatagóir agus a hidirbhearta uile go dtí an bruscar.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Ainm na catagóire";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Catagóir nua";
 "EDIT_CATEGORY_CREATE" = "Cruthaigh";

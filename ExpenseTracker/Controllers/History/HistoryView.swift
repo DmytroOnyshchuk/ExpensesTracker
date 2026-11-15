@@ -12,7 +12,7 @@ import SwiftUI
 struct HistoryView: View {
     @Environment(\.modelContext) private var modelContext
 
-    @Query(sort: \Transaction.date, order: .reverse) private var transactions: [Transaction]
+    @Query(filter: Transaction.notDeleted, sort: \Transaction.date, order: .reverse) private var transactions: [Transaction]
 
     @State private var anchorDate = Date()
     @State private var slideEdge: Edge = .trailing

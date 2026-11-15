@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Total ausginn · %@";
 "MENU_LANGUAGE" = "Sprooch";
 "MENU_ABOUT" = "Iwwer";
+"MENU_TRASH" = "Dreckskëscht";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "D'Dreckskëscht ass eidel";
+"TRASH_RESTORE" = "Erëmhierstellen";
+"TRASH_CLEAR_CONFIRMATION" = "All Elementer an der Dreckskëscht ginn definitiv geläscht. Dës Aktioun kann net réckgängeg gemaach ginn.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Versioun %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Faarf";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Kategorie läschen";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Dossier läschen";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Dës Aktioun kann net réckgängeg gemaach ginn. All Transaktioune vun dëser Kategorie gi geläscht.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "D'Kategorie an all hir Transaktioune ginn an d'Dreckskëscht geréckelt.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Kategorienumm";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nei Kategorie";
 "EDIT_CATEGORY_CREATE" = "Erstellen";

@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "মোট খরচ · %@";
 "MENU_LANGUAGE" = "ভাষা";
 "MENU_ABOUT" = "সম্পর্কে";
+"MENU_TRASH" = "ট্র্যাশ";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "ট্র্যাশ খালি";
+"TRASH_RESTORE" = "পুনরুদ্ধার করুন";
+"TRASH_CLEAR_CONFIRMATION" = "ট্র্যাশের সব আইটেম স্থায়ীভাবে মুছে ফেলা হবে। এই কাজটি পূর্বাবস্থায় ফেরানো যাবে না।";
 
 // MARK: - About
 "ABOUT_VERSION" = "সংস্করণ %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "রং";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "বিভাগ মুছুন";
 "EDIT_CATEGORY_DELETE_FOLDER" = "ফোল্ডার মুছুন";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "এই কাজটি পূর্বাবস্থায় ফেরানো যাবে না। এই বিভাগের সব লেনদেন মুছে ফেলা হবে।";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "বিভাগ এবং এর সব লেনদেন ট্র্যাশে সরানো হবে।";
 "EDIT_CATEGORY_DEFAULT_NAME" = "বিভাগের নাম";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "নতুন বিভাগ";
 "EDIT_CATEGORY_CREATE" = "তৈরি করুন";

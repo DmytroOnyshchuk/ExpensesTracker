@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Minuté za %@";
 "MENU_LANGUAGE" = "Jazyk";
 "MENU_ABOUT" = "O aplikácii";
+"MENU_TRASH" = "Kôš";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Kôš je prázdny";
+"TRASH_RESTORE" = "Obnoviť";
+"TRASH_CLEAR_CONFIRMATION" = "Všetky položky v koši budú natrvalo vymazané. Túto akciu nemožno vrátiť späť.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Verzia %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Farba";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Vymazať kategóriu";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Vymazať priečinok";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Túto akciu nie je možné vrátiť späť. Všetky transakcie s touto kategóriou budú vymazané.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kategória a všetky jej transakcie sa presunú do koša.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Názov kategórie";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nová kategória";
 "EDIT_CATEGORY_CREATE" = "Vytvoriť";

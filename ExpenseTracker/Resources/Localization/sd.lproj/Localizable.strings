@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "ڪل خرچ · %@";
 "MENU_LANGUAGE" = "ٻولي";
 "MENU_ABOUT" = "بابت";
+"MENU_TRASH" = "ردي";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "ردي خالي آهي";
+"TRASH_RESTORE" = "بحال ڪريو";
+"TRASH_CLEAR_CONFIRMATION" = "ردي ۾ موجود سڀ شيون هميشه لاءِ ختم ڪيون وينديون. هي عمل واپس نٿو ڪري سگهجي.";
 
 // MARK: - About
 "ABOUT_VERSION" = "ورزن %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "رنگ";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "درجو ختم ڪريو";
 "EDIT_CATEGORY_DELETE_FOLDER" = "فولڊر ختم ڪريو";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "هي عمل واپس نٿو ٿي سگهي. هن درجي جون سڀ لين دين ختم ٿي وينديون.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "زمرو ۽ ان جون سڀ ٽرانزيڪشنون ردي ۾ منتقل ڪيون وينديون.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "درجي جو نالو";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "نئون درجو";
 "EDIT_CATEGORY_CREATE" = "ٺاهيو";

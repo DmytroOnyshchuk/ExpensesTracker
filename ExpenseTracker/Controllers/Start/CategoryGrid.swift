@@ -10,7 +10,7 @@ import SwiftData
 import SwiftUI
 
 struct CategoryGrid: View {
-    @Query(filter: #Predicate<TransactionCategory> { !$0.isDirectory })
+    @Query(filter: #Predicate<TransactionCategory> { !$0.isDirectory && $0.deletedAt == nil })
     var categories: [TransactionCategory]
     var onSelect: (TransactionCategory) -> Bool
 

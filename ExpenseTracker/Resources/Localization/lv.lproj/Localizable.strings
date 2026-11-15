@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Kopā iztērēts · %@";
 "MENU_LANGUAGE" = "Valoda";
 "MENU_ABOUT" = "Par lietotni";
+"MENU_TRASH" = "Atkritne";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Atkritne ir tukša";
+"TRASH_RESTORE" = "Atjaunot";
+"TRASH_CLEAR_CONFIRMATION" = "Visi atkritnes vienumi tiks neatgriezeniski dzēsti. Šo darbību nevar atsaukt.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Versija %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Krāsa";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Dzēst kategoriju";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Dzēst mapi";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Šo darbību nevar atsaukt. Visi šīs kategorijas darījumi tiks dzēsti.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kategorija un visi tās darījumi tiks pārvietoti uz atkritni.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Kategorijas nosaukums";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Jauna kategorija";
 "EDIT_CATEGORY_CREATE" = "Izveidot";

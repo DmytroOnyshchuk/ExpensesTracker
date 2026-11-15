@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Витрачено за %@";
 "MENU_LANGUAGE" = "Мова";
 "MENU_ABOUT" = "Про програму";
+"MENU_TRASH" = "Кошик";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Кошик порожній";
+"TRASH_RESTORE" = "Відновити";
+"TRASH_CLEAR_CONFIRMATION" = "Усі об'єкти в кошику буде видалено назавжди. Цю дію неможливо скасувати.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Версія %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Колір";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Видалити категорію";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Видалити папку";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Цю дію не можна скасувати. Усі транзакції з цією категорією будуть видалені.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Категорію та всі її транзакції буде переміщено до кошика.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Назва категорії";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Нова категорія";
 "EDIT_CATEGORY_CREATE" = "Створити";

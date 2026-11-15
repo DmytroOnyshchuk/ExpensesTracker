@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "%@ کے اخراجات";
 "MENU_LANGUAGE" = "زبان";
 "MENU_ABOUT" = "تعارف";
+"MENU_TRASH" = "ردی";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "ردی خالی ہے";
+"TRASH_RESTORE" = "بحال کریں";
+"TRASH_CLEAR_CONFIRMATION" = "ردی میں موجود تمام آئٹمز مستقل طور پر حذف کر دیے جائیں گے۔ یہ عمل واپس نہیں کیا جا سکتا۔";
 
 // MARK: - About
 "ABOUT_VERSION" = "ورژن %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "رنگ";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "زمرہ حذف کریں";
 "EDIT_CATEGORY_DELETE_FOLDER" = "فولڈر حذف کریں";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "یہ عمل واپس نہیں کیا جا سکتا۔ اس زمرے کے تمام لین دین حذف کر دیے جائیں گے۔";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "زمرہ اور اس کے تمام لین دین ردی میں منتقل کر دیے جائیں گے۔";
 "EDIT_CATEGORY_DEFAULT_NAME" = "زمرے کا نام";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "نیا زمرہ";
 "EDIT_CATEGORY_CREATE" = "بنائیں";

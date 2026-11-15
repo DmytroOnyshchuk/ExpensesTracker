@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Spandeer in %@";
 "MENU_LANGUAGE" = "Taal";
 "MENU_ABOUT" = "Meer oor";
+"MENU_TRASH" = "Asblik";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Die asblik is leeg";
+"TRASH_RESTORE" = "Herstel";
+"TRASH_CLEAR_CONFIRMATION" = "Alle items in die asblik sal permanent verwyder word. Hierdie aksie kan nie ontdoen word nie.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Weergawe %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Kleur";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Vee kategorie uit";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Vee lêergids uit";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Hierdie aksie kan nie ontdoen word nie. Alle transaksies met hierdie kategorie sal uitgevee word.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Die kategorie en al sy transaksies sal na die asblik geskuif word.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Kategorienaam";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nuwe kategorie";
 "EDIT_CATEGORY_CREATE" = "Skep";

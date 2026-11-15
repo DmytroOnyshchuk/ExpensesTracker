@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "ټول لګښت · %@";
 "MENU_LANGUAGE" = "ژبه";
 "MENU_ABOUT" = "په اړه";
+"MENU_TRASH" = "کثافت‌دانۍ";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "کثافت‌دانۍ تشه ده";
+"TRASH_RESTORE" = "بېرته راوستل";
+"TRASH_CLEAR_CONFIRMATION" = "په کثافت‌دانۍ کې ټول توکي به د تل لپاره ړنګ شي. دا کړنه بېرته نه شي کېدای.";
 
 // MARK: - About
 "ABOUT_VERSION" = "نسخه %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "رنګ";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "کټګوري ړنګول";
 "EDIT_CATEGORY_DELETE_FOLDER" = "پوښۍ ړنګول";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "دا کړنه بېرته نه شي کېدای. د دې کټګورۍ ټولې راکړې ورکړې به ړنګې شي.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "کټګوري او د هغې ټولې معاملې به کثافت‌دانۍ ته ولېږدول شي.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "د کټګورۍ نوم";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "نوې کټګوري";
 "EDIT_CATEGORY_CREATE" = "جوړول";

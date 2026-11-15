@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Σύνολο εξόδων · %@";
 "MENU_LANGUAGE" = "Γλώσσα";
 "MENU_ABOUT" = "Πληροφορίες";
+"MENU_TRASH" = "Κάδος";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Ο κάδος είναι άδειος";
+"TRASH_RESTORE" = "Επαναφορά";
+"TRASH_CLEAR_CONFIRMATION" = "Όλα τα στοιχεία στον κάδο θα διαγραφούν οριστικά. Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Έκδοση %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Χρώμα";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Διαγραφή κατηγορίας";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Διαγραφή φακέλου";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Αυτή η ενέργεια δεν μπορεί να αναιρεθεί. Όλες οι συναλλαγές αυτής της κατηγορίας θα διαγραφούν.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Η κατηγορία και όλες οι συναλλαγές της θα μετακινηθούν στον κάδο.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Όνομα κατηγορίας";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Νέα κατηγορία";
 "EDIT_CATEGORY_CREATE" = "Δημιουργία";

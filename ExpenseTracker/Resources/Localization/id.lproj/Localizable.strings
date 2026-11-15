@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Pengeluaran %@";
 "MENU_LANGUAGE" = "Bahasa";
 "MENU_ABOUT" = "Tentang";
+"MENU_TRASH" = "Tempat Sampah";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Tempat sampah kosong";
+"TRASH_RESTORE" = "Pulihkan";
+"TRASH_CLEAR_CONFIRMATION" = "Semua item di tempat sampah akan dihapus secara permanen. Tindakan ini tidak dapat dibatalkan.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Versi %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Warna";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Hapus kategori";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Hapus folder";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Tindakan ini tidak dapat dibatalkan. Semua transaksi dengan kategori ini akan dihapus.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kategori dan semua transaksinya akan dipindahkan ke tempat sampah.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Nama kategori";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Kategori baru";
 "EDIT_CATEGORY_CREATE" = "Buat";

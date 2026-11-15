@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Tevahiya xerckirî · %@";
 "MENU_LANGUAGE" = "Ziman";
 "MENU_ABOUT" = "Derbar";
+"MENU_TRASH" = "Çopdank";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Çopdank vala ye";
+"TRASH_RESTORE" = "Vegerîne";
+"TRASH_CLEAR_CONFIRMATION" = "Hemû hêmanên di çopdankê de dê bi temamî werin jêbirin. Ev çalakî nayê vegerandin.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Guherto %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Reng";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Kategoriyê jê bibe";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Peldankê jê bibe";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ev kiryar nayê vegerandin. Hemû danûstandinên vê kategoriyê dê bên jêbirin.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kategorî û hemû danûstandinên wê dê biçin çopdankê.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Navê kategoriyê";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Kategoriya nû";
 "EDIT_CATEGORY_CREATE" = "Biafirîne";

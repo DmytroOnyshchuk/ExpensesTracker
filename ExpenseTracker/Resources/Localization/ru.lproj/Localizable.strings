@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Потрачено за %@";
 "MENU_LANGUAGE" = "Язык";
 "MENU_ABOUT" = "О программе";
+"MENU_TRASH" = "Корзина";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Корзина пуста";
+"TRASH_RESTORE" = "Восстановить";
+"TRASH_CLEAR_CONFIRMATION" = "Все объекты в корзине будут удалены навсегда. Это действие нельзя отменить.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Версия %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Цвет";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Удалить категорию";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Удалить папку";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Это действие нельзя отменить. Все транзакции с этой категорией будут удалены.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Категория и все её транзакции будут перемещены в корзину.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Название категории";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Новая категория";
 "EDIT_CATEGORY_CREATE" = "Создать";

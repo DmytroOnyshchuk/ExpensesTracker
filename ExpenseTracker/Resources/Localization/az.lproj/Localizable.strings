@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "%@ xərcləri";
 "MENU_LANGUAGE" = "Dil";
 "MENU_ABOUT" = "Haqqında";
+"MENU_TRASH" = "Səbət";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Səbət boşdur";
+"TRASH_RESTORE" = "Bərpa et";
+"TRASH_CLEAR_CONFIRMATION" = "Səbətdəki bütün elementlər həmişəlik silinəcək. Bu əməliyyatı geri qaytarmaq mümkün deyil.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Versiya %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Rəng";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Kateqoriyanı sil";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Qovluğu sil";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Bu əməliyyatı geri qaytarmaq mümkün deyil. Bu kateqoriyadakı bütün tranzaksiyalar silinəcək.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kateqoriya və onun bütün əməliyyatları səbətə köçürüləcək.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Kateqoriya adı";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Yeni kateqoriya";
 "EDIT_CATEGORY_CREATE" = "Yarat";

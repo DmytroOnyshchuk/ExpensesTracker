@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Brúkt í alt · %@";
 "MENU_LANGUAGE" = "Mál";
 "MENU_ABOUT" = "Um";
+"MENU_TRASH" = "Ruskspann";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Ruskspannin er tóm";
+"TRASH_RESTORE" = "Endurstovna";
+"TRASH_CLEAR_CONFIRMATION" = "Allir lutir í ruskspannini verða strikaðir endaliga. Hendan handlingin kann ikki angrast.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Útgáva %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Litur";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Strika bólk";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Strika mappu";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Hetta kann ikki angrast. Allar flytingar í hesum bólki verða strikaðar.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Bólkurin og allar flytingar hansara verða fluttar í ruskspannina.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Navn á bólki";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nýggjur bólkur";
 "EDIT_CATEGORY_CREATE" = "Stovna";

@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Wadarta la kharash gareeyay · %@";
 "MENU_LANGUAGE" = "Luqadda";
 "MENU_ABOUT" = "Ku saabsan";
+"MENU_TRASH" = "Qashinka";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Qashinku waa madhan yahay";
+"TRASH_RESTORE" = "Soo celi";
+"TRASH_CLEAR_CONFIRMATION" = "Dhammaan waxyaabaha ku jira qashinka si joogto ah ayaa loo tirtiri doonaa. Tallaabadan lagama noqon karo.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Nooca %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Midab";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Tirtir qaybta";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Tirtir galka";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Tallaabadan dib looma celin karo. Dhammaan macaamillada qaybtan waa la tirtiri doonaa.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Qaybta iyo dhammaan macaamilkeeda waxaa loo wareejin doonaa qashinka.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Magaca qaybta";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Qayb cusub";
 "EDIT_CATEGORY_CREATE" = "Samee";

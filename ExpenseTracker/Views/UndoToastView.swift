@@ -107,20 +107,10 @@ extension View {
 extension ModelContext {
     @MainActor
     func deleteWithUndo(_ transaction: Transaction) {
-        let id = transaction.id
-        let amount = transaction.amount
-        let category = transaction.category
-        let date = transaction.date
-        let comment = transaction.comment
-
-        delete(transaction)
-        try? save()
+        moveToTrash(transaction)
 
         UndoToastCenter.shared.show(L10n.transactionsListTransactionDeleted) {
-            let restored = Transaction(amount: amount, category: category, date: date, note: comment)
-            restored.id = id
-            self.insert(restored)
-            try? self.save()
+            self.restore(transaction)
         }
     }
 }

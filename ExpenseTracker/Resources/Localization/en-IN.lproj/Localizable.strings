@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Spent in %@";
 "MENU_LANGUAGE" = "Language";
 "MENU_ABOUT" = "About";
+"MENU_TRASH" = "Bin";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Bin is empty";
+"TRASH_RESTORE" = "Restore";
+"TRASH_CLEAR_CONFIRMATION" = "All items in the Bin will be permanently deleted. This action cannot be undone.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Version %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Colour";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Delete category";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Delete folder";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "This action cannot be undone. All transactions with this category will be deleted.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "The category and all its transactions will be moved to the Bin.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Category name";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "New category";
 "EDIT_CATEGORY_CREATE" = "Create";

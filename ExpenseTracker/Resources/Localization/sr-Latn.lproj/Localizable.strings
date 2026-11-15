@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Potrošeno za %@";
 "MENU_LANGUAGE" = "Jezik";
 "MENU_ABOUT" = "O aplikaciji";
+"MENU_TRASH" = "Smeće";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Smeće je prazno";
+"TRASH_RESTORE" = "Vrati";
+"TRASH_CLEAR_CONFIRMATION" = "Sve stavke u smeću biće trajno izbrisane. Ova radnja se ne može opozvati.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Verzija %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Boja";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Izbriši kategoriju";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Izbriši fasciklu";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ova radnja se ne može opozvati. Sve transakcije sa ovom kategorijom biće izbrisane.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kategorija i sve njene transakcije biće premeštene u smeće.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Naziv kategorije";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nova kategorija";
 "EDIT_CATEGORY_CREATE" = "Napravi";

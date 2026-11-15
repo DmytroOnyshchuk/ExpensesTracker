@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Käytetty yhteensä · %@";
 "MENU_LANGUAGE" = "Kieli";
 "MENU_ABOUT" = "Tietoja";
+"MENU_TRASH" = "Roskakori";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Roskakori on tyhjä";
+"TRASH_RESTORE" = "Palauta";
+"TRASH_CLEAR_CONFIRMATION" = "Kaikki roskakorin kohteet poistetaan pysyvästi. Tätä toimintoa ei voi kumota.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Versio %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Väri";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Poista luokka";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Poista kansio";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Tätä toimintoa ei voi kumota. Kaikki tämän luokan tapahtumat poistetaan.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kategoria ja kaikki sen tapahtumat siirretään roskakoriin.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Luokan nimi";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Uusi luokka";
 "EDIT_CATEGORY_CREATE" = "Luo";

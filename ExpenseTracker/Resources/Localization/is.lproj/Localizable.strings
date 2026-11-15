@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Samtals eytt · %@";
 "MENU_LANGUAGE" = "Tungumál";
 "MENU_ABOUT" = "Um forritið";
+"MENU_TRASH" = "Rusl";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Ruslið er tómt";
+"TRASH_RESTORE" = "Endurheimta";
+"TRASH_CLEAR_CONFIRMATION" = "Öllum atriðum í ruslinu verður eytt varanlega. Ekki er hægt að afturkalla þessa aðgerð.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Útgáfa %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Litur";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Eyða flokki";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Eyða möppu";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ekki er hægt að afturkalla þessa aðgerð. Öllum færslum í þessum flokki verður eytt.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Flokkurinn og allar færslur hans verða færðar í ruslið.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Heiti flokks";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nýr flokkur";
 "EDIT_CATEGORY_CREATE" = "Búa til";

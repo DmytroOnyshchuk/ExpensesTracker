@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Потрошено во %@";
 "MENU_LANGUAGE" = "Јазик";
 "MENU_ABOUT" = "За апликацијата";
+"MENU_TRASH" = "Корпа";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Корпата е празна";
+"TRASH_RESTORE" = "Врати";
+"TRASH_CLEAR_CONFIRMATION" = "Сите ставки во корпата ќе бидат трајно избришани. Ова дејство не може да се врати.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Верзија %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Боја";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Избриши категорија";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Избриши папка";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ова дејство не може да се врати. Сите трансакции со оваа категорија ќе бидат избришани.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Категоријата и сите нејзини трансакции ќе бидат преместени во корпата.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Име на категоријата";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Нова категорија";
 "EDIT_CATEGORY_CREATE" = "Создај";

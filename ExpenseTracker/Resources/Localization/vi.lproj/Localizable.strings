@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Đã chi trong %@";
 "MENU_LANGUAGE" = "Ngôn ngữ";
 "MENU_ABOUT" = "Giới thiệu";
+"MENU_TRASH" = "Thùng rác";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Thùng rác trống";
+"TRASH_RESTORE" = "Khôi phục";
+"TRASH_CLEAR_CONFIRMATION" = "Tất cả các mục trong thùng rác sẽ bị xóa vĩnh viễn. Không thể hoàn tác hành động này.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Phiên bản %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Màu";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Xóa danh mục";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Xóa thư mục";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Không thể hoàn tác thao tác này. Tất cả giao dịch thuộc danh mục này sẽ bị xóa.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Danh mục và tất cả giao dịch của danh mục sẽ được chuyển vào thùng rác.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Tên danh mục";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Danh mục mới";
 "EDIT_CATEGORY_CREATE" = "Tạo";

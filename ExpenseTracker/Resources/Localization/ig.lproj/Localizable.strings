@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Mkpokọta e mefuru · %@";
 "MENU_LANGUAGE" = "Asụsụ";
 "MENU_ABOUT" = "Maka";
+"MENU_TRASH" = "Ahịhịa";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Ahịhịa tọgbọ chakoo";
+"TRASH_RESTORE" = "Weghachi";
+"TRASH_CLEAR_CONFIRMATION" = "A ga-ehichapụ ihe niile dị na ahịhịa kpamkpam. Enweghị ike ịmegharị omume a.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Ụdị %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Agba";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Hichapụ ụdị";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Hichapụ folda";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Enweghị ike ịmegharị omume a. A ga-ehichapụ azụmahịa niile nwere ụdị a.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "A ga-ebuga otu a na azụmahịa ya niile na ahịhịa.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Aha ụdị";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Ụdị ọhụrụ";
 "EDIT_CATEGORY_CREATE" = "Mepụta";

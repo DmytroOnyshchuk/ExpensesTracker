@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "%@ harcaması";
 "MENU_LANGUAGE" = "Dil";
 "MENU_ABOUT" = "Hakkında";
+"MENU_TRASH" = "Çöp Sepeti";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Çöp sepeti boş";
+"TRASH_RESTORE" = "Geri Yükle";
+"TRASH_CLEAR_CONFIRMATION" = "Çöp sepetindeki tüm öğeler kalıcı olarak silinecek. Bu işlem geri alınamaz.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Sürüm %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Renk";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Kategoriyi sil";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Klasörü sil";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Bu işlem geri alınamaz. Bu kategorideki tüm işlemler silinecek.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kategori ve tüm işlemleri çöp sepetine taşınacak.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Kategori adı";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Yeni kategori";
 "EDIT_CATEGORY_CREATE" = "Oluştur";

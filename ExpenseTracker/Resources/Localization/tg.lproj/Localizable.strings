@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Ҳамагӣ сарф шуд · %@";
 "MENU_LANGUAGE" = "Забон";
 "MENU_ABOUT" = "Дар бораи барнома";
+"MENU_TRASH" = "Сабад";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Сабад холӣ аст";
+"TRASH_RESTORE" = "Барқарор кардан";
+"TRASH_CLEAR_CONFIRMATION" = "Ҳамаи унсурҳои сабад барои ҳамеша нест карда мешаванд. Ин амалро бекор кардан ғайриимкон аст.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Версия %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Ранг";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Нест кардани категория";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Нест кардани ҷузвдон";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Ин амалро баргардондан мумкин нест. Ҳамаи амалиётҳои ин категория нест карда мешаванд.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Категория ва ҳамаи транзаксияҳои он ба сабад интиқол дода мешаванд.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Номи категория";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Категорияи нав";
 "EDIT_CATEGORY_CREATE" = "Эҷод кардан";

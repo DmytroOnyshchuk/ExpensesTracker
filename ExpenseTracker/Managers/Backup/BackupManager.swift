@@ -74,8 +74,8 @@ enum BackupManager {
 
     @MainActor
     static func exportData(from context: ModelContext) throws -> Data {
-        let categories = try context.fetch(FetchDescriptor<TransactionCategory>())
-        let transactions = try context.fetch(FetchDescriptor<Transaction>(sortBy: [SortDescriptor(\.date)]))
+        let categories = try context.fetch(FetchDescriptor<TransactionCategory>(predicate: TransactionCategory.notDeleted))
+        let transactions = try context.fetch(FetchDescriptor<Transaction>(predicate: Transaction.notDeleted, sortBy: [SortDescriptor(\.date)]))
 
         let snapshot = BackupSnapshot(
             categories: categories.map { category in
@@ -110,8 +110,8 @@ enum BackupManager {
 
     @MainActor
     static func tableData(from context: ModelContext, format: BackupExportFormat) throws -> Data {
-        let categories = try context.fetch(FetchDescriptor<TransactionCategory>())
-        let transactions = try context.fetch(FetchDescriptor<Transaction>(sortBy: [SortDescriptor(\.date)]))
+        let categories = try context.fetch(FetchDescriptor<TransactionCategory>(predicate: TransactionCategory.notDeleted))
+        let transactions = try context.fetch(FetchDescriptor<Transaction>(predicate: Transaction.notDeleted, sortBy: [SortDescriptor(\.date)]))
 
         let rows = transactions.map { transaction in
             BackupTableRow(
@@ -215,7 +215,9 @@ enum BackupManager {
             }
 
             if let matchIndex {
-                resolved[item.uuid] = unclaimed.remove(at: matchIndex)
+                let match = unclaimed.remove(at: matchIndex)
+                match.deletedAt = nil
+                resolved[item.uuid] = match
                 continue
             }
 

@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Utraceno za %@";
 "MENU_LANGUAGE" = "Jazyk";
 "MENU_ABOUT" = "O aplikaci";
+"MENU_TRASH" = "Koš";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Koš je prázdný";
+"TRASH_RESTORE" = "Obnovit";
+"TRASH_CLEAR_CONFIRMATION" = "Všechny položky v koši budou trvale smazány. Tuto akci nelze vrátit zpět.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Verze %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Barva";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Smazat kategorii";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Smazat složku";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Tuto akci nelze vrátit zpět. Všechny transakce s touto kategorií budou smazány.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kategorie a všechny její transakce budou přesunuty do koše.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Název kategorie";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Nová kategorie";
 "EDIT_CATEGORY_CREATE" = "Vytvořit";

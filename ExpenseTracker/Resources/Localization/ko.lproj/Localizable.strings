@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "%@ 지출";
 "MENU_LANGUAGE" = "언어";
 "MENU_ABOUT" = "정보";
+"MENU_TRASH" = "휴지통";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "휴지통이 비어 있습니다";
+"TRASH_RESTORE" = "복원";
+"TRASH_CLEAR_CONFIRMATION" = "휴지통의 모든 항목이 영구적으로 삭제됩니다. 이 작업은 되돌릴 수 없습니다.";
 
 // MARK: - About
 "ABOUT_VERSION" = "버전 %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "색상";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "카테고리 삭제";
 "EDIT_CATEGORY_DELETE_FOLDER" = "폴더 삭제";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "이 작업은 되돌릴 수 없습니다. 이 카테고리의 모든 거래가 삭제됩니다.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "카테고리와 해당 거래가 모두 휴지통으로 이동됩니다.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "카테고리 이름";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "새 카테고리";
 "EDIT_CATEGORY_CREATE" = "생성";

@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Cheltuit în %@";
 "MENU_LANGUAGE" = "Limbă";
 "MENU_ABOUT" = "Despre";
+"MENU_TRASH" = "Coș";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Coșul este gol";
+"TRASH_RESTORE" = "Restaurează";
+"TRASH_CLEAR_CONFIRMATION" = "Toate elementele din coș vor fi șterse definitiv. Această acțiune nu poate fi anulată.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Versiunea %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Culoare";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Șterge categoria";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Șterge dosarul";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Această acțiune nu poate fi anulată. Toate tranzacțiile din această categorie vor fi șterse.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Categoria și toate tranzacțiile ei vor fi mutate în coș.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Numele categoriei";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Categorie nouă";
 "EDIT_CATEGORY_CREATE" = "Creează";

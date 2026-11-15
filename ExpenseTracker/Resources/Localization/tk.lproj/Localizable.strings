@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Jemi harçlandy · %@";
 "MENU_LANGUAGE" = "Dil";
 "MENU_ABOUT" = "Programma barada";
+"MENU_TRASH" = "Sebet";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Sebet boş";
+"TRASH_RESTORE" = "Dikeltmek";
+"TRASH_CLEAR_CONFIRMATION" = "Sebetdäki ähli elementler hemişelik pozular. Bu hereketi yzyna gaýtaryp bolmaýar.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Wersiýa %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Reňk";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Kategoriýany poz";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Bukjany poz";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Bu hereketi yzyna gaýtaryp bolmaýar. Bu kategoriýadaky ähli amallar pozular.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "Kategoriýa we onuň ähli amallary sebede geçiriler.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Kategoriýanyň ady";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Täze kategoriýa";
 "EDIT_CATEGORY_CREATE" = "Döret";

@@ -19,7 +19,7 @@ struct StartView: View {
     @State private var amountAttentionTrigger: Int = .zero
     @State private var showBalanceInput = false
     @AppStorage(UDKey.balance.rawValue) private var balanceData: Data?
-    @Query(sort: \Transaction.date, order: .reverse, animation: .default) private var transactions: [Transaction]
+    @Query(filter: Transaction.notDeleted, sort: \Transaction.date, order: .reverse, animation: .default) private var transactions: [Transaction]
 
     var body: some View {
         NavigationStack {

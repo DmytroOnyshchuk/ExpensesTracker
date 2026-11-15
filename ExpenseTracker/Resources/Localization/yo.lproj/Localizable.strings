@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "Àpapọ̀ tí a ná · %@";
 "MENU_LANGUAGE" = "Èdè";
 "MENU_ABOUT" = "Nípa";
+"MENU_TRASH" = "Àpótí ìdọ̀tí";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "Àpótí ìdọ̀tí ṣófo";
+"TRASH_RESTORE" = "Mú padà";
+"TRASH_CLEAR_CONFIRMATION" = "Gbogbo ohun tó wà nínú àpótí ìdọ̀tí ni a ó parẹ́ pátápátá. A kò lè yí ìgbésẹ̀ yìí padà.";
 
 // MARK: - About
 "ABOUT_VERSION" = "Ẹ̀dà %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "Àwọ̀";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "Pa ẹ̀ka rẹ́";
 "EDIT_CATEGORY_DELETE_FOLDER" = "Pa fódà rẹ́";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "A kò lè dá ìgbésẹ̀ yìí padà. Gbogbo ìdúnàádúrà tó ní ẹ̀ka yìí ni a ó pa rẹ́.";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "A ó gbé ẹ̀ka náà àti gbogbo ìdúnàádúrà rẹ̀ lọ sí àpótí ìdọ̀tí.";
 "EDIT_CATEGORY_DEFAULT_NAME" = "Orúkọ ẹ̀ka";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "Ẹ̀ka tuntun";
 "EDIT_CATEGORY_CREATE" = "Ṣẹ̀dá";

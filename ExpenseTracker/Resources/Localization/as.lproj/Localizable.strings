@@ -63,6 +63,12 @@
 "MENU_SPENT_IN_MONTH" = "মুঠ খৰচ · %@";
 "MENU_LANGUAGE" = "ভাষা";
 "MENU_ABOUT" = "বিষয়ে";
+"MENU_TRASH" = "ট্ৰেছ";
+
+// MARK: - Trash
+"TRASH_EMPTY" = "ট্ৰেছ খালী আছে";
+"TRASH_RESTORE" = "পুনঃস্থাপন কৰক";
+"TRASH_CLEAR_CONFIRMATION" = "ট্ৰেছত থকা সকলো বস্তু স্থায়ীভাৱে মচি পেলোৱা হ'ব। এই কাৰ্য পূৰ্বৱৎ কৰিব নোৱাৰি।";
 
 // MARK: - About
 "ABOUT_VERSION" = "সংস্কৰণ %@";
@@ -111,7 +117,7 @@
 "EDIT_CATEGORY_COLOR" = "ৰং";
 "EDIT_CATEGORY_DELETE_CATEGORY" = "শ্ৰেণী মচি পেলাওক";
 "EDIT_CATEGORY_DELETE_FOLDER" = "ফ'ল্ডাৰ মচি পেলাওক";
-"EDIT_CATEGORY_DELETE_CONFIRMATION" = "এই কাৰ্য পূৰ্বৱৎ কৰিব নোৱাৰি। এই শ্ৰেণীৰ সকলো লেনদেন মচি পেলোৱা হ'ব।";
+"EDIT_CATEGORY_DELETE_CONFIRMATION" = "শ্ৰেণীটো আৰু ইয়াৰ সকলো লেনদেন ট্ৰেছলৈ নিয়া হ'ব।";
 "EDIT_CATEGORY_DEFAULT_NAME" = "শ্ৰেণীৰ নাম";
 "EDIT_CATEGORY_NEW_DEFAULT_NAME" = "নতুন শ্ৰেণী";
 "EDIT_CATEGORY_CREATE" = "সৃষ্টি কৰক";
