@@ -100,12 +100,15 @@ struct GlassDonutChart: View {
     let slices: [StatisticsSlice]
 
     @State private var progress: CGFloat = .zero
+    @State private var width: CGFloat = .zero
 
     private static let minLabelShare = 0.06
     private static let innerRatio: CGFloat = 0.56
     private static let innerBandRatio: CGFloat = 0.24
     private static let badgeSize: CGFloat = 40
     private static let badgeDistance: CGFloat = 30
+    private static let labelReach: CGFloat = 18
+    private static let maxOuter: CGFloat = 105
 
     private struct Segment: Identifiable {
         let slice: StatisticsSlice
@@ -128,14 +131,36 @@ struct GlassDonutChart: View {
         }
     }
 
+    private func outerRadius(for width: CGFloat) -> CGFloat {
+        guard width > 0 else { return Self.maxOuter }
+        return max(min(width / 2 - 54, Self.maxOuter), 40)
+    }
+
+    private func verticalExtents(_ segments: [Segment], outer: CGFloat) -> (top: CGFloat, bottom: CGFloat) {
+        let radius = outer + Self.badgeDistance
+        var top = outer
+        var bottom = outer
+        for segment in segments where segment.slice.share >= Self.minLabelShare {
+            let sine = CGFloat(sin(segment.middle))
+            let offset = sine * radius
+            let half = Self.badgeSize / 2
+            top = max(top, half + (sine < 0 ? Self.labelReach : 0) - offset)
+            bottom = max(bottom, half + (sine < 0 ? 0 : Self.labelReach) + offset)
+        }
+        return (top, bottom)
+    }
+
     var body: some View {
+        let segments = segments
+        let extents = verticalExtents(segments, outer: outerRadius(for: width))
+
         GeometryReader { geometry in
             let size = geometry.size
-            let outer = max(min(size.width / 2 - 54, size.height / 2 - 70), 40)
+            let outer = outerRadius(for: size.width)
             let inner = outer * Self.innerRatio
-            let center = CGPoint(x: size.width / 2, y: size.height / 2)
+            let center = CGPoint(x: size.width / 2, y: verticalExtents(segments, outer: outer).top)
             let reach = outer + 40
-            let segments = segments
+            let side = (outer + 60) * 2
 
             ZStack {
                 ZStack {
@@ -179,7 +204,7 @@ struct GlassDonutChart: View {
                         )
                         .frame(width: outer * 2, height: outer * 2)
                 }
-                .frame(width: size.width, height: size.height)
+                .frame(width: side, height: side)
                 .mask {
                     Circle()
                         .trim(from: 0, to: progress)
@@ -187,6 +212,7 @@ struct GlassDonutChart: View {
                         .frame(width: reach, height: reach)
                         .rotationEffect(.degrees(-90))
                 }
+                .position(center)
 
                 ForEach(segments) { segment in
                     if segment.slice.share >= Self.minLabelShare {
@@ -195,6 +221,12 @@ struct GlassDonutChart: View {
                 }
             }
             .frame(width: size.width, height: size.height)
+        }
+        .frame(height: extents.top + extents.bottom)
+        .onGeometryChange(for: CGFloat.self) { proxy in
+            proxy.size.width
+        } action: { newValue in
+            width = newValue
         }
         .onAppear {
             withAnimation(.easeOut(duration: 0.6)) {
@@ -387,7 +419,6 @@ private func makePreviewPoints() -> [StatisticsChartPoint] {
 
 #Preview("Donut") {
     GlassDonutChart(slices: makePreviewSlices())
-        .frame(height: 320)
         .padding(.horizontal, 16)
         .background(.appMain)
 }

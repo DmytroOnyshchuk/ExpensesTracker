@@ -225,7 +225,6 @@ struct StatisticsBreakdown: View {
                         .frame(height: 120)
                 } else {
                     chart
-                        .frame(height: 350)
                         .padding(.horizontal, 16)
                         .contentShape(Rectangle())
                         .onTapGesture {
@@ -256,7 +255,6 @@ struct StatisticsBreakdown: View {
                         .disabled(slice.category.isDirectory)
                     }
                 }
-                .padding(.top, 16)
             }
         }
     }
@@ -281,6 +279,8 @@ struct StatisticsBreakdown: View {
                 }
             }
             .padding(.vertical, 24)
+            .frame(height: 350)
+            .padding(.bottom, 16)
         } else {
             GlassDonutChart(slices: slices)
         }
