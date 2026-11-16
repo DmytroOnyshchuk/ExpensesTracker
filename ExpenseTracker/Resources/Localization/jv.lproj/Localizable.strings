@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Lebokake jumlahe dhisik";
 "STARTVIEW_BALANCE" = "Saldo";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Sisa: %@";
+"BUDGET_EXCEEDED" = "Kliwat %@";
+"BUDGET_NO_LIMIT" = "Tanpa wates";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Pengeluaran";
 "STATISTICS_DAY" = "Dina";

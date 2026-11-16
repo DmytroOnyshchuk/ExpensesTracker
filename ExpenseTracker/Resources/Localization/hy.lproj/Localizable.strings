@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Նախ մուտքագրեք գումարը";
 "STARTVIEW_BALANCE" = "Մնացորդ";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Մնացել է՝ %@";
+"BUDGET_EXCEEDED" = "Գերազանցվել է %@-ով";
+"BUDGET_NO_LIMIT" = "Առանց սահմանի";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Ծախսեր";
 "STATISTICS_DAY" = "Օր";

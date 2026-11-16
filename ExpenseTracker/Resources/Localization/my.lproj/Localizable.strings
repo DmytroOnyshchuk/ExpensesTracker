@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "ပမာဏကို အရင်ထည့်ပါ";
 "STARTVIEW_BALANCE" = "လက်ကျန်ငွေ";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "ကျန်: %@";
+"BUDGET_EXCEEDED" = "%@ ကျော်လွန်";
+"BUDGET_NO_LIMIT" = "ကန့်သတ်ချက်မရှိ";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "အသုံးစရိတ်များ";
 "STATISTICS_DAY" = "ရက်";

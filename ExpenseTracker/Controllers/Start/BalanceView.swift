@@ -50,21 +50,35 @@ struct BalanceInputPopup: View {
     let onCancel: () -> Void
     let onConfirm: (Int) -> Void
 
+    private let title: String
+    private let allowsEmpty: Bool
+
     @State private var text: String
     @FocusState private var isFocused: Bool
 
-    init(balance: Int?, onCancel: @escaping () -> Void, onConfirm: @escaping (Int) -> Void) {
+    init(
+        title: String = L10n.startviewBalance,
+        balance: Int?,
+        allowsEmpty: Bool = false,
+        onCancel: @escaping () -> Void,
+        onConfirm: @escaping (Int) -> Void
+    ) {
+        self.title = title
+        self.allowsEmpty = allowsEmpty
         self.onCancel = onCancel
         self.onConfirm = onConfirm
         _text = State(initialValue: AmountInput.text(from: balance ?? .zero))
     }
 
     var body: some View {
-        TransactionEditPopup(canConfirm: !text.isBlank, onCancel: cancel, onConfirm: confirm) {
+        TransactionEditPopup(canConfirm: allowsEmpty || !text.isBlank, onCancel: cancel, onConfirm: confirm) {
             VStack(spacing: 16) {
-                Text(L10n.startviewBalance)
+                Text(title)
                     .font(.appMedium(16))
                     .foregroundColor(.appLabel)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
+                    .padding(.horizontal, 16)
 
                 TextField("", text: $text, prompt: Text("0").foregroundColor(.appLabel.opacity(0.6)))
                     .keyboardType(.decimalPad)

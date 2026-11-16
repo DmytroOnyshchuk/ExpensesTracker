@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Эхлээд дүнгээ оруулна уу";
 "STARTVIEW_BALANCE" = "Үлдэгдэл";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Үлдсэн: %@";
+"BUDGET_EXCEEDED" = "%@-аар хэтэрсэн";
+"BUDGET_NO_LIMIT" = "Хязгааргүй";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Зарлага";
 "STATISTICS_DAY" = "Өдөр";

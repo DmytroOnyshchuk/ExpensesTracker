@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Nejprve zadejte částku";
 "STARTVIEW_BALANCE" = "Zůstatek";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Zbývá: %@";
+"BUDGET_EXCEEDED" = "Překročeno o %@";
+"BUDGET_NO_LIMIT" = "Bez limitu";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Výdaje";
 "STATISTICS_DAY" = "Den";

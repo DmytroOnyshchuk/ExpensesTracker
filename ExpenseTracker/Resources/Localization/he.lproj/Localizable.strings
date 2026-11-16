@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "הזינו קודם את הסכום";
 "STARTVIEW_BALANCE" = "יתרה";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "נותרו: %@";
+"BUDGET_EXCEEDED" = "חריגה של %@";
+"BUDGET_NO_LIMIT" = "ללא הגבלה";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "הוצאות";
 "STATISTICS_DAY" = "יום";

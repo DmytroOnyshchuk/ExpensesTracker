@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Masukkan jumlah terlebih dahulu";
 "STARTVIEW_BALANCE" = "Saldo";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Sisa: %@";
+"BUDGET_EXCEEDED" = "Terlampaui %@";
+"BUDGET_NO_LIMIT" = "Tanpa batas";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Pengeluaran";
 "STATISTICS_DAY" = "Hari";

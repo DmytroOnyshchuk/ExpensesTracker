@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Introduceți mai întâi suma";
 "STARTVIEW_BALANCE" = "Sold";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Rămas: %@";
+"BUDGET_EXCEEDED" = "Depășit cu %@";
+"BUDGET_NO_LIMIT" = "Fără limită";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Cheltuieli";
 "STATISTICS_DAY" = "Zi";

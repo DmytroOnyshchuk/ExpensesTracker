@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Ilki bilen mukdary giriziň";
 "STARTVIEW_BALANCE" = "Balans";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Galdy: %@";
+"BUDGET_EXCEEDED" = "%@ aşdy";
+"BUDGET_NO_LIMIT" = "Çäk ýok";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Çykdajylar";
 "STATISTICS_DAY" = "Gün";

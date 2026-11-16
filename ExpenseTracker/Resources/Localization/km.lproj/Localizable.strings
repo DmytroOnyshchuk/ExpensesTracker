@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "សូមបញ្ចូលចំនួនទឹកប្រាក់ជាមុនសិន";
 "STARTVIEW_BALANCE" = "សមតុល្យ";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "នៅសល់៖ %@";
+"BUDGET_EXCEEDED" = "លើស %@";
+"BUDGET_NO_LIMIT" = "គ្មានដែនកំណត់";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ចំណាយ";
 "STATISTICS_DAY" = "ថ្ងៃ";

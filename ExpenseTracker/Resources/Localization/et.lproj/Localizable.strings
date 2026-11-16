@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Sisestage kõigepealt summa";
 "STARTVIEW_BALANCE" = "Saldo";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Jääk: %@";
+"BUDGET_EXCEEDED" = "Ületatud %@ võrra";
+"BUDGET_NO_LIMIT" = "Limiiti pole";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Kulud";
 "STATISTICS_DAY" = "Päev";

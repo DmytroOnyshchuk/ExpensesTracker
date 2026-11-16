@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Buru ụzọ tinye ego ole";
 "STARTVIEW_BALANCE" = "Ego fọdụrụ";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Fọdụrụ: %@";
+"BUDGET_EXCEEDED" = "Gafere site na %@";
+"BUDGET_NO_LIMIT" = "Enweghị oke";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Mmefu";
 "STATISTICS_DAY" = "Ụbọchị";

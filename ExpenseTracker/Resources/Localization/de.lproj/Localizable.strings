@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Zuerst den Betrag eingeben";
 "STARTVIEW_BALANCE" = "Kontostand";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Übrig: %@";
+"BUDGET_EXCEEDED" = "Um %@ überschritten";
+"BUDGET_NO_LIMIT" = "Kein Limit";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Ausgaben";
 "STATISTICS_DAY" = "Tag";

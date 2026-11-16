@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Башта сумманы кертегез";
 "STARTVIEW_BALANCE" = "Баланс";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Калды: %@";
+"BUDGET_EXCEEDED" = "%@ артып китте";
+"BUDGET_NO_LIMIT" = "Чикләү юк";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Чыгымнар";
 "STATISTICS_DAY" = "Көн";

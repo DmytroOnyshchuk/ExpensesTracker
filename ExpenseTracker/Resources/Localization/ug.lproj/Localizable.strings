@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "ئالدى بىلەن سوممىنى كىرگۈزۈڭ";
 "STARTVIEW_BALANCE" = "قالدۇق";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "قالدى: %@";
+"BUDGET_EXCEEDED" = "%@ ئېشىپ كەتتى";
+"BUDGET_NO_LIMIT" = "چەك يوق";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "چىقىملار";
 "STATISTICS_DAY" = "كۈن";

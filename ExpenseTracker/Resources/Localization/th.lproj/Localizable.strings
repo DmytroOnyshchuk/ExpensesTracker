@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "กรุณาใส่จำนวนเงินก่อน";
 "STARTVIEW_BALANCE" = "ยอดคงเหลือ";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "เหลือ: %@";
+"BUDGET_EXCEEDED" = "เกิน %@";
+"BUDGET_NO_LIMIT" = "ไม่จำกัด";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ค่าใช้จ่าย";
 "STATISTICS_DAY" = "วัน";

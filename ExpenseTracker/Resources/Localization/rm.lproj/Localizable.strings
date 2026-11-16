@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Endatescha l'emprim l'import";
 "STARTVIEW_BALANCE" = "Saldo";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Restan: %@";
+"BUDGET_EXCEEDED" = "Surpassà per %@";
+"BUDGET_NO_LIMIT" = "Nagina limita";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Expensas";
 "STATISTICS_DAY" = "Di";

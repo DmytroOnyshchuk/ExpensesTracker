@@ -18,6 +18,7 @@ final class TransactionCategory {
     var isDirectory: Bool = false
     var parentUuid: UUID?
     var sortIndex: Int = 0
+    var budget: Int = 0
     var deletedAt: Date?
     
     init(name: TransactionCategoryName, categoryIcon: CategoryIcon, isDirectory: Bool = false, parentUuid: UUID? = nil, sortIndex: Int = .zero) {

@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Marka hore geli qaddarka";
 "STARTVIEW_BALANCE" = "Haraaga";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Haray: %@";
+"BUDGET_EXCEEDED" = "Waxaa laga badiyay %@";
+"BUDGET_NO_LIMIT" = "Xad ma leh";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Kharashyada";
 "STATISTICS_DAY" = "Maalin";

@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Cuir a-steach an t-suim an toiseach";
 "STARTVIEW_BALANCE" = "Cothrom";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Air fhàgail: %@";
+"BUDGET_EXCEEDED" = "Air a dhol %@ thairis";
+"BUDGET_NO_LIMIT" = "Gun chrìoch";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Cosgaisean";
 "STATISTICS_DAY" = "Latha";

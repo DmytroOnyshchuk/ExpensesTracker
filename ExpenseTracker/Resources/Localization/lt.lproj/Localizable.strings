@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Pirmiausia įveskite sumą";
 "STARTVIEW_BALANCE" = "Likutis";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Liko: %@";
+"BUDGET_EXCEEDED" = "Viršyta %@";
+"BUDGET_NO_LIMIT" = "Be limito";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Išlaidos";
 "STATISTICS_DAY" = "Diena";

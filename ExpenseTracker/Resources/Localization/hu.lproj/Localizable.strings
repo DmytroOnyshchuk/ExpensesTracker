@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Először add meg az összeget";
 "STARTVIEW_BALANCE" = "Egyenleg";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Maradt: %@";
+"BUDGET_EXCEEDED" = "Túllépve ennyivel: %@";
+"BUDGET_NO_LIMIT" = "Nincs korlát";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Kiadások";
 "STATISTICS_DAY" = "Nap";

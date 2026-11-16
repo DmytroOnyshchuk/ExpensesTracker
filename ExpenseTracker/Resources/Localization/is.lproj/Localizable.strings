@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Sláðu fyrst inn upphæðina";
 "STARTVIEW_BALANCE" = "Staða";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Eftir: %@";
+"BUDGET_EXCEEDED" = "Farið %@ fram úr";
+"BUDGET_NO_LIMIT" = "Engin mörk";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Útgjöld";
 "STATISTICS_DAY" = "Dagur";

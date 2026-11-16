@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Voer eerst het bedrag in";
 "STARTVIEW_BALANCE" = "Saldo";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Over: %@";
+"BUDGET_EXCEEDED" = "Overschreden met %@";
+"BUDGET_NO_LIMIT" = "Geen limiet";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Uitgaven";
 "STATISTICS_DAY" = "Dag";

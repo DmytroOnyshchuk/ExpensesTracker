@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Kọ́kọ́ tẹ iye owó";
 "STARTVIEW_BALANCE" = "Owó tó kù";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Ó kù: %@";
+"BUDGET_EXCEEDED" = "Ó kọjá pẹ̀lú %@";
+"BUDGET_NO_LIMIT" = "Kò sí ààlà";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Àwọn ìnáwó";
 "STATISTICS_DAY" = "Ọjọ́";

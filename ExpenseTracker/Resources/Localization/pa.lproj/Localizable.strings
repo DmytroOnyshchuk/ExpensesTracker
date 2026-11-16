@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "ਪਹਿਲਾਂ ਰਕਮ ਦਰਜ ਕਰੋ";
 "STARTVIEW_BALANCE" = "ਬੈਲੇਂਸ";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "ਬਾਕੀ: %@";
+"BUDGET_EXCEEDED" = "%@ ਵੱਧ ਗਿਆ";
+"BUDGET_NO_LIMIT" = "ਕੋਈ ਸੀਮਾ ਨਹੀਂ";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ਖਰਚੇ";
 "STATISTICS_DAY" = "ਦਿਨ";

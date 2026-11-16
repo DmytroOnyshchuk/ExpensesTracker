@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "سەرەتا بڕەکە بنووسە";
 "STARTVIEW_BALANCE" = "باڵانس";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "ماوە: %@";
+"BUDGET_EXCEEDED" = "%@ تێپەڕیوە";
+"BUDGET_NO_LIMIT" = "بێ سنوور";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "خەرجییەکان";
 "STATISTICS_DAY" = "ڕۆژ";

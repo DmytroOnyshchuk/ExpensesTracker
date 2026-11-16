@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "መጀመሪያ መጠኑን ያስገቡ";
 "STARTVIEW_BALANCE" = "ቀሪ ሂሳብ";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "ቀሪ፦ %@";
+"BUDGET_EXCEEDED" = "በ%@ አልፏል";
+"BUDGET_NO_LIMIT" = "ገደብ የለም";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ወጪዎች";
 "STATISTICS_DAY" = "ቀን";

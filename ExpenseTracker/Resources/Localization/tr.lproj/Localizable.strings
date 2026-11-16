@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Önce tutarı girin";
 "STARTVIEW_BALANCE" = "Bakiye";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Kalan: %@";
+"BUDGET_EXCEEDED" = "%@ aşıldı";
+"BUDGET_NO_LIMIT" = "Limit yok";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Harcamalar";
 "STATISTICS_DAY" = "Gün";

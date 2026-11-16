@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "પહેલા રકમ દાખલ કરો";
 "STARTVIEW_BALANCE" = "બેલેન્સ";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "બાકી: %@";
+"BUDGET_EXCEEDED" = "%@ વધી ગયું";
+"BUDGET_NO_LIMIT" = "કોઈ મર્યાદા નથી";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ખર્ચ";
 "STATISTICS_DAY" = "દિવસ";

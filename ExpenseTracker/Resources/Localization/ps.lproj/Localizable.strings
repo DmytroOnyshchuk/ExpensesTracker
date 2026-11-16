@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "لومړی اندازه ولیکئ";
 "STARTVIEW_BALANCE" = "بیلانس";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "پاتې: %@";
+"BUDGET_EXCEEDED" = "%@ تېری شوی";
+"BUDGET_NO_LIMIT" = "هېڅ حد نشته";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "لګښتونه";
 "STATISTICS_DAY" = "ورځ";

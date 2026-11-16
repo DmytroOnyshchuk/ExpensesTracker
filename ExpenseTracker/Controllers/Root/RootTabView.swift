@@ -48,9 +48,7 @@ struct RootTabView: View {
             }
 
             Tab(L10n.menuBudget, systemImage: "wallet.bifold", value: AppTab.budget) {
-                NavigationStack {
-                    BudgetView()
-                }
+                BudgetView()
             }
 
             Tab(L10n.menuTitle, systemImage: "list.dash", value: AppTab.menu) {

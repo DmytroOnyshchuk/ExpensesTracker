@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Prvo unesite iznos";
 "STARTVIEW_BALANCE" = "Stanje";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Preostalo: %@";
+"BUDGET_EXCEEDED" = "Prekoračeno za %@";
+"BUDGET_NO_LIMIT" = "Bez limita";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Troškovi";
 "STATISTICS_DAY" = "Dan";

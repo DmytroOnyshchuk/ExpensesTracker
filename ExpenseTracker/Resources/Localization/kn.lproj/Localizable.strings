@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "ಮೊದಲು ಮೊತ್ತವನ್ನು ನಮೂದಿಸಿ";
 "STARTVIEW_BALANCE" = "ಬ್ಯಾಲೆನ್ಸ್";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "ಉಳಿದಿದೆ: %@";
+"BUDGET_EXCEEDED" = "%@ ಮೀರಿದೆ";
+"BUDGET_NO_LIMIT" = "ಮಿತಿ ಇಲ್ಲ";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ವೆಚ್ಚಗಳು";
 "STATISTICS_DAY" = "ದಿನ";

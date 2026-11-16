@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Enter the amount first";
 "STARTVIEW_BALANCE" = "Balance";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Left: %@";
+"BUDGET_EXCEEDED" = "Exceeded by %@";
+"BUDGET_NO_LIMIT" = "No limit";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Expenses";
 "STATISTICS_DAY" = "Day";

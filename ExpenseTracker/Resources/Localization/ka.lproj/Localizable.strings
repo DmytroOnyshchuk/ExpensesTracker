@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "ჯერ შეიყვანეთ თანხა";
 "STARTVIEW_BALANCE" = "ბალანსი";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "დარჩა: %@";
+"BUDGET_EXCEEDED" = "გადაჭარბებულია %@-ით";
+"BUDGET_NO_LIMIT" = "ლიმიტის გარეშე";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ხარჯები";
 "STATISTICS_DAY" = "დღე";

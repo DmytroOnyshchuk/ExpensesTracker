@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Прво унесите износ";
 "STARTVIEW_BALANCE" = "Стање";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Преостало: %@";
+"BUDGET_EXCEEDED" = "Прекорачено за %@";
+"BUDGET_NO_LIMIT" = "Без ограничења";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Трошкови";
 "STATISTICS_DAY" = "Дан";

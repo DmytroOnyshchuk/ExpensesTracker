@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Syötä ensin summa";
 "STARTVIEW_BALANCE" = "Saldo";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Jäljellä: %@";
+"BUDGET_EXCEEDED" = "Ylitetty %@";
+"BUDGET_NO_LIMIT" = "Ei rajaa";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Kulut";
 "STATISTICS_DAY" = "Päivä";

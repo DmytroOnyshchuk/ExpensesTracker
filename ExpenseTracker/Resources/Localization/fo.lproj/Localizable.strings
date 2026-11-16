@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Skriva upphæddina fyrst";
 "STARTVIEW_BALANCE" = "Saldo";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Eftir: %@";
+"BUDGET_EXCEEDED" = "Farið %@ uppum";
+"BUDGET_NO_LIMIT" = "Einki mark";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Útreiðslur";
 "STATISTICS_DAY" = "Dagur";

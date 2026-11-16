@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "請先輸入金額";
 "STARTVIEW_BALANCE" = "餘額";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "剩餘：%@";
+"BUDGET_EXCEEDED" = "超出 %@";
+"BUDGET_NO_LIMIT" = "無上限";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "支出";
 "STATISTICS_DAY" = "日";

@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "प्रथम रक्कम प्रविष्ट करा";
 "STARTVIEW_BALANCE" = "शिल्लक";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "शिल्लक: %@";
+"BUDGET_EXCEEDED" = "%@ ने ओलांडले";
+"BUDGET_NO_LIMIT" = "मर्यादा नाही";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "खर्च";
 "STATISTICS_DAY" = "दिवस";

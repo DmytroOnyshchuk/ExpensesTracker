@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "پهريان رقم داخل ڪريو";
 "STARTVIEW_BALANCE" = "بيلنس";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "باقي: %@";
+"BUDGET_EXCEEDED" = "%@ وڌي ويو";
+"BUDGET_NO_LIMIT" = "ڪا حد ناهي";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "خرچ";
 "STATISTICS_DAY" = "ڏينهن";

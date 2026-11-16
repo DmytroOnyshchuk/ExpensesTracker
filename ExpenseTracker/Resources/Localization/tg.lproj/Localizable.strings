@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Аввал маблағро ворид кунед";
 "STARTVIEW_BALANCE" = "Тавозун";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Боқӣ: %@";
+"BUDGET_EXCEEDED" = "%@ зиёд шуд";
+"BUDGET_NO_LIMIT" = "Бе маҳдудият";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Хароҷот";
 "STATISTICS_DAY" = "Рӯз";

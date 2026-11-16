@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Ange beloppet först";
 "STARTVIEW_BALANCE" = "Saldo";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Kvar: %@";
+"BUDGET_EXCEEDED" = "Överskridet med %@";
+"BUDGET_NO_LIMIT" = "Ingen gräns";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Utgifter";
 "STATISTICS_DAY" = "Dag";

@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "L-ewwel daħħal l-ammont";
 "STARTVIEW_BALANCE" = "Bilanċ";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Fadal: %@";
+"BUDGET_EXCEEDED" = "Inqabeż b'%@";
+"BUDGET_NO_LIMIT" = "Bla limitu";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Spejjeż";
 "STATISTICS_DAY" = "Jum";

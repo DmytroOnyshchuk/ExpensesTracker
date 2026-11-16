@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Ilagay muna ang halaga";
 "STARTVIEW_BALANCE" = "Balanse";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Natitira: %@";
+"BUDGET_EXCEEDED" = "Lumampas ng %@";
+"BUDGET_NO_LIMIT" = "Walang limitasyon";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Mga gastos";
 "STATISTICS_DAY" = "Araw";

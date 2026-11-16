@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Qala ngokufaka isixa";
 "STARTVIEW_BALANCE" = "Ibhalansi";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Okuseleyo: %@";
+"BUDGET_EXCEEDED" = "Kugqithiswe nge-%@";
+"BUDGET_NO_LIMIT" = "Akukho mda";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Iinkcitho";
 "STATISTICS_DAY" = "Usuku";

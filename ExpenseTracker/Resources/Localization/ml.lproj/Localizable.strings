@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "ആദ്യം തുക നൽകുക";
 "STARTVIEW_BALANCE" = "ബാലൻസ്";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "ബാക്കി: %@";
+"BUDGET_EXCEEDED" = "%@ കവിഞ്ഞു";
+"BUDGET_NO_LIMIT" = "പരിധിയില്ല";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ചെലവുകൾ";
 "STATISTICS_DAY" = "ദിവസം";

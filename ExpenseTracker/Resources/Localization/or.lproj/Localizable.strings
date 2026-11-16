@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "ପ୍ରଥମେ ପରିମାଣ ଲେଖନ୍ତୁ";
 "STARTVIEW_BALANCE" = "ବାଲାନ୍ସ";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "ବାକି: %@";
+"BUDGET_EXCEEDED" = "%@ ଅତିକ୍ରମ କରିଛି";
+"BUDGET_NO_LIMIT" = "କୌଣସି ସୀମା ନାହିଁ";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ଖର୍ଚ୍ଚ";
 "STATISTICS_DAY" = "ଦିନ";

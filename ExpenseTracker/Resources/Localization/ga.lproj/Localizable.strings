@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Cuir isteach an tsuim ar dtús";
 "STARTVIEW_BALANCE" = "Iarmhéid";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Fágtha: %@";
+"BUDGET_EXCEEDED" = "Sáraithe de %@";
+"BUDGET_NO_LIMIT" = "Gan teorainn";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Caiteachas";
 "STATISTICS_DAY" = "Lá";

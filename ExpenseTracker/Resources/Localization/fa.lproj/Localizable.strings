@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "ابتدا مبلغ را وارد کنید";
 "STARTVIEW_BALANCE" = "موجودی";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "باقی‌مانده: %@";
+"BUDGET_EXCEEDED" = "%@ بیش از حد";
+"BUDGET_NO_LIMIT" = "بدون محدودیت";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "هزینه‌ها";
 "STATISTICS_DAY" = "روز";

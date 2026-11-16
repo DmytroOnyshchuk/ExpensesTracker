@@ -21,6 +21,7 @@ struct BackupCategory: Codable {
     var isDirectory: Bool
     var parentUuid: UUID?
     var sortIndex: Int
+    var budget: Int?
 }
 
 struct BackupTransaction: Codable {

@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Gitt fir d'éischt de Betrag an";
 "STARTVIEW_BALANCE" = "Solde";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Rescht: %@";
+"BUDGET_EXCEEDED" = "Ëm %@ iwwerschratt";
+"BUDGET_NO_LIMIT" = "Keng Limitt";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Ausgaben";
 "STATISTICS_DAY" = "Dag";

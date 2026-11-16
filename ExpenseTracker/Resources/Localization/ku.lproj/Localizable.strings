@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Pêşî mîqdarê binivîse";
 "STARTVIEW_BALANCE" = "Bîlanço";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Maye: %@";
+"BUDGET_EXCEEDED" = "%@ derbas bûye";
+"BUDGET_NO_LIMIT" = "Bê sînor";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Lêçûn";
 "STATISTICS_DAY" = "Roj";

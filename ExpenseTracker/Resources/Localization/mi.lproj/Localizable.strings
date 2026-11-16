@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Tāurua te moni i te tuatahi";
 "STARTVIEW_BALANCE" = "Toenga";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "E toe ana: %@";
+"BUDGET_EXCEEDED" = "Kua hipa mā te %@";
+"BUDGET_NO_LIMIT" = "Kāore he tepe";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Ngā whakapaunga";
 "STATISTICS_DAY" = "Rā";

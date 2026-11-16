@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "පළමුව මුදල ඇතුළත් කරන්න";
 "STARTVIEW_BALANCE" = "ශේෂය";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "ඉතිරි: %@";
+"BUDGET_EXCEEDED" = "%@ කින් ඉක්මවා ඇත";
+"BUDGET_NO_LIMIT" = "සීමාවක් නැත";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "වියදම්";
 "STATISTICS_DAY" = "දිනය";

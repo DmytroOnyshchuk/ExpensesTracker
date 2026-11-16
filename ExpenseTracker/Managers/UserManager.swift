@@ -8,6 +8,7 @@ enum UDKey: String {
     case apiToken = "UDKey.apiToken"
     case userId = "UDKey.userId"
     case balance = "UDKey.balance"
+    case budget = "UDKey.budget"
     case appSettings = "UDKey.appSettings"
 }
 
@@ -22,6 +23,7 @@ final class UserManager {
     @UserDefault(.apiToken, defaultValue: nil) var apiToken: String?
     @UserDefault(.userId, defaultValue: nil) var userId: String?
     @UserDefaultCodable(.balance, defaultValue: nil, enableCaching: false) var balance: Balance?
+    @UserDefaultCodable(.budget, defaultValue: nil, enableCaching: false) var budget: Budget?
     @UserDefaultCodable(.appSettings, defaultValue: AppSettings(), enableCaching: false) var appSettings: AppSettings!
 }
 
@@ -44,6 +46,7 @@ extension UserManager {
         _apiToken.reset()
         _userId.reset()
         _balance.reset()
+        _budget.reset()
         _appSettings.reset()
         lastApplicationEnvironment = savedEnvironment
         ThemeManager.shared.preset = appSettings.theme

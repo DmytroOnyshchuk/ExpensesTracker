@@ -24,7 +24,7 @@ struct CategoryRow: View {
     var body: some View {
         Button(action: action) {
             HStack(spacing: 16) {
-                icon
+                CategoryIconView(category: category)
 
                 VStack(alignment: .leading, spacing: 2) {
                     Text(category.name.localized)
@@ -67,9 +67,12 @@ struct CategoryRow: View {
         }
         .buttonStyle(.plain)
     }
+}
 
-    @ViewBuilder
-    private var icon: some View {
+struct CategoryIconView: View {
+    let category: TransactionCategory
+
+    var body: some View {
         if category.isDirectory {
             ZStack {
                 Image(systemName: "folder.fill")

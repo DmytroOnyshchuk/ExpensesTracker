@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Спочатку введіть суму";
 "STARTVIEW_BALANCE" = "Баланс";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Залишилось: %@";
+"BUDGET_EXCEEDED" = "Перевищено на %@";
+"BUDGET_NO_LIMIT" = "Без ліміту";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Витрати";
 "STATISTICS_DAY" = "День";

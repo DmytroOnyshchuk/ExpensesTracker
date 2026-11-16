@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Inserisci prima l'importo";
 "STARTVIEW_BALANCE" = "Saldo";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Rimasti: %@";
+"BUDGET_EXCEEDED" = "Superato di %@";
+"BUDGET_NO_LIMIT" = "Nessun limite";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Spese";
 "STATISTICS_DAY" = "Giorno";

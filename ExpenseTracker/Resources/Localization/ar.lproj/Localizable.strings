@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "أدخل المبلغ أولاً";
 "STARTVIEW_BALANCE" = "الرصيد";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "المتبقي: %@";
+"BUDGET_EXCEEDED" = "تم التجاوز بمقدار %@";
+"BUDGET_NO_LIMIT" = "بلا حد";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "المصروفات";
 "STATISTICS_DAY" = "يوم";

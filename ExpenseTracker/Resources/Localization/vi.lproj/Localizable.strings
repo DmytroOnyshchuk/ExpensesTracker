@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Hãy nhập số tiền trước";
 "STARTVIEW_BALANCE" = "Số dư";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Còn lại: %@";
+"BUDGET_EXCEEDED" = "Vượt %@";
+"BUDGET_NO_LIMIT" = "Không giới hạn";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Chi tiêu";
 "STATISTICS_DAY" = "Ngày";

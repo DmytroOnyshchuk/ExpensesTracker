@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Avval summani kiriting";
 "STARTVIEW_BALANCE" = "Balans";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Qoldi: %@";
+"BUDGET_EXCEEDED" = "%@ oshib ketdi";
+"BUDGET_NO_LIMIT" = "Limit yoʻq";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Xarajatlar";
 "STATISTICS_DAY" = "Kun";

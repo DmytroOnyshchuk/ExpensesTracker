@@ -87,7 +87,8 @@ enum BackupManager {
                     customColorHex: category.categoryIcon.customColorHex,
                     isDirectory: category.isDirectory,
                     parentUuid: category.parentUuid,
-                    sortIndex: category.sortIndex
+                    sortIndex: category.sortIndex,
+                    budget: category.budget > .zero ? category.budget : nil
                 )
             },
             transactions: transactions.map { transaction in
@@ -231,6 +232,7 @@ enum BackupManager {
                 sortIndex: sortOffset + item.sortIndex
             )
             category.uuid = item.uuid
+            category.budget = max(item.budget ?? .zero, .zero)
             context.insert(category)
             resolved[item.uuid] = category
             created.append((category, item.parentUuid))

@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Qala ngokufaka inani";
 "STARTVIEW_BALANCE" = "Ibhalansi";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Okusele: %@";
+"BUDGET_EXCEEDED" = "Kweqe nge-%@";
+"BUDGET_NO_LIMIT" = "Awukho umkhawulo";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Izindleko";
 "STATISTICS_DAY" = "Usuku";

@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Vispirms ievadiet summu";
 "STARTVIEW_BALANCE" = "Atlikums";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Atlicis: %@";
+"BUDGET_EXCEEDED" = "Pārsniegts par %@";
+"BUDGET_NO_LIMIT" = "Bez limita";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Izdevumi";
 "STATISTICS_DAY" = "Diena";

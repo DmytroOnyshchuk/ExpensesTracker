@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "E kikokiko mua i ka huina kālā";
 "STARTVIEW_BALANCE" = "Koena";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Koena: %@";
+"BUDGET_EXCEEDED" = "Ua ʻoi aku ma %@";
+"BUDGET_NO_LIMIT" = "ʻAʻohe palena";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Nā lilo";
 "STATISTICS_DAY" = "Lā";

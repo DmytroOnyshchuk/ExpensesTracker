@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "پہلے رقم درج کریں";
 "STARTVIEW_BALANCE" = "بیلنس";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "باقی: %@";
+"BUDGET_EXCEEDED" = "%@ سے تجاوز";
+"BUDGET_NO_LIMIT" = "کوئی حد نہیں";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "اخراجات";
 "STATISTICS_DAY" = "دن";

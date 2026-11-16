@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Rhowch y swm yn gyntaf";
 "STARTVIEW_BALANCE" = "Balans";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Ar ôl: %@";
+"BUDGET_EXCEEDED" = "Wedi mynd %@ drosodd";
+"BUDGET_NO_LIMIT" = "Dim terfyn";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Treuliau";
 "STATISTICS_DAY" = "Diwrnod";

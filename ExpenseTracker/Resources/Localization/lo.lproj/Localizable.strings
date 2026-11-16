@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "ກະລຸນາປ້ອນຈຳນວນເງິນກ່ອນ";
 "STARTVIEW_BALANCE" = "ຍອດເງິນ";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "ເຫຼືອ: %@";
+"BUDGET_EXCEEDED" = "ເກີນ %@";
+"BUDGET_NO_LIMIT" = "ບໍ່ມີຂີດຈຳກັດ";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ລາຍຈ່າຍ";
 "STATISTICS_DAY" = "ມື້";

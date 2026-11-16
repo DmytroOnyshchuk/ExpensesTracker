@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "முதலில் தொகையை உள்ளிடவும்";
 "STARTVIEW_BALANCE" = "இருப்பு";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "மீதம்: %@";
+"BUDGET_EXCEEDED" = "%@ மீறியது";
+"BUDGET_NO_LIMIT" = "வரம்பு இல்லை";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "செலவுகள்";
 "STATISTICS_DAY" = "நாள்";

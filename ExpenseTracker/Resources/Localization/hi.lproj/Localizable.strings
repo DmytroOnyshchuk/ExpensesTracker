@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "पहले राशि दर्ज करें";
 "STARTVIEW_BALANCE" = "शेष राशि";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "शेष: %@";
+"BUDGET_EXCEEDED" = "%@ से अधिक";
+"BUDGET_NO_LIMIT" = "कोई सीमा नहीं";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "खर्च";
 "STATISTICS_DAY" = "दिन";

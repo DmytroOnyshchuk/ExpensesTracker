@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Sartu lehenik zenbatekoa";
 "STARTVIEW_BALANCE" = "Saldoa";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Geratzen da: %@";
+"BUDGET_EXCEEDED" = "%@ gainditu da";
+"BUDGET_NO_LIMIT" = "Mugarik gabe";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Gastuak";
 "STATISTICS_DAY" = "Eguna";

@@ -36,6 +36,11 @@
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Weka kiasi kwanza";
 "STARTVIEW_BALANCE" = "Salio";
 
+// MARK: - Budget
+"BUDGET_LEFT" = "Imebaki: %@";
+"BUDGET_EXCEEDED" = "Imezidi kwa %@";
+"BUDGET_NO_LIMIT" = "Hakuna kikomo";
+
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Matumizi";
 "STATISTICS_DAY" = "Siku";
