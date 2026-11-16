@@ -16,12 +16,12 @@ struct StartView: View {
 
     @State private var input = AmountInput()
     @State private var showHistory = false
-    @State private var note = ""
+    @State private var note = String()
     @State private var showNoteInput = false
     @State private var amountAttentionTrigger: Int = .zero
     @State private var showBalances = false
     @State private var operationType: OperationType = .outcome
-    @AppStorage(UDKey.selectedAccount.rawValue, store: UserDefaults.shared) private var selectedAccountId = ""
+    @AppStorage(UDKey.selectedAccount.rawValue, store: UserDefaults.shared) private var selectedAccountId = String()
     @Query(sort: \BalanceAccount.sortIndex) private var storedAccounts: [BalanceAccount]
     @StoredSettings private var appSettings
     @Query(sort: \Transaction.date, order: .reverse, animation: .default) private var storedTransactions: [Transaction]
@@ -199,7 +199,7 @@ struct StartView: View {
         modelContext.insert(transaction)
         FeedbackManager.shared.transactionAdded()
         input.reset()
-        note = ""
+        note = String()
 
         UndoToastCenter.shared.show(L10n.transactionsListTransactionAdded) {
             modelContext.delete(transaction)

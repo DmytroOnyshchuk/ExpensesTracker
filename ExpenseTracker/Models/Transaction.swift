@@ -12,9 +12,11 @@ import SwiftUI
 
 @Model
 final class Transaction {
-    var id: UUID
-    var amount: Int
-    var date: Date
+    #Index<Transaction>([\.date], [\.deletedAt, \.date])
+
+    var id: UUID = UUID()
+    var amount: Int = 0
+    var date: Date = Date()
     var note: String?
     var category: TransactionCategory
     var deletedAt: Date?

@@ -158,7 +158,7 @@ final class CategoryRulesTests: XCTestCase {
         var draft = CategoryDraft()
         XCTAssertTrue(draft.canSave)
 
-        draft.name = ""
+        draft.name = String()
         XCTAssertFalse(draft.canSave)
     }
 

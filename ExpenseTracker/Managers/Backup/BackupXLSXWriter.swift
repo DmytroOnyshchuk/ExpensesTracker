@@ -146,7 +146,7 @@ enum BackupXLSXWriter {
     }
 
     private static func escaped(_ text: String) -> String {
-        var result = ""
+        var result = String()
         for scalar in text.unicodeScalars {
             switch scalar {
             case "&": result += "&amp;"

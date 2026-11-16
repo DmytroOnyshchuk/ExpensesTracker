@@ -85,7 +85,7 @@ open class GrowingTextView: UITextView {
     }
 
     // Calculate and adjust textview's height
-    private var oldText: String = ""
+    private var oldText: String = String()
     private var oldSize: CGSize = .zero
 
     private func forceLayoutSubviews() {

@@ -23,7 +23,7 @@ struct CategoriesEdit: View {
     @State private var selectedCategory: TransactionCategory?
 
     @State private var showAddFolderAlert = false
-    @State private var newFolderName: String = ""
+    @State private var newFolderName: String = String()
     @State private var operationType: OperationType
 
     private let showsOperationTypePicker: Bool
@@ -82,7 +82,7 @@ struct CategoriesEdit: View {
         .toolbar {
             ToolbarItemGroup(placement: .navigationBarTrailing) {
                 Button {
-                    newFolderName = ""
+                    newFolderName = String()
                     showAddFolderAlert = true
                 } label: {
                     Image(systemName: "folder.badge.plus")

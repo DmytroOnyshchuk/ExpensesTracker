@@ -12,7 +12,7 @@ struct CustomIconPickerView: View {
     @Binding var selectedIcon: String
     @Environment(\.dismiss) private var dismiss
 
-    @State private var searchText = ""
+    @State private var searchText = String()
 
     private let sections: [IconSection] = [
         IconSection(title: L10n.iconPickerSectionEveryday, icons: [
@@ -111,7 +111,7 @@ struct CustomIconPickerView: View {
 
             if !searchText.isEmpty {
                 Button {
-                    searchText = ""
+                    searchText = String()
                 } label: {
                     Image(systemName: "xmark.circle.fill")
                         .foregroundColor(.appWhite.opacity(0.6))

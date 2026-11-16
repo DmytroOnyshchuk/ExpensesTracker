@@ -12,7 +12,7 @@ import SwiftUI
 
 @Model
 final class TransactionCategory {
-    var uuid: UUID
+    var uuid: UUID = UUID()
     var name: TransactionCategoryName
     var categoryIcon: CategoryIcon
     var isDirectory: Bool = false
@@ -21,7 +21,10 @@ final class TransactionCategory {
     var budget: Int = 0
     var deletedAt: Date?
     var operationTypeRaw: String = OperationType.outcome.rawValue
-    
+
+    @Relationship(deleteRule: .cascade, inverse: \Transaction.category)
+    var transactions: [Transaction] = []
+
     var operationType: OperationType {
         get { OperationType(rawValue: operationTypeRaw) ?? .outcome }
         set { operationTypeRaw = newValue.rawValue }

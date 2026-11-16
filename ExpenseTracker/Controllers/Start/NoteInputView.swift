@@ -12,7 +12,7 @@ struct NoteInputView: View {
     @Binding var note: String
     @Binding var isPresented: Bool
 
-    @State private var draft = ""
+    @State private var draft = String()
     @FocusState private var isFocused: Bool
 
     var body: some View {
@@ -109,7 +109,7 @@ struct NoteInputView: View {
     }
 
     private func clear() {
-        draft = ""
+        draft = String()
     }
 
     private func save() {

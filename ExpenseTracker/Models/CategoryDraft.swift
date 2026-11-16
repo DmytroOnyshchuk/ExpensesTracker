@@ -18,7 +18,7 @@ struct CategoryDraft {
 
     init(operationType: OperationType = .outcome) {
         self.operationType = operationType
-        self.name = ""
+        self.name = String()
         self.icon = CategoryIcon(name: "cart.fill", iconColor: .yellow)
     }
 

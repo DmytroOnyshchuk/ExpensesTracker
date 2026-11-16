@@ -144,7 +144,7 @@ final class Logger: NSObject {
         }
     }
     
-    func logError(_ message: String, error: Error?, category: String = "", logToCrashlytics: Bool = false) {
+    func logError(_ message: String, error: Error?, category: String = String(), logToCrashlytics: Bool = false) {
         guard let error else { return }
         logMessage("\(message): \(error)", category: category, type: .error, logToCrashlytics: false)
         #if APP

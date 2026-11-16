@@ -20,7 +20,7 @@ struct TransactionEdit: View {
     @State private var draft: TransactionDraft
     @State private var popup: Popup?
     @State private var showCategoryPicker = false
-    @State private var amountText = ""
+    @State private var amountText = String()
     @Query(sort: \BalanceAccount.sortIndex) private var storedAccounts: [BalanceAccount]
 
     private var accounts: [BalanceAccount] { storedAccounts.notDeleted }

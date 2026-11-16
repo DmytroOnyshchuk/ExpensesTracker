@@ -36,9 +36,9 @@ struct TrashView: View {
 
     @State private var showClearConfirmation = false
     @State private var restoreTarget: Target?
-    @State private var restoreConfirmation = ""
+    @State private var restoreConfirmation = String()
     @State private var deleteTarget: Target?
-    @State private var deleteConfirmation = ""
+    @State private var deleteConfirmation = String()
 
     private var categories: [TransactionCategory] {
         storedCategories.inTrash.sorted { ($0.deletedAt ?? .distantPast) > ($1.deletedAt ?? .distantPast) }

@@ -11,12 +11,15 @@ import SwiftData
 
 @Model
 final class BalanceAccount {
-    var uuid: UUID
-    var name: String
-    var amount: Int
-    var checkpointDate: Date
-    var sortIndex: Int
+    var uuid: UUID = UUID()
+    var name: String = String()
+    var amount: Int = 0
+    var checkpointDate: Date = Date()
+    var sortIndex: Int = 0
     var deletedAt: Date?
+
+    @Relationship(deleteRule: .nullify, inverse: \Transaction.account)
+    var transactions: [Transaction] = []
 
     init(name: String, amount: Int = .zero, checkpointDate: Date = Date(), sortIndex: Int = .zero) {
         self.uuid = UUID()
