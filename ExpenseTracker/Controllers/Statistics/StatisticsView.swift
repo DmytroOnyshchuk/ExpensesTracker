@@ -136,29 +136,17 @@ struct StatisticsContent: View {
             get: { period },
             set: { newValue in
                 if newValue == .day, period != .day {
-                    anchorDate = dayMatchingToday(inSelected: period)
+                    anchorDate = initialDay(inSelected: period)
                 }
                 period = newValue
             }
         )
     }
 
-    private func dayMatchingToday(inSelected period: StatisticsPeriod) -> Date {
-        let calendar = Calendar.current
+    private func initialDay(inSelected period: StatisticsPeriod) -> Date {
         let now = Date()
-
-        var components = calendar.dateComponents([.year, .month], from: anchorDate)
-        if period == .year {
-            components.month = calendar.component(.month, from: now)
-        }
-        components.day = 1
-
-        guard let monthStart = calendar.date(from: components),
-              let days = calendar.range(of: .day, in: .month, for: monthStart)
-        else { return now }
-
-        components.day = min(calendar.component(.day, from: now), days.count)
-        return calendar.date(from: components) ?? now
+        let interval = period.interval(containing: anchorDate)
+        return interval.contains(now) ? now : interval.start
     }
 
     private var periodPicker: some View {
