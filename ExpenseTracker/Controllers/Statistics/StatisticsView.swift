@@ -10,6 +10,39 @@ import Charts
 import SwiftData
 import SwiftUI
 
+struct StatisticsPages {
+    let period: StatisticsPeriod
+    let first: Date
+    let last: Date
+
+    init(period: StatisticsPeriod, transactions: [Transaction], now: Date = Date()) {
+        let current = period.interval(containing: now).start
+        let dates = transactions.map(\.date)
+        let earliest = dates.min().map { period.interval(containing: $0).start } ?? current
+        let latest = dates.max().map { period.interval(containing: $0).start } ?? current
+
+        self.period = period
+        self.first = min(earliest, current)
+        self.last = max(latest, current)
+    }
+
+    var count: Int {
+        index(of: last) + 1
+    }
+
+    func start(at index: Int) -> Date {
+        period.shifted(first, by: index)
+    }
+
+    func index(of start: Date) -> Int {
+        Calendar.current.dateComponents([period.component], from: first, to: start).value(for: period.component) ?? .zero
+    }
+
+    func clamped(_ date: Date) -> Date {
+        min(max(period.interval(containing: date).start, first), last)
+    }
+}
+
 struct StatisticsView: View {
     var resetToken: Int = .zero
     var directory: TransactionCategory?
@@ -32,10 +65,8 @@ struct StatisticsView: View {
 
     @State private var period: StatisticsPeriod
     @State private var anchorDate: Date
-    @State private var slideEdge: Edge = .trailing
     @State private var showPeriodList = false
     @State private var showDayPicker = false
-    @State private var exactStart: Date?
 
     init(
         resetToken: Int = .zero,
@@ -51,27 +82,16 @@ struct StatisticsView: View {
 
     var body: some View {
         let transactions = transactions
-        let starts = period.starts(of: transactions)
-        let start = displayedStart(in: starts)
-        let interval = period.interval(containing: start)
-        let slices = StatisticsSlice.slices(from: transactions, in: interval, categories: categories)
+        let pages = StatisticsPages(period: period, transactions: transactions)
+        let start = pages.clamped(anchorDate)
 
-        ScrollView(.vertical) {
-            VStack(spacing: 12) {
-                periodPicker
-                periodTitle(start: start, starts: starts)
-                StatisticsBreakdown(
-                    slices: slices,
-                    interval: interval,
-                    period: period,
-                    points: period.chartPoints(of: transactions, in: interval),
-                    averageTitle: period.unitAverageTitle(of: transactions, in: interval),
-                    onSwipe: { shiftPeriod(by: $0, from: start, in: starts) }
-                )
-            }
-            .padding(.vertical, 16)
-            .frame(maxWidth: .infinity, alignment: .top)
+        VStack(spacing: 12) {
+            periodPicker
+            periodTitle(start: start, transactions: transactions)
+            pager(transactions: transactions, pages: pages, start: start)
         }
+        .padding(.top, 16)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .appBackground()
         .overlay {
             if showDayPicker {
@@ -80,14 +100,14 @@ struct StatisticsView: View {
                         showDayPicker = false
                     }
                     if let date {
-                        selectDay(date, from: start)
+                        select(pages.clamped(date), from: start)
                     }
                 }
                 .transition(.opacity)
             }
         }
         .onChange(of: resetToken) {
-            resetToCurrentMonth(from: start)
+            resetToCurrentMonth()
         }
         .navigationTitle(directory?.name.localized ?? L10n.statisticsTitle)
         .navigationBarTitleDisplayMode(.inline)
@@ -113,113 +133,102 @@ struct StatisticsView: View {
             .padding(.horizontal, 64)
     }
 
-    private func periodTitle(start: Date, starts: [Date]) -> some View {
-        ZStack {
-            Text(period.title(for: start))
-                .font(.appRegular(22))
-                .foregroundColor(.appPrimary)
-                .lineLimit(1)
-                .minimumScaleFactor(0.7)
-                .id(period.interval(containing: start))
-                .transition(.push(from: slideEdge))
-        }
-        .padding(.horizontal, 64)
-        .frame(maxWidth: .infinity)
-        .frame(height: 44)
-        .clipped()
-        .contentShape(Rectangle())
-        .onTapGesture {
-            if period == .day {
-                withAnimation(.easeInOut(duration: 0.2)) {
-                    showDayPicker = true
+    private func pager(transactions: [Transaction], pages: StatisticsPages, start: Date) -> some View {
+        let selectedIndex = pages.index(of: start)
+
+        return ScrollView(.horizontal) {
+            LazyHStack(spacing: 0) {
+                ForEach(0 ..< pages.count, id: \.self) { index in
+                    Group {
+                        if abs(index - selectedIndex) <= 1 {
+                            page(transactions: transactions, start: pages.start(at: index))
+                        } else {
+                            Color.clear
+                        }
+                    }
+                    .containerRelativeFrame(.horizontal)
                 }
-            } else {
-                showPeriodList = !starts.isEmpty
             }
+            .scrollTargetLayout()
         }
-        .gesture(
-            DragGesture(minimumDistance: 20)
-                .onEnded { value in
-                    guard abs(value.translation.width) > abs(value.translation.height) else { return }
-                    shiftPeriod(by: value.translation.width < 0 ? 1 : -1, from: start, in: starts)
-                }
+        .scrollTargetBehavior(.paging)
+        .scrollIndicators(.hidden)
+        .scrollPosition(id: pageSelection(pages: pages, start: start))
+        .id(period)
+    }
+
+    private func page(transactions: [Transaction], start: Date) -> some View {
+        let interval = period.interval(containing: start)
+        let slices = StatisticsSlice.slices(from: transactions, in: interval, categories: categories)
+
+        return ScrollView(.vertical) {
+            StatisticsBreakdown(
+                slices: slices,
+                interval: interval,
+                period: period,
+                points: period.chartPoints(of: transactions, in: interval),
+                averageTitle: period.unitAverageTitle(of: transactions, in: interval)
+            )
+            .padding(.bottom, 16)
+        }
+    }
+
+    private func pageSelection(pages: StatisticsPages, start: Date) -> Binding<Int?> {
+        Binding(
+            get: { pages.index(of: start) },
+            set: { index in
+                guard let index else { return }
+                let target = pages.start(at: index)
+                guard target != start else { return }
+                FeedbackManager.shared.selectionChanged()
+                anchorDate = target
+            }
         )
-        .overlay {
-            HStack {
-                periodArrow(systemImage: "chevron.left", shift: -1, start: start, starts: starts)
-                Spacer()
-                periodArrow(systemImage: "chevron.right", shift: 1, start: start, starts: starts)
+    }
+
+    private func periodTitle(start: Date, transactions: [Transaction]) -> some View {
+        Text(period.title(for: start))
+            .font(.appRegular(22))
+            .foregroundColor(.appPrimary)
+            .lineLimit(1)
+            .minimumScaleFactor(0.7)
+            .contentTransition(.opacity)
+            .animation(.easeInOut(duration: 0.2), value: start)
+            .padding(.horizontal, 64)
+            .frame(maxWidth: .infinity)
+            .frame(height: 44)
+            .contentShape(Rectangle())
+            .onTapGesture {
+                if period == .day {
+                    withAnimation(.easeInOut(duration: 0.2)) {
+                        showDayPicker = true
+                    }
+                } else {
+                    showPeriodList = !transactions.isEmpty
+                }
             }
-            .padding(.horizontal, 16)
-        }
-        .popover(isPresented: $showPeriodList, attachmentAnchor: .rect(.bounds), arrowEdge: .top) {
-            StatisticsPeriodList(period: period, starts: starts, selected: start) { date in
-                showPeriodList = false
-                select(date, from: start)
+            .popover(isPresented: $showPeriodList, attachmentAnchor: .rect(.bounds), arrowEdge: .top) {
+                StatisticsPeriodList(period: period, starts: period.starts(of: transactions), selected: start) { date in
+                    showPeriodList = false
+                    select(date, from: start)
+                }
+                .presentationCompactAdaptation(.popover)
+                .legacyPresentationBackground(.appSecond)
             }
-            .presentationCompactAdaptation(.popover)
-            .legacyPresentationBackground(.appSecond)
-        }
     }
 
-    private func periodArrow(systemImage: String, shift: Int, start: Date, starts: [Date]) -> some View {
-        let isEnabled = neighbour(of: start, by: shift, in: starts) != nil
-
-        return Button {
-            shiftPeriod(by: shift, from: start, in: starts)
-        } label: {
-            Image(systemName: systemImage)
-                .font(.system(size: 20, weight: .medium))
-                .foregroundColor(.appPrimary.opacity(isEnabled ? 1 : 0.3))
-                .frame(width: 44, height: 44)
-                .contentShape(Rectangle())
-                .glassSurface(in: Circle(), isInteractive: isEnabled, fallback: .clear)
-        }
-        .buttonStyle(.plain)
-        .disabled(!isEnabled)
-    }
-
-    private func displayedStart(in starts: [Date]) -> Date {
-        let start = period.interval(containing: anchorDate).start
-        if starts.isEmpty || starts.contains(start) || start == exactStart {
-            return start
-        }
-        return starts.first { $0 < start } ?? starts.last ?? start
-    }
-
-    private func shiftPeriod(by value: Int, from start: Date, in starts: [Date]) {
-        guard let target = neighbour(of: start, by: value, in: starts) else { return }
-        FeedbackManager.shared.selectionChanged()
-        select(target, from: start)
-    }
-
-    private func neighbour(of start: Date, by value: Int, in starts: [Date]) -> Date? {
-        value > 0 ? starts.last { $0 > start } : starts.first { $0 < start }
-    }
-
-    private func selectDay(_ date: Date, from start: Date) {
-        let day = StatisticsPeriod.day.interval(containing: date).start
-        exactStart = day
-        select(day, from: start)
-    }
-
-    private func resetToCurrentMonth(from start: Date) {
-        let now = Date()
-
+    private func resetToCurrentMonth() {
         showPeriodList = false
         showDayPicker = false
-        slideEdge = now >= start ? .trailing : .leading
         withAnimation(.easeInOut(duration: 0.25)) {
             period = .month
-            exactStart = nil
-            anchorDate = now
+            anchorDate = Date()
         }
     }
 
     private func select(_ date: Date, from start: Date) {
         guard date != start else { return }
 
-        slideEdge = date > start ? .trailing : .leading
         withAnimation(.easeInOut(duration: 0.25)) {
             anchorDate = date
         }
@@ -232,7 +241,6 @@ struct StatisticsBreakdown: View {
     var period: StatisticsPeriod?
     var points: [StatisticsChartPoint] = []
     var averageTitle: String?
-    var onSwipe: ((Int) -> Void)?
 
     @StoredSettings private var appSettings
 
@@ -286,7 +294,6 @@ struct StatisticsBreakdown: View {
             }
             .frame(maxWidth: .infinity)
             .contentShape(Rectangle())
-            .simultaneousGesture(swipeGesture)
 
             if !slices.isEmpty {
                 VStack(spacing: 0) {
@@ -309,15 +316,6 @@ struct StatisticsBreakdown: View {
                 }
             }
         }
-    }
-
-    private var swipeGesture: some Gesture {
-        DragGesture(minimumDistance: 20)
-            .onEnded { value in
-                let width = value.translation.width
-                guard abs(width) > 40, abs(width) > abs(value.translation.height) * 1.5 else { return }
-                onSwipe?(width < 0 ? 1 : -1)
-            }
     }
 
     @ViewBuilder
