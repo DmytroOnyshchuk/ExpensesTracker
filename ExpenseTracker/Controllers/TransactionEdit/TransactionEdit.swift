@@ -21,6 +21,9 @@ struct TransactionEdit: View {
     @State private var popup: Popup?
     @State private var showCategoryPicker = false
     @State private var amountText = ""
+    @Query(sort: \BalanceAccount.sortIndex) private var storedAccounts: [BalanceAccount]
+
+    private var accounts: [BalanceAccount] { storedAccounts.notDeleted }
     @FocusState private var isAmountFocused: Bool
     @FocusState private var isNoteFocused: Bool
 
@@ -41,6 +44,10 @@ struct TransactionEdit: View {
                         .padding(.bottom, 8)
 
                     VStack(spacing: 0) {
+                        accountRow
+
+                        InsetDivider()
+
                         row(L10n.transactionEditDate) {
                             isAmountFocused = false
                             isNoteFocused = false
@@ -165,6 +172,41 @@ struct TransactionEdit: View {
         .onTapGesture {
             isNoteFocused = true
         }
+    }
+
+    private var accountRow: some View {
+        HStack(spacing: 12) {
+            Text(L10n.transactionEditBalance)
+                .font(.appLight(18))
+                .foregroundColor(.appLabel)
+
+            Spacer(minLength: 8)
+
+            Menu {
+                ForEach(accounts, id: \.uuid) { account in
+                    Button {
+                        draft.account = account
+                    } label: {
+                        if account.uuid == draft.account?.uuid {
+                            Label(account.name, systemImage: "checkmark")
+                        } else {
+                            Text(account.name)
+                        }
+                    }
+                }
+            } label: {
+                HStack(spacing: 6) {
+                    valueText(draft.account?.name ?? "—")
+
+                    Image(systemName: "chevron.up.chevron.down")
+                        .font(.system(size: 11, weight: .semibold))
+                        .foregroundColor(.appLabel)
+                }
+                .contentShape(Rectangle())
+            }
+        }
+        .padding(.horizontal, 20)
+        .frame(height: 60)
     }
 
     private var keyboardDoneButton: some View {

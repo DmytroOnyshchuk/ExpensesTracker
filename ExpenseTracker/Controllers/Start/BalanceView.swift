@@ -9,34 +9,58 @@
 import SwiftUI
 
 struct BalanceCard: View {
+    let accounts: [BalanceAccount]
+    let selected: BalanceAccount?
     let balance: Int?
+    let amountFor: (BalanceAccount) -> Int
+    let onSelect: (BalanceAccount) -> Void
     let action: () -> Void
 
     var body: some View {
-        Button(action: action) {
-            HStack(spacing: 12) {
-                Text(L10n.startviewBalance)
-                    .font(.appLight(18))
-                    .foregroundColor(.appLabel)
-                    .lineLimit(1)
+        HStack(spacing: 12) {
+            Menu {
+                ForEach(accounts, id: \.uuid) { account in
+                    Button {
+                        onSelect(account)
+                    } label: {
+                        if account.uuid == selected?.uuid {
+                            Label("\(account.name) · \(amountFor(account).getAmount())", systemImage: "checkmark")
+                        } else {
+                            Text("\(account.name) · \(amountFor(account).getAmount())")
+                        }
+                    }
+                }
+            } label: {
+                HStack(spacing: 6) {
+                    Text(selected?.name ?? L10n.startviewBalance)
+                        .font(.appLight(18))
+                        .foregroundColor(.appLabel)
+                        .lineLimit(1)
 
+                    Image(systemName: "chevron.up.chevron.down")
+                        .font(.system(size: 11, weight: .semibold))
+                        .foregroundColor(.appLabel)
+                }
+                .contentShape(Rectangle())
+            }
+
+            Button(action: action) {
                 Text(balance?.getAmount() ?? "—")
                     .font(.appRegular(22))
                     .foregroundColor(amountColor)
                     .lineLimit(1)
                     .minimumScaleFactor(0.6)
                     .contentTransition(.numericText())
+                    .contentShape(Rectangle())
             }
-            .padding(.horizontal, 16)
-            .padding(.vertical, 12)
-            .glassSurface(
-                in: RoundedRectangle(cornerRadius: 18, style: .continuous),
-                isInteractive: true,
-                fallback: .appLabel.opacity(0.1)
-            )
-            .contentShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+            .buttonStyle(.plain)
         }
-        .buttonStyle(.plain)
+        .padding(.horizontal, 16)
+        .padding(.vertical, 12)
+        .glassSurface(
+            in: RoundedRectangle(cornerRadius: 18, style: .continuous),
+            fallback: .appLabel.opacity(0.1)
+        )
         .animation(.default, value: balance)
     }
 
@@ -124,10 +148,12 @@ struct BalanceInputPopup: View {
 }
 
 #Preview("Balance card") {
-    VStack(spacing: 16) {
-        BalanceCard(balance: 1250000, action: {})
-        BalanceCard(balance: -36050, action: {})
-        BalanceCard(balance: nil, action: {})
+    let cash = BalanceAccount(name: "Cash", amount: 1250000)
+    let bank = BalanceAccount(name: "Bank", amount: -36050)
+    return VStack(spacing: 16) {
+        BalanceCard(accounts: [cash, bank], selected: cash, balance: 1250000, amountFor: \.amount, onSelect: { _ in }, action: {})
+        BalanceCard(accounts: [cash, bank], selected: bank, balance: -36050, amountFor: \.amount, onSelect: { _ in }, action: {})
+        BalanceCard(accounts: [], selected: nil, balance: nil, amountFor: \.amount, onSelect: { _ in }, action: {})
     }
     .padding(.horizontal, 16)
     .frame(maxWidth: .infinity, maxHeight: .infinity)

@@ -18,13 +18,15 @@ final class Transaction {
     var note: String?
     var category: TransactionCategory
     var deletedAt: Date?
+    var account: BalanceAccount?
 
-    init(amount: Int, category: TransactionCategory, date: Date = Date(), note: String? = nil) {
+    init(amount: Int, category: TransactionCategory, date: Date = Date(), note: String? = nil, account: BalanceAccount? = nil) {
         self.id = UUID()
         self.amount = amount
         self.category = category
         self.date = date
         self.note = note
+        self.account = account
     }
 
     var operationType: OperationType {

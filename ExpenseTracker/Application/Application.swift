@@ -16,7 +16,7 @@ struct ExpenseTracker: App {
                 .modifier(SystemColorSchemeObserver())
                 .preferredColorScheme(ThemeManager.shared.preferredColorScheme)
         }
-        .modelContainer(for: [Transaction.self, TransactionCategory.self]) { result in
+        .modelContainer(for: [Transaction.self, TransactionCategory.self, BalanceAccount.self]) { result in
             switch result {
             case let .success(container):
                 DataSeeder.seedDefaultCategories(container: container)

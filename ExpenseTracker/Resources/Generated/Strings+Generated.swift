@@ -86,6 +86,18 @@ internal enum L10n {
   internal static func backupsTransactionsCount(_ p1: Int) -> String {
     return L10n.tr("Localizable", "BACKUPS_TRANSACTIONS_COUNT", p1, fallback: "Transactions: %d")
   }
+  /// Balance deleted
+  internal static let balancesDeleted = L10n.tr("Localizable", "BALANCES_DELETED", fallback: "Balance deleted")
+  /// Edit balance
+  internal static let balancesEdit = L10n.tr("Localizable", "BALANCES_EDIT", fallback: "Edit balance")
+  /// Name
+  internal static let balancesName = L10n.tr("Localizable", "BALANCES_NAME", fallback: "Name")
+  /// New balance
+  internal static let balancesNew = L10n.tr("Localizable", "BALANCES_NEW", fallback: "New balance")
+  /// Balances
+  internal static let balancesTitle = L10n.tr("Localizable", "BALANCES_TITLE", fallback: "Balances")
+  /// Total
+  internal static let balancesTotal = L10n.tr("Localizable", "BALANCES_TOTAL", fallback: "Total")
   /// Exceeded by %@
   internal static func budgetExceeded(_ p1: Any) -> String {
     return L10n.tr("Localizable", "BUDGET_EXCEEDED", String(describing: p1), fallback: "Exceeded by %@")
@@ -348,6 +360,8 @@ internal enum L10n {
   internal static let transactionEditAddNote = L10n.tr("Localizable", "TRANSACTION_EDIT_ADD_NOTE", fallback: "Add note")
   /// Amount
   internal static let transactionEditAmount = L10n.tr("Localizable", "TRANSACTION_EDIT_AMOUNT", fallback: "Amount")
+  /// Balance
+  internal static let transactionEditBalance = L10n.tr("Localizable", "TRANSACTION_EDIT_BALANCE", fallback: "Balance")
   /// Categories
   internal static let transactionEditCategoriesTitle = L10n.tr("Localizable", "TRANSACTION_EDIT_CATEGORIES_TITLE", fallback: "Categories")
   /// Category

@@ -98,6 +98,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Редактирование";
 "TRANSACTION_EDIT_CATEGORY" = "Статья";
+"TRANSACTION_EDIT_BALANCE" = "Баланс";
 "TRANSACTION_EDIT_AMOUNT" = "Сумма";
 "TRANSACTION_EDIT_DATE" = "Дата";
 "TRANSACTION_EDIT_TIME" = "Время";
@@ -218,3 +219,11 @@
 "ICON_PICKER_SECTION_HEALTH" = "Здоровье, семья и активности";
 "ICON_PICKER_SECTION_TECH" = "Техника, образование и инструменты";
 "ICON_PICKER_SECTION_NATURE" = "Природа, погода и общие символы";
+
+// MARK: - Balances
+"BALANCES_DELETED" = "Баланс удалён";
+"BALANCES_TITLE" = "Балансы";
+"BALANCES_TOTAL" = "Итого";
+"BALANCES_NEW" = "Новый баланс";
+"BALANCES_EDIT" = "Редактирование баланса";
+"BALANCES_NAME" = "Название";

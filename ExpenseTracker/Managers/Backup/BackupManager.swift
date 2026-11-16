@@ -67,15 +67,11 @@ enum BackupManager {
         return "ExpenseTracker-\(formatter.string(from: Date()))"
     }
 
-    private static var storedBalance: Balance? {
-        get { UserManager.shared.balance }
-        set { UserManager.shared.balance = newValue }
-    }
-
     @MainActor
     static func exportData(from context: ModelContext) throws -> Data {
         let categories = try context.fetch(FetchDescriptor<TransactionCategory>()).notDeleted
         let transactions = try context.fetch(FetchDescriptor<Transaction>(sortBy: [SortDescriptor(\.date)])).notDeleted
+        let accounts = try context.fetch(FetchDescriptor<BalanceAccount>()).notDeleted.inDisplayOrder
 
         let snapshot = BackupSnapshot(
             categories: categories.map { category in
@@ -98,10 +94,19 @@ enum BackupManager {
                     amount: transaction.amount,
                     date: transaction.date,
                     note: transaction.note,
-                    categoryUuid: transaction.category.uuid
+                    categoryUuid: transaction.category.uuid,
+                    accountUuid: transaction.account?.uuid
                 )
             },
-            balance: storedBalance.map { BackupBalance(amount: $0.amount, date: $0.date) }
+            accounts: accounts.map { account in
+                BackupAccount(
+                    uuid: account.uuid,
+                    name: account.name,
+                    amount: account.amount,
+                    date: account.checkpointDate,
+                    sortIndex: account.sortIndex
+                )
+            }
         )
 
         let encoder = JSONEncoder()
@@ -202,6 +207,23 @@ enum BackupManager {
             for category in try context.fetch(FetchDescriptor<TransactionCategory>()) {
                 context.delete(category)
             }
+            for account in try context.fetch(FetchDescriptor<BalanceAccount>()) {
+                context.delete(account)
+            }
+        }
+
+        var accountsByUuid: [UUID: BalanceAccount] = [:]
+        let existingAccounts = try mode == .replace ? [] : context.fetch(FetchDescriptor<BalanceAccount>())
+        for account in existingAccounts {
+            accountsByUuid[account.uuid] = account
+        }
+        var accountSortIndex = existingAccounts.nextSortIndex
+        for item in snapshot.accounts ?? [] where accountsByUuid[item.uuid] == nil {
+            let account = BalanceAccount(name: item.name, amount: item.amount, checkpointDate: item.date, sortIndex: accountSortIndex)
+            account.uuid = item.uuid
+            context.insert(account)
+            accountsByUuid[item.uuid] = account
+            accountSortIndex += 1
         }
 
         let existingCategories = try mode == .replace ? [] : context.fetch(FetchDescriptor<TransactionCategory>())
@@ -250,7 +272,13 @@ enum BackupManager {
 
         for item in snapshot.transactions where !existingIds.contains(item.id) {
             guard let category = resolved[item.categoryUuid], !category.isDirectory else { continue }
-            let transaction = Transaction(amount: item.amount, category: category, date: item.date, note: item.note)
+            let transaction = Transaction(
+                amount: item.amount,
+                category: category,
+                date: item.date,
+                note: item.note,
+                account: item.accountUuid.flatMap { accountsByUuid[$0] }
+            )
             transaction.id = item.id
             context.insert(transaction)
             addedTransactions += 1
@@ -258,9 +286,7 @@ enum BackupManager {
 
         try context.save()
 
-        if mode == .replace, let balance = snapshot.balance {
-            storedBalance = Balance(amount: balance.amount, date: balance.date)
-        }
+        DataSeeder.seedDefaultAccount(in: context)
 
         return BackupImportResult(transactions: addedTransactions, categories: created.count)
     }

@@ -14,7 +14,32 @@ final class DataSeeder: NSObject {
         seedDefaultCategories(in: ModelContext(container))
     }
 
+    static func seedDefaultAccount(in context: ModelContext) {
+        let accounts = ((try? context.fetch(FetchDescriptor<BalanceAccount>())) ?? []).notDeleted.inDisplayOrder
+        let transactions = (try? context.fetch(FetchDescriptor<Transaction>())) ?? []
+
+        let defaultAccount: BalanceAccount
+        if let first = accounts.first {
+            defaultAccount = first
+        } else {
+            defaultAccount = BalanceAccount(name: L10n.startviewBalance, checkpointDate: .distantPast)
+            context.insert(defaultAccount)
+        }
+
+        for transaction in transactions where transaction.account == nil {
+            transaction.account = defaultAccount
+        }
+
+        do {
+            try context.save()
+        } catch {
+            Logger.default.logError("Failed to seed default account", error: error, category: className)
+        }
+    }
+
     static func seedDefaultCategories(in context: ModelContext) {
+        seedDefaultAccount(in: context)
+
         let descriptor = FetchDescriptor<TransactionCategory>()
         let existingCategories = (try? context.fetch(descriptor)) ?? []
 

@@ -272,7 +272,7 @@ private struct MokState {
         }
 
         return ImportedBackup(
-            snapshot: BackupSnapshot(categories: result, transactions: backupTransactions, balance: nil),
+            snapshot: BackupSnapshot(categories: result, transactions: backupTransactions),
             source: .mok,
             skippedTransactions: transactions.count - backupTransactions.count
         )

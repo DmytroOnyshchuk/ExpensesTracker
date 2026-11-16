@@ -7,9 +7,9 @@ enum UDKey: String {
     case fcmToken = "UDKey.fcmToken"
     case apiToken = "UDKey.apiToken"
     case userId = "UDKey.userId"
-    case balance = "UDKey.balance"
     case budget = "UDKey.budget"
     case appSettings = "UDKey.appSettings"
+    case selectedAccount = "UDKey.selectedAccount"
 }
 
 final class UserManager {
@@ -22,7 +22,6 @@ final class UserManager {
     @UserDefault(.fcmToken, defaultValue: nil) var fcmToken: String?
     @UserDefault(.apiToken, defaultValue: nil) var apiToken: String?
     @UserDefault(.userId, defaultValue: nil) var userId: String?
-    @UserDefaultCodable(.balance, defaultValue: nil, enableCaching: false) var balance: Balance?
     @UserDefaultCodable(.budget, defaultValue: nil, enableCaching: false) var budget: Budget?
     @UserDefaultCodable(.appSettings, defaultValue: AppSettings(), enableCaching: false) var appSettings: AppSettings!
 }
@@ -45,7 +44,6 @@ extension UserManager {
         _fcmToken.reset()
         _apiToken.reset()
         _userId.reset()
-        _balance.reset()
         _budget.reset()
         _appSettings.reset()
         lastApplicationEnvironment = savedEnvironment
@@ -60,6 +58,9 @@ extension UserManager {
         }
         for category in try context.fetch(FetchDescriptor<TransactionCategory>()) {
             context.delete(category)
+        }
+        for account in try context.fetch(FetchDescriptor<BalanceAccount>()) {
+            context.delete(account)
         }
         try context.save()
     }

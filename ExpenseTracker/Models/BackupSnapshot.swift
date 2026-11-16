@@ -9,7 +9,7 @@ struct BackupSnapshot: Codable {
     var createdAt: Date = .init()
     var categories: [BackupCategory]
     var transactions: [BackupTransaction]
-    var balance: BackupBalance?
+    var accounts: [BackupAccount]?
 }
 
 struct BackupCategory: Codable {
@@ -31,11 +31,15 @@ struct BackupTransaction: Codable {
     var date: Date
     var note: String?
     var categoryUuid: UUID
+    var accountUuid: UUID?
 }
 
-struct BackupBalance: Codable {
+struct BackupAccount: Codable {
+    var uuid: UUID
+    var name: String
     var amount: Int
     var date: Date
+    var sortIndex: Int
 }
 
 enum BackupSource {

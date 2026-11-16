@@ -19,20 +19,29 @@ struct StartView: View {
     @State private var note = ""
     @State private var showNoteInput = false
     @State private var amountAttentionTrigger: Int = .zero
-    @State private var showBalanceInput = false
+    @State private var showBalances = false
     @State private var operationType: OperationType = .outcome
-    @AppStorage(UDKey.balance.rawValue, store: UserDefaults.shared) private var balanceData: Data?
+    @AppStorage(UDKey.selectedAccount.rawValue, store: UserDefaults.shared) private var selectedAccountId = ""
+    @Query(sort: \BalanceAccount.sortIndex) private var storedAccounts: [BalanceAccount]
     @StoredSettings private var appSettings
     @Query(sort: \Transaction.date, order: .reverse, animation: .default) private var storedTransactions: [Transaction]
 
+    private var accounts: [BalanceAccount] { storedAccounts.notDeleted }
     private var transactions: [Transaction] { storedTransactions.notDeleted }
 
     var body: some View {
         NavigationStack {
             ScrollView(.vertical) {
                 VStack(spacing: 16) {
-                    BalanceCard(balance: balance, action: openBalanceInput)
-                        .padding(.horizontal, 8)
+                    BalanceCard(
+                        accounts: accounts,
+                        selected: selectedAccount,
+                        balance: selectedAccount?.current(in: transactions),
+                        amountFor: { $0.current(in: transactions) },
+                        onSelect: selectAccount,
+                        action: openBalances
+                    )
+                    .padding(.horizontal, 8)
 
                     DigitPadView(input: $input, placeholder: operationType.enterAmountTitle, attentionTrigger: amountAttentionTrigger)
                         .frame(maxWidth: .infinity)
@@ -63,20 +72,14 @@ struct StartView: View {
             .navigationDestination(isPresented: $showHistory) {
                 HistoryView()
             }
+            .navigationDestination(isPresented: $showBalances) {
+                BalancesView()
+            }
         }
         .overlay {
             if showNoteInput {
                 NoteInputView(note: $note, isPresented: $showNoteInput)
                     .transition(.opacity)
-            }
-        }
-        .overlay {
-            if showBalanceInput {
-                BalanceInputPopup(balance: balance, onCancel: closeBalanceInput) { amount in
-                    setBalance(amount)
-                    closeBalanceInput()
-                }
-                .transition(.opacity)
             }
         }
         .onChange(of: resetToken) {
@@ -85,7 +88,6 @@ struct StartView: View {
             }
         }
         .animation(.easeInOut(duration: 0.2), value: showNoteInput)
-        .animation(.easeInOut(duration: 0.2), value: showBalanceInput)
     }
 
     private var isAmountEntered: Bool {
@@ -96,8 +98,8 @@ struct StartView: View {
         !appSettings.hideCategories || isAmountEntered
     }
 
-    private var balance: Int? {
-        BalanceLedger(storedData: balanceData, transactions: transactions).current
+    private var selectedAccount: BalanceAccount? {
+        accounts.first { $0.uuid.uuidString == selectedAccountId } ?? accounts.first
     }
 
     private var noteButton: some View {
@@ -166,17 +168,14 @@ struct StartView: View {
         }
     }
 
-    private func openBalanceInput() {
+    private func openBalances() {
         FeedbackManager.shared.buttonTapped()
-        showBalanceInput = true
+        showBalances = true
     }
 
-    private func closeBalanceInput() {
-        showBalanceInput = false
-    }
-
-    private func setBalance(_ amount: Int) {
-        balanceData = Balance(amount: amount).jsonData()
+    private func selectAccount(_ account: BalanceAccount) {
+        FeedbackManager.shared.buttonTapped()
+        selectedAccountId = account.uuid.uuidString
     }
 
     private func addTransaction(with category: TransactionCategory) -> Bool {
@@ -190,7 +189,8 @@ struct StartView: View {
             amount: input.amount,
             category: category,
             date: Date(),
-            note: note.isBlank ? nil : note
+            note: note.isBlank ? nil : note,
+            account: selectedAccount
         )
 
         let previousInput = input
@@ -222,7 +222,7 @@ struct StartView: View {
 @MainActor
 func makePreviewModelContainer() -> ModelContainer {
     let container = try! ModelContainer(
-        for: Transaction.self, TransactionCategory.self,
+        for: Transaction.self, TransactionCategory.self, BalanceAccount.self,
         configurations: ModelConfiguration(isStoredInMemoryOnly: true)
     )
     DataSeeder.seedDefaultCategories(container: container)

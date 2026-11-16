@@ -7,43 +7,52 @@
 //
 
 import Foundation
+import SwiftData
 
-struct Balance: Codable {
+@Model
+final class BalanceAccount {
+    var uuid: UUID
+    var name: String
     var amount: Int
-    var date: Date
+    var checkpointDate: Date
+    var sortIndex: Int
+    var deletedAt: Date?
 
-    init(amount: Int, date: Date = Date()) {
+    init(name: String, amount: Int = .zero, checkpointDate: Date = Date(), sortIndex: Int = .zero) {
+        self.uuid = UUID()
+        self.name = name
         self.amount = amount
-        self.date = date
+        self.checkpointDate = checkpointDate
+        self.sortIndex = sortIndex
+    }
+
+    func current(in transactions: [Transaction]) -> Int {
+        let change = transactions
+            .filter { $0.account?.uuid == uuid && $0.date > checkpointDate }
+            .reduce(0) { $0 + $1.signedAmount }
+        return amount + change
+    }
+
+    func setAmount(_ newAmount: Int) {
+        amount = newAmount
+        checkpointDate = Date()
     }
 }
 
-struct BalanceLedger {
-    let checkpoint: Balance?
-    let transactions: [Transaction]
-
-    init(checkpoint: Balance?, transactions: [Transaction]) {
-        self.checkpoint = checkpoint
-        self.transactions = transactions
+extension [BalanceAccount] {
+    var notDeleted: [BalanceAccount] {
+        filter { $0.deletedAt == nil }
     }
 
-    init(storedData: Data?, transactions: [Transaction]) {
-        self.init(checkpoint: Balance(jsonData: storedData), transactions: transactions)
+    var inDisplayOrder: [BalanceAccount] {
+        sorted { $0.sortIndex < $1.sortIndex }
     }
 
-    var current: Int? {
-        guard let counted = countedTransactions else { return nil }
-
-        let change = counted.reduce(0) { $0 + $1.signedAmount }
-        return (checkpoint?.amount ?? .zero) + change
+    var nextSortIndex: Int {
+        (map(\.sortIndex).max() ?? -1) + 1
     }
 
-    private var countedTransactions: [Transaction]? {
-        if let checkpoint {
-            return transactions.filter { $0.date > checkpoint.date }
-        }
-        guard let firstIncomeDate = transactions.of(.income).map(\.date).min() else { return nil }
-
-        return transactions.filter { $0.date >= firstIncomeDate }
+    func total(in transactions: [Transaction]) -> Int {
+        reduce(0) { $0 + $1.current(in: transactions) }
     }
 }

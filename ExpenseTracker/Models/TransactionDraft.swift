@@ -13,6 +13,7 @@ struct TransactionDraft: Equatable {
     var amount: Int
     var date: Date
     var note: String
+    var account: BalanceAccount?
 
     var canSave: Bool { amount != .zero }
 
@@ -21,6 +22,7 @@ struct TransactionDraft: Equatable {
         self.amount = transaction.amount
         self.date = transaction.date
         self.note = transaction.note ?? ""
+        self.account = transaction.account
     }
 
     func apply(to transaction: Transaction) {
@@ -28,5 +30,6 @@ struct TransactionDraft: Equatable {
         transaction.amount = amount
         transaction.date = date
         transaction.note = note.isBlank ? nil : note
+        transaction.account = account
     }
 }

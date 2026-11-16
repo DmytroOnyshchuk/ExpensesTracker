@@ -69,9 +69,10 @@ enum MenuSection: CaseIterable, Identifiable {
 struct MenuView: View {
     @Query private var storedTransactions: [Transaction]
 
+    private var accounts: [BalanceAccount] { storedAccounts.notDeleted }
     private var transactions: [Transaction] { storedTransactions.notDeleted }
 
-    @AppStorage(UDKey.balance.rawValue, store: UserDefaults.shared) private var balanceData: Data?
+    @Query private var storedAccounts: [BalanceAccount]
 
     @State private var showStatistics = false
     @State private var showCategories = false
@@ -149,7 +150,7 @@ struct MenuView: View {
     }
 
     private var balance: Int? {
-        BalanceLedger(storedData: balanceData, transactions: transactions).current
+        accounts.isEmpty ? nil : accounts.total(in: transactions)
     }
 
     private func open(_ item: MenuItem) {
