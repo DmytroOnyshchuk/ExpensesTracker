@@ -149,7 +149,7 @@ struct MenuView: View {
     }
 
     private var balance: Int? {
-        Balance(jsonData: balanceData)?.remaining(after: transactions)
+        BalanceLedger(storedData: balanceData, transactions: transactions).current
     }
 
     private func open(_ item: MenuItem) {

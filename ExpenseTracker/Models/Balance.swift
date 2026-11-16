@@ -16,11 +16,34 @@ struct Balance: Codable {
         self.amount = amount
         self.date = date
     }
+}
 
-    func remaining(after transactions: [Transaction]) -> Int {
-        let change = transactions
-            .filter { $0.date > date }
-            .reduce(0) { $0 + $1.signedAmount }
-        return amount + change
+struct BalanceLedger {
+    let checkpoint: Balance?
+    let transactions: [Transaction]
+
+    init(checkpoint: Balance?, transactions: [Transaction]) {
+        self.checkpoint = checkpoint
+        self.transactions = transactions
+    }
+
+    init(storedData: Data?, transactions: [Transaction]) {
+        self.init(checkpoint: Balance(jsonData: storedData), transactions: transactions)
+    }
+
+    var current: Int? {
+        guard let counted = countedTransactions else { return nil }
+
+        let change = counted.reduce(0) { $0 + $1.signedAmount }
+        return (checkpoint?.amount ?? .zero) + change
+    }
+
+    private var countedTransactions: [Transaction]? {
+        if let checkpoint {
+            return transactions.filter { $0.date > checkpoint.date }
+        }
+        guard let firstIncomeDate = transactions.of(.income).map(\.date).min() else { return nil }
+
+        return transactions.filter { $0.date >= firstIncomeDate }
     }
 }

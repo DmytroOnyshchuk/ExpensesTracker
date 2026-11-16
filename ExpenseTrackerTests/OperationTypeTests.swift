@@ -75,7 +75,28 @@ final class OperationTypeTests: XCTestCase {
             makeTransaction(30000, in: cafe, date: start.addingTimeInterval(-60)),
         ]
 
-        XCTAssertEqual(balance.remaining(after: transactions), 588000)
+        XCTAssertEqual(BalanceLedger(checkpoint: balance, transactions: transactions).current, 588000)
+    }
+
+    func testBalanceIsUnknownWithoutCheckpointAndIncome() {
+        let cafe = makeCategory("Cafe", operationType: .outcome)
+
+        XCTAssertNil(BalanceLedger(checkpoint: nil, transactions: [makeTransaction(12000, in: cafe)]).current)
+    }
+
+    func testBalanceWithoutCheckpointStartsFromFirstIncome() {
+        let salary = makeCategory("Salary", operationType: .income)
+        let cafe = makeCategory("Cafe", operationType: .outcome)
+        let firstIncomeDate = Date(timeIntervalSinceNow: -3600)
+
+        let transactions = [
+            makeTransaction(90000, in: cafe, date: firstIncomeDate.addingTimeInterval(-60)),
+            makeTransaction(500000, in: salary, date: firstIncomeDate),
+            makeTransaction(12000, in: cafe),
+            makeTransaction(70000, in: salary),
+        ]
+
+        XCTAssertEqual(BalanceLedger(checkpoint: nil, transactions: transactions).current, 558000)
     }
 
     func testDraftKeepsOperationType() {

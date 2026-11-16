@@ -32,7 +32,7 @@ final class Transaction {
     }
 
     var signedAmount: Int {
-        operationType == .income ? amount : -amount
+        amount * operationType.balanceSign
     }
 
     var displayAmount: String {

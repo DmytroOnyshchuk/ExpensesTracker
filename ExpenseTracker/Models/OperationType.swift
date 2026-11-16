@@ -18,6 +18,13 @@ enum OperationType: String, Codable, CaseIterable, Identifiable {
         self == .outcome ? .income : .outcome
     }
 
+    var balanceSign: Int {
+        switch self {
+        case .outcome: -1
+        case .income: 1
+        }
+    }
+
     var title: String {
         switch self {
         case .outcome: L10n.statisticsTitle
