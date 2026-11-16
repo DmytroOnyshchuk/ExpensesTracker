@@ -38,13 +38,12 @@ struct CategoryColorPickerView: View {
         var red: CGFloat = .zero
         var green: CGFloat = .zero
         var blue: CGFloat = .zero
-        UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1)
-            .getRed(&red, green: &green, blue: &blue, alpha: nil)
+        UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1).getRed(&red, green: &green, blue: &blue, alpha: nil)
         return String(
             format: "%02X%02X%02X",
-            Int((red * 255).rounded()),
-            Int((green * 255).rounded()),
-            Int((blue * 255).rounded())
+            ((red * 255).rounded().int),
+            ((green * 255).rounded().int),
+            ((blue * 255).rounded().int)
         )
     }
 

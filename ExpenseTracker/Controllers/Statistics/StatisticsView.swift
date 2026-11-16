@@ -11,6 +11,8 @@ import SwiftData
 import SwiftUI
 
 struct StatisticsView: View {
+    var resetToken: Int = .zero
+
     @Query private var storedTransactions: [Transaction]
     @Query private var storedCategories: [TransactionCategory]
 
@@ -60,6 +62,9 @@ struct StatisticsView: View {
                 }
                 .transition(.opacity)
             }
+        }
+        .onChange(of: resetToken) {
+            resetToCurrentMonth(from: start)
         }
         .navigationTitle(L10n.statisticsTitle)
         .navigationBarTitleDisplayMode(.inline)
@@ -171,6 +176,19 @@ struct StatisticsView: View {
         let day = StatisticsPeriod.day.interval(containing: date).start
         exactStart = day
         select(day, from: start)
+    }
+
+    private func resetToCurrentMonth(from start: Date) {
+        let now = Date()
+
+        showPeriodList = false
+        showDayPicker = false
+        slideEdge = now >= start ? .trailing : .leading
+        withAnimation(.easeInOut(duration: 0.25)) {
+            period = .month
+            exactStart = nil
+            anchorDate = now
+        }
     }
 
     private func select(_ date: Date, from start: Date) {
