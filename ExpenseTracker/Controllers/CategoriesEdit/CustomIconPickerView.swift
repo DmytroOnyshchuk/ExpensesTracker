@@ -16,8 +16,8 @@ struct CustomIconPickerView: View {
 
     private let sections: [IconSection] = [
         IconSection(title: L10n.iconPickerSectionEveryday, icons: [
-            "cart.fill", "basket.fill", "carrot.fill", "takeoutbag.and.cup.and.straw.fill", "cup.and.saucer.fill",
-            "fork.knife.circle.fill", "mug.fill", "wineglass.fill", "fuelpump.fill", "car.fill", "tram.fill",
+            "cart", "cart.badge.plus", "basket.fill", "carrot.fill", "takeoutbag.and.cup.and.straw.fill", "cup.and.saucer.fill",
+            "fork.knife.circle.fill", "mug.fill", "wineglass.fill", "frying.pan.fill", "fuelpump.fill", "car.fill", "tram.fill",
             "train.side.front.car", "parkingsign.circle.fill", "bolt.car.fill", "scooter",
             "steeringwheel", "building.2.fill", "key.fill", "sofa.fill", "washer.fill", "dryer.fill",
             "dishwasher.fill", "microwave.fill", "wifi", "antenna.radiowaves.left.and.right", "powerplug.fill",
@@ -26,23 +26,30 @@ struct CustomIconPickerView: View {
             "ticket.fill", "film.fill", "play.rectangle.fill", "music.note.list", "iphone.gen2", "laptopcomputer",
             "bed.double.fill", "suitcase.fill", "airplane.departure", "airplane.arrival", "building.columns.fill",
             "doc.text.fill", "books.vertical.fill", "backpack.fill", "stroller.fill", "teddybear.fill", "birthday.cake.fill",
-            "cat.fill", "dog.fill", "heart.circle.fill", "leaf.fill", "globe", "map.fill", "camera.fill",
+            "cat.fill", "dog.fill", "heart.circle.fill", "leaf.fill", "globe", "map.fill", "camera.fill", "storefront.fill",
         ]),
         IconSection(title: L10n.iconPickerSectionTravel, icons: [
-            "ferry.fill", "sailboat.fill", "truck.box.fill", "suv.side.fill", "tent.fill", "location.fill",
-            "compass.drawing", "globe.americas.fill",
+            "ferry.fill", "sailboat.fill", "truck.box.fill", "suv.side.fill", "car.2.fill",
+            "bicycle.circle.fill", "tent.fill", "location.fill", "compass.drawing", "globe.americas.fill",
+            "suitcase.rolling.fill",
         ]),
         IconSection(title: L10n.iconPickerSectionMoney, icons: [
-            "bag.badge.plus", "bag.badge.minus", "eurosign.circle.fill", "yensign.circle.fill", "sterlingsign.circle.fill",
+            "bag.badge.plus", "bag.badge.minus", "wallet.pass.fill", "dollarsign.square.fill",
+            "eurosign.square.fill", "creditcard.and.123", "eurosign.circle.fill", "yensign.circle.fill", "sterlingsign.circle.fill",
             "bitcoinsign.circle.fill", "arrow.left.arrow.right", "chart.line.uptrend.xyaxis", "chart.bar.fill", "chart.pie.fill",
             "building.fill", "envelope.fill", "person.fill", "person.3.fill", "person.badge.plus.fill", "at",
         ]),
         IconSection(title: L10n.iconPickerSectionHome, icons: [
             "chair.fill", "chair.lounge.fill", "lamp.table.fill", "fan.fill", "air.conditioner.horizontal.fill",
-            "apple.logo", "eyeglasses", "comb.fill", "sunglasses.fill", "shoe.fill", "shoe.2.fill", "shoeprints.fill",
+            "house", "house.lodge.fill", "door.left.hand.closed", "door.garage.closed", "sofa", "refrigerator.fill",
+            "oven", "sink.fill", "shower.fill", "toilet.fill", "water.waves",
+            "bubbles.and.sparkles.fill", "washer", "apple.logo", "eyeglasses", "comb.fill", "sunglasses.fill", "shoe.fill",
+            "shoe.2.fill", "shoeprints.fill", "coat.fill",
         ]),
         IconSection(title: L10n.iconPickerSectionHealth, icons: [
-            "lungs.fill", "brain.head.profile.fill", "figure.strengthtraining.traditional", "figure.yoga", "figure.dance",
+            "lungs.fill", "brain.head.profile.fill", "cross.case.fill", "bandage.fill",
+            "medical.thermometer.fill", "heart.text.square.fill", "facemask.fill", "ear.fill", "eye.fill",
+            "figure.strengthtraining.traditional", "figure.yoga", "figure.dance",
             "figure.2.arms.open", "figure.stand.dress", "face.smiling.fill", "face.dashed.fill", "hands.clap.fill", "hands.sparkles.fill",
             "fish.fill", "soccerball", "sportscourt.fill", "basketball.fill", "football.fill", "tennisball.fill", "volleyball.fill", "tennis.racket",
             "hockey.puck.fill", "skateboard.fill", "surfboard.fill", "figure.surfing", "figure.snowboarding",
@@ -52,7 +59,7 @@ struct CustomIconPickerView: View {
             "iphone", "iphone.gen3", "ipad", "ipad.gen2", "macbook", "applewatch", "airpods", "airpods.gen3",
             "display", "display.2", "keyboard.fill", "printer.fill", "video.fill", "speaker.fill", "speaker.wave.2.fill",
             "headphones", "headphones.circle.fill", "app.fill", "pencil", "pencil.circle.fill", "pencil.and.outline",
-            "note.text", "doc.fill", "folder.fill", "wrench.and.screwdriver.fill", "wrench.fill", "screwdriver.fill",
+            "note.text", "doc.fill", "book.closed.fill", "folder.fill", "wrench.and.screwdriver.fill", "wrench.fill", "screwdriver.fill",
             "scissors.badge.ellipsis", "paintbrush.fill", "ruler.fill", "level.fill", "flashlight.on.fill", "flashlight.off.fill",
         ]),
         IconSection(title: L10n.iconPickerSectionNature, icons: [
@@ -61,14 +68,6 @@ struct CustomIconPickerView: View {
             "ant.fill", "hare.fill", "umbrella.fill", "wind", "cloud.sun.fill", "crown.fill", "clock.badge.exclamationmark.fill", "message.fill", "questionmark.circle.fill",
             "checkmark.circle.fill", "xmark.circle.fill", "plus.circle.fill", "minus.circle.fill", "exclamationmark.triangle.fill",
             "info.circle.fill", "gear", "gear.circle.fill", "checkerboard.rectangle", "plusminus", "divide", "multiply", "equal", "scale.3d",
-        ]),
-        IconSection(title: "Other", icons: [
-            "wallet.pass.fill", "door.left.hand.closed",
-            "door.garage.closed", "sink.fill", "shower.fill", "toilet.fill",
-            "water.waves", "cross.case.fill", "bandage.fill", "medical.thermometer.fill",
-            "heart.text.square.fill", "facemask.fill", "ear.fill", "eye.fill", "frying.pan.fill",
-            "coat.fill", "suitcase.rolling.fill", "bubbles.and.sparkles.fill", "book.closed.fill",
-            "storefront.fill",
         ]),
     ]
 
