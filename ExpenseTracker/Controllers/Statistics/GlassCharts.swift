@@ -12,16 +12,22 @@ import SwiftUI
 enum StatisticsChartStyle: String, CaseIterable, Identifiable, Codable {
     case pie
     case bars
-    case line
+    // case line
 
     var id: Self { self }
 
     var next: Self {
         switch self {
         case .pie: .bars
-        case .bars: .line
-        case .line: .pie
+        case .bars: .pie
+            // case .bars: .line
+            // case .line: .pie
         }
+    }
+
+    init(from decoder: Decoder) throws {
+        let rawValue = try decoder.singleValueContainer().decode(String.self)
+        self = StatisticsChartStyle(rawValue: rawValue) ?? .pie
     }
 }
 
@@ -301,63 +307,65 @@ struct GlassBarChart: View {
     }
 }
 
-struct GlassLineChart: View {
-    let points: [StatisticsChartPoint]
-    let interval: DateInterval
-    let period: StatisticsPeriod
-    var tint: Color = .appRed
+/*
+ struct GlassLineChart: View {
+     let points: [StatisticsChartPoint]
+     let interval: DateInterval
+     let period: StatisticsPeriod
+     var tint: Color = .appRed
 
-    var body: some View {
-        let now = Date()
-        let passed = points.filter { $0.start <= now }
-        let visible = passed.isEmpty ? points : passed
+     var body: some View {
+         let now = Date()
+         let passed = points.filter { $0.start <= now }
+         let visible = passed.isEmpty ? points : passed
 
-        Chart {
-            ForEach(visible) { point in
-                AreaMark(
-                    x: .value("Date", point.start),
-                    y: .value("Total", point.totalValue)
-                )
-                .interpolationMethod(.monotone)
-                .foregroundStyle(
-                    LinearGradient(
-                        colors: [tint.opacity(0.32), tint.opacity(0.02)],
-                        startPoint: .top,
-                        endPoint: .bottom
-                    )
-                )
+         Chart {
+             ForEach(visible) { point in
+                 AreaMark(
+                     x: .value("Date", point.start),
+                     y: .value("Total", point.totalValue)
+                 )
+                 .interpolationMethod(.monotone)
+                 .foregroundStyle(
+                     LinearGradient(
+                         colors: [tint.opacity(0.32), tint.opacity(0.02)],
+                         startPoint: .top,
+                         endPoint: .bottom
+                     )
+                 )
 
-                LineMark(
-                    x: .value("Date", point.start),
-                    y: .value("Total", point.totalValue)
-                )
-                .interpolationMethod(.monotone)
-                .foregroundStyle(tint)
-                .lineStyle(StrokeStyle(lineWidth: 2.5, lineCap: .round, lineJoin: .round))
-                .shadow(color: tint.opacity(0.8), radius: 6)
-            }
+                 LineMark(
+                     x: .value("Date", point.start),
+                     y: .value("Total", point.totalValue)
+                 )
+                 .interpolationMethod(.monotone)
+                 .foregroundStyle(tint)
+                 .lineStyle(StrokeStyle(lineWidth: 2.5, lineCap: .round, lineJoin: .round))
+                 .shadow(color: tint.opacity(0.8), radius: 6)
+             }
 
-            if let last = visible.last {
-                PointMark(
-                    x: .value("Date", last.start),
-                    y: .value("Total", last.totalValue)
-                )
-                .symbol {
-                    Circle()
-                        .fill(Color.appMain)
-                        .overlay {
-                            Circle()
-                                .strokeBorder(tint, lineWidth: 2.5)
-                        }
-                        .frame(width: 11, height: 11)
-                        .shadow(color: tint.opacity(0.8), radius: 5)
-                }
-            }
-        }
-        .chartXScale(domain: interval.start ... interval.end)
-        .glassChartAxes(format: period.chartAxisFormat, centered: false)
-    }
-}
+             if let last = visible.last {
+                 PointMark(
+                     x: .value("Date", last.start),
+                     y: .value("Total", last.totalValue)
+                 )
+                 .symbol {
+                     Circle()
+                         .fill(Color.appMain)
+                         .overlay {
+                             Circle()
+                                 .strokeBorder(tint, lineWidth: 2.5)
+                         }
+                         .frame(width: 11, height: 11)
+                         .shadow(color: tint.opacity(0.8), radius: 5)
+                 }
+             }
+         }
+         .chartXScale(domain: interval.start ... interval.end)
+         .glassChartAxes(format: period.chartAxisFormat, centered: false)
+     }
+ }
+ */
 
 extension View {
     fileprivate func glassChartAxes(format: Date.FormatStyle, centered: Bool) -> some View {
@@ -426,13 +434,15 @@ private func makePreviewPoints() -> [StatisticsChartPoint] {
         .background(.appMain)
 }
 
-#Preview("Line") {
-    GlassLineChart(
-        points: makePreviewPoints(),
-        interval: StatisticsPeriod.month.interval(containing: Date()),
-        period: .month
-    )
-    .frame(height: 280)
-    .padding(16)
-    .background(.appMain)
-}
+/*
+ #Preview("Line") {
+     GlassLineChart(
+         points: makePreviewPoints(),
+         interval: StatisticsPeriod.month.interval(containing: Date()),
+         period: .month
+     )
+     .frame(height: 280)
+     .padding(16)
+     .background(.appMain)
+ }
+ */

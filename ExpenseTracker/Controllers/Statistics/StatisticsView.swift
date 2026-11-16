@@ -322,11 +322,12 @@ struct StatisticsBreakdown: View {
     private var chart: some View {
         if let period, canSwitchStyle, chartStyle != .pie {
             Group {
-                if chartStyle == .bars {
-                    GlassBarChart(points: points, period: period)
-                } else {
-                    GlassLineChart(points: points, interval: interval, period: period)
-                }
+                GlassBarChart(points: points, period: period)
+                // if chartStyle == .bars {
+                //     GlassBarChart(points: points, period: period)
+                // } else {
+                //     GlassLineChart(points: points, interval: interval, period: period)
+                // }
             }
             .padding(.vertical, 24)
             .frame(height: 350)
