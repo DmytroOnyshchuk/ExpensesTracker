@@ -43,7 +43,11 @@ struct DigitPadView: View {
                                 }) {
                                     label(for: key)
                                         .frame(width: 75, height: 75)
-                                        .foregroundColor(.appWhite)
+                                        .foregroundColor(
+                                            ThemeManager.shared.theme.colorScheme == .light
+                                                ? .appWhite.mix(with: .appMain, by: 0.08)
+                                                : .appWhite
+                                        )
                                         .glassSurface(in: Circle(), isInteractive: true, fallback: .appLabel.opacity(0.1))
                                 }
                             }

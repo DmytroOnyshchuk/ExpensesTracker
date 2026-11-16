@@ -138,6 +138,7 @@ struct TransactionRow: View {
             VStack(alignment: .leading) {
                 Text(transaction.category.name.localized)
                     .font(.appLight(18))
+                    .foregroundColor(primaryTextColor)
 
                 if let note = transaction.note, !note.isEmpty {
                     Text(note)
@@ -151,6 +152,7 @@ struct TransactionRow: View {
 
             Text(transaction.amount.getAmount())
                 .font(.appLight(22))
+                .foregroundColor(primaryTextColor)
         }
         .frame(height: 48)
         .swipeActions(edge: .trailing, allowsFullSwipe: true) {
@@ -161,6 +163,12 @@ struct TransactionRow: View {
             }
             .tint(.appRed)
         }
+    }
+
+    private var primaryTextColor: Color {
+        ThemeManager.shared.theme.colorScheme == .light
+            ? .appWhite.mix(with: .appMain, by: 0.08)
+            : .primary
     }
 }
 
