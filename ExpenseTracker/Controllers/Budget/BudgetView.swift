@@ -10,12 +10,12 @@ import SwiftData
 import SwiftUI
 
 enum BudgetTarget: Identifiable {
-    case month
+    case month(Date)
     case category(TransactionCategory)
 
     var id: String {
         switch self {
-        case .month: "month"
+        case let .month(month): "month-\(month.timeIntervalSince1970)"
         case let .category(category): category.uuid.uuidString
         }
     }
@@ -52,7 +52,7 @@ struct BudgetView: View {
                             month: month,
                             transactions: transactions,
                             categories: categories,
-                            monthlyLimit: monthlyLimit,
+                            monthlyLimit: budget.monthly(for: month),
                             onOpen: open
                         )
                         .containerRelativeFrame(.horizontal)
@@ -87,8 +87,8 @@ struct BudgetView: View {
         .animation(.easeInOut(duration: 0.2), value: target?.id)
     }
 
-    private var monthlyLimit: Int {
-        Budget(jsonData: budgetData)?.monthly ?? .zero
+    private var budget: Budget {
+        Budget(jsonData: budgetData) ?? Budget()
     }
 
     private func months(for transactions: [Transaction]) -> [Date] {
@@ -106,7 +106,7 @@ struct BudgetView: View {
 
     private func limit(for target: BudgetTarget) -> Int {
         switch target {
-        case .month: monthlyLimit
+        case let .month(month): budget.monthly(for: month)
         case let .category(category): category.budget
         }
     }
@@ -114,9 +114,9 @@ struct BudgetView: View {
     private func setLimit(_ amount: Int, for target: BudgetTarget) {
         withAnimation {
             switch target {
-            case .month:
-                var budget = Budget()
-                budget.setMonthly(amount)
+            case let .month(month):
+                var budget = budget
+                budget.setMonthly(amount, for: month)
                 budgetData = budget.jsonData()
             case let .category(category):
                 category.budget = amount
@@ -163,7 +163,7 @@ struct BudgetMonthPage: View {
                     spent: monthTransactions.reduce(0) { $0 + $1.amount },
                     limit: monthlyLimit
                 ) {
-                    onOpen(.month)
+                    onOpen(.month(month))
                 }
 
                 if !limited.isEmpty {
