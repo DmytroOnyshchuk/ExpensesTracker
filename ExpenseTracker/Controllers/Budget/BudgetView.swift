@@ -29,6 +29,8 @@ enum BudgetTarget: Identifiable {
 }
 
 struct BudgetView: View {
+    var resetToken: Int = .zero
+
     @Environment(\.modelContext) private var modelContext
 
     @Query private var storedTransactions: [Transaction]
@@ -64,6 +66,11 @@ struct BudgetView: View {
             .scrollIndicators(.hidden)
             .scrollPosition(id: $selectedMonth)
             .defaultScrollAnchor(.trailing)
+            .onChange(of: resetToken) {
+                withAnimation {
+                    selectedMonth = period.interval(containing: Date()).start
+                }
+            }
             .appBackground()
             .navigationTitle(L10n.menuBudget)
             .navigationBarTitleDisplayMode(.inline)

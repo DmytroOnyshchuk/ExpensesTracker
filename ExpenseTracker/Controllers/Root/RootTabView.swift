@@ -20,13 +20,18 @@ struct RootTabView: View {
     @State private var selection: AppTab = .home
     @State private var openedFileURL: URL?
     @State private var statisticsResetToken: Int = .zero
+    @State private var budgetResetToken: Int = .zero
 
     private var tabSelection: Binding<AppTab> {
         Binding(
             get: { selection },
             set: { newValue in
-                if newValue == selection, newValue == .statistics {
-                    statisticsResetToken += 1
+                if newValue == selection {
+                    switch newValue {
+                    case .statistics: statisticsResetToken += 1
+                    case .budget: budgetResetToken += 1
+                    case .home, .menu: break
+                    }
                 }
                 selection = newValue
             }
@@ -48,7 +53,7 @@ struct RootTabView: View {
             }
 
             Tab(L10n.menuBudget, systemImage: "wallet.bifold", value: AppTab.budget) {
-                BudgetView()
+                BudgetView(resetToken: budgetResetToken)
             }
 
             Tab(L10n.menuTitle, systemImage: "list.dash", value: AppTab.menu) {
