@@ -38,6 +38,7 @@ struct BudgetView: View {
     @AppStorage(UDKey.budget.rawValue, store: UserDefaults.shared) private var budgetData: Data?
 
     @State private var target: BudgetTarget?
+    @State private var showUnlimited: Bool = false
     @State private var selectedMonth: Date? = StatisticsPeriod.month.interval(containing: Date()).start
 
     private let period = StatisticsPeriod.month
@@ -55,6 +56,7 @@ struct BudgetView: View {
                             transactions: transactions,
                             categories: categories,
                             monthlyLimit: monthlyLimit,
+                            showUnlimited: $showUnlimited,
                             onOpen: open
                         )
                         .containerRelativeFrame(.horizontal)
@@ -152,6 +154,7 @@ struct BudgetMonthPage: View {
     let transactions: [Transaction]
     let categories: [TransactionCategory]
     let monthlyLimit: Int
+    @Binding var showUnlimited: Bool
     let onOpen: (BudgetTarget) -> Void
 
     private let period = StatisticsPeriod.month
@@ -184,18 +187,47 @@ struct BudgetMonthPage: View {
                 }
 
                 if !unlimited.isEmpty {
-                    BudgetSection(leadingTitle: L10n.budgetNoLimit, trailingTitle: nil) {
-                        ForEach(unlimited, id: \.uuid) { category in
-                            UnsetCategoryBudgetRow(category: category, spent: spent[category.uuid] ?? .zero) {
-                                onOpen(.category(category))
+                    if limited.isEmpty || showUnlimited {
+                        BudgetSection(leadingTitle: L10n.budgetNoLimit, trailingTitle: nil) {
+                            ForEach(unlimited, id: \.uuid) { category in
+                                UnsetCategoryBudgetRow(category: category, spent: spent[category.uuid] ?? .zero) {
+                                    onOpen(.category(category))
+                                }
                             }
                         }
+                        .transition(.opacity)
+                    }
+
+                    if !limited.isEmpty {
+                        unlimitedToggle
                     }
                 }
             }
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .top)
         }
+    }
+
+    private var unlimitedToggle: some View {
+        Button {
+            withAnimation(.easeInOut(duration: 0.25)) {
+                showUnlimited.toggle()
+            }
+        } label: {
+            Image(systemName: "chevron.down")
+                .font(.system(size: 22, weight: .semibold))
+                .foregroundColor(.appPrimary)
+                .rotationEffect(.degrees(showUnlimited ? 180 : .zero))
+                .frame(width: 60, height: 60)
+                .glassSurface(
+                    in: Circle(),
+                    tint: .appPrimary.opacity(0.15),
+                    isInteractive: true,
+                    fallback: .appPrimary.opacity(0.15)
+                )
+        }
+        .frame(maxWidth: .infinity)
+        .accessibilityLabel(L10n.budgetNoLimit)
     }
 
     private var monthTransactions: [Transaction] {
