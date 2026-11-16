@@ -177,23 +177,15 @@ struct CustomIconPickerView: View {
             selectedIcon = icon
             dismiss()
         } label: {
-            VStack(spacing: 8) {
-                Image(systemName: icon)
-                    .font(.system(size: 24))
-                    .foregroundColor(selectedIcon == icon ? .appYellow : .appWhite)
-                    .frame(width: 50, height: 50)
-                    .background(
-                        RoundedRectangle(cornerRadius: 12)
-                            .stroke(selectedIcon == icon ? Color.appYellow : Color.clear, lineWidth: 2)
-                    )
-
-                Text(icon)
-                    .font(.caption2)
-                    .foregroundColor(.appWhite.opacity(0.7))
-                    .lineLimit(2)
-                    .multilineTextAlignment(.center)
-                    .frame(height: 24)
-            }
+            Image(systemName: icon)
+                .font(.system(size: 34))
+                .foregroundColor(selectedIcon == icon ? .appYellow : .appWhite)
+                .frame(width: 68, height: 68)
+                .background(
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(selectedIcon == icon ? Color.appYellow : Color.clear, lineWidth: 2)
+                )
+                .contentShape(Rectangle())
         }
         .buttonStyle(PlainButtonStyle())
     }
