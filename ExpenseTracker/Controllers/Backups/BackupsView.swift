@@ -31,7 +31,7 @@ struct BackupsView: View {
             VStack(alignment: .leading, spacing: 24) {
                 BackupSection(title: L10n.backupsCurrentData) {
                     BackupCountsView(transactions: transactions.count, categories: categories.count)
-                        .padding(.horizontal, 20)
+                        .padding(.horizontal, 16)
                         .padding(.vertical, 12)
                 }
 
@@ -302,17 +302,13 @@ struct BackupSection<Content: View>: View {
     @ViewBuilder let content: Content
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text(title)
-                .font(.appLight(15))
-                .foregroundColor(.appLabel)
-                .padding(.horizontal, 6)
+        VStack(alignment: .leading, spacing: 8) {
+            MenuSectionHeader(title: title)
 
             VStack(spacing: 0) {
                 content
             }
             .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.vertical, 6)
             .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
         }
     }
@@ -327,7 +323,7 @@ struct BackupCountsView: View {
             Text(L10n.backupsTransactionsCount(transactions))
             Text(L10n.backupsCategoriesCount(categories))
         }
-        .font(.appLight(17))
+        .font(.appLight(16))
         .foregroundColor(.appWhite)
         .frame(maxWidth: .infinity, alignment: .leading)
     }

@@ -10,33 +10,42 @@ struct SettingsView: View {
 
     var body: some View {
         ScrollView(.vertical) {
-            VStack(alignment: .leading, spacing: 10) {
-                Text(L10n.settingsAppearance)
-                    .font(.appLight(15))
-                    .foregroundColor(.appLabel)
-                    .padding(.horizontal, 6)
+            VStack(alignment: .leading, spacing: 24) {
+                VStack(alignment: .leading, spacing: 8) {
+                    MenuSectionHeader(title: L10n.settingsAppearance)
 
-                LazyVGrid(columns: columns, spacing: 16) {
-                    ForEach(ThemePreset.allCases) { preset in
-                        ThemePresetCell(preset: preset, isSelected: preset == themeManager.preset) {
-                            select(preset)
+                    LazyVGrid(columns: columns, spacing: 16) {
+                        ForEach(ThemePreset.allCases) { preset in
+                            ThemePresetCell(preset: preset, isSelected: preset == themeManager.preset) {
+                                select(preset)
+                            }
                         }
                     }
+                    .padding(16)
+                    .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
                 }
-                .padding(16)
-                .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
 
-                toggleRow(L10n.settingsSounds, systemImage: "speaker.wave.2", isOn: $appSettings.feedback.soundsEnabled)
-                    .padding(.top, 6)
+                VStack(alignment: .leading, spacing: 8) {
+                    MenuSectionHeader(title: L10n.menuSectionGeneral)
 
-                toggleRow(L10n.settingsHaptic, systemImage: "iphone.radiowaves.left.and.right", isOn: $appSettings.feedback.hapticEnabled)
+                    VStack(spacing: 0) {
+                        toggleRow(L10n.settingsSounds, systemImage: "speaker.wave.2", isOn: $appSettings.feedback.soundsEnabled)
 
-                toggleRow(
-                    L10n.settingsHideCategories,
-                    subtitle: L10n.settingsHideCategoriesDescription,
-                    systemImage: "square.grid.2x2.fill",
-                    isOn: $appSettings.hideCategories
-                )
+                        MenuRowDivider()
+
+                        toggleRow(L10n.settingsHaptic, systemImage: "iphone.radiowaves.left.and.right", isOn: $appSettings.feedback.hapticEnabled)
+
+                        MenuRowDivider()
+
+                        toggleRow(
+                            L10n.settingsHideCategories,
+                            subtitle: L10n.settingsHideCategoriesDescription,
+                            systemImage: "square.grid.2x2.fill",
+                            isOn: $appSettings.hideCategories
+                        )
+                    }
+                    .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
+                }
             }
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .top)
@@ -48,36 +57,35 @@ struct SettingsView: View {
 
     private func toggleRow(_ title: String, subtitle: String? = nil, systemImage: String, isOn: Binding<Bool>) -> some View {
         Toggle(isOn: isOn) {
-            HStack(spacing: 16) {
+            HStack(spacing: 12) {
                 Image(systemName: systemImage)
-                    .font(.system(size: 22))
+                    .font(.system(size: 17))
                     .foregroundColor(.appPrimary)
-                    .frame(width: 32)
+                    .frame(width: 24)
 
                 VStack(alignment: .leading, spacing: 2) {
                     Text(title)
-                        .font(.appLight(18))
+                        .font(.appLight(16))
                         .foregroundColor(.appWhite)
                         .lineLimit(1)
                         .minimumScaleFactor(0.7)
 
                     if let subtitle {
                         Text(subtitle)
-                            .font(.appLight(13))
+                            .font(.appLight(12))
                             .foregroundColor(.appLabel)
                             .fixedSize(horizontal: false, vertical: true)
                     }
                 }
             }
         }
-        .padding(.horizontal, 20)
-        .padding(.vertical, 10)
-        .frame(minHeight: 60)
+        .padding(.horizontal, 16)
+        .padding(.vertical, 8)
+        .frame(minHeight: 46)
         .contentShape(Rectangle())
         .onTapGesture {
             withAnimation { isOn.wrappedValue.toggle() }
         }
-        .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
     }
 
     private func select(_ preset: ThemePreset) {

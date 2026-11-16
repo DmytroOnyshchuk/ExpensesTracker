@@ -6,7 +6,7 @@ struct AboutView: View {
 
     var body: some View {
         ScrollView(.vertical) {
-            VStack(spacing: 16) {
+            VStack(spacing: 24) {
                 VStack(spacing: 8) {
                     Image("AboutIcon")
                         .resizable()
@@ -33,16 +33,16 @@ struct AboutView: View {
                     }
                     .buttonStyle(.plain)
 
+                    MenuRowDivider()
+
                     MenuRow(title: L10n.aboutRate, systemImage: "star", action: rate)
                 }
-                .padding(.vertical, 6)
                 .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
 
                 Text(copyright)
                     .font(.appLight(13))
                     .foregroundColor(.appLabel)
                     .multilineTextAlignment(.center)
-                    .padding(.top, 8)
             }
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .top)
