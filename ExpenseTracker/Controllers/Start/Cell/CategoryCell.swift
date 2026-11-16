@@ -59,6 +59,13 @@ struct CategoryCell: View {
                         .multilineTextAlignment(.center)
                         .foregroundColor(.appWhite)
                         .lineLimit(1)
+                        .keyframeAnimator(initialValue: 1.0, trigger: pulseTrigger) { content, opacity in
+                            content.opacity(opacity)
+                        } keyframes: { _ in
+                            CubicKeyframe(0.0, duration: 0.15)
+                            LinearKeyframe(0.0, duration: 0.35)
+                            CubicKeyframe(1.0, duration: 0.3)
+                        }
                 }
                 .frame(height: 80)
             }
