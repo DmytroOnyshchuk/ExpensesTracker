@@ -48,8 +48,8 @@ struct CategoryCell: View {
                         .keyframeAnimator(initialValue: 1.0, trigger: pulseTrigger) { content, scale in
                             content.scaleEffect(scale)
                         } keyframes: { _ in
-                            LinearKeyframe(2.5, duration: 0.2, timingCurve: .easeOut)
-                            LinearKeyframe(1.0, duration: 0.2, timingCurve: .easeInOut)
+                            CubicKeyframe(2.5, duration: 0.3)
+                            CubicKeyframe(1.0, duration: 0.5)
                         }
 
                     Spacer(minLength: 8)

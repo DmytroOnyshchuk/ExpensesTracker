@@ -62,11 +62,11 @@ struct DigitPadView: View {
     private func label(for key: AmountInput.Key) -> some View {
         switch key {
         case let .digit(digit):
-            Text(String(digit))
-                .font(.appMedium(36))
+            Text(digit.string)
+                .font(.appLight(42))
         case .decimalSeparator:
             Text(".")
-                .font(.appMedium(36))
+                .font(.appLight(42))
         case .backspace:
             Image(systemName: "delete.backward.fill")
                 .font(.system(size: 20, weight: .medium))

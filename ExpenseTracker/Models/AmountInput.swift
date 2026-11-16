@@ -78,6 +78,11 @@ struct AmountInput {
     }
 
     private mutating func append(_ digit: Int) {
+        if wholeLength == nil, digits == [0] {
+            digits = [digit]
+            return
+        }
+
         guard let wholeLength, digits.count == wholeLength + Self.fractionLength else {
             digits.append(digit)
             return

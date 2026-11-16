@@ -42,7 +42,7 @@ struct BalanceCard: View {
 
     private var amountColor: Color {
         guard let balance else { return .appLabel }
-        return balance < 0 ? .appRed : .appWhite.opacity(0.75)
+        return balance < .zero ? .appRed : .appWhite.opacity(0.75)
     }
 }
 
