@@ -36,45 +36,34 @@ struct BudgetView: View {
     @AppStorage(UDKey.budget.rawValue, store: UserDefaults.shared) private var budgetData: Data?
 
     @State private var target: BudgetTarget?
+    @State private var selectedMonth: Date? = StatisticsPeriod.month.interval(containing: Date()).start
 
     private let period = StatisticsPeriod.month
 
     var body: some View {
-        let categories = categories
-        let limited = categories.filter { $0.budget > .zero }
-        let unlimited = categories.filter { $0.budget <= .zero }
-        let spent = spentByCategory
+        let transactions = storedTransactions.notDeleted
+        let categories = storedCategories.notDeleted
 
         NavigationStack {
-            ScrollView(.vertical) {
-                VStack(alignment: .leading, spacing: 16) {
-                    MonthBudgetCard(title: monthTitle, spent: monthTransactions.reduce(0) { $0 + $1.amount }, limit: monthlyLimit) {
-                        open(.month)
-                    }
-
-                    if !limited.isEmpty {
-                        BudgetSection(leadingTitle: L10n.menuCategories, trailingTitle: L10n.menuBudget) {
-                            ForEach(limited, id: \.uuid) { category in
-                                CategoryBudgetRow(category: category, spent: spent[category.uuid] ?? .zero) {
-                                    open(.category(category))
-                                }
-                            }
-                        }
-                    }
-
-                    if !unlimited.isEmpty {
-                        BudgetSection(leadingTitle: L10n.budgetNoLimit, trailingTitle: nil) {
-                            ForEach(unlimited, id: \.uuid) { category in
-                                UnsetCategoryBudgetRow(category: category, spent: spent[category.uuid] ?? .zero) {
-                                    open(.category(category))
-                                }
-                            }
-                        }
+            ScrollView(.horizontal) {
+                LazyHStack(spacing: 0) {
+                    ForEach(months(for: transactions), id: \.self) { month in
+                        BudgetMonthPage(
+                            month: month,
+                            transactions: transactions,
+                            categories: categories,
+                            monthlyLimit: monthlyLimit,
+                            onOpen: open
+                        )
+                        .containerRelativeFrame(.horizontal)
                     }
                 }
-                .padding(16)
-                .frame(maxWidth: .infinity, alignment: .top)
+                .scrollTargetLayout()
             }
+            .scrollTargetBehavior(.paging)
+            .scrollIndicators(.hidden)
+            .scrollPosition(id: $selectedMonth)
+            .defaultScrollAnchor(.trailing)
             .appBackground()
             .navigationTitle(L10n.menuBudget)
             .navigationBarTitleDisplayMode(.inline)
@@ -102,27 +91,17 @@ struct BudgetView: View {
         Budget(jsonData: budgetData)?.monthly ?? .zero
     }
 
-    private var monthTitle: String {
-        period.title(for: Date())
-    }
+    private func months(for transactions: [Transaction]) -> [Date] {
+        let current = period.interval(containing: Date()).start
+        let first = transactions.map(\.date).min().map { period.interval(containing: $0).start } ?? current
 
-    private var categories: [TransactionCategory] {
-        storedCategories.notDeleted.topLevel.inDisplayOrder
-    }
-
-    private var monthTransactions: [Transaction] {
-        let interval = period.interval(containing: Date())
-        return storedTransactions.notDeleted.filter { $0.date >= interval.start && $0.date < interval.end }
-    }
-
-    private var spentByCategory: [UUID: Int] {
-        let directories = Set(storedCategories.filter(\.isDirectory).map(\.uuid))
-
-        return monthTransactions.reduce(into: [:]) { result, transaction in
-            let category = transaction.category
-            let owner = category.parentUuid.flatMap { directories.contains($0) ? $0 : nil } ?? category.uuid
-            result[owner, default: .zero] += transaction.amount
+        var result: [Date] = []
+        var month = min(first, current)
+        while month <= current {
+            result.append(month)
+            month = period.shifted(month, by: 1)
         }
+        return result
     }
 
     private func limit(for target: BudgetTarget) -> Int {
@@ -158,6 +137,73 @@ struct BudgetView: View {
 
     private func close() {
         target = nil
+    }
+}
+
+struct BudgetMonthPage: View {
+    let month: Date
+    let transactions: [Transaction]
+    let categories: [TransactionCategory]
+    let monthlyLimit: Int
+    let onOpen: (BudgetTarget) -> Void
+
+    private let period = StatisticsPeriod.month
+
+    var body: some View {
+        let monthTransactions = monthTransactions
+        let spent = spentByCategory(in: monthTransactions)
+        let topLevel = categories.topLevel.inDisplayOrder
+        let limited = topLevel.filter { $0.budget > .zero }
+        let unlimited = topLevel.filter { $0.budget <= .zero }
+
+        ScrollView(.vertical) {
+            VStack(alignment: .leading, spacing: 16) {
+                MonthBudgetCard(
+                    title: period.title(for: month),
+                    spent: monthTransactions.reduce(0) { $0 + $1.amount },
+                    limit: monthlyLimit
+                ) {
+                    onOpen(.month)
+                }
+
+                if !limited.isEmpty {
+                    BudgetSection(leadingTitle: L10n.menuCategories, trailingTitle: L10n.menuBudget) {
+                        ForEach(limited, id: \.uuid) { category in
+                            CategoryBudgetRow(category: category, spent: spent[category.uuid] ?? .zero) {
+                                onOpen(.category(category))
+                            }
+                        }
+                    }
+                }
+
+                if !unlimited.isEmpty {
+                    BudgetSection(leadingTitle: L10n.budgetNoLimit, trailingTitle: nil) {
+                        ForEach(unlimited, id: \.uuid) { category in
+                            UnsetCategoryBudgetRow(category: category, spent: spent[category.uuid] ?? .zero) {
+                                onOpen(.category(category))
+                            }
+                        }
+                    }
+                }
+            }
+            .padding(16)
+            .frame(maxWidth: .infinity, alignment: .top)
+        }
+    }
+
+    private var monthTransactions: [Transaction] {
+        let interval = period.interval(containing: month)
+        return transactions.filter { $0.date >= interval.start && $0.date < interval.end }
+    }
+
+    private func spentByCategory(in monthTransactions: [Transaction]) -> [UUID: Int] {
+        let directories = Set(categories.filter(\.isDirectory).map(\.uuid))
+
+        return monthTransactions.reduce(into: [:]) { result, transaction in
+            let category = transaction.category
+            let owner = category.parentUuid.flatMap { directories.contains($0) ? $0 : nil } ?? category.uuid
+            result[owner, default: .zero] += transaction.amount
+        }
     }
 }
 
