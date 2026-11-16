@@ -152,9 +152,9 @@ struct BudgetMonthPage: View {
     var body: some View {
         let monthTransactions = monthTransactions
         let spent = spentByCategory(in: monthTransactions)
-        let topLevel = categories.topLevel.inDisplayOrder
-        let limited = topLevel.filter { $0.budget > .zero }
-        let unlimited = topLevel.filter { $0.budget <= .zero }
+        let items = categories.filter { !$0.isDirectory }.inDisplayOrder
+        let limited = items.filter { $0.budget > .zero }
+        let unlimited = items.filter { $0.budget <= .zero }
 
         ScrollView(.vertical) {
             VStack(alignment: .leading, spacing: 16) {
@@ -197,12 +197,8 @@ struct BudgetMonthPage: View {
     }
 
     private func spentByCategory(in monthTransactions: [Transaction]) -> [UUID: Int] {
-        let directories = Set(categories.filter(\.isDirectory).map(\.uuid))
-
-        return monthTransactions.reduce(into: [:]) { result, transaction in
-            let category = transaction.category
-            let owner = category.parentUuid.flatMap { directories.contains($0) ? $0 : nil } ?? category.uuid
-            result[owner, default: .zero] += transaction.amount
+        monthTransactions.reduce(into: [:]) { result, transaction in
+            result[transaction.category.uuid, default: .zero] += transaction.amount
         }
     }
 }
@@ -221,14 +217,14 @@ struct MonthBudgetCard: View {
             VStack(alignment: .leading, spacing: 8) {
                 HStack(spacing: 8) {
                     Text(title)
-                        .font(.appLight(12))
+                        .font(.appLight(14))
                         .foregroundColor(.appLabel)
 
                     Spacer(minLength: 8)
 
                     if hasLimit {
                         Text(remaining < .zero ? L10n.budgetExceeded((-remaining).getAmount()) : L10n.budgetLeft(remaining.getAmount()))
-                            .font(.appLight(12))
+                            .font(.appLight(14))
                             .foregroundColor(remaining < .zero ? .appRed : .appWhite.opacity(0.75))
                             .contentTransition(.numericText())
                     }
@@ -238,12 +234,12 @@ struct MonthBudgetCard: View {
 
                 HStack(alignment: .firstTextBaseline, spacing: 6) {
                     Text(spent.getAmount())
-                        .font(.appRegular(22))
+                        .font(.appRegular(24))
                         .foregroundColor(.appWhite)
                         .contentTransition(.numericText())
 
                     Text(hasLimit ? "/ \(limit.getAmount())" : L10n.budgetNoLimit)
-                        .font(.appLight(13))
+                        .font(.appLight(15))
                         .foregroundColor(.appLabel)
                         .contentTransition(.numericText())
 
@@ -287,7 +283,7 @@ struct BudgetSection<Content: View>: View {
                     Text(trailingTitle)
                 }
             }
-            .font(.appLight(12))
+            .font(.appLight(14))
             .foregroundColor(.appLabel)
             .lineLimit(1)
             .padding(.horizontal, 16)
@@ -316,7 +312,7 @@ struct CategoryBudgetRow: View {
                 VStack(alignment: .leading, spacing: 6) {
                     HStack(alignment: .firstTextBaseline, spacing: 8) {
                         Text(category.name.localized)
-                            .font(.appLight(15))
+                            .font(.appLight(16))
                             .foregroundColor(.appWhite)
                             .lineLimit(1)
 
@@ -324,12 +320,12 @@ struct CategoryBudgetRow: View {
 
                         HStack(alignment: .firstTextBaseline, spacing: 4) {
                             Text(spent.getAmount())
-                                .font(.appRegular(15))
+                                .font(.appRegular(16.5))
                                 .foregroundColor(.appWhite)
                                 .contentTransition(.numericText())
 
                             Text("/ \(limit.getAmount())")
-                                .font(.appLight(12))
+                                .font(.appLight(15.5))
                                 .foregroundColor(.appLabel)
                                 .contentTransition(.numericText())
                         }
@@ -342,7 +338,7 @@ struct CategoryBudgetRow: View {
 
                     if spent > limit {
                         Text(L10n.budgetExceeded((spent - limit).getAmount()))
-                            .font(.appLight(11))
+                            .font(.appLight(13))
                             .foregroundColor(.appRed)
                             .lineLimit(1)
                     }
@@ -368,11 +364,11 @@ struct UnsetCategoryBudgetRow: View {
 
                 VStack(alignment: .leading, spacing: 2) {
                     Text(category.name.localized)
-                        .font(.appLight(15))
+                        .font(.appLight(16))
                         .foregroundColor(.appWhite)
 
                     Text(spent.getAmount())
-                        .font(.appLight(12))
+                        .font(.appLight(14))
                         .foregroundColor(.appLabel)
                         .contentTransition(.numericText())
                 }
@@ -381,7 +377,7 @@ struct UnsetCategoryBudgetRow: View {
                 Spacer(minLength: 8)
 
                 Text(L10n.budgetSet)
-                    .font(.appRegular(12))
+                    .font(.appLight(13))
                     .foregroundColor(.appWhite)
                     .lineLimit(1)
                     .padding(.horizontal, 14)
