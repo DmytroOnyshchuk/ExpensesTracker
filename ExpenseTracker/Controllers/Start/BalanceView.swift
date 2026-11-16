@@ -74,7 +74,12 @@ struct BalanceInputPopup: View {
     }
 
     var body: some View {
-        TransactionEditPopup(canConfirm: allowsEmpty || !text.isBlank, onCancel: cancel, onConfirm: confirm) {
+        TransactionEditPopup(
+            canConfirm: allowsEmpty || !text.isBlank,
+            onRemove: onRemove.map { action in { remove(action) } },
+            onCancel: cancel,
+            onConfirm: confirm
+        ) {
             VStack(spacing: 12) {
                 Text(title)
                     .font(.appMedium(14))
@@ -95,17 +100,6 @@ struct BalanceInputPopup: View {
                     .background(.appMain.opacity(LiquidGlass.isAvailable ? 0.5 : 1))
                     .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
                     .padding(.horizontal, 16)
-
-                if let onRemove {
-                    Button(action: { remove(onRemove) }) {
-                        Text(L10n.remove)
-                            .font(.appRegular(14))
-                            .foregroundColor(.appRed)
-                            .padding(.horizontal, 16)
-                            .contentShape(Rectangle())
-                    }
-                    .buttonStyle(.plain)
-                }
             }
         }
         .onAppear {

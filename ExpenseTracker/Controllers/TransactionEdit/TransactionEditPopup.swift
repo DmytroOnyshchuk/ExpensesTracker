@@ -10,6 +10,7 @@ import SwiftUI
 
 struct TransactionEditPopup<Content: View>: View {
     var canConfirm = true
+    var onRemove: (() -> Void)?
     let onCancel: () -> Void
     let onConfirm: () -> Void
     @ViewBuilder let content: Content
@@ -29,11 +30,15 @@ struct TransactionEditPopup<Content: View>: View {
                     .padding(.top, 14)
 
                 HStack(spacing: 0) {
+                    if let onRemove {
+                        actionButton(L10n.remove, color: .appRed, action: onRemove)
+
+                        buttonDivider
+                    }
+
                     actionButton(L10n.cancel, action: onCancel)
 
-                    Rectangle()
-                        .fill(.appLabel.opacity(0.2))
-                        .frame(width: 0.5, height: 24)
+                    buttonDivider
 
                     actionButton(L10n.ok, action: onConfirm)
                         .disabled(!canConfirm)
@@ -50,11 +55,17 @@ struct TransactionEditPopup<Content: View>: View {
         }
     }
 
-    private func actionButton(_ title: String, action: @escaping () -> Void) -> some View {
+    private var buttonDivider: some View {
+        Rectangle()
+            .fill(.appLabel.opacity(0.2))
+            .frame(width: 0.5, height: 24)
+    }
+
+    private func actionButton(_ title: String, color: Color = .appPrimary, action: @escaping () -> Void) -> some View {
         Button(action: action) {
             Text(title)
                 .font(.appRegular(15))
-                .foregroundColor(.appPrimary)
+                .foregroundColor(color)
                 .frame(maxWidth: .infinity, minHeight: 44)
                 .contentShape(Rectangle())
         }
