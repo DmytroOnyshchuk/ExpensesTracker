@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Сума";
 "TRANSACTION_EDIT_DATE" = "Дата";
 "TRANSACTION_EDIT_TIME" = "Час";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Добавяне на коментар";
+"TRANSACTION_EDIT_ADD_NOTE" = "Добавяне на бележка";
 "TRANSACTION_EDIT_DELETE" = "Изтриване на транзакцията";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Изтриване на транзакцията?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Категории";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Изтриване на всичко и нулиране";
 "BACKUPS_RESET_WARNING" = "Всички транзакции, категории и настройки ще бъдат изтрити. Това не може да бъде отменено.";
 "BACKUPS_SHARE_ACTION" = "Експортиране на данни";
-"BACKUPS_CSV_COMMENT" = "Коментар";
+"BACKUPS_CSV_NOTE" = "Бележка";
 "BACKUPS_CSV_FOLDER" = "Папка";
 "BACKUPS_FORMAT_CSV" = "Само за преглед";
 "BACKUPS_FORMAT_JSON" = "Пълно копие";

@@ -266,7 +266,7 @@ private struct MokState {
                 id: MokIdentifier.transaction.uuid(uid),
                 amount: Int((transaction.money * 100).rounded()),
                 date: date,
-                comment: note?.isEmpty == false ? note : nil,
+                note: note?.isEmpty == false ? note : nil,
                 categoryUuid: MokIdentifier.category.uuid(categoryUid)
             )
         }

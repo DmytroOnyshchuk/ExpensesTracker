@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "මුදල";
 "TRANSACTION_EDIT_DATE" = "දිනය";
 "TRANSACTION_EDIT_TIME" = "වේලාව";
-"TRANSACTION_EDIT_ADD_COMMENT" = "අදහසක් එක් කරන්න";
+"TRANSACTION_EDIT_ADD_NOTE" = "සටහනක් එක් කරන්න";
 "TRANSACTION_EDIT_DELETE" = "ගනුදෙනුව මකන්න";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "ගනුදෙනුව මකන්නද?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "ප්‍රවර්ග";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "සියල්ල මකා යළි සකසන්න";
 "BACKUPS_RESET_WARNING" = "සියලුම ගනුදෙනු, ප්‍රවර්ග සහ සැකසුම් මකා දැමෙනු ඇත. මෙය අහෝසි කළ නොහැක.";
 "BACKUPS_SHARE_ACTION" = "දත්ත නිර්යාත කරන්න";
-"BACKUPS_CSV_COMMENT" = "සටහන";
+"BACKUPS_CSV_NOTE" = "සටහන";
 "BACKUPS_CSV_FOLDER" = "ෆෝල්ඩරය";
 "BACKUPS_FORMAT_CSV" = "බැලීමට පමණි";
 "BACKUPS_FORMAT_JSON" = "සම්පූර්ණ උපස්ථය";

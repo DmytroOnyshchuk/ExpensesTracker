@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "રકમ";
 "TRANSACTION_EDIT_DATE" = "તારીખ";
 "TRANSACTION_EDIT_TIME" = "સમય";
-"TRANSACTION_EDIT_ADD_COMMENT" = "ટિપ્પણી ઉમેરો";
+"TRANSACTION_EDIT_ADD_NOTE" = "નોંધ ઉમેરો";
 "TRANSACTION_EDIT_DELETE" = "વ્યવહાર કાઢી નાખો";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "વ્યવહાર કાઢી નાખવો છે?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "શ્રેણીઓ";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "બધું કાઢી નાખો અને રીસેટ કરો";
 "BACKUPS_RESET_WARNING" = "બધા વ્યવહારો, શ્રેણીઓ અને સેટિંગ્સ કાઢી નાખવામાં આવશે. આ પૂર્વવત્ કરી શકાતું નથી.";
 "BACKUPS_SHARE_ACTION" = "ડેટા નિકાસ કરો";
-"BACKUPS_CSV_COMMENT" = "ટિપ્પણી";
+"BACKUPS_CSV_NOTE" = "નોંધ";
 "BACKUPS_CSV_FOLDER" = "ફોલ્ડર";
 "BACKUPS_FORMAT_CSV" = "ફક્ત જોવા માટે";
 "BACKUPS_FORMAT_JSON" = "સંપૂર્ણ બેકઅપ";

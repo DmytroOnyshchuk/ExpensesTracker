@@ -15,7 +15,7 @@ final class Transaction {
     var id: UUID
     var amount: Int
     var date: Date
-    var comment: String?
+    var note: String?
     var category: TransactionCategory
     var deletedAt: Date?
 
@@ -24,7 +24,7 @@ final class Transaction {
         self.amount = amount
         self.category = category
         self.date = date
-        self.comment = note
+        self.note = note
     }
 }
 

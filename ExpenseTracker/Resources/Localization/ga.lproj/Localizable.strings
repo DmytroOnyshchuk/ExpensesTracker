@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Suim";
 "TRANSACTION_EDIT_DATE" = "Dáta";
 "TRANSACTION_EDIT_TIME" = "Am";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Cuir nóta leis";
+"TRANSACTION_EDIT_ADD_NOTE" = "Cuir nóta leis";
 "TRANSACTION_EDIT_DELETE" = "Scrios an t-idirbheart";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Scrios an t-idirbheart?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Catagóirí";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Scrios gach rud agus athshocraigh";
 "BACKUPS_RESET_WARNING" = "Scriosfar gach idirbheart, catagóir agus socrú. Ní féidir é seo a chealú.";
 "BACKUPS_SHARE_ACTION" = "Easpórtáil sonraí";
-"BACKUPS_CSV_COMMENT" = "Nóta tráchta";
+"BACKUPS_CSV_NOTE" = "Nóta";
 "BACKUPS_CSV_FOLDER" = "Fillteán";
 "BACKUPS_FORMAT_CSV" = "Le hamharc amháin";
 "BACKUPS_FORMAT_JSON" = "Cúltaca iomlán";

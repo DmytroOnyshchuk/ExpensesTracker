@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Маблағ";
 "TRANSACTION_EDIT_DATE" = "Сана";
 "TRANSACTION_EDIT_TIME" = "Вақт";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Иловаи шарҳ";
+"TRANSACTION_EDIT_ADD_NOTE" = "Иловаи қайд";
 "TRANSACTION_EDIT_DELETE" = "Нест кардани амалиёт";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Амалиёт нест карда шавад?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Категорияҳо";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Ҳамаро нест кардан ва аз нав танзим кардан";
 "BACKUPS_RESET_WARNING" = "Ҳамаи амалиётҳо, категорияҳо ва танзимот нест карда мешаванд. Инро бекор кардан ғайриимкон аст.";
 "BACKUPS_SHARE_ACTION" = "Содир кардани маълумот";
-"BACKUPS_CSV_COMMENT" = "Шарҳ";
+"BACKUPS_CSV_NOTE" = "Қайд";
 "BACKUPS_CSV_FOLDER" = "Ҷузвдон";
 "BACKUPS_FORMAT_CSV" = "Танҳо барои тамошо";
 "BACKUPS_FORMAT_JSON" = "Нусхаи пурра";

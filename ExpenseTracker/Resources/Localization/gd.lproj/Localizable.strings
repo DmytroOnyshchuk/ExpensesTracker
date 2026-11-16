@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Suim";
 "TRANSACTION_EDIT_DATE" = "Ceann-là";
 "TRANSACTION_EDIT_TIME" = "Àm";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Cuir beachd ris";
+"TRANSACTION_EDIT_ADD_NOTE" = "Cuir nòta ris";
 "TRANSACTION_EDIT_DELETE" = "Sguab às an tar-chur";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "A bheil thu airson an tar-chur a sguabadh às?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Roinnean-seòrsa";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Sguab às a h-uile càil is ath-shuidhich";
 "BACKUPS_RESET_WARNING" = "Thèid a h-uile tar-chur, roinn-seòrsa is roghainn a sguabadh às. Cha ghabh seo a neo-dhèanamh.";
 "BACKUPS_SHARE_ACTION" = "Às-phortaich an dàta";
-"BACKUPS_CSV_COMMENT" = "Beachd";
+"BACKUPS_CSV_NOTE" = "Nòta";
 "BACKUPS_CSV_FOLDER" = "Pasgan";
 "BACKUPS_FORMAT_CSV" = "Airson coimhead a-mhàin";
 "BACKUPS_FORMAT_JSON" = "Lethbhreac-glèidhidh slàn";

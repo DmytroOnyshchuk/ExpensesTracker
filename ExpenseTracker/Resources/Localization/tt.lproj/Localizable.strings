@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Сумма";
 "TRANSACTION_EDIT_DATE" = "Дата";
 "TRANSACTION_EDIT_TIME" = "Вакыт";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Аңлатма өстәү";
+"TRANSACTION_EDIT_ADD_NOTE" = "Искәрмә өстәү";
 "TRANSACTION_EDIT_DELETE" = "Операцияне бетерү";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Операцияне бетерергәме?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Категорияләр";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Барысын да бетерү һәм ташлату";
 "BACKUPS_RESET_WARNING" = "Барлык операцияләр, категорияләр һәм көйләүләр бетереләчәк. Моны кире кайтарып булмый.";
 "BACKUPS_SHARE_ACTION" = "Мәгълүматны экспортлау";
-"BACKUPS_CSV_COMMENT" = "Аңлатма";
+"BACKUPS_CSV_NOTE" = "Искәрмә";
 "BACKUPS_CSV_FOLDER" = "Папка";
 "BACKUPS_FORMAT_CSV" = "Карау өчен генә";
 "BACKUPS_FORMAT_JSON" = "Тулы күчермә";

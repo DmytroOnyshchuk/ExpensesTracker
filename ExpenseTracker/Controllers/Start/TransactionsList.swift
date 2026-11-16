@@ -158,7 +158,7 @@ struct TransactionRow: View {
                 Text(transaction.category.name.localized)
                     .font(.appLight(18))
 
-                if let note = transaction.comment, !note.isEmpty {
+                if let note = transaction.note, !note.isEmpty {
                     Text(note)
                         .font(.appLight(13))
                         .foregroundColor(.appGray)

@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Suma";
 "TRANSACTION_EDIT_DATE" = "Dátum";
 "TRANSACTION_EDIT_TIME" = "Čas";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Pridať komentár";
+"TRANSACTION_EDIT_ADD_NOTE" = "Pridať poznámku";
 "TRANSACTION_EDIT_DELETE" = "Vymazať transakciu";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Vymazať transakciu?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategórie";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Vymazať všetko a resetovať";
 "BACKUPS_RESET_WARNING" = "Všetky transakcie, kategórie a nastavenia budú vymazané. Túto akciu nie je možné vrátiť späť.";
 "BACKUPS_SHARE_ACTION" = "Exportovať dáta";
-"BACKUPS_CSV_COMMENT" = "Komentár";
+"BACKUPS_CSV_NOTE" = "Poznámka";
 "BACKUPS_CSV_FOLDER" = "Priečinok";
 "BACKUPS_FORMAT_CSV" = "Iba na prezeranie";
 "BACKUPS_FORMAT_JSON" = "Úplná záloha";

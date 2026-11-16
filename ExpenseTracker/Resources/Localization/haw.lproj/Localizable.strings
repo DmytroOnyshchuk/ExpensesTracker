@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Huina kālā";
 "TRANSACTION_EDIT_DATE" = "Lā o ka mahina";
 "TRANSACTION_EDIT_TIME" = "Hola";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Hoʻohui i ka manaʻo";
+"TRANSACTION_EDIT_ADD_NOTE" = "Hoʻohui i ka memo";
 "TRANSACTION_EDIT_DELETE" = "Holoi i ka hana kālā";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "E holoi i ka hana kālā?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Nā māhele";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Holoi i nā mea a pau a hoʻonohonoho hou";
 "BACKUPS_RESET_WARNING" = "E holoi ʻia nā hana kālā, nā māhele, a me nā hoʻonohonoho a pau. ʻAʻole hiki ke hoʻihoʻi ʻia.";
 "BACKUPS_SHARE_ACTION" = "Hoʻopuka i ka ʻikepili";
-"BACKUPS_CSV_COMMENT" = "Manaʻo";
+"BACKUPS_CSV_NOTE" = "Memo";
 "BACKUPS_CSV_FOLDER" = "Wahī";
 "BACKUPS_FORMAT_CSV" = "No ka nānā wale nō";
 "BACKUPS_FORMAT_JSON" = "Kope papaʻa piha";

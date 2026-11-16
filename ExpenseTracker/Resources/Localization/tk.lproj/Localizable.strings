@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Mukdar";
 "TRANSACTION_EDIT_DATE" = "Sene";
 "TRANSACTION_EDIT_TIME" = "Wagt";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Teswir goş";
+"TRANSACTION_EDIT_ADD_NOTE" = "Bellik goş";
 "TRANSACTION_EDIT_DELETE" = "Amaly poz";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Amaly pozmalymy?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategoriýalar";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Hemmesini poz we täzeden sazla";
 "BACKUPS_RESET_WARNING" = "Ähli amallar, kategoriýalar we sazlamalar pozular. Muny yzyna gaýtaryp bolmaýar.";
 "BACKUPS_SHARE_ACTION" = "Maglumatlary eksport et";
-"BACKUPS_CSV_COMMENT" = "Teswir";
+"BACKUPS_CSV_NOTE" = "Bellik";
 "BACKUPS_CSV_FOLDER" = "Bukja";
 "BACKUPS_FORMAT_CSV" = "Diňe görmek üçin";
 "BACKUPS_FORMAT_JSON" = "Doly nusga";

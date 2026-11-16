@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "रकम";
 "TRANSACTION_EDIT_DATE" = "मिति";
 "TRANSACTION_EDIT_TIME" = "समय";
-"TRANSACTION_EDIT_ADD_COMMENT" = "टिप्पणी थप्नुहोस्";
+"TRANSACTION_EDIT_ADD_NOTE" = "नोट थप्नुहोस्";
 "TRANSACTION_EDIT_DELETE" = "कारोबार मेटाउनुहोस्";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "कारोबार मेटाउने हो?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "श्रेणीहरू";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "सबै मेटाएर रिसेट गर्नुहोस्";
 "BACKUPS_RESET_WARNING" = "सबै कारोबार, श्रेणी र सेटिङहरू मेटाइनेछन्। यो पूर्ववत गर्न सकिँदैन।";
 "BACKUPS_SHARE_ACTION" = "डेटा निर्यात गर्नुहोस्";
-"BACKUPS_CSV_COMMENT" = "टिप्पणी";
+"BACKUPS_CSV_NOTE" = "नोट";
 "BACKUPS_CSV_FOLDER" = "फोल्डर";
 "BACKUPS_FORMAT_CSV" = "हेर्नका लागि मात्र";
 "BACKUPS_FORMAT_JSON" = "पूर्ण ब्याकअप";

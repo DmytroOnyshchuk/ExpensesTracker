@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Shuma";
 "TRANSACTION_EDIT_DATE" = "Data";
 "TRANSACTION_EDIT_TIME" = "Ora";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Shto koment";
+"TRANSACTION_EDIT_ADD_NOTE" = "Shto shënim";
 "TRANSACTION_EDIT_DELETE" = "Fshi transaksionin";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Të fshihet transaksioni?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategoritë";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Fshi gjithçka dhe rivendos";
 "BACKUPS_RESET_WARNING" = "Të gjitha transaksionet, kategoritë dhe cilësimet do të fshihen. Kjo nuk mund të zhbëhet.";
 "BACKUPS_SHARE_ACTION" = "Eksporto të dhënat";
-"BACKUPS_CSV_COMMENT" = "Koment";
+"BACKUPS_CSV_NOTE" = "Shënim";
 "BACKUPS_CSV_FOLDER" = "Dosja";
 "BACKUPS_FORMAT_CSV" = "Vetëm për shikim";
 "BACKUPS_FORMAT_JSON" = "Kopje e plotë";

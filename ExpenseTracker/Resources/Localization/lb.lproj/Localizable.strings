@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Betrag";
 "TRANSACTION_EDIT_DATE" = "Datum";
 "TRANSACTION_EDIT_TIME" = "Zäit";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Kommentar derbäisetzen";
+"TRANSACTION_EDIT_ADD_NOTE" = "Notiz derbäisetzen";
 "TRANSACTION_EDIT_DELETE" = "Transaktioun läschen";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Transaktioun läschen?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategorien";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Alles läschen an zrécksetzen";
 "BACKUPS_RESET_WARNING" = "All Transaktiounen, Kategorien an Astellunge gi geläscht. Dëst kann net réckgängeg gemaach ginn.";
 "BACKUPS_SHARE_ACTION" = "Daten exportéieren";
-"BACKUPS_CSV_COMMENT" = "Kommentar";
+"BACKUPS_CSV_NOTE" = "Notiz";
 "BACKUPS_CSV_FOLDER" = "Dossier";
 "BACKUPS_FORMAT_CSV" = "Nëmme fir ze kucken";
 "BACKUPS_FORMAT_JSON" = "Komplette Backup";

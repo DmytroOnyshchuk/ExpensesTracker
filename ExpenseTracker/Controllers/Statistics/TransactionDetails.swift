@@ -137,8 +137,8 @@ struct TransactionDetailsRow: View {
                     .foregroundColor(.appWhite)
                     .lineLimit(1)
 
-                if let comment = transaction.comment, !comment.isBlank {
-                    Text(comment)
+                if let note = transaction.note, !note.isBlank {
+                    Text(note)
                         .font(.appLight(14))
                         .foregroundColor(.appLabel)
                         .lineLimit(2)

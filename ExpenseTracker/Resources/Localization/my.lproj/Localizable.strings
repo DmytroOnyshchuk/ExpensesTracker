@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "ပမာဏ";
 "TRANSACTION_EDIT_DATE" = "ရက်စွဲ";
 "TRANSACTION_EDIT_TIME" = "အချိန်";
-"TRANSACTION_EDIT_ADD_COMMENT" = "မှတ်ချက်ထည့်ရန်";
+"TRANSACTION_EDIT_ADD_NOTE" = "မှတ်စုထည့်ရန်";
 "TRANSACTION_EDIT_DELETE" = "ငွေလွှဲမှုကို ဖျက်ရန်";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "ငွေလွှဲမှုကို ဖျက်မလား?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "အမျိုးအစားများ";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "အားလုံးဖျက်ပြီး ပြန်လည်သတ်မှတ်ရန်";
 "BACKUPS_RESET_WARNING" = "ငွေလွှဲမှုများ၊ အမျိုးအစားများနှင့် ဆက်တင်များအားလုံး ဖျက်ပါမည်။ ၎င်းကို ပြန်ဖျက်၍မရပါ။";
 "BACKUPS_SHARE_ACTION" = "ဒေတာ ထုတ်ယူရန်";
-"BACKUPS_CSV_COMMENT" = "မှတ်ချက်";
+"BACKUPS_CSV_NOTE" = "မှတ်စု";
 "BACKUPS_CSV_FOLDER" = "ဖိုင်တွဲ";
 "BACKUPS_FORMAT_CSV" = "ကြည့်ရန်သာ";
 "BACKUPS_FORMAT_JSON" = "အရန်မိတ္တူအပြည့်";

@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Số tiền";
 "TRANSACTION_EDIT_DATE" = "Ngày";
 "TRANSACTION_EDIT_TIME" = "Giờ";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Thêm ghi chú";
+"TRANSACTION_EDIT_ADD_NOTE" = "Thêm ghi chú";
 "TRANSACTION_EDIT_DELETE" = "Xóa giao dịch";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Xóa giao dịch?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Danh mục";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Xóa tất cả và đặt lại";
 "BACKUPS_RESET_WARNING" = "Tất cả giao dịch, danh mục và cài đặt sẽ bị xóa. Không thể hoàn tác thao tác này.";
 "BACKUPS_SHARE_ACTION" = "Xuất dữ liệu";
-"BACKUPS_CSV_COMMENT" = "Ghi chú";
+"BACKUPS_CSV_NOTE" = "Ghi chú";
 "BACKUPS_CSV_FOLDER" = "Thư mục";
 "BACKUPS_FORMAT_CSV" = "Chỉ để xem";
 "BACKUPS_FORMAT_JSON" = "Sao lưu đầy đủ";

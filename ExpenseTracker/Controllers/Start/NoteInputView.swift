@@ -1,5 +1,5 @@
 //
-//  CommentInputView.swift
+//  NoteInputView.swift
 //  ExpenseTracker
 //
 //  Created by Dmytro Onyshchuk on 12.11.2026.
@@ -8,8 +8,8 @@
 
 import SwiftUI
 
-struct CommentInputView: View {
-    @Binding var comment: String
+struct NoteInputView: View {
+    @Binding var note: String
     @Binding var isPresented: Bool
 
     @State private var draft = ""
@@ -35,14 +35,14 @@ struct CommentInputView: View {
             .padding(.bottom, 8)
         }
         .onAppear {
-            draft = comment
+            draft = note
             isFocused = true
         }
     }
 
     private var header: some View {
         HStack(spacing: 4) {
-            Text(L10n.transactionEditAddComment)
+            Text(L10n.transactionEditAddNote)
                 .font(.appMedium(16))
                 .foregroundColor(.appLabel)
                 .padding(.leading, 4)
@@ -77,7 +77,7 @@ struct CommentInputView: View {
         TextField(
             "",
             text: $draft,
-            prompt: Text(L10n.transactionEditAddComment).foregroundColor(.appLabel.opacity(0.6)),
+            prompt: Text(L10n.transactionEditAddNote).foregroundColor(.appLabel.opacity(0.6)),
             axis: .vertical
         )
         .lineLimit(3 ... 6)
@@ -113,7 +113,7 @@ struct CommentInputView: View {
     }
 
     private func save() {
-        comment = draft.trimmingCharacters(in: .whitespacesAndNewlines)
+        note = draft.trimmingCharacters(in: .whitespacesAndNewlines)
         close()
     }
 
@@ -124,9 +124,9 @@ struct CommentInputView: View {
 }
 
 #Preview {
-    @Previewable @State var comment = "Lunch with colleagues"
+    @Previewable @State var note = "Lunch with colleagues"
     @Previewable @State var isPresented = true
 
-    CommentInputView(comment: $comment, isPresented: $isPresented)
+    NoteInputView(note: $note, isPresented: $isPresented)
         .background(.appMain)
 }

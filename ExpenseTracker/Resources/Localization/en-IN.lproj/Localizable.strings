@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Amount";
 "TRANSACTION_EDIT_DATE" = "Date";
 "TRANSACTION_EDIT_TIME" = "Time";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Add comment";
+"TRANSACTION_EDIT_ADD_NOTE" = "Add note";
 "TRANSACTION_EDIT_DELETE" = "Delete transaction";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Delete transaction?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Categories";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Delete all and reset";
 "BACKUPS_RESET_WARNING" = "All transactions, categories and settings will be deleted. This cannot be undone.";
 "BACKUPS_SHARE_ACTION" = "Export data";
-"BACKUPS_CSV_COMMENT" = "Comment";
+"BACKUPS_CSV_NOTE" = "Note";
 "BACKUPS_CSV_FOLDER" = "Folder";
 "BACKUPS_FORMAT_CSV" = "View only";
 "BACKUPS_FORMAT_JSON" = "Full backup";

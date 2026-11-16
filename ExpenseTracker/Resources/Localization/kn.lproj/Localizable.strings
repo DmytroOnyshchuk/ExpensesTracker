@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "ಮೊತ್ತ";
 "TRANSACTION_EDIT_DATE" = "ದಿನಾಂಕ";
 "TRANSACTION_EDIT_TIME" = "ಸಮಯ";
-"TRANSACTION_EDIT_ADD_COMMENT" = "ಕಾಮೆಂಟ್ ಸೇರಿಸಿ";
+"TRANSACTION_EDIT_ADD_NOTE" = "ಟಿಪ್ಪಣಿ ಸೇರಿಸಿ";
 "TRANSACTION_EDIT_DELETE" = "ವಹಿವಾಟು ಅಳಿಸಿ";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "ವಹಿವಾಟು ಅಳಿಸಬೇಕೇ?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "ವರ್ಗಗಳು";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "ಎಲ್ಲವನ್ನೂ ಅಳಿಸಿ ಮತ್ತು ಮರುಹೊಂದಿಸಿ";
 "BACKUPS_RESET_WARNING" = "ಎಲ್ಲಾ ವಹಿವಾಟುಗಳು, ವರ್ಗಗಳು ಮತ್ತು ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ. ಇದನ್ನು ರದ್ದುಗೊಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.";
 "BACKUPS_SHARE_ACTION" = "ಡೇಟಾ ರಫ್ತು ಮಾಡಿ";
-"BACKUPS_CSV_COMMENT" = "ಟಿಪ್ಪಣಿ";
+"BACKUPS_CSV_NOTE" = "ಟಿಪ್ಪಣಿ";
 "BACKUPS_CSV_FOLDER" = "ಫೋಲ್ಡರ್";
 "BACKUPS_FORMAT_CSV" = "ವೀಕ್ಷಣೆಗೆ ಮಾತ್ರ";
 "BACKUPS_FORMAT_JSON" = "ಪೂರ್ಣ ಬ್ಯಾಕಪ್";

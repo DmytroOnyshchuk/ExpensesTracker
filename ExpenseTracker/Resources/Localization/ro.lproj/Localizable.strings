@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Sumă";
 "TRANSACTION_EDIT_DATE" = "Dată";
 "TRANSACTION_EDIT_TIME" = "Oră";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Adaugă comentariu";
+"TRANSACTION_EDIT_ADD_NOTE" = "Adaugă notă";
 "TRANSACTION_EDIT_DELETE" = "Șterge tranzacția";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Ștergi tranzacția?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Categorii";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Șterge tot și resetează";
 "BACKUPS_RESET_WARNING" = "Toate tranzacțiile, categoriile și setările vor fi șterse. Această acțiune nu poate fi anulată.";
 "BACKUPS_SHARE_ACTION" = "Exportă datele";
-"BACKUPS_CSV_COMMENT" = "Comentariu";
+"BACKUPS_CSV_NOTE" = "Notă";
 "BACKUPS_CSV_FOLDER" = "Dosar";
 "BACKUPS_FORMAT_CSV" = "Doar vizualizare";
 "BACKUPS_FORMAT_JSON" = "Copie completă";

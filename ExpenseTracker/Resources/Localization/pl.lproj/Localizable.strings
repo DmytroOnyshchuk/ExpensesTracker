@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Kwota";
 "TRANSACTION_EDIT_DATE" = "Data";
 "TRANSACTION_EDIT_TIME" = "Godzina";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Dodaj komentarz";
+"TRANSACTION_EDIT_ADD_NOTE" = "Dodaj notatkę";
 "TRANSACTION_EDIT_DELETE" = "Usuń transakcję";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Usunąć transakcję?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategorie";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Usuń wszystko i zresetuj";
 "BACKUPS_RESET_WARNING" = "Wszystkie transakcje, kategorie i ustawienia zostaną usunięte. Tej czynności nie można cofnąć.";
 "BACKUPS_SHARE_ACTION" = "Eksportuj dane";
-"BACKUPS_CSV_COMMENT" = "Komentarz";
+"BACKUPS_CSV_NOTE" = "Notatka";
 "BACKUPS_CSV_FOLDER" = "Folder";
 "BACKUPS_FORMAT_CSV" = "Tylko podgląd";
 "BACKUPS_FORMAT_JSON" = "Pełna kopia";

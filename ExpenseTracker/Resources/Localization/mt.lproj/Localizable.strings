@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Ammont";
 "TRANSACTION_EDIT_DATE" = "Data";
 "TRANSACTION_EDIT_TIME" = "Ħin";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Żid kumment";
+"TRANSACTION_EDIT_ADD_NOTE" = "Żid nota";
 "TRANSACTION_EDIT_DELETE" = "Ħassar it-tranżazzjoni";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Tħassar it-tranżazzjoni?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategoriji";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Ħassar kollox u rrisettja";
 "BACKUPS_RESET_WARNING" = "It-tranżazzjonijiet, il-kategoriji u s-settings kollha se jitħassru. Dan ma jistax jitreġġa’ lura.";
 "BACKUPS_SHARE_ACTION" = "Esporta d-data";
-"BACKUPS_CSV_COMMENT" = "Kumment";
+"BACKUPS_CSV_NOTE" = "Nota";
 "BACKUPS_CSV_FOLDER" = "Folder";
 "BACKUPS_FORMAT_CSV" = "Għall-wiri biss";
 "BACKUPS_FORMAT_JSON" = "Backup sħiħ";

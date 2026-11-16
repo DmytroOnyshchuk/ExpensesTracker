@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Upphædd";
 "TRANSACTION_EDIT_DATE" = "Dato";
 "TRANSACTION_EDIT_TIME" = "Tíð";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Legg viðmerking afturat";
+"TRANSACTION_EDIT_ADD_NOTE" = "Legg viðmerking afturat";
 "TRANSACTION_EDIT_DELETE" = "Strika flyting";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Strika flyting?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Bólkar";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Strika alt og nullstilla";
 "BACKUPS_RESET_WARNING" = "Allar flytingar, bólkar og stillingar verða strikað. Hetta kann ikki angrast.";
 "BACKUPS_SHARE_ACTION" = "Flyt út dátur";
-"BACKUPS_CSV_COMMENT" = "Viðmerking";
+"BACKUPS_CSV_NOTE" = "Viðmerking";
 "BACKUPS_CSV_FOLDER" = "Mappa";
 "BACKUPS_FORMAT_CSV" = "Bert at hyggja at";
 "BACKUPS_FORMAT_JSON" = "Fult trygdaravrit";

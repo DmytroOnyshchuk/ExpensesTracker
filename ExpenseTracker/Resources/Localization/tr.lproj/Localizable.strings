@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Tutar";
 "TRANSACTION_EDIT_DATE" = "Tarih";
 "TRANSACTION_EDIT_TIME" = "Saat";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Yorum ekle";
+"TRANSACTION_EDIT_ADD_NOTE" = "Not ekle";
 "TRANSACTION_EDIT_DELETE" = "İşlemi sil";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "İşlem silinsin mi?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategoriler";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Her şeyi sil ve sıfırla";
 "BACKUPS_RESET_WARNING" = "Tüm işlemler, kategoriler ve ayarlar silinecek. Bu işlem geri alınamaz.";
 "BACKUPS_SHARE_ACTION" = "Verileri dışa aktar";
-"BACKUPS_CSV_COMMENT" = "Yorum";
+"BACKUPS_CSV_NOTE" = "Not";
 "BACKUPS_CSV_FOLDER" = "Klasör";
 "BACKUPS_FORMAT_CSV" = "Yalnızca görüntüleme";
 "BACKUPS_FORMAT_JSON" = "Tam yedek";

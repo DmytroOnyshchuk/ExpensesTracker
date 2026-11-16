@@ -95,7 +95,7 @@ enum BackupManager {
                     id: transaction.id,
                     amount: transaction.amount,
                     date: transaction.date,
-                    comment: transaction.comment,
+                    note: transaction.note,
                     categoryUuid: transaction.category.uuid
                 )
             },
@@ -119,7 +119,7 @@ enum BackupManager {
                 folder: transaction.category.parent(from: categories)?.name.localized ?? "",
                 category: transaction.category.name.localized,
                 amount: transaction.amount,
-                comment: transaction.comment ?? ""
+                note: transaction.note ?? ""
             )
         }
         let header = [
@@ -127,7 +127,7 @@ enum BackupManager {
             L10n.backupsCsvFolder,
             L10n.transactionEditCategory,
             L10n.transactionEditAmount,
-            L10n.backupsCsvComment,
+            L10n.backupsCsvNote,
         ]
         return switch format {
         case .xlsx: BackupXLSXWriter.data(header: header, rows: rows, sheetName: L10n.appName)
@@ -245,7 +245,7 @@ enum BackupManager {
 
         for item in snapshot.transactions where !existingIds.contains(item.id) {
             guard let category = resolved[item.categoryUuid], !category.isDirectory else { continue }
-            let transaction = Transaction(amount: item.amount, category: category, date: item.date, note: item.comment)
+            let transaction = Transaction(amount: item.amount, category: category, date: item.date, note: item.note)
             transaction.id = item.id
             context.insert(transaction)
             addedTransactions += 1

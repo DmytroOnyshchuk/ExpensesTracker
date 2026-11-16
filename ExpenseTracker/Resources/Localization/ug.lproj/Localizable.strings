@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "سومما";
 "TRANSACTION_EDIT_DATE" = "چېسلا";
 "TRANSACTION_EDIT_TIME" = "ۋاقىت";
-"TRANSACTION_EDIT_ADD_COMMENT" = "ئىزاھات قوش";
+"TRANSACTION_EDIT_ADD_NOTE" = "خاتىرە قوش";
 "TRANSACTION_EDIT_DELETE" = "سودىنى ئۆچۈر";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "سودىنى ئۆچۈرەمسىز؟";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "تۈرلەر";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "ھەممىنى ئۆچۈرۈپ ئەسلىگە قايتۇرۇش";
 "BACKUPS_RESET_WARNING" = "بارلىق سودا، تۈر ۋە تەڭشەكلەر ئۆچۈرۈلىدۇ. بۇنى ئەمەلدىن قالدۇرغىلى بولمايدۇ.";
 "BACKUPS_SHARE_ACTION" = "سانلىق مەلۇماتنى چىقىرىش";
-"BACKUPS_CSV_COMMENT" = "ئىزاھات";
+"BACKUPS_CSV_NOTE" = "خاتىرە";
 "BACKUPS_CSV_FOLDER" = "قىسقۇچ";
 "BACKUPS_FORMAT_CSV" = "پەقەت كۆرۈش ئۈچۈن";
 "BACKUPS_FORMAT_JSON" = "تولۇق زاپاس نۇسخا";

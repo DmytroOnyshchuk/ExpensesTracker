@@ -32,10 +32,10 @@ internal enum L10n {
   internal static func backupsCategoriesCount(_ p1: Int) -> String {
     return L10n.tr("Localizable", "BACKUPS_CATEGORIES_COUNT", p1, fallback: "Categories: %d")
   }
-  /// Comment
-  internal static let backupsCsvComment = L10n.tr("Localizable", "BACKUPS_CSV_COMMENT", fallback: "Comment")
   /// Folder
   internal static let backupsCsvFolder = L10n.tr("Localizable", "BACKUPS_CSV_FOLDER", fallback: "Folder")
+  /// Note
+  internal static let backupsCsvNote = L10n.tr("Localizable", "BACKUPS_CSV_NOTE", fallback: "Note")
   /// In the app
   internal static let backupsCurrentData = L10n.tr("Localizable", "BACKUPS_CURRENT_DATA", fallback: "In the app")
   /// The file is damaged or cannot be read.
@@ -320,8 +320,8 @@ internal enum L10n {
   internal static let transactionDetailsSortByAmount = L10n.tr("Localizable", "TRANSACTION_DETAILS_SORT_BY_AMOUNT", fallback: "By amount")
   /// By date
   internal static let transactionDetailsSortByDate = L10n.tr("Localizable", "TRANSACTION_DETAILS_SORT_BY_DATE", fallback: "By date")
-  /// Add comment
-  internal static let transactionEditAddComment = L10n.tr("Localizable", "TRANSACTION_EDIT_ADD_COMMENT", fallback: "Add comment")
+  /// Add note
+  internal static let transactionEditAddNote = L10n.tr("Localizable", "TRANSACTION_EDIT_ADD_NOTE", fallback: "Add note")
   /// Amount
   internal static let transactionEditAmount = L10n.tr("Localizable", "TRANSACTION_EDIT_AMOUNT", fallback: "Amount")
   /// Categories

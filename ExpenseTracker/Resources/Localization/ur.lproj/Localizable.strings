@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "رقم";
 "TRANSACTION_EDIT_DATE" = "تاریخ";
 "TRANSACTION_EDIT_TIME" = "وقت";
-"TRANSACTION_EDIT_ADD_COMMENT" = "تبصرہ شامل کریں";
+"TRANSACTION_EDIT_ADD_NOTE" = "نوٹ شامل کریں";
 "TRANSACTION_EDIT_DELETE" = "لین دین حذف کریں";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "لین دین حذف کریں؟";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "زمرے";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "سب کچھ حذف کریں اور ری سیٹ کریں";
 "BACKUPS_RESET_WARNING" = "تمام لین دین، زمرے اور ترتیبات حذف کر دی جائیں گی۔ یہ واپس نہیں کیا جا سکتا۔";
 "BACKUPS_SHARE_ACTION" = "ڈیٹا ایکسپورٹ کریں";
-"BACKUPS_CSV_COMMENT" = "تبصرہ";
+"BACKUPS_CSV_NOTE" = "نوٹ";
 "BACKUPS_CSV_FOLDER" = "فولڈر";
 "BACKUPS_FORMAT_CSV" = "صرف دیکھنے کے لیے";
 "BACKUPS_FORMAT_JSON" = "مکمل بیک اپ";

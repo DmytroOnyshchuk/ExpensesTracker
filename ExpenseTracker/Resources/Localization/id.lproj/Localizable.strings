@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Jumlah";
 "TRANSACTION_EDIT_DATE" = "Tanggal";
 "TRANSACTION_EDIT_TIME" = "Waktu";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Tambah komentar";
+"TRANSACTION_EDIT_ADD_NOTE" = "Tambah catatan";
 "TRANSACTION_EDIT_DELETE" = "Hapus transaksi";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Hapus transaksi?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategori";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Hapus semua dan atur ulang";
 "BACKUPS_RESET_WARNING" = "Semua transaksi, kategori, dan pengaturan akan dihapus. Tindakan ini tidak dapat dibatalkan.";
 "BACKUPS_SHARE_ACTION" = "Ekspor data";
-"BACKUPS_CSV_COMMENT" = "Komentar";
+"BACKUPS_CSV_NOTE" = "Catatan";
 "BACKUPS_CSV_FOLDER" = "Folder";
 "BACKUPS_FORMAT_CSV" = "Hanya untuk dilihat";
 "BACKUPS_FORMAT_JSON" = "Cadangan lengkap";

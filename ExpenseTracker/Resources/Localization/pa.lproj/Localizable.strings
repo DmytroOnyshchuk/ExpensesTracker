@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "ਰਕਮ";
 "TRANSACTION_EDIT_DATE" = "ਤਾਰੀਖ਼";
 "TRANSACTION_EDIT_TIME" = "ਸਮਾਂ";
-"TRANSACTION_EDIT_ADD_COMMENT" = "ਟਿੱਪਣੀ ਜੋੜੋ";
+"TRANSACTION_EDIT_ADD_NOTE" = "ਨੋਟ ਜੋੜੋ";
 "TRANSACTION_EDIT_DELETE" = "ਲੈਣ-ਦੇਣ ਮਿਟਾਓ";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "ਲੈਣ-ਦੇਣ ਮਿਟਾਉਣਾ ਹੈ?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "ਸ਼੍ਰੇਣੀਆਂ";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "ਸਭ ਕੁਝ ਮਿਟਾਓ ਅਤੇ ਰੀਸੈੱਟ ਕਰੋ";
 "BACKUPS_RESET_WARNING" = "ਸਾਰੇ ਲੈਣ-ਦੇਣ, ਸ਼੍ਰੇਣੀਆਂ ਅਤੇ ਸੈਟਿੰਗਾਂ ਮਿਟਾ ਦਿੱਤੀਆਂ ਜਾਣਗੀਆਂ। ਇਹ ਵਾਪਸ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।";
 "BACKUPS_SHARE_ACTION" = "ਡਾਟਾ ਐਕਸਪੋਰਟ ਕਰੋ";
-"BACKUPS_CSV_COMMENT" = "ਟਿੱਪਣੀ";
+"BACKUPS_CSV_NOTE" = "ਨੋਟ";
 "BACKUPS_CSV_FOLDER" = "ਫੋਲਡਰ";
 "BACKUPS_FORMAT_CSV" = "ਸਿਰਫ਼ ਦੇਖਣ ਲਈ";
 "BACKUPS_FORMAT_JSON" = "ਪੂਰਾ ਬੈਕਅੱਪ";

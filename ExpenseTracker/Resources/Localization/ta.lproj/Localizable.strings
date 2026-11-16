@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "தொகை";
 "TRANSACTION_EDIT_DATE" = "தேதி";
 "TRANSACTION_EDIT_TIME" = "நேரம்";
-"TRANSACTION_EDIT_ADD_COMMENT" = "கருத்தைச் சேர்";
+"TRANSACTION_EDIT_ADD_NOTE" = "குறிப்பைச் சேர்";
 "TRANSACTION_EDIT_DELETE" = "பரிவர்த்தனையை நீக்கு";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "பரிவர்த்தனையை நீக்கவா?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "வகைகள்";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "அனைத்தையும் நீக்கி மீட்டமை";
 "BACKUPS_RESET_WARNING" = "அனைத்துப் பரிவர்த்தனைகள், வகைகள் மற்றும் அமைப்புகள் நீக்கப்படும். இதைச் செயல்தவிர்க்க முடியாது.";
 "BACKUPS_SHARE_ACTION" = "தரவை ஏற்றுமதி செய்";
-"BACKUPS_CSV_COMMENT" = "கருத்து";
+"BACKUPS_CSV_NOTE" = "குறிப்பு";
 "BACKUPS_CSV_FOLDER" = "கோப்புறை";
 "BACKUPS_FORMAT_CSV" = "பார்வைக்கு மட்டும்";
 "BACKUPS_FORMAT_JSON" = "முழுக் காப்புப்பிரதி";

@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Částka";
 "TRANSACTION_EDIT_DATE" = "Datum";
 "TRANSACTION_EDIT_TIME" = "Čas";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Přidat komentář";
+"TRANSACTION_EDIT_ADD_NOTE" = "Přidat poznámku";
 "TRANSACTION_EDIT_DELETE" = "Smazat transakci";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Smazat transakci?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategorie";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Smazat vše a resetovat";
 "BACKUPS_RESET_WARNING" = "Všechny transakce, kategorie a nastavení budou smazány. Tuto akci nelze vrátit zpět.";
 "BACKUPS_SHARE_ACTION" = "Exportovat data";
-"BACKUPS_CSV_COMMENT" = "Komentář";
+"BACKUPS_CSV_NOTE" = "Poznámka";
 "BACKUPS_CSV_FOLDER" = "Složka";
 "BACKUPS_FORMAT_CSV" = "Pouze k prohlížení";
 "BACKUPS_FORMAT_JSON" = "Úplná záloha";

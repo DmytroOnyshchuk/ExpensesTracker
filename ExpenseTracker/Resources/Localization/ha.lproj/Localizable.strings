@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Adadi";
 "TRANSACTION_EDIT_DATE" = "Kwanan wata";
 "TRANSACTION_EDIT_TIME" = "Lokaci";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Ƙara bayani";
+"TRANSACTION_EDIT_ADD_NOTE" = "Ƙara bayanin kula";
 "TRANSACTION_EDIT_DELETE" = "Share ma'amala";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "A share ma'amalar?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Rukunoni";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Share komai kuma sake saitawa";
 "BACKUPS_RESET_WARNING" = "Za a share duk ma'amaloli, rukunoni da saituna. Ba za a iya soke wannan ba.";
 "BACKUPS_SHARE_ACTION" = "Fitar da bayanai";
-"BACKUPS_CSV_COMMENT" = "Tsokaci";
+"BACKUPS_CSV_NOTE" = "Bayanin kula";
 "BACKUPS_CSV_FOLDER" = "Babban fayil";
 "BACKUPS_FORMAT_CSV" = "Don kallo kawai";
 "BACKUPS_FORMAT_JSON" = "Cikakkiyar ajiya";

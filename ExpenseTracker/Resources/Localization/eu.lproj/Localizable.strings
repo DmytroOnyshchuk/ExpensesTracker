@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Zenbatekoa";
 "TRANSACTION_EDIT_DATE" = "Data";
 "TRANSACTION_EDIT_TIME" = "Ordua";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Gehitu iruzkina";
+"TRANSACTION_EDIT_ADD_NOTE" = "Gehitu oharra";
 "TRANSACTION_EDIT_DELETE" = "Ezabatu transakzioa";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Ezabatu transakzioa?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategoriak";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Ezabatu dena eta berrezarri";
 "BACKUPS_RESET_WARNING" = "Transakzio, kategoria eta ezarpen guztiak ezabatuko dira. Hau ezin da desegin.";
 "BACKUPS_SHARE_ACTION" = "Esportatu datuak";
-"BACKUPS_CSV_COMMENT" = "Iruzkina";
+"BACKUPS_CSV_NOTE" = "Oharra";
 "BACKUPS_CSV_FOLDER" = "Karpeta";
 "BACKUPS_FORMAT_CSV" = "Ikusteko soilik";
 "BACKUPS_FORMAT_JSON" = "Babeskopia osoa";

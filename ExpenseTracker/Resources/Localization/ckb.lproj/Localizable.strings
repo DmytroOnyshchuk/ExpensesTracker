@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "بڕ";
 "TRANSACTION_EDIT_DATE" = "بەروار";
 "TRANSACTION_EDIT_TIME" = "کات";
-"TRANSACTION_EDIT_ADD_COMMENT" = "زیادکردنی تێبینی";
+"TRANSACTION_EDIT_ADD_NOTE" = "زیادکردنی تێبینی";
 "TRANSACTION_EDIT_DELETE" = "سڕینەوەی مامەڵە";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "مامەڵەکە بسڕدرێتەوە؟";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "پۆلەکان";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "سڕینەوەی هەموو شتێک و ڕێکخستنەوە";
 "BACKUPS_RESET_WARNING" = "هەموو مامەڵەکان، پۆلەکان و ڕێکخستنەکان دەسڕدرێنەوە. ئەمە ناگەڕێندرێتەوە.";
 "BACKUPS_SHARE_ACTION" = "هەناردەکردنی داتا";
-"BACKUPS_CSV_COMMENT" = "تێبینی";
+"BACKUPS_CSV_NOTE" = "تێبینی";
 "BACKUPS_CSV_FOLDER" = "بوخچە";
 "BACKUPS_FORMAT_CSV" = "تەنها بۆ بینین";
 "BACKUPS_FORMAT_JSON" = "پاڵپشتی تەواو";

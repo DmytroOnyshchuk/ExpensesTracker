@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Mîqdar";
 "TRANSACTION_EDIT_DATE" = "Tarîx";
 "TRANSACTION_EDIT_TIME" = "Dem";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Şîroveyê lê zêde bike";
+"TRANSACTION_EDIT_ADD_NOTE" = "Têbiniyê lê zêde bike";
 "TRANSACTION_EDIT_DELETE" = "Danûstandinê jê bibe";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Danûstandinê jê bibe?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategorî";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Her tiştî jê bibe û ji nû ve saz bike";
 "BACKUPS_RESET_WARNING" = "Hemû danûstandin, kategorî û mîheng dê werin jêbirin. Ev nayê vegerandin.";
 "BACKUPS_SHARE_ACTION" = "Daneyan derxîne";
-"BACKUPS_CSV_COMMENT" = "Şîrove";
+"BACKUPS_CSV_NOTE" = "Têbinî";
 "BACKUPS_CSV_FOLDER" = "Peldank";
 "BACKUPS_FORMAT_CSV" = "Tenê ji bo dîtinê";
 "BACKUPS_FORMAT_JSON" = "Paşkopiya tam";

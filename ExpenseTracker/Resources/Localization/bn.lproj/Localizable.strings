@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "পরিমাণ";
 "TRANSACTION_EDIT_DATE" = "তারিখ";
 "TRANSACTION_EDIT_TIME" = "সময়";
-"TRANSACTION_EDIT_ADD_COMMENT" = "মন্তব্য যোগ করুন";
+"TRANSACTION_EDIT_ADD_NOTE" = "নোট যোগ করুন";
 "TRANSACTION_EDIT_DELETE" = "লেনদেন মুছুন";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "লেনদেন মুছুন?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "বিভাগসমূহ";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "সব মুছে রিসেট করুন";
 "BACKUPS_RESET_WARNING" = "সব লেনদেন, বিভাগ ও সেটিংস মুছে ফেলা হবে। এটি পূর্বাবস্থায় ফেরানো যাবে না।";
 "BACKUPS_SHARE_ACTION" = "ডেটা এক্সপোর্ট করুন";
-"BACKUPS_CSV_COMMENT" = "মন্তব্য";
+"BACKUPS_CSV_NOTE" = "নোট";
 "BACKUPS_CSV_FOLDER" = "ফোল্ডার";
 "BACKUPS_FORMAT_CSV" = "শুধু দেখার জন্য";
 "BACKUPS_FORMAT_JSON" = "সম্পূর্ণ ব্যাকআপ";

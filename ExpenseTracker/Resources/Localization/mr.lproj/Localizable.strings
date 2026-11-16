@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "रक्कम";
 "TRANSACTION_EDIT_DATE" = "तारीख";
 "TRANSACTION_EDIT_TIME" = "वेळ";
-"TRANSACTION_EDIT_ADD_COMMENT" = "टिप्पणी जोडा";
+"TRANSACTION_EDIT_ADD_NOTE" = "टीप जोडा";
 "TRANSACTION_EDIT_DELETE" = "व्यवहार हटवा";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "व्यवहार हटवायचा?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "श्रेण्या";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "सर्व हटवा आणि रीसेट करा";
 "BACKUPS_RESET_WARNING" = "सर्व व्यवहार, श्रेण्या आणि सेटिंग्ज हटवल्या जातील. हे पूर्ववत करता येणार नाही.";
 "BACKUPS_SHARE_ACTION" = "डेटा निर्यात करा";
-"BACKUPS_CSV_COMMENT" = "टिप्पणी";
+"BACKUPS_CSV_NOTE" = "टीप";
 "BACKUPS_CSV_FOLDER" = "फोल्डर";
 "BACKUPS_FORMAT_CSV" = "फक्त पाहण्यासाठी";
 "BACKUPS_FORMAT_JSON" = "पूर्ण बॅकअप";

@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Summa";
 "TRANSACTION_EDIT_DATE" = "Kuupäev";
 "TRANSACTION_EDIT_TIME" = "Kellaaeg";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Lisa kommentaar";
+"TRANSACTION_EDIT_ADD_NOTE" = "Lisa märkus";
 "TRANSACTION_EDIT_DELETE" = "Kustuta tehing";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Kustuta tehing?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategooriad";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Kustuta kõik ja lähtesta";
 "BACKUPS_RESET_WARNING" = "Kõik tehingud, kategooriad ja seaded kustutatakse. Seda ei saa tagasi võtta.";
 "BACKUPS_SHARE_ACTION" = "Ekspordi andmed";
-"BACKUPS_CSV_COMMENT" = "Kommentaar";
+"BACKUPS_CSV_NOTE" = "Märkus";
 "BACKUPS_CSV_FOLDER" = "Kaust";
 "BACKUPS_FORMAT_CSV" = "Ainult vaatamiseks";
 "BACKUPS_FORMAT_JSON" = "Täielik varukoopia";

@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Importe";
 "TRANSACTION_EDIT_DATE" = "Data";
 "TRANSACTION_EDIT_TIME" = "Hora";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Engadir comentario";
+"TRANSACTION_EDIT_ADD_NOTE" = "Engadir nota";
 "TRANSACTION_EDIT_DELETE" = "Eliminar transacción";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Eliminar a transacción?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Categorías";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Eliminar todo e restablecer";
 "BACKUPS_RESET_WARNING" = "Eliminaranse todas as transaccións, categorías e axustes. Isto non se pode desfacer.";
 "BACKUPS_SHARE_ACTION" = "Exportar datos";
-"BACKUPS_CSV_COMMENT" = "Comentario";
+"BACKUPS_CSV_NOTE" = "Nota";
 "BACKUPS_CSV_FOLDER" = "Cartafol";
 "BACKUPS_FORMAT_CSV" = "Só visualización";
 "BACKUPS_FORMAT_JSON" = "Copia completa";

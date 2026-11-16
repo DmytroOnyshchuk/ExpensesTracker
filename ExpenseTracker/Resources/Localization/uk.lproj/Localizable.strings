@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Сума";
 "TRANSACTION_EDIT_DATE" = "Дата";
 "TRANSACTION_EDIT_TIME" = "Час";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Додати коментар";
+"TRANSACTION_EDIT_ADD_NOTE" = "Додати нотатку";
 "TRANSACTION_EDIT_DELETE" = "Видалити транзакцію";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Видалити транзакцію?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Статті";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Видалити все та скинути";
 "BACKUPS_RESET_WARNING" = "Усі транзакції, категорії та налаштування буде видалено. Цю дію не можна скасувати.";
 "BACKUPS_SHARE_ACTION" = "Експортувати дані";
-"BACKUPS_CSV_COMMENT" = "Коментар";
+"BACKUPS_CSV_NOTE" = "Нотатка";
 "BACKUPS_CSV_FOLDER" = "Папка";
 "BACKUPS_FORMAT_CSV" = "Лише перегляд";
 "BACKUPS_FORMAT_JSON" = "Повна копія";

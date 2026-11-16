@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Importo";
 "TRANSACTION_EDIT_DATE" = "Data";
 "TRANSACTION_EDIT_TIME" = "Ora";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Aggiungi commento";
+"TRANSACTION_EDIT_ADD_NOTE" = "Aggiungi nota";
 "TRANSACTION_EDIT_DELETE" = "Elimina transazione";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Eliminare la transazione?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Categorie";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Elimina tutto e ripristina";
 "BACKUPS_RESET_WARNING" = "Tutte le transazioni, le categorie e le impostazioni verranno eliminate. L’operazione non può essere annullata.";
 "BACKUPS_SHARE_ACTION" = "Esporta dati";
-"BACKUPS_CSV_COMMENT" = "Commento";
+"BACKUPS_CSV_NOTE" = "Nota";
 "BACKUPS_CSV_FOLDER" = "Cartella";
 "BACKUPS_FORMAT_CSV" = "Sola visualizzazione";
 "BACKUPS_FORMAT_JSON" = "Backup completo";

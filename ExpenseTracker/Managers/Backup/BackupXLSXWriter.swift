@@ -109,7 +109,7 @@ enum BackupXLSXWriter {
             xml += textCell(row.folder, column: 1, row: number)
             xml += textCell(row.category, column: 2, row: number)
             xml += numberCell(amountText(row.amount), column: 3, row: number, style: .amount)
-            xml += textCell(row.comment, column: 4, row: number)
+            xml += textCell(row.note, column: 4, row: number)
             xml += "</row>"
         }
 

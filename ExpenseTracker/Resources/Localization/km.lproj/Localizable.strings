@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "ចំនួនទឹកប្រាក់";
 "TRANSACTION_EDIT_DATE" = "កាលបរិច្ឆេទ";
 "TRANSACTION_EDIT_TIME" = "ម៉ោង";
-"TRANSACTION_EDIT_ADD_COMMENT" = "បន្ថែមមតិយោបល់";
+"TRANSACTION_EDIT_ADD_NOTE" = "បន្ថែមកំណត់ចំណាំ";
 "TRANSACTION_EDIT_DELETE" = "លុបប្រតិបត្តិការ";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "លុបប្រតិបត្តិការឬ?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "ប្រភេទ";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "លុបទាំងអស់ ហើយកំណត់ឡើងវិញ";
 "BACKUPS_RESET_WARNING" = "ប្រតិបត្តិការ ប្រភេទ និងការកំណត់ទាំងអស់នឹងត្រូវលុប។ វាមិនអាចត្រឡប់វិញបានទេ។";
 "BACKUPS_SHARE_ACTION" = "នាំចេញទិន្នន័យ";
-"BACKUPS_CSV_COMMENT" = "មតិយោបល់";
+"BACKUPS_CSV_NOTE" = "កំណត់ចំណាំ";
 "BACKUPS_CSV_FOLDER" = "ថត";
 "BACKUPS_FORMAT_CSV" = "សម្រាប់មើលប៉ុណ្ណោះ";
 "BACKUPS_FORMAT_JSON" = "ការបម្រុងទុកពេញលេញ";

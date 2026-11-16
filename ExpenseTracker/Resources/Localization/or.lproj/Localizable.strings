@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "ପରିମାଣ";
 "TRANSACTION_EDIT_DATE" = "ତାରିଖ";
 "TRANSACTION_EDIT_TIME" = "ସମୟ";
-"TRANSACTION_EDIT_ADD_COMMENT" = "ମନ୍ତବ୍ୟ ଯୋଡ଼ନ୍ତୁ";
+"TRANSACTION_EDIT_ADD_NOTE" = "ଟିପ୍ପଣୀ ଯୋଡ଼ନ୍ତୁ";
 "TRANSACTION_EDIT_DELETE" = "କାରବାର ଡିଲିଟ କରନ୍ତୁ";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "କାରବାର ଡିଲିଟ କରିବେ?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "ବର୍ଗଗୁଡ଼ିକ";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "ସବୁ ଡିଲିଟ କରି ରିସେଟ୍ କରନ୍ତୁ";
 "BACKUPS_RESET_WARNING" = "ସମସ୍ତ କାରବାର, ବର୍ଗ ଏବଂ ସେଟିଂସ୍ ଡିଲିଟ ହେବ। ଏହାକୁ ପୂର୍ବବତ୍ କରାଯାଇପାରିବ ନାହିଁ।";
 "BACKUPS_SHARE_ACTION" = "ଡାଟା ରପ୍ତାନି କରନ୍ତୁ";
-"BACKUPS_CSV_COMMENT" = "ମନ୍ତବ୍ୟ";
+"BACKUPS_CSV_NOTE" = "ଟିପ୍ପଣୀ";
 "BACKUPS_CSV_FOLDER" = "ଫୋଲ୍ଡର୍";
 "BACKUPS_FORMAT_CSV" = "କେବଳ ଦେଖିବା ପାଇଁ";
 "BACKUPS_FORMAT_JSON" = "ସମ୍ପୂର୍ଣ୍ଣ ବ୍ୟାକଅପ୍";

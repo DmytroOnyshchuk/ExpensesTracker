@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Inani";
 "TRANSACTION_EDIT_DATE" = "Usuku";
 "TRANSACTION_EDIT_TIME" = "Isikhathi";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Engeza amazwana";
+"TRANSACTION_EDIT_ADD_NOTE" = "Engeza inothi";
 "TRANSACTION_EDIT_DELETE" = "Susa umsebenzi";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Susa umsebenzi?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Izigaba";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Susa konke bese usetha kabusha";
 "BACKUPS_RESET_WARNING" = "Konke okwenziwe, izigaba nezilungiselelo kuzosuswa. Lokhu akukwazi ukuhlehliswa.";
 "BACKUPS_SHARE_ACTION" = "Thekelisa idatha";
-"BACKUPS_CSV_COMMENT" = "Amazwana";
+"BACKUPS_CSV_NOTE" = "Inothi";
 "BACKUPS_CSV_FOLDER" = "Ifolda";
 "BACKUPS_FORMAT_CSV" = "Okokubuka kuphela";
 "BACKUPS_FORMAT_JSON" = "Isipele esigcwele";

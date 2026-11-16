@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Upphæð";
 "TRANSACTION_EDIT_DATE" = "Dagsetning";
 "TRANSACTION_EDIT_TIME" = "Tími";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Bæta við athugasemd";
+"TRANSACTION_EDIT_ADD_NOTE" = "Bæta við minnispunkti";
 "TRANSACTION_EDIT_DELETE" = "Eyða færslu";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Eyða færslu?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Flokkar";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Eyða öllu og endurstilla";
 "BACKUPS_RESET_WARNING" = "Öllum færslum, flokkum og stillingum verður eytt. Ekki er hægt að afturkalla þetta.";
 "BACKUPS_SHARE_ACTION" = "Flytja út gögn";
-"BACKUPS_CSV_COMMENT" = "Athugasemd";
+"BACKUPS_CSV_NOTE" = "Minnispunktur";
 "BACKUPS_CSV_FOLDER" = "Mappa";
 "BACKUPS_FORMAT_CSV" = "Aðeins til skoðunar";
 "BACKUPS_FORMAT_JSON" = "Fullt öryggisafrit";

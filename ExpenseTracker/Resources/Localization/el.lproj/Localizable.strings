@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Ποσό";
 "TRANSACTION_EDIT_DATE" = "Ημερομηνία";
 "TRANSACTION_EDIT_TIME" = "Ώρα";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Προσθήκη σχολίου";
+"TRANSACTION_EDIT_ADD_NOTE" = "Προσθήκη σημείωσης";
 "TRANSACTION_EDIT_DELETE" = "Διαγραφή συναλλαγής";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Διαγραφή συναλλαγής;";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Κατηγορίες";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Διαγραφή όλων και επαναφορά";
 "BACKUPS_RESET_WARNING" = "Όλες οι συναλλαγές, οι κατηγορίες και οι ρυθμίσεις θα διαγραφούν. Αυτό δεν μπορεί να αναιρεθεί.";
 "BACKUPS_SHARE_ACTION" = "Εξαγωγή δεδομένων";
-"BACKUPS_CSV_COMMENT" = "Σχόλιο";
+"BACKUPS_CSV_NOTE" = "Σημείωση";
 "BACKUPS_CSV_FOLDER" = "Φάκελος";
 "BACKUPS_FORMAT_CSV" = "Μόνο προβολή";
 "BACKUPS_FORMAT_JSON" = "Πλήρες αντίγραφο";

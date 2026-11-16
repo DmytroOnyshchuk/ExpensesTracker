@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Bedrag";
 "TRANSACTION_EDIT_DATE" = "Datum";
 "TRANSACTION_EDIT_TIME" = "Tijd";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Opmerking toevoegen";
+"TRANSACTION_EDIT_ADD_NOTE" = "Notitie toevoegen";
 "TRANSACTION_EDIT_DELETE" = "Transactie verwijderen";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Transactie verwijderen?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Categorieën";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Alles verwijderen en resetten";
 "BACKUPS_RESET_WARNING" = "Alle transacties, categorieën en instellingen worden verwijderd. Dit kan niet ongedaan worden gemaakt.";
 "BACKUPS_SHARE_ACTION" = "Gegevens exporteren";
-"BACKUPS_CSV_COMMENT" = "Opmerking";
+"BACKUPS_CSV_NOTE" = "Notitie";
 "BACKUPS_CSV_FOLDER" = "Map";
 "BACKUPS_FORMAT_CSV" = "Alleen bekijken";
 "BACKUPS_FORMAT_JSON" = "Volledige back-up";

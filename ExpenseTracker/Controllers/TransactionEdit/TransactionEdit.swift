@@ -22,7 +22,7 @@ struct TransactionEdit: View {
     @State private var showCategoryPicker = false
     @State private var amountText = ""
     @FocusState private var isAmountFocused: Bool
-    @FocusState private var isCommentFocused: Bool
+    @FocusState private var isNoteFocused: Bool
 
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var modelContext
@@ -43,7 +43,7 @@ struct TransactionEdit: View {
                     VStack(spacing: 0) {
                         row(L10n.transactionEditDate) {
                             isAmountFocused = false
-                            isCommentFocused = false
+                            isNoteFocused = false
                             popup = .date
                         } value: {
                             HStack(spacing: 8) {
@@ -61,7 +61,7 @@ struct TransactionEdit: View {
                     .padding(.vertical, 6)
                     .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
 
-                    commentRow
+                    noteRow
 
                     deleteButton
                         .padding(.top, 8)
@@ -71,12 +71,12 @@ struct TransactionEdit: View {
             }
             .scrollDismissesKeyboard(.interactively)
             .safeAreaInset(edge: .bottom, spacing: 0) {
-                if isAmountFocused || isCommentFocused {
+                if isAmountFocused || isNoteFocused {
                     keyboardDoneButton
                         .transition(.opacity)
                 }
             }
-            .animation(.easeInOut(duration: 0.2), value: isAmountFocused || isCommentFocused)
+            .animation(.easeInOut(duration: 0.2), value: isAmountFocused || isNoteFocused)
             .appBackground()
             .navigationTitle(L10n.transactionEditTitle)
             .navigationBarTitleDisplayMode(.inline)
@@ -121,7 +121,7 @@ struct TransactionEdit: View {
         VStack(spacing: 12) {
             Button {
                 isAmountFocused = false
-                isCommentFocused = false
+                isNoteFocused = false
                 showCategoryPicker = true
             } label: {
                 VStack(spacing: 4) {
@@ -146,15 +146,15 @@ struct TransactionEdit: View {
         .frame(maxWidth: .infinity)
     }
 
-    private var commentRow: some View {
+    private var noteRow: some View {
         TextField(
             "",
-            text: $draft.comment,
-            prompt: Text(L10n.transactionEditAddComment).foregroundColor(.appLabel),
+            text: $draft.note,
+            prompt: Text(L10n.transactionEditAddNote).foregroundColor(.appLabel),
             axis: .vertical
         )
         .lineLimit(3 ... 6)
-        .focused($isCommentFocused)
+        .focused($isNoteFocused)
         .font(.appLight(18))
         .foregroundColor(.appWhite)
         .tint(.appPrimary)
@@ -163,21 +163,21 @@ struct TransactionEdit: View {
         .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
         .contentShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
         .onTapGesture {
-            isCommentFocused = true
+            isNoteFocused = true
         }
     }
 
     private var keyboardDoneButton: some View {
         KeyboardDoneButton {
             isAmountFocused = false
-            isCommentFocused = false
+            isNoteFocused = false
         }
     }
 
     private var deleteButton: some View {
         Button {
             isAmountFocused = false
-            isCommentFocused = false
+            isNoteFocused = false
             delete()
         } label: {
             Image(systemName: "trash")

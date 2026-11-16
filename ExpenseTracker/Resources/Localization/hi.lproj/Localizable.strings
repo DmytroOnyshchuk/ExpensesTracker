@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "राशि";
 "TRANSACTION_EDIT_DATE" = "तारीख़";
 "TRANSACTION_EDIT_TIME" = "समय";
-"TRANSACTION_EDIT_ADD_COMMENT" = "टिप्पणी जोड़ें";
+"TRANSACTION_EDIT_ADD_NOTE" = "नोट जोड़ें";
 "TRANSACTION_EDIT_DELETE" = "लेनदेन हटाएँ";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "लेनदेन हटाएँ?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "श्रेणियाँ";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "सब कुछ हटाएँ और रीसेट करें";
 "BACKUPS_RESET_WARNING" = "सभी लेनदेन, श्रेणियाँ और सेटिंग्स हटा दी जाएँगी। इसे पूर्ववत नहीं किया जा सकता।";
 "BACKUPS_SHARE_ACTION" = "डेटा निर्यात करें";
-"BACKUPS_CSV_COMMENT" = "टिप्पणी";
+"BACKUPS_CSV_NOTE" = "नोट";
 "BACKUPS_CSV_FOLDER" = "फ़ोल्डर";
 "BACKUPS_FORMAT_CSV" = "केवल देखने के लिए";
 "BACKUPS_FORMAT_JSON" = "पूरा बैकअप";

@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Isixa";
 "TRANSACTION_EDIT_DATE" = "Umhla";
 "TRANSACTION_EDIT_TIME" = "Ixesha";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Yongeza inkcazo";
+"TRANSACTION_EDIT_ADD_NOTE" = "Yongeza inqaku";
 "TRANSACTION_EDIT_DELETE" = "Cima intengiselwano";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Cima intengiselwano?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Iindidi";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Cima yonke into uze usete kwakhona";
 "BACKUPS_RESET_WARNING" = "Zonke iintengiselwano, iindidi neesetingi ziza kucinywa. Oku akunakubuyiselwa.";
 "BACKUPS_SHARE_ACTION" = "Thumela idatha ngaphandle";
-"BACKUPS_CSV_COMMENT" = "Inkcazo";
+"BACKUPS_CSV_NOTE" = "Inqaku";
 "BACKUPS_CSV_FOLDER" = "Ifolda";
 "BACKUPS_FORMAT_CSV" = "Yokujonga kuphela";
 "BACKUPS_FORMAT_JSON" = "Ikopi epheleleyo";

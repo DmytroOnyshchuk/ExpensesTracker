@@ -14,8 +14,8 @@ struct StartView: View {
 
     @State private var input = AmountInput()
     @State private var showHistory = false
-    @State private var comment = ""
-    @State private var showCommentInput = false
+    @State private var note = ""
+    @State private var showNoteInput = false
     @State private var amountAttentionTrigger: Int = .zero
     @State private var showBalanceInput = false
     @AppStorage(UDKey.balance.rawValue, store: UserDefaults.shared) private var balanceData: Data?
@@ -34,7 +34,7 @@ struct StartView: View {
                     DigitPadView(input: $input, attentionTrigger: amountAttentionTrigger)
                         .frame(maxWidth: .infinity)
                         .overlay(alignment: .bottomTrailing) {
-                            commentButton
+                            noteButton
                         }
                     if showCategories {
                         CategoryGrid { category in
@@ -57,8 +57,8 @@ struct StartView: View {
             }
         }
         .overlay {
-            if showCommentInput {
-                CommentInputView(comment: $comment, isPresented: $showCommentInput)
+            if showNoteInput {
+                NoteInputView(note: $note, isPresented: $showNoteInput)
                     .transition(.opacity)
             }
         }
@@ -71,7 +71,7 @@ struct StartView: View {
                 .transition(.opacity)
             }
         }
-        .animation(.easeInOut(duration: 0.2), value: showCommentInput)
+        .animation(.easeInOut(duration: 0.2), value: showNoteInput)
         .animation(.easeInOut(duration: 0.2), value: showBalanceInput)
     }
 
@@ -87,17 +87,17 @@ struct StartView: View {
         Balance(jsonData: balanceData)?.remaining(after: transactions)
     }
 
-    private var commentButton: some View {
-        Button(action: openCommentInput) {
+    private var noteButton: some View {
+        Button(action: openNoteInput) {
             Image(systemName: "bubble.fill")
                 .font(.system(size: 20))
-                .foregroundColor(comment.isBlank ? .appLabel : .appWhite)
+                .foregroundColor(note.isBlank ? .appLabel : .appWhite)
                 .frame(width: 48, height: 50)
                 .glassSurface(
                     in: UnevenRoundedRectangle(topLeadingRadius: 25, bottomLeadingRadius: 25),
-                    tint: comment.isBlank ? nil : .appLabel.opacity(0.3),
+                    tint: note.isBlank ? nil : .appLabel.opacity(0.3),
                     isInteractive: true,
-                    fallback: .appLabel.opacity(comment.isBlank ? 0.1 : 0.3)
+                    fallback: .appLabel.opacity(note.isBlank ? 0.1 : 0.3)
                 )
         }
         .padding(.bottom, 12)
@@ -123,9 +123,9 @@ struct StartView: View {
         showHistory = true
     }
 
-    private func openCommentInput() {
+    private func openNoteInput() {
         FeedbackManager.shared.buttonTapped()
-        showCommentInput = true
+        showNoteInput = true
     }
 
     private func openBalanceInput() {
@@ -152,23 +152,23 @@ struct StartView: View {
             amount: input.amount,
             category: category,
             date: Date(),
-            note: comment.isBlank ? nil : comment
+            note: note.isBlank ? nil : note
         )
 
         let previousInput = input
-        let previousComment = comment
+        let previousNote = note
 
         modelContext.insert(transaction)
         FeedbackManager.shared.transactionAdded()
         input.reset()
-        comment = ""
+        note = ""
 
         UndoToastCenter.shared.show(L10n.transactionsListTransactionAdded) {
             modelContext.delete(transaction)
             try? modelContext.save()
-            if input.isEmpty, comment.isBlank {
+            if input.isEmpty, note.isBlank {
                 input = previousInput
-                comment = previousComment
+                note = previousNote
             }
         }
         return true

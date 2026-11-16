@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Jumlah";
 "TRANSACTION_EDIT_DATE" = "Tanggal";
 "TRANSACTION_EDIT_TIME" = "Wektu";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Tambah komentar";
+"TRANSACTION_EDIT_ADD_NOTE" = "Tambah cathetan";
 "TRANSACTION_EDIT_DELETE" = "Busak transaksi";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Busak transaksi?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategori";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Busak kabèh lan reset";
 "BACKUPS_RESET_WARNING" = "Kabèh transaksi, kategori, lan setelan bakal dibusak. Iki ora bisa dibatalaké.";
 "BACKUPS_SHARE_ACTION" = "Ekspor data";
-"BACKUPS_CSV_COMMENT" = "Komentar";
+"BACKUPS_CSV_NOTE" = "Cathetan";
 "BACKUPS_CSV_FOLDER" = "Folder";
 "BACKUPS_FORMAT_CSV" = "Mung kanggo dideleng";
 "BACKUPS_FORMAT_JSON" = "Serepan lengkap";

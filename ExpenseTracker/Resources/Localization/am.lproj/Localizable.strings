@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "መጠን";
 "TRANSACTION_EDIT_DATE" = "ቀን";
 "TRANSACTION_EDIT_TIME" = "ሰዓት";
-"TRANSACTION_EDIT_ADD_COMMENT" = "አስተያየት አክል";
+"TRANSACTION_EDIT_ADD_NOTE" = "ማስታወሻ አክል";
 "TRANSACTION_EDIT_DELETE" = "ግብይቱን ሰርዝ";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "ግብይቱ ይሰረዝ?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "ምድቦች";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "ሁሉንም ሰርዝ እና ዳግም አስጀምር";
 "BACKUPS_RESET_WARNING" = "ሁሉም ግብይቶች፣ ምድቦች እና ቅንብሮች ይሰረዛሉ። ይህ ሊቀለበስ አይችልም።";
 "BACKUPS_SHARE_ACTION" = "ውሂብ ወደ ውጭ ላክ";
-"BACKUPS_CSV_COMMENT" = "አስተያየት";
+"BACKUPS_CSV_NOTE" = "ማስታወሻ";
 "BACKUPS_CSV_FOLDER" = "አቃፊ";
 "BACKUPS_FORMAT_CSV" = "ለመመልከት ብቻ";
 "BACKUPS_FORMAT_JSON" = "ሙሉ መጠባበቂያ";

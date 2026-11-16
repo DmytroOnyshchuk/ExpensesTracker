@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Iye owó";
 "TRANSACTION_EDIT_DATE" = "Déètì";
 "TRANSACTION_EDIT_TIME" = "Àkókò";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Fi àlàyé kún un";
+"TRANSACTION_EDIT_ADD_NOTE" = "Fi àkọsílẹ̀ kún un";
 "TRANSACTION_EDIT_DELETE" = "Pa ìdúnàádúrà rẹ́";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Ṣé kí a pa ìdúnàádúrà rẹ́?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Àwọn ẹ̀ka";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Pa gbogbo rẹ̀ rẹ́ kí o sì tún un tò";
 "BACKUPS_RESET_WARNING" = "A ó pa gbogbo ìdúnàádúrà, ẹ̀ka àti ètò rẹ́. A kò lè yí èyí padà.";
 "BACKUPS_SHARE_ACTION" = "Kó dátà jáde";
-"BACKUPS_CSV_COMMENT" = "Àlàyé";
+"BACKUPS_CSV_NOTE" = "Àkọsílẹ̀";
 "BACKUPS_CSV_FOLDER" = "Fódà";
 "BACKUPS_FORMAT_CSV" = "Fún wíwò nìkan";
 "BACKUPS_FORMAT_JSON" = "Àfẹ̀yìntì kíkún";

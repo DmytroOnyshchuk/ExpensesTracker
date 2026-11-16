@@ -27,7 +27,7 @@ struct BackupTransaction: Codable {
     var id: UUID
     var amount: Int
     var date: Date
-    var comment: String?
+    var note: String?
     var categoryUuid: UUID
 }
 

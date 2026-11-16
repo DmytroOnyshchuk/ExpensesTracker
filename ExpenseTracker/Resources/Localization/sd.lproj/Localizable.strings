@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "رقم";
 "TRANSACTION_EDIT_DATE" = "تاريخ";
 "TRANSACTION_EDIT_TIME" = "وقت";
-"TRANSACTION_EDIT_ADD_COMMENT" = "تبصرو شامل ڪريو";
+"TRANSACTION_EDIT_ADD_NOTE" = "نوٽ شامل ڪريو";
 "TRANSACTION_EDIT_DELETE" = "لين دين ختم ڪريو";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "لين دين ختم ڪجي؟";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "درجا";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "سڀ ڪجهه ختم ڪريو ۽ ري سيٽ ڪريو";
 "BACKUPS_RESET_WARNING" = "سڀ لين دين، درجا ۽ سيٽنگون ختم ڪيون وينديون. هي واپس نٿو ٿي سگهي.";
 "BACKUPS_SHARE_ACTION" = "ڊيٽا ايڪسپورٽ ڪريو";
-"BACKUPS_CSV_COMMENT" = "تبصرو";
+"BACKUPS_CSV_NOTE" = "نوٽ";
 "BACKUPS_CSV_FOLDER" = "فولڊر";
 "BACKUPS_FORMAT_CSV" = "صرف ڏسڻ لاءِ";
 "BACKUPS_FORMAT_JSON" = "مڪمل بيڪ اپ";

@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Сумма";
 "TRANSACTION_EDIT_DATE" = "Күнү";
 "TRANSACTION_EDIT_TIME" = "Убакыт";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Комментарий кошуу";
+"TRANSACTION_EDIT_ADD_NOTE" = "Эскертме кошуу";
 "TRANSACTION_EDIT_DELETE" = "Транзакцияны өчүрүү";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Транзакция өчүрүлсүнбү?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Категориялар";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Баарын өчүрүп, баштапкы абалга келтирүү";
 "BACKUPS_RESET_WARNING" = "Бардык транзакциялар, категориялар жана жөндөөлөр өчүрүлөт. Муну артка кайтаруу мүмкүн эмес.";
 "BACKUPS_SHARE_ACTION" = "Дайындарды экспорттоо";
-"BACKUPS_CSV_COMMENT" = "Комментарий";
+"BACKUPS_CSV_NOTE" = "Эскертме";
 "BACKUPS_CSV_FOLDER" = "Папка";
 "BACKUPS_FORMAT_CSV" = "Көрүү үчүн гана";
 "BACKUPS_FORMAT_JSON" = "Толук көчүрмө";

@@ -12,7 +12,7 @@ struct TransactionDraft {
     var category: TransactionCategory
     var amount: Int
     var date: Date
-    var comment: String
+    var note: String
 
     var canSave: Bool { amount != .zero }
 
@@ -20,13 +20,13 @@ struct TransactionDraft {
         self.category = transaction.category
         self.amount = transaction.amount
         self.date = transaction.date
-        self.comment = transaction.comment ?? ""
+        self.note = transaction.note ?? ""
     }
 
     func apply(to transaction: Transaction) {
         transaction.category = category
         transaction.amount = amount
         transaction.date = date
-        transaction.comment = comment.isBlank ? nil : comment
+        transaction.note = note.isBlank ? nil : note
     }
 }

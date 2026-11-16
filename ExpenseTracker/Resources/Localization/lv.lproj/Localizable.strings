@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Summa";
 "TRANSACTION_EDIT_DATE" = "Datums";
 "TRANSACTION_EDIT_TIME" = "Laiks";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Pievienot komentāru";
+"TRANSACTION_EDIT_ADD_NOTE" = "Pievienot piezīmi";
 "TRANSACTION_EDIT_DELETE" = "Dzēst darījumu";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Dzēst darījumu?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategorijas";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Dzēst visu un atiestatīt";
 "BACKUPS_RESET_WARNING" = "Visi darījumi, kategorijas un iestatījumi tiks dzēsti. To nevar atsaukt.";
 "BACKUPS_SHARE_ACTION" = "Eksportēt datus";
-"BACKUPS_CSV_COMMENT" = "Komentārs";
+"BACKUPS_CSV_NOTE" = "Piezīme";
 "BACKUPS_CSV_FOLDER" = "Mape";
 "BACKUPS_FORMAT_CSV" = "Tikai skatīšanai";
 "BACKUPS_FORMAT_JSON" = "Pilns dublējums";

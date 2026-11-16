@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Сума";
 "TRANSACTION_EDIT_DATE" = "Дата";
 "TRANSACTION_EDIT_TIME" = "Час";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Дадаць каментарый";
+"TRANSACTION_EDIT_ADD_NOTE" = "Дадаць нататку";
 "TRANSACTION_EDIT_DELETE" = "Выдаліць транзакцыю";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Выдаліць транзакцыю?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Катэгорыі";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Выдаліць усё і скінуць";
 "BACKUPS_RESET_WARNING" = "Усе транзакцыі, катэгорыі і налады будуць выдалены. Гэта нельга адмяніць.";
 "BACKUPS_SHARE_ACTION" = "Экспартаваць даныя";
-"BACKUPS_CSV_COMMENT" = "Каментарый";
+"BACKUPS_CSV_NOTE" = "Нататка";
 "BACKUPS_CSV_FOLDER" = "Папка";
 "BACKUPS_FORMAT_CSV" = "Толькі прагляд";
 "BACKUPS_FORMAT_JSON" = "Поўная копія";

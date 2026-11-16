@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "თანხა";
 "TRANSACTION_EDIT_DATE" = "თარიღი";
 "TRANSACTION_EDIT_TIME" = "დრო";
-"TRANSACTION_EDIT_ADD_COMMENT" = "კომენტარის დამატება";
+"TRANSACTION_EDIT_ADD_NOTE" = "შენიშვნის დამატება";
 "TRANSACTION_EDIT_DELETE" = "ტრანზაქციის წაშლა";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "წაიშალოს ტრანზაქცია?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "კატეგორიები";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "ყველაფრის წაშლა და ჩამოყრა";
 "BACKUPS_RESET_WARNING" = "ყველა ტრანზაქცია, კატეგორია და პარამეტრი წაიშლება. ამის გაუქმება შეუძლებელია.";
 "BACKUPS_SHARE_ACTION" = "მონაცემების ექსპორტი";
-"BACKUPS_CSV_COMMENT" = "კომენტარი";
+"BACKUPS_CSV_NOTE" = "შენიშვნა";
 "BACKUPS_CSV_FOLDER" = "საქაღალდე";
 "BACKUPS_FORMAT_CSV" = "Მხოლოდ სანახავად";
 "BACKUPS_FORMAT_JSON" = "Სრული ასლი";

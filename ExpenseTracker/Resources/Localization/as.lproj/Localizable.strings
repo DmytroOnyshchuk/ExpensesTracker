@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "পৰিমাণ";
 "TRANSACTION_EDIT_DATE" = "তাৰিখ";
 "TRANSACTION_EDIT_TIME" = "সময়";
-"TRANSACTION_EDIT_ADD_COMMENT" = "মন্তব্য যোগ কৰক";
+"TRANSACTION_EDIT_ADD_NOTE" = "টোকা যোগ কৰক";
 "TRANSACTION_EDIT_DELETE" = "লেনদেন মচি পেলাওক";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "লেনদেন মচি পেলাবনে?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "শ্ৰেণীসমূহ";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "সকলো মচি ৰিছেট কৰক";
 "BACKUPS_RESET_WARNING" = "সকলো লেনদেন, শ্ৰেণী আৰু ছেটিংছ মচি পেলোৱা হ'ব। এইটো পূৰ্বৱৎ কৰিব নোৱাৰি।";
 "BACKUPS_SHARE_ACTION" = "ডেটা ৰপ্তানি কৰক";
-"BACKUPS_CSV_COMMENT" = "মন্তব্য";
+"BACKUPS_CSV_NOTE" = "টোকা";
 "BACKUPS_CSV_FOLDER" = "ফ'ল্ডাৰ";
 "BACKUPS_FORMAT_CSV" = "কেৱল চাবৰ বাবে";
 "BACKUPS_FORMAT_JSON" = "সম্পূৰ্ণ বেকআপ";

@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Summa";
 "TRANSACTION_EDIT_DATE" = "Päivämäärä";
 "TRANSACTION_EDIT_TIME" = "Aika";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Lisää kommentti";
+"TRANSACTION_EDIT_ADD_NOTE" = "Lisää muistiinpano";
 "TRANSACTION_EDIT_DELETE" = "Poista tapahtuma";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Poistetaanko tapahtuma?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Luokat";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Poista kaikki ja nollaa";
 "BACKUPS_RESET_WARNING" = "Kaikki tapahtumat, luokat ja asetukset poistetaan. Tätä ei voi kumota.";
 "BACKUPS_SHARE_ACTION" = "Vie tiedot";
-"BACKUPS_CSV_COMMENT" = "Kommentti";
+"BACKUPS_CSV_NOTE" = "Muistiinpano";
 "BACKUPS_CSV_FOLDER" = "Kansio";
 "BACKUPS_FORMAT_CSV" = "Vain katselu";
 "BACKUPS_FORMAT_JSON" = "Täysi varmuuskopio";

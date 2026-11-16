@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Məbləğ";
 "TRANSACTION_EDIT_DATE" = "Tarix";
 "TRANSACTION_EDIT_TIME" = "Vaxt";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Şərh əlavə et";
+"TRANSACTION_EDIT_ADD_NOTE" = "Qeyd əlavə et";
 "TRANSACTION_EDIT_DELETE" = "Tranzaksiyanı sil";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Tranzaksiya silinsin?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kateqoriyalar";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Hamısını sil və sıfırla";
 "BACKUPS_RESET_WARNING" = "Bütün tranzaksiyalar, kateqoriyalar və ayarlar silinəcək. Bunu geri qaytarmaq mümkün deyil.";
 "BACKUPS_SHARE_ACTION" = "Məlumatları ixrac et";
-"BACKUPS_CSV_COMMENT" = "Şərh";
+"BACKUPS_CSV_NOTE" = "Qeyd";
 "BACKUPS_CSV_FOLDER" = "Qovluq";
 "BACKUPS_FORMAT_CSV" = "Yalnız baxış";
 "BACKUPS_FORMAT_JSON" = "Tam nüsxə";

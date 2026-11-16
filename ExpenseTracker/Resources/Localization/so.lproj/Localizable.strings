@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Qaddar";
 "TRANSACTION_EDIT_DATE" = "Taariikh";
 "TRANSACTION_EDIT_TIME" = "Waqti";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Ku dar faallo";
+"TRANSACTION_EDIT_ADD_NOTE" = "Ku dar qoraal";
 "TRANSACTION_EDIT_DELETE" = "Tirtir macaamilka";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Ma tirtirtaa macaamilka?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Qaybaha";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Tirtir wax walba oo dib u deji";
 "BACKUPS_RESET_WARNING" = "Dhammaan macaamilada, qaybaha iyo dejinta waa la tirtiri doonaa. Tan lama noqon karo.";
 "BACKUPS_SHARE_ACTION" = "Dhoofi xogta";
-"BACKUPS_CSV_COMMENT" = "Faallo";
+"BACKUPS_CSV_NOTE" = "Qoraal";
 "BACKUPS_CSV_FOLDER" = "Gal";
 "BACKUPS_FORMAT_CSV" = "Daawasho keliya";
 "BACKUPS_FORMAT_JSON" = "Kayd buuxa";

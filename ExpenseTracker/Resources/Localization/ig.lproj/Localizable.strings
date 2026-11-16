@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Ego ole";
 "TRANSACTION_EDIT_DATE" = "Ụbọchị ọnwa";
 "TRANSACTION_EDIT_TIME" = "Oge";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Tinye nkọwa";
+"TRANSACTION_EDIT_ADD_NOTE" = "Tinye ndetu";
 "TRANSACTION_EDIT_DELETE" = "Hichapụ azụmahịa";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Hichapụ azụmahịa a?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Ụdị dị iche iche";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Hichapụ ihe niile ma tọgharịa";
 "BACKUPS_RESET_WARNING" = "A ga-ehichapụ azụmahịa, ụdị na ntọala niile. Enweghị ike imegharị nke a.";
 "BACKUPS_SHARE_ACTION" = "Bupụ data";
-"BACKUPS_CSV_COMMENT" = "Nkọwa";
+"BACKUPS_CSV_NOTE" = "Ndetu";
 "BACKUPS_CSV_FOLDER" = "Folda";
 "BACKUPS_FORMAT_CSV" = "Maka ile naanị";
 "BACKUPS_FORMAT_JSON" = "Ndabere zuru ezu";

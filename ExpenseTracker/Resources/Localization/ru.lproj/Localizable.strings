@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Сумма";
 "TRANSACTION_EDIT_DATE" = "Дата";
 "TRANSACTION_EDIT_TIME" = "Время";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Добавить комментарий";
+"TRANSACTION_EDIT_ADD_NOTE" = "Добавить заметку";
 "TRANSACTION_EDIT_DELETE" = "Удалить транзакцию";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Удалить транзакцию?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Статьи";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Удалить всё и сбросить";
 "BACKUPS_RESET_WARNING" = "Все транзакции, категории и настройки будут удалены. Это действие нельзя отменить.";
 "BACKUPS_SHARE_ACTION" = "Экспортировать данные";
-"BACKUPS_CSV_COMMENT" = "Комментарий";
+"BACKUPS_CSV_NOTE" = "Заметка";
 "BACKUPS_CSV_FOLDER" = "Папка";
 "BACKUPS_FORMAT_CSV" = "Только просмотр";
 "BACKUPS_FORMAT_JSON" = "Полная копия";

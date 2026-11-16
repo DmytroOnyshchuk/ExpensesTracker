@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Import";
 "TRANSACTION_EDIT_DATE" = "Data";
 "TRANSACTION_EDIT_TIME" = "Ura";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Agiuntar in commentari";
+"TRANSACTION_EDIT_ADD_NOTE" = "Agiuntar ina nota";
 "TRANSACTION_EDIT_DELETE" = "Stizzar la transacziun";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Stizzar la transacziun?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Categorias";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Stizzar tut e reinizialisar";
 "BACKUPS_RESET_WARNING" = "Tut las transacziuns, categorias e configuraziuns vegnan stizzadas. Quai na po betg vegnir revocà.";
 "BACKUPS_SHARE_ACTION" = "Exportar datas";
-"BACKUPS_CSV_COMMENT" = "Commentari";
+"BACKUPS_CSV_NOTE" = "Nota";
 "BACKUPS_CSV_FOLDER" = "Ordinatur";
 "BACKUPS_FORMAT_CSV" = "Mo per guardar";
 "BACKUPS_FORMAT_JSON" = "Copia cumpletta";

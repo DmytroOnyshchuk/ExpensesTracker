@@ -5,7 +5,7 @@ struct BackupTableRow {
     let folder: String
     let category: String
     let amount: Int
-    let comment: String
+    let note: String
 }
 
 enum BackupCSVWriter {
@@ -24,7 +24,7 @@ enum BackupCSVWriter {
                 row.folder,
                 row.category,
                 amountText(row.amount, decimalSeparator: decimalSeparator),
-                row.comment,
+                row.note,
             ]
             lines.append(line(fields, delimiter: delimiter))
         }

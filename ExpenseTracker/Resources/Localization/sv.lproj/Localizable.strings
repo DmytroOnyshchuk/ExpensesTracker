@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Belopp";
 "TRANSACTION_EDIT_DATE" = "Datum";
 "TRANSACTION_EDIT_TIME" = "Tid";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Lägg till kommentar";
+"TRANSACTION_EDIT_ADD_NOTE" = "Lägg till anteckning";
 "TRANSACTION_EDIT_DELETE" = "Radera transaktion";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Radera transaktion?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategorier";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Radera allt och återställ";
 "BACKUPS_RESET_WARNING" = "Alla transaktioner, kategorier och inställningar raderas. Detta kan inte ångras.";
 "BACKUPS_SHARE_ACTION" = "Exportera data";
-"BACKUPS_CSV_COMMENT" = "Kommentar";
+"BACKUPS_CSV_NOTE" = "Anteckning";
 "BACKUPS_CSV_FOLDER" = "Mapp";
 "BACKUPS_FORMAT_CSV" = "Endast visning";
 "BACKUPS_FORMAT_JSON" = "Fullständig säkerhetskopia";

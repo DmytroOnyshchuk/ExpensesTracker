@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Import";
 "TRANSACTION_EDIT_DATE" = "Data";
 "TRANSACTION_EDIT_TIME" = "Hora";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Afegeix un comentari";
+"TRANSACTION_EDIT_ADD_NOTE" = "Afegeix una nota";
 "TRANSACTION_EDIT_DELETE" = "Elimina la transacció";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Vols eliminar la transacció?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Categories";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Elimina-ho tot i restableix";
 "BACKUPS_RESET_WARNING" = "S’eliminaran totes les transaccions, categories i ajustos. Això no es pot desfer.";
 "BACKUPS_SHARE_ACTION" = "Exporta les dades";
-"BACKUPS_CSV_COMMENT" = "Comentari";
+"BACKUPS_CSV_NOTE" = "Nota";
 "BACKUPS_CSV_FOLDER" = "Carpeta";
 "BACKUPS_FORMAT_CSV" = "Només visualització";
 "BACKUPS_FORMAT_JSON" = "Còpia completa";

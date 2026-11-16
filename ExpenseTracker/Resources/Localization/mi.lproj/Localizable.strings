@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Moni";
 "TRANSACTION_EDIT_DATE" = "Te rā";
 "TRANSACTION_EDIT_TIME" = "Wā";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Tāpiri kōrero";
+"TRANSACTION_EDIT_ADD_NOTE" = "Tāpiri tuhipoka";
 "TRANSACTION_EDIT_DELETE" = "Mukua te tauwhitinga";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Me muku te tauwhitinga?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Ngā kāwai";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Mukua te katoa ka tautuhi anō";
 "BACKUPS_RESET_WARNING" = "Ka mukua ngā tauwhitinga, ngā kāwai me ngā tautuhinga katoa. Kāore e taea te whakakore.";
 "BACKUPS_SHARE_ACTION" = "Kaweake raraunga";
-"BACKUPS_CSV_COMMENT" = "Tākupu";
+"BACKUPS_CSV_NOTE" = "Tuhipoka";
 "BACKUPS_CSV_FOLDER" = "Kōpaki";
 "BACKUPS_FORMAT_CSV" = "Hei titiro anake";
 "BACKUPS_FORMAT_JSON" = "Tārua katoa";

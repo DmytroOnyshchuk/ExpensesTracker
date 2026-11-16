@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "סכום";
 "TRANSACTION_EDIT_DATE" = "תאריך";
 "TRANSACTION_EDIT_TIME" = "שעה";
-"TRANSACTION_EDIT_ADD_COMMENT" = "הוספת הערה";
+"TRANSACTION_EDIT_ADD_NOTE" = "הוספת הערה";
 "TRANSACTION_EDIT_DELETE" = "מחיקת עסקה";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "למחוק את העסקה?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "קטגוריות";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "מחיקת הכול ואיפוס";
 "BACKUPS_RESET_WARNING" = "כל העסקאות, הקטגוריות וההגדרות יימחקו. לא ניתן לבטל פעולה זו.";
 "BACKUPS_SHARE_ACTION" = "ייצוא נתונים";
-"BACKUPS_CSV_COMMENT" = "הערה";
+"BACKUPS_CSV_NOTE" = "הערה";
 "BACKUPS_CSV_FOLDER" = "תיקייה";
 "BACKUPS_FORMAT_CSV" = "לצפייה בלבד";
 "BACKUPS_FORMAT_JSON" = "גיבוי מלא";

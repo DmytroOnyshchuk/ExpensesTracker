@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "మొత్తం";
 "TRANSACTION_EDIT_DATE" = "తేదీ";
 "TRANSACTION_EDIT_TIME" = "సమయం";
-"TRANSACTION_EDIT_ADD_COMMENT" = "వ్యాఖ్యను జోడించండి";
+"TRANSACTION_EDIT_ADD_NOTE" = "గమనికను జోడించండి";
 "TRANSACTION_EDIT_DELETE" = "లావాదేవీని తొలగించండి";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "లావాదేవీని తొలగించాలా?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "వర్గాలు";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "అన్నీ తొలగించి రీసెట్ చేయండి";
 "BACKUPS_RESET_WARNING" = "అన్ని లావాదేవీలు, వర్గాలు మరియు సెట్టింగ్‌లు తొలగించబడతాయి. దీన్ని రద్దు చేయడం సాధ్యం కాదు.";
 "BACKUPS_SHARE_ACTION" = "డేటాను ఎగుమతి చేయండి";
-"BACKUPS_CSV_COMMENT" = "వ్యాఖ్య";
+"BACKUPS_CSV_NOTE" = "గమనిక";
 "BACKUPS_CSV_FOLDER" = "ఫోల్డర్";
 "BACKUPS_FORMAT_CSV" = "వీక్షణకు మాత్రమే";
 "BACKUPS_FORMAT_JSON" = "పూర్తి బ్యాకప్";

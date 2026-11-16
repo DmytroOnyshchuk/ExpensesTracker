@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Գումար";
 "TRANSACTION_EDIT_DATE" = "Ամսաթիվ";
 "TRANSACTION_EDIT_TIME" = "Ժամ";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Ավելացնել մեկնաբանություն";
+"TRANSACTION_EDIT_ADD_NOTE" = "Ավելացնել նշում";
 "TRANSACTION_EDIT_DELETE" = "Ջնջել գործարքը";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Ջնջե՞լ գործարքը";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Կատեգորիաներ";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Ջնջել ամեն ինչ և վերակայել";
 "BACKUPS_RESET_WARNING" = "Բոլոր գործարքները, կատեգորիաները և կարգավորումները կջնջվեն։ Սա հնարավոր չէ հետարկել։";
 "BACKUPS_SHARE_ACTION" = "Արտահանել տվյալները";
-"BACKUPS_CSV_COMMENT" = "Մեկնաբանություն";
+"BACKUPS_CSV_NOTE" = "Նշում";
 "BACKUPS_CSV_FOLDER" = "Պանակ";
 "BACKUPS_FORMAT_CSV" = "Միայն դիտելու համար";
 "BACKUPS_FORMAT_JSON" = "Ամբողջական պատճեն";

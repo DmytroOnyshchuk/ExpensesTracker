@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Износ";
 "TRANSACTION_EDIT_DATE" = "Датум";
 "TRANSACTION_EDIT_TIME" = "Време";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Додај коментар";
+"TRANSACTION_EDIT_ADD_NOTE" = "Додај белешка";
 "TRANSACTION_EDIT_DELETE" = "Избриши трансакција";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Да се избрише трансакцијата?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Категории";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Избриши сè и ресетирај";
 "BACKUPS_RESET_WARNING" = "Сите трансакции, категории и поставки ќе бидат избришани. Ова не може да се врати.";
 "BACKUPS_SHARE_ACTION" = "Извези податоци";
-"BACKUPS_CSV_COMMENT" = "Коментар";
+"BACKUPS_CSV_NOTE" = "Белешка";
 "BACKUPS_CSV_FOLDER" = "Папка";
 "BACKUPS_FORMAT_CSV" = "Само преглед";
 "BACKUPS_FORMAT_JSON" = "Целосна копија";

@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Swm";
 "TRANSACTION_EDIT_DATE" = "Dyddiad";
 "TRANSACTION_EDIT_TIME" = "Amser";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Ychwanegu sylw";
+"TRANSACTION_EDIT_ADD_NOTE" = "Ychwanegu nodyn";
 "TRANSACTION_EDIT_DELETE" = "Dileu'r trafodyn";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Dileu'r trafodyn?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Categorïau";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Dileu popeth ac ailosod";
 "BACKUPS_RESET_WARNING" = "Bydd pob trafodyn, categori a gosodiad yn cael eu dileu. Ni ellir dadwneud hyn.";
 "BACKUPS_SHARE_ACTION" = "Allforio data";
-"BACKUPS_CSV_COMMENT" = "Sylw";
+"BACKUPS_CSV_NOTE" = "Nodyn";
 "BACKUPS_CSV_FOLDER" = "Ffolder";
 "BACKUPS_FORMAT_CSV" = "I’w weld yn unig";
 "BACKUPS_FORMAT_JSON" = "Copi wrth gefn llawn";

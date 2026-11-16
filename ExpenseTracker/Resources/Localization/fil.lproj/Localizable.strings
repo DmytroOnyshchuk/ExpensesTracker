@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Halaga";
 "TRANSACTION_EDIT_DATE" = "Petsa";
 "TRANSACTION_EDIT_TIME" = "Oras";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Magdagdag ng komento";
+"TRANSACTION_EDIT_ADD_NOTE" = "Magdagdag ng tala";
 "TRANSACTION_EDIT_DELETE" = "I-delete ang transaksyon";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "I-delete ang transaksyon?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Mga kategorya";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "I-delete lahat at i-reset";
 "BACKUPS_RESET_WARNING" = "Ide-delete ang lahat ng transaksyon, kategorya, at setting. Hindi na ito maa-undo.";
 "BACKUPS_SHARE_ACTION" = "I-export ang data";
-"BACKUPS_CSV_COMMENT" = "Komento";
+"BACKUPS_CSV_NOTE" = "Tala";
 "BACKUPS_CSV_FOLDER" = "Folder";
 "BACKUPS_FORMAT_CSV" = "Pantingin lang";
 "BACKUPS_FORMAT_JSON" = "Buong backup";

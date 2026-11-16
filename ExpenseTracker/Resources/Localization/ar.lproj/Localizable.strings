@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "المبلغ";
 "TRANSACTION_EDIT_DATE" = "التاريخ";
 "TRANSACTION_EDIT_TIME" = "الوقت";
-"TRANSACTION_EDIT_ADD_COMMENT" = "إضافة تعليق";
+"TRANSACTION_EDIT_ADD_NOTE" = "إضافة ملاحظة";
 "TRANSACTION_EDIT_DELETE" = "حذف المعاملة";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "حذف المعاملة؟";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "الفئات";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "حذف الكل وإعادة التعيين";
 "BACKUPS_RESET_WARNING" = "سيتم حذف جميع المعاملات والفئات والإعدادات. لا يمكن التراجع عن ذلك.";
 "BACKUPS_SHARE_ACTION" = "تصدير البيانات";
-"BACKUPS_CSV_COMMENT" = "تعليق";
+"BACKUPS_CSV_NOTE" = "ملاحظة";
 "BACKUPS_CSV_FOLDER" = "المجلد";
 "BACKUPS_FORMAT_CSV" = "للعرض فقط";
 "BACKUPS_FORMAT_JSON" = "نسخة كاملة";

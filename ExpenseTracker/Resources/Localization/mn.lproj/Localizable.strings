@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Дүн";
 "TRANSACTION_EDIT_DATE" = "Огноо";
 "TRANSACTION_EDIT_TIME" = "Цаг";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Тайлбар нэмэх";
+"TRANSACTION_EDIT_ADD_NOTE" = "Тэмдэглэл нэмэх";
 "TRANSACTION_EDIT_DELETE" = "Гүйлгээг устгах";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Гүйлгээг устгах уу?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Ангиллууд";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Бүгдийг устгаж, дахин тохируулах";
 "BACKUPS_RESET_WARNING" = "Бүх гүйлгээ, ангилал, тохиргоо устгагдана. Үүнийг буцаах боломжгүй.";
 "BACKUPS_SHARE_ACTION" = "Өгөгдөл экспортлох";
-"BACKUPS_CSV_COMMENT" = "Тайлбар";
+"BACKUPS_CSV_NOTE" = "Тэмдэглэл";
 "BACKUPS_CSV_FOLDER" = "Хавтас";
 "BACKUPS_FORMAT_CSV" = "Зөвхөн үзэхэд";
 "BACKUPS_FORMAT_JSON" = "Бүрэн хуулбар";

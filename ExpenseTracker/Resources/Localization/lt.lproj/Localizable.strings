@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Suma";
 "TRANSACTION_EDIT_DATE" = "Data";
 "TRANSACTION_EDIT_TIME" = "Laikas";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Pridėti komentarą";
+"TRANSACTION_EDIT_ADD_NOTE" = "Pridėti pastabą";
 "TRANSACTION_EDIT_DELETE" = "Ištrinti transakciją";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Ištrinti transakciją?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategorijos";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Ištrinti viską ir atkurti";
 "BACKUPS_RESET_WARNING" = "Visos transakcijos, kategorijos ir nustatymai bus ištrinti. Šio veiksmo anuliuoti negalima.";
 "BACKUPS_SHARE_ACTION" = "Eksportuoti duomenis";
-"BACKUPS_CSV_COMMENT" = "Komentaras";
+"BACKUPS_CSV_NOTE" = "Pastaba";
 "BACKUPS_CSV_FOLDER" = "Aplankas";
 "BACKUPS_FORMAT_CSV" = "Tik peržiūrai";
 "BACKUPS_FORMAT_JSON" = "Visa kopija";

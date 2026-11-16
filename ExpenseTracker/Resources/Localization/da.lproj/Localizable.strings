@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "Beløb";
 "TRANSACTION_EDIT_DATE" = "Dato";
 "TRANSACTION_EDIT_TIME" = "Tid";
-"TRANSACTION_EDIT_ADD_COMMENT" = "Tilføj kommentar";
+"TRANSACTION_EDIT_ADD_NOTE" = "Tilføj note";
 "TRANSACTION_EDIT_DELETE" = "Slet transaktion";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "Slet transaktion?";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "Kategorier";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "Slet alt og nulstil";
 "BACKUPS_RESET_WARNING" = "Alle transaktioner, kategorier og indstillinger slettes. Dette kan ikke fortrydes.";
 "BACKUPS_SHARE_ACTION" = "Eksportér data";
-"BACKUPS_CSV_COMMENT" = "Kommentar";
+"BACKUPS_CSV_NOTE" = "Note";
 "BACKUPS_CSV_FOLDER" = "Mappe";
 "BACKUPS_FORMAT_CSV" = "Kun visning";
 "BACKUPS_FORMAT_JSON" = "Fuld sikkerhedskopi";

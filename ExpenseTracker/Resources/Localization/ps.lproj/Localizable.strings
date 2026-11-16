@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "اندازه";
 "TRANSACTION_EDIT_DATE" = "نېټه";
 "TRANSACTION_EDIT_TIME" = "وخت";
-"TRANSACTION_EDIT_ADD_COMMENT" = "تبصره زیاتول";
+"TRANSACTION_EDIT_ADD_NOTE" = "یادښت زیاتول";
 "TRANSACTION_EDIT_DELETE" = "راکړه ورکړه ړنګول";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "راکړه ورکړه ړنګه شي؟";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "کټګورۍ";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "هر څه ړنګول او بیا تنظیمول";
 "BACKUPS_RESET_WARNING" = "ټولې راکړې ورکړې، کټګورۍ او تنظیمات به ړنګ شي. دا بېرته نه شي کېدای.";
 "BACKUPS_SHARE_ACTION" = "ډېټا صادر کړئ";
-"BACKUPS_CSV_COMMENT" = "تبصره";
+"BACKUPS_CSV_NOTE" = "یادښت";
 "BACKUPS_CSV_FOLDER" = "پوښۍ";
 "BACKUPS_FORMAT_CSV" = "یوازې د کتلو لپاره";
 "BACKUPS_FORMAT_JSON" = "بشپړ بېک اپ";

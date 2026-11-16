@@ -91,7 +91,7 @@
 "TRANSACTION_EDIT_AMOUNT" = "مبلغ";
 "TRANSACTION_EDIT_DATE" = "تاریخ";
 "TRANSACTION_EDIT_TIME" = "ساعت";
-"TRANSACTION_EDIT_ADD_COMMENT" = "افزودن توضیح";
+"TRANSACTION_EDIT_ADD_NOTE" = "افزودن یادداشت";
 "TRANSACTION_EDIT_DELETE" = "حذف تراکنش";
 "TRANSACTION_EDIT_DELETE_CONFIRMATION" = "تراکنش حذف شود؟";
 "TRANSACTION_EDIT_CATEGORIES_TITLE" = "دسته‌بندی‌ها";
@@ -188,7 +188,7 @@
 "BACKUPS_RESET_ACTION" = "حذف همه و بازنشانی";
 "BACKUPS_RESET_WARNING" = "همه تراکنش‌ها، دسته‌ها و تنظیمات حذف خواهند شد. این کار قابل بازگشت نیست.";
 "BACKUPS_SHARE_ACTION" = "خروجی گرفتن از داده‌ها";
-"BACKUPS_CSV_COMMENT" = "توضیح";
+"BACKUPS_CSV_NOTE" = "یادداشت";
 "BACKUPS_CSV_FOLDER" = "پوشه";
 "BACKUPS_FORMAT_CSV" = "فقط مشاهده";
 "BACKUPS_FORMAT_JSON" = "پشتیبان کامل";
