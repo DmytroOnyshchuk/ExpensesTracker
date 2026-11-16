@@ -6,7 +6,7 @@ struct SettingsView: View {
     @Inject private var themeManager: ThemeManager
     @Inject private var feedbackManager: FeedbackManager
 
-    private let columns = Array(repeating: GridItem(.flexible(), spacing: 8), count: 4)
+    private let columns = Array(repeating: GridItem(.flexible(), spacing: 8), count: 3)
 
     var body: some View {
         ScrollView(.vertical) {
