@@ -1,21 +1,9 @@
 import UIKit
 
 extension Int {
-    var asString: String { String(self) }
-
-    var asCgFloat: CGFloat { CGFloat(self) }
-
-    var asFloat: Float { Float(self) }
-
-    var asDouble: Double { Double(self) }
-
     func asString(withUnits units: String) -> String { "\(self) \(units)" }
 
     var asDigits: [Int] { String(self).compactMap { $0.wholeNumberValue } }
-
-    var asBool: Bool {
-        self != .zero
-    }
 
     func degreesToRads() -> Double {
         Double(self) * .pi / 180
@@ -39,7 +27,7 @@ extension Int {
     }
 
     func getAmount() -> String {
-        var paymentAmount: Double { asDouble / 100.0 }
+        var paymentAmount: Double { double / 100.0 }
         let sumInString = paymentAmount.asCurrencyString()
         return sumInString
     }

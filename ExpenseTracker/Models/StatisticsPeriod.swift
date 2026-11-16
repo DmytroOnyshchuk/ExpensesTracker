@@ -197,7 +197,7 @@ struct StatisticsSlice: Identifiable {
             .compactMap { group in
                 guard let category = group.first.map(owner) else { return nil }
                 let amount = group.reduce(0) { $0 + $1.amount }
-                return StatisticsSlice(category: category, amount: amount, share: amount.asDouble / total.asDouble)
+                return StatisticsSlice(category: category, amount: amount, share: amount.double / total.double)
             }
             .sorted {
                 if $0.amount != $1.amount {

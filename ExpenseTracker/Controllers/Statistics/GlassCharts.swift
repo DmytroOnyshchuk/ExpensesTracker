@@ -38,9 +38,9 @@ struct StatisticsChartPoint: Identifiable {
 
     var id: Date { start }
 
-    var value: Double { amount.asDouble / 100 }
+    var value: Double { amount.double / 100 }
 
-    var totalValue: Double { total.asDouble / 100 }
+    var totalValue: Double { total.double / 100 }
 }
 
 extension StatisticsPeriod {

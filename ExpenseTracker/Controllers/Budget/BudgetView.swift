@@ -443,7 +443,7 @@ struct BudgetProgressBar: View {
 
     private var fraction: Double {
         guard limit > .zero else { return .zero }
-        return min(max(spent.asDouble / limit.asDouble, .zero), 1)
+        return min(max(spent.double / limit.double, .zero), 1)
     }
 
     var body: some View {

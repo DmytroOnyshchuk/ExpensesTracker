@@ -393,7 +393,7 @@ struct ExpensesChartBucket: Identifiable {
 
     var id: Date { start }
 
-    var value: Double { amount.asDouble / 100 }
+    var value: Double { amount.double / 100 }
 }
 
 #Preview("Chart") {

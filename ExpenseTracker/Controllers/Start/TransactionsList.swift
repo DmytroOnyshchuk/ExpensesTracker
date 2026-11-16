@@ -66,7 +66,7 @@ struct TransactionsList: View {
                     }
                 } header: {
                     TransactionsDayHeader(day: day)
-                        .frame(height: Self.headerHeight.asCgFloat)
+                        .frame(height: Self.headerHeight.cgFloat)
                         .listRowInsets(EdgeInsets())
                 }
             }
@@ -88,7 +88,7 @@ struct TransactionsList: View {
 
     private func estimatedHeight(for days: [TransactionsDay]) -> CGFloat {
         let rows = days.reduce(0) { $0 + max($1.transactions.count, 1) }
-        return (rows * Self.rowHeight + days.count * (Self.headerHeight + Self.sectionSpacing)).asCgFloat
+        return (rows * Self.rowHeight + days.count * (Self.headerHeight + Self.sectionSpacing)).cgFloat
     }
 }
 

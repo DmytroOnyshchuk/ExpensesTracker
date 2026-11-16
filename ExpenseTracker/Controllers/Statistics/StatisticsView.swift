@@ -127,8 +127,20 @@ struct StatisticsView: View {
         }
     }
 
+    private var periodSelection: Binding<StatisticsPeriod> {
+        Binding(
+            get: { period },
+            set: { newValue in
+                if newValue == .day {
+                    anchorDate = Date()
+                }
+                period = newValue
+            }
+        )
+    }
+
     private var periodPicker: some View {
-        SegmentedControl(items: StatisticsPeriod.allCases, selection: $period, title: \.title)
+        SegmentedControl(items: StatisticsPeriod.allCases, selection: periodSelection, title: \.title)
             .sensoryFeedback(trigger: period) { _, _ in FeedbackManager.shared.selectionFeedback }
             .padding(.horizontal, 64)
     }
@@ -307,7 +319,7 @@ struct StatisticsBreakdown: View {
                         } label: {
                             StatisticsRow(
                                 slice: slice,
-                                barRatio: maxAmount > 0 ? slice.amount.asDouble / maxAmount.asDouble : 0
+                                barRatio: maxAmount > 0 ? slice.amount.double / maxAmount.double : 0
                             )
                             .contentShape(Rectangle())
                         }
@@ -453,7 +465,7 @@ struct StatisticsPeriodList: View {
                 proxy.scrollTo(selected, anchor: .center)
             }
         }
-        .frame(width: 280, height: min(starts.count.asCgFloat * Self.rowHeight, Self.maxHeight))
+        .frame(width: 280, height: min(starts.count.cgFloat * Self.rowHeight, Self.maxHeight))
     }
 }
 
