@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Język";
 "MENU_ABOUT" = "O aplikacji";
 "MENU_TRASH" = "Kosz";
+"MENU_SECTION_GENERAL" = "Ogólne";
+"MENU_SECTION_DATA" = "Dane";
+"MENU_SECTION_APP" = "Aplikacja";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Kosz jest pusty";

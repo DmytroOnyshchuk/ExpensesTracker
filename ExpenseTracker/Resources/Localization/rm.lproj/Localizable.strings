@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Lingua";
 "MENU_ABOUT" = "Davart";
 "MENU_TRASH" = "Recipient da rument";
+"MENU_SECTION_GENERAL" = "General";
+"MENU_SECTION_DATA" = "Datas";
+"MENU_SECTION_APP" = "App";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Il recipient da rument è vid";

@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "भाषा";
 "MENU_ABOUT" = "बारेमा";
 "MENU_TRASH" = "रद्दीटोकरी";
+"MENU_SECTION_GENERAL" = "सामान्य";
+"MENU_SECTION_DATA" = "डेटा";
+"MENU_SECTION_APP" = "एप";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "रद्दीटोकरी खाली छ";

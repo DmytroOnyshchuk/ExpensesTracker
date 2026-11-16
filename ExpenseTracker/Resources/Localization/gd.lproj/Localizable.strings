@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Cànan";
 "MENU_ABOUT" = "Mu dhèidhinn";
 "MENU_TRASH" = "Sgudal";
+"MENU_SECTION_GENERAL" = "Coitcheann";
+"MENU_SECTION_DATA" = "Dàta";
+"MENU_SECTION_APP" = "Aplacaid";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Tha an sgudal falamh";

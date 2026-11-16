@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Тил";
 "MENU_ABOUT" = "Колдонмо жөнүндө";
 "MENU_TRASH" = "Себет";
+"MENU_SECTION_GENERAL" = "Жалпы";
+"MENU_SECTION_DATA" = "Маалыматтар";
+"MENU_SECTION_APP" = "Колдонмо";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Себет бош";

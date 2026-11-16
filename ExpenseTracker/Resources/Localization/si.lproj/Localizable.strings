@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "භාෂාව";
 "MENU_ABOUT" = "පිළිබඳව";
 "MENU_TRASH" = "කුණු කූඩය";
+"MENU_SECTION_GENERAL" = "පොදු";
+"MENU_SECTION_DATA" = "දත්ත";
+"MENU_SECTION_APP" = "යෙදුම";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "කුණු කූඩය හිස්ය";

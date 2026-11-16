@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Teanga";
 "MENU_ABOUT" = "Maidir leis";
 "MENU_TRASH" = "Bruscar";
+"MENU_SECTION_GENERAL" = "Ginearálta";
+"MENU_SECTION_DATA" = "Sonraí";
+"MENU_SECTION_APP" = "Aip";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Tá an bruscar folamh";

@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Dil";
 "MENU_ABOUT" = "Haqqında";
 "MENU_TRASH" = "Səbət";
+"MENU_SECTION_GENERAL" = "Ümumi";
+"MENU_SECTION_DATA" = "Məlumatlar";
+"MENU_SECTION_APP" = "Tətbiq";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Səbət boşdur";

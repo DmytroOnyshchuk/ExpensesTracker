@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "언어";
 "MENU_ABOUT" = "정보";
 "MENU_TRASH" = "휴지통";
+"MENU_SECTION_GENERAL" = "일반";
+"MENU_SECTION_DATA" = "데이터";
+"MENU_SECTION_APP" = "앱";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "휴지통이 비어 있습니다";

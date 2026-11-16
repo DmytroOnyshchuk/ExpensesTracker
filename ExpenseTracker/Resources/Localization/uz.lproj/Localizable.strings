@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Til";
 "MENU_ABOUT" = "Ilova haqida";
 "MENU_TRASH" = "Savat";
+"MENU_SECTION_GENERAL" = "Umumiy";
+"MENU_SECTION_DATA" = "Maʼlumotlar";
+"MENU_SECTION_APP" = "Ilova";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Savat bo'sh";

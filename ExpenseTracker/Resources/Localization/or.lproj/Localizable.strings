@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "ଭାଷା";
 "MENU_ABOUT" = "ବିଷୟରେ";
 "MENU_TRASH" = "ଟ୍ରାସ୍";
+"MENU_SECTION_GENERAL" = "ସାଧାରଣ";
+"MENU_SECTION_DATA" = "ଡାଟା";
+"MENU_SECTION_APP" = "ଆପ୍";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ଟ୍ରାସ୍ ଖାଲି ଅଛି";

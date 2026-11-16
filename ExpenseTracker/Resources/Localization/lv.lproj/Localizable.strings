@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Valoda";
 "MENU_ABOUT" = "Par lietotni";
 "MENU_TRASH" = "Atkritne";
+"MENU_SECTION_GENERAL" = "Vispārīgi";
+"MENU_SECTION_DATA" = "Dati";
+"MENU_SECTION_APP" = "Lietotne";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Atkritne ir tukša";

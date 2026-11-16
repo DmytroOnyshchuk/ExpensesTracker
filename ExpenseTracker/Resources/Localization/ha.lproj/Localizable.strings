@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Harshe";
 "MENU_ABOUT" = "Game da";
 "MENU_TRASH" = "Kwandon shara";
+"MENU_SECTION_GENERAL" = "Gabaɗaya";
+"MENU_SECTION_DATA" = "Bayanai";
+"MENU_SECTION_APP" = "Manhaja";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Kwandon shara babu komai";

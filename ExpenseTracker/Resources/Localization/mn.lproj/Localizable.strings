@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Хэл";
 "MENU_ABOUT" = "Аппын тухай";
 "MENU_TRASH" = "Хогийн сав";
+"MENU_SECTION_GENERAL" = "Ерөнхий";
+"MENU_SECTION_DATA" = "Өгөгдөл";
+"MENU_SECTION_APP" = "Апп";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Хогийн сав хоосон байна";

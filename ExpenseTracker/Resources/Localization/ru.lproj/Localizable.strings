@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Язык";
 "MENU_ABOUT" = "О программе";
 "MENU_TRASH" = "Корзина";
+"MENU_SECTION_GENERAL" = "Основные";
+"MENU_SECTION_DATA" = "Данные";
+"MENU_SECTION_APP" = "Приложение";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Корзина пуста";

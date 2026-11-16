@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "语言";
 "MENU_ABOUT" = "关于";
 "MENU_TRASH" = "废纸篓";
+"MENU_SECTION_GENERAL" = "通用";
+"MENU_SECTION_DATA" = "数据";
+"MENU_SECTION_APP" = "应用";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "废纸篓为空";

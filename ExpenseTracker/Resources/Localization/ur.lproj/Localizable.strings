@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "زبان";
 "MENU_ABOUT" = "تعارف";
 "MENU_TRASH" = "ردی";
+"MENU_SECTION_GENERAL" = "عمومی";
+"MENU_SECTION_DATA" = "ڈیٹا";
+"MENU_SECTION_APP" = "ایپ";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ردی خالی ہے";

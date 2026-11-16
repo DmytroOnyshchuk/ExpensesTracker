@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Språk";
 "MENU_ABOUT" = "Om";
 "MENU_TRASH" = "Papirkurv";
+"MENU_SECTION_GENERAL" = "Generelt";
+"MENU_SECTION_DATA" = "Data";
+"MENU_SECTION_APP" = "App";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Papirkurven er tom";

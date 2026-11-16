@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "ಭಾಷೆ";
 "MENU_ABOUT" = "ಕುರಿತು";
 "MENU_TRASH" = "ಅನುಪಯುಕ್ತ";
+"MENU_SECTION_GENERAL" = "ಸಾಮಾನ್ಯ";
+"MENU_SECTION_DATA" = "ಡೇಟಾ";
+"MENU_SECTION_APP" = "ಆ್ಯಪ್";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ಅನುಪಯುಕ್ತ ಖಾಲಿಯಾಗಿದೆ";

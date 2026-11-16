@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Ziman";
 "MENU_ABOUT" = "Derbar";
 "MENU_TRASH" = "Çopdank";
+"MENU_SECTION_GENERAL" = "Giştî";
+"MENU_SECTION_DATA" = "Dane";
+"MENU_SECTION_APP" = "Sepan";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Çopdank vala ye";

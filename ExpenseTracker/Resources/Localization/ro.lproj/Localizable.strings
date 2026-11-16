@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Limbă";
 "MENU_ABOUT" = "Despre";
 "MENU_TRASH" = "Coș";
+"MENU_SECTION_GENERAL" = "General";
+"MENU_SECTION_DATA" = "Date";
+"MENU_SECTION_APP" = "Aplicație";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Coșul este gol";

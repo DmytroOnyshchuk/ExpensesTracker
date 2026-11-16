@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Kalba";
 "MENU_ABOUT" = "Apie";
 "MENU_TRASH" = "Šiukšlinė";
+"MENU_SECTION_GENERAL" = "Bendrieji";
+"MENU_SECTION_DATA" = "Duomenys";
+"MENU_SECTION_APP" = "Programa";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Šiukšlinė tuščia";

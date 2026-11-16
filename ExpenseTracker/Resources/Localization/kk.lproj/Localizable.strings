@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Тіл";
 "MENU_ABOUT" = "Қолданба туралы";
 "MENU_TRASH" = "Себет";
+"MENU_SECTION_GENERAL" = "Жалпы";
+"MENU_SECTION_DATA" = "Деректер";
+"MENU_SECTION_APP" = "Қолданба";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Себет бос";

@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "ቋንቋ";
 "MENU_ABOUT" = "ስለ";
 "MENU_TRASH" = "መጣያ";
+"MENU_SECTION_GENERAL" = "አጠቃላይ";
+"MENU_SECTION_DATA" = "ውሂብ";
+"MENU_SECTION_APP" = "መተግበሪያ";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "መጣያው ባዶ ነው";

@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Hizkuntza";
 "MENU_ABOUT" = "Honi buruz";
 "MENU_TRASH" = "Zakarrontzia";
+"MENU_SECTION_GENERAL" = "Orokorra";
+"MENU_SECTION_DATA" = "Datuak";
+"MENU_SECTION_APP" = "Aplikazioa";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Zakarrontzia hutsik dago";

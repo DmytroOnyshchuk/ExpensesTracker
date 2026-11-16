@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Basa";
 "MENU_ABOUT" = "Babagan";
 "MENU_TRASH" = "Tong sampah";
+"MENU_SECTION_GENERAL" = "Umum";
+"MENU_SECTION_DATA" = "Data";
+"MENU_SECTION_APP" = "Aplikasi";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Tong sampah kosong";

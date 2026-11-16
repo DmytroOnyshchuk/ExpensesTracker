@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Tungumál";
 "MENU_ABOUT" = "Um forritið";
 "MENU_TRASH" = "Rusl";
+"MENU_SECTION_GENERAL" = "Almennt";
+"MENU_SECTION_DATA" = "Gögn";
+"MENU_SECTION_APP" = "Forrit";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Ruslið er tómt";

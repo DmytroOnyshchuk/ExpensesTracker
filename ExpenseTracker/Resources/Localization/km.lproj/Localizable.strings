@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "ភាសា";
 "MENU_ABOUT" = "អំពី";
 "MENU_TRASH" = "ធុងសំរាម";
+"MENU_SECTION_GENERAL" = "ទូទៅ";
+"MENU_SECTION_DATA" = "ទិន្នន័យ";
+"MENU_SECTION_APP" = "កម្មវិធី";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ធុងសំរាមទទេ";

@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "ਭਾਸ਼ਾ";
 "MENU_ABOUT" = "ਬਾਰੇ";
 "MENU_TRASH" = "ਰੱਦੀ";
+"MENU_SECTION_GENERAL" = "ਆਮ";
+"MENU_SECTION_DATA" = "ਡਾਟਾ";
+"MENU_SECTION_APP" = "ਐਪ";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ਰੱਦੀ ਖਾਲੀ ਹੈ";

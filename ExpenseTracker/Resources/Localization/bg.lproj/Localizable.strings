@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Език";
 "MENU_ABOUT" = "За приложението";
 "MENU_TRASH" = "Кошче";
+"MENU_SECTION_GENERAL" = "Общи";
+"MENU_SECTION_DATA" = "Данни";
+"MENU_SECTION_APP" = "Приложение";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Кошчето е празно";

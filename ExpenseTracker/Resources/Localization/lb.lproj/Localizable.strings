@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Sprooch";
 "MENU_ABOUT" = "Iwwer";
 "MENU_TRASH" = "Dreckskëscht";
+"MENU_SECTION_GENERAL" = "Allgemeng";
+"MENU_SECTION_DATA" = "Daten";
+"MENU_SECTION_APP" = "App";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "D'Dreckskëscht ass eidel";

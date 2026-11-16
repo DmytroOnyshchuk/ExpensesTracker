@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "ٻولي";
 "MENU_ABOUT" = "بابت";
 "MENU_TRASH" = "ردي";
+"MENU_SECTION_GENERAL" = "عام";
+"MENU_SECTION_DATA" = "ڊيٽا";
+"MENU_SECTION_APP" = "ايپ";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ردي خالي آهي";

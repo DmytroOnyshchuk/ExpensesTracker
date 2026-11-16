@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "اللغة";
 "MENU_ABOUT" = "حول";
 "MENU_TRASH" = "سلة المحذوفات";
+"MENU_SECTION_GENERAL" = "عام";
+"MENU_SECTION_DATA" = "البيانات";
+"MENU_SECTION_APP" = "التطبيق";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "سلة المحذوفات فارغة";

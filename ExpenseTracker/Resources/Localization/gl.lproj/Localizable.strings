@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Idioma";
 "MENU_ABOUT" = "Acerca de";
 "MENU_TRASH" = "Papeleira";
+"MENU_SECTION_GENERAL" = "Xeral";
+"MENU_SECTION_DATA" = "Datos";
+"MENU_SECTION_APP" = "Aplicación";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "A papeleira está baleira";

@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "ພາສາ";
 "MENU_ABOUT" = "ກ່ຽວກັບ";
 "MENU_TRASH" = "ຖັງຂີ້ເຫຍື້ອ";
+"MENU_SECTION_GENERAL" = "ທົ່ວໄປ";
+"MENU_SECTION_DATA" = "ຂໍ້ມູນ";
+"MENU_SECTION_APP" = "ແອັບ";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ຖັງຂີ້ເຫຍື້ອຫວ່າງເປົ່າ";

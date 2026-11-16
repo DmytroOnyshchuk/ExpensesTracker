@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "భాష";
 "MENU_ABOUT" = "పరిచయం";
 "MENU_TRASH" = "ట్రాష్";
+"MENU_SECTION_GENERAL" = "సాధారణం";
+"MENU_SECTION_DATA" = "డేటా";
+"MENU_SECTION_APP" = "యాప్";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ట్రాష్ ఖాళీగా ఉంది";

@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Idioma";
 "MENU_ABOUT" = "Sobre";
 "MENU_TRASH" = "Lixeira";
+"MENU_SECTION_GENERAL" = "Geral";
+"MENU_SECTION_DATA" = "Dados";
+"MENU_SECTION_APP" = "App";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "A lixeira está vazia";

@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "שפה";
 "MENU_ABOUT" = "אודות";
 "MENU_TRASH" = "פח אשפה";
+"MENU_SECTION_GENERAL" = "כללי";
+"MENU_SECTION_DATA" = "נתונים";
+"MENU_SECTION_APP" = "יישום";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "פח האשפה ריק";

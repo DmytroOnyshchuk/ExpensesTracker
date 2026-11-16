@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "ژبه";
 "MENU_ABOUT" = "په اړه";
 "MENU_TRASH" = "کثافت‌دانۍ";
+"MENU_SECTION_GENERAL" = "عمومي";
+"MENU_SECTION_DATA" = "معلومات";
+"MENU_SECTION_APP" = "اپلیکیشن";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "کثافت‌دانۍ تشه ده";

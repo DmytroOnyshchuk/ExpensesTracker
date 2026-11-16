@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "भाषा";
 "MENU_ABOUT" = "विषयी";
 "MENU_TRASH" = "ट्रॅश";
+"MENU_SECTION_GENERAL" = "सामान्य";
+"MENU_SECTION_DATA" = "डेटा";
+"MENU_SECTION_APP" = "ॲप";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ट्रॅश रिकामा आहे";

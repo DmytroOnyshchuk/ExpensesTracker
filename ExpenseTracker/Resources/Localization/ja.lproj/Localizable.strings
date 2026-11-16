@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "言語";
 "MENU_ABOUT" = "このアプリについて";
 "MENU_TRASH" = "ゴミ箱";
+"MENU_SECTION_GENERAL" = "一般";
+"MENU_SECTION_DATA" = "データ";
+"MENU_SECTION_APP" = "アプリ";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ゴミ箱は空です";

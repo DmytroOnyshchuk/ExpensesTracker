@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Taal";
 "MENU_ABOUT" = "Meer oor";
 "MENU_TRASH" = "Asblik";
+"MENU_SECTION_GENERAL" = "Algemeen";
+"MENU_SECTION_DATA" = "Data";
+"MENU_SECTION_APP" = "Toepassing";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Die asblik is leeg";

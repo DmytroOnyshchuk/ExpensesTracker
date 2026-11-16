@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Reo";
 "MENU_ABOUT" = "Mō";
 "MENU_TRASH" = "Ipu para";
+"MENU_SECTION_GENERAL" = "Whānui";
+"MENU_SECTION_DATA" = "Raraunga";
+"MENU_SECTION_APP" = "Taupānga";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Kei te wātea te ipu para";

@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "تىل";
 "MENU_ABOUT" = "ھەققىدە";
 "MENU_TRASH" = "ئەخلەت ساندۇقى";
+"MENU_SECTION_GENERAL" = "ئادەتتىكى";
+"MENU_SECTION_DATA" = "سانلىق مەلۇمات";
+"MENU_SECTION_APP" = "ئەپ";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ئەخلەت ساندۇقى قۇرۇق";

@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Nyelv";
 "MENU_ABOUT" = "Névjegy";
 "MENU_TRASH" = "Kuka";
+"MENU_SECTION_GENERAL" = "Általános";
+"MENU_SECTION_DATA" = "Adatok";
+"MENU_SECTION_APP" = "Alkalmazás";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "A kuka üres";

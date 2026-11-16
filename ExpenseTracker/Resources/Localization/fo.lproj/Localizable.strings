@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Mál";
 "MENU_ABOUT" = "Um";
 "MENU_TRASH" = "Ruskspann";
+"MENU_SECTION_GENERAL" = "Alment";
+"MENU_SECTION_DATA" = "Dáta";
+"MENU_SECTION_APP" = "App";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Ruskspannin er tóm";

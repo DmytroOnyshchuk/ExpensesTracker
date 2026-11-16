@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Լեզու";
 "MENU_ABOUT" = "Ծրագրի մասին";
 "MENU_TRASH" = "Աղբարկղ";
+"MENU_SECTION_GENERAL" = "Ընդհանուր";
+"MENU_SECTION_DATA" = "Տվյալներ";
+"MENU_SECTION_APP" = "Հավելված";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Աղբարկղը դատարկ է";

@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Taal";
 "MENU_ABOUT" = "Over";
 "MENU_TRASH" = "Prullenmand";
+"MENU_SECTION_GENERAL" = "Algemeen";
+"MENU_SECTION_DATA" = "Gegevens";
+"MENU_SECTION_APP" = "App";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "De prullenmand is leeg";

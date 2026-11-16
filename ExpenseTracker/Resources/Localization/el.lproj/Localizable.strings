@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Γλώσσα";
 "MENU_ABOUT" = "Πληροφορίες";
 "MENU_TRASH" = "Κάδος";
+"MENU_SECTION_GENERAL" = "Γενικά";
+"MENU_SECTION_DATA" = "Δεδομένα";
+"MENU_SECTION_APP" = "Εφαρμογή";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Ο κάδος είναι άδειος";

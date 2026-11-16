@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Jezik";
 "MENU_ABOUT" = "O aplikaciji";
 "MENU_TRASH" = "Koš";
+"MENU_SECTION_GENERAL" = "Splošno";
+"MENU_SECTION_DATA" = "Podatki";
+"MENU_SECTION_APP" = "Aplikacija";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Koš je prazen";

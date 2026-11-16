@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "ဘာသာစကား";
 "MENU_ABOUT" = "အကြောင်း";
 "MENU_TRASH" = "အမှိုက်ပုံး";
+"MENU_SECTION_GENERAL" = "အထွေထွေ";
+"MENU_SECTION_DATA" = "ဒေတာ";
+"MENU_SECTION_APP" = "အက်ပ်";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "အမှိုက်ပုံး ဗလာဖြစ်နေသည်";

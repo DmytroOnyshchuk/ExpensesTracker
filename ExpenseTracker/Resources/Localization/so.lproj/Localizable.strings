@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Luqadda";
 "MENU_ABOUT" = "Ku saabsan";
 "MENU_TRASH" = "Qashinka";
+"MENU_SECTION_GENERAL" = "Guud";
+"MENU_SECTION_DATA" = "Xogta";
+"MENU_SECTION_APP" = "App";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Qashinku waa madhan yahay";

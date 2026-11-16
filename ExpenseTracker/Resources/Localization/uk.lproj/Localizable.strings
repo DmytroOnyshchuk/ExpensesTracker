@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Мова";
 "MENU_ABOUT" = "Про програму";
 "MENU_TRASH" = "Кошик";
+"MENU_SECTION_GENERAL" = "Основні";
+"MENU_SECTION_DATA" = "Дані";
+"MENU_SECTION_APP" = "Програма";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Кошик порожній";

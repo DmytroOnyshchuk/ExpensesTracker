@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "ഭാഷ";
 "MENU_ABOUT" = "വിവരം";
 "MENU_TRASH" = "ട്രാഷ്";
+"MENU_SECTION_GENERAL" = "പൊതുവായത്";
+"MENU_SECTION_DATA" = "ഡാറ്റ";
+"MENU_SECTION_APP" = "ആപ്പ്";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "ട്രാഷ് ശൂന്യമാണ്";

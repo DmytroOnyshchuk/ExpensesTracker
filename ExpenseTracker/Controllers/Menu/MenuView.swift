@@ -17,8 +17,6 @@ enum MenuItem: CaseIterable, Identifiable {
     case about
     case trash
 
-    static let sections: [[MenuItem]] = [[.settings], [.categories], [.backups], [.trash], [.language, .about]]
-
     var id: Self { self }
 
     var title: String {
@@ -44,6 +42,30 @@ enum MenuItem: CaseIterable, Identifiable {
     }
 }
 
+enum MenuSection: CaseIterable, Identifiable {
+    case general
+    case data
+    case app
+
+    var id: Self { self }
+
+    var title: String {
+        switch self {
+        case .general: L10n.menuSectionGeneral
+        case .data: L10n.menuSectionData
+        case .app: L10n.menuSectionApp
+        }
+    }
+
+    var items: [MenuItem] {
+        switch self {
+        case .general: [.settings, .categories]
+        case .data: [.backups, .trash]
+        case .app: [.language, .about]
+        }
+    }
+}
+
 struct MenuView: View {
     @Query private var storedTransactions: [Transaction]
 
@@ -62,19 +84,30 @@ struct MenuView: View {
 
     var body: some View {
         ScrollView(.vertical) {
-            VStack(spacing: 16) {
-                MenuSpentCard(title: spentTitle, amount: spentAmount, balance: balance, action: openStatistics)
+            VStack(alignment: .leading, spacing: 24) {
+                VStack(alignment: .leading, spacing: 8) {
+                    MenuSectionHeader(title: L10n.tabStatistics)
 
-                ForEach(MenuItem.sections, id: \.self) { section in
-                    VStack(spacing: 0) {
-                        ForEach(section) { item in
-                            MenuRow(title: item.title, systemImage: item.systemImage) {
-                                open(item)
+                    MenuSpentCard(title: spentTitle, amount: spentAmount, balance: balance, action: openStatistics)
+                }
+
+                ForEach(MenuSection.allCases) { section in
+                    VStack(alignment: .leading, spacing: 8) {
+                        MenuSectionHeader(title: section.title)
+
+                        VStack(spacing: 0) {
+                            ForEach(section.items) { item in
+                                MenuRow(title: item.title, systemImage: item.systemImage) {
+                                    open(item)
+                                }
+
+                                if item != section.items.last {
+                                    MenuRowDivider()
+                                }
                             }
                         }
+                        .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
                     }
-                    .padding(.vertical, 6)
-                    .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
                 }
             }
             .padding(16)
@@ -143,15 +176,15 @@ struct MenuSpentCard: View {
     var body: some View {
         Button(action: action) {
             HStack(spacing: 12) {
-                VStack(alignment: .leading, spacing: 8) {
+                VStack(alignment: .leading, spacing: 4) {
                     Text(title)
-                        .font(.appLight(15))
+                        .font(.appLight(14))
                         .foregroundColor(.appLabel)
                         .lineLimit(1)
                         .minimumScaleFactor(0.7)
 
                     Text(amount.getAmount())
-                        .font(.appRegular(30))
+                        .font(.appRegular(26))
                         .foregroundColor(.appWhite)
                         .lineLimit(1)
                         .minimumScaleFactor(0.6)
@@ -160,11 +193,11 @@ struct MenuSpentCard: View {
                     if let balance {
                         HStack(spacing: 6) {
                             Text(L10n.startviewBalance)
-                                .font(.appLight(15))
+                                .font(.appLight(14))
                                 .foregroundColor(.appLabel)
 
                             Text(balance.getAmount())
-                                .font(.appRegular(15))
+                                .font(.appRegular(14))
                                 .foregroundColor(balance < 0 ? .appRed : .appWhite.opacity(0.75))
                                 .contentTransition(.numericText())
                         }
@@ -176,13 +209,12 @@ struct MenuSpentCard: View {
                 Spacer(minLength: 8)
 
                 Image(systemName: "chart.pie.fill")
-                    .font(.system(size: 34))
+                    .font(.system(size: 28))
                     .foregroundColor(.appPrimary)
             }
-            .padding(.horizontal, 20)
-            .padding(.vertical, 16)
+            .padding(.horizontal, 16)
+            .padding(.vertical, 14)
             .frame(maxWidth: .infinity)
-            .frame(minHeight: 100)
             .glassSurface(
                 in: RoundedRectangle(cornerRadius: 18, style: .continuous),
                 tint: .appPrimary.opacity(0.15),
@@ -193,6 +225,28 @@ struct MenuSpentCard: View {
         }
         .buttonStyle(.plain)
         .animation(.default, value: balance)
+    }
+}
+
+struct MenuSectionHeader: View {
+    let title: String
+
+    var body: some View {
+        Text(title)
+            .font(.appMedium(14))
+            .foregroundColor(.appLabel)
+            .lineLimit(1)
+            .padding(.horizontal, 16)
+    }
+}
+
+struct MenuRowDivider: View {
+    var body: some View {
+        Rectangle()
+            .fill(.appLabel.opacity(0.25))
+            .frame(height: 0.5)
+            .padding(.leading, 52)
+            .padding(.trailing, 16)
     }
 }
 
@@ -214,14 +268,14 @@ struct MenuRowLabel: View {
     let systemImage: String
 
     var body: some View {
-        HStack(spacing: 16) {
+        HStack(spacing: 12) {
             Image(systemName: systemImage)
-                .font(.system(size: 22))
+                .font(.system(size: 17))
                 .foregroundColor(.appPrimary)
-                .frame(width: 32)
+                .frame(width: 24)
 
             Text(title)
-                .font(.appLight(18))
+                .font(.appLight(16))
                 .foregroundColor(.appWhite)
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
@@ -229,11 +283,11 @@ struct MenuRowLabel: View {
             Spacer(minLength: 8)
 
             Image(systemName: "chevron.right")
-                .font(.system(size: 14, weight: .semibold))
-                .foregroundColor(.appWhite.opacity(0.6))
+                .font(.system(size: 12, weight: .semibold))
+                .foregroundColor(.appLabel)
         }
-        .padding(.horizontal, 20)
-        .frame(height: 60)
+        .padding(.horizontal, 16)
+        .frame(height: 46)
         .contentShape(Rectangle())
     }
 }

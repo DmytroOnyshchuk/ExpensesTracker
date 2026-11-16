@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "மொழி";
 "MENU_ABOUT" = "அறிமுகம்";
 "MENU_TRASH" = "குப்பைத் தொட்டி";
+"MENU_SECTION_GENERAL" = "பொது";
+"MENU_SECTION_DATA" = "தரவு";
+"MENU_SECTION_APP" = "ஆப்ஸ்";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "குப்பைத் தொட்டி காலியாக உள்ளது";

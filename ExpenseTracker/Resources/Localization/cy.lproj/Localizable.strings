@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Iaith";
 "MENU_ABOUT" = "Ynghylch";
 "MENU_TRASH" = "Bin";
+"MENU_SECTION_GENERAL" = "Cyffredinol";
+"MENU_SECTION_DATA" = "Data";
+"MENU_SECTION_APP" = "Ap";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Mae'r bin yn wag";

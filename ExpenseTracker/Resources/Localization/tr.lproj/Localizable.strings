@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Dil";
 "MENU_ABOUT" = "Hakkında";
 "MENU_TRASH" = "Çöp Sepeti";
+"MENU_SECTION_GENERAL" = "Genel";
+"MENU_SECTION_DATA" = "Veriler";
+"MENU_SECTION_APP" = "Uygulama";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Çöp sepeti boş";

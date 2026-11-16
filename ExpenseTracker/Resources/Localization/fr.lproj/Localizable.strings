@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Langue";
 "MENU_ABOUT" = "À propos";
 "MENU_TRASH" = "Corbeille";
+"MENU_SECTION_GENERAL" = "Général";
+"MENU_SECTION_DATA" = "Données";
+"MENU_SECTION_APP" = "Application";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "La corbeille est vide";

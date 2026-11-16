@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Èdè";
 "MENU_ABOUT" = "Nípa";
 "MENU_TRASH" = "Àpótí ìdọ̀tí";
+"MENU_SECTION_GENERAL" = "Gbogbogbò";
+"MENU_SECTION_DATA" = "Dátà";
+"MENU_SECTION_APP" = "Áàpù";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Àpótí ìdọ̀tí ṣófo";

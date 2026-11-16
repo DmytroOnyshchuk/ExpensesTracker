@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Ulimi";
 "MENU_ABOUT" = "Mayelana";
 "MENU_TRASH" = "Udoti";
+"MENU_SECTION_GENERAL" = "Okujwayelekile";
+"MENU_SECTION_DATA" = "Idatha";
+"MENU_SECTION_APP" = "Uhlelo lokusebenza";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Udoti awunalutho";

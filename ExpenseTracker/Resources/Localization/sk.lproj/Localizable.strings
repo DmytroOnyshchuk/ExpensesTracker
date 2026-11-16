@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Jazyk";
 "MENU_ABOUT" = "O aplikácii";
 "MENU_TRASH" = "Kôš";
+"MENU_SECTION_GENERAL" = "Všeobecné";
+"MENU_SECTION_DATA" = "Dáta";
+"MENU_SECTION_APP" = "Aplikácia";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Kôš je prázdny";

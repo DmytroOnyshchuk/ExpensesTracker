@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Keel";
 "MENU_ABOUT" = "Teave";
 "MENU_TRASH" = "Prügikast";
+"MENU_SECTION_GENERAL" = "Üldine";
+"MENU_SECTION_DATA" = "Andmed";
+"MENU_SECTION_APP" = "Rakendus";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Prügikast on tühi";

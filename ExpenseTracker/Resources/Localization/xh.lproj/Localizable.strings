@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Ulwimi";
 "MENU_ABOUT" = "Malunga";
 "MENU_TRASH" = "Umgqomo wenkunkuma";
+"MENU_SECTION_GENERAL" = "Jikelele";
+"MENU_SECTION_DATA" = "Idatha";
+"MENU_SECTION_APP" = "I-app";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Umgqomo wenkunkuma awunanto";

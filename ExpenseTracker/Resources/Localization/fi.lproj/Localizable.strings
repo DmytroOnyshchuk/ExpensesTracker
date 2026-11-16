@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Kieli";
 "MENU_ABOUT" = "Tietoja";
 "MENU_TRASH" = "Roskakori";
+"MENU_SECTION_GENERAL" = "Yleiset";
+"MENU_SECTION_DATA" = "Tiedot";
+"MENU_SECTION_APP" = "Sovellus";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Roskakori on tyhjä";

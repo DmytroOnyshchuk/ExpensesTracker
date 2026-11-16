@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Sprache";
 "MENU_ABOUT" = "Über";
 "MENU_TRASH" = "Papierkorb";
+"MENU_SECTION_GENERAL" = "Allgemein";
+"MENU_SECTION_DATA" = "Daten";
+"MENU_SECTION_APP" = "App";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Der Papierkorb ist leer";

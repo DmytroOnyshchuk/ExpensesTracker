@@ -214,6 +214,12 @@ internal enum L10n {
   internal static let menuCategories = L10n.tr("Localizable", "MENU_CATEGORIES", fallback: "Categories")
   /// Language
   internal static let menuLanguage = L10n.tr("Localizable", "MENU_LANGUAGE", fallback: "Language")
+  /// App
+  internal static let menuSectionApp = L10n.tr("Localizable", "MENU_SECTION_APP", fallback: "App")
+  /// Data
+  internal static let menuSectionData = L10n.tr("Localizable", "MENU_SECTION_DATA", fallback: "Data")
+  /// General
+  internal static let menuSectionGeneral = L10n.tr("Localizable", "MENU_SECTION_GENERAL", fallback: "General")
   /// Settings
   internal static let menuSettings = L10n.tr("Localizable", "MENU_SETTINGS", fallback: "Settings")
   /// Spent in %@

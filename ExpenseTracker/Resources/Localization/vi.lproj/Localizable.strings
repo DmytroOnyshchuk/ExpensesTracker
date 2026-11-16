@@ -64,6 +64,9 @@
 "MENU_LANGUAGE" = "Ngôn ngữ";
 "MENU_ABOUT" = "Giới thiệu";
 "MENU_TRASH" = "Thùng rác";
+"MENU_SECTION_GENERAL" = "Chung";
+"MENU_SECTION_DATA" = "Dữ liệu";
+"MENU_SECTION_APP" = "Ứng dụng";
 
 // MARK: - Trash
 "TRASH_EMPTY" = "Thùng rác trống";
