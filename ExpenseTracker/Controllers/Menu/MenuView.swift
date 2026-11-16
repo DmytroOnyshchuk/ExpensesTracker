@@ -49,6 +49,8 @@ struct MenuView: View {
 
     private var transactions: [Transaction] { storedTransactions.notDeleted }
 
+    @AppStorage(UDKey.balance.rawValue, store: UserDefaults.shared) private var balanceData: Data?
+
     @State private var showStatistics = false
     @State private var showCategories = false
     @State private var showSettings = false
@@ -61,7 +63,7 @@ struct MenuView: View {
     var body: some View {
         ScrollView(.vertical) {
             VStack(spacing: 16) {
-                MenuSpentCard(title: spentTitle, amount: spentAmount, action: openStatistics)
+                MenuSpentCard(title: spentTitle, amount: spentAmount, balance: balance, action: openStatistics)
 
                 ForEach(MenuItem.sections, id: \.self) { section in
                     VStack(spacing: 0) {
@@ -112,6 +114,10 @@ struct MenuView: View {
             .reduce(0) { $0 + $1.amount }
     }
 
+    private var balance: Int? {
+        Balance(jsonData: balanceData)?.remaining(after: transactions)
+    }
+
     private func open(_ item: MenuItem) {
         switch item {
         case .categories: showCategories = true
@@ -131,6 +137,7 @@ struct MenuView: View {
 struct MenuSpentCard: View {
     let title: String
     let amount: Int
+    let balance: Int?
     let action: () -> Void
 
     var body: some View {
@@ -149,6 +156,21 @@ struct MenuSpentCard: View {
                         .lineLimit(1)
                         .minimumScaleFactor(0.6)
                         .contentTransition(.numericText())
+
+                    if let balance {
+                        HStack(spacing: 6) {
+                            Text(L10n.startviewBalance)
+                                .font(.appLight(15))
+                                .foregroundColor(.appLabel)
+
+                            Text(balance.getAmount())
+                                .font(.appRegular(15))
+                                .foregroundColor(balance < 0 ? .appRed : .appWhite.opacity(0.75))
+                                .contentTransition(.numericText())
+                        }
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.7)
+                    }
                 }
 
                 Spacer(minLength: 8)
@@ -158,8 +180,9 @@ struct MenuSpentCard: View {
                     .foregroundColor(.appPrimary)
             }
             .padding(.horizontal, 20)
+            .padding(.vertical, 16)
             .frame(maxWidth: .infinity)
-            .frame(height: 100)
+            .frame(minHeight: 100)
             .glassSurface(
                 in: RoundedRectangle(cornerRadius: 18, style: .continuous),
                 tint: .appPrimary.opacity(0.15),
@@ -169,6 +192,7 @@ struct MenuSpentCard: View {
             .contentShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
         }
         .buttonStyle(.plain)
+        .animation(.default, value: balance)
     }
 }
 
