@@ -158,7 +158,7 @@ struct HistoryView: View {
             .sorted { $0.key > $1.key }
             .map { date, transactions in
                 TransactionsDay(
-                    title: date.dayString(.dateTime.weekday(.wide).day().month(.wide)),
+                    title: date.dayString(.dateTime.day().month(.wide)),
                     transactions: transactions.sorted { $0.date > $1.date }
                 )
             }
