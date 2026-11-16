@@ -10,45 +10,16 @@ import Charts
 import SwiftData
 import SwiftUI
 
-struct StatisticsPages {
-    let period: StatisticsPeriod
-    let first: Date
-    let last: Date
-
-    init(period: StatisticsPeriod, transactions: [Transaction], now: Date = Date()) {
-        let current = period.interval(containing: now).start
-        let dates = transactions.map(\.date)
-        let earliest = dates.min().map { period.interval(containing: $0).start } ?? current
-        let latest = dates.max().map { period.interval(containing: $0).start } ?? current
-
-        self.period = period
-        self.first = min(earliest, current)
-        self.last = max(latest, current)
-    }
-
-    var count: Int {
-        index(of: last) + 1
-    }
-
-    func start(at index: Int) -> Date {
-        period.shifted(first, by: index)
-    }
-
-    func index(of start: Date) -> Int {
-        Calendar.current.dateComponents([period.component], from: first, to: start).value(for: period.component) ?? .zero
-    }
-
-    func clamped(_ date: Date) -> Date {
-        min(max(period.interval(containing: date).start, first), last)
-    }
-}
-
 struct StatisticsView: View {
     var resetToken: Int = .zero
     var directory: TransactionCategory?
 
     @Query private var storedTransactions: [Transaction]
     @Query private var storedCategories: [TransactionCategory]
+
+    @State private var period: StatisticsPeriod
+
+    private let initialDate: Date
 
     private var transactions: [Transaction] {
         let transactions = storedTransactions.notDeleted
@@ -63,11 +34,6 @@ struct StatisticsView: View {
         directory == nil ? storedCategories.notDeleted : []
     }
 
-    @State private var period: StatisticsPeriod
-    @State private var anchorDate: Date
-    @State private var showPeriodList = false
-    @State private var showDayPicker = false
-
     init(
         resetToken: Int = .zero,
         directory: TransactionCategory? = nil,
@@ -76,39 +42,18 @@ struct StatisticsView: View {
     ) {
         self.resetToken = resetToken
         self.directory = directory
+        self.initialDate = date
         _period = State(initialValue: period)
-        _anchorDate = State(initialValue: date)
     }
 
     var body: some View {
-        let transactions = transactions
-        let pages = StatisticsPages(period: period, transactions: transactions)
-        let start = pages.clamped(anchorDate)
-
-        VStack(spacing: 12) {
-            periodPicker
-            periodTitle(start: start, transactions: transactions)
-            pager(transactions: transactions, pages: pages, start: start)
-        }
-        .padding(.top, 16)
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-        .appBackground()
-        .overlay {
-            if showDayPicker {
-                StatisticsDayPicker(selected: start) { date in
-                    withAnimation(.easeInOut(duration: 0.2)) {
-                        showDayPicker = false
-                    }
-                    if let date {
-                        select(pages.clamped(date), from: start)
-                    }
-                }
-                .transition(.opacity)
-            }
-        }
-        .onChange(of: resetToken) {
-            resetToCurrentMonth()
-        }
+        StatisticsContent(
+            resetToken: resetToken,
+            buckets: StatisticsBuckets(period: period, transactions: transactions),
+            categories: categories,
+            period: $period,
+            date: initialDate
+        )
         .navigationTitle(directory?.name.localized ?? L10n.statisticsTitle)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
@@ -124,6 +69,65 @@ struct StatisticsView: View {
                     .accessibilityLabel(L10n.statisticsChart)
                 }
             }
+        }
+    }
+}
+
+struct StatisticsContent: View {
+    let resetToken: Int
+    let buckets: StatisticsBuckets
+    let categories: [TransactionCategory]
+
+    @Binding var period: StatisticsPeriod
+
+    @State private var anchorDate: Date
+    @State private var showPeriodList = false
+    @State private var showDayPicker = false
+
+    init(
+        resetToken: Int,
+        buckets: StatisticsBuckets,
+        categories: [TransactionCategory],
+        period: Binding<StatisticsPeriod>,
+        date: Date
+    ) {
+        self.resetToken = resetToken
+        self.buckets = buckets
+        self.categories = categories
+        _period = period
+        _anchorDate = State(initialValue: date)
+    }
+
+    var body: some View {
+        let start = buckets.clamped(anchorDate)
+
+        VStack(spacing: 12) {
+            periodPicker
+            periodTitle(start: start)
+
+            PeriodPager(count: buckets.count, selection: pageSelection(start: start)) { index in
+                page(start: buckets.start(at: index))
+            }
+            .id(buckets.period)
+        }
+        .padding(.top, 16)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        .appBackground()
+        .overlay {
+            if showDayPicker {
+                StatisticsDayPicker(selected: start) { date in
+                    withAnimation(.easeInOut(duration: 0.2)) {
+                        showDayPicker = false
+                    }
+                    if let date {
+                        anchorDate = buckets.clamped(date)
+                    }
+                }
+                .transition(.opacity)
+            }
+        }
+        .onChange(of: resetToken) {
+            resetToCurrentMonth()
         }
     }
 
@@ -163,37 +167,14 @@ struct StatisticsView: View {
             .padding(.horizontal, 64)
     }
 
-    private func pager(transactions: [Transaction], pages: StatisticsPages, start: Date) -> some View {
-        let selectedIndex = pages.index(of: start)
-
-        return ScrollView(.horizontal) {
-            LazyHStack(spacing: 0) {
-                ForEach(0 ..< pages.count, id: \.self) { index in
-                    Group {
-                        if abs(index - selectedIndex) <= 1 {
-                            page(transactions: transactions, start: pages.start(at: index))
-                        } else {
-                            Color.clear
-                        }
-                    }
-                    .containerRelativeFrame(.horizontal)
-                }
-            }
-            .scrollTargetLayout()
-        }
-        .scrollTargetBehavior(.paging)
-        .scrollIndicators(.hidden)
-        .scrollPosition(id: pageSelection(pages: pages, start: start))
-        .id(period)
-    }
-
-    private func page(transactions: [Transaction], start: Date) -> some View {
+    private func page(start: Date) -> some View {
+        let period = buckets.period
         let interval = period.interval(containing: start)
-        let slices = StatisticsSlice.slices(from: transactions, in: interval, categories: categories)
+        let transactions = buckets.transactions(at: start)
 
         return ScrollView(.vertical) {
             StatisticsBreakdown(
-                slices: slices,
+                slices: StatisticsSlice.slices(from: transactions, in: interval, categories: categories),
                 interval: interval,
                 period: period,
                 points: period.chartPoints(of: transactions, in: interval),
@@ -203,21 +184,18 @@ struct StatisticsView: View {
         }
     }
 
-    private func pageSelection(pages: StatisticsPages, start: Date) -> Binding<Int?> {
+    private func pageSelection(start: Date) -> Binding<Int> {
         Binding(
-            get: { pages.index(of: start) },
+            get: { buckets.index(of: start) },
             set: { index in
-                guard let index else { return }
-                let target = pages.start(at: index)
-                guard target != start else { return }
                 FeedbackManager.shared.selectionChanged()
-                anchorDate = target
+                anchorDate = buckets.start(at: index)
             }
         )
     }
 
-    private func periodTitle(start: Date, transactions: [Transaction]) -> some View {
-        Text(period.title(for: start))
+    private func periodTitle(start: Date) -> some View {
+        Text(buckets.period.title(for: start))
             .font(.appRegular(22))
             .foregroundColor(.appPrimary)
             .lineLimit(1)
@@ -229,18 +207,18 @@ struct StatisticsView: View {
             .frame(height: 44)
             .contentShape(Rectangle())
             .onTapGesture {
-                if period == .day {
+                if buckets.period == .day {
                     withAnimation(.easeInOut(duration: 0.2)) {
                         showDayPicker = true
                     }
                 } else {
-                    showPeriodList = !transactions.isEmpty
+                    showPeriodList = !buckets.groups.isEmpty
                 }
             }
             .popover(isPresented: $showPeriodList, attachmentAnchor: .rect(.bounds), arrowEdge: .top) {
-                StatisticsPeriodList(period: period, starts: period.starts(of: transactions), selected: start) { date in
+                StatisticsPeriodList(period: buckets.period, starts: buckets.starts, selected: start) { date in
                     showPeriodList = false
-                    select(date, from: start)
+                    anchorDate = date
                 }
                 .presentationCompactAdaptation(.popover)
                 .legacyPresentationBackground(.appSecond)
@@ -252,16 +230,8 @@ struct StatisticsView: View {
         showDayPicker = false
         withAnimation(.easeInOut(duration: 0.25)) {
             period = .month
-            anchorDate = Date()
         }
-    }
-
-    private func select(_ date: Date, from start: Date) {
-        guard date != start else { return }
-
-        withAnimation(.easeInOut(duration: 0.25)) {
-            anchorDate = date
-        }
+        anchorDate = Date()
     }
 }
 

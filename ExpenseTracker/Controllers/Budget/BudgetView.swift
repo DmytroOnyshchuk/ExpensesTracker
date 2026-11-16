@@ -38,41 +38,19 @@ struct BudgetView: View {
     @AppStorage(UDKey.budget.rawValue, store: UserDefaults.shared) private var budgetData: Data?
 
     @State private var target: BudgetTarget?
-    @State private var showUnlimited: Bool = false
-    @State private var selectedMonth: Date? = StatisticsPeriod.month.interval(containing: Date()).start
-
-    private let period = StatisticsPeriod.month
 
     var body: some View {
-        let transactions = storedTransactions.notDeleted
-        let categories = storedCategories.notDeleted
+        let categories = storedCategories.notDeleted.filter { !$0.isDirectory }.inDisplayOrder
 
         NavigationStack {
-            ScrollView(.horizontal) {
-                LazyHStack(spacing: 0) {
-                    ForEach(months(for: transactions), id: \.self) { month in
-                        BudgetMonthPage(
-                            month: month,
-                            transactions: transactions,
-                            categories: categories,
-                            monthlyLimit: monthlyLimit,
-                            showUnlimited: $showUnlimited,
-                            onOpen: open
-                        )
-                        .containerRelativeFrame(.horizontal)
-                    }
-                }
-                .scrollTargetLayout()
-            }
-            .scrollTargetBehavior(.paging)
-            .scrollIndicators(.hidden)
-            .scrollPosition(id: $selectedMonth)
-            .defaultScrollAnchor(.trailing)
-            .onChange(of: resetToken) {
-                withAnimation {
-                    selectedMonth = period.interval(containing: Date()).start
-                }
-            }
+            BudgetPager(
+                resetToken: resetToken,
+                buckets: StatisticsBuckets(period: .month, transactions: storedTransactions.notDeleted),
+                limited: categories.filter { $0.budget > .zero },
+                unlimited: categories.filter { $0.budget <= .zero },
+                monthlyLimit: monthlyLimit,
+                onOpen: open
+            )
             .appBackground()
             .navigationTitle(L10n.menuBudget)
             .navigationBarTitleDisplayMode(.inline)
@@ -98,19 +76,6 @@ struct BudgetView: View {
 
     private var monthlyLimit: Int {
         Budget(jsonData: budgetData)?.monthly ?? .zero
-    }
-
-    private func months(for transactions: [Transaction]) -> [Date] {
-        let current = period.interval(containing: Date()).start
-        let first = transactions.map(\.date).min().map { period.interval(containing: $0).start } ?? current
-
-        var result: [Date] = []
-        var month = min(first, current)
-        while month <= current {
-            result.append(month)
-            month = period.shifted(month, by: 1)
-        }
-        return result
     }
 
     private func limit(for target: BudgetTarget) -> Int {
@@ -149,28 +114,61 @@ struct BudgetView: View {
     }
 }
 
+struct BudgetPager: View {
+    let resetToken: Int
+    let buckets: StatisticsBuckets
+    let limited: [TransactionCategory]
+    let unlimited: [TransactionCategory]
+    let monthlyLimit: Int
+    let onOpen: (BudgetTarget) -> Void
+
+    @State private var selectedMonth = Date()
+    @State private var showUnlimited = false
+
+    var body: some View {
+        PeriodPager(count: buckets.count, selection: selection) { index in
+            let month = buckets.start(at: index)
+
+            BudgetMonthPage(
+                month: month,
+                transactions: buckets.transactions(at: month),
+                limited: limited,
+                unlimited: unlimited,
+                monthlyLimit: monthlyLimit,
+                showUnlimited: $showUnlimited,
+                onOpen: onOpen
+            )
+        }
+        .onChange(of: resetToken) {
+            selectedMonth = Date()
+        }
+    }
+
+    private var selection: Binding<Int> {
+        Binding(
+            get: { buckets.index(of: buckets.clamped(selectedMonth)) },
+            set: { selectedMonth = buckets.start(at: $0) }
+        )
+    }
+}
+
 struct BudgetMonthPage: View {
     let month: Date
     let transactions: [Transaction]
-    let categories: [TransactionCategory]
+    let limited: [TransactionCategory]
+    let unlimited: [TransactionCategory]
     let monthlyLimit: Int
     @Binding var showUnlimited: Bool
     let onOpen: (BudgetTarget) -> Void
 
-    private let period = StatisticsPeriod.month
-
     var body: some View {
-        let monthTransactions = monthTransactions
-        let spent = spentByCategory(in: monthTransactions)
-        let items = categories.filter { !$0.isDirectory }.inDisplayOrder
-        let limited = items.filter { $0.budget > .zero }
-        let unlimited = items.filter { $0.budget <= .zero }
+        let spent = spentByCategory
 
         ScrollView(.vertical) {
             VStack(alignment: .leading, spacing: 16) {
                 MonthBudgetCard(
-                    title: period.title(for: month),
-                    spent: monthTransactions.reduce(0) { $0 + $1.amount },
+                    title: StatisticsPeriod.month.title(for: month),
+                    spent: transactions.reduce(0) { $0 + $1.amount },
                     limit: monthlyLimit
                 ) {
                     onOpen(.month)
@@ -208,6 +206,12 @@ struct BudgetMonthPage: View {
         }
     }
 
+    private var spentByCategory: [UUID: Int] {
+        transactions.reduce(into: [:]) { result, transaction in
+            result[transaction.category.uuid, default: .zero] += transaction.amount
+        }
+    }
+
     private var unlimitedToggle: some View {
         Button {
             withAnimation(.easeInOut(duration: 0.25)) {
@@ -228,17 +232,6 @@ struct BudgetMonthPage: View {
         }
         .frame(maxWidth: .infinity)
         .accessibilityLabel(L10n.budgetNoLimit)
-    }
-
-    private var monthTransactions: [Transaction] {
-        let interval = period.interval(containing: month)
-        return transactions.filter { $0.date >= interval.start && $0.date < interval.end }
-    }
-
-    private func spentByCategory(in monthTransactions: [Transaction]) -> [UUID: Int] {
-        monthTransactions.reduce(into: [:]) { result, transaction in
-            result[transaction.category.uuid, default: .zero] += transaction.amount
-        }
     }
 }
 
