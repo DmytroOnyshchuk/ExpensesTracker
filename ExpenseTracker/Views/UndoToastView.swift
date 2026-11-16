@@ -74,13 +74,14 @@ struct UndoToastView: View {
 
 private struct UndoToastModifier: ViewModifier {
     let duration: Duration
+    let isEnabled: Bool
 
     @State private var center = UndoToastCenter.shared
 
     func body(content: Content) -> some View {
         content
             .overlay(alignment: .bottom) {
-                if let item = center.item {
+                if isEnabled, let item = center.item {
                     UndoToastView(message: item.message) {
                         FeedbackManager.shared.buttonTapped()
                         center.undo()
@@ -99,8 +100,8 @@ private struct UndoToastModifier: ViewModifier {
 }
 
 extension View {
-    func undoToast(duration: Duration = .seconds(4)) -> some View {
-        modifier(UndoToastModifier(duration: duration))
+    func undoToast(duration: Duration = .seconds(4), isEnabled: Bool = true) -> some View {
+        modifier(UndoToastModifier(duration: duration, isEnabled: isEnabled))
     }
 }
 
@@ -111,6 +112,15 @@ extension ModelContext {
 
         UndoToastCenter.shared.show(L10n.transactionsListMovedToTrash) {
             self.restore(transaction)
+        }
+    }
+
+    @MainActor
+    func deleteWithUndo(_ category: TransactionCategory) {
+        moveToTrash(category)
+
+        UndoToastCenter.shared.show(L10n.transactionsListMovedToTrash) {
+            self.restore(category)
         }
     }
 

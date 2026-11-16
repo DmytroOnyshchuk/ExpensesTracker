@@ -137,6 +137,7 @@ struct EditCategoryView: View {
         .sheet(isPresented: $showColorPicker) {
             CategoryColorPickerView(icon: $draft.icon)
         }
+        .undoToast(isEnabled: isDirectory)
     }
 
     // MARK: - Main Content
@@ -416,7 +417,7 @@ struct EditCategoryView: View {
     private func deleteCategory() {
         guard let category else { return }
 
-        modelContext.moveToTrash(category)
+        modelContext.deleteWithUndo(category)
         dismiss()
     }
 }
