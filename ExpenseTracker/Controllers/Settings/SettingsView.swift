@@ -6,7 +6,7 @@ struct SettingsView: View {
     @Inject private var themeManager: ThemeManager
     @Inject private var feedbackManager: FeedbackManager
 
-    private let columns = Array(repeating: GridItem(.flexible(), spacing: 12), count: 3)
+    private let columns = Array(repeating: GridItem(.flexible(), spacing: 8), count: 4)
 
     var body: some View {
         ScrollView(.vertical) {
@@ -14,14 +14,15 @@ struct SettingsView: View {
                 VStack(alignment: .leading, spacing: 8) {
                     MenuSectionHeader(title: L10n.settingsAppearance)
 
-                    LazyVGrid(columns: columns, spacing: 16) {
+                    LazyVGrid(columns: columns, spacing: 12) {
                         ForEach(ThemePreset.allCases) { preset in
                             ThemePresetCell(preset: preset, isSelected: preset == themeManager.preset) {
                                 select(preset)
                             }
                         }
                     }
-                    .padding(16)
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 14)
                     .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
                 }
 
@@ -80,7 +81,7 @@ struct SettingsView: View {
             }
         }
         .padding(.horizontal, 16)
-        .padding(.vertical, 8)
+        .padding(.vertical, 12)
         .frame(minHeight: 46)
         .contentShape(Rectangle())
         .onTapGesture {
@@ -106,22 +107,23 @@ struct ThemePresetCell: View {
         let theme = preset.theme(for: ThemeManager.shared.systemColorScheme)
 
         Button(action: action) {
-            VStack(spacing: 10) {
+            VStack(spacing: 6) {
                 preview(theme)
                     .frame(maxWidth: .infinity)
-                    .frame(height: 64)
-                    .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+                    .frame(height: 40)
+                    .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
                     .overlay {
-                        RoundedRectangle(cornerRadius: 14, style: .continuous)
-                            .stroke(isSelected ? theme.appPrimary : theme.appLabel.opacity(0.4), lineWidth: isSelected ? 3 : 1)
+                        RoundedRectangle(cornerRadius: 12, style: .continuous)
+                            .stroke(isSelected ? theme.appPrimary : theme.appLabel.opacity(0.4), lineWidth: isSelected ? 2 : 1)
                     }
 
                 Text(preset.title)
-                    .font(.appLight(15))
+                    .font(.appLight(12))
                     .foregroundColor(isSelected ? .appWhite : .appLabel)
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)
             }
+            .frame(maxWidth: .infinity)
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
@@ -135,14 +137,14 @@ struct ThemePresetCell: View {
                 Theme.dark.appMain
                     .clipShape(DiagonalHalf())
                 DiagonalLine()
-                    .stroke(Theme.dark.appGray, lineWidth: 1.5)
+                    .stroke(Theme.dark.appGray, lineWidth: 1)
             }
         } else {
-            HStack(spacing: 6) {
+            HStack(spacing: 4) {
                 ForEach(Array([theme.appPrimary, theme.appWhite, theme.appLabel].enumerated()), id: \.offset) { _, color in
-                    RoundedRectangle(cornerRadius: 6, style: .continuous)
+                    RoundedRectangle(cornerRadius: 3, style: .continuous)
                         .fill(color)
-                        .frame(width: 16, height: 16)
+                        .frame(width: 8, height: 8)
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
