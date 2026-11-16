@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Formát exportu";
 "BACKUPS_IMPORT_SKIPPED" = "Přeskočené příjmy: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transakce: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Každodenní městské výdaje";
+"ICON_PICKER_SECTION_TRAVEL" = "Doprava a cestování";
+"ICON_PICKER_SECTION_MONEY" = "Nákupy, peníze a práce";
+"ICON_PICKER_SECTION_HOME" = "Domov, jídlo a osobní péče";
+"ICON_PICKER_SECTION_HEALTH" = "Zdraví, rodina a aktivity";
+"ICON_PICKER_SECTION_TECH" = "Technika, vzdělání a nářadí";
+"ICON_PICKER_SECTION_NATURE" = "Příroda, počasí a obecné symboly";

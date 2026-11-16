@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Định dạng xuất";
 "BACKUPS_IMPORT_SKIPPED" = "Thu nhập đã bỏ qua: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Giao dịch: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Chi tiêu hằng ngày ở thành phố";
+"ICON_PICKER_SECTION_TRAVEL" = "Giao thông và du lịch";
+"ICON_PICKER_SECTION_MONEY" = "Mua sắm, tiền bạc và công việc";
+"ICON_PICKER_SECTION_HOME" = "Nhà cửa, ăn uống và chăm sóc cá nhân";
+"ICON_PICKER_SECTION_HEALTH" = "Sức khỏe, gia đình và hoạt động";
+"ICON_PICKER_SECTION_TECH" = "Công nghệ, giáo dục và dụng cụ";
+"ICON_PICKER_SECTION_NATURE" = "Thiên nhiên, thời tiết và biểu tượng chung";

@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "جۆری هەناردەکردن";
 "BACKUPS_IMPORT_SKIPPED" = "داهاتی پەڕێنراو: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "مامەڵەکان: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "خەرجییە ڕۆژانەکانی شار";
+"ICON_PICKER_SECTION_TRAVEL" = "گواستنەوە و گەشت";
+"ICON_PICKER_SECTION_MONEY" = "بازاڕکردن، پارە و کار";
+"ICON_PICKER_SECTION_HOME" = "ماڵ، خواردن و چاودێریی کەسی";
+"ICON_PICKER_SECTION_HEALTH" = "تەندروستی، خێزان و چالاکییەکان";
+"ICON_PICKER_SECTION_TECH" = "تەکنەلۆژیا، پەروەردە و ئامرازەکان";
+"ICON_PICKER_SECTION_NATURE" = "سروشت، کەشوهەوا و هێما گشتییەکان";

@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Eksporta formāts";
 "BACKUPS_IMPORT_SKIPPED" = "Izlaisti ienākumi: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Darījumi: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Ikdienas pilsētas izdevumi";
+"ICON_PICKER_SECTION_TRAVEL" = "Transports un ceļošana";
+"ICON_PICKER_SECTION_MONEY" = "Iepirkšanās, nauda un darbs";
+"ICON_PICKER_SECTION_HOME" = "Māja, ēdiens un personīgā kopšana";
+"ICON_PICKER_SECTION_HEALTH" = "Veselība, ģimene un aktivitātes";
+"ICON_PICKER_SECTION_TECH" = "Tehnoloģijas, izglītība un instrumenti";
+"ICON_PICKER_SECTION_NATURE" = "Daba, laikapstākļi un vispārīgi simboli";

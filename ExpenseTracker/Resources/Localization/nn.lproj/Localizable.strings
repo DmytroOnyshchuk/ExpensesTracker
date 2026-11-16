@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Eksportformat";
 "BACKUPS_IMPORT_SKIPPED" = "Inntekter hoppa over: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transaksjonar: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Daglege utgifter i byen";
+"ICON_PICKER_SECTION_TRAVEL" = "Transport og reise";
+"ICON_PICKER_SECTION_MONEY" = "Shopping, pengar og arbeid";
+"ICON_PICKER_SECTION_HOME" = "Heim, mat og personleg pleie";
+"ICON_PICKER_SECTION_HEALTH" = "Helse, familie og aktivitetar";
+"ICON_PICKER_SECTION_TECH" = "Teknologi, utdanning og verktøy";
+"ICON_PICKER_SECTION_NATURE" = "Natur, vêr og generelle symbol";

@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Oblika izvoza";
 "BACKUPS_IMPORT_SKIPPED" = "Preskočeni prihodki: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transakcije: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Vsakodnevni mestni stroški";
+"ICON_PICKER_SECTION_TRAVEL" = "Prevoz in potovanja";
+"ICON_PICKER_SECTION_MONEY" = "Nakupi, denar in delo";
+"ICON_PICKER_SECTION_HOME" = "Dom, hrana in osebna nega";
+"ICON_PICKER_SECTION_HEALTH" = "Zdravje, družina in dejavnosti";
+"ICON_PICKER_SECTION_TECH" = "Tehnologija, izobraževanje in orodja";
+"ICON_PICKER_SECTION_NATURE" = "Narava, vreme in splošni simboli";

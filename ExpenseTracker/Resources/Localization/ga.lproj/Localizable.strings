@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Formáid easpórtála";
 "BACKUPS_IMPORT_SKIPPED" = "Ioncam a fágadh ar lár: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Idirbhearta: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Costais laethúla cathrach";
+"ICON_PICKER_SECTION_TRAVEL" = "Iompar agus taisteal";
+"ICON_PICKER_SECTION_MONEY" = "Siopadóireacht, airgead agus obair";
+"ICON_PICKER_SECTION_HOME" = "Baile, bia agus cúram pearsanta";
+"ICON_PICKER_SECTION_HEALTH" = "Sláinte, teaghlach agus gníomhaíochtaí";
+"ICON_PICKER_SECTION_TECH" = "Teicneolaíocht, oideachas agus uirlisí";
+"ICON_PICKER_SECTION_NATURE" = "Nádúr, aimsir agus siombailí ginearálta";

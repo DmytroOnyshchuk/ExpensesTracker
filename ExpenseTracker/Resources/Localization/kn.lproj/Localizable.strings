@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "ರಫ್ತು ಫಾರ್ಮ್ಯಾಟ್";
 "BACKUPS_IMPORT_SKIPPED" = "ಬಿಟ್ಟುಬಿಟ್ಟ ಆದಾಯ: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "ವಹಿವಾಟುಗಳು: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "ದೈನಂದಿನ ನಗರ ವೆಚ್ಚಗಳು";
+"ICON_PICKER_SECTION_TRAVEL" = "ಸಾರಿಗೆ ಮತ್ತು ಪ್ರಯಾಣ";
+"ICON_PICKER_SECTION_MONEY" = "ಶಾಪಿಂಗ್, ಹಣ ಮತ್ತು ಕೆಲಸ";
+"ICON_PICKER_SECTION_HOME" = "ಮನೆ, ಆಹಾರ ಮತ್ತು ವೈಯಕ್ತಿಕ ಆರೈಕೆ";
+"ICON_PICKER_SECTION_HEALTH" = "ಆರೋಗ್ಯ, ಕುಟುಂಬ ಮತ್ತು ಚಟುವಟಿಕೆಗಳು";
+"ICON_PICKER_SECTION_TECH" = "ತಂತ್ರಜ್ಞಾನ, ಶಿಕ್ಷಣ ಮತ್ತು ಉಪಕರಣಗಳು";
+"ICON_PICKER_SECTION_NATURE" = "ಪ್ರಕೃತಿ, ಹವಾಮಾನ ಮತ್ತು ಸಾಮಾನ್ಯ ಚಿಹ್ನೆಗಳು";

@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "නිර්යාත ආකෘතිය";
 "BACKUPS_IMPORT_SKIPPED" = "මඟහැරි ආදායම්: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "ගනුදෙනු: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "දෛනික නාගරික වියදම්";
+"ICON_PICKER_SECTION_TRAVEL" = "ප්‍රවාහනය සහ සංචාර";
+"ICON_PICKER_SECTION_MONEY" = "සාප්පු සවාරි, මුදල් සහ වැඩ";
+"ICON_PICKER_SECTION_HOME" = "නිවස, ආහාර සහ පෞද්ගලික රැකවරණය";
+"ICON_PICKER_SECTION_HEALTH" = "සෞඛ්‍යය, පවුල සහ ක්‍රියාකාරකම්";
+"ICON_PICKER_SECTION_TECH" = "තාක්ෂණය, අධ්‍යාපනය සහ මෙවලම්";
+"ICON_PICKER_SECTION_NATURE" = "ස්වභාවධර්මය, කාලගුණය සහ පොදු සංකේත";

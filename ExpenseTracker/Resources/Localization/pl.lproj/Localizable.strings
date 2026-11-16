@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Format eksportu";
 "BACKUPS_IMPORT_SKIPPED" = "Pominięte przychody: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transakcje: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Codzienne wydatki miejskie";
+"ICON_PICKER_SECTION_TRAVEL" = "Transport i podróże";
+"ICON_PICKER_SECTION_MONEY" = "Zakupy, pieniądze i praca";
+"ICON_PICKER_SECTION_HOME" = "Dom, jedzenie i higiena osobista";
+"ICON_PICKER_SECTION_HEALTH" = "Zdrowie, rodzina i aktywności";
+"ICON_PICKER_SECTION_TECH" = "Technologia, edukacja i narzędzia";
+"ICON_PICKER_SECTION_NATURE" = "Przyroda, pogoda i symbole ogólne";

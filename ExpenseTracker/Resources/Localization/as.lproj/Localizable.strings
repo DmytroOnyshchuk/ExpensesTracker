@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "ৰপ্তানি ফৰ্মেট";
 "BACKUPS_IMPORT_SKIPPED" = "বাদ দিয়া আয়: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "লেনদেন: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "দৈনন্দিন নগৰীয়া খৰচ";
+"ICON_PICKER_SECTION_TRAVEL" = "পৰিবহণ আৰু ভ্ৰমণ";
+"ICON_PICKER_SECTION_MONEY" = "কিনা-কটা, ধন আৰু কাম";
+"ICON_PICKER_SECTION_HOME" = "ঘৰ, খাদ্য আৰু ব্যক্তিগত যত্ন";
+"ICON_PICKER_SECTION_HEALTH" = "স্বাস্থ্য, পৰিয়াল আৰু কাৰ্যকলাপ";
+"ICON_PICKER_SECTION_TECH" = "প্ৰযুক্তি, শিক্ষা আৰু সঁজুলি";
+"ICON_PICKER_SECTION_NATURE" = "প্ৰকৃতি, বতৰ আৰু সাধাৰণ চিহ্ন";

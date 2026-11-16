@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "এক্সপোর্ট ফরম্যাট";
 "BACKUPS_IMPORT_SKIPPED" = "বাদ দেওয়া আয়: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "লেনদেন: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "দৈনন্দিন শহুরে খরচ";
+"ICON_PICKER_SECTION_TRAVEL" = "পরিবহন ও ভ্রমণ";
+"ICON_PICKER_SECTION_MONEY" = "কেনাকাটা, টাকা ও কাজ";
+"ICON_PICKER_SECTION_HOME" = "বাড়ি, খাবার ও ব্যক্তিগত যত্ন";
+"ICON_PICKER_SECTION_HEALTH" = "স্বাস্থ্য, পরিবার ও কার্যকলাপ";
+"ICON_PICKER_SECTION_TECH" = "প্রযুক্তি, শিক্ষা ও সরঞ্জাম";
+"ICON_PICKER_SECTION_NATURE" = "প্রকৃতি, আবহাওয়া ও সাধারণ প্রতীক";

@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "ରପ୍ତାନି ଫର୍ମାଟ୍";
 "BACKUPS_IMPORT_SKIPPED" = "ଛାଡ଼ିଦିଆଯାଇଥିବା ଆୟ: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "କାରବାର: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "ଦୈନନ୍ଦିନ ସହରୀ ଖର୍ଚ୍ଚ";
+"ICON_PICKER_SECTION_TRAVEL" = "ପରିବହନ ଓ ଯାତ୍ରା";
+"ICON_PICKER_SECTION_MONEY" = "କିଣାକିଣି, ଟଙ୍କା ଓ କାମ";
+"ICON_PICKER_SECTION_HOME" = "ଘର, ଖାଦ୍ୟ ଓ ବ୍ୟକ୍ତିଗତ ଯତ୍ନ";
+"ICON_PICKER_SECTION_HEALTH" = "ସ୍ୱାସ୍ଥ୍ୟ, ପରିବାର ଓ କାର୍ଯ୍ୟକଳାପ";
+"ICON_PICKER_SECTION_TECH" = "ପ୍ରଯୁକ୍ତି, ଶିକ୍ଷା ଓ ଉପକରଣ";
+"ICON_PICKER_SECTION_NATURE" = "ପ୍ରକୃତି, ପାଣିପାଗ ଓ ସାଧାରଣ ପ୍ରତୀକ";

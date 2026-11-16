@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "輸出格式";
 "BACKUPS_IMPORT_SKIPPED" = "已略過收入：%d";
 "BACKUPS_TRANSACTIONS_COUNT" = "交易：%d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "日常城市開銷";
+"ICON_PICKER_SECTION_TRAVEL" = "交通與旅行";
+"ICON_PICKER_SECTION_MONEY" = "購物、金錢與工作";
+"ICON_PICKER_SECTION_HOME" = "居家、飲食與個人護理";
+"ICON_PICKER_SECTION_HEALTH" = "健康、家庭與活動";
+"ICON_PICKER_SECTION_TECH" = "科技、教育與工具";
+"ICON_PICKER_SECTION_NATURE" = "自然、天氣與通用符號";

@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Vientimuoto";
 "BACKUPS_IMPORT_SKIPPED" = "Ohitetut tulot: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Tapahtumat: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Arjen kaupunkimenot";
+"ICON_PICKER_SECTION_TRAVEL" = "Liikenne ja matkailu";
+"ICON_PICKER_SECTION_MONEY" = "Ostokset, raha ja työ";
+"ICON_PICKER_SECTION_HOME" = "Koti, ruoka ja henkilökohtainen hoito";
+"ICON_PICKER_SECTION_HEALTH" = "Terveys, perhe ja aktiviteetit";
+"ICON_PICKER_SECTION_TECH" = "Tekniikka, koulutus ja työkalut";
+"ICON_PICKER_SECTION_NATURE" = "Luonto, sää ja yleiset symbolit";

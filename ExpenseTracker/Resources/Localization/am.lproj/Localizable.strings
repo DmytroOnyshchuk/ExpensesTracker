@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "የመላኪያ ቅርጸት";
 "BACKUPS_IMPORT_SKIPPED" = "የተዘለሉ ገቢዎች፦ %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "ግብይቶች፦ %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "የዕለት ተዕለት የከተማ ወጪዎች";
+"ICON_PICKER_SECTION_TRAVEL" = "መጓጓዣ እና ጉዞ";
+"ICON_PICKER_SECTION_MONEY" = "ግብይት፣ ገንዘብ እና ሥራ";
+"ICON_PICKER_SECTION_HOME" = "ቤት፣ ምግብ እና የግል እንክብካቤ";
+"ICON_PICKER_SECTION_HEALTH" = "ጤና፣ ቤተሰብ እና እንቅስቃሴዎች";
+"ICON_PICKER_SECTION_TECH" = "ቴክኖሎጂ፣ ትምህርት እና መሣሪያዎች";
+"ICON_PICKER_SECTION_NATURE" = "ተፈጥሮ፣ የአየር ሁኔታ እና አጠቃላይ ምልክቶች";

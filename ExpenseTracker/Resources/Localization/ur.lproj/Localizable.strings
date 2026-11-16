@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "ایکسپورٹ فارمیٹ";
 "BACKUPS_IMPORT_SKIPPED" = "چھوڑی گئی آمدنی: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "لین دین: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "شہر کے روزمرہ اخراجات";
+"ICON_PICKER_SECTION_TRAVEL" = "ٹرانسپورٹ اور سفر";
+"ICON_PICKER_SECTION_MONEY" = "خریداری، پیسہ اور کام";
+"ICON_PICKER_SECTION_HOME" = "گھر، کھانا اور ذاتی نگہداشت";
+"ICON_PICKER_SECTION_HEALTH" = "صحت، خاندان اور سرگرمیاں";
+"ICON_PICKER_SECTION_TECH" = "ٹیکنالوجی، تعلیم اور اوزار";
+"ICON_PICKER_SECTION_NATURE" = "فطرت، موسم اور عمومی علامات";

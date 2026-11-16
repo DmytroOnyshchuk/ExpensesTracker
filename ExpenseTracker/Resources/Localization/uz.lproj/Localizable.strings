@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Eksport formati";
 "BACKUPS_IMPORT_SKIPPED" = "Oʻtkazib yuborilgan daromadlar: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Operatsiyalar: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Kundalik shahar xarajatlari";
+"ICON_PICKER_SECTION_TRAVEL" = "Transport va sayohat";
+"ICON_PICKER_SECTION_MONEY" = "Xaridlar, pul va ish";
+"ICON_PICKER_SECTION_HOME" = "Uy, ovqat va shaxsiy parvarish";
+"ICON_PICKER_SECTION_HEALTH" = "Salomatlik, oila va mashgʻulotlar";
+"ICON_PICKER_SECTION_TECH" = "Texnologiya, taʼlim va asboblar";
+"ICON_PICKER_SECTION_NATURE" = "Tabiat, ob-havo va umumiy belgilar";

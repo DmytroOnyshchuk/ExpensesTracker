@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Uitvoerformaat";
 "BACKUPS_IMPORT_SKIPPED" = "Inkomste oorgeslaan: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transaksies: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Alledaagse stadsuitgawes";
+"ICON_PICKER_SECTION_TRAVEL" = "Vervoer en reis";
+"ICON_PICKER_SECTION_MONEY" = "Inkopies, geld en werk";
+"ICON_PICKER_SECTION_HOME" = "Huis, kos en persoonlike sorg";
+"ICON_PICKER_SECTION_HEALTH" = "Gesondheid, gesin en aktiwiteite";
+"ICON_PICKER_SECTION_TECH" = "Tegnologie, onderwys en gereedskap";
+"ICON_PICKER_SECTION_NATURE" = "Natuur, weer en algemene simbole";

@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "내보내기 형식";
 "BACKUPS_IMPORT_SKIPPED" = "건너뛴 수입: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "거래: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "일상적인 도시 생활 지출";
+"ICON_PICKER_SECTION_TRAVEL" = "교통 및 여행";
+"ICON_PICKER_SECTION_MONEY" = "쇼핑, 돈 및 업무";
+"ICON_PICKER_SECTION_HOME" = "집, 음식 및 개인 관리";
+"ICON_PICKER_SECTION_HEALTH" = "건강, 가족 및 활동";
+"ICON_PICKER_SECTION_TECH" = "기술, 교육 및 도구";
+"ICON_PICKER_SECTION_NATURE" = "자연, 날씨 및 일반 기호";

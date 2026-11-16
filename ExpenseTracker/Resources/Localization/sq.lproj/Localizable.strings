@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Formati i eksportit";
 "BACKUPS_IMPORT_SKIPPED" = "Të ardhura të anashkaluara: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transaksione: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Shpenzime të përditshme në qytet";
+"ICON_PICKER_SECTION_TRAVEL" = "Transport dhe udhëtime";
+"ICON_PICKER_SECTION_MONEY" = "Blerje, para dhe punë";
+"ICON_PICKER_SECTION_HOME" = "Shtëpi, ushqim dhe kujdes personal";
+"ICON_PICKER_SECTION_HEALTH" = "Shëndet, familje dhe aktivitete";
+"ICON_PICKER_SECTION_TECH" = "Teknologji, arsim dhe vegla";
+"ICON_PICKER_SECTION_NATURE" = "Natyrë, mot dhe simbole të përgjithshme";

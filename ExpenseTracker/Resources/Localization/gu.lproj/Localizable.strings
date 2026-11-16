@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "નિકાસ ફોર્મેટ";
 "BACKUPS_IMPORT_SKIPPED" = "છોડેલી આવક: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "વ્યવહારો: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "રોજિંદા શહેરી ખર્ચ";
+"ICON_PICKER_SECTION_TRAVEL" = "પરિવહન અને મુસાફરી";
+"ICON_PICKER_SECTION_MONEY" = "ખરીદી, પૈસા અને કામ";
+"ICON_PICKER_SECTION_HOME" = "ઘર, ખોરાક અને વ્યક્તિગત સંભાળ";
+"ICON_PICKER_SECTION_HEALTH" = "આરોગ્ય, પરિવાર અને પ્રવૃત્તિઓ";
+"ICON_PICKER_SECTION_TECH" = "ટેકનોલોજી, શિક્ષણ અને સાધનો";
+"ICON_PICKER_SECTION_NATURE" = "પ્રકૃતિ, હવામાન અને સામાન્ય પ્રતીકો";

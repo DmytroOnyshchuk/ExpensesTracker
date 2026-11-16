@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Формат экспорта";
 "BACKUPS_IMPORT_SKIPPED" = "Пропущено доходов: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Операции: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Повседневные городские расходы";
+"ICON_PICKER_SECTION_TRAVEL" = "Транспорт и путешествия";
+"ICON_PICKER_SECTION_MONEY" = "Покупки, деньги и работа";
+"ICON_PICKER_SECTION_HOME" = "Дом, еда и уход за собой";
+"ICON_PICKER_SECTION_HEALTH" = "Здоровье, семья и активности";
+"ICON_PICKER_SECTION_TECH" = "Техника, образование и инструменты";
+"ICON_PICKER_SECTION_NATURE" = "Природа, погода и общие символы";

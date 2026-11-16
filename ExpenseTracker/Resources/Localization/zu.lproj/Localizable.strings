@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Ifomethi yokuthekelisa";
 "BACKUPS_IMPORT_SKIPPED" = "Imali engenayo eyeqiwe: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Imisebenzi yemali: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Izindleko zansuku zonke zasedolobheni";
+"ICON_PICKER_SECTION_TRAVEL" = "Ezokuthutha nokuvakasha";
+"ICON_PICKER_SECTION_MONEY" = "Ukuthenga, imali nomsebenzi";
+"ICON_PICKER_SECTION_HOME" = "Ikhaya, ukudla nokuzinakekela";
+"ICON_PICKER_SECTION_HEALTH" = "Impilo, umndeni nemisebenzi";
+"ICON_PICKER_SECTION_TECH" = "Ubuchwepheshe, imfundo namathuluzi";
+"ICON_PICKER_SECTION_NATURE" = "Imvelo, isimo sezulu nezimpawu ezijwayelekile";

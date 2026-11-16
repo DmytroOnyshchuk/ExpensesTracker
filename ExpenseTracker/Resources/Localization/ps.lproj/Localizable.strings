@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "د صادرولو بڼه";
 "BACKUPS_IMPORT_SKIPPED" = "پرېښودل شوی عاید: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "راکړې ورکړې: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "د ښار ورځني لګښتونه";
+"ICON_PICKER_SECTION_TRAVEL" = "ترانسپورت او سفر";
+"ICON_PICKER_SECTION_MONEY" = "پېرودنه، پیسې او کار";
+"ICON_PICKER_SECTION_HOME" = "کور، خواړه او شخصي پاملرنه";
+"ICON_PICKER_SECTION_HEALTH" = "روغتیا، کورنۍ او فعالیتونه";
+"ICON_PICKER_SECTION_TECH" = "ټکنالوژي، زده‌کړه او وسایل";
+"ICON_PICKER_SECTION_NATURE" = "طبیعت، هوا او عمومي سمبولونه";

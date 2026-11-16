@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Экспорт форматы";
 "BACKUPS_IMPORT_SKIPPED" = "Төшереп калдырылган керемнәр: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Операцияләр: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Көндәлек шәһәр чыгымнары";
+"ICON_PICKER_SECTION_TRAVEL" = "Транспорт һәм сәяхәт";
+"ICON_PICKER_SECTION_MONEY" = "Сатып алулар, акча һәм эш";
+"ICON_PICKER_SECTION_HOME" = "Өй, ризык һәм шәхси карау";
+"ICON_PICKER_SECTION_HEALTH" = "Сәламәтлек, гаилә һәм шөгыльләр";
+"ICON_PICKER_SECTION_TECH" = "Технология, мәгариф һәм кораллар";
+"ICON_PICKER_SECTION_NATURE" = "Табигать, һава торышы һәм гомуми билгеләр";

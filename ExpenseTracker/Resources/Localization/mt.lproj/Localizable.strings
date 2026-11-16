@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Format tal-esportazzjoni";
 "BACKUPS_IMPORT_SKIPPED" = "Dħul maqbuż: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Tranżazzjonijiet: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Spejjeż ta' kuljum fil-belt";
+"ICON_PICKER_SECTION_TRAVEL" = "Trasport u vjaġġar";
+"ICON_PICKER_SECTION_MONEY" = "Xiri, flus u xogħol";
+"ICON_PICKER_SECTION_HOME" = "Dar, ikel u kura personali";
+"ICON_PICKER_SECTION_HEALTH" = "Saħħa, familja u attivitajiet";
+"ICON_PICKER_SECTION_TECH" = "Teknoloġija, edukazzjoni u għodod";
+"ICON_PICKER_SECTION_NATURE" = "Natura, temp u simboli ġenerali";

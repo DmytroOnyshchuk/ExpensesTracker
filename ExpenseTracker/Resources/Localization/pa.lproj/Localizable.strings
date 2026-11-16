@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "ਐਕਸਪੋਰਟ ਫਾਰਮੈਟ";
 "BACKUPS_IMPORT_SKIPPED" = "ਛੱਡੀ ਗਈ ਆਮਦਨ: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "ਲੈਣ-ਦੇਣ: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "ਰੋਜ਼ਾਨਾ ਸ਼ਹਿਰੀ ਖਰਚੇ";
+"ICON_PICKER_SECTION_TRAVEL" = "ਆਵਾਜਾਈ ਅਤੇ ਯਾਤਰਾ";
+"ICON_PICKER_SECTION_MONEY" = "ਖਰੀਦਦਾਰੀ, ਪੈਸਾ ਅਤੇ ਕੰਮ";
+"ICON_PICKER_SECTION_HOME" = "ਘਰ, ਭੋਜਨ ਅਤੇ ਨਿੱਜੀ ਦੇਖਭਾਲ";
+"ICON_PICKER_SECTION_HEALTH" = "ਸਿਹਤ, ਪਰਿਵਾਰ ਅਤੇ ਗਤੀਵਿਧੀਆਂ";
+"ICON_PICKER_SECTION_TECH" = "ਤਕਨਾਲੋਜੀ, ਸਿੱਖਿਆ ਅਤੇ ਔਜ਼ਾਰ";
+"ICON_PICKER_SECTION_NATURE" = "ਕੁਦਰਤ, ਮੌਸਮ ਅਤੇ ਆਮ ਚਿੰਨ੍ਹ";

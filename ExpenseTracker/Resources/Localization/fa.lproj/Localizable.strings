@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "قالب خروجی";
 "BACKUPS_IMPORT_SKIPPED" = "درآمدهای نادیده‌گرفته‌شده: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "تراکنش‌ها: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "هزینه‌های روزمره شهری";
+"ICON_PICKER_SECTION_TRAVEL" = "حمل‌ونقل و سفر";
+"ICON_PICKER_SECTION_MONEY" = "خرید، پول و کار";
+"ICON_PICKER_SECTION_HOME" = "خانه، غذا و مراقبت شخصی";
+"ICON_PICKER_SECTION_HEALTH" = "سلامت، خانواده و فعالیت‌ها";
+"ICON_PICKER_SECTION_TECH" = "فناوری، آموزش و ابزار";
+"ICON_PICKER_SECTION_NATURE" = "طبیعت، آب‌وهوا و نمادهای عمومی";

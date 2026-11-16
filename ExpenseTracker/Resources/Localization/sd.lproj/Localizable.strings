@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "ايڪسپورٽ فارميٽ";
 "BACKUPS_IMPORT_SKIPPED" = "ڇڏيل آمدني: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "ٽرانزيڪشنون: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "شهر جا روزاني خرچ";
+"ICON_PICKER_SECTION_TRAVEL" = "ٽرانسپورٽ ۽ سفر";
+"ICON_PICKER_SECTION_MONEY" = "خريداري، پئسا ۽ ڪم";
+"ICON_PICKER_SECTION_HOME" = "گهر، کاڌو ۽ ذاتي سنڀال";
+"ICON_PICKER_SECTION_HEALTH" = "صحت، خاندان ۽ سرگرميون";
+"ICON_PICKER_SECTION_TECH" = "ٽيڪنالاجي، تعليم ۽ اوزار";
+"ICON_PICKER_SECTION_NATURE" = "فطرت، موسم ۽ عام نشانيون";

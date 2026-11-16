@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Eksportformat";
 "BACKUPS_IMPORT_SKIPPED" = "Indtægter sprunget over: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transaktioner: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Daglige udgifter i byen";
+"ICON_PICKER_SECTION_TRAVEL" = "Transport og rejser";
+"ICON_PICKER_SECTION_MONEY" = "Indkøb, penge og arbejde";
+"ICON_PICKER_SECTION_HOME" = "Hjem, mad og personlig pleje";
+"ICON_PICKER_SECTION_HEALTH" = "Sundhed, familie og aktiviteter";
+"ICON_PICKER_SECTION_TECH" = "Teknologi, uddannelse og værktøj";
+"ICON_PICKER_SECTION_NATURE" = "Natur, vejr og generelle symboler";

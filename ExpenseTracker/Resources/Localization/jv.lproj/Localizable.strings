@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Format ekspor";
 "BACKUPS_IMPORT_SKIPPED" = "Pemasukan sing dilewati: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transaksi: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Pengeluaran saben dina ing kutha";
+"ICON_PICKER_SECTION_TRAVEL" = "Transportasi lan lelungan";
+"ICON_PICKER_SECTION_MONEY" = "Blanja, dhuwit lan gaweyan";
+"ICON_PICKER_SECTION_HOME" = "Omah, panganan lan perawatan dhiri";
+"ICON_PICKER_SECTION_HEALTH" = "Kesehatan, kulawarga lan kegiatan";
+"ICON_PICKER_SECTION_TECH" = "Teknologi, pendhidhikan lan piranti";
+"ICON_PICKER_SECTION_NATURE" = "Alam, cuaca lan simbol umum";

@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "ʻAno hoʻopuka";
 "BACKUPS_IMPORT_SKIPPED" = "Loaʻa kālā i kāpae ʻia: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Nā kālepa: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Nā lilo o ke kūlanakauhale i kēlā me kēia lā";
+"ICON_PICKER_SECTION_TRAVEL" = "Ka halihali a me ka huakaʻi";
+"ICON_PICKER_SECTION_MONEY" = "Kūʻai, kālā a me ka hana";
+"ICON_PICKER_SECTION_HOME" = "Home, meaʻai a me ka mālama kino";
+"ICON_PICKER_SECTION_HEALTH" = "Olakino, ʻohana a me nā hana";
+"ICON_PICKER_SECTION_TECH" = "ʻEnehana, hoʻonaʻauao a me nā mea hana";
+"ICON_PICKER_SECTION_NATURE" = "Kūlohelohe, aniau a me nā hōʻailona laulā";

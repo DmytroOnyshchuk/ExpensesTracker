@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Fòrmat às-phortaidh";
 "BACKUPS_IMPORT_SKIPPED" = "Teachd-a-steach air a leigeil seachad: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Tar-chuiridhean: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Cosgaisean làitheil a' bhaile";
+"ICON_PICKER_SECTION_TRAVEL" = "Còmhdhail agus siubhal";
+"ICON_PICKER_SECTION_MONEY" = "Ceannach, airgead agus obair";
+"ICON_PICKER_SECTION_HOME" = "Dachaigh, biadh agus cùram pearsanta";
+"ICON_PICKER_SECTION_HEALTH" = "Slàinte, teaghlach agus gnìomhachdan";
+"ICON_PICKER_SECTION_TECH" = "Teicneòlas, foghlam agus innealan";
+"ICON_PICKER_SECTION_NATURE" = "Nàdar, aimsir agus samhlaidhean coitcheann";

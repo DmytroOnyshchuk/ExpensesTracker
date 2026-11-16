@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "निर्यात ढाँचा";
 "BACKUPS_IMPORT_SKIPPED" = "छोडिएको आम्दानी: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "कारोबारहरू: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "दैनिक सहरी खर्च";
+"ICON_PICKER_SECTION_TRAVEL" = "यातायात र यात्रा";
+"ICON_PICKER_SECTION_MONEY" = "किनमेल, पैसा र काम";
+"ICON_PICKER_SECTION_HOME" = "घर, खाना र व्यक्तिगत हेरचाह";
+"ICON_PICKER_SECTION_HEALTH" = "स्वास्थ्य, परिवार र गतिविधि";
+"ICON_PICKER_SECTION_TECH" = "प्रविधि, शिक्षा र औजार";
+"ICON_PICKER_SECTION_NATURE" = "प्रकृति, मौसम र सामान्य प्रतीक";

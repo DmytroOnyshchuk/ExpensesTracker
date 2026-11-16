@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Muundo wa kuhamisha";
 "BACKUPS_IMPORT_SKIPPED" = "Mapato yaliyorukwa: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Miamala: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Matumizi ya kila siku ya mjini";
+"ICON_PICKER_SECTION_TRAVEL" = "Usafiri na safari";
+"ICON_PICKER_SECTION_MONEY" = "Ununuzi, pesa na kazi";
+"ICON_PICKER_SECTION_HOME" = "Nyumba, chakula na utunzaji binafsi";
+"ICON_PICKER_SECTION_HEALTH" = "Afya, familia na shughuli";
+"ICON_PICKER_SECTION_TECH" = "Teknolojia, elimu na zana";
+"ICON_PICKER_SECTION_NATURE" = "Asili, hali ya hewa na alama za jumla";

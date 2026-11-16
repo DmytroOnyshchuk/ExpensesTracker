@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Dışa aktarma biçimi";
 "BACKUPS_IMPORT_SKIPPED" = "Atlanan gelirler: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "İşlemler: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Günlük şehir harcamaları";
+"ICON_PICKER_SECTION_TRAVEL" = "Ulaşım ve seyahat";
+"ICON_PICKER_SECTION_MONEY" = "Alışveriş, para ve iş";
+"ICON_PICKER_SECTION_HOME" = "Ev, yemek ve kişisel bakım";
+"ICON_PICKER_SECTION_HEALTH" = "Sağlık, aile ve etkinlikler";
+"ICON_PICKER_SECTION_TECH" = "Teknoloji, eğitim ve aletler";
+"ICON_PICKER_SECTION_NATURE" = "Doğa, hava durumu ve genel semboller";

@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "എക്സ്പോർട്ട് ഫോർമാറ്റ്";
 "BACKUPS_IMPORT_SKIPPED" = "ഒഴിവാക്കിയ വരുമാനം: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "ഇടപാടുകൾ: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "ദൈനംദിന നഗര ചെലവുകൾ";
+"ICON_PICKER_SECTION_TRAVEL" = "ഗതാഗതവും യാത്രയും";
+"ICON_PICKER_SECTION_MONEY" = "ഷോപ്പിംഗ്, പണം, ജോലി";
+"ICON_PICKER_SECTION_HOME" = "വീട്, ഭക്ഷണം, വ്യക്തിഗത പരിചരണം";
+"ICON_PICKER_SECTION_HEALTH" = "ആരോഗ്യം, കുടുംബം, പ്രവർത്തനങ്ങൾ";
+"ICON_PICKER_SECTION_TECH" = "സാങ്കേതികവിദ്യ, വിദ്യാഭ്യാസം, ഉപകരണങ്ങൾ";
+"ICON_PICKER_SECTION_NATURE" = "പ്രകൃതി, കാലാവസ്ഥ, പൊതു ചിഹ്നങ്ങൾ";

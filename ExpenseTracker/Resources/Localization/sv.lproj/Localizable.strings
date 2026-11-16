@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Exportformat";
 "BACKUPS_IMPORT_SKIPPED" = "Överhoppade inkomster: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transaktioner: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Vardagliga utgifter i staden";
+"ICON_PICKER_SECTION_TRAVEL" = "Transport och resor";
+"ICON_PICKER_SECTION_MONEY" = "Shopping, pengar och arbete";
+"ICON_PICKER_SECTION_HOME" = "Hem, mat och personlig vård";
+"ICON_PICKER_SECTION_HEALTH" = "Hälsa, familj och aktiviteter";
+"ICON_PICKER_SECTION_TECH" = "Teknik, utbildning och verktyg";
+"ICON_PICKER_SECTION_NATURE" = "Natur, väder och allmänna symboler";

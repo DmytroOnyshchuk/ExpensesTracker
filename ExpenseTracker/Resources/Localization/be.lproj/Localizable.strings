@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Фармат экспарту";
 "BACKUPS_IMPORT_SKIPPED" = "Прапушчана даходаў: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Аперацыі: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Штодзённыя гарадскія выдаткі";
+"ICON_PICKER_SECTION_TRAVEL" = "Транспарт і падарожжы";
+"ICON_PICKER_SECTION_MONEY" = "Пакупкі, грошы і праца";
+"ICON_PICKER_SECTION_HOME" = "Дом, ежа і асабісты догляд";
+"ICON_PICKER_SECTION_HEALTH" = "Здароўе, сям’я і заняткі";
+"ICON_PICKER_SECTION_TECH" = "Тэхніка, адукацыя і інструменты";
+"ICON_PICKER_SECTION_NATURE" = "Прырода, надвор’е і агульныя сімвалы";

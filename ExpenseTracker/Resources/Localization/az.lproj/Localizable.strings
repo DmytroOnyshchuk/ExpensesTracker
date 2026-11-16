@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "İxrac formatı";
 "BACKUPS_IMPORT_SKIPPED" = "Ötürülən gəlirlər: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Əməliyyatlar: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Gündəlik şəhər xərcləri";
+"ICON_PICKER_SECTION_TRAVEL" = "Nəqliyyat və səyahət";
+"ICON_PICKER_SECTION_MONEY" = "Alış-veriş, pul və iş";
+"ICON_PICKER_SECTION_HOME" = "Ev, yemək və şəxsi qulluq";
+"ICON_PICKER_SECTION_HEALTH" = "Sağlamlıq, ailə və fəaliyyətlər";
+"ICON_PICKER_SECTION_TECH" = "Texnologiya, təhsil və alətlər";
+"ICON_PICKER_SECTION_NATURE" = "Təbiət, hava və ümumi simvollar";

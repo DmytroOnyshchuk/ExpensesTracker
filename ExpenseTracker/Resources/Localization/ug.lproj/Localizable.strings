@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "چىقىرىش فورماتى";
 "BACKUPS_IMPORT_SKIPPED" = "ئاتلاپ ئۆتۈلگەن كىرىم: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "سودىلار: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "شەھەردىكى كۈندىلىك چىقىملار";
+"ICON_PICKER_SECTION_TRAVEL" = "قاتناش ۋە ساياھەت";
+"ICON_PICKER_SECTION_MONEY" = "سېتىۋېلىش، پۇل ۋە خىزمەت";
+"ICON_PICKER_SECTION_HOME" = "ئۆي، يېمەكلىك ۋە شەخسىي پەرۋىش";
+"ICON_PICKER_SECTION_HEALTH" = "ساغلاملىق، ئائىلە ۋە پائالىيەتلەر";
+"ICON_PICKER_SECTION_TECH" = "تېخنىكا، مائارىپ ۋە قوراللار";
+"ICON_PICKER_SECTION_NATURE" = "تەبىئەت، ھاۋارايى ۋە ئادەتتىكى بەلگىلەر";

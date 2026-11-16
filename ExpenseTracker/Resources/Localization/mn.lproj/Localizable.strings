@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Экспортын формат";
 "BACKUPS_IMPORT_SKIPPED" = "Алгассан орлого: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Гүйлгээ: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Хотын өдөр тутмын зардал";
+"ICON_PICKER_SECTION_TRAVEL" = "Тээвэр ба аялал";
+"ICON_PICKER_SECTION_MONEY" = "Худалдан авалт, мөнгө ба ажил";
+"ICON_PICKER_SECTION_HOME" = "Гэр, хоол ба хувийн арчилгаа";
+"ICON_PICKER_SECTION_HEALTH" = "Эрүүл мэнд, гэр бүл ба үйл ажиллагаа";
+"ICON_PICKER_SECTION_TECH" = "Технологи, боловсрол ба багаж хэрэгсэл";
+"ICON_PICKER_SECTION_NATURE" = "Байгаль, цаг агаар ба ерөнхий тэмдэг";

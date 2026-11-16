@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Արտահանման ձևաչափ";
 "BACKUPS_IMPORT_SKIPPED" = "Բաց թողնված եկամուտներ՝ %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Գործարքներ՝ %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Քաղաքային առօրյա ծախսեր";
+"ICON_PICKER_SECTION_TRAVEL" = "Տրանսպորտ և ճամփորդություն";
+"ICON_PICKER_SECTION_MONEY" = "Գնումներ, փող և աշխատանք";
+"ICON_PICKER_SECTION_HOME" = "Տուն, սնունդ և անձնական խնամք";
+"ICON_PICKER_SECTION_HEALTH" = "Առողջություն, ընտանիք և զբաղմունքներ";
+"ICON_PICKER_SECTION_TECH" = "Տեխնոլոգիա, կրթություն և գործիքներ";
+"ICON_PICKER_SECTION_NATURE" = "Բնություն, եղանակ և ընդհանուր նշաններ";

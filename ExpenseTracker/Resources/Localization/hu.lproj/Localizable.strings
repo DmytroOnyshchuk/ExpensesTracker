@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Exportformátum";
 "BACKUPS_IMPORT_SKIPPED" = "Kihagyott bevételek: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Tranzakciók: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Mindennapi városi kiadások";
+"ICON_PICKER_SECTION_TRAVEL" = "Közlekedés és utazás";
+"ICON_PICKER_SECTION_MONEY" = "Vásárlás, pénz és munka";
+"ICON_PICKER_SECTION_HOME" = "Otthon, étel és testápolás";
+"ICON_PICKER_SECTION_HEALTH" = "Egészség, család és programok";
+"ICON_PICKER_SECTION_TECH" = "Technológia, oktatás és szerszámok";
+"ICON_PICKER_SECTION_NATURE" = "Természet, időjárás és általános szimbólumok";

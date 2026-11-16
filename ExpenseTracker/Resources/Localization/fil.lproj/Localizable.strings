@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Format ng export";
 "BACKUPS_IMPORT_SKIPPED" = "Nilaktawang kita: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Mga transaksyon: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Pang-araw-araw na gastos sa lungsod";
+"ICON_PICKER_SECTION_TRAVEL" = "Transportasyon at paglalakbay";
+"ICON_PICKER_SECTION_MONEY" = "Pamimili, pera at trabaho";
+"ICON_PICKER_SECTION_HOME" = "Bahay, pagkain at personal na pangangalaga";
+"ICON_PICKER_SECTION_HEALTH" = "Kalusugan, pamilya at mga aktibidad";
+"ICON_PICKER_SECTION_TECH" = "Teknolohiya, edukasyon at mga kagamitan";
+"ICON_PICKER_SECTION_NATURE" = "Kalikasan, panahon at mga pangkalahatang simbolo";

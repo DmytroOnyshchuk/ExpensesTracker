@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "تنسيق التصدير";
 "BACKUPS_IMPORT_SKIPPED" = "الدخل المتخطى: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "المعاملات: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "المصاريف اليومية في المدينة";
+"ICON_PICKER_SECTION_TRAVEL" = "النقل والسفر";
+"ICON_PICKER_SECTION_MONEY" = "التسوق والمال والعمل";
+"ICON_PICKER_SECTION_HOME" = "المنزل والطعام والعناية الشخصية";
+"ICON_PICKER_SECTION_HEALTH" = "الصحة والعائلة والأنشطة";
+"ICON_PICKER_SECTION_TECH" = "التقنية والتعليم والأدوات";
+"ICON_PICKER_SECTION_NATURE" = "الطبيعة والطقس والرموز العامة";

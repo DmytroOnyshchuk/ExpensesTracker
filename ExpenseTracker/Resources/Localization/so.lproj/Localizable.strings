@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Qaabka dhoofinta";
 "BACKUPS_IMPORT_SKIPPED" = "Dakhliga la booday: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Dhaqdhaqaaqyada: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Kharashaadka maalinlaha ah ee magaalada";
+"ICON_PICKER_SECTION_TRAVEL" = "Gaadiidka iyo safarka";
+"ICON_PICKER_SECTION_MONEY" = "Adeegashada, lacagta iyo shaqada";
+"ICON_PICKER_SECTION_HOME" = "Guriga, cuntada iyo daryeelka shakhsiga";
+"ICON_PICKER_SECTION_HEALTH" = "Caafimaadka, qoyska iyo hawlaha";
+"ICON_PICKER_SECTION_TECH" = "Tignoolajiyada, waxbarashada iyo qalabka";
+"ICON_PICKER_SECTION_NATURE" = "Dabeecadda, cimilada iyo calaamadaha guud";

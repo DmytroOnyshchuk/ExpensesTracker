@@ -190,6 +190,20 @@ internal enum L10n {
   internal static let error = L10n.tr("Localizable", "ERROR", fallback: "Error")
   /// History
   internal static let historyTitle = L10n.tr("Localizable", "HISTORY_TITLE", fallback: "History")
+  /// Everyday city expenses
+  internal static let iconPickerSectionEveryday = L10n.tr("Localizable", "ICON_PICKER_SECTION_EVERYDAY", fallback: "Everyday city expenses")
+  /// Health, family & activities
+  internal static let iconPickerSectionHealth = L10n.tr("Localizable", "ICON_PICKER_SECTION_HEALTH", fallback: "Health, family & activities")
+  /// Home, food & personal care
+  internal static let iconPickerSectionHome = L10n.tr("Localizable", "ICON_PICKER_SECTION_HOME", fallback: "Home, food & personal care")
+  /// Shopping, money & work
+  internal static let iconPickerSectionMoney = L10n.tr("Localizable", "ICON_PICKER_SECTION_MONEY", fallback: "Shopping, money & work")
+  /// Nature, weather & general symbols
+  internal static let iconPickerSectionNature = L10n.tr("Localizable", "ICON_PICKER_SECTION_NATURE", fallback: "Nature, weather & general symbols")
+  /// Technology, education & tools
+  internal static let iconPickerSectionTech = L10n.tr("Localizable", "ICON_PICKER_SECTION_TECH", fallback: "Technology, education & tools")
+  /// Transportation & travel
+  internal static let iconPickerSectionTravel = L10n.tr("Localizable", "ICON_PICKER_SECTION_TRAVEL", fallback: "Transportation & travel")
   /// About
   internal static let menuAbout = L10n.tr("Localizable", "MENU_ABOUT", fallback: "About")
   /// Backups

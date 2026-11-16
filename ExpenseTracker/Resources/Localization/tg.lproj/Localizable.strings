@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Формати содирот";
 "BACKUPS_IMPORT_SKIPPED" = "Даромадҳои гузаронидашуда: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Амалиётҳо: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Хароҷоти ҳаррӯзаи шаҳрӣ";
+"ICON_PICKER_SECTION_TRAVEL" = "Нақлиёт ва сафар";
+"ICON_PICKER_SECTION_MONEY" = "Харид, пул ва кор";
+"ICON_PICKER_SECTION_HOME" = "Хона, хӯрок ва нигоҳубини шахсӣ";
+"ICON_PICKER_SECTION_HEALTH" = "Саломатӣ, оила ва фаъолиятҳо";
+"ICON_PICKER_SECTION_TECH" = "Технология, маориф ва асбобҳо";
+"ICON_PICKER_SECTION_NATURE" = "Табиат, обу ҳаво ва рамзҳои умумӣ";

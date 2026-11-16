@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Eksporto formatas";
 "BACKUPS_IMPORT_SKIPPED" = "Praleista pajamų: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Operacijos: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Kasdienės miesto išlaidos";
+"ICON_PICKER_SECTION_TRAVEL" = "Transportas ir kelionės";
+"ICON_PICKER_SECTION_MONEY" = "Pirkiniai, pinigai ir darbas";
+"ICON_PICKER_SECTION_HOME" = "Namai, maistas ir asmens priežiūra";
+"ICON_PICKER_SECTION_HEALTH" = "Sveikata, šeima ir veikla";
+"ICON_PICKER_SECTION_TECH" = "Technologijos, švietimas ir įrankiai";
+"ICON_PICKER_SECTION_NATURE" = "Gamta, orai ir bendrieji simboliai";

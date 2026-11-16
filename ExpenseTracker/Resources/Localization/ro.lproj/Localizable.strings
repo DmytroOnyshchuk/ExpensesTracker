@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Format de export";
 "BACKUPS_IMPORT_SKIPPED" = "Venituri omise: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Tranzacții: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Cheltuieli zilnice în oraș";
+"ICON_PICKER_SECTION_TRAVEL" = "Transport și călătorii";
+"ICON_PICKER_SECTION_MONEY" = "Cumpărături, bani și muncă";
+"ICON_PICKER_SECTION_HOME" = "Casă, mâncare și îngrijire personală";
+"ICON_PICKER_SECTION_HEALTH" = "Sănătate, familie și activități";
+"ICON_PICKER_SECTION_TECH" = "Tehnologie, educație și unelte";
+"ICON_PICKER_SECTION_NATURE" = "Natură, vreme și simboluri generale";

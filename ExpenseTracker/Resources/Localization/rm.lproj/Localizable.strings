@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Format d’export";
 "BACKUPS_IMPORT_SKIPPED" = "Entradas sursiglidas: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transacziuns: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Expensas quotidianas en la citad";
+"ICON_PICKER_SECTION_TRAVEL" = "Transport e viadis";
+"ICON_PICKER_SECTION_MONEY" = "Cumpras, daners e lavur";
+"ICON_PICKER_SECTION_HOME" = "Chasa, mangiar e tgira persunala";
+"ICON_PICKER_SECTION_HEALTH" = "Sanadad, famiglia ed activitads";
+"ICON_PICKER_SECTION_TECH" = "Tecnologia, furmaziun ed utensils";
+"ICON_PICKER_SECTION_NATURE" = "Natira, aura e simbols generals";

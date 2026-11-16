@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Eksport formaty";
 "BACKUPS_IMPORT_SKIPPED" = "Goýberilen girdejiler: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Amallar: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Gündelik şäher çykdajylary";
+"ICON_PICKER_SECTION_TRAVEL" = "Ulag we syýahat";
+"ICON_PICKER_SECTION_MONEY" = "Söwda, pul we iş";
+"ICON_PICKER_SECTION_HOME" = "Öý, iýmit we şahsy ideg";
+"ICON_PICKER_SECTION_HEALTH" = "Saglyk, maşgala we işjeňlik";
+"ICON_PICKER_SECTION_TECH" = "Tehnologiýa, bilim we gurallar";
+"ICON_PICKER_SECTION_NATURE" = "Tebigat, howa we umumy nyşanlar";

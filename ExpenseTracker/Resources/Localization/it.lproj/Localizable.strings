@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Formato di esportazione";
 "BACKUPS_IMPORT_SKIPPED" = "Entrate ignorate: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transazioni: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Spese quotidiane in città";
+"ICON_PICKER_SECTION_TRAVEL" = "Trasporti e viaggi";
+"ICON_PICKER_SECTION_MONEY" = "Acquisti, denaro e lavoro";
+"ICON_PICKER_SECTION_HOME" = "Casa, cibo e cura personale";
+"ICON_PICKER_SECTION_HEALTH" = "Salute, famiglia e attività";
+"ICON_PICKER_SECTION_TECH" = "Tecnologia, istruzione e attrezzi";
+"ICON_PICKER_SECTION_NATURE" = "Natura, meteo e simboli generali";

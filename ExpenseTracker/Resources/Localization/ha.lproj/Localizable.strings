@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Tsarin fitarwa";
 "BACKUPS_IMPORT_SKIPPED" = "Kuɗin shiga da aka tsallake: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Hada-hada: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Kashe-kashen yau da kullum na birni";
+"ICON_PICKER_SECTION_TRAVEL" = "Sufuri da tafiya";
+"ICON_PICKER_SECTION_MONEY" = "Siyayya, kuɗi da aiki";
+"ICON_PICKER_SECTION_HOME" = "Gida, abinci da kula da kai";
+"ICON_PICKER_SECTION_HEALTH" = "Lafiya, iyali da ayyuka";
+"ICON_PICKER_SECTION_TECH" = "Fasaha, ilimi da kayan aiki";
+"ICON_PICKER_SECTION_NATURE" = "Halitta, yanayi da alamomin gama-gari";

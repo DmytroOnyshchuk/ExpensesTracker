@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Формат за експорт";
 "BACKUPS_IMPORT_SKIPPED" = "Пропуснати приходи: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Транзакции: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Ежедневни градски разходи";
+"ICON_PICKER_SECTION_TRAVEL" = "Транспорт и пътувания";
+"ICON_PICKER_SECTION_MONEY" = "Пазаруване, пари и работа";
+"ICON_PICKER_SECTION_HOME" = "Дом, храна и лична грижа";
+"ICON_PICKER_SECTION_HEALTH" = "Здраве, семейство и занимания";
+"ICON_PICKER_SECTION_TECH" = "Технологии, образование и инструменти";
+"ICON_PICKER_SECTION_NATURE" = "Природа, време и общи символи";

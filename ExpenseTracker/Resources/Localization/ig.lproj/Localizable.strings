@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Ụdị mbupụ";
 "BACKUPS_IMPORT_SKIPPED" = "Ego mbata awụfere: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Azụmahịa: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Mmefu kwa ụbọchị n'obodo";
+"ICON_PICKER_SECTION_TRAVEL" = "Njem na ụgbọ njem";
+"ICON_PICKER_SECTION_MONEY" = "Ịzụ ahịa, ego na ọrụ";
+"ICON_PICKER_SECTION_HOME" = "Ụlọ, nri na nlekọta onwe";
+"ICON_PICKER_SECTION_HEALTH" = "Ahụike, ezinụlọ na ihe omume";
+"ICON_PICKER_SECTION_TECH" = "Teknụzụ, agụmakwụkwọ na ngwá ọrụ";
+"ICON_PICKER_SECTION_NATURE" = "Okike, ihu igwe na akara izugbe";

@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "ទ្រង់ទ្រាយនាំចេញ";
 "BACKUPS_IMPORT_SKIPPED" = "ចំណូលដែលបានរំលង៖ %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "ប្រតិបត្តិការ៖ %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "ចំណាយប្រចាំថ្ងៃក្នុងទីក្រុង";
+"ICON_PICKER_SECTION_TRAVEL" = "ការដឹកជញ្ជូន និងការធ្វើដំណើរ";
+"ICON_PICKER_SECTION_MONEY" = "ការទិញទំនិញ ប្រាក់ និងការងារ";
+"ICON_PICKER_SECTION_HOME" = "ផ្ទះ អាហារ និងការថែទាំផ្ទាល់ខ្លួន";
+"ICON_PICKER_SECTION_HEALTH" = "សុខភាព គ្រួសារ និងសកម្មភាព";
+"ICON_PICKER_SECTION_TECH" = "បច្ចេកវិទ្យា ការអប់រំ និងឧបករណ៍";
+"ICON_PICKER_SECTION_NATURE" = "ធម្មជាតិ អាកាសធាតុ និងនិមិត្តសញ្ញាទូទៅ";

@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Irú ìkójáde";
 "BACKUPS_IMPORT_SKIPPED" = "Owó-wíwọlé tí a fò: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Àwọn ìdúnàádúrà: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Àwọn ìnáwó ojoojúmọ́ ní ìlú";
+"ICON_PICKER_SECTION_TRAVEL" = "Ìrìnnà àti ìrìn-àjò";
+"ICON_PICKER_SECTION_MONEY" = "Ọjà rírà, owó àti iṣẹ́";
+"ICON_PICKER_SECTION_HOME" = "Ilé, oúnjẹ àti ìtọ́jú ara ẹni";
+"ICON_PICKER_SECTION_HEALTH" = "Ìlera, ẹbí àti àwọn ìgbòkègbodò";
+"ICON_PICKER_SECTION_TECH" = "Ìmọ̀ ẹ̀rọ, ẹ̀kọ́ àti àwọn irinṣẹ́";
+"ICON_PICKER_SECTION_NATURE" = "Ìṣẹ̀dá, ojú ọjọ́ àti àwọn àmì gbogbogbò";

@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Esportazio-formatua";
 "BACKUPS_IMPORT_SKIPPED" = "Saltatutako diru-sarrerak: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transakzioak: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Hiriko eguneroko gastuak";
+"ICON_PICKER_SECTION_TRAVEL" = "Garraioa eta bidaiak";
+"ICON_PICKER_SECTION_MONEY" = "Erosketak, dirua eta lana";
+"ICON_PICKER_SECTION_HOME" = "Etxea, janaria eta zaintza pertsonala";
+"ICON_PICKER_SECTION_HEALTH" = "Osasuna, familia eta jarduerak";
+"ICON_PICKER_SECTION_TECH" = "Teknologia, hezkuntza eta tresnak";
+"ICON_PICKER_SECTION_NATURE" = "Natura, eguraldia eta ikur orokorrak";

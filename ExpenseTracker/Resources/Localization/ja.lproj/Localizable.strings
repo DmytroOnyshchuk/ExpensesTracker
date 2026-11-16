@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "エクスポート形式";
 "BACKUPS_IMPORT_SKIPPED" = "スキップした収入：%d";
 "BACKUPS_TRANSACTIONS_COUNT" = "取引：%d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "日常の都市生活の支出";
+"ICON_PICKER_SECTION_TRAVEL" = "交通・旅行";
+"ICON_PICKER_SECTION_MONEY" = "買い物・お金・仕事";
+"ICON_PICKER_SECTION_HOME" = "住まい・食事・身だしなみ";
+"ICON_PICKER_SECTION_HEALTH" = "健康・家族・アクティビティ";
+"ICON_PICKER_SECTION_TECH" = "テクノロジー・教育・工具";
+"ICON_PICKER_SECTION_NATURE" = "自然・天気・一般記号";

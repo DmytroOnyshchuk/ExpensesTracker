@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Fformat allforio";
 "BACKUPS_IMPORT_SKIPPED" = "Incwm wedi’i hepgor: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Trafodion: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Treuliau dinas bob dydd";
+"ICON_PICKER_SECTION_TRAVEL" = "Trafnidiaeth a theithio";
+"ICON_PICKER_SECTION_MONEY" = "Siopa, arian a gwaith";
+"ICON_PICKER_SECTION_HOME" = "Cartref, bwyd a gofal personol";
+"ICON_PICKER_SECTION_HEALTH" = "Iechyd, teulu a gweithgareddau";
+"ICON_PICKER_SECTION_TECH" = "Technoleg, addysg ac offer";
+"ICON_PICKER_SECTION_NATURE" = "Natur, tywydd a symbolau cyffredinol";

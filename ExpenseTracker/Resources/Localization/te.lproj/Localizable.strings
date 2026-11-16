@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "ఎగుమతి ఫార్మాట్";
 "BACKUPS_IMPORT_SKIPPED" = "దాటవేసిన ఆదాయం: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "లావాదేవీలు: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "రోజువారీ నగర ఖర్చులు";
+"ICON_PICKER_SECTION_TRAVEL" = "రవాణా మరియు ప్రయాణం";
+"ICON_PICKER_SECTION_MONEY" = "షాపింగ్, డబ్బు మరియు పని";
+"ICON_PICKER_SECTION_HOME" = "ఇల్లు, ఆహారం మరియు వ్యక్తిగత సంరక్షణ";
+"ICON_PICKER_SECTION_HEALTH" = "ఆరోగ్యం, కుటుంబం మరియు కార్యకలాపాలు";
+"ICON_PICKER_SECTION_TECH" = "సాంకేతికత, విద్య మరియు పరికరాలు";
+"ICON_PICKER_SECTION_NATURE" = "ప్రకృతి, వాతావరణం మరియు సాధారణ చిహ్నాలు";

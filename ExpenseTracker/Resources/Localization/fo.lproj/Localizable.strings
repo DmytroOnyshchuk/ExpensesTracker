@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Útflutningssnið";
 "BACKUPS_IMPORT_SKIPPED" = "Inntøkur lopnar um: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Flytingar: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Dagligar útreiðslur í býnum";
+"ICON_PICKER_SECTION_TRAVEL" = "Flutningur og ferðing";
+"ICON_PICKER_SECTION_MONEY" = "Keyp, pengar og arbeiði";
+"ICON_PICKER_SECTION_HOME" = "Heim, matur og persónlig røkt";
+"ICON_PICKER_SECTION_HEALTH" = "Heilsa, familja og virksemi";
+"ICON_PICKER_SECTION_TECH" = "Tøkni, útbúgving og amboð";
+"ICON_PICKER_SECTION_NATURE" = "Náttúra, veður og vanlig tekn";

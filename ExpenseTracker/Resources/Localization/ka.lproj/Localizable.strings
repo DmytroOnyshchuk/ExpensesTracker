@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "ექსპორტის ფორმატი";
 "BACKUPS_IMPORT_SKIPPED" = "გამოტოვებული შემოსავლები: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "ტრანზაქციები: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "ყოველდღიური ქალაქური ხარჯები";
+"ICON_PICKER_SECTION_TRAVEL" = "ტრანსპორტი და მოგზაურობა";
+"ICON_PICKER_SECTION_MONEY" = "შოპინგი, ფული და სამუშაო";
+"ICON_PICKER_SECTION_HOME" = "სახლი, საკვები და პირადი მოვლა";
+"ICON_PICKER_SECTION_HEALTH" = "ჯანმრთელობა, ოჯახი და აქტივობები";
+"ICON_PICKER_SECTION_TECH" = "ტექნოლოგია, განათლება და ხელსაწყოები";
+"ICON_PICKER_SECTION_NATURE" = "ბუნება, ამინდი და ზოგადი სიმბოლოები";

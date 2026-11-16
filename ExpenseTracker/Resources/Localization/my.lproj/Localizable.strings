@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "ထုတ်ယူမည့် ဖော်မတ်";
 "BACKUPS_IMPORT_SKIPPED" = "ကျော်ထားသော ဝင်ငွေ- %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "ငွေလွှဲမှတ်တမ်းများ- %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "နေ့စဉ် မြို့ပြအသုံးစရိတ်များ";
+"ICON_PICKER_SECTION_TRAVEL" = "သယ်ယူပို့ဆောင်ရေးနှင့် ခရီးသွားခြင်း";
+"ICON_PICKER_SECTION_MONEY" = "ဈေးဝယ်ခြင်း၊ ငွေနှင့် အလုပ်";
+"ICON_PICKER_SECTION_HOME" = "အိမ်၊ အစားအစာနှင့် ကိုယ်ရေးစောင့်ရှောက်မှု";
+"ICON_PICKER_SECTION_HEALTH" = "ကျန်းမာရေး၊ မိသားစုနှင့် လှုပ်ရှားမှုများ";
+"ICON_PICKER_SECTION_TECH" = "နည်းပညာ၊ ပညာရေးနှင့် ကိရိယာများ";
+"ICON_PICKER_SECTION_NATURE" = "သဘာဝ၊ ရာသီဥတုနှင့် အထွေထွေသင်္ကေတများ";

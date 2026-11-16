@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Formata derxistinê";
 "BACKUPS_IMPORT_SKIPPED" = "Dahatên derbaskirî: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Danûstandin: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Lêçûnên rojane yên bajêr";
+"ICON_PICKER_SECTION_TRAVEL" = "Veguhastin û rêwîtî";
+"ICON_PICKER_SECTION_MONEY" = "Kirîn, pere û kar";
+"ICON_PICKER_SECTION_HOME" = "Mal, xwarin û lênêrîna kesane";
+"ICON_PICKER_SECTION_HEALTH" = "Tenduristî, malbat û çalakî";
+"ICON_PICKER_SECTION_TECH" = "Teknolojî, perwerde û amûr";
+"ICON_PICKER_SECTION_NATURE" = "Xweza, hewa û sembolên giştî";

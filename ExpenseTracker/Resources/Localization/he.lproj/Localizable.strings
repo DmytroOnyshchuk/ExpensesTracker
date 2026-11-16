@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "תבנית ייצוא";
 "BACKUPS_IMPORT_SKIPPED" = "הכנסות שדולגו: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "עסקאות: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "הוצאות יומיומיות בעיר";
+"ICON_PICKER_SECTION_TRAVEL" = "תחבורה ונסיעות";
+"ICON_PICKER_SECTION_MONEY" = "קניות, כסף ועבודה";
+"ICON_PICKER_SECTION_HOME" = "בית, אוכל וטיפוח אישי";
+"ICON_PICKER_SECTION_HEALTH" = "בריאות, משפחה ופעילויות";
+"ICON_PICKER_SECTION_TECH" = "טכנולוגיה, חינוך וכלים";
+"ICON_PICKER_SECTION_NATURE" = "טבע, מזג אוויר וסמלים כלליים";

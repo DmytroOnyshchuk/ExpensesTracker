@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Μορφή εξαγωγής";
 "BACKUPS_IMPORT_SKIPPED" = "Έσοδα που παραλείφθηκαν: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Συναλλαγές: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Καθημερινά έξοδα πόλης";
+"ICON_PICKER_SECTION_TRAVEL" = "Μεταφορές και ταξίδια";
+"ICON_PICKER_SECTION_MONEY" = "Αγορές, χρήματα και εργασία";
+"ICON_PICKER_SECTION_HOME" = "Σπίτι, φαγητό και προσωπική φροντίδα";
+"ICON_PICKER_SECTION_HEALTH" = "Υγεία, οικογένεια και δραστηριότητες";
+"ICON_PICKER_SECTION_TECH" = "Τεχνολογία, εκπαίδευση και εργαλεία";
+"ICON_PICKER_SECTION_NATURE" = "Φύση, καιρός και γενικά σύμβολα";

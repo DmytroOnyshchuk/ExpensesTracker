@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Format d’exportació";
 "BACKUPS_IMPORT_SKIPPED" = "Ingressos omesos: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transaccions: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Despeses quotidianes a la ciutat";
+"ICON_PICKER_SECTION_TRAVEL" = "Transport i viatges";
+"ICON_PICKER_SECTION_MONEY" = "Compres, diners i feina";
+"ICON_PICKER_SECTION_HOME" = "Llar, menjar i cura personal";
+"ICON_PICKER_SECTION_HEALTH" = "Salut, família i activitats";
+"ICON_PICKER_SECTION_TECH" = "Tecnologia, educació i eines";
+"ICON_PICKER_SECTION_NATURE" = "Natura, temps i símbols generals";

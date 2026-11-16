@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Exportformat";
 "BACKUPS_IMPORT_SKIPPED" = "Iwwersprongen Akommes: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Transaktiounen: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Alldeeglech Ausgaben an der Stad";
+"ICON_PICKER_SECTION_TRAVEL" = "Transport a Reesen";
+"ICON_PICKER_SECTION_MONEY" = "Akafen, Geld an Aarbecht";
+"ICON_PICKER_SECTION_HOME" = "Doheem, Iessen a Kierperfleeg";
+"ICON_PICKER_SECTION_HEALTH" = "Gesondheet, Famill an Aktivitéiten";
+"ICON_PICKER_SECTION_TECH" = "Technik, Bildung an Handwierksgeschir";
+"ICON_PICKER_SECTION_NATURE" = "Natur, Wieder an allgemeng Symboler";

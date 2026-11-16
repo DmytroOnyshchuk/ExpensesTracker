@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Hōputu kaweake";
 "BACKUPS_IMPORT_SKIPPED" = "Moni whiwhi i pekehia: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Ngā tauwhitinga: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Ngā whakapaunga tāone o ia rā";
+"ICON_PICKER_SECTION_TRAVEL" = "Te waka me te haerenga";
+"ICON_PICKER_SECTION_MONEY" = "Te hokohoko, te moni me te mahi";
+"ICON_PICKER_SECTION_HOME" = "Te kāinga, te kai me te tiaki whaiaro";
+"ICON_PICKER_SECTION_HEALTH" = "Te hauora, te whānau me ngā mahi";
+"ICON_PICKER_SECTION_TECH" = "Te hangarau, te mātauranga me ngā taputapu";
+"ICON_PICKER_SECTION_NATURE" = "Te taiao, te huarere me ngā tohu whānui";

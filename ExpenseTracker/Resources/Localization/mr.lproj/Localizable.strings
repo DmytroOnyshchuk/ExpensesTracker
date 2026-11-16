@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "निर्यात फॉरमॅट";
 "BACKUPS_IMPORT_SKIPPED" = "वगळलेले उत्पन्न: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "व्यवहार: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "दैनंदिन शहरी खर्च";
+"ICON_PICKER_SECTION_TRAVEL" = "वाहतूक आणि प्रवास";
+"ICON_PICKER_SECTION_MONEY" = "खरेदी, पैसे आणि काम";
+"ICON_PICKER_SECTION_HOME" = "घर, अन्न आणि वैयक्तिक निगा";
+"ICON_PICKER_SECTION_HEALTH" = "आरोग्य, कुटुंब आणि उपक्रम";
+"ICON_PICKER_SECTION_TECH" = "तंत्रज्ञान, शिक्षण आणि साधने";
+"ICON_PICKER_SECTION_NATURE" = "निसर्ग, हवामान आणि सामान्य चिन्हे";

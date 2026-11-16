@@ -192,3 +192,12 @@
 "BACKUPS_FORMAT_TITLE" = "Ekspordivorming";
 "BACKUPS_IMPORT_SKIPPED" = "Vahele jäetud tulud: %d";
 "BACKUPS_TRANSACTIONS_COUNT" = "Tehingud: %d";
+
+// MARK: - CustomIconPickerView
+"ICON_PICKER_SECTION_EVERYDAY" = "Igapäevased linnakulud";
+"ICON_PICKER_SECTION_TRAVEL" = "Transport ja reisimine";
+"ICON_PICKER_SECTION_MONEY" = "Ostud, raha ja töö";
+"ICON_PICKER_SECTION_HOME" = "Kodu, toit ja isiklik hooldus";
+"ICON_PICKER_SECTION_HEALTH" = "Tervis, pere ja tegevused";
+"ICON_PICKER_SECTION_TECH" = "Tehnika, haridus ja tööriistad";
+"ICON_PICKER_SECTION_NATURE" = "Loodus, ilm ja üldsümbolid";
