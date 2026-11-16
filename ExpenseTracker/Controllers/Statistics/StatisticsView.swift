@@ -12,22 +12,45 @@ import SwiftUI
 
 struct StatisticsView: View {
     var resetToken: Int = .zero
+    var directory: TransactionCategory?
 
     @Query private var storedTransactions: [Transaction]
     @Query private var storedCategories: [TransactionCategory]
 
-    private var transactions: [Transaction] { storedTransactions.notDeleted }
+    private var transactions: [Transaction] {
+        let transactions = storedTransactions.notDeleted
+        guard let directoryUuid = directory?.uuid else { return transactions }
 
-    private var categories: [TransactionCategory] { storedCategories.notDeleted }
+        return transactions.filter {
+            $0.category.parentUuid == directoryUuid || $0.category.uuid == directoryUuid
+        }
+    }
 
-    @State private var period: StatisticsPeriod = .month
-    @State private var anchorDate = Date()
+    private var categories: [TransactionCategory] {
+        directory == nil ? storedCategories.notDeleted : []
+    }
+
+    @State private var period: StatisticsPeriod
+    @State private var anchorDate: Date
     @State private var slideEdge: Edge = .trailing
     @State private var showPeriodList = false
     @State private var showDayPicker = false
     @State private var exactStart: Date?
 
+    init(
+        resetToken: Int = .zero,
+        directory: TransactionCategory? = nil,
+        period: StatisticsPeriod = .month,
+        date: Date = Date()
+    ) {
+        self.resetToken = resetToken
+        self.directory = directory
+        _period = State(initialValue: period)
+        _anchorDate = State(initialValue: date)
+    }
+
     var body: some View {
+        let transactions = transactions
         let starts = period.starts(of: transactions)
         let start = displayedStart(in: starts)
         let interval = period.interval(containing: start)
@@ -66,18 +89,20 @@ struct StatisticsView: View {
         .onChange(of: resetToken) {
             resetToCurrentMonth(from: start)
         }
-        .navigationTitle(L10n.statisticsTitle)
+        .navigationTitle(directory?.name.localized ?? L10n.statisticsTitle)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                NavigationLink {
-                    ExpensesChartView()
-                } label: {
-                    Image(systemName: "chart.bar.fill")
-                        .font(.system(size: 14))
-                        .foregroundColor(.appWhite)
+            if directory == nil {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink {
+                        ExpensesChartView()
+                    } label: {
+                        Image(systemName: "chart.bar.fill")
+                            .font(.system(size: 14))
+                            .foregroundColor(.appWhite)
+                    }
+                    .accessibilityLabel(L10n.statisticsChart)
                 }
-                .accessibilityLabel(L10n.statisticsChart)
             }
         }
     }
@@ -267,7 +292,11 @@ struct StatisticsBreakdown: View {
                 VStack(spacing: 0) {
                     ForEach(slices) { slice in
                         NavigationLink {
-                            TransactionDetails(category: slice.category, interval: interval)
+                            if let period, slice.category.isDirectory {
+                                StatisticsView(directory: slice.category, period: period, date: interval.start)
+                            } else {
+                                TransactionDetails(category: slice.category, interval: interval)
+                            }
                         } label: {
                             StatisticsRow(
                                 slice: slice,
@@ -496,6 +525,26 @@ struct StatisticsRow: View {
 
     return NavigationStack {
         StatisticsView()
+    }
+    .modelContainer(container)
+}
+
+#Preview("Directory statistics") {
+    let container = makePreviewModelContainer()
+    let directory = TransactionCategory(name: "Food", categoryIcon: CategoryIcon(name: "fork.knife", iconColor: .yellow), isDirectory: true)
+    container.mainContext.insert(directory)
+    for (index, name) in ["Groceries", "Restaurants", "Coffee"].enumerated() {
+        let category = TransactionCategory(
+            name: .custom(name),
+            categoryIcon: CategoryIcon(name: "cart.fill", iconColor: IconColor.allCases[index]),
+            parentUuid: directory.uuid
+        )
+        container.mainContext.insert(category)
+        container.mainContext.insert(Transaction(amount: (3 - index) * 125000, category: category))
+    }
+
+    return NavigationStack {
+        StatisticsView(directory: directory)
     }
     .modelContainer(container)
 }
