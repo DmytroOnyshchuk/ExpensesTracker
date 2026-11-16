@@ -63,7 +63,7 @@ enum BackupManager {
     static var defaultFilename: String {
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "en_US_POSIX")
-        formatter.dateFormat = "yyyy-MM-dd"
+        formatter.dateFormat = "yyyy-MM-dd_HH-mm"
         return "ExpenseTracker-\(formatter.string(from: Date()))"
     }
 
