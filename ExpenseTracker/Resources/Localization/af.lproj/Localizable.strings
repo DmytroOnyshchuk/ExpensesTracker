@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Oor: %@";
 "BUDGET_EXCEEDED" = "Oorskry met %@";
 "BUDGET_NO_LIMIT" = "Geen limiet";
+"BUDGET_SET" = "Stel";
+"BUDGET_FOR_MONTH" = "Begroting vir die maand";
+"BUDGET_FOR_CATEGORY" = "Begroting vir %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Uitgawes";

@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Imebaki: %@";
 "BUDGET_EXCEEDED" = "Imezidi kwa %@";
 "BUDGET_NO_LIMIT" = "Hakuna kikomo";
+"BUDGET_SET" = "Weka";
+"BUDGET_FOR_MONTH" = "Bajeti ya mwezi";
+"BUDGET_FOR_CATEGORY" = "Bajeti ya %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Matumizi";

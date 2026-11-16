@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Natitira: %@";
 "BUDGET_EXCEEDED" = "Lumampas ng %@";
 "BUDGET_NO_LIMIT" = "Walang limitasyon";
+"BUDGET_SET" = "Itakda";
+"BUDGET_FOR_MONTH" = "Badyet para sa buwan";
+"BUDGET_FOR_CATEGORY" = "Badyet para sa %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Mga gastos";

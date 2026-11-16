@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Қалды: %@";
 "BUDGET_EXCEEDED" = "%@ асып кетті";
 "BUDGET_NO_LIMIT" = "Шектеу жоқ";
+"BUDGET_SET" = "Орнату";
+"BUDGET_FOR_MONTH" = "Айлық бюджет";
+"BUDGET_FOR_CATEGORY" = "%@ бюджеті";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Шығындар";

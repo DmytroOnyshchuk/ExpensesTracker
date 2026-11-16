@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Απομένουν: %@";
 "BUDGET_EXCEEDED" = "Υπέρβαση κατά %@";
 "BUDGET_NO_LIMIT" = "Χωρίς όριο";
+"BUDGET_SET" = "Ορισμός";
+"BUDGET_FOR_MONTH" = "Προϋπολογισμός μήνα";
+"BUDGET_FOR_CATEGORY" = "Προϋπολογισμός για %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Έξοδα";

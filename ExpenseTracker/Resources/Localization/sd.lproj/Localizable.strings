@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "باقي: %@";
 "BUDGET_EXCEEDED" = "%@ وڌي ويو";
 "BUDGET_NO_LIMIT" = "ڪا حد ناهي";
+"BUDGET_SET" = "مقرر ڪريو";
+"BUDGET_FOR_MONTH" = "مهيني جو بجيٽ";
+"BUDGET_FOR_CATEGORY" = "%@ لاءِ بجيٽ";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "خرچ";

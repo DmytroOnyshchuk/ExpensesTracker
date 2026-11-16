@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "शिल्लक: %@";
 "BUDGET_EXCEEDED" = "%@ ने ओलांडले";
 "BUDGET_NO_LIMIT" = "मर्यादा नाही";
+"BUDGET_SET" = "सेट करा";
+"BUDGET_FOR_MONTH" = "महिन्याचे बजेट";
+"BUDGET_FOR_CATEGORY" = "%@ साठी बजेट";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "खर्च";

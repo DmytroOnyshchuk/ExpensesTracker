@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Sisa: %@";
 "BUDGET_EXCEEDED" = "Kliwat %@";
 "BUDGET_NO_LIMIT" = "Tanpa wates";
+"BUDGET_SET" = "Setel";
+"BUDGET_FOR_MONTH" = "Anggaran sasi";
+"BUDGET_FOR_CATEGORY" = "Anggaran kanggo %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Pengeluaran";

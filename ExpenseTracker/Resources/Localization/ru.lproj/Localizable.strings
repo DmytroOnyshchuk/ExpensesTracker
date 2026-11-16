@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Осталось: %@";
 "BUDGET_EXCEEDED" = "Превышен на %@";
 "BUDGET_NO_LIMIT" = "Без лимита";
+"BUDGET_SET" = "Задать";
+"BUDGET_FOR_MONTH" = "Бюджет на месяц";
+"BUDGET_FOR_CATEGORY" = "Бюджет на %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Расходы";

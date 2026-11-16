@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Rescht: %@";
 "BUDGET_EXCEEDED" = "Ëm %@ iwwerschratt";
 "BUDGET_NO_LIMIT" = "Keng Limitt";
+"BUDGET_SET" = "Festleeën";
+"BUDGET_FOR_MONTH" = "Budget fir de Mount";
+"BUDGET_FOR_CATEGORY" = "Budget fir %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Ausgaben";

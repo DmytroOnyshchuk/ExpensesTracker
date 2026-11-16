@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "باقی: %@";
 "BUDGET_EXCEEDED" = "%@ سے تجاوز";
 "BUDGET_NO_LIMIT" = "کوئی حد نہیں";
+"BUDGET_SET" = "سیٹ کریں";
+"BUDGET_FOR_MONTH" = "ماہانہ بجٹ";
+"BUDGET_FOR_CATEGORY" = "%@ کے لیے بجٹ";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "اخراجات";

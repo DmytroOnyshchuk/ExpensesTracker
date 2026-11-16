@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "E toe ana: %@";
 "BUDGET_EXCEEDED" = "Kua hipa mā te %@";
 "BUDGET_NO_LIMIT" = "Kāore he tepe";
+"BUDGET_SET" = "Tautuhi";
+"BUDGET_FOR_MONTH" = "Tahua pūtea mō te marama";
+"BUDGET_FOR_CATEGORY" = "Tahua pūtea mō %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Ngā whakapaunga";

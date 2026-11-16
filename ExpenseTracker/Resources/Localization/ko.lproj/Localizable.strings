@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "남음: %@";
 "BUDGET_EXCEEDED" = "%@ 초과";
 "BUDGET_NO_LIMIT" = "한도 없음";
+"BUDGET_SET" = "설정";
+"BUDGET_FOR_MONTH" = "월 예산";
+"BUDGET_FOR_CATEGORY" = "%@ 예산";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "지출";

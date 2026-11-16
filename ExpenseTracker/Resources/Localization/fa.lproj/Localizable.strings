@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "باقی‌مانده: %@";
 "BUDGET_EXCEEDED" = "%@ بیش از حد";
 "BUDGET_NO_LIMIT" = "بدون محدودیت";
+"BUDGET_SET" = "تنظیم";
+"BUDGET_FOR_MONTH" = "بودجه ماه";
+"BUDGET_FOR_CATEGORY" = "بودجه %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "هزینه‌ها";

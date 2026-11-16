@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Haray: %@";
 "BUDGET_EXCEEDED" = "Waxaa laga badiyay %@";
 "BUDGET_NO_LIMIT" = "Xad ma leh";
+"BUDGET_SET" = "Deji";
+"BUDGET_FOR_MONTH" = "Miisaaniyadda bisha";
+"BUDGET_FOR_CATEGORY" = "Miisaaniyadda %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Kharashyada";

@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "ବାକି: %@";
 "BUDGET_EXCEEDED" = "%@ ଅତିକ୍ରମ କରିଛି";
 "BUDGET_NO_LIMIT" = "କୌଣସି ସୀମା ନାହିଁ";
+"BUDGET_SET" = "ସେଟ୍ କରନ୍ତୁ";
+"BUDGET_FOR_MONTH" = "ମାସିକ ବଜେଟ୍";
+"BUDGET_FOR_CATEGORY" = "%@ ପାଇଁ ବଜେଟ୍";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ଖର୍ଚ୍ଚ";

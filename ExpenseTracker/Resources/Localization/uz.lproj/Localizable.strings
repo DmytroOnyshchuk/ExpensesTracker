@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Qoldi: %@";
 "BUDGET_EXCEEDED" = "%@ oshib ketdi";
 "BUDGET_NO_LIMIT" = "Limit yoʻq";
+"BUDGET_SET" = "Belgilash";
+"BUDGET_FOR_MONTH" = "Oylik byudjet";
+"BUDGET_FOR_CATEGORY" = "%@ uchun byudjet";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Xarajatlar";

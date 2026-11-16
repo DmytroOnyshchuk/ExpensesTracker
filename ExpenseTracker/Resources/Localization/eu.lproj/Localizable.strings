@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Geratzen da: %@";
 "BUDGET_EXCEEDED" = "%@ gainditu da";
 "BUDGET_NO_LIMIT" = "Mugarik gabe";
+"BUDGET_SET" = "Ezarri";
+"BUDGET_FOR_MONTH" = "Hilabeteko aurrekontua";
+"BUDGET_FOR_CATEGORY" = "%@ aurrekontua";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Gastuak";

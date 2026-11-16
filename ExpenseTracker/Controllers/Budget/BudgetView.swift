@@ -22,8 +22,8 @@ enum BudgetTarget: Identifiable {
 
     var title: String {
         switch self {
-        case .month: L10n.menuBudget
-        case let .category(category): category.name.localized
+        case .month: L10n.budgetForMonth
+        case let .category(category): L10n.budgetForCategory(category.name.localized)
         }
     }
 }
@@ -41,34 +41,34 @@ struct BudgetView: View {
 
     var body: some View {
         let categories = categories
+        let limited = categories.filter { $0.budget > .zero }
+        let unlimited = categories.filter { $0.budget <= .zero }
         let spent = spentByCategory
 
         NavigationStack {
             ScrollView(.vertical) {
-                VStack(alignment: .leading, spacing: 24) {
+                VStack(alignment: .leading, spacing: 16) {
                     MonthBudgetCard(title: monthTitle, spent: monthTransactions.reduce(0) { $0 + $1.amount }, limit: monthlyLimit) {
                         open(.month)
                     }
 
-                    if !categories.isEmpty {
-                        VStack(alignment: .leading, spacing: 8) {
-                            MenuSectionHeader(title: L10n.menuCategories)
-
-                            VStack(spacing: 0) {
-                                ForEach(categories, id: \.uuid) { category in
-                                    CategoryBudgetRow(category: category, spent: spent[category.uuid] ?? .zero) {
-                                        open(.category(category))
-                                    }
-
-                                    if category.uuid != categories.last?.uuid {
-                                        CategoryBudgetDivider()
-                                    }
+                    if !limited.isEmpty {
+                        BudgetSection(leadingTitle: L10n.menuCategories, trailingTitle: L10n.menuBudget) {
+                            ForEach(limited, id: \.uuid) { category in
+                                CategoryBudgetRow(category: category, spent: spent[category.uuid] ?? .zero) {
+                                    open(.category(category))
                                 }
                             }
-                            .glassSurface(
-                                in: RoundedRectangle(cornerRadius: 18, style: .continuous),
-                                fallback: .appLabel.opacity(0.1)
-                            )
+                        }
+                    }
+
+                    if !unlimited.isEmpty {
+                        BudgetSection(leadingTitle: L10n.budgetNoLimit, trailingTitle: nil) {
+                            ForEach(unlimited, id: \.uuid) { category in
+                                UnsetCategoryBudgetRow(category: category, spent: spent[category.uuid] ?? .zero) {
+                                    open(.category(category))
+                                }
+                            }
                         }
                     }
                 }
@@ -81,7 +81,13 @@ struct BudgetView: View {
         }
         .overlay {
             if let target {
-                BalanceInputPopup(title: target.title, balance: limit(for: target), allowsEmpty: true, onCancel: close) { amount in
+                BalanceInputPopup(
+                    title: target.title,
+                    balance: limit(for: target),
+                    allowsEmpty: true,
+                    onRemove: limit(for: target) > .zero ? { remove(target) } : nil,
+                    onCancel: close
+                ) { amount in
                     setLimit(amount, for: target)
                     close()
                 }
@@ -140,6 +146,11 @@ struct BudgetView: View {
         }
     }
 
+    private func remove(_ target: BudgetTarget) {
+        setLimit(.zero, for: target)
+        close()
+    }
+
     private func open(_ target: BudgetTarget) {
         FeedbackManager.shared.buttonTapped()
         self.target = target
@@ -161,17 +172,17 @@ struct MonthBudgetCard: View {
 
     var body: some View {
         Button(action: action) {
-            VStack(alignment: .leading, spacing: 10) {
+            VStack(alignment: .leading, spacing: 8) {
                 HStack(spacing: 8) {
                     Text(title)
-                        .font(.appLight(14))
+                        .font(.appLight(12))
                         .foregroundColor(.appLabel)
 
                     Spacer(minLength: 8)
 
                     if hasLimit {
                         Text(remaining < .zero ? L10n.budgetExceeded((-remaining).getAmount()) : L10n.budgetLeft(remaining.getAmount()))
-                            .font(.appRegular(14))
+                            .font(.appLight(12))
                             .foregroundColor(remaining < .zero ? .appRed : .appWhite.opacity(0.75))
                             .contentTransition(.numericText())
                     }
@@ -179,14 +190,14 @@ struct MonthBudgetCard: View {
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
 
-                HStack(alignment: .firstTextBaseline, spacing: 8) {
+                HStack(alignment: .firstTextBaseline, spacing: 6) {
                     Text(spent.getAmount())
-                        .font(.appRegular(26))
+                        .font(.appRegular(22))
                         .foregroundColor(.appWhite)
                         .contentTransition(.numericText())
 
                     Text(hasLimit ? "/ \(limit.getAmount())" : L10n.budgetNoLimit)
-                        .font(.appLight(16))
+                        .font(.appLight(13))
                         .foregroundColor(.appLabel)
                         .contentTransition(.numericText())
 
@@ -196,7 +207,7 @@ struct MonthBudgetCard: View {
                 .minimumScaleFactor(0.6)
 
                 if hasLimit {
-                    BudgetProgressBar(spent: spent, limit: limit, color: .appPrimary, height: 8)
+                    BudgetProgressBar(spent: spent, limit: limit, color: .appPrimary, height: 6)
                 }
             }
             .padding(.horizontal, 16)
@@ -214,50 +225,78 @@ struct MonthBudgetCard: View {
     }
 }
 
+struct BudgetSection<Content: View>: View {
+    let leadingTitle: String
+    let trailingTitle: String?
+    @ViewBuilder let content: Content
+
+    var body: some View {
+        VStack(spacing: 0) {
+            HStack(spacing: 8) {
+                Text(leadingTitle)
+
+                Spacer(minLength: 8)
+
+                if let trailingTitle {
+                    Text(trailingTitle)
+                }
+            }
+            .font(.appLight(12))
+            .foregroundColor(.appLabel)
+            .lineLimit(1)
+            .padding(.horizontal, 16)
+            .padding(.top, 14)
+            .padding(.bottom, 4)
+
+            content
+        }
+        .padding(.bottom, 6)
+        .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
+    }
+}
+
 struct CategoryBudgetRow: View {
     let category: TransactionCategory
     let spent: Int
     let action: () -> Void
 
     private var limit: Int { category.budget }
-    private var hasLimit: Bool { limit > .zero }
 
     var body: some View {
         Button(action: action) {
-            VStack(alignment: .leading, spacing: 8) {
-                HStack(spacing: 16) {
-                    CategoryIconView(category: category)
+            HStack(spacing: 12) {
+                CategoryIconView(category: category, size: 24)
 
-                    Text(category.name.localized)
-                        .font(.appLight(18))
-                        .foregroundColor(.appWhite)
-                        .lineLimit(1)
-
-                    Spacer(minLength: 8)
-
-                    HStack(alignment: .firstTextBaseline, spacing: 6) {
-                        Text(spent.getAmount())
-                            .font(.appRegular(16))
+                VStack(alignment: .leading, spacing: 6) {
+                    HStack(alignment: .firstTextBaseline, spacing: 8) {
+                        Text(category.name.localized)
+                            .font(.appLight(15))
                             .foregroundColor(.appWhite)
-                            .contentTransition(.numericText())
+                            .lineLimit(1)
 
-                        Text(hasLimit ? "/ \(limit.getAmount())" : L10n.budgetNoLimit)
-                            .font(.appLight(14))
-                            .foregroundColor(.appLabel)
-                            .contentTransition(.numericText())
+                        Spacer(minLength: 8)
+
+                        HStack(alignment: .firstTextBaseline, spacing: 4) {
+                            Text(spent.getAmount())
+                                .font(.appRegular(15))
+                                .foregroundColor(.appWhite)
+                                .contentTransition(.numericText())
+
+                            Text("/ \(limit.getAmount())")
+                                .font(.appLight(12))
+                                .foregroundColor(.appLabel)
+                                .contentTransition(.numericText())
+                        }
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.7)
+                        .layoutPriority(1)
                     }
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.7)
-                    .layoutPriority(1)
-                }
-                .frame(height: 36)
 
-                if hasLimit {
-                    BudgetProgressBar(spent: spent, limit: limit, color: category.categoryIcon.color, height: 6)
+                    BudgetProgressBar(spent: spent, limit: limit, color: category.categoryIcon.color, height: 4)
 
                     if spent > limit {
                         Text(L10n.budgetExceeded((spent - limit).getAmount()))
-                            .font(.appLight(13))
+                            .font(.appLight(11))
                             .foregroundColor(.appRed)
                             .lineLimit(1)
                     }
@@ -265,6 +304,50 @@ struct CategoryBudgetRow: View {
             }
             .padding(.horizontal, 16)
             .padding(.vertical, 10)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+    }
+}
+
+struct UnsetCategoryBudgetRow: View {
+    let category: TransactionCategory
+    let spent: Int
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            HStack(spacing: 12) {
+                CategoryIconView(category: category, size: 24)
+
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(category.name.localized)
+                        .font(.appLight(15))
+                        .foregroundColor(.appWhite)
+
+                    Text(spent.getAmount())
+                        .font(.appLight(12))
+                        .foregroundColor(.appLabel)
+                        .contentTransition(.numericText())
+                }
+                .lineLimit(1)
+
+                Spacer(minLength: 8)
+
+                Text(L10n.budgetSet)
+                    .font(.appRegular(12))
+                    .foregroundColor(.appWhite)
+                    .lineLimit(1)
+                    .padding(.horizontal, 14)
+                    .padding(.vertical, 7)
+                    .background(.appLabel.opacity(0.15), in: Capsule())
+                    .overlay {
+                        Capsule()
+                            .stroke(.appLabel.opacity(0.3), lineWidth: 0.5)
+                    }
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 8)
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
@@ -298,21 +381,12 @@ struct BudgetProgressBar: View {
     }
 }
 
-struct CategoryBudgetDivider: View {
-    var body: some View {
-        Rectangle()
-            .fill(.appLabel.opacity(0.25))
-            .frame(height: 0.5)
-            .padding(.leading, 64)
-            .padding(.trailing, 16)
-    }
-}
-
 #Preview("Budget") {
     let container = makePreviewModelContainer()
     let categories = (try? container.mainContext.fetch(FetchDescriptor<TransactionCategory>())) ?? []
     for (index, category) in categories.filter({ !$0.isDirectory }).prefix(5).enumerated() {
         container.mainContext.insert(Transaction(amount: (index + 1) * 29000, category: category, date: Date()))
+        category.budget = index < 3 ? 60000 : 0
     }
 
     return BudgetView()

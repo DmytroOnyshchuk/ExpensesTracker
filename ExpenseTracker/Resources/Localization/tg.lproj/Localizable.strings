@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Боқӣ: %@";
 "BUDGET_EXCEEDED" = "%@ зиёд шуд";
 "BUDGET_NO_LIMIT" = "Бе маҳдудият";
+"BUDGET_SET" = "Гузоштан";
+"BUDGET_FOR_MONTH" = "Буҷети моҳ";
+"BUDGET_FOR_CATEGORY" = "Буҷет барои %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Хароҷот";

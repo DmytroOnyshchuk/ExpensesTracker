@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Galdy: %@";
 "BUDGET_EXCEEDED" = "%@ aşdy";
 "BUDGET_NO_LIMIT" = "Çäk ýok";
+"BUDGET_SET" = "Bellemek";
+"BUDGET_FOR_MONTH" = "Aýlyk býudjet";
+"BUDGET_FOR_CATEGORY" = "%@ üçin býudjet";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Çykdajylar";

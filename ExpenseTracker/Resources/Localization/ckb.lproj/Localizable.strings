@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "ماوە: %@";
 "BUDGET_EXCEEDED" = "%@ تێپەڕیوە";
 "BUDGET_NO_LIMIT" = "بێ سنوور";
+"BUDGET_SET" = "دابنێ";
+"BUDGET_FOR_MONTH" = "بودجەی مانگ";
+"BUDGET_FOR_CATEGORY" = "بودجەی %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "خەرجییەکان";

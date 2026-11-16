@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Eftir: %@";
 "BUDGET_EXCEEDED" = "Farið %@ fram úr";
 "BUDGET_NO_LIMIT" = "Engin mörk";
+"BUDGET_SET" = "Stilla";
+"BUDGET_FOR_MONTH" = "Fjárhagsáætlun mánaðarins";
+"BUDGET_FOR_CATEGORY" = "Fjárhagsáætlun fyrir %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Útgjöld";

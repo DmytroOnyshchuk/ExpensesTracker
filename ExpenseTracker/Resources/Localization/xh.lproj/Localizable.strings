@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Okuseleyo: %@";
 "BUDGET_EXCEEDED" = "Kugqithiswe nge-%@";
 "BUDGET_NO_LIMIT" = "Akukho mda";
+"BUDGET_SET" = "Seta";
+"BUDGET_FOR_MONTH" = "Uhlahlo-lwabiwo mali lwenyanga";
+"BUDGET_FOR_CATEGORY" = "Uhlahlo-lwabiwo mali lwe-%@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Iinkcitho";

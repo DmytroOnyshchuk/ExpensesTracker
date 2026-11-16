@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "נותרו: %@";
 "BUDGET_EXCEEDED" = "חריגה של %@";
 "BUDGET_NO_LIMIT" = "ללא הגבלה";
+"BUDGET_SET" = "הגדרה";
+"BUDGET_FOR_MONTH" = "תקציב לחודש";
+"BUDGET_FOR_CATEGORY" = "תקציב ל%@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "הוצאות";

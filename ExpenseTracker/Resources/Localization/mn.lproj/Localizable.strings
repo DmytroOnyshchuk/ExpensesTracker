@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Үлдсэн: %@";
 "BUDGET_EXCEEDED" = "%@-аар хэтэрсэн";
 "BUDGET_NO_LIMIT" = "Хязгааргүй";
+"BUDGET_SET" = "Тохируулах";
+"BUDGET_FOR_MONTH" = "Сарын төсөв";
+"BUDGET_FOR_CATEGORY" = "%@-ийн төсөв";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Зарлага";

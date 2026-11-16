@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "ඉතිරි: %@";
 "BUDGET_EXCEEDED" = "%@ කින් ඉක්මවා ඇත";
 "BUDGET_NO_LIMIT" = "සීමාවක් නැත";
+"BUDGET_SET" = "සකසන්න";
+"BUDGET_FOR_MONTH" = "මාසික අයවැය";
+"BUDGET_FOR_CATEGORY" = "%@ සඳහා අයවැය";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "වියදම්";

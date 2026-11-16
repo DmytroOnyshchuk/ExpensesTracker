@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Fágtha: %@";
 "BUDGET_EXCEEDED" = "Sáraithe de %@";
 "BUDGET_NO_LIMIT" = "Gan teorainn";
+"BUDGET_SET" = "Socraigh";
+"BUDGET_FOR_MONTH" = "Buiséad na míosa";
+"BUDGET_FOR_CATEGORY" = "Buiséad do %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Caiteachas";

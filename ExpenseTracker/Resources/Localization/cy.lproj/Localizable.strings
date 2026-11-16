@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Ar ôl: %@";
 "BUDGET_EXCEEDED" = "Wedi mynd %@ drosodd";
 "BUDGET_NO_LIMIT" = "Dim terfyn";
+"BUDGET_SET" = "Gosod";
+"BUDGET_FOR_MONTH" = "Cyllideb y mis";
+"BUDGET_FOR_CATEGORY" = "Cyllideb ar gyfer %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Treuliau";

@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "மீதம்: %@";
 "BUDGET_EXCEEDED" = "%@ மீறியது";
 "BUDGET_NO_LIMIT" = "வரம்பு இல்லை";
+"BUDGET_SET" = "அமை";
+"BUDGET_FOR_MONTH" = "மாத பட்ஜெட்";
+"BUDGET_FOR_CATEGORY" = "%@ க்கான பட்ஜெட்";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "செலவுகள்";

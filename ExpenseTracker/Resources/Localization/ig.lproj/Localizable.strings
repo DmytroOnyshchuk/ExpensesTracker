@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Fọdụrụ: %@";
 "BUDGET_EXCEEDED" = "Gafere site na %@";
 "BUDGET_NO_LIMIT" = "Enweghị oke";
+"BUDGET_SET" = "Tọọ";
+"BUDGET_FOR_MONTH" = "Mmefu ego nke ọnwa";
+"BUDGET_FOR_CATEGORY" = "Mmefu ego maka %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Mmefu";

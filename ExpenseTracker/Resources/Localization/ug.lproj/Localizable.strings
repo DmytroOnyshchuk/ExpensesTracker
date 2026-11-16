@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "قالدى: %@";
 "BUDGET_EXCEEDED" = "%@ ئېشىپ كەتتى";
 "BUDGET_NO_LIMIT" = "چەك يوق";
+"BUDGET_SET" = "بەلگىلەش";
+"BUDGET_FOR_MONTH" = "ئايلىق بۇجىت";
+"BUDGET_FOR_CATEGORY" = "%@ بۇجىتى";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "چىقىملار";

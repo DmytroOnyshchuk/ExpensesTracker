@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Preostalo: %@";
 "BUDGET_EXCEEDED" = "Preseženo za %@";
 "BUDGET_NO_LIMIT" = "Brez omejitve";
+"BUDGET_SET" = "Nastavi";
+"BUDGET_FOR_MONTH" = "Proračun za mesec";
+"BUDGET_FOR_CATEGORY" = "Proračun za %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Odhodki";

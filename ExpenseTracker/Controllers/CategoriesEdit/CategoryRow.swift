@@ -71,6 +71,7 @@ struct CategoryRow: View {
 
 struct CategoryIconView: View {
     let category: TransactionCategory
+    var size: CGFloat = 32
 
     var body: some View {
         if category.isDirectory {
@@ -84,16 +85,16 @@ struct CategoryIconView: View {
                     .resizable()
                     .scaledToFit()
                     .foregroundColor(.appMain)
-                    .frame(width: 13, height: 13)
-                    .offset(y: 2)
+                    .frame(width: size * 0.4, height: size * 0.4)
+                    .offset(y: size / 16)
             }
-            .frame(width: 32, height: 32)
+            .frame(width: size, height: size)
         } else {
             category.categoryIcon.image
                 .resizable()
                 .scaledToFit()
                 .foregroundColor(category.categoryIcon.color)
-                .frame(width: 32, height: 32)
+                .frame(width: size, height: size)
         }
     }
 }

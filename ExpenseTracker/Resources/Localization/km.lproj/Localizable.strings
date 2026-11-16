@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "នៅសល់៖ %@";
 "BUDGET_EXCEEDED" = "លើស %@";
 "BUDGET_NO_LIMIT" = "គ្មានដែនកំណត់";
+"BUDGET_SET" = "កំណត់";
+"BUDGET_FOR_MONTH" = "ថវិកាប្រចាំខែ";
+"BUDGET_FOR_CATEGORY" = "ថវិកាសម្រាប់ %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ចំណាយ";

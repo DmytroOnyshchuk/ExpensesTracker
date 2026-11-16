@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Còn lại: %@";
 "BUDGET_EXCEEDED" = "Vượt %@";
 "BUDGET_NO_LIMIT" = "Không giới hạn";
+"BUDGET_SET" = "Đặt";
+"BUDGET_FOR_MONTH" = "Ngân sách tháng";
+"BUDGET_FOR_CATEGORY" = "Ngân sách cho %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Chi tiêu";

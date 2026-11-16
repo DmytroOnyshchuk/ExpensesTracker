@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Atlicis: %@";
 "BUDGET_EXCEEDED" = "Pārsniegts par %@";
 "BUDGET_NO_LIMIT" = "Bez limita";
+"BUDGET_SET" = "Iestatīt";
+"BUDGET_FOR_MONTH" = "Mēneša budžets";
+"BUDGET_FOR_CATEGORY" = "Budžets: %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Izdevumi";

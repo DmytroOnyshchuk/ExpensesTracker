@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "ਬਾਕੀ: %@";
 "BUDGET_EXCEEDED" = "%@ ਵੱਧ ਗਿਆ";
 "BUDGET_NO_LIMIT" = "ਕੋਈ ਸੀਮਾ ਨਹੀਂ";
+"BUDGET_SET" = "ਸੈੱਟ ਕਰੋ";
+"BUDGET_FOR_MONTH" = "ਮਹੀਨੇ ਦਾ ਬਜਟ";
+"BUDGET_FOR_CATEGORY" = "%@ ਲਈ ਬਜਟ";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ਖਰਚੇ";

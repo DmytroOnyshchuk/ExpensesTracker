@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Kalan: %@";
 "BUDGET_EXCEEDED" = "%@ aşıldı";
 "BUDGET_NO_LIMIT" = "Limit yok";
+"BUDGET_SET" = "Belirle";
+"BUDGET_FOR_MONTH" = "Aylık bütçe";
+"BUDGET_FOR_CATEGORY" = "%@ bütçesi";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Harcamalar";

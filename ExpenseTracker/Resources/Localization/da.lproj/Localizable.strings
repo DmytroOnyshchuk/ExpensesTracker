@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Tilbage: %@";
 "BUDGET_EXCEEDED" = "Overskredet med %@";
 "BUDGET_NO_LIMIT" = "Ingen grænse";
+"BUDGET_SET" = "Angiv";
+"BUDGET_FOR_MONTH" = "Budget for måneden";
+"BUDGET_FOR_CATEGORY" = "Budget for %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Udgifter";

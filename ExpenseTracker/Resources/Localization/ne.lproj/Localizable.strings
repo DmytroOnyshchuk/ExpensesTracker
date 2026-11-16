@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "बाँकी: %@";
 "BUDGET_EXCEEDED" = "%@ ले नाघ्यो";
 "BUDGET_NO_LIMIT" = "कुनै सीमा छैन";
+"BUDGET_SET" = "सेट गर्नुहोस्";
+"BUDGET_FOR_MONTH" = "महिनाको बजेट";
+"BUDGET_FOR_CATEGORY" = "%@ को बजेट";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "खर्च";

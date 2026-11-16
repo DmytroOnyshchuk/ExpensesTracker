@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Maye: %@";
 "BUDGET_EXCEEDED" = "%@ derbas bûye";
 "BUDGET_NO_LIMIT" = "Bê sînor";
+"BUDGET_SET" = "Saz bike";
+"BUDGET_FOR_MONTH" = "Budçeya mehê";
+"BUDGET_FOR_CATEGORY" = "Budçe ji bo %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Lêçûn";

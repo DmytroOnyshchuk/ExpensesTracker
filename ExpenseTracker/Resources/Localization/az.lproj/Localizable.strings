@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Qalıb: %@";
 "BUDGET_EXCEEDED" = "%@ aşılıb";
 "BUDGET_NO_LIMIT" = "Limit yoxdur";
+"BUDGET_SET" = "Təyin et";
+"BUDGET_FOR_MONTH" = "Aylıq büdcə";
+"BUDGET_FOR_CATEGORY" = "%@ üçün büdcə";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Xərclər";

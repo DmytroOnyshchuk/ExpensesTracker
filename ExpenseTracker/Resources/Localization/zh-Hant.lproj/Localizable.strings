@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "剩餘：%@";
 "BUDGET_EXCEEDED" = "超出 %@";
 "BUDGET_NO_LIMIT" = "無上限";
+"BUDGET_SET" = "設定";
+"BUDGET_FOR_MONTH" = "每月預算";
+"BUDGET_FOR_CATEGORY" = "%@預算";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "支出";

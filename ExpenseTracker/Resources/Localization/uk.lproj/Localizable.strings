@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Залишилось: %@";
 "BUDGET_EXCEEDED" = "Перевищено на %@";
 "BUDGET_NO_LIMIT" = "Без ліміту";
+"BUDGET_SET" = "Задати";
+"BUDGET_FOR_MONTH" = "Бюджет на місяць";
+"BUDGET_FOR_CATEGORY" = "Бюджет на %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Витрати";

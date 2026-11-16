@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Übrig: %@";
 "BUDGET_EXCEEDED" = "Um %@ überschritten";
 "BUDGET_NO_LIMIT" = "Kein Limit";
+"BUDGET_SET" = "Festlegen";
+"BUDGET_FOR_MONTH" = "Budget für den Monat";
+"BUDGET_FOR_CATEGORY" = "Budget für %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Ausgaben";

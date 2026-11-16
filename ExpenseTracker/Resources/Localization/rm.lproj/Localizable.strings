@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Restan: %@";
 "BUDGET_EXCEEDED" = "Surpassà per %@";
 "BUDGET_NO_LIMIT" = "Nagina limita";
+"BUDGET_SET" = "Definir";
+"BUDGET_FOR_MONTH" = "Budget dal mais";
+"BUDGET_FOR_CATEGORY" = "Budget per %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Expensas";

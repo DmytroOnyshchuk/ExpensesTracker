@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "剩余：%@";
 "BUDGET_EXCEEDED" = "超出 %@";
 "BUDGET_NO_LIMIT" = "无上限";
+"BUDGET_SET" = "设置";
+"BUDGET_FOR_MONTH" = "月度预算";
+"BUDGET_FOR_CATEGORY" = "%@预算";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "支出";

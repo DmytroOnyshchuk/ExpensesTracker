@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Ó kù: %@";
 "BUDGET_EXCEEDED" = "Ó kọjá pẹ̀lú %@";
 "BUDGET_NO_LIMIT" = "Kò sí ààlà";
+"BUDGET_SET" = "Ṣètò";
+"BUDGET_FOR_MONTH" = "Isuna oṣooṣu";
+"BUDGET_FOR_CATEGORY" = "Isuna fun %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Àwọn ìnáwó";

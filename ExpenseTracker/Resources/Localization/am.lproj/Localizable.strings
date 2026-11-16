@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "ቀሪ፦ %@";
 "BUDGET_EXCEEDED" = "በ%@ አልፏል";
 "BUDGET_NO_LIMIT" = "ገደብ የለም";
+"BUDGET_SET" = "አዘጋጅ";
+"BUDGET_FOR_MONTH" = "የወሩ በጀት";
+"BUDGET_FOR_CATEGORY" = "የ%@ በጀት";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ወጪዎች";

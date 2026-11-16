@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Zbývá: %@";
 "BUDGET_EXCEEDED" = "Překročeno o %@";
 "BUDGET_NO_LIMIT" = "Bez limitu";
+"BUDGET_SET" = "Nastavit";
+"BUDGET_FOR_MONTH" = "Rozpočet na měsíc";
+"BUDGET_FOR_CATEGORY" = "Rozpočet na %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Výdaje";

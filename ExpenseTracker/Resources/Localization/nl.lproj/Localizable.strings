@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Over: %@";
 "BUDGET_EXCEEDED" = "Overschreden met %@";
 "BUDGET_NO_LIMIT" = "Geen limiet";
+"BUDGET_SET" = "Instellen";
+"BUDGET_FOR_MONTH" = "Budget voor de maand";
+"BUDGET_FOR_CATEGORY" = "Budget voor %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Uitgaven";

@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "残り: %@";
 "BUDGET_EXCEEDED" = "%@超過";
 "BUDGET_NO_LIMIT" = "上限なし";
+"BUDGET_SET" = "設定";
+"BUDGET_FOR_MONTH" = "月の予算";
+"BUDGET_FOR_CATEGORY" = "%@の予算";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "支出";

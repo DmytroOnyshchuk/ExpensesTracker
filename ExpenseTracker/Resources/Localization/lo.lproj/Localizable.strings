@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "ເຫຼືອ: %@";
 "BUDGET_EXCEEDED" = "ເກີນ %@";
 "BUDGET_NO_LIMIT" = "ບໍ່ມີຂີດຈຳກັດ";
+"BUDGET_SET" = "ຕັ້ງ";
+"BUDGET_FOR_MONTH" = "ງົບປະມານປະຈຳເດືອນ";
+"BUDGET_FOR_CATEGORY" = "ງົບປະມານສຳລັບ %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ລາຍຈ່າຍ";

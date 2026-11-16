@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "शेष: %@";
 "BUDGET_EXCEEDED" = "%@ से अधिक";
 "BUDGET_NO_LIMIT" = "कोई सीमा नहीं";
+"BUDGET_SET" = "सेट करें";
+"BUDGET_FOR_MONTH" = "महीने का बजट";
+"BUDGET_FOR_CATEGORY" = "%@ के लिए बजट";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "खर्च";

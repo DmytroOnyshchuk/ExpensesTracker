@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "બાકી: %@";
 "BUDGET_EXCEEDED" = "%@ વધી ગયું";
 "BUDGET_NO_LIMIT" = "કોઈ મર્યાદા નથી";
+"BUDGET_SET" = "સેટ કરો";
+"BUDGET_FOR_MONTH" = "મહિનાનું બજેટ";
+"BUDGET_FOR_CATEGORY" = "%@ માટે બજેટ";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ખર્ચ";

@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Jääk: %@";
 "BUDGET_EXCEEDED" = "Ületatud %@ võrra";
 "BUDGET_NO_LIMIT" = "Limiiti pole";
+"BUDGET_SET" = "Määra";
+"BUDGET_FOR_MONTH" = "Kuu eelarve";
+"BUDGET_FOR_CATEGORY" = "%@ eelarve";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Kulud";

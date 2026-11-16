@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Att: %@";
 "BUDGET_EXCEEDED" = "Overskride med %@";
 "BUDGET_NO_LIMIT" = "Inga grense";
+"BUDGET_SET" = "Angi";
+"BUDGET_FOR_MONTH" = "Budsjett for månaden";
+"BUDGET_FOR_CATEGORY" = "Budsjett for %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Utgifter";

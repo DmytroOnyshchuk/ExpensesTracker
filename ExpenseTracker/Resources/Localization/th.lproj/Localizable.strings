@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "เหลือ: %@";
 "BUDGET_EXCEEDED" = "เกิน %@";
 "BUDGET_NO_LIMIT" = "ไม่จำกัด";
+"BUDGET_SET" = "ตั้งค่า";
+"BUDGET_FOR_MONTH" = "งบประมาณรายเดือน";
+"BUDGET_FOR_CATEGORY" = "งบประมาณสำหรับ %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ค่าใช้จ่าย";

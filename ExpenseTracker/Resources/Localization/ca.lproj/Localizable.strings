@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Queden: %@";
 "BUDGET_EXCEEDED" = "Superat en %@";
 "BUDGET_NO_LIMIT" = "Sense límit";
+"BUDGET_SET" = "Defineix";
+"BUDGET_FOR_MONTH" = "Pressupost del mes";
+"BUDGET_FOR_CATEGORY" = "Pressupost per a %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Despeses";

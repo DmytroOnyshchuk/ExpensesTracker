@@ -90,12 +90,20 @@ internal enum L10n {
   internal static func budgetExceeded(_ p1: Any) -> String {
     return L10n.tr("Localizable", "BUDGET_EXCEEDED", String(describing: p1), fallback: "Exceeded by %@")
   }
+  /// Budget for %@
+  internal static func budgetForCategory(_ p1: Any) -> String {
+    return L10n.tr("Localizable", "BUDGET_FOR_CATEGORY", String(describing: p1), fallback: "Budget for %@")
+  }
+  /// Budget for month
+  internal static let budgetForMonth = L10n.tr("Localizable", "BUDGET_FOR_MONTH", fallback: "Budget for month")
   /// Left: %@
   internal static func budgetLeft(_ p1: Any) -> String {
     return L10n.tr("Localizable", "BUDGET_LEFT", String(describing: p1), fallback: "Left: %@")
   }
   /// No limit
   internal static let budgetNoLimit = L10n.tr("Localizable", "BUDGET_NO_LIMIT", fallback: "No limit")
+  /// Set
+  internal static let budgetSet = L10n.tr("Localizable", "BUDGET_SET", fallback: "Set")
   /// Cancel
   internal static let cancel = L10n.tr("Localizable", "CANCEL", fallback: "Cancel")
   /// Cancel

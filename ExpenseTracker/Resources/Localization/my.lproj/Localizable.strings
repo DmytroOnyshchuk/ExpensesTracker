@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "ကျန်: %@";
 "BUDGET_EXCEEDED" = "%@ ကျော်လွန်";
 "BUDGET_NO_LIMIT" = "ကန့်သတ်ချက်မရှိ";
+"BUDGET_SET" = "သတ်မှတ်";
+"BUDGET_FOR_MONTH" = "လစဉ်ဘတ်ဂျက်";
+"BUDGET_FOR_CATEGORY" = "%@ အတွက် ဘတ်ဂျက်";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "အသုံးစရိတ်များ";

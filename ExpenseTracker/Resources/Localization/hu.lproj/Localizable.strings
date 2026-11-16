@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Maradt: %@";
 "BUDGET_EXCEEDED" = "Túllépve ennyivel: %@";
 "BUDGET_NO_LIMIT" = "Nincs korlát";
+"BUDGET_SET" = "Beállítás";
+"BUDGET_FOR_MONTH" = "Havi költségvetés";
+"BUDGET_FOR_CATEGORY" = "Költségvetés: %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Kiadások";

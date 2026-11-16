@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "დარჩა: %@";
 "BUDGET_EXCEEDED" = "გადაჭარბებულია %@-ით";
 "BUDGET_NO_LIMIT" = "ლიმიტის გარეშე";
+"BUDGET_SET" = "დაყენება";
+"BUDGET_FOR_MONTH" = "თვის ბიუჯეტი";
+"BUDGET_FOR_CATEGORY" = "ბიუჯეტი: %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ხარჯები";

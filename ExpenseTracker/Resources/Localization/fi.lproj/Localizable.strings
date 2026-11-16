@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Jäljellä: %@";
 "BUDGET_EXCEEDED" = "Ylitetty %@";
 "BUDGET_NO_LIMIT" = "Ei rajaa";
+"BUDGET_SET" = "Aseta";
+"BUDGET_FOR_MONTH" = "Kuukauden budjetti";
+"BUDGET_FOR_CATEGORY" = "Budjetti: %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Kulut";

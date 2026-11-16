@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Rămas: %@";
 "BUDGET_EXCEEDED" = "Depășit cu %@";
 "BUDGET_NO_LIMIT" = "Fără limită";
+"BUDGET_SET" = "Setează";
+"BUDGET_FOR_MONTH" = "Buget pe lună";
+"BUDGET_FOR_CATEGORY" = "Buget pentru %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Cheltuieli";

@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "المتبقي: %@";
 "BUDGET_EXCEEDED" = "تم التجاوز بمقدار %@";
 "BUDGET_NO_LIMIT" = "بلا حد";
+"BUDGET_SET" = "تعيين";
+"BUDGET_FOR_MONTH" = "ميزانية الشهر";
+"BUDGET_FOR_CATEGORY" = "ميزانية %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "المصروفات";

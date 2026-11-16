@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Rimasti: %@";
 "BUDGET_EXCEEDED" = "Superato di %@";
 "BUDGET_NO_LIMIT" = "Nessun limite";
+"BUDGET_SET" = "Imposta";
+"BUDGET_FOR_MONTH" = "Budget del mese";
+"BUDGET_FOR_CATEGORY" = "Budget per %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Spese";

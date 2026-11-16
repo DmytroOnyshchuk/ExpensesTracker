@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "ബാക്കി: %@";
 "BUDGET_EXCEEDED" = "%@ കവിഞ്ഞു";
 "BUDGET_NO_LIMIT" = "പരിധിയില്ല";
+"BUDGET_SET" = "സജ്ജമാക്കുക";
+"BUDGET_FOR_MONTH" = "മാസത്തെ ബജറ്റ്";
+"BUDGET_FOR_CATEGORY" = "%@ ബജറ്റ്";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ചെലവുകൾ";

@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Fadal: %@";
 "BUDGET_EXCEEDED" = "Inqabeż b'%@";
 "BUDGET_NO_LIMIT" = "Bla limitu";
+"BUDGET_SET" = "Issettja";
+"BUDGET_FOR_MONTH" = "Baġit tax-xahar";
+"BUDGET_FOR_CATEGORY" = "Baġit għal %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Spejjeż";

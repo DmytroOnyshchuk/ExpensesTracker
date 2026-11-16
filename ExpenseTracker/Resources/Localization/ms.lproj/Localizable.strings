@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Baki: %@";
 "BUDGET_EXCEEDED" = "Melebihi sebanyak %@";
 "BUDGET_NO_LIMIT" = "Tiada had";
+"BUDGET_SET" = "Tetapkan";
+"BUDGET_FOR_MONTH" = "Bajet bulanan";
+"BUDGET_FOR_CATEGORY" = "Bajet untuk %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Perbelanjaan";

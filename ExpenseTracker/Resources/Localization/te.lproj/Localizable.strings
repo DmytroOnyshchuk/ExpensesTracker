@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "మిగిలింది: %@";
 "BUDGET_EXCEEDED" = "%@ మించిపోయింది";
 "BUDGET_NO_LIMIT" = "పరిమితి లేదు";
+"BUDGET_SET" = "సెట్ చేయి";
+"BUDGET_FOR_MONTH" = "నెల బడ్జెట్";
+"BUDGET_FOR_CATEGORY" = "%@ కోసం బడ్జెట్";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ఖర్చులు";

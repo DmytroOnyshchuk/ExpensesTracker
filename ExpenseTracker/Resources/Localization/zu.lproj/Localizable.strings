@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Okusele: %@";
 "BUDGET_EXCEEDED" = "Kweqe nge-%@";
 "BUDGET_NO_LIMIT" = "Awukho umkhawulo";
+"BUDGET_SET" = "Setha";
+"BUDGET_FOR_MONTH" = "Isabelomali senyanga";
+"BUDGET_FOR_CATEGORY" = "Isabelomali se-%@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Izindleko";

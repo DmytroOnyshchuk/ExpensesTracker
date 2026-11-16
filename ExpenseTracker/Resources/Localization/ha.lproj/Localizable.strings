@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Saura: %@";
 "BUDGET_EXCEEDED" = "An wuce da %@";
 "BUDGET_NO_LIMIT" = "Babu iyaka";
+"BUDGET_SET" = "Saita";
+"BUDGET_FOR_MONTH" = "Kasafin wata";
+"BUDGET_FOR_CATEGORY" = "Kasafin %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Kashe kuɗi";

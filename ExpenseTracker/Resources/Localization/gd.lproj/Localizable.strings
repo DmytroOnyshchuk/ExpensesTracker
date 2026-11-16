@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Air fhàgail: %@";
 "BUDGET_EXCEEDED" = "Air a dhol %@ thairis";
 "BUDGET_NO_LIMIT" = "Gun chrìoch";
+"BUDGET_SET" = "Suidhich";
+"BUDGET_FOR_MONTH" = "Buidseat na mìos";
+"BUDGET_FOR_CATEGORY" = "Buidseat airson %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Cosgaisean";

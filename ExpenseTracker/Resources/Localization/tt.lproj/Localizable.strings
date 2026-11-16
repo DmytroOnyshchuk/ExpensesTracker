@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Калды: %@";
 "BUDGET_EXCEEDED" = "%@ артып китте";
 "BUDGET_NO_LIMIT" = "Чикләү юк";
+"BUDGET_SET" = "Кую";
+"BUDGET_FOR_MONTH" = "Айлык бюджет";
+"BUDGET_FOR_CATEGORY" = "%@ бюджеты";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Чыгымнар";

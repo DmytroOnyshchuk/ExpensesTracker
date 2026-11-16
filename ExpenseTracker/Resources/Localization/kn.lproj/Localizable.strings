@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "ಉಳಿದಿದೆ: %@";
 "BUDGET_EXCEEDED" = "%@ ಮೀರಿದೆ";
 "BUDGET_NO_LIMIT" = "ಮಿತಿ ಇಲ್ಲ";
+"BUDGET_SET" = "ಹೊಂದಿಸಿ";
+"BUDGET_FOR_MONTH" = "ತಿಂಗಳ ಬಜೆಟ್";
+"BUDGET_FOR_CATEGORY" = "%@ ಗಾಗಿ ಬಜೆಟ್";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ವೆಚ್ಚಗಳು";

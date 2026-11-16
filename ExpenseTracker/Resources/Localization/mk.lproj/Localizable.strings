@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Преостанато: %@";
 "BUDGET_EXCEEDED" = "Надминато за %@";
 "BUDGET_NO_LIMIT" = "Без лимит";
+"BUDGET_SET" = "Постави";
+"BUDGET_FOR_MONTH" = "Буџет за месецот";
+"BUDGET_FOR_CATEGORY" = "Буџет за %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Трошоци";

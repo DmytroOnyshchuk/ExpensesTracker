@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Liko: %@";
 "BUDGET_EXCEEDED" = "Viršyta %@";
 "BUDGET_NO_LIMIT" = "Be limito";
+"BUDGET_SET" = "Nustatyti";
+"BUDGET_FOR_MONTH" = "Mėnesio biudžetas";
+"BUDGET_FOR_CATEGORY" = "Biudžetas: %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Išlaidos";

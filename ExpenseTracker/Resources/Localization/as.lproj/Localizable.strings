@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "বাকী: %@";
 "BUDGET_EXCEEDED" = "%@ অতিক্ৰম কৰিছে";
 "BUDGET_NO_LIMIT" = "কোনো সীমা নাই";
+"BUDGET_SET" = "ছেট কৰক";
+"BUDGET_FOR_MONTH" = "মাহৰ বাজেট";
+"BUDGET_FOR_CATEGORY" = "%@ ৰ বাজেট";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "খৰচ";

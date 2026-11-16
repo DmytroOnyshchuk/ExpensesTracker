@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Mbetur: %@";
 "BUDGET_EXCEEDED" = "Tejkaluar me %@";
 "BUDGET_NO_LIMIT" = "Pa limit";
+"BUDGET_SET" = "Cakto";
+"BUDGET_FOR_MONTH" = "Buxheti i muajit";
+"BUDGET_FOR_CATEGORY" = "Buxheti për %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Shpenzimet";

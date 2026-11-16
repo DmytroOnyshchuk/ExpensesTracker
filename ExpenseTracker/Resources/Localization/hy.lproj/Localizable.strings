@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Մնացել է՝ %@";
 "BUDGET_EXCEEDED" = "Գերազանցվել է %@-ով";
 "BUDGET_NO_LIMIT" = "Առանց սահմանի";
+"BUDGET_SET" = "Սահմանել";
+"BUDGET_FOR_MONTH" = "Ամսվա բյուջե";
+"BUDGET_FOR_CATEGORY" = "%@-ի բյուջե";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Ծախսեր";

@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Kvar: %@";
 "BUDGET_EXCEEDED" = "Överskridet med %@";
 "BUDGET_NO_LIMIT" = "Ingen gräns";
+"BUDGET_SET" = "Ange";
+"BUDGET_FOR_MONTH" = "Budget för månaden";
+"BUDGET_FOR_CATEGORY" = "Budget för %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Utgifter";

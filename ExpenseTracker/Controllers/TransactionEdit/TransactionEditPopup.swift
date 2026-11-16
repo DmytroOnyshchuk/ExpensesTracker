@@ -20,33 +20,42 @@ struct TransactionEditPopup<Content: View>: View {
                 .ignoresSafeArea()
                 .onTapGesture(perform: onCancel)
 
-            VStack(spacing: 8) {
+            VStack(spacing: 0) {
                 content
 
-                HStack {
+                Rectangle()
+                    .fill(.appLabel.opacity(0.2))
+                    .frame(height: 0.5)
+                    .padding(.top, 14)
+
+                HStack(spacing: 0) {
                     actionButton(L10n.cancel, action: onCancel)
+
+                    Rectangle()
+                        .fill(.appLabel.opacity(0.2))
+                        .frame(width: 0.5, height: 24)
+
                     actionButton(L10n.ok, action: onConfirm)
                         .disabled(!canConfirm)
                         .opacity(canConfirm ? 1 : 0.4)
                 }
             }
-            .padding(.top, 20)
-            .padding(.bottom, 8)
+            .padding(.top, 18)
             .frame(maxWidth: .infinity)
             .glassSurface(
-                in: RoundedRectangle(cornerRadius: LiquidGlass.isAvailable ? 28 : 14, style: .continuous),
+                in: RoundedRectangle(cornerRadius: LiquidGlass.isAvailable ? 24 : 16, style: .continuous),
                 fallback: .appSecond
             )
-            .padding(.horizontal, 36)
+            .padding(.horizontal, 48)
         }
     }
 
     private func actionButton(_ title: String, action: @escaping () -> Void) -> some View {
         Button(action: action) {
             Text(title)
-                .font(.appLight(20))
+                .font(.appRegular(15))
                 .foregroundColor(.appPrimary)
-                .frame(maxWidth: .infinity, minHeight: 52)
+                .frame(maxWidth: .infinity, minHeight: 44)
                 .contentShape(Rectangle())
         }
         .buttonStyle(.plain)

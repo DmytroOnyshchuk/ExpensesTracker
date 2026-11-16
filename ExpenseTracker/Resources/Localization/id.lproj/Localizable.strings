@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Sisa: %@";
 "BUDGET_EXCEEDED" = "Terlampaui %@";
 "BUDGET_NO_LIMIT" = "Tanpa batas";
+"BUDGET_SET" = "Atur";
+"BUDGET_FOR_MONTH" = "Anggaran bulan ini";
+"BUDGET_FOR_CATEGORY" = "Anggaran untuk %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Pengeluaran";

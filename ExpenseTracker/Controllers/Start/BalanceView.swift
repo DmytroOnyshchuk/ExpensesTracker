@@ -49,6 +49,7 @@ struct BalanceCard: View {
 struct BalanceInputPopup: View {
     let onCancel: () -> Void
     let onConfirm: (Int) -> Void
+    var onRemove: (() -> Void)?
 
     private let title: String
     private let allowsEmpty: Bool
@@ -60,9 +61,11 @@ struct BalanceInputPopup: View {
         title: String = L10n.startviewBalance,
         balance: Int?,
         allowsEmpty: Bool = false,
+        onRemove: (() -> Void)? = nil,
         onCancel: @escaping () -> Void,
         onConfirm: @escaping (Int) -> Void
     ) {
+        self.onRemove = onRemove
         self.title = title
         self.allowsEmpty = allowsEmpty
         self.onCancel = onCancel
@@ -72,9 +75,9 @@ struct BalanceInputPopup: View {
 
     var body: some View {
         TransactionEditPopup(canConfirm: allowsEmpty || !text.isBlank, onCancel: cancel, onConfirm: confirm) {
-            VStack(spacing: 16) {
+            VStack(spacing: 12) {
                 Text(title)
-                    .font(.appMedium(16))
+                    .font(.appMedium(14))
                     .foregroundColor(.appLabel)
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)
@@ -83,15 +86,26 @@ struct BalanceInputPopup: View {
                 TextField("", text: $text, prompt: Text("0").foregroundColor(.appLabel.opacity(0.6)))
                     .keyboardType(.decimalPad)
                     .focused($isFocused)
-                    .font(.appLight(32))
+                    .font(.appRegular(22))
                     .foregroundColor(.appWhite)
                     .tint(.appPrimary)
                     .multilineTextAlignment(.center)
-                    .padding(.horizontal, 16)
-                    .frame(height: 60)
+                    .padding(.horizontal, 12)
+                    .frame(height: 44)
                     .background(.appMain.opacity(LiquidGlass.isAvailable ? 0.5 : 1))
-                    .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+                    .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
                     .padding(.horizontal, 16)
+
+                if let onRemove {
+                    Button(action: { remove(onRemove) }) {
+                        Text(L10n.remove)
+                            .font(.appRegular(14))
+                            .foregroundColor(.appRed)
+                            .padding(.horizontal, 16)
+                            .contentShape(Rectangle())
+                    }
+                    .buttonStyle(.plain)
+                }
             }
         }
         .onAppear {
@@ -102,6 +116,11 @@ struct BalanceInputPopup: View {
     private func cancel() {
         isFocused = false
         onCancel()
+    }
+
+    private func remove(_ action: () -> Void) {
+        isFocused = false
+        action()
     }
 
     private func confirm() {

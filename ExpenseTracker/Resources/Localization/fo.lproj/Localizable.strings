@@ -40,6 +40,9 @@
 "BUDGET_LEFT" = "Eftir: %@";
 "BUDGET_EXCEEDED" = "Farið %@ uppum";
 "BUDGET_NO_LIMIT" = "Einki mark";
+"BUDGET_SET" = "Set";
+"BUDGET_FOR_MONTH" = "Játtan fyri mánaðin";
+"BUDGET_FOR_CATEGORY" = "Játtan fyri %@";
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Útreiðslur";
