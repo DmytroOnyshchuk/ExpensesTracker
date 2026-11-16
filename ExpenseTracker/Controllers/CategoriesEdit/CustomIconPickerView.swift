@@ -18,8 +18,8 @@ struct CustomIconPickerView: View {
         IconSection(title: L10n.iconPickerSectionEveryday, icons: [
             "cart.fill", "basket.fill", "carrot.fill", "takeoutbag.and.cup.and.straw.fill", "cup.and.saucer.fill",
             "fork.knife.circle.fill", "mug.fill", "wineglass.fill", "fuelpump.fill", "car.fill", "tram.fill",
-            "bus.fill", "train.side.front.car", "parkingsign.circle.fill", "bolt.car.fill", "bicycle", "scooter",
-            "steeringwheel", "house.fill", "building.2.fill", "key.fill", "sofa.fill", "washer.fill", "dryer.fill",
+            "train.side.front.car", "parkingsign.circle.fill", "bolt.car.fill", "scooter",
+            "steeringwheel", "building.2.fill", "key.fill", "sofa.fill", "washer.fill", "dryer.fill",
             "dishwasher.fill", "microwave.fill", "wifi", "antenna.radiowaves.left.and.right", "powerplug.fill",
             "bolt.fill", "trash.fill", "bag.fill", "shippingbox.fill", "creditcard.fill", "dollarsign.circle.fill",
             "percent", "shield.fill", "stethoscope", "pills.fill", "syringe.fill", "figure.run", "figure.walk",
@@ -44,9 +44,9 @@ struct CustomIconPickerView: View {
         IconSection(title: L10n.iconPickerSectionHealth, icons: [
             "lungs.fill", "brain.head.profile.fill", "figure.strengthtraining.traditional", "figure.yoga", "figure.dance",
             "figure.2.arms.open", "figure.stand.dress", "face.smiling.fill", "face.dashed.fill", "hands.clap.fill", "hands.sparkles.fill",
-            "fish.fill", "soccerball", "sportscourt.fill", "basketball.fill", "football.fill", "tennis.racket",
+            "fish.fill", "soccerball", "sportscourt.fill", "basketball.fill", "football.fill", "tennisball.fill", "volleyball.fill", "tennis.racket",
             "hockey.puck.fill", "skateboard.fill", "surfboard.fill", "figure.surfing", "figure.snowboarding",
-            "figure.skating", "figure.skiing.downhill", "guitars.fill", "dice.fill", "puzzlepiece.fill", "popcorn.fill",
+            "figure.skating", "figure.skiing.downhill", "guitars.fill", "dice.fill", "puzzlepiece.fill", "popcorn.fill", "figure.child", "figure.and.child.holdinghands", "figure.pool.swim",
         ]),
         IconSection(title: L10n.iconPickerSectionTech, icons: [
             "iphone", "iphone.gen3", "ipad", "ipad.gen2", "macbook", "applewatch", "airpods", "airpods.gen3",
@@ -58,9 +58,17 @@ struct CustomIconPickerView: View {
         IconSection(title: L10n.iconPickerSectionNature, icons: [
             "sun.max.fill", "moon.fill", "cloud.fill", "cloud.rain.fill", "cloud.snow.fill", "tornado", "hurricane",
             "thermometer", "snowflake", "leaf.arrow.circlepath", "tree.fill", "bird.fill", "tortoise.fill", "ladybug.fill",
-            "ant.fill", "hare.fill", "crown.fill", "clock.badge.exclamationmark.fill", "message.fill", "questionmark.circle.fill",
+            "ant.fill", "hare.fill", "umbrella.fill", "wind", "cloud.sun.fill", "crown.fill", "clock.badge.exclamationmark.fill", "message.fill", "questionmark.circle.fill",
             "checkmark.circle.fill", "xmark.circle.fill", "plus.circle.fill", "minus.circle.fill", "exclamationmark.triangle.fill",
             "info.circle.fill", "gear", "gear.circle.fill", "checkerboard.rectangle", "plusminus", "divide", "multiply", "equal", "scale.3d",
+        ]),
+        IconSection(title: "Other", icons: [
+            "wallet.pass.fill", "door.left.hand.closed",
+            "door.garage.closed", "sink.fill", "shower.fill", "toilet.fill",
+            "water.waves", "cross.case.fill", "bandage.fill", "medical.thermometer.fill",
+            "heart.text.square.fill", "facemask.fill", "ear.fill", "eye.fill", "frying.pan.fill",
+            "coat.fill", "suitcase.rolling.fill", "bubbles.and.sparkles.fill", "book.closed.fill",
+            "storefront.fill",
         ]),
     ]
 
