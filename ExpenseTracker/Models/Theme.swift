@@ -196,17 +196,19 @@ extension Theme {
 
     static let light = Theme(
         colorScheme: .light,
-        appMain: Color(hex: "#ECEFF1"),
-        appSecond: Color(hex: "#F6F8F9"),
-        appLabel: Color(hex: "#6E7B8A"),
-        appWhite: Color(hex: "#14263D"),
-        appBlack: Color(hex: "#0E1A2B"),
-        appLightGrey: Color(hex: "#3A4A5E"),
-        appPrimary: Color(hex: "#1F3A5F"),
-        appDarkGreen: Color(hex: "#17A34A"),
-        appGray: Color(hex: "#9AA5B1"),
-        appYellow: Color(hex: "#F5B82E"),
-        appRed: Color(hex: "#E8424F"),
-        appOverlay: Color(hex: "#0E1A2B")
+        // A quiet neutral canvas with small, consistent steps between surfaces.
+        // The blue accent stays focused on actions and data instead of tinting the whole screen.
+        appMain: Color(hex: "#F4F6F8"),
+        appSecond: Color(hex: "#FFFFFF"),
+        appLabel: Color(hex: "#687586"),
+        appWhite: Color(hex: "#2B3642"),
+        appBlack: Color(hex: "#111923"),
+        appLightGrey: Color(hex: "#E3E8EE"),
+        appPrimary: Color(hex: "#426A93"),
+        appDarkGreen: Color(hex: "#27815A"),
+        appGray: Color(hex: "#98A3AF"),
+        appYellow: Color(hex: "#B98219"),
+        appRed: Color(hex: "#C94E57"),
+        appOverlay: Color(hex: "#17212B")
     )
 }

@@ -515,7 +515,11 @@ struct StatisticsRow: View {
                 .frame(width: 110, alignment: .trailing)
         }
         .foregroundColor(.appWhite)
-        .shadow(color: .black.opacity(0.35), radius: 2, y: 1)
+        .shadow(
+            color: ThemeManager.shared.theme.colorScheme == .dark ? .black.opacity(0.35) : .clear,
+            radius: 2,
+            y: 1
+        )
         .padding(.horizontal, 16)
         .frame(height: 52)
         .background(alignment: .leading) {
