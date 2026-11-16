@@ -17,7 +17,7 @@ struct CustomIconPickerView: View {
 
     private let allSFSymbols = [
         // Primary
-        "fuelpump.fill", "parkingsign.circle.fill", "tram.fill", "train.side.front.car", "scooter",
+        "fuelpump.fill", "cup.and.saucer.fill", "wineglass.fill", "parkingsign.circle.fill", "takeoutbag.and.cup.and.straw.fill", "tram.fill", "train.side.front.car", "scooter", "creditcard.fill", "film.fill", "stethoscope",
         "bolt.car.fill", "basket.fill", "bag.fill", "shippingbox.fill", "mug.fill", "building.2.fill",
         "key.fill", "wrench.and.screwdriver.fill", "washer.fill", "sofa.fill", "trash.fill", "wifi",
         "antenna.radiowaves.left.and.right", "play.rectangle.fill", "laptopcomputer", "pills.fill",
