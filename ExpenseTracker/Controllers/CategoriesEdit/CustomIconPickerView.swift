@@ -16,80 +16,52 @@ struct CustomIconPickerView: View {
     @State private var filteredIcons: [String] = []
 
     private let allSFSymbols = [
-        // Primary
-        "fuelpump.fill", "cup.and.saucer.fill", "wineglass.fill", "parkingsign.circle.fill", "takeoutbag.and.cup.and.straw.fill", "tram.fill", "train.side.front.car", "scooter", "creditcard.fill", "film.fill", "stethoscope",
-        "bolt.car.fill", "basket.fill", "bag.fill", "shippingbox.fill", "mug.fill", "building.2.fill",
-        "key.fill", "wrench.and.screwdriver.fill", "washer.fill", "sofa.fill", "trash.fill", "wifi",
-        "antenna.radiowaves.left.and.right", "play.rectangle.fill", "laptopcomputer", "pills.fill",
-        "eyeglasses", "comb.fill", "figure.run", "ticket.fill", "popcorn.fill", "birthday.cake.fill",
-        "suitcase.fill", "bed.double.fill", "stroller.fill", "teddybear.fill", "backpack.fill", "cat.fill",
-        "building.columns.fill", "shield.fill", "doc.text.fill", "percent", "chart.line.uptrend.xyaxis",
-        "arrow.left.arrow.right", "questionmark.circle.fill", "bag.fill.badge.plus", "leaf.fill",
-        "envelope.fill", "camera.fill", "display", "keyboard.fill", "speaker.wave.2.fill", "app.fill",
-        "soccerball", "steeringwheel", "face.smiling.fill", "clock.badge.exclamationmark.fill", "figure.dance",
-        "dog.fill", "powerplug.fill", "person.3.fill", "fish.fill", "carrot.fill", "guitars.fill", "at",
-        "iphone.gen2", "person.fill", "dollarsign.circle.fill", "shoeprints.fill",
-        "figure.strengthtraining.traditional", "figure.skiing.downhill", "checkerboard.rectangle",
+        // Everyday city expenses — ordered by likely use
+        "cart.fill", "basket.fill", "carrot.fill", "takeoutbag.and.cup.and.straw.fill", "cup.and.saucer.fill",
+        "fork.knife.circle.fill", "mug.fill", "wineglass.fill", "fuelpump.fill", "car.fill", "tram.fill",
+        "bus.fill", "train.side.front.car", "parkingsign.circle.fill", "bolt.car.fill", "bicycle", "scooter",
+        "steeringwheel", "house.fill", "building.2.fill", "key.fill", "sofa.fill", "washer.fill", "dryer.fill",
+        "dishwasher.fill", "microwave.fill", "wifi", "antenna.radiowaves.left.and.right", "powerplug.fill",
+        "bolt.fill", "trash.fill", "bag.fill", "shippingbox.fill", "creditcard.fill", "dollarsign.circle.fill",
+        "percent", "shield.fill", "stethoscope", "pills.fill", "syringe.fill", "figure.run", "figure.walk",
+        "ticket.fill", "film.fill", "play.rectangle.fill", "music.note.list", "iphone.gen2", "laptopcomputer",
+        "bed.double.fill", "suitcase.fill", "airplane.departure", "airplane.arrival", "building.columns.fill",
+        "doc.text.fill", "books.vertical.fill", "backpack.fill", "stroller.fill", "teddybear.fill", "birthday.cake.fill",
+        "cat.fill", "dog.fill", "heart.circle.fill", "leaf.fill", "globe", "map.fill", "camera.fill",
 
-        // Transportation
-        "airplane.departure", "airplane.arrival", "ferry.fill", "sailboat.fill", "truck.box.fill",
-        "suv.side.fill",
+        // Transportation & travel
+        "ferry.fill", "sailboat.fill", "truck.box.fill", "suv.side.fill", "tent.fill", "location.fill",
+        "compass.drawing", "globe.americas.fill",
 
-        // Shopping & Money
-        "eurosign.circle.fill", "yensign.circle.fill", "sterlingsign.circle.fill", "bitcoinsign.circle.fill",
-        "bag.badge.plus", "bag.badge.minus",
+        // Shopping, money & work
+        "bag.badge.plus", "bag.badge.minus", "eurosign.circle.fill", "yensign.circle.fill", "sterlingsign.circle.fill",
+        "bitcoinsign.circle.fill", "arrow.left.arrow.right", "chart.line.uptrend.xyaxis", "chart.bar.fill", "chart.pie.fill",
+        "building.fill", "envelope.fill", "person.fill", "person.3.fill", "person.badge.plus.fill", "at",
 
-        // Home & Living
-        "building.fill", "chair.fill", "chair.lounge.fill", "lamp.table.fill", "fan.fill",
-        "air.conditioner.horizontal.fill", "dryer.fill", "dishwasher.fill", "microwave.fill",
+        // Home, food & personal care
+        "chair.fill", "chair.lounge.fill", "lamp.table.fill", "fan.fill", "air.conditioner.horizontal.fill",
+        "apple.logo", "eyeglasses", "comb.fill", "sunglasses.fill", "shoe.fill", "shoe.2.fill", "shoeprints.fill",
 
-        // Food & Drink
-        "fork.knife.circle.fill", "apple.logo",
+        // Health, family & activities
+        "lungs.fill", "brain.head.profile.fill", "figure.strengthtraining.traditional", "figure.yoga", "figure.dance",
+        "figure.2.arms.open", "face.smiling.fill", "face.dashed.fill", "hands.clap.fill", "hands.sparkles.fill",
+        "fish.fill", "soccerball", "sportscourt.fill", "basketball.fill", "football.fill", "tennis.racket",
+        "hockey.puck.fill", "skateboard.fill", "surfboard.fill", "figure.surfing", "figure.snowboarding",
+        "figure.skating", "figure.skiing.downhill", "guitars.fill", "dice.fill", "puzzlepiece.fill", "popcorn.fill",
 
-        // Health & Fitness
-        "syringe.fill", "lungs.fill", "brain.head.profile.fill", "figure.walk", "figure.yoga",
-
-        // Technology
+        // Technology, education & tools
         "iphone", "iphone.gen3", "ipad", "ipad.gen2", "macbook", "applewatch", "airpods", "airpods.gen3",
-        "display.2", "printer.fill", "video.fill", "speaker.fill", "headphones", "headphones.circle.fill",
+        "display", "display.2", "keyboard.fill", "printer.fill", "video.fill", "speaker.fill", "speaker.wave.2.fill",
+        "headphones", "headphones.circle.fill", "app.fill", "pencil", "pencil.circle.fill", "pencil.and.outline",
+        "note.text", "doc.fill", "folder.fill", "wrench.and.screwdriver.fill", "wrench.fill", "screwdriver.fill",
+        "scissors.badge.ellipsis", "paintbrush.fill", "ruler.fill", "level.fill", "flashlight.on.fill", "flashlight.off.fill",
 
-        // Education & Work
-        "books.vertical.fill", "pencil", "pencil.circle.fill", "pencil.and.outline", "note.text", "doc.fill",
-        "folder.fill", "person.badge.plus.fill",
-
-        // Entertainment
-        "dice.fill", "puzzlepiece.fill", "music.note.list",
-
-        // Nature & Weather
-        "sun.max.fill", "moon.fill", "cloud.fill", "cloud.rain.fill", "cloud.snow.fill", "bolt.fill", "tornado",
-        "hurricane", "thermometer", "snowflake", "leaf.arrow.circlepath", "tree.fill",
-
-        // People & Social
-        "face.dashed.fill", "hands.clap.fill", "hands.sparkles.fill", "figure.2.arms.open", "message.fill",
-
-        // Transportation & Travel
-        "tent.fill", "map.fill", "location.fill", "compass.drawing", "globe", "globe.americas.fill",
-
-        // Sports & Activities
-        "sportscourt.fill", "basketball.fill", "football.fill", "tennis.racket", "hockey.puck.fill",
-        "skateboard.fill", "surfboard.fill", "figure.surfing", "figure.snowboarding", "figure.skating",
-
-        // Tools & Utilities
-        "wrench.fill", "screwdriver.fill", "scissors.badge.ellipsis", "paintbrush.fill", "ruler.fill",
-        "level.fill", "flashlight.on.fill", "flashlight.off.fill",
-
-        // Fashion & Style
-        "sunglasses.fill", "crown.fill", "shoe.fill", "shoe.2.fill",
-
-        // Symbols & Icons
-        "heart.circle.fill", "checkmark.circle.fill", "xmark.circle.fill", "plus.circle.fill",
-        "minus.circle.fill", "exclamationmark.triangle.fill", "info.circle.fill", "gear", "gear.circle.fill",
-
-        // Animals & Pets
-        "bird.fill", "tortoise.fill", "ladybug.fill", "ant.fill", "hare.fill",
-
-        // Business & Finance
-        "chart.bar.fill", "chart.pie.fill", "plusminus", "divide", "multiply", "equal", "scale.3d",
+        // Nature, weather & general symbols
+        "sun.max.fill", "moon.fill", "cloud.fill", "cloud.rain.fill", "cloud.snow.fill", "tornado", "hurricane",
+        "thermometer", "snowflake", "leaf.arrow.circlepath", "tree.fill", "bird.fill", "tortoise.fill", "ladybug.fill",
+        "ant.fill", "hare.fill", "crown.fill", "clock.badge.exclamationmark.fill", "message.fill", "questionmark.circle.fill",
+        "checkmark.circle.fill", "xmark.circle.fill", "plus.circle.fill", "minus.circle.fill", "exclamationmark.triangle.fill",
+        "info.circle.fill", "gear", "gear.circle.fill", "checkerboard.rectangle", "plusminus", "divide", "multiply", "equal", "scale.3d",
     ]
 
     var body: some View {
