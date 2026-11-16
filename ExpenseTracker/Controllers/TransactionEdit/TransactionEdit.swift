@@ -286,8 +286,7 @@ struct TransactionEdit: View {
     }
 
     private func save() {
-        draft.apply(to: transaction)
-        try? modelContext.save()
+        modelContext.applyWithUndo(draft, to: transaction)
         dismiss()
     }
 

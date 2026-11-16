@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Няма транзакции";
 "TRANSACTIONS_LIST_DELETE" = "Изтриване";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Транзакцията е добавена";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "Транзакцията е обновена";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Преместено в кошчето";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Похарчено днес";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Похарчено вчера";

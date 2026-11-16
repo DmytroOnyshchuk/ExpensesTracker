@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Chan eil tar-chur ann";
 "TRANSACTIONS_LIST_DELETE" = "Sguab às";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Chaidh tar-chur a chur ris";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "Chaidh an tar-chur ùrachadh";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Chaidh a ghluasad dhan sgudal";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Air a chosg an-diugh";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Air a chosg an-dè";

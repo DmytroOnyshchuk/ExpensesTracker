@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Macaamil ma jiro";
 "TRANSACTIONS_LIST_DELETE" = "Tirtir";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Macaamil waa la daray";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "Macaamilka waa la cusboonaysiiyay";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Waxaa loo wareejiyay qashinka";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Maanta la kharash gareeyay";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Shalay la kharash gareeyay";

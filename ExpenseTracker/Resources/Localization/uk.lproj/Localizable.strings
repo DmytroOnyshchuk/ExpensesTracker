@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Немає транзакцій";
 "TRANSACTIONS_LIST_DELETE" = "Видалити";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Транзакцію додано";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "Транзакцію змінено";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Переміщено в кошик";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Витрачено сьогодні";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Витрачено вчора";

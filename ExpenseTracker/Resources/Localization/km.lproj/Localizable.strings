@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "គ្មានប្រតិបត្តិការ";
 "TRANSACTIONS_LIST_DELETE" = "លុប";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "បានបន្ថែមប្រតិបត្តិការ";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "បានធ្វើបច្ចុប្បន្នភាពប្រតិបត្តិការ";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "បានផ្លាស់ទីទៅធុងសំរាម";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ចំណាយថ្ងៃនេះ";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ចំណាយម្សិលមិញ";

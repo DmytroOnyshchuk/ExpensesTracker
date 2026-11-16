@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Транзакциялар жок";
 "TRANSACTIONS_LIST_DELETE" = "Өчүрүү";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Транзакция кошулду";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "Транзакция жаңыртылды";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Себетке жылдырылды";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Бүгүн сарпталды";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Кечээ сарпталды";

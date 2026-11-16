@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "কোনো লেনদেন নেই";
 "TRANSACTIONS_LIST_DELETE" = "মুছুন";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "লেনদেন যোগ করা হয়েছে";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "লেনদেন আপডেট করা হয়েছে";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ট্র্যাশে সরানো হয়েছে";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "আজ খরচ হয়েছে";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "গতকাল খরচ হয়েছে";

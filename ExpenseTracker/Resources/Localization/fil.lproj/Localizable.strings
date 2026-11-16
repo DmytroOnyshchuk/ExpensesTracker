@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Walang transaksyon";
 "TRANSACTIONS_LIST_DELETE" = "I-delete";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Naidagdag ang transaksyon";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "Na-update ang transaksyon";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Inilipat sa basurahan";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Nagastos ngayong araw";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Nagastos kahapon";

@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "هیچ مامەڵەیەک نییە";
 "TRANSACTIONS_LIST_DELETE" = "سڕینەوە";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "مامەڵە زیادکرا";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "مامەڵە نوێکرایەوە";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "گوازرایەوە بۆ تەنەکەی خۆڵ";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ئەمڕۆ خەرجکراوە";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "دوێنێ خەرجکراوە";

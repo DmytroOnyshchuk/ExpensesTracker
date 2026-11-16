@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Inga transaktioner";
 "TRANSACTIONS_LIST_DELETE" = "Radera";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transaktion tillagd";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "Transaktion uppdaterad";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Flyttad till papperskorgen";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Spenderat i dag";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Spenderat i går";

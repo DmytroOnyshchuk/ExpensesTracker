@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct TransactionDraft {
+struct TransactionDraft: Equatable {
     var category: TransactionCategory
     var amount: Int
     var date: Date

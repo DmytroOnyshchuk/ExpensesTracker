@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ʻAʻohe hana kālā";
 "TRANSACTIONS_LIST_DELETE" = "Holoi";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Ua hoʻohui ʻia ka hana kālā";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "Ua hōʻano hou ʻia ka hana kālā";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Ua hoʻoneʻe ʻia i ka ʻōpala";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Hoʻolilo ʻia i kēia lā";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Hoʻolilo ʻia i nehinei";

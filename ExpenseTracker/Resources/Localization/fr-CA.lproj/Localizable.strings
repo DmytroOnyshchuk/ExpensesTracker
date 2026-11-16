@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Aucune transaction";
 "TRANSACTIONS_LIST_DELETE" = "Supprimer";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transaction ajoutée";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "Transaction modifiée";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Déplacé dans la corbeille";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Dépensé aujourd’hui";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Dépensé hier";

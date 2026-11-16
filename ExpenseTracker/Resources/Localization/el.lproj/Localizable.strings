@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Δεν υπάρχουν συναλλαγές";
 "TRANSACTIONS_LIST_DELETE" = "Διαγραφή";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Η συναλλαγή προστέθηκε";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "Η συναλλαγή ενημερώθηκε";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Μετακινήθηκε στον κάδο";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Έξοδα σήμερα";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Έξοδα χθες";

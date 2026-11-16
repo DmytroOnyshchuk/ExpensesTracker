@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ora ana transaksi";
 "TRANSACTIONS_LIST_DELETE" = "Busak";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transaksi ditambahake";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "Transaksi dianyari";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Dipindhah menyang tong sampah";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Dientekake dina iki";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Dientekake wingi";

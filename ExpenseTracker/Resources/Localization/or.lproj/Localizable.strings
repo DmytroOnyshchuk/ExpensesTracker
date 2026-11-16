@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "କୌଣସି କାରବାର ନାହିଁ";
 "TRANSACTIONS_LIST_DELETE" = "ଡିଲିଟ କରନ୍ତୁ";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "କାରବାର ଯୋଡ଼ାଗଲା";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "କାରବାର ଅପଡେଟ୍ ହେଲା";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ଟ୍ରାସ୍‌କୁ ଘୁଞ୍ଚାଗଲା";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ଆଜିର ଖର୍ଚ୍ଚ";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ଗତକାଲିର ଖର୍ଚ୍ଚ";

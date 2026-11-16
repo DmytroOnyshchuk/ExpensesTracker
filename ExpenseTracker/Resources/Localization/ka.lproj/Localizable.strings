@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ტრანზაქციები არ არის";
 "TRANSACTIONS_LIST_DELETE" = "წაშლა";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "ტრანზაქცია დაემატა";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "ტრანზაქცია განახლდა";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "გადატანილია ნაგავში";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "დღეს დახარჯული";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "გუშინ დახარჯული";

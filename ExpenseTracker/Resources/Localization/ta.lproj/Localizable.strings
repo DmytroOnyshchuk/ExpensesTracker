@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "பரிவர்த்தனைகள் இல்லை";
 "TRANSACTIONS_LIST_DELETE" = "நீக்கு";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "பரிவர்த்தனை சேர்க்கப்பட்டது";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "பரிவர்த்தனை புதுப்பிக்கப்பட்டது";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "குப்பைத் தொட்டிக்கு நகர்த்தப்பட்டது";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "இன்றைய செலவு";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "நேற்றைய செலவு";

@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "هیڅ راکړه ورکړه نشته";
 "TRANSACTIONS_LIST_DELETE" = "ړنګول";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "راکړه ورکړه زیاته شوه";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "راکړه ورکړه تازه شوه";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "کثافت‌دانۍ ته ولېږدول شو";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "نن ولګول شول";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "پرون ولګول شول";

@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ငွေလွှဲမှတ်တမ်း မရှိပါ";
 "TRANSACTIONS_LIST_DELETE" = "ဖျက်ရန်";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "ငွေလွှဲမှု ထည့်ပြီးပါပြီ";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "ငွေလွှဲမှု အပ်ဒိတ်လုပ်ပြီးပါပြီ";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "အမှိုက်ပုံးသို့ ရွှေ့ပြီးပါပြီ";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ယနေ့ အသုံးစရိတ်";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "မနေ့က အသုံးစရိတ်";

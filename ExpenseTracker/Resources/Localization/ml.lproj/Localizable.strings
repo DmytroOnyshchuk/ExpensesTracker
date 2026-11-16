@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ഇടപാടുകളൊന്നുമില്ല";
 "TRANSACTIONS_LIST_DELETE" = "ഇല്ലാതാക്കുക";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "ഇടപാട് ചേർത്തു";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "ഇടപാട് അപ്ഡേറ്റ് ചെയ്തു";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ട്രാഷിലേക്ക് നീക്കി";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ഇന്നത്തെ ചെലവ്";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ഇന്നലത്തെ ചെലവ്";

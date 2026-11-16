@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Kāore he tauwhitinga";
 "TRANSACTIONS_LIST_DELETE" = "Mukua";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Kua tāpirihia te tauwhitinga";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "Kua whakahoutia te tauwhitinga";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Kua nekehia ki te ipu para";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "I whakapaua i tēnei rā";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "I whakapaua inanahi";

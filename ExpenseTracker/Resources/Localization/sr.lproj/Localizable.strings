@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Нема трансакција";
 "TRANSACTIONS_LIST_DELETE" = "Избриши";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Трансакција је додата";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "Трансакција је ажурирана";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Премештено у смеће";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Потрошено данас";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Потрошено јуче";

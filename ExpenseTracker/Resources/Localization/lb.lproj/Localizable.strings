@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Keng Transaktiounen";
 "TRANSACTIONS_LIST_DELETE" = "Läschen";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transaktioun bäigefüügt";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "Transaktioun aktualiséiert";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "An d'Dreckskëscht geréckelt";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Haut ausginn";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Gëschter ausginn";

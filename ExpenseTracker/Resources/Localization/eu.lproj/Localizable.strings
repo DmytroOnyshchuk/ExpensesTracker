@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Ez dago transakziorik";
 "TRANSACTIONS_LIST_DELETE" = "Ezabatu";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Transakzioa gehitu da";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "Transakzioa eguneratu da";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Zakarrontzira eraman da";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Gaur gastatua";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Atzo gastatua";

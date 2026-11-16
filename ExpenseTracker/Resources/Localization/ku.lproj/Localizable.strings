@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "Danûstandin tune";
 "TRANSACTIONS_LIST_DELETE" = "Jê bibe";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "Danûstandin hat zêdekirin";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "Danûstandin hat nûkirin";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Bo çopdankê hat veguhastin";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Îro hat xerckirin";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Duh hat xerckirin";

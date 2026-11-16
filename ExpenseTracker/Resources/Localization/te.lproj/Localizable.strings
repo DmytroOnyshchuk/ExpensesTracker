@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "లావాదేవీలు లేవు";
 "TRANSACTIONS_LIST_DELETE" = "తొలగించండి";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "లావాదేవీ జోడించబడింది";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "లావాదేవీ నవీకరించబడింది";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ట్రాష్‌కు తరలించబడింది";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ఈరోజు ఖర్చు";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "నిన్నటి ఖర్చు";

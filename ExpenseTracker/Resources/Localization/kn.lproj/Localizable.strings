@@ -100,6 +100,7 @@
 "TRANSACTIONS_LIST_NO_TRANSACTIONS" = "ಯಾವುದೇ ವಹಿವಾಟುಗಳಿಲ್ಲ";
 "TRANSACTIONS_LIST_DELETE" = "ಅಳಿಸಿ";
 "TRANSACTIONS_LIST_TRANSACTION_ADDED" = "ವಹಿವಾಟು ಸೇರಿಸಲಾಗಿದೆ";
+"TRANSACTIONS_LIST_TRANSACTION_UPDATED" = "ವಹಿವಾಟು ನವೀಕರಿಸಲಾಗಿದೆ";
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ಅನುಪಯುಕ್ತಕ್ಕೆ ಸರಿಸಲಾಗಿದೆ";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ಇಂದಿನ ಖರ್ಚು";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ನಿನ್ನೆಯ ಖರ್ಚು";
