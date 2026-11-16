@@ -11,11 +11,12 @@ import SwiftUI
 
 struct TransactionCategoryPicker: View {
     var folder: TransactionCategory?
+    var operationType: OperationType = .outcome
     let onSelect: (TransactionCategory) -> Void
 
     @Query private var storedCategories: [TransactionCategory]
 
-    private var categories: [TransactionCategory] { storedCategories.notDeleted }
+    private var categories: [TransactionCategory] { storedCategories.notDeleted.of(operationType) }
     @Environment(\.modelContext) private var modelContext
     @State private var openedFolder: TransactionCategory?
 
@@ -45,7 +46,7 @@ struct TransactionCategoryPicker: View {
         .navigationTitle(folder?.name.localized ?? L10n.transactionEditCategoriesTitle)
         .navigationBarTitleDisplayMode(.inline)
         .navigationDestination(item: $openedFolder) { folder in
-            TransactionCategoryPicker(folder: folder, onSelect: onSelect)
+            TransactionCategoryPicker(folder: folder, operationType: operationType, onSelect: onSelect)
         }
     }
 

@@ -105,7 +105,7 @@ struct TransactionEdit: View {
                 }
             }
             .navigationDestination(isPresented: $showCategoryPicker) {
-                TransactionCategoryPicker { category in
+                TransactionCategoryPicker(operationType: draft.category.operationType) { category in
                     draft.category = category
                     showCategoryPicker = false
                 }

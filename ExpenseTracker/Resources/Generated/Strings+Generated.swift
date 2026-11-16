@@ -160,6 +160,8 @@ internal enum L10n {
   internal static let defaultCategoryPets = L10n.tr("Localizable", "DEFAULT_CATEGORY_PETS", fallback: "Pets")
   /// Repairs
   internal static let defaultCategoryRepair = L10n.tr("Localizable", "DEFAULT_CATEGORY_REPAIR", fallback: "Repairs")
+  /// Salary
+  internal static let defaultCategorySalary = L10n.tr("Localizable", "DEFAULT_CATEGORY_SALARY", fallback: "Salary")
   /// Savings
   internal static let defaultCategorySavings = L10n.tr("Localizable", "DEFAULT_CATEGORY_SAVINGS", fallback: "Savings")
   /// Taxes
@@ -304,6 +306,8 @@ internal enum L10n {
   internal static let startviewEnterAmountFirst = L10n.tr("Localizable", "STARTVIEW_ENTER_AMOUNT_FIRST", fallback: "Enter the amount first")
   /// Enter expense
   internal static let startviewEnterExpense = L10n.tr("Localizable", "STARTVIEW_ENTER_EXPENSE", fallback: "Enter expense")
+  /// Enter income
+  internal static let startviewEnterIncome = L10n.tr("Localizable", "STARTVIEW_ENTER_INCOME", fallback: "Enter income")
   /// average: %@ per day
   internal static func statisticsAveragePerDay(_ p1: Any) -> String {
     return L10n.tr("Localizable", "STATISTICS_AVERAGE_PER_DAY", String(describing: p1), fallback: "average: %@ per day")
@@ -320,6 +324,8 @@ internal enum L10n {
   internal static let statisticsChart = L10n.tr("Localizable", "STATISTICS_CHART", fallback: "Chart")
   /// Day
   internal static let statisticsDay = L10n.tr("Localizable", "STATISTICS_DAY", fallback: "Day")
+  /// Income
+  internal static let statisticsIncomeTitle = L10n.tr("Localizable", "STATISTICS_INCOME_TITLE", fallback: "Income")
   /// Month
   internal static let statisticsMonth = L10n.tr("Localizable", "STATISTICS_MONTH", fallback: "Month")
   /// Expenses
@@ -362,6 +368,10 @@ internal enum L10n {
   internal static let transactionsListMovedToTrash = L10n.tr("Localizable", "TRANSACTIONS_LIST_MOVED_TO_TRASH", fallback: "Moved to Trash")
   /// No transactions
   internal static let transactionsListNoTransactions = L10n.tr("Localizable", "TRANSACTIONS_LIST_NO_TRANSACTIONS", fallback: "No transactions")
+  /// Received today
+  internal static let transactionsListReceivedToday = L10n.tr("Localizable", "TRANSACTIONS_LIST_RECEIVED_TODAY", fallback: "Received today")
+  /// Received yesterday
+  internal static let transactionsListReceivedYesterday = L10n.tr("Localizable", "TRANSACTIONS_LIST_RECEIVED_YESTERDAY", fallback: "Received yesterday")
   /// Spent today
   internal static let transactionsListSpentToday = L10n.tr("Localizable", "TRANSACTIONS_LIST_SPENT_TODAY", fallback: "Spent today")
   /// Spent yesterday

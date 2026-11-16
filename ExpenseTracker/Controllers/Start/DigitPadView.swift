@@ -10,6 +10,7 @@ import SwiftUI
 
 struct DigitPadView: View {
     @Binding var input: AmountInput
+    var placeholder: String = L10n.startviewEnterExpense
     var attentionTrigger: Int = .zero
 
     private let buttons: [[AmountInput.Key]] = [
@@ -21,7 +22,7 @@ struct DigitPadView: View {
 
     var body: some View {
         VStack(spacing: 12) {
-            Text(input.text ?? L10n.startviewEnterExpense)
+            Text(input.text ?? placeholder)
                 .font(input.isEmpty ? .appLight(24) : .appLight(32))
                 .foregroundColor(input.isEmpty ? .appLabel : .appWhite)
                 .keyframeAnimator(initialValue: 1.0, trigger: attentionTrigger) { content, scale in

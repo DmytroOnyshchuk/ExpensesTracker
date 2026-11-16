@@ -13,7 +13,7 @@ struct CategoriesEdit: View {
     @Query private var storedCategories: [TransactionCategory]
     @Query private var storedTransactions: [Transaction]
 
-    private var categories: [TransactionCategory] { storedCategories.notDeleted }
+    private var categories: [TransactionCategory] { storedCategories.notDeleted.of(operationType) }
 
     private var transactions: [Transaction] { storedTransactions.notDeleted }
     @Environment(\.dismiss) private var dismiss
@@ -24,6 +24,14 @@ struct CategoriesEdit: View {
 
     @State private var showAddFolderAlert = false
     @State private var newFolderName: String = ""
+    @State private var operationType: OperationType
+
+    private let showsOperationTypePicker: Bool
+
+    init(operationType: OperationType? = nil) {
+        _operationType = State(initialValue: operationType ?? .outcome)
+        self.showsOperationTypePicker = operationType == nil
+    }
 
     private var orderedCategories: [TransactionCategory] {
         categories.inDisplayOrder
@@ -45,6 +53,14 @@ struct CategoriesEdit: View {
         let transactionsCounts = transactionsCounts
 
         List {
+            if showsOperationTypePicker {
+                SegmentedControl(items: OperationType.allCases, selection: $operationType, title: \.title)
+                    .sensoryFeedback(trigger: operationType) { _, _ in FeedbackManager.shared.selectionFeedback }
+                    .padding(.horizontal, 40)
+                    .listRowBackground(Color.clear)
+                    .listRowSeparator(.hidden)
+            }
+
             ForEach(orderedCategories, id: \.id) { category in
                 CategoryRow(
                     category: category,
@@ -85,7 +101,7 @@ struct CategoriesEdit: View {
             EditCategoryView(category: category)
         }
         .sheet(isPresented: $showAddCategory) {
-            EditCategoryView()
+            EditCategoryView(operationType: operationType)
         }
         .alert(L10n.categoriesEditNewFolderAlertTitle, isPresented: $showAddFolderAlert) {
             TextField(L10n.categoriesEditNewFolderAlertPlaceholder, text: $newFolderName)
@@ -112,7 +128,8 @@ struct CategoriesEdit: View {
             name: .custom(newFolderName),
             categoryIcon: CategoryIcon(name: "folder", iconColor: .yellow),
             isDirectory: true,
-            sortIndex: categories.nextSortIndex
+            sortIndex: categories.nextSortIndex,
+            operationType: operationType
         )
         modelContext.insert(newFolder)
         try? modelContext.save()

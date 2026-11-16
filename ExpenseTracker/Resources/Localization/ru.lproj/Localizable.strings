@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Введите расход";
+"STARTVIEW_ENTER_INCOME" = "Введите доход";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Сначала введите сумму";
 "STARTVIEW_BALANCE" = "Баланс";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Расходы";
+"STATISTICS_INCOME_TITLE" = "Доходы";
 "STATISTICS_DAY" = "День";
 "STATISTICS_MONTH" = "Месяц";
 "STATISTICS_YEAR" = "Год";
@@ -112,6 +114,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Перемещено в корзину";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Потрачено сегодня";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Потрачено вчера";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Получено сегодня";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Получено вчера";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Редактирование категорий";
@@ -162,6 +166,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Парковка";
 "DEFAULT_CATEGORY_PETS" = "Животные";
 "DEFAULT_CATEGORY_SAVINGS" = "Копилка";
+"DEFAULT_CATEGORY_SALARY" = "Зарплата";
 "SETTINGS_APPEARANCE" = "Оформление";
 "SETTINGS_THEME_SYSTEM" = "Системная";
 "SETTINGS_THEME_DARK" = "Тёмная";

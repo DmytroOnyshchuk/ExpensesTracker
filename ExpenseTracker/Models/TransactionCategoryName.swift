@@ -36,6 +36,7 @@ enum TransactionCategoryName: Hashable {
     case carParking
     case pets
     case savings
+    case salary
 
     case custom(String)
 
@@ -43,7 +44,7 @@ enum TransactionCategoryName: Hashable {
     static let predefined: [TransactionCategoryName] = [
         .car, .carFuel, .carMaintenance, .charity, .clothing, .food, .foodGroceries, .foodRestaurants,
         .healthBeauty, .home, .homeHousehold, .homeUtilities, .internet, .other, .transport,
-        .family, .taxi, .taxes, .repair, .electronics, .carParking, .pets, .savings,
+        .family, .taxi, .taxes, .repair, .electronics, .carParking, .pets, .savings, .salary,
     ]
 
     /// Display text in the current app language.
@@ -72,6 +73,7 @@ enum TransactionCategoryName: Hashable {
         case .carParking: L10n.defaultCategoryCarParking
         case .pets: L10n.defaultCategoryPets
         case .savings: L10n.defaultCategorySavings
+        case .salary: L10n.defaultCategorySalary
         case let .custom(text): text
         }
     }
@@ -117,6 +119,7 @@ extension TransactionCategoryName: RawRepresentable, Codable {
         case .carParking: "DEFAULT_CATEGORY_CAR_PARKING"
         case .pets: "DEFAULT_CATEGORY_PETS"
         case .savings: "DEFAULT_CATEGORY_SAVINGS"
+        case .salary: "DEFAULT_CATEGORY_SALARY"
         case let .custom(text): text
         }
     }

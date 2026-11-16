@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Введіть витрату";
+"STARTVIEW_ENTER_INCOME" = "Введіть дохід";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Спочатку введіть суму";
 "STARTVIEW_BALANCE" = "Баланс";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Витрати";
+"STATISTICS_INCOME_TITLE" = "Доходи";
 "STATISTICS_DAY" = "День";
 "STATISTICS_MONTH" = "Місяць";
 "STATISTICS_YEAR" = "Рік";
@@ -112,6 +114,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Переміщено в кошик";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Витрачено сьогодні";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Витрачено вчора";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Отримано сьогодні";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Отримано вчора";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Редагування категорій";
@@ -162,6 +166,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Парковка";
 "DEFAULT_CATEGORY_PETS" = "Тварини";
 "DEFAULT_CATEGORY_SAVINGS" = "Скарбничка";
+"DEFAULT_CATEGORY_SALARY" = "Зарплата";
 "SETTINGS_APPEARANCE" = "Оформлення";
 "SETTINGS_THEME_SYSTEM" = "Системна";
 "SETTINGS_THEME_DARK" = "Темна";

@@ -11,6 +11,7 @@ import SwiftUI
 
 struct TransactionsList: View {
     var transactions: [Transaction]
+    var operationType: OperationType = .outcome
 
     private static let rowHeight = 64 + 8
     private static let headerHeight = 40
@@ -23,12 +24,13 @@ struct TransactionsList: View {
         let calendar = Calendar.current
 
         return [
-            (L10n.transactionsListSpentToday, Date()),
-            (L10n.transactionsListSpentYesterday, Date.yesterday),
+            (operationType.todayTitle, Date()),
+            (operationType.yesterdayTitle, Date.yesterday),
         ].map { title, day in
             TransactionsDay(
                 title: title,
-                transactions: transactions.filter { calendar.isDate($0.date, inSameDayAs: day) }
+                transactions: transactions.filter { calendar.isDate($0.date, inSameDayAs: day) },
+                operationType: operationType
             )
         }
     }
@@ -95,10 +97,11 @@ struct TransactionsList: View {
 struct TransactionsDay: Identifiable {
     let title: String
     var transactions: [Transaction]
+    var operationType: OperationType = .outcome
 
     var id: String { title }
 
-    var total: Int { transactions.reduce(0) { $0 + $1.amount } }
+    var total: Int { transactions.of(operationType).reduce(0) { $0 + $1.amount } }
 }
 
 struct TransactionsDayHeader: View {
@@ -150,9 +153,9 @@ struct TransactionRow: View {
 
             Spacer()
 
-            Text(transaction.amount.getAmount())
+            Text(transaction.displayAmount)
                 .font(.appLight(22))
-                .foregroundColor(primaryTextColor)
+                .foregroundColor(transaction.operationType == .income ? .green : primaryTextColor)
         }
         .frame(height: 48)
         .swipeActions(edge: .trailing, allowsFullSwipe: true) {

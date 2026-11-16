@@ -11,12 +11,14 @@ import SwiftData
 import SwiftUI
 
 struct ExpensesChartView: View {
+    var operationType: OperationType = .outcome
+
     @Query private var storedTransactions: [Transaction]
     @Query private var storedCategories: [TransactionCategory]
 
-    private var transactions: [Transaction] { storedTransactions.notDeleted }
+    private var transactions: [Transaction] { storedTransactions.notDeleted.of(operationType) }
 
-    private var categories: [TransactionCategory] { storedCategories.notDeleted }
+    private var categories: [TransactionCategory] { storedCategories.notDeleted.of(operationType) }
 
     @State private var period: StatisticsPeriod = .day
     @State private var selection: DateInterval? = StatisticsPeriod.day.defaultSelection()

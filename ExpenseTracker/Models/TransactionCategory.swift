@@ -20,14 +20,28 @@ final class TransactionCategory {
     var sortIndex: Int = 0
     var budget: Int = 0
     var deletedAt: Date?
+    var operationTypeRaw: String = OperationType.outcome.rawValue
     
-    init(name: TransactionCategoryName, categoryIcon: CategoryIcon, isDirectory: Bool = false, parentUuid: UUID? = nil, sortIndex: Int = .zero) {
+    var operationType: OperationType {
+        get { OperationType(rawValue: operationTypeRaw) ?? .outcome }
+        set { operationTypeRaw = newValue.rawValue }
+    }
+    
+    init(
+        name: TransactionCategoryName,
+        categoryIcon: CategoryIcon,
+        isDirectory: Bool = false,
+        parentUuid: UUID? = nil,
+        sortIndex: Int = .zero,
+        operationType: OperationType = .outcome
+    ) {
         self.uuid = UUID()
         self.name = name
         self.categoryIcon = categoryIcon
         self.isDirectory = isDirectory
         self.parentUuid = parentUuid
         self.sortIndex = sortIndex
+        self.operationTypeRaw = operationType.rawValue
     }
     
     var isMainCategory: Bool {
@@ -50,6 +64,10 @@ extension [TransactionCategory] {
 
     var inTrash: [TransactionCategory] {
         filter { $0.deletedAt != nil }
+    }
+
+    func of(_ operationType: OperationType) -> [TransactionCategory] {
+        filter { $0.operationType == operationType }
     }
 
     /// The order in which categories are shown: folders first, then by user-defined sort index, then by name.

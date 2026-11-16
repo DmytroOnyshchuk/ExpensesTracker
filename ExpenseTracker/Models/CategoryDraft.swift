@@ -8,32 +8,29 @@
 
 import Foundation
 
-/// Category draft for the create and edit form.
-///
-/// The form changes only the draft: values reach the store on Save, and Cancel discards them.
 struct CategoryDraft {
     var name: String
     var icon: CategoryIcon
     var parentUuid: UUID?
+    var operationType: OperationType = .outcome
 
     var canSave: Bool { !name.isEmpty }
 
-    /// Draft of a new category.
-    init() {
+    init(operationType: OperationType = .outcome) {
+        self.operationType = operationType
         self.name = ""
         self.icon = CategoryIcon(name: "cart.fill", iconColor: .yellow)
     }
 
-    /// Draft with the current values of an existing category.
     init(_ category: TransactionCategory) {
         self.name = category.name.localized
         self.icon = category.categoryIcon
         self.parentUuid = category.parentUuid
+        self.operationType = category.operationType
     }
 
-    /// Drops the reference to a folder that no longer exists: such a category is shown and saved as having no parent.
     mutating func dropMissingParent(in categories: [TransactionCategory]) {
-        guard !categories.contains(where: { $0.uuid == parentUuid }) else { return }
+        guard !categories.contains(where: { $0.uuid == parentUuid && $0.operationType == operationType }) else { return }
         parentUuid = nil
     }
 
@@ -44,6 +41,6 @@ struct CategoryDraft {
     }
 
     func makeCategory() -> TransactionCategory {
-        TransactionCategory(name: .custom(name), categoryIcon: icon, parentUuid: parentUuid)
+        TransactionCategory(name: .custom(name), categoryIcon: icon, parentUuid: parentUuid, operationType: operationType)
     }
 }

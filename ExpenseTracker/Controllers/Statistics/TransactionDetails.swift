@@ -148,9 +148,9 @@ struct TransactionDetailsRow: View {
             Spacer(minLength: 8)
 
             VStack(alignment: .trailing, spacing: 4) {
-                Text(transaction.amount.getAmount())
+                Text(transaction.displayAmount)
                     .font(.appLight(20))
-                    .foregroundColor(.appWhite)
+                    .foregroundColor(transaction.operationType == .income ? .green : .appWhite)
                     .lineLimit(1)
 
                 Text(transaction.date.dayString(.dateTime.day().month(.wide)))

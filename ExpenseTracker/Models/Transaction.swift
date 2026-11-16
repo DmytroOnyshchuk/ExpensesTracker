@@ -26,6 +26,18 @@ final class Transaction {
         self.date = date
         self.note = note
     }
+
+    var operationType: OperationType {
+        category.operationType
+    }
+
+    var signedAmount: Int {
+        operationType == .income ? amount : -amount
+    }
+
+    var displayAmount: String {
+        operationType == .income ? "+" + amount.getAmount() : amount.getAmount()
+    }
 }
 
 extension [Transaction] {
@@ -35,5 +47,9 @@ extension [Transaction] {
 
     var inTrash: [Transaction] {
         filter { $0.deletedAt != nil }
+    }
+
+    func of(_ operationType: OperationType) -> [Transaction] {
+        filter { $0.operationType == operationType }
     }
 }

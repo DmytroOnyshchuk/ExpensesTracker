@@ -15,10 +15,9 @@ struct EditCategoryView: View {
     private var storedDirectories: [TransactionCategory]
     @Query private var storedCategories: [TransactionCategory]
 
-    private var allDirectories: [TransactionCategory] { storedDirectories.notDeleted }
+    private var allDirectories: [TransactionCategory] { storedDirectories.notDeleted.of(draft.operationType) }
     private var allCategories: [TransactionCategory] { storedCategories.notDeleted }
 
-    /// The category being edited; `nil` when a new one is created.
     private let category: TransactionCategory?
     @State private var draft: CategoryDraft
     @State private var showDeleteConfirmation = false
@@ -75,9 +74,9 @@ struct EditCategoryView: View {
 
     // MARK: - Initializers
 
-    init() {
+    init(operationType: OperationType = .outcome) {
         self.category = nil
-        _draft = State(initialValue: CategoryDraft())
+        _draft = State(initialValue: CategoryDraft(operationType: operationType))
     }
 
     init(category: TransactionCategory) {

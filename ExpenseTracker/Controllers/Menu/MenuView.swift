@@ -143,6 +143,7 @@ struct MenuView: View {
     private var spentAmount: Int {
         let interval = period.interval(containing: Date())
         return transactions
+            .of(.outcome)
             .filter { $0.date >= interval.start && $0.date < interval.end }
             .reduce(0) { $0 + $1.amount }
     }

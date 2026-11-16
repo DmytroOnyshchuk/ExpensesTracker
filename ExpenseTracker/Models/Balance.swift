@@ -18,9 +18,9 @@ struct Balance: Codable {
     }
 
     func remaining(after transactions: [Transaction]) -> Int {
-        let spent = transactions
+        let change = transactions
             .filter { $0.date > date }
-            .reduce(0) { $0 + $1.amount }
-        return amount - spent
+            .reduce(0) { $0 + $1.signedAmount }
+        return amount + change
     }
 }

@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Enter expense";
+"STARTVIEW_ENTER_INCOME" = "Enter income";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Enter the amount first";
 "STARTVIEW_BALANCE" = "Balance";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Expenses";
+"STATISTICS_INCOME_TITLE" = "Income";
 "STATISTICS_DAY" = "Day";
 "STATISTICS_MONTH" = "Month";
 "STATISTICS_YEAR" = "Year";
@@ -112,6 +114,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Moved to Trash";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Spent today";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Spent yesterday";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Received today";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Received yesterday";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Edit categories";
@@ -162,6 +166,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Parking";
 "DEFAULT_CATEGORY_PETS" = "Pets";
 "DEFAULT_CATEGORY_SAVINGS" = "Savings";
+"DEFAULT_CATEGORY_SALARY" = "Salary";
 "SETTINGS_APPEARANCE" = "Appearance";
 "SETTINGS_THEME_SYSTEM" = "System";
 "SETTINGS_THEME_DARK" = "Dark";

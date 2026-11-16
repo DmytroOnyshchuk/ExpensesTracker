@@ -22,6 +22,7 @@ struct BackupCategory: Codable {
     var parentUuid: UUID?
     var sortIndex: Int
     var budget: Int?
+    var operationType: String?
 }
 
 struct BackupTransaction: Codable {

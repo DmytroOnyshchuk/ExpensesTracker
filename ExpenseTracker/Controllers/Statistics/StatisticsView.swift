@@ -18,12 +18,13 @@ struct StatisticsView: View {
     @Query private var storedCategories: [TransactionCategory]
 
     @State private var period: StatisticsPeriod
+    @State private var operationType: OperationType = .outcome
 
     private let initialDate: Date
 
     private var transactions: [Transaction] {
         let transactions = storedTransactions.notDeleted
-        guard let directoryUuid = directory?.uuid else { return transactions }
+        guard let directoryUuid = directory?.uuid else { return transactions.of(operationType) }
 
         return transactions.filter {
             $0.category.parentUuid == directoryUuid || $0.category.uuid == directoryUuid
@@ -31,7 +32,7 @@ struct StatisticsView: View {
     }
 
     private var categories: [TransactionCategory] {
-        directory == nil ? storedCategories.notDeleted : []
+        directory == nil ? storedCategories.notDeleted.of(operationType) : []
     }
 
     init(
@@ -54,22 +55,35 @@ struct StatisticsView: View {
             period: $period,
             date: initialDate
         )
-        .navigationTitle(directory?.name.localized ?? L10n.statisticsTitle)
+        .navigationTitle(directory?.name.localized ?? operationType.title)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             if directory == nil {
-                ToolbarItem(placement: .navigationBarTrailing) {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
                     NavigationLink {
-                        ExpensesChartView()
+                        ExpensesChartView(operationType: operationType)
                     } label: {
                         Image(systemName: "chart.bar.fill")
                             .font(.system(size: 14))
                             .foregroundColor(.appWhite)
                     }
                     .accessibilityLabel(L10n.statisticsChart)
+
+                    Button(action: toggleOperationType) {
+                        Image(systemName: operationType.systemImage)
+                            .font(.system(size: 14, weight: .semibold))
+                            .contentTransition(.symbolEffect(.replace))
+                            .foregroundColor(operationType == .income ? .green : .appWhite)
+                    }
+                    .accessibilityLabel(operationType.title)
                 }
             }
         }
+    }
+
+    private func toggleOperationType() {
+        FeedbackManager.shared.selectionChanged()
+        operationType = operationType.toggled
     }
 }
 

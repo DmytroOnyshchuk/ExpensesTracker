@@ -12,6 +12,7 @@ import SwiftUI
 struct CategoryGrid: View {
     @Query(filter: #Predicate<TransactionCategory> { !$0.isDirectory })
     private var storedCategories: [TransactionCategory]
+    var operationType: OperationType = .outcome
     var onSelect: (TransactionCategory) -> Bool
 
     @State private var currentPage: Int? = .zero
@@ -22,7 +23,7 @@ struct CategoryGrid: View {
         Array(repeating: GridItem(.flexible(), spacing: 20), count: 4)
     }
 
-    private var categories: [TransactionCategory] { storedCategories.notDeleted }
+    private var categories: [TransactionCategory] { storedCategories.notDeleted.of(operationType) }
 
     private var chunkedCategories: [[TransactionCategory]] {
         categories.inDisplayOrder.chunked(into: 8)
@@ -79,7 +80,7 @@ struct CategoryGrid: View {
             }
         }
         .navigationDestination(isPresented: $showAllCategories) {
-            CategoriesEdit()
+            CategoriesEdit(operationType: operationType)
         }
     }
 }

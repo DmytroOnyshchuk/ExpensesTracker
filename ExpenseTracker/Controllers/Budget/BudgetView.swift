@@ -40,12 +40,12 @@ struct BudgetView: View {
     @State private var target: BudgetTarget?
 
     var body: some View {
-        let categories = storedCategories.notDeleted.filter { !$0.isDirectory }.inDisplayOrder
+        let categories = storedCategories.notDeleted.of(.outcome).filter { !$0.isDirectory }.inDisplayOrder
 
         NavigationStack {
             BudgetPager(
                 resetToken: resetToken,
-                buckets: StatisticsBuckets(period: .month, transactions: storedTransactions.notDeleted),
+                buckets: StatisticsBuckets(period: .month, transactions: storedTransactions.notDeleted.of(.outcome)),
                 limited: categories.filter { $0.budget > .zero },
                 unlimited: categories.filter { $0.budget <= .zero },
                 monthlyLimit: monthlyLimit,

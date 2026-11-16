@@ -19,6 +19,7 @@ enum AppTab: Hashable {
 struct RootTabView: View {
     @State private var selection: AppTab = .home
     @State private var openedFileURL: URL?
+    @State private var homeResetToken: Int = .zero
     @State private var statisticsResetToken: Int = .zero
     @State private var budgetResetToken: Int = .zero
 
@@ -28,9 +29,10 @@ struct RootTabView: View {
             set: { newValue in
                 if newValue == selection {
                     switch newValue {
+                    case .home: homeResetToken += 1
                     case .statistics: statisticsResetToken += 1
                     case .budget: budgetResetToken += 1
-                    case .home, .menu: break
+                    case .menu: break
                     }
                 }
                 selection = newValue
@@ -41,7 +43,7 @@ struct RootTabView: View {
     var body: some View {
         TabView(selection: tabSelection) {
             Tab(L10n.tabHome, systemImage: "house.fill", value: AppTab.home) {
-                StartView()
+                StartView(resetToken: homeResetToken)
                     .undoToast()
             }
 

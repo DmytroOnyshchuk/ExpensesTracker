@@ -10,6 +10,8 @@ import SwiftData
 import SwiftUI
 
 struct StartView: View {
+    var resetToken: Int = .zero
+
     @Environment(\.modelContext) private var modelContext
 
     @State private var input = AmountInput()
@@ -18,6 +20,7 @@ struct StartView: View {
     @State private var showNoteInput = false
     @State private var amountAttentionTrigger: Int = .zero
     @State private var showBalanceInput = false
+    @State private var operationType: OperationType = .outcome
     @AppStorage(UDKey.balance.rawValue, store: UserDefaults.shared) private var balanceData: Data?
     @StoredSettings private var appSettings
     @Query(sort: \Transaction.date, order: .reverse, animation: .default) private var storedTransactions: [Transaction]
@@ -31,19 +34,24 @@ struct StartView: View {
                     BalanceCard(balance: balance, action: openBalanceInput)
                         .padding(.horizontal, 8)
 
-                    DigitPadView(input: $input, attentionTrigger: amountAttentionTrigger)
+                    DigitPadView(input: $input, placeholder: operationType.enterAmountTitle, attentionTrigger: amountAttentionTrigger)
                         .frame(maxWidth: .infinity)
                         .overlay(alignment: .bottomTrailing) {
-                            noteButton
+                            VStack(spacing: 8) {
+                                operationTypeButton
+                                noteButton
+                            }
+                            .padding(.bottom, 12)
                         }
                     if showCategories {
-                        CategoryGrid { category in
+                        CategoryGrid(operationType: operationType) { category in
                             addTransaction(with: category)
                         }
+                        .id(operationType)
                         .transition(.opacity)
                     }
 
-                    TransactionsList(transactions: transactions)
+                    TransactionsList(transactions: transactions.of(operationType), operationType: operationType)
 
                     historyButton
                 }
@@ -69,6 +77,11 @@ struct StartView: View {
                     closeBalanceInput()
                 }
                 .transition(.opacity)
+            }
+        }
+        .onChange(of: resetToken) {
+            withAnimation(.easeInOut(duration: 0.25)) {
+                operationType = .outcome
             }
         }
         .animation(.easeInOut(duration: 0.2), value: showNoteInput)
@@ -100,7 +113,25 @@ struct StartView: View {
                     fallback: .appLabel.opacity(note.isBlank ? 0.1 : 0.3)
                 )
         }
-        .padding(.bottom, 12)
+    }
+
+    private var operationTypeButton: some View {
+        let isIncome = operationType == .income
+
+        return Button(action: toggleOperationType) {
+            Image(systemName: operationType.systemImage)
+                .font(.system(size: 20, weight: .semibold))
+                .contentTransition(.symbolEffect(.replace))
+                .foregroundColor(isIncome ? .appWhite : .appLabel)
+                .frame(width: 48, height: 50)
+                .glassSurface(
+                    in: UnevenRoundedRectangle(topLeadingRadius: 25, bottomLeadingRadius: 25),
+                    tint: isIncome ? .green.opacity(0.3) : nil,
+                    isInteractive: true,
+                    fallback: isIncome ? Color.green.opacity(0.3) : Color.appLabel.opacity(0.1)
+                )
+        }
+        .accessibilityLabel(operationType.title)
     }
 
     private var historyButton: some View {
@@ -126,6 +157,13 @@ struct StartView: View {
     private func openNoteInput() {
         FeedbackManager.shared.buttonTapped()
         showNoteInput = true
+    }
+
+    private func toggleOperationType() {
+        FeedbackManager.shared.buttonTapped()
+        withAnimation(.easeInOut(duration: 0.25)) {
+            operationType = operationType.toggled
+        }
     }
 
     private func openBalanceInput() {

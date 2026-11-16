@@ -16,9 +16,11 @@ final class DataSeeder: NSObject {
 
     static func seedDefaultCategories(in context: ModelContext) {
         let descriptor = FetchDescriptor<TransactionCategory>()
-        let existingCategories = try? context.fetch(descriptor)
+        let existingCategories = (try? context.fetch(descriptor)) ?? []
 
-        if existingCategories?.isEmpty ?? true {
+        seedIncomeCategories(in: context, existingCategories: existingCategories)
+
+        if existingCategories.isEmpty {
             let food = TransactionCategory(name: .food, categoryIcon: CategoryIcon(name: "fork.knife", iconColor: .yellow), isDirectory: true)
             let car = TransactionCategory(name: .car, categoryIcon: CategoryIcon(name: "car.fill", iconColor: .pink), isDirectory: true)
             let house = TransactionCategory(name: .home, categoryIcon: CategoryIcon(name: "house.fill", iconColor: .yellow), isDirectory: true)
@@ -61,6 +63,27 @@ final class DataSeeder: NSObject {
             } catch {
                 Logger.default.logError("Failed to seed default categories", error: error, category: className)
             }
+        }
+    }
+
+    private static func seedIncomeCategories(in context: ModelContext, existingCategories: [TransactionCategory]) {
+        guard existingCategories.of(.income).isEmpty else { return }
+
+        let incomeCategories = [
+            TransactionCategory(name: .salary, categoryIcon: CategoryIcon(name: "briefcase.fill", iconColor: .green), operationType: .income),
+            TransactionCategory(name: .savings, categoryIcon: CategoryIcon(name: "banknote.fill", iconColor: .mint), operationType: .income),
+        ]
+
+        for (index, category) in incomeCategories.enumerated() {
+            category.sortIndex = index
+            context.insert(category)
+        }
+
+        do {
+            try context.save()
+            Logger.default.logMessage("Income categories seeded successfully", category: className)
+        } catch {
+            Logger.default.logError("Failed to seed income categories", error: error, category: className)
         }
     }
 }

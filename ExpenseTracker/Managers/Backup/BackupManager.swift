@@ -88,7 +88,8 @@ enum BackupManager {
                     isDirectory: category.isDirectory,
                     parentUuid: category.parentUuid,
                     sortIndex: category.sortIndex,
-                    budget: category.budget > .zero ? category.budget : nil
+                    budget: category.budget > .zero ? category.budget : nil,
+                    operationType: category.operationTypeRaw
                 )
             },
             transactions: transactions.map { transaction in
@@ -211,8 +212,9 @@ enum BackupManager {
 
         for item in snapshot.categories {
             let name = TransactionCategoryName(rawValue: item.name)
+            let operationType = item.operationType.flatMap { OperationType(rawValue: $0) } ?? .outcome
             let matchIndex = unclaimed.firstIndex { $0.uuid == item.uuid } ?? unclaimed.firstIndex {
-                $0.isDirectory == item.isDirectory && $0.name.localized.caseInsensitiveCompare(name.localized) == .orderedSame
+                $0.isDirectory == item.isDirectory && $0.operationType == operationType && $0.name.localized.caseInsensitiveCompare(name.localized) == .orderedSame
             }
 
             if let matchIndex {
@@ -229,7 +231,8 @@ enum BackupManager {
                 name: name,
                 categoryIcon: icon,
                 isDirectory: item.isDirectory,
-                sortIndex: sortOffset + item.sortIndex
+                sortIndex: sortOffset + item.sortIndex,
+                operationType: operationType
             )
             category.uuid = item.uuid
             category.budget = max(item.budget ?? .zero, .zero)
