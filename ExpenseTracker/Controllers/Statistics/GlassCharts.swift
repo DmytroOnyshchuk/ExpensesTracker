@@ -107,7 +107,7 @@ struct GlassDonutChart: View {
     private static let innerBandRatio: CGFloat = 0.24
     private static let iconSize: CGFloat = 22
     private static let labelDistance: CGFloat = 18
-    private static let labelHalfHeight: CGFloat = 11
+    private static let labelHalfHeight: CGFloat = 9
     private static let maxOuter: CGFloat = 105
 
     private struct Segment: Identifiable {
@@ -251,23 +251,23 @@ struct GlassDonutChart: View {
         let cosine = CGFloat(cos(segment.middle))
         let sine = CGFloat(sin(segment.middle))
         let bandEdge = inner + (outer - inner) * Self.innerBandRatio
-        let percentRadius = (bandEdge + outer) / 2
-        let iconRadius = outer + Self.labelDistance
+        let iconRadius = (bandEdge + outer) / 2
+        let iconSize = min(Self.iconSize, (outer - bandEdge) * 0.65)
+        let labelRadius = outer + Self.labelDistance
 
         return ZStack {
-            Text("\(segment.slice.percent)%")
-                .font(.appRegular(12))
-                .foregroundColor(.appWhite)
-                .shadow(color: .black.opacity(0.35), radius: 2, y: 1)
-                .fixedSize()
-                .position(x: center.x + cosine * percentRadius, y: center.y + sine * percentRadius)
-
             segment.slice.category.categoryIcon.image
                 .resizable()
                 .scaledToFit()
-                .foregroundColor(segment.color)
-                .frame(width: Self.iconSize, height: Self.iconSize)
+                .foregroundColor(.appWhite)
+                .frame(width: iconSize, height: iconSize)
                 .position(x: center.x + cosine * iconRadius, y: center.y + sine * iconRadius)
+
+            Text("\(segment.slice.percent)%")
+                .font(.appRegular(12))
+                .foregroundColor(segment.color)
+                .fixedSize()
+                .position(x: center.x + cosine * labelRadius, y: center.y + sine * labelRadius)
         }
         .opacity(Double(progress))
     }
