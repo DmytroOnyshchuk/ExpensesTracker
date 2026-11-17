@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Tài khoản mới";
 "ACCOUNTS_EDIT" = "Sửa tài khoản";
 "ACCOUNTS_NAME" = "Tên";
+"ACCOUNTS_DISABLE" = "Tắt tài khoản";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Ghi chép chi tiêu";

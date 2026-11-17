@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "يېڭى ھېسابات";
 "ACCOUNTS_EDIT" = "ھېساباتنى تەھرىرلەش";
 "ACCOUNTS_NAME" = "ئىسىم";
+"ACCOUNTS_DISABLE" = "ھېساباتنى چەكلەش";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "چىقىم ھېساباتى";

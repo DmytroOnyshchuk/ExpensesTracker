@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Kontu berria";
 "ACCOUNTS_EDIT" = "Editatu kontua";
 "ACCOUNTS_NAME" = "Izena";
+"ACCOUNTS_DISABLE" = "Desgaitu kontua";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Gastuen kontabilitatea";

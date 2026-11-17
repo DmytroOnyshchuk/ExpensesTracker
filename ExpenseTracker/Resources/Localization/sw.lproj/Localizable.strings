@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Akaunti mpya";
 "ACCOUNTS_EDIT" = "Hariri akaunti";
 "ACCOUNTS_NAME" = "Jina";
+"ACCOUNTS_DISABLE" = "Zima akaunti";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Uhasibu wa matumizi";

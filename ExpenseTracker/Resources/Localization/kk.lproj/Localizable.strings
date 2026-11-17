@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Жаңа шот";
 "ACCOUNTS_EDIT" = "Шотты өңдеу";
 "ACCOUNTS_NAME" = "Атауы";
+"ACCOUNTS_DISABLE" = "Шотты өшіру";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Шығыстар есебі";

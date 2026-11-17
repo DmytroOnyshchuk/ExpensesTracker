@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Akaun baharu";
 "ACCOUNTS_EDIT" = "Edit akaun";
 "ACCOUNTS_NAME" = "Nama";
+"ACCOUNTS_DISABLE" = "Nyahdayakan akaun";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Perakaunan perbelanjaan";

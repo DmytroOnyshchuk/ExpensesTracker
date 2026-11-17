@@ -104,7 +104,8 @@ enum BackupManager {
                     name: account.name,
                     amount: account.amount,
                     date: account.checkpointDate,
-                    sortIndex: account.sortIndex
+                    sortIndex: account.sortIndex,
+                    isDisabled: account.isDisabled
                 )
             }
         )
@@ -230,6 +231,7 @@ enum BackupManager {
         for item in snapshot.accounts ?? [] where accountsByUuid[item.uuid] == nil {
             let account = Account(name: item.name, amount: item.amount, checkpointDate: item.date, sortIndex: accountSortIndex)
             account.uuid = item.uuid
+            account.isDisabled = item.isDisabled ?? false
             context.insert(account)
             accountsByUuid[item.uuid] = account
             accountSortIndex += 1

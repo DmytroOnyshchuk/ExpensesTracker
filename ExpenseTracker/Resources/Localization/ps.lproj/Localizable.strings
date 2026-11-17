@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "نوی حساب";
 "ACCOUNTS_EDIT" = "حساب سم کړئ";
 "ACCOUNTS_NAME" = "نوم";
+"ACCOUNTS_DISABLE" = "حساب غیر فعال کړئ";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "د لګښتونو محاسبه";

@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Yeni hesap";
 "ACCOUNTS_EDIT" = "Hesabı düzenle";
 "ACCOUNTS_NAME" = "Ad";
+"ACCOUNTS_DISABLE" = "Hesabı devre dışı bırak";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Gider takibi";

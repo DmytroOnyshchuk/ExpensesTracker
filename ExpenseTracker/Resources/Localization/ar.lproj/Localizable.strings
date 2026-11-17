@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "حساب جديد";
 "ACCOUNTS_EDIT" = "تعديل الحساب";
 "ACCOUNTS_NAME" = "الاسم";
+"ACCOUNTS_DISABLE" = "تعطيل الحساب";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "محاسبة المصروفات";

@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "ନୂଆ ଆକାଉଣ୍ଟ";
 "ACCOUNTS_EDIT" = "ଆକାଉଣ୍ଟ ସମ୍ପାଦନ କରନ୍ତୁ";
 "ACCOUNTS_NAME" = "ନାମ";
+"ACCOUNTS_DISABLE" = "ଆକାଉଣ୍ଟ ଅକ୍ଷମ କରନ୍ତୁ";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ଖର୍ଚ୍ଚର ହିସାବ";

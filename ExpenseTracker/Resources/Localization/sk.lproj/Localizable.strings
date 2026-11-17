@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Nový účet";
 "ACCOUNTS_EDIT" = "Upraviť účet";
 "ACCOUNTS_NAME" = "Názov";
+"ACCOUNTS_DISABLE" = "Vypnúť účet";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Evidencia výdavkov";

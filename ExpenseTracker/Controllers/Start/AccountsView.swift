@@ -25,7 +25,7 @@ struct AccountsView: View {
 
         List {
             ForEach(accounts, id: \.uuid) { account in
-                AccountRow(name: account.name, amount: account.current(in: transactions)) {
+                AccountRow(name: account.name, amount: account.current(in: transactions), isDisabled: account.isDisabled) {
                     editingAccount = account
                 }
                 .listRowBackground(Color.clear)
@@ -33,7 +33,7 @@ struct AccountsView: View {
                 .listRowSeparatorTint(.appSecond)
                 .listRowSeparator(.hidden, edges: .top)
                 .swipeActions(edge: .trailing, allowsFullSwipe: true) {
-                    if accounts.count > 1 {
+                    if canTurnOff(account) {
                         Button(role: .destructive) {
                             modelContext.deleteWithUndo(account)
                         } label: {
@@ -51,7 +51,7 @@ struct AccountsView: View {
                     .font(.appMedium(18))
                     .foregroundColor(.appLabel)
 
-                Text(accounts.total(in: transactions).getAmount())
+                Text(accounts.enabled.total(in: transactions).getAmount())
                     .font(.appMedium(22))
                     .foregroundColor(.appWhite)
                     .lineLimit(1)
@@ -87,9 +87,11 @@ struct AccountsView: View {
                     title: L10n.accountsEdit,
                     name: editingAccount.name,
                     amount: editingAccount.current(in: transactions),
+                    isDisabled: editingAccount.isDisabled,
+                    canDisable: canTurnOff(editingAccount),
                     onCancel: { self.editingAccount = nil }
-                ) { name, amount in
-                    update(editingAccount, name: name, amount: amount, currentAmount: editingAccount.current(in: transactions))
+                ) { name, amount, isDisabled in
+                    update(editingAccount, name: name, amount: amount, currentAmount: editingAccount.current(in: transactions), isDisabled: isDisabled)
                     self.editingAccount = nil
                 }
                 .transition(.opacity)
@@ -99,7 +101,7 @@ struct AccountsView: View {
                     name: "",
                     amount: .zero,
                     onCancel: { showNewAccount = false }
-                ) { name, amount in
+                ) { name, amount, _ in
                     create(name: name, amount: amount)
                     showNewAccount = false
                 }
@@ -110,8 +112,13 @@ struct AccountsView: View {
         .animation(.easeInOut(duration: 0.2), value: showNewAccount)
     }
 
-    private func update(_ account: Account, name: String, amount: Int, currentAmount: Int) {
+    private func canTurnOff(_ account: Account) -> Bool {
+        account.isDisabled || accounts.enabled.count > 1
+    }
+
+    private func update(_ account: Account, name: String, amount: Int, currentAmount: Int, isDisabled: Bool) {
         account.name = name
+        account.isDisabled = isDisabled
         if amount != currentAmount {
             account.setAmount(amount)
         }
@@ -137,6 +144,7 @@ struct InsetDivider: View {
 struct AccountRow: View {
     let name: String
     let amount: Int
+    var isDisabled = false
     let action: () -> Void
 
     var body: some View {
@@ -157,6 +165,7 @@ struct AccountRow: View {
             }
             .padding(.horizontal, 20)
             .frame(height: 60)
+            .opacity(isDisabled ? 0.4 : 1)
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
@@ -166,10 +175,14 @@ struct AccountRow: View {
 struct AccountEditPopup: View {
     let title: String
     let onCancel: () -> Void
-    let onConfirm: (String, Int) -> Void
+    let onConfirm: (String, Int, Bool) -> Void
+
+    private let showsDisableOption: Bool
+    private let canDisable: Bool
 
     @State private var name: String
     @State private var amountText: String
+    @State private var isDisabled: Bool
     @FocusState private var focusedField: Field?
 
     private enum Field {
@@ -177,14 +190,11 @@ struct AccountEditPopup: View {
         case amount
     }
 
-    init(
-        title: String,
-        name: String,
-        amount: Int,
-        onCancel: @escaping () -> Void,
-        onConfirm: @escaping (String, Int) -> Void
-    ) {
+    init(title: String, name: String, amount: Int, isDisabled: Bool? = nil, canDisable: Bool = true, onCancel: @escaping () -> Void, onConfirm: @escaping (String, Int, Bool) -> Void) {
         self.title = title
+        self.showsDisableOption = isDisabled != nil
+        self.canDisable = canDisable
+        _isDisabled = State(initialValue: isDisabled ?? false)
         self.onCancel = onCancel
         self.onConfirm = onConfirm
         _name = State(initialValue: name)
@@ -219,6 +229,10 @@ struct AccountEditPopup: View {
                     .onTapGesture { focusedField = .amount }
                 }
 
+                if showsDisableOption {
+                    disableOption
+                }
+
                 HStack(spacing: 12) {
                     actionButton(L10n.cancel, isPrimary: false, action: cancel)
 
@@ -244,6 +258,32 @@ struct AccountEditPopup: View {
 
     private var canConfirm: Bool {
         !name.isBlank
+    }
+
+    private var disableOption: some View {
+        Button {
+            isDisabled.toggle()
+        } label: {
+            HStack(spacing: 12) {
+                Image(systemName: isDisabled ? "checkmark.circle.fill" : "circle")
+                    .font(.system(size: 22))
+                    .foregroundColor(isDisabled ? .appPrimary : .appLabel)
+                    .frame(width: 24)
+
+                Text(L10n.accountsDisable)
+                    .font(.appLight(16))
+                    .foregroundColor(.appWhite)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
+
+                Spacer(minLength: 0)
+            }
+            .padding(.horizontal, 14)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .disabled(!canDisable)
+        .opacity(canDisable ? 1 : 0.4)
     }
 
     private var header: some View {
@@ -313,7 +353,7 @@ struct AccountEditPopup: View {
 
     private func confirm() {
         focusedField = nil
-        onConfirm(name.trimmingCharacters(in: .whitespacesAndNewlines), AmountInput.amount(from: amountText))
+        onConfirm(name.trimmingCharacters(in: .whitespacesAndNewlines), AmountInput.amount(from: amountText), isDisabled)
     }
 }
 

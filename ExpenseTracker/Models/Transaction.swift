@@ -49,6 +49,10 @@ extension [Transaction] {
         filter { $0.deletedAt == nil }
     }
 
+    var visible: [Transaction] {
+        filter { $0.deletedAt == nil && $0.account?.isDisabled != true }
+    }
+
     var inTrash: [Transaction] {
         filter { $0.deletedAt != nil }
     }

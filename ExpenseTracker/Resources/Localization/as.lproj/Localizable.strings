@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "নতুন একাউণ্ট";
 "ACCOUNTS_EDIT" = "একাউণ্ট সম্পাদনা কৰক";
 "ACCOUNTS_NAME" = "নাম";
+"ACCOUNTS_DISABLE" = "একাউণ্ট নিষ্ক্ৰিয় কৰক";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ব্যয়ৰ হিচাপ";

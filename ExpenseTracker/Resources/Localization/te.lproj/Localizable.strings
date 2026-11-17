@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "కొత్త ఖాతా";
 "ACCOUNTS_EDIT" = "ఖాతాను సవరించండి";
 "ACCOUNTS_NAME" = "పేరు";
+"ACCOUNTS_DISABLE" = "ఖాతాను నిలిపివేయండి";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ఖర్చుల లెక్క";

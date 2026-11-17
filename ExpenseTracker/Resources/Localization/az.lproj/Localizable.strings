@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Yeni hesab";
 "ACCOUNTS_EDIT" = "Hesabı redaktə et";
 "ACCOUNTS_NAME" = "Ad";
+"ACCOUNTS_DISABLE" = "Hesabı deaktiv et";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Xərclərin uçotu";

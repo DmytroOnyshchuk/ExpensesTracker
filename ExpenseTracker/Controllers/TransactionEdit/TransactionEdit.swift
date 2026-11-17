@@ -25,7 +25,7 @@ struct TransactionEdit: View {
 
     @StoredSettings private var appSettings
 
-    private var accounts: [Account] { storedAccounts.notDeleted }
+    private var accounts: [Account] { storedAccounts.notDeleted.filter { !$0.isDisabled || $0.uuid == draft.account?.uuid } }
     @FocusState private var isAmountFocused: Bool
     @FocusState private var isNoteFocused: Bool
 

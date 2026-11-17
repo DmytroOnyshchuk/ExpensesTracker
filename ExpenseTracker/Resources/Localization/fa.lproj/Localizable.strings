@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "حساب جدید";
 "ACCOUNTS_EDIT" = "ویرایش حساب";
 "ACCOUNTS_NAME" = "نام";
+"ACCOUNTS_DISABLE" = "غیرفعال کردن حساب";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "حسابداری هزینه‌ها";

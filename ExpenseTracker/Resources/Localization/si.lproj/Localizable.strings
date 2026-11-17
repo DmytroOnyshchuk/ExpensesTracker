@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "නව ගිණුම";
 "ACCOUNTS_EDIT" = "ගිණුම සංස්කරණය කරන්න";
 "ACCOUNTS_NAME" = "නම";
+"ACCOUNTS_DISABLE" = "ගිණුම අබල කරන්න";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "වියදම් ගිණුම්කරණය";

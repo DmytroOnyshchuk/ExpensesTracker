@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Нова сметка";
 "ACCOUNTS_EDIT" = "Уреди сметка";
 "ACCOUNTS_NAME" = "Име";
+"ACCOUNTS_DISABLE" = "Оневозможи сметка";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Евиденција на трошоци";

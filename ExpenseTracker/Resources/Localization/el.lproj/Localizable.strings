@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Νέος λογαριασμός";
 "ACCOUNTS_EDIT" = "Επεξεργασία λογαριασμού";
 "ACCOUNTS_NAME" = "Όνομα";
+"ACCOUNTS_DISABLE" = "Απενεργοποίηση λογαριασμού";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Καταγραφή εξόδων";

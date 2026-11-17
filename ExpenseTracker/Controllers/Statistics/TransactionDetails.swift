@@ -40,7 +40,7 @@ struct TransactionDetails: View {
 
     @Query(animation: .default) private var storedTransactions: [Transaction]
 
-    private var transactions: [Transaction] { storedTransactions.notDeleted }
+    private var transactions: [Transaction] { storedTransactions.visible }
 
     @State private var sorting: TransactionsSorting = .date
     @State private var editedTransaction: Transaction?

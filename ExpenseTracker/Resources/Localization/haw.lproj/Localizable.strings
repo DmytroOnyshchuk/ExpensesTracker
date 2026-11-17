@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Moʻokāki hou";
 "ACCOUNTS_EDIT" = "E hoʻoponopono i ka moʻokāki";
 "ACCOUNTS_NAME" = "Inoa";
+"ACCOUNTS_DISABLE" = "E hoʻopau i ka moʻokāki";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Moʻohelu hoʻolilo";

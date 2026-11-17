@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Uusi tili";
 "ACCOUNTS_EDIT" = "Muokkaa tiliä";
 "ACCOUNTS_NAME" = "Nimi";
+"ACCOUNTS_DISABLE" = "Poista tili käytöstä";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Menojen kirjanpito";

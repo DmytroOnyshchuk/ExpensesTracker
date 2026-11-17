@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "គណនីថ្មី";
 "ACCOUNTS_EDIT" = "កែគណនី";
 "ACCOUNTS_NAME" = "ឈ្មោះ";
+"ACCOUNTS_DISABLE" = "បិទគណនី";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "គណនេយ្យចំណាយ";

@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "חשבון חדש";
 "ACCOUNTS_EDIT" = "עריכת חשבון";
 "ACCOUNTS_NAME" = "שם";
+"ACCOUNTS_DISABLE" = "השבתת החשבון";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "מעקב הוצאות";

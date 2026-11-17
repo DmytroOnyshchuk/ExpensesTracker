@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Neie Kont";
 "ACCOUNTS_EDIT" = "Kont beaarbechten";
 "ACCOUNTS_NAME" = "Numm";
+"ACCOUNTS_DISABLE" = "Kont desaktivéieren";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Ausgabebuchféierung";

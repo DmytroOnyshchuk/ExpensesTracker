@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Kont ġdid";
 "ACCOUNTS_EDIT" = "Editja l-kont";
 "ACCOUNTS_NAME" = "Isem";
+"ACCOUNTS_DISABLE" = "Iddiżattiva l-kont";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Kontabilità tal-ispejjeż";

@@ -26,8 +26,8 @@ struct StartView: View {
     @StoredSettings private var appSettings
     @Query(sort: \Transaction.date, order: .reverse, animation: .default) private var storedTransactions: [Transaction]
 
-    private var accounts: [Account] { storedAccounts.notDeleted }
-    private var transactions: [Transaction] { storedTransactions.notDeleted }
+    private var accounts: [Account] { storedAccounts.notDeleted.enabled }
+    private var transactions: [Transaction] { storedTransactions.visible }
 
     private var operationType: OperationType {
         appSettings.accounting.incomeEnabled ? selectedOperationType : .outcome

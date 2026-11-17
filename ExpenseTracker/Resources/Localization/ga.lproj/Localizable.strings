@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Cuntas nua";
 "ACCOUNTS_EDIT" = "Cuir an cuntas in eagar";
 "ACCOUNTS_NAME" = "Ainm";
+"ACCOUNTS_DISABLE" = "Díchumasaigh an cuntas";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Cuntasaíocht caiteachais";

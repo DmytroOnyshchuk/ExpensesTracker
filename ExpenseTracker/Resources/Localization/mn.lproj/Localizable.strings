@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Шинэ данс";
 "ACCOUNTS_EDIT" = "Данс засах";
 "ACCOUNTS_NAME" = "Нэр";
+"ACCOUNTS_DISABLE" = "Дансыг идэвхгүй болгох";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Зардлын бүртгэл";

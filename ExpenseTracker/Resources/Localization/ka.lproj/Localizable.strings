@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "ახალი ანგარიში";
 "ACCOUNTS_EDIT" = "ანგარიშის რედაქტირება";
 "ACCOUNTS_NAME" = "სახელი";
+"ACCOUNTS_DISABLE" = "ანგარიშის გათიშვა";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ხარჯების აღრიცხვა";

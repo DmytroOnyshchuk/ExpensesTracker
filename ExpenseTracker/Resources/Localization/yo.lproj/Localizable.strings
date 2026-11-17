@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Àkáǹtì tuntun";
 "ACCOUNTS_EDIT" = "Ṣàtúnṣe àkáǹtì";
 "ACCOUNTS_NAME" = "Orúkọ";
+"ACCOUNTS_DISABLE" = "Pa àkáǹtì tì";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Ìṣirò ìnáwó";

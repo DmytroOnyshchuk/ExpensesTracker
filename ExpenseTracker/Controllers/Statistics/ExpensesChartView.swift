@@ -16,7 +16,7 @@ struct ExpensesChartView: View {
     @Query private var storedTransactions: [Transaction]
     @Query private var storedCategories: [TransactionCategory]
 
-    private var transactions: [Transaction] { storedTransactions.notDeleted.of(operationType) }
+    private var transactions: [Transaction] { storedTransactions.visible.of(operationType) }
 
     private var categories: [TransactionCategory] { storedCategories.notDeleted.of(operationType) }
 

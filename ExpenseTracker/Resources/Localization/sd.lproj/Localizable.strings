@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "نئون اڪائونٽ";
 "ACCOUNTS_EDIT" = "اڪائونٽ ۾ ترميم ڪريو";
 "ACCOUNTS_NAME" = "نالو";
+"ACCOUNTS_DISABLE" = "اڪائونٽ غير فعال ڪريو";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "خرچن جو حساب";

@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Sabon asusu";
 "ACCOUNTS_EDIT" = "Gyara asusu";
 "ACCOUNTS_NAME" = "Suna";
+"ACCOUNTS_DISABLE" = "Kashe asusun";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Lissafin kashe kuɗi";

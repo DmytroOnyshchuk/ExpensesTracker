@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Жаңы эсеп";
 "ACCOUNTS_EDIT" = "Эсепти түзөтүү";
 "ACCOUNTS_NAME" = "Аталышы";
+"ACCOUNTS_DISABLE" = "Эсепти өчүрүп коюу";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Чыгымдардын эсеби";

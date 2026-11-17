@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "ਨਵਾਂ ਖਾਤਾ";
 "ACCOUNTS_EDIT" = "ਖਾਤਾ ਸੋਧੋ";
 "ACCOUNTS_NAME" = "ਨਾਮ";
+"ACCOUNTS_DISABLE" = "ਖਾਤਾ ਅਯੋਗ ਕਰੋ";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ਖਰਚਿਆਂ ਦਾ ਲੇਖਾ";

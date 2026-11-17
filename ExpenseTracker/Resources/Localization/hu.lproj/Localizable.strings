@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Új számla";
 "ACCOUNTS_EDIT" = "Számla szerkesztése";
 "ACCOUNTS_NAME" = "Név";
+"ACCOUNTS_DISABLE" = "Számla letiltása";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Kiadások nyilvántartása";

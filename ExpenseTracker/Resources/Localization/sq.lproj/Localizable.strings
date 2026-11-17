@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Llogari e re";
 "ACCOUNTS_EDIT" = "Ndrysho llogarinë";
 "ACCOUNTS_NAME" = "Emri";
+"ACCOUNTS_DISABLE" = "Çaktivizo llogarinë";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Kontabiliteti i shpenzimeve";

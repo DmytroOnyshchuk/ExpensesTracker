@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Uus konto";
 "ACCOUNTS_EDIT" = "Muuda kontot";
 "ACCOUNTS_NAME" = "Nimi";
+"ACCOUNTS_DISABLE" = "Keela konto";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Kulude arvestus";

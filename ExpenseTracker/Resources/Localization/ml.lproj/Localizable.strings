@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "പുതിയ അക്കൗണ്ട്";
 "ACCOUNTS_EDIT" = "അക്കൗണ്ട് എഡിറ്റ് ചെയ്യുക";
 "ACCOUNTS_NAME" = "പേര്";
+"ACCOUNTS_DISABLE" = "അക്കൗണ്ട് പ്രവർത്തനരഹിതമാക്കുക";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ചെലവുകളുടെ കണക്ക്";

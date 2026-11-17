@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "नयाँ खाता";
 "ACCOUNTS_EDIT" = "खाता सम्पादन गर्नुहोस्";
 "ACCOUNTS_NAME" = "नाम";
+"ACCOUNTS_DISABLE" = "खाता असक्षम गर्नुहोस्";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "खर्चको लेखा";

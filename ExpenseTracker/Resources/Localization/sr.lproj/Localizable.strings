@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Нови рачун";
 "ACCOUNTS_EDIT" = "Уреди рачун";
 "ACCOUNTS_NAME" = "Назив";
+"ACCOUNTS_DISABLE" = "Онемогући рачун";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Евиденција трошкова";

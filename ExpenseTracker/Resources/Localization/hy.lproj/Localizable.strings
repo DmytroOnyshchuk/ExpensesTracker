@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Նոր հաշիվ";
 "ACCOUNTS_EDIT" = "Խմբագրել հաշիվը";
 "ACCOUNTS_NAME" = "Անուն";
+"ACCOUNTS_DISABLE" = "Անջատել հաշիվը";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Ծախսերի հաշվառում";

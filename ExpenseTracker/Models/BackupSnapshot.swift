@@ -40,6 +40,7 @@ struct BackupAccount: Codable {
     var amount: Int
     var date: Date
     var sortIndex: Int
+    var isDisabled: Bool?
 }
 
 enum BackupSource {

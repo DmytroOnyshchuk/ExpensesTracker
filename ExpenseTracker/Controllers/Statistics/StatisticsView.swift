@@ -28,7 +28,7 @@ struct StatisticsView: View {
     }
 
     private var transactions: [Transaction] {
-        let transactions = storedTransactions.notDeleted
+        let transactions = storedTransactions.visible
         guard let directoryUuid = directory?.uuid else { return transactions.of(operationType) }
 
         return transactions.filter {

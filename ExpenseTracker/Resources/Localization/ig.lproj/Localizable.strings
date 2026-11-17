@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Akaụntụ ọhụrụ";
 "ACCOUNTS_EDIT" = "Dezie akaụntụ";
 "ACCOUNTS_NAME" = "Aha";
+"ACCOUNTS_DISABLE" = "Gbanyụọ akaụntụ";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Ndekọ mmefu";

@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Новий рахунок";
 "ACCOUNTS_EDIT" = "Редагування рахунку";
 "ACCOUNTS_NAME" = "Назва";
+"ACCOUNTS_DISABLE" = "Вимкнути рахунок";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Облік витрат";

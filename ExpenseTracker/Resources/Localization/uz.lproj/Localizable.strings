@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Yangi hisob";
 "ACCOUNTS_EDIT" = "Hisobni tahrirlash";
 "ACCOUNTS_NAME" = "Nomi";
+"ACCOUNTS_DISABLE" = "Hisobni oʻchirib qoʻyish";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Xarajatlar hisobi";

@@ -15,7 +15,7 @@ struct CategoriesEdit: View {
 
     private var categories: [TransactionCategory] { storedCategories.notDeleted.of(operationType) }
 
-    private var transactions: [Transaction] { storedTransactions.notDeleted }
+    private var transactions: [Transaction] { storedTransactions.visible }
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var modelContext
 

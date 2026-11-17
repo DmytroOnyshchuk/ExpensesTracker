@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Hesabê nû";
 "ACCOUNTS_EDIT" = "Hesabê sererast bike";
 "ACCOUNTS_NAME" = "Nav";
+"ACCOUNTS_DISABLE" = "Hesabê neçalak bike";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Hesabdariya lêçûnan";

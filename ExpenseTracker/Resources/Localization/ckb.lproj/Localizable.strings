@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "هەژماری نوێ";
 "ACCOUNTS_EDIT" = "دەستکاریکردنی هەژمار";
 "ACCOUNTS_NAME" = "ناو";
+"ACCOUNTS_DISABLE" = "ناچالاککردنی هەژمار";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ژمێریاری خەرجییەکان";

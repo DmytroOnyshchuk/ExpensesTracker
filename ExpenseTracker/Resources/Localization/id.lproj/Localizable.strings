@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Akun baru";
 "ACCOUNTS_EDIT" = "Edit akun";
 "ACCOUNTS_NAME" = "Nama";
+"ACCOUNTS_DISABLE" = "Nonaktifkan akun";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Pencatatan pengeluaran";

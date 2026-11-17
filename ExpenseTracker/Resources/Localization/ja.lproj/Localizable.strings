@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "新しい口座";
 "ACCOUNTS_EDIT" = "口座を編集";
 "ACCOUNTS_NAME" = "名前";
+"ACCOUNTS_DISABLE" = "口座を無効にする";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "支出の記録";

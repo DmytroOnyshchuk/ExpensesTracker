@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "አዲስ መለያ";
 "ACCOUNTS_EDIT" = "መለያ አርትዕ";
 "ACCOUNTS_NAME" = "ስም";
+"ACCOUNTS_DISABLE" = "መለያውን አሰናክል";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "የወጪ ሂሳብ";

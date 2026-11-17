@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Nuwe rekening";
 "ACCOUNTS_EDIT" = "Wysig rekening";
 "ACCOUNTS_NAME" = "Naam";
+"ACCOUNTS_DISABLE" = "Deaktiveer rekening";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Uitgawerekeningkunde";

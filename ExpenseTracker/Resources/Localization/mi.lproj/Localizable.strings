@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Pūkete hou";
 "ACCOUNTS_EDIT" = "Whakatikahia te pūkete";
 "ACCOUNTS_NAME" = "Ingoa";
+"ACCOUNTS_DISABLE" = "Whakakorehia te pūkete";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Kaute whakapaunga";

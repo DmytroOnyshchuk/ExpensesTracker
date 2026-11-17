@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Akun anyar";
 "ACCOUNTS_EDIT" = "Owahi akun";
 "ACCOUNTS_NAME" = "Jeneng";
+"ACCOUNTS_DISABLE" = "Pateni akun";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Pencatatan pengeluaran";

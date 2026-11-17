@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Nauja sąskaita";
 "ACCOUNTS_EDIT" = "Redaguoti sąskaitą";
 "ACCOUNTS_NAME" = "Pavadinimas";
+"ACCOUNTS_DISABLE" = "Išjungti sąskaitą";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Išlaidų apskaita";

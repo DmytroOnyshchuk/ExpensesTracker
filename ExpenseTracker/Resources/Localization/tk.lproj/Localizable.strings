@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Täze hasap";
 "ACCOUNTS_EDIT" = "Hasaby redaktirle";
 "ACCOUNTS_NAME" = "Ady";
+"ACCOUNTS_DISABLE" = "Hasaby öçür";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Çykdajylaryň hasaby";

@@ -17,7 +17,7 @@ struct HistoryView: View {
     @StoredSettings private var appSettings
 
     private var transactions: [Transaction] {
-        let transactions = storedTransactions.notDeleted
+        let transactions = storedTransactions.visible
         return appSettings.accounting.incomeEnabled ? transactions : transactions.of(.outcome)
     }
 

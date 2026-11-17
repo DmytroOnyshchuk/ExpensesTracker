@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Ҳисоби нав";
 "ACCOUNTS_EDIT" = "Таҳрири ҳисоб";
 "ACCOUNTS_NAME" = "Ном";
+"ACCOUNTS_DISABLE" = "Ғайрифаъол кардани ҳисоб";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Баҳисобгирии хароҷот";

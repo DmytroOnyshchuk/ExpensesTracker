@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Cyfrif newydd";
 "ACCOUNTS_EDIT" = "Golygu'r cyfrif";
 "ACCOUNTS_NAME" = "Enw";
+"ACCOUNTS_DISABLE" = "Analluogi'r cyfrif";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Cyfrifo treuliau";

@@ -26,6 +26,8 @@ internal enum L10n {
   internal static let accountingMultipleAccounts = L10n.tr("Localizable", "ACCOUNTING_MULTIPLE_ACCOUNTS", fallback: "Multiple accounts")
   /// Account deleted
   internal static let accountsDeleted = L10n.tr("Localizable", "ACCOUNTS_DELETED", fallback: "Account deleted")
+  /// Disable account
+  internal static let accountsDisable = L10n.tr("Localizable", "ACCOUNTS_DISABLE", fallback: "Disable account")
   /// Edit account
   internal static let accountsEdit = L10n.tr("Localizable", "ACCOUNTS_EDIT", fallback: "Edit account")
   /// Name

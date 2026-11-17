@@ -45,7 +45,7 @@ struct BudgetView: View {
         NavigationStack {
             BudgetPager(
                 resetToken: resetToken,
-                buckets: StatisticsBuckets(period: .month, transactions: storedTransactions.notDeleted.of(.outcome)),
+                buckets: StatisticsBuckets(period: .month, transactions: storedTransactions.visible.of(.outcome)),
                 limited: categories.filter { $0.budget > .zero },
                 unlimited: categories.filter { $0.budget <= .zero },
                 monthlyLimit: monthlyLimit,

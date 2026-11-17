@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "ಹೊಸ ಖಾತೆ";
 "ACCOUNTS_EDIT" = "ಖಾತೆ ಸಂಪಾದಿಸಿ";
 "ACCOUNTS_NAME" = "ಹೆಸರು";
+"ACCOUNTS_DISABLE" = "ಖಾತೆ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ವೆಚ್ಚಗಳ ಲೆಕ್ಕ";

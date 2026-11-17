@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Cont nou";
 "ACCOUNTS_EDIT" = "Editează contul";
 "ACCOUNTS_NAME" = "Nume";
+"ACCOUNTS_DISABLE" = "Dezactivează contul";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Evidența cheltuielilor";

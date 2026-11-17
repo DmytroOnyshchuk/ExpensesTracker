@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Яңа счет";
 "ACCOUNTS_EDIT" = "Счетны үзгәртү";
 "ACCOUNTS_NAME" = "Исем";
+"ACCOUNTS_DISABLE" = "Счетны сүндерү";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Чыгымнар исәбе";

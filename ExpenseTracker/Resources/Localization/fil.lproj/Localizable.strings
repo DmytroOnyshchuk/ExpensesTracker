@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Bagong account";
 "ACCOUNTS_EDIT" = "I-edit ang account";
 "ACCOUNTS_NAME" = "Pangalan";
+"ACCOUNTS_DISABLE" = "I-disable ang account";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Accounting ng gastos";

@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Nýr reikningur";
 "ACCOUNTS_EDIT" = "Breyta reikningi";
 "ACCOUNTS_NAME" = "Heiti";
+"ACCOUNTS_DISABLE" = "Gera reikning óvirkan";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Útgjaldabókhald";

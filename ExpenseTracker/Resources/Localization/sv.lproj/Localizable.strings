@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Nytt konto";
 "ACCOUNTS_EDIT" = "Redigera konto";
 "ACCOUNTS_NAME" = "Namn";
+"ACCOUNTS_DISABLE" = "Inaktivera konto";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Utgiftsbokföring";

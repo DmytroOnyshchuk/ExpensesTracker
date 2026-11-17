@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "نیا اکاؤنٹ";
 "ACCOUNTS_EDIT" = "اکاؤنٹ میں ترمیم کریں";
 "ACCOUNTS_NAME" = "نام";
+"ACCOUNTS_DISABLE" = "اکاؤنٹ غیر فعال کریں";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "اخراجات کا حساب";

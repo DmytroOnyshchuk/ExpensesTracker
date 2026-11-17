@@ -159,7 +159,7 @@ struct MenuView: View {
 
     private var balance: Int? {
         guard appSettings.accounting.multipleAccountsEnabled, !accounts.isEmpty else { return nil }
-        return accounts.total(in: transactions)
+        return accounts.enabled.total(in: transactions)
     }
 
     private func open(_ item: MenuItem) {

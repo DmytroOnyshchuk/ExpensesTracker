@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "ບັນຊີໃໝ່";
 "ACCOUNTS_EDIT" = "ແກ້ໄຂບັນຊີ";
 "ACCOUNTS_NAME" = "ຊື່";
+"ACCOUNTS_DISABLE" = "ປິດການນຳໃຊ້ບັນຊີ";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ບັນຊີລາຍຈ່າຍ";

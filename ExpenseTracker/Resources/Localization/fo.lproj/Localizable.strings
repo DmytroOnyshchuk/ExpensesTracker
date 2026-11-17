@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Nýggj konta";
 "ACCOUNTS_EDIT" = "Broyt kontu";
 "ACCOUNTS_NAME" = "Navn";
+"ACCOUNTS_DISABLE" = "Ger kontu óvirkna";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Útreiðsluroknskapur";

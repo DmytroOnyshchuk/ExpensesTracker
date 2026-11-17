@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Akoon cusub";
 "ACCOUNTS_EDIT" = "Wax ka beddel akoonka";
 "ACCOUNTS_NAME" = "Magac";
+"ACCOUNTS_DISABLE" = "Dami akoonka";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Xisaabinta kharashka";

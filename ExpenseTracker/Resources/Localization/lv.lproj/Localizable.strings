@@ -247,6 +247,7 @@
 "ACCOUNTS_NEW" = "Jauns konts";
 "ACCOUNTS_EDIT" = "Rediģēt kontu";
 "ACCOUNTS_NAME" = "Nosaukums";
+"ACCOUNTS_DISABLE" = "Atspējot kontu";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Izdevumu uzskaite";

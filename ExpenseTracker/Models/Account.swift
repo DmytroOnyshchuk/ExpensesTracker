@@ -23,6 +23,7 @@ final class Account {
     var sortIndex: Int = 0
     var deletedAt: Date?
     var typeRaw: String = AccountType.wallet.rawValue
+    var isDisabled: Bool = false
     
     var type: AccountType {
         get { AccountType(rawValue: typeRaw) ?? .wallet }
@@ -56,6 +57,10 @@ final class Account {
 extension [Account] {
     var notDeleted: [Account] {
         filter { $0.deletedAt == nil }
+    }
+
+    var enabled: [Account] {
+        filter { !$0.isDisabled }
     }
 
     var inTrash: [Account] {
