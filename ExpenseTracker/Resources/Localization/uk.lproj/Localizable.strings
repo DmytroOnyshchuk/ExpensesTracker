@@ -203,6 +203,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Файл пошкоджено або його не вдається прочитати.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Цю копію створено новішою версією застосунку.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Цей формат файлу не підтримується.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Усі рахунки";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Уся історія";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Свій період";
+"BACKUPS_EXPORT_LAST_DAYS" = "Останні %d днів";
+"BACKUPS_EXPORT_PERIOD" = "Період";
+"BACKUPS_EXPORT_SETTINGS" = "Налаштування експорту";
 "BACKUPS_EXPORT_SECTION" = "Експорт";
 "BACKUPS_IMPORT_ACTION" = "Імпортувати з файлу";
 "BACKUPS_IMPORT_DONE" = "Додано операцій: %d, категорій: %d";

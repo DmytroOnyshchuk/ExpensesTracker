@@ -62,8 +62,22 @@ internal enum L10n {
   internal static let backupsErrorNewerVersion = L10n.tr("Localizable", "BACKUPS_ERROR_NEWER_VERSION", fallback: "This backup was made by a newer version of the app.")
   /// This file format is not supported.
   internal static let backupsErrorUnsupported = L10n.tr("Localizable", "BACKUPS_ERROR_UNSUPPORTED", fallback: "This file format is not supported.")
+  /// All accounts
+  internal static let backupsExportAllAccounts = L10n.tr("Localizable", "BACKUPS_EXPORT_ALL_ACCOUNTS", fallback: "All accounts")
+  /// All history
+  internal static let backupsExportAllHistory = L10n.tr("Localizable", "BACKUPS_EXPORT_ALL_HISTORY", fallback: "All history")
+  /// Custom period
+  internal static let backupsExportCustomPeriod = L10n.tr("Localizable", "BACKUPS_EXPORT_CUSTOM_PERIOD", fallback: "Custom period")
+  /// Last %d days
+  internal static func backupsExportLastDays(_ p1: Int) -> String {
+    return L10n.tr("Localizable", "BACKUPS_EXPORT_LAST_DAYS", p1, fallback: "Last %d days")
+  }
+  /// Period
+  internal static let backupsExportPeriod = L10n.tr("Localizable", "BACKUPS_EXPORT_PERIOD", fallback: "Period")
   /// Export
   internal static let backupsExportSection = L10n.tr("Localizable", "BACKUPS_EXPORT_SECTION", fallback: "Export")
+  /// Export settings
+  internal static let backupsExportSettings = L10n.tr("Localizable", "BACKUPS_EXPORT_SETTINGS", fallback: "Export settings")
   /// View only
   internal static let backupsFormatCsv = L10n.tr("Localizable", "BACKUPS_FORMAT_CSV", fallback: "View only")
   /// Full backup

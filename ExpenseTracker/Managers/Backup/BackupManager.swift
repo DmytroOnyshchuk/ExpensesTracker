@@ -116,9 +116,14 @@ enum BackupManager {
     }
 
     @MainActor
-    static func tableData(from context: ModelContext, format: BackupExportFormat) throws -> Data {
+    static func tableData(
+        from context: ModelContext,
+        format: BackupExportFormat,
+        options: BackupExportOptions = BackupExportOptions()
+    ) throws -> Data {
         let categories = try context.fetch(FetchDescriptor<TransactionCategory>()).notDeleted
-        let transactions = try context.fetch(FetchDescriptor<Transaction>(sortBy: [SortDescriptor(\.date)])).notDeleted
+        let stored = try context.fetch(FetchDescriptor<Transaction>(sortBy: [SortDescriptor(\.date)])).notDeleted
+        let transactions = options.filter(stored)
 
         let rows = transactions.map { transaction in
             BackupTableRow(
@@ -143,14 +148,18 @@ enum BackupManager {
     }
 
     @MainActor
-    static func writeExportFile(from context: ModelContext, format: BackupExportFormat) throws -> URL {
+    static func writeExportFile(
+        from context: ModelContext,
+        format: BackupExportFormat,
+        options: BackupExportOptions = BackupExportOptions()
+    ) throws -> URL {
         let directory = FileManager.default.temporaryDirectory.appendingPathComponent("BackupExport", isDirectory: true)
         try? FileManager.default.removeItem(at: directory)
         try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
 
         let data: Data = switch format {
         case .json: try exportData(from: context)
-        case .csv, .xlsx: try tableData(from: context, format: format)
+        case .csv, .xlsx: try tableData(from: context, format: format, options: options)
         }
         let url = directory.appendingPathComponent(defaultFilename).appendingPathExtension(format.fileExtension)
         try data.write(to: url, options: .atomic)

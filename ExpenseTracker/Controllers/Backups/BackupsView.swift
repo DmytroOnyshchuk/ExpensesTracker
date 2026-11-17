@@ -8,18 +8,30 @@ struct BackupShareFile: Identifiable {
     var id: URL { url }
 }
 
+struct BackupExportRequest {
+    let format: BackupExportFormat
+    let options: BackupExportOptions
+}
+
 struct BackupsView: View {
     @Environment(\.modelContext) private var modelContext
 
     @Query private var storedTransactions: [Transaction]
     @Query private var storedCategories: [TransactionCategory]
+    @Query private var storedAccounts: [Account]
 
     private var transactions: [Transaction] { storedTransactions.notDeleted }
 
     private var categories: [TransactionCategory] { storedCategories.notDeleted }
 
+    private var selectableAccounts: [Account] {
+        storedAccounts.notDeleted.inDisplayOrder
+    }
+
     @State private var isImporting = false
     @State private var isChoosingFormat = false
+    @State private var optionsFormat: BackupExportFormat?
+    @State private var pendingExport: BackupExportRequest?
     @State private var sharedFile: BackupShareFile?
     @State private var pickedFileURL: URL?
     @State private var errorMessage: String?
@@ -67,12 +79,23 @@ struct BackupsView: View {
             if isChoosingFormat {
                 BackupFormatPopup(onCancel: closeFormatPopup) { format in
                     closeFormatPopup()
-                    share(format)
+                    confirm(format)
                 }
                 .transition(.opacity)
             }
         }
         .animation(.easeInOut(duration: 0.2), value: isChoosingFormat)
+        .sheet(item: $optionsFormat, onDismiss: sharePendingExport) { format in
+            BackupExportOptionsSheet(
+                format: format,
+                accounts: selectableAccounts,
+                transactions: transactions,
+                onCancel: closeOptions
+            ) { options in
+                pendingExport = BackupExportRequest(format: format, options: options)
+                closeOptions()
+            }
+        }
         .sheet(item: $sharedFile) { file in
             ActivityView(items: [file.url])
                 .presentationDetents([.medium, .large])
@@ -127,9 +150,27 @@ struct BackupsView: View {
         isChoosingFormat = false
     }
 
-    private func share(_ format: BackupExportFormat) {
+    private func confirm(_ format: BackupExportFormat) {
+        switch format {
+        case .json: share(format, options: BackupExportOptions())
+        case .csv, .xlsx: optionsFormat = format
+        }
+    }
+
+    private func closeOptions() {
+        optionsFormat = nil
+    }
+
+    private func sharePendingExport() {
+        guard let request = pendingExport else { return }
+        pendingExport = nil
+        share(request.format, options: request.options)
+    }
+
+    private func share(_ format: BackupExportFormat, options: BackupExportOptions) {
         do {
-            sharedFile = try BackupShareFile(url: BackupManager.writeExportFile(from: modelContext, format: format))
+            let url = try BackupManager.writeExportFile(from: modelContext, format: format, options: options)
+            sharedFile = BackupShareFile(url: url)
         } catch {
             show(error)
         }
@@ -310,6 +351,162 @@ struct BackupFormatRow: View {
     }
 }
 
+struct BackupExportOptionsSheet: View {
+    let format: BackupExportFormat
+    let accounts: [Account]
+    let transactions: [Transaction]
+    let onCancel: () -> Void
+    let onExport: (BackupExportOptions) -> Void
+
+    @State private var options = BackupExportOptions()
+
+    private var matchingCount: Int { options.filter(transactions).count }
+
+    var body: some View {
+        VStack(spacing: 16) {
+            ScrollView(.vertical) {
+                VStack(alignment: .leading, spacing: 24) {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(L10n.backupsExportSettings)
+                            .font(.appRegular(22))
+                            .foregroundColor(.appWhite)
+
+                        Text(format.title)
+                            .font(.appLight(15))
+                            .foregroundColor(.appLabel)
+                    }
+
+                    if !accounts.isEmpty {
+                        BackupSection(title: L10n.accountsTitle) {
+                            BackupExportOptionRow(
+                                title: L10n.backupsExportAllAccounts,
+                                isSelected: options.accountUuids == nil,
+                                action: selectAllAccounts
+                            )
+
+                            ForEach(accounts) { account in
+                                BackupExportOptionDivider()
+
+                                BackupExportOptionRow(title: account.name, isSelected: options.isSelected(account)) {
+                                    toggle(account)
+                                }
+                            }
+                        }
+                    }
+
+                    BackupSection(title: L10n.backupsExportPeriod) {
+                        ForEach(BackupExportPeriod.allCases) { period in
+                            if period != BackupExportPeriod.allCases.first {
+                                BackupExportOptionDivider()
+                            }
+
+                            BackupExportOptionRow(title: period.title, isSelected: period == options.period) {
+                                select(period)
+                            }
+                        }
+
+                        if options.period == .custom {
+                            BackupExportOptionDivider()
+
+                            HStack(spacing: 12) {
+                                DatePicker("", selection: $options.customStart, in: ...options.customEnd, displayedComponents: .date)
+                                    .labelsHidden()
+
+                                Text(verbatim: "–")
+                                    .font(.appLight(16))
+                                    .foregroundColor(.appLabel)
+
+                                DatePicker("", selection: $options.customEnd, in: options.customStart ... Date(), displayedComponents: .date)
+                                    .labelsHidden()
+                            }
+                            .tint(.appPrimary)
+                            .frame(maxWidth: .infinity)
+                            .padding(.horizontal, 16)
+                            .padding(.vertical, 10)
+                        }
+                    }
+
+                    Text(L10n.backupsTransactionsCount(matchingCount))
+                        .font(.appLight(15))
+                        .foregroundColor(.appLabel)
+                        .padding(.horizontal, 16)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .scrollIndicators(.hidden)
+
+            VStack(spacing: 12) {
+                BackupSheetButton(title: L10n.backupsShareAction, foreground: .appMain, background: .appPrimary) {
+                    onExport(options)
+                }
+                .disabled(matchingCount == .zero)
+                .opacity(matchingCount == .zero ? 0.4 : 1)
+
+                BackupSheetButton(title: L10n.cancel, foreground: .appWhite, background: .clear, action: onCancel)
+            }
+        }
+        .padding([.horizontal, .top], 24)
+        .padding(.bottom, 12)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        .appBackground()
+        .animation(.easeInOut(duration: 0.2), value: options.period)
+    }
+
+    private func selectAllAccounts() {
+        guard options.accountUuids != nil else { return }
+        FeedbackManager.shared.selectionChanged()
+        options.accountUuids = nil
+    }
+
+    private func toggle(_ account: Account) {
+        FeedbackManager.shared.selectionChanged()
+        options.toggle(account)
+    }
+
+    private func select(_ period: BackupExportPeriod) {
+        guard period != options.period else { return }
+        FeedbackManager.shared.selectionChanged()
+        options.period = period
+    }
+}
+
+struct BackupExportOptionRow: View {
+    let title: String
+    let isSelected: Bool
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            HStack(spacing: 12) {
+                Text(title)
+                    .font(.appLight(16))
+                    .foregroundColor(.appWhite)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
+
+                Spacer(minLength: 8)
+
+                Image(systemName: isSelected ? "checkmark.circle.fill" : "circle")
+                    .font(.system(size: 22))
+                    .foregroundColor(isSelected ? .appPrimary : .appLabel.opacity(0.6))
+            }
+            .padding(.horizontal, 16)
+            .frame(height: 46)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+    }
+}
+
+struct BackupExportOptionDivider: View {
+    var body: some View {
+        Rectangle()
+            .fill(.appLabel.opacity(0.25))
+            .frame(height: 0.5)
+            .padding(.horizontal, 16)
+    }
+}
+
 struct BackupSection<Content: View>: View {
     let title: String
     @ViewBuilder let content: Content
@@ -439,6 +636,14 @@ struct BackupSheetButton: View {
 #Preview("Format popup") {
     BackupFormatPopup(onCancel: {}, onConfirm: { _ in })
         .background(.appMain)
+}
+
+#Preview("Export options") {
+    let container = makePreviewModelContainer()
+    let accounts = [Account(name: "Cash", sortIndex: 0), Account(name: "Card", sortIndex: 1)]
+
+    return BackupExportOptionsSheet(format: .csv, accounts: accounts, transactions: [], onCancel: {}, onExport: { _ in })
+        .modelContainer(container)
 }
 
 #Preview("Import sheet") {
