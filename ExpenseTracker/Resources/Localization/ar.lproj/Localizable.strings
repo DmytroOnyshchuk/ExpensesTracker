@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "الفئات";
 "MENU_BUDGET" = "الميزانية";
 "MENU_SETTINGS" = "الإعدادات";
+"MENU_ACCOUNTING_SETTINGS" = "إعدادات المحاسبة";
 "MENU_BACKUPS" = "النسخ الاحتياطية";
 "MENU_SPENT_IN_MONTH" = "المصروفات في %@";
 "MENU_LANGUAGE" = "اللغة";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "الصحة والعائلة والأنشطة";
 "ICON_PICKER_SECTION_TECH" = "التقنية والتعليم والأدوات";
 "ICON_PICKER_SECTION_NATURE" = "الطبيعة والطقس والرموز العامة";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "محاسبة المصروفات";
+"ACCOUNTING_INCOME" = "محاسبة الدخل";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "حسابات متعددة";

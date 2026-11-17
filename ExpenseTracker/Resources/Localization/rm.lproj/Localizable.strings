@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Categorias";
 "MENU_BUDGET" = "Budget";
 "MENU_SETTINGS" = "Parameters";
+"MENU_ACCOUNTING_SETTINGS" = "Parameters da contabilitad";
 "MENU_BACKUPS" = "Copias da segirezza";
 "MENU_SPENT_IN_MONTH" = "Total expendì · %@";
 "MENU_LANGUAGE" = "Lingua";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Sanadad, famiglia ed activitads";
 "ICON_PICKER_SECTION_TECH" = "Tecnologia, furmaziun ed utensils";
 "ICON_PICKER_SECTION_NATURE" = "Natira, aura e simbols generals";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Contabilitad da las expensas";
+"ACCOUNTING_INCOME" = "Contabilitad da las entradas";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Plirs contos";

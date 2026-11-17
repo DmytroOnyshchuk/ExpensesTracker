@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "類別";
 "MENU_BUDGET" = "預算";
 "MENU_SETTINGS" = "設定";
+"MENU_ACCOUNTING_SETTINGS" = "記帳設定";
 "MENU_BACKUPS" = "備份";
 "MENU_SPENT_IN_MONTH" = "%@支出";
 "MENU_LANGUAGE" = "語言";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "健康、家庭與活動";
 "ICON_PICKER_SECTION_TECH" = "科技、教育與工具";
 "ICON_PICKER_SECTION_NATURE" = "自然、天氣與通用符號";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "支出記帳";
+"ACCOUNTING_INCOME" = "收入記帳";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "多個帳戶";

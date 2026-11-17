@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "دسته‌ها";
 "MENU_BUDGET" = "بودجه";
 "MENU_SETTINGS" = "تنظیمات";
+"MENU_ACCOUNTING_SETTINGS" = "تنظیمات حسابداری";
 "MENU_BACKUPS" = "پشتیبان‌ها";
 "MENU_SPENT_IN_MONTH" = "هزینه‌های %@";
 "MENU_LANGUAGE" = "زبان";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "سلامت، خانواده و فعالیت‌ها";
 "ICON_PICKER_SECTION_TECH" = "فناوری، آموزش و ابزار";
 "ICON_PICKER_SECTION_NATURE" = "طبیعت، آب‌وهوا و نمادهای عمومی";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "حسابداری هزینه‌ها";
+"ACCOUNTING_INCOME" = "حسابداری درآمد";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "چند حساب";

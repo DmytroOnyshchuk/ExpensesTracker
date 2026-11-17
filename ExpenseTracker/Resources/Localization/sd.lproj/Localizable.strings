@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "درجا";
 "MENU_BUDGET" = "بجيٽ";
 "MENU_SETTINGS" = "سيٽنگون";
+"MENU_ACCOUNTING_SETTINGS" = "اڪائونٽنگ سيٽنگون";
 "MENU_BACKUPS" = "بيڪ اپ";
 "MENU_SPENT_IN_MONTH" = "ڪل خرچ · %@";
 "MENU_LANGUAGE" = "ٻولي";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "صحت، خاندان ۽ سرگرميون";
 "ICON_PICKER_SECTION_TECH" = "ٽيڪنالاجي، تعليم ۽ اوزار";
 "ICON_PICKER_SECTION_NATURE" = "فطرت، موسم ۽ عام نشانيون";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "خرچن جو حساب";
+"ACCOUNTING_INCOME" = "آمدني جو حساب";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "گھڻا اڪائونٽ";

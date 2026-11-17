@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Izigaba";
 "MENU_BUDGET" = "Isabelomali";
 "MENU_SETTINGS" = "Izilungiselelo";
+"MENU_ACCOUNTING_SETTINGS" = "Izilungiselelo zokubalwa kwemali";
 "MENU_BACKUPS" = "Izipele";
 "MENU_SPENT_IN_MONTH" = "Isamba esichithiwe · %@";
 "MENU_LANGUAGE" = "Ulimi";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Impilo, umndeni nemisebenzi";
 "ICON_PICKER_SECTION_TECH" = "Ubuchwepheshe, imfundo namathuluzi";
 "ICON_PICKER_SECTION_NATURE" = "Imvelo, isimo sezulu nezimpawu ezijwayelekile";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Ukubalwa kwezindleko";
+"ACCOUNTING_INCOME" = "Ukubalwa kwemali engenayo";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Ama-akhawunti amaningi";

@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Categorías";
 "MENU_BUDGET" = "Presupuesto";
 "MENU_SETTINGS" = "Configuración";
+"MENU_ACCOUNTING_SETTINGS" = "Ajustes de contabilidad";
 "MENU_BACKUPS" = "Copias de seguridad";
 "MENU_SPENT_IN_MONTH" = "Gastado en %@";
 "MENU_LANGUAGE" = "Idioma";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Salud, familia y actividades";
 "ICON_PICKER_SECTION_TECH" = "Tecnología, educación y herramientas";
 "ICON_PICKER_SECTION_NATURE" = "Naturaleza, clima y símbolos generales";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Registro de gastos";
+"ACCOUNTING_INCOME" = "Registro de ingresos";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Varias cuentas";

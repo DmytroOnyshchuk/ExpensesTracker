@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Kategori";
 "MENU_BUDGET" = "Belanjawan";
 "MENU_SETTINGS" = "Tetapan";
+"MENU_ACCOUNTING_SETTINGS" = "Tetapan perakaunan";
 "MENU_BACKUPS" = "Sandaran";
 "MENU_SPENT_IN_MONTH" = "Perbelanjaan %@";
 "MENU_LANGUAGE" = "Bahasa";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Kesihatan, keluarga & aktiviti";
 "ICON_PICKER_SECTION_TECH" = "Teknologi, pendidikan & peralatan";
 "ICON_PICKER_SECTION_NATURE" = "Alam semula jadi, cuaca & simbol umum";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Perakaunan perbelanjaan";
+"ACCOUNTING_INCOME" = "Perakaunan pendapatan";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Berbilang akaun";

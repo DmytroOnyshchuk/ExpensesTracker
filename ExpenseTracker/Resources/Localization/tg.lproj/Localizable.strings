@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Категорияҳо";
 "MENU_BUDGET" = "Буҷет";
 "MENU_SETTINGS" = "Танзимот";
+"MENU_ACCOUNTING_SETTINGS" = "Танзимоти баҳисобгирӣ";
 "MENU_BACKUPS" = "Нусхаҳои эҳтиётӣ";
 "MENU_SPENT_IN_MONTH" = "Ҳамагӣ сарф шуд · %@";
 "MENU_LANGUAGE" = "Забон";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Саломатӣ, оила ва фаъолиятҳо";
 "ICON_PICKER_SECTION_TECH" = "Технология, маориф ва асбобҳо";
 "ICON_PICKER_SECTION_NATURE" = "Табиат, обу ҳаво ва рамзҳои умумӣ";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Баҳисобгирии хароҷот";
+"ACCOUNTING_INCOME" = "Баҳисобгирии даромад";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Якчанд ҳисоб";

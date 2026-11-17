@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Kategorieë";
 "MENU_BUDGET" = "Begroting";
 "MENU_SETTINGS" = "Instellings";
+"MENU_ACCOUNTING_SETTINGS" = "Rekeninghouinstellings";
 "MENU_BACKUPS" = "Rugsteune";
 "MENU_SPENT_IN_MONTH" = "Spandeer in %@";
 "MENU_LANGUAGE" = "Taal";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Gesondheid, gesin en aktiwiteite";
 "ICON_PICKER_SECTION_TECH" = "Tegnologie, onderwys en gereedskap";
 "ICON_PICKER_SECTION_NATURE" = "Natuur, weer en algemene simbole";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Uitgawerekeningkunde";
+"ACCOUNTING_INCOME" = "Inkomsterekeningkunde";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Veelvuldige rekeninge";

@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "پۆلەکان";
 "MENU_BUDGET" = "بودجە";
 "MENU_SETTINGS" = "ڕێکخستنەکان";
+"MENU_ACCOUNTING_SETTINGS" = "ڕێکخستنەکانی ژمێریاری";
 "MENU_BACKUPS" = "پاڵپشتەکان";
 "MENU_SPENT_IN_MONTH" = "کۆی خەرجکراو · %@";
 "MENU_LANGUAGE" = "زمان";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "تەندروستی، خێزان و چالاکییەکان";
 "ICON_PICKER_SECTION_TECH" = "تەکنەلۆژیا، پەروەردە و ئامرازەکان";
 "ICON_PICKER_SECTION_NATURE" = "سروشت، کەشوهەوا و هێما گشتییەکان";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "ژمێریاری خەرجییەکان";
+"ACCOUNTING_INCOME" = "ژمێریاری داهات";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "چەند هەژمارێک";

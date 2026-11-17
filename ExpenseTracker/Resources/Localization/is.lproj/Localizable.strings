@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Flokkar";
 "MENU_BUDGET" = "Fjárhagsáætlun";
 "MENU_SETTINGS" = "Stillingar";
+"MENU_ACCOUNTING_SETTINGS" = "Bókhaldsstillingar";
 "MENU_BACKUPS" = "Öryggisafrit";
 "MENU_SPENT_IN_MONTH" = "Samtals eytt · %@";
 "MENU_LANGUAGE" = "Tungumál";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Heilsa, fjölskylda og afþreying";
 "ICON_PICKER_SECTION_TECH" = "Tækni, menntun og verkfæri";
 "ICON_PICKER_SECTION_NATURE" = "Náttúra, veður og almenn tákn";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Útgjaldabókhald";
+"ACCOUNTING_INCOME" = "Tekjubókhald";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Margir reikningar";

@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Կատեգորիաներ";
 "MENU_BUDGET" = "Բյուջե";
 "MENU_SETTINGS" = "Կարգավորումներ";
+"MENU_ACCOUNTING_SETTINGS" = "Հաշվառման կարգավորումներ";
 "MENU_BACKUPS" = "Պահուստային պատճեններ";
 "MENU_SPENT_IN_MONTH" = "Ընդամենը ծախսվել է · %@";
 "MENU_LANGUAGE" = "Լեզու";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Առողջություն, ընտանիք և զբաղմունքներ";
 "ICON_PICKER_SECTION_TECH" = "Տեխնոլոգիա, կրթություն և գործիքներ";
 "ICON_PICKER_SECTION_NATURE" = "Բնություն, եղանակ և ընդհանուր նշաններ";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Ծախսերի հաշվառում";
+"ACCOUNTING_INCOME" = "Եկամուտների հաշվառում";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Մի քանի հաշիվ";

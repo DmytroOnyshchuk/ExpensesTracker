@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "வகைகள்";
 "MENU_BUDGET" = "பட்ஜெட்";
 "MENU_SETTINGS" = "அமைப்புகள்";
+"MENU_ACCOUNTING_SETTINGS" = "கணக்கியல் அமைப்புகள்";
 "MENU_BACKUPS" = "காப்புப்பிரதிகள்";
 "MENU_SPENT_IN_MONTH" = "மொத்த செலவு · %@";
 "MENU_LANGUAGE" = "மொழி";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "உடல்நலம், குடும்பம் மற்றும் செயல்பாடுகள்";
 "ICON_PICKER_SECTION_TECH" = "தொழில்நுட்பம், கல்வி மற்றும் கருவிகள்";
 "ICON_PICKER_SECTION_NATURE" = "இயற்கை, வானிலை மற்றும் பொதுக் குறியீடுகள்";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "செலவுக் கணக்கு";
+"ACCOUNTING_INCOME" = "வருமானக் கணக்கு";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "பல கணக்குகள்";

@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Kategoriler";
 "MENU_BUDGET" = "Bütçe";
 "MENU_SETTINGS" = "Ayarlar";
+"MENU_ACCOUNTING_SETTINGS" = "Muhasebe ayarları";
 "MENU_BACKUPS" = "Yedekler";
 "MENU_SPENT_IN_MONTH" = "%@ harcaması";
 "MENU_LANGUAGE" = "Dil";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Sağlık, aile ve etkinlikler";
 "ICON_PICKER_SECTION_TECH" = "Teknoloji, eğitim ve aletler";
 "ICON_PICKER_SECTION_NATURE" = "Doğa, hava durumu ve genel semboller";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Gider takibi";
+"ACCOUNTING_INCOME" = "Gelir takibi";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Birden fazla hesap";

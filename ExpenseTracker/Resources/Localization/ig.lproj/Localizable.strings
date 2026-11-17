@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Ngalaba";
 "MENU_BUDGET" = "Mmefu ego";
 "MENU_SETTINGS" = "Ntọala";
+"MENU_ACCOUNTING_SETTINGS" = "Ntọala ndekọ ego";
 "MENU_BACKUPS" = "Ndabere";
 "MENU_SPENT_IN_MONTH" = "Mkpokọta e mefuru · %@";
 "MENU_LANGUAGE" = "Asụsụ";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Ahụike, ezinụlọ na ihe omume";
 "ICON_PICKER_SECTION_TECH" = "Teknụzụ, agụmakwụkwọ na ngwá ọrụ";
 "ICON_PICKER_SECTION_NATURE" = "Okike, ihu igwe na akara izugbe";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Ndekọ mmefu";
+"ACCOUNTING_INCOME" = "Ndekọ ego mbata";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Ọtụtụ akaụntụ";

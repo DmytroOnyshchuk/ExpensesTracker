@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "زمرے";
 "MENU_BUDGET" = "بجٹ";
 "MENU_SETTINGS" = "ترتیبات";
+"MENU_ACCOUNTING_SETTINGS" = "اکاؤنٹنگ کی ترتیبات";
 "MENU_BACKUPS" = "بیک اپس";
 "MENU_SPENT_IN_MONTH" = "%@ کے اخراجات";
 "MENU_LANGUAGE" = "زبان";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "صحت، خاندان اور سرگرمیاں";
 "ICON_PICKER_SECTION_TECH" = "ٹیکنالوجی، تعلیم اور اوزار";
 "ICON_PICKER_SECTION_NATURE" = "فطرت، موسم اور عمومی علامات";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "اخراجات کا حساب";
+"ACCOUNTING_INCOME" = "آمدنی کا حساب";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "متعدد اکاؤنٹس";

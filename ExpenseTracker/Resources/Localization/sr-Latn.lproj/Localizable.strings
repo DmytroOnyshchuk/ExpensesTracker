@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Kategorije";
 "MENU_BUDGET" = "Budžet";
 "MENU_SETTINGS" = "Podešavanja";
+"MENU_ACCOUNTING_SETTINGS" = "Podešavanja evidencije";
 "MENU_BACKUPS" = "Rezervne kopije";
 "MENU_SPENT_IN_MONTH" = "Potrošeno za %@";
 "MENU_LANGUAGE" = "Jezik";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Zdravlje, porodica i aktivnosti";
 "ICON_PICKER_SECTION_TECH" = "Tehnologija, obrazovanje i alati";
 "ICON_PICKER_SECTION_NATURE" = "Priroda, vreme i opšti simboli";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Evidencija troškova";
+"ACCOUNTING_INCOME" = "Evidencija prihoda";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Više računa";

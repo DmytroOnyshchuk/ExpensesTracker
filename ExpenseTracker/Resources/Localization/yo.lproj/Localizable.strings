@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Àwọn ẹ̀ka";
 "MENU_BUDGET" = "Ìṣúná";
 "MENU_SETTINGS" = "Ètò";
+"MENU_ACCOUNTING_SETTINGS" = "Ètò ìṣirò owó";
 "MENU_BACKUPS" = "Àwọn àfẹ̀yìntì";
 "MENU_SPENT_IN_MONTH" = "Àpapọ̀ tí a ná · %@";
 "MENU_LANGUAGE" = "Èdè";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Ìlera, ẹbí àti àwọn ìgbòkègbodò";
 "ICON_PICKER_SECTION_TECH" = "Ìmọ̀ ẹ̀rọ, ẹ̀kọ́ àti àwọn irinṣẹ́";
 "ICON_PICKER_SECTION_NATURE" = "Ìṣẹ̀dá, ojú ọjọ́ àti àwọn àmì gbogbogbò";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Ìṣirò ìnáwó";
+"ACCOUNTING_INCOME" = "Ìṣirò owó tó ń wọlé";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Àwọn àkáǹtì púpọ̀";

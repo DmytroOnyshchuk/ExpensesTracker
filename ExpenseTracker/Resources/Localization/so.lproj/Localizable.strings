@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Qaybaha";
 "MENU_BUDGET" = "Miisaaniyad";
 "MENU_SETTINGS" = "Dejinta";
+"MENU_ACCOUNTING_SETTINGS" = "Dejinta xisaabaadka";
 "MENU_BACKUPS" = "Kaydka";
 "MENU_SPENT_IN_MONTH" = "Wadarta la kharash gareeyay · %@";
 "MENU_LANGUAGE" = "Luqadda";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Caafimaadka, qoyska iyo hawlaha";
 "ICON_PICKER_SECTION_TECH" = "Tignoolajiyada, waxbarashada iyo qalabka";
 "ICON_PICKER_SECTION_NATURE" = "Dabeecadda, cimilada iyo calaamadaha guud";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Xisaabinta kharashka";
+"ACCOUNTING_INCOME" = "Xisaabinta dakhliga";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Akoonno badan";

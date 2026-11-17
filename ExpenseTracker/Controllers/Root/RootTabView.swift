@@ -22,6 +22,7 @@ struct RootTabView: View {
     @State private var homeResetToken: Int = .zero
     @State private var statisticsResetToken: Int = .zero
     @State private var budgetResetToken: Int = .zero
+    @StoredSettings private var appSettings
 
     private var tabSelection: Binding<AppTab> {
         Binding(
@@ -54,8 +55,10 @@ struct RootTabView: View {
                 .undoToast()
             }
 
-            Tab(L10n.menuBudget, systemImage: "wallet.bifold", value: AppTab.budget) {
-                BudgetView(resetToken: budgetResetToken)
+            if appSettings.accounting.budgetEnabled {
+                Tab(L10n.menuBudget, systemImage: "wallet.bifold", value: AppTab.budget) {
+                    BudgetView(resetToken: budgetResetToken)
+                }
             }
 
             Tab(L10n.menuTitle, systemImage: "list.dash", value: AppTab.menu) {

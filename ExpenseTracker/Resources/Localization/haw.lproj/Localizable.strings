@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Nā māhele";
 "MENU_BUDGET" = "Moʻohelu kālā";
 "MENU_SETTINGS" = "Hoʻonohonoho";
+"MENU_ACCOUNTING_SETTINGS" = "Nā hoʻonohonoho moʻohelu";
 "MENU_BACKUPS" = "Nā Kope Papaʻa";
 "MENU_SPENT_IN_MONTH" = "Huina i hoʻolilo ʻia · %@";
 "MENU_LANGUAGE" = "ʻŌlelo";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Olakino, ʻohana a me nā hana";
 "ICON_PICKER_SECTION_TECH" = "ʻEnehana, hoʻonaʻauao a me nā mea hana";
 "ICON_PICKER_SECTION_NATURE" = "Kūlohelohe, aniau a me nā hōʻailona laulā";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Moʻohelu hoʻolilo";
+"ACCOUNTING_INCOME" = "Moʻohelu loaʻa";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Nā moʻokāki he nui";

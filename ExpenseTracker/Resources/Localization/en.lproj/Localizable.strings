@@ -69,6 +69,7 @@
 "MENU_CATEGORIES" = "Categories";
 "MENU_BUDGET" = "Budget";
 "MENU_SETTINGS" = "Settings";
+"MENU_ACCOUNTING_SETTINGS" = "Accounting settings";
 "MENU_BACKUPS" = "Backups";
 "MENU_SPENT_IN_MONTH" = "Spent in %@";
 "MENU_LANGUAGE" = "Language";
@@ -227,3 +228,8 @@
 "ACCOUNTS_NEW" = "New account";
 "ACCOUNTS_EDIT" = "Edit account";
 "ACCOUNTS_NAME" = "Name";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Expenses accounting";
+"ACCOUNTING_INCOME" = "Income accounting";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Multiple accounts";

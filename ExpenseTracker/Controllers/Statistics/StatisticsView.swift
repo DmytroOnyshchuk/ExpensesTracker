@@ -18,9 +18,14 @@ struct StatisticsView: View {
     @Query private var storedCategories: [TransactionCategory]
 
     @State private var period: StatisticsPeriod
-    @State private var operationType: OperationType = .outcome
+    @State private var selectedOperationType: OperationType = .outcome
+    @StoredSettings private var appSettings
 
     private let initialDate: Date
+
+    private var operationType: OperationType {
+        appSettings.accounting.incomeEnabled ? selectedOperationType : .outcome
+    }
 
     private var transactions: [Transaction] {
         let transactions = storedTransactions.notDeleted
@@ -69,13 +74,15 @@ struct StatisticsView: View {
                     }
                     .accessibilityLabel(L10n.statisticsChart)
 
-                    Button(action: toggleOperationType) {
-                        Image(systemName: operationType.systemImage)
-                            .font(.system(size: 14, weight: .semibold))
-                            .contentTransition(.symbolEffect(.replace))
-                            .foregroundColor(operationType == .income ? .green : .appWhite)
+                    if appSettings.accounting.incomeEnabled {
+                        Button(action: toggleOperationType) {
+                            Image(systemName: operationType.systemImage)
+                                .font(.system(size: 14, weight: .semibold))
+                                .contentTransition(.symbolEffect(.replace))
+                                .foregroundColor(operationType == .income ? .green : .appWhite)
+                        }
+                        .accessibilityLabel(operationType.title)
                     }
-                    .accessibilityLabel(operationType.title)
                 }
             }
         }
@@ -83,7 +90,7 @@ struct StatisticsView: View {
 
     private func toggleOperationType() {
         FeedbackManager.shared.selectionChanged()
-        operationType = operationType.toggled
+        selectedOperationType = operationType.toggled
     }
 }
 

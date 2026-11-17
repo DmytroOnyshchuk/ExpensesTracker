@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Kategóriák";
 "MENU_BUDGET" = "Költségvetés";
 "MENU_SETTINGS" = "Beállítások";
+"MENU_ACCOUNTING_SETTINGS" = "Könyvelési beállítások";
 "MENU_BACKUPS" = "Biztonsági mentések";
 "MENU_SPENT_IN_MONTH" = "Összes költés · %@";
 "MENU_LANGUAGE" = "Nyelv";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Egészség, család és programok";
 "ICON_PICKER_SECTION_TECH" = "Technológia, oktatás és szerszámok";
 "ICON_PICKER_SECTION_NATURE" = "Természet, időjárás és általános szimbólumok";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Kiadások nyilvántartása";
+"ACCOUNTING_INCOME" = "Bevételek nyilvántartása";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Több számla";

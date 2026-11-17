@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "ਸ਼੍ਰੇਣੀਆਂ";
 "MENU_BUDGET" = "ਬਜਟ";
 "MENU_SETTINGS" = "ਸੈਟਿੰਗਾਂ";
+"MENU_ACCOUNTING_SETTINGS" = "ਲੇਖਾ ਸੈਟਿੰਗਾਂ";
 "MENU_BACKUPS" = "ਬੈਕਅੱਪ";
 "MENU_SPENT_IN_MONTH" = "ਕੁੱਲ ਖਰਚ · %@";
 "MENU_LANGUAGE" = "ਭਾਸ਼ਾ";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "ਸਿਹਤ, ਪਰਿਵਾਰ ਅਤੇ ਗਤੀਵਿਧੀਆਂ";
 "ICON_PICKER_SECTION_TECH" = "ਤਕਨਾਲੋਜੀ, ਸਿੱਖਿਆ ਅਤੇ ਔਜ਼ਾਰ";
 "ICON_PICKER_SECTION_NATURE" = "ਕੁਦਰਤ, ਮੌਸਮ ਅਤੇ ਆਮ ਚਿੰਨ੍ਹ";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "ਖਰਚਿਆਂ ਦਾ ਲੇਖਾ";
+"ACCOUNTING_INCOME" = "ਆਮਦਨ ਦਾ ਲੇਖਾ";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "ਕਈ ਖਾਤੇ";

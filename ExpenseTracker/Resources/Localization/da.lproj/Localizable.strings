@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Kategorier";
 "MENU_BUDGET" = "Budget";
 "MENU_SETTINGS" = "Indstillinger";
+"MENU_ACCOUNTING_SETTINGS" = "Regnskabsindstillinger";
 "MENU_BACKUPS" = "Sikkerhedskopier";
 "MENU_SPENT_IN_MONTH" = "Brugt i %@";
 "MENU_LANGUAGE" = "Sprog";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Sundhed, familie og aktiviteter";
 "ICON_PICKER_SECTION_TECH" = "Teknologi, uddannelse og værktøj";
 "ICON_PICKER_SECTION_NATURE" = "Natur, vejr og generelle symboler";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Udgiftsregnskab";
+"ACCOUNTING_INCOME" = "Indtægtsregnskab";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Flere konti";

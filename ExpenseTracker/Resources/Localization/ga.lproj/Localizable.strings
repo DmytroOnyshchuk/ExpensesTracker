@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Catagóirí";
 "MENU_BUDGET" = "Buiséad";
 "MENU_SETTINGS" = "Socruithe";
+"MENU_ACCOUNTING_SETTINGS" = "Socruithe cuntasaíochta";
 "MENU_BACKUPS" = "Cúltacaí";
 "MENU_SPENT_IN_MONTH" = "Iomlán caite · %@";
 "MENU_LANGUAGE" = "Teanga";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Sláinte, teaghlach agus gníomhaíochtaí";
 "ICON_PICKER_SECTION_TECH" = "Teicneolaíocht, oideachas agus uirlisí";
 "ICON_PICKER_SECTION_NATURE" = "Nádúr, aimsir agus siombailí ginearálta";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Cuntasaíocht caiteachais";
+"ACCOUNTING_INCOME" = "Cuntasaíocht ioncaim";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Cuntais iolracha";

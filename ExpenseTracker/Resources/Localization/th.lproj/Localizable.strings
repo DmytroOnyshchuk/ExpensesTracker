@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "หมวดหมู่";
 "MENU_BUDGET" = "งบประมาณ";
 "MENU_SETTINGS" = "การตั้งค่า";
+"MENU_ACCOUNTING_SETTINGS" = "การตั้งค่าการบันทึกบัญชี";
 "MENU_BACKUPS" = "ข้อมูลสำรอง";
 "MENU_SPENT_IN_MONTH" = "ใช้จ่ายในเดือน%@";
 "MENU_LANGUAGE" = "ภาษา";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "สุขภาพ ครอบครัว และกิจกรรม";
 "ICON_PICKER_SECTION_TECH" = "เทคโนโลยี การศึกษา และเครื่องมือ";
 "ICON_PICKER_SECTION_NATURE" = "ธรรมชาติ สภาพอากาศ และสัญลักษณ์ทั่วไป";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "บันทึกรายจ่าย";
+"ACCOUNTING_INCOME" = "บันทึกรายรับ";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "หลายบัญชี";

@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "کټګورۍ";
 "MENU_BUDGET" = "بودیجه";
 "MENU_SETTINGS" = "تنظیمات";
+"MENU_ACCOUNTING_SETTINGS" = "د محاسبې تنظیمات";
 "MENU_BACKUPS" = "بېک اپونه";
 "MENU_SPENT_IN_MONTH" = "ټول لګښت · %@";
 "MENU_LANGUAGE" = "ژبه";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "روغتیا، کورنۍ او فعالیتونه";
 "ICON_PICKER_SECTION_TECH" = "ټکنالوژي، زده‌کړه او وسایل";
 "ICON_PICKER_SECTION_NATURE" = "طبیعت، هوا او عمومي سمبولونه";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "د لګښتونو محاسبه";
+"ACCOUNTING_INCOME" = "د عاید محاسبه";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "څو حسابونه";

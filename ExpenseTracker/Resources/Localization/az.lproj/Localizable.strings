@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Kateqoriyalar";
 "MENU_BUDGET" = "Büdcə";
 "MENU_SETTINGS" = "Ayarlar";
+"MENU_ACCOUNTING_SETTINGS" = "Uçot ayarları";
 "MENU_BACKUPS" = "Ehtiyat nüsxələr";
 "MENU_SPENT_IN_MONTH" = "%@ xərcləri";
 "MENU_LANGUAGE" = "Dil";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Sağlamlıq, ailə və fəaliyyətlər";
 "ICON_PICKER_SECTION_TECH" = "Texnologiya, təhsil və alətlər";
 "ICON_PICKER_SECTION_NATURE" = "Təbiət, hava və ümumi simvollar";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Xərclərin uçotu";
+"ACCOUNTING_INCOME" = "Gəlirlərin uçotu";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Bir neçə hesab";

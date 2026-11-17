@@ -25,6 +25,7 @@ struct CategoriesEdit: View {
     @State private var showAddFolderAlert = false
     @State private var newFolderName: String = String()
     @State private var operationType: OperationType
+    @StoredSettings private var appSettings
 
     private let showsOperationTypePicker: Bool
 
@@ -53,7 +54,7 @@ struct CategoriesEdit: View {
         let transactionsCounts = transactionsCounts
 
         List {
-            if showsOperationTypePicker {
+            if showsOperationTypePicker, appSettings.accounting.incomeEnabled {
                 SegmentedControl(items: OperationType.allCases, selection: $operationType, title: \.title)
                     .sensoryFeedback(trigger: operationType) { _, _ in FeedbackManager.shared.selectionFeedback }
                     .padding(.horizontal, 40)

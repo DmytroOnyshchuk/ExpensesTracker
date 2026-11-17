@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Kategori";
 "MENU_BUDGET" = "Buxheti";
 "MENU_SETTINGS" = "Cilësimet";
+"MENU_ACCOUNTING_SETTINGS" = "Cilësimet e kontabilitetit";
 "MENU_BACKUPS" = "Kopjet rezervë";
 "MENU_SPENT_IN_MONTH" = "Gjithsej shpenzuar · %@";
 "MENU_LANGUAGE" = "Gjuha";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Shëndet, familje dhe aktivitete";
 "ICON_PICKER_SECTION_TECH" = "Teknologji, arsim dhe vegla";
 "ICON_PICKER_SECTION_NATURE" = "Natyrë, mot dhe simbole të përgjithshme";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Kontabiliteti i shpenzimeve";
+"ACCOUNTING_INCOME" = "Kontabiliteti i të ardhurave";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Disa llogari";

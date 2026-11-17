@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Kategorijos";
 "MENU_BUDGET" = "Biudžetas";
 "MENU_SETTINGS" = "Nustatymai";
+"MENU_ACCOUNTING_SETTINGS" = "Apskaitos nustatymai";
 "MENU_BACKUPS" = "Atsarginės kopijos";
 "MENU_SPENT_IN_MONTH" = "Iš viso išleista · %@";
 "MENU_LANGUAGE" = "Kalba";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Sveikata, šeima ir veikla";
 "ICON_PICKER_SECTION_TECH" = "Technologijos, švietimas ir įrankiai";
 "ICON_PICKER_SECTION_NATURE" = "Gamta, orai ir bendrieji simboliai";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Išlaidų apskaita";
+"ACCOUNTING_INCOME" = "Pajamų apskaita";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Kelios sąskaitos";

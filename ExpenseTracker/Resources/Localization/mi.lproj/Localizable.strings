@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Ngā kāwai";
 "MENU_BUDGET" = "Tahua pūtea";
 "MENU_SETTINGS" = "Tautuhinga";
+"MENU_ACCOUNTING_SETTINGS" = "Tautuhinga kaute";
 "MENU_BACKUPS" = "Ngā Tārua";
 "MENU_SPENT_IN_MONTH" = "Tapeke i whakapaua · %@";
 "MENU_LANGUAGE" = "Reo";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Te hauora, te whānau me ngā mahi";
 "ICON_PICKER_SECTION_TECH" = "Te hangarau, te mātauranga me ngā taputapu";
 "ICON_PICKER_SECTION_NATURE" = "Te taiao, te huarere me ngā tohu whānui";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Kaute whakapaunga";
+"ACCOUNTING_INCOME" = "Kaute moni whiwhi";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Pūkete maha";

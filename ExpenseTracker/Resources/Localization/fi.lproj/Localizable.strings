@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Luokat";
 "MENU_BUDGET" = "Budjetti";
 "MENU_SETTINGS" = "Asetukset";
+"MENU_ACCOUNTING_SETTINGS" = "Kirjanpidon asetukset";
 "MENU_BACKUPS" = "Varmuuskopiot";
 "MENU_SPENT_IN_MONTH" = "Käytetty yhteensä · %@";
 "MENU_LANGUAGE" = "Kieli";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Terveys, perhe ja aktiviteetit";
 "ICON_PICKER_SECTION_TECH" = "Tekniikka, koulutus ja työkalut";
 "ICON_PICKER_SECTION_NATURE" = "Luonto, sää ja yleiset symbolit";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Menojen kirjanpito";
+"ACCOUNTING_INCOME" = "Tulojen kirjanpito";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Useita tilejä";

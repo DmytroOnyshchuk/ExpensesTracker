@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "အမျိုးအစားများ";
 "MENU_BUDGET" = "ဘတ်ဂျက်";
 "MENU_SETTINGS" = "ဆက်တင်များ";
+"MENU_ACCOUNTING_SETTINGS" = "စာရင်းကိုင် ဆက်တင်များ";
 "MENU_BACKUPS" = "အရန်မိတ္တူများ";
 "MENU_SPENT_IN_MONTH" = "စုစုပေါင်း အသုံးစရိတ် · %@";
 "MENU_LANGUAGE" = "ဘာသာစကား";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "ကျန်းမာရေး၊ မိသားစုနှင့် လှုပ်ရှားမှုများ";
 "ICON_PICKER_SECTION_TECH" = "နည်းပညာ၊ ပညာရေးနှင့် ကိရိယာများ";
 "ICON_PICKER_SECTION_NATURE" = "သဘာဝ၊ ရာသီဥတုနှင့် အထွေထွေသင်္ကေတများ";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "အသုံးစရိတ် စာရင်း";
+"ACCOUNTING_INCOME" = "ဝင်ငွေ စာရင်း";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "အကောင့်များစွာ";

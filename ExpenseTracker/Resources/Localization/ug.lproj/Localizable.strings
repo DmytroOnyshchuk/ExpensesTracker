@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "تۈرلەر";
 "MENU_BUDGET" = "خامچوت";
 "MENU_SETTINGS" = "تەڭشەكلەر";
+"MENU_ACCOUNTING_SETTINGS" = "ھېسابات تەڭشەكلىرى";
 "MENU_BACKUPS" = "زاپاس نۇسخىلار";
 "MENU_SPENT_IN_MONTH" = "جەمئىي چىقىم · %@";
 "MENU_LANGUAGE" = "تىل";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "ساغلاملىق، ئائىلە ۋە پائالىيەتلەر";
 "ICON_PICKER_SECTION_TECH" = "تېخنىكا، مائارىپ ۋە قوراللار";
 "ICON_PICKER_SECTION_NATURE" = "تەبىئەت، ھاۋارايى ۋە ئادەتتىكى بەلگىلەر";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "چىقىم ھېساباتى";
+"ACCOUNTING_INCOME" = "كىرىم ھېساباتى";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "كۆپ ھېسابات";

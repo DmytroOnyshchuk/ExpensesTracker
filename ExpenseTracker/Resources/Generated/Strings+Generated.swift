@@ -18,6 +18,12 @@ internal enum L10n {
   internal static func aboutVersion(_ p1: Any) -> String {
     return L10n.tr("Localizable", "ABOUT_VERSION", String(describing: p1), fallback: "Version %@")
   }
+  /// Expenses accounting
+  internal static let accountingExpenses = L10n.tr("Localizable", "ACCOUNTING_EXPENSES", fallback: "Expenses accounting")
+  /// Income accounting
+  internal static let accountingIncome = L10n.tr("Localizable", "ACCOUNTING_INCOME", fallback: "Income accounting")
+  /// Multiple accounts
+  internal static let accountingMultipleAccounts = L10n.tr("Localizable", "ACCOUNTING_MULTIPLE_ACCOUNTS", fallback: "Multiple accounts")
   /// Account deleted
   internal static let accountsDeleted = L10n.tr("Localizable", "ACCOUNTS_DELETED", fallback: "Account deleted")
   /// Edit account
@@ -238,6 +244,8 @@ internal enum L10n {
   internal static let iconPickerSectionTravel = L10n.tr("Localizable", "ICON_PICKER_SECTION_TRAVEL", fallback: "Transportation & travel")
   /// About
   internal static let menuAbout = L10n.tr("Localizable", "MENU_ABOUT", fallback: "About")
+  /// Accounting settings
+  internal static let menuAccountingSettings = L10n.tr("Localizable", "MENU_ACCOUNTING_SETTINGS", fallback: "Accounting settings")
   /// Backups
   internal static let menuBackups = L10n.tr("Localizable", "MENU_BACKUPS", fallback: "Backups")
   /// Budget

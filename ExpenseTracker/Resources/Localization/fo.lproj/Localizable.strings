@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Bólkar";
 "MENU_BUDGET" = "Fíggjarætlan";
 "MENU_SETTINGS" = "Stillingar";
+"MENU_ACCOUNTING_SETTINGS" = "Roknskaparstillingar";
 "MENU_BACKUPS" = "Trygdaravrit";
 "MENU_SPENT_IN_MONTH" = "Brúkt í alt · %@";
 "MENU_LANGUAGE" = "Mál";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Heilsa, familja og virksemi";
 "ICON_PICKER_SECTION_TECH" = "Tøkni, útbúgving og amboð";
 "ICON_PICKER_SECTION_NATURE" = "Náttúra, veður og vanlig tekn";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Útreiðsluroknskapur";
+"ACCOUNTING_INCOME" = "Inntøkuroknskapur";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Fleiri kontur";

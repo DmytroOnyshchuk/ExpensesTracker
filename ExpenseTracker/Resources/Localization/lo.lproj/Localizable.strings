@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "ໝວດໝູ່";
 "MENU_BUDGET" = "ງົບປະມານ";
 "MENU_SETTINGS" = "ການຕັ້ງຄ່າ";
+"MENU_ACCOUNTING_SETTINGS" = "ການຕັ້ງຄ່າບັນຊີ";
 "MENU_BACKUPS" = "ການສຳຮອງຂໍ້ມູນ";
 "MENU_SPENT_IN_MONTH" = "ໃຊ້ຈ່າຍທັງໝົດ · %@";
 "MENU_LANGUAGE" = "ພາສາ";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "ສຸຂະພາບ, ຄອບຄົວ ແລະ ກິດຈະກຳ";
 "ICON_PICKER_SECTION_TECH" = "ເຕັກໂນໂລຊີ, ການສຶກສາ ແລະ ເຄື່ອງມື";
 "ICON_PICKER_SECTION_NATURE" = "ທຳມະຊາດ, ສະພາບອາກາດ ແລະ ສັນຍາລັກທົ່ວໄປ";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "ບັນຊີລາຍຈ່າຍ";
+"ACCOUNTING_INCOME" = "ບັນຊີລາຍຮັບ";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "ຫຼາຍບັນຊີ";

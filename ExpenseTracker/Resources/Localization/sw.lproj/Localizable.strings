@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Aina";
 "MENU_BUDGET" = "Bajeti";
 "MENU_SETTINGS" = "Mipangilio";
+"MENU_ACCOUNTING_SETTINGS" = "Mipangilio ya uhasibu";
 "MENU_BACKUPS" = "Nakala rudufu";
 "MENU_SPENT_IN_MONTH" = "Matumizi ya %@";
 "MENU_LANGUAGE" = "Lugha";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Afya, familia na shughuli";
 "ICON_PICKER_SECTION_TECH" = "Teknolojia, elimu na zana";
 "ICON_PICKER_SECTION_NATURE" = "Asili, hali ya hewa na alama za jumla";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Uhasibu wa matumizi";
+"ACCOUNTING_INCOME" = "Uhasibu wa mapato";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Akaunti nyingi";

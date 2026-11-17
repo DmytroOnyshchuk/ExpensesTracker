@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Κατηγορίες";
 "MENU_BUDGET" = "Προϋπολογισμός";
 "MENU_SETTINGS" = "Ρυθμίσεις";
+"MENU_ACCOUNTING_SETTINGS" = "Ρυθμίσεις καταγραφής";
 "MENU_BACKUPS" = "Αντίγραφα ασφαλείας";
 "MENU_SPENT_IN_MONTH" = "Σύνολο εξόδων · %@";
 "MENU_LANGUAGE" = "Γλώσσα";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Υγεία, οικογένεια και δραστηριότητες";
 "ICON_PICKER_SECTION_TECH" = "Τεχνολογία, εκπαίδευση και εργαλεία";
 "ICON_PICKER_SECTION_NATURE" = "Φύση, καιρός και γενικά σύμβολα";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Καταγραφή εξόδων";
+"ACCOUNTING_INCOME" = "Καταγραφή εσόδων";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Πολλαπλοί λογαριασμοί";

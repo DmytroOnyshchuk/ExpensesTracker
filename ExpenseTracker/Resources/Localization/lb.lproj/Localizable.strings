@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Kategorien";
 "MENU_BUDGET" = "Budget";
 "MENU_SETTINGS" = "Astellungen";
+"MENU_ACCOUNTING_SETTINGS" = "Buchféierungsastellungen";
 "MENU_BACKUPS" = "Backups";
 "MENU_SPENT_IN_MONTH" = "Total ausginn · %@";
 "MENU_LANGUAGE" = "Sprooch";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Gesondheet, Famill an Aktivitéiten";
 "ICON_PICKER_SECTION_TECH" = "Technik, Bildung an Handwierksgeschir";
 "ICON_PICKER_SECTION_NATURE" = "Natur, Wieder an allgemeng Symboler";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Ausgabebuchféierung";
+"ACCOUNTING_INCOME" = "Akommesbuchféierung";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Méi Konten";

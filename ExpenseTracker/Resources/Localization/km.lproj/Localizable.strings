@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "ប្រភេទ";
 "MENU_BUDGET" = "ថវិកា";
 "MENU_SETTINGS" = "ការកំណត់";
+"MENU_ACCOUNTING_SETTINGS" = "ការកំណត់គណនេយ្យ";
 "MENU_BACKUPS" = "ការបម្រុងទុក";
 "MENU_SPENT_IN_MONTH" = "ចំណាយសរុប · %@";
 "MENU_LANGUAGE" = "ភាសា";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "សុខភាព គ្រួសារ និងសកម្មភាព";
 "ICON_PICKER_SECTION_TECH" = "បច្ចេកវិទ្យា ការអប់រំ និងឧបករណ៍";
 "ICON_PICKER_SECTION_NATURE" = "ធម្មជាតិ អាកាសធាតុ និងនិមិត្តសញ្ញាទូទៅ";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "គណនេយ្យចំណាយ";
+"ACCOUNTING_INCOME" = "គណនេយ្យចំណូល";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "គណនីច្រើន";

@@ -69,6 +69,7 @@
 "MENU_CATEGORIES" = "Категорії";
 "MENU_BUDGET" = "Бюджет";
 "MENU_SETTINGS" = "Налаштування";
+"MENU_ACCOUNTING_SETTINGS" = "Налаштування обліку";
 "MENU_BACKUPS" = "Резервні копії";
 "MENU_SPENT_IN_MONTH" = "Витрачено за %@";
 "MENU_LANGUAGE" = "Мова";
@@ -227,3 +228,8 @@
 "ACCOUNTS_NEW" = "Новий рахунок";
 "ACCOUNTS_EDIT" = "Редагування рахунку";
 "ACCOUNTS_NAME" = "Назва";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Облік витрат";
+"ACCOUNTING_INCOME" = "Облік доходів";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Кілька рахунків";

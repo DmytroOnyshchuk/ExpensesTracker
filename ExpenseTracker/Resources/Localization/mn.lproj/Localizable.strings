@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Ангилал";
 "MENU_BUDGET" = "Төсөв";
 "MENU_SETTINGS" = "Тохиргоо";
+"MENU_ACCOUNTING_SETTINGS" = "Бүртгэлийн тохиргоо";
 "MENU_BACKUPS" = "Нөөц хуулбарууд";
 "MENU_SPENT_IN_MONTH" = "Нийт зарцуулсан · %@";
 "MENU_LANGUAGE" = "Хэл";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Эрүүл мэнд, гэр бүл ба үйл ажиллагаа";
 "ICON_PICKER_SECTION_TECH" = "Технологи, боловсрол ба багаж хэрэгсэл";
 "ICON_PICKER_SECTION_NATURE" = "Байгаль, цаг агаар ба ерөнхий тэмдэг";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Зардлын бүртгэл";
+"ACCOUNTING_INCOME" = "Орлогын бүртгэл";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Олон данс";

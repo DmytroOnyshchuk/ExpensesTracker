@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "വിഭാഗങ്ങൾ";
 "MENU_BUDGET" = "ബജറ്റ്";
 "MENU_SETTINGS" = "ക്രമീകരണങ്ങൾ";
+"MENU_ACCOUNTING_SETTINGS" = "അക്കൗണ്ടിംഗ് ക്രമീകരണങ്ങൾ";
 "MENU_BACKUPS" = "ബാക്കപ്പുകൾ";
 "MENU_SPENT_IN_MONTH" = "ആകെ ചെലവ് · %@";
 "MENU_LANGUAGE" = "ഭാഷ";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "ആരോഗ്യം, കുടുംബം, പ്രവർത്തനങ്ങൾ";
 "ICON_PICKER_SECTION_TECH" = "സാങ്കേതികവിദ്യ, വിദ്യാഭ്യാസം, ഉപകരണങ്ങൾ";
 "ICON_PICKER_SECTION_NATURE" = "പ്രകൃതി, കാലാവസ്ഥ, പൊതു ചിഹ്നങ്ങൾ";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "ചെലവുകളുടെ കണക്ക്";
+"ACCOUNTING_INCOME" = "വരുമാനത്തിന്റെ കണക്ക്";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "ഒന്നിലധികം അക്കൗണ്ടുകൾ";

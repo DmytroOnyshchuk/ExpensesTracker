@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Categorïau";
 "MENU_BUDGET" = "Cyllideb";
 "MENU_SETTINGS" = "Gosodiadau";
+"MENU_ACCOUNTING_SETTINGS" = "Gosodiadau cyfrifo";
 "MENU_BACKUPS" = "Copïau wrth gefn";
 "MENU_SPENT_IN_MONTH" = "Cyfanswm a wariwyd · %@";
 "MENU_LANGUAGE" = "Iaith";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Iechyd, teulu a gweithgareddau";
 "ICON_PICKER_SECTION_TECH" = "Technoleg, addysg ac offer";
 "ICON_PICKER_SECTION_NATURE" = "Natur, tywydd a symbolau cyffredinol";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Cyfrifo treuliau";
+"ACCOUNTING_INCOME" = "Cyfrifo incwm";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Cyfrifon lluosog";

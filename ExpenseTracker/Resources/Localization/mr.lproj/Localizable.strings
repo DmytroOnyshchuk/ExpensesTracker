@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "श्रेण्या";
 "MENU_BUDGET" = "बजेट";
 "MENU_SETTINGS" = "सेटिंग्ज";
+"MENU_ACCOUNTING_SETTINGS" = "लेखा सेटिंग्ज";
 "MENU_BACKUPS" = "बॅकअप";
 "MENU_SPENT_IN_MONTH" = "एकूण खर्च · %@";
 "MENU_LANGUAGE" = "भाषा";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "आरोग्य, कुटुंब आणि उपक्रम";
 "ICON_PICKER_SECTION_TECH" = "तंत्रज्ञान, शिक्षण आणि साधने";
 "ICON_PICKER_SECTION_NATURE" = "निसर्ग, हवामान आणि सामान्य चिन्हे";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "खर्चाचा हिशोब";
+"ACCOUNTING_INCOME" = "उत्पन्नाचा हिशोब";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "एकाधिक खाती";

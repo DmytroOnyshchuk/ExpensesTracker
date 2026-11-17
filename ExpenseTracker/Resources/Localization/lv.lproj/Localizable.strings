@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Kategorijas";
 "MENU_BUDGET" = "Budžets";
 "MENU_SETTINGS" = "Iestatījumi";
+"MENU_ACCOUNTING_SETTINGS" = "Uzskaites iestatījumi";
 "MENU_BACKUPS" = "Dublējumi";
 "MENU_SPENT_IN_MONTH" = "Kopā iztērēts · %@";
 "MENU_LANGUAGE" = "Valoda";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Veselība, ģimene un aktivitātes";
 "ICON_PICKER_SECTION_TECH" = "Tehnoloģijas, izglītība un instrumenti";
 "ICON_PICKER_SECTION_NATURE" = "Daba, laikapstākļi un vispārīgi simboli";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Izdevumu uzskaite";
+"ACCOUNTING_INCOME" = "Ienākumu uzskaite";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Vairāki konti";

@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "კატეგორიები";
 "MENU_BUDGET" = "ბიუჯეტი";
 "MENU_SETTINGS" = "პარამეტრები";
+"MENU_ACCOUNTING_SETTINGS" = "აღრიცხვის პარამეტრები";
 "MENU_BACKUPS" = "სარეზერვო ასლები";
 "MENU_SPENT_IN_MONTH" = "სულ დახარჯული · %@";
 "MENU_LANGUAGE" = "ენა";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "ჯანმრთელობა, ოჯახი და აქტივობები";
 "ICON_PICKER_SECTION_TECH" = "ტექნოლოგია, განათლება და ხელსაწყოები";
 "ICON_PICKER_SECTION_NATURE" = "ბუნება, ამინდი და ზოგადი სიმბოლოები";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "ხარჯების აღრიცხვა";
+"ACCOUNTING_INCOME" = "შემოსავლების აღრიცხვა";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "რამდენიმე ანგარიში";

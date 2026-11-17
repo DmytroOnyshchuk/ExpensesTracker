@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "ವರ್ಗಗಳು";
 "MENU_BUDGET" = "ಬಜೆಟ್";
 "MENU_SETTINGS" = "ಸೆಟ್ಟಿಂಗ್‌ಗಳು";
+"MENU_ACCOUNTING_SETTINGS" = "ಲೆಕ್ಕಪತ್ರ ಸೆಟ್ಟಿಂಗ್‌ಗಳು";
 "MENU_BACKUPS" = "ಬ್ಯಾಕಪ್‌ಗಳು";
 "MENU_SPENT_IN_MONTH" = "ಒಟ್ಟು ವೆಚ್ಚ · %@";
 "MENU_LANGUAGE" = "ಭಾಷೆ";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "ಆರೋಗ್ಯ, ಕುಟುಂಬ ಮತ್ತು ಚಟುವಟಿಕೆಗಳು";
 "ICON_PICKER_SECTION_TECH" = "ತಂತ್ರಜ್ಞಾನ, ಶಿಕ್ಷಣ ಮತ್ತು ಉಪಕರಣಗಳು";
 "ICON_PICKER_SECTION_NATURE" = "ಪ್ರಕೃತಿ, ಹವಾಮಾನ ಮತ್ತು ಸಾಮಾನ್ಯ ಚಿಹ್ನೆಗಳು";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "ವೆಚ್ಚಗಳ ಲೆಕ್ಕ";
+"ACCOUNTING_INCOME" = "ಆದಾಯದ ಲೆಕ್ಕ";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "ಬಹು ಖಾತೆಗಳು";

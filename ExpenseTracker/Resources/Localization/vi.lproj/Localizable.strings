@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Danh mục";
 "MENU_BUDGET" = "Ngân sách";
 "MENU_SETTINGS" = "Cài đặt";
+"MENU_ACCOUNTING_SETTINGS" = "Cài đặt ghi chép";
 "MENU_BACKUPS" = "Bản sao lưu";
 "MENU_SPENT_IN_MONTH" = "Đã chi trong %@";
 "MENU_LANGUAGE" = "Ngôn ngữ";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Sức khỏe, gia đình và hoạt động";
 "ICON_PICKER_SECTION_TECH" = "Công nghệ, giáo dục và dụng cụ";
 "ICON_PICKER_SECTION_NATURE" = "Thiên nhiên, thời tiết và biểu tượng chung";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Ghi chép chi tiêu";
+"ACCOUNTING_INCOME" = "Ghi chép thu nhập";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Nhiều tài khoản";

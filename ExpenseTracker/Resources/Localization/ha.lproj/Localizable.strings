@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Rukunoni";
 "MENU_BUDGET" = "Kasafin kuɗi";
 "MENU_SETTINGS" = "Saituna";
+"MENU_ACCOUNTING_SETTINGS" = "Saitunan lissafi";
 "MENU_BACKUPS" = "Ajiyar bayanai";
 "MENU_SPENT_IN_MONTH" = "Jimillar da aka kashe · %@";
 "MENU_LANGUAGE" = "Harshe";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Lafiya, iyali da ayyuka";
 "ICON_PICKER_SECTION_TECH" = "Fasaha, ilimi da kayan aiki";
 "ICON_PICKER_SECTION_NATURE" = "Halitta, yanayi da alamomin gama-gari";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Lissafin kashe kuɗi";
+"ACCOUNTING_INCOME" = "Lissafin kuɗin shiga";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Asusu da yawa";

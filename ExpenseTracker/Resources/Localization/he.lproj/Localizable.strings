@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "קטגוריות";
 "MENU_BUDGET" = "תקציב";
 "MENU_SETTINGS" = "הגדרות";
+"MENU_ACCOUNTING_SETTINGS" = "הגדרות ניהול חשבונות";
 "MENU_BACKUPS" = "גיבויים";
 "MENU_SPENT_IN_MONTH" = "הוצאות ב%@";
 "MENU_LANGUAGE" = "שפה";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "בריאות, משפחה ופעילויות";
 "ICON_PICKER_SECTION_TECH" = "טכנולוגיה, חינוך וכלים";
 "ICON_PICKER_SECTION_NATURE" = "טבע, מזג אוויר וסמלים כלליים";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "מעקב הוצאות";
+"ACCOUNTING_INCOME" = "מעקב הכנסות";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "חשבונות מרובים";

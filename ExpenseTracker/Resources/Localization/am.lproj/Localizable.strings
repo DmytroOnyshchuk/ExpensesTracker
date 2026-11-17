@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "ምድቦች";
 "MENU_BUDGET" = "በጀት";
 "MENU_SETTINGS" = "ቅንብሮች";
+"MENU_ACCOUNTING_SETTINGS" = "የሂሳብ አያያዝ ቅንብሮች";
 "MENU_BACKUPS" = "መጠባበቂያዎች";
 "MENU_SPENT_IN_MONTH" = "ጠቅላላ ወጪ · %@";
 "MENU_LANGUAGE" = "ቋንቋ";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "ጤና፣ ቤተሰብ እና እንቅስቃሴዎች";
 "ICON_PICKER_SECTION_TECH" = "ቴክኖሎጂ፣ ትምህርት እና መሣሪያዎች";
 "ICON_PICKER_SECTION_NATURE" = "ተፈጥሮ፣ የአየር ሁኔታ እና አጠቃላይ ምልክቶች";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "የወጪ ሂሳብ";
+"ACCOUNTING_INCOME" = "የገቢ ሂሳብ";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "ብዙ መለያዎች";

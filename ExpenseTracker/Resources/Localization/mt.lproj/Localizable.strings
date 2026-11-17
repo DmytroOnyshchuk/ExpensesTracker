@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Kategoriji";
 "MENU_BUDGET" = "Baġit";
 "MENU_SETTINGS" = "Settings";
+"MENU_ACCOUNTING_SETTINGS" = "Settings tal-kontabilità";
 "MENU_BACKUPS" = "Backups";
 "MENU_SPENT_IN_MONTH" = "Total minfuq · %@";
 "MENU_LANGUAGE" = "Lingwa";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Saħħa, familja u attivitajiet";
 "ICON_PICKER_SECTION_TECH" = "Teknoloġija, edukazzjoni u għodod";
 "ICON_PICKER_SECTION_NATURE" = "Natura, temp u simboli ġenerali";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Kontabilità tal-ispejjeż";
+"ACCOUNTING_INCOME" = "Kontabilità tad-dħul";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Diversi kontijiet";

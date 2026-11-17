@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "ප්‍රවර්ග";
 "MENU_BUDGET" = "අයවැය";
 "MENU_SETTINGS" = "සැකසුම්";
+"MENU_ACCOUNTING_SETTINGS" = "ගිණුම්කරණ සැකසුම්";
 "MENU_BACKUPS" = "උපස්ථ";
 "MENU_SPENT_IN_MONTH" = "මුළු වියදම · %@";
 "MENU_LANGUAGE" = "භාෂාව";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "සෞඛ්‍යය, පවුල සහ ක්‍රියාකාරකම්";
 "ICON_PICKER_SECTION_TECH" = "තාක්ෂණය, අධ්‍යාපනය සහ මෙවලම්";
 "ICON_PICKER_SECTION_NATURE" = "ස්වභාවධර්මය, කාලගුණය සහ පොදු සංකේත";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "වියදම් ගිණුම්කරණය";
+"ACCOUNTING_INCOME" = "ආදායම් ගිණුම්කරණය";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "බහු ගිණුම්";

@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Categories";
 "MENU_BUDGET" = "Pressupost";
 "MENU_SETTINGS" = "Configuració";
+"MENU_ACCOUNTING_SETTINGS" = "Configuració de comptabilitat";
 "MENU_BACKUPS" = "Còpies de seguretat";
 "MENU_SPENT_IN_MONTH" = "Total gastat · %@";
 "MENU_LANGUAGE" = "Idioma";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Salut, família i activitats";
 "ICON_PICKER_SECTION_TECH" = "Tecnologia, educació i eines";
 "ICON_PICKER_SECTION_NATURE" = "Natura, temps i símbols generals";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Comptabilitat de despeses";
+"ACCOUNTING_INCOME" = "Comptabilitat d’ingressos";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Diversos comptes";

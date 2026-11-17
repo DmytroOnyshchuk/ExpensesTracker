@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Toifalar";
 "MENU_BUDGET" = "Budjet";
 "MENU_SETTINGS" = "Sozlamalar";
+"MENU_ACCOUNTING_SETTINGS" = "Hisob sozlamalari";
 "MENU_BACKUPS" = "Zaxira nusxalar";
 "MENU_SPENT_IN_MONTH" = "Jami sarflandi · %@";
 "MENU_LANGUAGE" = "Til";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Salomatlik, oila va mashgʻulotlar";
 "ICON_PICKER_SECTION_TECH" = "Texnologiya, taʼlim va asboblar";
 "ICON_PICKER_SECTION_NATURE" = "Tabiat, ob-havo va umumiy belgilar";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Xarajatlar hisobi";
+"ACCOUNTING_INCOME" = "Daromadlar hisobi";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Bir nechta hisob";

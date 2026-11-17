@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Kategori";
 "MENU_BUDGET" = "Anggaran";
 "MENU_SETTINGS" = "Setelan";
+"MENU_ACCOUNTING_SETTINGS" = "Setelan pencatatan";
 "MENU_BACKUPS" = "Serepan";
 "MENU_SPENT_IN_MONTH" = "Total sing dientekake · %@";
 "MENU_LANGUAGE" = "Basa";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Kesehatan, kulawarga lan kegiatan";
 "ICON_PICKER_SECTION_TECH" = "Teknologi, pendhidhikan lan piranti";
 "ICON_PICKER_SECTION_NATURE" = "Alam, cuaca lan simbol umum";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Pencatatan pengeluaran";
+"ACCOUNTING_INCOME" = "Pencatatan pemasukan";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Akun luwih saka siji";

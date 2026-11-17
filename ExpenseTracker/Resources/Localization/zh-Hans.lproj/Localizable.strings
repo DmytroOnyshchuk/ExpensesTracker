@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "类别";
 "MENU_BUDGET" = "预算";
 "MENU_SETTINGS" = "设置";
+"MENU_ACCOUNTING_SETTINGS" = "记账设置";
 "MENU_BACKUPS" = "备份";
 "MENU_SPENT_IN_MONTH" = "%@支出";
 "MENU_LANGUAGE" = "语言";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "健康、家庭与活动";
 "ICON_PICKER_SECTION_TECH" = "科技、教育与工具";
 "ICON_PICKER_SECTION_NATURE" = "自然、天气与通用符号";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "支出记账";
+"ACCOUNTING_INCOME" = "收入记账";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "多个账户";

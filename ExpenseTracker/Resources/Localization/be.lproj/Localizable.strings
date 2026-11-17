@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Катэгорыі";
 "MENU_BUDGET" = "Бюджэт";
 "MENU_SETTINGS" = "Налады";
+"MENU_ACCOUNTING_SETTINGS" = "Налады ўліку";
 "MENU_BACKUPS" = "Рэзервовыя копіі";
 "MENU_SPENT_IN_MONTH" = "Выдаткавана за %@";
 "MENU_LANGUAGE" = "Мова";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Здароўе, сям’я і заняткі";
 "ICON_PICKER_SECTION_TECH" = "Тэхніка, адукацыя і інструменты";
 "ICON_PICKER_SECTION_NATURE" = "Прырода, надвор’е і агульныя сімвалы";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Улік выдаткаў";
+"ACCOUNTING_INCOME" = "Улік даходаў";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Некалькі рахункаў";

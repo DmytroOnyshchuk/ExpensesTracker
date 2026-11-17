@@ -20,7 +20,7 @@ struct StartView: View {
     @State private var showNoteInput = false
     @State private var amountAttentionTrigger: Int = .zero
     @State private var showAccounts = false
-    @State private var operationType: OperationType = .outcome
+    @State private var selectedOperationType: OperationType = .outcome
     @AppStorage(UDKey.selectedAccount.rawValue, store: UserDefaults.shared) private var selectedAccountId = String()
     @Query(sort: \Account.sortIndex) private var storedAccounts: [Account]
     @StoredSettings private var appSettings
@@ -29,25 +29,33 @@ struct StartView: View {
     private var accounts: [Account] { storedAccounts.notDeleted }
     private var transactions: [Transaction] { storedTransactions.notDeleted }
 
+    private var operationType: OperationType {
+        appSettings.accounting.incomeEnabled ? selectedOperationType : .outcome
+    }
+
     var body: some View {
         NavigationStack {
             ScrollView(.vertical) {
                 VStack(spacing: 16) {
-                    BalanceCard(
-                        accounts: accounts,
-                        selected: selectedAccount,
-                        balance: selectedAccount?.current(in: transactions),
-                        amountFor: { $0.current(in: transactions) },
-                        onSelect: selectAccount,
-                        action: openAccounts
-                    )
-                    .padding(.horizontal, 8)
+                    if appSettings.accounting.multipleAccountsEnabled {
+                        BalanceCard(
+                            accounts: accounts,
+                            selected: selectedAccount,
+                            balance: selectedAccount?.current(in: transactions),
+                            amountFor: { $0.current(in: transactions) },
+                            onSelect: selectAccount,
+                            action: openAccounts
+                        )
+                        .padding(.horizontal, 8)
+                    }
 
                     DigitPadView(input: $input, placeholder: operationType.enterAmountTitle, attentionTrigger: amountAttentionTrigger)
                         .frame(maxWidth: .infinity)
                         .overlay(alignment: .bottomTrailing) {
                             VStack(spacing: 8) {
-                                operationTypeButton
+                                if appSettings.accounting.incomeEnabled {
+                                    operationTypeButton
+                                }
                                 noteButton
                             }
                             .padding(.bottom, 12)
@@ -84,7 +92,7 @@ struct StartView: View {
         }
         .onChange(of: resetToken) {
             withAnimation(.easeInOut(duration: 0.25)) {
-                operationType = .outcome
+                selectedOperationType = .outcome
             }
         }
         .animation(.easeInOut(duration: 0.2), value: showNoteInput)
@@ -164,7 +172,7 @@ struct StartView: View {
     private func toggleOperationType() {
         FeedbackManager.shared.buttonTapped()
         withAnimation(.easeInOut(duration: 0.25)) {
-            operationType = operationType.toggled
+            selectedOperationType = operationType.toggled
         }
     }
 

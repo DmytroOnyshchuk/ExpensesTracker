@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Kategoriak";
 "MENU_BUDGET" = "Aurrekontua";
 "MENU_SETTINGS" = "Ezarpenak";
+"MENU_ACCOUNTING_SETTINGS" = "Kontabilitate-ezarpenak";
 "MENU_BACKUPS" = "Babeskopiak";
 "MENU_SPENT_IN_MONTH" = "Guztira gastatua · %@";
 "MENU_LANGUAGE" = "Hizkuntza";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Osasuna, familia eta jarduerak";
 "ICON_PICKER_SECTION_TECH" = "Teknologia, hezkuntza eta tresnak";
 "ICON_PICKER_SECTION_NATURE" = "Natura, eguraldia eta ikur orokorrak";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Gastuen kontabilitatea";
+"ACCOUNTING_INCOME" = "Diru-sarreren kontabilitatea";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Hainbat kontu";

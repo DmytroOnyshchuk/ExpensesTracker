@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Категориялар";
 "MENU_BUDGET" = "Бюджет";
 "MENU_SETTINGS" = "Жөндөөлөр";
+"MENU_ACCOUNTING_SETTINGS" = "Эсеп жөндөөлөрү";
 "MENU_BACKUPS" = "Камдык көчүрмөлөр";
 "MENU_SPENT_IN_MONTH" = "Баары сарпталды · %@";
 "MENU_LANGUAGE" = "Тил";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Ден соолук, үй-бүлө жана иш-чаралар";
 "ICON_PICKER_SECTION_TECH" = "Технология, билим жана куралдар";
 "ICON_PICKER_SECTION_NATURE" = "Жаратылыш, аба ырайы жана жалпы белгилер";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Чыгымдардын эсеби";
+"ACCOUNTING_INCOME" = "Кирешелердин эсеби";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Бир нече эсеп";

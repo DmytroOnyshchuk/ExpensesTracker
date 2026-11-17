@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Kategooriad";
 "MENU_BUDGET" = "Eelarve";
 "MENU_SETTINGS" = "Seaded";
+"MENU_ACCOUNTING_SETTINGS" = "Arvestuse seaded";
 "MENU_BACKUPS" = "Varukoopiad";
 "MENU_SPENT_IN_MONTH" = "Kokku kulutatud · %@";
 "MENU_LANGUAGE" = "Keel";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Tervis, pere ja tegevused";
 "ICON_PICKER_SECTION_TECH" = "Tehnika, haridus ja tööriistad";
 "ICON_PICKER_SECTION_NATURE" = "Loodus, ilm ja üldsümbolid";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Kulude arvestus";
+"ACCOUNTING_INCOME" = "Tulude arvestus";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Mitu kontot";

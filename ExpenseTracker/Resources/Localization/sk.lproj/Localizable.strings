@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Kategórie";
 "MENU_BUDGET" = "Rozpočet";
 "MENU_SETTINGS" = "Nastavenia";
+"MENU_ACCOUNTING_SETTINGS" = "Nastavenia evidencie";
 "MENU_BACKUPS" = "Zálohy";
 "MENU_SPENT_IN_MONTH" = "Minuté za %@";
 "MENU_LANGUAGE" = "Jazyk";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Zdravie, rodina a aktivity";
 "ICON_PICKER_SECTION_TECH" = "Technika, vzdelávanie a náradie";
 "ICON_PICKER_SECTION_NATURE" = "Príroda, počasie a všeobecné symboly";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Evidencia výdavkov";
+"ACCOUNTING_INCOME" = "Evidencia príjmov";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Viac účtov";

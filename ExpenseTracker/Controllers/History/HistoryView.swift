@@ -14,7 +14,12 @@ struct HistoryView: View {
 
     @Query(sort: \Transaction.date, order: .reverse) private var storedTransactions: [Transaction]
 
-    private var transactions: [Transaction] { storedTransactions.notDeleted }
+    @StoredSettings private var appSettings
+
+    private var transactions: [Transaction] {
+        let transactions = storedTransactions.notDeleted
+        return appSettings.accounting.incomeEnabled ? transactions : transactions.of(.outcome)
+    }
 
     @State private var anchorDate = Date()
     @State private var slideEdge: Edge = .trailing

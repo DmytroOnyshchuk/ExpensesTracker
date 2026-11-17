@@ -23,6 +23,8 @@ struct TransactionEdit: View {
     @State private var amountText = String()
     @Query(sort: \Account.sortIndex) private var storedAccounts: [Account]
 
+    @StoredSettings private var appSettings
+
     private var accounts: [Account] { storedAccounts.notDeleted }
     @FocusState private var isAmountFocused: Bool
     @FocusState private var isNoteFocused: Bool
@@ -44,9 +46,11 @@ struct TransactionEdit: View {
                         .padding(.bottom, 8)
 
                     VStack(spacing: 0) {
-                        accountRow
+                        if appSettings.accounting.multipleAccountsEnabled {
+                            accountRow
 
-                        InsetDivider()
+                            InsetDivider()
+                        }
 
                         row(L10n.transactionEditDate) {
                             isAmountFocused = false

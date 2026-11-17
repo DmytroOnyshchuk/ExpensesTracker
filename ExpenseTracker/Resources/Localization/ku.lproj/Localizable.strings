@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Kategorî";
 "MENU_BUDGET" = "Budçe";
 "MENU_SETTINGS" = "Mîheng";
+"MENU_ACCOUNTING_SETTINGS" = "Mîhengên hesabdariyê";
 "MENU_BACKUPS" = "Paşkopî";
 "MENU_SPENT_IN_MONTH" = "Tevahiya xerckirî · %@";
 "MENU_LANGUAGE" = "Ziman";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Tenduristî, malbat û çalakî";
 "ICON_PICKER_SECTION_TECH" = "Teknolojî, perwerde û amûr";
 "ICON_PICKER_SECTION_NATURE" = "Xweza, hewa û sembolên giştî";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Hesabdariya lêçûnan";
+"ACCOUNTING_INCOME" = "Hesabdariya dahatê";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Çend hesab";

@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "카테고리";
 "MENU_BUDGET" = "예산";
 "MENU_SETTINGS" = "설정";
+"MENU_ACCOUNTING_SETTINGS" = "기록 설정";
 "MENU_BACKUPS" = "백업";
 "MENU_SPENT_IN_MONTH" = "%@ 지출";
 "MENU_LANGUAGE" = "언어";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "건강, 가족 및 활동";
 "ICON_PICKER_SECTION_TECH" = "기술, 교육 및 도구";
 "ICON_PICKER_SECTION_NATURE" = "자연, 날씨 및 일반 기호";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "지출 기록";
+"ACCOUNTING_INCOME" = "수입 기록";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "여러 계좌";

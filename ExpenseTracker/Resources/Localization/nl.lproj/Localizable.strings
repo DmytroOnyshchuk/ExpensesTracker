@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Categorieën";
 "MENU_BUDGET" = "Budget";
 "MENU_SETTINGS" = "Instellingen";
+"MENU_ACCOUNTING_SETTINGS" = "Boekhoudinstellingen";
 "MENU_BACKUPS" = "Back-ups";
 "MENU_SPENT_IN_MONTH" = "Uitgegeven in %@";
 "MENU_LANGUAGE" = "Taal";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Gezondheid, gezin en activiteiten";
 "ICON_PICKER_SECTION_TECH" = "Technologie, onderwijs en gereedschap";
 "ICON_PICKER_SECTION_NATURE" = "Natuur, weer en algemene symbolen";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Uitgaven bijhouden";
+"ACCOUNTING_INCOME" = "Inkomsten bijhouden";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Meerdere rekeningen";

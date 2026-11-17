@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "వర్గాలు";
 "MENU_BUDGET" = "బడ్జెట్";
 "MENU_SETTINGS" = "సెట్టింగ్‌లు";
+"MENU_ACCOUNTING_SETTINGS" = "అకౌంటింగ్ సెట్టింగ్‌లు";
 "MENU_BACKUPS" = "బ్యాకప్‌లు";
 "MENU_SPENT_IN_MONTH" = "మొత్తం ఖర్చు · %@";
 "MENU_LANGUAGE" = "భాష";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "ఆరోగ్యం, కుటుంబం మరియు కార్యకలాపాలు";
 "ICON_PICKER_SECTION_TECH" = "సాంకేతికత, విద్య మరియు పరికరాలు";
 "ICON_PICKER_SECTION_NATURE" = "ప్రకృతి, వాతావరణం మరియు సాధారణ చిహ్నాలు";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "ఖర్చుల లెక్క";
+"ACCOUNTING_INCOME" = "ఆదాయ లెక్క";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "బహుళ ఖాతాలు";

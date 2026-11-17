@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Mga kategorya";
 "MENU_BUDGET" = "Badyet";
 "MENU_SETTINGS" = "Mga Setting";
+"MENU_ACCOUNTING_SETTINGS" = "Mga setting ng accounting";
 "MENU_BACKUPS" = "Mga Backup";
 "MENU_SPENT_IN_MONTH" = "Gastos sa %@";
 "MENU_LANGUAGE" = "Wika";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Kalusugan, pamilya at mga aktibidad";
 "ICON_PICKER_SECTION_TECH" = "Teknolohiya, edukasyon at mga kagamitan";
 "ICON_PICKER_SECTION_NATURE" = "Kalikasan, panahon at mga pangkalahatang simbolo";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Accounting ng gastos";
+"ACCOUNTING_INCOME" = "Accounting ng kita";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Maraming account";

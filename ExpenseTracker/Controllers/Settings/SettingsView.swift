@@ -30,16 +30,16 @@ struct SettingsView: View {
                     MenuSectionHeader(title: L10n.menuSectionGeneral)
 
                     VStack(spacing: 0) {
-                        toggleRow(L10n.settingsSounds, systemImage: "speaker.wave.2", isOn: $appSettings.feedback.soundsEnabled)
+                        SettingsToggleRow(title: L10n.settingsSounds, systemImage: "speaker.wave.2", isOn: $appSettings.feedback.soundsEnabled)
 
                         MenuRowDivider()
 
-                        toggleRow(L10n.settingsHaptic, systemImage: "iphone.radiowaves.left.and.right", isOn: $appSettings.feedback.hapticEnabled)
+                        SettingsToggleRow(title: L10n.settingsHaptic, systemImage: "iphone.radiowaves.left.and.right", isOn: $appSettings.feedback.hapticEnabled)
 
                         MenuRowDivider()
 
-                        toggleRow(
-                            L10n.settingsHideCategories,
+                        SettingsToggleRow(
+                            title: L10n.settingsHideCategories,
                             subtitle: L10n.settingsHideCategoriesDescription,
                             systemImage: "square.grid.2x2.fill",
                             isOn: $appSettings.hideCategories
@@ -56,8 +56,23 @@ struct SettingsView: View {
         .navigationBarTitleDisplayMode(.inline)
     }
 
-    private func toggleRow(_ title: String, subtitle: String? = nil, systemImage: String, isOn: Binding<Bool>) -> some View {
-        Toggle(isOn: isOn) {
+    private func select(_ preset: ThemePreset) {
+        guard preset != themeManager.preset else { return }
+        feedbackManager.buttonTapped()
+        withAnimation(.easeInOut(duration: 0.25)) {
+            themeManager.preset = preset
+        }
+    }
+}
+
+struct SettingsToggleRow: View {
+    let title: String
+    var subtitle: String?
+    let systemImage: String
+    @Binding var isOn: Bool
+
+    var body: some View {
+        Toggle(isOn: $isOn) {
             HStack(spacing: 12) {
                 Image(systemName: systemImage)
                     .font(.system(size: 17))
@@ -85,15 +100,7 @@ struct SettingsView: View {
         .frame(minHeight: 46)
         .contentShape(Rectangle())
         .onTapGesture {
-            withAnimation { isOn.wrappedValue.toggle() }
-        }
-    }
-
-    private func select(_ preset: ThemePreset) {
-        guard preset != themeManager.preset else { return }
-        feedbackManager.buttonTapped()
-        withAnimation(.easeInOut(duration: 0.25)) {
-            themeManager.preset = preset
+            withAnimation { isOn.toggle() }
         }
     }
 }

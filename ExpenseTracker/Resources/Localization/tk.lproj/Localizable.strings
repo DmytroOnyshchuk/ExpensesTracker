@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Kategoriýalar";
 "MENU_BUDGET" = "Býujet";
 "MENU_SETTINGS" = "Sazlamalar";
+"MENU_ACCOUNTING_SETTINGS" = "Hasaba alyş sazlamalary";
 "MENU_BACKUPS" = "Ätiýaçlyk nusgalar";
 "MENU_SPENT_IN_MONTH" = "Jemi harçlandy · %@";
 "MENU_LANGUAGE" = "Dil";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Saglyk, maşgala we işjeňlik";
 "ICON_PICKER_SECTION_TECH" = "Tehnologiýa, bilim we gurallar";
 "ICON_PICKER_SECTION_NATURE" = "Tebigat, howa we umumy nyşanlar";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Çykdajylaryň hasaby";
+"ACCOUNTING_INCOME" = "Girdejileriň hasaby";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Birnäçe hasap";

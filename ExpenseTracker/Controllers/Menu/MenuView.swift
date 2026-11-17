@@ -12,6 +12,7 @@ import SwiftUI
 enum MenuItem: CaseIterable, Identifiable {
     case categories
     case settings
+    case accounting
     case backups
     case language
     case about
@@ -23,6 +24,7 @@ enum MenuItem: CaseIterable, Identifiable {
         switch self {
         case .categories: L10n.menuCategories
         case .settings: L10n.menuSettings
+        case .accounting: L10n.menuAccountingSettings
         case .backups: L10n.menuBackups
         case .language: L10n.menuLanguage
         case .about: L10n.menuAbout
@@ -34,6 +36,7 @@ enum MenuItem: CaseIterable, Identifiable {
         switch self {
         case .categories: "square.grid.2x2"
         case .settings: "slider.horizontal.3"
+        case .accounting: "checklist"
         case .backups: "externaldrive"
         case .language: "globe"
         case .about: "info.circle"
@@ -59,7 +62,7 @@ enum MenuSection: CaseIterable, Identifiable {
 
     var items: [MenuItem] {
         switch self {
-        case .general: [.settings, .categories]
+        case .general: [.settings, .accounting, .categories]
         case .data: [.backups, .trash]
         case .app: [.language, .about]
         }
@@ -73,10 +76,12 @@ struct MenuView: View {
     private var transactions: [Transaction] { storedTransactions.notDeleted }
 
     @Query private var storedAccounts: [Account]
+    @StoredSettings private var appSettings
 
     @State private var showStatistics = false
     @State private var showCategories = false
     @State private var showSettings = false
+    @State private var showAccountingSettings = false
     @State private var showBackups = false
     @State private var showAbout = false
     @State private var showTrash = false
@@ -126,6 +131,9 @@ struct MenuView: View {
         .navigationDestination(isPresented: $showSettings) {
             SettingsView()
         }
+        .navigationDestination(isPresented: $showAccountingSettings) {
+            AccountingSettingsView()
+        }
         .navigationDestination(isPresented: $showBackups) {
             BackupsView()
         }
@@ -150,13 +158,15 @@ struct MenuView: View {
     }
 
     private var balance: Int? {
-        accounts.isEmpty ? nil : accounts.total(in: transactions)
+        guard appSettings.accounting.multipleAccountsEnabled, !accounts.isEmpty else { return nil }
+        return accounts.total(in: transactions)
     }
 
     private func open(_ item: MenuItem) {
         switch item {
         case .categories: showCategories = true
         case .settings: showSettings = true
+        case .accounting: showAccountingSettings = true
         case .backups: showBackups = true
         case .language: UIApplication.shared.openSettings()
         case .about: showAbout = true

@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Roinnean-seòrsa";
 "MENU_BUDGET" = "Buidseat";
 "MENU_SETTINGS" = "Roghainnean";
+"MENU_ACCOUNTING_SETTINGS" = "Roghainnean cunntasachd";
 "MENU_BACKUPS" = "Lethbhreacan-glèidhidh";
 "MENU_SPENT_IN_MONTH" = "Iomlan air a chosg · %@";
 "MENU_LANGUAGE" = "Cànan";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Slàinte, teaghlach agus gnìomhachdan";
 "ICON_PICKER_SECTION_TECH" = "Teicneòlas, foghlam agus innealan";
 "ICON_PICKER_SECTION_NATURE" = "Nàdar, aimsir agus samhlaidhean coitcheann";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Cunntasachd chosgaisean";
+"ACCOUNTING_INCOME" = "Cunntasachd teachd-a-steach";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Iomadh cunntas";

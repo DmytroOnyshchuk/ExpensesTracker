@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Категорияләр";
 "MENU_BUDGET" = "Бюджет";
 "MENU_SETTINGS" = "Көйләүләр";
+"MENU_ACCOUNTING_SETTINGS" = "Исәп көйләүләре";
 "MENU_BACKUPS" = "Резерв күчермәләр";
 "MENU_SPENT_IN_MONTH" = "Барлыгы тотылган · %@";
 "MENU_LANGUAGE" = "Тел";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Сәламәтлек, гаилә һәм шөгыльләр";
 "ICON_PICKER_SECTION_TECH" = "Технология, мәгариф һәм кораллар";
 "ICON_PICKER_SECTION_NATURE" = "Табигать, һава торышы һәм гомуми билгеләр";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Чыгымнар исәбе";
+"ACCOUNTING_INCOME" = "Керемнәр исәбе";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Берничә счет";

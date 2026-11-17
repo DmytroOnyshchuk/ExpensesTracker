@@ -67,6 +67,7 @@
 "MENU_CATEGORIES" = "Categorii";
 "MENU_BUDGET" = "Buget";
 "MENU_SETTINGS" = "Setări";
+"MENU_ACCOUNTING_SETTINGS" = "Setări de evidență";
 "MENU_BACKUPS" = "Copii de rezervă";
 "MENU_SPENT_IN_MONTH" = "Cheltuit în %@";
 "MENU_LANGUAGE" = "Limbă";
@@ -213,3 +214,8 @@
 "ICON_PICKER_SECTION_HEALTH" = "Sănătate, familie și activități";
 "ICON_PICKER_SECTION_TECH" = "Tehnologie, educație și unelte";
 "ICON_PICKER_SECTION_NATURE" = "Natură, vreme și simboluri generale";
+
+// MARK: - Accounting settings
+"ACCOUNTING_EXPENSES" = "Evidența cheltuielilor";
+"ACCOUNTING_INCOME" = "Evidența veniturilor";
+"ACCOUNTING_MULTIPLE_ACCOUNTS" = "Mai multe conturi";
