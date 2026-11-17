@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "შეიყვანეთ ხარჯი";
+"STARTVIEW_ENTER_INCOME" = "შეიყვანეთ შემოსავალი";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "ჯერ შეიყვანეთ თანხა";
 "STARTVIEW_BALANCE" = "ბალანსი";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ხარჯები";
+"STATISTICS_INCOME_TITLE" = "შემოსავლები";
 "STATISTICS_DAY" = "დღე";
 "STATISTICS_MONTH" = "თვე";
 "STATISTICS_YEAR" = "წელი";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "აღდგეს ტრანზაქცია?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "აღდგეს კატეგორია?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "წაიშალოს კატეგორია?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "აღდგეს ანგარიში?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "წაიშალოს ანგარიში?";
 "TRASH_DELETE_MESSAGE" = "ამ მოქმედების გაუქმება შეუძლებელია.";
 "TRASH_CLEAR_CONFIRMATION" = "ნაგავში არსებული ყველა ელემენტი სამუდამოდ წაიშლება. ამ მოქმედების გაუქმება შეუძლებელია.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "რედაქტირება";
 "TRANSACTION_EDIT_CATEGORY" = "კატეგორია";
+"TRANSACTION_EDIT_BALANCE" = "ანგარიში";
 "TRANSACTION_EDIT_AMOUNT" = "თანხა";
 "TRANSACTION_EDIT_DATE" = "თარიღი";
 "TRANSACTION_EDIT_TIME" = "დრო";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "გადატანილია ნაგავში";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "დღეს დახარჯული";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "გუშინ დახარჯული";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "დღეს მიღებული";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "გუშინ მიღებული";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "კატეგორიების რედაქტირება";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "პარკინგი";
 "DEFAULT_CATEGORY_PETS" = "შინაური ცხოველები";
 "DEFAULT_CATEGORY_SAVINGS" = "დანაზოგი";
+"DEFAULT_CATEGORY_SALARY" = "ხელფასი";
 "SETTINGS_APPEARANCE" = "იერსახე";
 "SETTINGS_THEME_SYSTEM" = "სისტემური";
 "SETTINGS_THEME_DARK" = "მუქი";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "ვიბრაცია";
 "SETTINGS_HIDE_CATEGORIES" = "კატეგორიების დამალვა";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "კატეგორიები ჩნდება თანხის შეყვანისას";
+"SETTINGS_SECURITY" = "უსაფრთხოება";
+"SETTINGS_PASSCODE" = "პაროლ-კოდი";
+"SETTINGS_PASSCODE_CHANGE" = "პაროლ-კოდის შეცვლა";
+"PASSCODE_ENTER" = "შეიყვანეთ პაროლ-კოდი";
+"PASSCODE_ENTER_CURRENT" = "შეიყვანეთ მიმდინარე პაროლ-კოდი";
+"PASSCODE_ENTER_NEW" = "შეიყვანეთ ახალი პაროლ-კოდი";
+"PASSCODE_REPEAT" = "გაიმეორეთ პაროლ-კოდი";
+"PASSCODE_WRONG" = "არასწორი პაროლ-კოდი";
+"PASSCODE_MISMATCH" = "პაროლ-კოდები არ ემთხვევა";
+"PASSCODE_BIOMETRICS_REASON" = "აპის განბლოკვა";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "კატეგორიები: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "ფაილი დაზიანებულია ან არ იკითხება.";
 "BACKUPS_ERROR_NEWER_VERSION" = "ეს ასლი შექმნილია აპის უფრო ახალი ვერსიით.";
 "BACKUPS_ERROR_UNSUPPORTED" = "ფაილის ეს ფორმატი არ არის მხარდაჭერილი.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "ყველა ანგარიში";
+"BACKUPS_EXPORT_ALL_HISTORY" = "მთელი ისტორია";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "მორგებული პერიოდი";
+"BACKUPS_EXPORT_LAST_DAYS" = "ბოლო %d დღე";
+"BACKUPS_EXPORT_PERIOD" = "პერიოდი";
+"BACKUPS_EXPORT_SETTINGS" = "ექსპორტის პარამეტრები";
 "BACKUPS_EXPORT_SECTION" = "ექსპორტი";
 "BACKUPS_IMPORT_ACTION" = "იმპორტი ფაილიდან";
 "BACKUPS_IMPORT_DONE" = "დამატებული ტრანზაქციები: %d, კატეგორიები: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "ჯანმრთელობა, ოჯახი და აქტივობები";
 "ICON_PICKER_SECTION_TECH" = "ტექნოლოგია, განათლება და ხელსაწყოები";
 "ICON_PICKER_SECTION_NATURE" = "ბუნება, ამინდი და ზოგადი სიმბოლოები";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "ანგარიში წაიშალა";
+"ACCOUNTS_TITLE" = "ანგარიშები";
+"ACCOUNTS_TOTAL" = "სულ";
+"ACCOUNTS_NEW" = "ახალი ანგარიში";
+"ACCOUNTS_EDIT" = "ანგარიშის რედაქტირება";
+"ACCOUNTS_NAME" = "სახელი";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ხარჯების აღრიცხვა";

@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Introdu cheltuiala";
+"STARTVIEW_ENTER_INCOME" = "Introdu venitul";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Introduceți mai întâi suma";
 "STARTVIEW_BALANCE" = "Sold";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Cheltuieli";
+"STATISTICS_INCOME_TITLE" = "Venituri";
 "STATISTICS_DAY" = "Zi";
 "STATISTICS_MONTH" = "Lună";
 "STATISTICS_YEAR" = "An";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Restaurezi tranzacția?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Restaurezi categoria?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Ștergi categoria?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Restaurezi contul?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Ștergi contul?";
 "TRASH_DELETE_MESSAGE" = "Această acțiune nu poate fi anulată.";
 "TRASH_CLEAR_CONFIRMATION" = "Toate elementele din coș vor fi șterse definitiv. Această acțiune nu poate fi anulată.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Editează";
 "TRANSACTION_EDIT_CATEGORY" = "Categorie";
+"TRANSACTION_EDIT_BALANCE" = "Cont";
 "TRANSACTION_EDIT_AMOUNT" = "Sumă";
 "TRANSACTION_EDIT_DATE" = "Dată";
 "TRANSACTION_EDIT_TIME" = "Oră";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Mutat în coș";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Cheltuit azi";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Cheltuit ieri";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Primit azi";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Primit ieri";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Editează categoriile";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Parcare";
 "DEFAULT_CATEGORY_PETS" = "Animale";
 "DEFAULT_CATEGORY_SAVINGS" = "Economii";
+"DEFAULT_CATEGORY_SALARY" = "Salariu";
 "SETTINGS_APPEARANCE" = "Aspect";
 "SETTINGS_THEME_SYSTEM" = "Sistem";
 "SETTINGS_THEME_DARK" = "Întunecat";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Vibrații";
 "SETTINGS_HIDE_CATEGORIES" = "Ascunde categoriile";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Categoriile apar când introduci o sumă";
+"SETTINGS_SECURITY" = "Securitate";
+"SETTINGS_PASSCODE" = "Cod de acces";
+"SETTINGS_PASSCODE_CHANGE" = "Schimbă codul de acces";
+"PASSCODE_ENTER" = "Introdu codul de acces";
+"PASSCODE_ENTER_CURRENT" = "Introdu codul de acces actual";
+"PASSCODE_ENTER_NEW" = "Introdu noul cod de acces";
+"PASSCODE_REPEAT" = "Repetă codul de acces";
+"PASSCODE_WRONG" = "Cod de acces greșit";
+"PASSCODE_MISMATCH" = "Codurile de acces nu coincid";
+"PASSCODE_BIOMETRICS_REASON" = "Deblochează aplicația";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categorii: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Fișierul este deteriorat sau nu poate fi citit.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Această copie a fost creată cu o versiune mai nouă a aplicației.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Acest format de fișier nu este acceptat.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Toate conturile";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Tot istoricul";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Perioadă personalizată";
+"BACKUPS_EXPORT_LAST_DAYS" = "Ultimele %d zile";
+"BACKUPS_EXPORT_PERIOD" = "Perioadă";
+"BACKUPS_EXPORT_SETTINGS" = "Configurări export";
 "BACKUPS_EXPORT_SECTION" = "Export";
 "BACKUPS_IMPORT_ACTION" = "Importă din fișier";
 "BACKUPS_IMPORT_DONE" = "Tranzacții adăugate: %d, categorii: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Sănătate, familie și activități";
 "ICON_PICKER_SECTION_TECH" = "Tehnologie, educație și unelte";
 "ICON_PICKER_SECTION_NATURE" = "Natură, vreme și simboluri generale";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Cont șters";
+"ACCOUNTS_TITLE" = "Conturi";
+"ACCOUNTS_TOTAL" = "Total";
+"ACCOUNTS_NEW" = "Cont nou";
+"ACCOUNTS_EDIT" = "Editează contul";
+"ACCOUNTS_NAME" = "Nume";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Evidența cheltuielilor";

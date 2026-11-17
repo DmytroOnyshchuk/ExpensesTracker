@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "खर्च प्रविष्ट करा";
+"STARTVIEW_ENTER_INCOME" = "उत्पन्न प्रविष्ट करा";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "प्रथम रक्कम प्रविष्ट करा";
 "STARTVIEW_BALANCE" = "शिल्लक";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "खर्च";
+"STATISTICS_INCOME_TITLE" = "उत्पन्न";
 "STATISTICS_DAY" = "दिवस";
 "STATISTICS_MONTH" = "महिना";
 "STATISTICS_YEAR" = "वर्ष";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "व्यवहार पुनर्संचयित करायचा?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "श्रेणी पुनर्संचयित करायची?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "श्रेणी हटवायची?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "खाते पुनर्संचयित करायचे?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "खाते हटवायचे?";
 "TRASH_DELETE_MESSAGE" = "ही क्रिया पूर्ववत करता येणार नाही.";
 "TRASH_CLEAR_CONFIRMATION" = "ट्रॅशमधील सर्व आयटम कायमचे हटवले जातील. ही क्रिया पूर्ववत करता येणार नाही.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "संपादित करा";
 "TRANSACTION_EDIT_CATEGORY" = "श्रेणी";
+"TRANSACTION_EDIT_BALANCE" = "खाते";
 "TRANSACTION_EDIT_AMOUNT" = "रक्कम";
 "TRANSACTION_EDIT_DATE" = "तारीख";
 "TRANSACTION_EDIT_TIME" = "वेळ";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ट्रॅशमध्ये हलवले";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "आजचा खर्च";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "कालचा खर्च";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "आजचे उत्पन्न";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "कालचे उत्पन्न";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "श्रेण्या संपादित करा";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "पार्किंग";
 "DEFAULT_CATEGORY_PETS" = "पाळीव प्राणी";
 "DEFAULT_CATEGORY_SAVINGS" = "बचत";
+"DEFAULT_CATEGORY_SALARY" = "पगार";
 "SETTINGS_APPEARANCE" = "स्वरूप";
 "SETTINGS_THEME_SYSTEM" = "सिस्टम";
 "SETTINGS_THEME_DARK" = "गडद";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "कंपन";
 "SETTINGS_HIDE_CATEGORIES" = "श्रेणी लपवा";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "रक्कम टाकताना श्रेण्या दिसतात";
+"SETTINGS_SECURITY" = "सुरक्षा";
+"SETTINGS_PASSCODE" = "पासकोड";
+"SETTINGS_PASSCODE_CHANGE" = "पासकोड बदला";
+"PASSCODE_ENTER" = "पासकोड प्रविष्ट करा";
+"PASSCODE_ENTER_CURRENT" = "सध्याचा पासकोड प्रविष्ट करा";
+"PASSCODE_ENTER_NEW" = "नवीन पासकोड प्रविष्ट करा";
+"PASSCODE_REPEAT" = "पासकोड पुन्हा प्रविष्ट करा";
+"PASSCODE_WRONG" = "चुकीचा पासकोड";
+"PASSCODE_MISMATCH" = "पासकोड जुळत नाहीत";
+"PASSCODE_BIOMETRICS_REASON" = "ॲप अनलॉक करा";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "श्रेण्या: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "फाइल खराब आहे किंवा वाचता येत नाही.";
 "BACKUPS_ERROR_NEWER_VERSION" = "हा बॅकअप ॲपच्या नवीन आवृत्तीने तयार केला आहे.";
 "BACKUPS_ERROR_UNSUPPORTED" = "हा फाइल फॉरमॅट समर्थित नाही.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "सर्व खाती";
+"BACKUPS_EXPORT_ALL_HISTORY" = "संपूर्ण इतिहास";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "सानुकूल कालावधी";
+"BACKUPS_EXPORT_LAST_DAYS" = "मागील %d दिवस";
+"BACKUPS_EXPORT_PERIOD" = "कालावधी";
+"BACKUPS_EXPORT_SETTINGS" = "निर्यात सेटिंग्ज";
 "BACKUPS_EXPORT_SECTION" = "निर्यात";
 "BACKUPS_IMPORT_ACTION" = "फाइलमधून आयात करा";
 "BACKUPS_IMPORT_DONE" = "जोडलेले व्यवहार: %d, श्रेण्या: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "आरोग्य, कुटुंब आणि उपक्रम";
 "ICON_PICKER_SECTION_TECH" = "तंत्रज्ञान, शिक्षण आणि साधने";
 "ICON_PICKER_SECTION_NATURE" = "निसर्ग, हवामान आणि सामान्य चिन्हे";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "खाते हटवले";
+"ACCOUNTS_TITLE" = "खाती";
+"ACCOUNTS_TOTAL" = "एकूण";
+"ACCOUNTS_NEW" = "नवीन खाते";
+"ACCOUNTS_EDIT" = "खाते संपादित करा";
+"ACCOUNTS_NAME" = "नाव";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "खर्चाचा हिशोब";

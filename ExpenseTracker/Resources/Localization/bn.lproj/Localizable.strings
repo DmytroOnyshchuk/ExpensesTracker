@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "খরচ লিখুন";
+"STARTVIEW_ENTER_INCOME" = "আয় লিখুন";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "প্রথমে পরিমাণ লিখুন";
 "STARTVIEW_BALANCE" = "ব্যালেন্স";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "খরচ";
+"STATISTICS_INCOME_TITLE" = "আয়";
 "STATISTICS_DAY" = "দিন";
 "STATISTICS_MONTH" = "মাস";
 "STATISTICS_YEAR" = "বছর";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "লেনদেন পুনরুদ্ধার করবেন?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "বিভাগ পুনরুদ্ধার করবেন?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "বিভাগ মুছুন?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "অ্যাকাউন্ট পুনরুদ্ধার করবেন?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "অ্যাকাউন্ট মুছবেন?";
 "TRASH_DELETE_MESSAGE" = "এই কাজটি পূর্বাবস্থায় ফেরানো যাবে না।";
 "TRASH_CLEAR_CONFIRMATION" = "ট্র্যাশের সব আইটেম স্থায়ীভাবে মুছে ফেলা হবে। এই কাজটি পূর্বাবস্থায় ফেরানো যাবে না।";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "সম্পাদনা";
 "TRANSACTION_EDIT_CATEGORY" = "বিভাগ";
+"TRANSACTION_EDIT_BALANCE" = "অ্যাকাউন্ট";
 "TRANSACTION_EDIT_AMOUNT" = "পরিমাণ";
 "TRANSACTION_EDIT_DATE" = "তারিখ";
 "TRANSACTION_EDIT_TIME" = "সময়";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ট্র্যাশে সরানো হয়েছে";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "আজ খরচ হয়েছে";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "গতকাল খরচ হয়েছে";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "আজ প্রাপ্ত";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "গতকাল প্রাপ্ত";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "বিভাগ সম্পাদনা";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "পার্কিং";
 "DEFAULT_CATEGORY_PETS" = "পোষা প্রাণী";
 "DEFAULT_CATEGORY_SAVINGS" = "সঞ্চয়";
+"DEFAULT_CATEGORY_SALARY" = "বেতন";
 "SETTINGS_APPEARANCE" = "চেহারা";
 "SETTINGS_THEME_SYSTEM" = "সিস্টেম";
 "SETTINGS_THEME_DARK" = "গাঢ়";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "কম্পন";
 "SETTINGS_HIDE_CATEGORIES" = "বিভাগ লুকান";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "পরিমাণ লিখলে বিভাগগুলো দেখা যায়";
+"SETTINGS_SECURITY" = "নিরাপত্তা";
+"SETTINGS_PASSCODE" = "পাসকোড";
+"SETTINGS_PASSCODE_CHANGE" = "পাসকোড পরিবর্তন করুন";
+"PASSCODE_ENTER" = "পাসকোড লিখুন";
+"PASSCODE_ENTER_CURRENT" = "বর্তমান পাসকোড লিখুন";
+"PASSCODE_ENTER_NEW" = "নতুন পাসকোড লিখুন";
+"PASSCODE_REPEAT" = "পাসকোড আবার লিখুন";
+"PASSCODE_WRONG" = "ভুল পাসকোড";
+"PASSCODE_MISMATCH" = "পাসকোড মিলছে না";
+"PASSCODE_BIOMETRICS_REASON" = "অ্যাপ আনলক করুন";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "বিভাগ: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "ফাইলটি ক্ষতিগ্রস্ত বা পড়া যাচ্ছে না।";
 "BACKUPS_ERROR_NEWER_VERSION" = "এই ব্যাকআপটি অ্যাপের নতুন সংস্করণে তৈরি।";
 "BACKUPS_ERROR_UNSUPPORTED" = "এই ফাইল ফরম্যাট সমর্থিত নয়।";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "সব অ্যাকাউন্ট";
+"BACKUPS_EXPORT_ALL_HISTORY" = "সম্পূর্ণ ইতিহাস";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "কাস্টম সময়কাল";
+"BACKUPS_EXPORT_LAST_DAYS" = "গত %d দিন";
+"BACKUPS_EXPORT_PERIOD" = "সময়কাল";
+"BACKUPS_EXPORT_SETTINGS" = "এক্সপোর্ট সেটিংস";
 "BACKUPS_EXPORT_SECTION" = "এক্সপোর্ট";
 "BACKUPS_IMPORT_ACTION" = "ফাইল থেকে ইমপোর্ট করুন";
 "BACKUPS_IMPORT_DONE" = "যোগ করা লেনদেন: %d, বিভাগ: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "স্বাস্থ্য, পরিবার ও কার্যকলাপ";
 "ICON_PICKER_SECTION_TECH" = "প্রযুক্তি, শিক্ষা ও সরঞ্জাম";
 "ICON_PICKER_SECTION_NATURE" = "প্রকৃতি, আবহাওয়া ও সাধারণ প্রতীক";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "অ্যাকাউন্ট মুছে ফেলা হয়েছে";
+"ACCOUNTS_TITLE" = "অ্যাকাউন্ট";
+"ACCOUNTS_TOTAL" = "মোট";
+"ACCOUNTS_NEW" = "নতুন অ্যাকাউন্ট";
+"ACCOUNTS_EDIT" = "অ্যাকাউন্ট সম্পাদনা";
+"ACCOUNTS_NAME" = "নাম";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ব্যয়ের হিসাব";

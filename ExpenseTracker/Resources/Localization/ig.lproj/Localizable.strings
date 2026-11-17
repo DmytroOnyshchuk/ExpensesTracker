@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Tinye mmefu";
+"STARTVIEW_ENTER_INCOME" = "Tinye ego mbata";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Buru ụzọ tinye ego ole";
 "STARTVIEW_BALANCE" = "Ego fọdụrụ";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Mmefu";
+"STATISTICS_INCOME_TITLE" = "Ego mbata";
 "STATISTICS_DAY" = "Ụbọchị";
 "STATISTICS_MONTH" = "Ọnwa";
 "STATISTICS_YEAR" = "Afọ";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Weghachi azụmahịa a?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Weghachi ụdị a?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Hichapụ ụdị a?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Weghachi akaụntụ a?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Hichapụ akaụntụ a?";
 "TRASH_DELETE_MESSAGE" = "Enweghị ike imegharị omume a.";
 "TRASH_CLEAR_CONFIRMATION" = "A ga-ehichapụ ihe niile dị na ahịhịa kpamkpam. Enweghị ike ịmegharị omume a.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Dezie";
 "TRANSACTION_EDIT_CATEGORY" = "Ụdị";
+"TRANSACTION_EDIT_BALANCE" = "Akaụntụ";
 "TRANSACTION_EDIT_AMOUNT" = "Ego ole";
 "TRANSACTION_EDIT_DATE" = "Ụbọchị ọnwa";
 "TRANSACTION_EDIT_TIME" = "Oge";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "E bugara ya n'ahịhịa";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "E mefuru taa";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "E mefuru ụnyaahụ";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "E natara taa";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "E natara ụnyaahụ";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Dezie ụdị";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Ebe ndọba ụgbọala";
 "DEFAULT_CATEGORY_PETS" = "Anụ ụlọ";
 "DEFAULT_CATEGORY_SAVINGS" = "Nchekwa ego";
+"DEFAULT_CATEGORY_SALARY" = "Ụgwọ ọnwa";
 "SETTINGS_APPEARANCE" = "Ọdịdị";
 "SETTINGS_THEME_SYSTEM" = "Sistemụ";
 "SETTINGS_THEME_DARK" = "Ọchịchịrị";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Ịma jijiji";
 "SETTINGS_HIDE_CATEGORIES" = "Zoo ngalaba";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Ngalaba na-apụta mgbe ị tinyere ego";
+"SETTINGS_SECURITY" = "Nchekwa";
+"SETTINGS_PASSCODE" = "Koodu mmepe";
+"SETTINGS_PASSCODE_CHANGE" = "Gbanwee koodu mmepe";
+"PASSCODE_ENTER" = "Tinye koodu mmepe";
+"PASSCODE_ENTER_CURRENT" = "Tinye koodu mmepe dị ugbu a";
+"PASSCODE_ENTER_NEW" = "Tinye koodu mmepe ọhụrụ";
+"PASSCODE_REPEAT" = "Tinyeghachi koodu mmepe";
+"PASSCODE_WRONG" = "Koodu mmepe ezighi ezi";
+"PASSCODE_MISMATCH" = "Koodu mmepe adabaghị";
+"PASSCODE_BIOMETRICS_REASON" = "Mepee ngwa a";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Ngalaba: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Faịlụ ahụ emebiela ma ọ bụ enweghị ike ịgụ ya.";
 "BACKUPS_ERROR_NEWER_VERSION" = "E ji ụdị ngwa ọhụrụ karịa mee ndabere a.";
 "BACKUPS_ERROR_UNSUPPORTED" = "A naghị akwado ụdị faịlụ a.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Akaụntụ niile";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Akụkọ niile";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Oge ahaziri";
+"BACKUPS_EXPORT_LAST_DAYS" = "Ụbọchị %d gara aga";
+"BACKUPS_EXPORT_PERIOD" = "Oge";
+"BACKUPS_EXPORT_SETTINGS" = "Ntọala mbupụ";
 "BACKUPS_EXPORT_SECTION" = "Mbupụ";
 "BACKUPS_IMPORT_ACTION" = "Bubata site na faịlụ";
 "BACKUPS_IMPORT_DONE" = "Azụmahịa etinyere: %d, ngalaba: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Ahụike, ezinụlọ na ihe omume";
 "ICON_PICKER_SECTION_TECH" = "Teknụzụ, agụmakwụkwọ na ngwá ọrụ";
 "ICON_PICKER_SECTION_NATURE" = "Okike, ihu igwe na akara izugbe";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "E hichapụrụ akaụntụ";
+"ACCOUNTS_TITLE" = "Akaụntụ";
+"ACCOUNTS_TOTAL" = "Mkpokọta";
+"ACCOUNTS_NEW" = "Akaụntụ ọhụrụ";
+"ACCOUNTS_EDIT" = "Dezie akaụntụ";
+"ACCOUNTS_NAME" = "Aha";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Ndekọ mmefu";

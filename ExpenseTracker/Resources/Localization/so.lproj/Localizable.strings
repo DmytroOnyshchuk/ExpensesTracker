@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Geli kharashka";
+"STARTVIEW_ENTER_INCOME" = "Geli dakhliga";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Marka hore geli qaddarka";
 "STARTVIEW_BALANCE" = "Haraaga";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Kharashyada";
+"STATISTICS_INCOME_TITLE" = "Dakhliga";
 "STATISTICS_DAY" = "Maalin";
 "STATISTICS_MONTH" = "Bil";
 "STATISTICS_YEAR" = "Sannad";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Ma soo celisaa macaamilka?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Ma soo celisaa qaybta?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Ma tirtirtaa qaybta?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Ma soo celisaa akoonka?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Ma tirtirtaa akoonka?";
 "TRASH_DELETE_MESSAGE" = "Ficilkan lama noqon karo.";
 "TRASH_CLEAR_CONFIRMATION" = "Dhammaan waxyaabaha ku jira qashinka si joogto ah ayaa loo tirtiri doonaa. Tallaabadan lagama noqon karo.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Wax ka beddel";
 "TRANSACTION_EDIT_CATEGORY" = "Qayb";
+"TRANSACTION_EDIT_BALANCE" = "Akoon";
 "TRANSACTION_EDIT_AMOUNT" = "Qaddar";
 "TRANSACTION_EDIT_DATE" = "Taariikh";
 "TRANSACTION_EDIT_TIME" = "Waqti";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Waxaa loo wareejiyay qashinka";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Maanta la kharash gareeyay";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Shalay la kharash gareeyay";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Maanta la helay";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Shalay la helay";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Wax ka beddel qaybaha";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Baarkin";
 "DEFAULT_CATEGORY_PETS" = "Xayawaanka guriga";
 "DEFAULT_CATEGORY_SAVINGS" = "Kayd";
+"DEFAULT_CATEGORY_SALARY" = "Mushahar";
 "SETTINGS_APPEARANCE" = "Muuqaalka";
 "SETTINGS_THEME_SYSTEM" = "Nidaamka";
 "SETTINGS_THEME_DARK" = "Madow";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Gariir";
 "SETTINGS_HIDE_CATEGORIES" = "Qari qaybaha";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Qaybuhu waxay soo muuqdaan marka aad geliso lacagta";
+"SETTINGS_SECURITY" = "Amniga";
+"SETTINGS_PASSCODE" = "Koodhka sirta";
+"SETTINGS_PASSCODE_CHANGE" = "Beddel koodhka sirta";
+"PASSCODE_ENTER" = "Geli koodhka sirta";
+"PASSCODE_ENTER_CURRENT" = "Geli koodhka sirta ee hadda";
+"PASSCODE_ENTER_NEW" = "Geli koodh sir cusub";
+"PASSCODE_REPEAT" = "Ku celi koodhka sirta";
+"PASSCODE_WRONG" = "Koodhka sirta waa khalad";
+"PASSCODE_MISMATCH" = "Koodhadhka sirtu isma laha";
+"PASSCODE_BIOMETRICS_REASON" = "Fur abka";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Qaybaha: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Faylku wuu xumaaday ama lama akhriyi karo.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Kaydkan waxaa lagu sameeyay nooc ka cusub abka.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Qaabka faylkan lama taageero.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Dhammaan akoonnada";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Taariikhda oo dhan";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Muddo gaar ah";
+"BACKUPS_EXPORT_LAST_DAYS" = "%d maalmood ee u dambeeyay";
+"BACKUPS_EXPORT_PERIOD" = "Muddo";
+"BACKUPS_EXPORT_SETTINGS" = "Dejinta dhoofinta";
 "BACKUPS_EXPORT_SECTION" = "Dhoofin";
 "BACKUPS_IMPORT_ACTION" = "Ka soo deji fayl";
 "BACKUPS_IMPORT_DONE" = "Dhaqdhaqaaqyada lagu daray: %d, qaybaha: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Caafimaadka, qoyska iyo hawlaha";
 "ICON_PICKER_SECTION_TECH" = "Tignoolajiyada, waxbarashada iyo qalabka";
 "ICON_PICKER_SECTION_NATURE" = "Dabeecadda, cimilada iyo calaamadaha guud";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Akoonka waa la tirtiray";
+"ACCOUNTS_TITLE" = "Akoonno";
+"ACCOUNTS_TOTAL" = "Wadarta";
+"ACCOUNTS_NEW" = "Akoon cusub";
+"ACCOUNTS_EDIT" = "Wax ka beddel akoonka";
+"ACCOUNTS_NAME" = "Magac";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Xisaabinta kharashka";

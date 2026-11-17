@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "ਖਰਚਾ ਦਰਜ ਕਰੋ";
+"STARTVIEW_ENTER_INCOME" = "ਆਮਦਨ ਦਰਜ ਕਰੋ";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "ਪਹਿਲਾਂ ਰਕਮ ਦਰਜ ਕਰੋ";
 "STARTVIEW_BALANCE" = "ਬੈਲੇਂਸ";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ਖਰਚੇ";
+"STATISTICS_INCOME_TITLE" = "ਆਮਦਨ";
 "STATISTICS_DAY" = "ਦਿਨ";
 "STATISTICS_MONTH" = "ਮਹੀਨਾ";
 "STATISTICS_YEAR" = "ਸਾਲ";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "ਲੈਣ-ਦੇਣ ਮੁੜ-ਬਹਾਲ ਕਰਨਾ ਹੈ?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "ਸ਼੍ਰੇਣੀ ਮੁੜ-ਬਹਾਲ ਕਰਨੀ ਹੈ?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "ਸ਼੍ਰੇਣੀ ਮਿਟਾਉਣੀ ਹੈ?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "ਖਾਤਾ ਮੁੜ-ਬਹਾਲ ਕਰਨਾ ਹੈ?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "ਖਾਤਾ ਮਿਟਾਉਣਾ ਹੈ?";
 "TRASH_DELETE_MESSAGE" = "ਇਹ ਕਾਰਵਾਈ ਵਾਪਸ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ।";
 "TRASH_CLEAR_CONFIRMATION" = "ਰੱਦੀ ਵਿਚਲੀਆਂ ਸਾਰੀਆਂ ਆਈਟਮਾਂ ਪੱਕੇ ਤੌਰ 'ਤੇ ਮਿਟਾ ਦਿੱਤੀਆਂ ਜਾਣਗੀਆਂ। ਇਸ ਕਾਰਵਾਈ ਨੂੰ ਵਾਪਸ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ਸੋਧੋ";
 "TRANSACTION_EDIT_CATEGORY" = "ਸ਼੍ਰੇਣੀ";
+"TRANSACTION_EDIT_BALANCE" = "ਖਾਤਾ";
 "TRANSACTION_EDIT_AMOUNT" = "ਰਕਮ";
 "TRANSACTION_EDIT_DATE" = "ਤਾਰੀਖ਼";
 "TRANSACTION_EDIT_TIME" = "ਸਮਾਂ";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ਰੱਦੀ ਵਿੱਚ ਭੇਜਿਆ ਗਿਆ";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ਅੱਜ ਦਾ ਖਰਚ";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ਕੱਲ੍ਹ ਦਾ ਖਰਚ";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "ਅੱਜ ਦੀ ਆਮਦਨ";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "ਕੱਲ੍ਹ ਦੀ ਆਮਦਨ";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "ਸ਼੍ਰੇਣੀਆਂ ਸੋਧੋ";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "ਪਾਰਕਿੰਗ";
 "DEFAULT_CATEGORY_PETS" = "ਪਾਲਤੂ ਜਾਨਵਰ";
 "DEFAULT_CATEGORY_SAVINGS" = "ਬੱਚਤ";
+"DEFAULT_CATEGORY_SALARY" = "ਤਨਖਾਹ";
 "SETTINGS_APPEARANCE" = "ਦਿੱਖ";
 "SETTINGS_THEME_SYSTEM" = "ਸਿਸਟਮ";
 "SETTINGS_THEME_DARK" = "ਗੂੜ੍ਹਾ";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "ਕੰਪਨ";
 "SETTINGS_HIDE_CATEGORIES" = "ਸ਼੍ਰੇਣੀਆਂ ਲੁਕਾਓ";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "ਰਕਮ ਦਰਜ ਕਰਨ ’ਤੇ ਸ਼੍ਰੇਣੀਆਂ ਦਿਖਾਈ ਦਿੰਦੀਆਂ ਹਨ";
+"SETTINGS_SECURITY" = "ਸੁਰੱਖਿਆ";
+"SETTINGS_PASSCODE" = "ਪਾਸਕੋਡ";
+"SETTINGS_PASSCODE_CHANGE" = "ਪਾਸਕੋਡ ਬਦਲੋ";
+"PASSCODE_ENTER" = "ਪਾਸਕੋਡ ਦਰਜ ਕਰੋ";
+"PASSCODE_ENTER_CURRENT" = "ਮੌਜੂਦਾ ਪਾਸਕੋਡ ਦਰਜ ਕਰੋ";
+"PASSCODE_ENTER_NEW" = "ਨਵਾਂ ਪਾਸਕੋਡ ਦਰਜ ਕਰੋ";
+"PASSCODE_REPEAT" = "ਪਾਸਕੋਡ ਦੁਬਾਰਾ ਦਰਜ ਕਰੋ";
+"PASSCODE_WRONG" = "ਗਲਤ ਪਾਸਕੋਡ";
+"PASSCODE_MISMATCH" = "ਪਾਸਕੋਡ ਮੇਲ ਨਹੀਂ ਖਾਂਦੇ";
+"PASSCODE_BIOMETRICS_REASON" = "ਐਪ ਅਨਲੌਕ ਕਰੋ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "ਸ਼੍ਰੇਣੀਆਂ: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "ਫ਼ਾਈਲ ਖ਼ਰਾਬ ਹੈ ਜਾਂ ਪੜ੍ਹੀ ਨਹੀਂ ਜਾ ਸਕਦੀ।";
 "BACKUPS_ERROR_NEWER_VERSION" = "ਇਹ ਬੈਕਅੱਪ ਐਪ ਦੇ ਨਵੇਂ ਵਰਜਨ ਨਾਲ ਬਣਾਇਆ ਗਿਆ ਹੈ।";
 "BACKUPS_ERROR_UNSUPPORTED" = "ਇਹ ਫ਼ਾਈਲ ਫਾਰਮੈਟ ਸਮਰਥਿਤ ਨਹੀਂ ਹੈ।";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "ਸਾਰੇ ਖਾਤੇ";
+"BACKUPS_EXPORT_ALL_HISTORY" = "ਪੂਰਾ ਇਤਿਹਾਸ";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "ਕਸਟਮ ਮਿਆਦ";
+"BACKUPS_EXPORT_LAST_DAYS" = "ਪਿਛਲੇ %d ਦਿਨ";
+"BACKUPS_EXPORT_PERIOD" = "ਮਿਆਦ";
+"BACKUPS_EXPORT_SETTINGS" = "ਐਕਸਪੋਰਟ ਸੈਟਿੰਗਾਂ";
 "BACKUPS_EXPORT_SECTION" = "ਐਕਸਪੋਰਟ";
 "BACKUPS_IMPORT_ACTION" = "ਫ਼ਾਈਲ ਤੋਂ ਇੰਪੋਰਟ ਕਰੋ";
 "BACKUPS_IMPORT_DONE" = "ਜੋੜੇ ਗਏ ਲੈਣ-ਦੇਣ: %d, ਸ਼੍ਰੇਣੀਆਂ: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "ਸਿਹਤ, ਪਰਿਵਾਰ ਅਤੇ ਗਤੀਵਿਧੀਆਂ";
 "ICON_PICKER_SECTION_TECH" = "ਤਕਨਾਲੋਜੀ, ਸਿੱਖਿਆ ਅਤੇ ਔਜ਼ਾਰ";
 "ICON_PICKER_SECTION_NATURE" = "ਕੁਦਰਤ, ਮੌਸਮ ਅਤੇ ਆਮ ਚਿੰਨ੍ਹ";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "ਖਾਤਾ ਮਿਟਾਇਆ ਗਿਆ";
+"ACCOUNTS_TITLE" = "ਖਾਤੇ";
+"ACCOUNTS_TOTAL" = "ਕੁੱਲ";
+"ACCOUNTS_NEW" = "ਨਵਾਂ ਖਾਤਾ";
+"ACCOUNTS_EDIT" = "ਖਾਤਾ ਸੋਧੋ";
+"ACCOUNTS_NAME" = "ਨਾਮ";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ਖਰਚਿਆਂ ਦਾ ਲੇਖਾ";

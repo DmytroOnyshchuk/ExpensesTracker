@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Çykdajyny giriziň";
+"STARTVIEW_ENTER_INCOME" = "Girdejini giriziň";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Ilki bilen mukdary giriziň";
 "STARTVIEW_BALANCE" = "Balans";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Çykdajylar";
+"STATISTICS_INCOME_TITLE" = "Girdejiler";
 "STATISTICS_DAY" = "Gün";
 "STATISTICS_MONTH" = "Aý";
 "STATISTICS_YEAR" = "Ýyl";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Amaly dikeltmelimi?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Kategoriýany dikeltmelimi?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Kategoriýany pozmalymy?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Hasaby dikeltmelimi?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Hasaby pozmalymy?";
 "TRASH_DELETE_MESSAGE" = "Bu hereketi yzyna gaýtaryp bolmaýar.";
 "TRASH_CLEAR_CONFIRMATION" = "Sebetdäki ähli elementler hemişelik pozular. Bu hereketi yzyna gaýtaryp bolmaýar.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Üýtget";
 "TRANSACTION_EDIT_CATEGORY" = "Kategoriýa";
+"TRANSACTION_EDIT_BALANCE" = "Hasap";
 "TRANSACTION_EDIT_AMOUNT" = "Mukdar";
 "TRANSACTION_EDIT_DATE" = "Sene";
 "TRANSACTION_EDIT_TIME" = "Wagt";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Sebede geçirildi";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Şu gün harçlandy";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Düýn harçlandy";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Şu gün alyndy";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Düýn alyndy";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Kategoriýalary üýtget";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Duralga";
 "DEFAULT_CATEGORY_PETS" = "Öý haýwanlary";
 "DEFAULT_CATEGORY_SAVINGS" = "Süýşürinti";
+"DEFAULT_CATEGORY_SALARY" = "Aýlyk";
 "SETTINGS_APPEARANCE" = "Daşky görnüş";
 "SETTINGS_THEME_SYSTEM" = "Ulgam";
 "SETTINGS_THEME_DARK" = "Garaňky";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Wibrasiýa";
 "SETTINGS_HIDE_CATEGORIES" = "Kategoriýalary gizle";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategoriýalar mukdar girizilende görünýär";
+"SETTINGS_SECURITY" = "Howpsuzlyk";
+"SETTINGS_PASSCODE" = "Kod-parol";
+"SETTINGS_PASSCODE_CHANGE" = "Kod-paroly üýtget";
+"PASSCODE_ENTER" = "Kod-paroly giriziň";
+"PASSCODE_ENTER_CURRENT" = "Häzirki kod-paroly giriziň";
+"PASSCODE_ENTER_NEW" = "Täze kod-paroly giriziň";
+"PASSCODE_REPEAT" = "Kod-paroly gaýtalaň";
+"PASSCODE_WRONG" = "Kod-parol nädogry";
+"PASSCODE_MISMATCH" = "Kod-parollar gabat gelmeýär";
+"PASSCODE_BIOMETRICS_REASON" = "Programmanyň gulpuny açyň";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategoriýalar: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Faýl zeperlenen ýa-da okalmaýar.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Bu nusga programmanyň has täze wersiýasynda döredilen.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Bu faýl formaty goldanylmaýar.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Ähli hasaplar";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Ähli taryh";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Öz döwrüm";
+"BACKUPS_EXPORT_LAST_DAYS" = "Soňky %d gün";
+"BACKUPS_EXPORT_PERIOD" = "Döwür";
+"BACKUPS_EXPORT_SETTINGS" = "Eksport sazlamalary";
 "BACKUPS_EXPORT_SECTION" = "Eksport";
 "BACKUPS_IMPORT_ACTION" = "Faýldan import et";
 "BACKUPS_IMPORT_DONE" = "Goşulan amallar: %d, kategoriýalar: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Saglyk, maşgala we işjeňlik";
 "ICON_PICKER_SECTION_TECH" = "Tehnologiýa, bilim we gurallar";
 "ICON_PICKER_SECTION_NATURE" = "Tebigat, howa we umumy nyşanlar";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Hasap pozuldy";
+"ACCOUNTS_TITLE" = "Hasaplar";
+"ACCOUNTS_TOTAL" = "Jemi";
+"ACCOUNTS_NEW" = "Täze hasap";
+"ACCOUNTS_EDIT" = "Hasaby redaktirle";
+"ACCOUNTS_NAME" = "Ady";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Çykdajylaryň hasaby";

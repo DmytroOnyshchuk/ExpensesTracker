@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "لګښت ولیکئ";
+"STARTVIEW_ENTER_INCOME" = "عاید ولیکئ";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "لومړی اندازه ولیکئ";
 "STARTVIEW_BALANCE" = "بیلانس";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "لګښتونه";
+"STATISTICS_INCOME_TITLE" = "عاید";
 "STATISTICS_DAY" = "ورځ";
 "STATISTICS_MONTH" = "میاشت";
 "STATISTICS_YEAR" = "کال";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "راکړه ورکړه بېرته راوستل شي؟";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "کټګوري بېرته راوستل شي؟";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "کټګوري ړنګه شي؟";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "حساب بېرته راوستل شي؟";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "حساب ړنګ شي؟";
 "TRASH_DELETE_MESSAGE" = "دا کړنه بېرته نه شي کېدای.";
 "TRASH_CLEAR_CONFIRMATION" = "په کثافت‌دانۍ کې ټول توکي به د تل لپاره ړنګ شي. دا کړنه بېرته نه شي کېدای.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "سمول";
 "TRANSACTION_EDIT_CATEGORY" = "کټګوري";
+"TRANSACTION_EDIT_BALANCE" = "حساب";
 "TRANSACTION_EDIT_AMOUNT" = "اندازه";
 "TRANSACTION_EDIT_DATE" = "نېټه";
 "TRANSACTION_EDIT_TIME" = "وخت";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "کثافت‌دانۍ ته ولېږدول شو";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "نن ولګول شول";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "پرون ولګول شول";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "نن ترلاسه شول";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "پرون ترلاسه شول";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "کټګورۍ سمول";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "پارکینګ";
 "DEFAULT_CATEGORY_PETS" = "کورني ژوي";
 "DEFAULT_CATEGORY_SAVINGS" = "سپما";
+"DEFAULT_CATEGORY_SALARY" = "معاش";
 "SETTINGS_APPEARANCE" = "بڼه";
 "SETTINGS_THEME_SYSTEM" = "سیسټم";
 "SETTINGS_THEME_DARK" = "تیاره";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "لړزه";
 "SETTINGS_HIDE_CATEGORIES" = "کټګورۍ پټې کړئ";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "کټګورۍ د مبلغ د داخلولو پر مهال ښکاري";
+"SETTINGS_SECURITY" = "امنیت";
+"SETTINGS_PASSCODE" = "پاسکوډ";
+"SETTINGS_PASSCODE_CHANGE" = "پاسکوډ بدل کړئ";
+"PASSCODE_ENTER" = "پاسکوډ ولیکئ";
+"PASSCODE_ENTER_CURRENT" = "اوسنی پاسکوډ ولیکئ";
+"PASSCODE_ENTER_NEW" = "نوی پاسکوډ ولیکئ";
+"PASSCODE_REPEAT" = "پاسکوډ بیا ولیکئ";
+"PASSCODE_WRONG" = "ناسم پاسکوډ";
+"PASSCODE_MISMATCH" = "پاسکوډونه سره سمون نه خوري";
+"PASSCODE_BIOMETRICS_REASON" = "اپ خلاص کړئ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "کټګورۍ: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "فایل خراب دی یا نه لوستل کېږي.";
 "BACKUPS_ERROR_NEWER_VERSION" = "دا بېک اپ د اپ په نوې نسخه جوړ شوی دی.";
 "BACKUPS_ERROR_UNSUPPORTED" = "د دې فایل بڼه نه ملاتړ کېږي.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "ټول حسابونه";
+"BACKUPS_EXPORT_ALL_HISTORY" = "ټول تاریخ";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "ځانګړې موده";
+"BACKUPS_EXPORT_LAST_DAYS" = "وروستۍ %d ورځې";
+"BACKUPS_EXPORT_PERIOD" = "موده";
+"BACKUPS_EXPORT_SETTINGS" = "د صادرولو تنظیمات";
 "BACKUPS_EXPORT_SECTION" = "صادرول";
 "BACKUPS_IMPORT_ACTION" = "له فایل څخه وارد کړئ";
 "BACKUPS_IMPORT_DONE" = "ور زیاتې شوې راکړې ورکړې: %d، کټګورۍ: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "روغتیا، کورنۍ او فعالیتونه";
 "ICON_PICKER_SECTION_TECH" = "ټکنالوژي، زده‌کړه او وسایل";
 "ICON_PICKER_SECTION_NATURE" = "طبیعت، هوا او عمومي سمبولونه";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "حساب ړنګ شو";
+"ACCOUNTS_TITLE" = "حسابونه";
+"ACCOUNTS_TOTAL" = "ټولټال";
+"ACCOUNTS_NEW" = "نوی حساب";
+"ACCOUNTS_EDIT" = "حساب سم کړئ";
+"ACCOUNTS_NAME" = "نوم";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "د لګښتونو محاسبه";

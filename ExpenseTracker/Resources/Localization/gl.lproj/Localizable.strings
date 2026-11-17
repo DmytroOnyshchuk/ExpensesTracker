@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Introduce o gasto";
+"STARTVIEW_ENTER_INCOME" = "Introduce o ingreso";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Primeiro introduce o importe";
 "STARTVIEW_BALANCE" = "Saldo";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Gastos";
+"STATISTICS_INCOME_TITLE" = "Ingresos";
 "STATISTICS_DAY" = "Día";
 "STATISTICS_MONTH" = "Mes";
 "STATISTICS_YEAR" = "Ano";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Restaurar a transacción?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Restaurar a categoría?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Eliminar a categoría?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Restaurar a conta?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Eliminar a conta?";
 "TRASH_DELETE_MESSAGE" = "Esta acción non se pode desfacer.";
 "TRASH_CLEAR_CONFIRMATION" = "Todos os elementos da papeleira eliminaranse definitivamente. Esta acción non se pode desfacer.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Editar";
 "TRANSACTION_EDIT_CATEGORY" = "Categoría";
+"TRANSACTION_EDIT_BALANCE" = "Conta";
 "TRANSACTION_EDIT_AMOUNT" = "Importe";
 "TRANSACTION_EDIT_DATE" = "Data";
 "TRANSACTION_EDIT_TIME" = "Hora";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Movido á papeleira";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Gastado hoxe";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Gastado onte";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Recibido hoxe";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Recibido onte";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Editar categorías";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Aparcadoiro";
 "DEFAULT_CATEGORY_PETS" = "Mascotas";
 "DEFAULT_CATEGORY_SAVINGS" = "Aforros";
+"DEFAULT_CATEGORY_SALARY" = "Salario";
 "SETTINGS_APPEARANCE" = "Aparencia";
 "SETTINGS_THEME_SYSTEM" = "Sistema";
 "SETTINGS_THEME_DARK" = "Escuro";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Vibración";
 "SETTINGS_HIDE_CATEGORIES" = "Ocultar categorías";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "As categorías aparecen ao introducir un importe";
+"SETTINGS_SECURITY" = "Seguranza";
+"SETTINGS_PASSCODE" = "Código";
+"SETTINGS_PASSCODE_CHANGE" = "Cambiar o código";
+"PASSCODE_ENTER" = "Introduce o código";
+"PASSCODE_ENTER_CURRENT" = "Introduce o código actual";
+"PASSCODE_ENTER_NEW" = "Introduce o novo código";
+"PASSCODE_REPEAT" = "Repite o código";
+"PASSCODE_WRONG" = "Código incorrecto";
+"PASSCODE_MISMATCH" = "Os códigos non coinciden";
+"PASSCODE_BIOMETRICS_REASON" = "Desbloquear a app";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categorías: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "O ficheiro está danado ou non se pode ler.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Esta copia creouse cunha versión máis recente da app.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Este formato de ficheiro non é compatible.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Todas as contas";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Todo o historial";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Período personalizado";
+"BACKUPS_EXPORT_LAST_DAYS" = "Últimos %d días";
+"BACKUPS_EXPORT_PERIOD" = "Período";
+"BACKUPS_EXPORT_SETTINGS" = "Axustes de exportación";
 "BACKUPS_EXPORT_SECTION" = "Exportación";
 "BACKUPS_IMPORT_ACTION" = "Importar desde ficheiro";
 "BACKUPS_IMPORT_DONE" = "Transaccións engadidas: %d, categorías: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Saúde, familia e actividades";
 "ICON_PICKER_SECTION_TECH" = "Tecnoloxía, educación e ferramentas";
 "ICON_PICKER_SECTION_NATURE" = "Natureza, tempo e símbolos xerais";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Conta eliminada";
+"ACCOUNTS_TITLE" = "Contas";
+"ACCOUNTS_TOTAL" = "Total";
+"ACCOUNTS_NEW" = "Nova conta";
+"ACCOUNTS_EDIT" = "Editar a conta";
+"ACCOUNTS_NAME" = "Nome";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Contabilidade de gastos";

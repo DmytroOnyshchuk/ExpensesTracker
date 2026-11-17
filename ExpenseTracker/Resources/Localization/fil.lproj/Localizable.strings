@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Ilagay ang gastos";
+"STARTVIEW_ENTER_INCOME" = "Ilagay ang kita";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Ilagay muna ang halaga";
 "STARTVIEW_BALANCE" = "Balanse";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Mga gastos";
+"STATISTICS_INCOME_TITLE" = "Kita";
 "STATISTICS_DAY" = "Araw";
 "STATISTICS_MONTH" = "Buwan";
 "STATISTICS_YEAR" = "Taon";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Ibalik ang transaksyon?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Ibalik ang kategorya?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "I-delete ang kategorya?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Ibalik ang account?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "I-delete ang account?";
 "TRASH_DELETE_MESSAGE" = "Hindi na maa-undo ang aksyong ito.";
 "TRASH_CLEAR_CONFIRMATION" = "Permanenteng ide-delete ang lahat ng item sa basurahan. Hindi na maa-undo ang aksyong ito.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "I-edit";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorya";
+"TRANSACTION_EDIT_BALANCE" = "Account";
 "TRANSACTION_EDIT_AMOUNT" = "Halaga";
 "TRANSACTION_EDIT_DATE" = "Petsa";
 "TRANSACTION_EDIT_TIME" = "Oras";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Inilipat sa basurahan";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Nagastos ngayong araw";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Nagastos kahapon";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Natanggap ngayong araw";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Natanggap kahapon";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "I-edit ang mga kategorya";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Paradahan";
 "DEFAULT_CATEGORY_PETS" = "Mga alagang hayop";
 "DEFAULT_CATEGORY_SAVINGS" = "Ipon";
+"DEFAULT_CATEGORY_SALARY" = "Sahod";
 "SETTINGS_APPEARANCE" = "Hitsura";
 "SETTINGS_THEME_SYSTEM" = "System";
 "SETTINGS_THEME_DARK" = "Madilim";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Vibration";
 "SETTINGS_HIDE_CATEGORIES" = "Itago ang mga kategorya";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Lumalabas ang mga kategorya kapag naglagay ka ng halaga";
+"SETTINGS_SECURITY" = "Seguridad";
+"SETTINGS_PASSCODE" = "Passcode";
+"SETTINGS_PASSCODE_CHANGE" = "Palitan ang passcode";
+"PASSCODE_ENTER" = "Ilagay ang passcode";
+"PASSCODE_ENTER_CURRENT" = "Ilagay ang kasalukuyang passcode";
+"PASSCODE_ENTER_NEW" = "Ilagay ang bagong passcode";
+"PASSCODE_REPEAT" = "Ulitin ang passcode";
+"PASSCODE_WRONG" = "Maling passcode";
+"PASSCODE_MISMATCH" = "Hindi magkatugma ang mga passcode";
+"PASSCODE_BIOMETRICS_REASON" = "I-unlock ang app";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Mga kategorya: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Sira ang file o hindi ito mabasa.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Ginawa ang backup na ito gamit ang mas bagong bersyon ng app.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Hindi sinusuportahan ang format ng file na ito.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Lahat ng account";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Buong history";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Custom na panahon";
+"BACKUPS_EXPORT_LAST_DAYS" = "Huling %d araw";
+"BACKUPS_EXPORT_PERIOD" = "Panahon";
+"BACKUPS_EXPORT_SETTINGS" = "Mga setting ng pag-export";
 "BACKUPS_EXPORT_SECTION" = "Export";
 "BACKUPS_IMPORT_ACTION" = "Mag-import mula sa file";
 "BACKUPS_IMPORT_DONE" = "Naidagdag na transaksyon: %d, kategorya: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Kalusugan, pamilya at mga aktibidad";
 "ICON_PICKER_SECTION_TECH" = "Teknolohiya, edukasyon at mga kagamitan";
 "ICON_PICKER_SECTION_NATURE" = "Kalikasan, panahon at mga pangkalahatang simbolo";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Na-delete ang account";
+"ACCOUNTS_TITLE" = "Mga account";
+"ACCOUNTS_TOTAL" = "Kabuuan";
+"ACCOUNTS_NEW" = "Bagong account";
+"ACCOUNTS_EDIT" = "I-edit ang account";
+"ACCOUNTS_NAME" = "Pangalan";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Accounting ng gastos";

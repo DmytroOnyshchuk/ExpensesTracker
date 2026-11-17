@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Εισαγάγετε έξοδο";
+"STARTVIEW_ENTER_INCOME" = "Εισαγάγετε έσοδο";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Πρώτα εισαγάγετε το ποσό";
 "STARTVIEW_BALANCE" = "Υπόλοιπο";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Έξοδα";
+"STATISTICS_INCOME_TITLE" = "Έσοδα";
 "STATISTICS_DAY" = "Ημέρα";
 "STATISTICS_MONTH" = "Μήνας";
 "STATISTICS_YEAR" = "Έτος";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Επαναφορά συναλλαγής;";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Επαναφορά κατηγορίας;";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Διαγραφή κατηγορίας;";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Επαναφορά λογαριασμού;";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Διαγραφή λογαριασμού;";
 "TRASH_DELETE_MESSAGE" = "Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.";
 "TRASH_CLEAR_CONFIRMATION" = "Όλα τα στοιχεία στον κάδο θα διαγραφούν οριστικά. Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Επεξεργασία";
 "TRANSACTION_EDIT_CATEGORY" = "Κατηγορία";
+"TRANSACTION_EDIT_BALANCE" = "Λογαριασμός";
 "TRANSACTION_EDIT_AMOUNT" = "Ποσό";
 "TRANSACTION_EDIT_DATE" = "Ημερομηνία";
 "TRANSACTION_EDIT_TIME" = "Ώρα";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Μετακινήθηκε στον κάδο";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Έξοδα σήμερα";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Έξοδα χθες";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Έσοδα σήμερα";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Έσοδα χθες";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Επεξεργασία κατηγοριών";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Στάθμευση";
 "DEFAULT_CATEGORY_PETS" = "Κατοικίδια";
 "DEFAULT_CATEGORY_SAVINGS" = "Αποταμίευση";
+"DEFAULT_CATEGORY_SALARY" = "Μισθός";
 "SETTINGS_APPEARANCE" = "Εμφάνιση";
 "SETTINGS_THEME_SYSTEM" = "Σύστημα";
 "SETTINGS_THEME_DARK" = "Σκούρο";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Δόνηση";
 "SETTINGS_HIDE_CATEGORIES" = "Απόκρυψη κατηγοριών";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Οι κατηγορίες εμφανίζονται όταν εισάγετε ποσό";
+"SETTINGS_SECURITY" = "Ασφάλεια";
+"SETTINGS_PASSCODE" = "Κωδικός";
+"SETTINGS_PASSCODE_CHANGE" = "Αλλαγή κωδικού";
+"PASSCODE_ENTER" = "Εισαγάγετε κωδικό";
+"PASSCODE_ENTER_CURRENT" = "Εισαγάγετε τον τρέχοντα κωδικό";
+"PASSCODE_ENTER_NEW" = "Εισαγάγετε νέο κωδικό";
+"PASSCODE_REPEAT" = "Επαναλάβετε τον κωδικό";
+"PASSCODE_WRONG" = "Λάθος κωδικός";
+"PASSCODE_MISMATCH" = "Οι κωδικοί δεν ταιριάζουν";
+"PASSCODE_BIOMETRICS_REASON" = "Ξεκλείδωμα εφαρμογής";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Κατηγορίες: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Το αρχείο είναι κατεστραμμένο ή δεν μπορεί να διαβαστεί.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Αυτό το αντίγραφο δημιουργήθηκε από νεότερη έκδοση της εφαρμογής.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Αυτή η μορφή αρχείου δεν υποστηρίζεται.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Όλοι οι λογαριασμοί";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Όλο το ιστορικό";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Προσαρμοσμένη περίοδος";
+"BACKUPS_EXPORT_LAST_DAYS" = "Τελευταίες %d ημέρες";
+"BACKUPS_EXPORT_PERIOD" = "Περίοδος";
+"BACKUPS_EXPORT_SETTINGS" = "Ρυθμίσεις εξαγωγής";
 "BACKUPS_EXPORT_SECTION" = "Εξαγωγή";
 "BACKUPS_IMPORT_ACTION" = "Εισαγωγή από αρχείο";
 "BACKUPS_IMPORT_DONE" = "Συναλλαγές που προστέθηκαν: %d, κατηγορίες: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Υγεία, οικογένεια και δραστηριότητες";
 "ICON_PICKER_SECTION_TECH" = "Τεχνολογία, εκπαίδευση και εργαλεία";
 "ICON_PICKER_SECTION_NATURE" = "Φύση, καιρός και γενικά σύμβολα";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Ο λογαριασμός διαγράφηκε";
+"ACCOUNTS_TITLE" = "Λογαριασμοί";
+"ACCOUNTS_TOTAL" = "Σύνολο";
+"ACCOUNTS_NEW" = "Νέος λογαριασμός";
+"ACCOUNTS_EDIT" = "Επεξεργασία λογαριασμού";
+"ACCOUNTS_NAME" = "Όνομα";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Καταγραφή εξόδων";

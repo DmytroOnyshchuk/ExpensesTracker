@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Sláðu inn útgjöld";
+"STARTVIEW_ENTER_INCOME" = "Sláðu inn tekjur";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Sláðu fyrst inn upphæðina";
 "STARTVIEW_BALANCE" = "Staða";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Útgjöld";
+"STATISTICS_INCOME_TITLE" = "Tekjur";
 "STATISTICS_DAY" = "Dagur";
 "STATISTICS_MONTH" = "Mánuður";
 "STATISTICS_YEAR" = "Ár";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Endurheimta færslu?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Endurheimta flokk?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Eyða flokki?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Endurheimta reikning?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Eyða reikningi?";
 "TRASH_DELETE_MESSAGE" = "Ekki er hægt að afturkalla þessa aðgerð.";
 "TRASH_CLEAR_CONFIRMATION" = "Öllum atriðum í ruslinu verður eytt varanlega. Ekki er hægt að afturkalla þessa aðgerð.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Breyta";
 "TRANSACTION_EDIT_CATEGORY" = "Flokkur";
+"TRANSACTION_EDIT_BALANCE" = "Reikningur";
 "TRANSACTION_EDIT_AMOUNT" = "Upphæð";
 "TRANSACTION_EDIT_DATE" = "Dagsetning";
 "TRANSACTION_EDIT_TIME" = "Tími";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Fært í ruslið";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Eytt í dag";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Eytt í gær";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Móttekið í dag";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Móttekið í gær";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Breyta flokkum";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Bílastæði";
 "DEFAULT_CATEGORY_PETS" = "Gæludýr";
 "DEFAULT_CATEGORY_SAVINGS" = "Sparnaður";
+"DEFAULT_CATEGORY_SALARY" = "Laun";
 "SETTINGS_APPEARANCE" = "Útlit";
 "SETTINGS_THEME_SYSTEM" = "Kerfi";
 "SETTINGS_THEME_DARK" = "Dökkt";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Titringur";
 "SETTINGS_HIDE_CATEGORIES" = "Fela flokka";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Flokkar birtast þegar upphæð er slegin inn";
+"SETTINGS_SECURITY" = "Öryggi";
+"SETTINGS_PASSCODE" = "Aðgangskóði";
+"SETTINGS_PASSCODE_CHANGE" = "Breyta aðgangskóða";
+"PASSCODE_ENTER" = "Sláðu inn aðgangskóða";
+"PASSCODE_ENTER_CURRENT" = "Sláðu inn núverandi aðgangskóða";
+"PASSCODE_ENTER_NEW" = "Sláðu inn nýjan aðgangskóða";
+"PASSCODE_REPEAT" = "Endurtaktu aðgangskóðann";
+"PASSCODE_WRONG" = "Rangur aðgangskóði";
+"PASSCODE_MISMATCH" = "Aðgangskóðarnir stemma ekki";
+"PASSCODE_BIOMETRICS_REASON" = "Opna forritið";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Flokkar: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Skráin er skemmd eða ólæsileg.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Þetta öryggisafrit var búið til með nýrri útgáfu forritsins.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Þetta skráarsnið er ekki stutt.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Allir reikningar";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Öll saga";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Sérsniðið tímabil";
+"BACKUPS_EXPORT_LAST_DAYS" = "Síðustu %d dagar";
+"BACKUPS_EXPORT_PERIOD" = "Tímabil";
+"BACKUPS_EXPORT_SETTINGS" = "Útflutningsstillingar";
 "BACKUPS_EXPORT_SECTION" = "Útflutningur";
 "BACKUPS_IMPORT_ACTION" = "Flytja inn úr skrá";
 "BACKUPS_IMPORT_DONE" = "Færslum bætt við: %d, flokkum: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Heilsa, fjölskylda og afþreying";
 "ICON_PICKER_SECTION_TECH" = "Tækni, menntun og verkfæri";
 "ICON_PICKER_SECTION_NATURE" = "Náttúra, veður og almenn tákn";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Reikningi eytt";
+"ACCOUNTS_TITLE" = "Reikningar";
+"ACCOUNTS_TOTAL" = "Samtals";
+"ACCOUNTS_NEW" = "Nýr reikningur";
+"ACCOUNTS_EDIT" = "Breyta reikningi";
+"ACCOUNTS_NAME" = "Heiti";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Útgjaldabókhald";

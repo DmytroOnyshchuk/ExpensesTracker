@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Մուտքագրեք ծախսը";
+"STARTVIEW_ENTER_INCOME" = "Մուտքագրեք եկամուտը";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Նախ մուտքագրեք գումարը";
 "STARTVIEW_BALANCE" = "Մնացորդ";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Ծախսեր";
+"STATISTICS_INCOME_TITLE" = "Եկամուտներ";
 "STATISTICS_DAY" = "Օր";
 "STATISTICS_MONTH" = "Ամիս";
 "STATISTICS_YEAR" = "Տարի";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Վերականգնե՞լ գործարքը";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Վերականգնե՞լ կատեգորիան";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Ջնջե՞լ կատեգորիան";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Վերականգնե՞լ հաշիվը";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Ջնջե՞լ հաշիվը";
 "TRASH_DELETE_MESSAGE" = "Այս գործողությունը հնարավոր չէ հետարկել։";
 "TRASH_CLEAR_CONFIRMATION" = "Աղբարկղի բոլոր տարրերը ընդմիշտ կջնջվեն։ Այս գործողությունը հնարավոր չէ հետարկել։";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Խմբագրել";
 "TRANSACTION_EDIT_CATEGORY" = "Կատեգորիա";
+"TRANSACTION_EDIT_BALANCE" = "Հաշիվ";
 "TRANSACTION_EDIT_AMOUNT" = "Գումար";
 "TRANSACTION_EDIT_DATE" = "Ամսաթիվ";
 "TRANSACTION_EDIT_TIME" = "Ժամ";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Տեղափոխվեց աղբարկղ";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Այսօր ծախսվել է";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Երեկ ծախսվել է";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Այսօր ստացվել է";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Երեկ ստացվել է";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Խմբագրել կատեգորիաները";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Կայանատեղի";
 "DEFAULT_CATEGORY_PETS" = "Կենդանիներ";
 "DEFAULT_CATEGORY_SAVINGS" = "Խնայողություններ";
+"DEFAULT_CATEGORY_SALARY" = "Աշխատավարձ";
 "SETTINGS_APPEARANCE" = "Տեսք";
 "SETTINGS_THEME_SYSTEM" = "Համակարգային";
 "SETTINGS_THEME_DARK" = "Մուգ";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Թրթռոց";
 "SETTINGS_HIDE_CATEGORIES" = "Թաքցնել կատեգորիաները";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Կատեգորիաները հայտնվում են գումար մուտքագրելիս";
+"SETTINGS_SECURITY" = "Անվտանգություն";
+"SETTINGS_PASSCODE" = "Ծածկագիր";
+"SETTINGS_PASSCODE_CHANGE" = "Փոխել ծածկագիրը";
+"PASSCODE_ENTER" = "Մուտքագրեք ծածկագիրը";
+"PASSCODE_ENTER_CURRENT" = "Մուտքագրեք ընթացիկ ծածկագիրը";
+"PASSCODE_ENTER_NEW" = "Մուտքագրեք նոր ծածկագիրը";
+"PASSCODE_REPEAT" = "Կրկնեք ծածկագիրը";
+"PASSCODE_WRONG" = "Սխալ ծածկագիր";
+"PASSCODE_MISMATCH" = "Ծածկագրերը չեն համընկնում";
+"PASSCODE_BIOMETRICS_REASON" = "Ապակողպել հավելվածը";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Կատեգորիաներ՝ %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Ֆայլը վնասված է կամ չի կարդացվում։";
 "BACKUPS_ERROR_NEWER_VERSION" = "Այս պատճենը ստեղծվել է հավելվածի ավելի նոր տարբերակով։";
 "BACKUPS_ERROR_UNSUPPORTED" = "Ֆայլի այս ձևաչափը չի աջակցվում։";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Բոլոր հաշիվները";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Ամբողջ պատմությունը";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Հատուկ ժամանակահատված";
+"BACKUPS_EXPORT_LAST_DAYS" = "Վերջին %d օրը";
+"BACKUPS_EXPORT_PERIOD" = "Ժամանակահատված";
+"BACKUPS_EXPORT_SETTINGS" = "Արտահանման կարգավորումներ";
 "BACKUPS_EXPORT_SECTION" = "Արտահանում";
 "BACKUPS_IMPORT_ACTION" = "Ներմուծել ֆայլից";
 "BACKUPS_IMPORT_DONE" = "Ավելացված գործարքներ՝ %d, կատեգորիաներ՝ %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Առողջություն, ընտանիք և զբաղմունքներ";
 "ICON_PICKER_SECTION_TECH" = "Տեխնոլոգիա, կրթություն և գործիքներ";
 "ICON_PICKER_SECTION_NATURE" = "Բնություն, եղանակ և ընդհանուր նշաններ";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Հաշիվը ջնջվել է";
+"ACCOUNTS_TITLE" = "Հաշիվներ";
+"ACCOUNTS_TOTAL" = "Ընդամենը";
+"ACCOUNTS_NEW" = "Նոր հաշիվ";
+"ACCOUNTS_EDIT" = "Խմբագրել հաշիվը";
+"ACCOUNTS_NAME" = "Անուն";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Ծախսերի հաշվառում";

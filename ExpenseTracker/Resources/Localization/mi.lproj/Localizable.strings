@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Tāurua te whakapaunga";
+"STARTVIEW_ENTER_INCOME" = "Tāurua te moni whiwhi";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Tāurua te moni i te tuatahi";
 "STARTVIEW_BALANCE" = "Toenga";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Ngā whakapaunga";
+"STATISTICS_INCOME_TITLE" = "Moni whiwhi";
 "STATISTICS_DAY" = "Rā";
 "STATISTICS_MONTH" = "Marama";
 "STATISTICS_YEAR" = "Tau";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Me whakaora te tauwhitinga?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Me whakaora te kāwai?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Me muku te kāwai?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Me whakaora te pūkete?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Me muku te pūkete?";
 "TRASH_DELETE_MESSAGE" = "Kāore e taea te whakakore i tēnei mahi.";
 "TRASH_CLEAR_CONFIRMATION" = "Ka mukua pūmautia ngā mea katoa kei te ipu para. Kāore e taea te whakakore i tēnei mahi.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Whakatika";
 "TRANSACTION_EDIT_CATEGORY" = "Kāwai";
+"TRANSACTION_EDIT_BALANCE" = "Pūkete";
 "TRANSACTION_EDIT_AMOUNT" = "Moni";
 "TRANSACTION_EDIT_DATE" = "Te rā";
 "TRANSACTION_EDIT_TIME" = "Wā";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Kua nekehia ki te ipu para";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "I whakapaua i tēnei rā";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "I whakapaua inanahi";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "I whiwhi i tēnei rā";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "I whiwhi inanahi";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Whakatika kāwai";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Tūnga waka";
 "DEFAULT_CATEGORY_PETS" = "Mōkai";
 "DEFAULT_CATEGORY_SAVINGS" = "Penapena";
+"DEFAULT_CATEGORY_SALARY" = "Utu ā-tau";
 "SETTINGS_APPEARANCE" = "Āhua";
 "SETTINGS_THEME_SYSTEM" = "Pūnaha";
 "SETTINGS_THEME_DARK" = "Pōuri";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Wiri";
 "SETTINGS_HIDE_CATEGORIES" = "Huna ngā kāwai";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Ka puta ngā kāwai ina tāuru koe i te moni";
+"SETTINGS_SECURITY" = "Haumarutanga";
+"SETTINGS_PASSCODE" = "Waehere uru";
+"SETTINGS_PASSCODE_CHANGE" = "Huria te waehere uru";
+"PASSCODE_ENTER" = "Tāurua te waehere uru";
+"PASSCODE_ENTER_CURRENT" = "Tāurua te waehere uru o nāianei";
+"PASSCODE_ENTER_NEW" = "Tāurua he waehere uru hou";
+"PASSCODE_REPEAT" = "Tāruatia te waehere uru";
+"PASSCODE_WRONG" = "Waehere uru hē";
+"PASSCODE_MISMATCH" = "Kāore ngā waehere uru e ōrite";
+"PASSCODE_BIOMETRICS_REASON" = "Wewetehia te taupānga";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Ngā kāwai: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Kua pakaru te kōnae, kāore rānei e taea te pānui.";
 "BACKUPS_ERROR_NEWER_VERSION" = "I hangaia tēnei tārua ki tētahi putanga hou ake o te taupānga.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Kāore tēnei hōputu kōnae e tautokona.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Ngā pūkete katoa";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Te hītori katoa";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Wā ritenga";
+"BACKUPS_EXPORT_LAST_DAYS" = "Ngā rā %d kua hipa";
+"BACKUPS_EXPORT_PERIOD" = "Wā";
+"BACKUPS_EXPORT_SETTINGS" = "Ngā tautuhinga kaweake";
 "BACKUPS_EXPORT_SECTION" = "Kaweake";
 "BACKUPS_IMPORT_ACTION" = "Kawemai i te kōnae";
 "BACKUPS_IMPORT_DONE" = "Tauwhitinga i tāpirihia: %d, kāwai: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Te hauora, te whānau me ngā mahi";
 "ICON_PICKER_SECTION_TECH" = "Te hangarau, te mātauranga me ngā taputapu";
 "ICON_PICKER_SECTION_NATURE" = "Te taiao, te huarere me ngā tohu whānui";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Kua mukua te pūkete";
+"ACCOUNTS_TITLE" = "Ngā pūkete";
+"ACCOUNTS_TOTAL" = "Tapeke";
+"ACCOUNTS_NEW" = "Pūkete hou";
+"ACCOUNTS_EDIT" = "Whakatikahia te pūkete";
+"ACCOUNTS_NAME" = "Ingoa";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Kaute whakapaunga";

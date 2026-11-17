@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Voer uitgawe in";
+"STARTVIEW_ENTER_INCOME" = "Voer inkomste in";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Voer eers die bedrag in";
 "STARTVIEW_BALANCE" = "Balans";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Uitgawes";
+"STATISTICS_INCOME_TITLE" = "Inkomste";
 "STATISTICS_DAY" = "Dag";
 "STATISTICS_MONTH" = "Maand";
 "STATISTICS_YEAR" = "Jaar";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Herstel transaksie?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Herstel kategorie?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Vee kategorie uit?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Herstel rekening?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Vee rekening uit?";
 "TRASH_DELETE_MESSAGE" = "Hierdie aksie kan nie ontdoen word nie.";
 "TRASH_CLEAR_CONFIRMATION" = "Alle items in die asblik sal permanent verwyder word. Hierdie aksie kan nie ontdoen word nie.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Wysig";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorie";
+"TRANSACTION_EDIT_BALANCE" = "Rekening";
 "TRANSACTION_EDIT_AMOUNT" = "Bedrag";
 "TRANSACTION_EDIT_DATE" = "Datum";
 "TRANSACTION_EDIT_TIME" = "Tyd";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Na asblik geskuif";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Vandag spandeer";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Gister spandeer";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Vandag ontvang";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Gister ontvang";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Wysig kategorieë";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Parkering";
 "DEFAULT_CATEGORY_PETS" = "Troeteldiere";
 "DEFAULT_CATEGORY_SAVINGS" = "Spaargeld";
+"DEFAULT_CATEGORY_SALARY" = "Salaris";
 "SETTINGS_APPEARANCE" = "Voorkoms";
 "SETTINGS_THEME_SYSTEM" = "Stelsel";
 "SETTINGS_THEME_DARK" = "Donker";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Vibrasie";
 "SETTINGS_HIDE_CATEGORIES" = "Versteek kategorieë";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategorieë verskyn wanneer jy ’n bedrag invoer";
+"SETTINGS_SECURITY" = "Sekuriteit";
+"SETTINGS_PASSCODE" = "Wagkode";
+"SETTINGS_PASSCODE_CHANGE" = "Verander wagkode";
+"PASSCODE_ENTER" = "Voer wagkode in";
+"PASSCODE_ENTER_CURRENT" = "Voer huidige wagkode in";
+"PASSCODE_ENTER_NEW" = "Voer nuwe wagkode in";
+"PASSCODE_REPEAT" = "Herhaal wagkode";
+"PASSCODE_WRONG" = "Verkeerde wagkode";
+"PASSCODE_MISMATCH" = "Wagkodes stem nie ooreen nie";
+"PASSCODE_BIOMETRICS_REASON" = "Ontsluit die app";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorieë: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Die lêer is beskadig of kan nie gelees word nie.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Hierdie rugsteun is met ’n nuwer weergawe van die app gemaak.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Hierdie lêerformaat word nie ondersteun nie.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Alle rekeninge";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Alle geskiedenis";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Pasgemaakte tydperk";
+"BACKUPS_EXPORT_LAST_DAYS" = "Laaste %d dae";
+"BACKUPS_EXPORT_PERIOD" = "Tydperk";
+"BACKUPS_EXPORT_SETTINGS" = "Uitvoerinstellings";
 "BACKUPS_EXPORT_SECTION" = "Uitvoer";
 "BACKUPS_IMPORT_ACTION" = "Voer in vanaf lêer";
 "BACKUPS_IMPORT_DONE" = "Transaksies bygevoeg: %d, kategorieë: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Gesondheid, gesin en aktiwiteite";
 "ICON_PICKER_SECTION_TECH" = "Tegnologie, onderwys en gereedskap";
 "ICON_PICKER_SECTION_NATURE" = "Natuur, weer en algemene simbole";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Rekening uitgevee";
+"ACCOUNTS_TITLE" = "Rekeninge";
+"ACCOUNTS_TOTAL" = "Totaal";
+"ACCOUNTS_NEW" = "Nuwe rekening";
+"ACCOUNTS_EDIT" = "Wysig rekening";
+"ACCOUNTS_NAME" = "Naam";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Uitgawerekeningkunde";

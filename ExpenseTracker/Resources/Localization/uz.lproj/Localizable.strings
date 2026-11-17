@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Xarajatni kiriting";
+"STARTVIEW_ENTER_INCOME" = "Daromadni kiriting";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Avval summani kiriting";
 "STARTVIEW_BALANCE" = "Balans";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Xarajatlar";
+"STATISTICS_INCOME_TITLE" = "Daromadlar";
 "STATISTICS_DAY" = "Kun";
 "STATISTICS_MONTH" = "Oy";
 "STATISTICS_YEAR" = "Yil";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Tranzaksiya tiklansinmi?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Turkum tiklansinmi?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Turkum oʻchirilsinmi?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Hisob tiklansinmi?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Hisob oʻchirilsinmi?";
 "TRASH_DELETE_MESSAGE" = "Bu amalni ortga qaytarib boʻlmaydi.";
 "TRASH_CLEAR_CONFIRMATION" = "Savatdagi barcha elementlar butunlay o'chiriladi. Bu amalni ortga qaytarib bo'lmaydi.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Tahrirlash";
 "TRANSACTION_EDIT_CATEGORY" = "Toifa";
+"TRANSACTION_EDIT_BALANCE" = "Hisob";
 "TRANSACTION_EDIT_AMOUNT" = "Summa";
 "TRANSACTION_EDIT_DATE" = "Sana";
 "TRANSACTION_EDIT_TIME" = "Vaqt";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Savatga koʻchirildi";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Bugun sarflandi";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Kecha sarflandi";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Bugun olindi";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Kecha olindi";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Turkumlarni tahrirlash";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Avtoturargoh";
 "DEFAULT_CATEGORY_PETS" = "Uy hayvonlari";
 "DEFAULT_CATEGORY_SAVINGS" = "Jamgʻarma";
+"DEFAULT_CATEGORY_SALARY" = "Maosh";
 "SETTINGS_APPEARANCE" = "Koʻrinish";
 "SETTINGS_THEME_SYSTEM" = "Tizim";
 "SETTINGS_THEME_DARK" = "Tungi";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Tebranish";
 "SETTINGS_HIDE_CATEGORIES" = "Toifalarni yashirish";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Turkumlar summa kiritilganda koʻrinadi";
+"SETTINGS_SECURITY" = "Xavfsizlik";
+"SETTINGS_PASSCODE" = "Kod-parol";
+"SETTINGS_PASSCODE_CHANGE" = "Kod-parolni oʻzgartirish";
+"PASSCODE_ENTER" = "Kod-parolni kiriting";
+"PASSCODE_ENTER_CURRENT" = "Joriy kod-parolni kiriting";
+"PASSCODE_ENTER_NEW" = "Yangi kod-parolni kiriting";
+"PASSCODE_REPEAT" = "Kod-parolni takrorlang";
+"PASSCODE_WRONG" = "Kod-parol notoʻgʻri";
+"PASSCODE_MISMATCH" = "Kod-parollar mos kelmadi";
+"PASSCODE_BIOMETRICS_REASON" = "Ilova qulfini ochish";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Toifalar: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Fayl shikastlangan yoki oʻqib boʻlmaydi.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Bu nusxa ilovaning yangiroq versiyasida yaratilgan.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Bu fayl formati qoʻllab-quvvatlanmaydi.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Barcha hisoblar";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Butun tarix";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Oʻz davrim";
+"BACKUPS_EXPORT_LAST_DAYS" = "Oxirgi %d kun";
+"BACKUPS_EXPORT_PERIOD" = "Davr";
+"BACKUPS_EXPORT_SETTINGS" = "Eksport sozlamalari";
 "BACKUPS_EXPORT_SECTION" = "Eksport";
 "BACKUPS_IMPORT_ACTION" = "Fayldan import qilish";
 "BACKUPS_IMPORT_DONE" = "Qoʻshilgan operatsiyalar: %d, toifalar: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Salomatlik, oila va mashgʻulotlar";
 "ICON_PICKER_SECTION_TECH" = "Texnologiya, taʼlim va asboblar";
 "ICON_PICKER_SECTION_NATURE" = "Tabiat, ob-havo va umumiy belgilar";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Hisob oʻchirildi";
+"ACCOUNTS_TITLE" = "Hisoblar";
+"ACCOUNTS_TOTAL" = "Jami";
+"ACCOUNTS_NEW" = "Yangi hisob";
+"ACCOUNTS_EDIT" = "Hisobni tahrirlash";
+"ACCOUNTS_NAME" = "Nomi";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Xarajatlar hisobi";

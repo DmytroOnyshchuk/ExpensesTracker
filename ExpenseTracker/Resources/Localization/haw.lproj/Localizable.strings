@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "E kikokiko i ka lilo";
+"STARTVIEW_ENTER_INCOME" = "E kikokiko i ka loaʻa";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "E kikokiko mua i ka huina kālā";
 "STARTVIEW_BALANCE" = "Koena";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Nā lilo";
+"STATISTICS_INCOME_TITLE" = "Nā loaʻa";
 "STATISTICS_DAY" = "Lā";
 "STATISTICS_MONTH" = "Mahina";
 "STATISTICS_YEAR" = "Makahiki";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "E hoʻihoʻi i ka hana kālā?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "E hoʻihoʻi i ka māhele?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "E holoi i ka māhele?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "E hoʻihoʻi i ka moʻokāki?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "E holoi i ka moʻokāki?";
 "TRASH_DELETE_MESSAGE" = "ʻAʻole hiki ke hoʻihoʻi ʻia kēia hana.";
 "TRASH_CLEAR_CONFIRMATION" = "E holoi mau loa ʻia nā mea a pau i loko o ka ʻōpala. ʻAʻole hiki ke hoʻihoʻi ʻia kēia hana.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Hoʻoponopono";
 "TRANSACTION_EDIT_CATEGORY" = "Māhele";
+"TRANSACTION_EDIT_BALANCE" = "Moʻokāki";
 "TRANSACTION_EDIT_AMOUNT" = "Huina kālā";
 "TRANSACTION_EDIT_DATE" = "Lā o ka mahina";
 "TRANSACTION_EDIT_TIME" = "Hola";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Ua hoʻoneʻe ʻia i ka ʻōpala";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Hoʻolilo ʻia i kēia lā";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Hoʻolilo ʻia i nehinei";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Loaʻa i kēia lā";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Loaʻa i nehinei";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Hoʻoponopono i nā māhele";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Kahi kau kaʻa";
 "DEFAULT_CATEGORY_PETS" = "Holoholona hānai";
 "DEFAULT_CATEGORY_SAVINGS" = "Mālama kālā";
+"DEFAULT_CATEGORY_SALARY" = "Uku hana";
 "SETTINGS_APPEARANCE" = "Helehelena";
 "SETTINGS_THEME_SYSTEM" = "Pūnaewele";
 "SETTINGS_THEME_DARK" = "Pouli";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Haʻalulu";
 "SETTINGS_HIDE_CATEGORIES" = "Hūnā i nā māhele";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Hōʻike ʻia nā māhele ke hoʻokomo ʻoe i ka huina";
+"SETTINGS_SECURITY" = "Palekana";
+"SETTINGS_PASSCODE" = "Helu komo";
+"SETTINGS_PASSCODE_CHANGE" = "E hoʻololi i ka helu komo";
+"PASSCODE_ENTER" = "E kikokiko i ka helu komo";
+"PASSCODE_ENTER_CURRENT" = "E kikokiko i ka helu komo o kēia manawa";
+"PASSCODE_ENTER_NEW" = "E kikokiko i ka helu komo hou";
+"PASSCODE_REPEAT" = "E kikokiko hou i ka helu komo";
+"PASSCODE_WRONG" = "Hewa ka helu komo";
+"PASSCODE_MISMATCH" = "ʻAʻole like nā helu komo";
+"PASSCODE_BIOMETRICS_REASON" = "E wehe i ka polokalamu";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Nā māhele: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Ua pōʻino ka waihona a i ʻole ʻaʻole hiki ke heluhelu ʻia.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Ua hana ʻia kēia kope papaʻa me kahi mana hou aʻe o ka polokamu.";
 "BACKUPS_ERROR_UNSUPPORTED" = "ʻAʻole kākoʻo ʻia kēia ʻano waihona.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Nā moʻokāki a pau";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Ka mōʻaukala a pau";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Wā i koho ʻia";
+"BACKUPS_EXPORT_LAST_DAYS" = "Nā lā %d i hala";
+"BACKUPS_EXPORT_PERIOD" = "Wā";
+"BACKUPS_EXPORT_SETTINGS" = "Nā hoʻonohonoho hoʻopuka";
 "BACKUPS_EXPORT_SECTION" = "Hoʻopuka";
 "BACKUPS_IMPORT_ACTION" = "Hoʻokomo mai ka waihona";
 "BACKUPS_IMPORT_DONE" = "Nā kālepa i hoʻohui ʻia: %d, nā māhele: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Olakino, ʻohana a me nā hana";
 "ICON_PICKER_SECTION_TECH" = "ʻEnehana, hoʻonaʻauao a me nā mea hana";
 "ICON_PICKER_SECTION_NATURE" = "Kūlohelohe, aniau a me nā hōʻailona laulā";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Holoi ʻia ka moʻokāki";
+"ACCOUNTS_TITLE" = "Nā moʻokāki";
+"ACCOUNTS_TOTAL" = "Huina";
+"ACCOUNTS_NEW" = "Moʻokāki hou";
+"ACCOUNTS_EDIT" = "E hoʻoponopono i ka moʻokāki";
+"ACCOUNTS_NAME" = "Inoa";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Moʻohelu hoʻolilo";

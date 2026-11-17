@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "ചെലവ് നൽകുക";
+"STARTVIEW_ENTER_INCOME" = "വരുമാനം നൽകുക";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "ആദ്യം തുക നൽകുക";
 "STARTVIEW_BALANCE" = "ബാലൻസ്";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ചെലവുകൾ";
+"STATISTICS_INCOME_TITLE" = "വരുമാനം";
 "STATISTICS_DAY" = "ദിവസം";
 "STATISTICS_MONTH" = "മാസം";
 "STATISTICS_YEAR" = "വർഷം";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "ഇടപാട് പുനഃസ്ഥാപിക്കണോ?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "വിഭാഗം പുനഃസ്ഥാപിക്കണോ?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "വിഭാഗം ഇല്ലാതാക്കണോ?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "അക്കൗണ്ട് പുനഃസ്ഥാപിക്കണോ?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "അക്കൗണ്ട് ഇല്ലാതാക്കണോ?";
 "TRASH_DELETE_MESSAGE" = "ഈ പ്രവർത്തനം പഴയപടിയാക്കാനാവില്ല.";
 "TRASH_CLEAR_CONFIRMATION" = "ട്രാഷിലെ എല്ലാ ഇനങ്ങളും ശാശ്വതമായി ഇല്ലാതാക്കും. ഈ പ്രവർത്തനം പഴയപടിയാക്കാനാവില്ല.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "എഡിറ്റ് ചെയ്യുക";
 "TRANSACTION_EDIT_CATEGORY" = "വിഭാഗം";
+"TRANSACTION_EDIT_BALANCE" = "അക്കൗണ്ട്";
 "TRANSACTION_EDIT_AMOUNT" = "തുക";
 "TRANSACTION_EDIT_DATE" = "തീയതി";
 "TRANSACTION_EDIT_TIME" = "സമയം";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ട്രാഷിലേക്ക് നീക്കി";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ഇന്നത്തെ ചെലവ്";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ഇന്നലത്തെ ചെലവ്";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "ഇന്നത്തെ വരുമാനം";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "ഇന്നലത്തെ വരുമാനം";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "വിഭാഗങ്ങൾ എഡിറ്റ് ചെയ്യുക";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "പാർക്കിംഗ്";
 "DEFAULT_CATEGORY_PETS" = "വളർത്തുമൃഗങ്ങൾ";
 "DEFAULT_CATEGORY_SAVINGS" = "സമ്പാദ്യം";
+"DEFAULT_CATEGORY_SALARY" = "ശമ്പളം";
 "SETTINGS_APPEARANCE" = "രൂപം";
 "SETTINGS_THEME_SYSTEM" = "സിസ്റ്റം";
 "SETTINGS_THEME_DARK" = "ഡാർക്ക്";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "വൈബ്രേഷൻ";
 "SETTINGS_HIDE_CATEGORIES" = "വിഭാഗങ്ങൾ മറയ്ക്കുക";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "തുക നൽകുമ്പോൾ വിഭാഗങ്ങൾ ദൃശ്യമാകും";
+"SETTINGS_SECURITY" = "സുരക്ഷ";
+"SETTINGS_PASSCODE" = "പാസ്കോഡ്";
+"SETTINGS_PASSCODE_CHANGE" = "പാസ്കോഡ് മാറ്റുക";
+"PASSCODE_ENTER" = "പാസ്കോഡ് നൽകുക";
+"PASSCODE_ENTER_CURRENT" = "നിലവിലെ പാസ്കോഡ് നൽകുക";
+"PASSCODE_ENTER_NEW" = "പുതിയ പാസ്കോഡ് നൽകുക";
+"PASSCODE_REPEAT" = "പാസ്കോഡ് വീണ്ടും നൽകുക";
+"PASSCODE_WRONG" = "തെറ്റായ പാസ്കോഡ്";
+"PASSCODE_MISMATCH" = "പാസ്കോഡുകൾ പൊരുത്തപ്പെടുന്നില്ല";
+"PASSCODE_BIOMETRICS_REASON" = "ആപ്പ് അൺലോക്ക് ചെയ്യുക";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "വിഭാഗങ്ങൾ: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "ഫയൽ കേടായിരിക്കുന്നു അല്ലെങ്കിൽ വായിക്കാനാവുന്നില്ല.";
 "BACKUPS_ERROR_NEWER_VERSION" = "ഈ ബാക്കപ്പ് ആപ്പിന്റെ പുതിയ പതിപ്പിൽ സൃഷ്ടിച്ചതാണ്.";
 "BACKUPS_ERROR_UNSUPPORTED" = "ഈ ഫയൽ ഫോർമാറ്റ് പിന്തുണയ്ക്കുന്നില്ല.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "എല്ലാ അക്കൗണ്ടുകളും";
+"BACKUPS_EXPORT_ALL_HISTORY" = "മുഴുവൻ ചരിത്രം";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "ഇഷ്ടാനുസൃത കാലയളവ്";
+"BACKUPS_EXPORT_LAST_DAYS" = "കഴിഞ്ഞ %d ദിവസം";
+"BACKUPS_EXPORT_PERIOD" = "കാലയളവ്";
+"BACKUPS_EXPORT_SETTINGS" = "എക്സ്പോർട്ട് ക്രമീകരണങ്ങൾ";
 "BACKUPS_EXPORT_SECTION" = "എക്സ്പോർട്ട്";
 "BACKUPS_IMPORT_ACTION" = "ഫയലിൽ നിന്ന് ഇംപോർട്ട് ചെയ്യുക";
 "BACKUPS_IMPORT_DONE" = "ചേർത്ത ഇടപാടുകൾ: %d, വിഭാഗങ്ങൾ: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "ആരോഗ്യം, കുടുംബം, പ്രവർത്തനങ്ങൾ";
 "ICON_PICKER_SECTION_TECH" = "സാങ്കേതികവിദ്യ, വിദ്യാഭ്യാസം, ഉപകരണങ്ങൾ";
 "ICON_PICKER_SECTION_NATURE" = "പ്രകൃതി, കാലാവസ്ഥ, പൊതു ചിഹ്നങ്ങൾ";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "അക്കൗണ്ട് ഇല്ലാതാക്കി";
+"ACCOUNTS_TITLE" = "അക്കൗണ്ടുകൾ";
+"ACCOUNTS_TOTAL" = "ആകെ";
+"ACCOUNTS_NEW" = "പുതിയ അക്കൗണ്ട്";
+"ACCOUNTS_EDIT" = "അക്കൗണ്ട് എഡിറ്റ് ചെയ്യുക";
+"ACCOUNTS_NAME" = "പേര്";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ചെലവുകളുടെ കണക്ക്";

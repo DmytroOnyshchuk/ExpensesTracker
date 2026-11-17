@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Ausgab aginn";
+"STARTVIEW_ENTER_INCOME" = "Akommes aginn";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Gitt fir d'éischt de Betrag an";
 "STARTVIEW_BALANCE" = "Solde";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Ausgaben";
+"STATISTICS_INCOME_TITLE" = "Akommes";
 "STATISTICS_DAY" = "Dag";
 "STATISTICS_MONTH" = "Mount";
 "STATISTICS_YEAR" = "Joer";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Transaktioun erëmhierstellen?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Kategorie erëmhierstellen?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Kategorie läschen?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Kont erëmhierstellen?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Kont läschen?";
 "TRASH_DELETE_MESSAGE" = "Dës Aktioun kann net réckgängeg gemaach ginn.";
 "TRASH_CLEAR_CONFIRMATION" = "All Elementer an der Dreckskëscht ginn definitiv geläscht. Dës Aktioun kann net réckgängeg gemaach ginn.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Änneren";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorie";
+"TRANSACTION_EDIT_BALANCE" = "Kont";
 "TRANSACTION_EDIT_AMOUNT" = "Betrag";
 "TRANSACTION_EDIT_DATE" = "Datum";
 "TRANSACTION_EDIT_TIME" = "Zäit";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "An d'Dreckskëscht geréckelt";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Haut ausginn";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Gëschter ausginn";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Haut kritt";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Gëschter kritt";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Kategorien änneren";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Parken";
 "DEFAULT_CATEGORY_PETS" = "Hausdéieren";
 "DEFAULT_CATEGORY_SAVINGS" = "Erspuernisser";
+"DEFAULT_CATEGORY_SALARY" = "Gehalt";
 "SETTINGS_APPEARANCE" = "Ausgesinn";
 "SETTINGS_THEME_SYSTEM" = "System";
 "SETTINGS_THEME_DARK" = "Donkel";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Haptik";
 "SETTINGS_HIDE_CATEGORIES" = "Kategorien verstoppen";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategorien erschéngen, wann e Betrag aginn gëtt";
+"SETTINGS_SECURITY" = "Sécherheet";
+"SETTINGS_PASSCODE" = "Code";
+"SETTINGS_PASSCODE_CHANGE" = "Code änneren";
+"PASSCODE_ENTER" = "Code aginn";
+"PASSCODE_ENTER_CURRENT" = "Aktuelle Code aginn";
+"PASSCODE_ENTER_NEW" = "Neie Code aginn";
+"PASSCODE_REPEAT" = "Code widderhuelen";
+"PASSCODE_WRONG" = "Falsche Code";
+"PASSCODE_MISMATCH" = "D’Coden stëmmen net iwwereneen";
+"PASSCODE_BIOMETRICS_REASON" = "App entspären";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorien: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "D’Datei ass beschiedegt oder kann net gelies ginn.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Dëse Backup gouf mat enger méi neier Versioun vun der App erstallt.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Dëst Dateiformat gëtt net ënnerstëtzt.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "All Konten";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Ganze Verlaf";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Eegenen Zäitraum";
+"BACKUPS_EXPORT_LAST_DAYS" = "Lescht %d Deeg";
+"BACKUPS_EXPORT_PERIOD" = "Zäitraum";
+"BACKUPS_EXPORT_SETTINGS" = "Exportastellungen";
 "BACKUPS_EXPORT_SECTION" = "Export";
 "BACKUPS_IMPORT_ACTION" = "Aus Datei importéieren";
 "BACKUPS_IMPORT_DONE" = "Derbäigesate Transaktiounen: %d, Kategorien: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Gesondheet, Famill an Aktivitéiten";
 "ICON_PICKER_SECTION_TECH" = "Technik, Bildung an Handwierksgeschir";
 "ICON_PICKER_SECTION_NATURE" = "Natur, Wieder an allgemeng Symboler";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Kont geläscht";
+"ACCOUNTS_TITLE" = "Konten";
+"ACCOUNTS_TOTAL" = "Total";
+"ACCOUNTS_NEW" = "Neie Kont";
+"ACCOUNTS_EDIT" = "Kont beaarbechten";
+"ACCOUNTS_NAME" = "Numm";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Ausgabebuchféierung";

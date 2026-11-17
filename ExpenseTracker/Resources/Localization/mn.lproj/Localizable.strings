@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Зардлаа оруулна уу";
+"STARTVIEW_ENTER_INCOME" = "Орлогоо оруулна уу";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Эхлээд дүнгээ оруулна уу";
 "STARTVIEW_BALANCE" = "Үлдэгдэл";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Зарлага";
+"STATISTICS_INCOME_TITLE" = "Орлого";
 "STATISTICS_DAY" = "Өдөр";
 "STATISTICS_MONTH" = "Сар";
 "STATISTICS_YEAR" = "Жил";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Гүйлгээг сэргээх үү?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Ангиллыг сэргээх үү?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Ангиллыг устгах уу?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Дансыг сэргээх үү?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Дансыг устгах уу?";
 "TRASH_DELETE_MESSAGE" = "Энэ үйлдлийг буцаах боломжгүй.";
 "TRASH_CLEAR_CONFIRMATION" = "Хогийн сав дахь бүх зүйл бүрмөсөн устгагдана. Энэ үйлдлийг буцаах боломжгүй.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Засах";
 "TRANSACTION_EDIT_CATEGORY" = "Ангилал";
+"TRANSACTION_EDIT_BALANCE" = "Данс";
 "TRANSACTION_EDIT_AMOUNT" = "Дүн";
 "TRANSACTION_EDIT_DATE" = "Огноо";
 "TRANSACTION_EDIT_TIME" = "Цаг";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Хогийн сав руу зөөгдлөө";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Өнөөдөр зарцуулсан";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Өчигдөр зарцуулсан";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Өнөөдөр хүлээн авсан";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Өчигдөр хүлээн авсан";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Ангилал засах";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Зогсоол";
 "DEFAULT_CATEGORY_PETS" = "Тэжээвэр амьтад";
 "DEFAULT_CATEGORY_SAVINGS" = "Хадгаламж";
+"DEFAULT_CATEGORY_SALARY" = "Цалин";
 "SETTINGS_APPEARANCE" = "Харагдац";
 "SETTINGS_THEME_SYSTEM" = "Систем";
 "SETTINGS_THEME_DARK" = "Бараан";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Чичиргээ";
 "SETTINGS_HIDE_CATEGORIES" = "Ангиллыг нуух";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Ангиллууд дүн оруулах үед гарч ирнэ";
+"SETTINGS_SECURITY" = "Аюулгүй байдал";
+"SETTINGS_PASSCODE" = "Нууц код";
+"SETTINGS_PASSCODE_CHANGE" = "Нууц код солих";
+"PASSCODE_ENTER" = "Нууц кодоо оруулна уу";
+"PASSCODE_ENTER_CURRENT" = "Одоогийн нууц кодоо оруулна уу";
+"PASSCODE_ENTER_NEW" = "Шинэ нууц код оруулна уу";
+"PASSCODE_REPEAT" = "Нууц кодоо давтана уу";
+"PASSCODE_WRONG" = "Нууц код буруу";
+"PASSCODE_MISMATCH" = "Нууц кодууд таарахгүй байна";
+"PASSCODE_BIOMETRICS_REASON" = "Аппын түгжээг тайлах";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Ангилал: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Файл гэмтсэн эсвэл уншигдахгүй байна.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Энэ хуулбарыг аппын шинэ хувилбараар үүсгэсэн.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Энэ файлын форматыг дэмжихгүй.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Бүх данс";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Бүх түүх";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Тусгай хугацаа";
+"BACKUPS_EXPORT_LAST_DAYS" = "Сүүлийн %d хоног";
+"BACKUPS_EXPORT_PERIOD" = "Хугацаа";
+"BACKUPS_EXPORT_SETTINGS" = "Экспортын тохиргоо";
 "BACKUPS_EXPORT_SECTION" = "Экспорт";
 "BACKUPS_IMPORT_ACTION" = "Файлаас импортлох";
 "BACKUPS_IMPORT_DONE" = "Нэмэгдсэн гүйлгээ: %d, ангилал: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Эрүүл мэнд, гэр бүл ба үйл ажиллагаа";
 "ICON_PICKER_SECTION_TECH" = "Технологи, боловсрол ба багаж хэрэгсэл";
 "ICON_PICKER_SECTION_NATURE" = "Байгаль, цаг агаар ба ерөнхий тэмдэг";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Данс устгагдсан";
+"ACCOUNTS_TITLE" = "Данснууд";
+"ACCOUNTS_TOTAL" = "Нийт";
+"ACCOUNTS_NEW" = "Шинэ данс";
+"ACCOUNTS_EDIT" = "Данс засах";
+"ACCOUNTS_NAME" = "Нэр";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Зардлын бүртгэл";

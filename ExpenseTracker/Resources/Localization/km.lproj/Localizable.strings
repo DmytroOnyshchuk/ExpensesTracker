@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "បញ្ចូលចំណាយ";
+"STARTVIEW_ENTER_INCOME" = "បញ្ចូលចំណូល";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "សូមបញ្ចូលចំនួនទឹកប្រាក់ជាមុនសិន";
 "STARTVIEW_BALANCE" = "សមតុល្យ";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ចំណាយ";
+"STATISTICS_INCOME_TITLE" = "ចំណូល";
 "STATISTICS_DAY" = "ថ្ងៃ";
 "STATISTICS_MONTH" = "ខែ";
 "STATISTICS_YEAR" = "ឆ្នាំ";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "ស្ដារប្រតិបត្តិការឬ?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "ស្ដារប្រភេទឬ?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "លុបប្រភេទឬ?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "ស្ដារគណនីឬ?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "លុបគណនីឬ?";
 "TRASH_DELETE_MESSAGE" = "សកម្មភាពនេះមិនអាចត្រឡប់វិញបានទេ។";
 "TRASH_CLEAR_CONFIRMATION" = "ធាតុទាំងអស់ក្នុងធុងសំរាមនឹងត្រូវលុបជាអចិន្ត្រៃយ៍។ សកម្មភាពនេះមិនអាចត្រឡប់វិញបានទេ។";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "កែ";
 "TRANSACTION_EDIT_CATEGORY" = "ប្រភេទ";
+"TRANSACTION_EDIT_BALANCE" = "គណនី";
 "TRANSACTION_EDIT_AMOUNT" = "ចំនួនទឹកប្រាក់";
 "TRANSACTION_EDIT_DATE" = "កាលបរិច្ឆេទ";
 "TRANSACTION_EDIT_TIME" = "ម៉ោង";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "បានផ្លាស់ទីទៅធុងសំរាម";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ចំណាយថ្ងៃនេះ";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ចំណាយម្សិលមិញ";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "ទទួលបានថ្ងៃនេះ";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "ទទួលបានម្សិលមិញ";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "កែប្រភេទ";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "ចំណតរថយន្ត";
 "DEFAULT_CATEGORY_PETS" = "សត្វចិញ្ចឹម";
 "DEFAULT_CATEGORY_SAVINGS" = "ប្រាក់សន្សំ";
+"DEFAULT_CATEGORY_SALARY" = "ប្រាក់ខែ";
 "SETTINGS_APPEARANCE" = "រូបរាង";
 "SETTINGS_THEME_SYSTEM" = "ប្រព័ន្ធ";
 "SETTINGS_THEME_DARK" = "ងងឹត";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "ការញ័រ";
 "SETTINGS_HIDE_CATEGORIES" = "លាក់ប្រភេទ";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "ប្រភេទបង្ហាញនៅពេលបញ្ចូលចំនួនទឹកប្រាក់";
+"SETTINGS_SECURITY" = "សុវត្ថិភាព";
+"SETTINGS_PASSCODE" = "លេខកូដសម្ងាត់";
+"SETTINGS_PASSCODE_CHANGE" = "ប្ដូរលេខកូដសម្ងាត់";
+"PASSCODE_ENTER" = "បញ្ចូលលេខកូដសម្ងាត់";
+"PASSCODE_ENTER_CURRENT" = "បញ្ចូលលេខកូដសម្ងាត់បច្ចុប្បន្ន";
+"PASSCODE_ENTER_NEW" = "បញ្ចូលលេខកូដសម្ងាត់ថ្មី";
+"PASSCODE_REPEAT" = "បញ្ចូលលេខកូដសម្ងាត់ម្ដងទៀត";
+"PASSCODE_WRONG" = "លេខកូដសម្ងាត់មិនត្រឹមត្រូវ";
+"PASSCODE_MISMATCH" = "លេខកូដសម្ងាត់មិនត្រូវគ្នា";
+"PASSCODE_BIOMETRICS_REASON" = "ដោះសោកម្មវិធី";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "ប្រភេទ៖ %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "ឯកសារខូច ឬមិនអាចអានបាន។";
 "BACKUPS_ERROR_NEWER_VERSION" = "ការបម្រុងទុកនេះត្រូវបានបង្កើតដោយកំណែកម្មវិធីថ្មីជាង។";
 "BACKUPS_ERROR_UNSUPPORTED" = "ទ្រង់ទ្រាយឯកសារនេះមិនត្រូវបានគាំទ្រទេ។";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "គណនីទាំងអស់";
+"BACKUPS_EXPORT_ALL_HISTORY" = "ប្រវត្តិទាំងអស់";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "រយៈពេលផ្ទាល់ខ្លួន";
+"BACKUPS_EXPORT_LAST_DAYS" = "%d ថ្ងៃចុងក្រោយ";
+"BACKUPS_EXPORT_PERIOD" = "រយៈពេល";
+"BACKUPS_EXPORT_SETTINGS" = "ការកំណត់នាំចេញ";
 "BACKUPS_EXPORT_SECTION" = "នាំចេញ";
 "BACKUPS_IMPORT_ACTION" = "នាំចូលពីឯកសារ";
 "BACKUPS_IMPORT_DONE" = "ប្រតិបត្តិការដែលបានបន្ថែម៖ %d, ប្រភេទ៖ %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "សុខភាព គ្រួសារ និងសកម្មភាព";
 "ICON_PICKER_SECTION_TECH" = "បច្ចេកវិទ្យា ការអប់រំ និងឧបករណ៍";
 "ICON_PICKER_SECTION_NATURE" = "ធម្មជាតិ អាកាសធាតុ និងនិមិត្តសញ្ញាទូទៅ";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "បានលុបគណនី";
+"ACCOUNTS_TITLE" = "គណនី";
+"ACCOUNTS_TOTAL" = "សរុប";
+"ACCOUNTS_NEW" = "គណនីថ្មី";
+"ACCOUNTS_EDIT" = "កែគណនី";
+"ACCOUNTS_NAME" = "ឈ្មោះ";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "គណនេយ្យចំណាយ";

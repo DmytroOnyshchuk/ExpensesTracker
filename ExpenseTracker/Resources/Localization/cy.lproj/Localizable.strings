@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Rhowch y gwariant";
+"STARTVIEW_ENTER_INCOME" = "Rhowch yr incwm";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Rhowch y swm yn gyntaf";
 "STARTVIEW_BALANCE" = "Balans";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Treuliau";
+"STATISTICS_INCOME_TITLE" = "Incwm";
 "STATISTICS_DAY" = "Diwrnod";
 "STATISTICS_MONTH" = "Mis";
 "STATISTICS_YEAR" = "Blwyddyn";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Adfer y trafodyn?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Adfer y categori?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Dileu'r categori?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Adfer y cyfrif?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Dileu'r cyfrif?";
 "TRASH_DELETE_MESSAGE" = "Ni ellir dadwneud y weithred hon.";
 "TRASH_CLEAR_CONFIRMATION" = "Bydd pob eitem yn y bin yn cael ei dileu'n barhaol. Ni ellir dadwneud y weithred hon.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Golygu";
 "TRANSACTION_EDIT_CATEGORY" = "Categori";
+"TRANSACTION_EDIT_BALANCE" = "Cyfrif";
 "TRANSACTION_EDIT_AMOUNT" = "Swm";
 "TRANSACTION_EDIT_DATE" = "Dyddiad";
 "TRANSACTION_EDIT_TIME" = "Amser";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Wedi'i symud i'r bin";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Gwariwyd heddiw";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Gwariwyd ddoe";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Derbyniwyd heddiw";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Derbyniwyd ddoe";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Golygu categorïau";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Parcio";
 "DEFAULT_CATEGORY_PETS" = "Anifeiliaid anwes";
 "DEFAULT_CATEGORY_SAVINGS" = "Cynilion";
+"DEFAULT_CATEGORY_SALARY" = "Cyflog";
 "SETTINGS_APPEARANCE" = "Golwg";
 "SETTINGS_THEME_SYSTEM" = "System";
 "SETTINGS_THEME_DARK" = "Tywyll";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Dirgryniad";
 "SETTINGS_HIDE_CATEGORIES" = "Cuddio categorïau";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Mae categorïau’n ymddangos wrth roi swm";
+"SETTINGS_SECURITY" = "Diogelwch";
+"SETTINGS_PASSCODE" = "Cod pas";
+"SETTINGS_PASSCODE_CHANGE" = "Newid y cod pas";
+"PASSCODE_ENTER" = "Rhowch y cod pas";
+"PASSCODE_ENTER_CURRENT" = "Rhowch y cod pas presennol";
+"PASSCODE_ENTER_NEW" = "Rhowch god pas newydd";
+"PASSCODE_REPEAT" = "Ailadroddwch y cod pas";
+"PASSCODE_WRONG" = "Cod pas anghywir";
+"PASSCODE_MISMATCH" = "Nid yw'r codau pas yn cyfateb";
+"PASSCODE_BIOMETRICS_REASON" = "Datgloi'r ap";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categorïau: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Mae’r ffeil wedi’i difrodi neu ni ellir ei darllen.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Crëwyd y copi wrth gefn hwn gan fersiwn mwy diweddar o’r ap.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Ni chefnogir y fformat ffeil hwn.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Pob cyfrif";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Yr holl hanes";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Cyfnod personol";
+"BACKUPS_EXPORT_LAST_DAYS" = "Y %d diwrnod diwethaf";
+"BACKUPS_EXPORT_PERIOD" = "Cyfnod";
+"BACKUPS_EXPORT_SETTINGS" = "Gosodiadau allforio";
 "BACKUPS_EXPORT_SECTION" = "Allforio";
 "BACKUPS_IMPORT_ACTION" = "Mewnforio o ffeil";
 "BACKUPS_IMPORT_DONE" = "Trafodion a ychwanegwyd: %d, categorïau: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Iechyd, teulu a gweithgareddau";
 "ICON_PICKER_SECTION_TECH" = "Technoleg, addysg ac offer";
 "ICON_PICKER_SECTION_NATURE" = "Natur, tywydd a symbolau cyffredinol";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Cyfrif wedi'i ddileu";
+"ACCOUNTS_TITLE" = "Cyfrifon";
+"ACCOUNTS_TOTAL" = "Cyfanswm";
+"ACCOUNTS_NEW" = "Cyfrif newydd";
+"ACCOUNTS_EDIT" = "Golygu'r cyfrif";
+"ACCOUNTS_NAME" = "Enw";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Cyfrifo treuliau";

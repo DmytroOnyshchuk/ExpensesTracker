@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "ወጪ ያስገቡ";
+"STARTVIEW_ENTER_INCOME" = "ገቢ ያስገቡ";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "መጀመሪያ መጠኑን ያስገቡ";
 "STARTVIEW_BALANCE" = "ቀሪ ሂሳብ";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ወጪዎች";
+"STATISTICS_INCOME_TITLE" = "ገቢ";
 "STATISTICS_DAY" = "ቀን";
 "STATISTICS_MONTH" = "ወር";
 "STATISTICS_YEAR" = "ዓመት";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "ግብይቱ ይመለስ?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "ምድቡ ይመለስ?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "ምድቡ ይሰረዝ?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "መለያው ይመለስ?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "መለያው ይሰረዝ?";
 "TRASH_DELETE_MESSAGE" = "ይህ ድርጊት ሊቀለበስ አይችልም።";
 "TRASH_CLEAR_CONFIRMATION" = "በመጣያው ውስጥ ያሉ ሁሉም ንጥሎች በቋሚነት ይሰረዛሉ። ይህ ድርጊት ሊቀለበስ አይችልም።";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "አርትዕ";
 "TRANSACTION_EDIT_CATEGORY" = "ምድብ";
+"TRANSACTION_EDIT_BALANCE" = "መለያ";
 "TRANSACTION_EDIT_AMOUNT" = "መጠን";
 "TRANSACTION_EDIT_DATE" = "ቀን";
 "TRANSACTION_EDIT_TIME" = "ሰዓት";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ወደ መጣያ ተወስዷል";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ዛሬ የወጣ";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ትናንት የወጣ";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "ዛሬ የተገኘ";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "ትናንት የተገኘ";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "ምድቦችን አርትዕ";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "መኪና ማቆሚያ";
 "DEFAULT_CATEGORY_PETS" = "የቤት እንስሳት";
 "DEFAULT_CATEGORY_SAVINGS" = "ቁጠባ";
+"DEFAULT_CATEGORY_SALARY" = "ደመወዝ";
 "SETTINGS_APPEARANCE" = "መልክ";
 "SETTINGS_THEME_SYSTEM" = "ሲስተም";
 "SETTINGS_THEME_DARK" = "ጨለማ";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "ንዝረት";
 "SETTINGS_HIDE_CATEGORIES" = "ምድቦችን ደብቅ";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "መጠን ሲያስገቡ ምድቦች ይታያሉ";
+"SETTINGS_SECURITY" = "ደህንነት";
+"SETTINGS_PASSCODE" = "የይለፍ ኮድ";
+"SETTINGS_PASSCODE_CHANGE" = "የይለፍ ኮድ ቀይር";
+"PASSCODE_ENTER" = "የይለፍ ኮድ ያስገቡ";
+"PASSCODE_ENTER_CURRENT" = "የአሁኑን የይለፍ ኮድ ያስገቡ";
+"PASSCODE_ENTER_NEW" = "አዲስ የይለፍ ኮድ ያስገቡ";
+"PASSCODE_REPEAT" = "የይለፍ ኮዱን ይድገሙ";
+"PASSCODE_WRONG" = "የተሳሳተ የይለፍ ኮድ";
+"PASSCODE_MISMATCH" = "የይለፍ ኮዶቹ አይዛመዱም";
+"PASSCODE_BIOMETRICS_REASON" = "መተግበሪያውን ይክፈቱ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "ምድቦች፦ %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "ፋይሉ ተበላሽቷል ወይም ሊነበብ አይችልም።";
 "BACKUPS_ERROR_NEWER_VERSION" = "ይህ መጠባበቂያ በአዲስ የመተግበሪያው ስሪት የተፈጠረ ነው።";
 "BACKUPS_ERROR_UNSUPPORTED" = "ይህ የፋይል ቅርጸት አይደገፍም።";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "ሁሉም መለያዎች";
+"BACKUPS_EXPORT_ALL_HISTORY" = "ሙሉ ታሪክ";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "ብጁ ጊዜ";
+"BACKUPS_EXPORT_LAST_DAYS" = "ያለፉት %d ቀናት";
+"BACKUPS_EXPORT_PERIOD" = "ጊዜ";
+"BACKUPS_EXPORT_SETTINGS" = "የመላኪያ ቅንብሮች";
 "BACKUPS_EXPORT_SECTION" = "ወደ ውጭ መላክ";
 "BACKUPS_IMPORT_ACTION" = "ከፋይል አስመጣ";
 "BACKUPS_IMPORT_DONE" = "የተጨመሩ ግብይቶች፦ %d፣ ምድቦች፦ %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "ጤና፣ ቤተሰብ እና እንቅስቃሴዎች";
 "ICON_PICKER_SECTION_TECH" = "ቴክኖሎጂ፣ ትምህርት እና መሣሪያዎች";
 "ICON_PICKER_SECTION_NATURE" = "ተፈጥሮ፣ የአየር ሁኔታ እና አጠቃላይ ምልክቶች";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "መለያው ተሰርዟል";
+"ACCOUNTS_TITLE" = "መለያዎች";
+"ACCOUNTS_TOTAL" = "ጠቅላላ";
+"ACCOUNTS_NEW" = "አዲስ መለያ";
+"ACCOUNTS_EDIT" = "መለያ አርትዕ";
+"ACCOUNTS_NAME" = "ስም";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "የወጪ ሂሳብ";

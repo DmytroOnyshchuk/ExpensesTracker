@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "چىقىمنى كىرگۈزۈڭ";
+"STARTVIEW_ENTER_INCOME" = "كىرىمنى كىرگۈزۈڭ";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "ئالدى بىلەن سوممىنى كىرگۈزۈڭ";
 "STARTVIEW_BALANCE" = "قالدۇق";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "چىقىملار";
+"STATISTICS_INCOME_TITLE" = "كىرىم";
 "STATISTICS_DAY" = "كۈن";
 "STATISTICS_MONTH" = "ئاي";
 "STATISTICS_YEAR" = "يىل";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "سودىنى ئەسلىگە كەلتۈرەمسىز؟";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "تۈرنى ئەسلىگە كەلتۈرەمسىز؟";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "تۈرنى ئۆچۈرەمسىز؟";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "ھېساباتنى ئەسلىگە كەلتۈرەمسىز؟";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "ھېساباتنى ئۆچۈرەمسىز؟";
 "TRASH_DELETE_MESSAGE" = "بۇ مەشغۇلاتنى ئەمەلدىن قالدۇرغىلى بولمايدۇ.";
 "TRASH_CLEAR_CONFIRMATION" = "ئەخلەت ساندۇقىدىكى بارلىق تۈرلەر مەڭگۈلۈك ئۆچۈرۈلىدۇ. بۇ مەشغۇلاتنى ئەمەلدىن قالدۇرغىلى بولمايدۇ.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "تەھرىرلە";
 "TRANSACTION_EDIT_CATEGORY" = "تۈر";
+"TRANSACTION_EDIT_BALANCE" = "ھېسابات";
 "TRANSACTION_EDIT_AMOUNT" = "سومما";
 "TRANSACTION_EDIT_DATE" = "چېسلا";
 "TRANSACTION_EDIT_TIME" = "ۋاقىت";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ئەخلەت ساندۇقىغا يۆتكەلدى";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "بۈگۈنكى چىقىم";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "تۈنۈگۈنكى چىقىم";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "بۈگۈنكى كىرىم";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "تۈنۈگۈنكى كىرىم";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "تۈرلەرنى تەھرىرلە";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "ماشىنا توختىتىش";
 "DEFAULT_CATEGORY_PETS" = "ئەرمەك ھايۋانلار";
 "DEFAULT_CATEGORY_SAVINGS" = "ئامانەت";
+"DEFAULT_CATEGORY_SALARY" = "مائاش";
 "SETTINGS_APPEARANCE" = "كۆرۈنۈش";
 "SETTINGS_THEME_SYSTEM" = "سىستېما";
 "SETTINGS_THEME_DARK" = "قاراڭغۇ";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "تىترەش";
 "SETTINGS_HIDE_CATEGORIES" = "تۈرلەرنى يوشۇرۇش";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "سومما كىرگۈزگەندە تۈرلەر كۆرۈنىدۇ";
+"SETTINGS_SECURITY" = "بىخەتەرلىك";
+"SETTINGS_PASSCODE" = "ئىم كودى";
+"SETTINGS_PASSCODE_CHANGE" = "ئىم كودىنى ئۆزگەرتىش";
+"PASSCODE_ENTER" = "ئىم كودىنى كىرگۈزۈڭ";
+"PASSCODE_ENTER_CURRENT" = "ھازىرقى ئىم كودىنى كىرگۈزۈڭ";
+"PASSCODE_ENTER_NEW" = "يېڭى ئىم كودىنى كىرگۈزۈڭ";
+"PASSCODE_REPEAT" = "ئىم كودىنى قايتا كىرگۈزۈڭ";
+"PASSCODE_WRONG" = "ئىم كودى خاتا";
+"PASSCODE_MISMATCH" = "ئىم كودلىرى ماس كەلمىدى";
+"PASSCODE_BIOMETRICS_REASON" = "ئەپنى قۇلۇپتىن چىقىرىش";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "تۈرلەر: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "ھۆججەت بۇزۇلغان ياكى ئوقۇغىلى بولمايدۇ.";
 "BACKUPS_ERROR_NEWER_VERSION" = "بۇ زاپاس نۇسخا ئەپنىڭ يېڭىراق نەشرىدە ياسالغان.";
 "BACKUPS_ERROR_UNSUPPORTED" = "بۇ ھۆججەت فورماتى قوللىمايدۇ.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "بارلىق ھېساباتلار";
+"BACKUPS_EXPORT_ALL_HISTORY" = "بارلىق تارىخ";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "ئىختىيارىي مەزگىل";
+"BACKUPS_EXPORT_LAST_DAYS" = "ئاخىرقى %d كۈن";
+"BACKUPS_EXPORT_PERIOD" = "مەزگىل";
+"BACKUPS_EXPORT_SETTINGS" = "چىقىرىش تەڭشەكلىرى";
 "BACKUPS_EXPORT_SECTION" = "چىقىرىش";
 "BACKUPS_IMPORT_ACTION" = "ھۆججەتتىن كىرگۈزۈش";
 "BACKUPS_IMPORT_DONE" = "قوشۇلغان سودىلار: %d، تۈرلەر: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "ساغلاملىق، ئائىلە ۋە پائالىيەتلەر";
 "ICON_PICKER_SECTION_TECH" = "تېخنىكا، مائارىپ ۋە قوراللار";
 "ICON_PICKER_SECTION_NATURE" = "تەبىئەت، ھاۋارايى ۋە ئادەتتىكى بەلگىلەر";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "ھېسابات ئۆچۈرۈلدى";
+"ACCOUNTS_TITLE" = "ھېساباتلار";
+"ACCOUNTS_TOTAL" = "جەمئىي";
+"ACCOUNTS_NEW" = "يېڭى ھېسابات";
+"ACCOUNTS_EDIT" = "ھېساباتنى تەھرىرلەش";
+"ACCOUNTS_NAME" = "ئىسىم";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "چىقىم ھېساباتى";

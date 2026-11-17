@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Indtast udgift";
+"STARTVIEW_ENTER_INCOME" = "Indtast indtægt";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Indtast beløbet først";
 "STARTVIEW_BALANCE" = "Saldo";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Udgifter";
+"STATISTICS_INCOME_TITLE" = "Indtægter";
 "STATISTICS_DAY" = "Dag";
 "STATISTICS_MONTH" = "Måned";
 "STATISTICS_YEAR" = "År";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Gendan transaktion?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Gendan kategori?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Slet kategori?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Gendan konto?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Slet konto?";
 "TRASH_DELETE_MESSAGE" = "Denne handling kan ikke fortrydes.";
 "TRASH_CLEAR_CONFIRMATION" = "Alle emner i papirkurven slettes permanent. Denne handling kan ikke fortrydes.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Rediger";
 "TRANSACTION_EDIT_CATEGORY" = "Kategori";
+"TRANSACTION_EDIT_BALANCE" = "Konto";
 "TRANSACTION_EDIT_AMOUNT" = "Beløb";
 "TRANSACTION_EDIT_DATE" = "Dato";
 "TRANSACTION_EDIT_TIME" = "Tid";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Flyttet til papirkurven";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Brugt i dag";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Brugt i går";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Modtaget i dag";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Modtaget i går";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Rediger kategorier";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Parkering";
 "DEFAULT_CATEGORY_PETS" = "Kæledyr";
 "DEFAULT_CATEGORY_SAVINGS" = "Opsparing";
+"DEFAULT_CATEGORY_SALARY" = "Løn";
 "SETTINGS_APPEARANCE" = "Udseende";
 "SETTINGS_THEME_SYSTEM" = "System";
 "SETTINGS_THEME_DARK" = "Mørk";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Vibration";
 "SETTINGS_HIDE_CATEGORIES" = "Skjul kategorier";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategorier vises, når du indtaster et beløb";
+"SETTINGS_SECURITY" = "Sikkerhed";
+"SETTINGS_PASSCODE" = "Kode";
+"SETTINGS_PASSCODE_CHANGE" = "Skift kode";
+"PASSCODE_ENTER" = "Indtast kode";
+"PASSCODE_ENTER_CURRENT" = "Indtast nuværende kode";
+"PASSCODE_ENTER_NEW" = "Indtast ny kode";
+"PASSCODE_REPEAT" = "Gentag kode";
+"PASSCODE_WRONG" = "Forkert kode";
+"PASSCODE_MISMATCH" = "Koderne er ikke ens";
+"PASSCODE_BIOMETRICS_REASON" = "Lås appen op";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorier: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Filen er beskadiget eller kan ikke læses.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Denne sikkerhedskopi blev oprettet med en nyere version af appen.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Dette filformat understøttes ikke.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Alle konti";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Hele historikken";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Tilpasset periode";
+"BACKUPS_EXPORT_LAST_DAYS" = "Seneste %d dage";
+"BACKUPS_EXPORT_PERIOD" = "Periode";
+"BACKUPS_EXPORT_SETTINGS" = "Eksportindstillinger";
 "BACKUPS_EXPORT_SECTION" = "Eksport";
 "BACKUPS_IMPORT_ACTION" = "Importér fra fil";
 "BACKUPS_IMPORT_DONE" = "Tilføjede transaktioner: %d, kategorier: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Sundhed, familie og aktiviteter";
 "ICON_PICKER_SECTION_TECH" = "Teknologi, uddannelse og værktøj";
 "ICON_PICKER_SECTION_NATURE" = "Natur, vejr og generelle symboler";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Konto slettet";
+"ACCOUNTS_TITLE" = "Konti";
+"ACCOUNTS_TOTAL" = "I alt";
+"ACCOUNTS_NEW" = "Ny konto";
+"ACCOUNTS_EDIT" = "Rediger konto";
+"ACCOUNTS_NAME" = "Navn";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Udgiftsregnskab";

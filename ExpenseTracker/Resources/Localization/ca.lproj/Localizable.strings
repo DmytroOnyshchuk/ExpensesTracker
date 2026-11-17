@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Introdueix la despesa";
+"STARTVIEW_ENTER_INCOME" = "Introdueix l’ingrés";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Primer introduïu l'import";
 "STARTVIEW_BALANCE" = "Saldo";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Despeses";
+"STATISTICS_INCOME_TITLE" = "Ingressos";
 "STATISTICS_DAY" = "Dia";
 "STATISTICS_MONTH" = "Mes";
 "STATISTICS_YEAR" = "Any";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Vols restaurar la transacció?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Vols restaurar la categoria?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Vols eliminar la categoria?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Vols restaurar el compte?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Vols eliminar el compte?";
 "TRASH_DELETE_MESSAGE" = "Aquesta acció no es pot desfer.";
 "TRASH_CLEAR_CONFIRMATION" = "Tots els elements de la paperera s'eliminaran definitivament. Aquesta acció no es pot desfer.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Edita";
 "TRANSACTION_EDIT_CATEGORY" = "Categoria";
+"TRANSACTION_EDIT_BALANCE" = "Compte";
 "TRANSACTION_EDIT_AMOUNT" = "Import";
 "TRANSACTION_EDIT_DATE" = "Data";
 "TRANSACTION_EDIT_TIME" = "Hora";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "S’ha mogut a la paperera";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Gastat avui";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Gastat ahir";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Rebut avui";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Rebut ahir";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Edita les categories";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Aparcament";
 "DEFAULT_CATEGORY_PETS" = "Mascotes";
 "DEFAULT_CATEGORY_SAVINGS" = "Estalvis";
+"DEFAULT_CATEGORY_SALARY" = "Salari";
 "SETTINGS_APPEARANCE" = "Aparença";
 "SETTINGS_THEME_SYSTEM" = "Sistema";
 "SETTINGS_THEME_DARK" = "Fosc";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Vibració";
 "SETTINGS_HIDE_CATEGORIES" = "Amaga les categories";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Les categories apareixen en introduir un import";
+"SETTINGS_SECURITY" = "Seguretat";
+"SETTINGS_PASSCODE" = "Codi";
+"SETTINGS_PASSCODE_CHANGE" = "Canvia el codi";
+"PASSCODE_ENTER" = "Introdueix el codi";
+"PASSCODE_ENTER_CURRENT" = "Introdueix el codi actual";
+"PASSCODE_ENTER_NEW" = "Introdueix el codi nou";
+"PASSCODE_REPEAT" = "Repeteix el codi";
+"PASSCODE_WRONG" = "Codi incorrecte";
+"PASSCODE_MISMATCH" = "Els codis no coincideixen";
+"PASSCODE_BIOMETRICS_REASON" = "Desbloqueja l’app";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categories: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "El fitxer està malmès o no es pot llegir.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Aquesta còpia s’ha creat amb una versió més recent de l’app.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Aquest format de fitxer no és compatible.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Tots els comptes";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Tot l’historial";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Període personalitzat";
+"BACKUPS_EXPORT_LAST_DAYS" = "Últims %d dies";
+"BACKUPS_EXPORT_PERIOD" = "Període";
+"BACKUPS_EXPORT_SETTINGS" = "Configuració de l’exportació";
 "BACKUPS_EXPORT_SECTION" = "Exportació";
 "BACKUPS_IMPORT_ACTION" = "Importa des d’un fitxer";
 "BACKUPS_IMPORT_DONE" = "Transaccions afegides: %d, categories: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Salut, família i activitats";
 "ICON_PICKER_SECTION_TECH" = "Tecnologia, educació i eines";
 "ICON_PICKER_SECTION_NATURE" = "Natura, temps i símbols generals";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Compte eliminat";
+"ACCOUNTS_TITLE" = "Comptes";
+"ACCOUNTS_TOTAL" = "Total";
+"ACCOUNTS_NEW" = "Compte nou";
+"ACCOUNTS_EDIT" = "Edita el compte";
+"ACCOUNTS_NAME" = "Nom";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Comptabilitat de despeses";

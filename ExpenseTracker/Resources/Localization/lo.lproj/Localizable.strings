@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "ປ້ອນລາຍຈ່າຍ";
+"STARTVIEW_ENTER_INCOME" = "ປ້ອນລາຍຮັບ";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "ກະລຸນາປ້ອນຈຳນວນເງິນກ່ອນ";
 "STARTVIEW_BALANCE" = "ຍອດເງິນ";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ລາຍຈ່າຍ";
+"STATISTICS_INCOME_TITLE" = "ລາຍຮັບ";
 "STATISTICS_DAY" = "ມື້";
 "STATISTICS_MONTH" = "ເດືອນ";
 "STATISTICS_YEAR" = "ປີ";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "ກູ້ຄືນທຸລະກຳບໍ?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "ກູ້ຄືນໝວດໝູ່ບໍ?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "ລຶບໝວດໝູ່ບໍ?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "ກູ້ຄືນບັນຊີບໍ?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "ລຶບບັນຊີບໍ?";
 "TRASH_DELETE_MESSAGE" = "ການກະທຳນີ້ບໍ່ສາມາດຍົກເລີກໄດ້.";
 "TRASH_CLEAR_CONFIRMATION" = "ລາຍການທັງໝົດໃນຖັງຂີ້ເຫຍື້ອຈະຖືກລຶບຢ່າງຖາວອນ. ການກະທຳນີ້ບໍ່ສາມາດຍົກເລີກໄດ້.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ແກ້ໄຂ";
 "TRANSACTION_EDIT_CATEGORY" = "ໝວດໝູ່";
+"TRANSACTION_EDIT_BALANCE" = "ບັນຊີ";
 "TRANSACTION_EDIT_AMOUNT" = "ຈຳນວນເງິນ";
 "TRANSACTION_EDIT_DATE" = "ວັນທີ";
 "TRANSACTION_EDIT_TIME" = "ເວລາ";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ຍ້າຍໄປຖັງຂີ້ເຫຍື້ອແລ້ວ";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ໃຊ້ຈ່າຍມື້ນີ້";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ໃຊ້ຈ່າຍມື້ວານນີ້";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "ໄດ້ຮັບມື້ນີ້";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "ໄດ້ຮັບມື້ວານນີ້";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "ແກ້ໄຂໝວດໝູ່";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "ບ່ອນຈອດລົດ";
 "DEFAULT_CATEGORY_PETS" = "ສັດລ້ຽງ";
 "DEFAULT_CATEGORY_SAVINGS" = "ເງິນອອມ";
+"DEFAULT_CATEGORY_SALARY" = "ເງິນເດືອນ";
 "SETTINGS_APPEARANCE" = "ຮູບລັກສະນະ";
 "SETTINGS_THEME_SYSTEM" = "ລະບົບ";
 "SETTINGS_THEME_DARK" = "ມືດ";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "ການສັ່ນ";
 "SETTINGS_HIDE_CATEGORIES" = "ເຊື່ອງໝວດໝູ່";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "ໝວດໝູ່ຈະສະແດງເມື່ອປ້ອນຈຳນວນເງິນ";
+"SETTINGS_SECURITY" = "ຄວາມປອດໄພ";
+"SETTINGS_PASSCODE" = "ລະຫັດຜ່ານ";
+"SETTINGS_PASSCODE_CHANGE" = "ປ່ຽນລະຫັດຜ່ານ";
+"PASSCODE_ENTER" = "ປ້ອນລະຫັດຜ່ານ";
+"PASSCODE_ENTER_CURRENT" = "ປ້ອນລະຫັດຜ່ານປັດຈຸບັນ";
+"PASSCODE_ENTER_NEW" = "ປ້ອນລະຫັດຜ່ານໃໝ່";
+"PASSCODE_REPEAT" = "ປ້ອນລະຫັດຜ່ານອີກຄັ້ງ";
+"PASSCODE_WRONG" = "ລະຫັດຜ່ານບໍ່ຖືກຕ້ອງ";
+"PASSCODE_MISMATCH" = "ລະຫັດຜ່ານບໍ່ກົງກັນ";
+"PASSCODE_BIOMETRICS_REASON" = "ປົດລັອກແອັບ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "ໝວດໝູ່: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "ໄຟລ໌ເສຍຫາຍ ຫຼື ບໍ່ສາມາດອ່ານໄດ້.";
 "BACKUPS_ERROR_NEWER_VERSION" = "ການສຳຮອງນີ້ສ້າງດ້ວຍແອັບເວີຊັນທີ່ໃໝ່ກວ່າ.";
 "BACKUPS_ERROR_UNSUPPORTED" = "ບໍ່ຮອງຮັບຮູບແບບໄຟລ໌ນີ້.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "ທຸກບັນຊີ";
+"BACKUPS_EXPORT_ALL_HISTORY" = "ປະຫວັດທັງໝົດ";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "ໄລຍະເວລາກຳນົດເອງ";
+"BACKUPS_EXPORT_LAST_DAYS" = "%d ມື້ຫຼ້າສຸດ";
+"BACKUPS_EXPORT_PERIOD" = "ໄລຍະເວລາ";
+"BACKUPS_EXPORT_SETTINGS" = "ການຕັ້ງຄ່າການສົ່ງອອກ";
 "BACKUPS_EXPORT_SECTION" = "ສົ່ງອອກ";
 "BACKUPS_IMPORT_ACTION" = "ນຳເຂົ້າຈາກໄຟລ໌";
 "BACKUPS_IMPORT_DONE" = "ລາຍການທີ່ເພີ່ມ: %d, ໝວດໝູ່: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "ສຸຂະພາບ, ຄອບຄົວ ແລະ ກິດຈະກຳ";
 "ICON_PICKER_SECTION_TECH" = "ເຕັກໂນໂລຊີ, ການສຶກສາ ແລະ ເຄື່ອງມື";
 "ICON_PICKER_SECTION_NATURE" = "ທຳມະຊາດ, ສະພາບອາກາດ ແລະ ສັນຍາລັກທົ່ວໄປ";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "ລຶບບັນຊີແລ້ວ";
+"ACCOUNTS_TITLE" = "ບັນຊີ";
+"ACCOUNTS_TOTAL" = "ລວມ";
+"ACCOUNTS_NEW" = "ບັນຊີໃໝ່";
+"ACCOUNTS_EDIT" = "ແກ້ໄຂບັນຊີ";
+"ACCOUNTS_NAME" = "ຊື່";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ບັນຊີລາຍຈ່າຍ";

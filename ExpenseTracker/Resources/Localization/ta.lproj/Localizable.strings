@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "செலவை உள்ளிடவும்";
+"STARTVIEW_ENTER_INCOME" = "வருமானத்தை உள்ளிடவும்";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "முதலில் தொகையை உள்ளிடவும்";
 "STARTVIEW_BALANCE" = "இருப்பு";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "செலவுகள்";
+"STATISTICS_INCOME_TITLE" = "வருமானம்";
 "STATISTICS_DAY" = "நாள்";
 "STATISTICS_MONTH" = "மாதம்";
 "STATISTICS_YEAR" = "ஆண்டு";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "பரிவர்த்தனையை மீட்டமைக்கவா?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "வகையை மீட்டமைக்கவா?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "வகையை நீக்கவா?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "கணக்கை மீட்டமைக்கவா?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "கணக்கை நீக்கவா?";
 "TRASH_DELETE_MESSAGE" = "இந்தச் செயலைச் செயல்தவிர்க்க முடியாது.";
 "TRASH_CLEAR_CONFIRMATION" = "குப்பைத் தொட்டியில் உள்ள அனைத்தும் நிரந்தரமாக நீக்கப்படும். இந்தச் செயலைச் செயல்தவிர்க்க முடியாது.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "திருத்து";
 "TRANSACTION_EDIT_CATEGORY" = "வகை";
+"TRANSACTION_EDIT_BALANCE" = "கணக்கு";
 "TRANSACTION_EDIT_AMOUNT" = "தொகை";
 "TRANSACTION_EDIT_DATE" = "தேதி";
 "TRANSACTION_EDIT_TIME" = "நேரம்";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "குப்பைத் தொட்டிக்கு நகர்த்தப்பட்டது";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "இன்றைய செலவு";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "நேற்றைய செலவு";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "இன்றைய வருமானம்";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "நேற்றைய வருமானம்";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "வகைகளைத் திருத்து";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "பார்க்கிங்";
 "DEFAULT_CATEGORY_PETS" = "செல்லப்பிராணிகள்";
 "DEFAULT_CATEGORY_SAVINGS" = "சேமிப்பு";
+"DEFAULT_CATEGORY_SALARY" = "சம்பளம்";
 "SETTINGS_APPEARANCE" = "தோற்றம்";
 "SETTINGS_THEME_SYSTEM" = "சிஸ்டம்";
 "SETTINGS_THEME_DARK" = "அடர்";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "அதிர்வு";
 "SETTINGS_HIDE_CATEGORIES" = "வகைகளை மறை";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "தொகையை உள்ளிடும்போது வகைகள் தோன்றும்";
+"SETTINGS_SECURITY" = "பாதுகாப்பு";
+"SETTINGS_PASSCODE" = "கடவுக்குறியீடு";
+"SETTINGS_PASSCODE_CHANGE" = "கடவுக்குறியீட்டை மாற்று";
+"PASSCODE_ENTER" = "கடவுக்குறியீட்டை உள்ளிடவும்";
+"PASSCODE_ENTER_CURRENT" = "தற்போதைய கடவுக்குறியீட்டை உள்ளிடவும்";
+"PASSCODE_ENTER_NEW" = "புதிய கடவுக்குறியீட்டை உள்ளிடவும்";
+"PASSCODE_REPEAT" = "கடவுக்குறியீட்டை மீண்டும் உள்ளிடவும்";
+"PASSCODE_WRONG" = "தவறான கடவுக்குறியீடு";
+"PASSCODE_MISMATCH" = "கடவுக்குறியீடுகள் பொருந்தவில்லை";
+"PASSCODE_BIOMETRICS_REASON" = "ஆப்ஸைத் திறக்கவும்";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "வகைகள்: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "கோப்பு சேதமடைந்துள்ளது அல்லது படிக்க முடியவில்லை.";
 "BACKUPS_ERROR_NEWER_VERSION" = "இந்தக் காப்புப்பிரதி ஆப்பின் புதிய பதிப்பில் உருவாக்கப்பட்டது.";
 "BACKUPS_ERROR_UNSUPPORTED" = "இந்தக் கோப்பு வடிவம் ஆதரிக்கப்படவில்லை.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "எல்லா கணக்குகளும்";
+"BACKUPS_EXPORT_ALL_HISTORY" = "முழு வரலாறு";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "தனிப்பயன் காலம்";
+"BACKUPS_EXPORT_LAST_DAYS" = "கடந்த %d நாட்கள்";
+"BACKUPS_EXPORT_PERIOD" = "காலம்";
+"BACKUPS_EXPORT_SETTINGS" = "ஏற்றுமதி அமைப்புகள்";
 "BACKUPS_EXPORT_SECTION" = "ஏற்றுமதி";
 "BACKUPS_IMPORT_ACTION" = "கோப்பிலிருந்து இறக்குமதி செய்";
 "BACKUPS_IMPORT_DONE" = "சேர்க்கப்பட்ட பரிவர்த்தனைகள்: %d, வகைகள்: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "உடல்நலம், குடும்பம் மற்றும் செயல்பாடுகள்";
 "ICON_PICKER_SECTION_TECH" = "தொழில்நுட்பம், கல்வி மற்றும் கருவிகள்";
 "ICON_PICKER_SECTION_NATURE" = "இயற்கை, வானிலை மற்றும் பொதுக் குறியீடுகள்";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "கணக்கு நீக்கப்பட்டது";
+"ACCOUNTS_TITLE" = "கணக்குகள்";
+"ACCOUNTS_TOTAL" = "மொத்தம்";
+"ACCOUNTS_NEW" = "புதிய கணக்கு";
+"ACCOUNTS_EDIT" = "கணக்கைத் திருத்து";
+"ACCOUNTS_NAME" = "பெயர்";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "செலவுக் கணக்கு";

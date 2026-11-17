@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Увядзіце выдатак";
+"STARTVIEW_ENTER_INCOME" = "Увядзіце даход";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Спачатку ўвядзіце суму";
 "STARTVIEW_BALANCE" = "Баланс";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Выдаткі";
+"STATISTICS_INCOME_TITLE" = "Даходы";
 "STATISTICS_DAY" = "Дзень";
 "STATISTICS_MONTH" = "Месяц";
 "STATISTICS_YEAR" = "Год";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Аднавіць транзакцыю?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Аднавіць катэгорыю?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Выдаліць катэгорыю?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Аднавіць рахунак?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Выдаліць рахунак?";
 "TRASH_DELETE_MESSAGE" = "Гэта дзеянне нельга адмяніць.";
 "TRASH_CLEAR_CONFIRMATION" = "Усе элементы ў сметніцы будуць выдалены назаўсёды. Гэта дзеянне нельга адмяніць.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Рэдагаванне";
 "TRANSACTION_EDIT_CATEGORY" = "Катэгорыя";
+"TRANSACTION_EDIT_BALANCE" = "Рахунак";
 "TRANSACTION_EDIT_AMOUNT" = "Сума";
 "TRANSACTION_EDIT_DATE" = "Дата";
 "TRANSACTION_EDIT_TIME" = "Час";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Перамешчана ў сметніцу";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Выдаткавана сёння";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Выдаткавана ўчора";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Атрымана сёння";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Атрымана ўчора";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Рэдагаванне катэгорый";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Паркоўка";
 "DEFAULT_CATEGORY_PETS" = "Жывёлы";
 "DEFAULT_CATEGORY_SAVINGS" = "Скарбонка";
+"DEFAULT_CATEGORY_SALARY" = "Зарплата";
 "SETTINGS_APPEARANCE" = "Выгляд";
 "SETTINGS_THEME_SYSTEM" = "Сістэмная";
 "SETTINGS_THEME_DARK" = "Цёмная";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Вібраводгук";
 "SETTINGS_HIDE_CATEGORIES" = "Хаваць катэгорыі";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Катэгорыі з’яўляюцца пры ўводзе сумы";
+"SETTINGS_SECURITY" = "Бяспека";
+"SETTINGS_PASSCODE" = "Код-пароль";
+"SETTINGS_PASSCODE_CHANGE" = "Змяніць код-пароль";
+"PASSCODE_ENTER" = "Увядзіце код-пароль";
+"PASSCODE_ENTER_CURRENT" = "Увядзіце бягучы код-пароль";
+"PASSCODE_ENTER_NEW" = "Увядзіце новы код-пароль";
+"PASSCODE_REPEAT" = "Паўтарыце код-пароль";
+"PASSCODE_WRONG" = "Няправільны код-пароль";
+"PASSCODE_MISMATCH" = "Коды-паролі не супадаюць";
+"PASSCODE_BIOMETRICS_REASON" = "Разблакіраваць праграму";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Катэгорыі: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Файл пашкоджаны або не чытаецца.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Гэта копія створана навейшай версіяй праграмы.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Гэты фармат файла не падтрымліваецца.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Усе рахункі";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Уся гісторыя";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Свой перыяд";
+"BACKUPS_EXPORT_LAST_DAYS" = "Апошнія %d дзён";
+"BACKUPS_EXPORT_PERIOD" = "Перыяд";
+"BACKUPS_EXPORT_SETTINGS" = "Налады экспарту";
 "BACKUPS_EXPORT_SECTION" = "Экспарт";
 "BACKUPS_IMPORT_ACTION" = "Імпартаваць з файла";
 "BACKUPS_IMPORT_DONE" = "Дададзена аперацый: %d, катэгорый: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Здароўе, сям’я і заняткі";
 "ICON_PICKER_SECTION_TECH" = "Тэхніка, адукацыя і інструменты";
 "ICON_PICKER_SECTION_NATURE" = "Прырода, надвор’е і агульныя сімвалы";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Рахунак выдалены";
+"ACCOUNTS_TITLE" = "Рахункі";
+"ACCOUNTS_TOTAL" = "Разам";
+"ACCOUNTS_NEW" = "Новы рахунак";
+"ACCOUNTS_EDIT" = "Рэдагаванне рахунку";
+"ACCOUNTS_NAME" = "Назва";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Улік выдаткаў";

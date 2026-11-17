@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Inserisci la spesa";
+"STARTVIEW_ENTER_INCOME" = "Inserisci l’entrata";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Inserisci prima l'importo";
 "STARTVIEW_BALANCE" = "Saldo";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Spese";
+"STATISTICS_INCOME_TITLE" = "Entrate";
 "STATISTICS_DAY" = "Giorno";
 "STATISTICS_MONTH" = "Mese";
 "STATISTICS_YEAR" = "Anno";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Ripristinare la transazione?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Ripristinare la categoria?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Eliminare la categoria?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Ripristinare il conto?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Eliminare il conto?";
 "TRASH_DELETE_MESSAGE" = "Questa azione non può essere annullata.";
 "TRASH_CLEAR_CONFIRMATION" = "Tutti gli elementi nel cestino verranno eliminati definitivamente. Questa azione non può essere annullata.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Modifica";
 "TRANSACTION_EDIT_CATEGORY" = "Categoria";
+"TRANSACTION_EDIT_BALANCE" = "Conto";
 "TRANSACTION_EDIT_AMOUNT" = "Importo";
 "TRANSACTION_EDIT_DATE" = "Data";
 "TRANSACTION_EDIT_TIME" = "Ora";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Spostato nel cestino";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Speso oggi";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Speso ieri";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Ricevuto oggi";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Ricevuto ieri";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Modifica categorie";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Parcheggio";
 "DEFAULT_CATEGORY_PETS" = "Animali";
 "DEFAULT_CATEGORY_SAVINGS" = "Risparmi";
+"DEFAULT_CATEGORY_SALARY" = "Stipendio";
 "SETTINGS_APPEARANCE" = "Aspetto";
 "SETTINGS_THEME_SYSTEM" = "Sistema";
 "SETTINGS_THEME_DARK" = "Scuro";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Vibrazione";
 "SETTINGS_HIDE_CATEGORIES" = "Nascondi categorie";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Le categorie compaiono quando inserisci un importo";
+"SETTINGS_SECURITY" = "Sicurezza";
+"SETTINGS_PASSCODE" = "Codice";
+"SETTINGS_PASSCODE_CHANGE" = "Cambia codice";
+"PASSCODE_ENTER" = "Inserisci il codice";
+"PASSCODE_ENTER_CURRENT" = "Inserisci il codice attuale";
+"PASSCODE_ENTER_NEW" = "Inserisci il nuovo codice";
+"PASSCODE_REPEAT" = "Ripeti il codice";
+"PASSCODE_WRONG" = "Codice errato";
+"PASSCODE_MISMATCH" = "I codici non corrispondono";
+"PASSCODE_BIOMETRICS_REASON" = "Sblocca l’app";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categorie: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Il file è danneggiato o illeggibile.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Questo backup è stato creato con una versione più recente dell’app.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Questo formato di file non è supportato.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Tutti i conti";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Tutta la cronologia";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Periodo personalizzato";
+"BACKUPS_EXPORT_LAST_DAYS" = "Ultimi %d giorni";
+"BACKUPS_EXPORT_PERIOD" = "Periodo";
+"BACKUPS_EXPORT_SETTINGS" = "Impostazioni di esportazione";
 "BACKUPS_EXPORT_SECTION" = "Esporta";
 "BACKUPS_IMPORT_ACTION" = "Importa da file";
 "BACKUPS_IMPORT_DONE" = "Transazioni aggiunte: %d, categorie: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Salute, famiglia e attività";
 "ICON_PICKER_SECTION_TECH" = "Tecnologia, istruzione e attrezzi";
 "ICON_PICKER_SECTION_NATURE" = "Natura, meteo e simboli generali";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Conto eliminato";
+"ACCOUNTS_TITLE" = "Conti";
+"ACCOUNTS_TOTAL" = "Totale";
+"ACCOUNTS_NEW" = "Nuovo conto";
+"ACCOUNTS_EDIT" = "Modifica conto";
+"ACCOUNTS_NAME" = "Nome";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Contabilità delle spese";

@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Masukkan perbelanjaan";
+"STARTVIEW_ENTER_INCOME" = "Masukkan pendapatan";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Masukkan jumlah dahulu";
 "STARTVIEW_BALANCE" = "Baki";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Perbelanjaan";
+"STATISTICS_INCOME_TITLE" = "Pendapatan";
 "STATISTICS_DAY" = "Hari";
 "STATISTICS_MONTH" = "Bulan";
 "STATISTICS_YEAR" = "Tahun";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Pulihkan transaksi?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Pulihkan kategori?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Padam kategori?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Pulihkan akaun?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Padam akaun?";
 "TRASH_DELETE_MESSAGE" = "Tindakan ini tidak boleh dibuat asal.";
 "TRASH_CLEAR_CONFIRMATION" = "Semua item dalam tong sampah akan dipadamkan secara kekal. Tindakan ini tidak boleh dibuat asal.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Edit";
 "TRANSACTION_EDIT_CATEGORY" = "Kategori";
+"TRANSACTION_EDIT_BALANCE" = "Akaun";
 "TRANSACTION_EDIT_AMOUNT" = "Jumlah";
 "TRANSACTION_EDIT_DATE" = "Tarikh";
 "TRANSACTION_EDIT_TIME" = "Masa";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Dialihkan ke Tong Sampah";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Dibelanjakan hari ini";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Dibelanjakan semalam";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Diterima hari ini";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Diterima semalam";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Edit kategori";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Parkir";
 "DEFAULT_CATEGORY_PETS" = "Haiwan peliharaan";
 "DEFAULT_CATEGORY_SAVINGS" = "Simpanan";
+"DEFAULT_CATEGORY_SALARY" = "Gaji";
 "SETTINGS_APPEARANCE" = "Penampilan";
 "SETTINGS_THEME_SYSTEM" = "Sistem";
 "SETTINGS_THEME_DARK" = "Gelap";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Getaran";
 "SETTINGS_HIDE_CATEGORIES" = "Sembunyikan kategori";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategori muncul apabila anda memasukkan jumlah";
+"SETTINGS_SECURITY" = "Keselamatan";
+"SETTINGS_PASSCODE" = "Kod laluan";
+"SETTINGS_PASSCODE_CHANGE" = "Tukar kod laluan";
+"PASSCODE_ENTER" = "Masukkan kod laluan";
+"PASSCODE_ENTER_CURRENT" = "Masukkan kod laluan semasa";
+"PASSCODE_ENTER_NEW" = "Masukkan kod laluan baharu";
+"PASSCODE_REPEAT" = "Ulang kod laluan";
+"PASSCODE_WRONG" = "Kod laluan salah";
+"PASSCODE_MISMATCH" = "Kod laluan tidak sepadan";
+"PASSCODE_BIOMETRICS_REASON" = "Buka kunci app";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategori: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Fail rosak atau tidak dapat dibaca.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Sandaran ini dibuat dengan versi aplikasi yang lebih baharu.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Format fail ini tidak disokong.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Semua akaun";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Semua sejarah";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Tempoh tersuai";
+"BACKUPS_EXPORT_LAST_DAYS" = "%d hari lepas";
+"BACKUPS_EXPORT_PERIOD" = "Tempoh";
+"BACKUPS_EXPORT_SETTINGS" = "Tetapan eksport";
 "BACKUPS_EXPORT_SECTION" = "Eksport";
 "BACKUPS_IMPORT_ACTION" = "Import daripada fail";
 "BACKUPS_IMPORT_DONE" = "Transaksi ditambah: %d, kategori: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Kesihatan, keluarga & aktiviti";
 "ICON_PICKER_SECTION_TECH" = "Teknologi, pendidikan & peralatan";
 "ICON_PICKER_SECTION_NATURE" = "Alam semula jadi, cuaca & simbol umum";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Akaun dipadam";
+"ACCOUNTS_TITLE" = "Akaun";
+"ACCOUNTS_TOTAL" = "Jumlah";
+"ACCOUNTS_NEW" = "Akaun baharu";
+"ACCOUNTS_EDIT" = "Edit akaun";
+"ACCOUNTS_NAME" = "Nama";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Perakaunan perbelanjaan";

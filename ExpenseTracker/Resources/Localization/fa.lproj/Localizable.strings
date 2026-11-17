@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "هزینه را وارد کنید";
+"STARTVIEW_ENTER_INCOME" = "درآمد را وارد کنید";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "ابتدا مبلغ را وارد کنید";
 "STARTVIEW_BALANCE" = "موجودی";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "هزینه‌ها";
+"STATISTICS_INCOME_TITLE" = "درآمد";
 "STATISTICS_DAY" = "روز";
 "STATISTICS_MONTH" = "ماه";
 "STATISTICS_YEAR" = "سال";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "تراکنش بازیابی شود؟";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "دسته بازیابی شود؟";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "دسته حذف شود؟";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "حساب بازیابی شود؟";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "حساب حذف شود؟";
 "TRASH_DELETE_MESSAGE" = "این عمل قابل بازگشت نیست.";
 "TRASH_CLEAR_CONFIRMATION" = "همه موارد موجود در سطل زباله برای همیشه حذف می‌شوند. این عمل قابل بازگشت نیست.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ویرایش";
 "TRANSACTION_EDIT_CATEGORY" = "دسته‌بندی";
+"TRANSACTION_EDIT_BALANCE" = "حساب";
 "TRANSACTION_EDIT_AMOUNT" = "مبلغ";
 "TRANSACTION_EDIT_DATE" = "تاریخ";
 "TRANSACTION_EDIT_TIME" = "ساعت";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "به سطل زباله منتقل شد";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "هزینهٔ امروز";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "هزینهٔ دیروز";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "دریافتی امروز";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "دریافتی دیروز";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "ویرایش دسته‌ها";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "پارکینگ";
 "DEFAULT_CATEGORY_PETS" = "حیوانات خانگی";
 "DEFAULT_CATEGORY_SAVINGS" = "پس‌انداز";
+"DEFAULT_CATEGORY_SALARY" = "حقوق";
 "SETTINGS_APPEARANCE" = "ظاهر";
 "SETTINGS_THEME_SYSTEM" = "سیستم";
 "SETTINGS_THEME_DARK" = "تیره";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "لرزش";
 "SETTINGS_HIDE_CATEGORIES" = "پنهان کردن دسته‌ها";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "دسته‌ها هنگام وارد کردن مبلغ نمایش داده می‌شوند";
+"SETTINGS_SECURITY" = "امنیت";
+"SETTINGS_PASSCODE" = "گذرواژه";
+"SETTINGS_PASSCODE_CHANGE" = "تغییر گذرواژه";
+"PASSCODE_ENTER" = "گذرواژه را وارد کنید";
+"PASSCODE_ENTER_CURRENT" = "گذرواژهٔ فعلی را وارد کنید";
+"PASSCODE_ENTER_NEW" = "گذرواژهٔ جدید را وارد کنید";
+"PASSCODE_REPEAT" = "گذرواژه را تکرار کنید";
+"PASSCODE_WRONG" = "گذرواژه اشتباه است";
+"PASSCODE_MISMATCH" = "گذرواژه‌ها مطابقت ندارند";
+"PASSCODE_BIOMETRICS_REASON" = "باز کردن قفل برنامه";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "دسته‌ها: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "فایل خراب است یا خوانده نمی‌شود.";
 "BACKUPS_ERROR_NEWER_VERSION" = "این پشتیبان با نسخه جدیدتری از برنامه ساخته شده است.";
 "BACKUPS_ERROR_UNSUPPORTED" = "این قالب فایل پشتیبانی نمی‌شود.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "همهٔ حساب‌ها";
+"BACKUPS_EXPORT_ALL_HISTORY" = "کل تاریخچه";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "دورهٔ دلخواه";
+"BACKUPS_EXPORT_LAST_DAYS" = "%d روز گذشته";
+"BACKUPS_EXPORT_PERIOD" = "دوره";
+"BACKUPS_EXPORT_SETTINGS" = "تنظیمات خروجی";
 "BACKUPS_EXPORT_SECTION" = "خروجی";
 "BACKUPS_IMPORT_ACTION" = "وارد کردن از فایل";
 "BACKUPS_IMPORT_DONE" = "تراکنش‌های افزوده‌شده: %d، دسته‌ها: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "سلامت، خانواده و فعالیت‌ها";
 "ICON_PICKER_SECTION_TECH" = "فناوری، آموزش و ابزار";
 "ICON_PICKER_SECTION_NATURE" = "طبیعت، آب‌وهوا و نمادهای عمومی";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "حساب حذف شد";
+"ACCOUNTS_TITLE" = "حساب‌ها";
+"ACCOUNTS_TOTAL" = "مجموع";
+"ACCOUNTS_NEW" = "حساب جدید";
+"ACCOUNTS_EDIT" = "ویرایش حساب";
+"ACCOUNTS_NAME" = "نام";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "حسابداری هزینه‌ها";

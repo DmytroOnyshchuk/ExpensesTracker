@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Harcama girin";
+"STARTVIEW_ENTER_INCOME" = "Gelir girin";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Önce tutarı girin";
 "STARTVIEW_BALANCE" = "Bakiye";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Harcamalar";
+"STATISTICS_INCOME_TITLE" = "Gelirler";
 "STATISTICS_DAY" = "Gün";
 "STATISTICS_MONTH" = "Ay";
 "STATISTICS_YEAR" = "Yıl";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "İşlem geri yüklensin mi?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Kategori geri yüklensin mi?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Kategori silinsin mi?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Hesap geri yüklensin mi?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Hesap silinsin mi?";
 "TRASH_DELETE_MESSAGE" = "Bu işlem geri alınamaz.";
 "TRASH_CLEAR_CONFIRMATION" = "Çöp sepetindeki tüm öğeler kalıcı olarak silinecek. Bu işlem geri alınamaz.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Düzenle";
 "TRANSACTION_EDIT_CATEGORY" = "Kategori";
+"TRANSACTION_EDIT_BALANCE" = "Hesap";
 "TRANSACTION_EDIT_AMOUNT" = "Tutar";
 "TRANSACTION_EDIT_DATE" = "Tarih";
 "TRANSACTION_EDIT_TIME" = "Saat";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Çöp Sepeti’ne taşındı";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Bugün harcanan";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Dün harcanan";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Bugün alınan";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Dün alınan";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Kategorileri düzenle";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Otopark";
 "DEFAULT_CATEGORY_PETS" = "Evcil hayvanlar";
 "DEFAULT_CATEGORY_SAVINGS" = "Birikim";
+"DEFAULT_CATEGORY_SALARY" = "Maaş";
 "SETTINGS_APPEARANCE" = "Görünüm";
 "SETTINGS_THEME_SYSTEM" = "Sistem";
 "SETTINGS_THEME_DARK" = "Koyu";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Titreşim";
 "SETTINGS_HIDE_CATEGORIES" = "Kategorileri gizle";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategoriler tutar girildiğinde görünür";
+"SETTINGS_SECURITY" = "Güvenlik";
+"SETTINGS_PASSCODE" = "Parola";
+"SETTINGS_PASSCODE_CHANGE" = "Parolayı değiştir";
+"PASSCODE_ENTER" = "Parolayı girin";
+"PASSCODE_ENTER_CURRENT" = "Mevcut parolayı girin";
+"PASSCODE_ENTER_NEW" = "Yeni parolayı girin";
+"PASSCODE_REPEAT" = "Parolayı tekrarlayın";
+"PASSCODE_WRONG" = "Yanlış parola";
+"PASSCODE_MISMATCH" = "Parolalar eşleşmiyor";
+"PASSCODE_BIOMETRICS_REASON" = "Uygulamanın kilidini aç";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategoriler: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Dosya hasarlı veya okunamıyor.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Bu yedek, uygulamanın daha yeni bir sürümüyle oluşturulmuş.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Bu dosya biçimi desteklenmiyor.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Tüm hesaplar";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Tüm geçmiş";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Özel dönem";
+"BACKUPS_EXPORT_LAST_DAYS" = "Son %d gün";
+"BACKUPS_EXPORT_PERIOD" = "Dönem";
+"BACKUPS_EXPORT_SETTINGS" = "Dışa aktarma ayarları";
 "BACKUPS_EXPORT_SECTION" = "Dışa aktarma";
 "BACKUPS_IMPORT_ACTION" = "Dosyadan içe aktar";
 "BACKUPS_IMPORT_DONE" = "Eklenen işlemler: %d, kategoriler: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Sağlık, aile ve etkinlikler";
 "ICON_PICKER_SECTION_TECH" = "Teknoloji, eğitim ve aletler";
 "ICON_PICKER_SECTION_NATURE" = "Doğa, hava durumu ve genel semboller";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Hesap silindi";
+"ACCOUNTS_TITLE" = "Hesaplar";
+"ACCOUNTS_TOTAL" = "Toplam";
+"ACCOUNTS_NEW" = "Yeni hesap";
+"ACCOUNTS_EDIT" = "Hesabı düzenle";
+"ACCOUNTS_NAME" = "Ad";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Gider takibi";

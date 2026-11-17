@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Ievadiet izdevumu";
+"STARTVIEW_ENTER_INCOME" = "Ievadiet ienākumu";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Vispirms ievadiet summu";
 "STARTVIEW_BALANCE" = "Atlikums";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Izdevumi";
+"STATISTICS_INCOME_TITLE" = "Ienākumi";
 "STATISTICS_DAY" = "Diena";
 "STATISTICS_MONTH" = "Mēnesis";
 "STATISTICS_YEAR" = "Gads";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Atjaunot darījumu?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Atjaunot kategoriju?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Dzēst kategoriju?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Atjaunot kontu?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Dzēst kontu?";
 "TRASH_DELETE_MESSAGE" = "Šo darbību nevar atsaukt.";
 "TRASH_CLEAR_CONFIRMATION" = "Visi atkritnes vienumi tiks neatgriezeniski dzēsti. Šo darbību nevar atsaukt.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Rediģēt";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorija";
+"TRANSACTION_EDIT_BALANCE" = "Konts";
 "TRANSACTION_EDIT_AMOUNT" = "Summa";
 "TRANSACTION_EDIT_DATE" = "Datums";
 "TRANSACTION_EDIT_TIME" = "Laiks";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Pārvietots uz atkritni";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Iztērēts šodien";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Iztērēts vakar";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Saņemts šodien";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Saņemts vakar";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Rediģēt kategorijas";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Stāvvieta";
 "DEFAULT_CATEGORY_PETS" = "Mājdzīvnieki";
 "DEFAULT_CATEGORY_SAVINGS" = "Uzkrājumi";
+"DEFAULT_CATEGORY_SALARY" = "Alga";
 "SETTINGS_APPEARANCE" = "Izskats";
 "SETTINGS_THEME_SYSTEM" = "Sistēmas";
 "SETTINGS_THEME_DARK" = "Tumšs";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Vibrācija";
 "SETTINGS_HIDE_CATEGORIES" = "Slēpt kategorijas";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategorijas parādās, ievadot summu";
+"SETTINGS_SECURITY" = "Drošība";
+"SETTINGS_PASSCODE" = "Piekļuves kods";
+"SETTINGS_PASSCODE_CHANGE" = "Mainīt piekļuves kodu";
+"PASSCODE_ENTER" = "Ievadiet piekļuves kodu";
+"PASSCODE_ENTER_CURRENT" = "Ievadiet pašreizējo piekļuves kodu";
+"PASSCODE_ENTER_NEW" = "Ievadiet jauno piekļuves kodu";
+"PASSCODE_REPEAT" = "Atkārtojiet piekļuves kodu";
+"PASSCODE_WRONG" = "Nepareizs piekļuves kods";
+"PASSCODE_MISMATCH" = "Piekļuves kodi nesakrīt";
+"PASSCODE_BIOMETRICS_REASON" = "Atbloķēt lietotni";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorijas: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Fails ir bojāts vai to nevar nolasīt.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Šis dublējums izveidots ar jaunāku lietotnes versiju.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Šis faila formāts netiek atbalstīts.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Visi konti";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Visa vēsture";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Pielāgots periods";
+"BACKUPS_EXPORT_LAST_DAYS" = "Pēdējās %d dienas";
+"BACKUPS_EXPORT_PERIOD" = "Periods";
+"BACKUPS_EXPORT_SETTINGS" = "Eksporta iestatījumi";
 "BACKUPS_EXPORT_SECTION" = "Eksports";
 "BACKUPS_IMPORT_ACTION" = "Importēt no faila";
 "BACKUPS_IMPORT_DONE" = "Pievienoti darījumi: %d, kategorijas: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Veselība, ģimene un aktivitātes";
 "ICON_PICKER_SECTION_TECH" = "Tehnoloģijas, izglītība un instrumenti";
 "ICON_PICKER_SECTION_NATURE" = "Daba, laikapstākļi un vispārīgi simboli";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Konts izdzēsts";
+"ACCOUNTS_TITLE" = "Konti";
+"ACCOUNTS_TOTAL" = "Kopā";
+"ACCOUNTS_NEW" = "Jauns konts";
+"ACCOUNTS_EDIT" = "Rediģēt kontu";
+"ACCOUNTS_NAME" = "Nosaukums";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Izdevumu uzskaite";

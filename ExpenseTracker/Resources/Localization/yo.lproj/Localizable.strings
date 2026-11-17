@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Tẹ ìnáwó sí i";
+"STARTVIEW_ENTER_INCOME" = "Tẹ owó tó ń wọlé sí i";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Kọ́kọ́ tẹ iye owó";
 "STARTVIEW_BALANCE" = "Owó tó kù";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Àwọn ìnáwó";
+"STATISTICS_INCOME_TITLE" = "Owó tó ń wọlé";
 "STATISTICS_DAY" = "Ọjọ́";
 "STATISTICS_MONTH" = "Oṣù";
 "STATISTICS_YEAR" = "Ọdún";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Ṣé kí a mú ìdúnàádúrà padà?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Ṣé kí a mú ẹ̀ka padà?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Ṣé kí a pa ẹ̀ka rẹ́?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Ṣé kí a mú àkáǹtì padà?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Ṣé kí a pa àkáǹtì rẹ́?";
 "TRASH_DELETE_MESSAGE" = "A kò lè yí ìgbésẹ̀ yìí padà.";
 "TRASH_CLEAR_CONFIRMATION" = "Gbogbo ohun tó wà nínú àpótí ìdọ̀tí ni a ó parẹ́ pátápátá. A kò lè yí ìgbésẹ̀ yìí padà.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Ṣàtúnṣe";
 "TRANSACTION_EDIT_CATEGORY" = "Ẹ̀ka";
+"TRANSACTION_EDIT_BALANCE" = "Àkáǹtì";
 "TRANSACTION_EDIT_AMOUNT" = "Iye owó";
 "TRANSACTION_EDIT_DATE" = "Déètì";
 "TRANSACTION_EDIT_TIME" = "Àkókò";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "A ti gbé e lọ sí àpótí ìdọ̀tí";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Ohun tí a ná lónìí";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Ohun tí a ná lánàá";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Ohun tí a gbà lónìí";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Ohun tí a gbà lánàá";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Ṣàtúnṣe àwọn ẹ̀ka";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Ibi ìgbọ́kọ̀sí";
 "DEFAULT_CATEGORY_PETS" = "Ẹran ọ̀sìn";
 "DEFAULT_CATEGORY_SAVINGS" = "Ìfowópamọ́";
+"DEFAULT_CATEGORY_SALARY" = "Owó oṣù";
 "SETTINGS_APPEARANCE" = "Ìrísí";
 "SETTINGS_THEME_SYSTEM" = "Ètò";
 "SETTINGS_THEME_DARK" = "Dúdú";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Gbígbọ̀n";
 "SETTINGS_HIDE_CATEGORIES" = "Fi àwọn ẹ̀ka pamọ́";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Àwọn ẹ̀ka máa ń hàn nígbà tí o bá tẹ iye owó";
+"SETTINGS_SECURITY" = "Ààbò";
+"SETTINGS_PASSCODE" = "Kóòdù ìwọlé";
+"SETTINGS_PASSCODE_CHANGE" = "Yí kóòdù ìwọlé padà";
+"PASSCODE_ENTER" = "Tẹ kóòdù ìwọlé";
+"PASSCODE_ENTER_CURRENT" = "Tẹ kóòdù ìwọlé lọ́wọ́lọ́wọ́";
+"PASSCODE_ENTER_NEW" = "Tẹ kóòdù ìwọlé tuntun";
+"PASSCODE_REPEAT" = "Tún kóòdù ìwọlé tẹ̀";
+"PASSCODE_WRONG" = "Kóòdù ìwọlé kò tọ́";
+"PASSCODE_MISMATCH" = "Àwọn kóòdù ìwọlé kò bára mu";
+"PASSCODE_BIOMETRICS_REASON" = "Ṣí áàpù náà";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Àwọn ẹ̀ka: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Fáìlì náà ti bàjẹ́ tàbí kò ṣe é kà.";
 "BACKUPS_ERROR_NEWER_VERSION" = "A ṣe àfẹ̀yìntì yìí pẹ̀lú ẹ̀dà áàpù tuntun jù.";
 "BACKUPS_ERROR_UNSUPPORTED" = "A kò ṣe àtìlẹ́yìn fún irú fáìlì yìí.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Gbogbo àkáǹtì";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Gbogbo ìtàn";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Àkókò àdáni";
+"BACKUPS_EXPORT_LAST_DAYS" = "Ọjọ́ %d tó kọjá";
+"BACKUPS_EXPORT_PERIOD" = "Àkókò";
+"BACKUPS_EXPORT_SETTINGS" = "Ètò ìkójáde";
 "BACKUPS_EXPORT_SECTION" = "Ìkójáde";
 "BACKUPS_IMPORT_ACTION" = "Kó wọlé láti fáìlì";
 "BACKUPS_IMPORT_DONE" = "Ìdúnàádúrà tí a fi kún: %d, ẹ̀ka: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Ìlera, ẹbí àti àwọn ìgbòkègbodò";
 "ICON_PICKER_SECTION_TECH" = "Ìmọ̀ ẹ̀rọ, ẹ̀kọ́ àti àwọn irinṣẹ́";
 "ICON_PICKER_SECTION_NATURE" = "Ìṣẹ̀dá, ojú ọjọ́ àti àwọn àmì gbogbogbò";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "A ti pa àkáǹtì rẹ́";
+"ACCOUNTS_TITLE" = "Àwọn àkáǹtì";
+"ACCOUNTS_TOTAL" = "Àpapọ̀";
+"ACCOUNTS_NEW" = "Àkáǹtì tuntun";
+"ACCOUNTS_EDIT" = "Ṣàtúnṣe àkáǹtì";
+"ACCOUNTS_NAME" = "Orúkọ";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Ìṣirò ìnáwó";

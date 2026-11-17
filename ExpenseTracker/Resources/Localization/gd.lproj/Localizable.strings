@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Cuir a-steach cosgais";
+"STARTVIEW_ENTER_INCOME" = "Cuir a-steach teachd-a-steach";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Cuir a-steach an t-suim an toiseach";
 "STARTVIEW_BALANCE" = "Cothrom";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Cosgaisean";
+"STATISTICS_INCOME_TITLE" = "Teachd-a-steach";
 "STATISTICS_DAY" = "Latha";
 "STATISTICS_MONTH" = "Mìos";
 "STATISTICS_YEAR" = "Bliadhna";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "A bheil thu airson an tar-chur aiseag?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "A bheil thu airson an roinn-seòrsa aiseag?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "A bheil thu airson an roinn-seòrsa a sguabadh às?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "A bheil thu airson an cunntas aiseag?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "A bheil thu airson an cunntas a sguabadh às?";
 "TRASH_DELETE_MESSAGE" = "Cha ghabh seo a neo-dhèanamh.";
 "TRASH_CLEAR_CONFIRMATION" = "Thèid a h-uile nì san sgudal a sguabadh às gu buan. Cha ghabh an gnìomh seo a neo-dhèanamh.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Deasaich";
 "TRANSACTION_EDIT_CATEGORY" = "Roinn-seòrsa";
+"TRANSACTION_EDIT_BALANCE" = "Cunntas";
 "TRANSACTION_EDIT_AMOUNT" = "Suim";
 "TRANSACTION_EDIT_DATE" = "Ceann-là";
 "TRANSACTION_EDIT_TIME" = "Àm";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Chaidh a ghluasad dhan sgudal";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Air a chosg an-diugh";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Air a chosg an-dè";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Air fhaighinn an-diugh";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Air fhaighinn an-dè";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Deasaich na roinnean-seòrsa";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Parcadh";
 "DEFAULT_CATEGORY_PETS" = "Peataichean";
 "DEFAULT_CATEGORY_SAVINGS" = "Sàbhalaidhean";
+"DEFAULT_CATEGORY_SALARY" = "Tuarastal";
 "SETTINGS_APPEARANCE" = "Coltas";
 "SETTINGS_THEME_SYSTEM" = "Siostam";
 "SETTINGS_THEME_DARK" = "Dorcha";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Crith";
 "SETTINGS_HIDE_CATEGORIES" = "Falaich roinnean-seòrsa";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Nochdaidh roinnean-seòrsa nuair a chuireas tu suim a-steach";
+"SETTINGS_SECURITY" = "Tèarainteachd";
+"SETTINGS_PASSCODE" = "Còd-faire";
+"SETTINGS_PASSCODE_CHANGE" = "Atharraich an còd-faire";
+"PASSCODE_ENTER" = "Cuir a-steach an còd-faire";
+"PASSCODE_ENTER_CURRENT" = "Cuir a-steach an còd-faire làithreach";
+"PASSCODE_ENTER_NEW" = "Cuir a-steach còd-faire ùr";
+"PASSCODE_REPEAT" = "Cuir an còd-faire a-steach a-rithist";
+"PASSCODE_WRONG" = "Còd-faire ceàrr";
+"PASSCODE_MISMATCH" = "Chan eil na còdan-faire co-ionnan";
+"PASSCODE_BIOMETRICS_REASON" = "Thoir a’ ghlas far na h-aplacaid";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Roinnean-seòrsa: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Tha am faidhle millte no cha ghabh a leughadh.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Chaidh an lethbhreac-glèidhidh seo a chruthachadh le tionndadh nas ùire dhen aplacaid.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Chan eil taic ris an fhòrmat faidhle seo.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "A h-uile cunntas";
+"BACKUPS_EXPORT_ALL_HISTORY" = "An eachdraidh air fad";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Ùine ghnàthaichte";
+"BACKUPS_EXPORT_LAST_DAYS" = "Na %d là mu dheireadh";
+"BACKUPS_EXPORT_PERIOD" = "Ùine";
+"BACKUPS_EXPORT_SETTINGS" = "Roghainnean às-phortaidh";
 "BACKUPS_EXPORT_SECTION" = "Às-phortadh";
 "BACKUPS_IMPORT_ACTION" = "Ion-phortaich o fhaidhle";
 "BACKUPS_IMPORT_DONE" = "Tar-chuiridhean air an cur ris: %d, roinnean-seòrsa: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Slàinte, teaghlach agus gnìomhachdan";
 "ICON_PICKER_SECTION_TECH" = "Teicneòlas, foghlam agus innealan";
 "ICON_PICKER_SECTION_NATURE" = "Nàdar, aimsir agus samhlaidhean coitcheann";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Chaidh an cunntas a sguabadh às";
+"ACCOUNTS_TITLE" = "Cunntasan";
+"ACCOUNTS_TOTAL" = "Iomlan";
+"ACCOUNTS_NEW" = "Cunntas ùr";
+"ACCOUNTS_EDIT" = "Deasaich an cunntas";
+"ACCOUNTS_NAME" = "Ainm";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Cunntasachd chosgaisean";

@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Чыгымды киргизиңиз";
+"STARTVIEW_ENTER_INCOME" = "Кирешени киргизиңиз";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Адегенде сумманы киргизиңиз";
 "STARTVIEW_BALANCE" = "Баланс";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Чыгымдар";
+"STATISTICS_INCOME_TITLE" = "Кирешелер";
 "STATISTICS_DAY" = "Күн";
 "STATISTICS_MONTH" = "Ай";
 "STATISTICS_YEAR" = "Жыл";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Транзакция калыбына келтирилсинби?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Категория калыбына келтирилсинби?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Категория өчүрүлсүнбү?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Эсеп калыбына келтирилсинби?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Эсеп өчүрүлсүнбү?";
 "TRASH_DELETE_MESSAGE" = "Бул аракетти артка кайтаруу мүмкүн эмес.";
 "TRASH_CLEAR_CONFIRMATION" = "Себеттеги бардык элементтер биротоло өчүрүлөт. Бул аракетти артка кайтаруу мүмкүн эмес.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Түзөтүү";
 "TRANSACTION_EDIT_CATEGORY" = "Категория";
+"TRANSACTION_EDIT_BALANCE" = "Эсеп";
 "TRANSACTION_EDIT_AMOUNT" = "Сумма";
 "TRANSACTION_EDIT_DATE" = "Күнү";
 "TRANSACTION_EDIT_TIME" = "Убакыт";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Себетке жылдырылды";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Бүгүн сарпталды";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Кечээ сарпталды";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Бүгүн алынды";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Кечээ алынды";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Категорияларды түзөтүү";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Унаа токтотуу";
 "DEFAULT_CATEGORY_PETS" = "Үй жаныбарлары";
 "DEFAULT_CATEGORY_SAVINGS" = "Аманат";
+"DEFAULT_CATEGORY_SALARY" = "Айлык";
 "SETTINGS_APPEARANCE" = "Көрүнүш";
 "SETTINGS_THEME_SYSTEM" = "Системалык";
 "SETTINGS_THEME_DARK" = "Караңгы";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Дирилдөө";
 "SETTINGS_HIDE_CATEGORIES" = "Категорияларды жашыруу";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Категориялар сумманы киргизгенде пайда болот";
+"SETTINGS_SECURITY" = "Коопсуздук";
+"SETTINGS_PASSCODE" = "Код-сырсөз";
+"SETTINGS_PASSCODE_CHANGE" = "Код-сырсөздү өзгөртүү";
+"PASSCODE_ENTER" = "Код-сырсөздү киргизиңиз";
+"PASSCODE_ENTER_CURRENT" = "Учурдагы код-сырсөздү киргизиңиз";
+"PASSCODE_ENTER_NEW" = "Жаңы код-сырсөздү киргизиңиз";
+"PASSCODE_REPEAT" = "Код-сырсөздү кайталаңыз";
+"PASSCODE_WRONG" = "Код-сырсөз туура эмес";
+"PASSCODE_MISMATCH" = "Код-сырсөздөр дал келбейт";
+"PASSCODE_BIOMETRICS_REASON" = "Колдонмонун кулпусун ачуу";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Категориялар: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Файл бузулган же окулбайт.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Бул көчүрмө колдонмонун жаңыраак версиясында түзүлгөн.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Бул файл форматы колдоого алынбайт.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Бардык эсептер";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Бүт тарых";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Өз мезгилим";
+"BACKUPS_EXPORT_LAST_DAYS" = "Акыркы %d күн";
+"BACKUPS_EXPORT_PERIOD" = "Мезгил";
+"BACKUPS_EXPORT_SETTINGS" = "Экспорттун жөндөөлөрү";
 "BACKUPS_EXPORT_SECTION" = "Экспорт";
 "BACKUPS_IMPORT_ACTION" = "Файлдан импорттоо";
 "BACKUPS_IMPORT_DONE" = "Кошулган операциялар: %d, категориялар: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Ден соолук, үй-бүлө жана иш-чаралар";
 "ICON_PICKER_SECTION_TECH" = "Технология, билим жана куралдар";
 "ICON_PICKER_SECTION_NATURE" = "Жаратылыш, аба ырайы жана жалпы белгилер";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Эсеп өчүрүлдү";
+"ACCOUNTS_TITLE" = "Эсептер";
+"ACCOUNTS_TOTAL" = "Жалпы";
+"ACCOUNTS_NEW" = "Жаңы эсеп";
+"ACCOUNTS_EDIT" = "Эсепти түзөтүү";
+"ACCOUNTS_NAME" = "Аталышы";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Чыгымдардын эсеби";

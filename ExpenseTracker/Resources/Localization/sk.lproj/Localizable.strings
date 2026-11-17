@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Zadajte výdavok";
+"STARTVIEW_ENTER_INCOME" = "Zadajte príjem";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Najprv zadajte sumu";
 "STARTVIEW_BALANCE" = "Zostatok";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Výdavky";
+"STATISTICS_INCOME_TITLE" = "Príjmy";
 "STATISTICS_DAY" = "Deň";
 "STATISTICS_MONTH" = "Mesiac";
 "STATISTICS_YEAR" = "Rok";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Obnoviť transakciu?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Obnoviť kategóriu?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Vymazať kategóriu?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Obnoviť účet?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Vymazať účet?";
 "TRASH_DELETE_MESSAGE" = "Túto akciu nie je možné vrátiť späť.";
 "TRASH_CLEAR_CONFIRMATION" = "Všetky položky v koši budú natrvalo vymazané. Túto akciu nemožno vrátiť späť.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Upraviť";
 "TRANSACTION_EDIT_CATEGORY" = "Kategória";
+"TRANSACTION_EDIT_BALANCE" = "Účet";
 "TRANSACTION_EDIT_AMOUNT" = "Suma";
 "TRANSACTION_EDIT_DATE" = "Dátum";
 "TRANSACTION_EDIT_TIME" = "Čas";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Presunuté do koša";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Minuté dnes";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Minuté včera";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Prijaté dnes";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Prijaté včera";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Upraviť kategórie";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Parkovanie";
 "DEFAULT_CATEGORY_PETS" = "Zvieratá";
 "DEFAULT_CATEGORY_SAVINGS" = "Úspory";
+"DEFAULT_CATEGORY_SALARY" = "Výplata";
 "SETTINGS_APPEARANCE" = "Vzhľad";
 "SETTINGS_THEME_SYSTEM" = "Systémová";
 "SETTINGS_THEME_DARK" = "Tmavá";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Haptická odozva";
 "SETTINGS_HIDE_CATEGORIES" = "Skryť kategórie";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategórie sa zobrazia pri zadávaní sumy";
+"SETTINGS_SECURITY" = "Zabezpečenie";
+"SETTINGS_PASSCODE" = "Kód";
+"SETTINGS_PASSCODE_CHANGE" = "Zmeniť kód";
+"PASSCODE_ENTER" = "Zadajte kód";
+"PASSCODE_ENTER_CURRENT" = "Zadajte aktuálny kód";
+"PASSCODE_ENTER_NEW" = "Zadajte nový kód";
+"PASSCODE_REPEAT" = "Zopakujte kód";
+"PASSCODE_WRONG" = "Nesprávny kód";
+"PASSCODE_MISMATCH" = "Kódy sa nezhodujú";
+"PASSCODE_BIOMETRICS_REASON" = "Odomknúť aplikáciu";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategórie: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Súbor je poškodený alebo ho nemožno prečítať.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Táto záloha bola vytvorená novšou verziou aplikácie.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Tento formát súboru nie je podporovaný.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Všetky účty";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Celá história";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Vlastné obdobie";
+"BACKUPS_EXPORT_LAST_DAYS" = "Posledných %d dní";
+"BACKUPS_EXPORT_PERIOD" = "Obdobie";
+"BACKUPS_EXPORT_SETTINGS" = "Nastavenia exportu";
 "BACKUPS_EXPORT_SECTION" = "Export";
 "BACKUPS_IMPORT_ACTION" = "Importovať zo súboru";
 "BACKUPS_IMPORT_DONE" = "Pridané transakcie: %d, kategórie: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Zdravie, rodina a aktivity";
 "ICON_PICKER_SECTION_TECH" = "Technika, vzdelávanie a náradie";
 "ICON_PICKER_SECTION_NATURE" = "Príroda, počasie a všeobecné symboly";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Účet vymazaný";
+"ACCOUNTS_TITLE" = "Účty";
+"ACCOUNTS_TOTAL" = "Spolu";
+"ACCOUNTS_NEW" = "Nový účet";
+"ACCOUNTS_EDIT" = "Upraviť účet";
+"ACCOUNTS_NAME" = "Názov";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Evidencia výdavkov";

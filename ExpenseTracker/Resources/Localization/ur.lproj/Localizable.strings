@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "خرچ درج کریں";
+"STARTVIEW_ENTER_INCOME" = "آمدنی درج کریں";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "پہلے رقم درج کریں";
 "STARTVIEW_BALANCE" = "بیلنس";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "اخراجات";
+"STATISTICS_INCOME_TITLE" = "آمدنی";
 "STATISTICS_DAY" = "دن";
 "STATISTICS_MONTH" = "مہینہ";
 "STATISTICS_YEAR" = "سال";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "لین دین بحال کریں؟";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "زمرہ بحال کریں؟";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "زمرہ حذف کریں؟";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "اکاؤنٹ بحال کریں؟";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "اکاؤنٹ حذف کریں؟";
 "TRASH_DELETE_MESSAGE" = "یہ عمل واپس نہیں کیا جا سکتا۔";
 "TRASH_CLEAR_CONFIRMATION" = "ردی میں موجود تمام آئٹمز مستقل طور پر حذف کر دیے جائیں گے۔ یہ عمل واپس نہیں کیا جا سکتا۔";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ترمیم کریں";
 "TRANSACTION_EDIT_CATEGORY" = "زمرہ";
+"TRANSACTION_EDIT_BALANCE" = "اکاؤنٹ";
 "TRANSACTION_EDIT_AMOUNT" = "رقم";
 "TRANSACTION_EDIT_DATE" = "تاریخ";
 "TRANSACTION_EDIT_TIME" = "وقت";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ردی میں منتقل کر دیا گیا";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "آج کا خرچ";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "کل کا خرچ";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "آج کی آمدنی";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "کل کی آمدنی";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "زمروں میں ترمیم کریں";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "پارکنگ";
 "DEFAULT_CATEGORY_PETS" = "پالتو جانور";
 "DEFAULT_CATEGORY_SAVINGS" = "بچت";
+"DEFAULT_CATEGORY_SALARY" = "تنخواہ";
 "SETTINGS_APPEARANCE" = "ظاہری شکل";
 "SETTINGS_THEME_SYSTEM" = "سسٹم";
 "SETTINGS_THEME_DARK" = "گہرا";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "تھرتھراہٹ";
 "SETTINGS_HIDE_CATEGORIES" = "زمرے چھپائیں";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "رقم درج کرنے پر زمرے ظاہر ہوتے ہیں";
+"SETTINGS_SECURITY" = "سیکیورٹی";
+"SETTINGS_PASSCODE" = "پاس کوڈ";
+"SETTINGS_PASSCODE_CHANGE" = "پاس کوڈ تبدیل کریں";
+"PASSCODE_ENTER" = "پاس کوڈ درج کریں";
+"PASSCODE_ENTER_CURRENT" = "موجودہ پاس کوڈ درج کریں";
+"PASSCODE_ENTER_NEW" = "نیا پاس کوڈ درج کریں";
+"PASSCODE_REPEAT" = "پاس کوڈ دوبارہ درج کریں";
+"PASSCODE_WRONG" = "غلط پاس کوڈ";
+"PASSCODE_MISMATCH" = "پاس کوڈ مماثل نہیں ہیں";
+"PASSCODE_BIOMETRICS_REASON" = "ایپ ان لاک کریں";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "زمرے: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "فائل خراب ہے یا پڑھی نہیں جا سکتی۔";
 "BACKUPS_ERROR_NEWER_VERSION" = "یہ بیک اپ ایپ کے نئے ورژن سے بنایا گیا ہے۔";
 "BACKUPS_ERROR_UNSUPPORTED" = "یہ فائل فارمیٹ تعاون یافتہ نہیں ہے۔";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "تمام اکاؤنٹس";
+"BACKUPS_EXPORT_ALL_HISTORY" = "پوری سرگزشت";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "حسبِ ضرورت مدت";
+"BACKUPS_EXPORT_LAST_DAYS" = "گزشتہ %d دن";
+"BACKUPS_EXPORT_PERIOD" = "مدت";
+"BACKUPS_EXPORT_SETTINGS" = "ایکسپورٹ کی ترتیبات";
 "BACKUPS_EXPORT_SECTION" = "ایکسپورٹ";
 "BACKUPS_IMPORT_ACTION" = "فائل سے امپورٹ کریں";
 "BACKUPS_IMPORT_DONE" = "شامل کیے گئے لین دین: %d، زمرے: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "صحت، خاندان اور سرگرمیاں";
 "ICON_PICKER_SECTION_TECH" = "ٹیکنالوجی، تعلیم اور اوزار";
 "ICON_PICKER_SECTION_NATURE" = "فطرت، موسم اور عمومی علامات";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "اکاؤنٹ حذف ہو گیا";
+"ACCOUNTS_TITLE" = "اکاؤنٹس";
+"ACCOUNTS_TOTAL" = "کل";
+"ACCOUNTS_NEW" = "نیا اکاؤنٹ";
+"ACCOUNTS_EDIT" = "اکاؤنٹ میں ترمیم کریں";
+"ACCOUNTS_NAME" = "نام";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "اخراجات کا حساب";

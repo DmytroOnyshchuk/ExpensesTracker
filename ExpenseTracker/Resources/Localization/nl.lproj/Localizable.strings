@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Voer uitgave in";
+"STARTVIEW_ENTER_INCOME" = "Voer inkomsten in";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Voer eerst het bedrag in";
 "STARTVIEW_BALANCE" = "Saldo";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Uitgaven";
+"STATISTICS_INCOME_TITLE" = "Inkomsten";
 "STATISTICS_DAY" = "Dag";
 "STATISTICS_MONTH" = "Maand";
 "STATISTICS_YEAR" = "Jaar";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Transactie terugzetten?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Categorie terugzetten?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Categorie verwijderen?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Rekening terugzetten?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Rekening verwijderen?";
 "TRASH_DELETE_MESSAGE" = "Deze actie kan niet ongedaan worden gemaakt.";
 "TRASH_CLEAR_CONFIRMATION" = "Alle onderdelen in de prullenmand worden definitief verwijderd. Deze actie kan niet ongedaan worden gemaakt.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Bewerken";
 "TRANSACTION_EDIT_CATEGORY" = "Categorie";
+"TRANSACTION_EDIT_BALANCE" = "Rekening";
 "TRANSACTION_EDIT_AMOUNT" = "Bedrag";
 "TRANSACTION_EDIT_DATE" = "Datum";
 "TRANSACTION_EDIT_TIME" = "Tijd";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Verplaatst naar prullenmand";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Vandaag uitgegeven";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Gisteren uitgegeven";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Vandaag ontvangen";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Gisteren ontvangen";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Categorieën bewerken";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Parkeren";
 "DEFAULT_CATEGORY_PETS" = "Huisdieren";
 "DEFAULT_CATEGORY_SAVINGS" = "Spaargeld";
+"DEFAULT_CATEGORY_SALARY" = "Salaris";
 "SETTINGS_APPEARANCE" = "Weergave";
 "SETTINGS_THEME_SYSTEM" = "Systeem";
 "SETTINGS_THEME_DARK" = "Donker";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Trillingen";
 "SETTINGS_HIDE_CATEGORIES" = "Categorieën verbergen";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Categorieën verschijnen wanneer je een bedrag invoert";
+"SETTINGS_SECURITY" = "Beveiliging";
+"SETTINGS_PASSCODE" = "Toegangscode";
+"SETTINGS_PASSCODE_CHANGE" = "Wijzig toegangscode";
+"PASSCODE_ENTER" = "Voer toegangscode in";
+"PASSCODE_ENTER_CURRENT" = "Voer huidige toegangscode in";
+"PASSCODE_ENTER_NEW" = "Voer nieuwe toegangscode in";
+"PASSCODE_REPEAT" = "Herhaal toegangscode";
+"PASSCODE_WRONG" = "Onjuiste toegangscode";
+"PASSCODE_MISMATCH" = "Toegangscodes komen niet overeen";
+"PASSCODE_BIOMETRICS_REASON" = "Ontgrendel de app";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categorieën: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Het bestand is beschadigd of kan niet worden gelezen.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Deze back-up is gemaakt met een nieuwere versie van de app.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Deze bestandsindeling wordt niet ondersteund.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Alle rekeningen";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Volledige geschiedenis";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Aangepaste periode";
+"BACKUPS_EXPORT_LAST_DAYS" = "Laatste %d dagen";
+"BACKUPS_EXPORT_PERIOD" = "Periode";
+"BACKUPS_EXPORT_SETTINGS" = "Exportinstellingen";
 "BACKUPS_EXPORT_SECTION" = "Exporteren";
 "BACKUPS_IMPORT_ACTION" = "Importeren uit bestand";
 "BACKUPS_IMPORT_DONE" = "Toegevoegde transacties: %d, categorieën: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Gezondheid, gezin en activiteiten";
 "ICON_PICKER_SECTION_TECH" = "Technologie, onderwijs en gereedschap";
 "ICON_PICKER_SECTION_NATURE" = "Natuur, weer en algemene symbolen";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Rekening verwijderd";
+"ACCOUNTS_TITLE" = "Rekeningen";
+"ACCOUNTS_TOTAL" = "Totaal";
+"ACCOUNTS_NEW" = "Nieuwe rekening";
+"ACCOUNTS_EDIT" = "Wijzig rekening";
+"ACCOUNTS_NAME" = "Naam";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Uitgaven bijhouden";

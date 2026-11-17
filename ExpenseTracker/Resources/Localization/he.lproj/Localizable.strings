@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "הזינו הוצאה";
+"STARTVIEW_ENTER_INCOME" = "הזינו הכנסה";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "הזינו קודם את הסכום";
 "STARTVIEW_BALANCE" = "יתרה";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "הוצאות";
+"STATISTICS_INCOME_TITLE" = "הכנסות";
 "STATISTICS_DAY" = "יום";
 "STATISTICS_MONTH" = "חודש";
 "STATISTICS_YEAR" = "שנה";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "לשחזר את העסקה?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "לשחזר את הקטגוריה?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "למחוק את הקטגוריה?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "לשחזר את החשבון?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "למחוק את החשבון?";
 "TRASH_DELETE_MESSAGE" = "לא ניתן לבטל פעולה זו.";
 "TRASH_CLEAR_CONFIRMATION" = "כל הפריטים בפח האשפה יימחקו לצמיתות. לא ניתן לבטל פעולה זו.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "עריכה";
 "TRANSACTION_EDIT_CATEGORY" = "קטגוריה";
+"TRANSACTION_EDIT_BALANCE" = "חשבון";
 "TRANSACTION_EDIT_AMOUNT" = "סכום";
 "TRANSACTION_EDIT_DATE" = "תאריך";
 "TRANSACTION_EDIT_TIME" = "שעה";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "הועבר לפח האשפה";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "הוצאות היום";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "הוצאות אתמול";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "התקבל היום";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "התקבל אתמול";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "עריכת קטגוריות";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "חניה";
 "DEFAULT_CATEGORY_PETS" = "חיות מחמד";
 "DEFAULT_CATEGORY_SAVINGS" = "חיסכון";
+"DEFAULT_CATEGORY_SALARY" = "משכורת";
 "SETTINGS_APPEARANCE" = "מראה";
 "SETTINGS_THEME_SYSTEM" = "מערכת";
 "SETTINGS_THEME_DARK" = "כהה";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "רטט";
 "SETTINGS_HIDE_CATEGORIES" = "הסתרת קטגוריות";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "הקטגוריות מופיעות בעת הזנת סכום";
+"SETTINGS_SECURITY" = "אבטחה";
+"SETTINGS_PASSCODE" = "קוד גישה";
+"SETTINGS_PASSCODE_CHANGE" = "שינוי קוד הגישה";
+"PASSCODE_ENTER" = "הזינו קוד גישה";
+"PASSCODE_ENTER_CURRENT" = "הזינו את קוד הגישה הנוכחי";
+"PASSCODE_ENTER_NEW" = "הזינו קוד גישה חדש";
+"PASSCODE_REPEAT" = "הזינו שוב את קוד הגישה";
+"PASSCODE_WRONG" = "קוד גישה שגוי";
+"PASSCODE_MISMATCH" = "קודי הגישה אינם תואמים";
+"PASSCODE_BIOMETRICS_REASON" = "ביטול נעילת האפליקציה";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "קטגוריות: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "הקובץ פגום או שלא ניתן לקרוא אותו.";
 "BACKUPS_ERROR_NEWER_VERSION" = "גיבוי זה נוצר בגרסה חדשה יותר של האפליקציה.";
 "BACKUPS_ERROR_UNSUPPORTED" = "תבנית קובץ זו אינה נתמכת.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "כל החשבונות";
+"BACKUPS_EXPORT_ALL_HISTORY" = "כל ההיסטוריה";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "תקופה מותאמת אישית";
+"BACKUPS_EXPORT_LAST_DAYS" = "%d הימים האחרונים";
+"BACKUPS_EXPORT_PERIOD" = "תקופה";
+"BACKUPS_EXPORT_SETTINGS" = "הגדרות ייצוא";
 "BACKUPS_EXPORT_SECTION" = "ייצוא";
 "BACKUPS_IMPORT_ACTION" = "ייבוא מקובץ";
 "BACKUPS_IMPORT_DONE" = "עסקאות שנוספו: %d, קטגוריות: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "בריאות, משפחה ופעילויות";
 "ICON_PICKER_SECTION_TECH" = "טכנולוגיה, חינוך וכלים";
 "ICON_PICKER_SECTION_NATURE" = "טבע, מזג אוויר וסמלים כלליים";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "החשבון נמחק";
+"ACCOUNTS_TITLE" = "חשבונות";
+"ACCOUNTS_TOTAL" = "סה״כ";
+"ACCOUNTS_NEW" = "חשבון חדש";
+"ACCOUNTS_EDIT" = "עריכת חשבון";
+"ACCOUNTS_NAME" = "שם";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "מעקב הוצאות";

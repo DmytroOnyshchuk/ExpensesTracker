@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Faka inkcitho";
+"STARTVIEW_ENTER_INCOME" = "Faka ingeniso";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Qala ngokufaka isixa";
 "STARTVIEW_BALANCE" = "Ibhalansi";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Iinkcitho";
+"STATISTICS_INCOME_TITLE" = "Ingeniso";
 "STATISTICS_DAY" = "Usuku";
 "STATISTICS_MONTH" = "Inyanga";
 "STATISTICS_YEAR" = "Unyaka";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Buyisela intengiselwano?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Buyisela udidi?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Cima udidi?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Buyisela iakhawunti?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Cima iakhawunti?";
 "TRASH_DELETE_MESSAGE" = "Eli nyathelo alinakubuyiselwa.";
 "TRASH_CLEAR_CONFIRMATION" = "Zonke izinto ezikumgqomo wenkunkuma ziza kucinywa ngokusisigxina. Eli nyathelo alinakurhoxiswa.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Hlela";
 "TRANSACTION_EDIT_CATEGORY" = "Udidi";
+"TRANSACTION_EDIT_BALANCE" = "Iakhawunti";
 "TRANSACTION_EDIT_AMOUNT" = "Isixa";
 "TRANSACTION_EDIT_DATE" = "Umhla";
 "TRANSACTION_EDIT_TIME" = "Ixesha";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Kufuduselwe kumgqomo wenkunkuma";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Echithwe namhlanje";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Echithwe izolo";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Efunyenwe namhlanje";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Efunyenwe izolo";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Hlela iindidi";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Indawo yokupaka";
 "DEFAULT_CATEGORY_PETS" = "Izilwanyana zasekhaya";
 "DEFAULT_CATEGORY_SAVINGS" = "Ulondolozo";
+"DEFAULT_CATEGORY_SALARY" = "Umvuzo";
 "SETTINGS_APPEARANCE" = "Inkangeleko";
 "SETTINGS_THEME_SYSTEM" = "Inkqubo";
 "SETTINGS_THEME_DARK" = "Mnyama";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Ukungcangcazela";
 "SETTINGS_HIDE_CATEGORIES" = "Fihla iindidi";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Iindidi zivela xa ufaka isixa";
+"SETTINGS_SECURITY" = "Ukhuseleko";
+"SETTINGS_PASSCODE" = "Ikhowudi yokugqitha";
+"SETTINGS_PASSCODE_CHANGE" = "Tshintsha ikhowudi yokugqitha";
+"PASSCODE_ENTER" = "Faka ikhowudi yokugqitha";
+"PASSCODE_ENTER_CURRENT" = "Faka ikhowudi yokugqitha yangoku";
+"PASSCODE_ENTER_NEW" = "Faka ikhowudi yokugqitha entsha";
+"PASSCODE_REPEAT" = "Phinda ikhowudi yokugqitha";
+"PASSCODE_WRONG" = "Ikhowudi yokugqitha ayichanekanga";
+"PASSCODE_MISMATCH" = "Iikhowudi zokugqitha azifani";
+"PASSCODE_BIOMETRICS_REASON" = "Vula i-app";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Iindidi: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Ifayile yonakele okanye ayifundeki.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Le kopi yenziwe ngenguqulelo entsha yeapp.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Olu hlobo lwefayile aluxhaswa.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Zonke iiakhawunti";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Yonke imbali";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Ixesha elilungiselelweyo";
+"BACKUPS_EXPORT_LAST_DAYS" = "Iintsuku ezi-%d zokugqibela";
+"BACKUPS_EXPORT_PERIOD" = "Ixesha";
+"BACKUPS_EXPORT_SETTINGS" = "Iisetingi zokuthumela ngaphandle";
 "BACKUPS_EXPORT_SECTION" = "Ukuthumela ngaphandle";
 "BACKUPS_IMPORT_ACTION" = "Ngenisa kwifayile";
 "BACKUPS_IMPORT_DONE" = "Iintengiselwano ezongeziweyo: %d, iindidi: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Impilo, usapho nemisebenzi";
 "ICON_PICKER_SECTION_TECH" = "Itekhnoloji, imfundo nezixhobo";
 "ICON_PICKER_SECTION_NATURE" = "Indalo, imozulu neesimboli ngokubanzi";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Iakhawunti icinyiwe";
+"ACCOUNTS_TITLE" = "Iiakhawunti";
+"ACCOUNTS_TOTAL" = "Iyonke";
+"ACCOUNTS_NEW" = "Iakhawunti entsha";
+"ACCOUNTS_EDIT" = "Hlela iakhawunti";
+"ACCOUNTS_NAME" = "Igama";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Ubalo lweendleko";

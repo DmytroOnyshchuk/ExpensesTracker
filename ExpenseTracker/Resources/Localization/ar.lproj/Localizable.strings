@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "أدخل المصروف";
+"STARTVIEW_ENTER_INCOME" = "أدخل الدخل";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "أدخل المبلغ أولاً";
 "STARTVIEW_BALANCE" = "الرصيد";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "المصروفات";
+"STATISTICS_INCOME_TITLE" = "الدخل";
 "STATISTICS_DAY" = "يوم";
 "STATISTICS_MONTH" = "شهر";
 "STATISTICS_YEAR" = "سنة";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "استعادة المعاملة؟";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "استعادة الفئة؟";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "حذف الفئة؟";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "استعادة الحساب؟";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "حذف الحساب؟";
 "TRASH_DELETE_MESSAGE" = "لا يمكن التراجع عن هذا الإجراء.";
 "TRASH_CLEAR_CONFIRMATION" = "سيتم حذف جميع العناصر في سلة المحذوفات نهائيًا. لا يمكن التراجع عن هذا الإجراء.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "تعديل";
 "TRANSACTION_EDIT_CATEGORY" = "الفئة";
+"TRANSACTION_EDIT_BALANCE" = "الحساب";
 "TRANSACTION_EDIT_AMOUNT" = "المبلغ";
 "TRANSACTION_EDIT_DATE" = "التاريخ";
 "TRANSACTION_EDIT_TIME" = "الوقت";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "تم النقل إلى سلة المحذوفات";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "المصروف اليوم";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "المصروف أمس";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "المستلم اليوم";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "المستلم أمس";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "تعديل الفئات";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "مواقف السيارات";
 "DEFAULT_CATEGORY_PETS" = "الحيوانات الأليفة";
 "DEFAULT_CATEGORY_SAVINGS" = "المدخرات";
+"DEFAULT_CATEGORY_SALARY" = "الراتب";
 "SETTINGS_APPEARANCE" = "المظهر";
 "SETTINGS_THEME_SYSTEM" = "النظام";
 "SETTINGS_THEME_DARK" = "داكن";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "الاهتزاز";
 "SETTINGS_HIDE_CATEGORIES" = "إخفاء الفئات";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "تظهر الفئات عند إدخال مبلغ";
+"SETTINGS_SECURITY" = "الأمان";
+"SETTINGS_PASSCODE" = "رمز الدخول";
+"SETTINGS_PASSCODE_CHANGE" = "تغيير رمز الدخول";
+"PASSCODE_ENTER" = "أدخل رمز الدخول";
+"PASSCODE_ENTER_CURRENT" = "أدخل رمز الدخول الحالي";
+"PASSCODE_ENTER_NEW" = "أدخل رمز الدخول الجديد";
+"PASSCODE_REPEAT" = "أعد إدخال رمز الدخول";
+"PASSCODE_WRONG" = "رمز الدخول غير صحيح";
+"PASSCODE_MISMATCH" = "رمزا الدخول غير متطابقين";
+"PASSCODE_BIOMETRICS_REASON" = "فتح قفل التطبيق";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "الفئات: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "الملف تالف أو تتعذر قراءته.";
 "BACKUPS_ERROR_NEWER_VERSION" = "تم إنشاء هذه النسخة بإصدار أحدث من التطبيق.";
 "BACKUPS_ERROR_UNSUPPORTED" = "تنسيق الملف هذا غير مدعوم.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "كل الحسابات";
+"BACKUPS_EXPORT_ALL_HISTORY" = "كل السجل";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "فترة مخصصة";
+"BACKUPS_EXPORT_LAST_DAYS" = "آخر %d يوم";
+"BACKUPS_EXPORT_PERIOD" = "الفترة";
+"BACKUPS_EXPORT_SETTINGS" = "إعدادات التصدير";
 "BACKUPS_EXPORT_SECTION" = "تصدير";
 "BACKUPS_IMPORT_ACTION" = "استيراد من ملف";
 "BACKUPS_IMPORT_DONE" = "المعاملات المضافة: %d، الفئات: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "الصحة والعائلة والأنشطة";
 "ICON_PICKER_SECTION_TECH" = "التقنية والتعليم والأدوات";
 "ICON_PICKER_SECTION_NATURE" = "الطبيعة والطقس والرموز العامة";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "تم حذف الحساب";
+"ACCOUNTS_TITLE" = "الحسابات";
+"ACCOUNTS_TOTAL" = "الإجمالي";
+"ACCOUNTS_NEW" = "حساب جديد";
+"ACCOUNTS_EDIT" = "تعديل الحساب";
+"ACCOUNTS_NAME" = "الاسم";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "محاسبة المصروفات";

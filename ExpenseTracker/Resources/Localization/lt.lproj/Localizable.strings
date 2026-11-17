@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Įveskite išlaidas";
+"STARTVIEW_ENTER_INCOME" = "Įveskite pajamas";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Pirmiausia įveskite sumą";
 "STARTVIEW_BALANCE" = "Likutis";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Išlaidos";
+"STATISTICS_INCOME_TITLE" = "Pajamos";
 "STATISTICS_DAY" = "Diena";
 "STATISTICS_MONTH" = "Mėnuo";
 "STATISTICS_YEAR" = "Metai";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Atkurti transakciją?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Atkurti kategoriją?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Ištrinti kategoriją?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Atkurti sąskaitą?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Ištrinti sąskaitą?";
 "TRASH_DELETE_MESSAGE" = "Šio veiksmo anuliuoti negalima.";
 "TRASH_CLEAR_CONFIRMATION" = "Visi šiukšlinėje esantys elementai bus ištrinti visam laikui. Šio veiksmo anuliuoti negalima.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Redaguoti";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorija";
+"TRANSACTION_EDIT_BALANCE" = "Sąskaita";
 "TRANSACTION_EDIT_AMOUNT" = "Suma";
 "TRANSACTION_EDIT_DATE" = "Data";
 "TRANSACTION_EDIT_TIME" = "Laikas";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Perkelta į šiukšlinę";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Išleista šiandien";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Išleista vakar";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Gauta šiandien";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Gauta vakar";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Redaguoti kategorijas";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Parkavimas";
 "DEFAULT_CATEGORY_PETS" = "Augintiniai";
 "DEFAULT_CATEGORY_SAVINGS" = "Santaupos";
+"DEFAULT_CATEGORY_SALARY" = "Atlyginimas";
 "SETTINGS_APPEARANCE" = "Išvaizda";
 "SETTINGS_THEME_SYSTEM" = "Sistemos";
 "SETTINGS_THEME_DARK" = "Tamsi";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Vibracija";
 "SETTINGS_HIDE_CATEGORIES" = "Slėpti kategorijas";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategorijos rodomos įvedant sumą";
+"SETTINGS_SECURITY" = "Sauga";
+"SETTINGS_PASSCODE" = "Kodas";
+"SETTINGS_PASSCODE_CHANGE" = "Keisti kodą";
+"PASSCODE_ENTER" = "Įveskite kodą";
+"PASSCODE_ENTER_CURRENT" = "Įveskite dabartinį kodą";
+"PASSCODE_ENTER_NEW" = "Įveskite naują kodą";
+"PASSCODE_REPEAT" = "Pakartokite kodą";
+"PASSCODE_WRONG" = "Neteisingas kodas";
+"PASSCODE_MISMATCH" = "Kodai nesutampa";
+"PASSCODE_BIOMETRICS_REASON" = "Atrakinti programą";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorijos: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Failas sugadintas arba jo nepavyksta nuskaityti.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Ši kopija sukurta naujesne programėlės versija.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Šis failo formatas nepalaikomas.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Visos sąskaitos";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Visa istorija";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Pasirinktinis laikotarpis";
+"BACKUPS_EXPORT_LAST_DAYS" = "Paskutinės %d d.";
+"BACKUPS_EXPORT_PERIOD" = "Laikotarpis";
+"BACKUPS_EXPORT_SETTINGS" = "Eksporto nustatymai";
 "BACKUPS_EXPORT_SECTION" = "Eksportas";
 "BACKUPS_IMPORT_ACTION" = "Importuoti iš failo";
 "BACKUPS_IMPORT_DONE" = "Pridėta operacijų: %d, kategorijų: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Sveikata, šeima ir veikla";
 "ICON_PICKER_SECTION_TECH" = "Technologijos, švietimas ir įrankiai";
 "ICON_PICKER_SECTION_NATURE" = "Gamta, orai ir bendrieji simboliai";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Sąskaita ištrinta";
+"ACCOUNTS_TITLE" = "Sąskaitos";
+"ACCOUNTS_TOTAL" = "Iš viso";
+"ACCOUNTS_NEW" = "Nauja sąskaita";
+"ACCOUNTS_EDIT" = "Redaguoti sąskaitą";
+"ACCOUNTS_NAME" = "Pavadinimas";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Išlaidų apskaita";

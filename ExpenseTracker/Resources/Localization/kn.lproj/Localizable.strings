@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "ವೆಚ್ಚ ನಮೂದಿಸಿ";
+"STARTVIEW_ENTER_INCOME" = "ಆದಾಯ ನಮೂದಿಸಿ";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "ಮೊದಲು ಮೊತ್ತವನ್ನು ನಮೂದಿಸಿ";
 "STARTVIEW_BALANCE" = "ಬ್ಯಾಲೆನ್ಸ್";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ವೆಚ್ಚಗಳು";
+"STATISTICS_INCOME_TITLE" = "ಆದಾಯ";
 "STATISTICS_DAY" = "ದಿನ";
 "STATISTICS_MONTH" = "ತಿಂಗಳು";
 "STATISTICS_YEAR" = "ವರ್ಷ";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "ವಹಿವಾಟು ಮರುಸ್ಥಾಪಿಸಬೇಕೇ?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "ವರ್ಗ ಮರುಸ್ಥಾಪಿಸಬೇಕೇ?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "ವರ್ಗ ಅಳಿಸಬೇಕೇ?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "ಖಾತೆ ಮರುಸ್ಥಾಪಿಸಬೇಕೇ?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "ಖಾತೆ ಅಳಿಸಬೇಕೇ?";
 "TRASH_DELETE_MESSAGE" = "ಈ ಕ್ರಿಯೆಯನ್ನು ರದ್ದುಗೊಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.";
 "TRASH_CLEAR_CONFIRMATION" = "ಅನುಪಯುಕ್ತದಲ್ಲಿರುವ ಎಲ್ಲಾ ಐಟಂಗಳನ್ನು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸಲಾಗುತ್ತದೆ. ಈ ಕ್ರಿಯೆಯನ್ನು ರದ್ದುಗೊಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ಎಡಿಟ್ ಮಾಡಿ";
 "TRANSACTION_EDIT_CATEGORY" = "ವರ್ಗ";
+"TRANSACTION_EDIT_BALANCE" = "ಖಾತೆ";
 "TRANSACTION_EDIT_AMOUNT" = "ಮೊತ್ತ";
 "TRANSACTION_EDIT_DATE" = "ದಿನಾಂಕ";
 "TRANSACTION_EDIT_TIME" = "ಸಮಯ";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ಅನುಪಯುಕ್ತಕ್ಕೆ ಸರಿಸಲಾಗಿದೆ";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ಇಂದಿನ ಖರ್ಚು";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ನಿನ್ನೆಯ ಖರ್ಚು";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "ಇಂದಿನ ಆದಾಯ";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "ನಿನ್ನೆಯ ಆದಾಯ";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "ವರ್ಗಗಳನ್ನು ಎಡಿಟ್ ಮಾಡಿ";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "ಪಾರ್ಕಿಂಗ್";
 "DEFAULT_CATEGORY_PETS" = "ಸಾಕುಪ್ರಾಣಿಗಳು";
 "DEFAULT_CATEGORY_SAVINGS" = "ಉಳಿತಾಯ";
+"DEFAULT_CATEGORY_SALARY" = "ಸಂಬಳ";
 "SETTINGS_APPEARANCE" = "ನೋಟ";
 "SETTINGS_THEME_SYSTEM" = "ಸಿಸ್ಟಂ";
 "SETTINGS_THEME_DARK" = "ಗಾಢ";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "ಕಂಪನ";
 "SETTINGS_HIDE_CATEGORIES" = "ವರ್ಗಗಳನ್ನು ಮರೆಮಾಡಿ";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "ಮೊತ್ತವನ್ನು ನಮೂದಿಸಿದಾಗ ವರ್ಗಗಳು ಕಾಣಿಸುತ್ತವೆ";
+"SETTINGS_SECURITY" = "ಭದ್ರತೆ";
+"SETTINGS_PASSCODE" = "ಪಾಸ್‌ಕೋಡ್";
+"SETTINGS_PASSCODE_CHANGE" = "ಪಾಸ್‌ಕೋಡ್ ಬದಲಾಯಿಸಿ";
+"PASSCODE_ENTER" = "ಪಾಸ್‌ಕೋಡ್ ನಮೂದಿಸಿ";
+"PASSCODE_ENTER_CURRENT" = "ಪ್ರಸ್ತುತ ಪಾಸ್‌ಕೋಡ್ ನಮೂದಿಸಿ";
+"PASSCODE_ENTER_NEW" = "ಹೊಸ ಪಾಸ್‌ಕೋಡ್ ನಮೂದಿಸಿ";
+"PASSCODE_REPEAT" = "ಪಾಸ್‌ಕೋಡ್ ಮತ್ತೆ ನಮೂದಿಸಿ";
+"PASSCODE_WRONG" = "ತಪ್ಪು ಪಾಸ್‌ಕೋಡ್";
+"PASSCODE_MISMATCH" = "ಪಾಸ್‌ಕೋಡ್‌ಗಳು ಹೊಂದಿಕೆಯಾಗುತ್ತಿಲ್ಲ";
+"PASSCODE_BIOMETRICS_REASON" = "ಆ್ಯಪ್ ಅನ್‌ಲಾಕ್ ಮಾಡಿ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "ವರ್ಗಗಳು: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "ಫೈಲ್ ಹಾನಿಗೊಂಡಿದೆ ಅಥವಾ ಓದಲು ಸಾಧ್ಯವಿಲ್ಲ.";
 "BACKUPS_ERROR_NEWER_VERSION" = "ಈ ಬ್ಯಾಕಪ್ ಅನ್ನು ಆ್ಯಪ್‌ನ ಹೊಸ ಆವೃತ್ತಿಯಿಂದ ರಚಿಸಲಾಗಿದೆ.";
 "BACKUPS_ERROR_UNSUPPORTED" = "ಈ ಫೈಲ್ ಫಾರ್ಮ್ಯಾಟ್ ಬೆಂಬಲಿತವಾಗಿಲ್ಲ.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "ಎಲ್ಲಾ ಖಾತೆಗಳು";
+"BACKUPS_EXPORT_ALL_HISTORY" = "ಸಂಪೂರ್ಣ ಇತಿಹಾಸ";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "ಕಸ್ಟಮ್ ಅವಧಿ";
+"BACKUPS_EXPORT_LAST_DAYS" = "ಕಳೆದ %d ದಿನಗಳು";
+"BACKUPS_EXPORT_PERIOD" = "ಅವಧಿ";
+"BACKUPS_EXPORT_SETTINGS" = "ರಫ್ತು ಸೆಟ್ಟಿಂಗ್‌ಗಳು";
 "BACKUPS_EXPORT_SECTION" = "ರಫ್ತು";
 "BACKUPS_IMPORT_ACTION" = "ಫೈಲ್‌ನಿಂದ ಆಮದು ಮಾಡಿ";
 "BACKUPS_IMPORT_DONE" = "ಸೇರಿಸಿದ ವಹಿವಾಟುಗಳು: %d, ವರ್ಗಗಳು: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "ಆರೋಗ್ಯ, ಕುಟುಂಬ ಮತ್ತು ಚಟುವಟಿಕೆಗಳು";
 "ICON_PICKER_SECTION_TECH" = "ತಂತ್ರಜ್ಞಾನ, ಶಿಕ್ಷಣ ಮತ್ತು ಉಪಕರಣಗಳು";
 "ICON_PICKER_SECTION_NATURE" = "ಪ್ರಕೃತಿ, ಹವಾಮಾನ ಮತ್ತು ಸಾಮಾನ್ಯ ಚಿಹ್ನೆಗಳು";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "ಖಾತೆ ಅಳಿಸಲಾಗಿದೆ";
+"ACCOUNTS_TITLE" = "ಖಾತೆಗಳು";
+"ACCOUNTS_TOTAL" = "ಒಟ್ಟು";
+"ACCOUNTS_NEW" = "ಹೊಸ ಖಾತೆ";
+"ACCOUNTS_EDIT" = "ಖಾತೆ ಸಂಪಾದಿಸಿ";
+"ACCOUNTS_NAME" = "ಹೆಸರು";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ವೆಚ್ಚಗಳ ಲೆಕ್ಕ";

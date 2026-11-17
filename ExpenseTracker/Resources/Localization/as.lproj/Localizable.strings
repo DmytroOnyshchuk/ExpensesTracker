@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "খৰচ লিখক";
+"STARTVIEW_ENTER_INCOME" = "আয় লিখক";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "প্ৰথমে পৰিমাণ লিখক";
 "STARTVIEW_BALANCE" = "বেলেঞ্চ";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "খৰচ";
+"STATISTICS_INCOME_TITLE" = "আয়";
 "STATISTICS_DAY" = "দিন";
 "STATISTICS_MONTH" = "মাহ";
 "STATISTICS_YEAR" = "বছৰ";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "লেনদেন পুনঃস্থাপন কৰিবনে?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "শ্ৰেণী পুনঃস্থাপন কৰিবনে?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "শ্ৰেণী মচি পেলাবনে?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "একাউণ্ট পুনঃস্থাপন কৰিবনে?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "একাউণ্ট মচি পেলাবনে?";
 "TRASH_DELETE_MESSAGE" = "এই কাৰ্য পূৰ্বৱৎ কৰিব নোৱাৰি।";
 "TRASH_CLEAR_CONFIRMATION" = "ট্ৰেছত থকা সকলো বস্তু স্থায়ীভাৱে মচি পেলোৱা হ'ব। এই কাৰ্য পূৰ্বৱৎ কৰিব নোৱাৰি।";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "সম্পাদনা কৰক";
 "TRANSACTION_EDIT_CATEGORY" = "শ্ৰেণী";
+"TRANSACTION_EDIT_BALANCE" = "একাউণ্ট";
 "TRANSACTION_EDIT_AMOUNT" = "পৰিমাণ";
 "TRANSACTION_EDIT_DATE" = "তাৰিখ";
 "TRANSACTION_EDIT_TIME" = "সময়";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ট্ৰেছলৈ স্থানান্তৰ কৰা হ'ল";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "আজিৰ খৰচ";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "কালিৰ খৰচ";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "আজিৰ আয়";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "কালিৰ আয়";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "শ্ৰেণী সম্পাদনা কৰক";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "পাৰ্কিং";
 "DEFAULT_CATEGORY_PETS" = "পোহনীয়া জন্তু";
 "DEFAULT_CATEGORY_SAVINGS" = "সঞ্চয়";
+"DEFAULT_CATEGORY_SALARY" = "দৰমহা";
 "SETTINGS_APPEARANCE" = "ৰূপ";
 "SETTINGS_THEME_SYSTEM" = "ছিষ্টেম";
 "SETTINGS_THEME_DARK" = "গাঢ়";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "কম্পন";
 "SETTINGS_HIDE_CATEGORIES" = "শ্ৰেণীসমূহ লুকুৱাওক";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "পৰিমাণ লিখিলে শ্ৰেণীসমূহ দেখা যায়";
+"SETTINGS_SECURITY" = "সুৰক্ষা";
+"SETTINGS_PASSCODE" = "পাছকোড";
+"SETTINGS_PASSCODE_CHANGE" = "পাছকোড সলনি কৰক";
+"PASSCODE_ENTER" = "পাছকোড লিখক";
+"PASSCODE_ENTER_CURRENT" = "বৰ্তমানৰ পাছকোড লিখক";
+"PASSCODE_ENTER_NEW" = "নতুন পাছকোড লিখক";
+"PASSCODE_REPEAT" = "পাছকোড পুনৰ লিখক";
+"PASSCODE_WRONG" = "ভুল পাছকোড";
+"PASSCODE_MISMATCH" = "পাছকোড মিলা নাই";
+"PASSCODE_BIOMETRICS_REASON" = "এপ্ আনলক কৰক";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "শ্ৰেণী: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "ফাইলটো নষ্ট হৈছে বা পঢ়িব পৰা নাই।";
 "BACKUPS_ERROR_NEWER_VERSION" = "এই বেকআপ এপ্‌ৰ নতুন সংস্কৰণেৰে তৈয়াৰ কৰা হৈছে।";
 "BACKUPS_ERROR_UNSUPPORTED" = "এই ফাইল ফৰ্মেট সমৰ্থিত নহয়।";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "সকলো একাউণ্ট";
+"BACKUPS_EXPORT_ALL_HISTORY" = "সম্পূৰ্ণ ইতিহাস";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "নিজৰ সময়সীমা";
+"BACKUPS_EXPORT_LAST_DAYS" = "যোৱা %d দিন";
+"BACKUPS_EXPORT_PERIOD" = "সময়সীমা";
+"BACKUPS_EXPORT_SETTINGS" = "ৰপ্তানিৰ ছেটিংছ";
 "BACKUPS_EXPORT_SECTION" = "ৰপ্তানি";
 "BACKUPS_IMPORT_ACTION" = "ফাইলৰ পৰা আমদানি কৰক";
 "BACKUPS_IMPORT_DONE" = "যোগ কৰা লেনদেন: %d, শ্ৰেণী: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "স্বাস্থ্য, পৰিয়াল আৰু কাৰ্যকলাপ";
 "ICON_PICKER_SECTION_TECH" = "প্ৰযুক্তি, শিক্ষা আৰু সঁজুলি";
 "ICON_PICKER_SECTION_NATURE" = "প্ৰকৃতি, বতৰ আৰু সাধাৰণ চিহ্ন";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "একাউণ্ট মচি পেলোৱা হ’ল";
+"ACCOUNTS_TITLE" = "একাউণ্ট";
+"ACCOUNTS_TOTAL" = "মুঠ";
+"ACCOUNTS_NEW" = "নতুন একাউণ্ট";
+"ACCOUNTS_EDIT" = "একাউণ্ট সম্পাদনা কৰক";
+"ACCOUNTS_NAME" = "নাম";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ব্যয়ৰ হিচাপ";

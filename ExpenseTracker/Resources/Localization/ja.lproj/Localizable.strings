@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "支出を入力";
+"STARTVIEW_ENTER_INCOME" = "収入を入力";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "先に金額を入力してください";
 "STARTVIEW_BALANCE" = "残高";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "支出";
+"STATISTICS_INCOME_TITLE" = "収入";
 "STATISTICS_DAY" = "日";
 "STATISTICS_MONTH" = "月";
 "STATISTICS_YEAR" = "年";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "取引を復元しますか？";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "カテゴリを復元しますか？";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "カテゴリを削除しますか？";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "口座を復元しますか？";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "口座を削除しますか？";
 "TRASH_DELETE_MESSAGE" = "この操作は取り消せません。";
 "TRASH_CLEAR_CONFIRMATION" = "ゴミ箱内のすべての項目が完全に削除されます。この操作は取り消せません。";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "編集";
 "TRANSACTION_EDIT_CATEGORY" = "カテゴリ";
+"TRANSACTION_EDIT_BALANCE" = "口座";
 "TRANSACTION_EDIT_AMOUNT" = "金額";
 "TRANSACTION_EDIT_DATE" = "日付";
 "TRANSACTION_EDIT_TIME" = "時刻";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ゴミ箱に移動しました";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "今日の支出";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "昨日の支出";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "今日の収入";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "昨日の収入";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "カテゴリを編集";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "駐車場";
 "DEFAULT_CATEGORY_PETS" = "ペット";
 "DEFAULT_CATEGORY_SAVINGS" = "貯金";
+"DEFAULT_CATEGORY_SALARY" = "給与";
 "SETTINGS_APPEARANCE" = "外観";
 "SETTINGS_THEME_SYSTEM" = "システム";
 "SETTINGS_THEME_DARK" = "ダーク";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "触覚フィードバック";
 "SETTINGS_HIDE_CATEGORIES" = "カテゴリを隠す";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "金額を入力するとカテゴリが表示されます";
+"SETTINGS_SECURITY" = "セキュリティ";
+"SETTINGS_PASSCODE" = "パスコード";
+"SETTINGS_PASSCODE_CHANGE" = "パスコードを変更";
+"PASSCODE_ENTER" = "パスコードを入力";
+"PASSCODE_ENTER_CURRENT" = "現在のパスコードを入力";
+"PASSCODE_ENTER_NEW" = "新しいパスコードを入力";
+"PASSCODE_REPEAT" = "パスコードを再入力";
+"PASSCODE_WRONG" = "パスコードが違います";
+"PASSCODE_MISMATCH" = "パスコードが一致しません";
+"PASSCODE_BIOMETRICS_REASON" = "アプリのロックを解除";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "カテゴリ：%d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "ファイルが破損しているか、読み込めません。";
 "BACKUPS_ERROR_NEWER_VERSION" = "このバックアップは新しいバージョンのアプリで作成されています。";
 "BACKUPS_ERROR_UNSUPPORTED" = "このファイル形式には対応していません。";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "すべての口座";
+"BACKUPS_EXPORT_ALL_HISTORY" = "すべての履歴";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "期間を指定";
+"BACKUPS_EXPORT_LAST_DAYS" = "過去%d日間";
+"BACKUPS_EXPORT_PERIOD" = "期間";
+"BACKUPS_EXPORT_SETTINGS" = "書き出し設定";
 "BACKUPS_EXPORT_SECTION" = "エクスポート";
 "BACKUPS_IMPORT_ACTION" = "ファイルからインポート";
 "BACKUPS_IMPORT_DONE" = "追加した取引：%d、カテゴリ：%d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "健康・家族・アクティビティ";
 "ICON_PICKER_SECTION_TECH" = "テクノロジー・教育・工具";
 "ICON_PICKER_SECTION_NATURE" = "自然・天気・一般記号";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "口座を削除しました";
+"ACCOUNTS_TITLE" = "口座";
+"ACCOUNTS_TOTAL" = "合計";
+"ACCOUNTS_NEW" = "新しい口座";
+"ACCOUNTS_EDIT" = "口座を編集";
+"ACCOUNTS_NAME" = "名前";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "支出の記録";

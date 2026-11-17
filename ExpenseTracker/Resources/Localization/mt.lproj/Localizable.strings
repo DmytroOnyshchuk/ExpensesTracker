@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Daħħal l-ispiża";
+"STARTVIEW_ENTER_INCOME" = "Daħħal id-dħul";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "L-ewwel daħħal l-ammont";
 "STARTVIEW_BALANCE" = "Bilanċ";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Spejjeż";
+"STATISTICS_INCOME_TITLE" = "Dħul";
 "STATISTICS_DAY" = "Jum";
 "STATISTICS_MONTH" = "Xahar";
 "STATISTICS_YEAR" = "Sena";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Tirrestawra t-tranżazzjoni?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Tirrestawra l-kategorija?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Tħassar il-kategorija?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Tirrestawra l-kont?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Tħassar il-kont?";
 "TRASH_DELETE_MESSAGE" = "Din l-azzjoni ma tistax titreġġa’ lura.";
 "TRASH_CLEAR_CONFIRMATION" = "L-oġġetti kollha fit-trash se jitħassru b'mod permanenti. Din l-azzjoni ma tistax titreġġa' lura.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Editja";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorija";
+"TRANSACTION_EDIT_BALANCE" = "Kont";
 "TRANSACTION_EDIT_AMOUNT" = "Ammont";
 "TRANSACTION_EDIT_DATE" = "Data";
 "TRANSACTION_EDIT_TIME" = "Ħin";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Imċaqlaq għat-Trash";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Minfuq illum";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Minfuq ilbieraħ";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Riċevut illum";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Riċevut ilbieraħ";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Editja l-kategoriji";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Parkeġġ";
 "DEFAULT_CATEGORY_PETS" = "Annimali domestiċi";
 "DEFAULT_CATEGORY_SAVINGS" = "Tfaddil";
+"DEFAULT_CATEGORY_SALARY" = "Salarju";
 "SETTINGS_APPEARANCE" = "Dehra";
 "SETTINGS_THEME_SYSTEM" = "Sistema";
 "SETTINGS_THEME_DARK" = "Skur";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Vibrazzjoni";
 "SETTINGS_HIDE_CATEGORIES" = "Aħbi l-kategoriji";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Il-kategoriji jidhru meta ddaħħal ammont";
+"SETTINGS_SECURITY" = "Sigurtà";
+"SETTINGS_PASSCODE" = "Kodiċi";
+"SETTINGS_PASSCODE_CHANGE" = "Ibdel il-kodiċi";
+"PASSCODE_ENTER" = "Daħħal il-kodiċi";
+"PASSCODE_ENTER_CURRENT" = "Daħħal il-kodiċi attwali";
+"PASSCODE_ENTER_NEW" = "Daħħal kodiċi ġdid";
+"PASSCODE_REPEAT" = "Irrepeti l-kodiċi";
+"PASSCODE_WRONG" = "Kodiċi ħażin";
+"PASSCODE_MISMATCH" = "Il-kodiċijiet ma jaqblux";
+"PASSCODE_BIOMETRICS_REASON" = "Iftaħ l-app";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategoriji: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Il-fajl huwa bil-ħsara jew ma jistax jinqara.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Dan il-backup inħoloq b’verżjoni aktar ġdida tal-app.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Dan il-format tal-fajl mhux appoġġjat.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Il-kontijiet kollha";
+"BACKUPS_EXPORT_ALL_HISTORY" = "L-istorja kollha";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Perjodu personalizzat";
+"BACKUPS_EXPORT_LAST_DAYS" = "L-aħħar %d jum";
+"BACKUPS_EXPORT_PERIOD" = "Perjodu";
+"BACKUPS_EXPORT_SETTINGS" = "Settings tal-esportazzjoni";
 "BACKUPS_EXPORT_SECTION" = "Esportazzjoni";
 "BACKUPS_IMPORT_ACTION" = "Importa minn fajl";
 "BACKUPS_IMPORT_DONE" = "Tranżazzjonijiet miżjuda: %d, kategoriji: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Saħħa, familja u attivitajiet";
 "ICON_PICKER_SECTION_TECH" = "Teknoloġija, edukazzjoni u għodod";
 "ICON_PICKER_SECTION_NATURE" = "Natura, temp u simboli ġenerali";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Kont imħassar";
+"ACCOUNTS_TITLE" = "Kontijiet";
+"ACCOUNTS_TOTAL" = "Total";
+"ACCOUNTS_NEW" = "Kont ġdid";
+"ACCOUNTS_EDIT" = "Editja l-kont";
+"ACCOUNTS_NAME" = "Isem";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Kontabilità tal-ispejjeż";

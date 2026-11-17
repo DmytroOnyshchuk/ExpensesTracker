@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Хароҷотро ворид кунед";
+"STARTVIEW_ENTER_INCOME" = "Даромадро ворид кунед";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Аввал маблағро ворид кунед";
 "STARTVIEW_BALANCE" = "Тавозун";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Хароҷот";
+"STATISTICS_INCOME_TITLE" = "Даромад";
 "STATISTICS_DAY" = "Рӯз";
 "STATISTICS_MONTH" = "Моҳ";
 "STATISTICS_YEAR" = "Сол";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Амалиёт барқарор карда шавад?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Категория барқарор карда шавад?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Категория нест карда шавад?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Ҳисоб барқарор карда шавад?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Ҳисоб нест карда шавад?";
 "TRASH_DELETE_MESSAGE" = "Ин амалро бекор кардан ғайриимкон аст.";
 "TRASH_CLEAR_CONFIRMATION" = "Ҳамаи унсурҳои сабад барои ҳамеша нест карда мешаванд. Ин амалро бекор кардан ғайриимкон аст.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Таҳрир";
 "TRANSACTION_EDIT_CATEGORY" = "Категория";
+"TRANSACTION_EDIT_BALANCE" = "Ҳисоб";
 "TRANSACTION_EDIT_AMOUNT" = "Маблағ";
 "TRANSACTION_EDIT_DATE" = "Сана";
 "TRANSACTION_EDIT_TIME" = "Вақт";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Ба сабад интиқол дода шуд";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Имрӯз сарф шуд";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Дирӯз сарф шуд";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Имрӯз гирифта шуд";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Дирӯз гирифта шуд";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Таҳрири категорияҳо";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Таваққуфгоҳ";
 "DEFAULT_CATEGORY_PETS" = "Ҳайвонот";
 "DEFAULT_CATEGORY_SAVINGS" = "Пасандоз";
+"DEFAULT_CATEGORY_SALARY" = "Маош";
 "SETTINGS_APPEARANCE" = "Намуд";
 "SETTINGS_THEME_SYSTEM" = "Системавӣ";
 "SETTINGS_THEME_DARK" = "Торик";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Ларзиш";
 "SETTINGS_HIDE_CATEGORIES" = "Пинҳон кардани категорияҳо";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Категорияҳо ҳангоми ворид кардани маблағ пайдо мешаванд";
+"SETTINGS_SECURITY" = "Амният";
+"SETTINGS_PASSCODE" = "Рамз";
+"SETTINGS_PASSCODE_CHANGE" = "Иваз кардани рамз";
+"PASSCODE_ENTER" = "Рамзро ворид кунед";
+"PASSCODE_ENTER_CURRENT" = "Рамзи ҷориро ворид кунед";
+"PASSCODE_ENTER_NEW" = "Рамзи навро ворид кунед";
+"PASSCODE_REPEAT" = "Рамзро такрор кунед";
+"PASSCODE_WRONG" = "Рамз нодуруст аст";
+"PASSCODE_MISMATCH" = "Рамзҳо мувофиқат намекунанд";
+"PASSCODE_BIOMETRICS_REASON" = "Кушодани қулфи барнома";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Категорияҳо: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Файл вайрон шудааст ё хонда намешавад.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Ин нусха бо версияи навтари барнома сохта шудааст.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Ин формати файл дастгирӣ намешавад.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Ҳамаи ҳисобҳо";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Тамоми таърих";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Давраи дилхоҳ";
+"BACKUPS_EXPORT_LAST_DAYS" = "%d рӯзи охир";
+"BACKUPS_EXPORT_PERIOD" = "Давра";
+"BACKUPS_EXPORT_SETTINGS" = "Танзимоти содирот";
 "BACKUPS_EXPORT_SECTION" = "Содирот";
 "BACKUPS_IMPORT_ACTION" = "Ворид кардан аз файл";
 "BACKUPS_IMPORT_DONE" = "Амалиётҳои иловашуда: %d, категорияҳо: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Саломатӣ, оила ва фаъолиятҳо";
 "ICON_PICKER_SECTION_TECH" = "Технология, маориф ва асбобҳо";
 "ICON_PICKER_SECTION_NATURE" = "Табиат, обу ҳаво ва рамзҳои умумӣ";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Ҳисоб нест карда шуд";
+"ACCOUNTS_TITLE" = "Ҳисобҳо";
+"ACCOUNTS_TOTAL" = "Ҳамагӣ";
+"ACCOUNTS_NEW" = "Ҳисоби нав";
+"ACCOUNTS_EDIT" = "Таҳрири ҳисоб";
+"ACCOUNTS_NAME" = "Ном";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Баҳисобгирии хароҷот";

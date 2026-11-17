@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Lêçûnê binivîse";
+"STARTVIEW_ENTER_INCOME" = "Dahatê binivîse";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Pêşî mîqdarê binivîse";
 "STARTVIEW_BALANCE" = "Bîlanço";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Lêçûn";
+"STATISTICS_INCOME_TITLE" = "Dahat";
 "STATISTICS_DAY" = "Roj";
 "STATISTICS_MONTH" = "Meh";
 "STATISTICS_YEAR" = "Sal";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Danûstandinê vegerîne?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Kategoriyê vegerîne?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Kategoriyê jê bibe?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Hesabê vegerîne?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Hesabê jê bibe?";
 "TRASH_DELETE_MESSAGE" = "Ev kiryar nayê vegerandin.";
 "TRASH_CLEAR_CONFIRMATION" = "Hemû hêmanên di çopdankê de dê bi temamî werin jêbirin. Ev çalakî nayê vegerandin.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Sererast bike";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorî";
+"TRANSACTION_EDIT_BALANCE" = "Hesab";
 "TRANSACTION_EDIT_AMOUNT" = "Mîqdar";
 "TRANSACTION_EDIT_DATE" = "Tarîx";
 "TRANSACTION_EDIT_TIME" = "Dem";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Bo çopdankê hat veguhastin";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Îro hat xerckirin";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Duh hat xerckirin";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Îro hat wergirtin";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Duh hat wergirtin";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Kategoriyan sererast bike";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Parkkirin";
 "DEFAULT_CATEGORY_PETS" = "Ajalên malê";
 "DEFAULT_CATEGORY_SAVINGS" = "Teserûf";
+"DEFAULT_CATEGORY_SALARY" = "Meaş";
 "SETTINGS_APPEARANCE" = "Xuyang";
 "SETTINGS_THEME_SYSTEM" = "Pergal";
 "SETTINGS_THEME_DARK" = "Tarî";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Lerizîn";
 "SETTINGS_HIDE_CATEGORIES" = "Kategoriyan veşêre";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategorî dema ku mîqdar tê nivîsandin xuya dibin";
+"SETTINGS_SECURITY" = "Ewlehî";
+"SETTINGS_PASSCODE" = "Şîfre";
+"SETTINGS_PASSCODE_CHANGE" = "Şîfreyê biguherîne";
+"PASSCODE_ENTER" = "Şîfreyê binivîse";
+"PASSCODE_ENTER_CURRENT" = "Şîfreya niha binivîse";
+"PASSCODE_ENTER_NEW" = "Şîfreya nû binivîse";
+"PASSCODE_REPEAT" = "Şîfreyê dubare bike";
+"PASSCODE_WRONG" = "Şîfreya çewt";
+"PASSCODE_MISMATCH" = "Şîfre li hev nayên";
+"PASSCODE_BIOMETRICS_REASON" = "Kilîda sepanê veke";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorî: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Pel xera bûye an nayê xwendin.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Ev paşkopî bi guhertoyeke nûtir a sepanê hatiye çêkirin.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Ev formata pelê nayê piştgirîkirin.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Hemû hesab";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Hemû dîrok";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Demeke taybet";
+"BACKUPS_EXPORT_LAST_DAYS" = "%d rojên dawî";
+"BACKUPS_EXPORT_PERIOD" = "Dem";
+"BACKUPS_EXPORT_SETTINGS" = "Mîhengên derxistinê";
 "BACKUPS_EXPORT_SECTION" = "Derxistin";
 "BACKUPS_IMPORT_ACTION" = "Ji pelê bîne";
 "BACKUPS_IMPORT_DONE" = "Danûstandinên zêdekirî: %d, kategorî: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Tenduristî, malbat û çalakî";
 "ICON_PICKER_SECTION_TECH" = "Teknolojî, perwerde û amûr";
 "ICON_PICKER_SECTION_NATURE" = "Xweza, hewa û sembolên giştî";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Hesab hat jêbirin";
+"ACCOUNTS_TITLE" = "Hesab";
+"ACCOUNTS_TOTAL" = "Tevahî";
+"ACCOUNTS_NEW" = "Hesabê nû";
+"ACCOUNTS_EDIT" = "Hesabê sererast bike";
+"ACCOUNTS_NAME" = "Nav";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Hesabdariya lêçûnan";

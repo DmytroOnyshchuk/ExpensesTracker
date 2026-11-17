@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "خرچ داخل ڪريو";
+"STARTVIEW_ENTER_INCOME" = "آمدني داخل ڪريو";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "پهريان رقم داخل ڪريو";
 "STARTVIEW_BALANCE" = "بيلنس";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "خرچ";
+"STATISTICS_INCOME_TITLE" = "آمدني";
 "STATISTICS_DAY" = "ڏينهن";
 "STATISTICS_MONTH" = "مهينو";
 "STATISTICS_YEAR" = "سال";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "لين دين بحال ڪجي؟";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "درجو بحال ڪجي؟";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "درجو ختم ڪجي؟";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "اڪائونٽ بحال ڪجي؟";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "اڪائونٽ ختم ڪجي؟";
 "TRASH_DELETE_MESSAGE" = "هي عمل واپس نٿو ٿي سگهي.";
 "TRASH_CLEAR_CONFIRMATION" = "ردي ۾ موجود سڀ شيون هميشه لاءِ ختم ڪيون وينديون. هي عمل واپس نٿو ڪري سگهجي.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ترميم";
 "TRANSACTION_EDIT_CATEGORY" = "درجو";
+"TRANSACTION_EDIT_BALANCE" = "اڪائونٽ";
 "TRANSACTION_EDIT_AMOUNT" = "رقم";
 "TRANSACTION_EDIT_DATE" = "تاريخ";
 "TRANSACTION_EDIT_TIME" = "وقت";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "رديءَ ۾ منتقل ٿي ويو";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "اڄ خرچ ٿيو";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ڪالهه خرچ ٿيو";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "اڄ مليو";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "ڪالهه مليو";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "درجن ۾ ترميم";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "پارڪنگ";
 "DEFAULT_CATEGORY_PETS" = "پالتو جانور";
 "DEFAULT_CATEGORY_SAVINGS" = "بچت";
+"DEFAULT_CATEGORY_SALARY" = "پگهار";
 "SETTINGS_APPEARANCE" = "ڏيک";
 "SETTINGS_THEME_SYSTEM" = "سسٽم";
 "SETTINGS_THEME_DARK" = "ڪارو";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "وائبريشن";
 "SETTINGS_HIDE_CATEGORIES" = "ڪيٽيگريون لڪايو";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "رقم داخل ڪرڻ تي زمرا ظاهر ٿين ٿا";
+"SETTINGS_SECURITY" = "سيڪيورٽي";
+"SETTINGS_PASSCODE" = "پاسڪوڊ";
+"SETTINGS_PASSCODE_CHANGE" = "پاسڪوڊ تبديل ڪريو";
+"PASSCODE_ENTER" = "پاسڪوڊ داخل ڪريو";
+"PASSCODE_ENTER_CURRENT" = "موجوده پاسڪوڊ داخل ڪريو";
+"PASSCODE_ENTER_NEW" = "نئون پاسڪوڊ داخل ڪريو";
+"PASSCODE_REPEAT" = "پاسڪوڊ ٻيهر داخل ڪريو";
+"PASSCODE_WRONG" = "غلط پاسڪوڊ";
+"PASSCODE_MISMATCH" = "پاسڪوڊ هڪجهڙا ناهن";
+"PASSCODE_BIOMETRICS_REASON" = "ايپ انلاڪ ڪريو";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "درجا: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "فائل خراب آهي يا پڙهي نٿي سگهجي.";
 "BACKUPS_ERROR_NEWER_VERSION" = "هي بيڪ اپ ايپ جي نئين ورزن سان ٺاهيو ويو آهي.";
 "BACKUPS_ERROR_UNSUPPORTED" = "هي فائل فارميٽ سپورٽ ٿيل ناهي.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "سڀ اڪائونٽ";
+"BACKUPS_EXPORT_ALL_HISTORY" = "سڄي تاريخ";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "پنهنجو مدو";
+"BACKUPS_EXPORT_LAST_DAYS" = "گذريل %d ڏينهن";
+"BACKUPS_EXPORT_PERIOD" = "مدو";
+"BACKUPS_EXPORT_SETTINGS" = "ايڪسپورٽ جون سيٽنگون";
 "BACKUPS_EXPORT_SECTION" = "ايڪسپورٽ";
 "BACKUPS_IMPORT_ACTION" = "فائل مان امپورٽ ڪريو";
 "BACKUPS_IMPORT_DONE" = "شامل ڪيل ٽرانزيڪشنون: %d، درجا: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "صحت، خاندان ۽ سرگرميون";
 "ICON_PICKER_SECTION_TECH" = "ٽيڪنالاجي، تعليم ۽ اوزار";
 "ICON_PICKER_SECTION_NATURE" = "فطرت، موسم ۽ عام نشانيون";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "اڪائونٽ ختم ٿي ويو";
+"ACCOUNTS_TITLE" = "اڪائونٽ";
+"ACCOUNTS_TOTAL" = "ڪل";
+"ACCOUNTS_NEW" = "نئون اڪائونٽ";
+"ACCOUNTS_EDIT" = "اڪائونٽ ۾ ترميم ڪريو";
+"ACCOUNTS_NAME" = "نالو";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "خرچن جو حساب";

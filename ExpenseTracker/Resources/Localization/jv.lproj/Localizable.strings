@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Lebokake pengeluaran";
+"STARTVIEW_ENTER_INCOME" = "Lebokake pemasukan";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Lebokake jumlahe dhisik";
 "STARTVIEW_BALANCE" = "Saldo";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Pengeluaran";
+"STATISTICS_INCOME_TITLE" = "Pemasukan";
 "STATISTICS_DAY" = "Dina";
 "STATISTICS_MONTH" = "Sasi";
 "STATISTICS_YEAR" = "Taun";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Balèkaké transaksi?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Balèkaké kategori?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Busak kategori?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Balèkaké akun?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Busak akun?";
 "TRASH_DELETE_MESSAGE" = "Tindakan iki ora bisa dibatalaké.";
 "TRASH_CLEAR_CONFIRMATION" = "Kabèh item ing tong sampah bakal dibusak permanèn. Tumindak iki ora bisa dibatalaké.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Owahi";
 "TRANSACTION_EDIT_CATEGORY" = "Kategori";
+"TRANSACTION_EDIT_BALANCE" = "Akun";
 "TRANSACTION_EDIT_AMOUNT" = "Jumlah";
 "TRANSACTION_EDIT_DATE" = "Tanggal";
 "TRANSACTION_EDIT_TIME" = "Wektu";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Dipindhah menyang tong sampah";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Dientekake dina iki";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Dientekake wingi";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Ditampa dina iki";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Ditampa wingi";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Owahi kategori";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Parkir";
 "DEFAULT_CATEGORY_PETS" = "Kéwan ingon";
 "DEFAULT_CATEGORY_SAVINGS" = "Tabungan";
+"DEFAULT_CATEGORY_SALARY" = "Gaji";
 "SETTINGS_APPEARANCE" = "Tampilan";
 "SETTINGS_THEME_SYSTEM" = "Sistem";
 "SETTINGS_THEME_DARK" = "Peteng";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Geter";
 "SETTINGS_HIDE_CATEGORIES" = "Dhelikake kategori";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategori katon nalika sampeyan ngisi jumlah";
+"SETTINGS_SECURITY" = "Keamanan";
+"SETTINGS_PASSCODE" = "Kode sandhi";
+"SETTINGS_PASSCODE_CHANGE" = "Ganti kode sandhi";
+"PASSCODE_ENTER" = "Lebokake kode sandhi";
+"PASSCODE_ENTER_CURRENT" = "Lebokake kode sandhi saiki";
+"PASSCODE_ENTER_NEW" = "Lebokake kode sandhi anyar";
+"PASSCODE_REPEAT" = "Baleni kode sandhi";
+"PASSCODE_WRONG" = "Kode sandhi salah";
+"PASSCODE_MISMATCH" = "Kode sandhi ora cocog";
+"PASSCODE_BIOMETRICS_REASON" = "Bukak kunci aplikasi";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategori: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Berkas rusak utawa ora bisa diwaca.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Serepan iki digawe nganggo versi aplikasi sing luwih anyar.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Format berkas iki ora didhukung.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Kabeh akun";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Kabeh riwayat";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Periode khusus";
+"BACKUPS_EXPORT_LAST_DAYS" = "%d dina pungkasan";
+"BACKUPS_EXPORT_PERIOD" = "Periode";
+"BACKUPS_EXPORT_SETTINGS" = "Setelan ekspor";
 "BACKUPS_EXPORT_SECTION" = "Ekspor";
 "BACKUPS_IMPORT_ACTION" = "Impor saka berkas";
 "BACKUPS_IMPORT_DONE" = "Transaksi sing ditambahake: %d, kategori: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Kesehatan, kulawarga lan kegiatan";
 "ICON_PICKER_SECTION_TECH" = "Teknologi, pendhidhikan lan piranti";
 "ICON_PICKER_SECTION_NATURE" = "Alam, cuaca lan simbol umum";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Akun wis dibusak";
+"ACCOUNTS_TITLE" = "Akun";
+"ACCOUNTS_TOTAL" = "Gunggung";
+"ACCOUNTS_NEW" = "Akun anyar";
+"ACCOUNTS_EDIT" = "Owahi akun";
+"ACCOUNTS_NAME" = "Jeneng";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Pencatatan pengeluaran";

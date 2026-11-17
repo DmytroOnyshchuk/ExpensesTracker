@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Fut shpenzimin";
+"STARTVIEW_ENTER_INCOME" = "Fut të ardhurat";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Së pari vendosni shumën";
 "STARTVIEW_BALANCE" = "Balanca";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Shpenzimet";
+"STATISTICS_INCOME_TITLE" = "Të ardhurat";
 "STATISTICS_DAY" = "Ditë";
 "STATISTICS_MONTH" = "Muaj";
 "STATISTICS_YEAR" = "Vit";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Të rikthehet transaksioni?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Të rikthehet kategoria?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Të fshihet kategoria?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Të rikthehet llogaria?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Të fshihet llogaria?";
 "TRASH_DELETE_MESSAGE" = "Ky veprim nuk mund të zhbëhet.";
 "TRASH_CLEAR_CONFIRMATION" = "Të gjithë artikujt në kosh do të fshihen përgjithmonë. Ky veprim nuk mund të zhbëhet.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Ndrysho";
 "TRANSACTION_EDIT_CATEGORY" = "Kategoria";
+"TRANSACTION_EDIT_BALANCE" = "Llogaria";
 "TRANSACTION_EDIT_AMOUNT" = "Shuma";
 "TRANSACTION_EDIT_DATE" = "Data";
 "TRANSACTION_EDIT_TIME" = "Ora";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "U zhvendos në kosh";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Shpenzuar sot";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Shpenzuar dje";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Marrë sot";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Marrë dje";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Ndrysho kategoritë";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Parkim";
 "DEFAULT_CATEGORY_PETS" = "Kafshë shtëpiake";
 "DEFAULT_CATEGORY_SAVINGS" = "Kursime";
+"DEFAULT_CATEGORY_SALARY" = "Paga";
 "SETTINGS_APPEARANCE" = "Pamja";
 "SETTINGS_THEME_SYSTEM" = "Sistemi";
 "SETTINGS_THEME_DARK" = "E errët";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Dridhje";
 "SETTINGS_HIDE_CATEGORIES" = "Fshih kategoritë";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategoritë shfaqen kur fut një shumë";
+"SETTINGS_SECURITY" = "Siguria";
+"SETTINGS_PASSCODE" = "Kodi";
+"SETTINGS_PASSCODE_CHANGE" = "Ndrysho kodin";
+"PASSCODE_ENTER" = "Fut kodin";
+"PASSCODE_ENTER_CURRENT" = "Fut kodin aktual";
+"PASSCODE_ENTER_NEW" = "Fut kodin e ri";
+"PASSCODE_REPEAT" = "Përsërit kodin";
+"PASSCODE_WRONG" = "Kod i gabuar";
+"PASSCODE_MISMATCH" = "Kodet nuk përputhen";
+"PASSCODE_BIOMETRICS_REASON" = "Zhblloko aplikacionin";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategori: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Skedari është i dëmtuar ose nuk mund të lexohet.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Kjo kopje është krijuar me një version më të ri të aplikacionit.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Ky format skedari nuk mbështetet.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Të gjitha llogaritë";
+"BACKUPS_EXPORT_ALL_HISTORY" = "E gjithë historia";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Periudhë e personalizuar";
+"BACKUPS_EXPORT_LAST_DAYS" = "%d ditët e fundit";
+"BACKUPS_EXPORT_PERIOD" = "Periudha";
+"BACKUPS_EXPORT_SETTINGS" = "Cilësimet e eksportit";
 "BACKUPS_EXPORT_SECTION" = "Eksport";
 "BACKUPS_IMPORT_ACTION" = "Importo nga skedari";
 "BACKUPS_IMPORT_DONE" = "Transaksione të shtuara: %d, kategori: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Shëndet, familje dhe aktivitete";
 "ICON_PICKER_SECTION_TECH" = "Teknologji, arsim dhe vegla";
 "ICON_PICKER_SECTION_NATURE" = "Natyrë, mot dhe simbole të përgjithshme";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Llogaria u fshi";
+"ACCOUNTS_TITLE" = "Llogaritë";
+"ACCOUNTS_TOTAL" = "Gjithsej";
+"ACCOUNTS_NEW" = "Llogari e re";
+"ACCOUNTS_EDIT" = "Ndrysho llogarinë";
+"ACCOUNTS_NAME" = "Emri";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Kontabiliteti i shpenzimeve";

@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Shigar da kashe kuɗi";
+"STARTVIEW_ENTER_INCOME" = "Shigar da kuɗin shiga";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Fara shigar da adadin";
 "STARTVIEW_BALANCE" = "Ragowa";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Kashe kuɗi";
+"STATISTICS_INCOME_TITLE" = "Kuɗin shiga";
 "STATISTICS_DAY" = "Rana";
 "STATISTICS_MONTH" = "Wata";
 "STATISTICS_YEAR" = "Shekara";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "A mayar da ma'amalar?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "A mayar da rukunin?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "A share rukunin?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "A mayar da asusun?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "A share asusun?";
 "TRASH_DELETE_MESSAGE" = "Ba za a iya soke wannan aikin ba.";
 "TRASH_CLEAR_CONFIRMATION" = "Za a goge duk abubuwan da ke cikin kwandon shara har abada. Ba za a iya soke wannan aikin ba.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Gyara";
 "TRANSACTION_EDIT_CATEGORY" = "Rukuni";
+"TRANSACTION_EDIT_BALANCE" = "Asusu";
 "TRANSACTION_EDIT_AMOUNT" = "Adadi";
 "TRANSACTION_EDIT_DATE" = "Kwanan wata";
 "TRANSACTION_EDIT_TIME" = "Lokaci";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "An matsar zuwa kwandon shara";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "An kashe yau";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "An kashe jiya";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "An karɓa yau";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "An karɓa jiya";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Gyara rukunoni";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Wurin ajiye mota";
 "DEFAULT_CATEGORY_PETS" = "Dabbobin gida";
 "DEFAULT_CATEGORY_SAVINGS" = "Ajiya";
+"DEFAULT_CATEGORY_SALARY" = "Albashi";
 "SETTINGS_APPEARANCE" = "Kamanni";
 "SETTINGS_THEME_SYSTEM" = "Tsarin";
 "SETTINGS_THEME_DARK" = "Duhu";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Jijjiga";
 "SETTINGS_HIDE_CATEGORIES" = "Ɓoye rukunoni";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Rukunoni suna bayyana idan ka shigar da adadi";
+"SETTINGS_SECURITY" = "Tsaro";
+"SETTINGS_PASSCODE" = "Lambar sirri";
+"SETTINGS_PASSCODE_CHANGE" = "Canza lambar sirri";
+"PASSCODE_ENTER" = "Shigar da lambar sirri";
+"PASSCODE_ENTER_CURRENT" = "Shigar da lambar sirri ta yanzu";
+"PASSCODE_ENTER_NEW" = "Shigar da sabuwar lambar sirri";
+"PASSCODE_REPEAT" = "Maimaita lambar sirri";
+"PASSCODE_WRONG" = "Lambar sirri ba daidai ba ce";
+"PASSCODE_MISMATCH" = "Lambobin sirri ba su dace ba";
+"PASSCODE_BIOMETRICS_REASON" = "Buɗe manhajar";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Rukunoni: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Fayil ɗin ya lalace ko ba a iya karanta shi ba.";
 "BACKUPS_ERROR_NEWER_VERSION" = "An ƙirƙiri wannan ajiyar da sabuwar sigar manhajar.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Ba a goyon bayan wannan tsarin fayil.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Duk asusu";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Duk tarihi";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Lokaci na musamman";
+"BACKUPS_EXPORT_LAST_DAYS" = "Kwanaki %d na ƙarshe";
+"BACKUPS_EXPORT_PERIOD" = "Lokaci";
+"BACKUPS_EXPORT_SETTINGS" = "Saitunan fitarwa";
 "BACKUPS_EXPORT_SECTION" = "Fitarwa";
 "BACKUPS_IMPORT_ACTION" = "Shigo da daga fayil";
 "BACKUPS_IMPORT_DONE" = "Hada-hada da aka ƙara: %d, rukunoni: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Lafiya, iyali da ayyuka";
 "ICON_PICKER_SECTION_TECH" = "Fasaha, ilimi da kayan aiki";
 "ICON_PICKER_SECTION_NATURE" = "Halitta, yanayi da alamomin gama-gari";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "An share asusun";
+"ACCOUNTS_TITLE" = "Asusu";
+"ACCOUNTS_TOTAL" = "Jimilla";
+"ACCOUNTS_NEW" = "Sabon asusu";
+"ACCOUNTS_EDIT" = "Gyara asusu";
+"ACCOUNTS_NAME" = "Suna";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Lissafin kashe kuɗi";

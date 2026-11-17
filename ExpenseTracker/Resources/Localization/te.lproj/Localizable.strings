@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "ఖర్చును నమోదు చేయండి";
+"STARTVIEW_ENTER_INCOME" = "ఆదాయాన్ని నమోదు చేయండి";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "ముందుగా మొత్తాన్ని నమోదు చేయండి";
 "STARTVIEW_BALANCE" = "బ్యాలెన్స్";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "ఖర్చులు";
+"STATISTICS_INCOME_TITLE" = "ఆదాయం";
 "STATISTICS_DAY" = "రోజు";
 "STATISTICS_MONTH" = "నెల";
 "STATISTICS_YEAR" = "సంవత్సరం";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "లావాదేవీని పునరుద్ధరించాలా?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "వర్గాన్ని పునరుద్ధరించాలా?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "వర్గాన్ని తొలగించాలా?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "ఖాతాను పునరుద్ధరించాలా?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "ఖాతాను తొలగించాలా?";
 "TRASH_DELETE_MESSAGE" = "ఈ చర్యను రద్దు చేయడం సాధ్యం కాదు.";
 "TRASH_CLEAR_CONFIRMATION" = "ట్రాష్‌లోని అన్ని అంశాలు శాశ్వతంగా తొలగించబడతాయి. ఈ చర్యను రద్దు చేయడం సాధ్యం కాదు.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "సవరించండి";
 "TRANSACTION_EDIT_CATEGORY" = "వర్గం";
+"TRANSACTION_EDIT_BALANCE" = "ఖాతా";
 "TRANSACTION_EDIT_AMOUNT" = "మొత్తం";
 "TRANSACTION_EDIT_DATE" = "తేదీ";
 "TRANSACTION_EDIT_TIME" = "సమయం";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ట్రాష్‌కు తరలించబడింది";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ఈరోజు ఖర్చు";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "నిన్నటి ఖర్చు";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "ఈరోజు ఆదాయం";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "నిన్నటి ఆదాయం";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "వర్గాలను సవరించండి";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "పార్కింగ్";
 "DEFAULT_CATEGORY_PETS" = "పెంపుడు జంతువులు";
 "DEFAULT_CATEGORY_SAVINGS" = "పొదుపు";
+"DEFAULT_CATEGORY_SALARY" = "జీతం";
 "SETTINGS_APPEARANCE" = "రూపం";
 "SETTINGS_THEME_SYSTEM" = "సిస్టమ్";
 "SETTINGS_THEME_DARK" = "ముదురు";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "వైబ్రేషన్";
 "SETTINGS_HIDE_CATEGORIES" = "వర్గాలను దాచు";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "మొత్తాన్ని నమోదు చేసినప్పుడు వర్గాలు కనిపిస్తాయి";
+"SETTINGS_SECURITY" = "భద్రత";
+"SETTINGS_PASSCODE" = "పాస్‌కోడ్";
+"SETTINGS_PASSCODE_CHANGE" = "పాస్‌కోడ్ మార్చండి";
+"PASSCODE_ENTER" = "పాస్‌కోడ్ నమోదు చేయండి";
+"PASSCODE_ENTER_CURRENT" = "ప్రస్తుత పాస్‌కోడ్ నమోదు చేయండి";
+"PASSCODE_ENTER_NEW" = "కొత్త పాస్‌కోడ్ నమోదు చేయండి";
+"PASSCODE_REPEAT" = "పాస్‌కోడ్ మళ్లీ నమోదు చేయండి";
+"PASSCODE_WRONG" = "తప్పు పాస్‌కోడ్";
+"PASSCODE_MISMATCH" = "పాస్‌కోడ్‌లు సరిపోలడం లేదు";
+"PASSCODE_BIOMETRICS_REASON" = "యాప్‌ను అన్‌లాక్ చేయండి";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "వర్గాలు: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "ఫైల్ పాడైంది లేదా చదవడం సాధ్యం కాదు.";
 "BACKUPS_ERROR_NEWER_VERSION" = "ఈ బ్యాకప్ యాప్ కొత్త వెర్షన్‌తో సృష్టించబడింది.";
 "BACKUPS_ERROR_UNSUPPORTED" = "ఈ ఫైల్ ఫార్మాట్‌కు మద్దతు లేదు.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "అన్ని ఖాతాలు";
+"BACKUPS_EXPORT_ALL_HISTORY" = "మొత్తం చరిత్ర";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "అనుకూల వ్యవధి";
+"BACKUPS_EXPORT_LAST_DAYS" = "గత %d రోజులు";
+"BACKUPS_EXPORT_PERIOD" = "వ్యవధి";
+"BACKUPS_EXPORT_SETTINGS" = "ఎగుమతి సెట్టింగ్‌లు";
 "BACKUPS_EXPORT_SECTION" = "ఎగుమతి";
 "BACKUPS_IMPORT_ACTION" = "ఫైల్ నుండి దిగుమతి చేయండి";
 "BACKUPS_IMPORT_DONE" = "జోడించిన లావాదేవీలు: %d, వర్గాలు: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "ఆరోగ్యం, కుటుంబం మరియు కార్యకలాపాలు";
 "ICON_PICKER_SECTION_TECH" = "సాంకేతికత, విద్య మరియు పరికరాలు";
 "ICON_PICKER_SECTION_NATURE" = "ప్రకృతి, వాతావరణం మరియు సాధారణ చిహ్నాలు";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "ఖాతా తొలగించబడింది";
+"ACCOUNTS_TITLE" = "ఖాతాలు";
+"ACCOUNTS_TOTAL" = "మొత్తం";
+"ACCOUNTS_NEW" = "కొత్త ఖాతా";
+"ACCOUNTS_EDIT" = "ఖాతాను సవరించండి";
+"ACCOUNTS_NAME" = "పేరు";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ఖర్చుల లెక్క";

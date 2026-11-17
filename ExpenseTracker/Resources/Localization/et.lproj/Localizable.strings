@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Sisesta kulu";
+"STARTVIEW_ENTER_INCOME" = "Sisesta tulu";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Sisestage kõigepealt summa";
 "STARTVIEW_BALANCE" = "Saldo";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Kulud";
+"STATISTICS_INCOME_TITLE" = "Tulud";
 "STATISTICS_DAY" = "Päev";
 "STATISTICS_MONTH" = "Kuu";
 "STATISTICS_YEAR" = "Aasta";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Taasta tehing?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Taasta kategooria?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Kustuta kategooria?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Taasta konto?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Kustuta konto?";
 "TRASH_DELETE_MESSAGE" = "Seda toimingut ei saa tagasi võtta.";
 "TRASH_CLEAR_CONFIRMATION" = "Kõik prügikastis olevad üksused kustutatakse jäädavalt. Seda toimingut ei saa tagasi võtta.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Muuda";
 "TRANSACTION_EDIT_CATEGORY" = "Kategooria";
+"TRANSACTION_EDIT_BALANCE" = "Konto";
 "TRANSACTION_EDIT_AMOUNT" = "Summa";
 "TRANSACTION_EDIT_DATE" = "Kuupäev";
 "TRANSACTION_EDIT_TIME" = "Kellaaeg";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Teisaldatud prügikasti";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Täna kulutatud";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Eile kulutatud";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Täna saadud";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Eile saadud";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Muuda kategooriaid";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Parkimine";
 "DEFAULT_CATEGORY_PETS" = "Lemmikloomad";
 "DEFAULT_CATEGORY_SAVINGS" = "Säästud";
+"DEFAULT_CATEGORY_SALARY" = "Palk";
 "SETTINGS_APPEARANCE" = "Välimus";
 "SETTINGS_THEME_SYSTEM" = "Süsteem";
 "SETTINGS_THEME_DARK" = "Tume";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Värin";
 "SETTINGS_HIDE_CATEGORIES" = "Peida kategooriad";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategooriad ilmuvad summa sisestamisel";
+"SETTINGS_SECURITY" = "Turvalisus";
+"SETTINGS_PASSCODE" = "Pääsukood";
+"SETTINGS_PASSCODE_CHANGE" = "Muuda pääsukoodi";
+"PASSCODE_ENTER" = "Sisesta pääsukood";
+"PASSCODE_ENTER_CURRENT" = "Sisesta praegune pääsukood";
+"PASSCODE_ENTER_NEW" = "Sisesta uus pääsukood";
+"PASSCODE_REPEAT" = "Korda pääsukoodi";
+"PASSCODE_WRONG" = "Vale pääsukood";
+"PASSCODE_MISMATCH" = "Pääsukoodid ei kattu";
+"PASSCODE_BIOMETRICS_REASON" = "Ava rakendus";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategooriad: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Fail on kahjustatud või seda ei saa lugeda.";
 "BACKUPS_ERROR_NEWER_VERSION" = "See varukoopia on loodud rakenduse uuema versiooniga.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Seda failivormingut ei toetata.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Kõik kontod";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Kogu ajalugu";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Kohandatud periood";
+"BACKUPS_EXPORT_LAST_DAYS" = "Viimased %d päeva";
+"BACKUPS_EXPORT_PERIOD" = "Periood";
+"BACKUPS_EXPORT_SETTINGS" = "Ekspordi seaded";
 "BACKUPS_EXPORT_SECTION" = "Eksport";
 "BACKUPS_IMPORT_ACTION" = "Impordi failist";
 "BACKUPS_IMPORT_DONE" = "Lisatud tehingud: %d, kategooriad: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Tervis, pere ja tegevused";
 "ICON_PICKER_SECTION_TECH" = "Tehnika, haridus ja tööriistad";
 "ICON_PICKER_SECTION_NATURE" = "Loodus, ilm ja üldsümbolid";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Konto kustutatud";
+"ACCOUNTS_TITLE" = "Kontod";
+"ACCOUNTS_TOTAL" = "Kokku";
+"ACCOUNTS_NEW" = "Uus konto";
+"ACCOUNTS_EDIT" = "Muuda kontot";
+"ACCOUNTS_NAME" = "Nimi";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Kulude arvestus";

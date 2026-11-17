@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "خەرجی بنووسە";
+"STARTVIEW_ENTER_INCOME" = "داهات بنووسە";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "سەرەتا بڕەکە بنووسە";
 "STARTVIEW_BALANCE" = "باڵانس";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "خەرجییەکان";
+"STATISTICS_INCOME_TITLE" = "داهات";
 "STATISTICS_DAY" = "ڕۆژ";
 "STATISTICS_MONTH" = "مانگ";
 "STATISTICS_YEAR" = "ساڵ";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "مامەڵەکە بگەڕێندرێتەوە؟";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "پۆلەکە بگەڕێندرێتەوە؟";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "پۆلەکە بسڕدرێتەوە؟";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "هەژمارەکە بگەڕێندرێتەوە؟";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "هەژمارەکە بسڕدرێتەوە؟";
 "TRASH_DELETE_MESSAGE" = "ئەم کردارە ناگەڕێندرێتەوە.";
 "TRASH_CLEAR_CONFIRMATION" = "هەموو شتەکانی ناو تەنەکەی خۆڵ بە یەکجاری دەسڕدرێنەوە. ئەم کردارە ناگەڕێندرێتەوە.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "دەستکاری";
 "TRANSACTION_EDIT_CATEGORY" = "پۆل";
+"TRANSACTION_EDIT_BALANCE" = "هەژمار";
 "TRANSACTION_EDIT_AMOUNT" = "بڕ";
 "TRANSACTION_EDIT_DATE" = "بەروار";
 "TRANSACTION_EDIT_TIME" = "کات";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "گوازرایەوە بۆ تەنەکەی خۆڵ";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ئەمڕۆ خەرجکراوە";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "دوێنێ خەرجکراوە";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "ئەمڕۆ وەرگیراوە";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "دوێنێ وەرگیراوە";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "دەستکاریی پۆلەکان";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "پارکینگ";
 "DEFAULT_CATEGORY_PETS" = "ئاژەڵی ماڵی";
 "DEFAULT_CATEGORY_SAVINGS" = "پاشەکەوت";
+"DEFAULT_CATEGORY_SALARY" = "مووچە";
 "SETTINGS_APPEARANCE" = "ڕووکار";
 "SETTINGS_THEME_SYSTEM" = "سیستەم";
 "SETTINGS_THEME_DARK" = "تاریک";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "لەرزین";
 "SETTINGS_HIDE_CATEGORIES" = "شاردنەوەی پۆلەکان";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "پۆلەکان لە کاتی نووسینی بڕدا دەردەکەون";
+"SETTINGS_SECURITY" = "ئاسایش";
+"SETTINGS_PASSCODE" = "تێپەڕەکۆد";
+"SETTINGS_PASSCODE_CHANGE" = "گۆڕینی تێپەڕەکۆد";
+"PASSCODE_ENTER" = "تێپەڕەکۆد بنووسە";
+"PASSCODE_ENTER_CURRENT" = "تێپەڕەکۆدی ئێستا بنووسە";
+"PASSCODE_ENTER_NEW" = "تێپەڕەکۆدی نوێ بنووسە";
+"PASSCODE_REPEAT" = "تێپەڕەکۆد دووبارە بکەرەوە";
+"PASSCODE_WRONG" = "تێپەڕەکۆدی هەڵە";
+"PASSCODE_MISMATCH" = "تێپەڕەکۆدەکان وەک یەک نین";
+"PASSCODE_BIOMETRICS_REASON" = "قفڵی ئەپەکە بکەرەوە";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "پۆلەکان: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "فایلەکە تێکچووە یان ناخوێندرێتەوە.";
 "BACKUPS_ERROR_NEWER_VERSION" = "ئەم پاڵپشتە بە وەشانێکی نوێتری ئەپەکە دروست کراوە.";
 "BACKUPS_ERROR_UNSUPPORTED" = "ئەم جۆرە فایلە پشتگیری ناکرێت.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "هەموو هەژمارەکان";
+"BACKUPS_EXPORT_ALL_HISTORY" = "هەموو مێژوو";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "ماوەی دیاریکراو";
+"BACKUPS_EXPORT_LAST_DAYS" = "دوایین %d ڕۆژ";
+"BACKUPS_EXPORT_PERIOD" = "ماوە";
+"BACKUPS_EXPORT_SETTINGS" = "ڕێکخستنەکانی هەناردەکردن";
 "BACKUPS_EXPORT_SECTION" = "هەناردەکردن";
 "BACKUPS_IMPORT_ACTION" = "هاوردەکردن لە فایل";
 "BACKUPS_IMPORT_DONE" = "مامەڵەی زیادکراو: %d، پۆل: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "تەندروستی، خێزان و چالاکییەکان";
 "ICON_PICKER_SECTION_TECH" = "تەکنەلۆژیا، پەروەردە و ئامرازەکان";
 "ICON_PICKER_SECTION_NATURE" = "سروشت، کەشوهەوا و هێما گشتییەکان";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "هەژمارەکە سڕایەوە";
+"ACCOUNTS_TITLE" = "هەژمارەکان";
+"ACCOUNTS_TOTAL" = "کۆی گشتی";
+"ACCOUNTS_NEW" = "هەژماری نوێ";
+"ACCOUNTS_EDIT" = "دەستکاریکردنی هەژمار";
+"ACCOUNTS_NAME" = "ناو";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ژمێریاری خەرجییەکان";

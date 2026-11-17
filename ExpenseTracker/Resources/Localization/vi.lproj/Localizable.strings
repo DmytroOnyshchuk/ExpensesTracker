@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Nhập khoản chi";
+"STARTVIEW_ENTER_INCOME" = "Nhập khoản thu";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Hãy nhập số tiền trước";
 "STARTVIEW_BALANCE" = "Số dư";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Chi tiêu";
+"STATISTICS_INCOME_TITLE" = "Thu nhập";
 "STATISTICS_DAY" = "Ngày";
 "STATISTICS_MONTH" = "Tháng";
 "STATISTICS_YEAR" = "Năm";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Khôi phục giao dịch?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Khôi phục danh mục?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Xóa danh mục?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Khôi phục tài khoản?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Xóa tài khoản?";
 "TRASH_DELETE_MESSAGE" = "Không thể hoàn tác hành động này.";
 "TRASH_CLEAR_CONFIRMATION" = "Tất cả các mục trong thùng rác sẽ bị xóa vĩnh viễn. Không thể hoàn tác hành động này.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Sửa";
 "TRANSACTION_EDIT_CATEGORY" = "Danh mục";
+"TRANSACTION_EDIT_BALANCE" = "Tài khoản";
 "TRANSACTION_EDIT_AMOUNT" = "Số tiền";
 "TRANSACTION_EDIT_DATE" = "Ngày";
 "TRANSACTION_EDIT_TIME" = "Giờ";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Đã chuyển vào thùng rác";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Đã chi hôm nay";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Đã chi hôm qua";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Đã nhận hôm nay";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Đã nhận hôm qua";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Sửa danh mục";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Đỗ xe";
 "DEFAULT_CATEGORY_PETS" = "Thú cưng";
 "DEFAULT_CATEGORY_SAVINGS" = "Tiết kiệm";
+"DEFAULT_CATEGORY_SALARY" = "Lương";
 "SETTINGS_APPEARANCE" = "Giao diện";
 "SETTINGS_THEME_SYSTEM" = "Hệ thống";
 "SETTINGS_THEME_DARK" = "Tối";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Rung";
 "SETTINGS_HIDE_CATEGORIES" = "Ẩn danh mục";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Danh mục xuất hiện khi bạn nhập số tiền";
+"SETTINGS_SECURITY" = "Bảo mật";
+"SETTINGS_PASSCODE" = "Mật mã";
+"SETTINGS_PASSCODE_CHANGE" = "Đổi mật mã";
+"PASSCODE_ENTER" = "Nhập mật mã";
+"PASSCODE_ENTER_CURRENT" = "Nhập mật mã hiện tại";
+"PASSCODE_ENTER_NEW" = "Nhập mật mã mới";
+"PASSCODE_REPEAT" = "Nhập lại mật mã";
+"PASSCODE_WRONG" = "Mật mã sai";
+"PASSCODE_MISMATCH" = "Mật mã không khớp";
+"PASSCODE_BIOMETRICS_REASON" = "Mở khóa ứng dụng";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Danh mục: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Tệp bị hỏng hoặc không đọc được.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Bản sao lưu này được tạo bằng phiên bản ứng dụng mới hơn.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Định dạng tệp này không được hỗ trợ.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Tất cả tài khoản";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Toàn bộ lịch sử";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Khoảng thời gian tùy chỉnh";
+"BACKUPS_EXPORT_LAST_DAYS" = "%d ngày qua";
+"BACKUPS_EXPORT_PERIOD" = "Khoảng thời gian";
+"BACKUPS_EXPORT_SETTINGS" = "Cài đặt xuất";
 "BACKUPS_EXPORT_SECTION" = "Xuất";
 "BACKUPS_IMPORT_ACTION" = "Nhập từ tệp";
 "BACKUPS_IMPORT_DONE" = "Giao dịch đã thêm: %d, danh mục: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Sức khỏe, gia đình và hoạt động";
 "ICON_PICKER_SECTION_TECH" = "Công nghệ, giáo dục và dụng cụ";
 "ICON_PICKER_SECTION_NATURE" = "Thiên nhiên, thời tiết và biểu tượng chung";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Đã xóa tài khoản";
+"ACCOUNTS_TITLE" = "Tài khoản";
+"ACCOUNTS_TOTAL" = "Tổng";
+"ACCOUNTS_NEW" = "Tài khoản mới";
+"ACCOUNTS_EDIT" = "Sửa tài khoản";
+"ACCOUNTS_NAME" = "Tên";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Ghi chép chi tiêu";

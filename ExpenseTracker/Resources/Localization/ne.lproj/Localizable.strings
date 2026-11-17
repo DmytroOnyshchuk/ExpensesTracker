@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "खर्च प्रविष्ट गर्नुहोस्";
+"STARTVIEW_ENTER_INCOME" = "आम्दानी प्रविष्ट गर्नुहोस्";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "पहिले रकम प्रविष्ट गर्नुहोस्";
 "STARTVIEW_BALANCE" = "ब्यालेन्स";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "खर्च";
+"STATISTICS_INCOME_TITLE" = "आम्दानी";
 "STATISTICS_DAY" = "दिन";
 "STATISTICS_MONTH" = "महिना";
 "STATISTICS_YEAR" = "वर्ष";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "कारोबार पुनर्स्थापना गर्ने हो?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "श्रेणी पुनर्स्थापना गर्ने हो?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "श्रेणी मेटाउने हो?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "खाता पुनर्स्थापना गर्ने हो?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "खाता मेटाउने हो?";
 "TRASH_DELETE_MESSAGE" = "यो कार्य पूर्ववत गर्न सकिँदैन।";
 "TRASH_CLEAR_CONFIRMATION" = "रद्दीटोकरीका सबै वस्तुहरू स्थायी रूपमा मेटाइनेछन्। यो कार्य पूर्ववत गर्न सकिँदैन।";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "सम्पादन गर्नुहोस्";
 "TRANSACTION_EDIT_CATEGORY" = "श्रेणी";
+"TRANSACTION_EDIT_BALANCE" = "खाता";
 "TRANSACTION_EDIT_AMOUNT" = "रकम";
 "TRANSACTION_EDIT_DATE" = "मिति";
 "TRANSACTION_EDIT_TIME" = "समय";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "रद्दीटोकरीमा सारियो";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "आजको खर्च";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "हिजोको खर्च";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "आजको आम्दानी";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "हिजोको आम्दानी";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "श्रेणीहरू सम्पादन गर्नुहोस्";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "पार्किङ";
 "DEFAULT_CATEGORY_PETS" = "घरपालुवा जनावर";
 "DEFAULT_CATEGORY_SAVINGS" = "बचत";
+"DEFAULT_CATEGORY_SALARY" = "तलब";
 "SETTINGS_APPEARANCE" = "रूप";
 "SETTINGS_THEME_SYSTEM" = "प्रणाली";
 "SETTINGS_THEME_DARK" = "गाढा";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "कम्पन";
 "SETTINGS_HIDE_CATEGORIES" = "श्रेणीहरू लुकाउनुहोस्";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "रकम प्रविष्ट गर्दा श्रेणीहरू देखिन्छन्";
+"SETTINGS_SECURITY" = "सुरक्षा";
+"SETTINGS_PASSCODE" = "पासकोड";
+"SETTINGS_PASSCODE_CHANGE" = "पासकोड परिवर्तन गर्नुहोस्";
+"PASSCODE_ENTER" = "पासकोड प्रविष्ट गर्नुहोस्";
+"PASSCODE_ENTER_CURRENT" = "हालको पासकोड प्रविष्ट गर्नुहोस्";
+"PASSCODE_ENTER_NEW" = "नयाँ पासकोड प्रविष्ट गर्नुहोस्";
+"PASSCODE_REPEAT" = "पासकोड दोहोर्‍याउनुहोस्";
+"PASSCODE_WRONG" = "गलत पासकोड";
+"PASSCODE_MISMATCH" = "पासकोडहरू मिलेनन्";
+"PASSCODE_BIOMETRICS_REASON" = "एप अनलक गर्नुहोस्";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "श्रेणीहरू: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "फाइल बिग्रिएको छ वा पढ्न सकिँदैन।";
 "BACKUPS_ERROR_NEWER_VERSION" = "यो ब्याकअप एपको नयाँ संस्करणबाट बनाइएको हो।";
 "BACKUPS_ERROR_UNSUPPORTED" = "यो फाइल ढाँचा समर्थित छैन।";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "सबै खाताहरू";
+"BACKUPS_EXPORT_ALL_HISTORY" = "सम्पूर्ण इतिहास";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "अनुकूल अवधि";
+"BACKUPS_EXPORT_LAST_DAYS" = "पछिल्ला %d दिन";
+"BACKUPS_EXPORT_PERIOD" = "अवधि";
+"BACKUPS_EXPORT_SETTINGS" = "निर्यात सेटिङहरू";
 "BACKUPS_EXPORT_SECTION" = "निर्यात";
 "BACKUPS_IMPORT_ACTION" = "फाइलबाट आयात गर्नुहोस्";
 "BACKUPS_IMPORT_DONE" = "थपिएका कारोबारहरू: %d, श्रेणीहरू: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "स्वास्थ्य, परिवार र गतिविधि";
 "ICON_PICKER_SECTION_TECH" = "प्रविधि, शिक्षा र औजार";
 "ICON_PICKER_SECTION_NATURE" = "प्रकृति, मौसम र सामान्य प्रतीक";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "खाता मेटाइयो";
+"ACCOUNTS_TITLE" = "खाताहरू";
+"ACCOUNTS_TOTAL" = "जम्मा";
+"ACCOUNTS_NEW" = "नयाँ खाता";
+"ACCOUNTS_EDIT" = "खाता सम्पादन गर्नुहोस्";
+"ACCOUNTS_NAME" = "नाम";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "खर्चको लेखा";

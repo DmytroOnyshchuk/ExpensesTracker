@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Weka matumizi";
+"STARTVIEW_ENTER_INCOME" = "Weka mapato";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Weka kiasi kwanza";
 "STARTVIEW_BALANCE" = "Salio";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Matumizi";
+"STATISTICS_INCOME_TITLE" = "Mapato";
 "STATISTICS_DAY" = "Siku";
 "STATISTICS_MONTH" = "Mwezi";
 "STATISTICS_YEAR" = "Mwaka";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Rejesha muamala?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Rejesha aina?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Futa aina?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Rejesha akaunti?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Futa akaunti?";
 "TRASH_DELETE_MESSAGE" = "Kitendo hiki hakiwezi kutenduliwa.";
 "TRASH_CLEAR_CONFIRMATION" = "Vipengee vyote kwenye tupio vitafutwa kabisa. Kitendo hiki hakiwezi kutenduliwa.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Hariri";
 "TRANSACTION_EDIT_CATEGORY" = "Kategoria";
+"TRANSACTION_EDIT_BALANCE" = "Akaunti";
 "TRANSACTION_EDIT_AMOUNT" = "Kiasi";
 "TRANSACTION_EDIT_DATE" = "Tarehe";
 "TRANSACTION_EDIT_TIME" = "Saa";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Imehamishiwa kwenye tupio";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Matumizi ya leo";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Matumizi ya jana";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Mapato ya leo";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Mapato ya jana";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Hariri aina";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Maegesho";
 "DEFAULT_CATEGORY_PETS" = "Wanyama vipenzi";
 "DEFAULT_CATEGORY_SAVINGS" = "Akiba";
+"DEFAULT_CATEGORY_SALARY" = "Mshahara";
 "SETTINGS_APPEARANCE" = "Mwonekano";
 "SETTINGS_THEME_SYSTEM" = "Mfumo";
 "SETTINGS_THEME_DARK" = "Giza";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Mtetemo";
 "SETTINGS_HIDE_CATEGORIES" = "Ficha kategoria";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategoria huonekana unapoweka kiasi";
+"SETTINGS_SECURITY" = "Usalama";
+"SETTINGS_PASSCODE" = "Nambari ya siri";
+"SETTINGS_PASSCODE_CHANGE" = "Badilisha nambari ya siri";
+"PASSCODE_ENTER" = "Weka nambari ya siri";
+"PASSCODE_ENTER_CURRENT" = "Weka nambari ya siri ya sasa";
+"PASSCODE_ENTER_NEW" = "Weka nambari mpya ya siri";
+"PASSCODE_REPEAT" = "Rudia nambari ya siri";
+"PASSCODE_WRONG" = "Nambari ya siri si sahihi";
+"PASSCODE_MISMATCH" = "Nambari za siri hazilingani";
+"PASSCODE_BIOMETRICS_REASON" = "Fungua programu";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Aina: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Faili imeharibika au haiwezi kusomwa.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Nakala hii iliundwa kwa toleo jipya zaidi la programu.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Muundo huu wa faili hautumiki.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Akaunti zote";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Historia yote";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Kipindi maalum";
+"BACKUPS_EXPORT_LAST_DAYS" = "Siku %d zilizopita";
+"BACKUPS_EXPORT_PERIOD" = "Kipindi";
+"BACKUPS_EXPORT_SETTINGS" = "Mipangilio ya kuhamisha";
 "BACKUPS_EXPORT_SECTION" = "Hamisha";
 "BACKUPS_IMPORT_ACTION" = "Leta kutoka faili";
 "BACKUPS_IMPORT_DONE" = "Miamala iliyoongezwa: %d, aina: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Afya, familia na shughuli";
 "ICON_PICKER_SECTION_TECH" = "Teknolojia, elimu na zana";
 "ICON_PICKER_SECTION_NATURE" = "Asili, hali ya hewa na alama za jumla";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Akaunti imefutwa";
+"ACCOUNTS_TITLE" = "Akaunti";
+"ACCOUNTS_TOTAL" = "Jumla";
+"ACCOUNTS_NEW" = "Akaunti mpya";
+"ACCOUNTS_EDIT" = "Hariri akaunti";
+"ACCOUNTS_NAME" = "Jina";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Uhasibu wa matumizi";

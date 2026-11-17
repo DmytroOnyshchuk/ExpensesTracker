@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Syötä kulu";
+"STARTVIEW_ENTER_INCOME" = "Syötä tulo";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Syötä ensin summa";
 "STARTVIEW_BALANCE" = "Saldo";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Kulut";
+"STATISTICS_INCOME_TITLE" = "Tulot";
 "STATISTICS_DAY" = "Päivä";
 "STATISTICS_MONTH" = "Kuukausi";
 "STATISTICS_YEAR" = "Vuosi";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Palautetaanko tapahtuma?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Palautetaanko luokka?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Poistetaanko luokka?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Palautetaanko tili?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Poistetaanko tili?";
 "TRASH_DELETE_MESSAGE" = "Tätä toimintoa ei voi kumota.";
 "TRASH_CLEAR_CONFIRMATION" = "Kaikki roskakorin kohteet poistetaan pysyvästi. Tätä toimintoa ei voi kumota.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Muokkaa";
 "TRANSACTION_EDIT_CATEGORY" = "Luokka";
+"TRANSACTION_EDIT_BALANCE" = "Tili";
 "TRANSACTION_EDIT_AMOUNT" = "Summa";
 "TRANSACTION_EDIT_DATE" = "Päivämäärä";
 "TRANSACTION_EDIT_TIME" = "Aika";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Siirretty roskakoriin";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Käytetty tänään";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Käytetty eilen";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Saatu tänään";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Saatu eilen";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Muokkaa luokkia";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Pysäköinti";
 "DEFAULT_CATEGORY_PETS" = "Lemmikit";
 "DEFAULT_CATEGORY_SAVINGS" = "Säästöt";
+"DEFAULT_CATEGORY_SALARY" = "Palkka";
 "SETTINGS_APPEARANCE" = "Ulkoasu";
 "SETTINGS_THEME_SYSTEM" = "Järjestelmä";
 "SETTINGS_THEME_DARK" = "Tumma";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Värinä";
 "SETTINGS_HIDE_CATEGORIES" = "Piilota luokat";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategoriat näkyvät, kun syötät summan";
+"SETTINGS_SECURITY" = "Suojaus";
+"SETTINGS_PASSCODE" = "Pääsykoodi";
+"SETTINGS_PASSCODE_CHANGE" = "Vaihda pääsykoodi";
+"PASSCODE_ENTER" = "Syötä pääsykoodi";
+"PASSCODE_ENTER_CURRENT" = "Syötä nykyinen pääsykoodi";
+"PASSCODE_ENTER_NEW" = "Syötä uusi pääsykoodi";
+"PASSCODE_REPEAT" = "Toista pääsykoodi";
+"PASSCODE_WRONG" = "Väärä pääsykoodi";
+"PASSCODE_MISMATCH" = "Pääsykoodit eivät täsmää";
+"PASSCODE_BIOMETRICS_REASON" = "Avaa sovelluksen lukitus";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Luokat: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Tiedosto on vioittunut tai sitä ei voi lukea.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Tämä varmuuskopio on tehty sovelluksen uudemmalla versiolla.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Tätä tiedostomuotoa ei tueta.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Kaikki tilit";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Koko historia";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Mukautettu jakso";
+"BACKUPS_EXPORT_LAST_DAYS" = "Viimeiset %d päivää";
+"BACKUPS_EXPORT_PERIOD" = "Jakso";
+"BACKUPS_EXPORT_SETTINGS" = "Vientiasetukset";
 "BACKUPS_EXPORT_SECTION" = "Vienti";
 "BACKUPS_IMPORT_ACTION" = "Tuo tiedostosta";
 "BACKUPS_IMPORT_DONE" = "Lisätyt tapahtumat: %d, luokat: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Terveys, perhe ja aktiviteetit";
 "ICON_PICKER_SECTION_TECH" = "Tekniikka, koulutus ja työkalut";
 "ICON_PICKER_SECTION_NATURE" = "Luonto, sää ja yleiset symbolit";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Tili poistettu";
+"ACCOUNTS_TITLE" = "Tilit";
+"ACCOUNTS_TOTAL" = "Yhteensä";
+"ACCOUNTS_NEW" = "Uusi tili";
+"ACCOUNTS_EDIT" = "Muokkaa tiliä";
+"ACCOUNTS_NAME" = "Nimi";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Menojen kirjanpito";

@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "지출 입력";
+"STARTVIEW_ENTER_INCOME" = "수입 입력";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "먼저 금액을 입력하세요";
 "STARTVIEW_BALANCE" = "잔액";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "지출";
+"STATISTICS_INCOME_TITLE" = "수입";
 "STATISTICS_DAY" = "일";
 "STATISTICS_MONTH" = "월";
 "STATISTICS_YEAR" = "연";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "거래를 복원할까요?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "카테고리를 복원할까요?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "카테고리를 삭제할까요?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "계좌를 복원할까요?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "계좌를 삭제할까요?";
 "TRASH_DELETE_MESSAGE" = "이 작업은 취소할 수 없습니다.";
 "TRASH_CLEAR_CONFIRMATION" = "휴지통의 모든 항목이 영구적으로 삭제됩니다. 이 작업은 되돌릴 수 없습니다.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "편집";
 "TRANSACTION_EDIT_CATEGORY" = "카테고리";
+"TRANSACTION_EDIT_BALANCE" = "계좌";
 "TRANSACTION_EDIT_AMOUNT" = "금액";
 "TRANSACTION_EDIT_DATE" = "날짜";
 "TRANSACTION_EDIT_TIME" = "시간";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "휴지통으로 이동됨";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "오늘 지출";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "어제 지출";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "오늘 수입";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "어제 수입";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "카테고리 편집";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "주차";
 "DEFAULT_CATEGORY_PETS" = "반려동물";
 "DEFAULT_CATEGORY_SAVINGS" = "저축";
+"DEFAULT_CATEGORY_SALARY" = "급여";
 "SETTINGS_APPEARANCE" = "모양";
 "SETTINGS_THEME_SYSTEM" = "시스템";
 "SETTINGS_THEME_DARK" = "다크";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "햅틱";
 "SETTINGS_HIDE_CATEGORIES" = "카테고리 숨기기";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "금액을 입력하면 카테고리가 표시됩니다";
+"SETTINGS_SECURITY" = "보안";
+"SETTINGS_PASSCODE" = "암호";
+"SETTINGS_PASSCODE_CHANGE" = "암호 변경";
+"PASSCODE_ENTER" = "암호 입력";
+"PASSCODE_ENTER_CURRENT" = "현재 암호 입력";
+"PASSCODE_ENTER_NEW" = "새 암호 입력";
+"PASSCODE_REPEAT" = "암호 다시 입력";
+"PASSCODE_WRONG" = "잘못된 암호";
+"PASSCODE_MISMATCH" = "암호가 일치하지 않습니다";
+"PASSCODE_BIOMETRICS_REASON" = "앱 잠금 해제";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "카테고리: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "파일이 손상되었거나 읽을 수 없습니다.";
 "BACKUPS_ERROR_NEWER_VERSION" = "이 백업은 더 최신 버전의 앱에서 만들어졌습니다.";
 "BACKUPS_ERROR_UNSUPPORTED" = "지원하지 않는 파일 형식입니다.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "모든 계좌";
+"BACKUPS_EXPORT_ALL_HISTORY" = "전체 내역";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "사용자 지정 기간";
+"BACKUPS_EXPORT_LAST_DAYS" = "최근 %d일";
+"BACKUPS_EXPORT_PERIOD" = "기간";
+"BACKUPS_EXPORT_SETTINGS" = "내보내기 설정";
 "BACKUPS_EXPORT_SECTION" = "내보내기";
 "BACKUPS_IMPORT_ACTION" = "파일에서 가져오기";
 "BACKUPS_IMPORT_DONE" = "추가된 거래: %d, 카테고리: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "건강, 가족 및 활동";
 "ICON_PICKER_SECTION_TECH" = "기술, 교육 및 도구";
 "ICON_PICKER_SECTION_NATURE" = "자연, 날씨 및 일반 기호";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "계좌가 삭제됨";
+"ACCOUNTS_TITLE" = "계좌";
+"ACCOUNTS_TOTAL" = "합계";
+"ACCOUNTS_NEW" = "새 계좌";
+"ACCOUNTS_EDIT" = "계좌 편집";
+"ACCOUNTS_NAME" = "이름";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "지출 기록";

@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "खर्च दर्ज करें";
+"STARTVIEW_ENTER_INCOME" = "आय दर्ज करें";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "पहले राशि दर्ज करें";
 "STARTVIEW_BALANCE" = "शेष राशि";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "खर्च";
+"STATISTICS_INCOME_TITLE" = "आय";
 "STATISTICS_DAY" = "दिन";
 "STATISTICS_MONTH" = "महीना";
 "STATISTICS_YEAR" = "साल";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "लेनदेन पुनर्स्थापित करें?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "श्रेणी पुनर्स्थापित करें?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "श्रेणी हटाएँ?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "खाता पुनर्स्थापित करें?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "खाता हटाएँ?";
 "TRASH_DELETE_MESSAGE" = "यह क्रिया पूर्ववत नहीं की जा सकती।";
 "TRASH_CLEAR_CONFIRMATION" = "ट्रैश के सभी आइटम स्थायी रूप से हटा दिए जाएँगे। यह क्रिया पूर्ववत नहीं की जा सकती।";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "संपादित करें";
 "TRANSACTION_EDIT_CATEGORY" = "श्रेणी";
+"TRANSACTION_EDIT_BALANCE" = "खाता";
 "TRANSACTION_EDIT_AMOUNT" = "राशि";
 "TRANSACTION_EDIT_DATE" = "तारीख़";
 "TRANSACTION_EDIT_TIME" = "समय";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "ट्रैश में ले जाया गया";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "आज खर्च";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "कल खर्च";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "आज प्राप्त";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "कल प्राप्त";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "श्रेणियाँ संपादित करें";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "पार्किंग";
 "DEFAULT_CATEGORY_PETS" = "पालतू जानवर";
 "DEFAULT_CATEGORY_SAVINGS" = "बचत";
+"DEFAULT_CATEGORY_SALARY" = "वेतन";
 "SETTINGS_APPEARANCE" = "रूप";
 "SETTINGS_THEME_SYSTEM" = "सिस्टम";
 "SETTINGS_THEME_DARK" = "गहरा";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "कंपन";
 "SETTINGS_HIDE_CATEGORIES" = "श्रेणियाँ छिपाएँ";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "राशि दर्ज करने पर श्रेणियाँ दिखाई देती हैं";
+"SETTINGS_SECURITY" = "सुरक्षा";
+"SETTINGS_PASSCODE" = "पासकोड";
+"SETTINGS_PASSCODE_CHANGE" = "पासकोड बदलें";
+"PASSCODE_ENTER" = "पासकोड दर्ज करें";
+"PASSCODE_ENTER_CURRENT" = "वर्तमान पासकोड दर्ज करें";
+"PASSCODE_ENTER_NEW" = "नया पासकोड दर्ज करें";
+"PASSCODE_REPEAT" = "पासकोड दोहराएँ";
+"PASSCODE_WRONG" = "ग़लत पासकोड";
+"PASSCODE_MISMATCH" = "पासकोड मेल नहीं खाते";
+"PASSCODE_BIOMETRICS_REASON" = "ऐप अनलॉक करें";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "श्रेणियाँ: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "फ़ाइल ख़राब है या पढ़ी नहीं जा सकती।";
 "BACKUPS_ERROR_NEWER_VERSION" = "यह बैकअप ऐप के नए संस्करण से बनाया गया है।";
 "BACKUPS_ERROR_UNSUPPORTED" = "यह फ़ाइल फ़ॉर्मैट समर्थित नहीं है।";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "सभी खाते";
+"BACKUPS_EXPORT_ALL_HISTORY" = "पूरा इतिहास";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "कस्टम अवधि";
+"BACKUPS_EXPORT_LAST_DAYS" = "पिछले %d दिन";
+"BACKUPS_EXPORT_PERIOD" = "अवधि";
+"BACKUPS_EXPORT_SETTINGS" = "निर्यात सेटिंग्स";
 "BACKUPS_EXPORT_SECTION" = "निर्यात";
 "BACKUPS_IMPORT_ACTION" = "फ़ाइल से आयात करें";
 "BACKUPS_IMPORT_DONE" = "जोड़े गए लेन-देन: %d, श्रेणियाँ: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "स्वास्थ्य, परिवार और गतिविधियाँ";
 "ICON_PICKER_SECTION_TECH" = "तकनीक, शिक्षा और औज़ार";
 "ICON_PICKER_SECTION_NATURE" = "प्रकृति, मौसम और सामान्य प्रतीक";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "खाता हटाया गया";
+"ACCOUNTS_TITLE" = "खाते";
+"ACCOUNTS_TOTAL" = "कुल";
+"ACCOUNTS_NEW" = "नया खाता";
+"ACCOUNTS_EDIT" = "खाता संपादित करें";
+"ACCOUNTS_NAME" = "नाम";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "खर्चों का लेखा";

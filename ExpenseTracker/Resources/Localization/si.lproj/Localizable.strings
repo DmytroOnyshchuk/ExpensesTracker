@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "වියදම ඇතුළත් කරන්න";
+"STARTVIEW_ENTER_INCOME" = "ආදායම ඇතුළත් කරන්න";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "පළමුව මුදල ඇතුළත් කරන්න";
 "STARTVIEW_BALANCE" = "ශේෂය";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "වියදම්";
+"STATISTICS_INCOME_TITLE" = "ආදායම";
 "STATISTICS_DAY" = "දිනය";
 "STATISTICS_MONTH" = "මාසය";
 "STATISTICS_YEAR" = "වසර";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "ගනුදෙනුව ප්‍රතිසාධනය කරන්නද?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "ප්‍රවර්ගය ප්‍රතිසාධනය කරන්නද?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "ප්‍රවර්ගය මකන්නද?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "ගිණුම ප්‍රතිසාධනය කරන්නද?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "ගිණුම මකන්නද?";
 "TRASH_DELETE_MESSAGE" = "මෙම ක්‍රියාව අහෝසි කළ නොහැක.";
 "TRASH_CLEAR_CONFIRMATION" = "කුණු කූඩයේ ඇති සියලු අයිතම ස්ථිරවම මකා දැමෙනු ඇත. මෙම ක්‍රියාව අහෝසි කළ නොහැක.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "සංස්කරණය";
 "TRANSACTION_EDIT_CATEGORY" = "ප්‍රවර්ගය";
+"TRANSACTION_EDIT_BALANCE" = "ගිණුම";
 "TRANSACTION_EDIT_AMOUNT" = "මුදල";
 "TRANSACTION_EDIT_DATE" = "දිනය";
 "TRANSACTION_EDIT_TIME" = "වේලාව";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "කුණු කූඩයට ගෙන යන ලදී";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "අද වියදම";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "ඊයේ වියදම";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "අද ලැබුණු";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "ඊයේ ලැබුණු";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "ප්‍රවර්ග සංස්කරණය";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "වාහන නැවැත්වීම";
 "DEFAULT_CATEGORY_PETS" = "සුරතල් සතුන්";
 "DEFAULT_CATEGORY_SAVINGS" = "ඉතුරුම්";
+"DEFAULT_CATEGORY_SALARY" = "වැටුප";
 "SETTINGS_APPEARANCE" = "පෙනුම";
 "SETTINGS_THEME_SYSTEM" = "පද්ධතිය";
 "SETTINGS_THEME_DARK" = "අඳුරු";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "කම්පනය";
 "SETTINGS_HIDE_CATEGORIES" = "ප්‍රවර්ග සඟවන්න";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "මුදල ඇතුළත් කරන විට ප්‍රවර්ග දිස්වේ";
+"SETTINGS_SECURITY" = "ආරක්ෂාව";
+"SETTINGS_PASSCODE" = "මුරකේතය";
+"SETTINGS_PASSCODE_CHANGE" = "මුරකේතය වෙනස් කරන්න";
+"PASSCODE_ENTER" = "මුරකේතය ඇතුළත් කරන්න";
+"PASSCODE_ENTER_CURRENT" = "වත්මන් මුරකේතය ඇතුළත් කරන්න";
+"PASSCODE_ENTER_NEW" = "නව මුරකේතය ඇතුළත් කරන්න";
+"PASSCODE_REPEAT" = "මුරකේතය නැවත ඇතුළත් කරන්න";
+"PASSCODE_WRONG" = "වැරදි මුරකේතයකි";
+"PASSCODE_MISMATCH" = "මුරකේත නොගැළපේ";
+"PASSCODE_BIOMETRICS_REASON" = "යෙදුම අගුළු හරින්න";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "ප්‍රවර්ග: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "ගොනුව හානි වී ඇත හෝ කියවිය නොහැක.";
 "BACKUPS_ERROR_NEWER_VERSION" = "මෙම උපස්ථය යෙදුමේ නව අනුවාදයකින් සාදා ඇත.";
 "BACKUPS_ERROR_UNSUPPORTED" = "මෙම ගොනු ආකෘතියට සහාය නොදක්වයි.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "සියලු ගිණුම්";
+"BACKUPS_EXPORT_ALL_HISTORY" = "සම්පූර්ණ ඉතිහාසය";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "අභිරුචි කාලසීමාව";
+"BACKUPS_EXPORT_LAST_DAYS" = "පසුගිය දින %d";
+"BACKUPS_EXPORT_PERIOD" = "කාලසීමාව";
+"BACKUPS_EXPORT_SETTINGS" = "නිර්යාත සැකසුම්";
 "BACKUPS_EXPORT_SECTION" = "නිර්යාත";
 "BACKUPS_IMPORT_ACTION" = "ගොනුවකින් ආයාත කරන්න";
 "BACKUPS_IMPORT_DONE" = "එක් කළ ගනුදෙනු: %d, ප්‍රවර්ග: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "සෞඛ්‍යය, පවුල සහ ක්‍රියාකාරකම්";
 "ICON_PICKER_SECTION_TECH" = "තාක්ෂණය, අධ්‍යාපනය සහ මෙවලම්";
 "ICON_PICKER_SECTION_NATURE" = "ස්වභාවධර්මය, කාලගුණය සහ පොදු සංකේත";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "ගිණුම මකා ඇත";
+"ACCOUNTS_TITLE" = "ගිණුම්";
+"ACCOUNTS_TOTAL" = "එකතුව";
+"ACCOUNTS_NEW" = "නව ගිණුම";
+"ACCOUNTS_EDIT" = "ගිණුම සංස්කරණය කරන්න";
+"ACCOUNTS_NAME" = "නම";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "වියදම් ගිණුම්කරණය";

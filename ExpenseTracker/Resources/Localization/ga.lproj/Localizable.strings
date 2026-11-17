@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Cuir isteach an caiteachas";
+"STARTVIEW_ENTER_INCOME" = "Cuir isteach an t-ioncam";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Cuir isteach an tsuim ar dtús";
 "STARTVIEW_BALANCE" = "Iarmhéid";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Caiteachas";
+"STATISTICS_INCOME_TITLE" = "Ioncam";
 "STATISTICS_DAY" = "Lá";
 "STATISTICS_MONTH" = "Mí";
 "STATISTICS_YEAR" = "Bliain";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Athchóirigh an t-idirbheart?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Athchóirigh an chatagóir?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Scrios an chatagóir?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Athchóirigh an cuntas?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Scrios an cuntas?";
 "TRASH_DELETE_MESSAGE" = "Ní féidir an gníomh seo a chealú.";
 "TRASH_CLEAR_CONFIRMATION" = "Scriosfar gach mír sa bhruscar go buan. Ní féidir an gníomh seo a chealú.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Cuir in eagar";
 "TRANSACTION_EDIT_CATEGORY" = "Catagóir";
+"TRANSACTION_EDIT_BALANCE" = "Cuntas";
 "TRANSACTION_EDIT_AMOUNT" = "Suim";
 "TRANSACTION_EDIT_DATE" = "Dáta";
 "TRANSACTION_EDIT_TIME" = "Am";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Bogadh go dtí an bruscar";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Caite inniu";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Caite inné";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Faighte inniu";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Faighte inné";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Cuir catagóirí in eagar";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Páirceáil";
 "DEFAULT_CATEGORY_PETS" = "Peataí";
 "DEFAULT_CATEGORY_SAVINGS" = "Coigilteas";
+"DEFAULT_CATEGORY_SALARY" = "Tuarastal";
 "SETTINGS_APPEARANCE" = "Cuma";
 "SETTINGS_THEME_SYSTEM" = "Córas";
 "SETTINGS_THEME_DARK" = "Dorcha";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Creathadh";
 "SETTINGS_HIDE_CATEGORIES" = "Folaigh catagóirí";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Taispeántar catagóirí nuair a chuireann tú suim isteach";
+"SETTINGS_SECURITY" = "Slándáil";
+"SETTINGS_PASSCODE" = "Paschód";
+"SETTINGS_PASSCODE_CHANGE" = "Athraigh an paschód";
+"PASSCODE_ENTER" = "Cuir isteach an paschód";
+"PASSCODE_ENTER_CURRENT" = "Cuir isteach an paschód reatha";
+"PASSCODE_ENTER_NEW" = "Cuir isteach paschód nua";
+"PASSCODE_REPEAT" = "Cuir an paschód isteach arís";
+"PASSCODE_WRONG" = "Paschód mícheart";
+"PASSCODE_MISMATCH" = "Ní hionann na paschóid";
+"PASSCODE_BIOMETRICS_REASON" = "Díghlasáil an aip";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Catagóirí: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Tá an comhad damáistithe nó ní féidir é a léamh.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Cruthaíodh an cúltaca seo le leagan níos nuaí den aip.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Ní thacaítear leis an bhformáid comhaid seo.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Gach cuntas";
+"BACKUPS_EXPORT_ALL_HISTORY" = "An stair ar fad";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Tréimhse shaincheaptha";
+"BACKUPS_EXPORT_LAST_DAYS" = "Na %d lá seo caite";
+"BACKUPS_EXPORT_PERIOD" = "Tréimhse";
+"BACKUPS_EXPORT_SETTINGS" = "Socruithe easpórtála";
 "BACKUPS_EXPORT_SECTION" = "Easpórtáil";
 "BACKUPS_IMPORT_ACTION" = "Iompórtáil ó chomhad";
 "BACKUPS_IMPORT_DONE" = "Idirbhearta a cuireadh leis: %d, catagóirí: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Sláinte, teaghlach agus gníomhaíochtaí";
 "ICON_PICKER_SECTION_TECH" = "Teicneolaíocht, oideachas agus uirlisí";
 "ICON_PICKER_SECTION_NATURE" = "Nádúr, aimsir agus siombailí ginearálta";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Cuntas scriosta";
+"ACCOUNTS_TITLE" = "Cuntais";
+"ACCOUNTS_TOTAL" = "Iomlán";
+"ACCOUNTS_NEW" = "Cuntas nua";
+"ACCOUNTS_EDIT" = "Cuir an cuntas in eagar";
+"ACCOUNTS_NAME" = "Ainm";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Cuntasaíocht caiteachais";

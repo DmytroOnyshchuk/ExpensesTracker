@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Add meg a kiadást";
+"STARTVIEW_ENTER_INCOME" = "Add meg a bevételt";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Először add meg az összeget";
 "STARTVIEW_BALANCE" = "Egyenleg";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Kiadások";
+"STATISTICS_INCOME_TITLE" = "Bevételek";
 "STATISTICS_DAY" = "Nap";
 "STATISTICS_MONTH" = "Hónap";
 "STATISTICS_YEAR" = "Év";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Visszaállítja a tranzakciót?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Visszaállítja a kategóriát?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Törli a kategóriát?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Visszaállítja a számlát?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Törli a számlát?";
 "TRASH_DELETE_MESSAGE" = "Ez a művelet nem vonható vissza.";
 "TRASH_CLEAR_CONFIRMATION" = "A kukában lévő összes elem véglegesen törlődik. Ez a művelet nem vonható vissza.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Szerkesztés";
 "TRANSACTION_EDIT_CATEGORY" = "Kategória";
+"TRANSACTION_EDIT_BALANCE" = "Számla";
 "TRANSACTION_EDIT_AMOUNT" = "Összeg";
 "TRANSACTION_EDIT_DATE" = "Dátum";
 "TRANSACTION_EDIT_TIME" = "Idő";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Áthelyezve a kukába";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Ma elköltve";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Tegnap elköltve";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Ma kapott";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Tegnap kapott";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Kategóriák szerkesztése";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Parkolás";
 "DEFAULT_CATEGORY_PETS" = "Háziállatok";
 "DEFAULT_CATEGORY_SAVINGS" = "Megtakarítás";
+"DEFAULT_CATEGORY_SALARY" = "Fizetés";
 "SETTINGS_APPEARANCE" = "Megjelenés";
 "SETTINGS_THEME_SYSTEM" = "Rendszer";
 "SETTINGS_THEME_DARK" = "Sötét";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Rezgés";
 "SETTINGS_HIDE_CATEGORIES" = "Kategóriák elrejtése";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "A kategóriák összeg megadásakor jelennek meg";
+"SETTINGS_SECURITY" = "Biztonság";
+"SETTINGS_PASSCODE" = "Jelkód";
+"SETTINGS_PASSCODE_CHANGE" = "Jelkód módosítása";
+"PASSCODE_ENTER" = "Add meg a jelkódot";
+"PASSCODE_ENTER_CURRENT" = "Add meg a jelenlegi jelkódot";
+"PASSCODE_ENTER_NEW" = "Add meg az új jelkódot";
+"PASSCODE_REPEAT" = "Ismételd meg a jelkódot";
+"PASSCODE_WRONG" = "Hibás jelkód";
+"PASSCODE_MISMATCH" = "A jelkódok nem egyeznek";
+"PASSCODE_BIOMETRICS_REASON" = "Az alkalmazás feloldása";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategóriák: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "A fájl sérült vagy nem olvasható.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Ez a mentés az app újabb verziójával készült.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Ez a fájlformátum nem támogatott.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Összes számla";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Teljes előzmény";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Egyéni időszak";
+"BACKUPS_EXPORT_LAST_DAYS" = "Elmúlt %d nap";
+"BACKUPS_EXPORT_PERIOD" = "Időszak";
+"BACKUPS_EXPORT_SETTINGS" = "Exportálási beállítások";
 "BACKUPS_EXPORT_SECTION" = "Exportálás";
 "BACKUPS_IMPORT_ACTION" = "Importálás fájlból";
 "BACKUPS_IMPORT_DONE" = "Hozzáadott tranzakciók: %d, kategóriák: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Egészség, család és programok";
 "ICON_PICKER_SECTION_TECH" = "Technológia, oktatás és szerszámok";
 "ICON_PICKER_SECTION_NATURE" = "Természet, időjárás és általános szimbólumok";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Számla törölve";
+"ACCOUNTS_TITLE" = "Számlák";
+"ACCOUNTS_TOTAL" = "Összesen";
+"ACCOUNTS_NEW" = "Új számla";
+"ACCOUNTS_EDIT" = "Számla szerkesztése";
+"ACCOUNTS_NAME" = "Név";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Kiadások nyilvántartása";

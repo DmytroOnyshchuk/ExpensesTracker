@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Внесете трошок";
+"STARTVIEW_ENTER_INCOME" = "Внесете приход";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Прво внесете го износот";
 "STARTVIEW_BALANCE" = "Салдо";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Трошоци";
+"STATISTICS_INCOME_TITLE" = "Приходи";
 "STATISTICS_DAY" = "Ден";
 "STATISTICS_MONTH" = "Месец";
 "STATISTICS_YEAR" = "Година";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Да се врати трансакцијата?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Да се врати категоријата?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Да се избрише категоријата?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Да се врати сметката?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Да се избрише сметката?";
 "TRASH_DELETE_MESSAGE" = "Ова дејство не може да се врати.";
 "TRASH_CLEAR_CONFIRMATION" = "Сите ставки во корпата ќе бидат трајно избришани. Ова дејство не може да се врати.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Уреди";
 "TRANSACTION_EDIT_CATEGORY" = "Категорија";
+"TRANSACTION_EDIT_BALANCE" = "Сметка";
 "TRANSACTION_EDIT_AMOUNT" = "Износ";
 "TRANSACTION_EDIT_DATE" = "Датум";
 "TRANSACTION_EDIT_TIME" = "Време";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Преместено во корпата";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Потрошено денес";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Потрошено вчера";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Примено денес";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Примено вчера";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Уреди категории";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Паркинг";
 "DEFAULT_CATEGORY_PETS" = "Миленици";
 "DEFAULT_CATEGORY_SAVINGS" = "Заштеда";
+"DEFAULT_CATEGORY_SALARY" = "Плата";
 "SETTINGS_APPEARANCE" = "Изглед";
 "SETTINGS_THEME_SYSTEM" = "Системска";
 "SETTINGS_THEME_DARK" = "Темна";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Вибрации";
 "SETTINGS_HIDE_CATEGORIES" = "Сокриј категории";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Категориите се појавуваат при внесување износ";
+"SETTINGS_SECURITY" = "Безбедност";
+"SETTINGS_PASSCODE" = "Лозинка";
+"SETTINGS_PASSCODE_CHANGE" = "Промени ја лозинката";
+"PASSCODE_ENTER" = "Внесете лозинка";
+"PASSCODE_ENTER_CURRENT" = "Внесете ја тековната лозинка";
+"PASSCODE_ENTER_NEW" = "Внесете нова лозинка";
+"PASSCODE_REPEAT" = "Повторете ја лозинката";
+"PASSCODE_WRONG" = "Погрешна лозинка";
+"PASSCODE_MISMATCH" = "Лозинките не се совпаѓаат";
+"PASSCODE_BIOMETRICS_REASON" = "Отклучи ја апликацијата";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Категории: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Датотеката е оштетена или не може да се прочита.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Оваа копија е направена со понова верзија на апликацијата.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Овој формат на датотека не е поддржан.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Сите сметки";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Целата историја";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Прилагоден период";
+"BACKUPS_EXPORT_LAST_DAYS" = "Последните %d дена";
+"BACKUPS_EXPORT_PERIOD" = "Период";
+"BACKUPS_EXPORT_SETTINGS" = "Поставки за извоз";
 "BACKUPS_EXPORT_SECTION" = "Извоз";
 "BACKUPS_IMPORT_ACTION" = "Увези од датотека";
 "BACKUPS_IMPORT_DONE" = "Додадени трансакции: %d, категории: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Здравје, семејство и активности";
 "ICON_PICKER_SECTION_TECH" = "Технологија, образование и алати";
 "ICON_PICKER_SECTION_NATURE" = "Природа, време и општи симболи";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Сметката е избришана";
+"ACCOUNTS_TITLE" = "Сметки";
+"ACCOUNTS_TOTAL" = "Вкупно";
+"ACCOUNTS_NEW" = "Нова сметка";
+"ACCOUNTS_EDIT" = "Уреди сметка";
+"ACCOUNTS_NAME" = "Име";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Евиденција на трошоци";

@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Vnesite strošek";
+"STARTVIEW_ENTER_INCOME" = "Vnesite prihodek";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Najprej vnesite znesek";
 "STARTVIEW_BALANCE" = "Stanje";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Odhodki";
+"STATISTICS_INCOME_TITLE" = "Prihodki";
 "STATISTICS_DAY" = "Dan";
 "STATISTICS_MONTH" = "Mesec";
 "STATISTICS_YEAR" = "Leto";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Želite obnoviti transakcijo?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Želite obnoviti kategorijo?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Želite izbrisati kategorijo?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Želite obnoviti račun?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Želite izbrisati račun?";
 "TRASH_DELETE_MESSAGE" = "Tega dejanja ni mogoče razveljaviti.";
 "TRASH_CLEAR_CONFIRMATION" = "Vsi elementi v košu bodo trajno izbrisani. Tega dejanja ni mogoče razveljaviti.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Uredi";
 "TRANSACTION_EDIT_CATEGORY" = "Kategorija";
+"TRANSACTION_EDIT_BALANCE" = "Račun";
 "TRANSACTION_EDIT_AMOUNT" = "Znesek";
 "TRANSACTION_EDIT_DATE" = "Datum";
 "TRANSACTION_EDIT_TIME" = "Čas";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Premaknjeno v koš";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Porabljeno danes";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Porabljeno včeraj";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Prejeto danes";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Prejeto včeraj";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Uredi kategorije";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Parkiranje";
 "DEFAULT_CATEGORY_PETS" = "Hišni ljubljenčki";
 "DEFAULT_CATEGORY_SAVINGS" = "Prihranki";
+"DEFAULT_CATEGORY_SALARY" = "Plača";
 "SETTINGS_APPEARANCE" = "Videz";
 "SETTINGS_THEME_SYSTEM" = "Sistemska";
 "SETTINGS_THEME_DARK" = "Temna";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Vibriranje";
 "SETTINGS_HIDE_CATEGORIES" = "Skrij kategorije";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategorije se prikažejo ob vnosu zneska";
+"SETTINGS_SECURITY" = "Varnost";
+"SETTINGS_PASSCODE" = "Koda";
+"SETTINGS_PASSCODE_CHANGE" = "Spremeni kodo";
+"PASSCODE_ENTER" = "Vnesite kodo";
+"PASSCODE_ENTER_CURRENT" = "Vnesite trenutno kodo";
+"PASSCODE_ENTER_NEW" = "Vnesite novo kodo";
+"PASSCODE_REPEAT" = "Ponovite kodo";
+"PASSCODE_WRONG" = "Napačna koda";
+"PASSCODE_MISMATCH" = "Kodi se ne ujemata";
+"PASSCODE_BIOMETRICS_REASON" = "Odkleni aplikacijo";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorije: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Datoteka je poškodovana ali je ni mogoče prebrati.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Ta kopija je bila ustvarjena z novejšo različico aplikacije.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Ta oblika datoteke ni podprta.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Vsi računi";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Vsa zgodovina";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Obdobje po meri";
+"BACKUPS_EXPORT_LAST_DAYS" = "Zadnjih %d dni";
+"BACKUPS_EXPORT_PERIOD" = "Obdobje";
+"BACKUPS_EXPORT_SETTINGS" = "Nastavitve izvoza";
 "BACKUPS_EXPORT_SECTION" = "Izvoz";
 "BACKUPS_IMPORT_ACTION" = "Uvozi iz datoteke";
 "BACKUPS_IMPORT_DONE" = "Dodane transakcije: %d, kategorije: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Zdravje, družina in dejavnosti";
 "ICON_PICKER_SECTION_TECH" = "Tehnologija, izobraževanje in orodja";
 "ICON_PICKER_SECTION_NATURE" = "Narava, vreme in splošni simboli";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Račun izbrisan";
+"ACCOUNTS_TITLE" = "Računi";
+"ACCOUNTS_TOTAL" = "Skupaj";
+"ACCOUNTS_NEW" = "Nov račun";
+"ACCOUNTS_EDIT" = "Uredi račun";
+"ACCOUNTS_NAME" = "Ime";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Evidenca odhodkov";

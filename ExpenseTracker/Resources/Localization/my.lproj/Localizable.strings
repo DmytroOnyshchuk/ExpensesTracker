@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "အသုံးစရိတ် ထည့်ပါ";
+"STARTVIEW_ENTER_INCOME" = "ဝင်ငွေ ထည့်ပါ";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "ပမာဏကို အရင်ထည့်ပါ";
 "STARTVIEW_BALANCE" = "လက်ကျန်ငွေ";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "အသုံးစရိတ်များ";
+"STATISTICS_INCOME_TITLE" = "ဝင်ငွေ";
 "STATISTICS_DAY" = "ရက်";
 "STATISTICS_MONTH" = "လ";
 "STATISTICS_YEAR" = "နှစ်";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "ငွေလွှဲမှုကို ပြန်ယူမလား?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "အမျိုးအစားကို ပြန်ယူမလား?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "အမျိုးအစားကို ဖျက်မလား?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "အကောင့်ကို ပြန်ယူမလား?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "အကောင့်ကို ဖျက်မလား?";
 "TRASH_DELETE_MESSAGE" = "ဤလုပ်ဆောင်ချက်ကို ပြန်ဖျက်၍မရပါ။";
 "TRASH_CLEAR_CONFIRMATION" = "အမှိုက်ပုံးထဲရှိ အရာအားလုံးကို အပြီးတိုင် ဖျက်ပါမည်။ ဤလုပ်ဆောင်ချက်ကို ပြန်ပြင်၍မရပါ။";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "ပြင်ရန်";
 "TRANSACTION_EDIT_CATEGORY" = "အမျိုးအစား";
+"TRANSACTION_EDIT_BALANCE" = "အကောင့်";
 "TRANSACTION_EDIT_AMOUNT" = "ပမာဏ";
 "TRANSACTION_EDIT_DATE" = "ရက်စွဲ";
 "TRANSACTION_EDIT_TIME" = "အချိန်";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "အမှိုက်ပုံးသို့ ရွှေ့ပြီးပါပြီ";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "ယနေ့ အသုံးစရိတ်";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "မနေ့က အသုံးစရိတ်";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "ယနေ့ ဝင်ငွေ";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "မနေ့က ဝင်ငွေ";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "အမျိုးအစားများ ပြင်ရန်";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "ကားပါကင်";
 "DEFAULT_CATEGORY_PETS" = "အိမ်မွေးတိရစ္ဆာန်";
 "DEFAULT_CATEGORY_SAVINGS" = "စုငွေ";
+"DEFAULT_CATEGORY_SALARY" = "လစာ";
 "SETTINGS_APPEARANCE" = "အသွင်အပြင်";
 "SETTINGS_THEME_SYSTEM" = "စနစ်";
 "SETTINGS_THEME_DARK" = "အမှောင်";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "တုန်ခါမှု";
 "SETTINGS_HIDE_CATEGORIES" = "အမျိုးအစားများကို ဖျောက်ရန်";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "ပမာဏထည့်သည့်အခါ အမျိုးအစားများ ပေါ်လာမည်";
+"SETTINGS_SECURITY" = "လုံခြုံရေး";
+"SETTINGS_PASSCODE" = "လျှို့ဝှက်ကုဒ်";
+"SETTINGS_PASSCODE_CHANGE" = "လျှို့ဝှက်ကုဒ် ပြောင်းရန်";
+"PASSCODE_ENTER" = "လျှို့ဝှက်ကုဒ် ထည့်ပါ";
+"PASSCODE_ENTER_CURRENT" = "လက်ရှိ လျှို့ဝှက်ကုဒ် ထည့်ပါ";
+"PASSCODE_ENTER_NEW" = "လျှို့ဝှက်ကုဒ်အသစ် ထည့်ပါ";
+"PASSCODE_REPEAT" = "လျှို့ဝှက်ကုဒ် ထပ်ထည့်ပါ";
+"PASSCODE_WRONG" = "လျှို့ဝှက်ကုဒ် မှားနေသည်";
+"PASSCODE_MISMATCH" = "လျှို့ဝှက်ကုဒ်များ မတူညီပါ";
+"PASSCODE_BIOMETRICS_REASON" = "အက်ပ်ကို လော့ခ်ဖွင့်ပါ";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "အမျိုးအစားများ- %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "ဖိုင်ပျက်စီးနေသည် သို့မဟုတ် ဖတ်၍မရပါ။";
 "BACKUPS_ERROR_NEWER_VERSION" = "ဤအရန်မိတ္တူကို အက်ပ်၏ ပိုသစ်သော ဗားရှင်းဖြင့် ပြုလုပ်ထားသည်။";
 "BACKUPS_ERROR_UNSUPPORTED" = "ဤဖိုင်ဖော်မတ်ကို မပံ့ပိုးပါ။";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "အကောင့်အားလုံး";
+"BACKUPS_EXPORT_ALL_HISTORY" = "မှတ်တမ်းအားလုံး";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "စိတ်ကြိုက် ကာလ";
+"BACKUPS_EXPORT_LAST_DAYS" = "နောက်ဆုံး %d ရက်";
+"BACKUPS_EXPORT_PERIOD" = "ကာလ";
+"BACKUPS_EXPORT_SETTINGS" = "ထုတ်ယူမှု ဆက်တင်များ";
 "BACKUPS_EXPORT_SECTION" = "ထုတ်ယူခြင်း";
 "BACKUPS_IMPORT_ACTION" = "ဖိုင်မှ တင်သွင်းရန်";
 "BACKUPS_IMPORT_DONE" = "ထည့်ထားသော မှတ်တမ်းများ- %d၊ အမျိုးအစားများ- %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "ကျန်းမာရေး၊ မိသားစုနှင့် လှုပ်ရှားမှုများ";
 "ICON_PICKER_SECTION_TECH" = "နည်းပညာ၊ ပညာရေးနှင့် ကိရိယာများ";
 "ICON_PICKER_SECTION_NATURE" = "သဘာဝ၊ ရာသီဥတုနှင့် အထွေထွေသင်္ကေတများ";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "အကောင့် ဖျက်ပြီးပါပြီ";
+"ACCOUNTS_TITLE" = "အကောင့်များ";
+"ACCOUNTS_TOTAL" = "စုစုပေါင်း";
+"ACCOUNTS_NEW" = "အကောင့်အသစ်";
+"ACCOUNTS_EDIT" = "အကောင့် ပြင်ရန်";
+"ACCOUNTS_NAME" = "အမည်";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "အသုံးစရိတ် စာရင်း";

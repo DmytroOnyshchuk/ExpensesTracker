@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Idatzi gastua";
+"STARTVIEW_ENTER_INCOME" = "Idatzi diru-sarrera";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Sartu lehenik zenbatekoa";
 "STARTVIEW_BALANCE" = "Saldoa";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Gastuak";
+"STATISTICS_INCOME_TITLE" = "Diru-sarrerak";
 "STATISTICS_DAY" = "Eguna";
 "STATISTICS_MONTH" = "Hilabetea";
 "STATISTICS_YEAR" = "Urtea";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Leheneratu transakzioa?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Leheneratu kategoria?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Ezabatu kategoria?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Leheneratu kontua?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Ezabatu kontua?";
 "TRASH_DELETE_MESSAGE" = "Ekintza hau ezin da desegin.";
 "TRASH_CLEAR_CONFIRMATION" = "Zakarrontziko elementu guztiak behin betiko ezabatuko dira. Ekintza hau ezin da desegin.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Editatu";
 "TRANSACTION_EDIT_CATEGORY" = "Kategoria";
+"TRANSACTION_EDIT_BALANCE" = "Kontua";
 "TRANSACTION_EDIT_AMOUNT" = "Zenbatekoa";
 "TRANSACTION_EDIT_DATE" = "Data";
 "TRANSACTION_EDIT_TIME" = "Ordua";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Zakarrontzira eraman da";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Gaur gastatua";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Atzo gastatua";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Gaur jasoa";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Atzo jasoa";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Editatu kategoriak";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Aparkalekua";
 "DEFAULT_CATEGORY_PETS" = "Maskotak";
 "DEFAULT_CATEGORY_SAVINGS" = "Aurrezkiak";
+"DEFAULT_CATEGORY_SALARY" = "Soldata";
 "SETTINGS_APPEARANCE" = "Itxura";
 "SETTINGS_THEME_SYSTEM" = "Sistema";
 "SETTINGS_THEME_DARK" = "Iluna";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Bibrazioa";
 "SETTINGS_HIDE_CATEGORIES" = "Ezkutatu kategoriak";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategoriak zenbateko bat sartzean agertzen dira";
+"SETTINGS_SECURITY" = "Segurtasuna";
+"SETTINGS_PASSCODE" = "Sarbide-kodea";
+"SETTINGS_PASSCODE_CHANGE" = "Aldatu sarbide-kodea";
+"PASSCODE_ENTER" = "Idatzi sarbide-kodea";
+"PASSCODE_ENTER_CURRENT" = "Idatzi uneko sarbide-kodea";
+"PASSCODE_ENTER_NEW" = "Idatzi sarbide-kode berria";
+"PASSCODE_REPEAT" = "Errepikatu sarbide-kodea";
+"PASSCODE_WRONG" = "Sarbide-kode okerra";
+"PASSCODE_MISMATCH" = "Sarbide-kodeak ez datoz bat";
+"PASSCODE_BIOMETRICS_REASON" = "Desblokeatu aplikazioa";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategoriak: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Fitxategia hondatuta dago edo ezin da irakurri.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Babeskopia hau aplikazioaren bertsio berriago batekin sortu da.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Fitxategi-formatu hau ez da onartzen.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Kontu guztiak";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Historia osoa";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Epe pertsonalizatua";
+"BACKUPS_EXPORT_LAST_DAYS" = "Azken %d egunak";
+"BACKUPS_EXPORT_PERIOD" = "Epea";
+"BACKUPS_EXPORT_SETTINGS" = "Esportazio-ezarpenak";
 "BACKUPS_EXPORT_SECTION" = "Esportazioa";
 "BACKUPS_IMPORT_ACTION" = "Inportatu fitxategitik";
 "BACKUPS_IMPORT_DONE" = "Gehitutako transakzioak: %d, kategoriak: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Osasuna, familia eta jarduerak";
 "ICON_PICKER_SECTION_TECH" = "Teknologia, hezkuntza eta tresnak";
 "ICON_PICKER_SECTION_NATURE" = "Natura, eguraldia eta ikur orokorrak";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Kontua ezabatu da";
+"ACCOUNTS_TITLE" = "Kontuak";
+"ACCOUNTS_TOTAL" = "Guztira";
+"ACCOUNTS_NEW" = "Kontu berria";
+"ACCOUNTS_EDIT" = "Editatu kontua";
+"ACCOUNTS_NAME" = "Izena";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Gastuen kontabilitatea";

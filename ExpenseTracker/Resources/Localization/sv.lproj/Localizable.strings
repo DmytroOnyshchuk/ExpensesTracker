@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Ange utgift";
+"STARTVIEW_ENTER_INCOME" = "Ange inkomst";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Ange beloppet först";
 "STARTVIEW_BALANCE" = "Saldo";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Utgifter";
+"STATISTICS_INCOME_TITLE" = "Inkomster";
 "STATISTICS_DAY" = "Dag";
 "STATISTICS_MONTH" = "Månad";
 "STATISTICS_YEAR" = "År";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Återställ transaktion?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Återställ kategori?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Radera kategori?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Återställ konto?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Radera konto?";
 "TRASH_DELETE_MESSAGE" = "Den här åtgärden kan inte ångras.";
 "TRASH_CLEAR_CONFIRMATION" = "Alla objekt i papperskorgen raderas permanent. Den här åtgärden kan inte ångras.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Redigera";
 "TRANSACTION_EDIT_CATEGORY" = "Kategori";
+"TRANSACTION_EDIT_BALANCE" = "Konto";
 "TRANSACTION_EDIT_AMOUNT" = "Belopp";
 "TRANSACTION_EDIT_DATE" = "Datum";
 "TRANSACTION_EDIT_TIME" = "Tid";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Flyttad till papperskorgen";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Spenderat i dag";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Spenderat i går";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Mottaget i dag";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Mottaget i går";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Redigera kategorier";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Parkering";
 "DEFAULT_CATEGORY_PETS" = "Husdjur";
 "DEFAULT_CATEGORY_SAVINGS" = "Sparande";
+"DEFAULT_CATEGORY_SALARY" = "Lön";
 "SETTINGS_APPEARANCE" = "Utseende";
 "SETTINGS_THEME_SYSTEM" = "System";
 "SETTINGS_THEME_DARK" = "Mörk";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Vibration";
 "SETTINGS_HIDE_CATEGORIES" = "Dölj kategorier";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Kategorier visas när du anger ett belopp";
+"SETTINGS_SECURITY" = "Säkerhet";
+"SETTINGS_PASSCODE" = "Lösenkod";
+"SETTINGS_PASSCODE_CHANGE" = "Ändra lösenkod";
+"PASSCODE_ENTER" = "Ange lösenkod";
+"PASSCODE_ENTER_CURRENT" = "Ange nuvarande lösenkod";
+"PASSCODE_ENTER_NEW" = "Ange ny lösenkod";
+"PASSCODE_REPEAT" = "Upprepa lösenkoden";
+"PASSCODE_WRONG" = "Fel lösenkod";
+"PASSCODE_MISMATCH" = "Lösenkoderna matchar inte";
+"PASSCODE_BIOMETRICS_REASON" = "Lås upp appen";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Kategorier: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Filen är skadad eller kan inte läsas.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Säkerhetskopian skapades med en nyare version av appen.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Det här filformatet stöds inte.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Alla konton";
+"BACKUPS_EXPORT_ALL_HISTORY" = "All historik";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Anpassad period";
+"BACKUPS_EXPORT_LAST_DAYS" = "Senaste %d dagarna";
+"BACKUPS_EXPORT_PERIOD" = "Period";
+"BACKUPS_EXPORT_SETTINGS" = "Exportinställningar";
 "BACKUPS_EXPORT_SECTION" = "Export";
 "BACKUPS_IMPORT_ACTION" = "Importera från fil";
 "BACKUPS_IMPORT_DONE" = "Tillagda transaktioner: %d, kategorier: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Hälsa, familj och aktiviteter";
 "ICON_PICKER_SECTION_TECH" = "Teknik, utbildning och verktyg";
 "ICON_PICKER_SECTION_NATURE" = "Natur, väder och allmänna symboler";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Kontot raderat";
+"ACCOUNTS_TITLE" = "Konton";
+"ACCOUNTS_TOTAL" = "Totalt";
+"ACCOUNTS_NEW" = "Nytt konto";
+"ACCOUNTS_EDIT" = "Redigera konto";
+"ACCOUNTS_NAME" = "Namn";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Utgiftsbokföring";

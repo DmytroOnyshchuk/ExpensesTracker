@@ -33,6 +33,7 @@
 
 // MARK: - StartView
 "STARTVIEW_ENTER_EXPENSE" = "Skriva útreiðslu";
+"STARTVIEW_ENTER_INCOME" = "Skriva inntøku";
 "STARTVIEW_ENTER_AMOUNT_FIRST" = "Skriva upphæddina fyrst";
 "STARTVIEW_BALANCE" = "Saldo";
 
@@ -46,6 +47,7 @@
 
 // MARK: - Statistics
 "STATISTICS_TITLE" = "Útreiðslur";
+"STATISTICS_INCOME_TITLE" = "Inntøkur";
 "STATISTICS_DAY" = "Dagur";
 "STATISTICS_MONTH" = "Mánaður";
 "STATISTICS_YEAR" = "Ár";
@@ -82,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Endurstovna flyting?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Endurstovna bólk?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Strika bólk?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Endurstovna kontu?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Strika kontu?";
 "TRASH_DELETE_MESSAGE" = "Hetta kann ikki angrast.";
 "TRASH_CLEAR_CONFIRMATION" = "Allir lutir í ruskspannini verða strikaðir endaliga. Hendan handlingin kann ikki angrast.";
 
@@ -97,6 +101,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Broyt";
 "TRANSACTION_EDIT_CATEGORY" = "Bólkur";
+"TRANSACTION_EDIT_BALANCE" = "Konta";
 "TRANSACTION_EDIT_AMOUNT" = "Upphædd";
 "TRANSACTION_EDIT_DATE" = "Dato";
 "TRANSACTION_EDIT_TIME" = "Tíð";
@@ -113,6 +118,8 @@
 "TRANSACTIONS_LIST_MOVED_TO_TRASH" = "Flutt í ruskspannina";
 "TRANSACTIONS_LIST_SPENT_TODAY" = "Brúkt í dag";
 "TRANSACTIONS_LIST_SPENT_YESTERDAY" = "Brúkt í gjár";
+"TRANSACTIONS_LIST_RECEIVED_TODAY" = "Móttikið í dag";
+"TRANSACTIONS_LIST_RECEIVED_YESTERDAY" = "Móttikið í gjár";
 
 // MARK: - CategoriesEdit
 "CATEGORIES_EDIT_TITLE" = "Broyt bólkar";
@@ -164,6 +171,7 @@
 "DEFAULT_CATEGORY_CAR_PARKING" = "Parkering";
 "DEFAULT_CATEGORY_PETS" = "Kelidjór";
 "DEFAULT_CATEGORY_SAVINGS" = "Sparing";
+"DEFAULT_CATEGORY_SALARY" = "Løn";
 "SETTINGS_APPEARANCE" = "Útsjónd";
 "SETTINGS_THEME_SYSTEM" = "Skipan";
 "SETTINGS_THEME_DARK" = "Myrkt";
@@ -180,6 +188,16 @@
 "SETTINGS_HAPTIC" = "Ristingar";
 "SETTINGS_HIDE_CATEGORIES" = "Fjal bólkar";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Bólkar verða vístir, tá ið upphædd verður skrivað";
+"SETTINGS_SECURITY" = "Trygd";
+"SETTINGS_PASSCODE" = "Loynital";
+"SETTINGS_PASSCODE_CHANGE" = "Broyt loynital";
+"PASSCODE_ENTER" = "Skriva loynital";
+"PASSCODE_ENTER_CURRENT" = "Skriva núverandi loynital";
+"PASSCODE_ENTER_NEW" = "Skriva nýtt loynital";
+"PASSCODE_REPEAT" = "Endurtak loynital";
+"PASSCODE_WRONG" = "Skeivt loynital";
+"PASSCODE_MISMATCH" = "Loynitølini eru ikki eins";
+"PASSCODE_BIOMETRICS_REASON" = "Lat appina upp";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Bólkar: %d";
@@ -187,6 +205,12 @@
 "BACKUPS_ERROR_CORRUPTED" = "Fílan er oyðiløgd ella kann ikki lesast.";
 "BACKUPS_ERROR_NEWER_VERSION" = "Hetta trygdaravritið er gjørt við einari nýggjari útgávu av appini.";
 "BACKUPS_ERROR_UNSUPPORTED" = "Hetta fílusniðið er ikki stuðlað.";
+"BACKUPS_EXPORT_ALL_ACCOUNTS" = "Allar kontur";
+"BACKUPS_EXPORT_ALL_HISTORY" = "Øll søgan";
+"BACKUPS_EXPORT_CUSTOM_PERIOD" = "Sjálvvalt tíðarskeið";
+"BACKUPS_EXPORT_LAST_DAYS" = "Seinastu %d dagarnar";
+"BACKUPS_EXPORT_PERIOD" = "Tíðarskeið";
+"BACKUPS_EXPORT_SETTINGS" = "Útflutningsstillingar";
 "BACKUPS_EXPORT_SECTION" = "Útflutningur";
 "BACKUPS_IMPORT_ACTION" = "Flyt inn úr fílu";
 "BACKUPS_IMPORT_DONE" = "Flytingar lagdar afturat: %d, bólkar: %d";
@@ -215,6 +239,14 @@
 "ICON_PICKER_SECTION_HEALTH" = "Heilsa, familja og virksemi";
 "ICON_PICKER_SECTION_TECH" = "Tøkni, útbúgving og amboð";
 "ICON_PICKER_SECTION_NATURE" = "Náttúra, veður og vanlig tekn";
+
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Konta strikað";
+"ACCOUNTS_TITLE" = "Kontur";
+"ACCOUNTS_TOTAL" = "Tilsamans";
+"ACCOUNTS_NEW" = "Nýggj konta";
+"ACCOUNTS_EDIT" = "Broyt kontu";
+"ACCOUNTS_NAME" = "Navn";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Útreiðsluroknskapur";
