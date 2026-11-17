@@ -161,6 +161,8 @@ struct BudgetMonthPage: View {
     @Binding var showUnlimited: Bool
     let onOpen: (BudgetTarget) -> Void
 
+    private static let collapsedCount = 3
+
     var body: some View {
         let spent = spentByCategory
 
@@ -185,18 +187,21 @@ struct BudgetMonthPage: View {
                 }
 
                 if !unlimited.isEmpty {
-                    if limited.isEmpty || showUnlimited {
+                    let visible = visibleUnlimited
+
+                    if !visible.isEmpty {
                         BudgetSection(leadingTitle: L10n.budgetNoLimit, trailingTitle: nil) {
-                            ForEach(unlimited, id: \.uuid) { category in
+                            ForEach(visible, id: \.uuid) { category in
                                 UnsetCategoryBudgetRow(category: category, spent: spent[category.uuid] ?? .zero) {
                                     onOpen(.category(category))
                                 }
+                                .transition(.opacity)
                             }
                         }
                         .transition(.opacity)
                     }
 
-                    if !limited.isEmpty {
+                    if !limited.isEmpty || unlimited.count > Self.collapsedCount {
                         unlimitedToggle
                     }
                 }
@@ -204,6 +209,11 @@ struct BudgetMonthPage: View {
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .top)
         }
+    }
+
+    private var visibleUnlimited: [TransactionCategory] {
+        if showUnlimited { return unlimited }
+        return limited.isEmpty ? Array(unlimited.prefix(Self.collapsedCount)) : []
     }
 
     private var spentByCategory: [UUID: Int] {
