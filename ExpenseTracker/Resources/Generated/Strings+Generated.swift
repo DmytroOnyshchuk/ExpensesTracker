@@ -142,8 +142,8 @@ internal enum L10n {
   internal static let `continue` = L10n.tr("Localizable", "CONTINUE", fallback: "Continue")
   /// Car
   internal static let defaultCategoryCar = L10n.tr("Localizable", "DEFAULT_CATEGORY_CAR", fallback: "Car")
-  /// Fuel
-  internal static let defaultCategoryCarFuel = L10n.tr("Localizable", "DEFAULT_CATEGORY_CAR_FUEL", fallback: "Fuel")
+  /// Gas
+  internal static let defaultCategoryCarFuel = L10n.tr("Localizable", "DEFAULT_CATEGORY_CAR_FUEL", fallback: "Gas")
   /// Maintenance
   internal static let defaultCategoryCarMaintenance = L10n.tr("Localizable", "DEFAULT_CATEGORY_CAR_MAINTENANCE", fallback: "Maintenance")
   /// Parking
@@ -152,6 +152,8 @@ internal enum L10n {
   internal static let defaultCategoryCharity = L10n.tr("Localizable", "DEFAULT_CATEGORY_CHARITY", fallback: "Charity")
   /// Clothing
   internal static let defaultCategoryClothing = L10n.tr("Localizable", "DEFAULT_CATEGORY_CLOTHING", fallback: "Clothing")
+  /// Digital services
+  internal static let defaultCategoryDigitalServices = L10n.tr("Localizable", "DEFAULT_CATEGORY_DIGITAL_SERVICES", fallback: "Digital services")
   /// Electronics
   internal static let defaultCategoryElectronics = L10n.tr("Localizable", "DEFAULT_CATEGORY_ELECTRONICS", fallback: "Electronics")
   /// Family
@@ -170,12 +172,12 @@ internal enum L10n {
   internal static let defaultCategoryHomeHousehold = L10n.tr("Localizable", "DEFAULT_CATEGORY_HOME_HOUSEHOLD", fallback: "Household")
   /// Utilities
   internal static let defaultCategoryHomeUtilities = L10n.tr("Localizable", "DEFAULT_CATEGORY_HOME_UTILITIES", fallback: "Utilities")
-  /// Internet
-  internal static let defaultCategoryInternet = L10n.tr("Localizable", "DEFAULT_CATEGORY_INTERNET", fallback: "Internet")
   /// Other
   internal static let defaultCategoryOther = L10n.tr("Localizable", "DEFAULT_CATEGORY_OTHER", fallback: "Other")
   /// Pets
   internal static let defaultCategoryPets = L10n.tr("Localizable", "DEFAULT_CATEGORY_PETS", fallback: "Pets")
+  /// Public transit
+  internal static let defaultCategoryPublicTransit = L10n.tr("Localizable", "DEFAULT_CATEGORY_PUBLIC_TRANSIT", fallback: "Public transit")
   /// Repairs
   internal static let defaultCategoryRepair = L10n.tr("Localizable", "DEFAULT_CATEGORY_REPAIR", fallback: "Repairs")
   /// Salary
@@ -184,10 +186,10 @@ internal enum L10n {
   internal static let defaultCategorySavings = L10n.tr("Localizable", "DEFAULT_CATEGORY_SAVINGS", fallback: "Savings")
   /// Taxes
   internal static let defaultCategoryTaxes = L10n.tr("Localizable", "DEFAULT_CATEGORY_TAXES", fallback: "Taxes")
-  /// Taxi
-  internal static let defaultCategoryTaxi = L10n.tr("Localizable", "DEFAULT_CATEGORY_TAXI", fallback: "Taxi")
-  /// Transport
-  internal static let defaultCategoryTransport = L10n.tr("Localizable", "DEFAULT_CATEGORY_TRANSPORT", fallback: "Transport")
+  /// Taxi & rideshare
+  internal static let defaultCategoryTaxi = L10n.tr("Localizable", "DEFAULT_CATEGORY_TAXI", fallback: "Taxi & rideshare")
+  /// Transportation
+  internal static let defaultCategoryTransport = L10n.tr("Localizable", "DEFAULT_CATEGORY_TRANSPORT", fallback: "Transportation")
   /// Delete
   internal static let delete = L10n.tr("Localizable", "DELETE", fallback: "Delete")
   /// Done

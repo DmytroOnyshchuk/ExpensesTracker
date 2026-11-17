@@ -153,10 +153,11 @@
 "DEFAULT_CATEGORY_HEALTH_BEAUTY" = "Առողջություն և գեղեցկություն";
 "DEFAULT_CATEGORY_OTHER" = "Այլ";
 "DEFAULT_CATEGORY_CHARITY" = "Բարեգործություն";
-"DEFAULT_CATEGORY_INTERNET" = "Ինտերնետ";
+"DEFAULT_CATEGORY_DIGITAL_SERVICES" = "Թվային ծառայություններ";
 "DEFAULT_CATEGORY_TRANSPORT" = "Տրանսպորտ";
 "DEFAULT_CATEGORY_FAMILY" = "Ընտանիք";
 "DEFAULT_CATEGORY_TAXI" = "Տաքսի";
+"DEFAULT_CATEGORY_PUBLIC_TRANSIT" = "Հանրային տրանսպորտ";
 "DEFAULT_CATEGORY_TAXES" = "Հարկեր";
 "DEFAULT_CATEGORY_REPAIR" = "Վերանորոգում";
 "DEFAULT_CATEGORY_ELECTRONICS" = "Տեխնիկա";

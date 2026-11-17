@@ -153,10 +153,11 @@
 "DEFAULT_CATEGORY_HEALTH_BEAUTY" = "სილამაზე და ჯანმრთელობა";
 "DEFAULT_CATEGORY_OTHER" = "სხვა";
 "DEFAULT_CATEGORY_CHARITY" = "ქველმოქმედება";
-"DEFAULT_CATEGORY_INTERNET" = "ინტერნეტი";
+"DEFAULT_CATEGORY_DIGITAL_SERVICES" = "ციფრული სერვისები";
 "DEFAULT_CATEGORY_TRANSPORT" = "ტრანსპორტი";
 "DEFAULT_CATEGORY_FAMILY" = "ოჯახი";
 "DEFAULT_CATEGORY_TAXI" = "ტაქსი";
+"DEFAULT_CATEGORY_PUBLIC_TRANSIT" = "საზოგადოებრივი ტრანსპორტი";
 "DEFAULT_CATEGORY_TAXES" = "გადასახადები";
 "DEFAULT_CATEGORY_REPAIR" = "რემონტი";
 "DEFAULT_CATEGORY_ELECTRONICS" = "ტექნიკა";

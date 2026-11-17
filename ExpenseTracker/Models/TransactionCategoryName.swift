@@ -25,11 +25,12 @@ enum TransactionCategoryName: Hashable {
     case home
     case homeHousehold
     case homeUtilities
-    case internet
+    case digitalServices
     case other
     case transport
     case family
     case taxi
+    case publicTransit
     case taxes
     case repair
     case electronics
@@ -43,8 +44,8 @@ enum TransactionCategoryName: Hashable {
     /// All default names.
     static let predefined: [TransactionCategoryName] = [
         .car, .carFuel, .carMaintenance, .charity, .clothing, .food, .foodGroceries, .foodRestaurants,
-        .healthBeauty, .home, .homeHousehold, .homeUtilities, .internet, .other, .transport,
-        .family, .taxi, .taxes, .repair, .electronics, .carParking, .pets, .savings, .salary,
+        .healthBeauty, .home, .homeHousehold, .homeUtilities, .digitalServices, .other, .transport,
+        .family, .taxi, .publicTransit, .taxes, .repair, .electronics, .carParking, .pets, .savings, .salary,
     ]
 
     /// Display text in the current app language.
@@ -62,11 +63,12 @@ enum TransactionCategoryName: Hashable {
         case .home: L10n.defaultCategoryHome
         case .homeHousehold: L10n.defaultCategoryHomeHousehold
         case .homeUtilities: L10n.defaultCategoryHomeUtilities
-        case .internet: L10n.defaultCategoryInternet
+        case .digitalServices: L10n.defaultCategoryDigitalServices
         case .other: L10n.defaultCategoryOther
         case .transport: L10n.defaultCategoryTransport
         case .family: L10n.defaultCategoryFamily
         case .taxi: L10n.defaultCategoryTaxi
+        case .publicTransit: L10n.defaultCategoryPublicTransit
         case .taxes: L10n.defaultCategoryTaxes
         case .repair: L10n.defaultCategoryRepair
         case .electronics: L10n.defaultCategoryElectronics
@@ -108,11 +110,12 @@ extension TransactionCategoryName: RawRepresentable, Codable {
         case .home: "DEFAULT_CATEGORY_HOME"
         case .homeHousehold: "DEFAULT_CATEGORY_HOME_HOUSEHOLD"
         case .homeUtilities: "DEFAULT_CATEGORY_HOME_UTILITIES"
-        case .internet: "DEFAULT_CATEGORY_INTERNET"
+        case .digitalServices: "DEFAULT_CATEGORY_DIGITAL_SERVICES"
         case .other: "DEFAULT_CATEGORY_OTHER"
         case .transport: "DEFAULT_CATEGORY_TRANSPORT"
         case .family: "DEFAULT_CATEGORY_FAMILY"
         case .taxi: "DEFAULT_CATEGORY_TAXI"
+        case .publicTransit: "DEFAULT_CATEGORY_PUBLIC_TRANSIT"
         case .taxes: "DEFAULT_CATEGORY_TAXES"
         case .repair: "DEFAULT_CATEGORY_REPAIR"
         case .electronics: "DEFAULT_CATEGORY_ELECTRONICS"

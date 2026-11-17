@@ -153,10 +153,11 @@
 "DEFAULT_CATEGORY_HEALTH_BEAUTY" = "ကျန်းမာရေးနှင့် အလှအပ";
 "DEFAULT_CATEGORY_OTHER" = "အခြား";
 "DEFAULT_CATEGORY_CHARITY" = "အလှူ";
-"DEFAULT_CATEGORY_INTERNET" = "အင်တာနက်";
+"DEFAULT_CATEGORY_DIGITAL_SERVICES" = "ဒစ်ဂျစ်တယ် ဝန်ဆောင်မှုများ";
 "DEFAULT_CATEGORY_TRANSPORT" = "သယ်ယူပို့ဆောင်ရေး";
 "DEFAULT_CATEGORY_FAMILY" = "မိသားစု";
 "DEFAULT_CATEGORY_TAXI" = "တက္ကစီ";
+"DEFAULT_CATEGORY_PUBLIC_TRANSIT" = "အများသုံး သယ်ယူပို့ဆောင်ရေး";
 "DEFAULT_CATEGORY_TAXES" = "အခွန်";
 "DEFAULT_CATEGORY_REPAIR" = "ပြုပြင်မှု";
 "DEFAULT_CATEGORY_ELECTRONICS" = "လျှပ်စစ်ပစ္စည်း";

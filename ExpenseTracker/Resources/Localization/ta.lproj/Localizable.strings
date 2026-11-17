@@ -153,10 +153,11 @@
 "DEFAULT_CATEGORY_HEALTH_BEAUTY" = "உடல்நலம் மற்றும் அழகு";
 "DEFAULT_CATEGORY_OTHER" = "மற்றவை";
 "DEFAULT_CATEGORY_CHARITY" = "தொண்டு";
-"DEFAULT_CATEGORY_INTERNET" = "இணையம்";
+"DEFAULT_CATEGORY_DIGITAL_SERVICES" = "டிஜிட்டல் சேவைகள்";
 "DEFAULT_CATEGORY_TRANSPORT" = "போக்குவரத்து";
 "DEFAULT_CATEGORY_FAMILY" = "குடும்பம்";
 "DEFAULT_CATEGORY_TAXI" = "டாக்ஸி";
+"DEFAULT_CATEGORY_PUBLIC_TRANSIT" = "பொதுப் போக்குவரத்து";
 "DEFAULT_CATEGORY_TAXES" = "வரிகள்";
 "DEFAULT_CATEGORY_REPAIR" = "பழுதுபார்ப்பு";
 "DEFAULT_CATEGORY_ELECTRONICS" = "மின்னணுவியல்";
