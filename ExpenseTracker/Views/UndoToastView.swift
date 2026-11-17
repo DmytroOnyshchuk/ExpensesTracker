@@ -117,9 +117,9 @@ extension ModelContext {
 
     @MainActor
     func deleteWithUndo(_ account: Account) {
-        remove(account)
+        moveToTrash(account)
 
-        UndoToastCenter.shared.show(L10n.accountsDeleted) {
+        UndoToastCenter.shared.show(L10n.transactionsListMovedToTrash) {
             self.restore(account)
         }
     }

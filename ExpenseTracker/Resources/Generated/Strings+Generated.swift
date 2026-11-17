@@ -440,12 +440,16 @@ internal enum L10n {
   internal static let transactionsListTransactionUpdated = L10n.tr("Localizable", "TRANSACTIONS_LIST_TRANSACTION_UPDATED", fallback: "Transaction updated")
   /// All items in the Trash will be permanently deleted. This action cannot be undone.
   internal static let trashClearConfirmation = L10n.tr("Localizable", "TRASH_CLEAR_CONFIRMATION", fallback: "All items in the Trash will be permanently deleted. This action cannot be undone.")
+  /// Delete account?
+  internal static let trashDeleteAccountConfirmation = L10n.tr("Localizable", "TRASH_DELETE_ACCOUNT_CONFIRMATION", fallback: "Delete account?")
   /// Delete category?
   internal static let trashDeleteCategoryConfirmation = L10n.tr("Localizable", "TRASH_DELETE_CATEGORY_CONFIRMATION", fallback: "Delete category?")
   /// This action cannot be undone.
   internal static let trashDeleteMessage = L10n.tr("Localizable", "TRASH_DELETE_MESSAGE", fallback: "This action cannot be undone.")
   /// Trash is empty
   internal static let trashEmpty = L10n.tr("Localizable", "TRASH_EMPTY", fallback: "Trash is empty")
+  /// Restore account?
+  internal static let trashRestoreAccountConfirmation = L10n.tr("Localizable", "TRASH_RESTORE_ACCOUNT_CONFIRMATION", fallback: "Restore account?")
   /// Restore category?
   internal static let trashRestoreCategoryConfirmation = L10n.tr("Localizable", "TRASH_RESTORE_CATEGORY_CONFIRMATION", fallback: "Restore category?")
   /// Restore transaction?

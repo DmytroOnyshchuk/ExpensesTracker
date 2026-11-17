@@ -84,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Восстановить транзакцию?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Восстановить категорию?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Удалить категорию?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Восстановить счёт?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Удалить счёт?";
 "TRASH_DELETE_MESSAGE" = "Это действие нельзя отменить.";
 "TRASH_CLEAR_CONFIRMATION" = "Все объекты в корзине будут удалены навсегда. Это действие нельзя отменить.";
 

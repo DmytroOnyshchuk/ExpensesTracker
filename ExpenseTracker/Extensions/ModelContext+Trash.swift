@@ -15,12 +15,20 @@ extension ModelContext {
         try? save()
     }
 
-    func remove(_ account: Account) {
-        account.deletedAt = Date()
+    func moveToTrash(_ account: Account) {
+        let date = Date()
+        for transaction in transactions(of: account) where transaction.deletedAt == nil {
+            transaction.deletedAt = date
+        }
+        account.deletedAt = date
         try? save()
     }
 
     func restore(_ account: Account) {
+        let date = account.deletedAt
+        for transaction in transactions(of: account) where transaction.deletedAt == date && transaction.category.deletedAt == nil {
+            transaction.deletedAt = nil
+        }
         account.deletedAt = nil
         try? save()
     }
@@ -37,12 +45,13 @@ extension ModelContext {
     func restore(_ transaction: Transaction) {
         transaction.deletedAt = nil
         transaction.category.deletedAt = nil
+        transaction.account?.deletedAt = nil
         try? save()
     }
 
     func restore(_ category: TransactionCategory) {
         let date = category.deletedAt
-        for transaction in transactions(of: category) where transaction.deletedAt == date {
+        for transaction in transactions(of: category) where transaction.deletedAt == date && transaction.account?.deletedAt == nil {
             transaction.deletedAt = nil
         }
         category.deletedAt = nil
@@ -62,16 +71,34 @@ extension ModelContext {
         try? save()
     }
 
+    func deletePermanently(_ account: Account) {
+        for transaction in transactions(of: account) {
+            delete(transaction)
+        }
+        delete(account)
+        try? save()
+    }
+
     func emptyTrash() {
         let transactions = (try? fetch(FetchDescriptor<Transaction>())) ?? []
-        for transaction in transactions where transaction.deletedAt != nil || transaction.category.deletedAt != nil {
+        for transaction in transactions where transaction.deletedAt != nil || transaction.category.deletedAt != nil || transaction.account?.deletedAt != nil {
             delete(transaction)
         }
         let categories = (try? fetch(FetchDescriptor<TransactionCategory>())) ?? []
         for category in categories.inTrash {
             delete(category)
         }
+        let accounts = (try? fetch(FetchDescriptor<Account>())) ?? []
+        for account in accounts.inTrash {
+            delete(account)
+        }
         try? save()
+    }
+
+    private func transactions(of account: Account) -> [Transaction] {
+        let accountUuid = account.uuid
+        let descriptor = FetchDescriptor<Transaction>(predicate: #Predicate { $0.account?.uuid == accountUuid })
+        return (try? fetch(descriptor)) ?? []
     }
 
     private func transactions(of category: TransactionCategory) -> [Transaction] {

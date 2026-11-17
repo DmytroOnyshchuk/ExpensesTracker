@@ -84,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Відновити транзакцію?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Відновити категорію?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Видалити категорію?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Відновити рахунок?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Видалити рахунок?";
 "TRASH_DELETE_MESSAGE" = "Цю дію не можна скасувати.";
 "TRASH_CLEAR_CONFIRMATION" = "Усі об'єкти в кошику буде видалено назавжди. Цю дію неможливо скасувати.";
 

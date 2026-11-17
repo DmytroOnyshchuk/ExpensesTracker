@@ -58,6 +58,10 @@ extension [Account] {
         filter { $0.deletedAt == nil }
     }
 
+    var inTrash: [Account] {
+        filter { $0.deletedAt != nil }
+    }
+
     var inDisplayOrder: [Account] {
         sorted { $0.sortIndex < $1.sortIndex }
     }

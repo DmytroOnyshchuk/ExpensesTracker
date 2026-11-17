@@ -11,11 +11,13 @@ import SwiftUI
 
 struct TrashView: View {
     private enum Target {
+        case account(Account)
         case category(TransactionCategory)
         case transaction(Transaction)
 
         var restoreConfirmation: String {
             switch self {
+            case .account: L10n.trashRestoreAccountConfirmation
             case .category: L10n.trashRestoreCategoryConfirmation
             case .transaction: L10n.trashRestoreTransactionConfirmation
             }
@@ -23,6 +25,7 @@ struct TrashView: View {
 
         var deleteConfirmation: String {
             switch self {
+            case .account: L10n.trashDeleteAccountConfirmation
             case .category: L10n.trashDeleteCategoryConfirmation
             case .transaction: L10n.transactionEditDeleteConfirmation
             }
@@ -31,6 +34,7 @@ struct TrashView: View {
 
     @Environment(\.modelContext) private var modelContext
 
+    @Query private var storedAccounts: [Account]
     @Query private var storedCategories: [TransactionCategory]
     @Query private var storedTransactions: [Transaction]
 
@@ -40,18 +44,27 @@ struct TrashView: View {
     @State private var deleteTarget: Target?
     @State private var deleteConfirmation = String()
 
+    private var accounts: [Account] {
+        storedAccounts.inTrash.sorted { ($0.deletedAt ?? .distantPast) > ($1.deletedAt ?? .distantPast) }
+    }
+
     private var categories: [TransactionCategory] {
         storedCategories.inTrash.sorted { ($0.deletedAt ?? .distantPast) > ($1.deletedAt ?? .distantPast) }
     }
 
     var body: some View {
+        let accounts = accounts
         let categories = categories
         let transactions = storedTransactions.inTrash
         let visibleTransactions = transactions
-            .filter { $0.category.deletedAt == nil }
+            .filter { $0.category.deletedAt == nil && $0.account?.deletedAt == nil }
             .sorted { ($0.deletedAt ?? .distantPast) > ($1.deletedAt ?? .distantPast) }
         let transactionsCounts = transactions.reduce(into: [UUID: Int]()) { $0[$1.category.uuid, default: 0] += 1 }
-        let isEmpty = categories.isEmpty && visibleTransactions.isEmpty
+        let accountTransactionsCounts = transactions.reduce(into: [UUID: Int]()) { counts, transaction in
+            guard let uuid = transaction.account?.uuid else { return }
+            counts[uuid, default: 0] += 1
+        }
+        let isEmpty = accounts.isEmpty && categories.isEmpty && visibleTransactions.isEmpty
 
         List {
             if isEmpty {
@@ -64,6 +77,17 @@ struct TrashView: View {
                     .listRowBackground(Color.clear)
                     .listRowSeparator(.hidden)
             } else {
+                ForEach(accounts, id: \.uuid) { account in
+                    TrashAccountRow(name: account.name, subtitle: L10n.backupsTransactionsCount(accountTransactionsCounts[account.uuid] ?? .zero)) {
+                        askToRestore(.account(account))
+                    }
+                    .padding(.horizontal, 16)
+                    .frame(minHeight: 68)
+                    .trashRow(isLast: account.uuid == accounts.last?.uuid && categories.isEmpty && visibleTransactions.isEmpty) {
+                        askToDelete(.account(account))
+                    }
+                }
+
                 ForEach(categories, id: \.id) { category in
                     CategoryRow(
                         category: category,
@@ -123,6 +147,7 @@ struct TrashView: View {
             Button(L10n.yes) {
                 withAnimation {
                     switch target {
+                    case .account(let account): modelContext.restore(account)
                     case .category(let category): modelContext.restore(category)
                     case .transaction(let transaction): modelContext.restore(transaction)
                     }
@@ -142,6 +167,7 @@ struct TrashView: View {
             Button(L10n.delete, role: .destructive) {
                 withAnimation {
                     switch target {
+                    case .account(let account): modelContext.deletePermanently(account)
                     case .category(let category): modelContext.deletePermanently(category)
                     case .transaction(let transaction): modelContext.deletePermanently(transaction)
                     }
@@ -162,6 +188,39 @@ extension TrashView {
     private func askToDelete(_ target: Target) {
         deleteConfirmation = target.deleteConfirmation
         deleteTarget = target
+    }
+}
+
+private struct TrashAccountRow: View {
+    let name: String
+    let subtitle: String
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            HStack(spacing: 16) {
+                Image(systemName: "wallet.bifold")
+                    .font(.system(size: 20))
+                    .foregroundColor(.appLabel)
+                    .frame(width: 32, height: 32)
+
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(name)
+                        .font(.appLight(18))
+                        .foregroundColor(.appWhite)
+                        .lineLimit(1)
+
+                    Text(subtitle)
+                        .font(.appLight(13))
+                        .foregroundColor(.appGray)
+                        .lineLimit(1)
+                }
+
+                Spacer(minLength: 8)
+            }
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
     }
 }
 

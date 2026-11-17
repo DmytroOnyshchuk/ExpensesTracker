@@ -84,6 +84,8 @@
 "TRASH_RESTORE_TRANSACTION_CONFIRMATION" = "Restore transaction?";
 "TRASH_RESTORE_CATEGORY_CONFIRMATION" = "Restore category?";
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Delete category?";
+"TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Restore account?";
+"TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Delete account?";
 "TRASH_DELETE_MESSAGE" = "This action cannot be undone.";
 "TRASH_CLEAR_CONFIRMATION" = "All items in the Trash will be permanently deleted. This action cannot be undone.";
 
