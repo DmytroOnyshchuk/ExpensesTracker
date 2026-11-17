@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Լեզու";
 "MENU_ABOUT" = "Ծրագրի մասին";
 "MENU_TRASH" = "Աղբարկղ";
+"MENU_AUTOPAYMENTS" = "Ավտոմատ վճարումներ";
 "MENU_SECTION_GENERAL" = "Ընդհանուր";
 "MENU_SECTION_DATA" = "Տվյալներ";
 "MENU_SECTION_APP" = "Հավելված";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Ծախսերի հաշվառում";
 "ACCOUNTING_INCOME" = "Եկամուտների հաշվառում";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Մի քանի հաշիվ";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Ավտոմատ վճարումներ չկան";
+"AUTOPAYMENTS_NEW_TITLE" = "Նոր ավտոմատ վճարում";
+"AUTOPAYMENTS_PERIOD" = "Ժամանակահատված";
+"AUTOPAYMENTS_START_DATE" = "Մեկնարկի ամսաթիվ";

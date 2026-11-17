@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Ulwimi";
 "MENU_ABOUT" = "Malunga";
 "MENU_TRASH" = "Umgqomo wenkunkuma";
+"MENU_AUTOPAYMENTS" = "Iintlawulo ezizenzekelayo";
 "MENU_SECTION_GENERAL" = "Jikelele";
 "MENU_SECTION_DATA" = "Idatha";
 "MENU_SECTION_APP" = "I-app";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Ubalo lweendleko";
 "ACCOUNTING_INCOME" = "Ubalo lwengeniso";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Iiakhawunti ezininzi";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Akukho ntlawulo zizenzekelayo";
+"AUTOPAYMENTS_NEW_TITLE" = "Intlawulo entsha ezenzekelayo";
+"AUTOPAYMENTS_PERIOD" = "Ixesha";
+"AUTOPAYMENTS_START_DATE" = "Umhla wokuqala";

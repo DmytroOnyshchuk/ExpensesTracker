@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Teanga";
 "MENU_ABOUT" = "Maidir leis";
 "MENU_TRASH" = "Bruscar";
+"MENU_AUTOPAYMENTS" = "Íocaíochtaí uathoibríocha";
 "MENU_SECTION_GENERAL" = "Ginearálta";
 "MENU_SECTION_DATA" = "Sonraí";
 "MENU_SECTION_APP" = "Aip";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Cuntasaíocht caiteachais";
 "ACCOUNTING_INCOME" = "Cuntasaíocht ioncaim";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Cuntais iolracha";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Níl aon íocaíochtaí uathoibríocha ann";
+"AUTOPAYMENTS_NEW_TITLE" = "Íocaíocht uathoibríoch nua";
+"AUTOPAYMENTS_PERIOD" = "Tréimhse";
+"AUTOPAYMENTS_START_DATE" = "Dáta tosaigh";

@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Gjuha";
 "MENU_ABOUT" = "Rreth";
 "MENU_TRASH" = "Koshi";
+"MENU_AUTOPAYMENTS" = "Pagesa automatike";
 "MENU_SECTION_GENERAL" = "Të përgjithshme";
 "MENU_SECTION_DATA" = "Të dhënat";
 "MENU_SECTION_APP" = "Aplikacioni";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Kontabiliteti i shpenzimeve";
 "ACCOUNTING_INCOME" = "Kontabiliteti i të ardhurave";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Disa llogari";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Nuk ka pagesa automatike";
+"AUTOPAYMENTS_NEW_TITLE" = "Pagesë e re automatike";
+"AUTOPAYMENTS_PERIOD" = "Periudha";
+"AUTOPAYMENTS_START_DATE" = "Data e fillimit";

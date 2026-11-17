@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "ٻولي";
 "MENU_ABOUT" = "بابت";
 "MENU_TRASH" = "ردي";
+"MENU_AUTOPAYMENTS" = "خودڪار ادائيگيون";
 "MENU_SECTION_GENERAL" = "عام";
 "MENU_SECTION_DATA" = "ڊيٽا";
 "MENU_SECTION_APP" = "ايپ";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "خرچن جو حساب";
 "ACCOUNTING_INCOME" = "آمدني جو حساب";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "گھڻا اڪائونٽ";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "ڪا به خودڪار ادائيگي ناهي";
+"AUTOPAYMENTS_NEW_TITLE" = "نئين خودڪار ادائيگي";
+"AUTOPAYMENTS_PERIOD" = "مدو";
+"AUTOPAYMENTS_START_DATE" = "شروعات جي تاريخ";

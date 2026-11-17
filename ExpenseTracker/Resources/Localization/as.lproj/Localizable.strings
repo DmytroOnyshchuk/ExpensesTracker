@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "ভাষা";
 "MENU_ABOUT" = "বিষয়ে";
 "MENU_TRASH" = "ট্ৰেছ";
+"MENU_AUTOPAYMENTS" = "স্বয়ংক্ৰিয় পৰিশোধ";
 "MENU_SECTION_GENERAL" = "সাধাৰণ";
 "MENU_SECTION_DATA" = "ডেটা";
 "MENU_SECTION_APP" = "এপ্";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "ব্যয়ৰ হিচাপ";
 "ACCOUNTING_INCOME" = "আয়ৰ হিচাপ";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "একাধিক একাউণ্ট";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "কোনো স্বয়ংক্ৰিয় পৰিশোধ নাই";
+"AUTOPAYMENTS_NEW_TITLE" = "নতুন স্বয়ংক্ৰিয় পৰিশোধ";
+"AUTOPAYMENTS_PERIOD" = "সময়সীমা";
+"AUTOPAYMENTS_START_DATE" = "আৰম্ভণিৰ তাৰিখ";

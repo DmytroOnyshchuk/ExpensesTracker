@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Jezik";
 "MENU_ABOUT" = "O aplikaciji";
 "MENU_TRASH" = "Koš";
+"MENU_AUTOPAYMENTS" = "Samodejna plačila";
 "MENU_SECTION_GENERAL" = "Splošno";
 "MENU_SECTION_DATA" = "Podatki";
 "MENU_SECTION_APP" = "Aplikacija";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Evidenca odhodkov";
 "ACCOUNTING_INCOME" = "Evidenca prihodkov";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Več računov";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Ni samodejnih plačil";
+"AUTOPAYMENTS_NEW_TITLE" = "Novo samodejno plačilo";
+"AUTOPAYMENTS_PERIOD" = "Obdobje";
+"AUTOPAYMENTS_START_DATE" = "Datum začetka";

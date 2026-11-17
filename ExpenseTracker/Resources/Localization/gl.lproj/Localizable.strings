@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Idioma";
 "MENU_ABOUT" = "Acerca de";
 "MENU_TRASH" = "Papeleira";
+"MENU_AUTOPAYMENTS" = "Pagamentos automáticos";
 "MENU_SECTION_GENERAL" = "Xeral";
 "MENU_SECTION_DATA" = "Datos";
 "MENU_SECTION_APP" = "Aplicación";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Contabilidade de gastos";
 "ACCOUNTING_INCOME" = "Contabilidade de ingresos";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Varias contas";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Non hai pagamentos automáticos";
+"AUTOPAYMENTS_NEW_TITLE" = "Novo pagamento automático";
+"AUTOPAYMENTS_PERIOD" = "Período";
+"AUTOPAYMENTS_START_DATE" = "Data de inicio";

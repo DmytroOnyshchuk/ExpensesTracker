@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Мова";
 "MENU_ABOUT" = "Пра праграму";
 "MENU_TRASH" = "Сметніца";
+"MENU_AUTOPAYMENTS" = "Аўтаплацяжы";
 "MENU_SECTION_GENERAL" = "Агульныя";
 "MENU_SECTION_DATA" = "Даныя";
 "MENU_SECTION_APP" = "Праграма";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Улік выдаткаў";
 "ACCOUNTING_INCOME" = "Улік даходаў";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Некалькі рахункаў";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Няма аўтаплацяжоў";
+"AUTOPAYMENTS_NEW_TITLE" = "Новы аўтаплацеж";
+"AUTOPAYMENTS_PERIOD" = "Перыяд";
+"AUTOPAYMENTS_START_DATE" = "Дата пачатку";

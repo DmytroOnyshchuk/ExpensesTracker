@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Til";
 "MENU_ABOUT" = "Ilova haqida";
 "MENU_TRASH" = "Savat";
+"MENU_AUTOPAYMENTS" = "Avtomatik toʻlovlar";
 "MENU_SECTION_GENERAL" = "Umumiy";
 "MENU_SECTION_DATA" = "Maʼlumotlar";
 "MENU_SECTION_APP" = "Ilova";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Xarajatlar hisobi";
 "ACCOUNTING_INCOME" = "Daromadlar hisobi";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Bir nechta hisob";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Avtomatik toʻlovlar yoʻq";
+"AUTOPAYMENTS_NEW_TITLE" = "Yangi avtomatik toʻlov";
+"AUTOPAYMENTS_PERIOD" = "Davr";
+"AUTOPAYMENTS_START_DATE" = "Boshlanish sanasi";

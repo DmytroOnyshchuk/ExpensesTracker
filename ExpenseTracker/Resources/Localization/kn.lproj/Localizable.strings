@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "ಭಾಷೆ";
 "MENU_ABOUT" = "ಕುರಿತು";
 "MENU_TRASH" = "ಅನುಪಯುಕ್ತ";
+"MENU_AUTOPAYMENTS" = "ಸ್ವಯಂ ಪಾವತಿಗಳು";
 "MENU_SECTION_GENERAL" = "ಸಾಮಾನ್ಯ";
 "MENU_SECTION_DATA" = "ಡೇಟಾ";
 "MENU_SECTION_APP" = "ಆ್ಯಪ್";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "ವೆಚ್ಚಗಳ ಲೆಕ್ಕ";
 "ACCOUNTING_INCOME" = "ಆದಾಯದ ಲೆಕ್ಕ";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "ಬಹು ಖಾತೆಗಳು";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "ಯಾವುದೇ ಸ್ವಯಂ ಪಾವತಿಗಳಿಲ್ಲ";
+"AUTOPAYMENTS_NEW_TITLE" = "ಹೊಸ ಸ್ವಯಂ ಪಾವತಿ";
+"AUTOPAYMENTS_PERIOD" = "ಅವಧಿ";
+"AUTOPAYMENTS_START_DATE" = "ಪ್ರಾರಂಭ ದಿನಾಂಕ";

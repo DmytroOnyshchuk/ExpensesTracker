@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Lingua";
 "MENU_ABOUT" = "Informazioni";
 "MENU_TRASH" = "Cestino";
+"MENU_AUTOPAYMENTS" = "Pagamenti automatici";
 "MENU_SECTION_GENERAL" = "Generali";
 "MENU_SECTION_DATA" = "Dati";
 "MENU_SECTION_APP" = "App";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Contabilità delle spese";
 "ACCOUNTING_INCOME" = "Contabilità delle entrate";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Più conti";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Nessun pagamento automatico";
+"AUTOPAYMENTS_NEW_TITLE" = "Nuovo pagamento automatico";
+"AUTOPAYMENTS_PERIOD" = "Periodo";
+"AUTOPAYMENTS_START_DATE" = "Data di inizio";

@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Dil";
 "MENU_ABOUT" = "Programma barada";
 "MENU_TRASH" = "Sebet";
+"MENU_AUTOPAYMENTS" = "Awtomatik tölegler";
 "MENU_SECTION_GENERAL" = "Umumy";
 "MENU_SECTION_DATA" = "Maglumatlar";
 "MENU_SECTION_APP" = "Programma";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Çykdajylaryň hasaby";
 "ACCOUNTING_INCOME" = "Girdejileriň hasaby";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Birnäçe hasap";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Awtomatik töleg ýok";
+"AUTOPAYMENTS_NEW_TITLE" = "Täze awtomatik töleg";
+"AUTOPAYMENTS_PERIOD" = "Döwür";
+"AUTOPAYMENTS_START_DATE" = "Başlanýan senesi";

@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Idioma";
 "MENU_ABOUT" = "Sobre";
 "MENU_TRASH" = "Lixeira";
+"MENU_AUTOPAYMENTS" = "Pagamentos automáticos";
 "MENU_SECTION_GENERAL" = "Geral";
 "MENU_SECTION_DATA" = "Dados";
 "MENU_SECTION_APP" = "App";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Controle de despesas";
 "ACCOUNTING_INCOME" = "Controle de receitas";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Várias contas";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Nenhum pagamento automático";
+"AUTOPAYMENTS_NEW_TITLE" = "Novo pagamento automático";
+"AUTOPAYMENTS_PERIOD" = "Período";
+"AUTOPAYMENTS_START_DATE" = "Data de início";

@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "言語";
 "MENU_ABOUT" = "このアプリについて";
 "MENU_TRASH" = "ゴミ箱";
+"MENU_AUTOPAYMENTS" = "自動支払い";
 "MENU_SECTION_GENERAL" = "一般";
 "MENU_SECTION_DATA" = "データ";
 "MENU_SECTION_APP" = "アプリ";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "支出の記録";
 "ACCOUNTING_INCOME" = "収入の記録";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "複数の口座";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "自動支払いはありません";
+"AUTOPAYMENTS_NEW_TITLE" = "新しい自動支払い";
+"AUTOPAYMENTS_PERIOD" = "期間";
+"AUTOPAYMENTS_START_DATE" = "開始日";

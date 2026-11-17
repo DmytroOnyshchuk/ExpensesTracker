@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Мова";
 "MENU_ABOUT" = "Про програму";
 "MENU_TRASH" = "Кошик";
+"MENU_AUTOPAYMENTS" = "Автоплатежі";
 "MENU_SECTION_GENERAL" = "Основні";
 "MENU_SECTION_DATA" = "Дані";
 "MENU_SECTION_APP" = "Програма";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Облік витрат";
 "ACCOUNTING_INCOME" = "Облік доходів";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Кілька рахунків";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Немає автоплатежів";
+"AUTOPAYMENTS_NEW_TITLE" = "Новий автоплатіж";
+"AUTOPAYMENTS_PERIOD" = "Період";
+"AUTOPAYMENTS_START_DATE" = "Дата початку";

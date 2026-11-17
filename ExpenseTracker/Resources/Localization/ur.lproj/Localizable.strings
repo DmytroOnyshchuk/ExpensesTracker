@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "زبان";
 "MENU_ABOUT" = "تعارف";
 "MENU_TRASH" = "ردی";
+"MENU_AUTOPAYMENTS" = "خودکار ادائیگیاں";
 "MENU_SECTION_GENERAL" = "عمومی";
 "MENU_SECTION_DATA" = "ڈیٹا";
 "MENU_SECTION_APP" = "ایپ";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "اخراجات کا حساب";
 "ACCOUNTING_INCOME" = "آمدنی کا حساب";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "متعدد اکاؤنٹس";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "کوئی خودکار ادائیگی نہیں";
+"AUTOPAYMENTS_NEW_TITLE" = "نئی خودکار ادائیگی";
+"AUTOPAYMENTS_PERIOD" = "مدت";
+"AUTOPAYMENTS_START_DATE" = "آغاز کی تاریخ";

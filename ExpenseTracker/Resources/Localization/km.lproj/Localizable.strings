@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "ភាសា";
 "MENU_ABOUT" = "អំពី";
 "MENU_TRASH" = "ធុងសំរាម";
+"MENU_AUTOPAYMENTS" = "ការទូទាត់ស្វ័យប្រវត្តិ";
 "MENU_SECTION_GENERAL" = "ទូទៅ";
 "MENU_SECTION_DATA" = "ទិន្នន័យ";
 "MENU_SECTION_APP" = "កម្មវិធី";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "គណនេយ្យចំណាយ";
 "ACCOUNTING_INCOME" = "គណនេយ្យចំណូល";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "គណនីច្រើន";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "គ្មានការទូទាត់ស្វ័យប្រវត្តិ";
+"AUTOPAYMENTS_NEW_TITLE" = "ការទូទាត់ស្វ័យប្រវត្តិថ្មី";
+"AUTOPAYMENTS_PERIOD" = "រយៈពេល";
+"AUTOPAYMENTS_START_DATE" = "កាលបរិច្ឆេទចាប់ផ្តើម";

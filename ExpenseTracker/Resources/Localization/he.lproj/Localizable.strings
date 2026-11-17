@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "שפה";
 "MENU_ABOUT" = "אודות";
 "MENU_TRASH" = "פח אשפה";
+"MENU_AUTOPAYMENTS" = "תשלומים אוטומטיים";
 "MENU_SECTION_GENERAL" = "כללי";
 "MENU_SECTION_DATA" = "נתונים";
 "MENU_SECTION_APP" = "יישום";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "מעקב הוצאות";
 "ACCOUNTING_INCOME" = "מעקב הכנסות";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "חשבונות מרובים";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "אין תשלומים אוטומטיים";
+"AUTOPAYMENTS_NEW_TITLE" = "תשלום אוטומטי חדש";
+"AUTOPAYMENTS_PERIOD" = "תקופה";
+"AUTOPAYMENTS_START_DATE" = "תאריך התחלה";

@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Keel";
 "MENU_ABOUT" = "Teave";
 "MENU_TRASH" = "Prügikast";
+"MENU_AUTOPAYMENTS" = "Automaatmaksed";
 "MENU_SECTION_GENERAL" = "Üldine";
 "MENU_SECTION_DATA" = "Andmed";
 "MENU_SECTION_APP" = "Rakendus";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Kulude arvestus";
 "ACCOUNTING_INCOME" = "Tulude arvestus";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Mitu kontot";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Automaatmakseid pole";
+"AUTOPAYMENTS_NEW_TITLE" = "Uus automaatmakse";
+"AUTOPAYMENTS_PERIOD" = "Periood";
+"AUTOPAYMENTS_START_DATE" = "Alguskuupäev";

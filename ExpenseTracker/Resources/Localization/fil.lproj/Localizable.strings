@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Wika";
 "MENU_ABOUT" = "Tungkol";
 "MENU_TRASH" = "Basurahan";
+"MENU_AUTOPAYMENTS" = "Mga awtomatikong bayad";
 "MENU_SECTION_GENERAL" = "Pangkalahatan";
 "MENU_SECTION_DATA" = "Data";
 "MENU_SECTION_APP" = "App";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Accounting ng gastos";
 "ACCOUNTING_INCOME" = "Accounting ng kita";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Maraming account";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Walang awtomatikong bayad";
+"AUTOPAYMENTS_NEW_TITLE" = "Bagong awtomatikong bayad";
+"AUTOPAYMENTS_PERIOD" = "Panahon";
+"AUTOPAYMENTS_START_DATE" = "Petsa ng simula";

@@ -48,6 +48,14 @@ internal enum L10n {
   internal static let appName = L10n.tr("Localizable", "APP_NAME", fallback: "Expense Tracker")
   /// Attention
   internal static let attention = L10n.tr("Localizable", "ATTENTION", fallback: "Attention")
+  /// No autopayments
+  internal static let autopaymentsEmpty = L10n.tr("Localizable", "AUTOPAYMENTS_EMPTY", fallback: "No autopayments")
+  /// New autopayment
+  internal static let autopaymentsNewTitle = L10n.tr("Localizable", "AUTOPAYMENTS_NEW_TITLE", fallback: "New autopayment")
+  /// Period
+  internal static let autopaymentsPeriod = L10n.tr("Localizable", "AUTOPAYMENTS_PERIOD", fallback: "Period")
+  /// Start date
+  internal static let autopaymentsStartDate = L10n.tr("Localizable", "AUTOPAYMENTS_START_DATE", fallback: "Start date")
   /// Back
   internal static let back = L10n.tr("Localizable", "BACK", fallback: "Back")
   /// Categories: %d
@@ -266,6 +274,8 @@ internal enum L10n {
   internal static let menuAbout = L10n.tr("Localizable", "MENU_ABOUT", fallback: "About")
   /// Accounting settings
   internal static let menuAccountingSettings = L10n.tr("Localizable", "MENU_ACCOUNTING_SETTINGS", fallback: "Accounting settings")
+  /// Autopayments
+  internal static let menuAutopayments = L10n.tr("Localizable", "MENU_AUTOPAYMENTS", fallback: "Autopayments")
   /// Backups
   internal static let menuBackups = L10n.tr("Localizable", "MENU_BACKUPS", fallback: "Backups")
   /// Budget

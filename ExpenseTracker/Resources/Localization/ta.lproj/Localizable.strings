@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "மொழி";
 "MENU_ABOUT" = "அறிமுகம்";
 "MENU_TRASH" = "குப்பைத் தொட்டி";
+"MENU_AUTOPAYMENTS" = "தானியங்கி கட்டணங்கள்";
 "MENU_SECTION_GENERAL" = "பொது";
 "MENU_SECTION_DATA" = "தரவு";
 "MENU_SECTION_APP" = "ஆப்ஸ்";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "செலவுக் கணக்கு";
 "ACCOUNTING_INCOME" = "வருமானக் கணக்கு";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "பல கணக்குகள்";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "தானியங்கி கட்டணங்கள் இல்லை";
+"AUTOPAYMENTS_NEW_TITLE" = "புதிய தானியங்கி கட்டணம்";
+"AUTOPAYMENTS_PERIOD" = "காலம்";
+"AUTOPAYMENTS_START_DATE" = "தொடக்க தேதி";

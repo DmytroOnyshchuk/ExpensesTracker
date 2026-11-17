@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Nyelv";
 "MENU_ABOUT" = "Névjegy";
 "MENU_TRASH" = "Kuka";
+"MENU_AUTOPAYMENTS" = "Automatikus fizetések";
 "MENU_SECTION_GENERAL" = "Általános";
 "MENU_SECTION_DATA" = "Adatok";
 "MENU_SECTION_APP" = "Alkalmazás";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Kiadások nyilvántartása";
 "ACCOUNTING_INCOME" = "Bevételek nyilvántartása";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Több számla";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Nincsenek automatikus fizetések";
+"AUTOPAYMENTS_NEW_TITLE" = "Új automatikus fizetés";
+"AUTOPAYMENTS_PERIOD" = "Időszak";
+"AUTOPAYMENTS_START_DATE" = "Kezdő dátum";

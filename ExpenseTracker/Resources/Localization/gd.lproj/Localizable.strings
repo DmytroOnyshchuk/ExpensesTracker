@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Cànan";
 "MENU_ABOUT" = "Mu dhèidhinn";
 "MENU_TRASH" = "Sgudal";
+"MENU_AUTOPAYMENTS" = "Pàighidhean fèin-obrachail";
 "MENU_SECTION_GENERAL" = "Coitcheann";
 "MENU_SECTION_DATA" = "Dàta";
 "MENU_SECTION_APP" = "Aplacaid";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Cunntasachd chosgaisean";
 "ACCOUNTING_INCOME" = "Cunntasachd teachd-a-steach";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Iomadh cunntas";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Chan eil pàigheadh fèin-obrachail ann";
+"AUTOPAYMENTS_NEW_TITLE" = "Pàigheadh fèin-obrachail ùr";
+"AUTOPAYMENTS_PERIOD" = "Ùine";
+"AUTOPAYMENTS_START_DATE" = "Ceann-là tòiseachaidh";

@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "ഭാഷ";
 "MENU_ABOUT" = "വിവരം";
 "MENU_TRASH" = "ട്രാഷ്";
+"MENU_AUTOPAYMENTS" = "ഓട്ടോമാറ്റിക് പേയ്‌മെന്റുകൾ";
 "MENU_SECTION_GENERAL" = "പൊതുവായത്";
 "MENU_SECTION_DATA" = "ഡാറ്റ";
 "MENU_SECTION_APP" = "ആപ്പ്";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "ചെലവുകളുടെ കണക്ക്";
 "ACCOUNTING_INCOME" = "വരുമാനത്തിന്റെ കണക്ക്";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "ഒന്നിലധികം അക്കൗണ്ടുകൾ";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "ഓട്ടോമാറ്റിക് പേയ്‌മെന്റുകളില്ല";
+"AUTOPAYMENTS_NEW_TITLE" = "പുതിയ ഓട്ടോമാറ്റിക് പേയ്‌മെന്റ്";
+"AUTOPAYMENTS_PERIOD" = "കാലയളവ്";
+"AUTOPAYMENTS_START_DATE" = "ആരംഭ തീയതി";

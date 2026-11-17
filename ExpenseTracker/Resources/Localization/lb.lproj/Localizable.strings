@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Sprooch";
 "MENU_ABOUT" = "Iwwer";
 "MENU_TRASH" = "Dreckskëscht";
+"MENU_AUTOPAYMENTS" = "Automatesch Bezuelungen";
 "MENU_SECTION_GENERAL" = "Allgemeng";
 "MENU_SECTION_DATA" = "Daten";
 "MENU_SECTION_APP" = "App";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Ausgabebuchféierung";
 "ACCOUNTING_INCOME" = "Akommesbuchféierung";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Méi Konten";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Keng automatesch Bezuelungen";
+"AUTOPAYMENTS_NEW_TITLE" = "Nei automatesch Bezuelung";
+"AUTOPAYMENTS_PERIOD" = "Zäitraum";
+"AUTOPAYMENTS_START_DATE" = "Startdatum";

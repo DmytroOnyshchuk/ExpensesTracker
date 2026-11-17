@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "اللغة";
 "MENU_ABOUT" = "حول";
 "MENU_TRASH" = "سلة المحذوفات";
+"MENU_AUTOPAYMENTS" = "المدفوعات التلقائية";
 "MENU_SECTION_GENERAL" = "عام";
 "MENU_SECTION_DATA" = "البيانات";
 "MENU_SECTION_APP" = "التطبيق";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "محاسبة المصروفات";
 "ACCOUNTING_INCOME" = "محاسبة الدخل";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "حسابات متعددة";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "لا توجد مدفوعات تلقائية";
+"AUTOPAYMENTS_NEW_TITLE" = "دفعة تلقائية جديدة";
+"AUTOPAYMENTS_PERIOD" = "الفترة";
+"AUTOPAYMENTS_START_DATE" = "تاريخ البدء";

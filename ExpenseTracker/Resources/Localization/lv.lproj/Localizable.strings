@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Valoda";
 "MENU_ABOUT" = "Par lietotni";
 "MENU_TRASH" = "Atkritne";
+"MENU_AUTOPAYMENTS" = "Automātiskie maksājumi";
 "MENU_SECTION_GENERAL" = "Vispārīgi";
 "MENU_SECTION_DATA" = "Dati";
 "MENU_SECTION_APP" = "Lietotne";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Izdevumu uzskaite";
 "ACCOUNTING_INCOME" = "Ienākumu uzskaite";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Vairāki konti";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Nav automātisko maksājumu";
+"AUTOPAYMENTS_NEW_TITLE" = "Jauns automātiskais maksājums";
+"AUTOPAYMENTS_PERIOD" = "Periods";
+"AUTOPAYMENTS_START_DATE" = "Sākuma datums";

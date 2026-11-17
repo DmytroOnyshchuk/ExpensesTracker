@@ -232,7 +232,7 @@ struct StartView: View {
 @MainActor
 func makePreviewModelContainer() -> ModelContainer {
     let container = try! ModelContainer(
-        for: Transaction.self, TransactionCategory.self, Account.self,
+        for: Transaction.self, TransactionCategory.self, Account.self, AutoPayment.self,
         configurations: ModelConfiguration(isStoredInMemoryOnly: true)
     )
     DataSeeder.seedDefaultCategories(container: container)

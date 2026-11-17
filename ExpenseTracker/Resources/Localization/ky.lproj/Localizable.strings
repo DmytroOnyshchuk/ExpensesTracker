@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Тил";
 "MENU_ABOUT" = "Колдонмо жөнүндө";
 "MENU_TRASH" = "Себет";
+"MENU_AUTOPAYMENTS" = "Автотөлөмдөр";
 "MENU_SECTION_GENERAL" = "Жалпы";
 "MENU_SECTION_DATA" = "Маалыматтар";
 "MENU_SECTION_APP" = "Колдонмо";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Чыгымдардын эсеби";
 "ACCOUNTING_INCOME" = "Кирешелердин эсеби";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Бир нече эсеп";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Автотөлөмдөр жок";
+"AUTOPAYMENTS_NEW_TITLE" = "Жаңы автотөлөм";
+"AUTOPAYMENTS_PERIOD" = "Мезгил";
+"AUTOPAYMENTS_START_DATE" = "Башталган күнү";

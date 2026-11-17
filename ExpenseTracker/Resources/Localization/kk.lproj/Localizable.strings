@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Тіл";
 "MENU_ABOUT" = "Қолданба туралы";
 "MENU_TRASH" = "Себет";
+"MENU_AUTOPAYMENTS" = "Автотөлемдер";
 "MENU_SECTION_GENERAL" = "Жалпы";
 "MENU_SECTION_DATA" = "Деректер";
 "MENU_SECTION_APP" = "Қолданба";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Шығыстар есебі";
 "ACCOUNTING_INCOME" = "Кірістер есебі";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Бірнеше шот";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Автотөлемдер жоқ";
+"AUTOPAYMENTS_NEW_TITLE" = "Жаңа автотөлем";
+"AUTOPAYMENTS_PERIOD" = "Кезең";
+"AUTOPAYMENTS_START_DATE" = "Басталу күні";

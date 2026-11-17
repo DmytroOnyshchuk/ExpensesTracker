@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Kieli";
 "MENU_ABOUT" = "Tietoja";
 "MENU_TRASH" = "Roskakori";
+"MENU_AUTOPAYMENTS" = "Automaattimaksut";
 "MENU_SECTION_GENERAL" = "Yleiset";
 "MENU_SECTION_DATA" = "Tiedot";
 "MENU_SECTION_APP" = "Sovellus";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Menojen kirjanpito";
 "ACCOUNTING_INCOME" = "Tulojen kirjanpito";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Useita tilejä";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Ei automaattimaksuja";
+"AUTOPAYMENTS_NEW_TITLE" = "Uusi automaattimaksu";
+"AUTOPAYMENTS_PERIOD" = "Jakso";
+"AUTOPAYMENTS_START_DATE" = "Aloituspäivä";

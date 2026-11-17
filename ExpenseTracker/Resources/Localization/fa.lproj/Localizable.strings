@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "زبان";
 "MENU_ABOUT" = "درباره";
 "MENU_TRASH" = "سطل زباله";
+"MENU_AUTOPAYMENTS" = "پرداخت‌های خودکار";
 "MENU_SECTION_GENERAL" = "عمومی";
 "MENU_SECTION_DATA" = "داده‌ها";
 "MENU_SECTION_APP" = "برنامه";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "حسابداری هزینه‌ها";
 "ACCOUNTING_INCOME" = "حسابداری درآمد";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "چند حساب";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "پرداخت خودکاری وجود ندارد";
+"AUTOPAYMENTS_NEW_TITLE" = "پرداخت خودکار جدید";
+"AUTOPAYMENTS_PERIOD" = "دوره";
+"AUTOPAYMENTS_START_DATE" = "تاریخ شروع";

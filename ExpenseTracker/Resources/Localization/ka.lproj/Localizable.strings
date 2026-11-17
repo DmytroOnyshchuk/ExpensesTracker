@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "ენა";
 "MENU_ABOUT" = "აპის შესახებ";
 "MENU_TRASH" = "ნაგავი";
+"MENU_AUTOPAYMENTS" = "ავტომატური გადახდები";
 "MENU_SECTION_GENERAL" = "ზოგადი";
 "MENU_SECTION_DATA" = "მონაცემები";
 "MENU_SECTION_APP" = "აპი";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "ხარჯების აღრიცხვა";
 "ACCOUNTING_INCOME" = "შემოსავლების აღრიცხვა";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "რამდენიმე ანგარიში";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "ავტომატური გადახდები არ არის";
+"AUTOPAYMENTS_NEW_TITLE" = "ახალი ავტომატური გადახდა";
+"AUTOPAYMENTS_PERIOD" = "პერიოდი";
+"AUTOPAYMENTS_START_DATE" = "დაწყების თარიღი";

@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Taal";
 "MENU_ABOUT" = "Over";
 "MENU_TRASH" = "Prullenmand";
+"MENU_AUTOPAYMENTS" = "Automatische betalingen";
 "MENU_SECTION_GENERAL" = "Algemeen";
 "MENU_SECTION_DATA" = "Gegevens";
 "MENU_SECTION_APP" = "App";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Uitgaven bijhouden";
 "ACCOUNTING_INCOME" = "Inkomsten bijhouden";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Meerdere rekeningen";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Geen automatische betalingen";
+"AUTOPAYMENTS_NEW_TITLE" = "Nieuwe automatische betaling";
+"AUTOPAYMENTS_PERIOD" = "Periode";
+"AUTOPAYMENTS_START_DATE" = "Startdatum";

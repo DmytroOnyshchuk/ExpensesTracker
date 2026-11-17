@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "ਭਾਸ਼ਾ";
 "MENU_ABOUT" = "ਬਾਰੇ";
 "MENU_TRASH" = "ਰੱਦੀ";
+"MENU_AUTOPAYMENTS" = "ਆਟੋਮੈਟਿਕ ਭੁਗਤਾਨ";
 "MENU_SECTION_GENERAL" = "ਆਮ";
 "MENU_SECTION_DATA" = "ਡਾਟਾ";
 "MENU_SECTION_APP" = "ਐਪ";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "ਖਰਚਿਆਂ ਦਾ ਲੇਖਾ";
 "ACCOUNTING_INCOME" = "ਆਮਦਨ ਦਾ ਲੇਖਾ";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "ਕਈ ਖਾਤੇ";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "ਕੋਈ ਆਟੋਮੈਟਿਕ ਭੁਗਤਾਨ ਨਹੀਂ";
+"AUTOPAYMENTS_NEW_TITLE" = "ਨਵਾਂ ਆਟੋਮੈਟਿਕ ਭੁਗਤਾਨ";
+"AUTOPAYMENTS_PERIOD" = "ਮਿਆਦ";
+"AUTOPAYMENTS_START_DATE" = "ਸ਼ੁਰੂਆਤੀ ਮਿਤੀ";

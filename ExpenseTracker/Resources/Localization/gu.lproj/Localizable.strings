@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "ભાષા";
 "MENU_ABOUT" = "વિશે";
 "MENU_TRASH" = "ટ્રેશ";
+"MENU_AUTOPAYMENTS" = "સ્વચાલિત ચુકવણીઓ";
 "MENU_SECTION_GENERAL" = "સામાન્ય";
 "MENU_SECTION_DATA" = "ડેટા";
 "MENU_SECTION_APP" = "ઍપ";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "ખર્ચનો હિસાબ";
 "ACCOUNTING_INCOME" = "આવકનો હિસાબ";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "બહુવિધ ખાતાં";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "કોઈ સ્વચાલિત ચુકવણી નથી";
+"AUTOPAYMENTS_NEW_TITLE" = "નવી સ્વચાલિત ચુકવણી";
+"AUTOPAYMENTS_PERIOD" = "સમયગાળો";
+"AUTOPAYMENTS_START_DATE" = "શરૂઆતની તારીખ";

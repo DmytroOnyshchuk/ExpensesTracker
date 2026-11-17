@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Забон";
 "MENU_ABOUT" = "Дар бораи барнома";
 "MENU_TRASH" = "Сабад";
+"MENU_AUTOPAYMENTS" = "Пардохтҳои худкор";
 "MENU_SECTION_GENERAL" = "Умумӣ";
 "MENU_SECTION_DATA" = "Маълумот";
 "MENU_SECTION_APP" = "Барнома";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Баҳисобгирии хароҷот";
 "ACCOUNTING_INCOME" = "Баҳисобгирии даромад";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Якчанд ҳисоб";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Пардохтҳои худкор нестанд";
+"AUTOPAYMENTS_NEW_TITLE" = "Пардохти худкори нав";
+"AUTOPAYMENTS_PERIOD" = "Давра";
+"AUTOPAYMENTS_START_DATE" = "Санаи оғоз";

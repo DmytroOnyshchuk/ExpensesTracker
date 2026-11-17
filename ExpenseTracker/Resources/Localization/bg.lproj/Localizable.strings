@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Език";
 "MENU_ABOUT" = "За приложението";
 "MENU_TRASH" = "Кошче";
+"MENU_AUTOPAYMENTS" = "Автоматични плащания";
 "MENU_SECTION_GENERAL" = "Общи";
 "MENU_SECTION_DATA" = "Данни";
 "MENU_SECTION_APP" = "Приложение";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Отчитане на разходи";
 "ACCOUNTING_INCOME" = "Отчитане на приходи";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Няколко сметки";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Няма автоматични плащания";
+"AUTOPAYMENTS_NEW_TITLE" = "Ново автоматично плащане";
+"AUTOPAYMENTS_PERIOD" = "Период";
+"AUTOPAYMENTS_START_DATE" = "Начална дата";

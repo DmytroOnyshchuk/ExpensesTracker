@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Тел";
 "MENU_ABOUT" = "Кушымта турында";
 "MENU_TRASH" = "Кәрзин";
+"MENU_AUTOPAYMENTS" = "Автотүләүләр";
 "MENU_SECTION_GENERAL" = "Гомуми";
 "MENU_SECTION_DATA" = "Мәгълүмат";
 "MENU_SECTION_APP" = "Кушымта";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Чыгымнар исәбе";
 "ACCOUNTING_INCOME" = "Керемнәр исәбе";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Берничә счет";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Автотүләүләр юк";
+"AUTOPAYMENTS_NEW_TITLE" = "Яңа автотүләү";
+"AUTOPAYMENTS_PERIOD" = "Чор";
+"AUTOPAYMENTS_START_DATE" = "Башлану датасы";

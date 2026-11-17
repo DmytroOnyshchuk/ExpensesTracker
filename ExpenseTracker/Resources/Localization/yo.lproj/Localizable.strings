@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Èdè";
 "MENU_ABOUT" = "Nípa";
 "MENU_TRASH" = "Àpótí ìdọ̀tí";
+"MENU_AUTOPAYMENTS" = "Àwọn ìsanwó aládàáṣe";
 "MENU_SECTION_GENERAL" = "Gbogbogbò";
 "MENU_SECTION_DATA" = "Dátà";
 "MENU_SECTION_APP" = "Áàpù";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Ìṣirò ìnáwó";
 "ACCOUNTING_INCOME" = "Ìṣirò owó tó ń wọlé";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Àwọn àkáǹtì púpọ̀";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Kò sí ìsanwó aládàáṣe";
+"AUTOPAYMENTS_NEW_TITLE" = "Ìsanwó aládàáṣe tuntun";
+"AUTOPAYMENTS_PERIOD" = "Àkókò";
+"AUTOPAYMENTS_START_DATE" = "Ọjọ́ ìbẹ̀rẹ̀";

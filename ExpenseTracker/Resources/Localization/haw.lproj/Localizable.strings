@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "ʻŌlelo";
 "MENU_ABOUT" = "E pili ana";
 "MENU_TRASH" = "ʻŌpala";
+"MENU_AUTOPAYMENTS" = "Nā uku ʻakomi";
 "MENU_SECTION_GENERAL" = "Laulā";
 "MENU_SECTION_DATA" = "ʻIkepili";
 "MENU_SECTION_APP" = "Polokalamu";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Moʻohelu hoʻolilo";
 "ACCOUNTING_INCOME" = "Moʻohelu loaʻa";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Nā moʻokāki he nui";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "ʻAʻohe uku ʻakomi";
+"AUTOPAYMENTS_NEW_TITLE" = "Uku ʻakomi hou";
+"AUTOPAYMENTS_PERIOD" = "Wā";
+"AUTOPAYMENTS_START_DATE" = "Lā hoʻomaka";

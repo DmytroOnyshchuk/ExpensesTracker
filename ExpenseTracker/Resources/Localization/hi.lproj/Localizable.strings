@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "भाषा";
 "MENU_ABOUT" = "परिचय";
 "MENU_TRASH" = "ट्रैश";
+"MENU_AUTOPAYMENTS" = "स्वचालित भुगतान";
 "MENU_SECTION_GENERAL" = "सामान्य";
 "MENU_SECTION_DATA" = "डेटा";
 "MENU_SECTION_APP" = "ऐप";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "खर्चों का लेखा";
 "ACCOUNTING_INCOME" = "आय का लेखा";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "एकाधिक खाते";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "कोई स्वचालित भुगतान नहीं";
+"AUTOPAYMENTS_NEW_TITLE" = "नया स्वचालित भुगतान";
+"AUTOPAYMENTS_PERIOD" = "अवधि";
+"AUTOPAYMENTS_START_DATE" = "आरंभ तिथि";

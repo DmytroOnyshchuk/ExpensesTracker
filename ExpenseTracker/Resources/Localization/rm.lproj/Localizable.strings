@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Lingua";
 "MENU_ABOUT" = "Davart";
 "MENU_TRASH" = "Recipient da rument";
+"MENU_AUTOPAYMENTS" = "Pajaments automatics";
 "MENU_SECTION_GENERAL" = "General";
 "MENU_SECTION_DATA" = "Datas";
 "MENU_SECTION_APP" = "App";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Contabilitad da las expensas";
 "ACCOUNTING_INCOME" = "Contabilitad da las entradas";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Plirs contos";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Nagins pajaments automatics";
+"AUTOPAYMENTS_NEW_TITLE" = "Nov pajament automatic";
+"AUTOPAYMENTS_PERIOD" = "Perioda";
+"AUTOPAYMENTS_START_DATE" = "Data d’entschatta";

@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "زمان";
 "MENU_ABOUT" = "دەربارە";
 "MENU_TRASH" = "تەنەکەی خۆڵ";
+"MENU_AUTOPAYMENTS" = "پارەدانە خۆکارەکان";
 "MENU_SECTION_GENERAL" = "گشتی";
 "MENU_SECTION_DATA" = "داتا";
 "MENU_SECTION_APP" = "ئەپ";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "ژمێریاری خەرجییەکان";
 "ACCOUNTING_INCOME" = "ژمێریاری داهات";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "چەند هەژمارێک";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "هیچ پارەدانێکی خۆکار نییە";
+"AUTOPAYMENTS_NEW_TITLE" = "پارەدانی خۆکاری نوێ";
+"AUTOPAYMENTS_PERIOD" = "ماوە";
+"AUTOPAYMENTS_START_DATE" = "بەرواری دەستپێک";

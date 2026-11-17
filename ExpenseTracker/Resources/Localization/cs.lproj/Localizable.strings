@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Jazyk";
 "MENU_ABOUT" = "O aplikaci";
 "MENU_TRASH" = "Koš";
+"MENU_AUTOPAYMENTS" = "Automatické platby";
 "MENU_SECTION_GENERAL" = "Obecné";
 "MENU_SECTION_DATA" = "Data";
 "MENU_SECTION_APP" = "Aplikace";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Evidence výdajů";
 "ACCOUNTING_INCOME" = "Evidence příjmů";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Více účtů";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Žádné automatické platby";
+"AUTOPAYMENTS_NEW_TITLE" = "Nová automatická platba";
+"AUTOPAYMENTS_PERIOD" = "Období";
+"AUTOPAYMENTS_START_DATE" = "Datum zahájení";

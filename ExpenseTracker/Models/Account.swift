@@ -33,6 +33,9 @@ final class Account {
     @Relationship(deleteRule: .nullify, inverse: \Transaction.account)
     var transactions: [Transaction] = []
 
+    @Relationship(deleteRule: .nullify, inverse: \AutoPayment.account)
+    var autoPayments: [AutoPayment] = []
+
     init(name: String, amount: Int = .zero, checkpointDate: Date = Date(), sortIndex: Int = .zero) {
         self.uuid = UUID()
         self.name = name

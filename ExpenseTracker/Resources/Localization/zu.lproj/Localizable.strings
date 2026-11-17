@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Ulimi";
 "MENU_ABOUT" = "Mayelana";
 "MENU_TRASH" = "Udoti";
+"MENU_AUTOPAYMENTS" = "Izinkokhelo ezizenzakalelayo";
 "MENU_SECTION_GENERAL" = "Okujwayelekile";
 "MENU_SECTION_DATA" = "Idatha";
 "MENU_SECTION_APP" = "Uhlelo lokusebenza";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Ukubalwa kwezindleko";
 "ACCOUNTING_INCOME" = "Ukubalwa kwemali engenayo";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Ama-akhawunti amaningi";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Azikho izinkokhelo ezizenzakalelayo";
+"AUTOPAYMENTS_NEW_TITLE" = "Inkokhelo entsha ezenzakalelayo";
+"AUTOPAYMENTS_PERIOD" = "Isikhathi";
+"AUTOPAYMENTS_START_DATE" = "Usuku lokuqala";

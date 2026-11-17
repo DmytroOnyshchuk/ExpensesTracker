@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Хэл";
 "MENU_ABOUT" = "Аппын тухай";
 "MENU_TRASH" = "Хогийн сав";
+"MENU_AUTOPAYMENTS" = "Автомат төлбөрүүд";
 "MENU_SECTION_GENERAL" = "Ерөнхий";
 "MENU_SECTION_DATA" = "Өгөгдөл";
 "MENU_SECTION_APP" = "Апп";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Зардлын бүртгэл";
 "ACCOUNTING_INCOME" = "Орлогын бүртгэл";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Олон данс";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Автомат төлбөр алга";
+"AUTOPAYMENTS_NEW_TITLE" = "Шинэ автомат төлбөр";
+"AUTOPAYMENTS_PERIOD" = "Хугацаа";
+"AUTOPAYMENTS_START_DATE" = "Эхлэх огноо";

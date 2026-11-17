@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Ziman";
 "MENU_ABOUT" = "Derbar";
 "MENU_TRASH" = "Çopdank";
+"MENU_AUTOPAYMENTS" = "Dravdanên otomatîk";
 "MENU_SECTION_GENERAL" = "Giştî";
 "MENU_SECTION_DATA" = "Dane";
 "MENU_SECTION_APP" = "Sepan";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Hesabdariya lêçûnan";
 "ACCOUNTING_INCOME" = "Hesabdariya dahatê";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Çend hesab";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Dravdanên otomatîk tune ne";
+"AUTOPAYMENTS_NEW_TITLE" = "Dravdana otomatîk a nû";
+"AUTOPAYMENTS_PERIOD" = "Dem";
+"AUTOPAYMENTS_START_DATE" = "Dîroka destpêkê";

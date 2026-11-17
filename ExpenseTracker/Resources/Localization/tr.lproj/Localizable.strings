@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Dil";
 "MENU_ABOUT" = "Hakkında";
 "MENU_TRASH" = "Çöp Sepeti";
+"MENU_AUTOPAYMENTS" = "Otomatik ödemeler";
 "MENU_SECTION_GENERAL" = "Genel";
 "MENU_SECTION_DATA" = "Veriler";
 "MENU_SECTION_APP" = "Uygulama";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Gider takibi";
 "ACCOUNTING_INCOME" = "Gelir takibi";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Birden fazla hesap";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Otomatik ödeme yok";
+"AUTOPAYMENTS_NEW_TITLE" = "Yeni otomatik ödeme";
+"AUTOPAYMENTS_PERIOD" = "Dönem";
+"AUTOPAYMENTS_START_DATE" = "Başlangıç tarihi";

@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Language";
 "MENU_ABOUT" = "About";
 "MENU_TRASH" = "Bin";
+"MENU_AUTOPAYMENTS" = "Autopayments";
 "MENU_SECTION_GENERAL" = "General";
 "MENU_SECTION_DATA" = "Data";
 "MENU_SECTION_APP" = "App";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Expenses accounting";
 "ACCOUNTING_INCOME" = "Income accounting";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Multiple accounts";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "No autopayments";
+"AUTOPAYMENTS_NEW_TITLE" = "New autopayment";
+"AUTOPAYMENTS_PERIOD" = "Period";
+"AUTOPAYMENTS_START_DATE" = "Start date";

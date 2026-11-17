@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Γλώσσα";
 "MENU_ABOUT" = "Πληροφορίες";
 "MENU_TRASH" = "Κάδος";
+"MENU_AUTOPAYMENTS" = "Αυτόματες πληρωμές";
 "MENU_SECTION_GENERAL" = "Γενικά";
 "MENU_SECTION_DATA" = "Δεδομένα";
 "MENU_SECTION_APP" = "Εφαρμογή";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Καταγραφή εξόδων";
 "ACCOUNTING_INCOME" = "Καταγραφή εσόδων";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Πολλαπλοί λογαριασμοί";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Δεν υπάρχουν αυτόματες πληρωμές";
+"AUTOPAYMENTS_NEW_TITLE" = "Νέα αυτόματη πληρωμή";
+"AUTOPAYMENTS_PERIOD" = "Περίοδος";
+"AUTOPAYMENTS_START_DATE" = "Ημερομηνία έναρξης";

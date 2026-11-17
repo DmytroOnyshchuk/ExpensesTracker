@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Idioma";
 "MENU_ABOUT" = "Quant a";
 "MENU_TRASH" = "Paperera";
+"MENU_AUTOPAYMENTS" = "Pagaments automàtics";
 "MENU_SECTION_GENERAL" = "General";
 "MENU_SECTION_DATA" = "Dades";
 "MENU_SECTION_APP" = "Aplicació";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Comptabilitat de despeses";
 "ACCOUNTING_INCOME" = "Comptabilitat d’ingressos";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Diversos comptes";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "No hi ha pagaments automàtics";
+"AUTOPAYMENTS_NEW_TITLE" = "Nou pagament automàtic";
+"AUTOPAYMENTS_PERIOD" = "Període";
+"AUTOPAYMENTS_START_DATE" = "Data d’inici";

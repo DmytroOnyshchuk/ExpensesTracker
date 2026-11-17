@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Lingwa";
 "MENU_ABOUT" = "Dwar";
 "MENU_TRASH" = "Trash";
+"MENU_AUTOPAYMENTS" = "Pagamenti awtomatiċi";
 "MENU_SECTION_GENERAL" = "Ġenerali";
 "MENU_SECTION_DATA" = "Data";
 "MENU_SECTION_APP" = "App";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Kontabilità tal-ispejjeż";
 "ACCOUNTING_INCOME" = "Kontabilità tad-dħul";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Diversi kontijiet";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "M’hemmx pagamenti awtomatiċi";
+"AUTOPAYMENTS_NEW_TITLE" = "Pagament awtomatiku ġdid";
+"AUTOPAYMENTS_PERIOD" = "Perjodu";
+"AUTOPAYMENTS_START_DATE" = "Data tal-bidu";

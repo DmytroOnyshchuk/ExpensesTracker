@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "භාෂාව";
 "MENU_ABOUT" = "පිළිබඳව";
 "MENU_TRASH" = "කුණු කූඩය";
+"MENU_AUTOPAYMENTS" = "ස්වයංක්‍රීය ගෙවීම්";
 "MENU_SECTION_GENERAL" = "පොදු";
 "MENU_SECTION_DATA" = "දත්ත";
 "MENU_SECTION_APP" = "යෙදුම";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "වියදම් ගිණුම්කරණය";
 "ACCOUNTING_INCOME" = "ආදායම් ගිණුම්කරණය";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "බහු ගිණුම්";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "ස්වයංක්‍රීය ගෙවීම් නැත";
+"AUTOPAYMENTS_NEW_TITLE" = "නව ස්වයංක්‍රීය ගෙවීම";
+"AUTOPAYMENTS_PERIOD" = "කාලසීමාව";
+"AUTOPAYMENTS_START_DATE" = "ආරම්භක දිනය";

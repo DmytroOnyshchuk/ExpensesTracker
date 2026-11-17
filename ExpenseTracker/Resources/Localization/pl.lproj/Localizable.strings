@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Język";
 "MENU_ABOUT" = "O aplikacji";
 "MENU_TRASH" = "Kosz";
+"MENU_AUTOPAYMENTS" = "Płatności automatyczne";
 "MENU_SECTION_GENERAL" = "Ogólne";
 "MENU_SECTION_DATA" = "Dane";
 "MENU_SECTION_APP" = "Aplikacja";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Ewidencja wydatków";
 "ACCOUNTING_INCOME" = "Ewidencja przychodów";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Wiele kont";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Brak płatności automatycznych";
+"AUTOPAYMENTS_NEW_TITLE" = "Nowa płatność automatyczna";
+"AUTOPAYMENTS_PERIOD" = "Okres";
+"AUTOPAYMENTS_START_DATE" = "Data rozpoczęcia";

@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Luqadda";
 "MENU_ABOUT" = "Ku saabsan";
 "MENU_TRASH" = "Qashinka";
+"MENU_AUTOPAYMENTS" = "Lacag-bixinno toos ah";
 "MENU_SECTION_GENERAL" = "Guud";
 "MENU_SECTION_DATA" = "Xogta";
 "MENU_SECTION_APP" = "App";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Xisaabinta kharashka";
 "ACCOUNTING_INCOME" = "Xisaabinta dakhliga";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Akoonno badan";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Ma jiraan lacag-bixinno toos ah";
+"AUTOPAYMENTS_NEW_TITLE" = "Lacag-bixin toos ah oo cusub";
+"AUTOPAYMENTS_PERIOD" = "Muddo";
+"AUTOPAYMENTS_START_DATE" = "Taariikhda bilowga";

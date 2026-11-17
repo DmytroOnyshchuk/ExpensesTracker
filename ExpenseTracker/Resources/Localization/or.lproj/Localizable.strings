@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "ଭାଷା";
 "MENU_ABOUT" = "ବିଷୟରେ";
 "MENU_TRASH" = "ଟ୍ରାସ୍";
+"MENU_AUTOPAYMENTS" = "ସ୍ୱୟଂଚାଳିତ ପେମେଣ୍ଟ";
 "MENU_SECTION_GENERAL" = "ସାଧାରଣ";
 "MENU_SECTION_DATA" = "ଡାଟା";
 "MENU_SECTION_APP" = "ଆପ୍";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "ଖର୍ଚ୍ଚର ହିସାବ";
 "ACCOUNTING_INCOME" = "ଆୟର ହିସାବ";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "ଏକାଧିକ ଆକାଉଣ୍ଟ";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "କୌଣସି ସ୍ୱୟଂଚାଳିତ ପେମେଣ୍ଟ ନାହିଁ";
+"AUTOPAYMENTS_NEW_TITLE" = "ନୂଆ ସ୍ୱୟଂଚାଳିତ ପେମେଣ୍ଟ";
+"AUTOPAYMENTS_PERIOD" = "ଅବଧି";
+"AUTOPAYMENTS_START_DATE" = "ଆରମ୍ଭ ତାରିଖ";

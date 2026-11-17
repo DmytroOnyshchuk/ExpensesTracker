@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Lugha";
 "MENU_ABOUT" = "Kuhusu";
 "MENU_TRASH" = "Tupio";
+"MENU_AUTOPAYMENTS" = "Malipo ya kiotomatiki";
 "MENU_SECTION_GENERAL" = "Jumla";
 "MENU_SECTION_DATA" = "Data";
 "MENU_SECTION_APP" = "Programu";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Uhasibu wa matumizi";
 "ACCOUNTING_INCOME" = "Uhasibu wa mapato";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Akaunti nyingi";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Hakuna malipo ya kiotomatiki";
+"AUTOPAYMENTS_NEW_TITLE" = "Malipo mapya ya kiotomatiki";
+"AUTOPAYMENTS_PERIOD" = "Kipindi";
+"AUTOPAYMENTS_START_DATE" = "Tarehe ya kuanza";

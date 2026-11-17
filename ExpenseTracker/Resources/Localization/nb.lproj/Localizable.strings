@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Språk";
 "MENU_ABOUT" = "Om";
 "MENU_TRASH" = "Papirkurv";
+"MENU_AUTOPAYMENTS" = "Automatiske betalinger";
 "MENU_SECTION_GENERAL" = "Generelt";
 "MENU_SECTION_DATA" = "Data";
 "MENU_SECTION_APP" = "App";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Utgiftsregnskap";
 "ACCOUNTING_INCOME" = "Inntektsregnskap";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Flere kontoer";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Ingen automatiske betalinger";
+"AUTOPAYMENTS_NEW_TITLE" = "Ny automatisk betaling";
+"AUTOPAYMENTS_PERIOD" = "Periode";
+"AUTOPAYMENTS_START_DATE" = "Startdato";

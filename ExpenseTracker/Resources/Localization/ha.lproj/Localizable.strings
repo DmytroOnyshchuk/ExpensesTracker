@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Harshe";
 "MENU_ABOUT" = "Game da";
 "MENU_TRASH" = "Kwandon shara";
+"MENU_AUTOPAYMENTS" = "Biyan kuɗi na atomatik";
 "MENU_SECTION_GENERAL" = "Gabaɗaya";
 "MENU_SECTION_DATA" = "Bayanai";
 "MENU_SECTION_APP" = "Manhaja";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Lissafin kashe kuɗi";
 "ACCOUNTING_INCOME" = "Lissafin kuɗin shiga";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Asusu da yawa";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Babu biyan kuɗi na atomatik";
+"AUTOPAYMENTS_NEW_TITLE" = "Sabon biyan kuɗi na atomatik";
+"AUTOPAYMENTS_PERIOD" = "Lokaci";
+"AUTOPAYMENTS_START_DATE" = "Ranar farawa";

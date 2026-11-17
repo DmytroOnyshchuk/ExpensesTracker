@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "ဘာသာစကား";
 "MENU_ABOUT" = "အကြောင်း";
 "MENU_TRASH" = "အမှိုက်ပုံး";
+"MENU_AUTOPAYMENTS" = "အလိုအလျောက် ငွေပေးချေမှုများ";
 "MENU_SECTION_GENERAL" = "အထွေထွေ";
 "MENU_SECTION_DATA" = "ဒေတာ";
 "MENU_SECTION_APP" = "အက်ပ်";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "အသုံးစရိတ် စာရင်း";
 "ACCOUNTING_INCOME" = "ဝင်ငွေ စာရင်း";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "အကောင့်များစွာ";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "အလိုအလျောက် ငွေပေးချေမှု မရှိပါ";
+"AUTOPAYMENTS_NEW_TITLE" = "အလိုအလျောက် ငွေပေးချေမှု အသစ်";
+"AUTOPAYMENTS_PERIOD" = "ကာလ";
+"AUTOPAYMENTS_START_DATE" = "စတင်သည့်ရက်";

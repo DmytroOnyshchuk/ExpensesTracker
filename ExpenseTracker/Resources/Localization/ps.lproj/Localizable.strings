@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "ژبه";
 "MENU_ABOUT" = "په اړه";
 "MENU_TRASH" = "کثافت‌دانۍ";
+"MENU_AUTOPAYMENTS" = "اتومات تادیات";
 "MENU_SECTION_GENERAL" = "عمومي";
 "MENU_SECTION_DATA" = "معلومات";
 "MENU_SECTION_APP" = "اپلیکیشن";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "د لګښتونو محاسبه";
 "ACCOUNTING_INCOME" = "د عاید محاسبه";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "څو حسابونه";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "اتومات تادیات نشته";
+"AUTOPAYMENTS_NEW_TITLE" = "نوې اتومات تادیه";
+"AUTOPAYMENTS_PERIOD" = "موده";
+"AUTOPAYMENTS_START_DATE" = "د پیل نېټه";

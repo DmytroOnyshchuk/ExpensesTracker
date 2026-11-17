@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Hizkuntza";
 "MENU_ABOUT" = "Honi buruz";
 "MENU_TRASH" = "Zakarrontzia";
+"MENU_AUTOPAYMENTS" = "Ordainketa automatikoak";
 "MENU_SECTION_GENERAL" = "Orokorra";
 "MENU_SECTION_DATA" = "Datuak";
 "MENU_SECTION_APP" = "Aplikazioa";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Gastuen kontabilitatea";
 "ACCOUNTING_INCOME" = "Diru-sarreren kontabilitatea";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Hainbat kontu";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Ez dago ordainketa automatikorik";
+"AUTOPAYMENTS_NEW_TITLE" = "Ordainketa automatiko berria";
+"AUTOPAYMENTS_PERIOD" = "Epea";
+"AUTOPAYMENTS_START_DATE" = "Hasiera-data";

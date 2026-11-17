@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Dil";
 "MENU_ABOUT" = "Haqqında";
 "MENU_TRASH" = "Səbət";
+"MENU_AUTOPAYMENTS" = "Avtomatik ödənişlər";
 "MENU_SECTION_GENERAL" = "Ümumi";
 "MENU_SECTION_DATA" = "Məlumatlar";
 "MENU_SECTION_APP" = "Tətbiq";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Xərclərin uçotu";
 "ACCOUNTING_INCOME" = "Gəlirlərin uçotu";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Bir neçə hesab";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Avtomatik ödəniş yoxdur";
+"AUTOPAYMENTS_NEW_TITLE" = "Yeni avtomatik ödəniş";
+"AUTOPAYMENTS_PERIOD" = "Dövr";
+"AUTOPAYMENTS_START_DATE" = "Başlama tarixi";

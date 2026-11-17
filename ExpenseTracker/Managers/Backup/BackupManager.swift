@@ -211,6 +211,9 @@ enum BackupManager {
         let snapshot = backup.snapshot
 
         if mode == .replace {
+            for autoPayment in try context.fetch(FetchDescriptor<AutoPayment>()) {
+                context.delete(autoPayment)
+            }
             for transaction in try context.fetch(FetchDescriptor<Transaction>()) {
                 context.delete(transaction)
             }

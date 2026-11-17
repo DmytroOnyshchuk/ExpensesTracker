@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Iaith";
 "MENU_ABOUT" = "Ynghylch";
 "MENU_TRASH" = "Bin";
+"MENU_AUTOPAYMENTS" = "Taliadau awtomatig";
 "MENU_SECTION_GENERAL" = "Cyffredinol";
 "MENU_SECTION_DATA" = "Data";
 "MENU_SECTION_APP" = "Ap";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Cyfrifo treuliau";
 "ACCOUNTING_INCOME" = "Cyfrifo incwm";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Cyfrifon lluosog";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Dim taliadau awtomatig";
+"AUTOPAYMENTS_NEW_TITLE" = "Taliad awtomatig newydd";
+"AUTOPAYMENTS_PERIOD" = "Cyfnod";
+"AUTOPAYMENTS_START_DATE" = "Dyddiad dechrau";

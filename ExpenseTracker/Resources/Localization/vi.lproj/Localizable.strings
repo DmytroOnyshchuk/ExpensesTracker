@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Ngôn ngữ";
 "MENU_ABOUT" = "Giới thiệu";
 "MENU_TRASH" = "Thùng rác";
+"MENU_AUTOPAYMENTS" = "Thanh toán tự động";
 "MENU_SECTION_GENERAL" = "Chung";
 "MENU_SECTION_DATA" = "Dữ liệu";
 "MENU_SECTION_APP" = "Ứng dụng";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Ghi chép chi tiêu";
 "ACCOUNTING_INCOME" = "Ghi chép thu nhập";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Nhiều tài khoản";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Không có thanh toán tự động";
+"AUTOPAYMENTS_NEW_TITLE" = "Thanh toán tự động mới";
+"AUTOPAYMENTS_PERIOD" = "Khoảng thời gian";
+"AUTOPAYMENTS_START_DATE" = "Ngày bắt đầu";

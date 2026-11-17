@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Asụsụ";
 "MENU_ABOUT" = "Maka";
 "MENU_TRASH" = "Ahịhịa";
+"MENU_AUTOPAYMENTS" = "Ịkwụ ụgwọ akpaaka";
 "MENU_SECTION_GENERAL" = "Izugbe";
 "MENU_SECTION_DATA" = "Data";
 "MENU_SECTION_APP" = "Ngwa";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Ndekọ mmefu";
 "ACCOUNTING_INCOME" = "Ndekọ ego mbata";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Ọtụtụ akaụntụ";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Enweghị ịkwụ ụgwọ akpaaka";
+"AUTOPAYMENTS_NEW_TITLE" = "Ịkwụ ụgwọ akpaaka ọhụrụ";
+"AUTOPAYMENTS_PERIOD" = "Oge";
+"AUTOPAYMENTS_START_DATE" = "Ụbọchị mmalite";

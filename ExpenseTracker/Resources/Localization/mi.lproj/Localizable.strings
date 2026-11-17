@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Reo";
 "MENU_ABOUT" = "Mō";
 "MENU_TRASH" = "Ipu para";
+"MENU_AUTOPAYMENTS" = "Ngā utu aunoa";
 "MENU_SECTION_GENERAL" = "Whānui";
 "MENU_SECTION_DATA" = "Raraunga";
 "MENU_SECTION_APP" = "Taupānga";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Kaute whakapaunga";
 "ACCOUNTING_INCOME" = "Kaute moni whiwhi";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Pūkete maha";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Kāore he utu aunoa";
+"AUTOPAYMENTS_NEW_TITLE" = "Utu aunoa hou";
+"AUTOPAYMENTS_PERIOD" = "Wā";
+"AUTOPAYMENTS_START_DATE" = "Rā tīmata";

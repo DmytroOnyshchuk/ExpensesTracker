@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Язык";
 "MENU_ABOUT" = "О программе";
 "MENU_TRASH" = "Корзина";
+"MENU_AUTOPAYMENTS" = "Автоплатежи";
 "MENU_SECTION_GENERAL" = "Основные";
 "MENU_SECTION_DATA" = "Данные";
 "MENU_SECTION_APP" = "Приложение";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Учёт расходов";
 "ACCOUNTING_INCOME" = "Учёт доходов";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Несколько счетов";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Нет автоплатежей";
+"AUTOPAYMENTS_NEW_TITLE" = "Новый автоплатёж";
+"AUTOPAYMENTS_PERIOD" = "Период";
+"AUTOPAYMENTS_START_DATE" = "Дата начала";

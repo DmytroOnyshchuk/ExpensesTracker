@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "ภาษา";
 "MENU_ABOUT" = "เกี่ยวกับ";
 "MENU_TRASH" = "ถังขยะ";
+"MENU_AUTOPAYMENTS" = "การชำระเงินอัตโนมัติ";
 "MENU_SECTION_GENERAL" = "ทั่วไป";
 "MENU_SECTION_DATA" = "ข้อมูล";
 "MENU_SECTION_APP" = "แอป";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "บันทึกรายจ่าย";
 "ACCOUNTING_INCOME" = "บันทึกรายรับ";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "หลายบัญชี";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "ไม่มีการชำระเงินอัตโนมัติ";
+"AUTOPAYMENTS_NEW_TITLE" = "การชำระเงินอัตโนมัติใหม่";
+"AUTOPAYMENTS_PERIOD" = "ช่วงเวลา";
+"AUTOPAYMENTS_START_DATE" = "วันที่เริ่มต้น";

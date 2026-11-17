@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "언어";
 "MENU_ABOUT" = "정보";
 "MENU_TRASH" = "휴지통";
+"MENU_AUTOPAYMENTS" = "자동 결제";
 "MENU_SECTION_GENERAL" = "일반";
 "MENU_SECTION_DATA" = "데이터";
 "MENU_SECTION_APP" = "앱";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "지출 기록";
 "ACCOUNTING_INCOME" = "수입 기록";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "여러 계좌";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "자동 결제 없음";
+"AUTOPAYMENTS_NEW_TITLE" = "새 자동 결제";
+"AUTOPAYMENTS_PERIOD" = "기간";
+"AUTOPAYMENTS_START_DATE" = "시작일";

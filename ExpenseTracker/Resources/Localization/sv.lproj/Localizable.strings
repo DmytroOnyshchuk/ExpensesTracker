@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Språk";
 "MENU_ABOUT" = "Om";
 "MENU_TRASH" = "Papperskorg";
+"MENU_AUTOPAYMENTS" = "Automatiska betalningar";
 "MENU_SECTION_GENERAL" = "Allmänt";
 "MENU_SECTION_DATA" = "Data";
 "MENU_SECTION_APP" = "App";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Utgiftsbokföring";
 "ACCOUNTING_INCOME" = "Inkomstbokföring";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Flera konton";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Inga automatiska betalningar";
+"AUTOPAYMENTS_NEW_TITLE" = "Ny automatisk betalning";
+"AUTOPAYMENTS_PERIOD" = "Period";
+"AUTOPAYMENTS_START_DATE" = "Startdatum";

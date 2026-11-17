@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Tungumál";
 "MENU_ABOUT" = "Um forritið";
 "MENU_TRASH" = "Rusl";
+"MENU_AUTOPAYMENTS" = "Sjálfvirkar greiðslur";
 "MENU_SECTION_GENERAL" = "Almennt";
 "MENU_SECTION_DATA" = "Gögn";
 "MENU_SECTION_APP" = "Forrit";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Útgjaldabókhald";
 "ACCOUNTING_INCOME" = "Tekjubókhald";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Margir reikningar";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Engar sjálfvirkar greiðslur";
+"AUTOPAYMENTS_NEW_TITLE" = "Ný sjálfvirk greiðsla";
+"AUTOPAYMENTS_PERIOD" = "Tímabil";
+"AUTOPAYMENTS_START_DATE" = "Upphafsdagur";

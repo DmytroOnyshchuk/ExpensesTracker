@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "భాష";
 "MENU_ABOUT" = "పరిచయం";
 "MENU_TRASH" = "ట్రాష్";
+"MENU_AUTOPAYMENTS" = "ఆటోమేటిక్ చెల్లింపులు";
 "MENU_SECTION_GENERAL" = "సాధారణం";
 "MENU_SECTION_DATA" = "డేటా";
 "MENU_SECTION_APP" = "యాప్";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "ఖర్చుల లెక్క";
 "ACCOUNTING_INCOME" = "ఆదాయ లెక్క";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "బహుళ ఖాతాలు";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "ఆటోమేటిక్ చెల్లింపులు లేవు";
+"AUTOPAYMENTS_NEW_TITLE" = "కొత్త ఆటోమేటిక్ చెల్లింపు";
+"AUTOPAYMENTS_PERIOD" = "వ్యవధి";
+"AUTOPAYMENTS_START_DATE" = "ప్రారంభ తేదీ";

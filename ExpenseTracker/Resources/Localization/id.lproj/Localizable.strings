@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Bahasa";
 "MENU_ABOUT" = "Tentang";
 "MENU_TRASH" = "Tempat Sampah";
+"MENU_AUTOPAYMENTS" = "Pembayaran otomatis";
 "MENU_SECTION_GENERAL" = "Umum";
 "MENU_SECTION_DATA" = "Data";
 "MENU_SECTION_APP" = "Aplikasi";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Pencatatan pengeluaran";
 "ACCOUNTING_INCOME" = "Pencatatan pemasukan";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Beberapa akun";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Tidak ada pembayaran otomatis";
+"AUTOPAYMENTS_NEW_TITLE" = "Pembayaran otomatis baru";
+"AUTOPAYMENTS_PERIOD" = "Periode";
+"AUTOPAYMENTS_START_DATE" = "Tanggal mulai";

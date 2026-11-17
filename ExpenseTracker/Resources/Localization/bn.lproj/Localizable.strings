@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "ভাষা";
 "MENU_ABOUT" = "সম্পর্কে";
 "MENU_TRASH" = "ট্র্যাশ";
+"MENU_AUTOPAYMENTS" = "স্বয়ংক্রিয় পেমেন্ট";
 "MENU_SECTION_GENERAL" = "সাধারণ";
 "MENU_SECTION_DATA" = "ডেটা";
 "MENU_SECTION_APP" = "অ্যাপ";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "ব্যয়ের হিসাব";
 "ACCOUNTING_INCOME" = "আয়ের হিসাব";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "একাধিক অ্যাকাউন্ট";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "কোনো স্বয়ংক্রিয় পেমেন্ট নেই";
+"AUTOPAYMENTS_NEW_TITLE" = "নতুন স্বয়ংক্রিয় পেমেন্ট";
+"AUTOPAYMENTS_PERIOD" = "সময়কাল";
+"AUTOPAYMENTS_START_DATE" = "শুরুর তারিখ";

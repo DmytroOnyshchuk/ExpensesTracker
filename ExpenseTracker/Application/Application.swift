@@ -17,7 +17,7 @@ struct ExpenseTracker: App {
                 .modifier(SystemColorSchemeObserver())
                 .preferredColorScheme(ThemeManager.shared.preferredColorScheme)
         }
-        .modelContainer(for: [Transaction.self, TransactionCategory.self, Account.self]) { result in
+        .modelContainer(for: [Transaction.self, TransactionCategory.self, Account.self, AutoPayment.self]) { result in
             switch result {
             case let .success(container):
                 DataSeeder.seedDefaultCategories(container: container)
@@ -29,6 +29,8 @@ struct ExpenseTracker: App {
 }
 
 struct AppRootView: View {
+    @Environment(\.modelContext) private var modelContext
+    @Environment(\.scenePhase) private var scenePhase
     @State private var isResetting = false
 
     var body: some View {
@@ -40,6 +42,11 @@ struct AppRootView: View {
             }
         }
         .onAppear(perform: PasscodeManager.shared.start)
+        .onChange(of: scenePhase, initial: true) { _, phase in
+            if phase == .active, !isResetting {
+                modelContext.runAutoPayments()
+            }
+        }
         .onReceive(NotificationCenter.default.publisher(for: .appLogout)) { _ in
             isResetting = true
         }

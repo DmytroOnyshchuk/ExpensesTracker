@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Kalba";
 "MENU_ABOUT" = "Apie";
 "MENU_TRASH" = "Šiukšlinė";
+"MENU_AUTOPAYMENTS" = "Automatiniai mokėjimai";
 "MENU_SECTION_GENERAL" = "Bendrieji";
 "MENU_SECTION_DATA" = "Duomenys";
 "MENU_SECTION_APP" = "Programa";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Išlaidų apskaita";
 "ACCOUNTING_INCOME" = "Pajamų apskaita";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Kelios sąskaitos";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Automatinių mokėjimų nėra";
+"AUTOPAYMENTS_NEW_TITLE" = "Naujas automatinis mokėjimas";
+"AUTOPAYMENTS_PERIOD" = "Laikotarpis";
+"AUTOPAYMENTS_START_DATE" = "Pradžios data";

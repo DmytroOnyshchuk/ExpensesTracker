@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "ቋንቋ";
 "MENU_ABOUT" = "ስለ";
 "MENU_TRASH" = "መጣያ";
+"MENU_AUTOPAYMENTS" = "ራስ-ሰር ክፍያዎች";
 "MENU_SECTION_GENERAL" = "አጠቃላይ";
 "MENU_SECTION_DATA" = "ውሂብ";
 "MENU_SECTION_APP" = "መተግበሪያ";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "የወጪ ሂሳብ";
 "ACCOUNTING_INCOME" = "የገቢ ሂሳብ";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "ብዙ መለያዎች";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "ራስ-ሰር ክፍያዎች የሉም";
+"AUTOPAYMENTS_NEW_TITLE" = "አዲስ ራስ-ሰር ክፍያ";
+"AUTOPAYMENTS_PERIOD" = "ጊዜ";
+"AUTOPAYMENTS_START_DATE" = "የመጀመሪያ ቀን";

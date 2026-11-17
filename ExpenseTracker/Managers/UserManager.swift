@@ -54,6 +54,9 @@ extension UserManager {
     }
 
     private func clearDatabase(_ context: ModelContext) throws {
+        for autoPayment in try context.fetch(FetchDescriptor<AutoPayment>()) {
+            context.delete(autoPayment)
+        }
         for transaction in try context.fetch(FetchDescriptor<Transaction>()) {
             context.delete(transaction)
         }

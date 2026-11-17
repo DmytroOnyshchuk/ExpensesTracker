@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Limbă";
 "MENU_ABOUT" = "Despre";
 "MENU_TRASH" = "Coș";
+"MENU_AUTOPAYMENTS" = "Plăți automate";
 "MENU_SECTION_GENERAL" = "General";
 "MENU_SECTION_DATA" = "Date";
 "MENU_SECTION_APP" = "Aplicație";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Evidența cheltuielilor";
 "ACCOUNTING_INCOME" = "Evidența veniturilor";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Mai multe conturi";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Nicio plată automată";
+"AUTOPAYMENTS_NEW_TITLE" = "Plată automată nouă";
+"AUTOPAYMENTS_PERIOD" = "Perioadă";
+"AUTOPAYMENTS_START_DATE" = "Data de început";

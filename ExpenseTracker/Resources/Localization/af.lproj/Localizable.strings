@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Taal";
 "MENU_ABOUT" = "Meer oor";
 "MENU_TRASH" = "Asblik";
+"MENU_AUTOPAYMENTS" = "Outomatiese betalings";
 "MENU_SECTION_GENERAL" = "Algemeen";
 "MENU_SECTION_DATA" = "Data";
 "MENU_SECTION_APP" = "Toepassing";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Uitgawerekeningkunde";
 "ACCOUNTING_INCOME" = "Inkomsterekeningkunde";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Veelvuldige rekeninge";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Geen outomatiese betalings nie";
+"AUTOPAYMENTS_NEW_TITLE" = "Nuwe outomatiese betaling";
+"AUTOPAYMENTS_PERIOD" = "Tydperk";
+"AUTOPAYMENTS_START_DATE" = "Begindatum";

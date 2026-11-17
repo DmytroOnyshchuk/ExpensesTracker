@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "Mál";
 "MENU_ABOUT" = "Um";
 "MENU_TRASH" = "Ruskspann";
+"MENU_AUTOPAYMENTS" = "Sjálvvirkandi gjaldingar";
 "MENU_SECTION_GENERAL" = "Alment";
 "MENU_SECTION_DATA" = "Dáta";
 "MENU_SECTION_APP" = "App";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "Útreiðsluroknskapur";
 "ACCOUNTING_INCOME" = "Inntøkuroknskapur";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Fleiri kontur";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "Ongar sjálvvirkandi gjaldingar";
+"AUTOPAYMENTS_NEW_TITLE" = "Nýggj sjálvvirkandi gjalding";
+"AUTOPAYMENTS_PERIOD" = "Tíðarskeið";
+"AUTOPAYMENTS_START_DATE" = "Byrjunardagur";

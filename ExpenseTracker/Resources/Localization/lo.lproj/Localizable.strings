@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "ພາສາ";
 "MENU_ABOUT" = "ກ່ຽວກັບ";
 "MENU_TRASH" = "ຖັງຂີ້ເຫຍື້ອ";
+"MENU_AUTOPAYMENTS" = "ການຈ່າຍເງິນອັດຕະໂນມັດ";
 "MENU_SECTION_GENERAL" = "ທົ່ວໄປ";
 "MENU_SECTION_DATA" = "ຂໍ້ມູນ";
 "MENU_SECTION_APP" = "ແອັບ";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "ບັນຊີລາຍຈ່າຍ";
 "ACCOUNTING_INCOME" = "ບັນຊີລາຍຮັບ";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "ຫຼາຍບັນຊີ";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "ບໍ່ມີການຈ່າຍເງິນອັດຕະໂນມັດ";
+"AUTOPAYMENTS_NEW_TITLE" = "ການຈ່າຍເງິນອັດຕະໂນມັດໃໝ່";
+"AUTOPAYMENTS_PERIOD" = "ໄລຍະເວລາ";
+"AUTOPAYMENTS_START_DATE" = "ວັນທີເລີ່ມຕົ້ນ";

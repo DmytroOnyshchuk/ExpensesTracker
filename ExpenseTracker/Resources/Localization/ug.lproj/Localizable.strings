@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "تىل";
 "MENU_ABOUT" = "ھەققىدە";
 "MENU_TRASH" = "ئەخلەت ساندۇقى";
+"MENU_AUTOPAYMENTS" = "ئاپتوماتىك تۆلەملەر";
 "MENU_SECTION_GENERAL" = "ئادەتتىكى";
 "MENU_SECTION_DATA" = "سانلىق مەلۇمات";
 "MENU_SECTION_APP" = "ئەپ";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "چىقىم ھېساباتى";
 "ACCOUNTING_INCOME" = "كىرىم ھېساباتى";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "كۆپ ھېسابات";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "ئاپتوماتىك تۆلەم يوق";
+"AUTOPAYMENTS_NEW_TITLE" = "يېڭى ئاپتوماتىك تۆلەم";
+"AUTOPAYMENTS_PERIOD" = "مەزگىل";
+"AUTOPAYMENTS_START_DATE" = "باشلىنىش ۋاقتى";

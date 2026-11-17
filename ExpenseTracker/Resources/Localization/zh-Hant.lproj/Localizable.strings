@@ -75,6 +75,7 @@
 "MENU_LANGUAGE" = "語言";
 "MENU_ABOUT" = "關於";
 "MENU_TRASH" = "垃圾桶";
+"MENU_AUTOPAYMENTS" = "自動付款";
 "MENU_SECTION_GENERAL" = "一般";
 "MENU_SECTION_DATA" = "資料";
 "MENU_SECTION_APP" = "App";
@@ -254,3 +255,9 @@
 "ACCOUNTING_EXPENSES" = "支出記帳";
 "ACCOUNTING_INCOME" = "收入記帳";
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "多個帳戶";
+
+// MARK: - Autopayments
+"AUTOPAYMENTS_EMPTY" = "沒有自動付款";
+"AUTOPAYMENTS_NEW_TITLE" = "新增自動付款";
+"AUTOPAYMENTS_PERIOD" = "期間";
+"AUTOPAYMENTS_START_DATE" = "開始日期";
