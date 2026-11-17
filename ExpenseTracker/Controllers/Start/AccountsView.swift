@@ -261,27 +261,15 @@ struct AccountEditPopup: View {
     }
 
     private var disableOption: some View {
-        Button {
-            isDisabled.toggle()
-        } label: {
-            HStack(spacing: 12) {
-                Image(systemName: isDisabled ? "checkmark.circle.fill" : "circle")
-                    .font(.system(size: 22))
-                    .foregroundColor(isDisabled ? .appPrimary : .appLabel)
-                    .frame(width: 24)
-
-                Text(L10n.accountsDisable)
-                    .font(.appLight(16))
-                    .foregroundColor(.appWhite)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.7)
-
-                Spacer(minLength: 0)
-            }
-            .padding(.horizontal, 14)
-            .contentShape(Rectangle())
+        Toggle(isOn: $isDisabled) {
+            Text(L10n.accountsDisable)
+                .font(.appLight(16))
+                .foregroundColor(.appWhite)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
         }
-        .buttonStyle(.plain)
+        .tint(.appPrimary)
+        .padding(.horizontal, 14)
         .disabled(!canDisable)
         .opacity(canDisable ? 1 : 0.4)
     }
