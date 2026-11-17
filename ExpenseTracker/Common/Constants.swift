@@ -17,8 +17,6 @@ enum Constants {
         #endif
     }
 
-    static let testId: String = "testId"
-
     static let appStoreId: String = "0000000000"
 
     static var appStoreURL: URL {

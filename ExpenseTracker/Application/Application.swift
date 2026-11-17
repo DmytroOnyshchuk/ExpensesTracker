@@ -59,6 +59,7 @@ struct AppResetView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .appBackground()
             .task {
+                try? await Task.sleep(for: .milliseconds(500))
                 do {
                     try UserManager.shared.logout(context: modelContext)
                 } catch {
