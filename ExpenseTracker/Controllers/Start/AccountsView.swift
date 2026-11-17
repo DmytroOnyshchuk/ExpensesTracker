@@ -192,49 +192,118 @@ struct AccountEditPopup: View {
     }
 
     var body: some View {
-        TransactionEditPopup(
-            canConfirm: !name.isBlank,
-            onCancel: cancel,
-            onConfirm: confirm
-        ) {
-            VStack(spacing: 12) {
-                Text(title)
-                    .font(.appMedium(14))
-                    .foregroundColor(.appLabel)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.7)
-                    .padding(.horizontal, 16)
+        ZStack {
+            Color.appOverlay.opacity(0.4)
+                .ignoresSafeArea()
+                .onTapGesture(perform: cancel)
 
-                field(
-                    TextField("", text: $name, prompt: Text(L10n.accountsName).foregroundColor(.appLabel.opacity(0.6)))
-                        .focused($focusedField, equals: .name)
-                        .submitLabel(.next)
-                        .onSubmit { focusedField = .amount }
-                )
+            VStack(spacing: 20) {
+                header
 
-                field(
-                    TextField("", text: $amountText, prompt: Text("0").foregroundColor(.appLabel.opacity(0.6)))
-                        .keyboardType(.decimalPad)
-                        .focused($focusedField, equals: .amount)
-                )
+                VStack(spacing: 12) {
+                    field(L10n.accountsName, systemImage: "pencil", isFocused: focusedField == .name) {
+                        TextField("", text: $name, prompt: Text(L10n.accountsNew).foregroundColor(.appLabel.opacity(0.5)))
+                            .font(.appRegular(18))
+                            .focused($focusedField, equals: .name)
+                            .submitLabel(.next)
+                            .onSubmit { focusedField = .amount }
+                    }
+                    .onTapGesture { focusedField = .name }
+
+                    field(L10n.startviewBalance, systemImage: "banknote", isFocused: focusedField == .amount) {
+                        TextField("", text: $amountText, prompt: Text("0").foregroundColor(.appLabel.opacity(0.5)))
+                            .font(.appMedium(22))
+                            .keyboardType(.decimalPad)
+                            .focused($focusedField, equals: .amount)
+                    }
+                    .onTapGesture { focusedField = .amount }
+                }
+
+                HStack(spacing: 12) {
+                    actionButton(L10n.cancel, isPrimary: false, action: cancel)
+
+                    actionButton(L10n.save, isPrimary: true, action: confirm)
+                        .disabled(!canConfirm)
+                        .opacity(canConfirm ? 1 : 0.4)
+                }
             }
+            .padding(20)
+            .frame(maxWidth: 360)
+            .glassSurface(
+                in: RoundedRectangle(cornerRadius: 28, style: .continuous),
+                fallback: .appSecond
+            )
+            .padding(.horizontal, 28)
+            .animation(.easeInOut(duration: 0.2), value: focusedField)
+            .animation(.easeInOut(duration: 0.2), value: canConfirm)
         }
         .onAppear {
             focusedField = name.isBlank ? .name : .amount
         }
     }
 
-    private func field(_ content: some View) -> some View {
-        content
-            .font(.appRegular(20))
-            .foregroundColor(.appWhite)
-            .tint(.appPrimary)
-            .multilineTextAlignment(.center)
-            .padding(.horizontal, 12)
-            .frame(height: 44)
-            .background(.appMain.opacity(LiquidGlass.isAvailable ? 0.5 : 1))
-            .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
-            .padding(.horizontal, 16)
+    private var canConfirm: Bool {
+        !name.isBlank
+    }
+
+    private var header: some View {
+        VStack(spacing: 12) {
+            Image(systemName: "creditcard.fill")
+                .font(.system(size: 24))
+                .foregroundColor(.appPrimary)
+                .frame(width: 56, height: 56)
+                .background(.appPrimary.opacity(0.15), in: Circle())
+
+            Text(title)
+                .font(.appMedium(18))
+                .foregroundColor(.appWhite)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+        }
+    }
+
+    private func field(_ title: String, systemImage: String, isFocused: Bool, @ViewBuilder content: () -> some View) -> some View {
+        HStack(spacing: 12) {
+            Image(systemName: systemImage)
+                .font(.system(size: 16))
+                .foregroundColor(isFocused ? .appPrimary : .appLabel)
+                .frame(width: 24)
+
+            VStack(alignment: .leading, spacing: 2) {
+                Text(title)
+                    .font(.appLight(12))
+                    .foregroundColor(.appLabel)
+                    .lineLimit(1)
+
+                content()
+                    .foregroundColor(.appWhite)
+                    .tint(.appPrimary)
+            }
+        }
+        .padding(.horizontal, 14)
+        .frame(height: 60)
+        .background(.appMain.opacity(LiquidGlass.isAvailable ? 0.5 : 1), in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+        .overlay {
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .stroke(.appPrimary.opacity(isFocused ? 0.8 : 0), lineWidth: 1)
+        }
+        .contentShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+    }
+
+    private func actionButton(_ title: String, isPrimary: Bool, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            Text(title)
+                .font(.appMedium(16))
+                .foregroundColor(isPrimary ? .appMain : .appWhite)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+                .padding(.horizontal, 8)
+                .frame(maxWidth: .infinity)
+                .frame(height: 48)
+                .background(isPrimary ? Color.appPrimary : Color.appLabel.opacity(0.15), in: Capsule())
+                .contentShape(Capsule())
+        }
+        .buttonStyle(.plain)
     }
 
     private func cancel() {
