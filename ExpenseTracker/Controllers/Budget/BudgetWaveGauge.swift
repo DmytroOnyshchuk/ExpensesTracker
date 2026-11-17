@@ -52,10 +52,12 @@ struct BudgetWaveGauge: View {
     private var isExceeded: Bool { remaining < .zero }
     private var color: Color { isExceeded ? .appRed : .appPrimary }
 
-    private var fraction: Double {
+    private var spentShare: Double {
         guard limit > .zero else { return .zero }
-        return min(max(remaining.double / limit.double, .zero), 1)
+        return max(spent.double / limit.double, .zero)
     }
+
+    private var fraction: Double { min(spentShare, 1) }
 
     var body: some View {
         let level = isFilled ? fraction : .zero
@@ -86,7 +88,7 @@ struct BudgetWaveGauge: View {
         }
         .overlay {
             VStack(spacing: 2) {
-                Text("\(Int((fraction * 100).rounded()))%")
+                Text("\(Int((spentShare * 100).rounded()))%")
                     .font(.appRegular(34))
                     .foregroundColor(.appWhite)
                     .contentTransition(.numericText())
