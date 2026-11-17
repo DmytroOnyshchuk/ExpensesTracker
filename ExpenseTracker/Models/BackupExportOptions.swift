@@ -28,7 +28,8 @@ enum BackupExportPeriod: CaseIterable, Identifiable {
 }
 
 struct BackupExportOptions {
-    var accountUuids: Set<UUID>?
+    var includesAllAccounts = true
+    var accountUuids: Set<UUID> = []
     var period = BackupExportPeriod.allHistory
     var customStart: Date
     var customEnd: Date
@@ -39,17 +40,23 @@ struct BackupExportOptions {
     }
 
     func isSelected(_ account: Account) -> Bool {
-        accountUuids?.contains(account.uuid) ?? false
+        !includesAllAccounts && accountUuids.contains(account.uuid)
     }
 
     mutating func toggle(_ account: Account) {
-        var selected = accountUuids ?? []
-        if selected.contains(account.uuid) {
-            selected.remove(account.uuid)
+        if includesAllAccounts {
+            includesAllAccounts = false
+            accountUuids = [account.uuid]
+        } else if accountUuids.contains(account.uuid) {
+            accountUuids.remove(account.uuid)
         } else {
-            selected.insert(account.uuid)
+            accountUuids.insert(account.uuid)
         }
-        accountUuids = selected.isEmpty ? nil : selected
+    }
+
+    mutating func selectAllAccounts() {
+        includesAllAccounts = true
+        accountUuids = []
     }
 
     func dateRange(now: Date = Date(), calendar: Calendar = .current) -> Range<Date>? {
@@ -72,7 +79,7 @@ struct BackupExportOptions {
             if let range, !range.contains(transaction.date) {
                 return false
             }
-            if let accountUuids {
+            if !includesAllAccounts {
                 guard let uuid = transaction.account?.uuid, accountUuids.contains(uuid) else { return false }
             }
             return true

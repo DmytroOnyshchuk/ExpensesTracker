@@ -376,20 +376,18 @@ struct BackupExportOptionsSheet: View {
                             .foregroundColor(.appLabel)
                     }
 
-                    if !accounts.isEmpty {
-                        BackupSection(title: L10n.accountsTitle) {
-                            BackupExportOptionRow(
-                                title: L10n.backupsExportAllAccounts,
-                                isSelected: options.accountUuids == nil,
-                                action: selectAllAccounts
-                            )
+                    BackupSection(title: L10n.accountsTitle) {
+                        BackupExportOptionRow(
+                            title: L10n.backupsExportAllAccounts,
+                            isSelected: options.includesAllAccounts,
+                            action: selectAllAccounts
+                        )
 
-                            ForEach(accounts) { account in
-                                BackupExportOptionDivider()
+                        ForEach(accounts) { account in
+                            BackupExportOptionDivider()
 
-                                BackupExportOptionRow(title: account.name, isSelected: options.isSelected(account)) {
-                                    toggle(account)
-                                }
+                            BackupExportOptionRow(title: account.name, isSelected: options.isSelected(account)) {
+                                toggle(account)
                             }
                         }
                     }
@@ -453,9 +451,9 @@ struct BackupExportOptionsSheet: View {
     }
 
     private func selectAllAccounts() {
-        guard options.accountUuids != nil else { return }
+        guard !options.includesAllAccounts else { return }
         FeedbackManager.shared.selectionChanged()
-        options.accountUuids = nil
+        options.selectAllAccounts()
     }
 
     private func toggle(_ account: Account) {
