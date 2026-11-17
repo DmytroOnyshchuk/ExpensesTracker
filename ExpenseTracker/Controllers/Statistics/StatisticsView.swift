@@ -62,6 +62,9 @@ struct StatisticsView: View {
         )
         .navigationTitle(directory?.name.localized ?? operationType.title)
         .navigationBarTitleDisplayMode(.inline)
+        .onChange(of: resetToken) {
+            selectedOperationType = .outcome
+        }
         .toolbar {
             if directory == nil {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
