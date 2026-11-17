@@ -47,6 +47,7 @@ struct StartView: View {
                             action: openAccounts
                         )
                         .padding(.horizontal, 8)
+                        .padding(.vertical, -12)
                     }
 
                     DigitPadView(input: $input, placeholder: operationType.enterAmountTitle, attentionTrigger: amountAttentionTrigger)
@@ -69,6 +70,7 @@ struct StartView: View {
                     }
 
                     TransactionsList(transactions: transactions.of(operationType), operationType: operationType)
+                        .padding(.top, -12)
 
                     historyButton
                 }
