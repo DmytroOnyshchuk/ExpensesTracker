@@ -404,8 +404,8 @@ internal enum L10n {
   internal static let transactionEditAddNote = L10n.tr("Localizable", "TRANSACTION_EDIT_ADD_NOTE", fallback: "Add note")
   /// Amount
   internal static let transactionEditAmount = L10n.tr("Localizable", "TRANSACTION_EDIT_AMOUNT", fallback: "Amount")
-  /// Balance
-  internal static let transactionEditBalance = L10n.tr("Localizable", "TRANSACTION_EDIT_BALANCE", fallback: "Balance")
+  /// Account
+  internal static let transactionEditBalance = L10n.tr("Localizable", "TRANSACTION_EDIT_BALANCE", fallback: "Account")
   /// Categories
   internal static let transactionEditCategoriesTitle = L10n.tr("Localizable", "TRANSACTION_EDIT_CATEGORIES_TITLE", fallback: "Categories")
   /// Category

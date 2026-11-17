@@ -99,7 +99,7 @@
 // MARK: - TransactionEdit
 "TRANSACTION_EDIT_TITLE" = "Редагування";
 "TRANSACTION_EDIT_CATEGORY" = "Стаття";
-"TRANSACTION_EDIT_BALANCE" = "Баланс";
+"TRANSACTION_EDIT_BALANCE" = "Рахунок";
 "TRANSACTION_EDIT_AMOUNT" = "Сума";
 "TRANSACTION_EDIT_DATE" = "Дата";
 "TRANSACTION_EDIT_TIME" = "Час";
