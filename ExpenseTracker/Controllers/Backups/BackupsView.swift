@@ -423,11 +423,6 @@ struct BackupExportOptionsSheet: View {
                             .padding(.vertical, 10)
                         }
                     }
-
-                    Text(L10n.backupsTransactionsCount(matchingCount))
-                        .font(.appLight(15))
-                        .foregroundColor(.appLabel)
-                        .padding(.horizontal, 16)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
