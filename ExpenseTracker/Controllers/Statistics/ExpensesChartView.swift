@@ -13,12 +13,12 @@ import SwiftUI
 struct ExpensesChartView: View {
     var operationType: OperationType = .outcome
 
-    @Query private var storedTransactions: [Transaction]
-    @Query private var storedCategories: [TransactionCategory]
+    @Query(filter: Transaction.visible) private var storedTransactions: [Transaction]
+    @Query(filter: TransactionCategory.notDeleted) private var storedCategories: [TransactionCategory]
 
-    private var transactions: [Transaction] { storedTransactions.visible.of(operationType) }
+    private var transactions: [Transaction] { storedTransactions.of(operationType) }
 
-    private var categories: [TransactionCategory] { storedCategories.notDeleted.of(operationType) }
+    private var categories: [TransactionCategory] { storedCategories.of(operationType) }
 
     @State private var period: StatisticsPeriod = .day
     @State private var selection: DateInterval? = StatisticsPeriod.day.defaultSelection()
@@ -83,6 +83,10 @@ struct ExpensesChartView: View {
         .navigationTitle(L10n.statisticsChart)
         .navigationBarTitleDisplayMode(.inline)
     }
+}
+
+extension ExpensesChartView: Equatable {
+    nonisolated static func == (lhs: ExpensesChartView, rhs: ExpensesChartView) -> Bool { lhs.operationType == rhs.operationType }
 }
 
 struct ExpensesChart: View {

@@ -11,14 +11,11 @@ import SwiftUI
 
 struct AccountsView: View {
     @Environment(\.modelContext) private var modelContext
-    @Query(sort: \Account.sortIndex) private var storedAccounts: [Account]
-    @Query private var storedTransactions: [Transaction]
+    @Query(filter: Account.notDeleted, sort: \Account.sortIndex) private var accounts: [Account]
+    @Query(filter: Transaction.notDeleted) private var transactions: [Transaction]
 
     @State private var editingAccount: Account?
     @State private var showNewAccount = false
-
-    private var accounts: [Account] { storedAccounts.notDeleted }
-    private var transactions: [Transaction] { storedTransactions.notDeleted }
 
     var body: some View {
         let transactions = transactions
@@ -130,6 +127,10 @@ struct AccountsView: View {
         modelContext.insert(account)
         try? modelContext.save()
     }
+}
+
+extension AccountsView: Equatable {
+    nonisolated static func == (lhs: AccountsView, rhs: AccountsView) -> Bool { true }
 }
 
 struct InsetDivider: View {

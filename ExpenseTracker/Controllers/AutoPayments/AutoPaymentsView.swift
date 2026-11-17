@@ -10,12 +10,12 @@ import SwiftData
 import SwiftUI
 
 struct AutoPaymentsView: View {
-    @Query private var storedAutoPayments: [AutoPayment]
+    @Query(filter: AutoPayment.active) private var storedAutoPayments: [AutoPayment]
 
     @State private var showAddAutoPayment = false
     @State private var selectedAutoPayment: AutoPayment?
 
-    private var autoPayments: [AutoPayment] { storedAutoPayments.active.inDisplayOrder }
+    private var autoPayments: [AutoPayment] { storedAutoPayments.inDisplayOrder }
 
     var body: some View {
         let autoPayments = autoPayments
@@ -64,6 +64,10 @@ struct AutoPaymentsView: View {
             AutoPaymentEdit(autoPayment: autoPayment)
         }
     }
+}
+
+extension AutoPaymentsView: Equatable {
+    nonisolated static func == (lhs: AutoPaymentsView, rhs: AutoPaymentsView) -> Bool { true }
 }
 
 struct AutoPaymentRow: View {

@@ -15,7 +15,7 @@ final class DataSeeder: NSObject {
     }
 
     static func seedDefaultAccount(in context: ModelContext) {
-        let accounts = ((try? context.fetch(FetchDescriptor<Account>())) ?? []).notDeleted.inDisplayOrder
+        let accounts = (try? context.fetch(FetchDescriptor<Account>(predicate: Account.notDeleted, sortBy: [SortDescriptor(\.sortIndex)]))) ?? []
         let transactions = (try? context.fetch(FetchDescriptor<Transaction>())) ?? []
 
         let defaultAccount: Account

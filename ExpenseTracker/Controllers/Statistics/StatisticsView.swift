@@ -14,8 +14,8 @@ struct StatisticsView: View {
     var resetToken: Int = .zero
     var directory: TransactionCategory?
 
-    @Query private var storedTransactions: [Transaction]
-    @Query private var storedCategories: [TransactionCategory]
+    @Query(filter: Transaction.visible) private var storedTransactions: [Transaction]
+    @Query(filter: TransactionCategory.notDeleted) private var storedCategories: [TransactionCategory]
 
     @State private var period: StatisticsPeriod
     @State private var selectedOperationType: OperationType = .outcome
@@ -28,16 +28,15 @@ struct StatisticsView: View {
     }
 
     private var transactions: [Transaction] {
-        let transactions = storedTransactions.visible
-        guard let directoryUuid = directory?.uuid else { return transactions.of(operationType) }
+        guard let directoryUuid = directory?.uuid else { return storedTransactions.of(operationType) }
 
-        return transactions.filter {
+        return storedTransactions.filter {
             $0.category.parentUuid == directoryUuid || $0.category.uuid == directoryUuid
         }
     }
 
     private var categories: [TransactionCategory] {
-        directory == nil ? storedCategories.notDeleted.of(operationType) : []
+        directory == nil ? storedCategories.of(operationType) : []
     }
 
     init(
@@ -95,6 +94,10 @@ struct StatisticsView: View {
         FeedbackManager.shared.selectionChanged()
         selectedOperationType = operationType.toggled
     }
+}
+
+extension StatisticsView: Equatable {
+    nonisolated static func == (lhs: StatisticsView, rhs: StatisticsView) -> Bool { lhs.resetToken == rhs.resetToken && lhs.directory?.persistentModelID == rhs.directory?.persistentModelID && lhs.initialDate == rhs.initialDate }
 }
 
 struct StatisticsContent: View {

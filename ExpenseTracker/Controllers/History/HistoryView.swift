@@ -12,13 +12,12 @@ import SwiftUI
 struct HistoryView: View {
     @Environment(\.modelContext) private var modelContext
 
-    @Query(sort: \Transaction.date, order: .reverse) private var storedTransactions: [Transaction]
+    @Query(filter: Transaction.visible, sort: \Transaction.date, order: .reverse) private var storedTransactions: [Transaction]
 
     @StoredSettings private var appSettings
 
     private var transactions: [Transaction] {
-        let transactions = storedTransactions.visible
-        return appSettings.accounting.incomeEnabled ? transactions : transactions.of(.outcome)
+        appSettings.accounting.incomeEnabled ? storedTransactions : storedTransactions.of(.outcome)
     }
 
     @State private var anchorDate = Date()
@@ -199,6 +198,10 @@ struct HistoryView: View {
             anchorDate = date
         }
     }
+}
+
+extension HistoryView: Equatable {
+    nonisolated static func == (lhs: HistoryView, rhs: HistoryView) -> Bool { true }
 }
 
 #Preview("History") {

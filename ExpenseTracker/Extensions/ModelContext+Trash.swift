@@ -80,16 +80,16 @@ extension ModelContext {
     }
 
     func emptyTrash() {
-        let transactions = (try? fetch(FetchDescriptor<Transaction>())) ?? []
-        for transaction in transactions where transaction.deletedAt != nil || transaction.category.deletedAt != nil || transaction.account?.deletedAt != nil {
+        let transactions = (try? fetch(FetchDescriptor<Transaction>(predicate: Transaction.inTrashWithOwners))) ?? []
+        for transaction in transactions {
             delete(transaction)
         }
-        let categories = (try? fetch(FetchDescriptor<TransactionCategory>())) ?? []
-        for category in categories.inTrash {
+        let categories = (try? fetch(FetchDescriptor<TransactionCategory>(predicate: TransactionCategory.inTrash))) ?? []
+        for category in categories {
             delete(category)
         }
-        let accounts = (try? fetch(FetchDescriptor<Account>())) ?? []
-        for account in accounts.inTrash {
+        let accounts = (try? fetch(FetchDescriptor<Account>(predicate: Account.inTrash))) ?? []
+        for account in accounts {
             delete(account)
         }
         try? save()

@@ -16,17 +16,9 @@ struct BackupExportRequest {
 struct BackupsView: View {
     @Environment(\.modelContext) private var modelContext
 
-    @Query private var storedTransactions: [Transaction]
-    @Query private var storedCategories: [TransactionCategory]
-    @Query private var storedAccounts: [Account]
-
-    private var transactions: [Transaction] { storedTransactions.notDeleted }
-
-    private var categories: [TransactionCategory] { storedCategories.notDeleted }
-
-    private var selectableAccounts: [Account] {
-        storedAccounts.notDeleted.inDisplayOrder
-    }
+    @Query(filter: Transaction.notDeleted) private var transactions: [Transaction]
+    @Query(filter: TransactionCategory.notDeleted) private var categories: [TransactionCategory]
+    @Query(filter: Account.notDeleted, sort: \Account.sortIndex) private var selectableAccounts: [Account]
 
     @State private var isImporting = false
     @State private var isChoosingFormat = false
@@ -190,6 +182,10 @@ struct BackupsView: View {
         Logger.default.logError("Backup export failed", error: error, category: "BackupsView")
         errorMessage = error.localizedDescription
     }
+}
+
+extension BackupsView: Equatable {
+    nonisolated static func == (lhs: BackupsView, rhs: BackupsView) -> Bool { true }
 }
 
 private struct BackupImportModifier: ViewModifier {

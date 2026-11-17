@@ -94,11 +94,6 @@ final class AutoPayment {
         category?.operationType ?? .outcome
     }
 
-    var isActive: Bool {
-        guard let category else { return false }
-        return category.deletedAt == nil && account?.deletedAt == nil
-    }
-
     var nextDate: Date {
         Calendar.current.date(byAdding: periodUnit.calendarComponent, value: max(periodCount, 1) * completedPayments, to: startDate) ?? startDate
     }
@@ -115,11 +110,11 @@ final class AutoPayment {
     }
 }
 
-extension [AutoPayment] {
-    var active: [AutoPayment] {
-        filter(\.isActive)
-    }
+extension AutoPayment {
+    static let active = #Predicate<AutoPayment> { !($0.category == nil) && $0.category?.deletedAt == nil && ($0.account == nil || $0.account?.deletedAt == nil) }
+}
 
+extension [AutoPayment] {
     var inDisplayOrder: [AutoPayment] {
         sorted { $0.nextDate < $1.nextDate }
     }
@@ -127,7 +122,7 @@ extension [AutoPayment] {
 
 extension ModelContext {
     func runAutoPayments(now: Date = Date()) {
-        let autoPayments = ((try? fetch(FetchDescriptor<AutoPayment>())) ?? []).active
+        let autoPayments = (try? fetch(FetchDescriptor<AutoPayment>(predicate: AutoPayment.active))) ?? []
         var hasChanges = false
 
         for autoPayment in autoPayments {

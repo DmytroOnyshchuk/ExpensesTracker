@@ -44,19 +44,14 @@ final class Transaction {
     }
 }
 
+extension Transaction {
+    static let notDeleted = #Predicate<Transaction> { $0.deletedAt == nil }
+    static let visible = #Predicate<Transaction> { $0.deletedAt == nil && ($0.account == nil || $0.account?.isDisabled == false) }
+    static let inTrash = #Predicate<Transaction> { $0.deletedAt != nil }
+    static let inTrashWithOwners = #Predicate<Transaction> { $0.deletedAt != nil || $0.category.deletedAt != nil || $0.account?.deletedAt != nil }
+}
+
 extension [Transaction] {
-    var notDeleted: [Transaction] {
-        filter { $0.deletedAt == nil }
-    }
-
-    var visible: [Transaction] {
-        filter { $0.deletedAt == nil && $0.account?.isDisabled != true }
-    }
-
-    var inTrash: [Transaction] {
-        filter { $0.deletedAt != nil }
-    }
-
     func of(_ operationType: OperationType) -> [Transaction] {
         filter { $0.operationType == operationType }
     }

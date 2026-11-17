@@ -14,9 +14,9 @@ struct TransactionCategoryPicker: View {
     var operationType: OperationType = .outcome
     let onSelect: (TransactionCategory) -> Void
 
-    @Query private var storedCategories: [TransactionCategory]
+    @Query(filter: TransactionCategory.notDeleted) private var storedCategories: [TransactionCategory]
 
-    private var categories: [TransactionCategory] { storedCategories.notDeleted.of(operationType) }
+    private var categories: [TransactionCategory] { storedCategories.of(operationType) }
     @Environment(\.modelContext) private var modelContext
     @State private var openedFolder: TransactionCategory?
 
@@ -55,6 +55,10 @@ struct TransactionCategoryPicker: View {
         visibleCategories.reorder(fromOffsets: source, toOffset: max(destination, foldersCount), among: categories)
         try? modelContext.save()
     }
+}
+
+extension TransactionCategoryPicker: Equatable {
+    nonisolated static func == (lhs: TransactionCategoryPicker, rhs: TransactionCategoryPicker) -> Bool { lhs.folder?.persistentModelID == rhs.folder?.persistentModelID && lhs.operationType == rhs.operationType }
 }
 
 #Preview {

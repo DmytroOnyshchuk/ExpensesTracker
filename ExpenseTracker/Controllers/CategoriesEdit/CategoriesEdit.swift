@@ -10,12 +10,11 @@ import SwiftData
 import SwiftUI
 
 struct CategoriesEdit: View {
-    @Query private var storedCategories: [TransactionCategory]
-    @Query private var storedTransactions: [Transaction]
+    @Query(filter: TransactionCategory.notDeleted) private var storedCategories: [TransactionCategory]
+    @Query(filter: Transaction.visible) private var transactions: [Transaction]
 
-    private var categories: [TransactionCategory] { storedCategories.notDeleted.of(operationType) }
+    private var categories: [TransactionCategory] { storedCategories.of(operationType) }
 
-    private var transactions: [Transaction] { storedTransactions.visible }
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var modelContext
 
@@ -135,6 +134,10 @@ struct CategoriesEdit: View {
         modelContext.insert(newFolder)
         try? modelContext.save()
     }
+}
+
+extension CategoriesEdit: Equatable {
+    nonisolated static func == (lhs: CategoriesEdit, rhs: CategoriesEdit) -> Bool { lhs.showsOperationTypePicker == rhs.showsOperationTypePicker }
 }
 
 #Preview {

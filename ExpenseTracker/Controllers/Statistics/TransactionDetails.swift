@@ -38,9 +38,7 @@ struct TransactionDetails: View {
 
     @Environment(\.modelContext) private var modelContext
 
-    @Query(animation: .default) private var storedTransactions: [Transaction]
-
-    private var transactions: [Transaction] { storedTransactions.visible }
+    @Query(filter: Transaction.visible, animation: .default) private var transactions: [Transaction]
 
     @State private var sorting: TransactionsSorting = .date
     @State private var editedTransaction: Transaction?
@@ -118,6 +116,10 @@ struct TransactionDetails: View {
     private func delete(_ transaction: Transaction) {
         modelContext.deleteWithUndo(transaction)
     }
+}
+
+extension TransactionDetails: Equatable {
+    nonisolated static func == (lhs: TransactionDetails, rhs: TransactionDetails) -> Bool { lhs.category.persistentModelID == rhs.category.persistentModelID && lhs.interval == rhs.interval }
 }
 
 struct TransactionDetailsRow: View {

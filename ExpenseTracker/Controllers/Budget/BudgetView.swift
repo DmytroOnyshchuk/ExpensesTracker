@@ -33,19 +33,19 @@ struct BudgetView: View {
 
     @Environment(\.modelContext) private var modelContext
 
-    @Query private var storedTransactions: [Transaction]
-    @Query private var storedCategories: [TransactionCategory]
+    @Query(filter: Transaction.visible) private var storedTransactions: [Transaction]
+    @Query(filter: TransactionCategory.nonDirectories) private var storedCategories: [TransactionCategory]
     @AppStorage(UDKey.budget.rawValue, store: UserDefaults.shared) private var budgetData: Data?
 
     @State private var target: BudgetTarget?
 
     var body: some View {
-        let categories = storedCategories.notDeleted.of(.outcome).filter { !$0.isDirectory }.inDisplayOrder
+        let categories = storedCategories.of(.outcome).inDisplayOrder
 
         NavigationStack {
             BudgetPager(
                 resetToken: resetToken,
-                buckets: StatisticsBuckets(period: .month, transactions: storedTransactions.visible.of(.outcome)),
+                buckets: StatisticsBuckets(period: .month, transactions: storedTransactions.of(.outcome)),
                 limited: categories.filter { $0.budget > .zero },
                 unlimited: categories.filter { $0.budget <= .zero },
                 monthlyLimit: monthlyLimit,

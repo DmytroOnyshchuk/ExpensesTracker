@@ -63,15 +63,14 @@ final class TransactionCategory {
     }
 }
 
+extension TransactionCategory {
+    static let notDeleted = #Predicate<TransactionCategory> { $0.deletedAt == nil }
+    static let directories = #Predicate<TransactionCategory> { $0.deletedAt == nil && $0.isDirectory }
+    static let nonDirectories = #Predicate<TransactionCategory> { $0.deletedAt == nil && !$0.isDirectory }
+    static let inTrash = #Predicate<TransactionCategory> { $0.deletedAt != nil }
+}
+
 extension [TransactionCategory] {
-    var notDeleted: [TransactionCategory] {
-        filter { $0.deletedAt == nil }
-    }
-
-    var inTrash: [TransactionCategory] {
-        filter { $0.deletedAt != nil }
-    }
-
     func of(_ operationType: OperationType) -> [TransactionCategory] {
         filter { $0.operationType == operationType }
     }

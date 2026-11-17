@@ -34,9 +34,9 @@ struct TrashView: View {
 
     @Environment(\.modelContext) private var modelContext
 
-    @Query private var storedAccounts: [Account]
-    @Query private var storedCategories: [TransactionCategory]
-    @Query private var storedTransactions: [Transaction]
+    @Query(filter: Account.inTrash, sort: \Account.deletedAt, order: .reverse) private var accounts: [Account]
+    @Query(filter: TransactionCategory.inTrash, sort: \TransactionCategory.deletedAt, order: .reverse) private var categories: [TransactionCategory]
+    @Query(filter: Transaction.inTrash, sort: \Transaction.deletedAt, order: .reverse) private var transactions: [Transaction]
 
     @State private var showClearConfirmation = false
     @State private var restoreTarget: Target?
@@ -44,21 +44,8 @@ struct TrashView: View {
     @State private var deleteTarget: Target?
     @State private var deleteConfirmation = String()
 
-    private var accounts: [Account] {
-        storedAccounts.inTrash.sorted { ($0.deletedAt ?? .distantPast) > ($1.deletedAt ?? .distantPast) }
-    }
-
-    private var categories: [TransactionCategory] {
-        storedCategories.inTrash.sorted { ($0.deletedAt ?? .distantPast) > ($1.deletedAt ?? .distantPast) }
-    }
-
     var body: some View {
-        let accounts = accounts
-        let categories = categories
-        let transactions = storedTransactions.inTrash
-        let visibleTransactions = transactions
-            .filter { $0.category.deletedAt == nil && $0.account?.deletedAt == nil }
-            .sorted { ($0.deletedAt ?? .distantPast) > ($1.deletedAt ?? .distantPast) }
+        let visibleTransactions = transactions.filter { $0.category.deletedAt == nil && $0.account?.deletedAt == nil }
         let transactionsCounts = transactions.reduce(into: [UUID: Int]()) { $0[$1.category.uuid, default: 0] += 1 }
         let accountTransactionsCounts = transactions.reduce(into: [UUID: Int]()) { counts, transaction in
             guard let uuid = transaction.account?.uuid else { return }
@@ -177,6 +164,10 @@ struct TrashView: View {
             Text(L10n.trashDeleteMessage)
         }
     }
+}
+
+extension TrashView: Equatable {
+    nonisolated static func == (lhs: TrashView, rhs: TrashView) -> Bool { true }
 }
 
 extension TrashView {

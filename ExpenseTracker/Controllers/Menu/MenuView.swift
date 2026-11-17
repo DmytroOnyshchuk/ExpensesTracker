@@ -73,12 +73,8 @@ enum MenuSection: CaseIterable, Identifiable {
 }
 
 struct MenuView: View {
-    @Query private var storedTransactions: [Transaction]
-
-    private var accounts: [Account] { storedAccounts.notDeleted }
-    private var transactions: [Transaction] { storedTransactions.notDeleted }
-
-    @Query private var storedAccounts: [Account]
+    @Query(filter: Transaction.notDeleted) private var transactions: [Transaction]
+    @Query(filter: Account.notDeleted) private var accounts: [Account]
     @StoredSettings private var appSettings
 
     @State private var showStatistics = false

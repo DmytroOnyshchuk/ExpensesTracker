@@ -57,17 +57,15 @@ final class Account {
     }
 }
 
-extension [Account] {
-    var notDeleted: [Account] {
-        filter { $0.deletedAt == nil }
-    }
+extension Account {
+    static let notDeleted = #Predicate<Account> { $0.deletedAt == nil }
+    static let available = #Predicate<Account> { $0.deletedAt == nil && !$0.isDisabled }
+    static let inTrash = #Predicate<Account> { $0.deletedAt != nil }
+}
 
+extension [Account] {
     var enabled: [Account] {
         filter { !$0.isDisabled }
-    }
-
-    var inTrash: [Account] {
-        filter { $0.deletedAt != nil }
     }
 
     var inDisplayOrder: [Account] {

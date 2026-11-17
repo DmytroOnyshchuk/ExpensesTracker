@@ -11,12 +11,10 @@ import SwiftData
 import SwiftUI
 
 struct EditCategoryView: View {
-    @Query(filter: #Predicate<TransactionCategory> { $0.isDirectory })
-    private var storedDirectories: [TransactionCategory]
-    @Query private var storedCategories: [TransactionCategory]
+    @Query(filter: TransactionCategory.directories) private var storedDirectories: [TransactionCategory]
+    @Query(filter: TransactionCategory.notDeleted) private var allCategories: [TransactionCategory]
 
-    private var allDirectories: [TransactionCategory] { storedDirectories.notDeleted.of(draft.operationType) }
-    private var allCategories: [TransactionCategory] { storedCategories.notDeleted }
+    private var allDirectories: [TransactionCategory] { storedDirectories.of(draft.operationType) }
 
     private let category: TransactionCategory?
     @State private var draft: CategoryDraft
@@ -419,6 +417,10 @@ struct EditCategoryView: View {
         modelContext.deleteWithUndo(category)
         dismiss()
     }
+}
+
+extension EditCategoryView: Equatable {
+    nonisolated static func == (lhs: EditCategoryView, rhs: EditCategoryView) -> Bool { lhs.category?.persistentModelID == rhs.category?.persistentModelID }
 }
 
 #Preview("New category") {

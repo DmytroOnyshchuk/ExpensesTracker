@@ -22,12 +22,9 @@ struct StartView: View {
     @State private var showAccounts = false
     @State private var selectedOperationType: OperationType = .outcome
     @AppStorage(UDKey.selectedAccount.rawValue, store: UserDefaults.shared) private var selectedAccountId = String()
-    @Query(sort: \Account.sortIndex) private var storedAccounts: [Account]
+    @Query(filter: Account.available, sort: \Account.sortIndex) private var accounts: [Account]
     @StoredSettings private var appSettings
-    @Query(sort: \Transaction.date, order: .reverse, animation: .default) private var storedTransactions: [Transaction]
-
-    private var accounts: [Account] { storedAccounts.notDeleted.enabled }
-    private var transactions: [Transaction] { storedTransactions.visible }
+    @Query(filter: Transaction.visible, sort: \Transaction.date, order: .reverse, animation: .default) private var transactions: [Transaction]
 
     private var operationType: OperationType {
         appSettings.accounting.incomeEnabled ? selectedOperationType : .outcome

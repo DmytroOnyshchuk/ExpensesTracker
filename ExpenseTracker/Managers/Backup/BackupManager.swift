@@ -69,9 +69,9 @@ enum BackupManager {
 
     @MainActor
     static func exportData(from context: ModelContext) throws -> Data {
-        let categories = try context.fetch(FetchDescriptor<TransactionCategory>()).notDeleted
-        let transactions = try context.fetch(FetchDescriptor<Transaction>(sortBy: [SortDescriptor(\.date)])).notDeleted
-        let accounts = try context.fetch(FetchDescriptor<Account>()).notDeleted.inDisplayOrder
+        let categories = try context.fetch(FetchDescriptor<TransactionCategory>(predicate: TransactionCategory.notDeleted))
+        let transactions = try context.fetch(FetchDescriptor<Transaction>(predicate: Transaction.notDeleted, sortBy: [SortDescriptor(\.date)]))
+        let accounts = try context.fetch(FetchDescriptor<Account>(predicate: Account.notDeleted, sortBy: [SortDescriptor(\.sortIndex)]))
 
         let snapshot = BackupSnapshot(
             categories: categories.map { category in
@@ -122,8 +122,8 @@ enum BackupManager {
         format: BackupExportFormat,
         options: BackupExportOptions = BackupExportOptions()
     ) throws -> Data {
-        let categories = try context.fetch(FetchDescriptor<TransactionCategory>()).notDeleted
-        let stored = try context.fetch(FetchDescriptor<Transaction>(sortBy: [SortDescriptor(\.date)])).notDeleted
+        let categories = try context.fetch(FetchDescriptor<TransactionCategory>(predicate: TransactionCategory.notDeleted))
+        let stored = try context.fetch(FetchDescriptor<Transaction>(predicate: Transaction.notDeleted, sortBy: [SortDescriptor(\.date)]))
         let transactions = options.filter(stored)
 
         let rows = transactions.map { transaction in

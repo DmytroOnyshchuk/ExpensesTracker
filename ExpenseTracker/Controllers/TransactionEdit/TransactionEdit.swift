@@ -21,11 +21,11 @@ struct TransactionEdit: View {
     @State private var popup: Popup?
     @State private var showCategoryPicker = false
     @State private var amountText = String()
-    @Query(sort: \Account.sortIndex) private var storedAccounts: [Account]
+    @Query(filter: Account.notDeleted, sort: \Account.sortIndex) private var storedAccounts: [Account]
 
     @StoredSettings private var appSettings
 
-    private var accounts: [Account] { storedAccounts.notDeleted.filter { !$0.isDisabled || $0.uuid == draft.account?.uuid } }
+    private var accounts: [Account] { storedAccounts.filter { !$0.isDisabled || $0.uuid == draft.account?.uuid } }
     @FocusState private var isAmountFocused: Bool
     @FocusState private var isNoteFocused: Bool
 
@@ -340,6 +340,10 @@ struct TransactionEdit: View {
         modelContext.deleteWithUndo(transaction)
         dismiss()
     }
+}
+
+extension TransactionEdit: Equatable {
+    nonisolated static func == (lhs: TransactionEdit, rhs: TransactionEdit) -> Bool { lhs.transaction.persistentModelID == rhs.transaction.persistentModelID }
 }
 
 #Preview {
