@@ -65,7 +65,7 @@ struct BudgetWaveGauge: View {
 
             ZStack {
                 Circle()
-                    .fill(color.opacity(0.12))
+                    .fill(RadialGradient(colors: [color.opacity(0.5), color.opacity(0.28), color.opacity(0.1)], center: UnitPoint(x: 0.5, y: 0.4), startRadius: .zero, endRadius: size * 0.6))
 
                 BudgetWaveShape(level: level, phase: time * 1.1, amplitude: size * 0.028, waves: 1.3)
                     .fill(color.opacity(0.4))
@@ -75,6 +75,7 @@ struct BudgetWaveGauge: View {
             }
             .clipShape(Circle())
         }
+        .shadow(color: color.opacity(0.25), radius: size * 0.08)
         .overlay {
             Circle()
                 .strokeBorder(isExceeded ? Color.appRed.opacity(0.6) : Color.appWhite.opacity(0.2), lineWidth: 1)
