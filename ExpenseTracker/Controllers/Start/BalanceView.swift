@@ -16,32 +16,14 @@ struct BalanceCard: View {
     let onSelect: (Account) -> Void
     let action: () -> Void
 
+    @State private var showAccountList = false
+
     var body: some View {
         HStack(spacing: 12) {
-            Menu {
-                ForEach(accounts, id: \.uuid) { account in
-                    Button {
-                        onSelect(account)
-                    } label: {
-                        if account.uuid == selected?.uuid {
-                            Label("\(account.name) · \(amountFor(account).getAmount())", systemImage: "checkmark")
-                        } else {
-                            Text("\(account.name) · \(amountFor(account).getAmount())")
-                        }
-                    }
-                }
-            } label: {
-                HStack(spacing: 6) {
-                    Text(selected?.name ?? L10n.startviewBalance)
-                        .font(.appLight(18))
-                        .foregroundColor(.appLabel)
-                        .lineLimit(1)
-
-                    Image(systemName: "chevron.up.chevron.down")
-                        .font(.system(size: 11, weight: .semibold))
-                        .foregroundColor(.appLabel)
-                }
-                .contentShape(Rectangle())
+            if usesAccountPopover {
+                accountPopoverButton
+            } else {
+                accountMenu
             }
 
             Button(action: action) {
@@ -67,6 +49,111 @@ struct BalanceCard: View {
     private var amountColor: Color {
         guard let balance else { return .appLabel }
         return balance < .zero ? .appRed : .appWhite.opacity(0.75)
+    }
+
+    private var usesAccountPopover: Bool {
+        if #available(iOS 27.0, *) {
+            return false
+        }
+        if #available(iOS 26.0, *) {
+            return true
+        }
+        return false
+    }
+
+    private var accountLabel: some View {
+        HStack(spacing: 6) {
+            Text(selected?.name ?? L10n.startviewBalance)
+                .font(.appLight(18))
+                .foregroundColor(.appLabel)
+                .lineLimit(1)
+
+            Image(systemName: "chevron.up.chevron.down")
+                .font(.system(size: 11, weight: .semibold))
+                .foregroundColor(.appLabel)
+        }
+        .contentShape(Rectangle())
+    }
+
+    private var accountMenu: some View {
+        Menu {
+            ForEach(accounts, id: \.uuid) { account in
+                Button {
+                    onSelect(account)
+                } label: {
+                    if account.uuid == selected?.uuid {
+                        Label("\(account.name) · \(amountFor(account).getAmount())", systemImage: "checkmark")
+                    } else {
+                        Text("\(account.name) · \(amountFor(account).getAmount())")
+                    }
+                }
+            }
+        } label: {
+            accountLabel
+        }
+    }
+
+    private var accountPopoverButton: some View {
+        Button {
+            showAccountList = !accounts.isEmpty
+        } label: {
+            accountLabel
+        }
+        .buttonStyle(.plain)
+        .popover(isPresented: $showAccountList, attachmentAnchor: .rect(.bounds), arrowEdge: .top) {
+            BalanceAccountList(accounts: accounts, selected: selected, amountFor: amountFor) { account in
+                showAccountList = false
+                onSelect(account)
+            }
+            .presentationCompactAdaptation(.popover)
+        }
+    }
+}
+
+struct BalanceAccountList: View {
+    let accounts: [Account]
+    let selected: Account?
+    let amountFor: (Account) -> Int
+    var onSelect: (Account) -> Void
+
+    private static let rowHeight: CGFloat = 48
+    private static let maxHeight: CGFloat = 432
+
+    var body: some View {
+        ScrollViewReader { proxy in
+            ScrollView(.vertical) {
+                LazyVStack(spacing: 0) {
+                    ForEach(accounts, id: \.uuid) { account in
+                        Button {
+                            onSelect(account)
+                        } label: {
+                            HStack(spacing: 12) {
+                                Text("\(account.name) · \(amountFor(account).getAmount())")
+                                    .font(.appLight(18))
+                                    .lineLimit(1)
+                                    .minimumScaleFactor(0.7)
+
+                                Spacer(minLength: 0)
+
+                                if account.uuid == selected?.uuid {
+                                    Image(systemName: "checkmark")
+                                }
+                            }
+                            .foregroundColor(.appWhite)
+                            .padding(.horizontal, 20)
+                            .frame(height: Self.rowHeight)
+                            .contentShape(Rectangle())
+                        }
+                        .buttonStyle(.plain)
+                        .id(account.uuid)
+                    }
+                }
+            }
+            .onAppear {
+                proxy.scrollTo(selected?.uuid, anchor: .center)
+            }
+        }
+        .frame(width: 280, height: min(accounts.count.cgFloat * Self.rowHeight, Self.maxHeight))
     }
 }
 
