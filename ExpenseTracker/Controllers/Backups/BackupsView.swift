@@ -10,8 +10,7 @@ struct BackupShareFile: Identifiable {
 
 struct BackupsView: View {
     @Environment(\.modelContext) private var modelContext
-    @Inject private var userManager: UserManager
-    
+
     @Query private var storedTransactions: [Transaction]
     @Query private var storedCategories: [TransactionCategory]
 
@@ -96,13 +95,7 @@ struct BackupsView: View {
     }
 
     private func clear() {
-        do {
-            try userManager.logout(context: modelContext)
-        } catch {
-            modelContext.rollback()
-            Logger.default.logError("Clear failed", error: error, category: "BackupsView")
-            errorMessage = error.localizedDescription
-        }
+        NotificationCenter.default.post(name: .appLogout, object: nil)
     }
 
     private func chooseFormat() {
