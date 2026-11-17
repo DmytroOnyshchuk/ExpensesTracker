@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "ଆକାଉଣ୍ଟ ସମ୍ପାଦନ କରନ୍ତୁ";
 "ACCOUNTS_NAME" = "ନାମ";
 "ACCOUNTS_DISABLE" = "ଆକାଉଣ୍ଟ ଅକ୍ଷମ କରନ୍ତୁ";
+"ACCOUNTS_DEFAULT_NAME" = "ୱାଲେଟ୍";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ଖର୍ଚ୍ଚର ହିସାବ";

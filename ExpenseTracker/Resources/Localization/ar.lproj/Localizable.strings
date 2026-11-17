@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "تعديل الحساب";
 "ACCOUNTS_NAME" = "الاسم";
 "ACCOUNTS_DISABLE" = "تعطيل الحساب";
+"ACCOUNTS_DEFAULT_NAME" = "المحفظة";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "محاسبة المصروفات";

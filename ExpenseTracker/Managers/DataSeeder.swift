@@ -22,7 +22,7 @@ final class DataSeeder: NSObject {
         if let first = accounts.first {
             defaultAccount = first
         } else {
-            defaultAccount = Account(name: L10n.startviewBalance, checkpointDate: .distantPast)
+            defaultAccount = Account(name: L10n.accountsDefaultName, checkpointDate: .distantPast)
             context.insert(defaultAccount)
         }
 

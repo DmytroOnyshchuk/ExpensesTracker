@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Редактирование счёта";
 "ACCOUNTS_NAME" = "Название";
 "ACCOUNTS_DISABLE" = "Отключить счёт";
+"ACCOUNTS_DEFAULT_NAME" = "Кошелёк";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Учёт расходов";

@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "ویرایش حساب";
 "ACCOUNTS_NAME" = "نام";
 "ACCOUNTS_DISABLE" = "غیرفعال کردن حساب";
+"ACCOUNTS_DEFAULT_NAME" = "کیف پول";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "حسابداری هزینه‌ها";

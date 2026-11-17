@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "ਖਾਤਾ ਸੋਧੋ";
 "ACCOUNTS_NAME" = "ਨਾਮ";
 "ACCOUNTS_DISABLE" = "ਖਾਤਾ ਅਯੋਗ ਕਰੋ";
+"ACCOUNTS_DEFAULT_NAME" = "ਵਾਲਿਟ";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ਖਰਚਿਆਂ ਦਾ ਲੇਖਾ";

@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Редагування рахунку";
 "ACCOUNTS_NAME" = "Назва";
 "ACCOUNTS_DISABLE" = "Вимкнути рахунок";
+"ACCOUNTS_DEFAULT_NAME" = "Гаманець";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Облік витрат";

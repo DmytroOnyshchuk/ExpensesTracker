@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "অ্যাকাউন্ট সম্পাদনা";
 "ACCOUNTS_NAME" = "নাম";
 "ACCOUNTS_DISABLE" = "অ্যাকাউন্ট নিষ্ক্রিয় করুন";
+"ACCOUNTS_DEFAULT_NAME" = "ওয়ালেট";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ব্যয়ের হিসাব";

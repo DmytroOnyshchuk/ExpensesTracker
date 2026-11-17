@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "ખાતું સંપાદિત કરો";
 "ACCOUNTS_NAME" = "નામ";
 "ACCOUNTS_DISABLE" = "ખાતું અક્ષમ કરો";
+"ACCOUNTS_DEFAULT_NAME" = "વૉલેટ";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ખર્ચનો હિસાબ";

@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Konto bearbeiten";
 "ACCOUNTS_NAME" = "Name";
 "ACCOUNTS_DISABLE" = "Konto deaktivieren";
+"ACCOUNTS_DEFAULT_NAME" = "Geldbörse";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Ausgabenerfassung";

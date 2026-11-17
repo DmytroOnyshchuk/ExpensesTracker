@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "แก้ไขบัญชี";
 "ACCOUNTS_NAME" = "ชื่อ";
 "ACCOUNTS_DISABLE" = "ปิดใช้งานบัญชี";
+"ACCOUNTS_DEFAULT_NAME" = "กระเป๋าเงิน";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "บันทึกรายจ่าย";

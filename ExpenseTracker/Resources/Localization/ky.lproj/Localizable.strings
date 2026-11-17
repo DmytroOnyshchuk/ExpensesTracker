@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Эсепти түзөтүү";
 "ACCOUNTS_NAME" = "Аталышы";
 "ACCOUNTS_DISABLE" = "Эсепти өчүрүп коюу";
+"ACCOUNTS_DEFAULT_NAME" = "Капчык";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Чыгымдардын эсеби";

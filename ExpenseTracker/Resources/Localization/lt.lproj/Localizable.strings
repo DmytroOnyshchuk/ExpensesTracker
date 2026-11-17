@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Redaguoti sąskaitą";
 "ACCOUNTS_NAME" = "Pavadinimas";
 "ACCOUNTS_DISABLE" = "Išjungti sąskaitą";
+"ACCOUNTS_DEFAULT_NAME" = "Piniginė";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Išlaidų apskaita";

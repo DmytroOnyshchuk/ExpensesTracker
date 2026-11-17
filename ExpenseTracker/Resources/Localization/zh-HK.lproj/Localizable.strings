@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "編輯帳戶";
 "ACCOUNTS_NAME" = "名稱";
 "ACCOUNTS_DISABLE" = "停用帳戶";
+"ACCOUNTS_DEFAULT_NAME" = "錢包";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "支出記帳";

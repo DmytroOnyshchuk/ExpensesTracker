@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Redigera konto";
 "ACCOUNTS_NAME" = "Namn";
 "ACCOUNTS_DISABLE" = "Inaktivera konto";
+"ACCOUNTS_DEFAULT_NAME" = "Plånbok";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Utgiftsbokföring";

@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Muokkaa tiliä";
 "ACCOUNTS_NAME" = "Nimi";
 "ACCOUNTS_DISABLE" = "Poista tili käytöstä";
+"ACCOUNTS_DEFAULT_NAME" = "Lompakko";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Menojen kirjanpito";

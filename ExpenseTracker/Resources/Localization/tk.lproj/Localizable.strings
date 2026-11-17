@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Hasaby redaktirle";
 "ACCOUNTS_NAME" = "Ady";
 "ACCOUNTS_DISABLE" = "Hasaby öçür";
+"ACCOUNTS_DEFAULT_NAME" = "Gapjyk";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Çykdajylaryň hasaby";

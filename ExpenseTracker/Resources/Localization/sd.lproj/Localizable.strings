@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "اڪائونٽ ۾ ترميم ڪريو";
 "ACCOUNTS_NAME" = "نالو";
 "ACCOUNTS_DISABLE" = "اڪائونٽ غير فعال ڪريو";
+"ACCOUNTS_DEFAULT_NAME" = "ٻٽون";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "خرچن جو حساب";

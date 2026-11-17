@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "口座を編集";
 "ACCOUNTS_NAME" = "名前";
 "ACCOUNTS_DISABLE" = "口座を無効にする";
+"ACCOUNTS_DEFAULT_NAME" = "財布";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "支出の記録";

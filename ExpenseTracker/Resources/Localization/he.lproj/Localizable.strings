@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "עריכת חשבון";
 "ACCOUNTS_NAME" = "שם";
 "ACCOUNTS_DISABLE" = "השבתת החשבון";
+"ACCOUNTS_DEFAULT_NAME" = "ארנק";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "מעקב הוצאות";

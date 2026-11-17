@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Upraviť účet";
 "ACCOUNTS_NAME" = "Názov";
 "ACCOUNTS_DISABLE" = "Vypnúť účet";
+"ACCOUNTS_DEFAULT_NAME" = "Peňaženka";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Evidencia výdavkov";

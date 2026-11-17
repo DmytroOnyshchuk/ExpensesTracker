@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Modifier le compte";
 "ACCOUNTS_NAME" = "Nom";
 "ACCOUNTS_DISABLE" = "Désactiver le compte";
+"ACCOUNTS_DEFAULT_NAME" = "Portefeuille";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Suivi des dépenses";

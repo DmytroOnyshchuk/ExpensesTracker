@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Editja l-kont";
 "ACCOUNTS_NAME" = "Isem";
 "ACCOUNTS_DISABLE" = "Iddiżattiva l-kont";
+"ACCOUNTS_DEFAULT_NAME" = "Kartiera";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Kontabilità tal-ispejjeż";

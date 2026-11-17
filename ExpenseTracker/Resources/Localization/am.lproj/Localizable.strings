@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "መለያ አርትዕ";
 "ACCOUNTS_NAME" = "ስም";
 "ACCOUNTS_DISABLE" = "መለያውን አሰናክል";
+"ACCOUNTS_DEFAULT_NAME" = "የኪስ ቦርሳ";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "የወጪ ሂሳብ";

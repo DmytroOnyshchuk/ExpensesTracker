@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "ఖాతాను సవరించండి";
 "ACCOUNTS_NAME" = "పేరు";
 "ACCOUNTS_DISABLE" = "ఖాతాను నిలిపివేయండి";
+"ACCOUNTS_DEFAULT_NAME" = "వాలెట్";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ఖర్చుల లెక్క";

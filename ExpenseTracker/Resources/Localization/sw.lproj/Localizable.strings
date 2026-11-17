@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Hariri akaunti";
 "ACCOUNTS_NAME" = "Jina";
 "ACCOUNTS_DISABLE" = "Zima akaunti";
+"ACCOUNTS_DEFAULT_NAME" = "Pochi";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Uhasibu wa matumizi";

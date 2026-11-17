@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Sửa tài khoản";
 "ACCOUNTS_NAME" = "Tên";
 "ACCOUNTS_DISABLE" = "Tắt tài khoản";
+"ACCOUNTS_DEFAULT_NAME" = "Ví";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Ghi chép chi tiêu";

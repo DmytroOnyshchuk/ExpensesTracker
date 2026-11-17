@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Golygu'r cyfrif";
 "ACCOUNTS_NAME" = "Enw";
 "ACCOUNTS_DISABLE" = "Analluogi'r cyfrif";
+"ACCOUNTS_DEFAULT_NAME" = "Waled";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Cyfrifo treuliau";

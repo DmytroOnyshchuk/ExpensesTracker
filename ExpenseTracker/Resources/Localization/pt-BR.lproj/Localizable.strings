@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Editar conta";
 "ACCOUNTS_NAME" = "Nome";
 "ACCOUNTS_DISABLE" = "Desativar conta";
+"ACCOUNTS_DEFAULT_NAME" = "Carteira";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Controle de despesas";

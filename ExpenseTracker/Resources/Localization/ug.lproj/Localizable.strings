@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "ھېساباتنى تەھرىرلەش";
 "ACCOUNTS_NAME" = "ئىسىم";
 "ACCOUNTS_DISABLE" = "ھېساباتنى چەكلەش";
+"ACCOUNTS_DEFAULT_NAME" = "ھەميان";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "چىقىم ھېساباتى";

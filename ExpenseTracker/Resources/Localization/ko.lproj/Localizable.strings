@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "계좌 편집";
 "ACCOUNTS_NAME" = "이름";
 "ACCOUNTS_DISABLE" = "계좌 비활성화";
+"ACCOUNTS_DEFAULT_NAME" = "지갑";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "지출 기록";

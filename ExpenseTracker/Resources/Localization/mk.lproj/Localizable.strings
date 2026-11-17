@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Уреди сметка";
 "ACCOUNTS_NAME" = "Име";
 "ACCOUNTS_DISABLE" = "Оневозможи сметка";
+"ACCOUNTS_DEFAULT_NAME" = "Паричник";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Евиденција на трошоци";

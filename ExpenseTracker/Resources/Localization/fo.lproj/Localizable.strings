@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Broyt kontu";
 "ACCOUNTS_NAME" = "Navn";
 "ACCOUNTS_DISABLE" = "Ger kontu óvirkna";
+"ACCOUNTS_DEFAULT_NAME" = "Pungur";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Útreiðsluroknskapur";

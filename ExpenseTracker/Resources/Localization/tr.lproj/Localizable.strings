@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Hesabı düzenle";
 "ACCOUNTS_NAME" = "Ad";
 "ACCOUNTS_DISABLE" = "Hesabı devre dışı bırak";
+"ACCOUNTS_DEFAULT_NAME" = "Cüzdan";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Gider takibi";

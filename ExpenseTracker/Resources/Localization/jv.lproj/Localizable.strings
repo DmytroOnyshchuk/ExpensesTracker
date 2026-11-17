@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Owahi akun";
 "ACCOUNTS_NAME" = "Jeneng";
 "ACCOUNTS_DISABLE" = "Pateni akun";
+"ACCOUNTS_DEFAULT_NAME" = "Dompet";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Pencatatan pengeluaran";

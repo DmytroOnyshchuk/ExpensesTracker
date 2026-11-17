@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Рэдагаванне рахунку";
 "ACCOUNTS_NAME" = "Назва";
 "ACCOUNTS_DISABLE" = "Адключыць рахунак";
+"ACCOUNTS_DEFAULT_NAME" = "Кашалёк";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Улік выдаткаў";

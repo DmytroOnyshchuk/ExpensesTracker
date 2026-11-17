@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Խմբագրել հաշիվը";
 "ACCOUNTS_NAME" = "Անուն";
 "ACCOUNTS_DISABLE" = "Անջատել հաշիվը";
+"ACCOUNTS_DEFAULT_NAME" = "Դրամապանակ";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Ծախսերի հաշվառում";

@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Uredi račun";
 "ACCOUNTS_NAME" = "Ime";
 "ACCOUNTS_DISABLE" = "Onemogoči račun";
+"ACCOUNTS_DEFAULT_NAME" = "Denarnica";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Evidenca odhodkov";

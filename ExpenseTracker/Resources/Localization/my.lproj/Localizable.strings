@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "အကောင့် ပြင်ရန်";
 "ACCOUNTS_NAME" = "အမည်";
 "ACCOUNTS_DISABLE" = "အကောင့်ကို ပိတ်ထားရန်";
+"ACCOUNTS_DEFAULT_NAME" = "ပိုက်ဆံအိတ်";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "အသုံးစရိတ် စာရင်း";

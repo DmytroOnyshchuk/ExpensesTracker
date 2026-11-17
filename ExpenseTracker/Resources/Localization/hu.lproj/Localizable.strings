@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Számla szerkesztése";
 "ACCOUNTS_NAME" = "Név";
 "ACCOUNTS_DISABLE" = "Számla letiltása";
+"ACCOUNTS_DEFAULT_NAME" = "Pénztárca";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Kiadások nyilvántartása";

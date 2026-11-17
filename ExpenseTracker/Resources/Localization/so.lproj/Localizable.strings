@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Wax ka beddel akoonka";
 "ACCOUNTS_NAME" = "Magac";
 "ACCOUNTS_DISABLE" = "Dami akoonka";
+"ACCOUNTS_DEFAULT_NAME" = "Boorso";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Xisaabinta kharashka";

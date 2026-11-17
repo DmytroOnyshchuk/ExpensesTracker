@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Whakatikahia te pūkete";
 "ACCOUNTS_NAME" = "Ingoa";
 "ACCOUNTS_DISABLE" = "Whakakorehia te pūkete";
+"ACCOUNTS_DEFAULT_NAME" = "Pāhi";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Kaute whakapaunga";

@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Muuda kontot";
 "ACCOUNTS_NAME" = "Nimi";
 "ACCOUNTS_DISABLE" = "Keela konto";
+"ACCOUNTS_DEFAULT_NAME" = "Rahakott";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Kulude arvestus";

@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Hisobni tahrirlash";
 "ACCOUNTS_NAME" = "Nomi";
 "ACCOUNTS_DISABLE" = "Hisobni oʻchirib qoʻyish";
+"ACCOUNTS_DEFAULT_NAME" = "Hamyon";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Xarajatlar hisobi";

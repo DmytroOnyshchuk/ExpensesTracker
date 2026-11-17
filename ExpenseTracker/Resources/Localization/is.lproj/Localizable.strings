@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Breyta reikningi";
 "ACCOUNTS_NAME" = "Heiti";
 "ACCOUNTS_DISABLE" = "Gera reikning óvirkan";
+"ACCOUNTS_DEFAULT_NAME" = "Veski";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Útgjaldabókhald";

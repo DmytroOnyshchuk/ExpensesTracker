@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Hlela i-akhawunti";
 "ACCOUNTS_NAME" = "Igama";
 "ACCOUNTS_DISABLE" = "Khubaza i-akhawunti";
+"ACCOUNTS_DEFAULT_NAME" = "Isikhwama semali";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Ukubalwa kwezindleko";

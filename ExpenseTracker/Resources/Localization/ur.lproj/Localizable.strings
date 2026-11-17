@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "اکاؤنٹ میں ترمیم کریں";
 "ACCOUNTS_NAME" = "نام";
 "ACCOUNTS_DISABLE" = "اکاؤنٹ غیر فعال کریں";
+"ACCOUNTS_DEFAULT_NAME" = "بٹوہ";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "اخراجات کا حساب";

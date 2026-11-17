@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "கணக்கைத் திருத்து";
 "ACCOUNTS_NAME" = "பெயர்";
 "ACCOUNTS_DISABLE" = "கணக்கை முடக்கு";
+"ACCOUNTS_DEFAULT_NAME" = "பணப்பை";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "செலவுக் கணக்கு";

@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Edytuj konto";
 "ACCOUNTS_NAME" = "Nazwa";
 "ACCOUNTS_DISABLE" = "Wyłącz konto";
+"ACCOUNTS_DEFAULT_NAME" = "Portfel";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Ewidencja wydatków";

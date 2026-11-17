@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Счетны үзгәртү";
 "ACCOUNTS_NAME" = "Исем";
 "ACCOUNTS_DISABLE" = "Счетны сүндерү";
+"ACCOUNTS_DEFAULT_NAME" = "Янчык";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Чыгымнар исәбе";

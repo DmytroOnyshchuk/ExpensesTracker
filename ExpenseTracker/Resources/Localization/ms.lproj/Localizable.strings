@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Edit akaun";
 "ACCOUNTS_NAME" = "Nama";
 "ACCOUNTS_DISABLE" = "Nyahdayakan akaun";
+"ACCOUNTS_DEFAULT_NAME" = "Dompet";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Perakaunan perbelanjaan";

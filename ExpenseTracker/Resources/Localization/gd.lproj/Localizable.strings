@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Deasaich an cunntas";
 "ACCOUNTS_NAME" = "Ainm";
 "ACCOUNTS_DISABLE" = "Cuir an cunntas à comas";
+"ACCOUNTS_DEFAULT_NAME" = "Sporan";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Cunntasachd chosgaisean";

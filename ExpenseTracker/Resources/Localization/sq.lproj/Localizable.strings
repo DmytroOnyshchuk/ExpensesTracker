@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Ndrysho llogarinë";
 "ACCOUNTS_NAME" = "Emri";
 "ACCOUNTS_DISABLE" = "Çaktivizo llogarinë";
+"ACCOUNTS_DEFAULT_NAME" = "Portofol";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Kontabiliteti i shpenzimeve";

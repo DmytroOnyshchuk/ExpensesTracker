@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Редактиране на сметка";
 "ACCOUNTS_NAME" = "Име";
 "ACCOUNTS_DISABLE" = "Изключване на сметката";
+"ACCOUNTS_DEFAULT_NAME" = "Портфейл";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Отчитане на разходи";

@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Editează contul";
 "ACCOUNTS_NAME" = "Nume";
 "ACCOUNTS_DISABLE" = "Dezactivează contul";
+"ACCOUNTS_DEFAULT_NAME" = "Portofel";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Evidența cheltuielilor";

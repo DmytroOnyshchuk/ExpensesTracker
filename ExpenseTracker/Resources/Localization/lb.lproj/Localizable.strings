@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Kont beaarbechten";
 "ACCOUNTS_NAME" = "Numm";
 "ACCOUNTS_DISABLE" = "Kont desaktivéieren";
+"ACCOUNTS_DEFAULT_NAME" = "Portmonni";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Ausgabebuchféierung";

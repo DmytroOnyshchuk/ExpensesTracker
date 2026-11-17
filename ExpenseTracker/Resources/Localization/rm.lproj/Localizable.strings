@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Modifitgar il conto";
 "ACCOUNTS_NAME" = "Num";
 "ACCOUNTS_DISABLE" = "Deactivar il conto";
+"ACCOUNTS_DEFAULT_NAME" = "Bursa";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Contabilitad da las expensas";

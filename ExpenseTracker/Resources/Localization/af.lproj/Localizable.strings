@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Wysig rekening";
 "ACCOUNTS_NAME" = "Naam";
 "ACCOUNTS_DISABLE" = "Deaktiveer rekening";
+"ACCOUNTS_DEFAULT_NAME" = "Beursie";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Uitgawerekeningkunde";

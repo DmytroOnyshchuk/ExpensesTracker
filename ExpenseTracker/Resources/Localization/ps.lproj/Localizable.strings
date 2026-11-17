@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "حساب سم کړئ";
 "ACCOUNTS_NAME" = "نوم";
 "ACCOUNTS_DISABLE" = "حساب غیر فعال کړئ";
+"ACCOUNTS_DEFAULT_NAME" = "بټوه";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "د لګښتونو محاسبه";

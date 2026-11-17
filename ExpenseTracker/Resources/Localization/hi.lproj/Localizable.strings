@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "खाता संपादित करें";
 "ACCOUNTS_NAME" = "नाम";
 "ACCOUNTS_DISABLE" = "खाता अक्षम करें";
+"ACCOUNTS_DEFAULT_NAME" = "वॉलेट";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "खर्चों का लेखा";

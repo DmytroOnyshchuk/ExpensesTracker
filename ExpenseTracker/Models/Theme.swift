@@ -24,14 +24,14 @@ enum ThemePreset: String, CaseIterable, Identifiable, Codable {
     case system
     case light
     case dark
-    case ember
     case orange
-    case indigo
+    case ember
     case gray
-    case midnight
-    case forest
     case slate
-
+    case midnight
+    case indigo
+    case forest
+    
     var id: String { rawValue }
 
     var title: String {

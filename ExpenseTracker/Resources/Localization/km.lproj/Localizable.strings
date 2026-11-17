@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "កែគណនី";
 "ACCOUNTS_NAME" = "ឈ្មោះ";
 "ACCOUNTS_DISABLE" = "បិទគណនី";
+"ACCOUNTS_DEFAULT_NAME" = "កាបូបលុយ";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "គណនេយ្យចំណាយ";

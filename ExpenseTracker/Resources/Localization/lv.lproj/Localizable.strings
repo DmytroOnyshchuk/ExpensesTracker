@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Rediģēt kontu";
 "ACCOUNTS_NAME" = "Nosaukums";
 "ACCOUNTS_DISABLE" = "Atspējot kontu";
+"ACCOUNTS_DEFAULT_NAME" = "Maks";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Izdevumu uzskaite";

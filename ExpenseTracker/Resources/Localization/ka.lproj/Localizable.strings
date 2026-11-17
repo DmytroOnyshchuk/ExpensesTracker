@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "ანგარიშის რედაქტირება";
 "ACCOUNTS_NAME" = "სახელი";
 "ACCOUNTS_DISABLE" = "ანგარიშის გათიშვა";
+"ACCOUNTS_DEFAULT_NAME" = "საფულე";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ხარჯების აღრიცხვა";

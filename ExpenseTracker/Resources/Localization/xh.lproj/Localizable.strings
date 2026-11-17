@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Hlela iakhawunti";
 "ACCOUNTS_NAME" = "Igama";
 "ACCOUNTS_DISABLE" = "Khubaza iakhawunti";
+"ACCOUNTS_DEFAULT_NAME" = "Isipaji";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Ubalo lweendleko";

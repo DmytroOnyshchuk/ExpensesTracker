@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "ಖಾತೆ ಸಂಪಾದಿಸಿ";
 "ACCOUNTS_NAME" = "ಹೆಸರು";
 "ACCOUNTS_DISABLE" = "ಖಾತೆ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ";
+"ACCOUNTS_DEFAULT_NAME" = "ವಾಲೆಟ್";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ವೆಚ್ಚಗಳ ಲೆಕ್ಕ";

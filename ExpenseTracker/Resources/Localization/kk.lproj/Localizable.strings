@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Шотты өңдеу";
 "ACCOUNTS_NAME" = "Атауы";
 "ACCOUNTS_DISABLE" = "Шотты өшіру";
+"ACCOUNTS_DEFAULT_NAME" = "Әмиян";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Шығыстар есебі";

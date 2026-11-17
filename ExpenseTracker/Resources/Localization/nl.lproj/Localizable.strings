@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Wijzig rekening";
 "ACCOUNTS_NAME" = "Naam";
 "ACCOUNTS_DISABLE" = "Schakel rekening uit";
+"ACCOUNTS_DEFAULT_NAME" = "Portemonnee";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Uitgaven bijhouden";

@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Επεξεργασία λογαριασμού";
 "ACCOUNTS_NAME" = "Όνομα";
 "ACCOUNTS_DISABLE" = "Απενεργοποίηση λογαριασμού";
+"ACCOUNTS_DEFAULT_NAME" = "Πορτοφόλι";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Καταγραφή εξόδων";

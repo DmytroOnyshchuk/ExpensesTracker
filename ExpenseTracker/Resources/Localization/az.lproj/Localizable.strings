@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Hesabı redaktə et";
 "ACCOUNTS_NAME" = "Ad";
 "ACCOUNTS_DISABLE" = "Hesabı deaktiv et";
+"ACCOUNTS_DEFAULT_NAME" = "Pulqabı";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Xərclərin uçotu";

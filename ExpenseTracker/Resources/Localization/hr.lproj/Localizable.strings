@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Uredi račun";
 "ACCOUNTS_NAME" = "Naziv";
 "ACCOUNTS_DISABLE" = "Onemogući račun";
+"ACCOUNTS_DEFAULT_NAME" = "Novčanik";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Evidencija troškova";

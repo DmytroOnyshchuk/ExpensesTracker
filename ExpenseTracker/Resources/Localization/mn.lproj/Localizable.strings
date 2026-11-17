@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Данс засах";
 "ACCOUNTS_NAME" = "Нэр";
 "ACCOUNTS_DISABLE" = "Дансыг идэвхгүй болгох";
+"ACCOUNTS_DEFAULT_NAME" = "Түрийвч";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Зардлын бүртгэл";

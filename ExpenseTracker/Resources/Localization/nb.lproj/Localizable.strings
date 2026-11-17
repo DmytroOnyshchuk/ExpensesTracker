@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Rediger konto";
 "ACCOUNTS_NAME" = "Navn";
 "ACCOUNTS_DISABLE" = "Deaktiver konto";
+"ACCOUNTS_DEFAULT_NAME" = "Lommebok";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Utgiftsregnskap";

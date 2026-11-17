@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Hesabê sererast bike";
 "ACCOUNTS_NAME" = "Nav";
 "ACCOUNTS_DISABLE" = "Hesabê neçalak bike";
+"ACCOUNTS_DEFAULT_NAME" = "Cizdan";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Hesabdariya lêçûnan";

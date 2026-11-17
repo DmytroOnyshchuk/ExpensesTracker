@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Cuir an cuntas in eagar";
 "ACCOUNTS_NAME" = "Ainm";
 "ACCOUNTS_DISABLE" = "Díchumasaigh an cuntas";
+"ACCOUNTS_DEFAULT_NAME" = "Sparán";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Cuntasaíocht caiteachais";

@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Editar cuenta";
 "ACCOUNTS_NAME" = "Nombre";
 "ACCOUNTS_DISABLE" = "Desactivar cuenta";
+"ACCOUNTS_DEFAULT_NAME" = "Billetera";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Registro de gastos";

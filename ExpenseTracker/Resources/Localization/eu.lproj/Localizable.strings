@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Editatu kontua";
 "ACCOUNTS_NAME" = "Izena";
 "ACCOUNTS_DISABLE" = "Desgaitu kontua";
+"ACCOUNTS_DEFAULT_NAME" = "Diru-zorroa";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Gastuen kontabilitatea";

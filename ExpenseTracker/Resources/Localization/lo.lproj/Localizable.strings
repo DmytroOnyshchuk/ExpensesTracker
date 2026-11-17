@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "ແກ້ໄຂບັນຊີ";
 "ACCOUNTS_NAME" = "ຊື່";
 "ACCOUNTS_DISABLE" = "ປິດການນຳໃຊ້ບັນຊີ";
+"ACCOUNTS_DEFAULT_NAME" = "ກະເປົາເງິນ";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "ບັນຊີລາຍຈ່າຍ";

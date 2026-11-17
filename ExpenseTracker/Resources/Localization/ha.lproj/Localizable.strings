@@ -248,6 +248,7 @@
 "ACCOUNTS_EDIT" = "Gyara asusu";
 "ACCOUNTS_NAME" = "Suna";
 "ACCOUNTS_DISABLE" = "Kashe asusun";
+"ACCOUNTS_DEFAULT_NAME" = "Jakar kuɗi";
 
 // MARK: - Accounting settings
 "ACCOUNTING_EXPENSES" = "Lissafin kashe kuɗi";
