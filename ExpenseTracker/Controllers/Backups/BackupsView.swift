@@ -24,6 +24,8 @@ struct BackupsView: View {
     @State private var pickedFileURL: URL?
     @State private var errorMessage: String?
     @State private var showResetConfirmation = false
+    @State private var showResetPasscode = false
+    @State private var isResetPasscodeVerified = false
 
     var body: some View {
         ScrollView(.vertical) {
@@ -43,9 +45,7 @@ struct BackupsView: View {
                 }
                 .fileImporter(isPresented: $isImporting, allowedContentTypes: [.data], onCompletion: pickFile)
 
-                Button {
-                    showResetConfirmation = true
-                } label: {
+                Button(action: requestReset) {
                     Text(L10n.backupsResetAction)
                         .font(.appLight(14))
                         .foregroundColor(.appRed)
@@ -82,6 +82,11 @@ struct BackupsView: View {
         } message: {
             Text(errorMessage ?? "")
         }
+        .fullScreenCover(isPresented: $showResetPasscode, onDismiss: confirmResetIfVerified) {
+            PasscodeSetupView(flow: .verify) {
+                isResetPasscodeVerified = true
+            }
+        }
         .alert(L10n.backupsResetAction, isPresented: $showResetConfirmation) {
             Button(L10n.cancel, role: .cancel) {}
             Button(L10n.delete, role: .destructive, action: clear)
@@ -92,6 +97,21 @@ struct BackupsView: View {
 
     private var isErrorPresented: Binding<Bool> {
         Binding(get: { errorMessage != nil }, set: { if !$0 { errorMessage = nil } })
+    }
+
+    private func requestReset() {
+        if PasscodeManager.shared.isPasscodeEnabled {
+            isResetPasscodeVerified = false
+            showResetPasscode = true
+        } else {
+            showResetConfirmation = true
+        }
+    }
+
+    private func confirmResetIfVerified() {
+        guard isResetPasscodeVerified else { return }
+        isResetPasscodeVerified = false
+        showResetConfirmation = true
     }
 
     private func clear() {

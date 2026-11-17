@@ -12,6 +12,7 @@ enum PasscodeFlow: Identifiable {
     case create
     case change
     case disable
+    case verify
 
     var id: Self { self }
 }
@@ -24,6 +25,7 @@ struct PasscodeSetupView: View {
     }
 
     let flow: PasscodeFlow
+    let onVerified: () -> Void
 
     @Environment(\.dismiss) private var dismiss
 
@@ -34,8 +36,9 @@ struct PasscodeSetupView: View {
 
     private let passcodeManager = PasscodeManager.shared
 
-    init(flow: PasscodeFlow) {
+    init(flow: PasscodeFlow, onVerified: @escaping () -> Void = {}) {
         self.flow = flow
+        self.onVerified = onVerified
         _step = State(initialValue: flow == .create ? .enter : .verify)
     }
 
@@ -46,10 +49,13 @@ struct PasscodeSetupView: View {
                 errorMessage: errorMessage,
                 code: $code,
                 shakeTrigger: shakeTrigger,
+                biometricsImage: canUseBiometrics ? passcodeManager.biometryType.systemImage : nil,
+                onBiometrics: authenticateWithBiometrics,
                 onComplete: submit
             )
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .appBackground()
+            .onAppear(perform: authenticateWithBiometrics)
             .navigationTitle(L10n.settingsPasscode)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -61,9 +67,21 @@ struct PasscodeSetupView: View {
         }
     }
 
+    private var canUseBiometrics: Bool {
+        flow == .verify && passcodeManager.canUnlockWithBiometrics
+    }
+
+    private func authenticateWithBiometrics() {
+        guard canUseBiometrics else { return }
+        passcodeManager.authenticateWithBiometrics(reason: L10n.backupsResetAction) {
+            onVerified()
+            dismiss()
+        }
+    }
+
     private var title: String {
         switch step {
-        case .verify: L10n.passcodeEnterCurrent
+        case .verify: flow == .verify ? L10n.passcodeEnter : L10n.passcodeEnterCurrent
         case .enter: L10n.passcodeEnterNew
         case .confirm: L10n.passcodeRepeat
         }
@@ -85,10 +103,14 @@ struct PasscodeSetupView: View {
                 return
             }
             errorMessage = nil
-            if flow == .disable {
+            switch flow {
+            case .disable:
                 passcodeManager.disablePasscode()
                 dismiss()
-            } else {
+            case .verify:
+                onVerified()
+                dismiss()
+            case .create, .change:
                 step = .enter
             }
         case .enter:

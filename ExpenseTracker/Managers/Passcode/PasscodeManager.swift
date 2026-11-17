@@ -83,16 +83,22 @@ extension PasscodeManager {
     }
 
     func unlockWithBiometrics() {
-        guard isLocked, canUnlockWithBiometrics, !isAuthenticating else { return }
+        guard isLocked else { return }
+        authenticateWithBiometrics { [weak self] in
+            self?.unlock()
+        }
+    }
+
+    func authenticateWithBiometrics(reason: String = L10n.passcodeBiometricsReason, onSuccess: @escaping () -> Void) {
+        guard canUnlockWithBiometrics, !isAuthenticating else { return }
         isAuthenticating = true
 
         let context = LAContext()
         context.localizedFallbackTitle = ""
-        context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: L10n.passcodeBiometricsReason) { [weak self] success, _ in
+        context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { [weak self] success, _ in
             DispatchQueue.main.async {
-                guard let self else { return }
-                self.isAuthenticating = false
-                if success { self.unlock() }
+                self?.isAuthenticating = false
+                if success { onSuccess() }
             }
         }
     }
