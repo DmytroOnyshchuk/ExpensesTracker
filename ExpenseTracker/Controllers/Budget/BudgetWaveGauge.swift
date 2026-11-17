@@ -75,7 +75,11 @@ struct BudgetWaveGauge: View {
             }
             .clipShape(Circle())
         }
-        .shadow(color: color.opacity(0.25), radius: size * 0.08)
+        .background {
+            Circle()
+                .stroke(color.opacity(0.55), lineWidth: size * 0.05)
+                .blur(radius: size * 0.06)
+        }
         .overlay {
             Circle()
                 .strokeBorder(isExceeded ? Color.appRed.opacity(0.6) : Color.appWhite.opacity(0.2), lineWidth: 1)
