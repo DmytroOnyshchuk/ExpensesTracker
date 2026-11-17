@@ -252,7 +252,6 @@ struct MonthBudgetCard: View {
     let action: () -> Void
 
     private var hasLimit: Bool { limit > .zero }
-    private var remaining: Int { limit - spent }
 
     var body: some View {
         Button(action: action) {
@@ -263,16 +262,15 @@ struct MonthBudgetCard: View {
                         .foregroundColor(.appLabel)
 
                     Spacer(minLength: 8)
-
-                    if hasLimit {
-                        Text(remaining < .zero ? L10n.budgetExceeded((-remaining).getAmount()) : L10n.budgetLeft(remaining.getAmount()))
-                            .font(.appLight(14))
-                            .foregroundColor(remaining < .zero ? .appRed : .appWhite.opacity(0.75))
-                            .contentTransition(.numericText())
-                    }
                 }
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
+
+                if hasLimit {
+                    BudgetWaveGauge(spent: spent, limit: limit)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 8)
+                }
 
                 HStack(alignment: .firstTextBaseline, spacing: 6) {
                     Text(spent.getAmount())
@@ -289,10 +287,6 @@ struct MonthBudgetCard: View {
                 }
                 .lineLimit(1)
                 .minimumScaleFactor(0.6)
-
-                if hasLimit {
-                    BudgetProgressBar(spent: spent, limit: limit, color: .appPrimary, height: 6)
-                }
             }
             .padding(.horizontal, 16)
             .padding(.vertical, 14)
