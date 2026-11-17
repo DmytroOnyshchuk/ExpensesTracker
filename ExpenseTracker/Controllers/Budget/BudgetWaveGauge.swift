@@ -43,7 +43,7 @@ struct BudgetWaveShape: Shape {
 struct BudgetWaveGauge: View {
     let spent: Int
     let limit: Int
-    var size: CGFloat = 190
+    var size: CGFloat = 209
 
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var isFilled = false
