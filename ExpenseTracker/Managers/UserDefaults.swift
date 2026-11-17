@@ -30,27 +30,21 @@ final class UserDefault<T> {
             }
         }
         set {
-            queue.async(flags: .barrier) { [weak self] in
-                guard let self else { return }
-                cachedValue = newValue
-                if let value = newValue {
-                    UserDefaults.shared.set(value, forKey: key.rawValue)
-                } else {
-                    UserDefaults.shared.removeObject(forKey: key.rawValue)
-                }
-            }
+            queue.sync(flags: .barrier) { cachedValue = newValue }
+            store(newValue)
         }
     }
     
     func reset() {
-        queue.async(flags: .barrier) { [weak self] in
-            guard let self else { return }
-            cachedValue = nil
-            if let value = defaultValue {
-                UserDefaults.shared.set(value, forKey: key.rawValue)
-            } else {
-                UserDefaults.shared.removeObject(forKey: key.rawValue)
-            }
+        queue.sync(flags: .barrier) { cachedValue = nil }
+        store(defaultValue)
+    }
+
+    private func store(_ value: T?) {
+        if let value {
+            UserDefaults.shared.set(value, forKey: key.rawValue)
+        } else {
+            UserDefaults.shared.removeObject(forKey: key.rawValue)
         }
     }
 }
@@ -87,37 +81,28 @@ final class UserDefaultCodable<T: Codable> {
             }
         }
         set {
-            queue.async(flags: .barrier) { [weak self] in
-                guard let self else { return }
-                if enableCaching { cachedValue = newValue }
-                if let value = newValue {
-                    do {
-                        let data = try JSONEncoder().encode(value)
-                        UserDefaults.shared.set(data, forKey: key.rawValue)
-                    } catch {
-                        Logger.default.logMessage("Failed to encode \(key.rawValue): \(error)", category: "UserDefaults", type: .error)
-                    }
-                } else {
-                    UserDefaults.shared.removeObject(forKey: key.rawValue)
-                }
+            if enableCaching {
+                queue.sync(flags: .barrier) { cachedValue = newValue }
             }
+            store(newValue)
         }
     }
     
     func reset() {
-        queue.async(flags: .barrier) { [weak self] in
-            guard let self else { return }
-            cachedValue = nil
-            if let value = defaultValue {
-                do {
-                    let data = try JSONEncoder().encode(value)
-                    UserDefaults.shared.set(data, forKey: key.rawValue)
-                } catch {
-                    Logger.default.logMessage("Failed to reset \(key.rawValue): \(error)", category: "UserDefaults", type: .error)
-                }
-            } else {
-                UserDefaults.shared.removeObject(forKey: key.rawValue)
-            }
+        queue.sync(flags: .barrier) { cachedValue = nil }
+        store(defaultValue)
+    }
+
+    private func store(_ value: T?) {
+        guard let value else {
+            UserDefaults.shared.removeObject(forKey: key.rawValue)
+            return
+        }
+        do {
+            let data = try JSONEncoder().encode(value)
+            UserDefaults.shared.set(data, forKey: key.rawValue)
+        } catch {
+            Logger.default.logMessage("Failed to encode \(key.rawValue): \(error)", category: "UserDefaults", type: .error)
         }
     }
 }
