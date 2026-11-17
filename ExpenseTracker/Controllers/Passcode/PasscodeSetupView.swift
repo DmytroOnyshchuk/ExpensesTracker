@@ -68,13 +68,17 @@ struct PasscodeSetupView: View {
     }
 
     private var canUseBiometrics: Bool {
-        flow == .verify && passcodeManager.canUnlockWithBiometrics
+        (flow == .verify || flow == .disable) && passcodeManager.canUnlockWithBiometrics
     }
 
     private func authenticateWithBiometrics() {
         guard canUseBiometrics else { return }
-        passcodeManager.authenticateWithBiometrics(reason: L10n.backupsResetAction) {
-            onVerified()
+        passcodeManager.authenticateWithBiometrics(reason: flow == .verify ? L10n.backupsResetAction : L10n.passcodeBiometricsReason) {
+            if flow == .disable {
+                passcodeManager.disablePasscode()
+            } else {
+                onVerified()
+            }
             dismiss()
         }
     }
