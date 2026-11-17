@@ -186,6 +186,16 @@
 "SETTINGS_HAPTIC" = "Haptic";
 "SETTINGS_HIDE_CATEGORIES" = "Hide categories";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Categories appear when you enter an amount";
+"SETTINGS_SECURITY" = "Security";
+"SETTINGS_PASSCODE" = "Passcode";
+"SETTINGS_PASSCODE_CHANGE" = "Change passcode";
+"PASSCODE_ENTER" = "Enter passcode";
+"PASSCODE_ENTER_CURRENT" = "Enter current passcode";
+"PASSCODE_ENTER_NEW" = "Enter new passcode";
+"PASSCODE_REPEAT" = "Repeat passcode";
+"PASSCODE_WRONG" = "Wrong passcode";
+"PASSCODE_MISMATCH" = "Passcodes don’t match";
+"PASSCODE_BIOMETRICS_REASON" = "Unlock the app";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Categories: %d";

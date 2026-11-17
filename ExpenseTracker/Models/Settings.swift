@@ -19,10 +19,16 @@ struct AccountingSettings: Codable {
     var budgetEnabled: Bool = true
 }
 
+struct SecuritySettings: Codable {
+    var passcodeEnabled: Bool = false
+    var biometricsEnabled: Bool = true
+}
+
 struct AppSettings: Codable {
     var theme: ThemePreset = .dark
     var statisticsChartStyle: StatisticsChartStyle = .pie
     var hideCategories: Bool = false
     var feedback = FeedbackSettings()
     var accounting = AccountingSettings()
+    var security = SecuritySettings()
 }

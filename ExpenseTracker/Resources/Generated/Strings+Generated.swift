@@ -278,6 +278,20 @@ internal enum L10n {
   internal static let no = L10n.tr("Localizable", "NO", fallback: "No")
   /// OK
   internal static let ok = L10n.tr("Localizable", "OK", fallback: "OK")
+  /// Unlock the app
+  internal static let passcodeBiometricsReason = L10n.tr("Localizable", "PASSCODE_BIOMETRICS_REASON", fallback: "Unlock the app")
+  /// Enter passcode
+  internal static let passcodeEnter = L10n.tr("Localizable", "PASSCODE_ENTER", fallback: "Enter passcode")
+  /// Enter current passcode
+  internal static let passcodeEnterCurrent = L10n.tr("Localizable", "PASSCODE_ENTER_CURRENT", fallback: "Enter current passcode")
+  /// Enter new passcode
+  internal static let passcodeEnterNew = L10n.tr("Localizable", "PASSCODE_ENTER_NEW", fallback: "Enter new passcode")
+  /// Passcodes don’t match
+  internal static let passcodeMismatch = L10n.tr("Localizable", "PASSCODE_MISMATCH", fallback: "Passcodes don’t match")
+  /// Repeat passcode
+  internal static let passcodeRepeat = L10n.tr("Localizable", "PASSCODE_REPEAT", fallback: "Repeat passcode")
+  /// Wrong passcode
+  internal static let passcodeWrong = L10n.tr("Localizable", "PASSCODE_WRONG", fallback: "Wrong passcode")
   /// Remove
   internal static let remove = L10n.tr("Localizable", "REMOVE", fallback: "Remove")
   /// Repeat
@@ -294,6 +308,12 @@ internal enum L10n {
   internal static let settingsHideCategories = L10n.tr("Localizable", "SETTINGS_HIDE_CATEGORIES", fallback: "Hide categories")
   /// Categories appear when you enter an amount
   internal static let settingsHideCategoriesDescription = L10n.tr("Localizable", "SETTINGS_HIDE_CATEGORIES_DESCRIPTION", fallback: "Categories appear when you enter an amount")
+  /// Passcode
+  internal static let settingsPasscode = L10n.tr("Localizable", "SETTINGS_PASSCODE", fallback: "Passcode")
+  /// Change passcode
+  internal static let settingsPasscodeChange = L10n.tr("Localizable", "SETTINGS_PASSCODE_CHANGE", fallback: "Change passcode")
+  /// Security
+  internal static let settingsSecurity = L10n.tr("Localizable", "SETTINGS_SECURITY", fallback: "Security")
   /// Sounds
   internal static let settingsSounds = L10n.tr("Localizable", "SETTINGS_SOUNDS", fallback: "Sounds")
   /// Dark

@@ -19,6 +19,8 @@
 	</array>
 	<key>LSSupportsOpeningDocumentsInPlace</key>
 	<true/>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Face ID is used to unlock the app.</string>
 	<key>NSUserTrackingUsageDescription</key>
 	<string>Test description</string>
 	<key>UIPrefersShowingLanguageSettings</key>

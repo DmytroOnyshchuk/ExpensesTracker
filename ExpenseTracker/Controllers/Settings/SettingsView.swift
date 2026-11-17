@@ -6,6 +6,10 @@ struct SettingsView: View {
     @Inject private var themeManager: ThemeManager
     @Inject private var feedbackManager: FeedbackManager
 
+    @State private var passcodeFlow: PasscodeFlow?
+
+    private let passcodeManager = PasscodeManager.shared
+
     private let columns = Array(repeating: GridItem(.flexible(), spacing: 8), count: 3)
 
     var body: some View {
@@ -47,6 +51,34 @@ struct SettingsView: View {
                     }
                     .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
                 }
+
+                VStack(alignment: .leading, spacing: 8) {
+                    MenuSectionHeader(title: L10n.settingsSecurity)
+
+                    VStack(spacing: 0) {
+                        SettingsToggleRow(title: L10n.settingsPasscode, systemImage: "lock", isOn: passcodeEnabled)
+
+                        if passcodeManager.isPasscodeEnabled {
+                            MenuRowDivider()
+
+                            MenuRow(title: L10n.settingsPasscodeChange, systemImage: "key") {
+                                passcodeFlow = .change
+                            }
+                        }
+
+                        MenuRowDivider()
+
+                        SettingsToggleRow(
+                            title: passcodeManager.biometryType.title,
+                            systemImage: passcodeManager.biometryType.systemImage,
+                            isOn: $appSettings.security.biometricsEnabled
+                        )
+                        .disabled(!isBiometricsConfigurable)
+                        .opacity(isBiometricsConfigurable ? 1 : 0.5)
+                    }
+                    .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
+                    .animation(.default, value: passcodeManager.isPasscodeEnabled)
+                }
             }
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .top)
@@ -54,6 +86,20 @@ struct SettingsView: View {
         .appBackground()
         .navigationTitle(L10n.menuSettings)
         .navigationBarTitleDisplayMode(.inline)
+        .fullScreenCover(item: $passcodeFlow) { flow in
+            PasscodeSetupView(flow: flow)
+        }
+    }
+
+    private var passcodeEnabled: Binding<Bool> {
+        Binding(
+            get: { passcodeManager.isPasscodeEnabled },
+            set: { passcodeFlow = $0 ? .create : .disable }
+        )
+    }
+
+    private var isBiometricsConfigurable: Bool {
+        passcodeManager.isPasscodeEnabled && passcodeManager.isBiometryAvailable
     }
 
     private func select(_ preset: ThemePreset) {

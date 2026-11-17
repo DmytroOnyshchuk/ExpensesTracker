@@ -186,6 +186,16 @@
 "SETTINGS_HAPTIC" = "Виброотклик";
 "SETTINGS_HIDE_CATEGORIES" = "Скрывать категории";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Категории появляются при вводе суммы";
+"SETTINGS_SECURITY" = "Безопасность";
+"SETTINGS_PASSCODE" = "Код-пароль";
+"SETTINGS_PASSCODE_CHANGE" = "Сменить код-пароль";
+"PASSCODE_ENTER" = "Введите код-пароль";
+"PASSCODE_ENTER_CURRENT" = "Введите текущий код-пароль";
+"PASSCODE_ENTER_NEW" = "Введите новый код-пароль";
+"PASSCODE_REPEAT" = "Повторите код-пароль";
+"PASSCODE_WRONG" = "Неверный код-пароль";
+"PASSCODE_MISMATCH" = "Код-пароли не совпадают";
+"PASSCODE_BIOMETRICS_REASON" = "Разблокировать приложение";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Категории: %d";

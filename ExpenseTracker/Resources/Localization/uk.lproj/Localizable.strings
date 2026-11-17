@@ -186,6 +186,16 @@
 "SETTINGS_HAPTIC" = "Вібровідгук";
 "SETTINGS_HIDE_CATEGORIES" = "Приховувати категорії";
 "SETTINGS_HIDE_CATEGORIES_DESCRIPTION" = "Категорії з’являються під час введення суми";
+"SETTINGS_SECURITY" = "Безпека";
+"SETTINGS_PASSCODE" = "Код-пароль";
+"SETTINGS_PASSCODE_CHANGE" = "Змінити код-пароль";
+"PASSCODE_ENTER" = "Введіть код-пароль";
+"PASSCODE_ENTER_CURRENT" = "Введіть поточний код-пароль";
+"PASSCODE_ENTER_NEW" = "Введіть новий код-пароль";
+"PASSCODE_REPEAT" = "Повторіть код-пароль";
+"PASSCODE_WRONG" = "Неправильний код-пароль";
+"PASSCODE_MISMATCH" = "Код-паролі не збігаються";
+"PASSCODE_BIOMETRICS_REASON" = "Розблокувати програму";
 
 // MARK: - Backups
 "BACKUPS_CATEGORIES_COUNT" = "Категорії: %d";

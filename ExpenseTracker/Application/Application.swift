@@ -39,6 +39,7 @@ struct AppRootView: View {
                 RootTabView()
             }
         }
+        .onAppear(perform: PasscodeManager.shared.start)
         .onReceive(NotificationCenter.default.publisher(for: .appLogout)) { _ in
             isResetting = true
         }

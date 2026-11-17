@@ -48,6 +48,7 @@ extension UserManager {
         _appSettings.reset()
         lastApplicationEnvironment = savedEnvironment
         ThemeManager.shared.preset = appSettings.theme
+        PasscodeManager.shared.reset()
 
         Logger.default.logMessage("Logout end", category: "UserManager")
     }

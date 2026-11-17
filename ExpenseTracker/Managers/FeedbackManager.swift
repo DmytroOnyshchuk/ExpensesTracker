@@ -81,6 +81,10 @@ extension FeedbackManager {
         notify(.error)
         playSound(.amountMissing)
     }
+
+    func passcodeRejected() {
+        notify(.error)
+    }
 }
 
 extension FeedbackManager {
