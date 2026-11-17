@@ -19,14 +19,14 @@ struct StartView: View {
     @State private var note = String()
     @State private var showNoteInput = false
     @State private var amountAttentionTrigger: Int = .zero
-    @State private var showBalances = false
+    @State private var showAccounts = false
     @State private var operationType: OperationType = .outcome
     @AppStorage(UDKey.selectedAccount.rawValue, store: UserDefaults.shared) private var selectedAccountId = String()
-    @Query(sort: \BalanceAccount.sortIndex) private var storedAccounts: [BalanceAccount]
+    @Query(sort: \Account.sortIndex) private var storedAccounts: [Account]
     @StoredSettings private var appSettings
     @Query(sort: \Transaction.date, order: .reverse, animation: .default) private var storedTransactions: [Transaction]
 
-    private var accounts: [BalanceAccount] { storedAccounts.notDeleted }
+    private var accounts: [Account] { storedAccounts.notDeleted }
     private var transactions: [Transaction] { storedTransactions.notDeleted }
 
     var body: some View {
@@ -39,7 +39,7 @@ struct StartView: View {
                         balance: selectedAccount?.current(in: transactions),
                         amountFor: { $0.current(in: transactions) },
                         onSelect: selectAccount,
-                        action: openBalances
+                        action: openAccounts
                     )
                     .padding(.horizontal, 8)
 
@@ -72,8 +72,8 @@ struct StartView: View {
             .navigationDestination(isPresented: $showHistory) {
                 HistoryView()
             }
-            .navigationDestination(isPresented: $showBalances) {
-                BalancesView()
+            .navigationDestination(isPresented: $showAccounts) {
+                AccountsView()
             }
         }
         .overlay {
@@ -98,7 +98,7 @@ struct StartView: View {
         !appSettings.hideCategories || isAmountEntered
     }
 
-    private var selectedAccount: BalanceAccount? {
+    private var selectedAccount: Account? {
         accounts.first { $0.uuid.uuidString == selectedAccountId } ?? accounts.first
     }
 
@@ -168,12 +168,12 @@ struct StartView: View {
         }
     }
 
-    private func openBalances() {
+    private func openAccounts() {
         FeedbackManager.shared.buttonTapped()
-        showBalances = true
+        showAccounts = true
     }
 
-    private func selectAccount(_ account: BalanceAccount) {
+    private func selectAccount(_ account: Account) {
         FeedbackManager.shared.buttonTapped()
         selectedAccountId = account.uuid.uuidString
     }
@@ -222,7 +222,7 @@ struct StartView: View {
 @MainActor
 func makePreviewModelContainer() -> ModelContainer {
     let container = try! ModelContainer(
-        for: Transaction.self, TransactionCategory.self, BalanceAccount.self,
+        for: Transaction.self, TransactionCategory.self, Account.self,
         configurations: ModelConfiguration(isStoredInMemoryOnly: true)
     )
     DataSeeder.seedDefaultCategories(container: container)

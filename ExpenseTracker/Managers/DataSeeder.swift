@@ -15,14 +15,14 @@ final class DataSeeder: NSObject {
     }
 
     static func seedDefaultAccount(in context: ModelContext) {
-        let accounts = ((try? context.fetch(FetchDescriptor<BalanceAccount>())) ?? []).notDeleted.inDisplayOrder
+        let accounts = ((try? context.fetch(FetchDescriptor<Account>())) ?? []).notDeleted.inDisplayOrder
         let transactions = (try? context.fetch(FetchDescriptor<Transaction>())) ?? []
 
-        let defaultAccount: BalanceAccount
+        let defaultAccount: Account
         if let first = accounts.first {
             defaultAccount = first
         } else {
-            defaultAccount = BalanceAccount(name: L10n.startviewBalance, checkpointDate: .distantPast)
+            defaultAccount = Account(name: L10n.startviewBalance, checkpointDate: .distantPast)
             context.insert(defaultAccount)
         }
 

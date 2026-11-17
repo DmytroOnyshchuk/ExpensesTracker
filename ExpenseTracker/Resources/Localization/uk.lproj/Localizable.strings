@@ -220,10 +220,10 @@
 "ICON_PICKER_SECTION_TECH" = "Техніка, освіта та інструменти";
 "ICON_PICKER_SECTION_NATURE" = "Природа, погода та загальні символи";
 
-// MARK: - Balances
-"BALANCES_DELETED" = "Баланс видалено";
-"BALANCES_TITLE" = "Баланси";
-"BALANCES_TOTAL" = "Разом";
-"BALANCES_NEW" = "Новий баланс";
-"BALANCES_EDIT" = "Редагування балансу";
-"BALANCES_NAME" = "Назва";
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Рахунок видалено";
+"ACCOUNTS_TITLE" = "Рахунки";
+"ACCOUNTS_TOTAL" = "Разом";
+"ACCOUNTS_NEW" = "Новий рахунок";
+"ACCOUNTS_EDIT" = "Редагування рахунку";
+"ACCOUNTS_NAME" = "Назва";

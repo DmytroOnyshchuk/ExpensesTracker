@@ -69,10 +69,10 @@ enum MenuSection: CaseIterable, Identifiable {
 struct MenuView: View {
     @Query private var storedTransactions: [Transaction]
 
-    private var accounts: [BalanceAccount] { storedAccounts.notDeleted }
+    private var accounts: [Account] { storedAccounts.notDeleted }
     private var transactions: [Transaction] { storedTransactions.notDeleted }
 
-    @Query private var storedAccounts: [BalanceAccount]
+    @Query private var storedAccounts: [Account]
 
     @State private var showStatistics = false
     @State private var showCategories = false

@@ -9,11 +9,11 @@
 import SwiftUI
 
 struct BalanceCard: View {
-    let accounts: [BalanceAccount]
-    let selected: BalanceAccount?
+    let accounts: [Account]
+    let selected: Account?
     let balance: Int?
-    let amountFor: (BalanceAccount) -> Int
-    let onSelect: (BalanceAccount) -> Void
+    let amountFor: (Account) -> Int
+    let onSelect: (Account) -> Void
     let action: () -> Void
 
     var body: some View {
@@ -148,8 +148,8 @@ struct BalanceInputPopup: View {
 }
 
 #Preview("Balance card") {
-    let cash = BalanceAccount(name: "Cash", amount: 1250000)
-    let bank = BalanceAccount(name: "Bank", amount: -36050)
+    let cash = Account(name: "Cash", amount: 1250000)
+    let bank = Account(name: "Bank", amount: -36050)
     return VStack(spacing: 16) {
         BalanceCard(accounts: [cash, bank], selected: cash, balance: 1250000, amountFor: \.amount, onSelect: { _ in }, action: {})
         BalanceCard(accounts: [cash, bank], selected: bank, balance: -36050, amountFor: \.amount, onSelect: { _ in }, action: {})

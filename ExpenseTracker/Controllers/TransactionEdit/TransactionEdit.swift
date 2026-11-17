@@ -21,9 +21,9 @@ struct TransactionEdit: View {
     @State private var popup: Popup?
     @State private var showCategoryPicker = false
     @State private var amountText = String()
-    @Query(sort: \BalanceAccount.sortIndex) private var storedAccounts: [BalanceAccount]
+    @Query(sort: \Account.sortIndex) private var storedAccounts: [Account]
 
-    private var accounts: [BalanceAccount] { storedAccounts.notDeleted }
+    private var accounts: [Account] { storedAccounts.notDeleted }
     @FocusState private var isAmountFocused: Bool
     @FocusState private var isNoteFocused: Bool
 

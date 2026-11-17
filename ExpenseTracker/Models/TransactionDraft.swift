@@ -13,7 +13,7 @@ struct TransactionDraft: Equatable {
     var amount: Int
     var date: Date
     var note: String
-    var account: BalanceAccount?
+    var account: Account?
 
     var canSave: Bool { amount != .zero }
 

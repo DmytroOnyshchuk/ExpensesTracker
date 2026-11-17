@@ -71,7 +71,7 @@ enum BackupManager {
     static func exportData(from context: ModelContext) throws -> Data {
         let categories = try context.fetch(FetchDescriptor<TransactionCategory>()).notDeleted
         let transactions = try context.fetch(FetchDescriptor<Transaction>(sortBy: [SortDescriptor(\.date)])).notDeleted
-        let accounts = try context.fetch(FetchDescriptor<BalanceAccount>()).notDeleted.inDisplayOrder
+        let accounts = try context.fetch(FetchDescriptor<Account>()).notDeleted.inDisplayOrder
 
         let snapshot = BackupSnapshot(
             categories: categories.map { category in
@@ -207,19 +207,19 @@ enum BackupManager {
             for category in try context.fetch(FetchDescriptor<TransactionCategory>()) {
                 context.delete(category)
             }
-            for account in try context.fetch(FetchDescriptor<BalanceAccount>()) {
+            for account in try context.fetch(FetchDescriptor<Account>()) {
                 context.delete(account)
             }
         }
 
-        var accountsByUuid: [UUID: BalanceAccount] = [:]
-        let existingAccounts = try mode == .replace ? [] : context.fetch(FetchDescriptor<BalanceAccount>())
+        var accountsByUuid: [UUID: Account] = [:]
+        let existingAccounts = try mode == .replace ? [] : context.fetch(FetchDescriptor<Account>())
         for account in existingAccounts {
             accountsByUuid[account.uuid] = account
         }
         var accountSortIndex = existingAccounts.nextSortIndex
         for item in snapshot.accounts ?? [] where accountsByUuid[item.uuid] == nil {
-            let account = BalanceAccount(name: item.name, amount: item.amount, checkpointDate: item.date, sortIndex: accountSortIndex)
+            let account = Account(name: item.name, amount: item.amount, checkpointDate: item.date, sortIndex: accountSortIndex)
             account.uuid = item.uuid
             context.insert(account)
             accountsByUuid[item.uuid] = account

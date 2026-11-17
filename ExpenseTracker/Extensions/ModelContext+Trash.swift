@@ -15,12 +15,12 @@ extension ModelContext {
         try? save()
     }
 
-    func remove(_ account: BalanceAccount) {
+    func remove(_ account: Account) {
         account.deletedAt = Date()
         try? save()
     }
 
-    func restore(_ account: BalanceAccount) {
+    func restore(_ account: Account) {
         account.deletedAt = nil
         try? save()
     }

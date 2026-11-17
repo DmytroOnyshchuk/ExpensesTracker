@@ -220,10 +220,10 @@
 "ICON_PICKER_SECTION_TECH" = "Technology, education & tools";
 "ICON_PICKER_SECTION_NATURE" = "Nature, weather & general symbols";
 
-// MARK: - Balances
-"BALANCES_DELETED" = "Balance deleted";
-"BALANCES_TITLE" = "Balances";
-"BALANCES_TOTAL" = "Total";
-"BALANCES_NEW" = "New balance";
-"BALANCES_EDIT" = "Edit balance";
-"BALANCES_NAME" = "Name";
+// MARK: - Accounts
+"ACCOUNTS_DELETED" = "Account deleted";
+"ACCOUNTS_TITLE" = "Accounts";
+"ACCOUNTS_TOTAL" = "Total";
+"ACCOUNTS_NEW" = "New account";
+"ACCOUNTS_EDIT" = "Edit account";
+"ACCOUNTS_NAME" = "Name";

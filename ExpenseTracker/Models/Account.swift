@@ -1,5 +1,5 @@
 //
-//  Balance.swift
+//  Account.swift
 //  ExpenseTracker
 //
 //  Created by Dmytro Onyshchuk on 13.11.2026.
@@ -9,15 +9,26 @@
 import Foundation
 import SwiftData
 
+enum AccountType: String, Codable {
+    case wallet
+    case bank
+}
+
 @Model
-final class BalanceAccount {
+final class Account {
     var uuid: UUID = UUID()
     var name: String = String()
     var amount: Int = 0
     var checkpointDate: Date = Date()
     var sortIndex: Int = 0
     var deletedAt: Date?
-
+    var typeRaw: String = AccountType.wallet.rawValue
+    
+    var type: AccountType {
+        get { AccountType(rawValue: typeRaw) ?? .wallet }
+        set { typeRaw = newValue.rawValue }
+    }
+    
     @Relationship(deleteRule: .nullify, inverse: \Transaction.account)
     var transactions: [Transaction] = []
 
@@ -42,12 +53,12 @@ final class BalanceAccount {
     }
 }
 
-extension [BalanceAccount] {
-    var notDeleted: [BalanceAccount] {
+extension [Account] {
+    var notDeleted: [Account] {
         filter { $0.deletedAt == nil }
     }
 
-    var inDisplayOrder: [BalanceAccount] {
+    var inDisplayOrder: [Account] {
         sorted { $0.sortIndex < $1.sortIndex }
     }
 

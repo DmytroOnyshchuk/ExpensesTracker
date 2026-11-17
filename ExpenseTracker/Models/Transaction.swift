@@ -20,9 +20,9 @@ final class Transaction {
     var note: String?
     var category: TransactionCategory
     var deletedAt: Date?
-    var account: BalanceAccount?
+    var account: Account?
 
-    init(amount: Int, category: TransactionCategory, date: Date = Date(), note: String? = nil, account: BalanceAccount? = nil) {
+    init(amount: Int, category: TransactionCategory, date: Date = Date(), note: String? = nil, account: Account? = nil) {
         self.id = UUID()
         self.amount = amount
         self.category = category

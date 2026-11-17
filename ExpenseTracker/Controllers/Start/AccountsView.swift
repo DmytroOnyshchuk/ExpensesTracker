@@ -1,5 +1,5 @@
 //
-//  BalancesView.swift
+//  AccountsView.swift
 //  ExpenseTracker
 //
 //  Created by Dmytro Onyshchuk on 16.11.2026.
@@ -9,15 +9,15 @@
 import SwiftData
 import SwiftUI
 
-struct BalancesView: View {
+struct AccountsView: View {
     @Environment(\.modelContext) private var modelContext
-    @Query(sort: \BalanceAccount.sortIndex) private var storedAccounts: [BalanceAccount]
+    @Query(sort: \Account.sortIndex) private var storedAccounts: [Account]
     @Query private var storedTransactions: [Transaction]
 
-    @State private var editingAccount: BalanceAccount?
+    @State private var editingAccount: Account?
     @State private var showNewAccount = false
 
-    private var accounts: [BalanceAccount] { storedAccounts.notDeleted }
+    private var accounts: [Account] { storedAccounts.notDeleted }
     private var transactions: [Transaction] { storedTransactions.notDeleted }
 
     var body: some View {
@@ -25,7 +25,7 @@ struct BalancesView: View {
 
         List {
             ForEach(accounts, id: \.uuid) { account in
-                BalanceAccountRow(name: account.name, amount: account.current(in: transactions)) {
+                AccountRow(name: account.name, amount: account.current(in: transactions)) {
                     editingAccount = account
                 }
                 .listRowBackground(Color.clear)
@@ -47,7 +47,7 @@ struct BalancesView: View {
             HStack(spacing: 12) {
                 Spacer(minLength: 8)
 
-                Text(L10n.balancesTotal)
+                Text(L10n.accountsTotal)
                     .font(.appMedium(18))
                     .foregroundColor(.appLabel)
 
@@ -68,7 +68,7 @@ struct BalancesView: View {
         .scrollContentBackground(.hidden)
         .animation(.default, value: accounts.count)
         .appBackground()
-        .navigationTitle(L10n.balancesTitle)
+        .navigationTitle(L10n.accountsTitle)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
@@ -83,8 +83,8 @@ struct BalancesView: View {
         }
         .overlay {
             if let editingAccount {
-                BalanceEditPopup(
-                    title: L10n.balancesEdit,
+                AccountEditPopup(
+                    title: L10n.accountsEdit,
                     name: editingAccount.name,
                     amount: editingAccount.current(in: transactions),
                     onCancel: { self.editingAccount = nil }
@@ -94,8 +94,8 @@ struct BalancesView: View {
                 }
                 .transition(.opacity)
             } else if showNewAccount {
-                BalanceEditPopup(
-                    title: L10n.balancesNew,
+                AccountEditPopup(
+                    title: L10n.accountsNew,
                     name: "",
                     amount: .zero,
                     onCancel: { showNewAccount = false }
@@ -110,7 +110,7 @@ struct BalancesView: View {
         .animation(.easeInOut(duration: 0.2), value: showNewAccount)
     }
 
-    private func update(_ account: BalanceAccount, name: String, amount: Int, currentAmount: Int) {
+    private func update(_ account: Account, name: String, amount: Int, currentAmount: Int) {
         account.name = name
         if amount != currentAmount {
             account.setAmount(amount)
@@ -119,7 +119,7 @@ struct BalancesView: View {
     }
 
     private func create(name: String, amount: Int) {
-        let account = BalanceAccount(name: name, amount: amount, sortIndex: accounts.nextSortIndex)
+        let account = Account(name: name, amount: amount, sortIndex: accounts.nextSortIndex)
         modelContext.insert(account)
         try? modelContext.save()
     }
@@ -134,7 +134,7 @@ struct InsetDivider: View {
     }
 }
 
-struct BalanceAccountRow: View {
+struct AccountRow: View {
     let name: String
     let amount: Int
     let action: () -> Void
@@ -163,7 +163,7 @@ struct BalanceAccountRow: View {
     }
 }
 
-struct BalanceEditPopup: View {
+struct AccountEditPopup: View {
     let title: String
     let onCancel: () -> Void
     let onConfirm: (String, Int) -> Void
@@ -206,7 +206,7 @@ struct BalanceEditPopup: View {
                     .padding(.horizontal, 16)
 
                 field(
-                    TextField("", text: $name, prompt: Text(L10n.balancesName).foregroundColor(.appLabel.opacity(0.6)))
+                    TextField("", text: $name, prompt: Text(L10n.accountsName).foregroundColor(.appLabel.opacity(0.6)))
                         .focused($focusedField, equals: .name)
                         .submitLabel(.next)
                         .onSubmit { focusedField = .amount }
@@ -250,7 +250,7 @@ struct BalanceEditPopup: View {
 
 #Preview {
     NavigationStack {
-        BalancesView()
+        AccountsView()
     }
     .modelContainer(makePreviewModelContainer())
 }

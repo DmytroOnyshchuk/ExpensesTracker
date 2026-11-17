@@ -59,7 +59,7 @@ extension UserManager {
         for category in try context.fetch(FetchDescriptor<TransactionCategory>()) {
             context.delete(category)
         }
-        for account in try context.fetch(FetchDescriptor<BalanceAccount>()) {
+        for account in try context.fetch(FetchDescriptor<Account>()) {
             context.delete(account)
         }
         try context.save()

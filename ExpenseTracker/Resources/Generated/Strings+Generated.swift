@@ -18,6 +18,18 @@ internal enum L10n {
   internal static func aboutVersion(_ p1: Any) -> String {
     return L10n.tr("Localizable", "ABOUT_VERSION", String(describing: p1), fallback: "Version %@")
   }
+  /// Account deleted
+  internal static let accountsDeleted = L10n.tr("Localizable", "ACCOUNTS_DELETED", fallback: "Account deleted")
+  /// Edit account
+  internal static let accountsEdit = L10n.tr("Localizable", "ACCOUNTS_EDIT", fallback: "Edit account")
+  /// Name
+  internal static let accountsName = L10n.tr("Localizable", "ACCOUNTS_NAME", fallback: "Name")
+  /// New account
+  internal static let accountsNew = L10n.tr("Localizable", "ACCOUNTS_NEW", fallback: "New account")
+  /// Accounts
+  internal static let accountsTitle = L10n.tr("Localizable", "ACCOUNTS_TITLE", fallback: "Accounts")
+  /// Total
+  internal static let accountsTotal = L10n.tr("Localizable", "ACCOUNTS_TOTAL", fallback: "Total")
   /// Localizable.strings
   ///   SwiftTemplate
   /// 
@@ -86,18 +98,6 @@ internal enum L10n {
   internal static func backupsTransactionsCount(_ p1: Int) -> String {
     return L10n.tr("Localizable", "BACKUPS_TRANSACTIONS_COUNT", p1, fallback: "Transactions: %d")
   }
-  /// Balance deleted
-  internal static let balancesDeleted = L10n.tr("Localizable", "BALANCES_DELETED", fallback: "Balance deleted")
-  /// Edit balance
-  internal static let balancesEdit = L10n.tr("Localizable", "BALANCES_EDIT", fallback: "Edit balance")
-  /// Name
-  internal static let balancesName = L10n.tr("Localizable", "BALANCES_NAME", fallback: "Name")
-  /// New balance
-  internal static let balancesNew = L10n.tr("Localizable", "BALANCES_NEW", fallback: "New balance")
-  /// Balances
-  internal static let balancesTitle = L10n.tr("Localizable", "BALANCES_TITLE", fallback: "Balances")
-  /// Total
-  internal static let balancesTotal = L10n.tr("Localizable", "BALANCES_TOTAL", fallback: "Total")
   /// Exceeded by %@
   internal static func budgetExceeded(_ p1: Any) -> String {
     return L10n.tr("Localizable", "BUDGET_EXCEEDED", String(describing: p1), fallback: "Exceeded by %@")
