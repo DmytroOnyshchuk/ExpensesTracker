@@ -23,7 +23,7 @@ struct DigitPadView: View {
     var body: some View {
         VStack(spacing: 0) {
             Text(input.text ?? placeholder)
-                .font(input.isEmpty ? .appLight(20) : .appLight(32))
+                .font(input.isEmpty ? .appLight(24) : .appLight(32))
                 .foregroundColor(input.isEmpty ? .appLabel : .appWhite)
                 .keyframeAnimator(initialValue: 1.0, trigger: attentionTrigger) { content, scale in
                     content.scaleEffect(scale)
@@ -54,6 +54,7 @@ struct DigitPadView: View {
                     }
                 }
             }
+            // .border(.red)
         }
     }
 

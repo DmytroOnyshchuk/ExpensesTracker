@@ -44,12 +44,13 @@ struct StartView: View {
                             action: openAccounts
                         )
                         .padding(.horizontal, 8)
-                        // .padding(.vertical, -12)
+                        .padding(.top, 12)
+                        // .border(.red)
                     }
 
                     DigitPadView(input: $input, placeholder: operationType.enterAmountTitle, attentionTrigger: amountAttentionTrigger)
                         .frame(maxWidth: .infinity)
-                        .padding(.top, 14)
+                        // .border(.red)
                         .overlay(alignment: .bottomTrailing) {
                             VStack(spacing: 8) {
                                 if appSettings.accounting.incomeEnabled {
