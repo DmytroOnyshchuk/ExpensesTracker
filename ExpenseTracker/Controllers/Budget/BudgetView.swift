@@ -233,12 +233,7 @@ struct BudgetMonthPage: View {
                 .foregroundColor(.appPrimary)
                 .rotationEffect(.degrees(showUnlimited ? 180 : .zero))
                 .frame(width: 60, height: 60)
-                .glassSurface(
-                    in: Circle(),
-                    tint: .appPrimary.opacity(0.15),
-                    isInteractive: true,
-                    fallback: .appPrimary.opacity(0.15)
-                )
+                .glassSurface(in: Circle(), isInteractive: true, fallback: .appLabel.opacity(0.1))
         }
         .frame(maxWidth: .infinity)
         .accessibilityLabel(L10n.budgetNoLimit)
@@ -293,9 +288,9 @@ struct MonthBudgetCard: View {
             .frame(maxWidth: .infinity)
             .glassSurface(
                 in: RoundedRectangle(cornerRadius: 18, style: .continuous),
-                tint: .appPrimary.opacity(0.15),
+                tint: .appPrimary.opacity(0.08),
                 isInteractive: true,
-                fallback: .appPrimary.opacity(0.15)
+                fallback: .appPrimary.opacity(0.08)
             )
             .contentShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
         }
