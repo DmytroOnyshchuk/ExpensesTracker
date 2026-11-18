@@ -73,6 +73,7 @@ struct StartView: View {
                         .padding(.top, 4)
 
                     historyButton
+                        .padding(.top, 8)
                 }
                 // .padding(.vertical, 16)
                 .frame(maxWidth: .infinity, alignment: .top)

@@ -83,7 +83,7 @@ struct TransactionsList: View {
         } action: { _, height in
             contentHeight = height
         }
-        .frame(height: max(contentHeight, estimatedHeight(for: days)), alignment: .top)
+        .frame(height: contentHeight > .zero ? contentHeight : estimatedHeight(for: days), alignment: .top)
         .fullScreenCover(item: $editedTransaction) { transaction in
             TransactionEdit(transaction: transaction)
         }
