@@ -34,16 +34,9 @@ struct StartView: View {
             ScrollView(.vertical) {
                 VStack(spacing: 0) {
                     if appSettings.accounting.multipleAccountsEnabled {
-                        BalanceCard(
-                            accounts: accounts,
-                            selected: selectedAccount,
-                            balance: selectedAccount.map { AccountBalances.shared.current(of: $0) },
-                            amountFor: { AccountBalances.shared.current(of: $0) },
-                            onSelect: selectAccount,
-                            action: openAccounts
-                        )
-                        .padding(.horizontal, 8)
-                        .padding(.top, 12)
+                        StartBalanceCard(accounts: accounts, selected: selectedAccount, onSelect: selectAccount, action: openAccounts)
+                            .padding(.horizontal, 8)
+                            .padding(.top, 12)
                         // .border(.red)
                     }
 
@@ -220,6 +213,25 @@ struct StartView: View {
         }
         return true
     }
+}
+
+struct StartBalanceCard: View {
+    let accounts: [Account]
+    let selected: Account?
+    let onSelect: (Account) -> Void
+    let action: () -> Void
+
+    @Query(filter: Transaction.visible) private var transactions: [Transaction]
+
+    var body: some View {
+        let transactions = transactions
+
+        BalanceCard(accounts: accounts, selected: selected, balance: selected?.current(in: transactions), amountFor: { $0.current(in: transactions) }, onSelect: onSelect, action: action)
+    }
+}
+
+extension StartBalanceCard: Equatable {
+    nonisolated static func == (lhs: StartBalanceCard, rhs: StartBalanceCard) -> Bool { lhs.accounts == rhs.accounts && lhs.selected?.persistentModelID == rhs.selected?.persistentModelID }
 }
 
 #Preview {

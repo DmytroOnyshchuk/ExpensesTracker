@@ -49,14 +49,14 @@ extension Transaction {
     static let visible = #Predicate<Transaction> { $0.deletedAt == nil && ($0.account == nil || $0.account?.isDisabled == false) }
     static let inTrash = #Predicate<Transaction> { $0.deletedAt != nil }
 
-    static func listed(of operationType: OperationType) -> Predicate<Transaction> {
-        let raw = operationType.rawValue
-        return #Predicate<Transaction> { $0.deletedAt == nil && ($0.account == nil || $0.account?.isDisabled == false) && $0.category.operationTypeRaw == raw }
-    }
-
     static func listed(of operationType: OperationType, since start: Date) -> Predicate<Transaction> {
         let raw = operationType.rawValue
         return #Predicate<Transaction> { $0.deletedAt == nil && $0.date >= start && ($0.account == nil || $0.account?.isDisabled == false) && $0.category.operationTypeRaw == raw }
+    }
+
+    static func listed(of operationType: OperationType) -> Predicate<Transaction> {
+        let raw = operationType.rawValue
+        return #Predicate<Transaction> { $0.deletedAt == nil && ($0.account == nil || $0.account?.isDisabled == false) && $0.category.operationTypeRaw == raw }
     }
 
     static func recorded(of operationType: OperationType, in interval: DateInterval) -> Predicate<Transaction> {

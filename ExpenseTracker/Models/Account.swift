@@ -44,6 +44,13 @@ final class Account {
         self.sortIndex = sortIndex
     }
 
+    func current(in transactions: [Transaction]) -> Int {
+        let change = transactions
+            .filter { $0.account?.uuid == uuid && $0.date > checkpointDate }
+            .reduce(0) { $0 + $1.signedAmount }
+        return amount + change
+    }
+
     func setAmount(_ newAmount: Int) {
         amount = newAmount
         checkpointDate = Date()
