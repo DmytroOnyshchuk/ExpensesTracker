@@ -31,7 +31,7 @@ struct DigitPadView: View {
                     CubicKeyframe(1.5, duration: 0.15)
                     SpringKeyframe(1.0, duration: 0.3)
                 }
-                .frame(height: 58)
+                .frame(height: 64)
 
             GlassContainer(spacing: 0) {
                 VStack(spacing: 10) {

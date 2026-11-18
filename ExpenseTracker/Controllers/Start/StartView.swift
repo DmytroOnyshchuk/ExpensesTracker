@@ -50,6 +50,7 @@ struct StartView: View {
 
                     DigitPadView(input: $input, placeholder: operationType.enterAmountTitle, attentionTrigger: amountAttentionTrigger)
                         .frame(maxWidth: .infinity)
+                        // .padding(.top, 12)
                         // .border(.red)
                         .overlay(alignment: .bottomTrailing) {
                             VStack(spacing: 8) {
