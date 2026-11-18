@@ -16,7 +16,11 @@ struct StatisticsBuckets {
 
     init(period: StatisticsPeriod, transactions: [Transaction], now: Date = Date()) {
         let current = period.interval(containing: now).start
-        let groups = Dictionary(grouping: transactions) { period.interval(containing: $0.date).start }
+        var cached: DateInterval?
+        var groups: [Date: [Transaction]] = [:]
+        for transaction in transactions {
+            groups[period.bucketStart(of: transaction.date, cached: &cached), default: []].append(transaction)
+        }
 
         self.period = period
         self.groups = groups

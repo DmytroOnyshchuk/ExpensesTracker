@@ -69,6 +69,9 @@ struct RootTabView: View {
             }
         }
         .tint(.appPrimary)
+        .background {
+            AccountBalanceTracker()
+        }
         .onOpenURL(perform: openFile)
         .backupImport(from: $openedFileURL)
     }

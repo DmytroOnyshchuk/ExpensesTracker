@@ -11,70 +11,27 @@ import SwiftData
 import SwiftUI
 
 struct ExpensesChartView: View {
-    var operationType: OperationType = .outcome
+    let operationType: OperationType
 
-    @Query(filter: Transaction.visible) private var storedTransactions: [Transaction]
+    @Query private var transactions: [Transaction]
     @Query(filter: TransactionCategory.notDeleted) private var storedCategories: [TransactionCategory]
 
-    private var transactions: [Transaction] { storedTransactions.of(operationType) }
-
-    private var categories: [TransactionCategory] { storedCategories.of(operationType) }
-
     @State private var period: StatisticsPeriod = .day
-    @State private var selection: DateInterval? = StatisticsPeriod.day.defaultSelection()
 
-    private var periodBinding: Binding<StatisticsPeriod> {
-        Binding(
-            get: { period },
-            set: { newValue in
-                guard newValue != period else { return }
-                period = newValue
-                selection = newValue.defaultSelection()
-            }
-        )
+    init(operationType: OperationType = .outcome) {
+        self.operationType = operationType
+        _transactions = Query(filter: Transaction.listed(of: operationType), sort: \Transaction.date)
     }
 
     var body: some View {
-        let amounts = period.amounts(of: transactions)
-
         ScrollView(.vertical) {
             VStack(spacing: 12) {
-                SegmentedControl(items: StatisticsPeriod.allCases, selection: periodBinding, title: \.title)
+                SegmentedControl(items: StatisticsPeriod.allCases, selection: $period, title: \.title)
                     .sensoryFeedback(trigger: period) { _, _ in FeedbackManager.shared.selectionFeedback }
                     .padding(.horizontal, 64)
 
-                if amounts.isEmpty {
-                    Text(L10n.transactionsListNoTransactions)
-                        .font(.appLight(18))
-                        .foregroundColor(.appGray.opacity(0.6))
-                        .frame(height: 120)
-                } else {
-                    ExpensesChart(period: period, amounts: amounts, selection: $selection)
-                        .frame(height: 320)
-                        .padding(12)
-                        .background(.appSecond)
-                        .clipShape(RoundedRectangle(cornerRadius: 12))
-                        .padding(.horizontal, 16)
-                        .id(period)
-
-                    if let selection {
-                        Text(period.rangeTitle(for: selection))
-                            .font(.appRegular(22))
-                            .foregroundColor(.appPrimary)
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.7)
-                            .padding(.horizontal, 16)
-                            .padding(.top, 8)
-
-                        StatisticsBreakdown(
-                            slices: StatisticsSlice.slices(from: transactions, in: selection, categories: categories),
-                            interval: selection,
-                            averageTitle: period.averageTitle(
-                                for: period.average(of: transactions, in: selection).getAmount()
-                            )
-                        )
-                    }
-                }
+                ExpensesChartContent(period: period, amounts: period.amounts(of: transactions), transactions: transactions, categories: storedCategories.of(operationType))
+                    .id(period)
             }
             .padding(.vertical, 16)
             .frame(maxWidth: .infinity, alignment: .top)
@@ -82,6 +39,55 @@ struct ExpensesChartView: View {
         .appBackground()
         .navigationTitle(L10n.statisticsChart)
         .navigationBarTitleDisplayMode(.inline)
+    }
+}
+
+struct ExpensesChartContent: View {
+    let period: StatisticsPeriod
+    let amounts: [Date: Int]
+    let transactions: [Transaction]
+    let categories: [TransactionCategory]
+
+    @State private var selection: DateInterval?
+
+    init(period: StatisticsPeriod, amounts: [Date: Int], transactions: [Transaction], categories: [TransactionCategory]) {
+        self.period = period
+        self.amounts = amounts
+        self.transactions = transactions
+        self.categories = categories
+        _selection = State(initialValue: period.defaultSelection())
+    }
+
+    var body: some View {
+        VStack(spacing: 12) {
+            if amounts.isEmpty {
+                Text(L10n.transactionsListNoTransactions)
+                    .font(.appLight(18))
+                    .foregroundColor(.appGray.opacity(0.6))
+                    .frame(height: 120)
+            } else {
+                ExpensesChart(period: period, amounts: amounts, selection: $selection)
+                    .frame(height: 320)
+                    .padding(12)
+                    .background(.appSecond)
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                    .padding(.horizontal, 16)
+
+                if let selection {
+                    let selected = transactions.ascendingSlice(in: selection)
+
+                    Text(period.rangeTitle(for: selection))
+                        .font(.appRegular(22))
+                        .foregroundColor(.appPrimary)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.7)
+                        .padding(.horizontal, 16)
+                        .padding(.top, 8)
+
+                    StatisticsBreakdown(slices: StatisticsSlice.slices(from: selected, in: selection, categories: categories), interval: selection, averageTitle: period.averageTitle(for: period.average(of: selected, in: selection).getAmount()))
+                }
+            }
+        }
     }
 }
 

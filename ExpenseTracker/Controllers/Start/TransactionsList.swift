@@ -95,6 +95,29 @@ struct TransactionsList: View {
     }
 }
 
+struct RecentTransactionsList: View {
+    let operationType: OperationType
+
+    private let start: Date
+
+    @Query private var transactions: [Transaction]
+
+    init(operationType: OperationType) {
+        let start = Calendar.current.startOfDay(for: .yesterday)
+        self.operationType = operationType
+        self.start = start
+        _transactions = Query(filter: Transaction.listed(of: operationType, since: start), sort: \Transaction.date, order: .reverse, animation: .default)
+    }
+
+    var body: some View {
+        TransactionsList(transactions: transactions, operationType: operationType)
+    }
+}
+
+extension RecentTransactionsList: Equatable {
+    nonisolated static func == (lhs: RecentTransactionsList, rhs: RecentTransactionsList) -> Bool { lhs.operationType == rhs.operationType && lhs.start == rhs.start }
+}
+
 struct TransactionsDay: Identifiable {
     let title: String
     var transactions: [Transaction]

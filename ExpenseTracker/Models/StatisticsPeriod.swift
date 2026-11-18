@@ -35,8 +35,20 @@ enum StatisticsPeriod: CaseIterable, Identifiable {
         calendar.dateInterval(of: component, for: date) ?? DateInterval(start: date, duration: 0)
     }
 
+    func bucketStart(of date: Date, cached: inout DateInterval?, calendar: Calendar = .current) -> Date {
+        if let cached, date >= cached.start, date < cached.end { return cached.start }
+        let found = interval(containing: date, calendar: calendar)
+        cached = found
+        return found.start
+    }
+
     func starts(of transactions: [Transaction], calendar: Calendar = .current) -> [Date] {
-        Set(transactions.map { interval(containing: $0.date, calendar: calendar).start }).sorted(by: >)
+        var cached: DateInterval?
+        var starts: Set<Date> = []
+        for transaction in transactions {
+            starts.insert(bucketStart(of: transaction.date, cached: &cached, calendar: calendar))
+        }
+        return starts.sorted(by: >)
     }
 
     var averageUnit: StatisticsPeriod? {
@@ -123,8 +135,9 @@ extension StatisticsPeriod {
     }
 
     func amounts(of transactions: [Transaction], calendar: Calendar = .current) -> [Date: Int] {
-        transactions.reduce(into: [:]) { result, transaction in
-            result[interval(containing: transaction.date, calendar: calendar).start, default: .zero] += transaction.amount
+        var cached: DateInterval?
+        return transactions.reduce(into: [:]) { result, transaction in
+            result[bucketStart(of: transaction.date, cached: &cached, calendar: calendar), default: .zero] += transaction.amount
         }
     }
 

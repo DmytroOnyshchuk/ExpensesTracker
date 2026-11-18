@@ -24,7 +24,6 @@ struct StartView: View {
     @AppStorage(UDKey.selectedAccount.rawValue, store: UserDefaults.shared) private var selectedAccountId = String()
     @Query(filter: Account.available, sort: \Account.sortIndex) private var accounts: [Account]
     @StoredSettings private var appSettings
-    @Query(filter: Transaction.visible, sort: \Transaction.date, order: .reverse, animation: .default) private var transactions: [Transaction]
 
     private var operationType: OperationType {
         appSettings.accounting.incomeEnabled ? selectedOperationType : .outcome
@@ -38,8 +37,8 @@ struct StartView: View {
                         BalanceCard(
                             accounts: accounts,
                             selected: selectedAccount,
-                            balance: selectedAccount?.current(in: transactions),
-                            amountFor: { $0.current(in: transactions) },
+                            balance: selectedAccount.map { AccountBalances.shared.current(of: $0) },
+                            amountFor: { AccountBalances.shared.current(of: $0) },
                             onSelect: selectAccount,
                             action: openAccounts
                         )
@@ -71,7 +70,7 @@ struct StartView: View {
                         .transition(.opacity)
                     }
 
-                    TransactionsList(transactions: transactions.of(operationType), operationType: operationType)
+                    RecentTransactionsList(operationType: operationType)
                         // .border(.green)
                         .padding(.top, showCategories ? 4 : 20)
 

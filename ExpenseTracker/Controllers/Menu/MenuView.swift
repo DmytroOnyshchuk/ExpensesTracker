@@ -73,7 +73,7 @@ enum MenuSection: CaseIterable, Identifiable {
 }
 
 struct MenuView: View {
-    @Query(filter: Transaction.notDeleted) private var transactions: [Transaction]
+    @Query private var monthOutcome: [Transaction]
     @Query(filter: Account.notDeleted) private var accounts: [Account]
     @StoredSettings private var appSettings
 
@@ -86,7 +86,9 @@ struct MenuView: View {
     @State private var showAbout = false
     @State private var showTrash = false
 
-    private let period = StatisticsPeriod.month
+    init() {
+        _monthOutcome = Query(filter: Transaction.recorded(of: .outcome, in: StatisticsPeriod.month.interval(containing: Date())))
+    }
 
     var body: some View {
         ScrollView(.vertical) {
@@ -153,16 +155,12 @@ struct MenuView: View {
     }
 
     private var spentAmount: Int {
-        let interval = period.interval(containing: Date())
-        return transactions
-            .of(.outcome)
-            .filter { $0.date >= interval.start && $0.date < interval.end }
-            .reduce(0) { $0 + $1.amount }
+        monthOutcome.reduce(0) { $0 + $1.amount }
     }
 
     private var balance: Int? {
         guard appSettings.accounting.multipleAccountsEnabled, !accounts.isEmpty else { return nil }
-        return accounts.enabled.total(in: transactions)
+        return AccountBalances.shared.total(of: accounts.enabled)
     }
 
     private func open(_ item: MenuItem) {

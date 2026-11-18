@@ -33,7 +33,6 @@ struct BudgetView: View {
 
     @Environment(\.modelContext) private var modelContext
 
-    @Query(filter: Transaction.visible) private var storedTransactions: [Transaction]
     @Query(filter: TransactionCategory.nonDirectories) private var storedCategories: [TransactionCategory]
     @AppStorage(UDKey.budget.rawValue, store: UserDefaults.shared) private var budgetData: Data?
 
@@ -43,17 +42,10 @@ struct BudgetView: View {
         let categories = storedCategories.of(.outcome).inDisplayOrder
 
         NavigationStack {
-            BudgetPager(
-                resetToken: resetToken,
-                buckets: StatisticsBuckets(period: .month, transactions: storedTransactions.of(.outcome)),
-                limited: categories.filter { $0.budget > .zero },
-                unlimited: categories.filter { $0.budget <= .zero },
-                monthlyLimit: monthlyLimit,
-                onOpen: open
-            )
-            .appBackground()
-            .navigationTitle(L10n.menuBudget)
-            .navigationBarTitleDisplayMode(.inline)
+            BudgetData(resetToken: resetToken, limited: categories.filter { $0.budget > .zero }, unlimited: categories.filter { $0.budget <= .zero }, monthlyLimit: monthlyLimit, onOpen: open)
+                .appBackground()
+                .navigationTitle(L10n.menuBudget)
+                .navigationBarTitleDisplayMode(.inline)
         }
         .overlay {
             if let target {
@@ -112,6 +104,24 @@ struct BudgetView: View {
     private func close() {
         target = nil
     }
+}
+
+struct BudgetData: View {
+    let resetToken: Int
+    let limited: [TransactionCategory]
+    let unlimited: [TransactionCategory]
+    let monthlyLimit: Int
+    let onOpen: (BudgetTarget) -> Void
+
+    @Query(filter: Transaction.listed(of: .outcome), sort: \Transaction.date) private var transactions: [Transaction]
+
+    var body: some View {
+        BudgetPager(resetToken: resetToken, buckets: StatisticsBuckets(period: .month, transactions: transactions), limited: limited, unlimited: unlimited, monthlyLimit: monthlyLimit, onOpen: onOpen)
+    }
+}
+
+extension BudgetData: Equatable {
+    nonisolated static func == (lhs: BudgetData, rhs: BudgetData) -> Bool { lhs.resetToken == rhs.resetToken && lhs.limited == rhs.limited && lhs.unlimited == rhs.unlimited && lhs.monthlyLimit == rhs.monthlyLimit }
 }
 
 struct BudgetPager: View {

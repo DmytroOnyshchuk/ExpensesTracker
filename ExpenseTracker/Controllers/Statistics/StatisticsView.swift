@@ -14,9 +14,6 @@ struct StatisticsView: View {
     var resetToken: Int = .zero
     var directory: TransactionCategory?
 
-    @Query(filter: Transaction.visible) private var storedTransactions: [Transaction]
-    @Query(filter: TransactionCategory.notDeleted) private var storedCategories: [TransactionCategory]
-
     @State private var period: StatisticsPeriod
     @State private var selectedOperationType: OperationType = .outcome
     @StoredSettings private var appSettings
@@ -25,18 +22,6 @@ struct StatisticsView: View {
 
     private var operationType: OperationType {
         appSettings.accounting.incomeEnabled ? selectedOperationType : .outcome
-    }
-
-    private var transactions: [Transaction] {
-        guard let directoryUuid = directory?.uuid else { return storedTransactions.of(operationType) }
-
-        return storedTransactions.filter {
-            $0.category.parentUuid == directoryUuid || $0.category.uuid == directoryUuid
-        }
-    }
-
-    private var categories: [TransactionCategory] {
-        directory == nil ? storedCategories.of(operationType) : []
     }
 
     init(
@@ -52,42 +37,36 @@ struct StatisticsView: View {
     }
 
     var body: some View {
-        StatisticsContent(
-            resetToken: resetToken,
-            buckets: StatisticsBuckets(period: period, transactions: transactions),
-            categories: categories,
-            period: $period,
-            date: initialDate
-        )
-        .navigationTitle(directory?.name.localized ?? operationType.title)
-        .navigationBarTitleDisplayMode(.inline)
-        .onChange(of: resetToken) {
-            selectedOperationType = .outcome
-        }
-        .toolbar {
-            if directory == nil {
-                ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    NavigationLink {
-                        ExpensesChartView(operationType: operationType)
-                    } label: {
-                        Image(systemName: "chart.bar.fill")
-                            .font(.system(size: 14))
-                            .foregroundColor(.appWhite)
-                    }
-                    .accessibilityLabel(L10n.statisticsChart)
-
-                    if appSettings.accounting.incomeEnabled {
-                        Button(action: toggleOperationType) {
-                            Image(systemName: operationType.systemImage)
-                                .font(.system(size: 14, weight: .semibold))
-                                .contentTransition(.symbolEffect(.replace))
-                                .foregroundColor(operationType == .income ? .green : .appWhite)
+        StatisticsData(resetToken: resetToken, directory: directory, operationType: operationType, period: period, periodBinding: $period, date: initialDate)
+            .navigationTitle(directory?.name.localized ?? operationType.title)
+            .navigationBarTitleDisplayMode(.inline)
+            .onChange(of: resetToken) {
+                selectedOperationType = .outcome
+            }
+            .toolbar {
+                if directory == nil {
+                    ToolbarItemGroup(placement: .navigationBarTrailing) {
+                        NavigationLink {
+                            ExpensesChartView(operationType: operationType)
+                        } label: {
+                            Image(systemName: "chart.bar.fill")
+                                .font(.system(size: 14))
+                                .foregroundColor(.appWhite)
                         }
-                        .accessibilityLabel(operationType.title)
+                        .accessibilityLabel(L10n.statisticsChart)
+
+                        if appSettings.accounting.incomeEnabled {
+                            Button(action: toggleOperationType) {
+                                Image(systemName: operationType.systemImage)
+                                    .font(.system(size: 14, weight: .semibold))
+                                    .contentTransition(.symbolEffect(.replace))
+                                    .foregroundColor(operationType == .income ? .green : .appWhite)
+                            }
+                            .accessibilityLabel(operationType.title)
+                        }
                     }
                 }
             }
-        }
     }
 
     private func toggleOperationType() {
@@ -98,6 +77,45 @@ struct StatisticsView: View {
 
 extension StatisticsView: Equatable {
     nonisolated static func == (lhs: StatisticsView, rhs: StatisticsView) -> Bool { lhs.resetToken == rhs.resetToken && lhs.directory?.persistentModelID == rhs.directory?.persistentModelID && lhs.initialDate == rhs.initialDate }
+}
+
+struct StatisticsData: View {
+    let resetToken: Int
+    let directory: TransactionCategory?
+    let operationType: OperationType
+    let period: StatisticsPeriod
+    let periodBinding: Binding<StatisticsPeriod>
+    let date: Date
+
+    @Query private var storedTransactions: [Transaction]
+    @Query(filter: TransactionCategory.notDeleted) private var storedCategories: [TransactionCategory]
+
+    init(resetToken: Int, directory: TransactionCategory?, operationType: OperationType, period: StatisticsPeriod, periodBinding: Binding<StatisticsPeriod>, date: Date) {
+        self.resetToken = resetToken
+        self.directory = directory
+        self.operationType = operationType
+        self.period = period
+        self.periodBinding = periodBinding
+        self.date = date
+        _storedTransactions = Query(filter: Transaction.listed(of: directory?.operationType ?? operationType), sort: \Transaction.date)
+    }
+
+    private var transactions: [Transaction] {
+        guard let directoryUuid = directory?.uuid else { return storedTransactions }
+        return storedTransactions.filter { $0.category.parentUuid == directoryUuid || $0.category.uuid == directoryUuid }
+    }
+
+    private var categories: [TransactionCategory] {
+        directory == nil ? storedCategories.of(operationType) : []
+    }
+
+    var body: some View {
+        StatisticsContent(resetToken: resetToken, buckets: StatisticsBuckets(period: period, transactions: transactions), categories: categories, period: periodBinding, date: date)
+    }
+}
+
+extension StatisticsData: Equatable {
+    nonisolated static func == (lhs: StatisticsData, rhs: StatisticsData) -> Bool { lhs.resetToken == rhs.resetToken && lhs.directory?.persistentModelID == rhs.directory?.persistentModelID && lhs.operationType == rhs.operationType && lhs.period == rhs.period && lhs.date == rhs.date }
 }
 
 struct StatisticsContent: View {
