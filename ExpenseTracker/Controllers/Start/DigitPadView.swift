@@ -23,7 +23,7 @@ struct DigitPadView: View {
     var body: some View {
         VStack(spacing: 0) {
             Text(input.text ?? placeholder)
-                .font(input.isEmpty ? .appLight(18) : .appLight(30))
+                .font(input.isEmpty ? .appLight(20) : .appLight(32))
                 .foregroundColor(input.isEmpty ? .appLabel : .appWhite)
                 .keyframeAnimator(initialValue: 1.0, trigger: attentionTrigger) { content, scale in
                     content.scaleEffect(scale)
@@ -36,7 +36,7 @@ struct DigitPadView: View {
             GlassContainer(spacing: 0) {
                 VStack(spacing: 10) {
                     ForEach(buttons, id: \.self) { row in
-                        HStack(spacing: 10) {
+                        HStack(spacing: 14) {
                             ForEach(row, id: \.self) { key in
                                 Button(action: {
                                     FeedbackManager.shared.keyTapped(key)
@@ -45,9 +45,7 @@ struct DigitPadView: View {
                                     label(for: key)
                                         .frame(width: 70, height: 70)
                                         .foregroundColor(
-                                            ThemeManager.shared.theme.colorScheme == .light
-                                                ? .appWhite.mix(with: .appMain, by: 0.12)
-                                                : .appWhite
+                                            ThemeManager.shared.theme.colorScheme == .light ? .appWhite.mix(with: .appMain, by: 0.12) : .appWhite
                                         )
                                         .glassSurface(in: Circle(), isInteractive: true, fallback: .appLabel.opacity(0.1))
                                 }

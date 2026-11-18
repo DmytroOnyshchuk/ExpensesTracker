@@ -27,7 +27,7 @@ struct SecuritySettings: Codable {
 struct AppSettings: Codable {
     var theme: ThemePreset = .dark
     var statisticsChartStyle: StatisticsChartStyle = .pie
-    var hideCategories: Bool = false
+    var hideCategories: Bool = true
     var feedback = FeedbackSettings()
     var accounting = AccountingSettings()
     var security = SecuritySettings()

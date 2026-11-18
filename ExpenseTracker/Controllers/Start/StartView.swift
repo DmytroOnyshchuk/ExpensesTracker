@@ -49,6 +49,7 @@ struct StartView: View {
 
                     DigitPadView(input: $input, placeholder: operationType.enterAmountTitle, attentionTrigger: amountAttentionTrigger)
                         .frame(maxWidth: .infinity)
+                        .padding(.top, 14)
                         .overlay(alignment: .bottomTrailing) {
                             VStack(spacing: 8) {
                                 if appSettings.accounting.incomeEnabled {
@@ -70,7 +71,7 @@ struct StartView: View {
 
                     TransactionsList(transactions: transactions.of(operationType), operationType: operationType)
                         // .border(.green)
-                        .padding(.top, 4)
+                        .padding(.top, showCategories ? 4 : 16)
 
                     historyButton
                         .padding(.top, 8)

@@ -158,7 +158,7 @@ struct TransactionRow: View {
                 .font(.appLight(22))
                 .foregroundColor(transaction.operationType == .income ? .green : primaryTextColor)
         }
-        .frame(height: 42)
+        .frame(height: 38)
         .swipeActions(edge: .trailing, allowsFullSwipe: true) {
             Button(role: .destructive) {
                 modelContext.deleteWithUndo(transaction)
