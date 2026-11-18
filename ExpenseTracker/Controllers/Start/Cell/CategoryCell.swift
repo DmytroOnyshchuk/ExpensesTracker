@@ -39,6 +39,10 @@ struct CategoryCell: View {
                         .multilineTextAlignment(.center)
                         .lineLimit(2)
                 }
+                .frame(maxWidth: .infinity)
+                .padding(.horizontal, 10)
+                .padding(.vertical, 4)
+                .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
         } else {
@@ -68,6 +72,10 @@ struct CategoryCell: View {
                         }
                 }
                 .frame(height: 74)
+                .frame(maxWidth: .infinity)
+                .padding(.horizontal, 10)
+                .padding(.vertical, 4)
+                .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
         }

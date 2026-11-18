@@ -19,7 +19,7 @@ struct CategoryGrid: View {
     @State private var navigateToEditCategories = false
 
     private var gridLayout: [GridItem] {
-        Array(repeating: GridItem(.flexible(), spacing: 20), count: 4)
+        Array(repeating: GridItem(.flexible(), spacing: 0), count: 4)
     }
 
     private var categories: [TransactionCategory] { storedCategories.of(operationType) }
@@ -34,7 +34,7 @@ struct CategoryGrid: View {
                 HStack(spacing: 0) {
                     ForEach(0 ..< chunkedCategories.count, id: \.self) { pageIndex in
                         VStack(alignment: .center, spacing: 0) {
-                            LazyVGrid(columns: gridLayout, spacing: 8) {
+                            LazyVGrid(columns: gridLayout, spacing: 0) {
                                 ForEach(chunkedCategories[pageIndex], id: \.id) { category in
                                     CategoryCell(category: category) {
                                         onSelect(category)
@@ -47,7 +47,8 @@ struct CategoryGrid: View {
                                     }
                                 }
                             }
-                            .padding(.horizontal, 32)
+                            .padding(.horizontal, 22)
+                            .padding(.vertical, -4)
                             .frame(maxHeight: .infinity, alignment: .top)
                         }
                         .containerRelativeFrame(.horizontal)
@@ -105,6 +106,10 @@ struct EditCategoriesCell: View {
                     .lineLimit(1)
             }
             .frame(height: 80)
+            .frame(maxWidth: .infinity)
+            .padding(.horizontal, 10)
+            .padding(.vertical, 4)
+            .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
     }
