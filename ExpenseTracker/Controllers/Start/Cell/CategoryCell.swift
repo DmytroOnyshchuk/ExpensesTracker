@@ -71,7 +71,7 @@ struct CategoryCell: View {
                             CubicKeyframe(1.0, duration: 0.3)
                         }
                 }
-                .frame(height: 76)
+                .frame(height: 74)
                 .frame(maxWidth: .infinity)
                 .padding(.horizontal, 10)
                 .padding(.vertical, 4)
