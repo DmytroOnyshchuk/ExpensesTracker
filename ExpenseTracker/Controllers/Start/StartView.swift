@@ -24,7 +24,6 @@ struct StartView: View {
     @AppStorage(UDKey.selectedAccount.rawValue, store: UserDefaults.shared) private var selectedAccountId = String()
     @Query(filter: Account.available, sort: \Account.sortIndex) private var accounts: [Account]
     @StoredSettings private var appSettings
-    @Query(filter: Transaction.visible, sort: \Transaction.date, order: .reverse, animation: .default) private var transactions: [Transaction]
 
     private var operationType: OperationType {
         appSettings.accounting.incomeEnabled ? selectedOperationType : .outcome
@@ -35,16 +34,9 @@ struct StartView: View {
             ScrollView(.vertical) {
                 VStack(spacing: 0) {
                     if appSettings.accounting.multipleAccountsEnabled {
-                        BalanceCard(
-                            accounts: accounts,
-                            selected: selectedAccount,
-                            balance: selectedAccount?.current(in: transactions),
-                            amountFor: { $0.current(in: transactions) },
-                            onSelect: selectAccount,
-                            action: openAccounts
-                        )
-                        .padding(.horizontal, 8)
-                        .padding(.top, 12)
+                        StartBalanceCard(accounts: accounts, selected: selectedAccount, onSelect: selectAccount, action: openAccounts)
+                            .padding(.horizontal, 8)
+                            .padding(.top, 12)
                         // .border(.red)
                     }
 
@@ -71,7 +63,7 @@ struct StartView: View {
                         .transition(.opacity)
                     }
 
-                    TransactionsList(transactions: transactions.of(operationType), operationType: operationType)
+                    RecentTransactionsList(operationType: operationType)
                         // .border(.green)
                         .padding(.top, showCategories ? 4 : 20)
 
@@ -221,6 +213,25 @@ struct StartView: View {
         }
         return true
     }
+}
+
+struct StartBalanceCard: View {
+    let accounts: [Account]
+    let selected: Account?
+    let onSelect: (Account) -> Void
+    let action: () -> Void
+
+    @Query(filter: Transaction.visible) private var transactions: [Transaction]
+
+    var body: some View {
+        let transactions = transactions
+
+        BalanceCard(accounts: accounts, selected: selected, balance: selected?.current(in: transactions), amountFor: { $0.current(in: transactions) }, onSelect: onSelect, action: action)
+    }
+}
+
+extension StartBalanceCard: Equatable {
+    nonisolated static func == (lhs: StartBalanceCard, rhs: StartBalanceCard) -> Bool { lhs.accounts == rhs.accounts && lhs.selected?.persistentModelID == rhs.selected?.persistentModelID }
 }
 
 #Preview {
