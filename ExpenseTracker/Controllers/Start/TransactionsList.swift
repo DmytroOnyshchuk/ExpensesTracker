@@ -15,7 +15,6 @@ struct TransactionsList: View {
 
     private static let rowHeight = 64 + 8
     private static let headerHeight = 40
-    private static let sectionSpacing = 28
 
     @State private var contentHeight: CGFloat = .zero
     @State private var editedTransaction: Transaction?
@@ -46,7 +45,7 @@ struct TransactionsList: View {
                             .font(.appLight(18))
                             .foregroundColor(.appGray.opacity(0.6))
                             .frame(maxWidth: .infinity)
-                            .frame(height: 48)
+                            // .frame(height: 48)
                             .listRowBackground(Color.clear)
                             .listRowSeparator(.hidden)
                     } else {
@@ -77,6 +76,8 @@ struct TransactionsList: View {
         .listStyle(.plain)
         .environment(\.defaultMinListHeaderHeight, 0)
         .scrollContentBackground(.hidden)
+        .contentMargins(.top, 0, for: .scrollContent)
+        .listSectionSpacing(0)
         .onScrollGeometryChange(for: CGFloat.self) { geometry in
             geometry.contentSize.height
         } action: { _, height in
@@ -90,7 +91,7 @@ struct TransactionsList: View {
 
     private func estimatedHeight(for days: [TransactionsDay]) -> CGFloat {
         let rows = days.reduce(0) { $0 + max($1.transactions.count, 1) }
-        return (rows * Self.rowHeight + days.count * (Self.headerHeight + Self.sectionSpacing)).cgFloat
+        return (rows * Self.rowHeight + days.count * Self.headerHeight).cgFloat
     }
 }
 

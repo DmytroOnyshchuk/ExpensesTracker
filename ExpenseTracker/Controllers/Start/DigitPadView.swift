@@ -21,9 +21,9 @@ struct DigitPadView: View {
     ]
 
     var body: some View {
-        VStack(spacing: 12) {
+        VStack(spacing: 0) {
             Text(input.text ?? placeholder)
-                .font(input.isEmpty ? .appLight(24) : .appLight(32))
+                .font(input.isEmpty ? .appLight(18) : .appLight(30))
                 .foregroundColor(input.isEmpty ? .appLabel : .appWhite)
                 .keyframeAnimator(initialValue: 1.0, trigger: attentionTrigger) { content, scale in
                     content.scaleEffect(scale)
@@ -31,19 +31,19 @@ struct DigitPadView: View {
                     CubicKeyframe(1.5, duration: 0.15)
                     SpringKeyframe(1.0, duration: 0.3)
                 }
-                .frame(height: 64)
+                .frame(height: 58)
 
             GlassContainer(spacing: 0) {
-                VStack(spacing: 12) {
+                VStack(spacing: 10) {
                     ForEach(buttons, id: \.self) { row in
-                        HStack(spacing: 12) {
+                        HStack(spacing: 10) {
                             ForEach(row, id: \.self) { key in
                                 Button(action: {
                                     FeedbackManager.shared.keyTapped(key)
                                     input.tap(key)
                                 }) {
                                     label(for: key)
-                                        .frame(width: 75, height: 75)
+                                        .frame(width: 70, height: 70)
                                         .foregroundColor(
                                             ThemeManager.shared.theme.colorScheme == .light
                                                 ? .appWhite.mix(with: .appMain, by: 0.12)
@@ -64,10 +64,10 @@ struct DigitPadView: View {
         switch key {
         case let .digit(digit):
             Text(digit.string)
-                .font(.appLight(42))
+                .font(.appLight(38))
         case .decimalSeparator:
             Text(".")
-                .font(.appLight(42))
+                .font(.appLight(38))
         case .backspace:
             Image(systemName: "delete.backward.fill")
                 .font(.system(size: 20, weight: .medium))

@@ -29,12 +29,12 @@ struct CategoryGrid: View {
     }
 
     var body: some View {
-        VStack(spacing: 16) {
+        VStack(spacing: 0) {
             ScrollView(.horizontal) {
                 HStack(spacing: 0) {
                     ForEach(0 ..< chunkedCategories.count, id: \.self) { pageIndex in
                         VStack(alignment: .center, spacing: 0) {
-                            LazyVGrid(columns: gridLayout, spacing: 16) {
+                            LazyVGrid(columns: gridLayout, spacing: 8) {
                                 ForEach(chunkedCategories[pageIndex], id: \.id) { category in
                                     CategoryCell(category: category) {
                                         onSelect(category)
@@ -60,14 +60,14 @@ struct CategoryGrid: View {
             .scrollPosition(id: $currentPage)
             .scrollIndicators(.hidden)
             .scrollClipDisabled()
-            .frame(height: 176)
+            // .frame(height: 176)
 
             if chunkedCategories.count > 1 {
                 HStack(spacing: 8) {
                     ForEach(0 ..< chunkedCategories.count, id: \.self) { index in
                         Circle()
                             .fill(currentPage == index ? Color.appWhite : Color.appWhite.opacity(0.3))
-                            .frame(width: 8, height: 8)
+                            .frame(width: 6, height: 6)
                             .onTapGesture {
                                 withAnimation(.easeInOut(duration: 0.3)) {
                                     currentPage = index

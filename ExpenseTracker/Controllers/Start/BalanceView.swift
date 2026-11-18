@@ -37,8 +37,8 @@ struct BalanceCard: View {
             }
             .buttonStyle(.plain)
         }
-        .padding(.horizontal, 16)
-        .padding(.vertical, 12)
+        .padding(.horizontal, 12)
+        .padding(.vertical, 8)
         .glassSurface(
             in: RoundedRectangle(cornerRadius: 18, style: .continuous),
             fallback: .appLabel.opacity(0.1)

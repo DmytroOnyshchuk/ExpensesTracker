@@ -17,13 +17,13 @@ struct CategoryCell: View {
     var body: some View {
         if category.isDirectory {
             Button(action: select) {
-                VStack(spacing: 8) {
+                VStack(spacing: 6) {
                     ZStack {
                         Image(systemName: "folder.fill")
                             .resizable()
                             .scaledToFit()
                             .foregroundColor(.appYellow)
-                            .frame(height: 60)
+                            .frame(height: 58)
 
                         category.categoryIcon.image
                             .resizable()
@@ -67,7 +67,7 @@ struct CategoryCell: View {
                             CubicKeyframe(1.0, duration: 0.3)
                         }
                 }
-                .frame(height: 80)
+                .frame(height: 74)
             }
             .buttonStyle(.plain)
         }
@@ -78,7 +78,7 @@ struct CategoryCell: View {
             .resizable()
             .scaledToFit()
             .foregroundColor(category.categoryIcon.color)
-            .frame(width: 48, height: 56)
+            .frame(width: 48, height: 58)
     }
 
     private func select() {

@@ -33,7 +33,7 @@ struct StartView: View {
     var body: some View {
         NavigationStack {
             ScrollView(.vertical) {
-                VStack(spacing: 16) {
+                VStack(spacing: 0) {
                     if appSettings.accounting.multipleAccountsEnabled {
                         BalanceCard(
                             accounts: accounts,
@@ -44,7 +44,7 @@ struct StartView: View {
                             action: openAccounts
                         )
                         .padding(.horizontal, 8)
-                        .padding(.vertical, -12)
+                        // .padding(.vertical, -12)
                     }
 
                     DigitPadView(input: $input, placeholder: operationType.enterAmountTitle, attentionTrigger: amountAttentionTrigger)
@@ -56,22 +56,25 @@ struct StartView: View {
                                 }
                                 noteButton
                             }
-                            .padding(.bottom, 12)
+                            // .padding(.bottom, 12)
                         }
                     if showCategories {
                         CategoryGrid(operationType: operationType) { category in
                             addTransaction(with: category)
                         }
+                        // .border(.red)
+                        .padding(.top, 14)
                         .id(operationType)
                         .transition(.opacity)
                     }
 
                     TransactionsList(transactions: transactions.of(operationType), operationType: operationType)
-                        .padding(.top, -12)
+                        // .border(.green)
+                        .padding(.top, 4)
 
                     historyButton
                 }
-                .padding(.vertical, 16)
+                // .padding(.vertical, 16)
                 .frame(maxWidth: .infinity, alignment: .top)
                 .animation(.easeInOut(duration: 0.25), value: showCategories)
             }
