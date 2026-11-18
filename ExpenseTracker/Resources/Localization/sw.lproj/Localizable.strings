@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Salio";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Imebaki";
 "BUDGET_LEFT" = "Imebaki: %@";
 "BUDGET_EXCEEDED" = "Imezidi kwa %@";
 "BUDGET_NO_LIMIT" = "Hakuna kikomo";

@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "বেলেঞ্চ";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "বাকী";
 "BUDGET_LEFT" = "বাকী: %@";
 "BUDGET_EXCEEDED" = "%@ অতিক্ৰম কৰিছে";
 "BUDGET_NO_LIMIT" = "কোনো সীমা নাই";

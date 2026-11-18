@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "இருப்பு";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "மீதம்";
 "BUDGET_LEFT" = "மீதம்: %@";
 "BUDGET_EXCEEDED" = "%@ மீறியது";
 "BUDGET_NO_LIMIT" = "வரம்பு இல்லை";

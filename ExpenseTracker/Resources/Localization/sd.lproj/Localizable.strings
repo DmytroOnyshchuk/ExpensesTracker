@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "بيلنس";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "باقي";
 "BUDGET_LEFT" = "باقي: %@";
 "BUDGET_EXCEEDED" = "%@ وڌي ويو";
 "BUDGET_NO_LIMIT" = "ڪا حد ناهي";

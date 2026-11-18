@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "باڵانس";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "ماوە";
 "BUDGET_LEFT" = "ماوە: %@";
 "BUDGET_EXCEEDED" = "%@ تێپەڕیوە";
 "BUDGET_NO_LIMIT" = "بێ سنوور";

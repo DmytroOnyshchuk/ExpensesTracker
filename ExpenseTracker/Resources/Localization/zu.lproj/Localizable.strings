@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Ibhalansi";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Okusele";
 "BUDGET_LEFT" = "Okusele: %@";
 "BUDGET_EXCEEDED" = "Kweqe nge-%@";
 "BUDGET_NO_LIMIT" = "Awukho umkhawulo";

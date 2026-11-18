@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Bakiye";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Kalan";
 "BUDGET_LEFT" = "Kalan: %@";
 "BUDGET_EXCEEDED" = "%@ aşıldı";
 "BUDGET_NO_LIMIT" = "Limit yok";

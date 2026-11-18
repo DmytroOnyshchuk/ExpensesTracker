@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Bîlanço";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Maye";
 "BUDGET_LEFT" = "Maye: %@";
 "BUDGET_EXCEEDED" = "%@ derbas bûye";
 "BUDGET_NO_LIMIT" = "Bê sînor";

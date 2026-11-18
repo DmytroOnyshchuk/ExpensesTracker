@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Kontostand";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Übrig";
 "BUDGET_LEFT" = "Übrig: %@";
 "BUDGET_EXCEEDED" = "Um %@ überschritten";
 "BUDGET_NO_LIMIT" = "Kein Limit";

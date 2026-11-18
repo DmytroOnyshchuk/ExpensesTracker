@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "ยอดคงเหลือ";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "เหลือ";
 "BUDGET_LEFT" = "เหลือ: %@";
 "BUDGET_EXCEEDED" = "เกิน %@";
 "BUDGET_NO_LIMIT" = "ไม่จำกัด";

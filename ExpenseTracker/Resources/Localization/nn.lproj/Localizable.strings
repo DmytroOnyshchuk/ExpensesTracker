@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Saldo";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Att";
 "BUDGET_LEFT" = "Att: %@";
 "BUDGET_EXCEEDED" = "Overskride med %@";
 "BUDGET_NO_LIMIT" = "Inga grense";

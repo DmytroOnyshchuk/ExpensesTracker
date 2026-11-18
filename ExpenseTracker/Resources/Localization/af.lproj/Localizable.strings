@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Balans";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Oor";
 "BUDGET_LEFT" = "Oor: %@";
 "BUDGET_EXCEEDED" = "Oorskry met %@";
 "BUDGET_NO_LIMIT" = "Geen limiet";

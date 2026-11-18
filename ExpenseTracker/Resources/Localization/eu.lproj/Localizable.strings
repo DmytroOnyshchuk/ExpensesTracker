@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Saldoa";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Geratzen da";
 "BUDGET_LEFT" = "Geratzen da: %@";
 "BUDGET_EXCEEDED" = "%@ gainditu da";
 "BUDGET_NO_LIMIT" = "Mugarik gabe";

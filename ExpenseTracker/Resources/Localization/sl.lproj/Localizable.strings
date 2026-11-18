@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Stanje";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Preostalo";
 "BUDGET_LEFT" = "Preostalo: %@";
 "BUDGET_EXCEEDED" = "Preseženo za %@";
 "BUDGET_NO_LIMIT" = "Brez omejitve";

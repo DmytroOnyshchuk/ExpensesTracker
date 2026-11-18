@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Saldo";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Queden";
 "BUDGET_LEFT" = "Queden: %@";
 "BUDGET_EXCEEDED" = "Superat en %@";
 "BUDGET_NO_LIMIT" = "Sense límit";

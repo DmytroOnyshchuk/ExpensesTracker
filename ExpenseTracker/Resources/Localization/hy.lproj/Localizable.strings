@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Մնացորդ";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Մնացել է";
 "BUDGET_LEFT" = "Մնացել է՝ %@";
 "BUDGET_EXCEEDED" = "Գերազանցվել է %@-ով";
 "BUDGET_NO_LIMIT" = "Առանց սահմանի";

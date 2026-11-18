@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Bilanċ";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Fadal";
 "BUDGET_LEFT" = "Fadal: %@";
 "BUDGET_EXCEEDED" = "Inqabeż b'%@";
 "BUDGET_NO_LIMIT" = "Bla limitu";

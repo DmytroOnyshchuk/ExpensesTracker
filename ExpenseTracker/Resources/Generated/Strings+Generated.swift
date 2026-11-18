@@ -130,6 +130,8 @@ internal enum L10n {
   internal static func backupsTransactionsCount(_ p1: Int) -> String {
     return L10n.tr("Localizable", "BACKUPS_TRANSACTIONS_COUNT", p1, fallback: "Transactions: %d")
   }
+  /// Available
+  internal static let budgetAvailable = L10n.tr("Localizable", "BUDGET_AVAILABLE", fallback: "Available")
   /// Exceeded by %@
   internal static func budgetExceeded(_ p1: Any) -> String {
     return L10n.tr("Localizable", "BUDGET_EXCEEDED", String(describing: p1), fallback: "Exceeded by %@")

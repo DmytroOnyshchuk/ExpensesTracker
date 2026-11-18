@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Balans";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Qoldi";
 "BUDGET_LEFT" = "Qoldi: %@";
 "BUDGET_EXCEEDED" = "%@ oshib ketdi";
 "BUDGET_NO_LIMIT" = "Limit yoʻq";

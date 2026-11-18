@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "शेष राशि";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "शेष";
 "BUDGET_LEFT" = "शेष: %@";
 "BUDGET_EXCEEDED" = "%@ से अधिक";
 "BUDGET_NO_LIMIT" = "कोई सीमा नहीं";

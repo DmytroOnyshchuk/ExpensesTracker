@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Số dư";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Còn lại";
 "BUDGET_LEFT" = "Còn lại: %@";
 "BUDGET_EXCEEDED" = "Vượt %@";
 "BUDGET_NO_LIMIT" = "Không giới hạn";

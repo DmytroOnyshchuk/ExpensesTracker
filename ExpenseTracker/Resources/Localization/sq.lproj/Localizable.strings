@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Balanca";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Mbetur";
 "BUDGET_LEFT" = "Mbetur: %@";
 "BUDGET_EXCEEDED" = "Tejkaluar me %@";
 "BUDGET_NO_LIMIT" = "Pa limit";

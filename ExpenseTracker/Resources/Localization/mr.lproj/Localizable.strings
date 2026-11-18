@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "शिल्लक";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "शिल्लक";
 "BUDGET_LEFT" = "शिल्लक: %@";
 "BUDGET_EXCEEDED" = "%@ ने ओलांडले";
 "BUDGET_NO_LIMIT" = "मर्यादा नाही";

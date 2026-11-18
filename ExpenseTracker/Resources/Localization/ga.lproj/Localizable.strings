@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Iarmhéid";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Fágtha";
 "BUDGET_LEFT" = "Fágtha: %@";
 "BUDGET_EXCEEDED" = "Sáraithe de %@";
 "BUDGET_NO_LIMIT" = "Gan teorainn";

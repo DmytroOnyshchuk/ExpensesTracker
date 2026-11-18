@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Үлдэгдэл";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Үлдсэн";
 "BUDGET_LEFT" = "Үлдсэн: %@";
 "BUDGET_EXCEEDED" = "%@-аар хэтэрсэн";
 "BUDGET_NO_LIMIT" = "Хязгааргүй";

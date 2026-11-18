@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Balans";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Ar ôl";
 "BUDGET_LEFT" = "Ar ôl: %@";
 "BUDGET_EXCEEDED" = "Wedi mynd %@ drosodd";
 "BUDGET_NO_LIMIT" = "Dim terfyn";

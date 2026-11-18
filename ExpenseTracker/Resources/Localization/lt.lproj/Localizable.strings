@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Likutis";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Liko";
 "BUDGET_LEFT" = "Liko: %@";
 "BUDGET_EXCEEDED" = "Viršyta %@";
 "BUDGET_NO_LIMIT" = "Be limito";

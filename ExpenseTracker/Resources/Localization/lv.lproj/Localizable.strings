@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Atlikums";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Atlicis";
 "BUDGET_LEFT" = "Atlicis: %@";
 "BUDGET_EXCEEDED" = "Pārsniegts par %@";
 "BUDGET_NO_LIMIT" = "Bez limita";

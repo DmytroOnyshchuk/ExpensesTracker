@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "بیلنس";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "باقی";
 "BUDGET_LEFT" = "باقی: %@";
 "BUDGET_EXCEEDED" = "%@ سے تجاوز";
 "BUDGET_NO_LIMIT" = "کوئی حد نہیں";

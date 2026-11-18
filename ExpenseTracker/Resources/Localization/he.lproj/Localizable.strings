@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "יתרה";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "נותרו";
 "BUDGET_LEFT" = "נותרו: %@";
 "BUDGET_EXCEEDED" = "חריגה של %@";
 "BUDGET_NO_LIMIT" = "ללא הגבלה";

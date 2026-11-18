@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "လက်ကျန်ငွေ";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "ကျန်";
 "BUDGET_LEFT" = "ကျန်: %@";
 "BUDGET_EXCEEDED" = "%@ ကျော်လွန်";
 "BUDGET_NO_LIMIT" = "ကန့်သတ်ချက်မရှိ";

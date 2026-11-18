@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Салдо";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Преостанато";
 "BUDGET_LEFT" = "Преостанато: %@";
 "BUDGET_EXCEEDED" = "Надминато за %@";
 "BUDGET_NO_LIMIT" = "Без лимит";

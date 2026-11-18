@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Баланс";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Остават";
 "BUDGET_LEFT" = "Остават: %@";
 "BUDGET_EXCEEDED" = "Превишен с %@";
 "BUDGET_NO_LIMIT" = "Без лимит";

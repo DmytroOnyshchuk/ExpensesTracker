@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Баланс";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Калды";
 "BUDGET_LEFT" = "Калды: %@";
 "BUDGET_EXCEEDED" = "%@ артып китте";
 "BUDGET_NO_LIMIT" = "Чикләү юк";

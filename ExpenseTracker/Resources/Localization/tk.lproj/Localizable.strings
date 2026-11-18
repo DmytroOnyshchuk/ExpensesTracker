@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Balans";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Galdy";
 "BUDGET_LEFT" = "Galdy: %@";
 "BUDGET_EXCEEDED" = "%@ aşdy";
 "BUDGET_NO_LIMIT" = "Çäk ýok";

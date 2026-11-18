@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Ego fọdụrụ";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Fọdụrụ";
 "BUDGET_LEFT" = "Fọdụrụ: %@";
 "BUDGET_EXCEEDED" = "Gafere site na %@";
 "BUDGET_NO_LIMIT" = "Enweghị oke";

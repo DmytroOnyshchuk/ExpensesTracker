@@ -86,14 +86,13 @@ struct BudgetWaveGauge: View {
         }
         .overlay {
             VStack(spacing: 2) {
-                Text("\(Int((fraction * 100).rounded()))%")
-                    .font(.appRegular(34))
-                    .foregroundColor(.appWhite)
-                    .contentTransition(.numericText())
-
-                Text(isExceeded ? L10n.budgetExceeded((-remaining).getAmount()) : L10n.budgetLeft(remaining.getAmount()))
+                Text(L10n.budgetAvailable)
                     .font(.appLight(14))
-                    .foregroundColor(isExceeded ? .appRed : .appWhite)
+                    .foregroundColor(.appWhite.opacity(0.8))
+
+                Text(remaining.getAmount())
+                    .font(.appRegular(30))
+                    .foregroundColor(.appWhite)
                     .contentTransition(.numericText())
             }
             .lineLimit(1)

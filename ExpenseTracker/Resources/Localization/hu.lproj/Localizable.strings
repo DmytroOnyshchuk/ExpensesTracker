@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Egyenleg";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Maradt";
 "BUDGET_LEFT" = "Maradt: %@";
 "BUDGET_EXCEEDED" = "Túllépve ennyivel: %@";
 "BUDGET_NO_LIMIT" = "Nincs korlát";

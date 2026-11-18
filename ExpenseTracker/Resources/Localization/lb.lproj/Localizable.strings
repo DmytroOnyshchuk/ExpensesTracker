@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Solde";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Rescht";
 "BUDGET_LEFT" = "Rescht: %@";
 "BUDGET_EXCEEDED" = "Ëm %@ iwwerschratt";
 "BUDGET_NO_LIMIT" = "Keng Limitt";

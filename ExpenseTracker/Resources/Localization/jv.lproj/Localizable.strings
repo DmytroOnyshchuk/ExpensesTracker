@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Saldo";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Sisa";
 "BUDGET_LEFT" = "Sisa: %@";
 "BUDGET_EXCEEDED" = "Kliwat %@";
 "BUDGET_NO_LIMIT" = "Tanpa wates";

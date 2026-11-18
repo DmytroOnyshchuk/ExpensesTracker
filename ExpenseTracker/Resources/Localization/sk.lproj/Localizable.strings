@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Zostatok";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Zostáva";
 "BUDGET_LEFT" = "Zostáva: %@";
 "BUDGET_EXCEEDED" = "Prekročené o %@";
 "BUDGET_NO_LIMIT" = "Bez limitu";

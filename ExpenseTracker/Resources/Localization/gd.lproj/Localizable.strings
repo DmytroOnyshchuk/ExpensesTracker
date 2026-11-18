@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Cothrom";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Air fhàgail";
 "BUDGET_LEFT" = "Air fhàgail: %@";
 "BUDGET_EXCEEDED" = "Air a dhol %@ thairis";
 "BUDGET_NO_LIMIT" = "Gun chrìoch";

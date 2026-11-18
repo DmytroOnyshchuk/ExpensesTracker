@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "ශේෂය";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "ඉතිරි";
 "BUDGET_LEFT" = "ඉතිරි: %@";
 "BUDGET_EXCEEDED" = "%@ කින් ඉක්මවා ඇත";
 "BUDGET_NO_LIMIT" = "සීමාවක් නැත";

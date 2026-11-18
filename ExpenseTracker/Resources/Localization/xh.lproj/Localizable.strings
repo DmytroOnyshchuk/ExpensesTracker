@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Ibhalansi";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Okuseleyo";
 "BUDGET_LEFT" = "Okuseleyo: %@";
 "BUDGET_EXCEEDED" = "Kugqithiswe nge-%@";
 "BUDGET_NO_LIMIT" = "Akukho mda";

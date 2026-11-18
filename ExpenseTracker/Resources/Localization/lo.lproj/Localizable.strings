@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "ຍອດເງິນ";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "ເຫຼືອ";
 "BUDGET_LEFT" = "ເຫຼືອ: %@";
 "BUDGET_EXCEEDED" = "ເກີນ %@";
 "BUDGET_NO_LIMIT" = "ບໍ່ມີຂີດຈຳກັດ";

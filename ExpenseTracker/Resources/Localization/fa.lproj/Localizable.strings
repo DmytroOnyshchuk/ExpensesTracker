@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "موجودی";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "باقی‌مانده";
 "BUDGET_LEFT" = "باقی‌مانده: %@";
 "BUDGET_EXCEEDED" = "%@ بیش از حد";
 "BUDGET_NO_LIMIT" = "بدون محدودیت";

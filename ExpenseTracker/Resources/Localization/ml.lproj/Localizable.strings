@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "ബാലൻസ്";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "ബാക്കി";
 "BUDGET_LEFT" = "ബാക്കി: %@";
 "BUDGET_EXCEEDED" = "%@ കവിഞ്ഞു";
 "BUDGET_NO_LIMIT" = "പരിധിയില്ല";

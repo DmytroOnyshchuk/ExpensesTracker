@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Owó tó kù";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Ó kù";
 "BUDGET_LEFT" = "Ó kù: %@";
 "BUDGET_EXCEEDED" = "Ó kọjá pẹ̀lú %@";
 "BUDGET_NO_LIMIT" = "Kò sí ààlà";

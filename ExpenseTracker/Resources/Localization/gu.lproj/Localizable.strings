@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "બેલેન્સ";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "બાકી";
 "BUDGET_LEFT" = "બાકી: %@";
 "BUDGET_EXCEEDED" = "%@ વધી ગયું";
 "BUDGET_NO_LIMIT" = "કોઈ મર્યાદા નથી";

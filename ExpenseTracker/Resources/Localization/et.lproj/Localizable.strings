@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Saldo";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Jääk";
 "BUDGET_LEFT" = "Jääk: %@";
 "BUDGET_EXCEEDED" = "Ületatud %@ võrra";
 "BUDGET_NO_LIMIT" = "Limiiti pole";

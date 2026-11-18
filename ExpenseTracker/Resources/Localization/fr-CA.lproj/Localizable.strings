@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Solde";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Reste";
 "BUDGET_LEFT" = "Reste : %@";
 "BUDGET_EXCEEDED" = "Dépassé de %@";
 "BUDGET_NO_LIMIT" = "Sans limite";

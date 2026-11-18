@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "الرصيد";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "المتبقي";
 "BUDGET_LEFT" = "المتبقي: %@";
 "BUDGET_EXCEEDED" = "تم التجاوز بمقدار %@";
 "BUDGET_NO_LIMIT" = "بلا حد";

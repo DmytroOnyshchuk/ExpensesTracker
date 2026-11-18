@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "ਬੈਲੇਂਸ";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "ਬਾਕੀ";
 "BUDGET_LEFT" = "ਬਾਕੀ: %@";
 "BUDGET_EXCEEDED" = "%@ ਵੱਧ ਗਿਆ";
 "BUDGET_NO_LIMIT" = "ਕੋਈ ਸੀਮਾ ਨਹੀਂ";

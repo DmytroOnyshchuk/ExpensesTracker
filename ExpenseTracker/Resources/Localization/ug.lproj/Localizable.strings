@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "قالدۇق";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "قالدى";
 "BUDGET_LEFT" = "قالدى: %@";
 "BUDGET_EXCEEDED" = "%@ ئېشىپ كەتتى";
 "BUDGET_NO_LIMIT" = "چەك يوق";

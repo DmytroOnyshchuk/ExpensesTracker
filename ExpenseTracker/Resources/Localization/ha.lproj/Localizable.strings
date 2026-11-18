@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Ragowa";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Saura";
 "BUDGET_LEFT" = "Saura: %@";
 "BUDGET_EXCEEDED" = "An wuce da %@";
 "BUDGET_NO_LIMIT" = "Babu iyaka";

@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "余额";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "剩余";
 "BUDGET_LEFT" = "剩余：%@";
 "BUDGET_EXCEEDED" = "超出 %@";
 "BUDGET_NO_LIMIT" = "无上限";

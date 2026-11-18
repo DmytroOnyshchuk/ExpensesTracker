@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Υπόλοιπο";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Απομένουν";
 "BUDGET_LEFT" = "Απομένουν: %@";
 "BUDGET_EXCEEDED" = "Υπέρβαση κατά %@";
 "BUDGET_NO_LIMIT" = "Χωρίς όριο";

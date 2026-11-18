@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Koena";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Koena";
 "BUDGET_LEFT" = "Koena: %@";
 "BUDGET_EXCEEDED" = "Ua ʻoi aku ma %@";
 "BUDGET_NO_LIMIT" = "ʻAʻohe palena";

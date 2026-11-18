@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Toenga";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "E toe ana";
 "BUDGET_LEFT" = "E toe ana: %@";
 "BUDGET_EXCEEDED" = "Kua hipa mā te %@";
 "BUDGET_NO_LIMIT" = "Kāore he tepe";

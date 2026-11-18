@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "残高";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "残り";
 "BUDGET_LEFT" = "残り: %@";
 "BUDGET_EXCEEDED" = "%@超過";
 "BUDGET_NO_LIMIT" = "上限なし";

@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Balanse";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Natitira";
 "BUDGET_LEFT" = "Natitira: %@";
 "BUDGET_EXCEEDED" = "Lumampas ng %@";
 "BUDGET_NO_LIMIT" = "Walang limitasyon";

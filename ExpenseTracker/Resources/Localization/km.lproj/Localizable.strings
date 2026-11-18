@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "សមតុល្យ";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "នៅសល់";
 "BUDGET_LEFT" = "នៅសល់៖ %@";
 "BUDGET_EXCEEDED" = "លើស %@";
 "BUDGET_NO_LIMIT" = "គ្មានដែនកំណត់";

@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Saldo";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Eftir";
 "BUDGET_LEFT" = "Eftir: %@";
 "BUDGET_EXCEEDED" = "Farið %@ uppum";
 "BUDGET_NO_LIMIT" = "Einki mark";

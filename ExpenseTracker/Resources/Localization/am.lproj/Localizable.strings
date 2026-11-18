@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "ቀሪ ሂሳብ";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "ቀሪ";
 "BUDGET_LEFT" = "ቀሪ፦ %@";
 "BUDGET_EXCEEDED" = "በ%@ አልፏል";
 "BUDGET_NO_LIMIT" = "ገደብ የለም";

@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Тавозун";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Боқӣ";
 "BUDGET_LEFT" = "Боқӣ: %@";
 "BUDGET_EXCEEDED" = "%@ зиёд шуд";
 "BUDGET_NO_LIMIT" = "Бе маҳдудият";

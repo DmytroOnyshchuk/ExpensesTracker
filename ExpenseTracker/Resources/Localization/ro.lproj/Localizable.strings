@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Sold";
 
 // MARK: - Budget
+"BUDGET_AVAILABLE" = "Rămas";
 "BUDGET_LEFT" = "Rămas: %@";
 "BUDGET_EXCEEDED" = "Depășit cu %@";
 "BUDGET_NO_LIMIT" = "Fără limită";
