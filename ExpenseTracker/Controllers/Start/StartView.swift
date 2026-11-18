@@ -73,7 +73,7 @@ struct StartView: View {
 
                     TransactionsList(transactions: transactions.of(operationType), operationType: operationType)
                         // .border(.green)
-                        .padding(.top, showCategories ? 4 : 16)
+                        .padding(.top, showCategories ? 4 : 20)
 
                     historyButton
                         .padding(.top, 8)
@@ -157,12 +157,7 @@ struct StartView: View {
                 .font(.system(size: 22, weight: .semibold))
                 .foregroundColor(.appPrimary)
                 .frame(width: 60, height: 60)
-                .glassSurface(
-                    in: Circle(),
-                    tint: .appPrimary.opacity(0.15),
-                    isInteractive: true,
-                    fallback: .appPrimary.opacity(0.15)
-                )
+                .glassSurface(in: Circle(), isInteractive: true, fallback: .appLabel.opacity(0.1))
         }
         .accessibilityLabel(L10n.historyTitle)
     }
