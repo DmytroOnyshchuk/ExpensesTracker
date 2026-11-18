@@ -17,14 +17,7 @@ struct ExpenseTracker: App {
                 .modifier(SystemColorSchemeObserver())
                 .preferredColorScheme(ThemeManager.shared.preferredColorScheme)
         }
-        .modelContainer(for: [Transaction.self, TransactionCategory.self, Account.self, AutoPayment.self]) { result in
-            switch result {
-            case let .success(container):
-                DataSeeder.seedDefaultCategories(container: container)
-            case let .failure(error):
-                Logger.default.logError("Failed to initialize model container:", error: error, category: "Application")
-            }
-        }
+        .modelContainer(ModelContainer.shared)
     }
 }
 

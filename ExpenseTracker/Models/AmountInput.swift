@@ -106,6 +106,20 @@ extension AmountInput {
         return text.hasSuffix("0") ? String(text.dropLast()) : text
     }
 
+    static func amount(fromCurrencyText text: String) -> Int {
+        let isDigit: (Character) -> Bool = { $0.isASCII && $0.isWholeNumber }
+        let symbols = text.filter { isDigit($0) || $0 == "." || $0 == "," }
+        guard let first = symbols.firstIndex(where: isDigit), let last = symbols.lastIndex(where: isDigit) else { return 0 }
+
+        let number = symbols[first ... last]
+        guard let separator = number.lastIndex(where: { !isDigit($0) }) else { return amount(from: String(number)) }
+
+        let whole = number[..<separator].filter(isDigit)
+        let fraction = number[number.index(after: separator)...]
+        guard fraction.count <= fractionLength else { return amount(from: number.filter(isDigit)) }
+        return amount(from: "\(whole).\(fraction)")
+    }
+
     static func amount(from text: String) -> Int {
         let normalized = text.replacingOccurrences(of: ",", with: ".")
         guard let value = Decimal(string: normalized, locale: Locale(identifier: "en_US_POSIX")) else { return 0 }
