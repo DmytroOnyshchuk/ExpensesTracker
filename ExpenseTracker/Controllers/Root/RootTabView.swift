@@ -18,6 +18,7 @@ enum AppTab: Hashable {
 
 struct RootTabView: View {
     @State private var selection: AppTab = .home
+    @State private var loadedTabs: Set<AppTab> = [.home]
     @State private var openedFileURL: URL?
     @State private var homeResetToken: Int = .zero
     @State private var statisticsResetToken: Int = .zero
@@ -37,6 +38,7 @@ struct RootTabView: View {
                     }
                 }
                 selection = newValue
+                loadedTabs.insert(newValue)
             }
         )
     }
@@ -44,28 +46,36 @@ struct RootTabView: View {
     var body: some View {
         TabView(selection: tabSelection) {
             Tab(L10n.tabHome, systemImage: "house.fill", value: AppTab.home) {
-                StartView(resetToken: homeResetToken)
-                    .undoToast()
+                if loadedTabs.contains(.home) {
+                    StartView(resetToken: homeResetToken)
+                        .undoToast()
+                }
             }
 
             Tab(L10n.tabStatistics, systemImage: "chart.pie.fill", value: AppTab.statistics) {
-                NavigationStack {
-                    StatisticsView(resetToken: statisticsResetToken)
+                if loadedTabs.contains(.statistics) {
+                    NavigationStack {
+                        StatisticsView(resetToken: statisticsResetToken)
+                    }
+                    .undoToast()
                 }
-                .undoToast()
             }
 
             if appSettings.accounting.budgetEnabled {
                 Tab(L10n.menuBudget, systemImage: "wallet.bifold", value: AppTab.budget) {
-                    BudgetView(resetToken: budgetResetToken)
+                    if loadedTabs.contains(.budget) {
+                        BudgetView(resetToken: budgetResetToken)
+                    }
                 }
             }
 
             Tab(L10n.menuTitle, systemImage: "list.dash", value: AppTab.menu) {
-                NavigationStack {
-                    MenuView()
+                if loadedTabs.contains(.menu) {
+                    NavigationStack {
+                        MenuView()
+                    }
+                    .undoToast()
                 }
-                .undoToast()
             }
         }
         .tint(.appPrimary)

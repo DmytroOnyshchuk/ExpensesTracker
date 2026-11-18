@@ -19,10 +19,11 @@ struct AccountsView: View {
 
     var body: some View {
         let transactions = transactions
+        let balances = accounts.currentAmounts(in: transactions)
 
         List {
             ForEach(accounts, id: \.uuid) { account in
-                AccountRow(name: account.name, amount: account.current(in: transactions), isDisabled: account.isDisabled) {
+                AccountRow(name: account.name, amount: balances[account.uuid] ?? account.amount, isDisabled: account.isDisabled) {
                     editingAccount = account
                 }
                 .listRowBackground(Color.clear)
@@ -48,7 +49,7 @@ struct AccountsView: View {
                     .font(.appMedium(18))
                     .foregroundColor(.appLabel)
 
-                Text(accounts.enabled.total(in: transactions).getAmount())
+                Text(accounts.enabled.reduce(0) { $0 + (balances[$1.uuid] ?? $1.amount) }.getAmount())
                     .font(.appMedium(22))
                     .foregroundColor(.appWhite)
                     .lineLimit(1)
@@ -83,12 +84,12 @@ struct AccountsView: View {
                 AccountEditPopup(
                     title: L10n.accountsEdit,
                     name: editingAccount.name,
-                    amount: editingAccount.current(in: transactions),
+                    amount: balances[editingAccount.uuid] ?? editingAccount.amount,
                     isDisabled: editingAccount.isDisabled,
                     canDisable: canTurnOff(editingAccount),
                     onCancel: { self.editingAccount = nil }
                 ) { name, amount, isDisabled in
-                    update(editingAccount, name: name, amount: amount, currentAmount: editingAccount.current(in: transactions), isDisabled: isDisabled)
+                    update(editingAccount, name: name, amount: amount, currentAmount: balances[editingAccount.uuid] ?? editingAccount.amount, isDisabled: isDisabled)
                     self.editingAccount = nil
                 }
                 .transition(.opacity)

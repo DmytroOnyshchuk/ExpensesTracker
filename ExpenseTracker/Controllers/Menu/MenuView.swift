@@ -89,12 +89,14 @@ struct MenuView: View {
     private let period = StatisticsPeriod.month
 
     var body: some View {
+        let accountBalances = accounts.currentAmounts(in: transactions)
+
         ScrollView(.vertical) {
             VStack(alignment: .leading, spacing: 24) {
                 VStack(alignment: .leading, spacing: 8) {
                     MenuSectionHeader(title: L10n.tabStatistics)
 
-                    MenuSpentCard(title: spentTitle, amount: spentAmount, balance: balance, action: openStatistics)
+                    MenuSpentCard(title: spentTitle, amount: spentAmount, balance: balance(using: accountBalances), action: openStatistics)
                 }
 
                 ForEach(MenuSection.allCases) { section in
@@ -160,9 +162,9 @@ struct MenuView: View {
             .reduce(0) { $0 + $1.amount }
     }
 
-    private var balance: Int? {
+    private func balance(using accountBalances: [UUID: Int]) -> Int? {
         guard appSettings.accounting.multipleAccountsEnabled, !accounts.isEmpty else { return nil }
-        return accounts.enabled.total(in: transactions)
+        return accounts.enabled.reduce(0) { $0 + (accountBalances[$1.uuid] ?? $1.amount) }
     }
 
     private func open(_ item: MenuItem) {

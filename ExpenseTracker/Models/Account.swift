@@ -45,10 +45,10 @@ final class Account {
     }
 
     func current(in transactions: [Transaction]) -> Int {
-        let change = transactions
-            .filter { $0.account?.uuid == uuid && $0.date > checkpointDate }
-            .reduce(0) { $0 + $1.signedAmount }
-        return amount + change
+        amount + transactions.reduce(into: 0) { change, transaction in
+            guard transaction.account?.uuid == uuid, transaction.date > checkpointDate else { return }
+            change += transaction.signedAmount
+        }
     }
 
     func setAmount(_ newAmount: Int) {
@@ -77,6 +77,20 @@ extension [Account] {
     }
 
     func total(in transactions: [Transaction]) -> Int {
-        reduce(0) { $0 + $1.current(in: transactions) }
+        let balances = currentAmounts(in: transactions)
+        return reduce(0) { $0 + (balances[$1.uuid] ?? $1.amount) }
+    }
+
+    func currentAmounts(in transactions: [Transaction]) -> [UUID: Int] {
+        var balances = Dictionary(uniqueKeysWithValues: map { ($0.uuid, $0.amount) })
+        let checkpoints = Dictionary(uniqueKeysWithValues: map { ($0.uuid, $0.checkpointDate) })
+
+        for transaction in transactions {
+            guard let accountId = transaction.account?.uuid,
+                  let checkpointDate = checkpoints[accountId],
+                  transaction.date > checkpointDate else { continue }
+            balances[accountId, default: .zero] += transaction.signedAmount
+        }
+        return balances
     }
 }
