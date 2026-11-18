@@ -39,6 +39,10 @@ final class FeedbackManager {
     @Inject private var userManager: UserManager
 
     private var soundIDs = [FeedbackSound: SystemSoundID]()
+    private let soundQueue = DispatchQueue(label: "FeedbackManager.sound", qos: .userInteractive)
+    private let impactGenerator = UIImpactFeedbackGenerator(style: .light)
+    private let notificationGenerator = UINotificationFeedbackGenerator()
+    private let selectionGenerator = UISelectionFeedbackGenerator()
 
     private init() {}
 }
@@ -58,6 +62,11 @@ extension FeedbackManager {
 
     // MARK: -
 
+    func prepare() {
+        guard hapticIsEnable else { return }
+        impactGenerator.prepare()
+    }
+
     func keyTapped(_ key: AmountInput.Key) {
         impact()
         playSound(key == .backspace ? .keyDelete : .keyTap)
@@ -69,7 +78,7 @@ extension FeedbackManager {
 
     func selectionChanged() {
         guard hapticIsEnable else { return }
-        UISelectionFeedbackGenerator().selectionChanged()
+        selectionGenerator.selectionChanged()
     }
 
     func transactionAdded() {
@@ -90,17 +99,20 @@ extension FeedbackManager {
 extension FeedbackManager {
     private func impact() {
         guard hapticIsEnable else { return }
-        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+        impactGenerator.impactOccurred()
+        impactGenerator.prepare()
     }
 
     private func notify(_ type: UINotificationFeedbackGenerator.FeedbackType) {
         guard hapticIsEnable else { return }
-        UINotificationFeedbackGenerator().notificationOccurred(type)
+        notificationGenerator.notificationOccurred(type)
     }
 
     private func playSound(_ sound: FeedbackSound) {
         guard soundIsEnable else { return }
-        AudioServicesPlaySystemSound(soundID(for: sound))
+        soundQueue.async { [self] in
+            AudioServicesPlaySystemSound(soundID(for: sound))
+        }
     }
 
     private func soundID(for sound: FeedbackSound) -> SystemSoundID {

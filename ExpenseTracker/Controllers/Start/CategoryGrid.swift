@@ -75,7 +75,7 @@ struct CategoryGrid: View {
                             }
                     }
                 }
-                .padding(.top, 8)
+                .padding(.top, 16)
             }
         }
         .navigationDestination(isPresented: $showAllCategories) {

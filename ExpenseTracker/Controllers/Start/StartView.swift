@@ -92,6 +92,7 @@ struct StartView: View {
                     .transition(.opacity)
             }
         }
+        .onAppear(perform: FeedbackManager.shared.prepare)
         .onChange(of: resetToken) {
             withAnimation(.easeInOut(duration: 0.25)) {
                 selectedOperationType = .outcome
