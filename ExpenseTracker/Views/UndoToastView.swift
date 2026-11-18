@@ -61,7 +61,6 @@ struct UndoToastView: View {
             .buttonStyle(.plain)
         }
         .padding(.horizontal, 16)
-        .padding(.vertical, 4)
         .glassSurface(
             in: RoundedRectangle(cornerRadius: LiquidGlass.isAvailable ? 26 : 8, style: .continuous),
             fallback: .appWhite
