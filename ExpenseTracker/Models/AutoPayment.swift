@@ -113,7 +113,12 @@ final class AutoPayment {
 
 extension AutoPayment {
     static let inTrash = #Predicate<AutoPayment> { $0.deletedAt != nil }
-    static let active = #Predicate<AutoPayment> { $0.deletedAt == nil && !($0.category == nil) && $0.category?.deletedAt == nil && ($0.account == nil || $0.account?.deletedAt == nil) }
+    static let hasAvailableOwners = #Predicate<AutoPayment> { !($0.category == nil) && $0.category?.deletedAt == nil && ($0.account == nil || $0.account?.deletedAt == nil) }
+
+    static var active: Predicate<AutoPayment> {
+        let hasAvailableOwners = hasAvailableOwners
+        return #Predicate<AutoPayment> { $0.deletedAt == nil && hasAvailableOwners.evaluate($0) }
+    }
 }
 
 extension [AutoPayment] {
