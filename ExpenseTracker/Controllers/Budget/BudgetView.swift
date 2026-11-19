@@ -196,11 +196,7 @@ struct BudgetMonthPage: View {
 
         ScrollView(.vertical) {
             VStack(alignment: .leading, spacing: 16) {
-                MonthBudgetCard(
-                    title: StatisticsPeriod.month.title(for: month),
-                    spent: transactions.reduce(0) { $0 + $1.amount },
-                    limit: monthlyLimit
-                ) {
+                MonthBudgetCard(spent: transactions.reduce(0) { $0 + $1.amount }, limit: monthlyLimit) {
                     onOpen(.month)
                 }
 
@@ -269,7 +265,6 @@ struct BudgetMonthPage: View {
 }
 
 struct MonthBudgetCard: View {
-    let title: String
     let spent: Int
     let limit: Int
     let action: () -> Void
@@ -279,16 +274,6 @@ struct MonthBudgetCard: View {
     var body: some View {
         Button(action: action) {
             VStack(alignment: .leading, spacing: 8) {
-                HStack(spacing: 8) {
-                    Text(title)
-                        .font(.appLight(14))
-                        .foregroundColor(.appLabel)
-
-                    Spacer(minLength: 8)
-                }
-                .lineLimit(1)
-                .minimumScaleFactor(0.7)
-
                 if hasLimit {
                     BudgetWaveGauge(spent: spent, limit: limit)
                         .frame(maxWidth: .infinity)
@@ -501,9 +486,9 @@ struct BudgetProgressBar: View {
 
 #Preview("Budget cards") {
     VStack(spacing: 16) {
-        MonthBudgetCard(title: "November 2026", spent: 116100, limit: 1500000, action: {})
-        MonthBudgetCard(title: "November 2026", spent: 71800, limit: 12500, action: {})
-        MonthBudgetCard(title: "November 2026", spent: 116100, limit: 0, action: {})
+        MonthBudgetCard(spent: 116100, limit: 1500000, action: {})
+        MonthBudgetCard(spent: 71800, limit: 12500, action: {})
+        MonthBudgetCard(spent: 116100, limit: 0, action: {})
     }
     .padding(.horizontal, 16)
     .frame(maxWidth: .infinity, maxHeight: .infinity)
