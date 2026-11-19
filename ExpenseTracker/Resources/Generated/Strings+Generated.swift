@@ -154,6 +154,8 @@ internal enum L10n {
   internal static let budgetSet = L10n.tr("Localizable", "BUDGET_SET", fallback: "Set")
   /// Spent
   internal static let budgetSpent = L10n.tr("Localizable", "BUDGET_SPENT", fallback: "Spent")
+  /// Week
+  internal static let budgetWeek = L10n.tr("Localizable", "BUDGET_WEEK", fallback: "Week")
   /// Cancel
   internal static let cancel = L10n.tr("Localizable", "CANCEL", fallback: "Cancel")
   /// Cancel

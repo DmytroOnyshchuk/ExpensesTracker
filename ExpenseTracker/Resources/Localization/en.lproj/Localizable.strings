@@ -39,6 +39,7 @@
 
 // MARK: - Budget
 "BUDGET_SPENT" = "Spent";
+"BUDGET_WEEK" = "Week";
 "BUDGET_AVAILABLE" = "Available";
 "BUDGET_LEFT" = "Left: %@";
 "BUDGET_EXCEEDED" = "Exceeded by %@";

@@ -39,6 +39,7 @@
 
 // MARK: - Budget
 "BUDGET_SPENT" = "Витрачено";
+"BUDGET_WEEK" = "Тиждень";
 "BUDGET_AVAILABLE" = "Доступно";
 "BUDGET_LEFT" = "Залишилось: %@";
 "BUDGET_EXCEEDED" = "Перевищено на %@";

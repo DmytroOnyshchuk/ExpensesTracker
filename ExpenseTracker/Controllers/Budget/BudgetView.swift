@@ -42,22 +42,26 @@ struct BudgetView: View {
         let categories = storedCategories.of(.outcome).inDisplayOrder
 
         NavigationStack {
-            BudgetPager(resetToken: resetToken, limited: categories.filter { $0.budget > .zero }, unlimited: categories.filter { $0.budget <= .zero }, monthlyLimit: monthlyLimit, onOpen: open)
+            BudgetPager(resetToken: resetToken, limited: categories.filter { $0.budget > .zero }, unlimited: categories.filter { $0.budget <= .zero }, monthlyLimit: monthlyLimit, schedule: budget.schedule, onOpen: open)
                 .appBackground()
                 .navigationTitle(L10n.menuBudget)
                 .navigationBarTitleDisplayMode(.inline)
         }
         .overlay {
             if let target {
-                BalanceInputPopup(
-                    title: target.title,
-                    balance: limit(for: target),
-                    allowsEmpty: true,
-                    onRemove: limit(for: target) > .zero ? { remove(target) } : nil,
-                    onCancel: close
-                ) { amount in
-                    setLimit(amount, for: target)
-                    close()
+                Group {
+                    switch target {
+                    case .month:
+                        BudgetSetupPopup(limit: monthlyLimit, schedule: budget.schedule, onRemove: monthlyLimit > .zero ? { remove(target) } : nil, onCancel: close) { amount, schedule in
+                            save(limit: amount, schedule: schedule)
+                            close()
+                        }
+                    case .category:
+                        BalanceInputPopup(title: target.title, balance: limit(for: target), allowsEmpty: true, onRemove: limit(for: target) > .zero ? { remove(target) } : nil, onCancel: close) { amount in
+                            setLimit(amount, for: target)
+                            close()
+                        }
+                    }
                 }
                 .id(target.id)
                 .transition(.opacity)
@@ -66,8 +70,21 @@ struct BudgetView: View {
         .animation(.appStandard, value: target?.id)
     }
 
+    private var budget: Budget {
+        Budget(jsonData: budgetData) ?? Budget()
+    }
+
     private var monthlyLimit: Int {
-        Budget(jsonData: budgetData)?.monthly ?? .zero
+        budget.limit ?? .zero
+    }
+
+    private func save(limit: Int, schedule: BudgetSchedule) {
+        withAnimation(.appStandard) {
+            var budget = budget
+            budget.setLimit(limit)
+            budget.schedule = schedule
+            budgetData = budget.jsonData()
+        }
     }
 
     private func limit(for target: BudgetTarget) -> Int {
@@ -81,9 +98,7 @@ struct BudgetView: View {
         withAnimation(.appStandard) {
             switch target {
             case .month:
-                var budget = Budget()
-                budget.setMonthly(amount)
-                budgetData = budget.jsonData()
+                save(limit: amount, schedule: budget.schedule)
             case let .category(category):
                 category.budget = amount
                 try? modelContext.save()
@@ -111,6 +126,7 @@ struct BudgetPager: View {
     let limited: [TransactionCategory]
     let unlimited: [TransactionCategory]
     let monthlyLimit: Int
+    let schedule: BudgetSchedule
     let onOpen: (BudgetTarget) -> Void
 
     @Query private var earliest: [Transaction]
@@ -119,7 +135,7 @@ struct BudgetPager: View {
     @State private var selectedMonth = Date()
     @State private var showUnlimited = false
 
-    init(resetToken: Int, limited: [TransactionCategory], unlimited: [TransactionCategory], monthlyLimit: Int, onOpen: @escaping (BudgetTarget) -> Void) {
+    init(resetToken: Int, limited: [TransactionCategory], unlimited: [TransactionCategory], monthlyLimit: Int, schedule: BudgetSchedule, onOpen: @escaping (BudgetTarget) -> Void) {
         let predicate = Transaction.shown(of: .outcome)
         var earliest = FetchDescriptor<Transaction>(predicate: predicate, sortBy: [SortDescriptor(\.date)])
         earliest.fetchLimit = 1
@@ -130,13 +146,14 @@ struct BudgetPager: View {
         self.limited = limited
         self.unlimited = unlimited
         self.monthlyLimit = monthlyLimit
+        self.schedule = schedule
         self.onOpen = onOpen
         _earliest = Query(earliest)
         _latest = Query(latest)
     }
 
-    private var range: StatisticsRange {
-        StatisticsRange(period: .month, earliest: earliest.first?.date, latest: latest.first?.date)
+    private var range: BudgetRange {
+        BudgetRange(schedule: schedule, earliest: earliest.first?.date, latest: latest.first?.date)
     }
 
     var body: some View {
@@ -146,16 +163,19 @@ struct BudgetPager: View {
             .onChange(of: resetToken) {
                 selectedMonth = Date()
             }
+            .onChange(of: schedule) {
+                selectedMonth = Date()
+            }
     }
 }
 
 extension BudgetPager: Equatable {
-    nonisolated static func == (lhs: BudgetPager, rhs: BudgetPager) -> Bool { lhs.resetToken == rhs.resetToken && lhs.limited == rhs.limited && lhs.unlimited == rhs.unlimited && lhs.monthlyLimit == rhs.monthlyLimit }
+    nonisolated static func == (lhs: BudgetPager, rhs: BudgetPager) -> Bool { lhs.resetToken == rhs.resetToken && lhs.limited == rhs.limited && lhs.unlimited == rhs.unlimited && lhs.monthlyLimit == rhs.monthlyLimit && lhs.schedule == rhs.schedule }
 }
 
 struct BudgetMonth: View {
     let month: Date
-    let range: StatisticsRange
+    let range: BudgetRange
     let limited: [TransactionCategory]
     let unlimited: [TransactionCategory]
     let monthlyLimit: Int
@@ -166,8 +186,8 @@ struct BudgetMonth: View {
 
     @Query private var storedTransactions: [Transaction]
 
-    init(month: Date, range: StatisticsRange, limited: [TransactionCategory], unlimited: [TransactionCategory], monthlyLimit: Int, isUnlimitedShown: Bool, showUnlimited: Binding<Bool>, onSelectMonth: @escaping (Date) -> Void, onOpen: @escaping (BudgetTarget) -> Void) {
-        let interval = StatisticsPeriod.month.interval(containing: month)
+    init(month: Date, range: BudgetRange, limited: [TransactionCategory], unlimited: [TransactionCategory], monthlyLimit: Int, isUnlimitedShown: Bool, showUnlimited: Binding<Bool>, onSelectMonth: @escaping (Date) -> Void, onOpen: @escaping (BudgetTarget) -> Void) {
+        let interval = range.schedule.interval(containing: month)
 
         self.month = month
         self.range = range
@@ -192,7 +212,7 @@ extension BudgetMonth: Equatable {
 
 struct BudgetMonthPage: View {
     let month: Date
-    let range: StatisticsRange
+    let range: BudgetRange
     let transactions: [Transaction]
     let limited: [TransactionCategory]
     let unlimited: [TransactionCategory]
@@ -257,7 +277,7 @@ struct BudgetMonthPage: View {
         return HStack(spacing: 16) {
             monthArrow(systemImage: "chevron.left", target: index - 1)
 
-            Text(StatisticsPeriod.month.title(for: month))
+            Text(range.schedule.title(for: month))
                 .font(.appRegular(22))
                 .foregroundColor(.appPrimary)
                 .lineLimit(1)
@@ -359,6 +379,111 @@ struct MonthBudgetCard: View {
     private func toggleMode() {
         FeedbackManager.shared.selectionChanged()
         showsSpent.toggle()
+    }
+}
+
+struct BudgetSetupPopup: View {
+    let onRemove: (() -> Void)?
+    let onCancel: () -> Void
+    let onConfirm: (Int, BudgetSchedule) -> Void
+
+    @State private var text: String
+    @State private var schedule: BudgetSchedule
+    @FocusState private var isFocused: Bool
+
+    init(limit: Int, schedule: BudgetSchedule, onRemove: (() -> Void)?, onCancel: @escaping () -> Void, onConfirm: @escaping (Int, BudgetSchedule) -> Void) {
+        self.onRemove = onRemove
+        self.onCancel = onCancel
+        self.onConfirm = onConfirm
+        _text = State(initialValue: AmountInput.text(from: limit))
+        _schedule = State(initialValue: schedule)
+    }
+
+    var body: some View {
+        TransactionEditPopup(onRemove: onRemove.map { action in { finish(action) } }, onCancel: { finish(onCancel) }, onConfirm: confirm) {
+            VStack(spacing: 12) {
+                Text(L10n.menuBudget)
+                    .font(.appMedium(18))
+                    .foregroundColor(.appWhite)
+                    .lineLimit(1)
+
+                SegmentedControl(items: BudgetPeriod.allCases, selection: $schedule.period, title: \.title)
+                    .sensoryFeedback(trigger: schedule.period) { _, _ in FeedbackManager.shared.selectionFeedback }
+
+                TextField("", text: $text, prompt: Text("0").foregroundColor(.appLabel.opacity(0.6)))
+                    .keyboardType(.decimalPad)
+                    .focused($isFocused)
+                    .font(.appRegular(22))
+                    .foregroundColor(.appWhite)
+                    .tint(.appPrimary)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 12)
+                    .frame(height: 48)
+                    .background(.appMain.opacity(LiquidGlass.isAvailable ? 0.5 : 1), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+
+                startRow
+            }
+            .padding(.horizontal, 16)
+            .animation(.appStandard, value: schedule.period)
+        }
+        .onAppear {
+            isFocused = true
+        }
+    }
+
+    private var startRow: some View {
+        HStack(spacing: 12) {
+            Text(L10n.autopaymentsStartDate)
+                .font(.appLight(16))
+                .foregroundColor(.appLabel)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+
+            Spacer(minLength: 8)
+
+            Menu {
+                switch schedule.period {
+                case .month:
+                    Picker("", selection: $schedule.monthDay) {
+                        ForEach(BudgetSchedule.monthDays, id: \.self) { day in
+                            Text(String(day)).tag(day)
+                        }
+                    }
+                case .week:
+                    Picker("", selection: $schedule.weekday) {
+                        ForEach(BudgetSchedule.weekdays, id: \.self) { weekday in
+                            Text(BudgetSchedule.weekdayName(weekday)).tag(weekday)
+                        }
+                    }
+                }
+            } label: {
+                HStack(spacing: 4) {
+                    Text(schedule.startTitle)
+                        .font(.appRegular(16))
+                        .foregroundColor(.appWhite)
+                        .lineLimit(1)
+
+                    Image(systemName: "chevron.up.chevron.down")
+                        .font(.system(size: 11, weight: .semibold))
+                        .foregroundColor(.appLabel)
+                }
+                .frame(height: 48)
+                .contentShape(Rectangle())
+            }
+        }
+        .padding(.horizontal, 16)
+        .frame(height: 48)
+        .background(.appMain.opacity(LiquidGlass.isAvailable ? 0.5 : 1), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+    }
+
+    private func finish(_ action: () -> Void) {
+        isFocused = false
+        action()
+    }
+
+    private func confirm() {
+        isFocused = false
+        onConfirm(AmountInput.amount(from: text), schedule)
     }
 }
 
@@ -527,6 +652,11 @@ struct BudgetProgressBar: View {
 #Preview("Empty budget") {
     BudgetView()
         .modelContainer(makePreviewModelContainer())
+}
+
+#Preview("Budget setup popup") {
+    BudgetSetupPopup(limit: 1500000, schedule: BudgetSchedule(), onRemove: {}, onCancel: {}, onConfirm: { _, _ in })
+        .background(.appMain)
 }
 
 #Preview("Budget cards") {
