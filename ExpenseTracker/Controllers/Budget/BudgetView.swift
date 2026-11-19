@@ -33,7 +33,6 @@ struct BudgetView: View {
 
     @Environment(\.modelContext) private var modelContext
 
-    @Query(filter: Transaction.visible) private var storedTransactions: [Transaction]
     @Query(filter: TransactionCategory.nonDirectories) private var storedCategories: [TransactionCategory]
     @AppStorage(UDKey.budget.rawValue, store: UserDefaults.shared) private var budgetData: Data?
 
@@ -43,17 +42,10 @@ struct BudgetView: View {
         let categories = storedCategories.of(.outcome).inDisplayOrder
 
         NavigationStack {
-            BudgetPager(
-                resetToken: resetToken,
-                buckets: StatisticsBuckets(period: .month, transactions: storedTransactions.of(.outcome)),
-                limited: categories.filter { $0.budget > .zero },
-                unlimited: categories.filter { $0.budget <= .zero },
-                monthlyLimit: monthlyLimit,
-                onOpen: open
-            )
-            .appBackground()
-            .navigationTitle(L10n.menuBudget)
-            .navigationBarTitleDisplayMode(.inline)
+            BudgetPager(resetToken: resetToken, limited: categories.filter { $0.budget > .zero }, unlimited: categories.filter { $0.budget <= .zero }, monthlyLimit: monthlyLimit, onOpen: open)
+                .appBackground()
+                .navigationTitle(L10n.menuBudget)
+                .navigationBarTitleDisplayMode(.inline)
         }
         .overlay {
             if let target {
@@ -116,23 +108,45 @@ struct BudgetView: View {
 
 struct BudgetPager: View {
     let resetToken: Int
-    let buckets: StatisticsBuckets
     let limited: [TransactionCategory]
     let unlimited: [TransactionCategory]
     let monthlyLimit: Int
     let onOpen: (BudgetTarget) -> Void
 
+    @Query private var earliest: [Transaction]
+    @Query private var latest: [Transaction]
+
     @State private var selectedMonth = Date()
     @State private var showUnlimited = false
 
+    init(resetToken: Int, limited: [TransactionCategory], unlimited: [TransactionCategory], monthlyLimit: Int, onOpen: @escaping (BudgetTarget) -> Void) {
+        let predicate = Transaction.shown(of: .outcome)
+        var earliest = FetchDescriptor<Transaction>(predicate: predicate, sortBy: [SortDescriptor(\.date)])
+        earliest.fetchLimit = 1
+        var latest = FetchDescriptor<Transaction>(predicate: predicate, sortBy: [SortDescriptor(\.date, order: .reverse)])
+        latest.fetchLimit = 1
+
+        self.resetToken = resetToken
+        self.limited = limited
+        self.unlimited = unlimited
+        self.monthlyLimit = monthlyLimit
+        self.onOpen = onOpen
+        _earliest = Query(earliest)
+        _latest = Query(latest)
+    }
+
+    private var range: StatisticsRange {
+        StatisticsRange(period: .month, earliest: earliest.first?.date, latest: latest.first?.date)
+    }
+
     var body: some View {
-        let month = buckets.clamped(selectedMonth)
-        let index = buckets.index(of: month)
+        let month = range.clamped(selectedMonth)
+        let index = range.index(of: month)
 
         VStack(spacing: 0) {
             monthHeader(month: month, index: index)
 
-            BudgetMonthPage(month: month, transactions: buckets.transactions(at: month), limited: limited, unlimited: unlimited, monthlyLimit: monthlyLimit, showUnlimited: $showUnlimited, onOpen: onOpen)
+            BudgetMonth(month: month, limited: limited, unlimited: unlimited, monthlyLimit: monthlyLimit, isUnlimitedShown: showUnlimited, showUnlimited: $showUnlimited, onOpen: onOpen)
         }
         .onChange(of: resetToken) {
             selectedMonth = Date()
@@ -162,11 +176,48 @@ struct BudgetPager: View {
     }
 
     private func monthArrow(systemImage: String, target: Int) -> some View {
-        PeriodArrowButton(systemImage: systemImage, isEnabled: target >= .zero && target < buckets.count) {
+        PeriodArrowButton(systemImage: systemImage, isEnabled: target >= .zero && target < range.count) {
             FeedbackManager.shared.selectionChanged()
-            selectedMonth = buckets.start(at: target)
+            selectedMonth = range.start(at: target)
         }
     }
+}
+
+extension BudgetPager: Equatable {
+    nonisolated static func == (lhs: BudgetPager, rhs: BudgetPager) -> Bool { lhs.resetToken == rhs.resetToken && lhs.limited == rhs.limited && lhs.unlimited == rhs.unlimited && lhs.monthlyLimit == rhs.monthlyLimit }
+}
+
+struct BudgetMonth: View {
+    let month: Date
+    let limited: [TransactionCategory]
+    let unlimited: [TransactionCategory]
+    let monthlyLimit: Int
+    let isUnlimitedShown: Bool
+    let showUnlimited: Binding<Bool>
+    let onOpen: (BudgetTarget) -> Void
+
+    @Query private var storedTransactions: [Transaction]
+
+    init(month: Date, limited: [TransactionCategory], unlimited: [TransactionCategory], monthlyLimit: Int, isUnlimitedShown: Bool, showUnlimited: Binding<Bool>, onOpen: @escaping (BudgetTarget) -> Void) {
+        let interval = StatisticsPeriod.month.interval(containing: month)
+
+        self.month = month
+        self.limited = limited
+        self.unlimited = unlimited
+        self.monthlyLimit = monthlyLimit
+        self.isUnlimitedShown = isUnlimitedShown
+        self.showUnlimited = showUnlimited
+        self.onOpen = onOpen
+        _storedTransactions = Query(filter: Transaction.shown(from: interval.start, to: interval.end))
+    }
+
+    var body: some View {
+        BudgetMonthPage(month: month, transactions: storedTransactions.of(.outcome), limited: limited, unlimited: unlimited, monthlyLimit: monthlyLimit, showUnlimited: showUnlimited, onOpen: onOpen)
+    }
+}
+
+extension BudgetMonth: Equatable {
+    nonisolated static func == (lhs: BudgetMonth, rhs: BudgetMonth) -> Bool { lhs.month == rhs.month && lhs.limited == rhs.limited && lhs.unlimited == rhs.unlimited && lhs.monthlyLimit == rhs.monthlyLimit && lhs.isUnlimitedShown == rhs.isUnlimitedShown }
 }
 
 struct BudgetMonthPage: View {
