@@ -54,6 +54,20 @@ extension Transaction {
         return #Predicate<Transaction> { $0.deletedAt == nil && $0.date >= start && ($0.account == nil || $0.account?.isDisabled == false) && $0.category.operationTypeRaw == raw }
     }
 
+    static func shown(of operationType: OperationType) -> Predicate<Transaction> {
+        let raw = operationType.rawValue
+        return #Predicate<Transaction> { $0.deletedAt == nil && ($0.account == nil || $0.account?.isDisabled == false) && $0.category.operationTypeRaw == raw }
+    }
+
+    static func shown(inDirectory uuid: UUID) -> Predicate<Transaction> {
+        let parentUuid: UUID? = uuid
+        return #Predicate<Transaction> { $0.deletedAt == nil && ($0.account == nil || $0.account?.isDisabled == false) && ($0.category.parentUuid == parentUuid || $0.category.uuid == uuid) }
+    }
+
+    static func shown(from start: Date, to end: Date) -> Predicate<Transaction> {
+        #Predicate<Transaction> { $0.deletedAt == nil && $0.date >= start && $0.date < end && ($0.account == nil || $0.account?.isDisabled == false) }
+    }
+
     static let inTrashWithOwners = #Predicate<Transaction> { $0.deletedAt != nil || $0.category.deletedAt != nil || $0.account?.deletedAt != nil }
 }
 

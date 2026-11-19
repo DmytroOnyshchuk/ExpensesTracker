@@ -36,6 +36,8 @@ struct RootTabView: View {
                     case .budget: budgetResetToken += 1
                     case .menu: break
                     }
+                } else if selection == .statistics {
+                    statisticsResetToken += 1
                 }
                 selection = newValue
             }

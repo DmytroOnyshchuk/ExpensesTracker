@@ -14,7 +14,6 @@ struct StatisticsView: View {
     var resetToken: Int = .zero
     var directory: TransactionCategory?
 
-    @Query(filter: Transaction.visible) private var storedTransactions: [Transaction]
     @Query(filter: TransactionCategory.notDeleted) private var storedCategories: [TransactionCategory]
 
     @State private var period: StatisticsPeriod
@@ -27,24 +26,15 @@ struct StatisticsView: View {
         appSettings.accounting.incomeEnabled ? selectedOperationType : .outcome
     }
 
-    private var transactions: [Transaction] {
-        guard let directoryUuid = directory?.uuid else { return storedTransactions.of(operationType) }
-
-        return storedTransactions.filter {
-            $0.category.parentUuid == directoryUuid || $0.category.uuid == directoryUuid
-        }
+    private var scope: StatisticsScope {
+        directory.map { .directory($0.uuid) } ?? .operation(operationType)
     }
 
     private var categories: [TransactionCategory] {
         directory == nil ? storedCategories.of(operationType) : []
     }
 
-    init(
-        resetToken: Int = .zero,
-        directory: TransactionCategory? = nil,
-        period: StatisticsPeriod = .month,
-        date: Date = Date()
-    ) {
+    init(resetToken: Int = .zero, directory: TransactionCategory? = nil, period: StatisticsPeriod = .month, date: Date = Date()) {
         self.resetToken = resetToken
         self.directory = directory
         self.initialDate = date
@@ -52,42 +42,36 @@ struct StatisticsView: View {
     }
 
     var body: some View {
-        StatisticsContent(
-            resetToken: resetToken,
-            buckets: StatisticsBuckets(period: period, transactions: transactions),
-            categories: categories,
-            period: $period,
-            date: initialDate
-        )
-        .navigationTitle(directory?.name.localized ?? operationType.title)
-        .navigationBarTitleDisplayMode(.inline)
-        .onChange(of: resetToken) {
-            selectedOperationType = .outcome
-        }
-        .toolbar {
-            if directory == nil {
-                ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    NavigationLink {
-                        ExpensesChartView(operationType: operationType)
-                    } label: {
-                        Image(systemName: "chart.bar.fill")
-                            .font(.system(size: 14))
-                            .foregroundColor(.appWhite)
-                    }
-                    .accessibilityLabel(L10n.statisticsChart)
-
-                    if appSettings.accounting.incomeEnabled {
-                        Button(action: toggleOperationType) {
-                            Image(systemName: operationType.systemImage)
-                                .font(.system(size: 14, weight: .semibold))
-                                .contentTransition(.symbolEffect(.replace))
-                                .foregroundColor(operationType == .income ? .green : .appWhite)
+        StatisticsContent(resetToken: resetToken, scope: scope, categories: categories, period: period, date: initialDate) { period = $0 }
+            .navigationTitle(directory?.name.localized ?? operationType.title)
+            .navigationBarTitleDisplayMode(.inline)
+            .onChange(of: resetToken) {
+                selectedOperationType = .outcome
+            }
+            .toolbar {
+                if directory == nil {
+                    ToolbarItemGroup(placement: .navigationBarTrailing) {
+                        NavigationLink {
+                            ExpensesChartView(operationType: operationType)
+                        } label: {
+                            Image(systemName: "chart.bar.fill")
+                                .font(.system(size: 14))
+                                .foregroundColor(.appWhite)
                         }
-                        .accessibilityLabel(operationType.title)
+                        .accessibilityLabel(L10n.statisticsChart)
+
+                        if appSettings.accounting.incomeEnabled {
+                            Button(action: toggleOperationType) {
+                                Image(systemName: operationType.systemImage)
+                                    .font(.system(size: 14, weight: .semibold))
+                                    .contentTransition(.symbolEffect(.replace))
+                                    .foregroundColor(operationType == .income ? .green : .appWhite)
+                            }
+                            .accessibilityLabel(operationType.title)
+                        }
                     }
                 }
             }
-        }
     }
 
     private func toggleOperationType() {
@@ -102,40 +86,53 @@ extension StatisticsView: Equatable {
 
 struct StatisticsContent: View {
     let resetToken: Int
-    let buckets: StatisticsBuckets
+    let scope: StatisticsScope
     let categories: [TransactionCategory]
+    let period: StatisticsPeriod
+    let onPeriodChange: (StatisticsPeriod) -> Void
 
-    @Binding var period: StatisticsPeriod
+    @Environment(\.modelContext) private var modelContext
+
+    @Query private var earliest: [Transaction]
+    @Query private var latest: [Transaction]
 
     @State private var anchorDate: Date
+    @State private var periodStarts: [Date] = []
     @State private var showPeriodList = false
     @State private var showDayPicker = false
 
-    init(
-        resetToken: Int,
-        buckets: StatisticsBuckets,
-        categories: [TransactionCategory],
-        period: Binding<StatisticsPeriod>,
-        date: Date
-    ) {
+    init(resetToken: Int, scope: StatisticsScope, categories: [TransactionCategory], period: StatisticsPeriod, date: Date, onPeriodChange: @escaping (StatisticsPeriod) -> Void) {
+        var earliest = FetchDescriptor<Transaction>(predicate: scope.predicate, sortBy: [SortDescriptor(\.date)])
+        earliest.fetchLimit = 1
+        var latest = FetchDescriptor<Transaction>(predicate: scope.predicate, sortBy: [SortDescriptor(\.date, order: .reverse)])
+        latest.fetchLimit = 1
+
         self.resetToken = resetToken
-        self.buckets = buckets
+        self.scope = scope
         self.categories = categories
-        _period = period
+        self.period = period
+        self.onPeriodChange = onPeriodChange
+        _earliest = Query(earliest)
+        _latest = Query(latest)
         _anchorDate = State(initialValue: date)
     }
 
+    private var range: StatisticsRange {
+        StatisticsRange(period: period, earliest: earliest.first?.date, latest: latest.first?.date)
+    }
+
     var body: some View {
-        let start = buckets.clamped(anchorDate)
+        let range = range
+        let start = range.clamped(anchorDate)
 
         VStack(spacing: 12) {
             periodPicker
             periodTitle(start: start)
 
-            PeriodPager(count: buckets.count, selection: pageSelection(start: start)) { index in
-                page(start: buckets.start(at: index))
+            PeriodPager(count: range.count, selection: pageSelection(start: start)) { index in
+                StatisticsPage(period: period, start: range.start(at: index), scope: scope, categories: categories)
             }
-            .id(buckets.period)
+            .id(period)
         }
         .padding(.top, 16)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
@@ -147,7 +144,7 @@ struct StatisticsContent: View {
                         showDayPicker = false
                     }
                     if let date {
-                        anchorDate = buckets.clamped(date)
+                        anchorDate = range.clamped(date)
                     }
                 }
                 .transition(.opacity)
@@ -165,7 +162,7 @@ struct StatisticsContent: View {
                 if newValue == .day, period != .day {
                     anchorDate = initialDay(inSelected: period)
                 }
-                period = newValue
+                onPeriodChange(newValue)
             }
         )
     }
@@ -182,35 +179,18 @@ struct StatisticsContent: View {
             .padding(.horizontal, 64)
     }
 
-    private func page(start: Date) -> some View {
-        let period = buckets.period
-        let interval = period.interval(containing: start)
-        let transactions = buckets.transactions(at: start)
-
-        return ScrollView(.vertical) {
-            StatisticsBreakdown(
-                slices: StatisticsSlice.slices(from: transactions, in: interval, categories: categories),
-                interval: interval,
-                period: period,
-                points: period.chartPoints(of: transactions, in: interval),
-                averageTitle: period.unitAverageTitle(of: transactions, in: interval)
-            )
-            .padding(.bottom, 16)
-        }
-    }
-
     private func pageSelection(start: Date) -> Binding<Int> {
         Binding(
-            get: { buckets.index(of: start) },
+            get: { range.index(of: start) },
             set: { index in
                 FeedbackManager.shared.selectionChanged()
-                anchorDate = buckets.start(at: index)
+                anchorDate = range.start(at: index)
             }
         )
     }
 
     private func periodTitle(start: Date) -> some View {
-        Text(buckets.period.title(for: start))
+        Text(period.title(for: start))
             .font(.appRegular(22))
             .foregroundColor(.appPrimary)
             .lineLimit(1)
@@ -222,16 +202,16 @@ struct StatisticsContent: View {
             .frame(height: 44)
             .contentShape(Rectangle())
             .onTapGesture {
-                if buckets.period == .day {
+                if period == .day {
                     withAnimation(.appStandard) {
                         showDayPicker = true
                     }
                 } else {
-                    showPeriodList = !buckets.groups.isEmpty
+                    openPeriodList()
                 }
             }
             .popover(isPresented: $showPeriodList, attachmentAnchor: .rect(.bounds), arrowEdge: .top) {
-                StatisticsPeriodList(period: buckets.period, starts: buckets.starts, selected: start) { date in
+                StatisticsPeriodList(period: period, starts: periodStarts, selected: start) { date in
                     showPeriodList = false
                     anchorDate = date
                 }
@@ -240,14 +220,57 @@ struct StatisticsContent: View {
             }
     }
 
+    private func openPeriodList() {
+        var descriptor = FetchDescriptor<Transaction>(predicate: scope.predicate)
+        descriptor.propertiesToFetch = [\.date]
+        periodStarts = period.starts(of: (try? modelContext.fetch(descriptor)) ?? [])
+        showPeriodList = !periodStarts.isEmpty
+    }
+
     private func resetToCurrentMonth() {
         showPeriodList = false
         showDayPicker = false
         withAnimation(.appStandard) {
-            period = .month
+            onPeriodChange(.month)
         }
         anchorDate = Date()
     }
+}
+
+extension StatisticsContent: Equatable {
+    nonisolated static func == (lhs: StatisticsContent, rhs: StatisticsContent) -> Bool { lhs.resetToken == rhs.resetToken && lhs.scope == rhs.scope && lhs.categories == rhs.categories && lhs.period == rhs.period }
+}
+
+struct StatisticsPage: View {
+    let period: StatisticsPeriod
+    let interval: DateInterval
+    let scope: StatisticsScope
+    let categories: [TransactionCategory]
+
+    @Query private var storedTransactions: [Transaction]
+
+    init(period: StatisticsPeriod, start: Date, scope: StatisticsScope, categories: [TransactionCategory]) {
+        let interval = period.interval(containing: start)
+
+        self.period = period
+        self.interval = interval
+        self.scope = scope
+        self.categories = categories
+        _storedTransactions = Query(filter: Transaction.shown(from: interval.start, to: interval.end))
+    }
+
+    var body: some View {
+        let transactions = storedTransactions.filter(scope.contains)
+
+        ScrollView(.vertical) {
+            StatisticsBreakdown(slices: StatisticsSlice.slices(from: transactions, in: interval, categories: categories), interval: interval, period: period, points: period.chartPoints(of: transactions, in: interval), averageTitle: period.unitAverageTitle(of: transactions, in: interval))
+                .padding(.bottom, 16)
+        }
+    }
+}
+
+extension StatisticsPage: Equatable {
+    nonisolated static func == (lhs: StatisticsPage, rhs: StatisticsPage) -> Bool { lhs.period == rhs.period && lhs.interval == rhs.interval && lhs.scope == rhs.scope && lhs.categories == rhs.categories }
 }
 
 struct StatisticsBreakdown: View {
