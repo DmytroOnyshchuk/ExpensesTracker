@@ -345,7 +345,7 @@ struct StatisticsBreakdown: View {
                 // }
             }
             .padding(.vertical, 24)
-            .frame(height: 350)
+            .frame(height: 260)
             .padding(.bottom, 16)
         } else {
             GlassDonutChart(slices: slices)
