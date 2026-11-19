@@ -24,7 +24,7 @@ struct CategoryColorPickerView: View {
         Color(hex: "#00796B"), Color.teal, Color.mint, Color.cyan, Color(hex: "#00BCD4"),
         Color.blue, Color.indigo, Color(hex: "#8000FF"), Color.purple,
         Color(hex: "#455A64"), Color(hex: "#808080"), Color.gray, Color.black, Color.white,
-    ]
+    ].map(\.softened)
 
     private var selectedHex: String? {
         CategoryIcon.normalizedHex(hexInput)

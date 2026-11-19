@@ -66,6 +66,18 @@ extension Color {
         )
     }
 
+    var softened: Color {
+        Color(uiColor: UIColor { traits in
+            var hue: CGFloat = .zero
+            var saturation: CGFloat = .zero
+            var brightness: CGFloat = .zero
+            var alpha: CGFloat = 1
+            let resolved = UIColor(self).resolvedColor(with: traits)
+            guard resolved.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha) else { return resolved }
+            return UIColor(hue: hue, saturation: saturation * 0.9, brightness: brightness * 0.9, alpha: alpha)
+        })
+    }
+
     static func random() -> Color {
         let red = Int.random(in: 0 ... 255)
         let green = Int.random(in: 0 ... 255)

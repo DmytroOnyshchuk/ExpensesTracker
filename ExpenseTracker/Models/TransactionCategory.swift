@@ -120,6 +120,10 @@ enum IconColor: String, Codable, CaseIterable {
     static let primary: [IconColor] = [.red, .blue, .yellow, .purple]
     
     var color: Color {
+        baseColor.softened
+    }
+
+    private var baseColor: Color {
         switch self {
         case .red: .red
         case .yellow: .yellow
