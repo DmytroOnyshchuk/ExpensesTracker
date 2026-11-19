@@ -47,7 +47,7 @@ struct CategoryGrid: View {
                                     }
                                 }
                             }
-                            .padding(.horizontal, 22)
+                            .padding(.horizontal, 24)
                             .padding(.vertical, -4)
                             .frame(maxHeight: .infinity, alignment: .top)
                         }
@@ -67,10 +67,10 @@ struct CategoryGrid: View {
                 HStack(spacing: 8) {
                     ForEach(0 ..< chunkedCategories.count, id: \.self) { index in
                         Circle()
-                            .fill(currentPage == index ? Color.appWhite : Color.appWhite.opacity(0.3))
+                            .fill(currentPage == index ? Color.appWhite : Color.appWhite.opacity(0.4))
                             .frame(width: 6, height: 6)
                             .onTapGesture {
-                                withAnimation(.easeInOut(duration: 0.3)) {
+                                withAnimation(.appStandard) {
                                     currentPage = index
                                 }
                             }
@@ -107,7 +107,7 @@ struct EditCategoriesCell: View {
             }
             .frame(height: 80)
             .frame(maxWidth: .infinity)
-            .padding(.horizontal, 10)
+            .padding(.horizontal, 8)
             .padding(.vertical, 4)
             .contentShape(Rectangle())
         }

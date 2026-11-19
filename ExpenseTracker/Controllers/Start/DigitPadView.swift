@@ -34,9 +34,9 @@ struct DigitPadView: View {
                 .frame(height: 64)
 
             GlassContainer(spacing: 0) {
-                VStack(spacing: 10) {
+                VStack(spacing: 12) {
                     ForEach(buttons, id: \.self) { row in
-                        HStack(spacing: 14) {
+                        HStack(spacing: 12) {
                             ForEach(row, id: \.self) { key in
                                 Button(action: {
                                     FeedbackManager.shared.keyTapped(key)

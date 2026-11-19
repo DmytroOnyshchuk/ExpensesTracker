@@ -53,8 +53,9 @@ struct CategoriesEdit: View {
                 VStack(spacing: 0) {
                     SegmentedControl(items: OperationType.allCases, selection: $operationType, title: \.title)
                         .sensoryFeedback(trigger: operationType) { _, _ in FeedbackManager.shared.selectionFeedback }
-                        .padding(.horizontal, 56)
-                        .padding(.vertical, 8)
+                        .padding(.horizontal, 64)
+                        .padding(.top, 16)
+                        .padding(.bottom, 8)
 
                     PeriodPager(count: OperationType.allCases.count, selection: pageSelection) { index in
                         categoriesList(of: OperationType.allCases[index], transactionsCounts: transactionsCounts)

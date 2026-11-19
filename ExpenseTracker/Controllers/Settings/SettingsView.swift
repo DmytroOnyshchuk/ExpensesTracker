@@ -25,8 +25,7 @@ struct SettingsView: View {
                             }
                         }
                     }
-                    .padding(.horizontal, 12)
-                    .padding(.vertical, 14)
+                    .padding(16)
                     .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
                 }
 
@@ -74,10 +73,10 @@ struct SettingsView: View {
                             isOn: $appSettings.security.biometricsEnabled
                         )
                         .disabled(!isBiometricsConfigurable)
-                        .opacity(isBiometricsConfigurable ? 1 : 0.5)
+                        .opacity(isBiometricsConfigurable ? 1 : 0.4)
                     }
                     .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
-                    .animation(.default, value: passcodeManager.isPasscodeEnabled)
+                    .animation(.appStandard, value: passcodeManager.isPasscodeEnabled)
                 }
             }
             .padding(16)
@@ -105,7 +104,7 @@ struct SettingsView: View {
     private func select(_ preset: ThemePreset) {
         guard preset != themeManager.preset else { return }
         feedbackManager.buttonTapped()
-        withAnimation(.easeInOut(duration: 0.25)) {
+        withAnimation(.appStandard) {
             themeManager.preset = preset
         }
     }
@@ -143,10 +142,10 @@ struct SettingsToggleRow: View {
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 12)
-        .frame(minHeight: 46)
+        .frame(minHeight: 48)
         .contentShape(Rectangle())
         .onTapGesture {
-            withAnimation { isOn.toggle() }
+            withAnimation(.appStandard) { isOn.toggle() }
             FeedbackManager.shared.buttonTapped()
         }
     }
@@ -161,7 +160,7 @@ struct ThemePresetCell: View {
         let theme = preset.theme(for: ThemeManager.shared.systemColorScheme)
 
         Button(action: action) {
-            VStack(spacing: 6) {
+            VStack(spacing: 8) {
                 preview(theme)
                     .frame(maxWidth: .infinity)
                     .frame(height: 40)

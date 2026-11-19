@@ -40,7 +40,7 @@ struct PasscodeEntryView: View {
                     .lineLimit(2)
                     .minimumScaleFactor(0.7)
 
-                HStack(spacing: 18) {
+                HStack(spacing: 16) {
                     ForEach(0 ..< PasscodeManager.passcodeLength, id: \.self) { index in
                         Circle()
                             .fill(index < code.count ? Color.appPrimary : Color.clear)
@@ -50,7 +50,7 @@ struct PasscodeEntryView: View {
                             .frame(width: 16, height: 16)
                     }
                 }
-                .animation(.easeOut(duration: 0.1), value: code)
+                .animation(.appFast, value: code)
                 .keyframeAnimator(initialValue: CGFloat.zero, trigger: shakeTrigger) { content, offset in
                     content.offset(x: offset)
                 } keyframes: { _ in
@@ -67,7 +67,7 @@ struct PasscodeEntryView: View {
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)
             }
-            .padding(.horizontal, 24)
+            .padding(.horizontal, 16)
 
             GlassContainer(spacing: 0) {
                 VStack(spacing: 12) {

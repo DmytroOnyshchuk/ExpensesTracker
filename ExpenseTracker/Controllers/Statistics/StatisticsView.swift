@@ -143,7 +143,7 @@ struct StatisticsContent: View {
         .overlay {
             if showDayPicker {
                 StatisticsDayPicker(selected: start) { date in
-                    withAnimation(.easeInOut(duration: 0.2)) {
+                    withAnimation(.appStandard) {
                         showDayPicker = false
                     }
                     if let date {
@@ -216,14 +216,14 @@ struct StatisticsContent: View {
             .lineLimit(1)
             .minimumScaleFactor(0.7)
             .contentTransition(.opacity)
-            .animation(.easeInOut(duration: 0.2), value: start)
+            .animation(.appStandard, value: start)
             .padding(.horizontal, 64)
             .frame(maxWidth: .infinity)
             .frame(height: 44)
             .contentShape(Rectangle())
             .onTapGesture {
                 if buckets.period == .day {
-                    withAnimation(.easeInOut(duration: 0.2)) {
+                    withAnimation(.appStandard) {
                         showDayPicker = true
                     }
                 } else {
@@ -243,7 +243,7 @@ struct StatisticsContent: View {
     private func resetToCurrentMonth() {
         showPeriodList = false
         showDayPicker = false
-        withAnimation(.easeInOut(duration: 0.25)) {
+        withAnimation(.appStandard) {
             period = .month
         }
         anchorDate = Date()
@@ -364,14 +364,8 @@ struct StatisticsDayPicker: View {
     }
 
     var body: some View {
-        ZStack {
-            Color.appOverlay.opacity(0.4)
-                .ignoresSafeArea(edges: .bottom)
-                .onTapGesture {
-                    onFinish(nil)
-                }
-
-            VStack(spacing: 0) {
+        TransactionEditPopup(onCancel: { onFinish(nil) }, onConfirm: { onFinish(date) }) {
+            VStack(spacing: 4) {
                 shortcutButton(for: Date())
                 shortcutButton(for: .yesterday)
 
@@ -379,22 +373,7 @@ struct StatisticsDayPicker: View {
                     .datePickerStyle(.wheel)
                     .labelsHidden()
                     .colorScheme(.dark)
-
-                HStack(spacing: 0) {
-                    actionButton(L10n.cancel) {
-                        onFinish(nil)
-                    }
-                    actionButton(L10n.ok) {
-                        onFinish(date)
-                    }
-                }
             }
-            .padding(.vertical, 12)
-            .glassSurface(
-                in: RoundedRectangle(cornerRadius: LiquidGlass.isAvailable ? 28 : 16, style: .continuous),
-                fallback: .appSecond
-            )
-            .padding(.horizontal, 32)
         }
     }
 
@@ -404,21 +383,8 @@ struct StatisticsDayPicker: View {
         } label: {
             Text(day.relativeDayName ?? "")
                 .font(.appLight(20))
-                .foregroundColor(.appWhite.opacity(0.8))
-                .frame(maxWidth: .infinity)
-                .frame(height: 44)
-                .contentShape(Rectangle())
-        }
-        .buttonStyle(.plain)
-    }
-
-    private func actionButton(_ title: String, action: @escaping () -> Void) -> some View {
-        Button(action: action) {
-            Text(title)
-                .font(.appRegular(20))
-                .foregroundColor(.appPrimary)
-                .frame(maxWidth: .infinity)
-                .frame(height: 48)
+                .foregroundColor(.appLabel)
+                .frame(maxWidth: .infinity, minHeight: 44)
                 .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
@@ -455,7 +421,7 @@ struct StatisticsPeriodList: View {
                                 }
                             }
                             .foregroundColor(.appWhite)
-                            .padding(.horizontal, 20)
+                            .padding(.horizontal, 16)
                             .frame(height: Self.rowHeight)
                             .contentShape(Rectangle())
                         }
@@ -506,7 +472,7 @@ struct StatisticsRow: View {
             y: 1
         )
         .padding(.horizontal, 16)
-        .frame(height: 52)
+        .frame(height: 48)
         .background(alignment: .leading) {
             GeometryReader { geometry in
                 glassBar

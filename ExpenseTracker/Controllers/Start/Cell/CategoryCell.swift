@@ -17,7 +17,7 @@ struct CategoryCell: View {
     var body: some View {
         if category.isDirectory {
             Button(action: select) {
-                VStack(spacing: 6) {
+                VStack(spacing: 8) {
                     ZStack {
                         Image(systemName: "folder.fill")
                             .resizable()
@@ -34,13 +34,13 @@ struct CategoryCell: View {
                     }
 
                     Text(category.name.localized)
-                        .font(.caption)
+                        .font(.appRegular(12))
                         .foregroundColor(.appWhite)
                         .multilineTextAlignment(.center)
                         .lineLimit(2)
                 }
                 .frame(maxWidth: .infinity)
-                .padding(.horizontal, 10)
+                .padding(.horizontal, 8)
                 .padding(.vertical, 4)
                 .contentShape(Rectangle())
             }
@@ -73,7 +73,7 @@ struct CategoryCell: View {
                 }
                 .frame(height: 74)
                 .frame(maxWidth: .infinity)
-                .padding(.horizontal, 10)
+                .padding(.horizontal, 8)
                 .padding(.vertical, 4)
                 .contentShape(Rectangle())
             }

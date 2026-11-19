@@ -38,7 +38,7 @@ struct StartView: View {
                 VStack(spacing: 0) {
                     if appSettings.accounting.multipleAccountsEnabled {
                         StartBalanceCard(accounts: accounts, selected: selectedAccount, onSelect: selectAccount, action: openAccounts)
-                            .padding(.horizontal, 8)
+                            .padding(.horizontal, 16)
                             .padding(.top, 12)
                         // .border(.red)
                     }
@@ -62,7 +62,7 @@ struct StartView: View {
                             addTransaction(with: category)
                         }
                         // .border(.red)
-                        .padding(.top, 14)
+                        .padding(.top, 16)
                         .id(operationType)
                         .transition(.opacity)
                     }
@@ -76,7 +76,7 @@ struct StartView: View {
                 }
                 // .padding(.vertical, 16)
                 .frame(maxWidth: .infinity, alignment: .top)
-                .animation(.easeInOut(duration: 0.25), value: showCategories)
+                .animation(.appStandard, value: showCategories)
             }
             .appBackground()
             .navigationDestination(isPresented: $showHistory) {
@@ -100,7 +100,7 @@ struct StartView: View {
         }
         .onAppear(perform: FeedbackManager.shared.prepare)
         .onChange(of: resetToken) {
-            withAnimation(.easeInOut(duration: 0.25)) {
+            withAnimation(.appStandard) {
                 selectedOperationType = .outcome
             }
         }
@@ -109,8 +109,8 @@ struct StartView: View {
                 input.reset()
             }
         }
-        .animation(.easeInOut(duration: 0.2), value: showNoteInput)
-        .animation(.easeInOut(duration: 0.2), value: showDatePopup)
+        .animation(.appStandard, value: showNoteInput)
+        .animation(.appStandard, value: showDatePopup)
     }
 
     private var isAmountEntered: Bool {
@@ -133,9 +133,9 @@ struct StartView: View {
                 .frame(width: 48, height: 50)
                 .glassSurface(
                     in: UnevenRoundedRectangle(topLeadingRadius: 25, bottomLeadingRadius: 25),
-                    tint: note.isBlank ? nil : .appLabel.opacity(0.3),
+                    tint: note.isBlank ? nil : .appLabel.opacity(0.25),
                     isInteractive: true,
-                    fallback: .appLabel.opacity(note.isBlank ? 0.1 : 0.3)
+                    fallback: .appLabel.opacity(note.isBlank ? 0.1 : 0.25)
                 )
         }
     }
@@ -150,9 +150,9 @@ struct StartView: View {
                 .frame(width: 48, height: 50)
                 .glassSurface(
                     in: UnevenRoundedRectangle(topLeadingRadius: 25, bottomLeadingRadius: 25),
-                    tint: isSet ? .appPrimary.opacity(0.3) : nil,
+                    tint: isSet ? .appPrimary.opacity(0.25) : nil,
                     isInteractive: true,
-                    fallback: isSet ? Color.appPrimary.opacity(0.3) : Color.appLabel.opacity(0.1)
+                    fallback: isSet ? Color.appPrimary.opacity(0.25) : Color.appLabel.opacity(0.1)
                 )
         }
         .accessibilityLabel(L10n.transactionEditDate)
@@ -169,23 +169,17 @@ struct StartView: View {
                 .frame(width: 48, height: 50)
                 .glassSurface(
                     in: UnevenRoundedRectangle(topLeadingRadius: 25, bottomLeadingRadius: 25),
-                    tint: isIncome ? .green.opacity(0.3) : nil,
+                    tint: isIncome ? .green.opacity(0.25) : nil,
                     isInteractive: true,
-                    fallback: isIncome ? Color.green.opacity(0.3) : Color.appLabel.opacity(0.1)
+                    fallback: isIncome ? Color.green.opacity(0.25) : Color.appLabel.opacity(0.1)
                 )
         }
         .accessibilityLabel(operationType.title)
     }
 
     private var historyButton: some View {
-        Button(action: openHistory) {
-            Image(systemName: "chevron.down")
-                .font(.system(size: 22, weight: .semibold))
-                .foregroundColor(.appPrimary)
-                .frame(width: 60, height: 60)
-                .glassSurface(in: Circle(), isInteractive: true, fallback: .appLabel.opacity(0.1))
-        }
-        .accessibilityLabel(L10n.historyTitle)
+        RoundIconButton(systemImage: "chevron.down", action: openHistory)
+            .accessibilityLabel(L10n.historyTitle)
     }
 
     private func openHistory() {
@@ -218,7 +212,7 @@ struct StartView: View {
 
     private func toggleOperationType() {
         FeedbackManager.shared.buttonTapped()
-        withAnimation(.easeInOut(duration: 0.25)) {
+        withAnimation(.appStandard) {
             selectedOperationType = operationType.toggled
         }
     }

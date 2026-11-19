@@ -119,11 +119,8 @@ struct CustomIconPickerView: View {
             }
         }
         .padding(.horizontal, 16)
-        .padding(.vertical, 12)
-        .glassSurface(
-            in: RoundedRectangle(cornerRadius: LiquidGlass.isAvailable ? 22 : 10, style: .continuous),
-            fallback: .appWhite.opacity(0.1)
-        )
+        .frame(height: 48)
+        .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
         .padding(.horizontal, 16)
         .padding(.top, 16)
     }
@@ -143,8 +140,7 @@ struct CustomIconPickerView: View {
                     }
                 }
             }
-            .padding(.horizontal, 16)
-            .padding(.vertical, 20)
+            .padding(16)
         }
     }
 
@@ -160,7 +156,7 @@ struct CustomIconPickerView: View {
                 .foregroundColor(selectedIcon == icon ? .appYellow : .appWhite)
                 .frame(width: 68, height: 68)
                 .background(
-                    RoundedRectangle(cornerRadius: 16)
+                    RoundedRectangle(cornerRadius: 12, style: .continuous)
                         .stroke(selectedIcon == icon ? Color.appYellow : Color.clear, lineWidth: 2)
                 )
                 .contentShape(Rectangle())
@@ -172,8 +168,8 @@ struct CustomIconPickerView: View {
 
     private func sectionHeader(_ title: String) -> some View {
         Text(title)
-            .font(.footnote.weight(.semibold))
-            .foregroundColor(.appWhite.opacity(0.6))
+            .font(.appMedium(14))
+            .foregroundColor(.appLabel)
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.top, 8)
     }

@@ -56,15 +56,15 @@ struct AccountsView: View {
                     .minimumScaleFactor(0.6)
                     .contentTransition(.numericText())
             }
-            .padding(.horizontal, 20)
-            .frame(height: 60)
+            .padding(.horizontal, 16)
+            .frame(height: 48)
             .listRowBackground(Color.clear)
             .listRowInsets(EdgeInsets())
             .listRowSeparator(.hidden)
         }
         .listStyle(.plain)
         .scrollContentBackground(.hidden)
-        .animation(.default, value: accounts.count)
+        .animation(.appStandard, value: accounts.count)
         .appBackground()
         .navigationTitle(L10n.accountsTitle)
         .navigationBarTitleDisplayMode(.inline)
@@ -106,8 +106,8 @@ struct AccountsView: View {
                 .transition(.opacity)
             }
         }
-        .animation(.easeInOut(duration: 0.2), value: editingAccount?.uuid)
-        .animation(.easeInOut(duration: 0.2), value: showNewAccount)
+        .animation(.appStandard, value: editingAccount?.uuid)
+        .animation(.appStandard, value: showNewAccount)
     }
 
     private func canTurnOff(_ account: Account) -> Bool {
@@ -134,15 +134,6 @@ extension AccountsView: Equatable {
     nonisolated static func == (lhs: AccountsView, rhs: AccountsView) -> Bool { true }
 }
 
-struct InsetDivider: View {
-    var body: some View {
-        Rectangle()
-            .fill(.appLabel.opacity(0.25))
-            .frame(height: 0.5)
-            .padding(.horizontal, 20)
-    }
-}
-
 struct AccountRow: View {
     let name: String
     let amount: Int
@@ -165,8 +156,8 @@ struct AccountRow: View {
                     .lineLimit(1)
                     .minimumScaleFactor(0.6)
             }
-            .padding(.horizontal, 20)
-            .frame(height: 60)
+            .padding(.horizontal, 16)
+            .frame(height: 48)
             .opacity(isDisabled ? 0.4 : 1)
             .contentShape(Rectangle())
         }
@@ -204,17 +195,13 @@ struct AccountEditPopup: View {
     }
 
     var body: some View {
-        ZStack {
-            Color.appOverlay.opacity(0.4)
-                .ignoresSafeArea()
-                .onTapGesture(perform: cancel)
-
-            VStack(spacing: 20) {
+        TransactionEditPopup(canConfirm: canConfirm, onCancel: cancel, onConfirm: confirm) {
+            VStack(spacing: 16) {
                 header
 
                 VStack(spacing: 12) {
                     field(L10n.accountsName, systemImage: "pencil", isFocused: focusedField == .name) {
-                        TextField("", text: $name, prompt: Text(L10n.accountsNew).foregroundColor(.appLabel.opacity(0.5)))
+                        TextField("", text: $name, prompt: Text(L10n.accountsNew).foregroundColor(.appLabel.opacity(0.6)))
                             .font(.appRegular(18))
                             .focused($focusedField, equals: .name)
                             .submitLabel(.next)
@@ -223,7 +210,7 @@ struct AccountEditPopup: View {
                     .onTapGesture { focusedField = .name }
 
                     field(L10n.startviewBalance, systemImage: "banknote", isFocused: focusedField == .amount) {
-                        TextField("", text: $amountText, prompt: Text("0").foregroundColor(.appLabel.opacity(0.5)))
+                        TextField("", text: $amountText, prompt: Text("0").foregroundColor(.appLabel.opacity(0.6)))
                             .font(.appMedium(22))
                             .keyboardType(.decimalPad)
                             .focused($focusedField, equals: .amount)
@@ -234,24 +221,9 @@ struct AccountEditPopup: View {
                 if showsDisableOption {
                     disableOption
                 }
-
-                HStack(spacing: 12) {
-                    actionButton(L10n.cancel, isPrimary: false, action: cancel)
-
-                    actionButton(L10n.save, isPrimary: true, action: confirm)
-                        .disabled(!canConfirm)
-                        .opacity(canConfirm ? 1 : 0.4)
-                }
             }
-            .padding(20)
-            .frame(maxWidth: 360)
-            .glassSurface(
-                in: RoundedRectangle(cornerRadius: 28, style: .continuous),
-                fallback: .appSecond
-            )
-            .padding(.horizontal, 28)
-            .animation(.easeInOut(duration: 0.2), value: focusedField)
-            .animation(.easeInOut(duration: 0.2), value: canConfirm)
+            .padding(.horizontal, 16)
+            .animation(.appStandard, value: focusedField)
         }
         .onAppear {
             focusedField = name.isBlank ? .name : .amount
@@ -271,7 +243,7 @@ struct AccountEditPopup: View {
                 .minimumScaleFactor(0.7)
         }
         .tint(.appPrimary)
-        .padding(.horizontal, 14)
+        .padding(.horizontal, 16)
         .disabled(!canDisable)
         .opacity(canDisable ? 1 : 0.4)
     }
@@ -310,30 +282,14 @@ struct AccountEditPopup: View {
                     .tint(.appPrimary)
             }
         }
-        .padding(.horizontal, 14)
-        .frame(height: 60)
-        .background(.appMain.opacity(LiquidGlass.isAvailable ? 0.5 : 1), in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+        .padding(.horizontal, 16)
+        .frame(height: 64)
+        .background(.appMain.opacity(LiquidGlass.isAvailable ? 0.5 : 1), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
         .overlay {
-            RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .stroke(.appPrimary.opacity(isFocused ? 0.8 : 0), lineWidth: 1)
+            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                .stroke(.appPrimary.opacity(isFocused ? 1 : 0), lineWidth: 1)
         }
-        .contentShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-    }
-
-    private func actionButton(_ title: String, isPrimary: Bool, action: @escaping () -> Void) -> some View {
-        Button(action: action) {
-            Text(title)
-                .font(.appMedium(16))
-                .foregroundColor(isPrimary ? .appMain : .appWhite)
-                .lineLimit(1)
-                .minimumScaleFactor(0.7)
-                .padding(.horizontal, 8)
-                .frame(maxWidth: .infinity)
-                .frame(height: 48)
-                .background(isPrimary ? Color.appPrimary : Color.appLabel.opacity(0.15), in: Capsule())
-                .contentShape(Capsule())
-        }
-        .buttonStyle(.plain)
+        .contentShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 
     private func cancel() {

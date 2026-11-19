@@ -88,8 +88,7 @@ struct EditCategoryView: View {
         NavigationStack {
             ScrollView {
                 content
-                    .padding(.horizontal, 24)
-                    .padding(.vertical, 16)
+                    .padding(16)
             }
             .scrollDismissesKeyboard(.interactively)
             .safeAreaInset(edge: .bottom, spacing: 0) {
@@ -100,7 +99,7 @@ struct EditCategoryView: View {
                     .transition(.opacity)
                 }
             }
-            .animation(.easeInOut(duration: 0.2), value: isNameFocused)
+            .animation(.appStandard, value: isNameFocused)
             .appBackground()
             .navigationTitle(isEdit ? L10n.editCategoryTitle : L10n.editCategoryNewTitle)
             .navigationBarTitleDisplayMode(.inline)
@@ -154,8 +153,8 @@ struct EditCategoryView: View {
             iconSelectionSection
 
             if isEdit {
-                Spacer(minLength: 40)
                 deleteSection
+                    .padding(.top, 8)
             }
         }
     }
@@ -163,7 +162,7 @@ struct EditCategoryView: View {
     // MARK: - Sections
 
     private var previewSection: some View {
-        VStack(spacing: 16) {
+        VStack(spacing: 12) {
             // Icon wrapped in a folder for directories
             if isDirectory {
                 ZStack {
@@ -192,14 +191,12 @@ struct EditCategoryView: View {
                 .font(.appMedium(18))
                 .foregroundColor(.appWhite)
         }
-        .padding(.vertical, 24)
+        .padding(.vertical, 8)
     }
 
     private var parentSelectionSection: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text(L10n.editCategoryParentCategory)
-                .font(.appMedium(16))
-                .foregroundColor(.appWhite)
+            MenuSectionHeader(title: L10n.editCategoryParentCategory)
 
             HStack {
                 Picker("Choose folder", selection: $draft.parentUuid) {
@@ -213,33 +210,30 @@ struct EditCategoryView: View {
                 .foregroundColor(.appWhite)
                 Spacer()
             }
+            .padding(.horizontal, 4)
+            .frame(height: 48)
+            .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
         }
     }
 
     private var nameInputSection: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text(L10n.editCategoryName)
-                .font(.appMedium(16))
-                .foregroundColor(.appWhite)
+            MenuSectionHeader(title: L10n.editCategoryName)
 
             TextField(L10n.editCategoryNamePlaceholder, text: $draft.name)
                 .focused($isNameFocused)
-                .padding(10)
-                .background(.appMain.opacity(0.5))
-                .cornerRadius(8)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 8)
-                        .stroke(.appSecond, lineWidth: 1) // border color and width
-                )
                 .font(.appRegular(16))
+                .foregroundColor(.appWhite)
+                .tint(.appPrimary)
+                .padding(.horizontal, 16)
+                .frame(height: 48)
+                .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
         }
     }
 
     private var subcategoriesSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text(L10n.editCategorySubcategories)
-                .font(.appMedium(16))
-                .foregroundColor(.appWhite)
+        VStack(alignment: .leading, spacing: 8) {
+            MenuSectionHeader(title: L10n.editCategorySubcategories)
 
             LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 3), spacing: 12) {
                 ForEach(subcategories, id: \.id) { sub in
@@ -260,11 +254,7 @@ struct EditCategoryView: View {
                                 .truncationMode(.tail)
                         }
                         .padding(8)
-                        .glassSurface(
-                            in: RoundedRectangle(cornerRadius: 8),
-                            isInteractive: true,
-                            fallback: .appWhite.opacity(0.1)
-                        )
+                        .glassSurface(in: RoundedRectangle(cornerRadius: 12, style: .continuous), isInteractive: true, fallback: .appLabel.opacity(0.1))
                     }
                     .buttonStyle(PlainButtonStyle())
                 }
@@ -273,11 +263,9 @@ struct EditCategoryView: View {
     }
 
     private var iconSelectionSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 8) {
             HStack {
-                Text(L10n.editCategoryIcon)
-                    .font(.appMedium(16))
-                    .foregroundColor(.appWhite)
+                MenuSectionHeader(title: L10n.editCategoryIcon)
 
                 Spacer()
 
@@ -290,6 +278,7 @@ struct EditCategoryView: View {
                     }
                     .font(.appRegular(14))
                     .foregroundColor(.appYellow)
+                    .padding(.trailing, 16)
                 }
             }
 
@@ -302,11 +291,9 @@ struct EditCategoryView: View {
     }
 
     private var colorSelectionSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 8) {
             HStack {
-                Text(L10n.editCategoryColor)
-                    .font(.appMedium(16))
-                    .foregroundColor(.appWhite)
+                MenuSectionHeader(title: L10n.editCategoryColor)
 
                 Spacer()
 
@@ -319,6 +306,7 @@ struct EditCategoryView: View {
                     }
                     .font(.appRegular(14))
                     .foregroundColor(.appYellow)
+                    .padding(.trailing, 16)
                 }
             }
 
@@ -336,28 +324,17 @@ struct EditCategoryView: View {
                         colorButton(color)
                     }
                 }
-                .padding(.horizontal, 24)
+                .padding(.horizontal, 16)
             }
-            .padding(.horizontal, -24)
+            .padding(.horizontal, -16)
         }
     }
 
     private var deleteSection: some View {
-        Button {
+        RoundIconButton(systemImage: "trash", color: .appRed, tint: .appRed) {
             showDeleteConfirmation = true
-        } label: {
-            Text(isDirectory ? L10n.editCategoryDeleteFolder : L10n.editCategoryDeleteCategory)
-                .font(.appMedium(16))
-                .foregroundColor(.appWhite)
-                .frame(maxWidth: .infinity)
-                .frame(height: 52)
-                .glassSurface(
-                    in: RoundedRectangle(cornerRadius: LiquidGlass.isAvailable ? 26 : 12, style: .continuous),
-                    tint: .appRed,
-                    isInteractive: true,
-                    fallback: .appRed
-                )
         }
+        .accessibilityLabel(isDirectory ? L10n.editCategoryDeleteFolder : L10n.editCategoryDeleteCategory)
         .alert(isDirectory ? L10n.editCategoryDeleteFolder : L10n.editCategoryDeleteCategory, isPresented: $showDeleteConfirmation) {
             Button(L10n.cancel, role: .cancel) {}
             Button(L10n.remove, role: .destructive) {
@@ -379,8 +356,8 @@ struct EditCategoryView: View {
                 .foregroundColor(draft.icon.name == icon ? draft.icon.color : .appWhite.opacity(0.6))
                 .frame(width: 40, height: 40)
                 .background(
-                    RoundedRectangle(cornerRadius: 8)
-                        .fill(draft.icon.name == icon ? Color.appWhite.opacity(0.2) : Color.clear)
+                    RoundedRectangle(cornerRadius: 8, style: .continuous)
+                        .fill(draft.icon.name == icon ? Color.appWhite.opacity(0.25) : Color.clear)
                 )
         }
     }

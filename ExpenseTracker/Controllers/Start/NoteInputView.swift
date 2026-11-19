@@ -17,21 +17,21 @@ struct NoteInputView: View {
 
     var body: some View {
         ZStack(alignment: .bottom) {
-            Color.appOverlay.opacity(0.5)
+            Color.appOverlay.opacity(0.4)
                 .ignoresSafeArea()
                 .onTapGesture(perform: close)
 
-            VStack(spacing: 14) {
+            VStack(spacing: 12) {
                 header
-                HStack(alignment: .bottom, spacing: 10) {
+                HStack(alignment: .bottom, spacing: 8) {
                     field
                     saveButton
                 }
             }
             .padding(16)
             .glassSurface(in: RoundedRectangle(cornerRadius: 28, style: .continuous), fallback: .appSecond)
-            .legacyShadow(color: .appOverlay.opacity(0.3), radius: 24, y: 8)
-            .padding(.horizontal, 12)
+            .legacyShadow(color: .appOverlay.opacity(0.3), radius: 12, y: 4)
+            .padding(.horizontal, 16)
             .padding(.bottom, 8)
         }
         .onAppear {
@@ -54,7 +54,7 @@ struct NoteInputView: View {
                     Text(L10n.clear)
                         .font(.appRegular(15))
                         .foregroundColor(.appPrimary)
-                        .padding(.horizontal, 10)
+                        .padding(.horizontal, 12)
                         .frame(minHeight: 32)
                         .contentShape(Rectangle())
                 }
@@ -70,7 +70,7 @@ struct NoteInputView: View {
                     .clipShape(Circle())
             }
         }
-        .animation(.easeInOut(duration: 0.15), value: draft.isEmpty)
+        .animation(.appFast, value: draft.isEmpty)
     }
 
     private var field: some View {
@@ -86,10 +86,9 @@ struct NoteInputView: View {
         .foregroundColor(.appWhite)
         .tint(.appPrimary)
         .padding(.horizontal, 16)
-        .padding(.vertical, 11)
+        .padding(.vertical, 12)
         .frame(minHeight: 44)
-        .background(.appMain.opacity(LiquidGlass.isAvailable ? 0.5 : 1))
-        .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
+        .background(.appMain.opacity(LiquidGlass.isAvailable ? 0.5 : 1), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 
     private var saveButton: some View {

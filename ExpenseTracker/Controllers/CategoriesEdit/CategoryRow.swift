@@ -52,12 +52,12 @@ struct CategoryRow: View {
                 switch accessory {
                 case .chevron:
                     Image(systemName: "chevron.right")
-                        .font(.system(size: 14, weight: .semibold))
-                        .foregroundColor(.appWhite.opacity(0.6))
+                        .font(.system(size: 12, weight: .semibold))
+                        .foregroundColor(.appLabel)
                 case .reorder:
                     Image(systemName: "line.3.horizontal")
                         .font(.system(size: 18, weight: .regular))
-                        .foregroundColor(.appWhite.opacity(0.5))
+                        .foregroundColor(.appWhite.opacity(0.6))
                 case .none:
                     EmptyView()
                 }
@@ -102,7 +102,7 @@ struct CategoryIconView: View {
 extension View {
     func categoryListRow(isLast: Bool) -> some View {
         listRowBackground(Color.clear)
-            .listRowInsets(EdgeInsets(top: 12, leading: 24, bottom: 12, trailing: 24))
+            .listRowInsets(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
             .listRowSeparatorTint(.appSecond)
             .listRowSeparator(.hidden, edges: .top)
             .listRowSeparator(isLast ? .hidden : .visible, edges: .bottom)

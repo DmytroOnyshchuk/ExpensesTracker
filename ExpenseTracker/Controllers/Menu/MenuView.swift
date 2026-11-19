@@ -209,7 +209,7 @@ struct MenuSpentCard: View {
                         .contentTransition(.numericText())
 
                     if let balance {
-                        HStack(spacing: 6) {
+                        HStack(spacing: 8) {
                             Text(L10n.startviewBalance)
                                 .font(.appLight(14))
                                 .foregroundColor(.appLabel)
@@ -230,19 +230,13 @@ struct MenuSpentCard: View {
                     .font(.system(size: 28))
                     .foregroundColor(.appPrimary)
             }
-            .padding(.horizontal, 16)
-            .padding(.vertical, 14)
+            .padding(16)
             .frame(maxWidth: .infinity)
-            .glassSurface(
-                in: RoundedRectangle(cornerRadius: 18, style: .continuous),
-                tint: .appPrimary.opacity(0.15),
-                isInteractive: true,
-                fallback: .appPrimary.opacity(0.15)
-            )
+            .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), tint: .appPrimary.opacity(0.15), isInteractive: true, fallback: .appPrimary.opacity(0.15))
             .contentShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
         }
         .buttonStyle(.plain)
-        .animation(.default, value: balance)
+        .animation(.appStandard, value: balance)
     }
 }
 
@@ -260,11 +254,7 @@ struct MenuSectionHeader: View {
 
 struct MenuRowDivider: View {
     var body: some View {
-        Rectangle()
-            .fill(.appLabel.opacity(0.25))
-            .frame(height: 0.5)
-            .padding(.leading, 52)
-            .padding(.trailing, 16)
+        InsetDivider(leading: 52)
     }
 }
 
@@ -305,7 +295,7 @@ struct MenuRowLabel: View {
                 .foregroundColor(.appLabel)
         }
         .padding(.horizontal, 16)
-        .frame(height: 46)
+        .frame(height: 48)
         .contentShape(Rectangle())
     }
 }

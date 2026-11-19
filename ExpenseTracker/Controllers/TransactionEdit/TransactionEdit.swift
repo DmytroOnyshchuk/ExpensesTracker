@@ -42,8 +42,7 @@ struct TransactionEdit: View {
             ScrollView(.vertical) {
                 VStack(spacing: 16) {
                     header
-                        .padding(.top, 8)
-                        .padding(.bottom, 8)
+                        .padding(.vertical, 8)
 
                     VStack(spacing: 0) {
                         if appSettings.accounting.multipleAccountsEnabled {
@@ -62,14 +61,13 @@ struct TransactionEdit: View {
                                     .minimumScaleFactor(0.7)
 
                                 valueText(draft.date.formatted(date: .omitted, time: .shortened))
-                                    .padding(.horizontal, 10)
+                                    .padding(.horizontal, 12)
                                     .frame(height: 32)
                                     .background(.appLabel.opacity(0.15))
                                     .clipShape(Capsule())
                             }
                         }
                     }
-                    .padding(.vertical, 6)
                     .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
 
                     noteRow
@@ -87,7 +85,7 @@ struct TransactionEdit: View {
                         .transition(.opacity)
                 }
             }
-            .animation(.easeInOut(duration: 0.2), value: isAmountFocused || isNoteFocused)
+            .animation(.appStandard, value: isAmountFocused || isNoteFocused)
             .appBackground()
             .navigationTitle(L10n.transactionEditTitle)
             .navigationBarTitleDisplayMode(.inline)
@@ -96,12 +94,12 @@ struct TransactionEdit: View {
                     Button(L10n.cancel) {
                         dismiss()
                     }
-                    .foregroundColor(.appLabel)
+                    .foregroundColor(.appWhite)
                 }
 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(L10n.ok, action: save)
-                        .foregroundColor(.appLabel)
+                        .foregroundColor(.appWhite)
                         .disabled(!draft.canSave)
                 }
             }
@@ -125,7 +123,7 @@ struct TransactionEdit: View {
         .overlay {
             popupView
         }
-        .animation(.easeInOut(duration: 0.2), value: popup)
+        .animation(.appStandard, value: popup)
     }
 
     private var header: some View {
@@ -161,7 +159,7 @@ struct TransactionEdit: View {
         TextField(
             "",
             text: $draft.note,
-            prompt: Text(L10n.transactionEditAddNote).foregroundColor(.appLabel),
+            prompt: Text(L10n.transactionEditAddNote).foregroundColor(.appLabel.opacity(0.6)),
             axis: .vertical
         )
         .lineLimit(3 ... 6)
@@ -169,8 +167,7 @@ struct TransactionEdit: View {
         .font(.appLight(18))
         .foregroundColor(.appWhite)
         .tint(.appPrimary)
-        .padding(.horizontal, 20)
-        .padding(.vertical, 16)
+        .padding(16)
         .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
         .contentShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
         .onTapGesture {
@@ -199,7 +196,7 @@ struct TransactionEdit: View {
                     }
                 }
             } label: {
-                HStack(spacing: 6) {
+                HStack(spacing: 4) {
                     valueText(draft.account?.name ?? "—")
 
                     Image(systemName: "chevron.up.chevron.down")
@@ -209,8 +206,8 @@ struct TransactionEdit: View {
                 .contentShape(Rectangle())
             }
         }
-        .padding(.horizontal, 20)
-        .frame(height: 60)
+        .padding(.horizontal, 16)
+        .frame(height: 48)
     }
 
     private var keyboardDoneButton: some View {
@@ -221,23 +218,11 @@ struct TransactionEdit: View {
     }
 
     private var deleteButton: some View {
-        Button {
+        RoundIconButton(systemImage: "trash", color: .appRed, tint: .appRed) {
             isAmountFocused = false
             isNoteFocused = false
             delete()
-        } label: {
-            Image(systemName: "trash")
-                .font(.system(size: 22, weight: .medium))
-                .foregroundColor(.appRed)
-                .frame(width: 60, height: 60)
-                .glassSurface(
-                    in: Circle(),
-                    tint: .appRed.opacity(0.15),
-                    isInteractive: true,
-                    fallback: .appRed.opacity(0.15)
-                )
         }
-        .buttonStyle(.plain)
         .accessibilityLabel(L10n.transactionEditDelete)
     }
 
@@ -309,8 +294,8 @@ struct TransactionEdit: View {
 
                 value()
             }
-            .padding(.horizontal, 20)
-            .frame(height: 60)
+            .padding(.horizontal, 16)
+            .frame(height: 48)
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)

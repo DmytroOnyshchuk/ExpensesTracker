@@ -50,11 +50,11 @@ struct ToastView: View {
                 .foregroundColor(LiquidGlass.isAvailable ? .appWhite : .appMain)
                 .multilineTextAlignment(.center)
         }
-        .padding(.horizontal, 20)
+        .padding(.horizontal, 16)
         .padding(.vertical, 12)
         .glassSurface(in: Capsule(), fallback: .appWhite)
-        .legacyShadow(color: .appBlack.opacity(0.25), radius: 12, y: 4)
-        .padding(.horizontal, 24)
+        .legacyShadow(color: .appOverlay.opacity(0.3), radius: 12, y: 4)
+        .padding(.horizontal, 16)
         .padding(.top, 8)
     }
 }
@@ -80,7 +80,7 @@ private struct ToastModifier: ViewModifier {
                         }
                 }
             }
-            .animation(.spring(duration: 0.3), value: message)
+            .animation(.appSpring, value: message)
     }
 }
 

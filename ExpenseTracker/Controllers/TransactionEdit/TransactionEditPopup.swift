@@ -25,9 +25,9 @@ struct TransactionEditPopup<Content: View>: View {
                 content
 
                 Rectangle()
-                    .fill(.appLabel.opacity(0.2))
+                    .fill(.appLabel.opacity(0.25))
                     .frame(height: 0.5)
-                    .padding(.top, 14)
+                    .padding(.top, 16)
 
                 HStack(spacing: 0) {
                     if let onRemove {
@@ -45,19 +45,18 @@ struct TransactionEditPopup<Content: View>: View {
                         .opacity(canConfirm ? 1 : 0.4)
                 }
             }
-            .padding(.top, 18)
-            .frame(maxWidth: .infinity)
-            .glassSurface(
-                in: RoundedRectangle(cornerRadius: LiquidGlass.isAvailable ? 24 : 16, style: .continuous),
-                fallback: .appSecond
-            )
-            .padding(.horizontal, 48)
+            .padding(.top, 16)
+            .frame(maxWidth: 360)
+            .glassSurface(in: RoundedRectangle(cornerRadius: 28, style: .continuous), fallback: .appSecond)
+            .legacyShadow(color: .appOverlay.opacity(0.3), radius: 12, y: 4)
+            .padding(.horizontal, 32)
+            .animation(.appStandard, value: canConfirm)
         }
     }
 
     private var buttonDivider: some View {
         Rectangle()
-            .fill(.appLabel.opacity(0.2))
+            .fill(.appLabel.opacity(0.25))
             .frame(width: 0.5, height: 24)
     }
 
@@ -103,7 +102,7 @@ struct TransactionDatePopup: View {
         let isSelected = Calendar.current.isDate(date, inSameDayAs: day)
 
         return Button {
-            withAnimation {
+            withAnimation(.appStandard) {
                 date = day
             }
         } label: {

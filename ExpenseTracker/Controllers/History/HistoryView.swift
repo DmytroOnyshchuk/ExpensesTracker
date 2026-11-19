@@ -139,20 +139,9 @@ struct HistoryView: View {
     }
 
     private func monthArrow(systemImage: String, shift: Int, start: Date, starts: [Date]) -> some View {
-        let isEnabled = neighbour(of: start, by: shift, in: starts) != nil
-
-        return Button {
+        PeriodArrowButton(systemImage: systemImage, isEnabled: neighbour(of: start, by: shift, in: starts) != nil) {
             shiftMonth(by: shift, from: start, in: starts)
-        } label: {
-            Image(systemName: systemImage)
-                .font(.system(size: 20, weight: .medium))
-                .foregroundColor(.appPrimary.opacity(isEnabled ? 1 : 0.3))
-                .frame(width: 44, height: 44)
-                .contentShape(Rectangle())
-                .glassSurface(in: Circle(), isInteractive: isEnabled, fallback: .clear)
         }
-        .buttonStyle(.plain)
-        .disabled(!isEnabled)
     }
 
     private func days(of transactions: [Transaction]) -> [TransactionsDay] {
@@ -194,7 +183,7 @@ struct HistoryView: View {
         guard date != start else { return }
 
         slideEdge = date > start ? .trailing : .leading
-        withAnimation(.easeInOut(duration: 0.25)) {
+        withAnimation(.appStandard) {
             anchorDate = date
         }
     }

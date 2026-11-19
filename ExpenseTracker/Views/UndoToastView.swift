@@ -61,12 +61,9 @@ struct UndoToastView: View {
             .buttonStyle(.plain)
         }
         .padding(.horizontal, 16)
-        .glassSurface(
-            in: RoundedRectangle(cornerRadius: LiquidGlass.isAvailable ? 26 : 8, style: .continuous),
-            fallback: .appWhite
-        )
-        .legacyShadow(color: .appBlack.opacity(0.3), radius: 12, y: 4)
-        .padding(.horizontal, 12)
+        .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: Color.appWhite)
+        .legacyShadow(color: .appOverlay.opacity(0.3), radius: 12, y: 4)
+        .padding(.horizontal, 16)
         .padding(.bottom, 8)
     }
 }
@@ -94,7 +91,7 @@ private struct UndoToastModifier: ViewModifier {
                     }
                 }
             }
-            .animation(.spring(duration: 0.3), value: center.item?.id)
+            .animation(.appSpring, value: center.item?.id)
     }
 }
 

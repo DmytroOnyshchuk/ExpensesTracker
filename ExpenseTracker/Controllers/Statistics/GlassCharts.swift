@@ -233,7 +233,7 @@ struct GlassDonutChart: View {
             width = newValue
         }
         .onAppear {
-            withAnimation(.easeOut(duration: 0.6)) {
+            withAnimation(.appSlow) {
                 progress = 1
             }
         }

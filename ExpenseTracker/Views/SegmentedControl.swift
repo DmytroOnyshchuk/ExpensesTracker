@@ -29,7 +29,7 @@ struct SegmentedControl<Item: Hashable>: View {
                         .frame(height: 36)
                         .background {
                             if item == selection {
-                                RoundedRectangle(cornerRadius: 8)
+                                RoundedRectangle(cornerRadius: 8, style: .continuous)
                                     .fill(.appLabel.opacity(0.25))
                             }
                         }
@@ -39,11 +39,11 @@ struct SegmentedControl<Item: Hashable>: View {
             }
         }
         .padding(2)
-        .glassSurface(in: RoundedRectangle(cornerRadius: 10), fallback: .clear)
+        .glassSurface(in: RoundedRectangle(cornerRadius: 10, style: .continuous), fallback: .clear)
         .overlay {
             if !LiquidGlass.isAvailable {
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke(.appLabel.opacity(0.4), lineWidth: 1.5)
+                RoundedRectangle(cornerRadius: 10, style: .continuous)
+                    .stroke(.appLabel.opacity(0.4), lineWidth: 1)
             }
         }
     }

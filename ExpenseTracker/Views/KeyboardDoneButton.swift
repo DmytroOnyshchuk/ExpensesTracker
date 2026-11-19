@@ -16,7 +16,7 @@ struct KeyboardDoneButton: View {
             Text(L10n.done)
                 .font(.appMedium(17))
                 .foregroundColor(.appWhite)
-                .padding(.horizontal, 22)
+                .padding(.horizontal, 20)
                 .frame(height: 44)
                 .glassSurface(in: Capsule(), isInteractive: true, fallback: .appSecond)
                 .legacyShadow(color: .appOverlay.opacity(0.3), radius: 12, y: 4)

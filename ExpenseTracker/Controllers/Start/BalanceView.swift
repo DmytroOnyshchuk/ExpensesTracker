@@ -37,13 +37,10 @@ struct BalanceCard: View {
             }
             .buttonStyle(.plain)
         }
-        .padding(.horizontal, 12)
+        .padding(.horizontal, 16)
         .padding(.vertical, 8)
-        .glassSurface(
-            in: RoundedRectangle(cornerRadius: 18, style: .continuous),
-            fallback: .appLabel.opacity(0.1)
-        )
-        .animation(.default, value: balance)
+        .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
+        .animation(.appStandard, value: balance)
     }
 
     private var amountColor: Color {
@@ -62,7 +59,7 @@ struct BalanceCard: View {
     }
 
     private var accountLabel: some View {
-        HStack(spacing: 6) {
+        HStack(spacing: 4) {
             Text(selected?.name ?? L10n.startviewBalance)
                 .font(.appLight(18))
                 .foregroundColor(.appLabel)
@@ -140,7 +137,7 @@ struct BalanceAccountList: View {
                                 }
                             }
                             .foregroundColor(.appWhite)
-                            .padding(.horizontal, 20)
+                            .padding(.horizontal, 16)
                             .frame(height: Self.rowHeight)
                             .contentShape(Rectangle())
                         }
@@ -208,8 +205,7 @@ struct BalanceInputPopup: View {
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 12)
                     .frame(height: 44)
-                    .background(.appMain.opacity(LiquidGlass.isAvailable ? 0.5 : 1))
-                    .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+                    .background(.appMain.opacity(LiquidGlass.isAvailable ? 0.5 : 1), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
                     .padding(.horizontal, 16)
             }
         }

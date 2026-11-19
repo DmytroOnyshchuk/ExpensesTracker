@@ -75,7 +75,7 @@ struct PeriodPager<Page: View>: View {
         guard index != position else { return }
 
         if abs(index - (position ?? center)) == 1, window.contains(index) {
-            withAnimation(.easeInOut(duration: 0.25)) {
+            withAnimation(.appStandard) {
                 position = index
             }
         } else {

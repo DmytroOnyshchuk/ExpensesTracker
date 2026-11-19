@@ -61,7 +61,7 @@ struct PasscodeSetupView: View {
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button(L10n.cancel) { dismiss() }
-                        .tint(.appPrimary)
+                        .foregroundColor(.appWhite)
                 }
             }
         }

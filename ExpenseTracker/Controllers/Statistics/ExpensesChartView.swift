@@ -52,8 +52,7 @@ struct ExpensesChartView: View {
                     ExpensesChart(period: period, amounts: amounts, selection: $selection)
                         .frame(height: 320)
                         .padding(12)
-                        .background(.appSecond)
-                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                        .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
                         .padding(.horizontal, 16)
                         .id(period)
 

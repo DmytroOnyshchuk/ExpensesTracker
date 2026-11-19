@@ -36,8 +36,7 @@ struct BackupsView: View {
             VStack(alignment: .leading, spacing: 24) {
                 BackupSection(title: L10n.backupsCurrentData) {
                     BackupCountsView(transactions: transactions.count, categories: categories.count)
-                        .padding(.horizontal, 16)
-                        .padding(.vertical, 12)
+                        .padding(16)
                 }
 
                 BackupSection(title: L10n.backupsExportSection) {
@@ -76,7 +75,7 @@ struct BackupsView: View {
                 .transition(.opacity)
             }
         }
-        .animation(.easeInOut(duration: 0.2), value: isChoosingFormat)
+        .animation(.appStandard, value: isChoosingFormat)
         .sheet(item: $optionsFormat, onDismiss: sharePendingExport) { format in
             BackupExportOptionsSheet(
                 format: format,
@@ -206,8 +205,9 @@ private struct BackupImportModifier: ViewModifier {
                     ProgressView()
                         .controlSize(.large)
                         .tint(.appPrimary)
-                        .padding(28)
-                        .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.2))
+                        .padding(24)
+                        .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: Color.appSecond)
+                        .legacyShadow(color: .appOverlay.opacity(0.3), radius: 12, y: 4)
                 }
             }
             .toast($toastMessage, icon: .success, duration: .seconds(3))
@@ -335,11 +335,10 @@ struct BackupFormatRow: View {
             .padding(.horizontal, 16)
             .padding(.vertical, 12)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .background(.appMain.opacity(LiquidGlass.isAvailable ? 0.5 : 1))
-            .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+            .background(.appMain.opacity(LiquidGlass.isAvailable ? 0.5 : 1), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
             .overlay {
-                RoundedRectangle(cornerRadius: 14, style: .continuous)
-                    .stroke(Color.appPrimary, lineWidth: isSelected ? 1.5 : 0)
+                RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    .stroke(Color.appPrimary, lineWidth: isSelected ? 2 : 0)
             }
             .contentShape(Rectangle())
         }
@@ -380,7 +379,7 @@ struct BackupExportOptionsSheet: View {
                         )
 
                         ForEach(accounts) { account in
-                            BackupExportOptionDivider()
+                            InsetDivider()
 
                             BackupExportOptionRow(title: account.name, isSelected: options.isSelected(account)) {
                                 toggle(account)
@@ -391,7 +390,7 @@ struct BackupExportOptionsSheet: View {
                     BackupSection(title: L10n.backupsExportPeriod) {
                         ForEach(BackupExportPeriod.allCases) { period in
                             if period != BackupExportPeriod.allCases.first {
-                                BackupExportOptionDivider()
+                                InsetDivider()
                             }
 
                             BackupExportOptionRow(title: period.title, isSelected: period == options.period) {
@@ -400,7 +399,7 @@ struct BackupExportOptionsSheet: View {
                         }
 
                         if options.period == .custom {
-                            BackupExportOptionDivider()
+                            InsetDivider()
 
                             HStack(spacing: 12) {
                                 DatePicker("", selection: $options.customStart, in: ...options.customEnd, displayedComponents: .date)
@@ -416,7 +415,7 @@ struct BackupExportOptionsSheet: View {
                             .tint(.appPrimary)
                             .frame(maxWidth: .infinity)
                             .padding(.horizontal, 16)
-                            .padding(.vertical, 10)
+                            .padding(.vertical, 8)
                         }
                     }
                 }
@@ -434,11 +433,12 @@ struct BackupExportOptionsSheet: View {
                 BackupSheetButton(title: L10n.cancel, foreground: .appWhite, background: .clear, action: onCancel)
             }
         }
-        .padding([.horizontal, .top], 24)
-        .padding(.bottom, 12)
+        .padding(.horizontal, 16)
+        .padding(.top, 24)
+        .padding(.bottom, 8)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .appBackground()
-        .animation(.easeInOut(duration: 0.2), value: options.period)
+        .animation(.appStandard, value: options.period)
     }
 
     private func selectAllAccounts() {
@@ -476,23 +476,14 @@ struct BackupExportOptionRow: View {
                 Spacer(minLength: 8)
 
                 Image(systemName: isSelected ? "checkmark.circle.fill" : "circle")
-                    .font(.system(size: 22))
+                    .font(.system(size: 24))
                     .foregroundColor(isSelected ? .appPrimary : .appLabel.opacity(0.6))
             }
             .padding(.horizontal, 16)
-            .frame(height: 46)
+            .frame(height: 48)
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
-    }
-}
-
-struct BackupExportOptionDivider: View {
-    var body: some View {
-        Rectangle()
-            .fill(.appLabel.opacity(0.25))
-            .frame(height: 0.5)
-            .padding(.horizontal, 16)
     }
 }
 
@@ -536,7 +527,7 @@ struct BackupImportSheet: View {
     @State private var showReplaceConfirmation = false
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 20) {
+        VStack(alignment: .leading, spacing: 24) {
             Text(L10n.backupsImportPreviewTitle)
                 .font(.appRegular(22))
                 .foregroundColor(.appWhite)
@@ -571,7 +562,9 @@ struct BackupImportSheet: View {
                 BackupSheetButton(title: L10n.cancel, foreground: .appWhite, background: .clear, action: onCancel)
             }
         }
-        .padding(24)
+        .padding(.horizontal, 16)
+        .padding(.top, 24)
+        .padding(.bottom, 8)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
         .appBackground()
         .alert(L10n.backupsImportReplace, isPresented: $showReplaceConfirmation) {
@@ -601,15 +594,14 @@ struct BackupSheetButton: View {
     var body: some View {
         Button(action: action) {
             Text(title)
-                .font(.appRegular(17))
+                .font(.appMedium(16))
                 .foregroundColor(foreground)
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
                 .frame(maxWidth: .infinity)
-                .frame(height: 52)
-                .background(background)
-                .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-                .contentShape(Rectangle())
+                .frame(height: 48)
+                .background(background, in: Capsule())
+                .contentShape(Capsule())
         }
         .buttonStyle(.plain)
     }

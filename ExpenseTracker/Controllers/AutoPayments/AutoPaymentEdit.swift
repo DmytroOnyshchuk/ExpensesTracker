@@ -55,7 +55,7 @@ struct AutoPaymentEdit: View {
                     if appSettings.accounting.incomeEnabled {
                         SegmentedControl(items: OperationType.allCases, selection: operationTypeBinding, title: \.title)
                             .sensoryFeedback(trigger: current.operationType) { _, _ in FeedbackManager.shared.selectionFeedback }
-                            .padding(.horizontal, 40)
+                            .padding(.horizontal, 64)
                     }
 
                     header
@@ -79,7 +79,6 @@ struct AutoPaymentEdit: View {
                                 .minimumScaleFactor(0.7)
                         }
                     }
-                    .padding(.vertical, 6)
                     .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
 
                     noteRow
@@ -99,7 +98,7 @@ struct AutoPaymentEdit: View {
                         .transition(.opacity)
                 }
             }
-            .animation(.easeInOut(duration: 0.2), value: isKeyboardShown)
+            .animation(.appStandard, value: isKeyboardShown)
             .appBackground()
             .navigationTitle(autoPayment == nil ? L10n.autopaymentsNewTitle : L10n.transactionEditTitle)
             .navigationBarTitleDisplayMode(.inline)
@@ -108,12 +107,12 @@ struct AutoPaymentEdit: View {
                     Button(L10n.cancel) {
                         dismiss()
                     }
-                    .foregroundColor(.appLabel)
+                    .foregroundColor(.appWhite)
                 }
 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(L10n.ok, action: save)
-                        .foregroundColor(.appLabel)
+                        .foregroundColor(.appWhite)
                         .disabled(!current.canSave)
                 }
             }
@@ -137,7 +136,7 @@ struct AutoPaymentEdit: View {
         .overlay {
             popupView
         }
-        .animation(.easeInOut(duration: 0.2), value: popup)
+        .animation(.appStandard, value: popup)
     }
 
     private var header: some View {
@@ -226,7 +225,7 @@ struct AutoPaymentEdit: View {
                     }
                 }
             } label: {
-                HStack(spacing: 6) {
+                HStack(spacing: 4) {
                     valueText(current.account?.name ?? "—")
 
                     Image(systemName: "chevron.up.chevron.down")
@@ -236,19 +235,18 @@ struct AutoPaymentEdit: View {
                 .contentShape(Rectangle())
             }
         }
-        .padding(.horizontal, 20)
-        .frame(height: 60)
+        .padding(.horizontal, 16)
+        .frame(height: 48)
     }
 
     private var noteRow: some View {
-        TextField("", text: draftBinding.note, prompt: Text(L10n.transactionEditAddNote).foregroundColor(.appLabel), axis: .vertical)
+        TextField("", text: draftBinding.note, prompt: Text(L10n.transactionEditAddNote).foregroundColor(.appLabel.opacity(0.6)), axis: .vertical)
             .lineLimit(3 ... 6)
             .focused($isNoteFocused)
             .font(.appLight(18))
             .foregroundColor(.appWhite)
             .tint(.appPrimary)
-            .padding(.horizontal, 20)
-            .padding(.vertical, 16)
+            .padding(16)
             .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
             .contentShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
             .onTapGesture {
@@ -257,15 +255,8 @@ struct AutoPaymentEdit: View {
     }
 
     private var deleteButton: some View {
-        Button(action: delete) {
-            Image(systemName: "trash")
-                .font(.system(size: 22, weight: .medium))
-                .foregroundColor(.appRed)
-                .frame(width: 60, height: 60)
-                .glassSurface(in: Circle(), tint: .appRed.opacity(0.15), isInteractive: true, fallback: .appRed.opacity(0.15))
-        }
-        .buttonStyle(.plain)
-        .accessibilityLabel(L10n.delete)
+        RoundIconButton(systemImage: "trash", color: .appRed, tint: .appRed, action: delete)
+            .accessibilityLabel(L10n.delete)
     }
 
     @ViewBuilder
@@ -309,8 +300,8 @@ struct AutoPaymentEdit: View {
 
                 value()
             }
-            .padding(.horizontal, 20)
-            .frame(height: 60)
+            .padding(.horizontal, 16)
+            .frame(height: 48)
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)

@@ -38,7 +38,7 @@ struct TransactionDetails: View {
 
     @Environment(\.modelContext) private var modelContext
 
-    @Query(filter: Transaction.visible, animation: .default) private var transactions: [Transaction]
+    @Query(filter: Transaction.visible, animation: .appStandard) private var transactions: [Transaction]
 
     @State private var sorting: TransactionsSorting = .date
     @State private var editedTransaction: Transaction?
@@ -61,7 +61,7 @@ struct TransactionDetails: View {
         List {
             SegmentedControl(items: TransactionsSorting.allCases, selection: $sorting, title: \.title)
                 .sensoryFeedback(trigger: sorting) { _, _ in FeedbackManager.shared.selectionFeedback }
-                .padding(.horizontal, 80)
+                .padding(.horizontal, 64)
                 .padding(.vertical, 16)
                 .listRowInsets(EdgeInsets())
                 .listRowBackground(Color.clear)
@@ -162,7 +162,7 @@ struct TransactionDetailsRow: View {
             }
         }
         .padding(.horizontal, 16)
-        .frame(minHeight: 68)
+        .frame(minHeight: 64)
     }
 }
 

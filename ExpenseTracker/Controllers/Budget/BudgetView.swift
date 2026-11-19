@@ -71,7 +71,7 @@ struct BudgetView: View {
                 .transition(.opacity)
             }
         }
-        .animation(.easeInOut(duration: 0.2), value: target?.id)
+        .animation(.appStandard, value: target?.id)
     }
 
     private var monthlyLimit: Int {
@@ -86,7 +86,7 @@ struct BudgetView: View {
     }
 
     private func setLimit(_ amount: Int, for target: BudgetTarget) {
-        withAnimation {
+        withAnimation(.appStandard) {
             switch target {
             case .month:
                 var budget = Budget()
@@ -140,41 +140,32 @@ struct BudgetPager: View {
     }
 
     private func monthHeader(month: Date, index: Int) -> some View {
-        HStack(spacing: 12) {
-            monthArrow(systemImage: "chevron.left", target: index - 1)
-
-            Text(StatisticsPeriod.month.title(for: month))
-                .font(.appRegular(22))
-                .foregroundColor(.appPrimary)
-                .lineLimit(1)
-                .minimumScaleFactor(0.7)
-                .contentTransition(.opacity)
-                .animation(.easeInOut(duration: 0.2), value: month)
-                .frame(width: 190)
-
-            monthArrow(systemImage: "chevron.right", target: index + 1)
-        }
-        .frame(maxWidth: .infinity)
-        .frame(height: 44)
-        .padding(.top, 8)
+        Text(StatisticsPeriod.month.title(for: month))
+            .font(.appRegular(22))
+            .foregroundColor(.appPrimary)
+            .lineLimit(1)
+            .minimumScaleFactor(0.7)
+            .contentTransition(.opacity)
+            .animation(.appStandard, value: month)
+            .padding(.horizontal, 64)
+            .frame(maxWidth: .infinity)
+            .frame(height: 44)
+            .overlay {
+                HStack {
+                    monthArrow(systemImage: "chevron.left", target: index - 1)
+                    Spacer()
+                    monthArrow(systemImage: "chevron.right", target: index + 1)
+                }
+                .padding(.horizontal, 16)
+            }
+            .padding(.top, 8)
     }
 
     private func monthArrow(systemImage: String, target: Int) -> some View {
-        let isEnabled = target >= .zero && target < buckets.count
-
-        return Button {
+        PeriodArrowButton(systemImage: systemImage, isEnabled: target >= .zero && target < buckets.count) {
             FeedbackManager.shared.selectionChanged()
             selectedMonth = buckets.start(at: target)
-        } label: {
-            Image(systemName: systemImage)
-                .font(.system(size: 20, weight: .medium))
-                .foregroundColor(.appPrimary.opacity(isEnabled ? 1 : 0.3))
-                .frame(width: 44, height: 44)
-                .contentShape(Rectangle())
-                .glassSurface(in: Circle(), isInteractive: isEnabled, fallback: .clear)
         }
-        .buttonStyle(.plain)
-        .disabled(!isEnabled)
     }
 }
 
@@ -245,17 +236,11 @@ struct BudgetMonthPage: View {
     }
 
     private var unlimitedToggle: some View {
-        Button {
+        RoundIconButton(systemImage: "chevron.down") {
             FeedbackManager.shared.buttonTapped()
-            withAnimation(.easeInOut(duration: 0.25)) {
+            withAnimation(.appStandard) {
                 showUnlimited = true
             }
-        } label: {
-            Image(systemName: "chevron.down")
-                .font(.system(size: 22, weight: .semibold))
-                .foregroundColor(.appPrimary)
-                .frame(width: 60, height: 60)
-                .glassSurface(in: Circle(), isInteractive: true, fallback: .appLabel.opacity(0.1))
         }
         .frame(maxWidth: .infinity)
         .accessibilityLabel(L10n.budgetNoLimit)
@@ -278,7 +263,7 @@ struct MonthBudgetCard: View {
                         .padding(.vertical, 8)
                 }
 
-                HStack(alignment: .firstTextBaseline, spacing: 6) {
+                HStack(alignment: .firstTextBaseline, spacing: 8) {
                     Text(spent.getAmount())
                         .font(.appRegular(24))
                         .foregroundColor(.appWhite)
@@ -294,15 +279,9 @@ struct MonthBudgetCard: View {
                 .lineLimit(1)
                 .minimumScaleFactor(0.6)
             }
-            .padding(.horizontal, 16)
-            .padding(.vertical, 14)
+            .padding(16)
             .frame(maxWidth: .infinity)
-            .glassSurface(
-                in: RoundedRectangle(cornerRadius: 18, style: .continuous),
-                tint: .appPrimary.opacity(0.08),
-                isInteractive: true,
-                fallback: .appPrimary.opacity(0.08)
-            )
+            .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), tint: .appPrimary.opacity(0.15), isInteractive: true, fallback: .appPrimary.opacity(0.15))
             .contentShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
         }
         .buttonStyle(.plain)
@@ -329,12 +308,12 @@ struct BudgetSection<Content: View>: View {
             .foregroundColor(.appLabel)
             .lineLimit(1)
             .padding(.horizontal, 16)
-            .padding(.top, 14)
+            .padding(.top, 16)
             .padding(.bottom, 4)
 
             content
         }
-        .padding(.bottom, 6)
+        .padding(.bottom, 8)
         .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
     }
 }
@@ -351,7 +330,7 @@ struct CategoryBudgetRow: View {
             HStack(spacing: 12) {
                 CategoryIconView(category: category, size: 24)
 
-                VStack(alignment: .leading, spacing: 6) {
+                VStack(alignment: .leading, spacing: 8) {
                     HStack(alignment: .firstTextBaseline, spacing: 8) {
                         Text(category.name.localized)
                             .font(.appLight(16))
@@ -362,12 +341,12 @@ struct CategoryBudgetRow: View {
 
                         HStack(alignment: .firstTextBaseline, spacing: 4) {
                             Text(spent.getAmount())
-                                .font(.appRegular(16.5))
+                                .font(.appRegular(16))
                                 .foregroundColor(.appWhite)
                                 .contentTransition(.numericText())
 
                             Text("/ \(limit.getAmount())")
-                                .font(.appLight(15.5))
+                                .font(.appLight(15))
                                 .foregroundColor(.appLabel)
                                 .contentTransition(.numericText())
                         }
@@ -387,7 +366,7 @@ struct CategoryBudgetRow: View {
                 }
             }
             .padding(.horizontal, 16)
-            .padding(.vertical, 10)
+            .padding(.vertical, 12)
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
@@ -422,12 +401,12 @@ struct UnsetCategoryBudgetRow: View {
                     .font(.appLight(13))
                     .foregroundColor(.appWhite)
                     .lineLimit(1)
-                    .padding(.horizontal, 14)
-                    .padding(.vertical, 7)
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 8)
                     .background(.appLabel.opacity(0.15), in: Capsule())
                     .overlay {
                         Capsule()
-                            .stroke(.appLabel.opacity(0.3), lineWidth: 0.5)
+                            .stroke(.appLabel.opacity(0.4), lineWidth: 0.5)
                     }
             }
             .padding(.horizontal, 16)
@@ -453,7 +432,7 @@ struct BudgetProgressBar: View {
         GeometryReader { geometry in
             ZStack(alignment: .leading) {
                 Capsule()
-                    .fill(.appLabel.opacity(0.2))
+                    .fill(.appLabel.opacity(0.25))
 
                 Capsule()
                     .fill(spent > limit ? Color.appRed : color)
@@ -461,7 +440,7 @@ struct BudgetProgressBar: View {
             }
         }
         .frame(height: height)
-        .animation(.easeInOut(duration: 0.3), value: fraction)
+        .animation(.appStandard, value: fraction)
     }
 }
 

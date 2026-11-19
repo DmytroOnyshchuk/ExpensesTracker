@@ -107,7 +107,7 @@ struct RecentTransactionsList: View {
         let start = Calendar.current.startOfDay(for: .yesterday)
         self.operationType = operationType
         self.start = start
-        _transactions = Query(filter: Transaction.listed(of: operationType, since: start), sort: \Transaction.date, order: .reverse, animation: .default)
+        _transactions = Query(filter: Transaction.listed(of: operationType, since: start), sort: \Transaction.date, order: .reverse, animation: .appStandard)
     }
 
     var body: some View {
@@ -133,7 +133,7 @@ struct TransactionsDayHeader: View {
     let day: TransactionsDay
 
     var body: some View {
-        HStack(spacing: 6) {
+        HStack(spacing: 8) {
             Text(day.title + ":")
                 .font(.appLight(16))
                 .foregroundColor(.appGray)

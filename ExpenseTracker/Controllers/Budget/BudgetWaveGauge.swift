@@ -101,7 +101,7 @@ struct BudgetWaveGauge: View {
             .padding(.horizontal, size * 0.12)
         }
         .frame(width: size, height: size)
-        .animation(.easeInOut(duration: 0.8), value: level)
+        .animation(.appSlow, value: level)
         .onAppear {
             isFilled = true
         }

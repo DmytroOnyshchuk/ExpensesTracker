@@ -39,7 +39,6 @@ struct AutoPaymentsView: View {
                         }
                     }
                 }
-                .padding(.vertical, 6)
                 .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
                 .padding(16)
             }
@@ -105,7 +104,7 @@ struct AutoPaymentRow: View {
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)
             }
-            .padding(.horizontal, 20)
+            .padding(.horizontal, 16)
             .frame(height: 64)
             .contentShape(Rectangle())
         }

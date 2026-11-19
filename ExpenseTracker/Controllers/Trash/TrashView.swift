@@ -74,7 +74,7 @@ struct TrashView: View {
                         askToRestore(.account(account))
                     }
                     .padding(.horizontal, 16)
-                    .frame(minHeight: 68)
+                    .frame(minHeight: 64)
                     .trashRow(isLast: account.uuid == accounts.last?.uuid && categories.isEmpty && visibleAutoPayments.isEmpty && visibleTransactions.isEmpty) {
                         askToDelete(.account(account))
                     }
@@ -88,7 +88,7 @@ struct TrashView: View {
                         action: { askToRestore(.category(category)) }
                     )
                     .padding(.horizontal, 16)
-                    .frame(minHeight: 68)
+                    .frame(minHeight: 64)
                     .trashRow(isLast: category.id == categories.last?.id && visibleAutoPayments.isEmpty && visibleTransactions.isEmpty) {
                         askToDelete(.category(category))
                     }
@@ -98,7 +98,7 @@ struct TrashView: View {
                     AutoPaymentRow(autoPayment: autoPayment) {
                         askToRestore(.autoPayment(autoPayment))
                     }
-                    .frame(minHeight: 68)
+                    .frame(minHeight: 64)
                     .trashRow(isLast: autoPayment.uuid == visibleAutoPayments.last?.uuid && visibleTransactions.isEmpty) {
                         askToDelete(.autoPayment(autoPayment))
                     }
@@ -147,7 +147,7 @@ struct TrashView: View {
             presenting: restoreTarget
         ) { target in
             Button(L10n.yes) {
-                withAnimation {
+                withAnimation(.appStandard) {
                     switch target {
                     case .account(let account): modelContext.restore(account)
                     case .category(let category): modelContext.restore(category)
@@ -168,7 +168,7 @@ struct TrashView: View {
         ) { target in
             Button(L10n.cancel, role: .cancel) {}
             Button(L10n.delete, role: .destructive) {
-                withAnimation {
+                withAnimation(.appStandard) {
                     switch target {
                     case .account(let account): modelContext.deletePermanently(account)
                     case .category(let category): modelContext.deletePermanently(category)

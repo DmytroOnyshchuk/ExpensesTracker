@@ -62,8 +62,7 @@ struct CategoryColorPickerView: View {
                     hexField
                     paletteGrid
                 }
-                .padding(.horizontal, 24)
-                .padding(.vertical, 16)
+                .padding(16)
             }
             .appBackground()
             .onAppear {
@@ -213,11 +212,9 @@ struct CategoryColorPickerView: View {
                     }
             }
             .font(.appRegular(16))
-            .padding(10)
-            .overlay(
-                RoundedRectangle(cornerRadius: 8)
-                    .stroke(.appSecond, lineWidth: 1)
-            )
+            .padding(.horizontal, 16)
+            .frame(height: 48)
+            .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
 
             ColorSwatch(color: previewColor)
                 .frame(width: 56)
