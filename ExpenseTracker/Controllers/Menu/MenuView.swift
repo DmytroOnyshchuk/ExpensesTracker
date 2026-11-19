@@ -166,6 +166,7 @@ struct MenuView: View {
     }
 
     private func open(_ item: MenuItem) {
+        FeedbackManager.shared.buttonTapped()
         switch item {
         case .categories: showCategories = true
         case .settings: showSettings = true
@@ -179,6 +180,7 @@ struct MenuView: View {
     }
 
     private func openStatistics() {
+        FeedbackManager.shared.buttonTapped()
         showStatistics = true
     }
 }
