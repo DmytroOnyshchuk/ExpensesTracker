@@ -22,6 +22,9 @@ struct RootTabView: View {
     @State private var homeResetToken: Int = .zero
     @State private var statisticsResetToken: Int = .zero
     @State private var budgetResetToken: Int = .zero
+    @State private var homePopToken: Int = .zero
+    @State private var statisticsStackId: Int = .zero
+    @State private var menuStackId: Int = .zero
     @State private var backgroundedAt: Date?
     @State private var sessionId = UUID()
     @StoredSettings private var appSettings
@@ -39,10 +42,13 @@ struct RootTabView: View {
                     case .budget: budgetResetToken += 1
                     case .menu: break
                     }
-                } else if selection == .statistics {
-                    statisticsResetToken += 1
-                } else if selection == .budget {
-                    budgetResetToken += 1
+                } else {
+                    switch selection {
+                    case .home: homePopToken += 1
+                    case .statistics: statisticsStackId += 1
+                    case .budget: budgetResetToken += 1
+                    case .menu: menuStackId += 1
+                    }
                 }
                 selection = newValue
             }
@@ -52,7 +58,7 @@ struct RootTabView: View {
     var body: some View {
         TabView(selection: tabSelection) {
             Tab(L10n.tabHome, systemImage: "house.fill", value: AppTab.home) {
-                StartView(resetToken: homeResetToken)
+                StartView(resetToken: homeResetToken, popToken: homePopToken)
                     .undoToast()
             }
 
@@ -60,6 +66,7 @@ struct RootTabView: View {
                 NavigationStack {
                     StatisticsView(resetToken: statisticsResetToken)
                 }
+                .id(statisticsStackId)
                 .undoToast()
             }
 
@@ -73,6 +80,7 @@ struct RootTabView: View {
                 NavigationStack {
                     MenuView(isActive: selection == .menu)
                 }
+                .id(menuStackId)
                 .undoToast()
             }
         }

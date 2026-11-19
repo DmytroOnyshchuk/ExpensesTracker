@@ -16,6 +16,7 @@ enum StartDestination: Hashable {
 
 struct StartView: View {
     var resetToken: Int = .zero
+    var popToken: Int = .zero
 
     @Environment(\.modelContext) private var modelContext
     @Environment(\.scenePhase) private var scenePhase
@@ -107,6 +108,9 @@ struct StartView: View {
             withAnimation(.appStandard) {
                 selectedOperationType = .outcome
             }
+        }
+        .onChange(of: popToken) {
+            destination = nil
         }
         .onChange(of: scenePhase) { _, phase in
             if phase == .background {
