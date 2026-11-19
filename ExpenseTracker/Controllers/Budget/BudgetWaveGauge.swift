@@ -105,7 +105,8 @@ struct BudgetWaveGauge: View {
         .frame(width: size, height: size)
         .animation(.appSlow, value: level)
         .animation(.appStandard, value: showsSpent)
-        .onAppear {
+        .task {
+            try? await Task.sleep(for: .milliseconds(250))
             isFilled = true
         }
     }
