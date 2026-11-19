@@ -13,6 +13,7 @@ struct StartView: View {
     var resetToken: Int = .zero
 
     @Environment(\.modelContext) private var modelContext
+    @Environment(\.scenePhase) private var scenePhase
 
     @State private var input = AmountInput()
     @State private var showHistory = false
@@ -92,6 +93,11 @@ struct StartView: View {
         .onChange(of: resetToken) {
             withAnimation(.easeInOut(duration: 0.25)) {
                 selectedOperationType = .outcome
+            }
+        }
+        .onChange(of: scenePhase) { _, phase in
+            if phase == .background {
+                input.reset()
             }
         }
         .animation(.easeInOut(duration: 0.2), value: showNoteInput)
