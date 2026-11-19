@@ -53,6 +53,8 @@ struct TransactionEditPopup<Content: View>: View {
             .padding(.top, 16)
             .frame(maxWidth: 360)
             .glassSurface(in: RoundedRectangle(cornerRadius: 28, style: .continuous), fallback: .appSecond)
+            .contentShape(RoundedRectangle(cornerRadius: 28, style: .continuous))
+            .onTapGesture {}
             .legacyShadow(color: .appOverlay.opacity(0.3), radius: 12, y: 4)
             .padding(.horizontal, 32)
             .animation(.appStandard, value: canConfirm)

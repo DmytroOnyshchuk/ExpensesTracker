@@ -30,6 +30,8 @@ struct NoteInputView: View {
             }
             .padding(16)
             .glassSurface(in: RoundedRectangle(cornerRadius: 28, style: .continuous), fallback: .appSecond)
+            .contentShape(RoundedRectangle(cornerRadius: 28, style: .continuous))
+            .onTapGesture {}
             .legacyShadow(color: .appOverlay.opacity(0.3), radius: 12, y: 4)
             .padding(.horizontal, 16)
             .padding(.bottom, 8)
