@@ -271,9 +271,9 @@ struct StartBalanceCard: View {
     @Query(filter: Transaction.visible) private var transactions: [Transaction]
 
     var body: some View {
-        let transactions = transactions
+        let changes = transactions.balanceChanges
 
-        BalanceCard(accounts: accounts, selected: selected, balance: selected?.current(in: transactions), amountFor: { $0.current(in: transactions) }, onSelect: onSelect, action: action)
+        BalanceCard(accounts: accounts, selected: selected, balance: selected?.current(with: changes), amountFor: { $0.current(with: changes) }, onSelect: onSelect, action: action)
     }
 }
 

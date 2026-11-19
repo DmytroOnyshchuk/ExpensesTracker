@@ -96,23 +96,31 @@ struct HistoryView: View {
     }
 
     private func monthTitle(start: Date, starts: [Date]) -> some View {
-        ZStack {
-            Text(period.title(for: start))
-                .font(.appRegular(22))
-                .foregroundColor(.appPrimary)
-                .lineLimit(1)
-                .minimumScaleFactor(0.7)
-                .id(start)
-                .transition(.push(from: slideEdge))
+        HStack(spacing: 12) {
+            monthArrow(systemImage: "chevron.left", shift: -1, start: start, starts: starts)
+
+            ZStack {
+                Text(period.title(for: start))
+                    .font(.appRegular(22))
+                    .foregroundColor(.appPrimary)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
+                    .id(start)
+                    .transition(.push(from: slideEdge))
+            }
+            .frame(height: 44)
+            .clipped()
+            .contentShape(Rectangle())
+            .onTapGesture {
+                showMonthList = !starts.isEmpty
+            }
+
+            monthArrow(systemImage: "chevron.right", shift: 1, start: start, starts: starts)
         }
-        .padding(.horizontal, 64)
+        .padding(.horizontal, 16)
         .frame(maxWidth: .infinity)
         .frame(height: 44)
-        .clipped()
         .contentShape(Rectangle())
-        .onTapGesture {
-            showMonthList = !starts.isEmpty
-        }
         .gesture(
             DragGesture(minimumDistance: 20)
                 .onEnded { value in
@@ -120,14 +128,6 @@ struct HistoryView: View {
                     shiftMonth(by: value.translation.width < 0 ? 1 : -1, from: start, in: starts)
                 }
         )
-        .overlay {
-            HStack {
-                monthArrow(systemImage: "chevron.left", shift: -1, start: start, starts: starts)
-                Spacer()
-                monthArrow(systemImage: "chevron.right", shift: 1, start: start, starts: starts)
-            }
-            .padding(.horizontal, 16)
-        }
         .popover(isPresented: $showMonthList, attachmentAnchor: .rect(.bounds), arrowEdge: .top) {
             StatisticsPeriodList(period: period, starts: starts, selected: start) { date in
                 showMonthList = false

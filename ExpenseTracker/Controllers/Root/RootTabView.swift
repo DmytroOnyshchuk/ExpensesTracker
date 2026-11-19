@@ -38,6 +38,8 @@ struct RootTabView: View {
                     }
                 } else if selection == .statistics {
                     statisticsResetToken += 1
+                } else if selection == .budget {
+                    budgetResetToken += 1
                 }
                 selection = newValue
             }
@@ -66,7 +68,7 @@ struct RootTabView: View {
 
             Tab(L10n.menuTitle, systemImage: "list.dash", value: AppTab.menu) {
                 NavigationStack {
-                    MenuView()
+                    MenuView(isActive: selection == .menu)
                 }
                 .undoToast()
             }

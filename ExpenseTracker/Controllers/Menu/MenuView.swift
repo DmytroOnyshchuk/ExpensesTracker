@@ -73,9 +73,7 @@ enum MenuSection: CaseIterable, Identifiable {
 }
 
 struct MenuView: View {
-    @Query(filter: Transaction.notDeleted) private var transactions: [Transaction]
-    @Query(filter: Account.notDeleted) private var accounts: [Account]
-    @StoredSettings private var appSettings
+    var isActive = true
 
     @State private var showStatistics = false
     @State private var showCategories = false
@@ -86,15 +84,17 @@ struct MenuView: View {
     @State private var showAbout = false
     @State private var showTrash = false
 
-    private let period = StatisticsPeriod.month
-
     var body: some View {
         ScrollView(.vertical) {
             VStack(alignment: .leading, spacing: 24) {
                 VStack(alignment: .leading, spacing: 8) {
                     MenuSectionHeader(title: L10n.tabStatistics)
 
-                    MenuSpentCard(title: spentTitle, amount: spentAmount, balance: balance, action: openStatistics)
+                    if isActive {
+                        MenuSummary(title: spentTitle, action: openStatistics)
+                    } else {
+                        MenuSpentCard(title: spentTitle, amount: .zero, balance: nil, action: openStatistics)
+                    }
                 }
 
                 ForEach(MenuSection.allCases) { section in
@@ -152,19 +152,6 @@ struct MenuView: View {
         L10n.menuSpentInMonth(Date().formatted(.dateTime.month(.wide)))
     }
 
-    private var spentAmount: Int {
-        let interval = period.interval(containing: Date())
-        return transactions
-            .of(.outcome)
-            .filter { $0.date >= interval.start && $0.date < interval.end }
-            .reduce(0) { $0 + $1.amount }
-    }
-
-    private var balance: Int? {
-        guard appSettings.accounting.multipleAccountsEnabled, !accounts.isEmpty else { return nil }
-        return accounts.enabled.total(in: transactions)
-    }
-
     private func open(_ item: MenuItem) {
         FeedbackManager.shared.buttonTapped()
         switch item {
@@ -183,6 +170,36 @@ struct MenuView: View {
         FeedbackManager.shared.buttonTapped()
         showStatistics = true
     }
+}
+
+struct MenuSummary: View {
+    let title: String
+    let action: () -> Void
+
+    @Query(filter: Transaction.notDeleted) private var transactions: [Transaction]
+    @Query(filter: Account.notDeleted) private var accounts: [Account]
+    @StoredSettings private var appSettings
+
+    var body: some View {
+        MenuSpentCard(title: title, amount: spentAmount, balance: balance, action: action)
+    }
+
+    private var spentAmount: Int {
+        let interval = StatisticsPeriod.month.interval(containing: Date())
+        return transactions
+            .filter { $0.date >= interval.start && $0.date < interval.end }
+            .of(.outcome)
+            .reduce(0) { $0 + $1.amount }
+    }
+
+    private var balance: Int? {
+        guard appSettings.accounting.multipleAccountsEnabled, !accounts.isEmpty else { return nil }
+        return accounts.enabled.total(with: transactions.balanceChanges)
+    }
+}
+
+extension MenuSummary: Equatable {
+    nonisolated static func == (lhs: MenuSummary, rhs: MenuSummary) -> Bool { lhs.title == rhs.title }
 }
 
 struct MenuSpentCard: View {

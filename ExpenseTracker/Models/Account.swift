@@ -51,6 +51,10 @@ final class Account {
         return amount + change
     }
 
+    func current(with changes: [UUID: Int]) -> Int {
+        amount + (changes[uuid] ?? .zero)
+    }
+
     func setAmount(_ newAmount: Int) {
         amount = newAmount
         checkpointDate = Date()
@@ -78,5 +82,18 @@ extension [Account] {
 
     func total(in transactions: [Transaction]) -> Int {
         reduce(0) { $0 + $1.current(in: transactions) }
+    }
+
+    func total(with changes: [UUID: Int]) -> Int {
+        reduce(0) { $0 + $1.current(with: changes) }
+    }
+}
+
+extension [Transaction] {
+    var balanceChanges: [UUID: Int] {
+        reduce(into: [:]) { result, transaction in
+            guard let account = transaction.account, transaction.date > account.checkpointDate else { return }
+            result[account.uuid, default: .zero] += transaction.signedAmount
+        }
     }
 }
