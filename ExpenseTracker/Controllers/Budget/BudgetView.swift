@@ -310,7 +310,7 @@ struct BudgetMonthPage: View {
     }
 
     private var unlimitedToggle: some View {
-        RoundIconButton(systemImage: "chevron.down", color: .appPrimary.opacity(0.5)) {
+        RoundIconButton(systemImage: "chevron.down", color: .appPrimary.opacity(0.7)) {
             FeedbackManager.shared.buttonTapped()
             withAnimation(.appStandard) {
                 showUnlimited = true
@@ -596,12 +596,12 @@ struct CategoryBudgetRow: View {
 
                         HStack(alignment: .firstTextBaseline, spacing: 4) {
                             Text(spent.getAmount())
-                                .font(.appRegular(20))
+                                .font(.appRegular(18))
                                 .foregroundColor(.appWhite)
                                 .contentTransition(.numericText())
 
                             Text("/ \(limit.getAmount())")
-                                .font(.appLight(18))
+                                .font(.appLight(16))
                                 .foregroundColor(.appLabel)
                                 .contentTransition(.numericText())
                         }
