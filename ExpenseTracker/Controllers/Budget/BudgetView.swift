@@ -223,7 +223,7 @@ struct BudgetMonthPage: View {
                         .transition(.opacity)
                     }
 
-                    if !limited.isEmpty || unlimited.count > Self.collapsedCount {
+                    if !showUnlimited, !limited.isEmpty || unlimited.count > Self.collapsedCount {
                         unlimitedToggle
                     }
                 }
@@ -248,13 +248,12 @@ struct BudgetMonthPage: View {
         Button {
             FeedbackManager.shared.buttonTapped()
             withAnimation(.easeInOut(duration: 0.25)) {
-                showUnlimited.toggle()
+                showUnlimited = true
             }
         } label: {
             Image(systemName: "chevron.down")
                 .font(.system(size: 22, weight: .semibold))
                 .foregroundColor(.appPrimary)
-                .rotationEffect(.degrees(showUnlimited ? 180 : .zero))
                 .frame(width: 60, height: 60)
                 .glassSurface(in: Circle(), isInteractive: true, fallback: .appLabel.opacity(0.1))
         }
