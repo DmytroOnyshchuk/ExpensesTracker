@@ -73,9 +73,20 @@ struct BackupsView: View {
                     confirm(format)
                 }
                 .transition(.opacity)
+            } else if let errorMessage {
+                MessagePopup(title: L10n.error, message: errorMessage, cancelTitle: nil, onCancel: { self.errorMessage = nil }, onConfirm: { self.errorMessage = nil })
+                    .transition(.opacity)
+            } else if showResetConfirmation {
+                MessagePopup(title: L10n.backupsResetAction, message: L10n.backupsResetWarning, confirmTitle: L10n.delete, confirmColor: .appRed, onCancel: { showResetConfirmation = false }) {
+                    showResetConfirmation = false
+                    clear()
+                }
+                .transition(.opacity)
             }
         }
         .animation(.appStandard, value: isChoosingFormat)
+        .animation(.appStandard, value: errorMessage)
+        .animation(.appStandard, value: showResetConfirmation)
         .sheet(item: $optionsFormat, onDismiss: sharePendingExport) { format in
             BackupExportOptionsSheet(
                 format: format,
@@ -91,26 +102,11 @@ struct BackupsView: View {
             ActivityView(items: [file.url])
                 .presentationDetents([.medium, .large])
         }
-        .alert(L10n.error, isPresented: isErrorPresented) {
-            Button(L10n.ok, role: .cancel) {}
-        } message: {
-            Text(errorMessage ?? "")
-        }
         .fullScreenCover(isPresented: $showResetPasscode, onDismiss: confirmResetIfVerified) {
             PasscodeSetupView(flow: .verify) {
                 isResetPasscodeVerified = true
             }
         }
-        .alert(L10n.backupsResetAction, isPresented: $showResetConfirmation) {
-            Button(L10n.cancel, role: .cancel) {}
-            Button(L10n.delete, role: .destructive, action: clear)
-        } message: {
-            Text(L10n.backupsResetWarning)
-        }
-    }
-
-    private var isErrorPresented: Binding<Bool> {
-        Binding(get: { errorMessage != nil }, set: { if !$0 { errorMessage = nil } })
     }
 
     private func requestReset() {
@@ -213,20 +209,18 @@ private struct BackupImportModifier: ViewModifier {
                 }
                 .presentationDetents([.medium])
             }
-            .alert(L10n.error, isPresented: isErrorPresented) {
-                Button(L10n.ok, role: .cancel) {}
-            } message: {
-                Text(errorMessage ?? "")
+            .overlay {
+                if let errorMessage {
+                    MessagePopup(title: L10n.error, message: errorMessage, cancelTitle: nil, onCancel: { self.errorMessage = nil }, onConfirm: { self.errorMessage = nil })
+                        .transition(.opacity)
+                }
             }
+            .animation(.appStandard, value: errorMessage)
             .onChange(of: fileURL) { _, url in
                 guard let url else { return }
                 fileURL = nil
                 read(url)
             }
-    }
-
-    private var isErrorPresented: Binding<Bool> {
-        Binding(get: { errorMessage != nil }, set: { if !$0 { errorMessage = nil } })
     }
 
     private func read(_ url: URL) {
@@ -563,14 +557,16 @@ struct BackupImportSheet: View {
         .padding(.bottom, 8)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
         .appBackground()
-        .alert(L10n.backupsImportReplace, isPresented: $showReplaceConfirmation) {
-            Button(L10n.backupsImportReplace, role: .destructive) {
-                onImport(.replace)
+        .overlay {
+            if showReplaceConfirmation {
+                MessagePopup(title: L10n.backupsImportReplace, message: L10n.backupsImportReplaceWarning, confirmTitle: L10n.backupsImportReplace, confirmColor: .appRed, onCancel: { showReplaceConfirmation = false }) {
+                    showReplaceConfirmation = false
+                    onImport(.replace)
+                }
+                .transition(.opacity)
             }
-            Button(L10n.cancel, role: .cancel) {}
-        } message: {
-            Text(L10n.backupsImportReplaceWarning)
         }
+        .animation(.appStandard, value: showReplaceConfirmation)
     }
 
     private var period: String? {

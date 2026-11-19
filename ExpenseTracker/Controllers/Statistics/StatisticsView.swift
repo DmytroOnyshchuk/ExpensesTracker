@@ -80,6 +80,28 @@ struct StatisticsView: View {
     }
 }
 
+@Observable
+final class StatisticsHeaderScroll {
+    var offsets: [DateInterval: CGFloat] = [:]
+}
+
+struct StatisticsHeader<Content: View>: View {
+    let scroll: StatisticsHeaderScroll
+    let interval: DateInterval
+    @ViewBuilder let content: Content
+
+    var body: some View {
+        let offset = scroll.offsets[interval] ?? .zero
+
+        content
+            .opacity(1 - min(max(offset / 124, 0), 1))
+            .offset(y: -offset)
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+            .clipped()
+            .animation(.appStandard, value: interval)
+    }
+}
+
 struct StatisticsContent: View {
     let resetToken: Int
     let scope: StatisticsScope
@@ -96,6 +118,7 @@ struct StatisticsContent: View {
     @State private var periodStarts: [Date] = []
     @State private var showPeriodList = false
     @State private var showDayPicker = false
+    @State private var headerScroll = StatisticsHeaderScroll()
 
     init(resetToken: Int, scope: StatisticsScope, categories: [TransactionCategory], period: StatisticsPeriod, date: Date, onPeriodChange: @escaping (StatisticsPeriod) -> Void) {
         var earliest = FetchDescriptor<Transaction>(predicate: scope.predicate, sortBy: [SortDescriptor(\.date)])
@@ -121,16 +144,20 @@ struct StatisticsContent: View {
         let range = range
         let start = range.clamped(anchorDate)
 
-        VStack(spacing: 12) {
-            periodPicker
-            periodTitle(start: start)
-
+        ZStack(alignment: .top) {
             PeriodPager(count: range.count, selection: pageSelection(start: start)) { index in
-                StatisticsPage(period: period, start: range.start(at: index), scope: scope, categories: categories)
+                StatisticsPage(period: period, start: range.start(at: index), scope: scope, categories: categories, headerScroll: headerScroll)
             }
             .id(period)
+
+            StatisticsHeader(scroll: headerScroll, interval: period.interval(containing: start)) {
+                VStack(spacing: 12) {
+                    periodPicker
+                    periodTitle(start: start)
+                }
+                .padding(.top, 16)
+            }
         }
-        .padding(.top, 16)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .appBackground()
         .overlay {
@@ -242,16 +269,18 @@ struct StatisticsPage: View {
     let interval: DateInterval
     let scope: StatisticsScope
     let categories: [TransactionCategory]
+    let headerScroll: StatisticsHeaderScroll
 
     @Query private var storedTransactions: [Transaction]
 
-    init(period: StatisticsPeriod, start: Date, scope: StatisticsScope, categories: [TransactionCategory]) {
+    init(period: StatisticsPeriod, start: Date, scope: StatisticsScope, categories: [TransactionCategory], headerScroll: StatisticsHeaderScroll) {
         let interval = period.interval(containing: start)
 
         self.period = period
         self.interval = interval
         self.scope = scope
         self.categories = categories
+        self.headerScroll = headerScroll
         _storedTransactions = Query(filter: Transaction.shown(from: interval.start, to: interval.end))
     }
 
@@ -260,8 +289,10 @@ struct StatisticsPage: View {
 
         ScrollView(.vertical) {
             StatisticsBreakdown(slices: StatisticsSlice.slices(from: transactions, in: interval, categories: categories), interval: interval, period: period, points: period.chartPoints(of: transactions, in: interval), averageTitle: period.unitAverageTitle(of: transactions, in: interval))
+                .padding(.top, 124)
                 .padding(.bottom, 16)
         }
+        .onScrollGeometryChange(for: CGFloat.self) { $0.contentOffset.y + $0.contentInsets.top } action: { _, offset in headerScroll.offsets[interval] = offset }
     }
 }
 

@@ -140,44 +140,12 @@ struct BudgetPager: View {
     }
 
     var body: some View {
-        let month = range.clamped(selectedMonth)
-        let index = range.index(of: month)
+        let range = range
 
-        VStack(spacing: 0) {
-            monthHeader(month: month, index: index)
-
-            BudgetMonth(month: month, limited: limited, unlimited: unlimited, monthlyLimit: monthlyLimit, isUnlimitedShown: showUnlimited, showUnlimited: $showUnlimited, onOpen: onOpen)
-        }
-        .onChange(of: resetToken) {
-            selectedMonth = Date()
-        }
-    }
-
-    private func monthHeader(month: Date, index: Int) -> some View {
-        HStack(spacing: 12) {
-            monthArrow(systemImage: "chevron.left", target: index - 1)
-
-            Text(StatisticsPeriod.month.title(for: month))
-                .font(.appRegular(22))
-                .foregroundColor(.appPrimary)
-                .lineLimit(1)
-                .minimumScaleFactor(0.7)
-                .contentTransition(.opacity)
-
-            monthArrow(systemImage: "chevron.right", target: index + 1)
-        }
-        .animation(.appStandard, value: month)
-        .padding(.horizontal, 16)
-        .frame(maxWidth: .infinity)
-        .frame(height: 44)
-        .padding(.top, 8)
-    }
-
-    private func monthArrow(systemImage: String, target: Int) -> some View {
-        PeriodArrowButton(systemImage: systemImage, isEnabled: target >= .zero && target < range.count) {
-            FeedbackManager.shared.selectionChanged()
-            selectedMonth = range.start(at: target)
-        }
+        BudgetMonth(month: range.clamped(selectedMonth), range: range, limited: limited, unlimited: unlimited, monthlyLimit: monthlyLimit, isUnlimitedShown: showUnlimited, showUnlimited: $showUnlimited, onSelectMonth: { selectedMonth = $0 }, onOpen: onOpen)
+            .onChange(of: resetToken) {
+                selectedMonth = Date()
+            }
     }
 }
 
@@ -187,44 +155,50 @@ extension BudgetPager: Equatable {
 
 struct BudgetMonth: View {
     let month: Date
+    let range: StatisticsRange
     let limited: [TransactionCategory]
     let unlimited: [TransactionCategory]
     let monthlyLimit: Int
     let isUnlimitedShown: Bool
     let showUnlimited: Binding<Bool>
+    let onSelectMonth: (Date) -> Void
     let onOpen: (BudgetTarget) -> Void
 
     @Query private var storedTransactions: [Transaction]
 
-    init(month: Date, limited: [TransactionCategory], unlimited: [TransactionCategory], monthlyLimit: Int, isUnlimitedShown: Bool, showUnlimited: Binding<Bool>, onOpen: @escaping (BudgetTarget) -> Void) {
+    init(month: Date, range: StatisticsRange, limited: [TransactionCategory], unlimited: [TransactionCategory], monthlyLimit: Int, isUnlimitedShown: Bool, showUnlimited: Binding<Bool>, onSelectMonth: @escaping (Date) -> Void, onOpen: @escaping (BudgetTarget) -> Void) {
         let interval = StatisticsPeriod.month.interval(containing: month)
 
         self.month = month
+        self.range = range
         self.limited = limited
         self.unlimited = unlimited
         self.monthlyLimit = monthlyLimit
         self.isUnlimitedShown = isUnlimitedShown
         self.showUnlimited = showUnlimited
+        self.onSelectMonth = onSelectMonth
         self.onOpen = onOpen
         _storedTransactions = Query(filter: Transaction.shown(from: interval.start, to: interval.end))
     }
 
     var body: some View {
-        BudgetMonthPage(month: month, transactions: storedTransactions.of(.outcome), limited: limited, unlimited: unlimited, monthlyLimit: monthlyLimit, showUnlimited: showUnlimited, onOpen: onOpen)
+        BudgetMonthPage(month: month, range: range, transactions: storedTransactions.of(.outcome), limited: limited, unlimited: unlimited, monthlyLimit: monthlyLimit, showUnlimited: showUnlimited, onSelectMonth: onSelectMonth, onOpen: onOpen)
     }
 }
 
 extension BudgetMonth: Equatable {
-    nonisolated static func == (lhs: BudgetMonth, rhs: BudgetMonth) -> Bool { lhs.month == rhs.month && lhs.limited == rhs.limited && lhs.unlimited == rhs.unlimited && lhs.monthlyLimit == rhs.monthlyLimit && lhs.isUnlimitedShown == rhs.isUnlimitedShown }
+    nonisolated static func == (lhs: BudgetMonth, rhs: BudgetMonth) -> Bool { lhs.month == rhs.month && lhs.range == rhs.range && lhs.limited == rhs.limited && lhs.unlimited == rhs.unlimited && lhs.monthlyLimit == rhs.monthlyLimit && lhs.isUnlimitedShown == rhs.isUnlimitedShown }
 }
 
 struct BudgetMonthPage: View {
     let month: Date
+    let range: StatisticsRange
     let transactions: [Transaction]
     let limited: [TransactionCategory]
     let unlimited: [TransactionCategory]
     let monthlyLimit: Int
     @Binding var showUnlimited: Bool
+    let onSelectMonth: (Date) -> Void
     let onOpen: (BudgetTarget) -> Void
 
     private static let collapsedCount = 3
@@ -234,12 +208,14 @@ struct BudgetMonthPage: View {
 
         ScrollView(.vertical) {
             VStack(alignment: .leading, spacing: 16) {
+                monthHeader
+
                 MonthBudgetCard(spent: transactions.reduce(0) { $0 + $1.amount }, limit: monthlyLimit) {
                     onOpen(.month)
                 }
 
                 if !limited.isEmpty {
-                    BudgetSection(leadingTitle: L10n.menuCategories, trailingTitle: L10n.menuBudget) {
+                    BudgetSection {
                         ForEach(limited, id: \.uuid) { category in
                             CategoryBudgetRow(category: category, spent: spent[category.uuid] ?? .zero) {
                                 onOpen(.category(category))
@@ -252,7 +228,7 @@ struct BudgetMonthPage: View {
                     let visible = visibleUnlimited
 
                     if !visible.isEmpty {
-                        BudgetSection(leadingTitle: L10n.budgetNoLimit, trailingTitle: nil) {
+                        BudgetSection(title: L10n.budgetNoLimit) {
                             ForEach(visible, id: \.uuid) { category in
                                 UnsetCategoryBudgetRow(category: category, spent: spent[category.uuid] ?? .zero) {
                                     onOpen(.category(category))
@@ -268,8 +244,37 @@ struct BudgetMonthPage: View {
                     }
                 }
             }
-            .padding(16)
+            .padding(.horizontal, 16)
+            .padding(.top, 8)
+            .padding(.bottom, 16)
             .frame(maxWidth: .infinity, alignment: .top)
+        }
+    }
+
+    private var monthHeader: some View {
+        let index = range.index(of: month)
+
+        return HStack(spacing: 12) {
+            monthArrow(systemImage: "chevron.left", target: index - 1)
+
+            Text(StatisticsPeriod.month.title(for: month))
+                .font(.appRegular(22))
+                .foregroundColor(.appPrimary)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+                .contentTransition(.opacity)
+
+            monthArrow(systemImage: "chevron.right", target: index + 1)
+        }
+        .animation(.appStandard, value: month)
+        .frame(maxWidth: .infinity)
+        .frame(height: 44)
+    }
+
+    private func monthArrow(systemImage: String, target: Int) -> some View {
+        PeriodArrowButton(systemImage: systemImage, isEnabled: target >= .zero && target < range.count) {
+            FeedbackManager.shared.selectionChanged()
+            onSelectMonth(range.start(at: target))
         }
     }
 
@@ -285,7 +290,7 @@ struct BudgetMonthPage: View {
     }
 
     private var unlimitedToggle: some View {
-        RoundIconButton(systemImage: "chevron.down") {
+        RoundIconButton(systemImage: "chevron.down", color: .appPrimary.opacity(0.5)) {
             FeedbackManager.shared.buttonTapped()
             withAnimation(.appStandard) {
                 showUnlimited = true
@@ -338,31 +343,25 @@ struct MonthBudgetCard: View {
 }
 
 struct BudgetSection<Content: View>: View {
-    let leadingTitle: String
-    let trailingTitle: String?
+    var title: String?
     @ViewBuilder let content: Content
 
     var body: some View {
         VStack(spacing: 0) {
-            HStack(spacing: 8) {
-                Text(leadingTitle)
-
-                Spacer(minLength: 8)
-
-                if let trailingTitle {
-                    Text(trailingTitle)
-                }
+            if let title {
+                Text(title)
+                    .font(.appLight(14))
+                    .foregroundColor(.appLabel)
+                    .lineLimit(1)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal, 16)
+                    .padding(.top, 8)
+                    .padding(.bottom, 4)
             }
-            .font(.appLight(14))
-            .foregroundColor(.appLabel)
-            .lineLimit(1)
-            .padding(.horizontal, 16)
-            .padding(.top, 16)
-            .padding(.bottom, 4)
 
             content
         }
-        .padding(.bottom, 8)
+        .padding(.vertical, 8)
         .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
     }
 }
@@ -390,12 +389,12 @@ struct CategoryBudgetRow: View {
 
                         HStack(alignment: .firstTextBaseline, spacing: 4) {
                             Text(spent.getAmount())
-                                .font(.appRegular(16))
+                                .font(.appRegular(20))
                                 .foregroundColor(.appWhite)
                                 .contentTransition(.numericText())
 
                             Text("/ \(limit.getAmount())")
-                                .font(.appLight(15))
+                                .font(.appLight(18))
                                 .foregroundColor(.appLabel)
                                 .contentTransition(.numericText())
                         }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct StatisticsRange {
+struct StatisticsRange: Equatable {
     let period: StatisticsPeriod
     let first: Date
     let last: Date

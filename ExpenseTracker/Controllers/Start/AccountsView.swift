@@ -83,6 +83,7 @@ struct AccountsView: View {
             if let editingAccount {
                 AccountEditPopup(
                     title: L10n.accountsEdit,
+                    confirmTitle: L10n.save,
                     name: editingAccount.name,
                     amount: editingAccount.current(in: transactions),
                     isDisabled: editingAccount.isDisabled,
@@ -96,6 +97,7 @@ struct AccountsView: View {
             } else if showNewAccount {
                 AccountEditPopup(
                     title: L10n.accountsNew,
+                    confirmTitle: L10n.categoriesEditCreate,
                     name: "",
                     amount: .zero,
                     onCancel: { showNewAccount = false }
@@ -163,6 +165,7 @@ struct AccountRow: View {
 
 struct AccountEditPopup: View {
     let title: String
+    let confirmTitle: String
     let onCancel: () -> Void
     let onConfirm: (String, Int, Bool) -> Void
 
@@ -172,6 +175,7 @@ struct AccountEditPopup: View {
     @State private var name: String
     @State private var amountText: String
     @State private var isDisabled: Bool
+    @State private var showsNameError = false
     @FocusState private var focusedField: Field?
 
     private enum Field {
@@ -179,8 +183,9 @@ struct AccountEditPopup: View {
         case amount
     }
 
-    init(title: String, name: String, amount: Int, isDisabled: Bool? = nil, canDisable: Bool = true, onCancel: @escaping () -> Void, onConfirm: @escaping (String, Int, Bool) -> Void) {
+    init(title: String, confirmTitle: String, name: String, amount: Int, isDisabled: Bool? = nil, canDisable: Bool = true, onCancel: @escaping () -> Void, onConfirm: @escaping (String, Int, Bool) -> Void) {
         self.title = title
+        self.confirmTitle = confirmTitle
         self.showsDisableOption = isDisabled != nil
         self.canDisable = canDisable
         _isDisabled = State(initialValue: isDisabled ?? false)
@@ -191,13 +196,17 @@ struct AccountEditPopup: View {
     }
 
     var body: some View {
-        TransactionEditPopup(canConfirm: canConfirm, onCancel: cancel, onConfirm: confirm) {
+        TransactionEditPopup(confirmTitle: confirmTitle, onCancel: cancel, onConfirm: confirm) {
             VStack(spacing: 16) {
-                header
+                Text(title)
+                    .font(.appMedium(18))
+                    .foregroundColor(.appWhite)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
 
                 VStack(spacing: 12) {
-                    field(L10n.accountsName, systemImage: "pencil", isFocused: focusedField == .name) {
-                        TextField("", text: $name, prompt: Text(L10n.accountsNew).foregroundColor(.appLabel.opacity(0.6)))
+                    field(systemImage: "pencil", isFocused: focusedField == .name, hasError: showsNameError) {
+                        TextField("", text: $name, prompt: Text(L10n.accountsName).foregroundColor(.appLabel.opacity(0.6)))
                             .font(.appRegular(18))
                             .focused($focusedField, equals: .name)
                             .submitLabel(.next)
@@ -205,9 +214,20 @@ struct AccountEditPopup: View {
                     }
                     .onTapGesture { focusedField = .name }
 
-                    field(L10n.startviewBalance, systemImage: "banknote", isFocused: focusedField == .amount) {
-                        TextField("", text: $amountText, prompt: Text("0").foregroundColor(.appLabel.opacity(0.6)))
-                            .font(.appMedium(22))
+                    if showsNameError {
+                        Text(L10n.categoriesEditNewFolderAlertPlaceholder)
+                            .font(.appLight(13))
+                            .foregroundColor(.appRed)
+                            .lineLimit(1)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.horizontal, 16)
+                            .padding(.top, -4)
+                            .transition(.opacity)
+                    }
+
+                    field(systemImage: "banknote", isFocused: focusedField == .amount, hasError: false) {
+                        TextField("", text: $amountText, prompt: Text(L10n.startviewBalance).foregroundColor(.appLabel.opacity(0.6)))
+                            .font(.appRegular(18))
                             .keyboardType(.decimalPad)
                             .focused($focusedField, equals: .amount)
                     }
@@ -220,14 +240,14 @@ struct AccountEditPopup: View {
             }
             .padding(.horizontal, 16)
             .animation(.appStandard, value: focusedField)
+            .animation(.appStandard, value: showsNameError)
         }
         .onAppear {
             focusedField = name.isBlank ? .name : .amount
         }
-    }
-
-    private var canConfirm: Bool {
-        !name.isBlank
+        .onChange(of: name) {
+            showsNameError = false
+        }
     }
 
     private var disableOption: some View {
@@ -244,46 +264,23 @@ struct AccountEditPopup: View {
         .opacity(canDisable ? 1 : 0.4)
     }
 
-    private var header: some View {
-        VStack(spacing: 12) {
-            Image(systemName: "creditcard.fill")
-                .font(.system(size: 24))
-                .foregroundColor(.appPrimary)
-                .frame(width: 56, height: 56)
-                .background(.appPrimary.opacity(0.15), in: Circle())
-
-            Text(title)
-                .font(.appMedium(18))
-                .foregroundColor(.appWhite)
-                .lineLimit(1)
-                .minimumScaleFactor(0.7)
-        }
-    }
-
-    private func field(_ title: String, systemImage: String, isFocused: Bool, @ViewBuilder content: () -> some View) -> some View {
+    private func field(systemImage: String, isFocused: Bool, hasError: Bool, @ViewBuilder content: () -> some View) -> some View {
         HStack(spacing: 12) {
             Image(systemName: systemImage)
                 .font(.system(size: 16))
-                .foregroundColor(isFocused ? .appPrimary : .appLabel)
+                .foregroundColor(hasError ? .appRed : isFocused ? .appPrimary : .appLabel)
                 .frame(width: 24)
 
-            VStack(alignment: .leading, spacing: 2) {
-                Text(title)
-                    .font(.appLight(12))
-                    .foregroundColor(.appLabel)
-                    .lineLimit(1)
-
-                content()
-                    .foregroundColor(.appWhite)
-                    .tint(.appPrimary)
-            }
+            content()
+                .foregroundColor(.appWhite)
+                .tint(.appPrimary)
         }
         .padding(.horizontal, 16)
-        .frame(height: 64)
+        .frame(height: 52)
         .background(.appMain.opacity(LiquidGlass.isAvailable ? 0.5 : 1), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
         .overlay {
             RoundedRectangle(cornerRadius: 12, style: .continuous)
-                .stroke(.appPrimary.opacity(isFocused ? 1 : 0), lineWidth: 1)
+                .stroke(hasError ? Color.appRed : Color.appPrimary.opacity(isFocused ? 1 : 0), lineWidth: 1)
         }
         .contentShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
@@ -294,6 +291,13 @@ struct AccountEditPopup: View {
     }
 
     private func confirm() {
+        guard !name.isBlank else {
+            FeedbackManager.shared.amountMissing()
+            showsNameError = true
+            focusedField = .name
+            return
+        }
+
         focusedField = nil
         onConfirm(name.trimmingCharacters(in: .whitespacesAndNewlines), AmountInput.amount(from: amountText), isDisabled)
     }

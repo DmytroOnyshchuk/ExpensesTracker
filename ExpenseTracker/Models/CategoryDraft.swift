@@ -14,7 +14,7 @@ struct CategoryDraft {
     var parentUuid: UUID?
     var operationType: OperationType = .outcome
 
-    var canSave: Bool { !name.isEmpty }
+    var canSave: Bool { !name.isBlank }
 
     init(operationType: OperationType = .outcome) {
         self.operationType = operationType

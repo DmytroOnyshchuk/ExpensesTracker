@@ -62,7 +62,6 @@ struct CategoriesEditContent: View {
     @State private var selectedCategory: TransactionCategory?
 
     @State private var showAddFolderAlert = false
-    @State private var newFolderName: String = String()
     @State private var operationType: OperationType
     @StoredSettings private var appSettings
 
@@ -97,7 +96,6 @@ struct CategoriesEditContent: View {
         .toolbar {
             ToolbarItemGroup(placement: .navigationBarTrailing) {
                 Button {
-                    newFolderName = String()
                     showAddFolderAlert = true
                 } label: {
                     Image(systemName: "folder.badge.plus")
@@ -118,14 +116,16 @@ struct CategoriesEditContent: View {
         .sheet(isPresented: $showAddCategory) {
             EditCategoryView(operationType: operationType)
         }
-        .alert(L10n.categoriesEditNewFolderAlertTitle, isPresented: $showAddFolderAlert) {
-            TextField(L10n.categoriesEditNewFolderAlertPlaceholder, text: $newFolderName)
-                .foregroundColor(.black)
-            Button(L10n.cancel, role: .cancel) {}
-            Button(L10n.categoriesEditCreate, role: .none) {
-                createFolderCategory()
+        .overlay {
+            if showAddFolderAlert {
+                TextInputPopup(title: L10n.categoriesEditNewFolderAlertTitle, placeholder: L10n.categoriesEditNewFolderAlertPlaceholder, confirmTitle: L10n.categoriesEditCreate, onCancel: { showAddFolderAlert = false }) { name in
+                    createFolderCategory(named: name)
+                    showAddFolderAlert = false
+                }
+                .transition(.opacity)
             }
         }
+        .animation(.appStandard, value: showAddFolderAlert)
     }
 
     private var pageSelection: Binding<Int> {
@@ -168,11 +168,11 @@ struct CategoriesEditContent: View {
 
     // MARK: - Creating a new folder
 
-    private func createFolderCategory() {
-        guard !newFolderName.trimmingCharacters(in: .whitespaces).isEmpty else { return }
+    private func createFolderCategory(named name: String) {
+        guard !name.isBlank else { return }
 
         let newFolder = TransactionCategory(
-            name: .custom(newFolderName),
+            name: .custom(name),
             categoryIcon: CategoryIcon(name: "folder", iconColor: .yellow),
             isDirectory: true,
             sortIndex: categories.nextSortIndex,

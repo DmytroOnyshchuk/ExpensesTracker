@@ -87,6 +87,8 @@ struct HistoryView: View {
         .listStyle(.plain)
         .environment(\.defaultMinListHeaderHeight, 0)
         .scrollContentBackground(.hidden)
+        .contentMargins(.top, 0, for: .scrollContent)
+        .listSectionSpacing(0)
         .appBackground()
         .navigationTitle(L10n.historyTitle)
         .navigationBarTitleDisplayMode(.inline)
@@ -96,31 +98,23 @@ struct HistoryView: View {
     }
 
     private func monthTitle(start: Date, starts: [Date]) -> some View {
-        HStack(spacing: 12) {
-            monthArrow(systemImage: "chevron.left", shift: -1, start: start, starts: starts)
-
-            ZStack {
-                Text(period.title(for: start))
-                    .font(.appRegular(22))
-                    .foregroundColor(.appPrimary)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.7)
-                    .id(start)
-                    .transition(.push(from: slideEdge))
-            }
-            .frame(height: 44)
-            .clipped()
-            .contentShape(Rectangle())
-            .onTapGesture {
-                showMonthList = !starts.isEmpty
-            }
-
-            monthArrow(systemImage: "chevron.right", shift: 1, start: start, starts: starts)
+        ZStack {
+            Text(period.title(for: start))
+                .font(.appRegular(22))
+                .foregroundColor(.appPrimary)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+                .id(start)
+                .transition(.push(from: slideEdge))
         }
         .padding(.horizontal, 16)
         .frame(maxWidth: .infinity)
         .frame(height: 44)
+        .clipped()
         .contentShape(Rectangle())
+        .onTapGesture {
+            showMonthList = !starts.isEmpty
+        }
         .gesture(
             DragGesture(minimumDistance: 20)
                 .onEnded { value in
@@ -135,12 +129,6 @@ struct HistoryView: View {
             }
             .presentationCompactAdaptation(.popover)
             .legacyPresentationBackground(.appSecond)
-        }
-    }
-
-    private func monthArrow(systemImage: String, shift: Int, start: Date, starts: [Date]) -> some View {
-        PeriodArrowButton(systemImage: systemImage, isEnabled: neighbour(of: start, by: shift, in: starts) != nil) {
-            shiftMonth(by: shift, from: start, in: starts)
         }
     }
 

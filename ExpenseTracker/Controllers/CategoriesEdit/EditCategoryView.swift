@@ -19,6 +19,8 @@ struct EditCategoryView: View {
     private let category: TransactionCategory?
     @State private var draft: CategoryDraft
     @State private var showDeleteConfirmation = false
+    @State private var showsNameError = false
+    @State private var validationMessage: String?
     @State private var showCustomIconPicker = false
     @State private var showColorPicker = false
     @State private var selectedSubcategory: TransactionCategory?
@@ -112,17 +114,24 @@ struct EditCategoryView: View {
                 }
 
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    Button(isEdit ? L10n.save : L10n.editCategoryCreate) {
-                        save()
-                        dismiss()
-                    }
-                    .foregroundColor(.appWhite)
-                    .disabled(!draft.canSave)
+                    Button(isEdit ? L10n.save : L10n.editCategoryCreate, action: submit)
+                        .foregroundColor(.appWhite)
                 }
             }
         }
+        .toast($validationMessage, icon: .warning)
+        .overlay {
+            if showDeleteConfirmation {
+                MessagePopup(title: isDirectory ? L10n.editCategoryDeleteFolder : L10n.editCategoryDeleteCategory, message: L10n.editCategoryDeleteConfirmation, confirmTitle: L10n.remove, confirmColor: .appRed, onCancel: { showDeleteConfirmation = false }, onConfirm: deleteCategory)
+                    .transition(.opacity)
+            }
+        }
+        .animation(.appStandard, value: showDeleteConfirmation)
         .onAppear {
             draft.dropMissingParent(in: allCategories)
+        }
+        .onChange(of: draft.name) {
+            showsNameError = false
         }
         .sheet(item: $selectedSubcategory) { subcategory in
             EditCategoryView(category: subcategory)
@@ -228,6 +237,11 @@ struct EditCategoryView: View {
                 .padding(.horizontal, 16)
                 .frame(height: 48)
                 .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
+                .overlay {
+                    RoundedRectangle(cornerRadius: 18, style: .continuous)
+                        .stroke(.appRed.opacity(showsNameError ? 1 : 0), lineWidth: 1)
+                }
+                .animation(.appStandard, value: showsNameError)
         }
     }
 
@@ -332,17 +346,10 @@ struct EditCategoryView: View {
 
     private var deleteSection: some View {
         RoundIconButton(systemImage: "trash", color: .appRed, tint: .appRed) {
+            isNameFocused = false
             showDeleteConfirmation = true
         }
         .accessibilityLabel(isDirectory ? L10n.editCategoryDeleteFolder : L10n.editCategoryDeleteCategory)
-        .alert(isDirectory ? L10n.editCategoryDeleteFolder : L10n.editCategoryDeleteCategory, isPresented: $showDeleteConfirmation) {
-            Button(L10n.cancel, role: .cancel) {}
-            Button(L10n.remove, role: .destructive) {
-                deleteCategory()
-            }
-        } message: {
-            Text(L10n.editCategoryDeleteConfirmation)
-        }
     }
 
     // MARK: - Buttons
@@ -376,6 +383,19 @@ struct EditCategoryView: View {
     }
 
     // MARK: - Actions
+
+    private func submit() {
+        guard draft.canSave else {
+            FeedbackManager.shared.amountMissing()
+            showsNameError = true
+            validationMessage = L10n.editCategoryNamePlaceholder
+            isNameFocused = true
+            return
+        }
+
+        save()
+        dismiss()
+    }
 
     private func save() {
         if let category {

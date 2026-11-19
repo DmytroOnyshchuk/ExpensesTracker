@@ -182,7 +182,7 @@ struct StartView: View {
     }
 
     private var historyButton: some View {
-        RoundIconButton(systemImage: "chevron.down", action: openHistory)
+        RoundIconButton(systemImage: "chevron.down", color: .appPrimary.opacity(0.5), action: openHistory)
             .accessibilityLabel(L10n.historyTitle)
     }
 

@@ -10,6 +10,9 @@ import SwiftUI
 
 struct TransactionEditPopup<Content: View>: View {
     var canConfirm = true
+    var cancelTitle: String? = L10n.cancel
+    var confirmTitle = L10n.ok
+    var confirmColor: Color = .appPrimary
     var onRemove: (() -> Void)?
     let onCancel: () -> Void
     let onConfirm: () -> Void
@@ -36,11 +39,13 @@ struct TransactionEditPopup<Content: View>: View {
                         buttonDivider
                     }
 
-                    actionButton(L10n.cancel, action: onCancel)
+                    if let cancelTitle {
+                        actionButton(cancelTitle, action: onCancel)
 
-                    buttonDivider
+                        buttonDivider
+                    }
 
-                    actionButton(L10n.ok, action: onConfirm)
+                    actionButton(confirmTitle, color: confirmColor, action: onConfirm)
                         .disabled(!canConfirm)
                         .opacity(canConfirm ? 1 : 0.4)
                 }
@@ -57,18 +62,113 @@ struct TransactionEditPopup<Content: View>: View {
     private var buttonDivider: some View {
         Rectangle()
             .fill(.appLabel.opacity(0.25))
-            .frame(width: 0.5, height: 24)
+            .frame(width: 0.5, height: 32)
     }
 
     private func actionButton(_ title: String, color: Color = .appPrimary, action: @escaping () -> Void) -> some View {
         Button(action: action) {
             Text(title)
-                .font(.appRegular(15))
+                .font(.appRegular(18))
                 .foregroundColor(color)
-                .frame(maxWidth: .infinity, minHeight: 44)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+                .padding(.horizontal, 8)
+                .frame(maxWidth: .infinity, minHeight: 56)
                 .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
+    }
+}
+
+struct MessagePopup: View {
+    let title: String
+    var message: String?
+    var cancelTitle: String? = L10n.cancel
+    var confirmTitle = L10n.ok
+    var confirmColor: Color = .appPrimary
+    let onCancel: () -> Void
+    let onConfirm: () -> Void
+
+    var body: some View {
+        TransactionEditPopup(cancelTitle: cancelTitle, confirmTitle: confirmTitle, confirmColor: confirmColor, onCancel: onCancel, onConfirm: onConfirm) {
+            VStack(spacing: 8) {
+                Text(title)
+                    .font(.appMedium(18))
+                    .foregroundColor(.appWhite)
+
+                if let message {
+                    Text(message)
+                        .font(.appLight(15))
+                        .foregroundColor(.appLabel)
+                }
+            }
+            .multilineTextAlignment(.center)
+            .fixedSize(horizontal: false, vertical: true)
+            .frame(maxWidth: .infinity)
+            .padding(.horizontal, 16)
+            .padding(.top, 4)
+        }
+    }
+}
+
+struct TextInputPopup: View {
+    let title: String
+    let placeholder: String
+    let confirmTitle: String
+    let onCancel: () -> Void
+    let onConfirm: (String) -> Void
+
+    @State private var text = String()
+    @FocusState private var isFocused: Bool
+
+    init(title: String, placeholder: String, confirmTitle: String, onCancel: @escaping () -> Void, onConfirm: @escaping (String) -> Void) {
+        self.title = title
+        self.placeholder = placeholder
+        self.confirmTitle = confirmTitle
+        self.onCancel = onCancel
+        self.onConfirm = onConfirm
+    }
+
+    var body: some View {
+        TransactionEditPopup(canConfirm: !text.isBlank, confirmTitle: confirmTitle, onCancel: cancel, onConfirm: confirm) {
+            VStack(spacing: 12) {
+                Text(title)
+                    .font(.appMedium(18))
+                    .foregroundColor(.appWhite)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
+
+                TextField("", text: $text, prompt: Text(placeholder).foregroundColor(.appLabel.opacity(0.6)))
+                    .focused($isFocused)
+                    .font(.appRegular(18))
+                    .foregroundColor(.appWhite)
+                    .tint(.appPrimary)
+                    .submitLabel(.done)
+                    .onSubmit(submit)
+                    .padding(.horizontal, 16)
+                    .frame(height: 48)
+                    .background(.appMain.opacity(LiquidGlass.isAvailable ? 0.5 : 1), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+            }
+            .padding(.horizontal, 16)
+        }
+        .onAppear {
+            isFocused = true
+        }
+    }
+
+    private func submit() {
+        guard !text.isBlank else { return }
+        confirm()
+    }
+
+    private func cancel() {
+        isFocused = false
+        onCancel()
+    }
+
+    private func confirm() {
+        isFocused = false
+        onConfirm(text.trimmingCharacters(in: .whitespacesAndNewlines))
     }
 }
 
@@ -136,6 +236,16 @@ struct TransactionTimePopup: View {
                 .colorScheme(.dark)
         }
     }
+}
+
+#Preview("Message popup") {
+    MessagePopup(title: "Remove category", message: "The category and all its transactions will be moved to the Trash.", confirmTitle: "Remove", confirmColor: .appRed, onCancel: {}, onConfirm: {})
+        .background(.appMain)
+}
+
+#Preview("Text input popup") {
+    TextInputPopup(title: "New folder category", placeholder: "Enter name", confirmTitle: "Create", onCancel: {}, onConfirm: { _ in })
+        .background(.appMain)
 }
 
 #Preview("Time popup") {

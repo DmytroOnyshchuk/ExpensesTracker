@@ -264,3 +264,4 @@
 "AUTOPAYMENTS_NEW_TITLE" = "Новий автоплатіж";
 "AUTOPAYMENTS_PERIOD" = "Період";
 "AUTOPAYMENTS_START_DATE" = "Дата початку";
+"AUTOPAYMENTS_SELECT_CATEGORY" = "Виберіть категорію";

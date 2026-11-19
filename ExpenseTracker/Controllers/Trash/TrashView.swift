@@ -130,60 +130,56 @@ struct TrashView: View {
                 .disabled(isEmpty)
             }
         }
-        .alert(L10n.menuTrash, isPresented: $showClearConfirmation) {
-            Button(L10n.cancel, role: .cancel) {}
-            Button(L10n.clear, role: .destructive) {
-                modelContext.emptyTrash()
-            }
-        } message: {
-            Text(L10n.trashClearConfirmation)
-        }
-        .alert(
-            restoreConfirmation,
-            isPresented: Binding(
-                get: { restoreTarget != nil },
-                set: { if !$0 { restoreTarget = nil } }
-            ),
-            presenting: restoreTarget
-        ) { target in
-            Button(L10n.yes) {
-                withAnimation(.appStandard) {
-                    switch target {
-                    case .account(let account): modelContext.restore(account)
-                    case .category(let category): modelContext.restore(category)
-                    case .autoPayment(let autoPayment): modelContext.restore(autoPayment)
-                    case .transaction(let transaction): modelContext.restore(transaction)
-                    }
+        .overlay {
+            if showClearConfirmation {
+                MessagePopup(title: L10n.menuTrash, message: L10n.trashClearConfirmation, confirmTitle: L10n.clear, confirmColor: .appRed, onCancel: { showClearConfirmation = false }) {
+                    showClearConfirmation = false
+                    modelContext.emptyTrash()
                 }
-            }
-            Button(L10n.no, role: .cancel) {}
-        }
-        .alert(
-            deleteConfirmation,
-            isPresented: Binding(
-                get: { deleteTarget != nil },
-                set: { if !$0 { deleteTarget = nil } }
-            ),
-            presenting: deleteTarget
-        ) { target in
-            Button(L10n.cancel, role: .cancel) {}
-            Button(L10n.delete, role: .destructive) {
-                withAnimation(.appStandard) {
-                    switch target {
-                    case .account(let account): modelContext.deletePermanently(account)
-                    case .category(let category): modelContext.deletePermanently(category)
-                    case .autoPayment(let autoPayment): modelContext.deletePermanently(autoPayment)
-                    case .transaction(let transaction): modelContext.deletePermanently(transaction)
-                    }
+                .transition(.opacity)
+            } else if let restoreTarget {
+                MessagePopup(title: restoreConfirmation, cancelTitle: L10n.no, confirmTitle: L10n.yes, onCancel: { self.restoreTarget = nil }) {
+                    self.restoreTarget = nil
+                    restore(restoreTarget)
                 }
+                .transition(.opacity)
+            } else if let deleteTarget {
+                MessagePopup(title: deleteConfirmation, message: L10n.trashDeleteMessage, confirmTitle: L10n.delete, confirmColor: .appRed, onCancel: { self.deleteTarget = nil }) {
+                    self.deleteTarget = nil
+                    deletePermanently(deleteTarget)
+                }
+                .transition(.opacity)
             }
-        } message: { _ in
-            Text(L10n.trashDeleteMessage)
         }
+        .animation(.appStandard, value: showClearConfirmation)
+        .animation(.appStandard, value: restoreTarget != nil)
+        .animation(.appStandard, value: deleteTarget != nil)
     }
 }
 
 extension TrashView {
+    private func restore(_ target: Target) {
+        withAnimation(.appStandard) {
+            switch target {
+            case .account(let account): modelContext.restore(account)
+            case .category(let category): modelContext.restore(category)
+            case .autoPayment(let autoPayment): modelContext.restore(autoPayment)
+            case .transaction(let transaction): modelContext.restore(transaction)
+            }
+        }
+    }
+
+    private func deletePermanently(_ target: Target) {
+        withAnimation(.appStandard) {
+            switch target {
+            case .account(let account): modelContext.deletePermanently(account)
+            case .category(let category): modelContext.deletePermanently(category)
+            case .autoPayment(let autoPayment): modelContext.deletePermanently(autoPayment)
+            case .transaction(let transaction): modelContext.deletePermanently(transaction)
+            }
+        }
+    }
+
     private func askToRestore(_ target: Target) {
         restoreConfirmation = target.restoreConfirmation
         restoreTarget = target

@@ -54,6 +54,8 @@ internal enum L10n {
   internal static let autopaymentsNewTitle = L10n.tr("Localizable", "AUTOPAYMENTS_NEW_TITLE", fallback: "New autopayment")
   /// Period
   internal static let autopaymentsPeriod = L10n.tr("Localizable", "AUTOPAYMENTS_PERIOD", fallback: "Period")
+  /// Select a category
+  internal static let autopaymentsSelectCategory = L10n.tr("Localizable", "AUTOPAYMENTS_SELECT_CATEGORY", fallback: "Select a category")
   /// Start date
   internal static let autopaymentsStartDate = L10n.tr("Localizable", "AUTOPAYMENTS_START_DATE", fallback: "Start date")
   /// Back

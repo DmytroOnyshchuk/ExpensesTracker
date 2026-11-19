@@ -21,6 +21,7 @@ struct AutoPaymentEdit: View {
     @State private var popup: Popup?
     @State private var pickerOperationType: OperationType?
     @State private var amountText = String()
+    @State private var validationMessage: String?
     @Query(filter: Account.notDeleted, sort: \Account.sortIndex) private var storedAccounts: [Account]
 
     @StoredSettings private var appSettings
@@ -111,9 +112,8 @@ struct AutoPaymentEdit: View {
                 }
 
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(L10n.ok, action: save)
+                    Button(autoPayment == nil ? L10n.categoriesEditCreate : L10n.save, action: submit)
                         .foregroundColor(.appWhite)
-                        .disabled(!current.canSave)
                 }
             }
             .onChange(of: isAmountFocused) { _, isFocused in
@@ -133,6 +133,7 @@ struct AutoPaymentEdit: View {
                 }
             }
         }
+        .toast($validationMessage, icon: .warning)
         .overlay {
             popupView
         }
@@ -319,6 +320,24 @@ struct AutoPaymentEdit: View {
     private func hideKeyboard() {
         isAmountFocused = false
         isNoteFocused = false
+    }
+
+    private func submit() {
+        guard current.category != nil else {
+            FeedbackManager.shared.amountMissing()
+            hideKeyboard()
+            validationMessage = L10n.autopaymentsSelectCategory
+            pickerOperationType = current.operationType
+            return
+        }
+        guard current.amount != .zero else {
+            FeedbackManager.shared.amountMissing()
+            validationMessage = L10n.startviewEnterAmountFirst
+            isAmountFocused = true
+            return
+        }
+
+        save()
     }
 
     private func save() {
