@@ -83,7 +83,7 @@ struct TrashView: View {
                         askToDelete(.account(account))
                     }
                 }
-
+                
                 ForEach(categories, id: \.id) { category in
                     let count: Int = transactionsCounts[category.uuid] ?? 0
                     let subtitle: String? = category.isDirectory ? nil : L10n.backupsTransactionsCount(count)

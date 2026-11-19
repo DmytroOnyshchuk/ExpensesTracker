@@ -11,6 +11,7 @@
 		66700FE32DFC37240073A9EF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 66700FE22DFC37240073A9EF /* Alamofire */; };
 		66700FEC2DFC38240073A9EF /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 66700FEB2DFC38240073A9EF /* PromiseKit */; };
 		66C0A1032ECE100000A1B2C3 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 66C0A1022ECE100000A1B2C3 /* RealmSwift */; };
+		66C0A1042ECE100000A1B2C3 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 66C0A1022ECE100000A1B2C3 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 			dstPath = "";
 			dstSubfolder = Frameworks;
 			files = (
+				66C0A1042ECE100000A1B2C3 /* RealmSwift in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 		};
