@@ -7,28 +7,30 @@
 //
 
 import Foundation
-import SwiftData
+import RealmSwift
 import SwiftUI
 
-@Model
-final class Transaction {
-    #Index<Transaction>([\.date], [\.deletedAt, \.date])
+final class Transaction: Object, Identifiable {
+    @Persisted(primaryKey: true) var id: UUID = UUID()
+    @Persisted var amount: Int = 0
+    @Persisted(indexed: true) var date: Date = Date()
+    @Persisted var note: String?
+    @Persisted var categoryLink: TransactionCategory?
+    @Persisted var deletedAt: Date?
+    @Persisted var account: Account?
 
-    var id: UUID = UUID()
-    var amount: Int = 0
-    var date: Date = Date()
-    var note: String?
-    var category: TransactionCategory
-    var deletedAt: Date?
-    var account: Account?
+    var category: TransactionCategory {
+        get { categoryLink ?? TransactionCategory() }
+        set { categoryLink = newValue.live }
+    }
 
-    init(amount: Int, category: TransactionCategory, date: Date = Date(), note: String? = nil, account: Account? = nil) {
-        self.id = UUID()
+    convenience init(amount: Int, category: TransactionCategory, date: Date = Date(), note: String? = nil, account: Account? = nil) {
+        self.init()
         self.amount = amount
         self.category = category
         self.date = date
         self.note = note
-        self.account = account
+        self.account = account?.live
     }
 
     var operationType: OperationType {
@@ -45,19 +47,19 @@ final class Transaction {
 }
 
 extension Transaction {
-    static let notDeleted = #Predicate<Transaction> { $0.deletedAt == nil }
-    static let visible = #Predicate<Transaction> { $0.deletedAt == nil && ($0.account == nil || $0.account?.isDisabled == false) }
-    static let inTrash = #Predicate<Transaction> { $0.deletedAt != nil }
+    static let notDeleted: (Query<Transaction>) -> Query<Bool> = { $0.deletedAt == nil }
+    static let visible: (Query<Transaction>) -> Query<Bool> = { $0.deletedAt == nil && ($0.account == nil || $0.account.isDisabled == false) }
+    static let inTrash: (Query<Transaction>) -> Query<Bool> = { $0.deletedAt != nil }
 
-    static func listed(of operationType: OperationType, since start: Date) -> Predicate<Transaction> {
+    static func listed(of operationType: OperationType, since start: Date) -> (Query<Transaction>) -> Query<Bool> {
         let raw = operationType.rawValue
-        return #Predicate<Transaction> { $0.deletedAt == nil && $0.date >= start && ($0.account == nil || $0.account?.isDisabled == false) && $0.category.operationTypeRaw == raw }
+        return { $0.deletedAt == nil && $0.date >= start && ($0.account == nil || $0.account.isDisabled == false) && $0.categoryLink.operationTypeRaw == raw }
     }
 
-    static let inTrashWithOwners = #Predicate<Transaction> { $0.deletedAt != nil || $0.category.deletedAt != nil || $0.account?.deletedAt != nil }
+    static let inTrashWithOwners: (Query<Transaction>) -> Query<Bool> = { $0.deletedAt != nil || $0.categoryLink.deletedAt != nil || $0.account.deletedAt != nil }
 }
 
-extension [Transaction] {
+extension Sequence<Transaction> {
     func of(_ operationType: OperationType) -> [Transaction] {
         filter { $0.operationType == operationType }
     }

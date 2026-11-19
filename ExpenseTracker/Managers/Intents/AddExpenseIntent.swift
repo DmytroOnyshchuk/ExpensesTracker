@@ -1,6 +1,6 @@
 import AppIntents
 import Foundation
-import SwiftData
+import RealmSwift
 
 struct AddExpenseIntent: AppIntent {
     static let title: LocalizedStringResource = "Add Expense"
@@ -35,13 +35,14 @@ struct AddExpenseIntent: AppIntent {
         let value = AmountInput.amount(fromCurrencyText: amount)
         guard value != .zero else { throw AddExpenseError.invalidAmount }
 
-        let context = ModelContainer.shared.mainContext
+        let realm = Realm.shared
         let merchantName = merchant?.trimmingCharacters(in: .whitespacesAndNewlines) ?? String()
-        guard let expenseCategory = context.expenseCategory(id: category?.id, merchant: merchantName) else { throw AddExpenseError.categoryNotFound }
+        guard let expenseCategory = realm.expenseCategory(id: category?.id, merchant: merchantName) else { throw AddExpenseError.categoryNotFound }
 
-        let expenseAccount = context.expenseAccount(id: account?.id, card: card)
-        context.insert(Transaction(amount: value, category: expenseCategory, note: merchantName.isEmpty ? nil : merchantName, account: expenseAccount))
-        try context.save()
+        let expenseAccount = realm.expenseAccount(id: account?.id, card: card)
+        try realm.write {
+            realm.add(Transaction(amount: value, category: expenseCategory, note: merchantName.isEmpty ? nil : merchantName, account: expenseAccount))
+        }
         return .result()
     }
 }
@@ -58,9 +59,9 @@ enum AddExpenseError: Error, CustomLocalizedStringResourceConvertible {
     }
 }
 
-extension ModelContext {
+extension Realm {
     fileprivate func expenseCategory(id: UUID?, merchant: String) -> TransactionCategory? {
-        let categories = ((try? fetch(FetchDescriptor<TransactionCategory>(predicate: TransactionCategory.nonDirectories))) ?? []).of(.outcome)
+        let categories = objects(TransactionCategory.self).where(TransactionCategory.nonDirectories).of(.outcome)
         if let id, let chosen = categories.first(where: { $0.uuid == id }) {
             return chosen
         }
@@ -71,7 +72,7 @@ extension ModelContext {
     }
 
     fileprivate func expenseAccount(id: UUID?, card: String?) -> Account? {
-        let accounts = (try? fetch(FetchDescriptor<Account>(predicate: Account.available, sortBy: [SortDescriptor(\.sortIndex)]))) ?? []
+        let accounts = Array(objects(Account.self).where(Account.available).sorted(byKeyPath: "sortIndex"))
         if let id, let chosen = accounts.first(where: { $0.uuid == id }) {
             return chosen
         }
@@ -85,9 +86,7 @@ extension ModelContext {
     private func lastCategory(for merchant: String, among categories: [TransactionCategory]) -> TransactionCategory? {
         guard !merchant.isEmpty else { return nil }
 
-        var descriptor = FetchDescriptor<Transaction>(predicate: #Predicate { $0.deletedAt == nil && $0.note == merchant }, sortBy: [SortDescriptor(\.date, order: .reverse)])
-        descriptor.fetchLimit = 10
-        let recent = (try? fetch(descriptor)) ?? []
+        let recent = objects(Transaction.self).where { $0.deletedAt == nil && $0.note == merchant }.sorted(byKeyPath: "date", ascending: false).prefix(10)
         let allowed = Set(categories.map(\.uuid))
         return recent.first { allowed.contains($0.category.uuid) }?.category
     }

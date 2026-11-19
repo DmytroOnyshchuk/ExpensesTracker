@@ -7,12 +7,12 @@
 //
 
 import Foundation
-import SwiftData
+import RealmSwift
 import SwiftUI
 
 struct EditCategoryView: View {
-    @Query(filter: TransactionCategory.directories) private var storedDirectories: [TransactionCategory]
-    @Query(filter: TransactionCategory.notDeleted) private var allCategories: [TransactionCategory]
+    @ObservedResults(TransactionCategory.self, where: TransactionCategory.directories) private var storedDirectories
+    @ObservedResults(TransactionCategory.self, where: TransactionCategory.notDeleted) private var allCategories
 
     private var allDirectories: [TransactionCategory] { storedDirectories.of(draft.operationType) }
 
@@ -27,13 +27,13 @@ struct EditCategoryView: View {
     private var isEdit: Bool { category != nil }
     private var isDirectory: Bool { category?.isDirectory ?? false }
     private var subcategories: [TransactionCategory] {
-        category?.allSubcategories(from: allCategories) ?? []
+        category?.allSubcategories(from: Array(allCategories)) ?? []
     }
 
     // MARK: - Environment
 
     @Environment(\.dismiss) private var dismiss
-    @Environment(\.modelContext) private var modelContext
+    @Environment(\.realm) private var realm
 
     // MARK: - Constants
 
@@ -122,7 +122,7 @@ struct EditCategoryView: View {
             }
         }
         .onAppear {
-            draft.dropMissingParent(in: allCategories)
+            draft.dropMissingParent(in: Array(allCategories))
         }
         .sheet(item: $selectedSubcategory) { subcategory in
             EditCategoryView(category: subcategory)
@@ -379,35 +379,36 @@ struct EditCategoryView: View {
 
     private func save() {
         if let category {
-            draft.apply(to: category)
+            guard let category = category.live else { return }
+
+            realm.update { draft.apply(to: category) }
         } else {
             let newCategory = draft.makeCategory()
             newCategory.sortIndex = allCategories.nextSortIndex
-            modelContext.insert(newCategory)
+            realm.update { realm.add(newCategory) }
         }
-        try? modelContext.save()
     }
 
     private func deleteCategory() {
         guard let category else { return }
 
-        modelContext.deleteWithUndo(category)
+        realm.deleteWithUndo(category)
         dismiss()
     }
 }
 
 extension EditCategoryView: Equatable {
-    nonisolated static func == (lhs: EditCategoryView, rhs: EditCategoryView) -> Bool { lhs.category?.persistentModelID == rhs.category?.persistentModelID }
+    nonisolated static func == (lhs: EditCategoryView, rhs: EditCategoryView) -> Bool { lhs.category == rhs.category }
 }
 
 #Preview("New category") {
     EditCategoryView()
-        .modelContainer(makePreviewModelContainer())
+        .environment(\.realmConfiguration, makePreviewRealm().configuration)
 }
 
 #Preview("Edit category") {
     let category = TransactionCategory(name: "Groceries", categoryIcon: CategoryIcon(name: "cart.fill", iconColor: .green))
 
     EditCategoryView(category: category)
-        .modelContainer(makePreviewModelContainer())
+        .environment(\.realmConfiguration, makePreviewRealm().configuration)
 }

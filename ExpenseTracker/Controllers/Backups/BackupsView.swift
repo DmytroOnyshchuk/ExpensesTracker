@@ -1,4 +1,4 @@
-import SwiftData
+import RealmSwift
 import SwiftUI
 import UniformTypeIdentifiers
 
@@ -14,11 +14,11 @@ struct BackupExportRequest {
 }
 
 struct BackupsView: View {
-    @Environment(\.modelContext) private var modelContext
+    @Environment(\.realm) private var realm
 
-    @Query(filter: Transaction.notDeleted) private var transactions: [Transaction]
-    @Query(filter: TransactionCategory.notDeleted) private var categories: [TransactionCategory]
-    @Query(filter: Account.notDeleted, sort: \Account.sortIndex) private var selectableAccounts: [Account]
+    @ObservedResults(Transaction.self, where: Transaction.notDeleted) private var transactions
+    @ObservedResults(TransactionCategory.self, where: TransactionCategory.notDeleted) private var categories
+    @ObservedResults(Account.self, where: Account.notDeleted, sortDescriptor: RealmSwift.SortDescriptor(keyPath: "sortIndex")) private var selectableAccounts
 
     @State private var isImporting = false
     @State private var isChoosingFormat = false
@@ -79,8 +79,8 @@ struct BackupsView: View {
         .sheet(item: $optionsFormat, onDismiss: sharePendingExport) { format in
             BackupExportOptionsSheet(
                 format: format,
-                accounts: selectableAccounts,
-                transactions: transactions,
+                accounts: Array(selectableAccounts),
+                transactions: Array(transactions),
                 onCancel: closeOptions
             ) { options in
                 pendingExport = BackupExportRequest(format: format, options: options)
@@ -160,7 +160,7 @@ struct BackupsView: View {
 
     private func share(_ format: BackupExportFormat, options: BackupExportOptions) {
         do {
-            let url = try BackupManager.writeExportFile(from: modelContext, format: format, options: options)
+            let url = try BackupManager.writeExportFile(from: realm, format: format, options: options)
             sharedFile = BackupShareFile(url: url)
         } catch {
             show(error)
@@ -190,7 +190,7 @@ extension BackupsView: Equatable {
 private struct BackupImportModifier: ViewModifier {
     @Binding var fileURL: URL?
 
-    @Environment(\.modelContext) private var modelContext
+    @Environment(\.realm) private var realm
 
     @State private var isWorking = false
     @State private var pendingImport: ImportedBackup?
@@ -256,10 +256,9 @@ private struct BackupImportModifier: ViewModifier {
             defer { isWorking = false }
             try? await Task.sleep(for: .milliseconds(350))
             do {
-                _ = try BackupManager.apply(backup, mode: mode, to: modelContext)
+                _ = try BackupManager.apply(backup, mode: mode, to: realm)
                 toastMessage = L10n.done
             } catch {
-                modelContext.rollback()
                 show(error)
             }
         }
@@ -611,7 +610,7 @@ struct BackupSheetButton: View {
     NavigationStack {
         BackupsView()
     }
-    .modelContainer(makePreviewModelContainer())
+    .environment(\.realmConfiguration, makePreviewRealm().configuration)
 }
 
 #Preview("Format popup") {
@@ -620,11 +619,10 @@ struct BackupSheetButton: View {
 }
 
 #Preview("Export options") {
-    let container = makePreviewModelContainer()
     let accounts = [Account(name: "Cash", sortIndex: 0), Account(name: "Card", sortIndex: 1)]
 
     return BackupExportOptionsSheet(format: .csv, accounts: accounts, transactions: [], onCancel: {}, onExport: { _ in })
-        .modelContainer(container)
+        .environment(\.realmConfiguration, makePreviewRealm().configuration)
 }
 
 #Preview("Import sheet") {

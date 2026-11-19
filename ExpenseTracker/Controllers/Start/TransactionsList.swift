@@ -6,7 +6,7 @@
 //  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
 //
 
-import SwiftData
+import RealmSwift
 import SwiftUI
 
 struct TransactionsList: View {
@@ -101,17 +101,18 @@ struct RecentTransactionsList: View {
 
     private let start: Date
 
-    @Query private var transactions: [Transaction]
+    @ObservedResults private var transactions: Results<Transaction>
 
     init(operationType: OperationType) {
         let start = Calendar.current.startOfDay(for: .yesterday)
         self.operationType = operationType
         self.start = start
-        _transactions = Query(filter: Transaction.listed(of: operationType, since: start), sort: \Transaction.date, order: .reverse, animation: .appStandard)
+        _transactions = ObservedResults(Transaction.self, where: Transaction.listed(of: operationType, since: start), sortDescriptor: RealmSwift.SortDescriptor(keyPath: "date", ascending: false))
     }
 
     var body: some View {
-        TransactionsList(transactions: transactions, operationType: operationType)
+        TransactionsList(transactions: Array(transactions), operationType: operationType)
+            .animation(.appStandard, value: transactions.count)
     }
 }
 
@@ -153,7 +154,7 @@ struct TransactionsDayHeader: View {
 
 struct TransactionRow: View {
     let transaction: Transaction
-    @Environment(\.modelContext) private var modelContext
+    @Environment(\.realm) private var realm
 
     var body: some View {
         HStack(spacing: 16) {
@@ -185,7 +186,7 @@ struct TransactionRow: View {
         .frame(height: 38)
         .swipeActions(edge: .trailing, allowsFullSwipe: true) {
             Button(role: .destructive) {
-                modelContext.deleteWithUndo(transaction)
+                realm.deleteWithUndo(transaction)
             } label: {
                 Label(L10n.remove, systemImage: "trash")
             }
@@ -204,7 +205,7 @@ struct TransactionRow: View {
     TransactionsList(transactions: [])
         .frame(height: 220)
         .background(.appMain)
-        .modelContainer(makePreviewModelContainer())
+        .environment(\.realmConfiguration, makePreviewRealm().configuration)
 }
 
 #Preview("Transactions list") {
@@ -217,7 +218,7 @@ struct TransactionRow: View {
 
     TransactionsList(transactions: transactions)
         .background(.appMain)
-        .modelContainer(makePreviewModelContainer())
+        .environment(\.realmConfiguration, makePreviewRealm().configuration)
 }
 
 #Preview("Transaction") {
@@ -227,5 +228,5 @@ struct TransactionRow: View {
     TransactionRow(transaction: transaction)
         .padding(.horizontal)
         .background(.appMain)
-        .modelContainer(makePreviewModelContainer())
+        .environment(\.realmConfiguration, makePreviewRealm().configuration)
 }

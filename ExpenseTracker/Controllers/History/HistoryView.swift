@@ -6,18 +6,18 @@
 //  Copyright © 2026 Dmytro Onyshchuk. All rights reserved.
 //
 
-import SwiftData
+import RealmSwift
 import SwiftUI
 
 struct HistoryView: View {
-    @Environment(\.modelContext) private var modelContext
+    @Environment(\.realm) private var realm
 
-    @Query(filter: Transaction.visible, sort: \Transaction.date, order: .reverse) private var storedTransactions: [Transaction]
+    @ObservedResults(Transaction.self, where: Transaction.visible, sortDescriptor: RealmSwift.SortDescriptor(keyPath: "date", ascending: false)) private var storedTransactions
 
     @StoredSettings private var appSettings
 
     private var transactions: [Transaction] {
-        appSettings.accounting.incomeEnabled ? storedTransactions : storedTransactions.of(.outcome)
+        appSettings.accounting.incomeEnabled ? Array(storedTransactions) : storedTransactions.of(.outcome)
     }
 
     @State private var anchorDate = Date()
@@ -28,6 +28,7 @@ struct HistoryView: View {
     private let period = StatisticsPeriod.month
 
     var body: some View {
+        let transactions = transactions
         let starts = period.starts(of: transactions)
         let start = displayedStart(in: starts)
         let interval = period.interval(containing: start)
@@ -158,7 +159,7 @@ struct HistoryView: View {
     }
 
     private func delete(_ transaction: Transaction) {
-        modelContext.deleteWithUndo(transaction)
+        realm.deleteWithUndo(transaction)
     }
 
     private func displayedStart(in starts: [Date]) -> Date {
@@ -194,23 +195,23 @@ extension HistoryView: Equatable {
 }
 
 #Preview("History") {
-    let container = makePreviewModelContainer()
-    let categories = (try? container.mainContext.fetch(FetchDescriptor<TransactionCategory>())) ?? []
+    let realm = makePreviewRealm()
+    let categories = Array(realm.objects(TransactionCategory.self))
     let calendar = Calendar.current
     for (index, category) in categories.filter({ !$0.isDirectory }).prefix(8).enumerated() {
         let date = calendar.date(byAdding: .day, value: -index * 9, to: Date()) ?? Date()
-        container.mainContext.insert(Transaction(amount: (index + 1) * 36000, category: category, date: date))
+        realm.update { realm.add(Transaction(amount: (index + 1) * 36000, category: category, date: date)) }
     }
 
     return NavigationStack {
         HistoryView()
     }
-    .modelContainer(container)
+    .environment(\.realmConfiguration, realm.configuration)
 }
 
 #Preview("Empty history") {
     NavigationStack {
         HistoryView()
     }
-    .modelContainer(makePreviewModelContainer())
+    .environment(\.realmConfiguration, makePreviewRealm().configuration)
 }

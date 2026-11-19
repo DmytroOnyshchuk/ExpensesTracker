@@ -6,23 +6,26 @@
 //  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
 //
 
-import SwiftData
+import RealmSwift
 import SwiftUI
 
 @main
-struct ExpenseTracker: App {
+struct ExpenseTracker: SwiftUI.App {
+    init() {
+        _ = Realm.shared
+    }
+
     var body: some Scene {
         WindowGroup {
             AppRootView()
                 .modifier(SystemColorSchemeObserver())
                 .preferredColorScheme(ThemeManager.shared.preferredColorScheme)
         }
-        .modelContainer(ModelContainer.shared)
     }
 }
 
 struct AppRootView: View {
-    @Environment(\.modelContext) private var modelContext
+    @Environment(\.realm) private var realm
     @Environment(\.scenePhase) private var scenePhase
     @State private var isResetting = false
 
@@ -37,7 +40,7 @@ struct AppRootView: View {
         .onAppear(perform: PasscodeManager.shared.start)
         .onChange(of: scenePhase, initial: true) { _, phase in
             if phase == .active, !isResetting {
-                modelContext.runAutoPayments()
+                realm.runAutoPayments()
             }
         }
         .onReceive(NotificationCenter.default.publisher(for: .appLogout)) { _ in
@@ -51,7 +54,7 @@ struct AppRootView: View {
 }
 
 struct AppResetView: View {
-    @Environment(\.modelContext) private var modelContext
+    @Environment(\.realm) private var realm
     let onFinish: () -> Void
 
     var body: some View {
@@ -61,9 +64,8 @@ struct AppResetView: View {
             .task {
                 try? await Task.sleep(for: .milliseconds(500))
                 do {
-                    try UserManager.shared.logout(context: modelContext)
+                    try UserManager.shared.logout(realm: realm)
                 } catch {
-                    modelContext.rollback()
                     Logger.default.logError("Reset failed", error: error, category: "Application")
                 }
                 onFinish()

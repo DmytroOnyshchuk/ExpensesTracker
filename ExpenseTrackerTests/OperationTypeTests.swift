@@ -7,38 +7,16 @@
 //
 
 @testable import ExpenseTracker
-import SwiftData
+import RealmSwift
 import XCTest
 
 final class OperationTypeTests: XCTestCase {
-    private var container: ModelContainer!
-    private var context: ModelContext!
-
-    override func setUpWithError() throws {
-        let configuration = ModelConfiguration(isStoredInMemoryOnly: true)
-        container = try ModelContainer(for: Transaction.self, TransactionCategory.self, configurations: configuration)
-        context = ModelContext(container)
-    }
-
-    override func tearDownWithError() throws {
-        context = nil
-        container = nil
-    }
-
     private func makeCategory(_ name: String, operationType: OperationType) -> TransactionCategory {
-        let category = TransactionCategory(
-            name: .custom(name),
-            categoryIcon: CategoryIcon(name: "star", iconColor: .blue),
-            operationType: operationType
-        )
-        context.insert(category)
-        return category
+        TransactionCategory(name: .custom(name), categoryIcon: CategoryIcon(name: "star", iconColor: .blue), operationType: operationType)
     }
 
     private func makeTransaction(_ amount: Int, in category: TransactionCategory, date: Date = Date()) -> Transaction {
-        let transaction = Transaction(amount: amount, category: category, date: date)
-        context.insert(transaction)
-        return transaction
+        Transaction(amount: amount, category: category, date: date)
     }
 
     func testCategoryIsOutcomeByDefault() {
@@ -107,10 +85,11 @@ final class OperationTypeTests: XCTestCase {
     }
 
     func testSeederAddsDefaultIncomeCategoriesOnce() throws {
-        DataSeeder.seedDefaultCategories(in: context)
-        DataSeeder.seedDefaultCategories(in: context)
+        let realm = try Realm(configuration: Realm.Configuration(inMemoryIdentifier: UUID().uuidString))
+        DataSeeder.seedDefaultCategories(in: realm)
+        DataSeeder.seedDefaultCategories(in: realm)
 
-        let income = try context.fetch(FetchDescriptor<TransactionCategory>()).of(.income)
+        let income = realm.objects(TransactionCategory.self).of(.income)
 
         XCTAssertEqual(Set(income.map(\.name)), [.salary, .savings])
         XCTAssertEqual(income.count, 2)

@@ -6,17 +6,17 @@
 //  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
 //
 
-import SwiftData
+import RealmSwift
 import SwiftUI
 
 struct CategoriesEdit: View {
-    @Query(filter: TransactionCategory.notDeleted) private var storedCategories: [TransactionCategory]
-    @Query(filter: Transaction.visible) private var transactions: [Transaction]
+    @ObservedResults(TransactionCategory.self, where: TransactionCategory.notDeleted) private var storedCategories
+    @ObservedResults(Transaction.self, where: Transaction.visible) private var transactions
 
     private var categories: [TransactionCategory] { storedCategories.of(operationType) }
 
     @Environment(\.dismiss) private var dismiss
-    @Environment(\.modelContext) private var modelContext
+    @Environment(\.realm) private var realm
 
     @State private var showAddCategory = false
     @State private var selectedCategory: TransactionCategory?
@@ -34,7 +34,7 @@ struct CategoriesEdit: View {
     }
 
     private var transactionsCounts: [UUID: Int] {
-        let transactions = transactions
+        let transactions = Array(transactions)
         let period = StatisticsPeriod.year
         let interval = period.interval(containing: period.starts(of: transactions).first ?? Date())
 
@@ -135,8 +135,7 @@ struct CategoriesEdit: View {
 
     private func moveCategories(_ orderedCategories: [TransactionCategory], from source: IndexSet, to destination: Int, among categories: [TransactionCategory]) {
         let foldersCount = orderedCategories.count(where: \.isDirectory)
-        orderedCategories.reorder(fromOffsets: source, toOffset: max(destination, foldersCount), among: categories)
-        try? modelContext.save()
+        realm.update { orderedCategories.reorder(fromOffsets: source, toOffset: max(destination, foldersCount), among: categories) }
     }
 
     // MARK: - Creating a new folder
@@ -151,8 +150,7 @@ struct CategoriesEdit: View {
             sortIndex: categories.nextSortIndex,
             operationType: operationType
         )
-        modelContext.insert(newFolder)
-        try? modelContext.save()
+        realm.update { realm.add(newFolder) }
     }
 }
 
@@ -164,5 +162,5 @@ extension CategoriesEdit: Equatable {
     NavigationStack {
         CategoriesEdit()
     }
-    .modelContainer(makePreviewModelContainer())
+    .environment(\.realmConfiguration, makePreviewRealm().configuration)
 }

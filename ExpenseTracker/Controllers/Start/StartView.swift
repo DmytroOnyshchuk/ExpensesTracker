@@ -6,13 +6,13 @@
 //  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
 //
 
-import SwiftData
+import RealmSwift
 import SwiftUI
 
 struct StartView: View {
     var resetToken: Int = .zero
 
-    @Environment(\.modelContext) private var modelContext
+    @Environment(\.realm) private var realm
     @Environment(\.scenePhase) private var scenePhase
 
     @State private var input = AmountInput()
@@ -25,7 +25,7 @@ struct StartView: View {
     @State private var showAccounts = false
     @State private var selectedOperationType: OperationType = .outcome
     @AppStorage(UDKey.selectedAccount.rawValue, store: UserDefaults.shared) private var selectedAccountId = String()
-    @Query(filter: Account.available, sort: \Account.sortIndex) private var accounts: [Account]
+    @ObservedResults(Account.self, where: Account.available, sortDescriptor: RealmSwift.SortDescriptor(keyPath: "sortIndex")) private var accounts
     @StoredSettings private var appSettings
 
     private var operationType: OperationType {
@@ -37,7 +37,7 @@ struct StartView: View {
             ScrollView(.vertical) {
                 VStack(spacing: 0) {
                     if appSettings.accounting.multipleAccountsEnabled {
-                        StartBalanceCard(accounts: accounts, selected: selectedAccount, onSelect: selectAccount, action: openAccounts)
+                        StartBalanceCard(accounts: Array(accounts), selected: selectedAccount, onSelect: selectAccount, action: openAccounts)
                             .padding(.horizontal, 16)
                             .padding(.top, 12)
                         // .border(.red)
@@ -245,14 +245,14 @@ struct StartView: View {
         let previousInput = input
         let previousNote = note
 
-        modelContext.insert(transaction)
+        let realm = realm
+        realm.update { realm.add(transaction) }
         FeedbackManager.shared.transactionAdded()
         input.reset()
         note = String()
 
         UndoToastCenter.shared.show(L10n.transactionsListTransactionAdded) {
-            modelContext.delete(transaction)
-            try? modelContext.save()
+            realm.deletePermanently(transaction)
             if input.isEmpty, note.isBlank {
                 input = previousInput
                 note = previousNote
@@ -268,31 +268,31 @@ struct StartBalanceCard: View {
     let onSelect: (Account) -> Void
     let action: () -> Void
 
-    @Query(filter: Transaction.visible) private var transactions: [Transaction]
+    @ObservedResults(Transaction.self, where: Transaction.visible) private var transactions
 
     var body: some View {
-        let transactions = transactions
+        let transactions = Array(transactions)
 
         BalanceCard(accounts: accounts, selected: selected, balance: selected?.current(in: transactions), amountFor: { $0.current(in: transactions) }, onSelect: onSelect, action: action)
     }
 }
 
 extension StartBalanceCard: Equatable {
-    nonisolated static func == (lhs: StartBalanceCard, rhs: StartBalanceCard) -> Bool { lhs.accounts == rhs.accounts && lhs.selected?.persistentModelID == rhs.selected?.persistentModelID }
+    nonisolated static func == (lhs: StartBalanceCard, rhs: StartBalanceCard) -> Bool { lhs.accounts == rhs.accounts && lhs.selected == rhs.selected }
 }
 
 #Preview {
     StartView()
         .undoToast()
-        .modelContainer(makePreviewModelContainer())
+        .environment(\.realmConfiguration, makePreviewRealm().configuration)
 }
 
+@MainActor private var previewRealms: [Realm] = []
+
 @MainActor
-func makePreviewModelContainer() -> ModelContainer {
-    let container = try! ModelContainer(
-        for: Transaction.self, TransactionCategory.self, Account.self, AutoPayment.self,
-        configurations: ModelConfiguration(isStoredInMemoryOnly: true)
-    )
-    DataSeeder.seedDefaultCategories(container: container)
-    return container
+func makePreviewRealm() -> Realm {
+    let realm = try! Realm(configuration: Realm.Configuration(inMemoryIdentifier: UUID().uuidString))
+    DataSeeder.seedDefaultCategories(in: realm)
+    previewRealms.append(realm)
+    return realm
 }

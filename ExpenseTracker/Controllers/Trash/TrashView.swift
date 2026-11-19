@@ -6,7 +6,7 @@
 //  Copyright © 2026 Dmytro Onyshchuk. All rights reserved.
 //
 
-import SwiftData
+import RealmSwift
 import SwiftUI
 
 struct TrashView: View {
@@ -35,12 +35,12 @@ struct TrashView: View {
         }
     }
 
-    @Environment(\.modelContext) private var modelContext
+    @Environment(\.realm) private var realm
 
-    @Query(filter: Account.inTrash, sort: \Account.deletedAt, order: .reverse) private var accounts: [Account]
-    @Query(filter: TransactionCategory.inTrash, sort: \TransactionCategory.deletedAt, order: .reverse) private var categories: [TransactionCategory]
-    @Query(filter: AutoPayment.inTrash, sort: \AutoPayment.deletedAt, order: .reverse) private var autoPayments: [AutoPayment]
-    @Query(filter: Transaction.inTrash, sort: \Transaction.deletedAt, order: .reverse) private var transactions: [Transaction]
+    @ObservedResults(Account.self, where: Account.inTrash, sortDescriptor: RealmSwift.SortDescriptor(keyPath: "deletedAt", ascending: false)) private var accounts
+    @ObservedResults(TransactionCategory.self, where: TransactionCategory.inTrash, sortDescriptor: RealmSwift.SortDescriptor(keyPath: "deletedAt", ascending: false)) private var categories
+    @ObservedResults(AutoPayment.self, where: AutoPayment.inTrash, sortDescriptor: RealmSwift.SortDescriptor(keyPath: "deletedAt", ascending: false)) private var autoPayments
+    @ObservedResults(Transaction.self, where: Transaction.inTrash, sortDescriptor: RealmSwift.SortDescriptor(keyPath: "deletedAt", ascending: false)) private var transactions
 
     @State private var showClearConfirmation = false
     @State private var restoreTarget: Target?
@@ -49,14 +49,18 @@ struct TrashView: View {
     @State private var deleteConfirmation = String()
 
     var body: some View {
+        let accounts = Array(accounts)
+        let categories = Array(categories)
+        let transactions = Array(transactions)
         let visibleTransactions = transactions.filter { $0.category.deletedAt == nil && $0.account?.deletedAt == nil }
         let transactionsCounts = transactions.reduce(into: [UUID: Int]()) { $0[$1.category.uuid, default: 0] += 1 }
         let accountTransactionsCounts = transactions.reduce(into: [UUID: Int]()) { counts, transaction in
             guard let uuid = transaction.account?.uuid else { return }
             counts[uuid, default: 0] += 1
         }
-        let visibleAutoPayments = autoPayments.filter { $0.category?.deletedAt == nil && $0.account?.deletedAt == nil }
+        let visibleAutoPayments = Array(autoPayments).filter { $0.category?.deletedAt == nil && $0.account?.deletedAt == nil }
         let isEmpty = accounts.isEmpty && categories.isEmpty && visibleAutoPayments.isEmpty && visibleTransactions.isEmpty
+        let itemsCount: Int = accounts.count + categories.count + visibleAutoPayments.count + transactions.count
 
         List {
             if isEmpty {
@@ -81,9 +85,12 @@ struct TrashView: View {
                 }
 
                 ForEach(categories, id: \.id) { category in
+                    let count: Int = transactionsCounts[category.uuid] ?? 0
+                    let subtitle: String? = category.isDirectory ? nil : L10n.backupsTransactionsCount(count)
+
                     CategoryRow(
                         category: category,
-                        subtitle: category.isDirectory ? nil : L10n.backupsTransactionsCount(transactionsCounts[category.uuid] ?? .zero),
+                        subtitle: subtitle,
                         accessory: .none,
                         action: { askToRestore(.category(category)) }
                     )
@@ -130,10 +137,11 @@ struct TrashView: View {
                 .disabled(isEmpty)
             }
         }
+        .animation(.appStandard, value: itemsCount)
         .alert(L10n.menuTrash, isPresented: $showClearConfirmation) {
             Button(L10n.cancel, role: .cancel) {}
             Button(L10n.clear, role: .destructive) {
-                modelContext.emptyTrash()
+                realm.emptyTrash()
             }
         } message: {
             Text(L10n.trashClearConfirmation)
@@ -149,10 +157,10 @@ struct TrashView: View {
             Button(L10n.yes) {
                 withAnimation(.appStandard) {
                     switch target {
-                    case .account(let account): modelContext.restore(account)
-                    case .category(let category): modelContext.restore(category)
-                    case .autoPayment(let autoPayment): modelContext.restore(autoPayment)
-                    case .transaction(let transaction): modelContext.restore(transaction)
+                    case .account(let account): realm.restore(account)
+                    case .category(let category): realm.restore(category)
+                    case .autoPayment(let autoPayment): realm.restore(autoPayment)
+                    case .transaction(let transaction): realm.restore(transaction)
                     }
                 }
             }
@@ -170,10 +178,10 @@ struct TrashView: View {
             Button(L10n.delete, role: .destructive) {
                 withAnimation(.appStandard) {
                     switch target {
-                    case .account(let account): modelContext.deletePermanently(account)
-                    case .category(let category): modelContext.deletePermanently(category)
-                    case .autoPayment(let autoPayment): modelContext.deletePermanently(autoPayment)
-                    case .transaction(let transaction): modelContext.deletePermanently(transaction)
+                    case .account(let account): realm.deletePermanently(account)
+                    case .category(let category): realm.deletePermanently(category)
+                    case .autoPayment(let autoPayment): realm.deletePermanently(autoPayment)
+                    case .transaction(let transaction): realm.deletePermanently(transaction)
                     }
                 }
             }
@@ -250,28 +258,28 @@ extension View {
 }
 
 #Preview("Trash") {
-    let container = makePreviewModelContainer()
-    let categories = ((try? container.mainContext.fetch(FetchDescriptor<TransactionCategory>())) ?? []).filter { !$0.isDirectory }
+    let realm = makePreviewRealm()
+    let categories = Array(realm.objects(TransactionCategory.self)).filter { !$0.isDirectory }
     for (index, category) in categories.prefix(5).enumerated() {
         let transaction = Transaction(amount: (index + 1) * 36000, category: category)
-        container.mainContext.insert(transaction)
+        realm.update { realm.add(transaction) }
         if index < 3 {
-            container.mainContext.moveToTrash(transaction)
+            realm.moveToTrash(transaction)
         }
     }
     if let category = categories.dropFirst(4).first {
-        container.mainContext.moveToTrash(category)
+        realm.moveToTrash(category)
     }
 
     return NavigationStack {
         TrashView()
     }
-    .modelContainer(container)
+    .environment(\.realmConfiguration, realm.configuration)
 }
 
 #Preview("Empty trash") {
     NavigationStack {
         TrashView()
     }
-    .modelContainer(makePreviewModelContainer())
+    .environment(\.realmConfiguration, makePreviewRealm().configuration)
 }

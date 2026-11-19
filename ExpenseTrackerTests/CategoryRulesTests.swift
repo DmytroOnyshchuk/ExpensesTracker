@@ -7,33 +7,16 @@
 //
 
 @testable import ExpenseTracker
-import SwiftData
 import XCTest
 
 final class CategoryRulesTests: XCTestCase {
-    private var container: ModelContainer!
-    private var context: ModelContext!
-
-    override func setUpWithError() throws {
-        let configuration = ModelConfiguration(isStoredInMemoryOnly: true)
-        container = try ModelContainer(for: Transaction.self, TransactionCategory.self, configurations: configuration)
-        context = ModelContext(container)
-    }
-
-    override func tearDownWithError() throws {
-        context = nil
-        container = nil
-    }
-
     private func makeCategory(
         _ name: String,
         icon: CategoryIcon = CategoryIcon(name: "star", iconColor: .blue),
         isDirectory: Bool = false,
         in parent: TransactionCategory? = nil
     ) -> TransactionCategory {
-        let category = TransactionCategory(name: .custom(name), categoryIcon: icon, isDirectory: isDirectory, parentUuid: parent?.uuid)
-        context.insert(category)
-        return category
+        TransactionCategory(name: .custom(name), categoryIcon: icon, isDirectory: isDirectory, parentUuid: parent?.uuid)
     }
 
     // MARK: - Order and hierarchy
@@ -116,7 +99,6 @@ final class CategoryRulesTests: XCTestCase {
 
     func testPredefinedNameStaysPredefinedUntilRenamed() {
         let category = TransactionCategory(name: .food, categoryIcon: CategoryIcon(name: "fork.knife", iconColor: .yellow))
-        context.insert(category)
 
         var draft = CategoryDraft(category)
         XCTAssertEqual(draft.name, L10n.defaultCategoryFood)

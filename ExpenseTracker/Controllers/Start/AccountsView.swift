@@ -6,19 +6,19 @@
 //  Copyright © 2026 Dmytro Onyshchuk. All rights reserved.
 //
 
-import SwiftData
+import RealmSwift
 import SwiftUI
 
 struct AccountsView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query(filter: Account.notDeleted, sort: \Account.sortIndex) private var accounts: [Account]
-    @Query(filter: Transaction.notDeleted) private var transactions: [Transaction]
+    @Environment(\.realm) private var realm
+    @ObservedResults(Account.self, where: Account.notDeleted, sortDescriptor: RealmSwift.SortDescriptor(keyPath: "sortIndex")) private var accounts
+    @ObservedResults(Transaction.self, where: Transaction.notDeleted) private var transactions
 
     @State private var editingAccount: Account?
     @State private var showNewAccount = false
 
     var body: some View {
-        let transactions = transactions
+        let transactions = Array(transactions)
 
         List {
             ForEach(accounts, id: \.uuid) { account in
@@ -33,7 +33,7 @@ struct AccountsView: View {
                 .swipeActions(edge: .trailing, allowsFullSwipe: true) {
                     if canTurnOff(account) {
                         Button(role: .destructive) {
-                            modelContext.deleteWithUndo(account)
+                            realm.deleteWithUndo(account)
                         } label: {
                             Label(L10n.remove, systemImage: "trash")
                         }
@@ -115,18 +115,20 @@ struct AccountsView: View {
     }
 
     private func update(_ account: Account, name: String, amount: Int, currentAmount: Int, isDisabled: Bool) {
-        account.name = name
-        account.isDisabled = isDisabled
-        if amount != currentAmount {
-            account.setAmount(amount)
+        guard let account = account.live else { return }
+
+        realm.update {
+            account.name = name
+            account.isDisabled = isDisabled
+            if amount != currentAmount {
+                account.setAmount(amount)
+            }
         }
-        try? modelContext.save()
     }
 
     private func create(name: String, amount: Int) {
         let account = Account(name: name, amount: amount, sortIndex: accounts.nextSortIndex)
-        modelContext.insert(account)
-        try? modelContext.save()
+        realm.update { realm.add(account) }
     }
 }
 
@@ -307,5 +309,5 @@ struct AccountEditPopup: View {
     NavigationStack {
         AccountsView()
     }
-    .modelContainer(makePreviewModelContainer())
+    .environment(\.realmConfiguration, makePreviewRealm().configuration)
 }

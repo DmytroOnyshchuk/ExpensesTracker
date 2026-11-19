@@ -6,7 +6,7 @@
 //  Copyright © 2026 Dmytro Onyshchuk. All rights reserved.
 //
 
-import SwiftData
+import RealmSwift
 import SwiftUI
 
 struct TransactionEdit: View {
@@ -21,7 +21,7 @@ struct TransactionEdit: View {
     @State private var popup: Popup?
     @State private var showCategoryPicker = false
     @State private var amountText = String()
-    @Query(filter: Account.notDeleted, sort: \Account.sortIndex) private var storedAccounts: [Account]
+    @ObservedResults(Account.self, where: Account.notDeleted, sortDescriptor: RealmSwift.SortDescriptor(keyPath: "sortIndex")) private var storedAccounts
 
     @StoredSettings private var appSettings
 
@@ -30,7 +30,7 @@ struct TransactionEdit: View {
     @FocusState private var isNoteFocused: Bool
 
     @Environment(\.dismiss) private var dismiss
-    @Environment(\.modelContext) private var modelContext
+    @Environment(\.realm) private var realm
 
     init(transaction: Transaction) {
         self.transaction = transaction
@@ -317,27 +317,29 @@ struct TransactionEdit: View {
     }
 
     private func save() {
-        modelContext.applyWithUndo(draft, to: transaction)
+        realm.applyWithUndo(draft, to: transaction)
         dismiss()
     }
 
     private func delete() {
-        modelContext.deleteWithUndo(transaction)
+        realm.deleteWithUndo(transaction)
         dismiss()
     }
 }
 
 extension TransactionEdit: Equatable {
-    nonisolated static func == (lhs: TransactionEdit, rhs: TransactionEdit) -> Bool { lhs.transaction.persistentModelID == rhs.transaction.persistentModelID }
+    nonisolated static func == (lhs: TransactionEdit, rhs: TransactionEdit) -> Bool { lhs.transaction == rhs.transaction }
 }
 
 #Preview {
-    let container = makePreviewModelContainer()
+    let realm = makePreviewRealm()
     let category = TransactionCategory(name: "Supermarket", categoryIcon: CategoryIcon(name: "cart", iconColor: .green))
     let transaction = Transaction(amount: 36000, category: category, date: .yesterday)
-    container.mainContext.insert(category)
-    container.mainContext.insert(transaction)
+    realm.update {
+        realm.add(category)
+        realm.add(transaction)
+    }
 
     return TransactionEdit(transaction: transaction)
-        .modelContainer(container)
+        .environment(\.realmConfiguration, realm.configuration)
 }

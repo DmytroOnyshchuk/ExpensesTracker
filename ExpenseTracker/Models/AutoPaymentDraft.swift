@@ -64,9 +64,9 @@ struct AutoPaymentDraft: Equatable {
     func apply(to autoPayment: AutoPayment) {
         let isScheduleChanged = autoPayment.startDate != startDate || autoPayment.periodCount != periodCount || autoPayment.periodUnit != periodUnit
 
-        autoPayment.category = category
+        autoPayment.category = category?.live
         autoPayment.amount = amount
-        autoPayment.account = account
+        autoPayment.account = account?.live
         autoPayment.periodCount = periodCount
         autoPayment.periodUnit = periodUnit
         autoPayment.startDate = startDate
@@ -75,5 +75,9 @@ struct AutoPaymentDraft: Equatable {
         if isScheduleChanged {
             autoPayment.skipPayments(before: Date())
         }
+    }
+
+    static func == (lhs: AutoPaymentDraft, rhs: AutoPaymentDraft) -> Bool {
+        lhs.operationType == rhs.operationType && lhs.category?.uuid == rhs.category?.uuid && lhs.amount == rhs.amount && lhs.account?.uuid == rhs.account?.uuid && lhs.periodCount == rhs.periodCount && lhs.periodUnit == rhs.periodUnit && lhs.startDate == rhs.startDate && lhs.note == rhs.note
     }
 }

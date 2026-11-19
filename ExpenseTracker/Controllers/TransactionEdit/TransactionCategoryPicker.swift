@@ -6,7 +6,7 @@
 //  Copyright © 2026 Dmytro Onyshchuk. All rights reserved.
 //
 
-import SwiftData
+import RealmSwift
 import SwiftUI
 
 struct TransactionCategoryPicker: View {
@@ -14,10 +14,10 @@ struct TransactionCategoryPicker: View {
     var operationType: OperationType = .outcome
     let onSelect: (TransactionCategory) -> Void
 
-    @Query(filter: TransactionCategory.notDeleted) private var storedCategories: [TransactionCategory]
+    @ObservedResults(TransactionCategory.self, where: TransactionCategory.notDeleted) private var storedCategories
 
     private var categories: [TransactionCategory] { storedCategories.of(operationType) }
-    @Environment(\.modelContext) private var modelContext
+    @Environment(\.realm) private var realm
     @State private var openedFolder: TransactionCategory?
 
     private var visibleCategories: [TransactionCategory] {
@@ -52,18 +52,19 @@ struct TransactionCategoryPicker: View {
 
     private func moveCategories(from source: IndexSet, to destination: Int) {
         let foldersCount = visibleCategories.count(where: \.isDirectory)
-        visibleCategories.reorder(fromOffsets: source, toOffset: max(destination, foldersCount), among: categories)
-        try? modelContext.save()
+        let visibleCategories = visibleCategories
+        let categories = categories
+        realm.update { visibleCategories.reorder(fromOffsets: source, toOffset: max(destination, foldersCount), among: categories) }
     }
 }
 
 extension TransactionCategoryPicker: Equatable {
-    nonisolated static func == (lhs: TransactionCategoryPicker, rhs: TransactionCategoryPicker) -> Bool { lhs.folder?.persistentModelID == rhs.folder?.persistentModelID && lhs.operationType == rhs.operationType }
+    nonisolated static func == (lhs: TransactionCategoryPicker, rhs: TransactionCategoryPicker) -> Bool { lhs.folder == rhs.folder && lhs.operationType == rhs.operationType }
 }
 
 #Preview {
     NavigationStack {
         TransactionCategoryPicker(onSelect: { _ in })
     }
-    .modelContainer(makePreviewModelContainer())
+    .environment(\.realmConfiguration, makePreviewRealm().configuration)
 }

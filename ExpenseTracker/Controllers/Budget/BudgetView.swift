@@ -6,7 +6,7 @@
 //  Copyright © 2026 Dmytro Onyshchuk. All rights reserved.
 //
 
-import SwiftData
+import RealmSwift
 import SwiftUI
 
 enum BudgetTarget: Identifiable {
@@ -31,10 +31,10 @@ enum BudgetTarget: Identifiable {
 struct BudgetView: View {
     var resetToken: Int = .zero
 
-    @Environment(\.modelContext) private var modelContext
+    @Environment(\.realm) private var realm
 
-    @Query(filter: Transaction.visible) private var storedTransactions: [Transaction]
-    @Query(filter: TransactionCategory.nonDirectories) private var storedCategories: [TransactionCategory]
+    @ObservedResults(Transaction.self, where: Transaction.visible) private var storedTransactions
+    @ObservedResults(TransactionCategory.self, where: TransactionCategory.nonDirectories) private var storedCategories
     @AppStorage(UDKey.budget.rawValue, store: UserDefaults.shared) private var budgetData: Data?
 
     @State private var target: BudgetTarget?
@@ -72,6 +72,7 @@ struct BudgetView: View {
             }
         }
         .animation(.appStandard, value: target?.id)
+        .animation(.appStandard, value: categories.map(\.budget))
     }
 
     private var monthlyLimit: Int {
@@ -93,8 +94,9 @@ struct BudgetView: View {
                 budget.setMonthly(amount)
                 budgetData = budget.jsonData()
             case let .category(category):
-                category.budget = amount
-                try? modelContext.save()
+                if let category = category.live {
+                    realm.update { category.budget = amount }
+                }
             }
         }
     }
@@ -445,20 +447,22 @@ struct BudgetProgressBar: View {
 }
 
 #Preview("Budget") {
-    let container = makePreviewModelContainer()
-    let categories = (try? container.mainContext.fetch(FetchDescriptor<TransactionCategory>())) ?? []
+    let realm = makePreviewRealm()
+    let categories = Array(realm.objects(TransactionCategory.self))
     for (index, category) in categories.filter({ !$0.isDirectory }).prefix(5).enumerated() {
-        container.mainContext.insert(Transaction(amount: (index + 1) * 29000, category: category, date: Date()))
-        category.budget = index < 3 ? 60000 : 0
+        realm.update {
+            realm.add(Transaction(amount: (index + 1) * 29000, category: category, date: Date()))
+            category.budget = index < 3 ? 60000 : 0
+        }
     }
 
     return BudgetView()
-        .modelContainer(container)
+        .environment(\.realmConfiguration, realm.configuration)
 }
 
 #Preview("Empty budget") {
     BudgetView()
-        .modelContainer(makePreviewModelContainer())
+        .environment(\.realmConfiguration, makePreviewRealm().configuration)
 }
 
 #Preview("Budget cards") {
