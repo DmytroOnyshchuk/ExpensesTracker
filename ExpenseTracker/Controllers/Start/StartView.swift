@@ -19,6 +19,8 @@ struct StartView: View {
     @State private var showHistory = false
     @State private var note = String()
     @State private var showNoteInput = false
+    @State private var transactionDay: Date?
+    @State private var showDatePopup = false
     @State private var amountAttentionTrigger: Int = .zero
     @State private var showAccounts = false
     @State private var selectedOperationType: OperationType = .outcome
@@ -50,6 +52,7 @@ struct StartView: View {
                                 if appSettings.accounting.incomeEnabled {
                                     operationTypeButton
                                 }
+                                dateButton
                                 noteButton
                             }
                             // .padding(.bottom, 12)
@@ -87,6 +90,12 @@ struct StartView: View {
             if showNoteInput {
                 NoteInputView(note: $note, isPresented: $showNoteInput)
                     .transition(.opacity)
+            } else if showDatePopup {
+                TransactionDatePopup(date: transactionDay ?? Date(), onCancel: closeDatePopup) { date in
+                    transactionDay = Calendar.current.isDateInToday(date) ? nil : date
+                    closeDatePopup()
+                }
+                .transition(.opacity)
             }
         }
         .onAppear(perform: FeedbackManager.shared.prepare)
@@ -101,6 +110,7 @@ struct StartView: View {
             }
         }
         .animation(.easeInOut(duration: 0.2), value: showNoteInput)
+        .animation(.easeInOut(duration: 0.2), value: showDatePopup)
     }
 
     private var isAmountEntered: Bool {
@@ -128,6 +138,24 @@ struct StartView: View {
                     fallback: .appLabel.opacity(note.isBlank ? 0.1 : 0.3)
                 )
         }
+    }
+
+    private var dateButton: some View {
+        let isSet = transactionDay != nil
+
+        return Button(action: openDatePopup) {
+            Image(systemName: "calendar")
+                .font(.system(size: 20))
+                .foregroundColor(isSet ? .appWhite : .appLabel)
+                .frame(width: 48, height: 50)
+                .glassSurface(
+                    in: UnevenRoundedRectangle(topLeadingRadius: 25, bottomLeadingRadius: 25),
+                    tint: isSet ? .appPrimary.opacity(0.3) : nil,
+                    isInteractive: true,
+                    fallback: isSet ? Color.appPrimary.opacity(0.3) : Color.appLabel.opacity(0.1)
+                )
+        }
+        .accessibilityLabel(L10n.transactionEditDate)
     }
 
     private var operationTypeButton: some View {
@@ -170,6 +198,24 @@ struct StartView: View {
         showNoteInput = true
     }
 
+    private func openDatePopup() {
+        FeedbackManager.shared.buttonTapped()
+        showDatePopup = true
+    }
+
+    private func closeDatePopup() {
+        showDatePopup = false
+    }
+
+    private func transactionDate() -> Date {
+        let now = Date()
+        guard let transactionDay else { return now }
+
+        let calendar = Calendar.current
+        let time = calendar.dateComponents([.hour, .minute, .second], from: now)
+        return calendar.date(bySettingHour: time.hour ?? .zero, minute: time.minute ?? .zero, second: time.second ?? .zero, of: transactionDay) ?? transactionDay
+    }
+
     private func toggleOperationType() {
         FeedbackManager.shared.buttonTapped()
         withAnimation(.easeInOut(duration: 0.25)) {
@@ -197,7 +243,7 @@ struct StartView: View {
         let transaction = Transaction(
             amount: input.amount,
             category: category,
-            date: Date(),
+            date: transactionDate(),
             note: note.isBlank ? nil : note,
             account: selectedAccount
         )
