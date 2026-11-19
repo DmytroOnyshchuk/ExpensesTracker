@@ -33,10 +33,6 @@ struct CategoriesEdit: View {
         self.showsOperationTypePicker = operationType == nil
     }
 
-    private var orderedCategories: [TransactionCategory] {
-        categories.inDisplayOrder
-    }
-
     private var transactionsCounts: [UUID: Int] {
         let transactions = transactions
         let period = StatisticsPeriod.year
@@ -52,31 +48,22 @@ struct CategoriesEdit: View {
     var body: some View {
         let transactionsCounts = transactionsCounts
 
-        List {
+        Group {
             if showsOperationTypePicker, appSettings.accounting.incomeEnabled {
-                SegmentedControl(items: OperationType.allCases, selection: $operationType, title: \.title)
-                    .sensoryFeedback(trigger: operationType) { _, _ in FeedbackManager.shared.selectionFeedback }
-                    .padding(.horizontal, 40)
-                    .listRowBackground(Color.clear)
-                    .listRowSeparator(.hidden)
-            }
+                VStack(spacing: 0) {
+                    SegmentedControl(items: OperationType.allCases, selection: $operationType, title: \.title)
+                        .sensoryFeedback(trigger: operationType) { _, _ in FeedbackManager.shared.selectionFeedback }
+                        .padding(.horizontal, 56)
+                        .padding(.vertical, 8)
 
-            ForEach(orderedCategories, id: \.id) { category in
-                CategoryRow(
-                    category: category,
-                    subtitle: category.parent(from: categories)?.name.localized,
-                    transactionsCount: category.isDirectory ? nil : transactionsCounts[category.uuid] ?? .zero,
-                    accessory: category.isDirectory ? .none : .reorder
-                ) {
-                    selectedCategory = category
+                    PeriodPager(count: OperationType.allCases.count, selection: pageSelection) { index in
+                        categoriesList(of: OperationType.allCases[index], transactionsCounts: transactionsCounts)
+                    }
                 }
-                .moveDisabled(category.isDirectory)
-                .categoryListRow(isLast: category.id == orderedCategories.last?.id)
+            } else {
+                categoriesList(of: operationType, transactionsCounts: transactionsCounts)
             }
-            .onMove(perform: moveCategories)
         }
-        .listStyle(.plain)
-        .scrollContentBackground(.hidden)
         .appBackground()
         .navigationTitle(L10n.categoriesEditTitle)
         .toolbar {
@@ -113,7 +100,39 @@ struct CategoriesEdit: View {
         }
     }
 
-    private func moveCategories(from source: IndexSet, to destination: Int) {
+    private var pageSelection: Binding<Int> {
+        Binding(
+            get: { OperationType.allCases.firstIndex(of: operationType) ?? .zero },
+            set: { operationType = OperationType.allCases[$0] }
+        )
+    }
+
+    private func categoriesList(of type: OperationType, transactionsCounts: [UUID: Int]) -> some View {
+        let categories = storedCategories.of(type)
+        let orderedCategories = categories.inDisplayOrder
+
+        return List {
+            ForEach(orderedCategories, id: \.id) { category in
+                CategoryRow(
+                    category: category,
+                    subtitle: category.parent(from: categories)?.name.localized,
+                    transactionsCount: category.isDirectory ? nil : transactionsCounts[category.uuid] ?? .zero,
+                    accessory: category.isDirectory ? .none : .reorder
+                ) {
+                    selectedCategory = category
+                }
+                .moveDisabled(category.isDirectory)
+                .categoryListRow(isLast: category.id == orderedCategories.last?.id)
+            }
+            .onMove { source, destination in
+                moveCategories(orderedCategories, from: source, to: destination, among: categories)
+            }
+        }
+        .listStyle(.plain)
+        .scrollContentBackground(.hidden)
+    }
+
+    private func moveCategories(_ orderedCategories: [TransactionCategory], from source: IndexSet, to destination: Int, among categories: [TransactionCategory]) {
         let foldersCount = orderedCategories.count(where: \.isDirectory)
         orderedCategories.reorder(fromOffsets: source, toOffset: max(destination, foldersCount), among: categories)
         try? modelContext.save()
