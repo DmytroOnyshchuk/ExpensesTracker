@@ -389,6 +389,7 @@ struct BudgetSetupPopup: View {
 
     @State private var text: String
     @State private var schedule: BudgetSchedule
+    @State private var showStartList = false
     @FocusState private var isFocused: Bool
 
     init(limit: Int, schedule: BudgetSchedule, onRemove: (() -> Void)?, onCancel: @escaping () -> Void, onConfirm: @escaping (Int, BudgetSchedule) -> Void) {
@@ -432,48 +433,65 @@ struct BudgetSetupPopup: View {
     }
 
     private var startRow: some View {
-        HStack(spacing: 12) {
-            Text(L10n.autopaymentsStartDate)
-                .font(.appLight(16))
-                .foregroundColor(.appLabel)
-                .lineLimit(1)
-                .minimumScaleFactor(0.7)
+        Button(action: openStartList) {
+            HStack(spacing: 12) {
+                Text(L10n.autopaymentsStartDate)
+                    .font(.appLight(16))
+                    .foregroundColor(.appLabel)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
 
-            Spacer(minLength: 8)
+                Spacer(minLength: 8)
 
-            Menu {
-                switch schedule.period {
-                case .month:
-                    Picker("", selection: $schedule.monthDay) {
-                        ForEach(BudgetSchedule.monthDays, id: \.self) { day in
-                            Text(String(day)).tag(day)
-                        }
-                    }
-                case .week:
-                    Picker("", selection: $schedule.weekday) {
-                        ForEach(BudgetSchedule.weekdays, id: \.self) { weekday in
-                            Text(BudgetSchedule.weekdayName(weekday)).tag(weekday)
-                        }
-                    }
-                }
-            } label: {
-                HStack(spacing: 4) {
-                    Text(schedule.startTitle)
-                        .font(.appRegular(16))
-                        .foregroundColor(.appWhite)
-                        .lineLimit(1)
+                Text(schedule.startTitle)
+                    .font(.appRegular(16))
+                    .foregroundColor(.appWhite)
+                    .lineLimit(1)
 
-                    Image(systemName: "chevron.up.chevron.down")
-                        .font(.system(size: 11, weight: .semibold))
-                        .foregroundColor(.appLabel)
-                }
-                .frame(height: 48)
-                .contentShape(Rectangle())
+                Image(systemName: "chevron.up.chevron.down")
+                    .font(.system(size: 11, weight: .semibold))
+                    .foregroundColor(.appLabel)
+            }
+            .padding(.horizontal, 16)
+            .frame(height: 48)
+            .background(.appMain.opacity(LiquidGlass.isAvailable ? 0.5 : 1), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+            .contentShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+        }
+        .buttonStyle(.plain)
+        .popover(isPresented: $showStartList, attachmentAnchor: .rect(.bounds), arrowEdge: .top) {
+            startList
+                .presentationCompactAdaptation(.popover)
+                .legacyPresentationBackground(.appSecond)
+        }
+    }
+
+    @ViewBuilder
+    private var startList: some View {
+        switch schedule.period {
+        case .month:
+            BudgetStartList(items: Array(BudgetSchedule.monthDays), selected: schedule.monthDay, title: { String($0) }) { day in
+                schedule.monthDay = day
+                showStartList = false
+            }
+        case .week:
+            BudgetStartList(items: BudgetSchedule.weekdays, selected: schedule.weekday, title: BudgetSchedule.weekdayName) { weekday in
+                schedule.weekday = weekday
+                showStartList = false
             }
         }
-        .padding(.horizontal, 16)
-        .frame(height: 48)
-        .background(.appMain.opacity(LiquidGlass.isAvailable ? 0.5 : 1), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+    }
+
+    private func openStartList() {
+        guard isFocused else {
+            showStartList = true
+            return
+        }
+
+        isFocused = false
+        Task {
+            try? await Task.sleep(for: .milliseconds(350))
+            showStartList = true
+        }
     }
 
     private func finish(_ action: () -> Void) {
@@ -484,6 +502,50 @@ struct BudgetSetupPopup: View {
     private func confirm() {
         isFocused = false
         onConfirm(AmountInput.amount(from: text), schedule)
+    }
+}
+
+struct BudgetStartList: View {
+    let items: [Int]
+    let selected: Int
+    let title: (Int) -> String
+    let onSelect: (Int) -> Void
+
+    var body: some View {
+        ScrollViewReader { proxy in
+            ScrollView(.vertical) {
+                LazyVStack(spacing: 0) {
+                    ForEach(items, id: \.self) { item in
+                        Button {
+                            onSelect(item)
+                        } label: {
+                            HStack(spacing: 12) {
+                                Text(title(item))
+                                    .font(.appLight(18))
+                                    .lineLimit(1)
+                                    .minimumScaleFactor(0.7)
+
+                                Spacer(minLength: 0)
+
+                                if item == selected {
+                                    Image(systemName: "checkmark")
+                                }
+                            }
+                            .foregroundColor(.appWhite)
+                            .padding(.horizontal, 16)
+                            .frame(height: 48)
+                            .contentShape(Rectangle())
+                        }
+                        .buttonStyle(.plain)
+                        .id(item)
+                    }
+                }
+            }
+            .onAppear {
+                proxy.scrollTo(selected, anchor: .center)
+            }
+        }
+        .frame(width: 220, height: min(items.count.cgFloat * 48, 336))
     }
 }
 
