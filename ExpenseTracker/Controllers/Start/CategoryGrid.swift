@@ -15,7 +15,7 @@ struct CategoryGrid: View {
     var onSelect: (TransactionCategory) -> Bool
 
     @State private var currentPage: Int? = .zero
-    @State private var showAllCategories = false
+    @State private var editedOperationType: OperationType?
     @State private var navigateToEditCategories = false
 
     private var gridLayout: [GridItem] {
@@ -43,7 +43,7 @@ struct CategoryGrid: View {
 
                                 if pageIndex == chunkedCategories.count - 1 {
                                     EditCategoriesCell {
-                                        showAllCategories = true
+                                        editedOperationType = operationType
                                     }
                                 }
                             }
@@ -79,7 +79,7 @@ struct CategoryGrid: View {
                 .padding(.top, 16)
             }
         }
-        .navigationDestination(isPresented: $showAllCategories) {
+        .navigationDestination(item: $editedOperationType) { operationType in
             CategoriesEdit(operationType: operationType)
         }
     }

@@ -27,10 +27,6 @@ struct CategoriesEdit: View {
     }
 }
 
-extension CategoriesEdit: Equatable {
-    nonisolated static func == (lhs: CategoriesEdit, rhs: CategoriesEdit) -> Bool { lhs.operationType == rhs.operationType }
-}
-
 struct CategoriesEditCounts: View {
     let interval: DateInterval
     let operationType: OperationType?

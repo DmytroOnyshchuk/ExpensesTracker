@@ -84,10 +84,6 @@ struct ExpensesChartView: View {
     }
 }
 
-extension ExpensesChartView: Equatable {
-    nonisolated static func == (lhs: ExpensesChartView, rhs: ExpensesChartView) -> Bool { lhs.operationType == rhs.operationType }
-}
-
 struct ExpensesChart: View {
     let period: StatisticsPeriod
     let amounts: [Date: Int]

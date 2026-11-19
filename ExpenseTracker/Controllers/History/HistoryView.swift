@@ -189,10 +189,6 @@ struct HistoryView: View {
     }
 }
 
-extension HistoryView: Equatable {
-    nonisolated static func == (lhs: HistoryView, rhs: HistoryView) -> Bool { true }
-}
-
 #Preview("History") {
     let container = makePreviewModelContainer()
     let categories = (try? container.mainContext.fetch(FetchDescriptor<TransactionCategory>())) ?? []

@@ -80,10 +80,6 @@ struct StatisticsView: View {
     }
 }
 
-extension StatisticsView: Equatable {
-    nonisolated static func == (lhs: StatisticsView, rhs: StatisticsView) -> Bool { lhs.resetToken == rhs.resetToken && lhs.directory?.persistentModelID == rhs.directory?.persistentModelID && lhs.initialDate == rhs.initialDate }
-}
-
 struct StatisticsContent: View {
     let resetToken: Int
     let scope: StatisticsScope

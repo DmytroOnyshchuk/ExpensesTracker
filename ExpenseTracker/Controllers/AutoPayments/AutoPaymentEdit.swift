@@ -19,7 +19,7 @@ struct AutoPaymentEdit: View {
 
     @State private var draft: AutoPaymentDraft?
     @State private var popup: Popup?
-    @State private var showCategoryPicker = false
+    @State private var pickerOperationType: OperationType?
     @State private var amountText = String()
     @Query(filter: Account.notDeleted, sort: \Account.sortIndex) private var storedAccounts: [Account]
 
@@ -126,10 +126,10 @@ struct AutoPaymentEdit: View {
                     draftBinding.wrappedValue.amount = AmountInput.amount(from: text)
                 }
             }
-            .navigationDestination(isPresented: $showCategoryPicker) {
-                TransactionCategoryPicker(operationType: current.operationType) { category in
+            .navigationDestination(item: $pickerOperationType) { operationType in
+                TransactionCategoryPicker(operationType: operationType) { category in
                     draftBinding.wrappedValue.category = category
-                    showCategoryPicker = false
+                    pickerOperationType = nil
                 }
             }
         }
@@ -143,7 +143,7 @@ struct AutoPaymentEdit: View {
         VStack(spacing: 12) {
             Button {
                 hideKeyboard()
-                showCategoryPicker = true
+                pickerOperationType = current.operationType
             } label: {
                 VStack(spacing: 4) {
                     categoryIcon
@@ -339,10 +339,6 @@ struct AutoPaymentEdit: View {
         }
         dismiss()
     }
-}
-
-extension AutoPaymentEdit: Equatable {
-    nonisolated static func == (lhs: AutoPaymentEdit, rhs: AutoPaymentEdit) -> Bool { lhs.autoPayment?.persistentModelID == rhs.autoPayment?.persistentModelID }
 }
 
 struct AutoPaymentPeriodPopup: View {

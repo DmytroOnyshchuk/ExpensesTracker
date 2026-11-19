@@ -65,10 +65,6 @@ struct AutoPaymentsView: View {
     }
 }
 
-extension AutoPaymentsView: Equatable {
-    nonisolated static func == (lhs: AutoPaymentsView, rhs: AutoPaymentsView) -> Bool { true }
-}
-
 struct AutoPaymentRow: View {
     let autoPayment: AutoPayment
     let action: () -> Void

@@ -9,6 +9,11 @@
 import SwiftData
 import SwiftUI
 
+enum StartDestination: Hashable {
+    case history
+    case accounts
+}
+
 struct StartView: View {
     var resetToken: Int = .zero
 
@@ -16,13 +21,12 @@ struct StartView: View {
     @Environment(\.scenePhase) private var scenePhase
 
     @State private var input = AmountInput()
-    @State private var showHistory = false
+    @State private var destination: StartDestination?
     @State private var note = String()
     @State private var showNoteInput = false
     @State private var transactionDay: Date?
     @State private var showDatePopup = false
     @State private var amountAttentionTrigger: Int = .zero
-    @State private var showAccounts = false
     @State private var selectedOperationType: OperationType = .outcome
     @AppStorage(UDKey.selectedAccount.rawValue, store: UserDefaults.shared) private var selectedAccountId = String()
     @Query(filter: Account.available, sort: \Account.sortIndex) private var accounts: [Account]
@@ -79,11 +83,11 @@ struct StartView: View {
                 .animation(.appStandard, value: showCategories)
             }
             .appBackground()
-            .navigationDestination(isPresented: $showHistory) {
-                HistoryView()
-            }
-            .navigationDestination(isPresented: $showAccounts) {
-                AccountsView()
+            .navigationDestination(item: $destination) { destination in
+                switch destination {
+                case .history: HistoryView()
+                case .accounts: AccountsView()
+                }
             }
         }
         .overlay {
@@ -184,7 +188,7 @@ struct StartView: View {
 
     private func openHistory() {
         FeedbackManager.shared.buttonTapped()
-        showHistory = true
+        destination = .history
     }
 
     private func openNoteInput() {
@@ -219,7 +223,7 @@ struct StartView: View {
 
     private func openAccounts() {
         FeedbackManager.shared.buttonTapped()
-        showAccounts = true
+        destination = .accounts
     }
 
     private func selectAccount(_ account: Account) {

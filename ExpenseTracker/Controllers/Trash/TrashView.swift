@@ -183,10 +183,6 @@ struct TrashView: View {
     }
 }
 
-extension TrashView: Equatable {
-    nonisolated static func == (lhs: TrashView, rhs: TrashView) -> Bool { true }
-}
-
 extension TrashView {
     private func askToRestore(_ target: Target) {
         restoreConfirmation = target.restoreConfirmation

@@ -183,10 +183,6 @@ struct BackupsView: View {
     }
 }
 
-extension BackupsView: Equatable {
-    nonisolated static func == (lhs: BackupsView, rhs: BackupsView) -> Bool { true }
-}
-
 private struct BackupImportModifier: ViewModifier {
     @Binding var fileURL: URL?
 

@@ -19,7 +19,7 @@ struct TransactionEdit: View {
 
     @State private var draft: TransactionDraft
     @State private var popup: Popup?
-    @State private var showCategoryPicker = false
+    @State private var pickerOperationType: OperationType?
     @State private var amountText = String()
     @Query(filter: Account.notDeleted, sort: \Account.sortIndex) private var storedAccounts: [Account]
 
@@ -113,10 +113,10 @@ struct TransactionEdit: View {
                     draft.amount = AmountInput.amount(from: text)
                 }
             }
-            .navigationDestination(isPresented: $showCategoryPicker) {
-                TransactionCategoryPicker(operationType: draft.category.operationType) { category in
+            .navigationDestination(item: $pickerOperationType) { operationType in
+                TransactionCategoryPicker(operationType: operationType) { category in
                     draft.category = category
-                    showCategoryPicker = false
+                    pickerOperationType = nil
                 }
             }
         }
@@ -131,7 +131,7 @@ struct TransactionEdit: View {
             Button {
                 isAmountFocused = false
                 isNoteFocused = false
-                showCategoryPicker = true
+                pickerOperationType = draft.category.operationType
             } label: {
                 VStack(spacing: 4) {
                     draft.category.categoryIcon.image
@@ -325,10 +325,6 @@ struct TransactionEdit: View {
         modelContext.deleteWithUndo(transaction)
         dismiss()
     }
-}
-
-extension TransactionEdit: Equatable {
-    nonisolated static func == (lhs: TransactionEdit, rhs: TransactionEdit) -> Bool { lhs.transaction.persistentModelID == rhs.transaction.persistentModelID }
 }
 
 #Preview {

@@ -130,10 +130,6 @@ struct AccountsView: View {
     }
 }
 
-extension AccountsView: Equatable {
-    nonisolated static func == (lhs: AccountsView, rhs: AccountsView) -> Bool { true }
-}
-
 struct AccountRow: View {
     let name: String
     let amount: Int

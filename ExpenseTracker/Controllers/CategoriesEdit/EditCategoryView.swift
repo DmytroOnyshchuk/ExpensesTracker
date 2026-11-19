@@ -396,10 +396,6 @@ struct EditCategoryView: View {
     }
 }
 
-extension EditCategoryView: Equatable {
-    nonisolated static func == (lhs: EditCategoryView, rhs: EditCategoryView) -> Bool { lhs.category?.persistentModelID == rhs.category?.persistentModelID }
-}
-
 #Preview("New category") {
     EditCategoryView()
         .modelContainer(makePreviewModelContainer())

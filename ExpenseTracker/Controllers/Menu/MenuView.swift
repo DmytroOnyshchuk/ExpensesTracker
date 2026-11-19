@@ -72,17 +72,21 @@ enum MenuSection: CaseIterable, Identifiable {
     }
 }
 
+enum MenuDestination: Hashable {
+    case statistics
+    case categories
+    case settings
+    case accounting
+    case autoPayments
+    case backups
+    case about
+    case trash
+}
+
 struct MenuView: View {
     var isActive = true
 
-    @State private var showStatistics = false
-    @State private var showCategories = false
-    @State private var showSettings = false
-    @State private var showAccountingSettings = false
-    @State private var showAutoPayments = false
-    @State private var showBackups = false
-    @State private var showAbout = false
-    @State private var showTrash = false
+    @State private var destination: MenuDestination?
 
     var body: some View {
         ScrollView(.vertical) {
@@ -122,29 +126,17 @@ struct MenuView: View {
         .appBackground()
         .navigationTitle(L10n.menuTitle)
         .navigationBarTitleDisplayMode(.inline)
-        .navigationDestination(isPresented: $showStatistics) {
-            StatisticsView()
-        }
-        .navigationDestination(isPresented: $showCategories) {
-            CategoriesEdit()
-        }
-        .navigationDestination(isPresented: $showSettings) {
-            SettingsView()
-        }
-        .navigationDestination(isPresented: $showAccountingSettings) {
-            AccountingSettingsView()
-        }
-        .navigationDestination(isPresented: $showAutoPayments) {
-            AutoPaymentsView()
-        }
-        .navigationDestination(isPresented: $showBackups) {
-            BackupsView()
-        }
-        .navigationDestination(isPresented: $showAbout) {
-            AboutView()
-        }
-        .navigationDestination(isPresented: $showTrash) {
-            TrashView()
+        .navigationDestination(item: $destination) { destination in
+            switch destination {
+            case .statistics: StatisticsView()
+            case .categories: CategoriesEdit()
+            case .settings: SettingsView()
+            case .accounting: AccountingSettingsView()
+            case .autoPayments: AutoPaymentsView()
+            case .backups: BackupsView()
+            case .about: AboutView()
+            case .trash: TrashView()
+            }
         }
     }
 
@@ -155,20 +147,20 @@ struct MenuView: View {
     private func open(_ item: MenuItem) {
         FeedbackManager.shared.buttonTapped()
         switch item {
-        case .categories: showCategories = true
-        case .settings: showSettings = true
-        case .accounting: showAccountingSettings = true
-        case .autoPayments: showAutoPayments = true
-        case .backups: showBackups = true
+        case .categories: destination = .categories
+        case .settings: destination = .settings
+        case .accounting: destination = .accounting
+        case .autoPayments: destination = .autoPayments
+        case .backups: destination = .backups
         case .language: UIApplication.shared.openSettings()
-        case .about: showAbout = true
-        case .trash: showTrash = true
+        case .about: destination = .about
+        case .trash: destination = .trash
         }
     }
 
     private func openStatistics() {
         FeedbackManager.shared.buttonTapped()
-        showStatistics = true
+        destination = .statistics
     }
 }
 

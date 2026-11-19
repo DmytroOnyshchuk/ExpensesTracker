@@ -118,10 +118,6 @@ struct TransactionDetails: View {
     }
 }
 
-extension TransactionDetails: Equatable {
-    nonisolated static func == (lhs: TransactionDetails, rhs: TransactionDetails) -> Bool { lhs.category.persistentModelID == rhs.category.persistentModelID && lhs.interval == rhs.interval }
-}
-
 struct TransactionDetailsRow: View {
     let transaction: Transaction
 

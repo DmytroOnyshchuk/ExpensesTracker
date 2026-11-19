@@ -57,10 +57,6 @@ struct TransactionCategoryPicker: View {
     }
 }
 
-extension TransactionCategoryPicker: Equatable {
-    nonisolated static func == (lhs: TransactionCategoryPicker, rhs: TransactionCategoryPicker) -> Bool { lhs.folder?.persistentModelID == rhs.folder?.persistentModelID && lhs.operationType == rhs.operationType }
-}
-
 #Preview {
     NavigationStack {
         TransactionCategoryPicker(onSelect: { _ in })
