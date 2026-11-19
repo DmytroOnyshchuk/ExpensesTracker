@@ -152,6 +152,8 @@ internal enum L10n {
   internal static let budgetNoLimit = L10n.tr("Localizable", "BUDGET_NO_LIMIT", fallback: "No limit")
   /// Set
   internal static let budgetSet = L10n.tr("Localizable", "BUDGET_SET", fallback: "Set")
+  /// Spent
+  internal static let budgetSpent = L10n.tr("Localizable", "BUDGET_SPENT", fallback: "Spent")
   /// Cancel
   internal static let cancel = L10n.tr("Localizable", "CANCEL", fallback: "Cancel")
   /// Cancel

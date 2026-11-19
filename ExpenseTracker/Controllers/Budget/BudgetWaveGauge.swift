@@ -43,6 +43,7 @@ struct BudgetWaveShape: Shape {
 struct BudgetWaveGauge: View {
     let spent: Int
     let limit: Int
+    var showsSpent = false
     var size: CGFloat = 209
 
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
@@ -54,7 +55,7 @@ struct BudgetWaveGauge: View {
 
     private var fraction: Double {
         guard limit > .zero else { return .zero }
-        return min(max(remaining.double / limit.double, .zero), 1)
+        return min(max((showsSpent ? spent : remaining).double / limit.double, .zero), 1)
     }
 
     var body: some View {
@@ -86,11 +87,12 @@ struct BudgetWaveGauge: View {
         }
         .overlay {
             VStack(spacing: 2) {
-                Text(L10n.budgetAvailable)
+                Text(showsSpent ? L10n.budgetSpent : L10n.budgetAvailable)
                     .font(.appLight(14))
                     .foregroundColor(.appWhite.opacity(0.8))
+                    .contentTransition(.opacity)
 
-                Text(remaining.getAmount())
+                Text((showsSpent ? spent : remaining).getAmount())
                     .font(.appRegular(30))
                     .foregroundColor(.appWhite)
                     .contentTransition(.numericText())
@@ -102,6 +104,7 @@ struct BudgetWaveGauge: View {
         }
         .frame(width: size, height: size)
         .animation(.appSlow, value: level)
+        .animation(.appStandard, value: showsSpent)
         .onAppear {
             isFilled = true
         }
@@ -111,7 +114,7 @@ struct BudgetWaveGauge: View {
 #Preview("Budget wave gauge") {
     VStack(spacing: 24) {
         BudgetWaveGauge(spent: 825800, limit: 1500000)
-        BudgetWaveGauge(spent: 120000, limit: 1500000, size: 140)
+        BudgetWaveGauge(spent: 120000, limit: 1500000, showsSpent: true, size: 140)
         BudgetWaveGauge(spent: 71800, limit: 12500, size: 140)
     }
     .frame(maxWidth: .infinity, maxHeight: .infinity)

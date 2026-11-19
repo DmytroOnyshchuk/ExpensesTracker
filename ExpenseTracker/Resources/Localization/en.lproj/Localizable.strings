@@ -38,6 +38,7 @@
 "STARTVIEW_BALANCE" = "Balance";
 
 // MARK: - Budget
+"BUDGET_SPENT" = "Spent";
 "BUDGET_AVAILABLE" = "Available";
 "BUDGET_LEFT" = "Left: %@";
 "BUDGET_EXCEEDED" = "Exceeded by %@";

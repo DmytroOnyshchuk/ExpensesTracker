@@ -254,7 +254,7 @@ struct BudgetMonthPage: View {
     private var monthHeader: some View {
         let index = range.index(of: month)
 
-        return HStack(spacing: 12) {
+        return HStack(spacing: 16) {
             monthArrow(systemImage: "chevron.left", target: index - 1)
 
             Text(StatisticsPeriod.month.title(for: month))
@@ -306,13 +306,15 @@ struct MonthBudgetCard: View {
     let limit: Int
     let action: () -> Void
 
+    @AppStorage(UDKey.budgetShowsSpent.rawValue, store: UserDefaults.shared) private var showsSpent = false
+
     private var hasLimit: Bool { limit > .zero }
 
     var body: some View {
-        Button(action: action) {
+        Button(action: hasLimit ? toggleMode : action) {
             VStack(alignment: .leading, spacing: 8) {
                 if hasLimit {
-                    BudgetWaveGauge(spent: spent, limit: limit)
+                    BudgetWaveGauge(spent: spent, limit: limit, showsSpent: showsSpent)
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 8)
                 }
@@ -339,6 +341,24 @@ struct MonthBudgetCard: View {
             .contentShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
         }
         .buttonStyle(.plain)
+        .overlay(alignment: .topTrailing) {
+            if hasLimit {
+                Button(action: action) {
+                    Image(systemName: "gearshape.fill")
+                        .font(.system(size: 20))
+                        .foregroundColor(.appLabel)
+                        .frame(width: 52, height: 52)
+                        .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel(L10n.budgetForMonth)
+            }
+        }
+    }
+
+    private func toggleMode() {
+        FeedbackManager.shared.selectionChanged()
+        showsSpent.toggle()
     }
 }
 

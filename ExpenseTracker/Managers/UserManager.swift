@@ -10,6 +10,7 @@ enum UDKey: String {
     case budget = "UDKey.budget"
     case appSettings = "UDKey.appSettings"
     case selectedAccount = "UDKey.selectedAccount"
+    case budgetShowsSpent = "UDKey.budgetShowsSpent"
 }
 
 final class UserManager {
