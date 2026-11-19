@@ -126,29 +126,57 @@ struct BudgetPager: View {
     @State private var showUnlimited = false
 
     var body: some View {
-        PeriodPager(count: buckets.count, selection: selection) { index in
-            let month = buckets.start(at: index)
+        let month = buckets.clamped(selectedMonth)
+        let index = buckets.index(of: month)
 
-            BudgetMonthPage(
-                month: month,
-                transactions: buckets.transactions(at: month),
-                limited: limited,
-                unlimited: unlimited,
-                monthlyLimit: monthlyLimit,
-                showUnlimited: $showUnlimited,
-                onOpen: onOpen
-            )
+        VStack(spacing: 0) {
+            monthHeader(month: month, index: index)
+
+            BudgetMonthPage(month: month, transactions: buckets.transactions(at: month), limited: limited, unlimited: unlimited, monthlyLimit: monthlyLimit, showUnlimited: $showUnlimited, onOpen: onOpen)
         }
         .onChange(of: resetToken) {
             selectedMonth = Date()
         }
     }
 
-    private var selection: Binding<Int> {
-        Binding(
-            get: { buckets.index(of: buckets.clamped(selectedMonth)) },
-            set: { selectedMonth = buckets.start(at: $0) }
-        )
+    private func monthHeader(month: Date, index: Int) -> some View {
+        Text(StatisticsPeriod.month.title(for: month))
+            .font(.appRegular(22))
+            .foregroundColor(.appPrimary)
+            .lineLimit(1)
+            .minimumScaleFactor(0.7)
+            .contentTransition(.opacity)
+            .animation(.easeInOut(duration: 0.2), value: month)
+            .padding(.horizontal, 64)
+            .frame(maxWidth: .infinity)
+            .frame(height: 44)
+            .overlay {
+                HStack {
+                    monthArrow(systemImage: "chevron.left", target: index - 1)
+                    Spacer()
+                    monthArrow(systemImage: "chevron.right", target: index + 1)
+                }
+                .padding(.horizontal, 16)
+            }
+            .padding(.top, 8)
+    }
+
+    private func monthArrow(systemImage: String, target: Int) -> some View {
+        let isEnabled = target >= .zero && target < buckets.count
+
+        return Button {
+            FeedbackManager.shared.selectionChanged()
+            selectedMonth = buckets.start(at: target)
+        } label: {
+            Image(systemName: systemImage)
+                .font(.system(size: 20, weight: .medium))
+                .foregroundColor(.appPrimary.opacity(isEnabled ? 1 : 0.3))
+                .frame(width: 44, height: 44)
+                .contentShape(Rectangle())
+                .glassSurface(in: Circle(), isInteractive: isEnabled, fallback: .clear)
+        }
+        .buttonStyle(.plain)
+        .disabled(!isEnabled)
     }
 }
 
