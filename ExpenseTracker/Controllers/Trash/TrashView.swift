@@ -130,30 +130,28 @@ struct TrashView: View {
                 .disabled(isEmpty)
             }
         }
-        .overlay {
-            if showClearConfirmation {
-                MessagePopup(title: L10n.menuTrash, message: L10n.trashClearConfirmation, confirmTitle: L10n.clear, confirmColor: .appRed, onCancel: { showClearConfirmation = false }) {
-                    showClearConfirmation = false
-                    modelContext.emptyTrash()
-                }
-                .transition(.opacity)
-            } else if let restoreTarget {
-                MessagePopup(title: restoreConfirmation, cancelTitle: L10n.no, confirmTitle: L10n.yes, onCancel: { self.restoreTarget = nil }) {
-                    self.restoreTarget = nil
-                    restore(restoreTarget)
-                }
-                .transition(.opacity)
-            } else if let deleteTarget {
-                MessagePopup(title: deleteConfirmation, message: L10n.trashDeleteMessage, confirmTitle: L10n.delete, confirmColor: .appRed, onCancel: { self.deleteTarget = nil }) {
-                    self.deleteTarget = nil
-                    deletePermanently(deleteTarget)
-                }
-                .transition(.opacity)
+        .alert(L10n.menuTrash, isPresented: $showClearConfirmation) {
+            Button(L10n.cancel, role: .cancel) {}
+            Button(L10n.clear, role: .destructive) {
+                modelContext.emptyTrash()
             }
+        } message: {
+            Text(L10n.trashClearConfirmation)
         }
-        .animation(.appStandard, value: showClearConfirmation)
-        .animation(.appStandard, value: restoreTarget != nil)
-        .animation(.appStandard, value: deleteTarget != nil)
+        .alert(restoreConfirmation, isPresented: Binding(get: { restoreTarget != nil }, set: { if !$0 { restoreTarget = nil } }), presenting: restoreTarget) { target in
+            Button(L10n.yes) {
+                restore(target)
+            }
+            Button(L10n.no, role: .cancel) {}
+        }
+        .alert(deleteConfirmation, isPresented: Binding(get: { deleteTarget != nil }, set: { if !$0 { deleteTarget = nil } }), presenting: deleteTarget) { target in
+            Button(L10n.cancel, role: .cancel) {}
+            Button(L10n.delete, role: .destructive) {
+                deletePermanently(target)
+            }
+        } message: { _ in
+            Text(L10n.trashDeleteMessage)
+        }
     }
 }
 

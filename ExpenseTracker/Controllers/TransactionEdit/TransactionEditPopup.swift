@@ -82,37 +82,6 @@ struct TransactionEditPopup<Content: View>: View {
     }
 }
 
-struct MessagePopup: View {
-    let title: String
-    var message: String?
-    var cancelTitle: String? = L10n.cancel
-    var confirmTitle = L10n.ok
-    var confirmColor: Color = .appPrimary
-    let onCancel: () -> Void
-    let onConfirm: () -> Void
-
-    var body: some View {
-        TransactionEditPopup(cancelTitle: cancelTitle, confirmTitle: confirmTitle, confirmColor: confirmColor, onCancel: onCancel, onConfirm: onConfirm) {
-            VStack(spacing: 8) {
-                Text(title)
-                    .font(.appMedium(18))
-                    .foregroundColor(.appWhite)
-
-                if let message {
-                    Text(message)
-                        .font(.appLight(15))
-                        .foregroundColor(.appLabel)
-                }
-            }
-            .multilineTextAlignment(.center)
-            .fixedSize(horizontal: false, vertical: true)
-            .frame(maxWidth: .infinity)
-            .padding(.horizontal, 16)
-            .padding(.top, 4)
-        }
-    }
-}
-
 struct TextInputPopup: View {
     let title: String
     let placeholder: String
@@ -238,11 +207,6 @@ struct TransactionTimePopup: View {
                 .colorScheme(.dark)
         }
     }
-}
-
-#Preview("Message popup") {
-    MessagePopup(title: "Remove category", message: "The category and all its transactions will be moved to the Trash.", confirmTitle: "Remove", confirmColor: .appRed, onCancel: {}, onConfirm: {})
-        .background(.appMain)
 }
 
 #Preview("Text input popup") {

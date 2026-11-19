@@ -120,13 +120,12 @@ struct EditCategoryView: View {
             }
         }
         .toast($validationMessage, icon: .warning)
-        .overlay {
-            if showDeleteConfirmation {
-                MessagePopup(title: isDirectory ? L10n.editCategoryDeleteFolder : L10n.editCategoryDeleteCategory, message: L10n.editCategoryDeleteConfirmation, confirmTitle: L10n.remove, confirmColor: .appRed, onCancel: { showDeleteConfirmation = false }, onConfirm: deleteCategory)
-                    .transition(.opacity)
-            }
+        .alert(isDirectory ? L10n.editCategoryDeleteFolder : L10n.editCategoryDeleteCategory, isPresented: $showDeleteConfirmation) {
+            Button(L10n.cancel, role: .cancel) {}
+            Button(L10n.remove, role: .destructive, action: deleteCategory)
+        } message: {
+            Text(L10n.editCategoryDeleteConfirmation)
         }
-        .animation(.appStandard, value: showDeleteConfirmation)
         .onAppear {
             draft.dropMissingParent(in: allCategories)
         }
