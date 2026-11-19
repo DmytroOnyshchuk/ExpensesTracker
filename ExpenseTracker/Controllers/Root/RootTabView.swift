@@ -22,7 +22,10 @@ struct RootTabView: View {
     @State private var homeResetToken: Int = .zero
     @State private var statisticsResetToken: Int = .zero
     @State private var budgetResetToken: Int = .zero
+    @State private var backgroundedAt: Date?
+    @State private var sessionId = UUID()
     @StoredSettings private var appSettings
+    @Environment(\.scenePhase) private var scenePhase
 
     private var tabSelection: Binding<AppTab> {
         Binding(
@@ -73,9 +76,26 @@ struct RootTabView: View {
                 .undoToast()
             }
         }
+        .id(sessionId)
         .tint(.appPrimary)
+        .onChange(of: scenePhase) { _, phase in
+            switch phase {
+            case .background: backgroundedAt = backgroundedAt ?? Date()
+            case .active: returnHomeIfAwayLong()
+            default: break
+            }
+        }
         .onOpenURL(perform: openFile)
         .backupImport(from: $openedFileURL)
+    }
+
+    private func returnHomeIfAwayLong() {
+        guard let backgroundedAt else { return }
+        self.backgroundedAt = nil
+        guard Date().timeIntervalSince(backgroundedAt) >= 300 else { return }
+
+        selection = .home
+        sessionId = UUID()
     }
 
     private func openFile(_ url: URL) {
