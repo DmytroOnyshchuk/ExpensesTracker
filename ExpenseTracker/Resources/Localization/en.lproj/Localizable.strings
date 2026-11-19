@@ -88,6 +88,8 @@
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Delete category?";
 "TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Restore account?";
 "TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Delete account?";
+"TRASH_RESTORE_AUTOPAYMENT_CONFIRMATION" = "Restore autopayment?";
+"TRASH_DELETE_AUTOPAYMENT_CONFIRMATION" = "Delete autopayment?";
 "TRASH_DELETE_MESSAGE" = "This action cannot be undone.";
 "TRASH_CLEAR_CONFIRMATION" = "All items in the Trash will be permanently deleted. This action cannot be undone.";
 
@@ -258,7 +260,6 @@
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Multiple accounts";
 
 // MARK: - Autopayments
-"AUTOPAYMENTS_DELETED" = "Autopayment deleted";
 "AUTOPAYMENTS_EMPTY" = "No autopayments";
 "AUTOPAYMENTS_NEW_TITLE" = "New autopayment";
 "AUTOPAYMENTS_PERIOD" = "Period";

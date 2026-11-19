@@ -13,12 +13,14 @@ struct TrashView: View {
     private enum Target {
         case account(Account)
         case category(TransactionCategory)
+        case autoPayment(AutoPayment)
         case transaction(Transaction)
 
         var restoreConfirmation: String {
             switch self {
             case .account: L10n.trashRestoreAccountConfirmation
             case .category: L10n.trashRestoreCategoryConfirmation
+            case .autoPayment: L10n.trashRestoreAutopaymentConfirmation
             case .transaction: L10n.trashRestoreTransactionConfirmation
             }
         }
@@ -27,6 +29,7 @@ struct TrashView: View {
             switch self {
             case .account: L10n.trashDeleteAccountConfirmation
             case .category: L10n.trashDeleteCategoryConfirmation
+            case .autoPayment: L10n.trashDeleteAutopaymentConfirmation
             case .transaction: L10n.transactionEditDeleteConfirmation
             }
         }
@@ -36,6 +39,7 @@ struct TrashView: View {
 
     @Query(filter: Account.inTrash, sort: \Account.deletedAt, order: .reverse) private var accounts: [Account]
     @Query(filter: TransactionCategory.inTrash, sort: \TransactionCategory.deletedAt, order: .reverse) private var categories: [TransactionCategory]
+    @Query(filter: AutoPayment.inTrash, sort: \AutoPayment.deletedAt, order: .reverse) private var autoPayments: [AutoPayment]
     @Query(filter: Transaction.inTrash, sort: \Transaction.deletedAt, order: .reverse) private var transactions: [Transaction]
 
     @State private var showClearConfirmation = false
@@ -51,7 +55,8 @@ struct TrashView: View {
             guard let uuid = transaction.account?.uuid else { return }
             counts[uuid, default: 0] += 1
         }
-        let isEmpty = accounts.isEmpty && categories.isEmpty && visibleTransactions.isEmpty
+        let visibleAutoPayments = autoPayments.filter { $0.category?.deletedAt == nil && $0.account?.deletedAt == nil }
+        let isEmpty = accounts.isEmpty && categories.isEmpty && visibleAutoPayments.isEmpty && visibleTransactions.isEmpty
 
         List {
             if isEmpty {
@@ -70,7 +75,7 @@ struct TrashView: View {
                     }
                     .padding(.horizontal, 16)
                     .frame(minHeight: 68)
-                    .trashRow(isLast: account.uuid == accounts.last?.uuid && categories.isEmpty && visibleTransactions.isEmpty) {
+                    .trashRow(isLast: account.uuid == accounts.last?.uuid && categories.isEmpty && visibleAutoPayments.isEmpty && visibleTransactions.isEmpty) {
                         askToDelete(.account(account))
                     }
                 }
@@ -84,8 +89,18 @@ struct TrashView: View {
                     )
                     .padding(.horizontal, 16)
                     .frame(minHeight: 68)
-                    .trashRow(isLast: category.id == categories.last?.id && visibleTransactions.isEmpty) {
+                    .trashRow(isLast: category.id == categories.last?.id && visibleAutoPayments.isEmpty && visibleTransactions.isEmpty) {
                         askToDelete(.category(category))
+                    }
+                }
+
+                ForEach(visibleAutoPayments, id: \.uuid) { autoPayment in
+                    AutoPaymentRow(autoPayment: autoPayment) {
+                        askToRestore(.autoPayment(autoPayment))
+                    }
+                    .frame(minHeight: 68)
+                    .trashRow(isLast: autoPayment.uuid == visibleAutoPayments.last?.uuid && visibleTransactions.isEmpty) {
+                        askToDelete(.autoPayment(autoPayment))
                     }
                 }
 
@@ -136,6 +151,7 @@ struct TrashView: View {
                     switch target {
                     case .account(let account): modelContext.restore(account)
                     case .category(let category): modelContext.restore(category)
+                    case .autoPayment(let autoPayment): modelContext.restore(autoPayment)
                     case .transaction(let transaction): modelContext.restore(transaction)
                     }
                 }
@@ -156,6 +172,7 @@ struct TrashView: View {
                     switch target {
                     case .account(let account): modelContext.deletePermanently(account)
                     case .category(let category): modelContext.deletePermanently(category)
+                    case .autoPayment(let autoPayment): modelContext.deletePermanently(autoPayment)
                     case .transaction(let transaction): modelContext.deletePermanently(transaction)
                     }
                 }

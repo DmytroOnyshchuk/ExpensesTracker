@@ -88,6 +88,8 @@
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Видалити категорію?";
 "TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Відновити рахунок?";
 "TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Видалити рахунок?";
+"TRASH_RESTORE_AUTOPAYMENT_CONFIRMATION" = "Відновити автоплатіж?";
+"TRASH_DELETE_AUTOPAYMENT_CONFIRMATION" = "Видалити автоплатіж?";
 "TRASH_DELETE_MESSAGE" = "Цю дію не можна скасувати.";
 "TRASH_CLEAR_CONFIRMATION" = "Усі об'єкти в кошику буде видалено назавжди. Цю дію неможливо скасувати.";
 
@@ -258,7 +260,6 @@
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Кілька рахунків";
 
 // MARK: - Autopayments
-"AUTOPAYMENTS_DELETED" = "Автоплатіж видалено";
 "AUTOPAYMENTS_EMPTY" = "Немає автоплатежів";
 "AUTOPAYMENTS_NEW_TITLE" = "Новий автоплатіж";
 "AUTOPAYMENTS_PERIOD" = "Період";

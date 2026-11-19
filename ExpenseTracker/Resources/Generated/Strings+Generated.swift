@@ -48,8 +48,6 @@ internal enum L10n {
   internal static let appName = L10n.tr("Localizable", "APP_NAME", fallback: "Expense Tracker")
   /// Attention
   internal static let attention = L10n.tr("Localizable", "ATTENTION", fallback: "Attention")
-  /// Autopayment deleted
-  internal static let autopaymentsDeleted = L10n.tr("Localizable", "AUTOPAYMENTS_DELETED", fallback: "Autopayment deleted")
   /// No autopayments
   internal static let autopaymentsEmpty = L10n.tr("Localizable", "AUTOPAYMENTS_EMPTY", fallback: "No autopayments")
   /// New autopayment
@@ -460,6 +458,8 @@ internal enum L10n {
   internal static let trashClearConfirmation = L10n.tr("Localizable", "TRASH_CLEAR_CONFIRMATION", fallback: "All items in the Trash will be permanently deleted. This action cannot be undone.")
   /// Delete account?
   internal static let trashDeleteAccountConfirmation = L10n.tr("Localizable", "TRASH_DELETE_ACCOUNT_CONFIRMATION", fallback: "Delete account?")
+  /// Delete autopayment?
+  internal static let trashDeleteAutopaymentConfirmation = L10n.tr("Localizable", "TRASH_DELETE_AUTOPAYMENT_CONFIRMATION", fallback: "Delete autopayment?")
   /// Delete category?
   internal static let trashDeleteCategoryConfirmation = L10n.tr("Localizable", "TRASH_DELETE_CATEGORY_CONFIRMATION", fallback: "Delete category?")
   /// This action cannot be undone.
@@ -468,6 +468,8 @@ internal enum L10n {
   internal static let trashEmpty = L10n.tr("Localizable", "TRASH_EMPTY", fallback: "Trash is empty")
   /// Restore account?
   internal static let trashRestoreAccountConfirmation = L10n.tr("Localizable", "TRASH_RESTORE_ACCOUNT_CONFIRMATION", fallback: "Restore account?")
+  /// Restore autopayment?
+  internal static let trashRestoreAutopaymentConfirmation = L10n.tr("Localizable", "TRASH_RESTORE_AUTOPAYMENT_CONFIRMATION", fallback: "Restore autopayment?")
   /// Restore category?
   internal static let trashRestoreCategoryConfirmation = L10n.tr("Localizable", "TRASH_RESTORE_CATEGORY_CONFIRMATION", fallback: "Restore category?")
   /// Restore transaction?

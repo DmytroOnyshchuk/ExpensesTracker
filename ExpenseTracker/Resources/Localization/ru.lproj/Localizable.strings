@@ -88,6 +88,8 @@
 "TRASH_DELETE_CATEGORY_CONFIRMATION" = "Удалить категорию?";
 "TRASH_RESTORE_ACCOUNT_CONFIRMATION" = "Восстановить счёт?";
 "TRASH_DELETE_ACCOUNT_CONFIRMATION" = "Удалить счёт?";
+"TRASH_RESTORE_AUTOPAYMENT_CONFIRMATION" = "Восстановить автоплатёж?";
+"TRASH_DELETE_AUTOPAYMENT_CONFIRMATION" = "Удалить автоплатёж?";
 "TRASH_DELETE_MESSAGE" = "Это действие нельзя отменить.";
 "TRASH_CLEAR_CONFIRMATION" = "Все объекты в корзине будут удалены навсегда. Это действие нельзя отменить.";
 
@@ -258,7 +260,6 @@
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Несколько счетов";
 
 // MARK: - Autopayments
-"AUTOPAYMENTS_DELETED" = "Автоплатёж удалён";
 "AUTOPAYMENTS_EMPTY" = "Нет автоплатежей";
 "AUTOPAYMENTS_NEW_TITLE" = "Новый автоплатёж";
 "AUTOPAYMENTS_PERIOD" = "Период";

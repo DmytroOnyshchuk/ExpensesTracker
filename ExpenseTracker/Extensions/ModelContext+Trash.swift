@@ -15,6 +15,25 @@ extension ModelContext {
         try? save()
     }
 
+    func moveToTrash(_ autoPayment: AutoPayment) {
+        autoPayment.deletedAt = Date()
+        try? save()
+    }
+
+    func restore(_ autoPayment: AutoPayment) {
+        let now = Date()
+        if autoPayment.nextDate < now {
+            autoPayment.skipPayments(before: now)
+        }
+        autoPayment.deletedAt = nil
+        try? save()
+    }
+
+    func deletePermanently(_ autoPayment: AutoPayment) {
+        delete(autoPayment)
+        try? save()
+    }
+
     func moveToTrash(_ account: Account) {
         let date = Date()
         for transaction in transactions(of: account) where transaction.deletedAt == nil {
@@ -80,6 +99,10 @@ extension ModelContext {
     }
 
     func emptyTrash() {
+        let autoPayments = (try? fetch(FetchDescriptor<AutoPayment>(predicate: AutoPayment.inTrash))) ?? []
+        for autoPayment in autoPayments {
+            delete(autoPayment)
+        }
         let transactions = (try? fetch(FetchDescriptor<Transaction>(predicate: Transaction.inTrashWithOwners))) ?? []
         for transaction in transactions {
             delete(transaction)

@@ -69,6 +69,7 @@ final class AutoPayment {
     var periodUnitRaw: String = AutoPaymentPeriodUnit.month.rawValue
     var startDate: Date = Date()
     var completedPayments: Int = 0
+    var deletedAt: Date?
 
     init(amount: Int, category: TransactionCategory, account: Account? = nil, periodCount: Int = 1, periodUnit: AutoPaymentPeriodUnit = .month, startDate: Date = Date(), note: String? = nil) {
         self.uuid = UUID()
@@ -111,7 +112,8 @@ final class AutoPayment {
 }
 
 extension AutoPayment {
-    static let active = #Predicate<AutoPayment> { !($0.category == nil) && $0.category?.deletedAt == nil && ($0.account == nil || $0.account?.deletedAt == nil) }
+    static let inTrash = #Predicate<AutoPayment> { $0.deletedAt != nil }
+    static let active = #Predicate<AutoPayment> { $0.deletedAt == nil && !($0.category == nil) && $0.category?.deletedAt == nil && ($0.account == nil || $0.account?.deletedAt == nil) }
 }
 
 extension [AutoPayment] {

@@ -134,27 +134,10 @@ extension ModelContext {
 
     @MainActor
     func deleteWithUndo(_ autoPayment: AutoPayment) {
-        let uuid = autoPayment.uuid
-        let amount = autoPayment.amount
-        let note = autoPayment.note
-        let category = autoPayment.category
-        let account = autoPayment.account
-        let periodCount = autoPayment.periodCount
-        let periodUnit = autoPayment.periodUnit
-        let startDate = autoPayment.startDate
-        let completedPayments = autoPayment.completedPayments
+        moveToTrash(autoPayment)
 
-        delete(autoPayment)
-        try? save()
-
-        guard let category else { return }
-
-        UndoToastCenter.shared.show(L10n.autopaymentsDeleted) {
-            let restored = AutoPayment(amount: amount, category: category, account: account, periodCount: periodCount, periodUnit: periodUnit, startDate: startDate, note: note)
-            restored.uuid = uuid
-            restored.completedPayments = completedPayments
-            self.insert(restored)
-            try? self.save()
+        UndoToastCenter.shared.show(L10n.transactionsListMovedToTrash) {
+            self.restore(autoPayment)
         }
     }
 
