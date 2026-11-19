@@ -258,6 +258,7 @@
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Несколько счетов";
 
 // MARK: - Autopayments
+"AUTOPAYMENTS_DELETED" = "Автоплатёж удалён";
 "AUTOPAYMENTS_EMPTY" = "Нет автоплатежей";
 "AUTOPAYMENTS_NEW_TITLE" = "Новый автоплатёж";
 "AUTOPAYMENTS_PERIOD" = "Период";

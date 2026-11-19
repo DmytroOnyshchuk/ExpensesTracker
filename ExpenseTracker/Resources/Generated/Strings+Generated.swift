@@ -48,6 +48,8 @@ internal enum L10n {
   internal static let appName = L10n.tr("Localizable", "APP_NAME", fallback: "Expense Tracker")
   /// Attention
   internal static let attention = L10n.tr("Localizable", "ATTENTION", fallback: "Attention")
+  /// Autopayment deleted
+  internal static let autopaymentsDeleted = L10n.tr("Localizable", "AUTOPAYMENTS_DELETED", fallback: "Autopayment deleted")
   /// No autopayments
   internal static let autopaymentsEmpty = L10n.tr("Localizable", "AUTOPAYMENTS_EMPTY", fallback: "No autopayments")
   /// New autopayment

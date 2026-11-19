@@ -258,6 +258,7 @@
 "ACCOUNTING_MULTIPLE_ACCOUNTS" = "Multiple accounts";
 
 // MARK: - Autopayments
+"AUTOPAYMENTS_DELETED" = "Autopayment deleted";
 "AUTOPAYMENTS_EMPTY" = "No autopayments";
 "AUTOPAYMENTS_NEW_TITLE" = "New autopayment";
 "AUTOPAYMENTS_PERIOD" = "Period";

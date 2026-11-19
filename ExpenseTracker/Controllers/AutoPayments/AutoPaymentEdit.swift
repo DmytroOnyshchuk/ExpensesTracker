@@ -344,8 +344,7 @@ struct AutoPaymentEdit: View {
     private func delete() {
         hideKeyboard()
         if let autoPayment {
-            modelContext.delete(autoPayment)
-            try? modelContext.save()
+            modelContext.deleteWithUndo(autoPayment)
         }
         dismiss()
     }
