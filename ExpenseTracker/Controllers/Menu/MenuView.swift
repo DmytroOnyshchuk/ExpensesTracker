@@ -6,7 +6,7 @@
 //  Copyright © 2026 Dmytro Onyshchuk. All rights reserved.
 //
 
-import RealmSwift
+import SwiftData
 import SwiftUI
 
 enum MenuItem: CaseIterable, Identifiable {
@@ -73,8 +73,8 @@ enum MenuSection: CaseIterable, Identifiable {
 }
 
 struct MenuView: View {
-    @ObservedResults(Transaction.self, where: Transaction.notDeleted) private var transactions
-    @ObservedResults(Account.self, where: Account.notDeleted) private var accounts
+    @Query(filter: Transaction.notDeleted) private var transactions: [Transaction]
+    @Query(filter: Account.notDeleted) private var accounts: [Account]
     @StoredSettings private var appSettings
 
     @State private var showStatistics = false
@@ -162,7 +162,7 @@ struct MenuView: View {
 
     private var balance: Int? {
         guard appSettings.accounting.multipleAccountsEnabled, !accounts.isEmpty else { return nil }
-        return accounts.enabled.total(in: Array(transactions))
+        return accounts.enabled.total(in: transactions)
     }
 
     private func open(_ item: MenuItem) {
@@ -301,21 +301,21 @@ struct MenuRowLabel: View {
 }
 
 #Preview("Menu") {
-    let realm = makePreviewRealm()
-    let categories = Array(realm.objects(TransactionCategory.self))
+    let container = makePreviewModelContainer()
+    let categories = (try? container.mainContext.fetch(FetchDescriptor<TransactionCategory>())) ?? []
     for (index, category) in categories.filter({ !$0.isDirectory }).prefix(4).enumerated() {
-        realm.update { realm.add(Transaction(amount: (index + 1) * 29000, category: category, date: Date())) }
+        container.mainContext.insert(Transaction(amount: (index + 1) * 29000, category: category, date: Date()))
     }
 
     return NavigationStack {
         MenuView()
     }
-    .environment(\.realmConfiguration, realm.configuration)
+    .modelContainer(container)
 }
 
 #Preview("Empty menu") {
     NavigationStack {
         MenuView()
     }
-    .environment(\.realmConfiguration, makePreviewRealm().configuration)
+    .modelContainer(makePreviewModelContainer())
 }

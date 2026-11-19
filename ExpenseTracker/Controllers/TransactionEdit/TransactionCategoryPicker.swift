@@ -6,7 +6,7 @@
 //  Copyright © 2026 Dmytro Onyshchuk. All rights reserved.
 //
 
-import RealmSwift
+import SwiftData
 import SwiftUI
 
 struct TransactionCategoryPicker: View {
@@ -14,10 +14,10 @@ struct TransactionCategoryPicker: View {
     var operationType: OperationType = .outcome
     let onSelect: (TransactionCategory) -> Void
 
-    @ObservedResults(TransactionCategory.self, where: TransactionCategory.notDeleted) private var storedCategories
+    @Query(filter: TransactionCategory.notDeleted) private var storedCategories: [TransactionCategory]
 
     private var categories: [TransactionCategory] { storedCategories.of(operationType) }
-    @Environment(\.realm) private var realm
+    @Environment(\.modelContext) private var modelContext
     @State private var openedFolder: TransactionCategory?
 
     private var visibleCategories: [TransactionCategory] {
@@ -52,19 +52,18 @@ struct TransactionCategoryPicker: View {
 
     private func moveCategories(from source: IndexSet, to destination: Int) {
         let foldersCount = visibleCategories.count(where: \.isDirectory)
-        let visibleCategories = visibleCategories
-        let categories = categories
-        realm.update { visibleCategories.reorder(fromOffsets: source, toOffset: max(destination, foldersCount), among: categories) }
+        visibleCategories.reorder(fromOffsets: source, toOffset: max(destination, foldersCount), among: categories)
+        try? modelContext.save()
     }
 }
 
 extension TransactionCategoryPicker: Equatable {
-    nonisolated static func == (lhs: TransactionCategoryPicker, rhs: TransactionCategoryPicker) -> Bool { lhs.folder == rhs.folder && lhs.operationType == rhs.operationType }
+    nonisolated static func == (lhs: TransactionCategoryPicker, rhs: TransactionCategoryPicker) -> Bool { lhs.folder?.persistentModelID == rhs.folder?.persistentModelID && lhs.operationType == rhs.operationType }
 }
 
 #Preview {
     NavigationStack {
         TransactionCategoryPicker(onSelect: { _ in })
     }
-    .environment(\.realmConfiguration, makePreviewRealm().configuration)
+    .modelContainer(makePreviewModelContainer())
 }

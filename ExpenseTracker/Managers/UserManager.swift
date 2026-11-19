@@ -1,5 +1,5 @@
 import Foundation
-import RealmSwift
+import SwiftData
 
 enum UDKey: String {
     case currentLanguage = "UDKey.currentLanguage"
@@ -28,11 +28,9 @@ final class UserManager {
 
 extension UserManager {
     @MainActor
-    func logout(realm: Realm) throws {
-        try realm.write {
-            realm.deleteAll()
-        }
-        DataSeeder.seedDefaultCategories(in: realm)
+    func logout(context: ModelContext) throws {
+        try clearDatabase(context)
+        DataSeeder.seedDefaultCategories(in: context)
 
         let savedEnvironment: AppEnvironment = lastApplicationEnvironment
 
@@ -53,6 +51,22 @@ extension UserManager {
         PasscodeManager.shared.reset()
 
         Logger.default.logMessage("Logout end", category: "UserManager")
+    }
+
+    private func clearDatabase(_ context: ModelContext) throws {
+        for autoPayment in try context.fetch(FetchDescriptor<AutoPayment>()) {
+            context.delete(autoPayment)
+        }
+        for transaction in try context.fetch(FetchDescriptor<Transaction>()) {
+            context.delete(transaction)
+        }
+        for category in try context.fetch(FetchDescriptor<TransactionCategory>()) {
+            context.delete(category)
+        }
+        for account in try context.fetch(FetchDescriptor<Account>()) {
+            context.delete(account)
+        }
+        try context.save()
     }
 
     func isLoggedIn() -> Bool {

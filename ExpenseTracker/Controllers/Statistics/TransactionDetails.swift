@@ -6,7 +6,7 @@
 //  Copyright © 2026 Dmytro Onyshchuk. All rights reserved.
 //
 
-import RealmSwift
+import SwiftData
 import SwiftUI
 
 enum TransactionsSorting: CaseIterable {
@@ -36,9 +36,9 @@ struct TransactionDetails: View {
     let category: TransactionCategory
     let interval: DateInterval
 
-    @Environment(\.realm) private var realm
+    @Environment(\.modelContext) private var modelContext
 
-    @ObservedResults(Transaction.self, where: Transaction.visible) private var transactions
+    @Query(filter: Transaction.visible, animation: .appStandard) private var transactions: [Transaction]
 
     @State private var sorting: TransactionsSorting = .date
     @State private var editedTransaction: Transaction?
@@ -111,16 +111,15 @@ struct TransactionDetails: View {
         .fullScreenCover(item: $editedTransaction) { transaction in
             TransactionEdit(transaction: transaction)
         }
-        .animation(.appStandard, value: visibleTransactions.count)
     }
 
     private func delete(_ transaction: Transaction) {
-        realm.deleteWithUndo(transaction)
+        modelContext.deleteWithUndo(transaction)
     }
 }
 
 extension TransactionDetails: Equatable {
-    nonisolated static func == (lhs: TransactionDetails, rhs: TransactionDetails) -> Bool { lhs.category == rhs.category && lhs.interval == rhs.interval }
+    nonisolated static func == (lhs: TransactionDetails, rhs: TransactionDetails) -> Bool { lhs.category.persistentModelID == rhs.category.persistentModelID && lhs.interval == rhs.interval }
 }
 
 struct TransactionDetailsRow: View {
@@ -168,14 +167,12 @@ struct TransactionDetailsRow: View {
 }
 
 #Preview("Transaction details") {
-    let realm = makePreviewRealm()
+    let container = makePreviewModelContainer()
     let category = TransactionCategory(name: "Taxes", categoryIcon: CategoryIcon(name: "dollarsign.circle.fill", iconColor: .yellow))
-    realm.update {
-        realm.add(category)
-        realm.add(Transaction(amount: 151906, category: category, note: "Military tax, October"))
-        realm.add(Transaction(amount: 759530, category: category, date: .yesterday, note: "Single tax, October"))
-        realm.add(Transaction(amount: 190234, category: category))
-    }
+    container.mainContext.insert(category)
+    container.mainContext.insert(Transaction(amount: 151906, category: category, note: "Military tax, October"))
+    container.mainContext.insert(Transaction(amount: 759530, category: category, date: .yesterday, note: "Single tax, October"))
+    container.mainContext.insert(Transaction(amount: 190234, category: category))
 
     return NavigationStack {
         TransactionDetails(
@@ -183,7 +180,7 @@ struct TransactionDetailsRow: View {
             interval: StatisticsPeriod.month.interval(containing: Date())
         )
     }
-    .environment(\.realmConfiguration, realm.configuration)
+    .modelContainer(container)
 }
 
 #Preview("Transaction details row") {
@@ -191,5 +188,5 @@ struct TransactionDetailsRow: View {
 
     TransactionDetailsRow(transaction: Transaction(amount: 151906, category: category, note: "Military tax, October"))
         .background(.appMain)
-        .environment(\.realmConfiguration, makePreviewRealm().configuration)
+        .modelContainer(makePreviewModelContainer())
 }

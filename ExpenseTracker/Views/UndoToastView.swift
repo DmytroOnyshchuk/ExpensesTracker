@@ -6,7 +6,7 @@
 //  Copyright © 2026 Dmytro Onyshchuk. All rights reserved.
 //
 
-import RealmSwift
+import SwiftData
 import SwiftUI
 
 @MainActor
@@ -101,7 +101,7 @@ extension View {
     }
 }
 
-extension Realm {
+extension ModelContext {
     @MainActor
     func deleteWithUndo(_ transaction: Transaction) {
         moveToTrash(transaction)
@@ -140,16 +140,15 @@ extension Realm {
 
     @MainActor
     func applyWithUndo(_ draft: TransactionDraft, to transaction: Transaction) {
-        guard let transaction = transaction.live else { return }
-
         let previous = TransactionDraft(transaction)
-        update { draft.apply(to: transaction) }
+        draft.apply(to: transaction)
+        try? save()
 
         guard TransactionDraft(transaction) != previous else { return }
 
         UndoToastCenter.shared.show(L10n.transactionsListTransactionUpdated) {
-            guard let transaction = transaction.live else { return }
-            self.update { previous.apply(to: transaction) }
+            previous.apply(to: transaction)
+            try? self.save()
         }
     }
 }

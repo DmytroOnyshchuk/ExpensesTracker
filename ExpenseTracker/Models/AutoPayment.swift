@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import RealmSwift
+import SwiftData
 
 enum AutoPaymentPeriodUnit: String, Codable, CaseIterable, Identifiable {
     case day
@@ -58,25 +58,24 @@ enum AutoPaymentPeriodUnit: String, Codable, CaseIterable, Identifiable {
     }
 }
 
-final class AutoPayment: Object, Identifiable {
-    @Persisted(primaryKey: true) var uuid: UUID = UUID()
-    @Persisted var amount: Int = 0
-    @Persisted var note: String?
-    @Persisted var category: TransactionCategory?
-    @Persisted var account: Account?
-    @Persisted var periodCount: Int = 1
-    @Persisted var periodUnitRaw: String = AutoPaymentPeriodUnit.month.rawValue
-    @Persisted var startDate: Date = Date()
-    @Persisted var completedPayments: Int = 0
-    @Persisted var deletedAt: Date?
+@Model
+final class AutoPayment {
+    var uuid: UUID = UUID()
+    var amount: Int = 0
+    var note: String?
+    var category: TransactionCategory?
+    var account: Account?
+    var periodCount: Int = 1
+    var periodUnitRaw: String = AutoPaymentPeriodUnit.month.rawValue
+    var startDate: Date = Date()
+    var completedPayments: Int = 0
+    var deletedAt: Date?
 
-    var id: UUID { uuid }
-
-    convenience init(amount: Int, category: TransactionCategory, account: Account? = nil, periodCount: Int = 1, periodUnit: AutoPaymentPeriodUnit = .month, startDate: Date = Date(), note: String? = nil) {
-        self.init()
+    init(amount: Int, category: TransactionCategory, account: Account? = nil, periodCount: Int = 1, periodUnit: AutoPaymentPeriodUnit = .month, startDate: Date = Date(), note: String? = nil) {
+        self.uuid = UUID()
         self.amount = amount
-        self.category = category.live
-        self.account = account?.live
+        self.category = category
+        self.account = account
         self.periodCount = periodCount
         self.periodUnitRaw = periodUnit.rawValue
         self.startDate = startDate
@@ -113,30 +112,38 @@ final class AutoPayment: Object, Identifiable {
 }
 
 extension AutoPayment {
-    static let inTrash: (Query<AutoPayment>) -> Query<Bool> = { $0.deletedAt != nil }
-    static let active: (Query<AutoPayment>) -> Query<Bool> = { $0.deletedAt == nil && $0.category != nil && $0.category.deletedAt == nil && ($0.account == nil || $0.account.deletedAt == nil) }
+    static let inTrash = #Predicate<AutoPayment> { $0.deletedAt != nil }
+    static let hasAvailableOwners = #Predicate<AutoPayment> { !($0.category == nil) && $0.category?.deletedAt == nil && ($0.account == nil || $0.account?.deletedAt == nil) }
+
+    static var active: Predicate<AutoPayment> {
+        let hasAvailableOwners = hasAvailableOwners
+        return #Predicate<AutoPayment> { $0.deletedAt == nil && hasAvailableOwners.evaluate($0) }
+    }
 }
 
-extension Sequence<AutoPayment> {
+extension [AutoPayment] {
     var inDisplayOrder: [AutoPayment] {
         sorted { $0.nextDate < $1.nextDate }
     }
 }
 
-extension Realm {
+extension ModelContext {
     func runAutoPayments(now: Date = Date()) {
-        let due = Array(objects(AutoPayment.self).where(AutoPayment.active)).filter { $0.amount > 0 && $0.nextDate <= now }
-        guard !due.isEmpty else { return }
+        let autoPayments = (try? fetch(FetchDescriptor<AutoPayment>(predicate: AutoPayment.active))) ?? []
+        var hasChanges = false
 
-        update {
-            for autoPayment in due {
-                guard let category = autoPayment.category else { continue }
+        for autoPayment in autoPayments {
+            guard let category = autoPayment.category, autoPayment.amount > .zero else { continue }
 
-                while autoPayment.nextDate <= now {
-                    add(Transaction(amount: autoPayment.amount, category: category, date: autoPayment.nextDate, note: autoPayment.note, account: autoPayment.account))
-                    autoPayment.completedPayments += 1
-                }
+            while autoPayment.nextDate <= now {
+                insert(Transaction(amount: autoPayment.amount, category: category, date: autoPayment.nextDate, note: autoPayment.note, account: autoPayment.account))
+                autoPayment.completedPayments += 1
+                hasChanges = true
             }
+        }
+
+        if hasChanges {
+            try? save()
         }
     }
 }

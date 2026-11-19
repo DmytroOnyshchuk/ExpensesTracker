@@ -7,15 +7,15 @@
 //
 
 import Charts
-import RealmSwift
+import SwiftData
 import SwiftUI
 
 struct StatisticsView: View {
     var resetToken: Int = .zero
     var directory: TransactionCategory?
 
-    @ObservedResults(Transaction.self, where: Transaction.visible) private var storedTransactions
-    @ObservedResults(TransactionCategory.self, where: TransactionCategory.notDeleted) private var storedCategories
+    @Query(filter: Transaction.visible) private var storedTransactions: [Transaction]
+    @Query(filter: TransactionCategory.notDeleted) private var storedCategories: [TransactionCategory]
 
     @State private var period: StatisticsPeriod
     @State private var selectedOperationType: OperationType = .outcome
@@ -97,7 +97,7 @@ struct StatisticsView: View {
 }
 
 extension StatisticsView: Equatable {
-    nonisolated static func == (lhs: StatisticsView, rhs: StatisticsView) -> Bool { lhs.resetToken == rhs.resetToken && lhs.directory == rhs.directory && lhs.initialDate == rhs.initialDate }
+    nonisolated static func == (lhs: StatisticsView, rhs: StatisticsView) -> Bool { lhs.resetToken == rhs.resetToken && lhs.directory?.persistentModelID == rhs.directory?.persistentModelID && lhs.initialDate == rhs.initialDate }
 }
 
 struct StatisticsContent: View {
@@ -501,45 +501,43 @@ struct StatisticsRow: View {
 }
 
 #Preview("Statistics") {
-    let realm = makePreviewRealm()
-    let categories = Array(realm.objects(TransactionCategory.self))
+    let container = makePreviewModelContainer()
+    let categories = (try? container.mainContext.fetch(FetchDescriptor<TransactionCategory>())) ?? []
     for (index, category) in categories.filter({ !$0.isDirectory }).prefix(7).enumerated() {
-        realm.update { realm.add(Transaction(amount: (7 - index) * 125000, category: category)) }
+        container.mainContext.insert(Transaction(amount: (7 - index) * 125000, category: category))
     }
 
     return NavigationStack {
         StatisticsView()
     }
-    .environment(\.realmConfiguration, realm.configuration)
+    .modelContainer(container)
 }
 
 #Preview("Directory statistics") {
-    let realm = makePreviewRealm()
+    let container = makePreviewModelContainer()
     let directory = TransactionCategory(name: "Food", categoryIcon: CategoryIcon(name: "fork.knife", iconColor: .yellow), isDirectory: true)
-    realm.update { realm.add(directory) }
+    container.mainContext.insert(directory)
     for (index, name) in ["Groceries", "Restaurants", "Coffee"].enumerated() {
         let category = TransactionCategory(
             name: .custom(name),
             categoryIcon: CategoryIcon(name: "cart.fill", iconColor: IconColor.allCases[index]),
             parentUuid: directory.uuid
         )
-        realm.update {
-            realm.add(category)
-            realm.add(Transaction(amount: (3 - index) * 125000, category: category))
-        }
+        container.mainContext.insert(category)
+        container.mainContext.insert(Transaction(amount: (3 - index) * 125000, category: category))
     }
 
     return NavigationStack {
         StatisticsView(directory: directory)
     }
-    .environment(\.realmConfiguration, realm.configuration)
+    .modelContainer(container)
 }
 
 #Preview("Empty statistics") {
     NavigationStack {
         StatisticsView()
     }
-    .environment(\.realmConfiguration, makePreviewRealm().configuration)
+    .modelContainer(makePreviewModelContainer())
 }
 
 #Preview("Day picker") {

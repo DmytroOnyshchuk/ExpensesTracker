@@ -1,6 +1,6 @@
 import AppIntents
 import Foundation
-import RealmSwift
+import SwiftData
 
 struct CategoryEntity: AppEntity {
     static let typeDisplayRepresentation: TypeDisplayRepresentation = "Category"
@@ -22,7 +22,7 @@ struct CategoryEntityQuery: EntityQuery {
 
     @MainActor
     func suggestedEntities() async throws -> [CategoryEntity] {
-        let categories = Realm.shared.objects(TransactionCategory.self).where(TransactionCategory.nonDirectories)
+        let categories = try ModelContainer.shared.mainContext.fetch(FetchDescriptor<TransactionCategory>(predicate: TransactionCategory.nonDirectories))
         return categories.of(.outcome).inDisplayOrder.map { CategoryEntity(id: $0.uuid, name: $0.name.localized) }
     }
 }
@@ -47,7 +47,7 @@ struct AccountEntityQuery: EntityQuery {
 
     @MainActor
     func suggestedEntities() async throws -> [AccountEntity] {
-        let accounts = Realm.shared.objects(Account.self).where(Account.available).sorted(byKeyPath: "sortIndex")
+        let accounts = try ModelContainer.shared.mainContext.fetch(FetchDescriptor<Account>(predicate: Account.available, sortBy: [SortDescriptor(\.sortIndex)]))
         return accounts.map { AccountEntity(id: $0.uuid, name: $0.name) }
     }
 }

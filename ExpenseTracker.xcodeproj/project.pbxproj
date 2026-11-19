@@ -10,7 +10,6 @@
 		66700FDD2DFC37000073A9EF /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 66700FDC2DFC37000073A9EF /* Toast */; };
 		66700FE32DFC37240073A9EF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 66700FE22DFC37240073A9EF /* Alamofire */; };
 		66700FEC2DFC38240073A9EF /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 66700FEB2DFC38240073A9EF /* PromiseKit */; };
-		66C0A1032ECE100000A1B2C3 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 66C0A1022ECE100000A1B2C3 /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,7 +97,6 @@
 				66700FE32DFC37240073A9EF /* Alamofire in Frameworks */,
 				66700FDD2DFC37000073A9EF /* Toast in Frameworks */,
 				66700FEC2DFC38240073A9EF /* PromiseKit in Frameworks */,
-				66C0A1032ECE100000A1B2C3 /* RealmSwift in Frameworks */,
 			);
 		};
 		6699901F2E09CC3C00F09BD6 /* Frameworks */ = {
@@ -175,7 +173,6 @@
 				66700FDC2DFC37000073A9EF /* Toast */,
 				66700FE22DFC37240073A9EF /* Alamofire */,
 				66700FEB2DFC38240073A9EF /* PromiseKit */,
-				66C0A1022ECE100000A1B2C3 /* RealmSwift */,
 			);
 			productName = SwiftTemplate;
 			productReference = 668E98982DFAF77500EB9CD8 /* ExpenseTracker.app */;
@@ -348,7 +345,6 @@
 				66700FEA2DFC38240073A9EF /* XCRemoteSwiftPackageReference "PromiseKit" */,
 				66A3E8AD2E46765800FF6CA6 /* XCRemoteSwiftPackageReference "SwiftGen" */,
 				66A3E8AE2E46765F00FF6CA6 /* XCRemoteSwiftPackageReference "SwiftGenPlugin" */,
-				66C0A1012ECE100000A1B2C3 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			preferredProjectObjectVersion = 110;
 			productRefGroup = 668E98992DFAF77500EB9CD8 /* Products */;
@@ -1478,14 +1474,6 @@
 				minimumVersion = 6.6.2;
 			};
 		};
-		66C0A1012ECE100000A1B2C3 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 20.0.3;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1503,11 +1491,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 66700FEA2DFC38240073A9EF /* XCRemoteSwiftPackageReference "PromiseKit" */;
 			productName = PromiseKit;
-		};
-		66C0A1022ECE100000A1B2C3 /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 66C0A1012ECE100000A1B2C3 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

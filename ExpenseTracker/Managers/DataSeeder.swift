@@ -7,31 +7,43 @@
 //
 
 import Foundation
-import RealmSwift
+import SwiftData
 
 final class DataSeeder: NSObject {
-    static func seedDefaultAccount(in realm: Realm) {
-        realm.update {
-            let defaultAccount: Account
-            if let first = realm.objects(Account.self).where(Account.notDeleted).sorted(byKeyPath: "sortIndex").first {
-                defaultAccount = first
-            } else {
-                defaultAccount = Account(name: L10n.accountsDefaultName, checkpointDate: .distantPast)
-                realm.add(defaultAccount)
-            }
+    static func seedDefaultCategories(container: ModelContainer) {
+        seedDefaultCategories(in: ModelContext(container))
+    }
 
-            for transaction in realm.objects(Transaction.self).where({ $0.account == nil }) {
-                transaction.account = defaultAccount
-            }
+    static func seedDefaultAccount(in context: ModelContext) {
+        let accounts = (try? context.fetch(FetchDescriptor<Account>(predicate: Account.notDeleted, sortBy: [SortDescriptor(\.sortIndex)]))) ?? []
+        let transactions = (try? context.fetch(FetchDescriptor<Transaction>())) ?? []
+
+        let defaultAccount: Account
+        if let first = accounts.first {
+            defaultAccount = first
+        } else {
+            defaultAccount = Account(name: L10n.accountsDefaultName, checkpointDate: .distantPast)
+            context.insert(defaultAccount)
+        }
+
+        for transaction in transactions where transaction.account == nil {
+            transaction.account = defaultAccount
+        }
+
+        do {
+            try context.save()
+        } catch {
+            Logger.default.logError("Failed to seed default account", error: error, category: className)
         }
     }
 
-    static func seedDefaultCategories(in realm: Realm) {
-        seedDefaultAccount(in: realm)
+    static func seedDefaultCategories(in context: ModelContext) {
+        seedDefaultAccount(in: context)
 
-        let existingCategories = Array(realm.objects(TransactionCategory.self))
+        let descriptor = FetchDescriptor<TransactionCategory>()
+        let existingCategories = (try? context.fetch(descriptor)) ?? []
 
-        seedIncomeCategories(in: realm, existingCategories: existingCategories)
+        seedIncomeCategories(in: context, existingCategories: existingCategories)
 
         if existingCategories.isEmpty {
             let food = TransactionCategory(name: .food, categoryIcon: CategoryIcon(name: "fork.knife", iconColor: .yellow), isDirectory: true)
@@ -40,6 +52,7 @@ final class DataSeeder: NSObject {
             let folders = [food, car, house]
             for (index, folder) in folders.enumerated() {
                 folder.sortIndex = index
+                context.insert(folder)
             }
 
             let defaultCategories = [
@@ -67,17 +80,19 @@ final class DataSeeder: NSObject {
 
             for (index, category) in defaultCategories.enumerated() {
                 category.sortIndex = folders.count + index
+                context.insert(category)
             }
 
-            realm.update {
-                realm.add(folders)
-                realm.add(defaultCategories)
+            do {
+                try context.save()
+                Logger.default.logMessage("Default categories seeded successfully", category: className)
+            } catch {
+                Logger.default.logError("Failed to seed default categories", error: error, category: className)
             }
-            Logger.default.logMessage("Default categories seeded", category: className)
         }
     }
 
-    private static func seedIncomeCategories(in realm: Realm, existingCategories: [TransactionCategory]) {
+    private static func seedIncomeCategories(in context: ModelContext, existingCategories: [TransactionCategory]) {
         guard existingCategories.of(.income).isEmpty else { return }
 
         let incomeCategories = [
@@ -87,11 +102,14 @@ final class DataSeeder: NSObject {
 
         for (index, category) in incomeCategories.enumerated() {
             category.sortIndex = index
+            context.insert(category)
         }
 
-        realm.update {
-            realm.add(incomeCategories)
+        do {
+            try context.save()
+            Logger.default.logMessage("Income categories seeded successfully", category: className)
+        } catch {
+            Logger.default.logError("Failed to seed income categories", error: error, category: className)
         }
-        Logger.default.logMessage("Income categories seeded", category: className)
     }
 }

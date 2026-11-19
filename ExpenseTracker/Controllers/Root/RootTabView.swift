@@ -6,7 +6,7 @@
 //  Copyright © 2026 Dmytro Onyshchuk. All rights reserved.
 //
 
-import RealmSwift
+import SwiftData
 import SwiftUI
 
 enum AppTab: Hashable {
@@ -82,5 +82,5 @@ struct RootTabView: View {
 
 #Preview {
     RootTabView()
-        .environment(\.realmConfiguration, makePreviewRealm().configuration)
+        .modelContainer(makePreviewModelContainer())
 }

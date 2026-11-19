@@ -6,11 +6,11 @@
 //  Copyright © 2026 Dmytro Onyshchuk. All rights reserved.
 //
 
-import RealmSwift
+import SwiftData
 import SwiftUI
 
 struct AutoPaymentsView: View {
-    @ObservedResults(AutoPayment.self, where: AutoPayment.active) private var storedAutoPayments
+    @Query(filter: AutoPayment.active) private var storedAutoPayments: [AutoPayment]
 
     @State private var showAddAutoPayment = false
     @State private var selectedAutoPayment: AutoPayment?
@@ -117,21 +117,21 @@ struct AutoPaymentRow: View {
 }
 
 #Preview("Autopayments") {
-    let realm = makePreviewRealm()
-    let categories = Array(realm.objects(TransactionCategory.self))
+    let container = makePreviewModelContainer()
+    let categories = (try? container.mainContext.fetch(FetchDescriptor<TransactionCategory>())) ?? []
     for (index, category) in categories.filter({ !$0.isDirectory }).prefix(3).enumerated() {
-        realm.update { realm.add(AutoPayment(amount: (index + 1) * 15000, category: category, periodCount: index + 1, periodUnit: AutoPaymentPeriodUnit.allCases[index + 1], startDate: Date().adding(index + 1, .day))) }
+        container.mainContext.insert(AutoPayment(amount: (index + 1) * 15000, category: category, periodCount: index + 1, periodUnit: AutoPaymentPeriodUnit.allCases[index + 1], startDate: Date().adding(index + 1, .day)))
     }
 
     return NavigationStack {
         AutoPaymentsView()
     }
-    .environment(\.realmConfiguration, realm.configuration)
+    .modelContainer(container)
 }
 
 #Preview("Empty autopayments") {
     NavigationStack {
         AutoPaymentsView()
     }
-    .environment(\.realmConfiguration, makePreviewRealm().configuration)
+    .modelContainer(makePreviewModelContainer())
 }

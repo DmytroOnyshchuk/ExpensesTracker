@@ -6,11 +6,11 @@
 //  Copyright © 2025 Dmytro Onyshchuk. All rights reserved.
 //
 
-import RealmSwift
+import SwiftData
 import SwiftUI
 
 struct CategoryGrid: View {
-    @ObservedResults(TransactionCategory.self, where: TransactionCategory.nonDirectories) private var storedCategories
+    @Query(filter: TransactionCategory.nonDirectories) private var storedCategories: [TransactionCategory]
     var operationType: OperationType = .outcome
     var onSelect: (TransactionCategory) -> Bool
 
@@ -119,7 +119,7 @@ struct EditCategoriesCell: View {
     CategoryGrid(onSelect: { _ in true })
         .padding(.vertical, 16)
         .background(.appMain)
-        .environment(\.realmConfiguration, makePreviewRealm().configuration)
+        .modelContainer(makePreviewModelContainer())
 }
 
 #Preview("All categories button") {

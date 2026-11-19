@@ -26,16 +26,10 @@ struct TransactionDraft: Equatable {
     }
 
     func apply(to transaction: Transaction) {
-        if let category = category.live {
-            transaction.category = category
-        }
+        transaction.category = category
         transaction.amount = amount
         transaction.date = date
         transaction.note = note.isBlank ? nil : note
-        transaction.account = account?.live
-    }
-
-    static func == (lhs: TransactionDraft, rhs: TransactionDraft) -> Bool {
-        lhs.category.uuid == rhs.category.uuid && lhs.amount == rhs.amount && lhs.date == rhs.date && lhs.note == rhs.note && lhs.account?.uuid == rhs.account?.uuid
+        transaction.account = account
     }
 }

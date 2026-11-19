@@ -1,5 +1,5 @@
 import Foundation
-import RealmSwift
+import SwiftData
 
 enum BackupExportFormat: CaseIterable, Identifiable {
     case json
@@ -68,10 +68,10 @@ enum BackupManager {
     }
 
     @MainActor
-    static func exportData(from realm: Realm) throws -> Data {
-        let categories = realm.objects(TransactionCategory.self).where(TransactionCategory.notDeleted)
-        let transactions = realm.objects(Transaction.self).where(Transaction.notDeleted).sorted(byKeyPath: "date")
-        let accounts = realm.objects(Account.self).where(Account.notDeleted).sorted(byKeyPath: "sortIndex")
+    static func exportData(from context: ModelContext) throws -> Data {
+        let categories = try context.fetch(FetchDescriptor<TransactionCategory>(predicate: TransactionCategory.notDeleted))
+        let transactions = try context.fetch(FetchDescriptor<Transaction>(predicate: Transaction.notDeleted, sortBy: [SortDescriptor(\.date)]))
+        let accounts = try context.fetch(FetchDescriptor<Account>(predicate: Account.notDeleted, sortBy: [SortDescriptor(\.sortIndex)]))
 
         let snapshot = BackupSnapshot(
             categories: categories.map { category in
@@ -118,12 +118,12 @@ enum BackupManager {
 
     @MainActor
     static func tableData(
-        from realm: Realm,
+        from context: ModelContext,
         format: BackupExportFormat,
         options: BackupExportOptions = BackupExportOptions()
     ) throws -> Data {
-        let categories = Array(realm.objects(TransactionCategory.self).where(TransactionCategory.notDeleted))
-        let stored = Array(realm.objects(Transaction.self).where(Transaction.notDeleted).sorted(byKeyPath: "date"))
+        let categories = try context.fetch(FetchDescriptor<TransactionCategory>(predicate: TransactionCategory.notDeleted))
+        let stored = try context.fetch(FetchDescriptor<Transaction>(predicate: Transaction.notDeleted, sortBy: [SortDescriptor(\.date)]))
         let transactions = options.filter(stored)
 
         let rows = transactions.map { transaction in
@@ -150,7 +150,7 @@ enum BackupManager {
 
     @MainActor
     static func writeExportFile(
-        from realm: Realm,
+        from context: ModelContext,
         format: BackupExportFormat,
         options: BackupExportOptions = BackupExportOptions()
     ) throws -> URL {
@@ -159,8 +159,8 @@ enum BackupManager {
         try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
 
         let data: Data = switch format {
-        case .json: try exportData(from: realm)
-        case .csv, .xlsx: try tableData(from: realm, format: format, options: options)
+        case .json: try exportData(from: context)
+        case .csv, .xlsx: try tableData(from: context, format: format, options: options)
         }
         let url = directory.appendingPathComponent(defaultFilename).appendingPathExtension(format.fileExtension)
         try data.write(to: url, options: .atomic)
@@ -207,24 +207,26 @@ enum BackupManager {
     }
 
     @MainActor
-    static func apply(_ backup: ImportedBackup, mode: BackupImportMode, to realm: Realm) throws -> BackupImportResult {
-        let result = try realm.write {
-            insert(backup.snapshot, mode: mode, into: realm)
-        }
+    static func apply(_ backup: ImportedBackup, mode: BackupImportMode, to context: ModelContext) throws -> BackupImportResult {
+        let snapshot = backup.snapshot
 
-        DataSeeder.seedDefaultAccount(in: realm)
-
-        return result
-    }
-
-    @MainActor
-    private static func insert(_ snapshot: BackupSnapshot, mode: BackupImportMode, into realm: Realm) -> BackupImportResult {
         if mode == .replace {
-            realm.deleteAll()
+            for autoPayment in try context.fetch(FetchDescriptor<AutoPayment>()) {
+                context.delete(autoPayment)
+            }
+            for transaction in try context.fetch(FetchDescriptor<Transaction>()) {
+                context.delete(transaction)
+            }
+            for category in try context.fetch(FetchDescriptor<TransactionCategory>()) {
+                context.delete(category)
+            }
+            for account in try context.fetch(FetchDescriptor<Account>()) {
+                context.delete(account)
+            }
         }
 
         var accountsByUuid: [UUID: Account] = [:]
-        let existingAccounts = Array(realm.objects(Account.self))
+        let existingAccounts = try mode == .replace ? [] : context.fetch(FetchDescriptor<Account>())
         for account in existingAccounts {
             accountsByUuid[account.uuid] = account
         }
@@ -233,18 +235,18 @@ enum BackupManager {
             let account = Account(name: item.name, amount: item.amount, checkpointDate: item.date, sortIndex: accountSortIndex)
             account.uuid = item.uuid
             account.isDisabled = item.isDisabled ?? false
-            realm.add(account)
+            context.insert(account)
             accountsByUuid[item.uuid] = account
             accountSortIndex += 1
         }
 
-        let existingCategories = Array(realm.objects(TransactionCategory.self))
+        let existingCategories = try mode == .replace ? [] : context.fetch(FetchDescriptor<TransactionCategory>())
         let sortOffset = existingCategories.nextSortIndex
         var unclaimed = existingCategories
         var resolved: [UUID: TransactionCategory] = [:]
         var created: [(category: TransactionCategory, parentUuid: UUID?)] = []
 
-        for item in snapshot.categories where resolved[item.uuid] == nil {
+        for item in snapshot.categories {
             let name = TransactionCategoryName(rawValue: item.name)
             let operationType = item.operationType.flatMap { OperationType(rawValue: $0) } ?? .outcome
             let matchIndex = unclaimed.firstIndex { $0.uuid == item.uuid } ?? unclaimed.firstIndex {
@@ -270,7 +272,7 @@ enum BackupManager {
             )
             category.uuid = item.uuid
             category.budget = max(item.budget ?? .zero, .zero)
-            realm.add(category)
+            context.insert(category)
             resolved[item.uuid] = category
             created.append((category, item.parentUuid))
         }
@@ -279,7 +281,7 @@ enum BackupManager {
             category.parentUuid = parentUuid.flatMap { resolved[$0]?.uuid }
         }
 
-        var existingIds = Set(realm.objects(Transaction.self).map(\.id))
+        let existingIds: Set<UUID> = try mode == .replace ? [] : Set(context.fetch(FetchDescriptor<Transaction>()).map(\.id))
         var addedTransactions: Int = .zero
 
         for item in snapshot.transactions where !existingIds.contains(item.id) {
@@ -292,10 +294,13 @@ enum BackupManager {
                 account: item.accountUuid.flatMap { accountsByUuid[$0] }
             )
             transaction.id = item.id
-            realm.add(transaction)
-            existingIds.insert(item.id)
+            context.insert(transaction)
             addedTransactions += 1
         }
+
+        try context.save()
+
+        DataSeeder.seedDefaultAccount(in: context)
 
         return BackupImportResult(transactions: addedTransactions, categories: created.count)
     }

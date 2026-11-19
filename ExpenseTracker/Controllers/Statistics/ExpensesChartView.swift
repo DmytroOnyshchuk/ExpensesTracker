@@ -7,14 +7,14 @@
 //
 
 import Charts
-import RealmSwift
+import SwiftData
 import SwiftUI
 
 struct ExpensesChartView: View {
     var operationType: OperationType = .outcome
 
-    @ObservedResults(Transaction.self, where: Transaction.visible) private var storedTransactions
-    @ObservedResults(TransactionCategory.self, where: TransactionCategory.notDeleted) private var storedCategories
+    @Query(filter: Transaction.visible) private var storedTransactions: [Transaction]
+    @Query(filter: TransactionCategory.notDeleted) private var storedCategories: [TransactionCategory]
 
     private var transactions: [Transaction] { storedTransactions.of(operationType) }
 
@@ -35,7 +35,6 @@ struct ExpensesChartView: View {
     }
 
     var body: some View {
-        let transactions = transactions
         let amounts = period.amounts(of: transactions)
 
         ScrollView(.vertical) {
@@ -403,23 +402,29 @@ struct ExpensesChartBucket: Identifiable {
 }
 
 #Preview("Chart") {
-    let realm = makePreviewRealm()
-    let categories = Array(realm.objects(TransactionCategory.self))
+    let container = makePreviewModelContainer()
+    let categories = ((try? container.mainContext.fetch(FetchDescriptor<TransactionCategory>())) ?? [])
         .filter { !$0.isDirectory }
     for day in 0 ..< 400 {
         guard let category = categories.randomElement() else { break }
-        realm.update { realm.add(Transaction(amount: Int.random(in: 20000 ... 800000), category: category, date: Date().adding(-day, .day))) }
+        container.mainContext.insert(
+            Transaction(
+                amount: Int.random(in: 20000 ... 800000),
+                category: category,
+                date: Date().adding(-day, .day)
+            )
+        )
     }
 
     return NavigationStack {
         ExpensesChartView()
     }
-    .environment(\.realmConfiguration, realm.configuration)
+    .modelContainer(container)
 }
 
 #Preview("Empty chart") {
     NavigationStack {
         ExpensesChartView()
     }
-    .environment(\.realmConfiguration, makePreviewRealm().configuration)
+    .modelContainer(makePreviewModelContainer())
 }

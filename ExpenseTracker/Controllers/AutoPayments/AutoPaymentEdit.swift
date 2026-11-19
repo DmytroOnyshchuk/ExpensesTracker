@@ -6,7 +6,7 @@
 //  Copyright © 2026 Dmytro Onyshchuk. All rights reserved.
 //
 
-import RealmSwift
+import SwiftData
 import SwiftUI
 
 struct AutoPaymentEdit: View {
@@ -21,7 +21,7 @@ struct AutoPaymentEdit: View {
     @State private var popup: Popup?
     @State private var showCategoryPicker = false
     @State private var amountText = String()
-    @ObservedResults(Account.self, where: Account.notDeleted, sortDescriptor: RealmSwift.SortDescriptor(keyPath: "sortIndex")) private var storedAccounts
+    @Query(filter: Account.notDeleted, sort: \Account.sortIndex) private var storedAccounts: [Account]
 
     @StoredSettings private var appSettings
 
@@ -29,7 +29,7 @@ struct AutoPaymentEdit: View {
     @FocusState private var isNoteFocused: Bool
 
     @Environment(\.dismiss) private var dismiss
-    @Environment(\.realm) private var realm
+    @Environment(\.modelContext) private var modelContext
 
     private var accounts: [Account] { storedAccounts.filter { !$0.isDisabled || $0.uuid == current.account?.uuid } }
     private var current: AutoPaymentDraft { draft ?? AutoPaymentDraft(account: storedAccounts.enabled.first) }
@@ -322,29 +322,27 @@ struct AutoPaymentEdit: View {
     }
 
     private func save() {
-        let current = current
         if let autoPayment {
-            if let autoPayment = autoPayment.live {
-                realm.update { current.apply(to: autoPayment) }
-            }
+            current.apply(to: autoPayment)
         } else if let autoPayment = current.makeAutoPayment() {
-            realm.update { realm.add(autoPayment) }
+            modelContext.insert(autoPayment)
         }
-        realm.runAutoPayments()
+        try? modelContext.save()
+        modelContext.runAutoPayments()
         dismiss()
     }
 
     private func delete() {
         hideKeyboard()
         if let autoPayment {
-            realm.deleteWithUndo(autoPayment)
+            modelContext.deleteWithUndo(autoPayment)
         }
         dismiss()
     }
 }
 
 extension AutoPaymentEdit: Equatable {
-    nonisolated static func == (lhs: AutoPaymentEdit, rhs: AutoPaymentEdit) -> Bool { lhs.autoPayment == rhs.autoPayment }
+    nonisolated static func == (lhs: AutoPaymentEdit, rhs: AutoPaymentEdit) -> Bool { lhs.autoPayment?.persistentModelID == rhs.autoPayment?.persistentModelID }
 }
 
 struct AutoPaymentPeriodPopup: View {
@@ -409,20 +407,18 @@ struct AutoPaymentDatePopup: View {
 
 #Preview("New autopayment") {
     AutoPaymentEdit()
-        .environment(\.realmConfiguration, makePreviewRealm().configuration)
+        .modelContainer(makePreviewModelContainer())
 }
 
 #Preview("Edit autopayment") {
-    let realm = makePreviewRealm()
+    let container = makePreviewModelContainer()
     let category = TransactionCategory(name: "Rent", categoryIcon: CategoryIcon(name: "house.fill", iconColor: .orange))
     let autoPayment = AutoPayment(amount: 1200000, category: category, periodCount: 1, periodUnit: .month)
-    realm.update {
-        realm.add(category)
-        realm.add(autoPayment)
-    }
+    container.mainContext.insert(category)
+    container.mainContext.insert(autoPayment)
 
     return AutoPaymentEdit(autoPayment: autoPayment)
-        .environment(\.realmConfiguration, realm.configuration)
+        .modelContainer(container)
 }
 
 #Preview("Period popup") {
