@@ -140,25 +140,23 @@ struct BudgetPager: View {
     }
 
     private func monthHeader(month: Date, index: Int) -> some View {
-        Text(StatisticsPeriod.month.title(for: month))
-            .font(.appRegular(22))
-            .foregroundColor(.appPrimary)
-            .lineLimit(1)
-            .minimumScaleFactor(0.7)
-            .contentTransition(.opacity)
-            .animation(.easeInOut(duration: 0.2), value: month)
-            .padding(.horizontal, 64)
-            .frame(maxWidth: .infinity)
-            .frame(height: 44)
-            .overlay {
-                HStack {
-                    monthArrow(systemImage: "chevron.left", target: index - 1)
-                    Spacer()
-                    monthArrow(systemImage: "chevron.right", target: index + 1)
-                }
-                .padding(.horizontal, 16)
-            }
-            .padding(.top, 8)
+        HStack(spacing: 12) {
+            monthArrow(systemImage: "chevron.left", target: index - 1)
+
+            Text(StatisticsPeriod.month.title(for: month))
+                .font(.appRegular(22))
+                .foregroundColor(.appPrimary)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+                .contentTransition(.opacity)
+                .animation(.easeInOut(duration: 0.2), value: month)
+                .frame(width: 190)
+
+            monthArrow(systemImage: "chevron.right", target: index + 1)
+        }
+        .frame(maxWidth: .infinity)
+        .frame(height: 44)
+        .padding(.top, 8)
     }
 
     private func monthArrow(systemImage: String, target: Int) -> some View {
