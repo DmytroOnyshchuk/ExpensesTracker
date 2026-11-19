@@ -23,6 +23,7 @@ struct AccountsView: View {
         List {
             ForEach(accounts, id: \.uuid) { account in
                 AccountRow(name: account.name, amount: account.current(in: transactions), isDisabled: account.isDisabled) {
+                    FeedbackManager.shared.buttonTapped()
                     editingAccount = account
                 }
                 .listRowBackground(Color.clear)

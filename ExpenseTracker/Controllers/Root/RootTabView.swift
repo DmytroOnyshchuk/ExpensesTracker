@@ -28,6 +28,7 @@ struct RootTabView: View {
         Binding(
             get: { selection },
             set: { newValue in
+                FeedbackManager.shared.buttonTapped()
                 if newValue == selection {
                     switch newValue {
                     case .home: homeResetToken += 1

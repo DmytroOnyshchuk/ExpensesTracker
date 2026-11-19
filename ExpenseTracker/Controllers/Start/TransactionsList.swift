@@ -53,6 +53,7 @@ struct TransactionsList: View {
                             TransactionRow(transaction: transaction)
                                 .contentShape(Rectangle())
                                 .onTapGesture {
+                                    FeedbackManager.shared.buttonTapped()
                                     editedTransaction = transaction
                                 }
                                 .listRowBackground(Color.clear)

@@ -246,6 +246,7 @@ struct BudgetMonthPage: View {
 
     private var unlimitedToggle: some View {
         Button {
+            FeedbackManager.shared.buttonTapped()
             withAnimation(.easeInOut(duration: 0.25)) {
                 showUnlimited.toggle()
             }

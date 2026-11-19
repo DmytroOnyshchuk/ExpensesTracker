@@ -161,6 +161,7 @@ struct StartView: View {
     }
 
     private func openHistory() {
+        FeedbackManager.shared.buttonTapped()
         showHistory = true
     }
 

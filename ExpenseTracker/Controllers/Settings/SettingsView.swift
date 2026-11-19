@@ -147,6 +147,7 @@ struct SettingsToggleRow: View {
         .contentShape(Rectangle())
         .onTapGesture {
             withAnimation { isOn.toggle() }
+            FeedbackManager.shared.buttonTapped()
         }
     }
 }
