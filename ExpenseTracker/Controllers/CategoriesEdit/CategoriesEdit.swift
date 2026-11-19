@@ -10,8 +10,52 @@ import SwiftData
 import SwiftUI
 
 struct CategoriesEdit: View {
+    private let operationType: OperationType?
+
+    @Query private var latest: [Transaction]
+
+    init(operationType: OperationType? = nil) {
+        var latest = FetchDescriptor<Transaction>(predicate: Transaction.visible, sortBy: [SortDescriptor(\.date, order: .reverse)])
+        latest.fetchLimit = 1
+
+        self.operationType = operationType
+        _latest = Query(latest)
+    }
+
+    var body: some View {
+        CategoriesEditCounts(interval: StatisticsPeriod.year.interval(containing: latest.first?.date ?? Date()), operationType: operationType)
+    }
+}
+
+extension CategoriesEdit: Equatable {
+    nonisolated static func == (lhs: CategoriesEdit, rhs: CategoriesEdit) -> Bool { lhs.operationType == rhs.operationType }
+}
+
+struct CategoriesEditCounts: View {
+    let interval: DateInterval
+    let operationType: OperationType?
+
+    @Query private var transactions: [Transaction]
+
+    init(interval: DateInterval, operationType: OperationType?) {
+        self.interval = interval
+        self.operationType = operationType
+        _transactions = Query(filter: Transaction.shown(from: interval.start, to: interval.end))
+    }
+
+    var body: some View {
+        CategoriesEditContent(operationType: operationType, transactionsCounts: transactions.reduce(into: [:]) { $0[$1.category.uuid, default: .zero] += 1 })
+    }
+}
+
+extension CategoriesEditCounts: Equatable {
+    nonisolated static func == (lhs: CategoriesEditCounts, rhs: CategoriesEditCounts) -> Bool { lhs.interval == rhs.interval && lhs.operationType == rhs.operationType }
+}
+
+struct CategoriesEditContent: View {
+    let transactionsCounts: [UUID: Int]
+
     @Query(filter: TransactionCategory.notDeleted) private var storedCategories: [TransactionCategory]
-    @Query(filter: Transaction.visible) private var transactions: [Transaction]
 
     private var categories: [TransactionCategory] { storedCategories.of(operationType) }
 
@@ -28,26 +72,13 @@ struct CategoriesEdit: View {
 
     private let showsOperationTypePicker: Bool
 
-    init(operationType: OperationType? = nil) {
-        _operationType = State(initialValue: operationType ?? .outcome)
+    init(operationType: OperationType?, transactionsCounts: [UUID: Int]) {
+        self.transactionsCounts = transactionsCounts
         self.showsOperationTypePicker = operationType == nil
-    }
-
-    private var transactionsCounts: [UUID: Int] {
-        let transactions = transactions
-        let period = StatisticsPeriod.year
-        let interval = period.interval(containing: period.starts(of: transactions).first ?? Date())
-
-        var counts: [UUID: Int] = [:]
-        for transaction in transactions where transaction.date >= interval.start && transaction.date < interval.end {
-            counts[transaction.category.uuid, default: 0] += 1
-        }
-        return counts
+        _operationType = State(initialValue: operationType ?? .outcome)
     }
 
     var body: some View {
-        let transactionsCounts = transactionsCounts
-
         Group {
             if showsOperationTypePicker, appSettings.accounting.incomeEnabled {
                 VStack(spacing: 0) {
@@ -156,8 +187,8 @@ struct CategoriesEdit: View {
     }
 }
 
-extension CategoriesEdit: Equatable {
-    nonisolated static func == (lhs: CategoriesEdit, rhs: CategoriesEdit) -> Bool { lhs.showsOperationTypePicker == rhs.showsOperationTypePicker }
+extension CategoriesEditContent: Equatable {
+    nonisolated static func == (lhs: CategoriesEditContent, rhs: CategoriesEditContent) -> Bool { lhs.showsOperationTypePicker == rhs.showsOperationTypePicker && lhs.transactionsCounts == rhs.transactionsCounts }
 }
 
 #Preview {
