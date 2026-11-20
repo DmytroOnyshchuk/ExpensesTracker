@@ -29,19 +29,21 @@ struct CategoryGrid: View {
     }
 
     var body: some View {
+        let pages = chunkedCategories
+
         VStack(spacing: 0) {
             ScrollView(.horizontal) {
                 HStack(spacing: 0) {
-                    ForEach(0 ..< chunkedCategories.count, id: \.self) { pageIndex in
+                    ForEach(0 ..< pages.count, id: \.self) { pageIndex in
                         VStack(alignment: .center, spacing: 0) {
                             LazyVGrid(columns: gridLayout, spacing: 0) {
-                                ForEach(chunkedCategories[pageIndex], id: \.id) { category in
+                                ForEach(pages[pageIndex], id: \.id) { category in
                                     CategoryCell(category: category) {
                                         onSelect(category)
                                     }
                                 }
 
-                                if pageIndex == chunkedCategories.count - 1 {
+                                if pageIndex == pages.count - 1 {
                                     EditCategoriesCell {
                                         editedOperationType = operationType
                                     }
@@ -63,9 +65,9 @@ struct CategoryGrid: View {
             .scrollClipDisabled()
             // .frame(height: 176)
 
-            if chunkedCategories.count > 1 {
+            if pages.count > 1 {
                 HStack(spacing: 8) {
-                    ForEach(0 ..< chunkedCategories.count, id: \.self) { index in
+                    ForEach(0 ..< pages.count, id: \.self) { index in
                         Circle()
                             .fill(currentPage == index ? Color.appWhite : Color.appWhite.opacity(0.4))
                             .frame(width: 6, height: 6)
