@@ -588,7 +588,7 @@ struct CategoryBudgetRow: View {
                 VStack(alignment: .leading, spacing: 8) {
                     HStack(alignment: .firstTextBaseline, spacing: 8) {
                         Text(category.name.localized)
-                            .font(.appLight(16))
+                            .font(.appLight(18))
                             .foregroundColor(.appWhite)
                             .lineLimit(1)
 
