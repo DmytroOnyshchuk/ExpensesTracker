@@ -59,6 +59,7 @@ struct StatisticsView: View {
                                 .foregroundColor(.appWhite)
                         }
                         .accessibilityLabel(L10n.statisticsChart)
+                        .simultaneousGesture(TapGesture().onEnded { FeedbackManager.shared.selectionChanged() })
 
                         if appSettings.accounting.incomeEnabled {
                             Button(action: toggleOperationType) {
