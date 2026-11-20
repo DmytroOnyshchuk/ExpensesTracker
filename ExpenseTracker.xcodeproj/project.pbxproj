@@ -379,7 +379,17 @@
 /* Begin PBXShellScriptBuildPhase section */
 		664C1F172E462AEE00AB1AF2 /* SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
+			inputPaths = (
+				"$(SRCROOT)/ExpenseTracker/Resources/run_swiftgen.sh",
+				"$(SRCROOT)/ExpenseTracker/Resources/swiftgen.yml",
+				"$(SRCROOT)/ExpenseTracker/Resources/Localization/en.lproj/Localizable.strings",
+				"$(SRCROOT)/ExpenseTracker/Resources/Assets.xcassets",
+			);
 			name = SwiftGen;
+			outputPaths = (
+				"$(SRCROOT)/ExpenseTracker/Resources/Generated/Strings+Generated.swift",
+				"$(SRCROOT)/ExpenseTracker/Resources/Generated/Assets+Generated.swift",
+			);
 			shellPath = /bin/sh;
 			shellScript = (
 				"echo \"Build Phase - Begin SwiftGen\"",
