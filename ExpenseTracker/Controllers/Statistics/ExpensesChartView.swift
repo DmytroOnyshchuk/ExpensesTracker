@@ -13,13 +13,11 @@ import SwiftUI
 struct ExpensesChartView: View {
     var operationType: OperationType = .outcome
 
-    @Query(filter: Transaction.visible) private var storedTransactions: [Transaction]
-    @Query(filter: TransactionCategory.notDeleted) private var storedCategories: [TransactionCategory]
+    @Environment(\.modelContext) private var modelContext
 
-    private var transactions: [Transaction] { storedTransactions.of(operationType) }
+    @Query private var categories: [TransactionCategory]
 
-    private var categories: [TransactionCategory] { storedCategories.of(operationType) }
-
+    @State private var data: ExpensesChartData?
     @State private var period: StatisticsPeriod = .day
     @State private var selection: DateInterval? = StatisticsPeriod.day.defaultSelection()
 
@@ -35,44 +33,14 @@ struct ExpensesChartView: View {
     }
 
     var body: some View {
-        let amounts = period.amounts(of: transactions)
-
         ScrollView(.vertical) {
             VStack(spacing: 12) {
                 SegmentedControl(items: StatisticsPeriod.allCases, selection: periodBinding, title: \.title)
                     .sensoryFeedback(trigger: period) { _, _ in FeedbackManager.shared.selectionFeedback }
                     .padding(.horizontal, 64)
 
-                if amounts.isEmpty {
-                    Text(L10n.transactionsListNoTransactions)
-                        .font(.appLight(18))
-                        .foregroundColor(.appGray.opacity(0.6))
-                        .frame(height: 120)
-                } else {
-                    ExpensesChart(period: period, amounts: amounts, selection: $selection)
-                        .frame(height: 320)
-                        .padding(12)
-                        .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
-                        .padding(.horizontal, 16)
-                        .id(period)
-
-                    if let selection {
-                        Text(period.rangeTitle(for: selection))
-                            .font(.appRegular(22))
-                            .foregroundColor(.appPrimary)
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.7)
-                            .padding(.horizontal, 16)
-                            .padding(.top, 8)
-
-                        StatisticsBreakdown(
-                            slices: StatisticsSlice.slices(from: transactions, in: selection, categories: categories),
-                            interval: selection,
-                            averageTitle: period.averageTitle(
-                                for: period.average(of: transactions, in: selection).getAmount()
-                            )
-                        )
-                    }
+                if let data {
+                    content(data: data, amounts: data.amounts[period] ?? [:])
                 }
             }
             .padding(.vertical, 16)
@@ -81,6 +49,82 @@ struct ExpensesChartView: View {
         .appBackground()
         .navigationTitle(L10n.statisticsChart)
         .navigationBarTitleDisplayMode(.inline)
+        .task(id: operationType) { await load() }
+    }
+
+    @ViewBuilder
+    private func content(data: ExpensesChartData, amounts: [Date: Int]) -> some View {
+        if amounts.isEmpty {
+            Text(L10n.transactionsListNoTransactions)
+                .font(.appLight(18))
+                .foregroundColor(.appGray.opacity(0.6))
+                .frame(height: 120)
+        } else {
+            ExpensesChart(period: period, amounts: amounts, selection: $selection)
+                .frame(height: 320)
+                .padding(12)
+                .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: .appLabel.opacity(0.1))
+                .padding(.horizontal, 16)
+                .id(period)
+
+            if let selection {
+                let totals = data.totals(in: selection)
+
+                Text(period.rangeTitle(for: selection))
+                    .font(.appRegular(22))
+                    .foregroundColor(.appPrimary)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
+                    .padding(.horizontal, 16)
+                    .padding(.top, 8)
+
+                StatisticsBreakdown(slices: StatisticsSlice.slices(from: totals, categories: categories), interval: selection, averageTitle: period.averageTitle(for: period.average(of: totals.values.reduce(0, +), in: selection).getAmount()))
+            }
+        }
+    }
+
+    private func load() async {
+        try? modelContext.save()
+        let container = modelContext.container
+        let loaded = await Task.detached(priority: .userInitiated) { [operationType] in ExpensesChartData.load(container: container, operationType: operationType) }.value
+        guard !Task.isCancelled else { return }
+        withAnimation(.appStandard) {
+            data = loaded
+        }
+    }
+}
+
+struct ExpensesChartData: Sendable {
+    let amounts: [StatisticsPeriod: [Date: Int]]
+    let days: [Date: [UUID: Int]]
+
+    static func load(container: ModelContainer, operationType: OperationType, calendar: Calendar = .current) -> ExpensesChartData {
+        let context = ModelContext(container)
+        var descriptor = FetchDescriptor<Transaction>(predicate: Transaction.shown(of: operationType))
+        descriptor.propertiesToFetch = [\.date, \.amount]
+        let transactions = (try? context.fetch(descriptor)) ?? []
+
+        var days: [Date: [UUID: Int]] = [:]
+        for transaction in transactions {
+            days[calendar.startOfDay(for: transaction.date), default: [:]][transaction.category.uuid, default: .zero] += transaction.amount
+        }
+
+        var amounts: [StatisticsPeriod: [Date: Int]] = [:]
+        for (day, categories) in days {
+            let total = categories.values.reduce(0, +)
+            for period in StatisticsPeriod.allCases {
+                amounts[period, default: [:]][period.interval(containing: day, calendar: calendar).start, default: .zero] += total
+            }
+        }
+
+        return ExpensesChartData(amounts: amounts, days: days)
+    }
+
+    func totals(in range: DateInterval) -> [UUID: Int] {
+        days.reduce(into: [:]) { result, day in
+            guard day.key >= range.start, day.key < range.end else { return }
+            result.merge(day.value, uniquingKeysWith: +)
+        }
     }
 }
 

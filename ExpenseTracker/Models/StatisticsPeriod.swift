@@ -63,11 +63,8 @@ enum StatisticsPeriod: CaseIterable, Identifiable {
         return unit.averageTitle(for: (total / max(count, 1)).getAmount())
     }
 
-    func average(of transactions: [Transaction], in range: DateInterval, calendar: Calendar = .current) -> Int {
+    func average(of total: Int, in range: DateInterval, calendar: Calendar = .current) -> Int {
         let count = calendar.dateComponents([component], from: range.start, to: range.end).value(for: component) ?? .zero
-        let total = transactions
-            .filter { $0.date >= range.start && $0.date < range.end }
-            .reduce(0) { $0 + $1.amount }
         return total / max(count, 1)
     }
 
@@ -119,12 +116,6 @@ extension StatisticsPeriod {
         case .day: unitDuration * 366
         case .month: unitDuration * 120
         case .year: unitDuration * 50
-        }
-    }
-
-    func amounts(of transactions: [Transaction], calendar: Calendar = .current) -> [Date: Int] {
-        transactions.reduce(into: [:]) { result, transaction in
-            result[interval(containing: transaction.date, calendar: calendar).start, default: .zero] += transaction.amount
         }
     }
 
@@ -199,6 +190,31 @@ struct StatisticsSlice: Identifiable {
                 let amount = group.reduce(0) { $0 + $1.amount }
                 return StatisticsSlice(category: category, amount: amount, share: amount.double / total.double)
             }
+            .sorted {
+                if $0.amount != $1.amount {
+                    return $0.amount > $1.amount
+                }
+                return $0.category.name.localized < $1.category.name.localized
+            }
+    }
+
+    static func slices(from amounts: [UUID: Int], categories: [TransactionCategory]) -> [StatisticsSlice] {
+        let total = amounts.values.reduce(0, +)
+        guard total > 0 else { return [] }
+
+        let known = Dictionary(categories.map { ($0.uuid, $0) }, uniquingKeysWith: { first, _ in first })
+        var owners: [UUID: TransactionCategory] = [:]
+        var totals: [UUID: Int] = [:]
+        for (uuid, amount) in amounts {
+            guard let category = known[uuid] else { continue }
+            let directory = category.parentUuid.flatMap { known[$0] }.flatMap { $0.isDirectory && $0.deletedAt == nil ? $0 : nil }
+            let owner = directory ?? category
+            owners[owner.uuid] = owner
+            totals[owner.uuid, default: .zero] += amount
+        }
+
+        return owners.values
+            .map { StatisticsSlice(category: $0, amount: totals[$0.uuid] ?? .zero, share: (totals[$0.uuid] ?? .zero).double / total.double) }
             .sorted {
                 if $0.amount != $1.amount {
                     return $0.amount > $1.amount

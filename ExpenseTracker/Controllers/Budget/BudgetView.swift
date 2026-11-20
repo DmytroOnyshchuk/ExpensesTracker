@@ -588,7 +588,7 @@ struct CategoryBudgetRow: View {
                 VStack(alignment: .leading, spacing: 8) {
                     HStack(alignment: .firstTextBaseline, spacing: 8) {
                         Text(category.name.localized)
-                            .font(.appLight(18))
+                            .font(.appLight(20))
                             .foregroundColor(.appWhite)
                             .lineLimit(1)
 
@@ -596,12 +596,12 @@ struct CategoryBudgetRow: View {
 
                         HStack(alignment: .firstTextBaseline, spacing: 4) {
                             Text(spent.getAmount())
-                                .font(.appRegular(18))
+                                .font(.appRegular(22))
                                 .foregroundColor(.appWhite)
                                 .contentTransition(.numericText())
 
                             Text("/ \(limit.getAmount())")
-                                .font(.appLight(16))
+                                .font(.appLight(20))
                                 .foregroundColor(.appLabel)
                                 .contentTransition(.numericText())
                         }
