@@ -42,6 +42,9 @@ final class UndoToastCenter {
 struct UndoToastView: View {
     let message: String
     let onUndo: () -> Void
+    let onDismiss: () -> Void
+
+    @State private var dragOffset: CGFloat = 0
 
     var body: some View {
         HStack(spacing: 12) {
@@ -62,9 +65,26 @@ struct UndoToastView: View {
         }
         .padding(.horizontal, 16)
         .glassSurface(in: RoundedRectangle(cornerRadius: 18, style: .continuous), fallback: Color.appWhite)
+        .contentShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
         .legacyShadow(color: .appOverlay.opacity(0.3), radius: 12, y: 4)
         .padding(.horizontal, 16)
         .padding(.bottom, 8)
+        .offset(y: dragOffset)
+        .gesture(dragGesture)
+    }
+
+    private var dragGesture: some Gesture {
+        DragGesture(minimumDistance: 10, coordinateSpace: .global)
+            .onChanged { value in
+                dragOffset = value.translation.height > 0 ? value.translation.height : value.translation.height / 6
+            }
+            .onEnded { value in
+                if value.translation.height > 30 || value.predictedEndTranslation.height > 120 {
+                    onDismiss()
+                } else {
+                    withAnimation(.appSpring) { dragOffset = 0 }
+                }
+            }
     }
 }
 
@@ -81,6 +101,8 @@ private struct UndoToastModifier: ViewModifier {
                     UndoToastView(message: item.message) {
                         FeedbackManager.shared.buttonTapped()
                         center.undo()
+                    } onDismiss: {
+                        center.dismiss(item.id)
                     }
                     .id(item.id)
                     .transition(.move(edge: .bottom).combined(with: .opacity))
