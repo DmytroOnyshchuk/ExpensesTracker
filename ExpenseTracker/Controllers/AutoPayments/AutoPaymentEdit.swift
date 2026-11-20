@@ -133,7 +133,7 @@ struct AutoPaymentEdit: View {
                 }
             }
         }
-        .toast($validationMessage, icon: .warning)
+        .toast($validationMessage)
         .overlay {
             popupView
         }

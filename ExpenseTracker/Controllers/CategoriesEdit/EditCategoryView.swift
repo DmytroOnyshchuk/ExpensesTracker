@@ -119,7 +119,7 @@ struct EditCategoryView: View {
                 }
             }
         }
-        .toast($validationMessage, icon: .warning)
+        .toast($validationMessage)
         .alert(isDirectory ? L10n.editCategoryDeleteFolder : L10n.editCategoryDeleteCategory, isPresented: $showDeleteConfirmation) {
             Button(L10n.cancel, role: .cancel) {}
             Button(L10n.remove, role: .destructive, action: deleteCategory)
