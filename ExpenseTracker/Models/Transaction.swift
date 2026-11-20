@@ -68,6 +68,10 @@ extension Transaction {
         #Predicate<Transaction> { $0.deletedAt == nil && $0.date >= start && $0.date < end && ($0.account == nil || $0.account?.isDisabled == false) }
     }
 
+    static func existing(from start: Date, to end: Date) -> Predicate<Transaction> {
+        #Predicate<Transaction> { $0.deletedAt == nil && $0.date >= start && $0.date < end }
+    }
+
     static let inTrashWithOwners = #Predicate<Transaction> { $0.deletedAt != nil || $0.category.deletedAt != nil || $0.account?.deletedAt != nil }
 }
 

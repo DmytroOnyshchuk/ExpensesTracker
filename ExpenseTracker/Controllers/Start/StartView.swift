@@ -254,6 +254,8 @@ struct StartView: View {
         let previousNote = note
 
         modelContext.insert(transaction)
+        try? modelContext.save()
+        BalanceCenter.shared.add(transaction)
         FeedbackManager.shared.transactionAdded()
         input.reset()
         note = String()
@@ -276,12 +278,12 @@ struct StartBalanceCard: View {
     let onSelect: (Account) -> Void
     let action: () -> Void
 
-    @Query(filter: Transaction.visible) private var transactions: [Transaction]
+    private let balanceCenter = BalanceCenter.shared
 
     var body: some View {
-        let changes = transactions.balanceChanges
+        let changes = balanceCenter.changes
 
-        BalanceCard(accounts: accounts, selected: selected, balance: selected?.current(with: changes), amountFor: { $0.current(with: changes) }, onSelect: onSelect, action: action)
+        BalanceCard(accounts: accounts, selected: selected, balance: changes.flatMap { selected?.current(with: $0) }, amountFor: { $0.current(with: changes ?? [:]) }, onSelect: onSelect, action: action)
     }
 }
 

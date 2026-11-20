@@ -17,7 +17,6 @@ struct BackupsView: View {
     @Environment(\.modelContext) private var modelContext
 
     @Query(filter: Transaction.notDeleted) private var transactions: [Transaction]
-    @Query(filter: TransactionCategory.notDeleted) private var categories: [TransactionCategory]
     @Query(filter: Account.notDeleted, sort: \Account.sortIndex) private var selectableAccounts: [Account]
 
     @State private var isImporting = false
@@ -34,11 +33,6 @@ struct BackupsView: View {
     var body: some View {
         ScrollView(.vertical) {
             VStack(alignment: .leading, spacing: 24) {
-                BackupSection(title: L10n.backupsCurrentData) {
-                    BackupCountsView(transactions: transactions.count, categories: categories.count)
-                        .padding(16)
-                }
-
                 BackupSection(title: L10n.backupsExportSection) {
                     MenuRow(title: L10n.backupsShareAction, systemImage: "square.and.arrow.up", action: chooseFormat)
                 }

@@ -168,30 +168,37 @@ struct MenuSummary: View {
     let title: String
     let action: () -> Void
 
-    @Query(filter: Transaction.notDeleted) private var transactions: [Transaction]
+    private let start: Date
+    private let balanceCenter = BalanceCenter.shared
+
+    @Query private var transactions: [Transaction]
     @Query(filter: Account.notDeleted) private var accounts: [Account]
     @StoredSettings private var appSettings
+
+    init(title: String, action: @escaping () -> Void) {
+        let interval = StatisticsPeriod.month.interval(containing: Date())
+        self.title = title
+        self.action = action
+        self.start = interval.start
+        _transactions = Query(filter: Transaction.existing(from: interval.start, to: interval.end))
+    }
 
     var body: some View {
         MenuSpentCard(title: title, amount: spentAmount, balance: balance, action: action)
     }
 
     private var spentAmount: Int {
-        let interval = StatisticsPeriod.month.interval(containing: Date())
-        return transactions
-            .filter { $0.date >= interval.start && $0.date < interval.end }
-            .of(.outcome)
-            .reduce(0) { $0 + $1.amount }
+        transactions.of(.outcome).reduce(0) { $0 + $1.amount }
     }
 
     private var balance: Int? {
-        guard appSettings.accounting.multipleAccountsEnabled, !accounts.isEmpty else { return nil }
-        return accounts.enabled.total(with: transactions.balanceChanges)
+        guard appSettings.accounting.multipleAccountsEnabled, !accounts.isEmpty, let changes = balanceCenter.changes else { return nil }
+        return accounts.enabled.total(with: changes)
     }
 }
 
 extension MenuSummary: Equatable {
-    nonisolated static func == (lhs: MenuSummary, rhs: MenuSummary) -> Bool { lhs.title == rhs.title }
+    nonisolated static func == (lhs: MenuSummary, rhs: MenuSummary) -> Bool { lhs.title == rhs.title && lhs.start == rhs.start }
 }
 
 struct MenuSpentCard: View {

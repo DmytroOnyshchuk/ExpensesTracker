@@ -30,9 +30,6 @@ final class Account {
         set { typeRaw = newValue.rawValue }
     }
     
-    @Relationship(deleteRule: .nullify, inverse: \Transaction.account)
-    var transactions: [Transaction] = []
-
     @Relationship(deleteRule: .nullify, inverse: \AutoPayment.account)
     var autoPayments: [AutoPayment] = []
 

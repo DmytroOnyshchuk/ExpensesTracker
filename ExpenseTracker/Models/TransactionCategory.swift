@@ -22,9 +22,6 @@ final class TransactionCategory {
     var deletedAt: Date?
     var operationTypeRaw: String = OperationType.outcome.rawValue
 
-    @Relationship(deleteRule: .cascade, inverse: \Transaction.category)
-    var transactions: [Transaction] = []
-
     @Relationship(deleteRule: .cascade, inverse: \AutoPayment.category)
     var autoPayments: [AutoPayment] = []
 
