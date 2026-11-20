@@ -19,6 +19,7 @@ final class Account {
     var uuid: UUID = UUID()
     var name: String = String()
     var amount: Int = 0
+    var balance: Int = 0
     var checkpointDate: Date = Date()
     var sortIndex: Int = 0
     var deletedAt: Date?
@@ -37,23 +38,14 @@ final class Account {
         self.uuid = UUID()
         self.name = name
         self.amount = amount
+        self.balance = amount
         self.checkpointDate = checkpointDate
         self.sortIndex = sortIndex
     }
 
-    func current(in transactions: [Transaction]) -> Int {
-        let change = transactions
-            .filter { $0.account?.uuid == uuid && $0.date > checkpointDate }
-            .reduce(0) { $0 + $1.signedAmount }
-        return amount + change
-    }
-
-    func current(with changes: [UUID: Int]) -> Int {
-        amount + (changes[uuid] ?? .zero)
-    }
-
     func setAmount(_ newAmount: Int) {
         amount = newAmount
+        balance = newAmount
         checkpointDate = Date()
     }
 }
@@ -77,12 +69,8 @@ extension [Account] {
         (map(\.sortIndex).max() ?? -1) + 1
     }
 
-    func total(in transactions: [Transaction]) -> Int {
-        reduce(0) { $0 + $1.current(in: transactions) }
-    }
-
-    func total(with changes: [UUID: Int]) -> Int {
-        reduce(0) { $0 + $1.current(with: changes) }
+    var total: Int {
+        reduce(0) { $0 + $1.balance }
     }
 }
 

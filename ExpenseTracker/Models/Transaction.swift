@@ -42,6 +42,19 @@ final class Transaction {
     var displayAmount: String {
         operationType == .income ? "+" + amount.getAmount() : amount.getAmount()
     }
+
+    var balanceChange: Int {
+        guard let account, deletedAt == nil, date > account.checkpointDate else { return .zero }
+        return signedAmount
+    }
+
+    func addToBalance() {
+        account?.balance += balanceChange
+    }
+
+    func removeFromBalance() {
+        account?.balance -= balanceChange
+    }
 }
 
 extension Transaction {
@@ -66,6 +79,27 @@ extension Transaction {
 
     static func shown(from start: Date, to end: Date) -> Predicate<Transaction> {
         #Predicate<Transaction> { $0.deletedAt == nil && $0.date >= start && $0.date < end && ($0.account == nil || $0.account?.isDisabled == false) }
+    }
+
+    static let withoutAccount = #Predicate<Transaction> { $0.account == nil }
+
+    static func shown(before end: Date) -> Predicate<Transaction> {
+        #Predicate<Transaction> { $0.deletedAt == nil && $0.date < end && ($0.account == nil || $0.account?.isDisabled == false) }
+    }
+
+    static func shown(of operationType: OperationType, before end: Date) -> Predicate<Transaction> {
+        let raw = operationType.rawValue
+        return #Predicate<Transaction> { $0.deletedAt == nil && $0.date < end && ($0.account == nil || $0.account?.isDisabled == false) && $0.category.operationTypeRaw == raw }
+    }
+
+    static func shown(inDirectory uuid: UUID, before end: Date) -> Predicate<Transaction> {
+        let parentUuid: UUID? = uuid
+        return #Predicate<Transaction> { $0.deletedAt == nil && $0.date < end && ($0.account == nil || $0.account?.isDisabled == false) && ($0.category.parentUuid == parentUuid || $0.category.uuid == uuid) }
+    }
+
+    static func shown(inDirectory uuid: UUID, from start: Date, to end: Date) -> Predicate<Transaction> {
+        let parentUuid: UUID? = uuid
+        return #Predicate<Transaction> { $0.deletedAt == nil && $0.date >= start && $0.date < end && ($0.account == nil || $0.account?.isDisabled == false) && ($0.category.parentUuid == parentUuid || $0.category.uuid == uuid) }
     }
 
     static func existing(from start: Date, to end: Date) -> Predicate<Transaction> {

@@ -16,12 +16,12 @@ struct BackupExportRequest {
 struct BackupsView: View {
     @Environment(\.modelContext) private var modelContext
 
-    @Query(filter: Transaction.notDeleted) private var transactions: [Transaction]
     @Query(filter: Account.notDeleted, sort: \Account.sortIndex) private var selectableAccounts: [Account]
 
     @State private var isImporting = false
     @State private var isChoosingFormat = false
     @State private var optionsFormat: BackupExportFormat?
+    @State private var exportTransactions: [Transaction] = []
     @State private var pendingExport: BackupExportRequest?
     @State private var sharedFile: BackupShareFile?
     @State private var pickedFileURL: URL?
@@ -85,7 +85,7 @@ struct BackupsView: View {
             BackupExportOptionsSheet(
                 format: format,
                 accounts: selectableAccounts,
-                transactions: transactions,
+                transactions: exportTransactions,
                 onCancel: closeOptions
             ) { options in
                 pendingExport = BackupExportRequest(format: format, options: options)
@@ -134,12 +134,18 @@ struct BackupsView: View {
     private func confirm(_ format: BackupExportFormat) {
         switch format {
         case .json: share(format, options: BackupExportOptions())
-        case .csv, .xlsx: optionsFormat = format
+        case .csv, .xlsx: openOptions(for: format)
         }
+    }
+
+    private func openOptions(for format: BackupExportFormat) {
+        exportTransactions = (try? modelContext.fetch(FetchDescriptor<Transaction>(predicate: Transaction.notDeleted))) ?? []
+        optionsFormat = format
     }
 
     private func closeOptions() {
         optionsFormat = nil
+        exportTransactions = []
     }
 
     private func sharePendingExport() {

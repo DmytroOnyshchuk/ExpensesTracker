@@ -38,21 +38,19 @@ struct TransactionDetails: View {
 
     @Environment(\.modelContext) private var modelContext
 
-    @Query(filter: Transaction.visible, animation: .appStandard) private var transactions: [Transaction]
+    @Query private var transactions: [Transaction]
 
     @State private var sorting: TransactionsSorting = .date
     @State private var editedTransaction: Transaction?
 
-    private var visibleTransactions: [Transaction] {
-        let categoryUuid = category.uuid
-        let isDirectory = category.isDirectory
+    init(category: TransactionCategory, interval: DateInterval) {
+        self.category = category
+        self.interval = interval
+        _transactions = Query(filter: Transaction.shown(inDirectory: category.uuid, from: interval.start, to: interval.end), animation: .appStandard)
+    }
 
-        return sorting.sorted(
-            transactions.filter {
-                let belongs = $0.category.uuid == categoryUuid || (isDirectory && $0.category.parentUuid == categoryUuid)
-                return belongs && $0.date >= interval.start && $0.date < interval.end
-            }
-        )
+    private var visibleTransactions: [Transaction] {
+        sorting.sorted(transactions)
     }
 
     var body: some View {

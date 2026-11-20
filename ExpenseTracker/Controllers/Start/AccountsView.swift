@@ -12,17 +12,14 @@ import SwiftUI
 struct AccountsView: View {
     @Environment(\.modelContext) private var modelContext
     @Query(filter: Account.notDeleted, sort: \Account.sortIndex) private var accounts: [Account]
-    @Query(filter: Transaction.notDeleted) private var transactions: [Transaction]
 
     @State private var editingAccount: Account?
     @State private var showNewAccount = false
 
     var body: some View {
-        let transactions = transactions
-
         List {
             ForEach(accounts, id: \.uuid) { account in
-                AccountRow(name: account.name, amount: account.current(in: transactions), isDisabled: account.isDisabled) {
+                AccountRow(name: account.name, amount: account.balance, isDisabled: account.isDisabled) {
                     FeedbackManager.shared.buttonTapped()
                     editingAccount = account
                 }
@@ -49,7 +46,7 @@ struct AccountsView: View {
                     .font(.appMedium(18))
                     .foregroundColor(.appLabel)
 
-                Text(accounts.enabled.total(in: transactions).getAmount())
+                Text(accounts.enabled.total.getAmount())
                     .font(.appMedium(22))
                     .foregroundColor(.appWhite)
                     .lineLimit(1)
@@ -85,12 +82,12 @@ struct AccountsView: View {
                     title: L10n.accountsEdit,
                     confirmTitle: L10n.save,
                     name: editingAccount.name,
-                    amount: editingAccount.current(in: transactions),
+                    amount: editingAccount.balance,
                     isDisabled: editingAccount.isDisabled,
                     canDisable: canTurnOff(editingAccount),
                     onCancel: { self.editingAccount = nil }
                 ) { name, amount, isDisabled in
-                    update(editingAccount, name: name, amount: amount, currentAmount: editingAccount.current(in: transactions), isDisabled: isDisabled)
+                    update(editingAccount, name: name, amount: amount, currentAmount: editingAccount.balance, isDisabled: isDisabled)
                     self.editingAccount = nil
                 }
                 .transition(.opacity)

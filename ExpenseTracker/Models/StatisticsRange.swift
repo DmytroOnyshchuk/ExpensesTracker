@@ -49,6 +49,13 @@ enum StatisticsScope: Equatable {
         }
     }
 
+    func predicate(before end: Date) -> Predicate<Transaction> {
+        switch self {
+        case let .operation(operationType): Transaction.shown(of: operationType, before: end)
+        case let .directory(uuid): Transaction.shown(inDirectory: uuid, before: end)
+        }
+    }
+
     func contains(_ transaction: Transaction) -> Bool {
         switch self {
         case let .operation(operationType): transaction.operationType == operationType

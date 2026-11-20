@@ -16,7 +16,7 @@ final class DataSeeder: NSObject {
 
     static func seedDefaultAccount(in context: ModelContext) {
         let accounts = (try? context.fetch(FetchDescriptor<Account>(predicate: Account.notDeleted, sortBy: [SortDescriptor(\.sortIndex)]))) ?? []
-        let transactions = (try? context.fetch(FetchDescriptor<Transaction>())) ?? []
+        let transactions = (try? context.fetch(FetchDescriptor<Transaction>(predicate: Transaction.withoutAccount))) ?? []
 
         let defaultAccount: Account
         if let first = accounts.first {
@@ -26,8 +26,11 @@ final class DataSeeder: NSObject {
             context.insert(defaultAccount)
         }
 
-        for transaction in transactions where transaction.account == nil {
+        for transaction in transactions {
             transaction.account = defaultAccount
+        }
+        if !transactions.isEmpty {
+            context.recalculateBalances()
         }
 
         do {

@@ -40,7 +40,7 @@ struct AddExpenseIntent: AppIntent {
         guard let expenseCategory = context.expenseCategory(id: category?.id, merchant: merchantName) else { throw AddExpenseError.categoryNotFound }
 
         let expenseAccount = context.expenseAccount(id: account?.id, card: card)
-        context.insert(Transaction(amount: value, category: expenseCategory, note: merchantName.isEmpty ? nil : merchantName, account: expenseAccount))
+        context.add(Transaction(amount: value, category: expenseCategory, note: merchantName.isEmpty ? nil : merchantName, account: expenseAccount))
         try context.save()
         return .result()
     }

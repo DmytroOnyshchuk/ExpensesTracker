@@ -169,7 +169,6 @@ struct MenuSummary: View {
     let action: () -> Void
 
     private let start: Date
-    private let balanceCenter = BalanceCenter.shared
 
     @Query private var transactions: [Transaction]
     @Query(filter: Account.notDeleted) private var accounts: [Account]
@@ -192,8 +191,8 @@ struct MenuSummary: View {
     }
 
     private var balance: Int? {
-        guard appSettings.accounting.multipleAccountsEnabled, !accounts.isEmpty, let changes = balanceCenter.changes else { return nil }
-        return accounts.enabled.total(with: changes)
+        guard appSettings.accounting.multipleAccountsEnabled, !accounts.isEmpty else { return nil }
+        return accounts.enabled.total
     }
 }
 

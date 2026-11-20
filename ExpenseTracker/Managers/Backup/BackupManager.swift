@@ -301,6 +301,8 @@ enum BackupManager {
         try context.save()
 
         DataSeeder.seedDefaultAccount(in: context)
+        context.recalculateBalances()
+        try context.save()
 
         return BackupImportResult(transactions: addedTransactions, categories: created.count)
     }

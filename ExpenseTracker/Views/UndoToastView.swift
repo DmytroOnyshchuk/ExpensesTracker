@@ -163,13 +163,17 @@ extension ModelContext {
     @MainActor
     func applyWithUndo(_ draft: TransactionDraft, to transaction: Transaction) {
         let previous = TransactionDraft(transaction)
+        transaction.removeFromBalance()
         draft.apply(to: transaction)
+        transaction.addToBalance()
         try? save()
 
         guard TransactionDraft(transaction) != previous else { return }
 
         UndoToastCenter.shared.show(L10n.transactionsListTransactionUpdated) {
+            transaction.removeFromBalance()
             previous.apply(to: transaction)
+            transaction.addToBalance()
             try? self.save()
         }
     }

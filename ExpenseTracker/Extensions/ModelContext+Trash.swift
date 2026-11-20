@@ -10,7 +10,34 @@ import Foundation
 import SwiftData
 
 extension ModelContext {
+    func add(_ transaction: Transaction) {
+        insert(transaction)
+        transaction.addToBalance()
+    }
+
+    func recalculateBalances() {
+        let accounts = (try? fetch(FetchDescriptor<Account>())) ?? []
+        let changes = ((try? fetch(FetchDescriptor<Transaction>(predicate: Transaction.notDeleted))) ?? []).balanceChanges
+        for account in accounts {
+            account.balance = account.amount + (changes[account.uuid] ?? .zero)
+        }
+    }
+
+    func periodStarts(of period: StatisticsPeriod, matching predicate: (Date) -> Predicate<Transaction>) -> [Date] {
+        var starts: [Date] = []
+        var bound = Date.distantFuture
+        while true {
+            var descriptor = FetchDescriptor<Transaction>(predicate: predicate(bound), sortBy: [SortDescriptor(\.date, order: .reverse)])
+            descriptor.fetchLimit = 1
+            guard let date = (try? fetch(descriptor))?.first?.date else { return starts }
+            let start = min(period.interval(containing: date).start, date)
+            starts.append(start)
+            bound = start
+        }
+    }
+
     func moveToTrash(_ transaction: Transaction) {
+        transaction.removeFromBalance()
         transaction.deletedAt = Date()
         try? save()
     }
@@ -37,6 +64,7 @@ extension ModelContext {
     func moveToTrash(_ account: Account) {
         let date = Date()
         for transaction in transactions(of: account) where transaction.deletedAt == nil {
+            transaction.removeFromBalance()
             transaction.deletedAt = date
         }
         account.deletedAt = date
@@ -47,6 +75,7 @@ extension ModelContext {
         let date = account.deletedAt
         for transaction in transactions(of: account) where transaction.deletedAt == date && transaction.category.deletedAt == nil {
             transaction.deletedAt = nil
+            transaction.addToBalance()
         }
         account.deletedAt = nil
         try? save()
@@ -55,6 +84,7 @@ extension ModelContext {
     func moveToTrash(_ category: TransactionCategory) {
         let date = Date()
         for transaction in transactions(of: category) where transaction.deletedAt == nil {
+            transaction.removeFromBalance()
             transaction.deletedAt = date
         }
         category.deletedAt = date
@@ -62,9 +92,11 @@ extension ModelContext {
     }
 
     func restore(_ transaction: Transaction) {
+        transaction.removeFromBalance()
         transaction.deletedAt = nil
         transaction.category.deletedAt = nil
         transaction.account?.deletedAt = nil
+        transaction.addToBalance()
         try? save()
     }
 
@@ -72,18 +104,21 @@ extension ModelContext {
         let date = category.deletedAt
         for transaction in transactions(of: category) where transaction.deletedAt == date && transaction.account?.deletedAt == nil {
             transaction.deletedAt = nil
+            transaction.addToBalance()
         }
         category.deletedAt = nil
         try? save()
     }
 
     func deletePermanently(_ transaction: Transaction) {
+        transaction.removeFromBalance()
         delete(transaction)
         try? save()
     }
 
     func deletePermanently(_ category: TransactionCategory) {
         for transaction in transactions(of: category) {
+            transaction.removeFromBalance()
             delete(transaction)
         }
         delete(category)
@@ -105,6 +140,7 @@ extension ModelContext {
         }
         let transactions = (try? fetch(FetchDescriptor<Transaction>(predicate: Transaction.inTrashWithOwners))) ?? []
         for transaction in transactions {
+            transaction.removeFromBalance()
             delete(transaction)
         }
         let categories = (try? fetch(FetchDescriptor<TransactionCategory>(predicate: TransactionCategory.inTrash))) ?? []

@@ -136,7 +136,7 @@ extension ModelContext {
             guard let category = autoPayment.category, autoPayment.amount > .zero else { continue }
 
             while autoPayment.nextDate <= now {
-                insert(Transaction(amount: autoPayment.amount, category: category, date: autoPayment.nextDate, note: autoPayment.note, account: autoPayment.account))
+                add(Transaction(amount: autoPayment.amount, category: category, date: autoPayment.nextDate, note: autoPayment.note, account: autoPayment.account))
                 autoPayment.completedPayments += 1
                 hasChanges = true
             }

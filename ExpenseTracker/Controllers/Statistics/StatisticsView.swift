@@ -245,9 +245,7 @@ struct StatisticsContent: View {
     }
 
     private func openPeriodList() {
-        var descriptor = FetchDescriptor<Transaction>(predicate: scope.predicate)
-        descriptor.propertiesToFetch = [\.date]
-        periodStarts = period.starts(of: (try? modelContext.fetch(descriptor)) ?? [])
+        periodStarts = modelContext.periodStarts(of: period, matching: scope.predicate(before:))
         showPeriodList = !periodStarts.isEmpty
     }
 

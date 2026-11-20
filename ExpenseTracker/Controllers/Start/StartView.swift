@@ -253,14 +253,13 @@ struct StartView: View {
         let previousInput = input
         let previousNote = note
 
-        modelContext.insert(transaction)
-        try? modelContext.save()
-        BalanceCenter.shared.add(transaction)
+        modelContext.add(transaction)
         FeedbackManager.shared.transactionAdded()
         input.reset()
         note = String()
 
         UndoToastCenter.shared.show(L10n.transactionsListTransactionAdded) {
+            transaction.removeFromBalance()
             modelContext.delete(transaction)
             try? modelContext.save()
             if input.isEmpty, note.isBlank {
@@ -278,12 +277,8 @@ struct StartBalanceCard: View {
     let onSelect: (Account) -> Void
     let action: () -> Void
 
-    private let balanceCenter = BalanceCenter.shared
-
     var body: some View {
-        let changes = balanceCenter.changes
-
-        BalanceCard(accounts: accounts, selected: selected, balance: changes.flatMap { selected?.current(with: $0) }, amountFor: { $0.current(with: changes ?? [:]) }, onSelect: onSelect, action: action)
+        BalanceCard(accounts: accounts, selected: selected, balance: selected?.balance, amountFor: \.balance, onSelect: onSelect, action: action)
     }
 }
 
